@@ -46,16 +46,24 @@ bot.on("message", (message) => {
   }
 });
 
-  bot.on('message', (message) => {
-  if (message.content === (prefix) + "Clef 5"){
-  guildMember.addRole('【CLEF 5】');
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .setTimestamp()
-  message.channel.send({embed}) }
-  });
+ bot.on('message', message => {
+ if (message.content.startsWith(prefix + "Clef 5")) {
+ guildMember.addRole('【CLEF 5】')};
+ });
+                                        
+
+
+
+                                        bot.on('message', message => {
+                                          if (message.content === (prefix) + "Test bot"){
+                                              const embed = new Discord.RichEmbed()
+                                               .setAuthor(message.author.username , message.author.avatarURL)
+                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                               .setColor(3447003)
+                                               .addField("test" , "test")
+                                               .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                                               .setTimestamp()
+                                               message.channel.send({embed})}})
                                       
 
 
