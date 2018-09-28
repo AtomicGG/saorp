@@ -46,6 +46,19 @@ bot.on("message", (message) => {
   }
 });
 
+  bot.on('message', (message) => {
+  if (message.content === (prefix) + "Clef 5"){
+  guildMember.addRole('【CLEF 5】');
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .setTimestamp()
+  message.channel.send({embed}) }
+  });
+                                      
+
+
 
 ////////////////////////////////////////////////////////Coups et défenses/////////////////////////////////////////////////////////////////////////////////////
 
