@@ -33,7 +33,7 @@ bot.on('message', message => {
 
 
 
-bot.login('NDU3OTIxODE2NjA3MDY0MDY3.DggOFA._qMrznRXuYBg1R3_HjlKzwRqafo')
+bot.login(process.env.TOKEN)
 
 bot.on("message", (message) => {
   if (!message.content.startsWith(prefix)) return;
