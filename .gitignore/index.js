@@ -48,6 +48,7 @@ bot.on("message", (message) => {
 
  bot.on('message', message => {
  if (message.content.startsWith(prefix + "Clef 5")) {
+   const guildMember = message.member;
  guildMember.addRole('【CLEF 5】')};
  });
                                         
