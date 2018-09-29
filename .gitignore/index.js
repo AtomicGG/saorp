@@ -46,26 +46,7 @@ bot.on("message", (message) => {
   }
 });
 
- bot.on('message', message => {
- const guildMember = message.member;
- if (message.content.startsWith(prefix + "Clef 5")) {
- guildMember.addRole('【CLEF 5】')};
- });
-                                        
 
-
-
-                                        bot.on('message', message => {
-                                          if (message.content === (prefix) + "Test bot"){
-                                              const embed = new Discord.RichEmbed()
-                                               .setAuthor(message.author.username , message.author.avatarURL)
-                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                               .setColor(3447003)
-                                               .addField("test" , "test")
-                                               .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-                                               .setTimestamp()
-                                               message.channel.send({embed})}})
-                                      
 
 
 
@@ -118,17 +99,17 @@ bot.on("message", (message) => {
         .addBlankField(true)
         .addField("Niveau requis pour effectuer une parade :" , "Niveau 3")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un coup précis :" , "Niveau 5")
+        .addField("Niveau requis pour effectuer un coup précis :" , "Niveau 4")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un blocage :" , "Niveau 7")
+        .addField("Niveau requis pour effectuer un blocage :" , "Niveau 5")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un coup circulaire :" , "Niveau 9")
+        .addField("Niveau requis pour effectuer un coup circulaire :" , "Niveau 6")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un coup provocateur :" , "Niveau 11")
+        .addField("Niveau requis pour effectuer un coup provocateur :" , "Niveau 7")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un crie de provocation :" , "Niveau 13")
+        .addField("Niveau requis pour effectuer un crie de provocation :" , "Niveau 8")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un combo :" , "Niveau 15")
+        .addField("Niveau requis pour effectuer un combo :" , "Niveau 10")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})}
@@ -175,6 +156,43 @@ bot.on('message', message => {
       })
 
 
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Forêt quêtes accomplis"){
+    if (talkedRecently.has(message.author.id+17)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
+    const Expplaines = (Math.floor((150)*Math.random()+50))
+    const Colsplaines = (Math.floor((150)*Math.random()+50))
+    const Potionsplaines = (Math.floor((2*0.5)*Math.random()))
+    const Equipementsplaines = (Math.floor((2*0.75)*Math.random()))
+    const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :")
+      .addField("Points d'expérience :" , +Expplaines)
+      .addField("Cols :" , +Colsplaines)
+      .addField("Potion légère de soin :" , +Potionsplaines)
+      .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
+      .setTimestamp()
+      message.channel.send({embed})}
+      talkedRecently.add(message.author.id+17);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+17);
+     }, 86400000);
+ }
+      })
+
+
       
 
 
@@ -202,12 +220,52 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField("Quête des plaines :" , "Votre quête sera de tuer les cibles suivantes :")
-      .addField("Sangliers :" , +Sanglier)
-      .addField("Renards :" , +Renard)
-      .addField("Chiens errants :" , +Chien)
-      .addField("Bandits débutants :" , +Bandit)
-      .addField("Lapins géants :" , +Lapin)
+      .addField("Sanglier :" , +Sanglier)
+      .addField("Renard :" , +Renard)
+      .addField("Chiens errant :" , +Chien)
+      .addField("Bandits débutant :" , +Bandit)
+      .addField("Lapins géant :" , +Lapin)
       .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplis" )
+      .setTimestamp()
+      message.channel.send({embed})}
+      talkedRecently.add(message.author.id+18);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+18);
+     }, 86400000);
+ }
+    })
+
+
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Forêt quêtes"){
+    if (talkedRecently.has(message.author.id+18)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
+    const Sanglier = (Math.floor((3)*Math.random()+2))
+    const Renard = (Math.floor((3)*Math.random()+2))
+    const Chien = (Math.floor((2)*Math.random()+2))
+    const Bandit = (Math.floor((2*(0.75))*Math.random()+2))
+    const Lapin = (Math.floor((2*0.90)*Math.random()+2))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField("Quête de la forêt :" , "Votre quête sera de tuer les cibles suivantes :")
+      .addField("Loup :" , +Sanglier)
+      .addField("Slime :" , +Renard)
+      .addField("Bandit experimenté :" , +Chien)
+      .addField("Bandit sombre :" , +Bandit)
+      .addField("Loup de sang :" , +Lapin)
+      .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplis" )
       .setTimestamp()
       message.channel.send({embed})}
       talkedRecently.add(message.author.id+18);
@@ -257,40 +315,6 @@ if (message.content.startsWith(prefix + "Plaines cueillir")) {
 })
 
 
-bot.on('message', message => {
-if (message.content.startsWith(prefix + "Plaines cueillir [Cueilleur]")) {
-  if (talkedRecently.has(message.author.id+19)) {
-    const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-     .setTimestamp()
-     message.channel.send({embed})
-} else {
-  const Persils = (Math.floor((4*0.25)*Math.random()+1))
-  const Herbes = (Math.floor((4*0.25)*Math.random()+1))
-  const Baies = (Math.floor((3*0.25)*Math.random()+1))
-  const Exp = (Math.floor((3)*Math.random()+2))
-  const embed = new Discord.RichEmbed()
-  .setColor(3447003)
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-  .addField("Cueillette :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-  .addField("Persil :" , +Persils)
-  .addField("Herbe médicinale faible :" , +Herbes)
-  .addField("Baie :" , +Baies)
-  .addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +Exp)
-  .setTimestamp()
-  message.channel.send({embed})}
-  talkedRecently.add(message.author.id+19);
-    setTimeout(() => {
-     talkedRecently.delete(message.author.id+19);
-   }, 3600000);
-}
-})
 
 
 bot.on('message', message => {
@@ -326,45 +350,12 @@ bot.on('message', message => {
   }
   })
 
-
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Plaines cueillir [Cueilleur]")) {
-      if (talkedRecently.has(message.author.id+19)) {
-        const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-         .setTimestamp()
-         message.channel.send({embed})
-    } else {
-      const Persils = (Math.floor((4*0.25)*Math.random()+1))
-      const Herbes = (Math.floor((3*0.25)*Math.random()+1))
-      const Exp = (Math.floor((4)*Math.random()+4))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Cueillette :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-      .addField("Estragon :" , +Persils)
-      .addField("Herbe médicinale :" , +Herbes)
-      .addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +Exp)
-      .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+19);
-        setTimeout(() => {
-         talkedRecently.delete(message.author.id+19);
-       }, 3600000);
-    }
-    })
 //////////////////////////////////////////////////////////Mineur/////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt miner")) {
-    if (talkedRecently.has(message.author.id+24)) {
+    if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -388,51 +379,19 @@ bot.on('message', message => {
     .addField("Points d'expérience dans la spécialisation 'Mineur' :" , +Exp)
     .setTimestamp()
     message.channel.send({embed})}
-    talkedRecently.add(message.author.id+24);
+    talkedRecently.add(message.author.id+19);
       setTimeout(() => {
-       talkedRecently.delete(message.author.id+24);
+       talkedRecently.delete(message.author.id+19);
      }, 3600000);
   }
   })
 
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Forêt miner [Mineur]")) {
-      if (talkedRecently.has(message.author.id+24)) {
-        const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-         .setTimestamp()
-         message.channel.send({embed})
-    } else {
-      const Cuivre = (Math.floor((4*0.25)*Math.random()+1))
-      const CuivreRare = (Math.floor((2*0.85)*Math.random()))
-      const Exp = (Math.floor((3)*Math.random()+2))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-      .addField("Minage :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-      .addField("Cuivre médiocre :" , +Cuivre)
-      .addField("Cuivre commun :" , +CuivreRare)
-      .addField("Points d'expérience dans la spécialisation 'Mineur' :" , +Exp)
-      .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+24);
-        setTimeout(() => {
-         talkedRecently.delete(message.author.id+24);
-       }, 3600000);
-    }
-    })
   
 
 //////////////////////////////////////////////////////////Bucheron/////////////////////////////////////////////////////////////////////////////////////
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Forêt couper des arbres")) {
-    if (talkedRecently.has(message.author.id+25)) {
+  if (message.content.startsWith(prefix + "Forêt bûcheronner")) {
+    if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -456,46 +415,15 @@ bot.on('message', message => {
     .addField("Points d'expérience dans la spécialisation 'Bûcheron' :" , +Exp)
     .setTimestamp()
     message.channel.send({embed})}
-    talkedRecently.add(message.author.id+25);
+    talkedRecently.add(message.author.id+19);
       setTimeout(() => {
-       talkedRecently.delete(message.author.id+25);
+       talkedRecently.delete(message.author.id+19);
      }, 3600000);
   }
   })
 
 
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Forêt couper des arbres [Bûcheron]")) {
-      if (talkedRecently.has(message.author.id+25)) {
-        const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-         .setTimestamp()
-         message.channel.send({embed})
-    } else {
-      const Bois = (Math.floor((4*0.25)*Math.random()+1))
-      const BoisRare = (Math.floor((2*0.85)*Math.random()))
-      const Exp = (Math.floor((3)*Math.random()+2))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
-      .addField("Bûcheron:" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-      .addField("Bois de frêne médiocre :" , +Bois)
-      .addField("Bois de frêne commun :" , +BoisRare)
-      .addField("Points d'expérience dans la spécialisation 'Bûcheron' :" , +Exp)
-      .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+25);
-        setTimeout(() => {
-         talkedRecently.delete(message.author.id+25);
-       }, 3600000);
-    }
-    })
+
 
   
 
@@ -507,7 +435,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Plaines chasser")) {
-    if (talkedRecently.has(message.author.id+20)) {
+    if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -535,96 +463,20 @@ bot.on('message', message => {
       .addField("Points d'expérience dans la spécialisation 'Chasseur' :" , +Exp)
       .setTimestamp()
       message.channel.send({embed})}
-      talkedRecently.add(message.author.id+20);
+      talkedRecently.add(message.author.id+19);
 setTimeout(() => {
-talkedRecently.delete(message.author.id+20);
+talkedRecently.delete(message.author.id+19);
 }, 3600000);
 }
   })
 
 
-  
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plaines chasser [Chasseur]")) {
-    if (talkedRecently.has(message.author.id+20)) {
-      const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-} else {
-      const Viande = (Math.floor((4*0.25)*Math.random()+1))
-      const Peau = (Math.floor((3*0.50)*Math.random()))
-      const Coeur = (Math.floor((2*0.75)*Math.random()))
-      const Oeil = (Math.floor((2*0.75)*Math.random()))
-      const Exp = (Math.floor((3)*Math.random()+2))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField("Chasse :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-      .addField("Viande de lapin :" , +Viande)
-      .addField("Peau de lapin :" , +Peau)
-      .addField("Coeur de lapin :" , +Coeur)
-      .addField("Oeil de lapin :" , +Oeil)
-      .addField("Points d'expérience dans la spécialisation 'Chasseur' :" , +Exp)
-      .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+20);
-setTimeout(() => {
-talkedRecently.delete(message.author.id+20);
-}, 3600000);
-}
-  })
-
-
-  
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Forêt chasser [Chasseur]")) {
-    if (talkedRecently.has(message.author.id+20)) {
-      const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-} else {
-      const Viande = (Math.floor((4*0.25)*Math.random()+1))
-      const Peau = (Math.floor((3*0.50)*Math.random()))
-      const Coeur = (Math.floor((2*0.75)*Math.random()))
-      const Oeil = (Math.floor((2*0.75)*Math.random()))
-      const Exp = (Math.floor((4)*Math.random()+4))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField("Chasse :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-      .addField("Viande de taupe :" , +Viande)
-      .addField("Peau de taupe :" , +Peau)
-      .addField("Coeur de taupe :" , +Coeur)
-      .addField("Oeil de taupe :" , +Oeil)
-      .addField("Points d'expérience dans la spécialisation 'Chasseur' :" , +Exp)
-      .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+20);
-setTimeout(() => {
-talkedRecently.delete(message.author.id+20);
-}, 3600000);
-}
-  })
 
 
   
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt chasser")) {
-    if (talkedRecently.has(message.author.id+20)) {
+    if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -652,9 +504,9 @@ bot.on('message', message => {
       .addField("Points d'expérience dans la spécialisation 'Chasseur' :" , +Exp)
       .setTimestamp()
       message.channel.send({embed})}
-      talkedRecently.add(message.author.id+20);
+      talkedRecently.add(message.author.id+19);
 setTimeout(() => {
-talkedRecently.delete(message.author.id+20);
+talkedRecently.delete(message.author.id+19);
 }, 3600000);
 }
   })
@@ -1803,7 +1655,7 @@ bot.on('message', message => {
      .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
     .setTitle("Plaines :" , "Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !")
-    .addField("Pour combattre des créatures dangereuses :" , "=Plaines créatures")
+    .addField("Pour combattre :" , "=Plaines combat")
     .addField("Pour cueillir :", "=Plaines cueillir")
     .addField("Pour chasser :", "=Plaines chasse")
     .addField("Pour avoir une quête :", "=Plaines quêtes")
@@ -1812,10 +1664,74 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
+//////////////////////////////////////////////////////////Plaines Combat/////////////////////////////////////////////////////////////////////////////////////
+
+                                        bot.on('message', message => {
+                                          if (message.content.startsWith(prefix + "Plaines combat")) {
+                                              const B = (Math.floor((3*(0.50))*Math.random()))
+                                              const C = (Math.floor((3*(0.50))*Math.random()))
+                                              const D = (Math.floor((3*(0.50))*Math.random()))
+                                              const E = (Math.floor((2*(0.85))*Math.random()))
+                                              const F = (Math.floor((2*(0.75))*Math.random()))
+                                               const embed = new Discord.RichEmbed()
+                                               .setAuthor(message.author.username , message.author.avatarURL)
+                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                               .setColor(3447003)
+                                               .addField("Plaines :" , "En marchant dans les plaines, vous rencontrez les ennemis suivants")
+                                               .addField("Renard :" , +B)
+                                               .addField("Sanglier :" , +C)
+                                               .addField("Chien :" , +D)
+                                               .addField("Lapin géant :" , +E)
+                                               .addField("Bandit débutant :" , +F)
+                                               .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+                                               .setTimestamp()
+                                               message.channel.send({embed})
+                                              }})
+
+//////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
 
+ bot.on('message', message => {
+                                                if (message.content === (prefix) + "Forêt"){
+                                                   const embed = new Discord.RichEmbed()
+                                                   .setAuthor(message.author.username , message.author.avatarURL)
+                                                  .setColor(1447003)
+                                                  .setTitle("Forêt :" , "Bienvenue dans ce lieu habité par des loups dangereux et bien plus !")
+                                                  .addField("Pour combattre :" , "=Forêt combat")
+                                                  .addField("Pour cueillir :", "=Forêt cueillir")
+                                                  .addField("Pour chasser :", "=Forêt chasse")
+                                                  .addField("Pour miner :", "=Forêt miner")
+                                                  .addField("Pour bûcheronner :", "=Forêt bûcheronner")
+                                                  .addField("Pour avoir une quête :", "=Forêt quêtes")
+                                                  .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }
+                                              })
 
+//////////////////////////////////////////////////////////Forêt Combat/////////////////////////////////////////////////////////////////////////////////////
 
+ bot.on('message', message => {
+                                                if (message.content.startsWith(prefix + "Forêt combat")) {
+                                                    const B = (Math.floor((3*(0.50))*Math.random()))
+                                                    const C = (Math.floor((3*(0.50))*Math.random()))
+                                                    const D = (Math.floor((3*(0.80))*Math.random()))
+                                                    const E = (Math.floor((2*(0.90))*Math.random()))
+                                                    const F = (Math.floor((2*(0.95))*Math.random()))
+                                                     const embed = new Discord.RichEmbed()
+                                                     .setAuthor(message.author.username , message.author.avatarURL)
+                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                     .setColor(3447003)
+                                                     .addField("Forêt :" , "En marchant dans la forêt, vous rencontrez les ennemis suivants")
+                                                     .addField("Loup :" , +B)
+                                                     .addField("Slime :" , +C)
+                                                     .addField("Bandit experimenté :" , +D)
+                                                     .addField("Bandit sombre :" , +E)
+                                                     .addField("Loup de sang :" , +F)
+                                                     .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+                                                     .setTimestamp()
+                                                     message.channel.send({embed})
+                                                    }})
 
 
 
