@@ -1703,7 +1703,7 @@ bot.on('message', message => {
                                                   .addField("Pour miner :", "=Forêt miner")
                                                   .addField("Pour bûcheronner :", "=Forêt bûcheronner")
                                                   .addField("Pour avoir une quête :", "=Forêt quêtes")
-                                                  .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
+                                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
                                                 }
