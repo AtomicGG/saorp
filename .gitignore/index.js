@@ -1008,7 +1008,6 @@ bot.on('message', message => {
                     .addField("Ceinture en peau arraché :" , +O)
                     .addField("Jambières en peau résistante :" , +P)
                     .addField("Bottes en peau résistante :" , +Q)
-                    .addField("Cols :" , +G)
                     .setTimestamp()
                     message.channel.send({embed})
                         }
