@@ -249,7 +249,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
 } else {
-    const Sanglier = (Math.floor((3*())*Math.random()+2))
+    const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((2)*Math.random()))
     const Bandit = (Math.floor((2*(0.50))*Math.random()))
