@@ -6036,7 +6036,7 @@ bot.on('message', message => {
          .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
          .addField("Prix d'achat :" , "80 cols")
          .addField("Prix de revente :" , "40 cols")
-         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du casque en peau arraché")
+         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du casque en peau arraché")
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
@@ -6047,7 +6047,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication du casque en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6074,7 +6074,7 @@ bot.on('message', message => {
              .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
              .addField("Prix d'achat :" , "200 cols")
              .addField("Prix de revente :" , "100 cols")
-             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du casque en peau résistante")
+             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du casque en peau résistante")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -6084,7 +6084,7 @@ bot.on('message', message => {
           bot.on('message', message => {
             const HP = (Math.floor((6)*Math.random()+6))
             const Défense = (Math.floor((2-(0.50))*Math.random()))
-            if (message.content.startsWith(prefix + "Achat/fabrication du casque en peau résistante")) {
+            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau résistante")) {
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6110,7 +6110,7 @@ bot.on('message', message => {
              .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
              .addField("Prix d'achat :" , "80 cols")
              .addField("Prix de revente :" , "40 cols")
-             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des épaulières en peau arraché")
+             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des épaulières en peau arraché")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -6121,7 +6121,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication des épaulières en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6151,7 +6151,7 @@ bot.on('message', message => {
                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                  .addField("Prix d'achat :" , "200 cols")
                  .addField("Prix de revente :" , "100 cols")
-                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des epaulières en peau résistante")
+                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des epaulières en peau résistante")
                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
@@ -6161,7 +6161,7 @@ bot.on('message', message => {
               bot.on('message', message => {
                 const HP = (Math.floor((6)*Math.random()+6))
                 const Défense = (Math.floor((2-(0.50))*Math.random()))
-                if (message.content.startsWith(prefix + "Achat/fabrication des épaulières en peau résistante")) {
+                if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau résistante")) {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6187,7 +6187,7 @@ bot.on('message', message => {
                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                  .addField("Prix d'achat :" , "80 cols")
                  .addField("Prix de revente :" , "40 cols")
-                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la cape en peau arraché")
+                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la cape en peau arraché")
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
@@ -6198,7 +6198,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication de la cape en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6226,7 +6226,7 @@ bot.on('message', message => {
                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                      .addField("Prix d'achat :" , "200 cols")
                      .addField("Prix de revente :" , "100 cols")
-                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la cape en peau résistante")
+                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la cape en peau résistante")
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
@@ -6236,7 +6236,7 @@ bot.on('message', message => {
                   bot.on('message', message => {
                     const HP = (Math.floor((6)*Math.random()+6))
                     const Défense = (Math.floor((2-(0.50))*Math.random()))
-                    if (message.content.startsWith(prefix + "Achat/fabrication de la cape en peau résistante")) {
+                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau résistante")) {
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6262,7 +6262,7 @@ bot.on('message', message => {
                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                      .addField("Prix d'achat :" , "80 cols")
                      .addField("Prix de revente :" , "40 cols")
-                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du plastron en peau arraché")
+                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du plastron en peau arraché")
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
@@ -6273,7 +6273,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication du plastron en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6301,7 +6301,7 @@ bot.on('message', message => {
                          .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                          .addField("Prix d'achat :" , "200 cols")
                          .addField("Prix de revente :" , "100 cols")
-                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du plastron en peau résistante")
+                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du plastron en peau résistante")
                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
@@ -6311,7 +6311,7 @@ bot.on('message', message => {
                       bot.on('message', message => {
                         const HP = (Math.floor((6)*Math.random()+6))
                         const Défense = (Math.floor((2-(0.50))*Math.random()))
-                        if (message.content.startsWith(prefix + "Achat/fabrication du plastron en peau résistante")) {
+                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau résistante")) {
                           const embed = new Discord.RichEmbed()
                           .setAuthor(message.author.username , message.author.avatarURL)
                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6337,7 +6337,7 @@ bot.on('message', message => {
                          .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                          .addField("Prix d'achat :" , "80 cols")
                          .addField("Prix de revente :" , "40 cols")
-                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des gantelets en peau arraché")
+                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des gantelets en peau arraché")
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
@@ -6348,7 +6348,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication des gantelets en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6376,7 +6376,7 @@ bot.on('message', message => {
                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                              .addField("Prix d'achat :" , "200 cols")
                              .addField("Prix de revente :" , "100 cols")
-                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des gantelets en peau résistante")
+                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des gantelets en peau résistante")
                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
@@ -6386,7 +6386,7 @@ bot.on('message', message => {
                           bot.on('message', message => {
                             const HP = (Math.floor((6)*Math.random()+6))
                             const Défense = (Math.floor((2-(0.50))*Math.random()))
-                            if (message.content.startsWith(prefix + "Achat/fabrication des gantelets en peau résistante")) {
+                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau résistante")) {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6412,7 +6412,7 @@ bot.on('message', message => {
                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                              .addField("Prix d'achat :" , "80 cols")
                              .addField("Prix de revente :" , "40 cols")
-                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la ceinture en peau arraché")
+                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la ceinture en peau arraché")
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
@@ -6423,7 +6423,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication de la ceinture en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6451,7 +6451,7 @@ bot.on('message', message => {
                                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                                  .addField("Prix d'achat :" , "200 cols")
                                  .addField("Prix de revente :" , "100 cols")
-                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la ceinture en peau résistante")
+                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la ceinture en peau résistante")
                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
@@ -6461,7 +6461,7 @@ bot.on('message', message => {
                               bot.on('message', message => {
                                 const HP = (Math.floor((6)*Math.random()+6))
                                 const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                if (message.content.startsWith(prefix + "Achat/fabrication de la ceinture en peau résistante")) {
+                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau résistante")) {
                                   const embed = new Discord.RichEmbed()
                                   .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6487,7 +6487,7 @@ bot.on('message', message => {
                                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                                  .addField("Prix d'achat :" , "80 cols")
                                  .addField("Prix de revente :" , "40 cols")
-                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des jambières en peau arraché")
+                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des jambières en peau arraché")
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
@@ -6498,7 +6498,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication des jambières en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6526,7 +6526,7 @@ bot.on('message', message => {
                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                                      .addField("Prix d'achat :" , "200 cols")
                                      .addField("Prix de revente :" , "100 cols")
-                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des jambières en peau résistante")
+                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des jambières en peau résistante")
                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
@@ -6536,7 +6536,7 @@ bot.on('message', message => {
                                   bot.on('message', message => {
                                     const HP = (Math.floor((6)*Math.random()+6))
                                     const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                    if (message.content.startsWith(prefix + "Achat/fabrication des jambières en peau résistante")) {
+                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau résistante")) {
                                       const embed = new Discord.RichEmbed()
                                       .setAuthor(message.author.username , message.author.avatarURL)
                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6562,7 +6562,7 @@ bot.on('message', message => {
                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                                      .addField("Prix d'achat :" , "80 cols")
                                      .addField("Prix de revente :" , "40 cols")
-                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des bottes en peau arraché")
+                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des bottes en peau arraché")
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
@@ -6573,7 +6573,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication des bottes en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6601,7 +6601,7 @@ bot.on('message', message => {
                                          .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                                          .addField("Prix d'achat :" , "200 cols")
                                          .addField("Prix de revente :" , "100 cols")
-                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication des bottes en peau résistante")
+                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des bottes en peau résistante")
                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
@@ -6611,7 +6611,7 @@ bot.on('message', message => {
                                       bot.on('message', message => {
                                         const HP = (Math.floor((6)*Math.random()+6))
                                         const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                        if (message.content.startsWith(prefix + "Achat/fabrication des bottes en peau résistante")) {
+                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau résistante")) {
                                           const embed = new Discord.RichEmbed()
                                           .setAuthor(message.author.username , message.author.avatarURL)
                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6639,7 +6639,7 @@ bot.on('message', message => {
                                              .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "6")
                                              .addField("Prix d'achat :" , "120 cols")
                                              .addField("Prix de revente :" , "60 cols")
-                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de l'anneau en coeur d'animal faible")
+                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'anneau en coeur d'animal faible")
                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
@@ -6649,7 +6649,7 @@ bot.on('message', message => {
                                           bot.on('message', message => {
                                             const HP = (Math.floor((2)*Math.random()+1))
                                             const Dégâts = (Math.floor((3)*Math.random()+1))
-                                            if (message.content.startsWith(prefix + "Achat/fabrication de l'amulette en coeur d'animal faible")) {
+                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette en coeur d'animal faible")) {
                                               const embed = new Discord.RichEmbed()
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6676,7 +6676,7 @@ bot.on('message', message => {
                                                  .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "6")
                                                  .addField("Prix d'achat :" , "120 cols")
                                                  .addField("Prix de revente :" , "60 cols")
-                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de l'amulette en coeur d'animal faible")
+                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'amulette en coeur d'animal faible")
                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -6686,7 +6686,7 @@ bot.on('message', message => {
                                               bot.on('message', message => {
                                                 const HP = (Math.floor((2)*Math.random()+1))
                                             const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                if (message.content.startsWith(prefix + "Achat/fabrication de l'anneau en coeur d'animal faible")) {
+                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau en coeur d'animal faible")) {
                                                   const embed = new Discord.RichEmbed()
                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6714,7 +6714,7 @@ bot.on('message', message => {
                                                  .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "6")
                                                  .addField("Prix d'achat :" , "380 cols")
                                                  .addField("Prix de revente :" , "190 cols")
-                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de l'amulette du croc")
+                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'amulette du croc")
                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -6725,7 +6725,7 @@ bot.on('message', message => {
                                               bot.on('message', message => {
                                                 const HP = (Math.floor((3)*Math.random()+2))
                                             const Dégâts = (Math.floor((4)*Math.random()+2))
-                                                if (message.content.startsWith(prefix + "Achat/fabrication de l'amulette du croc")) {
+                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette du croc")) {
                                                   const embed = new Discord.RichEmbed()
                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6753,7 +6753,7 @@ bot.on('message', message => {
                                                  .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "6")
                                                  .addField("Prix d'achat :" , "380 cols")
                                                  .addField("Prix de revente :" , "190 cols")
-                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de l'anneau du croc")
+                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'anneau du croc")
                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -6763,7 +6763,7 @@ bot.on('message', message => {
                                               bot.on('message', message => {
                                                 const HP = (Math.floor((3)*Math.random()+2))
                                             const Dégâts = (Math.floor((4)*Math.random()+2))
-                                                if (message.content.startsWith(prefix + "Achat/fabrication de l'anneau du croc")) {
+                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau du croc")) {
                                                   const embed = new Discord.RichEmbed()
                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6791,7 +6791,7 @@ bot.on('message', message => {
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
                                                      .addField("Prix d'achat :" , "160 cols")
                                                      .addField("Prix de revente :" , "80 cols")
-                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de l'épée basique à deux mains")
+                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'épée basique à deux mains")
                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                       .setTimestamp()
                                                       message.channel.send({embed})
@@ -6800,7 +6800,7 @@ bot.on('message', message => {
 
                                                   bot.on('message', message => {
                                                 const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                    if (message.content.startsWith(prefix + "Achat/fabrication de l'épée basique à deux mains")) {
+                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique à deux mains")) {
                                                       const embed = new Discord.RichEmbed()
                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6826,7 +6826,7 @@ bot.on('message', message => {
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                      .addField("Prix d'achat :" , "80 cols")
                                                      .addField("Prix de revente :" , "40 cols")
-                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de l'épée basique à une main")
+                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'épée basique à une main")
                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                           .setTimestamp()
                                                           message.channel.send({embed})
@@ -6836,7 +6836,7 @@ bot.on('message', message => {
 
                                                       bot.on('message', message => {
                                                         const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                            if (message.content.startsWith(prefix + "Achat/fabrication de l'épée basique à une main")) {
+                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique à une main")) {
                                                               const embed = new Discord.RichEmbed()
                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6862,7 +6862,7 @@ bot.on('message', message => {
                                                          .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
                                                          .addField("Prix d'achat :" , "160 cols")
                                                          .addField("Prix de revente :" , "80 cols")
-                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la masse basique à deux mains")
+                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la masse basique à deux mains")
                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                           .setTimestamp()
                                                           message.channel.send({embed})
@@ -6872,7 +6872,7 @@ bot.on('message', message => {
 
                                                       bot.on('message', message => {
                                                         const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                            if (message.content.startsWith(prefix + "Achat/fabrication de la masse basique à deux mains")) {
+                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique à deux mains")) {
                                                               const embed = new Discord.RichEmbed()
                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6898,7 +6898,7 @@ bot.on('message', message => {
                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                              .addField("Prix d'achat :" , "80 cols")
                                                              .addField("Prix de revente :" , "40 cols")
-                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la masse basique à une main")
+                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la masse basique à une main")
                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
@@ -6907,7 +6907,7 @@ bot.on('message', message => {
 
                                                           bot.on('message', message => {
                                                             const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                if (message.content.startsWith(prefix + "Achat/fabrication de la masse basique à une main")) {
+                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique à une main")) {
                                                                   const embed = new Discord.RichEmbed()
                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6934,7 +6934,7 @@ bot.on('message', message => {
                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
                                                              .addField("Prix d'achat :" , "160 cols")
                                                              .addField("Prix de revente :" , "80 cols")
-                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la hache basique à deux mains")
+                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la hache basique à deux mains")
                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
@@ -6943,7 +6943,7 @@ bot.on('message', message => {
 
                                                           bot.on('message', message => {
                                                             const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                if (message.content.startsWith(prefix + "Achat/fabrication de la hache basique à deux mains")) {
+                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique à deux mains")) {
                                                                   const embed = new Discord.RichEmbed()
                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6971,7 +6971,7 @@ bot.on('message', message => {
                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                              .addField("Prix d'achat :" , "80 cols")
                                                              .addField("Prix de revente :" , "40 cols")
-                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la hache basique à une main")
+                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la hache basique à une main")
                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
@@ -6980,7 +6980,7 @@ bot.on('message', message => {
 
                                                           bot.on('message', message => {
                                                             const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                if (message.content.startsWith(prefix + "Achat/fabrication de la hache basique à une main")) {
+                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique à une main")) {
                                                                   const embed = new Discord.RichEmbed()
                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7007,7 +7007,7 @@ bot.on('message', message => {
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
                                                      .addField("Prix d'achat :" , "160 cols")
                                                      .addField("Prix de revente :" , "80 cols")
-                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la rapière basique à deux mains")
+                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la rapière basique à deux mains")
                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                   .setTimestamp()
                                                                   message.channel.send({embed})
@@ -7016,7 +7016,7 @@ bot.on('message', message => {
 
                                                               bot.on('message', message => {
                                                                 const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                    if (message.content.startsWith(prefix + "Achat/fabrication de la rapière basique à deux mains")) {
+                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique à deux mains")) {
                                                                       const embed = new Discord.RichEmbed()
                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7042,7 +7042,7 @@ bot.on('message', message => {
                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                                      .addField("Prix d'achat :" , "80 cols")
                                                                      .addField("Prix de revente :" , "40 cols")
-                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la rapière basique à une main")
+                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la rapière basique à une main")
                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                       .setTimestamp()
                                                                       message.channel.send({embed})
@@ -7051,7 +7051,7 @@ bot.on('message', message => {
 
                                                                   bot.on('message', message => {
                                                                     const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                        if (message.content.startsWith(prefix + "Achat/fabrication de la rapière basique à une main")) {
+                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique à une main")) {
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7080,7 +7080,7 @@ bot.on('message', message => {
                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
                                                                      .addField("Prix d'achat :" , "160 cols")
                                                                      .addField("Prix de revente :" , "80 cols")
-                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la cimeterre basique à deux mains")
+                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la cimeterre basique à deux mains")
                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                       .setTimestamp()
                                                                       message.channel.send({embed})
@@ -7089,7 +7089,7 @@ bot.on('message', message => {
 
                                                                   bot.on('message', message => {
                                                                     const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                        if (message.content.startsWith(prefix + "Achat/fabrication de la cimeterre basique à deux mains")) {
+                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à deux mains")) {
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7118,7 +7118,7 @@ bot.on('message', message => {
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                      .addField("Prix d'achat :" , "80 cols")
                                                      .addField("Prix de revente :" , "40 cols")
-                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la cimeterre basique à une main")
+                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la cimeterre basique à une main")
                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                       .setTimestamp()
                                                                       message.channel.send({embed})
@@ -7127,7 +7127,7 @@ bot.on('message', message => {
 
                                                                   bot.on('message', message => {
                                                                     const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                        if (message.content.startsWith(prefix + "Achat/fabrication de la cimeterre basique à une main")) {
+                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à une main")) {
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7153,7 +7153,7 @@ bot.on('message', message => {
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
                                                      .addField("Prix d'achat :" , "160 cols")
                                                      .addField("Prix de revente :" , "80 cols")
-                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du katana basique à deux mains")
+                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du katana basique à deux mains")
                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                           .setTimestamp()
                                                                           message.channel.send({embed})
@@ -7162,7 +7162,7 @@ bot.on('message', message => {
 
                                                                       bot.on('message', message => {
                                                                         const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                            if (message.content.startsWith(prefix + "Achat/fabrication du katana basique à deux mains")) {
+                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à deux mains")) {
                                                                               const embed = new Discord.RichEmbed()
                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7188,7 +7188,7 @@ bot.on('message', message => {
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                      .addField("Prix d'achat :" , "80 cols")
                                                      .addField("Prix de revente :" , "40 cols")
-                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du katana basique à une main")
+                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du katana basique à une main")
                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                               .setTimestamp()
                                                                               message.channel.send({embed})
@@ -7197,7 +7197,7 @@ bot.on('message', message => {
 
                                                                           bot.on('message', message => {
                                                                             const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                                if (message.content.startsWith(prefix + "Achat/fabrication du katana basique à une main")) {
+                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à une main")) {
                                                                                   const embed = new Discord.RichEmbed()
                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7223,7 +7223,7 @@ bot.on('message', message => {
                                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
                                                                              .addField("Prix d'achat :" , "160 cols")
                                                                              .addField("Prix de revente :" , "80 cols")
-                                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du glaive basique à deux mains")
+                                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du glaive basique à deux mains")
                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                               .setTimestamp()
                                                                               message.channel.send({embed})
@@ -7232,7 +7232,7 @@ bot.on('message', message => {
 
                                                                           bot.on('message', message => {
                                                                             const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                                if (message.content.startsWith(prefix + "Achat/fabrication du glaive basique à deux mains")) {
+                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive basique à deux mains")) {
                                                                                   const embed = new Discord.RichEmbed()
                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7258,7 +7258,7 @@ bot.on('message', message => {
                                                                                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                                                  .addField("Prix d'achat :" , "80 cols")
                                                                                  .addField("Prix de revente :" , "40 cols")
-                                                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la dague basique à une main")
+                                                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la dague basique à une main")
                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                   .setTimestamp()
                                                                                   message.channel.send({embed})
@@ -7267,7 +7267,7 @@ bot.on('message', message => {
 
                                                                               bot.on('message', message => {
                                                                                 const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication de la dague basique à une main")) {
+                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague basique à une main")) {
                                                                                       const embed = new Discord.RichEmbed()
                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7293,7 +7293,7 @@ bot.on('message', message => {
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
                                                      .addField("Prix d'achat :" , "80 cols")
                                                      .addField("Prix de revente :" , "40 cols")
-                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du bouclier basique à une main")
+                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du bouclier basique à une main")
                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})
@@ -7302,7 +7302,7 @@ bot.on('message', message => {
 
                                                                                   bot.on('message', message => {
                                                                                     const HP = (Math.floor((7)*Math.random()+3))
-                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication du bouclier basique à une main")) {
+                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier basique à une main")) {
                                                                                           const embed = new Discord.RichEmbed()
                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7329,7 +7329,7 @@ bot.on('message', message => {
                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer :" , "12")
                                                                                      .addField("Prix d'achat :" , "460 cols")
                                                                                      .addField("Prix de revente :" , "230 cols")
-                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du bouclier basique à une main")
+                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du parchemin de poison faible")
                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})
@@ -7337,7 +7337,7 @@ bot.on('message', message => {
                                                                                   });
 
                                                                                   bot.on('message', message => {
-                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication du parchemin de poison faible")) {
+                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de poison faible")) {
                                                                                           const embed = new Discord.RichEmbed()
                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7388,7 +7388,7 @@ bot.on('message', message => {
                                                                                          .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "2")
                                                                                          .addField("Prix d'achat :" , "30 cols")
                                                                                          .addField("Prix de revente :" , "15 cols")
-                                                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de renard")
+                                                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de renard")
                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                           .setTimestamp()
                                                                                           message.channel.send({embed})
@@ -7397,7 +7397,7 @@ bot.on('message', message => {
 
                                                                                       bot.on('message', message => {
                                                                                         const HP = (Math.floor((11)*Math.random()+10))
-                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de renard")) {
+                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de renard")) {
                                                                                               const embed = new Discord.RichEmbed()
                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7426,7 +7426,7 @@ bot.on('message', message => {
                                                                                               .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "2")
                                                                                               .addField("Prix d'achat :" , "30 cols")
                                                                                               .addField("Prix de revente :" , "15 cols")
-                                                                                              .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de sanglier")
+                                                                                              .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de sanglier")
                                                                                               .setTimestamp()
                                                                                               message.channel.send({embed})
                                                                                             }   
@@ -7434,7 +7434,7 @@ bot.on('message', message => {
 
                                                                                           bot.on('message', message => {
                                                                                             const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de sanglier")) {
+                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de sanglier")) {
                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7462,7 +7462,7 @@ bot.on('message', message => {
                                                                                                  .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "2")
                                                                                                  .addField("Prix d'achat :" , "30 cols")
                                                                                                  .addField("Prix de revente :" , "15 cols")
-                                                                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de chien")
+                                                                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de chien")
                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                   .setTimestamp()
                                                                                                   message.channel.send({embed})
@@ -7471,7 +7471,7 @@ bot.on('message', message => {
 
                                                                                               bot.on('message', message => {
                                                                                                 const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de chien")) {
+                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de chien")) {
                                                                                                       const embed = new Discord.RichEmbed()
                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7490,7 +7490,7 @@ bot.on('message', message => {
 
                                                                                                       bot.on('message', message => {
                                                                                                         const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de lapin")) {
+                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7516,7 +7516,7 @@ bot.on('message', message => {
                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "4")
                                                                                                      .addField("Prix d'achat :" , "80 cols")
                                                                                                      .addField("Prix de revente :" , "40 cols")
-                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de lapin géant")
+                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de lapin géant")
                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                       .setTimestamp()
                                                                                                       message.channel.send({embed})
@@ -7525,7 +7525,7 @@ bot.on('message', message => {
 
                                                                                                   bot.on('message', message => {
                                                                                                     const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                    if (message.content === prefix + "Achat/fabrication du ragoût de lapin géant") {
+                                                                                                    if (message.content === prefix + "Achat/fabrication/découverte du ragoût de lapin géant") {
                                                                                                           const embed = new Discord.RichEmbed()
                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7553,7 +7553,7 @@ bot.on('message', message => {
                                                                                                          .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "2")
                                                                                                          .addField("Prix d'achat :" , "30 cols")
                                                                                                          .addField("Prix de revente :" , "15 cols")
-                                                                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de lapin")
+                                                                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de lapin")
                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                           .setTimestamp()
                                                                                                           message.channel.send({embed})
@@ -7562,7 +7562,7 @@ bot.on('message', message => {
 
                                                                                                       bot.on('message', message => {
                                                                                                         const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                            if (message.content === (prefix) + "Achat/fabrication du ragoût de lapin"){
+                                                                                                            if (message.content === (prefix) + "Achat/fabrication/découverte du ragoût de lapin"){
                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7589,7 +7589,7 @@ bot.on('message', message => {
                                                                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "4")
                                                                                                              .addField("Prix d'achat :" , "60 cols")
                                                                                                              .addField("Prix de revente :" , "30 cols")
-                                                                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de loup")
+                                                                                                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de loup")
                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                               .setTimestamp()
                                                                                                               message.channel.send({embed})
@@ -7598,7 +7598,7 @@ bot.on('message', message => {
 
                                                                                                           bot.on('message', message => {
                                                                                                             const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de loup")) {
+                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
                                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7625,7 +7625,7 @@ bot.on('message', message => {
                                                                                                                  .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "6")
                                                                                                                  .addField("Prix d'achat :" , "160 cols")
                                                                                                                  .addField("Prix de revente :" , "80 cols")
-                                                                                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de loup de sang")
+                                                                                                                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de loup de sang")
                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
@@ -7634,7 +7634,7 @@ bot.on('message', message => {
 
                                                                                                               bot.on('message', message => {
                                                                                                                 const HP = (Math.floor((41)*Math.random()+40))
-                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de loup de sang")) {
+                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup de sang")) {
                                                                                                                       const embed = new Discord.RichEmbed()
                                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7664,7 +7664,7 @@ bot.on('message', message => {
                                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "4")
                                                                                                                      .addField("Prix d'achat :" , "60 cols")
                                                                                                                      .addField("Prix de revente :" , "30 cols")
-                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de loup")
+                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du ragoût de loup")
                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                       .setTimestamp()
                                                                                                                       message.channel.send({embed})
@@ -7673,7 +7673,7 @@ bot.on('message', message => {
 
                                                                                                                   bot.on('message', message => {
                                                                                                                     const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de taupe")) {
+                                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de taupe")) {
                                                                                                                           const embed = new Discord.RichEmbed()
                                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7700,7 +7700,7 @@ bot.on('message', message => {
                                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer :" , "5")
                                                                                                                      .addField("Prix d'achat :" , "100 cols")
                                                                                                                      .addField("Prix de revente :" , "50 cols")
-                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la potion faible de soin")
+                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la potion faible de soin")
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
@@ -7730,7 +7730,7 @@ bot.on('message', message => {
 
                                                                                                                       bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((3)*Math.random()+2))
-                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication de la potion faible de force")) {
+                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion faible de force")) {
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7757,7 +7757,7 @@ bot.on('message', message => {
                                                                                                                          .addField("Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer :" , "5")
                                                                                                                          .addField("Prix d'achat :" , "120 cols")
                                                                                                                          .addField("Prix de revente :" , "60 cols")
-                                                                                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la potion faible de défense")
+                                                                                                                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la potion faible de défense")
                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                               .setTimestamp()
                                                                                                                               message.channel.send({embed})
@@ -7766,7 +7766,7 @@ bot.on('message', message => {
 
                                                                                                                           bot.on('message', message => {
                                                                                                                             const HP = (Math.floor((2)*Math.random()+1))
-                                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication de la potion faible de défense")) {
+                                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion faible de défense")) {
                                                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7783,7 +7783,7 @@ bot.on('message', message => {
 
                                                                                                                       bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((21)*Math.random()+30))
-                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication de la potion faible de soin")) {
+                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion faible de soin")) {
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7811,7 +7811,7 @@ bot.on('message', message => {
                                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer :" , "10")
                                                                                                                      .addField("Prix d'achat :" , "320 cols")
                                                                                                                      .addField("Prix de revente :" , "1650 cols")
-                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la potion légère de soin")
+                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la potion légère de soin")
                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                               .setTimestamp()
                                                                                                                               message.channel.send({embed})
@@ -7821,7 +7821,7 @@ bot.on('message', message => {
 
                                                                                                                           bot.on('message', message => {
                                                                                                             const HP = (Math.floor((41)*Math.random()+60))
-                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication de la potion légère de soin")) {
+                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de soin")) {
                                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7847,7 +7847,7 @@ bot.on('message', message => {
                                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer :" , "10")
                                                                                                                      .addField("Prix d'achat :" , "400 cols")
                                                                                                                      .addField("Prix de revente :" , "200 cols")
-                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la potion légère de défense")
+                                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la potion légère de défense")
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
@@ -7856,7 +7856,7 @@ bot.on('message', message => {
 
                                                                                                                        bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((5)*Math.random()+4))
-                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication de la potion légère de force")) {
+                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de force")) {
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7871,7 +7871,7 @@ bot.on('message', message => {
 
                                                                                                                                bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((3)*Math.random()+2))
-                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication de la potion légère de défense")) {
+                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de défense")) {
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7899,7 +7899,7 @@ bot.on('message', message => {
                                                                                                                        .addField("Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer :" , "10")
                                                                                                                        .addField("Prix d'achat :" , "400 cols")
                                                                                                                        .addField("Prix de revente :" , "200 cols")
-                                                                                                                       .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication de la potion légère de force")
+                                                                                                                       .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la potion légère de force")
                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                             .setTimestamp()
                                                                                                                             message.channel.send({embed})
