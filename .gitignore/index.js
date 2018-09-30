@@ -1876,18 +1876,32 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Regénération")) {
+      if (talkedRecently.has(message.author.id+100)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
       let X = args.slice(1).join(" : ");
       const A = (Math.floor((X)*Math.random()+1))
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("│ Au bout d'une heure en ville, vous reprenez :" , "│►" +A+ " HP")
+       .addField("En restant en ville, vous reprenez :" , +A+ " HP")
        .setImage("https://img00.deviantart.net/62ab/i/2013/118/2/6/sao____kirito_health_bar_by_xxexternalhopexx-d63diy6.png")
        .setTimestamp()
        message.channel.send({embed})
-        }
-  });
+        talkedRecently.add(message.author.id+100);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+100);
+     }, 3600000);
+ }
+    })
 //////////////////////////////////////////////////////////////Calcul de caractéristiques///////////////////////////////////////////////////////////////////////////////////
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -4371,7 +4385,7 @@ bot.on('message', message => {
        .setColor(3447003)
        .addField("Déroulement de combat, partie 1 :" , "Le système de combat est avant tout un système par tour, c'est à dire que chaque personne et monstre pourra agir que pendant son tour de jeu !\n\nIl faut s'avoir que, dans un combat lorsque c'est votre tour, vous aurez droit à une attaque ou une action, mais si un joueur ou un monstre vous attaque, vous aurez droit de faire une action défensives !\n\nPour voir la liste des différents coups et action défensives possibles ainsi que pour comprendre comment sa marche :\n=Coups et défenses\n\nVous disposez de 'HP' qui sont dans votre pseudo, une fois que vous êtes à 0 HP, vous mourrez...\n\nVous disposez aussi de 'points de dégâts' qui vous permettent d'infliger des coups plus puissants à vos adversaires, plus vous en aurez, plus vous ferez mal !\n\nVous disposez aussi de 'points d'armure' qui permette de réduire les dégâts reçus que vous subissez !\n\nDans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !")
        .addBlankField(true)
-       .addField("Déroulement de combat, partie 2 :" , "Quand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\nPour savoir quel joueur attaquera un monstre, il suffit d'écrire :\n=Cible du monstre : [Nombre de joueurs dans le combat]\n\nCette commande tire aléatoire le joueur qui se fera attaqué !\n\nLors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez, du moment que c'est noté !\n\nExemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n=[Nom du monstre]")
+       .addField("Déroulement de combat, partie 2 :" , "Quand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\nPour savoir quel joueur attaquera un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\nCette commande tire aléatoire le joueur qui se fera attaqué !\n\nLors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez, du moment que c'est noté !\n\nExemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n=[Nom du monstre]")
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -4391,11 +4405,24 @@ bot.on('message', message => {
         message.channel.send({embed})
       }   
 });
+  
+  
+   
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length)
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Combattant")) {
+     if (talkedRecently.has(message.author.id+101)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
     let X = args.slice(1).join(" : ");
     const A = (Math.floor((X*1.25)*Math.random()+1*(X*1)))
     const embed = new Discord.RichEmbed()
@@ -4406,14 +4433,29 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
-});
+         talkedRecently.add(message.author.id+101);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+101);
+     }, 86400000);
+ }
+      })
+
 
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
                   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Assassin")) {
+     if (talkedRecently.has(message.author.id+102)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
     let X = args.slice(1).join(" : ");
     const A = (Math.floor((X*2)*Math.random()+1*(X*2)))
     const embed = new Discord.RichEmbed()
@@ -4424,14 +4466,29 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
-});
+      talkedRecently.add(message.author.id+102);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+102);
+     }, 86400000);
+ }
+      })
+
 
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
                   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Berserker")) {
+     if (talkedRecently.has(message.author.id+103)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
     let X = args.slice(1).join(" : ");
     const A = (Math.floor((X*1)*Math.random()+1*(X*0.5)))
     const B = A*2
@@ -4443,11 +4500,26 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
-});
+         talkedRecently.add(message.author.id+103);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+103);
+     }, 86400000);
+ }
+      })
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Vindicateur")) {
+     if (talkedRecently.has(message.author.id+104)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4456,14 +4528,29 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
-});
+         talkedRecently.add(message.author.id+104);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+104);
+     }, 86400000);
+ }
+      })
+
 
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
                   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Paladin")) {
+     if (talkedRecently.has(message.author.id+105)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
     let X = args.slice(1).join(" : ");
     const A = X*(3/4)
     const embed = new Discord.RichEmbed()
@@ -4474,12 +4561,27 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
-});
+        talkedRecently.add(message.author.id+105);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+105);
+     }, 86400000);
+ }
+      })
+
 
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chevalier")) {
+     if (talkedRecently.has(message.author.id+106)) {
+      const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+       .setTimestamp()
+       message.channel.send({embed})
+} else {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4488,9 +4590,13 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
-});
-    
+         talkedRecently.add(message.author.id+106);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+106);
+     }, 86400000);
+ }
+      })
+
     
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Caractéristiques")) {
@@ -4632,7 +4738,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .addField("Le cristal, partie 1 :" , "Dans le monde de SAO, vous possèdez au dessus de votre personne, un cristal avec une couleur qui signifie quelque chose\n\nLe cristal vert : vous êtes un honnête joueur, n'ayant pas commis quelque chose d'illégal !\n\nLe cristal orange : vous êtes un joueur dont les gens se méfient, car vous pouvez très bien avoir de mauvaises intentions !\n\nLe cristal rouge : vous êtes ce que l'on nomme un 'PK' signifiant Player Killer, vous êtes un meurtrier qui n'hésite pas à tué, à menacé, à tous faire pour votre intêret sans aucune pitié !")
         .addBlankField(true)
-        .addField("Le cristal, partie 2 :" , "Pour acquérir le cristal orange, vous devez avoir infligé des dégâts à un joueur ou l'avoir menacé ou même volé\n\nPour acquérir le cristal rouge, vous devez avoir tué un joueur ou du moins, que ce soit votre coup final qui achève un joueur, si vous faites trop de meurtres, votre cristal deviendra noir...\n\nPeux importe la couleur de votre cristal, vous pouvez aller en prison, cependant il existe une règle :\n\nUn joueur cristal vert qui attaque un joueur cristal orange, deviendra lui même cristal orange !\n\nUn joueur cristal vert qui attaque un joueur cristal rouge, ne deviendra pas orange, tous les joueurs ont droit de tué un joueur cristal rouge à vue sans que le cristal vert d'un joueur change !")
+        .addField("Le cristal, partie 2 :" , "Pour acquérir le cristal orange, vous devez avoir frapper un joueur que ce soit avec une arme ou à mains nues ou l'avoir menacé oralement de mort ou l'avoir voler ou même l'avoir emmener de force quelque part comme une séquestration\n\nPour acquérir le cristal rouge, vous devez avoir tué un joueur ou du moins, que ce soit votre coup final qui achève un joueur, si vous faites trop de meurtres, votre cristal deviendra noir...\n\nPeux importe la couleur de votre cristal, vous pouvez aller en prison si vous méritez une sanction cependant il existe une règle :\n\nUn joueur cristal vert qui attaque un joueur cristal orange, deviendra lui même cristal orange !\n\nUn joueur cristal vert qui attaque un joueur cristal rouge, ne deviendra pas orange, tous les joueurs ont droit de tué un joueur cristal rouge à vue sans que le cristal vert d'un joueur change !")
         .setTimestamp()
         message.channel.send({embed})
       }   
@@ -4793,7 +4899,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("La regénération :" , "Lorsque vous êtes en ville, vous récupérez vos HP progressivement par heure, il suffira d'écrire toutes les heures :\n\n=Régénération au bout d'une heure : [Vos HP max]")
+       .addField("La regénération :" , "Lorsque vous êtes en ville, vous récupérez vos HP progressivement, il suffira d'écrire :\n\n=Régénération : [Vos HP max]")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -4913,7 +5019,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Les métiers :" , "Vous avez le droit d'avoir un métier en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n\nLes niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\nNiveau 15 : 2 métiers max !\nNiveau 30 : 3 métiers max !\nNiveau 45 : 4 métiers max !\nNiveau 60 : 5 métiers max !\n\nCes métiers permettent de réduire le temps de création et d'avoir plus de chances de réussir à fabriquer un objet, car parfois vous n'y arriverez pas !\n\nPour obtenir un métier, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voté pour :white_check_mark: ou contre :x: et selon le résultat, vous aurez ou non le métier !\n\nPour faire une annonce, écrivez :\n\n=Annonce : [Votre annonce]")
+       .addField("Les métiers :" , "Vous avez le droit d'avoir un métier en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n\nLes niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\nNiveau 15 : 2 métiers max !\nNiveau 30 : 3 métiers max !\nNiveau 45 : 4 métiers max !\nNiveau 60 : 5 métiers max !\n\nUn métier permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n\nUn métier ne donne pas d'avantages particuliers, mais il permet de facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n\nPour obtenir un métier, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voté pour :white_check_mark: ou contre :x: et selon le résultat, vous aurez ou non le métier !\n\nPour faire une annonce, écrivez :\n\n=Annonce : [Votre annonce]")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -4966,7 +5072,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Les constructions :" , "Il existe une grande zone en ville, permettant de pouvoir acheter des constructions existantes tels que des maisons, des demeures, des magasins, des bars et pleins d'autres batîments allant même jusqu'à un manoir ou à un château !\n\nLes prix d'une construction varie selon votre niveau !\n\nPour consulter les prix d'une construction, écrivez :\n\n=Constructions prix : [Votre niveau]")
+       .addField("Les constructions :" , "Il existe une grande zone en ville, permettant de pouvoir acheter des constructions existantes tels que des maisons, des demeures, des magasins, des bars et pleins d'autres batîments allant même jusqu'à un manoir ou à un château !\n\nLes prix d'une construction varie selon son importance, une maison ne coûtera pas aussi cher qu'un manoir !\n\nUne fois une construction acheter, vous devrez créer un discord avec des salons en guide d'étages, de salles, de lieux, à vous d'aménager et d'imaginer, une fois finis donner le lien de votre discord à un membre du staff qu'il l'affiche dans le salon des constructions !\n\nPour consulter les prix d'une construction, écrivez :\n\n=Constructions prix")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -4982,6 +5088,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
+        .addField("Prix des constructions :" , "Pas encore disponible")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
@@ -4995,8 +5102,8 @@ bot.on('message', message => {
     bot.on('message', message => {
       let cont = message.content.slice(prefix.length).split(" ");
       const args = cont.slice(1);
-      if (message.content.startsWith(prefix + "Cible du monstre")) {
-          let X = args.slice(3).join(" : ");
+      if (message.content.startsWith(prefix + "Ciblage")) {
+          let X = args.slice(1).join(" : ");
           const Joueurs = (Math.floor((X)*Math.random()+1))
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
