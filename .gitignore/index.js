@@ -1676,6 +1676,104 @@ bot.on('message', message => {
 })
 
 
+
+//////////////////////////////////////////////////////////Plaines/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+ 
+
+      
+
+
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Plaines"){
+     const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .setTitle("Plaines :" , "Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !")
+    .addField("Pour combattre :" , "=Plaines combat")
+    .addField("Pour cueillir, niveau 1 minimum requis dans la spécialisation 'Cueilleur' :", "=Plaines cueillir")
+    .addField("Pour chasser, niveau 1 minimum requis dans la spécialisation 'Chasseur' :", "=Plaines chasser")
+    .addField("Pour avoir une quête :", "=Plaines quêtes")
+    .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+//////////////////////////////////////////////////////////Plaines Combat/////////////////////////////////////////////////////////////////////////////////////
+
+                                        bot.on('message', message => {
+                                          if (message.content.startsWith(prefix + "Plaines combat")) {
+                                              const B = (Math.floor((3*(0.50))*Math.random()))
+                                              const C = (Math.floor((3*(0.50))*Math.random()))
+                                              const D = (Math.floor((3*(0.50))*Math.random()))
+                                              const E = (Math.floor((2*(0.85))*Math.random()))
+                                              const F = (Math.floor((2*(0.75))*Math.random()))
+                                               const embed = new Discord.RichEmbed()
+                                               .setAuthor(message.author.username , message.author.avatarURL)
+                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                               .setColor(3447003)
+                                               .addField("Plaines :" , "En marchant dans les plaines, vous rencontrez les ennemis suivants")
+                                               .addField("Renard :" , +B)
+                                               .addField("Sanglier :" , +C)
+                                               .addField("Chien :" , +D)
+                                               .addField("Lapin géant :" , +E)
+                                               .addField("Bandit débutant :" , +F)
+                                               .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+                                               .setTimestamp()
+                                               message.channel.send({embed})
+                                              }})
+
+//////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
+
+
+                                                bot.on('message', message => {
+                                                if (message.content === (prefix) + "Forêt"){
+                                                   const embed = new Discord.RichEmbed()
+                                                   .setAuthor(message.author.username , message.author.avatarURL)
+                                                  .setColor(1447003)
+                                                  .setTitle("Forêt :" , "Bienvenue dans ce lieu habité par des loups dangereux et bien plus !")
+                                                  .addField("Pour combattre :" , "=Forêt combat")
+                                                  .addField("Pour cueillir, niveau 2 minimum requis dans la spécialisation 'Cueilleur' :", "=Forêt cueillir")
+                                                  .addField("Pour chasser, niveau 2 minimum requis dans la spécialisation 'Chasseur' :", "=Forêt chasser")
+                                                  .addField("Pour miner, niveau 1 minimum requis dans la spécialisation 'Mineur' :", "=Forêt miner")
+                                                  .addField("Pour bûcheronner, niveau 1 minimum requis dans la spécialisation 'Bûcheron' :", "=Forêt bûcheronner")
+                                                  .addField("Pour avoir une quête :", "=Forêt quêtes")
+                                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }
+                                              })
+
+//////////////////////////////////////////////////////////Forêt Combat/////////////////////////////////////////////////////////////////////////////////////
+
+                                                bot.on('message', message => {
+                                                if (message.content.startsWith(prefix + "Forêt combat")) {
+                                                    const B = (Math.floor((3*(0.50))*Math.random()))
+                                                    const C = (Math.floor((3*(0.50))*Math.random()))
+                                                    const D = (Math.floor((3*(0.80))*Math.random()))
+                                                    const E = (Math.floor((2*(0.90))*Math.random()))
+                                                    const F = (Math.floor((2*(0.95))*Math.random()))
+                                                     const embed = new Discord.RichEmbed()
+                                                     .setAuthor(message.author.username , message.author.avatarURL)
+                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                     .setColor(3447003)
+                                                     .addField("Forêt :" , "En marchant dans la forêt, vous rencontrez les ennemis suivants")
+                                                     .addField("Loup :" , +B)
+                                                     .addField("Slime :" , +C)
+                                                     .addField("Bandit experimenté :" , +D)
+                                                     .addField("Bandit sombre :" , +E)
+                                                     .addField("Loup de sang :" , +F)
+                                                     .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+                                                     .setTimestamp()
+                                                     message.channel.send({embed})
+                                                    }})
+
+
+
+
 ///////////////////////////////////////////////////////////Réglement//////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
