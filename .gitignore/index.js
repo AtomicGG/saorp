@@ -7447,29 +7447,25 @@ bot.on('message', message => {
 
                                                                                               
 
-                                                                                              bot.on('message', message => {
-                                                                                                if (message.content(prefix + "Ragoût de lapin géant")) {
-                                                                                                  const embed = new Discord.RichEmbed()
-                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                     .setColor(3447003)
-                                                                                                     .addField("Ragoût de lapin géant :" , "C'est un ragoût d'une bonne qualité constitué de viande de lapin géant et de persil mais très utile pour les débutants !")
-                                                                                                     .addField("Niveau minimum requis pour l'utiliser' :" , "3")
-                                                                                                     .addField("Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet :" , "2")
-                                                                                                     .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 viande de lapin géant, 4 persil")
-                                                                                                     .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "4")
-                                                                                                     .addField("Prix d'achat :" , "80 cols")
-                                                                                                     .addField("Prix de revente :" , "40 cols")
-                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de lapin géant")
-                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                      .setTimestamp()
-                                                                                                      message.channel.send({embed})
-                                                                                                    }   
-                                                                                                  });
+                                                                                                      bot.on('message', message => {
+                                                                                                        const HP = (Math.floor((11)*Math.random()+10))
+                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de lapin")) {
+                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                 .setColor(3447003)
+                                                                                                                 .addField("Ragoût de lapin :" , "Vous venez d'acheter ou de fabriquer cet objet !")
+                                                                                                                 .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
+                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                  .setTimestamp()
+                                                                                                                  message.channel.send({embed})
+                                                                                                                }   
+                                                                                                              });
+                    
 
                                                                                                   bot.on('message', message => {
                                                                                                     const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                        if (message.content(prefix + "Achat/fabrication du ragoût de lapin géant")) {
+                                                                                                    if (message.content === prefix + "Achat/fabrication du ragoût de lapin géant") {
                                                                                                           const embed = new Discord.RichEmbed()
                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7481,6 +7477,7 @@ bot.on('message', message => {
                                                                                                               message.channel.send({embed})
                                                                                                             }   
                                                                                                           });
+                
                 
 
                                                                                                   bot.on('message', message => {
@@ -7936,21 +7933,20 @@ bot.on('message', message => {
 
 
                   bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Viande de lapin géant")) {
+                    if (message.content === prefix + "Viande de lapin géant") {
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                          .setColor(3447003)
                          .addField("Viande de lapin géant :" , "C'est une viande assez étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
-                         .addField("Prix d'achat :" , "20 cols")
-         .addField("Prix de revente :" , "10 cols")
+                         .addField("Prix d'achat :" , "x cols")
+         .addField("Prix de revente :" , "x cols")
          .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lapin géant")
                           .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
                           .setTimestamp()
                           message.channel.send({embed})
                         }   
                       });
-
 
                        bot.on('message', message => {
     if (message.content.startsWith(prefix + "Viande de loup")) {
