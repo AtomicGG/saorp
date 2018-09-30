@@ -3473,6 +3473,12 @@ bot.on('message', message => {
        .addField("Mort :" , "Permet d'apprendre le système de mort !\n=Mort")
        .addBlankField(true)
        .addField("Menus :" , "Permet d'apprendre le système de menus !\n=Menus")
+    .addBlankField(true)
+       .addField("Dirigeant :" , "Permet d'apprendre le système de dirigeant !\n=Dirigeant")
+    .addBlankField(true)
+       .addField("Garde :" , "Permet d'apprendre le système de garde !\n=Garde")
+    .addBlankField(true)
+       .addField("Menus :" , "Permet d'apprendre le système de mercenaire !\n=Mercenaire")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -6052,7 +6058,7 @@ bot.on('message', message => {
               });
 
       bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Epaulières en peau arraché")) {
+        if (message.content.startsWith(prefix + "Épaulières en peau arraché")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6092,7 +6098,7 @@ bot.on('message', message => {
           
 
           bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Epaulières en peau résistante")) {
+            if (message.content.startsWith(prefix + "Épaulières en peau résistante")) {
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
