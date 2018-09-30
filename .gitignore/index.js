@@ -7462,10 +7462,29 @@ bot.on('message', message => {
                                                                                                                 }   
                                                                                                               });
                     
+ bot.on('message', message => {
+                                                                                                if (message.content == prefix + "Ragoût de lapin géant") {
+                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                     .setColor(3447003)
+                                                                                                     .addField("Ragoût de lapin géant :" , "C'est un ragoût d'une bonne qualité constitué de viande de lapin géant et de persil mais très utile pour les débutants !")
+                                                                                                     .addField("Niveau minimum requis pour l'utiliser' :" , "3")
+                                                                                                     .addField("Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet :" , "2")
+                                                                                                     .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 viande de lapin géant, 4 persil")
+                                                                                                     .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "4")
+                                                                                                     .addField("Prix d'achat :" , "80 cols")
+                                                                                                     .addField("Prix de revente :" , "40 cols")
+                                                                                                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication du ragoût de lapin géant")
+                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                      .setTimestamp()
+                                                                                                      message.channel.send({embed})
+                                                                                                    }   
+                                                                                                  });
 
                                                                                                   bot.on('message', message => {
                                                                                                     const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                    if (message.content === prefix + "Achat/fabrication du ragoût de lapin géant") {
+                                                                                                    if (message.content == prefix + "Achat/fabrication du ragoût de lapin géant") {
                                                                                                           const embed = new Discord.RichEmbed()
                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
