@@ -1691,7 +1691,7 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
 
- bot.on('message', message => {
+                                                bot.on('message', message => {
                                                 if (message.content === (prefix) + "Forêt"){
                                                    const embed = new Discord.RichEmbed()
                                                    .setAuthor(message.author.username , message.author.avatarURL)
@@ -1711,7 +1711,7 @@ bot.on('message', message => {
 
 //////////////////////////////////////////////////////////Forêt Combat/////////////////////////////////////////////////////////////////////////////////////
 
- bot.on('message', message => {
+                                                bot.on('message', message => {
                                                 if (message.content.startsWith(prefix + "Forêt combat")) {
                                                     const B = (Math.floor((3*(0.50))*Math.random()))
                                                     const C = (Math.floor((3*(0.50))*Math.random()))
