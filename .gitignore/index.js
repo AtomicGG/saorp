@@ -7448,7 +7448,7 @@ bot.on('message', message => {
                                                                                               
 
                                                                                               bot.on('message', message => {
-                                                                                                if (message.content.startsWith(prefix + "Ragoût de lapin géant")) {
+                                                                                                if (message.content(prefix + "Ragoût de lapin géant")) {
                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7469,7 +7469,7 @@ bot.on('message', message => {
 
                                                                                                   bot.on('message', message => {
                                                                                                     const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication du ragoût de lapin géant")) {
+                                                                                                        if (message.content(prefix + "Achat/fabrication du ragoût de lapin géant")) {
                                                                                                           const embed = new Discord.RichEmbed()
                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
