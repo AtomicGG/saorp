@@ -3571,7 +3571,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Quiz :" , "Comment fonctionne globalement le système de cristal ?\nComment fonctionne le système de combat ?\nComment fonctionne le système de spécialisation ?\nComment fonctionne les caractéristiques ?\nComment fonctionne le craft ?\nComment fonctionne le système de bonus d'arme ?\nComment fonctionne le système de coup ?\nComment fonctionne le système de compétence et de particularité")
+       .addField("Quiz :" , "Comment fonctionne le système de cristal ?\n\nComment fonctionne le système de combat ?\n\nComment fonctionne le système de spécialisation ?\n\nComment fonctionne les caractéristiques ?\n\nComment fonctionne le craft ?\n\nComment fonctionne le système de bonus d'arme ?\n\nComment fonctionne le système de coup ?\n\nComment fonctionne le système de compétence et de particularité")
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
