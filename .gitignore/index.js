@@ -6226,7 +6226,7 @@ bot.on('message', message => {
 
                           bot.on('message', message => {
                             const HP = (Math.floor((3)*Math.random()+3))
-                            const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                            const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque rouillé")) {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -6243,7 +6243,7 @@ bot.on('message', message => {
 
                               bot.on('message', message => {
                                 const HP = (Math.floor((3)*Math.random()+3))
-                                const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières rouillées")) {
                                   const embed = new Discord.RichEmbed()
                                   .setAuthor(message.author.username , message.author.avatarURL)
@@ -6260,7 +6260,7 @@ bot.on('message', message => {
 
                                   bot.on('message', message => {
                                     const HP = (Math.floor((3)*Math.random()+3))
-                                    const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                    const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape endommagée")) {
                                       const embed = new Discord.RichEmbed()
                                       .setAuthor(message.author.username , message.author.avatarURL)
@@ -6277,7 +6277,7 @@ bot.on('message', message => {
 
                                       bot.on('message', message => {
                                         const HP = (Math.floor((3)*Math.random()+3))
-                                        const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                        const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                                         if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron rouillé")) {
                                           const embed = new Discord.RichEmbed()
                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -6295,7 +6295,7 @@ bot.on('message', message => {
 
                                           bot.on('message', message => {
                                             const HP = (Math.floor((3)*Math.random()+3))
-                                            const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                            const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets rouillés")) {
                                               const embed = new Discord.RichEmbed()
                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -6313,7 +6313,7 @@ bot.on('message', message => {
 
                                               bot.on('message', message => {
                                                 const HP = (Math.floor((3)*Math.random()+3))
-                                                const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                                const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture rouillée")) {
                                                   const embed = new Discord.RichEmbed()
                                                   .setAuthor(message.author.username , message.author.avatarURL)
@@ -6331,7 +6331,7 @@ bot.on('message', message => {
 
                                                   bot.on('message', message => {
                                                     const HP = (Math.floor((3)*Math.random()+3))
-                                                    const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                                    const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières rouillées")) {
                                                       const embed = new Discord.RichEmbed()
                                                       .setAuthor(message.author.username , message.author.avatarURL)
@@ -6348,7 +6348,7 @@ bot.on('message', message => {
 
                                                       bot.on('message', message => {
                                                         const HP = (Math.floor((3)*Math.random()+3))
-                                                        const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                                        const Défense = (Math.floor((2-(0.50))*Math.random()+1))
                                                         if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes rouillées")) {
                                                           const embed = new Discord.RichEmbed()
                                                           .setAuthor(message.author.username , message.author.avatarURL)
