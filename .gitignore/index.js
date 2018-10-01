@@ -3554,11 +3554,29 @@ bot.on('message', message => {
        .addField("Garde :" , "Permet d'apprendre le système de garde !\n=Garde")
     .addBlankField(true)
        .addField("Menus :" , "Permet d'apprendre le système de mercenaire !\n=Mercenaire")
+      .addBlankField(true)
+       .addField("Roll :" , "Permet d'apprendre le système de Roll !\n=Le roll")
+    .addBlankField(true)
+       .addField("Quiz :" , "Pour être sûr que vous avez compris l'essentiel du fonctionnement du RP !\n=Quiz")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
       }   
 });
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Quiz")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Quiz :" , "Comment fonctionne globalement le système de cristal ?\nComment fonctionne le système de combat ?\nComment fonctionne le système de spécialisation ?\nComment fonctionne les caractéristiques ?\nComment fonctionne le craft ?\nComment fonctionne le système de bonus d'arme ?\nComment fonctionne le système de coup ?\nComment fonctionne le système de compétence et de particularité")
+        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
 
 
 
@@ -4464,7 +4482,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Déroulement de combat, partie 1 :" , "Le système de combat est avant tout un système par tour, c'est à dire que chaque personne et monstre pourra agir que pendant son tour de jeu !\n\nIl faut s'avoir que, dans un combat lorsque c'est votre tour, vous aurez droit à une attaque ou une action, mais si un joueur ou un monstre vous attaque, vous aurez droit de faire une action défensives !\n\nPour voir la liste des différents coups et action défensives possibles ainsi que pour comprendre comment sa marche :\n=Coups et défenses\n\nVous disposez de 'HP' qui sont dans votre pseudo, une fois que vous êtes à 0 HP, vous mourrez...\n\nVous disposez aussi de 'points de dégâts' qui vous permettent d'infliger des coups plus puissants à vos adversaires, plus vous en aurez, plus vous ferez mal !\n\nVous disposez aussi de 'points d'armure' qui permette de réduire les dégâts reçus que vous subissez !\n\nDans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !")
+       .addField("Déroulement de combat, partie 1 :" , "Le système de combat est avant tout un système par tour, c'est à dire que chaque personne et monstre pourra agir que pendant son tour de jeu !\n\nIl faut s'avoir que, dans un combat lorsque c'est votre tour, vous aurez droit à une attaque ou une action, mais si un joueur ou un monstre vous attaque, vous aurez droit de faire une action défensives !\n\nPour voir la liste des différents coups et action défensives possibles ainsi que pour comprendre comment sa marche :\n=Coups et défenses\n\nVous disposez de 'HP' qui sont dans votre pseudo, une fois que vous êtes à 0 HP, vous mourrez...\n\nVous disposez aussi de 'points de dégâts' qui vous permettent d'infliger des coups plus puissants à vos adversaires, plus vous en aurez, plus vous ferez mal !\n\nVous disposez aussi de 'points d'armure' qui permette de réduire les dégâts reçus que vous subissez, si un ennemis inflige 10 points de dégâts et que vous avez 4 points de défense, vous perdrez que 6 HP !\n\nDans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !")
        .addBlankField(true)
        .addField("Déroulement de combat, partie 2 :" , "Quand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\nPour savoir quel joueur attaquera un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\nCette commande tire aléatoire le joueur qui se fera attaqué !\n\nLors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez, du moment que c'est noté !\n\nExemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n=[Nom du monstre]")
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
