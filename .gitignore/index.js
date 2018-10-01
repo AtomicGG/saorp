@@ -926,7 +926,7 @@ bot.on('message', message => {
                 .addField("Pierre de poison faible :" , +C)
                 .addField("Casque rouillé :" , +H)
                 .addField("Epaulières rouillées :" , +I)
-                .addField("Cape endommagé :" , +J)
+                .addField("Cape endommagée :" , +J)
                 .addField("Plastron rouillé :" , +K)
                 .addField("Gantelets rouillés :" , +L)
                 .addField("Ceinture rouillée :" , +M)
