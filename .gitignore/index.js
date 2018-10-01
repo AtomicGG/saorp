@@ -6022,6 +6022,313 @@ bot.on('message', message => {
                                
   //////////////////////////////////////////////////////////////////OBJETS A ACHETER OU CRAFT///////////////////////////////////////////////////////////////////////    
 
+          
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Casque rouillé")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Casque rouillé :" , "C'est un casque toucher par l'érosion constitué de cuivre médiocre !")
+             .addField("Niveau minimum requis pour le porter :" , "6")
+             .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+             .addField("Matériaux nécessaires pour fabriquer cet objet :" , "8 cuivre médiocre")
+             .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+             .addField("Prix d'achat :" , "160 cols")
+             .addField("Prix de revente :" , "80 cols")
+             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du casque en peau résistante")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Épaulières rouillées")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                 .setColor(3447003)
+                 .addField("Épaulières rouillées :" , "Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
+                 .addField("Niveau minimum requis pour le porter :" , "6")
+                 .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+                 .addField("Matériaux nécessaires pour fabriquer cet objet :" , "8 cuivre médiocre")
+                 .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+                 .addField("Prix d'achat :" , "160 cols")
+                 .addField("Prix de revente :" , "80 cols")
+                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des épaulières en peau résistante")
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Cape endommagée")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField("Cape endommagée :" , "C'est une cape déchiré au fil du temps constitué de cuivre médiocre et de peau !")
+                     .addField("Niveau minimum requis pour le porter :" , "6")
+                     .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "2")
+                     .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 peau de loup")
+                     .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
+                     .addField("Prix d'achat :" , "160 cols")
+                     .addField("Prix de revente :" , "80 cols")
+                     .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la cape endommagée")
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+                    if (message.content.startsWith(prefix + "Plastron rouillé")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField("Plastron rouillé :" , "Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
+                         .addField("Niveau minimum requis pour le porter :" , "6")
+                         .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+                         .addField("Matériaux nécessaires pour fabriquer cet objet :" , "8 cuivre médiocre")
+                         .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+                         .addField("Prix d'achat :" , "160 cols")
+                         .addField("Prix de revente :" , "80 cols")
+                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte du plastron rouillé")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
+
+
+                      
+                  bot.on('message', message => {
+                    if (message.content.startsWith(prefix + "Gantelets rouillés")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField("Gantelets rouillés :" , "Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
+                         .addField("Niveau minimum requis pour le porter :" , "6")
+                         .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+                         .addField("Matériaux nécessaires pour fabriquer cet objet :" , "8 cuivre médiocre")
+                         .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+                         .addField("Prix d'achat :" , "160 cols")
+                         .addField("Prix de revente :" , "80 cols")
+                         .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des gantelets rouillés")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
+
+
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Ceinture rouillée")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField("Ceinture rouillée :" , "Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
+                             .addField("Niveau minimum requis pour le porter :" , "6")
+                             .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+                             .addField("Matériaux nécessaires pour fabriquer cet objet :" , "8 cuivre médiocre")
+                             .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+                             .addField("Prix d'achat :" , "160 cols")
+                             .addField("Prix de revente :" , "80 cols")
+                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de la ceinture rouillée rouillés")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+
+                          
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Jambières rouillées")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField("Jambières rouillées :" , "Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
+                             .addField("Niveau minimum requis pour le porter :" , "6")
+                             .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+                             .addField("Matériaux nécessaires pour fabriquer cet objet :" , "8 cuivre médiocre")
+                             .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+                             .addField("Prix d'achat :" , "160 cols")
+                             .addField("Prix de revente :" , "80 cols")
+                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des jambières rouillées")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+
+
+                          
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Bottes rouillées")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField("Bottes rouillées :" , "Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
+                             .addField("Niveau minimum requis pour le porter :" , "6")
+                             .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+                             .addField("Matériaux nécessaires pour fabriquer cet objet :" , "8 cuivre médiocre")
+                             .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+                             .addField("Prix d'achat :" , "160 cols")
+                             .addField("Prix de revente :" , "80 cols")
+                             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des bottes rouillées")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+    
+
+                          bot.on('message', message => {
+                            const HP = (Math.floor((3)*Math.random()+3))
+                            const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque rouillé")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Casque rouillé :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                 .addField("HP :" , +HP)
+                                 .addField("Points d'armure :" , +Défense)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+                              bot.on('message', message => {
+                                const HP = (Math.floor((3)*Math.random()+3))
+                                const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières rouillées")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField("Epaulières rouillées :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                     .addField("HP :" , +HP)
+                                     .addField("Points d'armure :" , +Défense)
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+
+                                  bot.on('message', message => {
+                                    const HP = (Math.floor((3)*Math.random()+3))
+                                    const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape endommagée")) {
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField("Cape endommagée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                         .addField("HP :" , +HP)
+                                         .addField("Points d'armure :" , +Défense)
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+
+                                      bot.on('message', message => {
+                                        const HP = (Math.floor((3)*Math.random()+3))
+                                        const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron rouillé")) {
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField("Plastron rouillé :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                             .addField("HP :" , +HP)
+                                             .addField("Points d'armure :" , +Défense)
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
+
+
+                                          bot.on('message', message => {
+                                            const HP = (Math.floor((3)*Math.random()+3))
+                                            const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets rouillés")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField("Gantelets rouillés :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                                 .addField("HP :" , +HP)
+                                                 .addField("Points d'armure :" , +Défense)
+                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
+
+
+                                              bot.on('message', message => {
+                                                const HP = (Math.floor((3)*Math.random()+3))
+                                                const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture rouillée")) {
+                                                  const embed = new Discord.RichEmbed()
+                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                     .setColor(3447003)
+                                                     .addField("Ceinture rouillée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                                     .addField("HP :" , +HP)
+                                                     .addField("Points d'armure :" , +Défense)
+                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})
+                                                    }   
+                                                  });
+
+
+                                                  bot.on('message', message => {
+                                                    const HP = (Math.floor((3)*Math.random()+3))
+                                                    const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières rouillées")) {
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                         .setColor(3447003)
+                                                         .addField("Jambières rouillées :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                                         .addField("HP :" , +HP)
+                                                         .addField("Points d'armure :" , +Défense)
+                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})
+                                                        }   
+                                                      });
+
+                                                      bot.on('message', message => {
+                                                        const HP = (Math.floor((3)*Math.random()+3))
+                                                        const Défense = (Math.floor((2*(0.50))*Math.random()+1))
+                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes rouillées")) {
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                             .setColor(3447003)
+                                                             .addField("Bottes rouillées :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                                             .addField("HP :" , +HP)
+                                                             .addField("Points d'armure :" , +Défense)
+                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed})
+                                                            }   
+                                                          });
+
   
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Casque en peau arraché")) {
