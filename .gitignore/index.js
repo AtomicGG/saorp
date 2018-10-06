@@ -3564,6 +3564,59 @@ bot.on('message', message => {
       }   
 });
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Roll")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("Les rolls :" , "Un roll est un jet de dé qui permet de tirer un chiffre de 1 à 100, déterminant si oui ou non vous réussissez une action !\n\nEn dessous de 50, vous ratez votre action, mais 50 ou plus, vous réussissez votre action !\n\nIl est possible que parfois, vous avez un bonus selon la situation pour une action, si par exemple vous avez un bonus de 10 pour la discrétion, et que vous marchez discrètement derrière quelqu'un, vous avez droit à votre bonus !\n\nVoici la commande à faire pour effectuez un roll :\n\n=Roll : [Le bonus ou non]\n\nSi vous faites une action sans bonus, c'est =Roll : 0\n\nSi vous faites une action avec l'exemple précedent, un bonus de 10, c'est =Roll : 10
+        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Mercenaire")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("Les mercenaires :" , "Les mercenaires sont différents des gardes, ils ne sont pas obligés d'aider les autres joueurs mais ce ne sont pas des PK pour autant !\n\nLeur but est d'effectuer les différents missions qui leur sont confier ou alors d'aider les joueur pour des services contre de l'argent !")
+        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Garde")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("Le garde :" , "Les gardes ont pour objectif de sauver la vie des autres joueurs même s'ils doivent donner leur vie !\n\nUn chef des garde peux-être désigné pour commander les gardes et leur activités, mais le dirigeant reste le principal commandant des gardes !\n\nVotre objectif principal est non seulement de sauver les joueurs, de mettre les criminels en prison, mais aussi de protéger le dirigeant actuel le plus possible !")
+        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Dirigeant")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("Le dirigeant :" , "Un dirigeant est désigné par les votes ou par des épreuves selon le contexte, il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville et des joueurs !\n\nPour être dirigeant, il suffit d'avoir plus de votes pour que les autres candidats, et si un dirigeant est détesté de tous, vous avez possibilité de vous rebellez !")
+        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Quiz")) {
