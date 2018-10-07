@@ -9147,7 +9147,7 @@ bot.on('message', message => {
                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                             .setColor(3447003)
                                             .addField("Récompenses :" , "Suite à votre meurtre sur un joueur, vous obtenez :")
-      .addField("Cols :" , +Cols " % de ses cols")
+      .addField("Cols :" , +Cols+ " % de ses cols")
       .addField("Casque du joueur :" , +B)
       .addField("Epaulières du joueur :" , +C)
       .addField("Cape du joueur :" , +D)
