@@ -3557,6 +3557,8 @@ bot.on('message', message => {
       .addBlankField(true)
        .addField("Roll :" , "Permet d'apprendre le système de Roll !\n=Le roll")
     .addBlankField(true)
+       .addField("Prison :" , "Permet d'apprendre le système de prison !\n=Prison")
+    .addBlankField(true)
        .addField("Quiz :" , "Pour être sûr que vous avez compris l'essentiel du fonctionnement du RP !\n=Quiz")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
@@ -3570,7 +3572,20 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Les rolls :" , "Un roll est un jet de dé qui permet de tirer un chiffre de 1 à 100, déterminant si oui ou non vous réussissez une action !\n\nEn dessous de 50, vous ratez votre action, mais 50 ou plus, vous réussissez votre action !\n\nIl est possible que parfois, vous avez un bonus selon la situation pour une action, si par exemple vous avez un bonus de 10 pour la discrétion, et que vous marchez discrètement derrière quelqu'un, vous avez droit à votre bonus !\n\nVoici la commande à faire pour effectuez un roll :\n\n=Roll : [Le bonus ou non]\n\nSi vous faites une action sans bonus, c'est =Roll : 0\n\nSi vous faites une action avec l'exemple précedent, un bonus de 10, c'est =Roll : 10
+    .addField("Les rolls :" , "Un roll est un jet de dé qui permet de tirer un chiffre de 1 à 100, déterminant si oui ou non vous réussissez une action !\n\nEn dessous de 50, vous ratez votre action, mais 50 ou plus, vous réussissez votre action !\n\nIl est possible que parfois, vous avez un bonus selon la situation pour une action, si par exemple vous avez un bonus de 10 pour la discrétion, et que vous marchez discrètement derrière quelqu'un, vous avez droit à votre bonus !\n\nVoici la commande à faire pour effectuez un roll :\n\n=Roll : [Le bonus ou non]\n\nSi vous faites une action sans bonus, c'est =Roll : 0\n\nSi vous faites une action avec l'exemple précedent, un bonus de 10, c'est =Roll : 10")
+        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Prison")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("La prison :" , "Lorsque vous êtes une menace ou que vous faites des actions interdites, les gardes peuvent vous mettre en prison !\n\nSelon la couleur de votre cristal, votre peine et la conséquence sera plus ou moins importante !\n\nSi vous êtes un cristal vert : un garde pourra vous mettre en prison au maximum 12 H, si vous voulez immédiatement sortir, vous devrez payer 10 % de vos cols total !\n\nSi vous êtes un cristal orange : un garde pourra vous mettre en prison au maximum 48 H, si vous voulez immédiatement sortir, vous devrez payer 25 % de vos cols total !\n\nSi vous êtes un cristal rouge : un garde pourra vous mettre en prison au maximum 1 semaine, si vous voulez immédiatement sortir, vous devrez payer 50 % de vos cols total !\n\nA noter qu'une fois que vous allez ne prison, que vous avez payer ou attendus, votre cristal redeviendra vert !
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3596,7 +3611,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Le garde :" , "Les gardes ont pour objectif de sauver la vie des autres joueurs même s'ils doivent donner leur vie !\n\nUn chef des garde peux-être désigné pour commander les gardes et leur activités, mais le dirigeant reste le principal commandant des gardes !\n\nVotre objectif principal est non seulement de sauver les joueurs, de mettre les criminels en prison, mais aussi de protéger le dirigeant actuel le plus possible !")
+    .addField("Le garde :" , "Les gardes ont pour objectif de sauver la vie des autres joueurs même s'ils doivent donner leur vie !\n\nUn chef des garde peux-être désigné pour commander les gardes et leur activités, mais le dirigeant reste le principal commandant des gardes !\n\nVotre objectif principal est non seulement de sauver les joueurs, de mettre les criminels en prison, mais aussi de protéger le dirigeant actuel le plus possible !\n\nPour un garde, il est possible de mettre un cristal rouge en prison ou alors de l'éxecuter publiquement s'il devient vraiment perturbant pour la ville !")
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3624,7 +3639,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Quiz :" , "Comment fonctionne le système de cristal ?\n\nComment fonctionne le système de combat ?\n\nComment fonctionne le système de spécialisation ?\n\nComment fonctionne les caractéristiques ?\n\nComment fonctionne le craft ?\n\nComment fonctionne le système de bonus d'arme ?\n\nComment fonctionne le système de coup ?\n\nComment fonctionne le système de compétence et de particularité")
+       .addField("Quiz :" , "Comment fonctionne le système de cristal ?\n\nComment fonctionne le système de roll ?\n\nComment fonctionne le système de combat ?\n\nComment fonctionne le système de spécialisation ?\n\nComment fonctionne les caractéristiques ?\n\nComment fonctionne le craft ?\n\nComment fonctionne le système de bonus d'arme ?\n\nComment fonctionne le système de coup ?\n\nComment fonctionne le système de prison ?\n\nComment fonctionne le système de dirigeant, mercenaire et garde ?\n\nComment fonctionne le système de compétence et de particularité")
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
