@@ -5103,18 +5103,6 @@ bot.on('message', message => {
       }   
     });
     
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Menus")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Les menus :" , "Vous verrez plusieurs menus [salons] qui ont chacun leur utilité qui sont :\n\nLe menu d'objets :")
-        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-        .setTimestamp()
-        message.channel.send({embed})
-      }   
-    });
     
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Crafts")) {
