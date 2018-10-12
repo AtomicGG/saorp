@@ -3555,7 +3555,7 @@ bot.on('message', message => {
     .addBlankField(true)
        .addField("Mercenaire :" , "Permet d'apprendre le système de mercenaire !\n=Mercenaire")
       .addBlankField(true)
-       .addField("Roll :" , "Permet d'apprendre le système de Roll !\n=Le roll")
+       .addField("Rolls :" , "Permet d'apprendre le système de Rolls !\n=Le rolls")
     .addBlankField(true)
        .addField("Prison :" , "Permet d'apprendre le système de prison !\n=Prison")
     .addBlankField(true)
@@ -3597,7 +3597,7 @@ bot.on('message', message => {
     });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Roll")) {
+  if (message.content.startsWith(prefix + "Rolls")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
