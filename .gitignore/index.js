@@ -2043,8 +2043,8 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("│ Votre action est un échec avec un score de :" , "│► " +Roll)
-             .setImage("https://i.ytimg.com/vi/2NrGCG2FYNk/maxresdefault.jpg")
+             .addField("Votre action est un échec avec un score de :" , +Roll)
+             .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
              .setTimestamp()
              message.channel.send({embed})
             }
@@ -2053,8 +2053,8 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("│ Votre action est une réussite avec un score de :" , "│► " +Roll)
-               .setImage("http://www.amvcloud.com/uploads/thumbs/95e465080-1.jpg")
+               .addField("Votre action est une réussite avec un score de :" , +Roll)
+               .setImage("https://media.giphy.com/media/Cb8ql90aZJYqs/giphy.gif")
                .setTimestamp()
                message.channel.send({embed})
             }
