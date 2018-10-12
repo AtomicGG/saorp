@@ -4547,7 +4547,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Les objets :\n\n" , "Il existe un tas d'objets dans ce monde, que ce soit des équipements, des armes, des potions, des parchemins et bien d'autres choses.\n\nCes objets ont tous une signification particulières et leur fonction !\n\nPour avoir plus d'informations concernant un objet :\n=[Nom de l'objet]\n\n")
+       .addField("Les objets :\n\n" , "Il existe un tas d'objets dans ce monde, que ce soit des équipements, des armes, des potions, des parchemins et bien d'autres choses.\n\nCes objets ont tous une signification particulières et leur fonction !\n\nPour avoir plus d'informations concernant un objet :\n=[Nom de l'objet]\n\nLorsque vous gagnez ou fabriquer un objet, je vous conseille de l'écrire sous la forme [HP / Défense / Dégâts]\n\nPar exemple : Casque en peau arraché [HP : 2 / Défense : 0 / Dégâts : 0] ou même directement : Casque en peau arraché [2/0/0]")
         .setImage("https://vignette.wikia.nocookie.net/powerlisting/images/3/39/Elucidator.png/revision/latest?cb=20150111073313")
         .setTimestamp()
         message.channel.send({embed})
