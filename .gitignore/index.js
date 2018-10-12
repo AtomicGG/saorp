@@ -3553,11 +3553,13 @@ bot.on('message', message => {
     .addBlankField(true)
        .addField("Garde :" , "Permet d'apprendre le système de garde !\n=Garde")
     .addBlankField(true)
-       .addField("Menus :" , "Permet d'apprendre le système de mercenaire !\n=Mercenaire")
+       .addField("Mercenaire :" , "Permet d'apprendre le système de mercenaire !\n=Mercenaire")
       .addBlankField(true)
        .addField("Roll :" , "Permet d'apprendre le système de Roll !\n=Le roll")
     .addBlankField(true)
        .addField("Prison :" , "Permet d'apprendre le système de prison !\n=Prison")
+    .addBlankField(true)
+       .addField("Zones :" , "Permet d'apprendre le système de zone !\n=Zones")
     .addBlankField(true)
        .addField("Quiz :" , "Pour être sûr que vous avez compris l'essentiel du fonctionnement du RP !\n=Quiz")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -3565,6 +3567,34 @@ bot.on('message', message => {
         message.channel.send({embed})
       }   
 });
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Menus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("Les menus, partie 1 :" , "Il existe plusieurs menus [salon sur le discord] permettant d'écrire des choses à l'intérieur :\n\nLe menu cimetière permettant d'écrire lorsque vous mourrez !\n\nLe menu des annonces permettant de faire vos annonces de tout types que ce soit pour un métier, une offre, une demande d'aide...\n\nLe menu d'infos sur les guildes permettant de mettre les infos de chaque guildes, chaque membres, chaques rôles et autres infos !\n\nLe menu des métiers permettant d'écrire qui possède quel métier pour une meilleur organisation ! [Effacer votre message si votre personnage meurt]\n\nLe menu des crafts permettant d'écrire tous ce que vous fabriquez à l'intérieur et non dans les salons RP !")
+      .addField("Les menus, partie 2 :" , "Le menu de régénération permettant de faire votre regénération naturel en ville !\n\nLe menu des objets permettant d'écrire les commandes de récompenses à l'intérieur lorsque vous gagnez des objets sur des monstres ou dans des activités !\n\nLe menu des MP permettant d'ajouter quelqu'un en amis ainsi que de pouvoir envoyer des messages à vos amis ou votre guilde !\n\nLe menu des quêtes permettant de parfois reçevoir une quête spécial qui ne restera que peu de temps !")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Zones")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("Les zones :" , "Quand vous entrez dans une zone et que vous voulez voir les activités ainsi que ce qui se cache à l'intérieur, vous pourrez écrire :\n\n=[Nom de la zone]\n\nPar exemple si vous arrivez dans les plaines pour découvrir le lieu, écrivez =Plaines !\n\nLes zones actuellement disponible sont :\n\n=Plaines\n=Forêt")
+        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Roll")) {
