@@ -4077,7 +4077,7 @@ bot.on('message', message => {
                         bot.on('message', message => {
                           let cont = message.content.slice(prefix.length).split(" ");
                           const args = cont.slice(1);
-                          if (message.content.startsWith(prefix + "Sleeping silent")) {
+                          if (message.content.startsWith(prefix + "Sleeping silence")) {
                             if (talkedRecently.has(message.author.id+6)) {
                               const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
