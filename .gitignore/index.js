@@ -622,7 +622,7 @@ bot.on('message', message => {
               .setColor(3447003)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setTitle("Slime :" , "Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
-              .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c8/Wolf.png/revision/latest?cb=20140308115118")
+              .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-slime-5ac1b13e54af51.5535441915226432623469.png")
               .addField("Point de vie :" , "60")
               .addField("Points de dégâts" , "10")
               .addField("Pour engager le combat :" , "=Slime attaque")
