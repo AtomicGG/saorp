@@ -76,13 +76,26 @@ bot.on("message", (message) => {
         .addBlankField(true)
         .addField("Pour effectuer un blocage :" , "=Blocage sans bonus : [Dégâts de l'attaque moins vos points d'armure]\n=Blocage avec bonus de 5 : [Dégâts de l'attaque moins vos points d'armure]\n=Blocage avec bonus de 10 : [Dégâts de l'attaque moins vos points d'armure]\n=Blocage avec bonus de 15 : [Dégâts de l'attaque moins vos points d'armure]")
         .addBlankField(true)
+        .addField("Pour savoir ce que vous débloquez selon le niveau :" , "=Coups et défenses apprentissage")
+           .addBlankField(true)
+        .addField("Pour la suite des coups et défenses possibles :" , "=Coups et défenses 2")
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})}
+      }
+    )
+
+  bot.on('message', message => {
+      if (message.content === (prefix) + "Coups et défenses 2"){
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .addField("Pour effectuer une parade :" , "=Parade sans bonus : [Dégâts de l'attaque]\n=Parade avec bonus de 5 : [Dégâts de l'attaque]\n=Parade avec bonus de 10 : [Dégâts de l'attaque]\n=Parade avec bonus de 15 : [Dégâts de l'attaque]")
         .addBlankField(true)
         .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "=Interception sans bonus : [Dégâts de l'attaque]\n=Interception avec bonus de 5 : [Dégâts de l'attaque]")
          .addBlankField(true)
         .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "=Fuite sans bonus\n=Fuite avec bonus de 10")
-        .addBlankField(true)
-        .addField("Pour savoir ce que vous débloquez selon le niveau :" , "=Coups et défenses apprentissage")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})}
