@@ -1849,7 +1849,7 @@ bot.on('message', message => {
                                                      .addField("Forêt :" , "En marchant dans la forêt, vous rencontrez les ennemis suivants")
                                                      .addField("Loup :" , +B)
                                                      .addField("Slime :" , +C)
-                                                     .addField("Bandit experimenté :" , +D)
+                                                     .addField("Bandit expérimenté :" , +D)
                                                      .addField("Bandit sombre :" , +E)
                                                      .addField("Loup de sang :" , +F)
                                                      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
