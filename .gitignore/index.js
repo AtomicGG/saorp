@@ -3306,7 +3306,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous réussissez votre parade qui inflige :" , "│►" +A*1.75+ " points de dégâts")
+        .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -3337,7 +3337,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous réussissez votre parade qui inflige :" , "│►" +A*1.75+ " points de dégâts")
+                .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -3368,7 +3368,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous réussissez votre parade qui inflige :" , "│►" +A*1.75+ " points de dégâts")
+                .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -3399,13 +3399,36 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous réussissez votre parade qui inflige :" , "│►" +A*1.75+ " points de dégâts")
+         .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
         }
       }
   });
+
+
+
+  
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Parade réussis")) {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats*1.25)*Math.random()+1.25*(degats)))
+      const B = (Math.floor((100)*Math.random()+1))
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+         .addField("Votre parade inflige :" , +A+ " points de dégâts")
+         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
+         .setTimestamp()
+         message.channel.send({embed})
+      }
+  });
+
+
 
 
 
