@@ -3463,7 +3463,7 @@ if (message.content.startsWith(prefix + "Interception avec bonus de 5")) {
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
      .addField("│Vous ratez votre interception..." , "│► Dommage pour vous")
-     .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985)
+     .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
      .setTimestamp()
      message.channel.send({embed})
     }
