@@ -1675,7 +1675,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((Dégâts/1.5)*Math.random()+(Dégâts/1.5)))
+     const C = (Math.floor((61)*Math.random()+40))
      if (B < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
