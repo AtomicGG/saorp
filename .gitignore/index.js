@@ -3432,7 +3432,7 @@ if (message.content.startsWith(prefix + "Interception sans bonus")) {
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
      .addField("│Vous ratez votre interception..." , "│► Dommage pour vous")
-     .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+     .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
      .setTimestamp()
      message.channel.send({embed})
     }
@@ -3442,7 +3442,7 @@ if (message.content.startsWith(prefix + "Interception sans bonus")) {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
        .addField("│Vous réussissez votre interception et vous prenez à la place du joueur :" , "│►" +A+ " points de dégâts, le reste des dégâts vont sur le joueur")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
+       .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
        .setTimestamp()
        message.channel.send({embed})
       }
@@ -3473,7 +3473,7 @@ if (message.content.startsWith(prefix + "Interception avec bonus de 5")) {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
        .addField("│Vous réussissez votre interception et vous prenez à la place du joueur :" , "│►" +A+ " points de dégâts, le reste des dégâts vont sur le joueur")
-       .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+       .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
        .setTimestamp()
        message.channel.send({embed})
       }
