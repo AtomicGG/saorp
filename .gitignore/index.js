@@ -3419,6 +3419,133 @@ bot.on('message', message => {
   });
 
 
+bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+if (message.content.startsWith(prefix + "Interception sans bonus")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B < 50){
+     const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("│Vous ratez votre interception..." , "│► Dommage pour vous")
+     .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+     .setTimestamp()
+     message.channel.send({embed})
+    }
+    if (51 < B){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("│Vous réussissez votre interception et vous prenez à la place du joueur :" , "│►" +A+ " points de dégâts, le reste des dégâts vont sur le joueur")
+       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+    }
+});
+
+
+bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+if (message.content.startsWith(prefix + "Interception avec bonus de 5")) {
+ let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B < 45){
+     const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("│Vous ratez votre interception..." , "│► Dommage pour vous")
+     .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985)
+     .setTimestamp()
+     message.channel.send({embed})
+    }
+    if (46 < B){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("│Vous réussissez votre interception et vous prenez à la place du joueur :" , "│►" +A+ " points de dégâts, le reste des dégâts vont sur le joueur")
+       .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+    }
+});
+
+
+bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+if (message.content.startsWith(prefix + "Fuite sans bonus")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B < 70){
+     const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("│Vous n'arrivez pas à fuir..." , "│► Dommage pour vous")
+     .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+     .setTimestamp()
+     message.channel.send({embed})
+    }
+    if (71 < B){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("│Vous réussissez à fuir le combat :" , "│► La chance est avec vous")
+       .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+    }
+});
+
+
+bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+if (message.content.startsWith(prefix + "Fuite avec bonus de 10")) {
+    let degats = args.slice(5).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+ if (B < 60){
+     const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("│Vous n'arrivez pas à fuir..." , "│► Dommage pour vous")
+     .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+     .setTimestamp()
+     message.channel.send({embed})
+    }
+    if (61 < B){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("│Vous réussissez à fuir le combat :" , "│► La chance est avec vous")
+      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+    }
+});
+
+
+
+
+
 
 
 
