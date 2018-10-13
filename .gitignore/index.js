@@ -526,9 +526,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle("Loup :" , "Aussi rapide que dangereux, il se situe dans la forêt du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c8/Wolf.png/revision/latest?cb=20140308115118")
-    .addField("Point de vie :" , "80")
-    .addField("Points d'armure :" , "2")
-    .addField("Points de dégâts" , "16")
+    .addField("Point de vie :" , "50")
+    .addField("Points de dégâts" , "12")
     .addField("Pour engager le combat :" , "=Loup attaque")
     .addField("Lorsque le loup reçoit un coup :" , "=Loup défense [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Loup récompenses")
@@ -545,9 +544,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setTitle("Sanglier :" , "Assez imposant et résistant, il se situe dans les plaines du palier 1 !")
       .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/4/4a/Frenzy_Boar.png/revision/latest?cb=20170612194328&path-prefix=fr")
-      .addField("Point de vie :" , "25")
-      .addField("Points d'armure :" , "0")
-      .addField("Points de dégâts" , "6")
+      .addField("Point de vie :" , "20")
+      .addField("Points de dégâts" , "4")
       .addField("Pour engager le combat :" , "=Sanglier attaque")
       .addField("Lorsque le loup reçoit un coup :" , "=Sanglier défense [Points de dégâts de votre coup]")
       .addField("Les récompenses une fois mort :" , "=Sanglier récompenses")
@@ -565,8 +563,7 @@ bot.on('message', message => {
         .setTitle("Renard :" , "Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
         .setImage("https://www.lpo.fr/images/actualites/2018/en_moselle_nuits_nouveau_tranquilles_renard/renard_fabrice_cahez_650_.jpg")
         .addField("Point de vie :" , "15")
-        .addField("Points d'armure :" , "0")
-        .addField("Points de dégâts" , "4")
+        .addField("Points de dégâts" , "5")
         .addField("Pour engager le combat :" , "=Renard attaque")
         .addField("Lorsque le loup reçoit un coup :" , "=Renard défense : [Points de dégâts de votre coup]")
         .addField("Les récompenses une fois mort :" , "=Renard récompenses")
@@ -582,9 +579,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setTitle("Chien :" , "Solitaire mais très aggressif, il se situe dans les plaines du palier 1 !")
           .setImage("https://st2.depositphotos.com/2195902/6735/v/950/depositphotos_67358017-stock-illustration-angry-dog.jpg")
-          .addField("Point de vie :" , "20")
-          .addField("Points d'armure :" , "0")
-          .addField("Points de dégâts" , "8")
+          .addField("Point de vie :" , "10")
+          .addField("Points de dégâts" , "6")
           .addField("Pour engager le combat :" , "=Chien attaque")
           .addField("Lorsque le loup reçoit un coup :" , "=Chien défense : [Points de dégâts de votre coup]")
           .addField("Les récompenses une fois mort :" , "=Chien récompenses")
@@ -601,9 +597,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setTitle("Lapin géant :" , "Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
             .setImage("https://gor666.files.wordpress.com/2012/04/lapin-tueur-de-paques-i-gor-2012.jpg")
-            .addField("Point de vie :" , "40")
-            .addField("Points d'armure :" , "3")
-            .addField("Points de dégâts" , "8")
+            .addField("Point de vie :" , "30")
+            .addField("Points de dégâts" , "10")
             .addField("Pour engager le combat :" , "=Lapin géant attaque")
             .addField("Lorsque le loup reçoit un coup :" , "=Lapin géant défense : [Points de dégâts de votre coup]")
             .addField("Les récompenses une fois mort :" , "=Lapin géant récompenses")
@@ -620,9 +615,8 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setTitle("Slime :" , "Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
               .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c8/Wolf.png/revision/latest?cb=20140308115118")
-              .addField("Point de vie :" , "100")
-              .addField("Points d'armure :" , "4")
-              .addField("Points de dégâts" , "12")
+              .addField("Point de vie :" , "60")
+              .addField("Points de dégâts" , "10")
               .addField("Pour engager le combat :" , "=Slime attaque")
               .addField("Lorsque le loup reçoit un coup :" , "=Slime défense : [Points de dégâts de votre coup]")
               .addField("Les récompenses une fois mort :" , "=Slime récompenses")
@@ -639,9 +633,8 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setTitle("Loup de sang :" , "Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
-                .addField("Point de vie :" , "250")
-                .addField("Points d'armure :" , "8")
-                .addField("Points de dégâts" , "30")
+                .addField("Point de vie :" , "150")
+                .addField("Points de dégâts" , "20")
                 .addField("Pour engager le combat :" , "=Loup de sang attaque")
                 .addField("Lorsque le loup reçoit un coup :" , "=Loup de sang défense : [Points de dégâts de votre coup]")
                 .addField("Les récompenses une fois mort :" , "=Loup de sang récompenses")
@@ -661,8 +654,7 @@ bot.on('message', message => {
     .setTitle("Bandit débutant :" , "Un simple bandit n'étant pas très dangereux, il se situe dans les plaines du palier 1 !")
     .setImage("https://i.pinimg.com/originals/37/cb/69/37cb69474ab104f8ec40ca993101a042.jpg")
     .addField("Point de vie :" , "30")
-    .addField("Points d'armure :" , "1")
-    .addField("Points de dégâts" , "10")
+    .addField("Points de dégâts" , "6")
     .addField("Pour engager le combat :" , "=Bandit débutant attaque")
     .addField("Lorsque le loup reçoit un coup :" , "=Bandit débutant défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit débutant récompenses")
@@ -681,9 +673,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle("Bandit expérimenté :" , "Un bandit connaissant les techniques basiques d'assassin, il se situe dans les plaines du palier 1 !")
     .setImage("http://www.yuimen.net/galerie/albums/userpics/13631/Colm1.png")
-    .addField("Point de vie :" , "120")
-    .addField("Points d'armure :" , "2")
-    .addField("Points de dégâts" , "20")
+    .addField("Point de vie :" , "80")
+    .addField("Points de dégâts" , "10")
     .addField("Pour engager le combat :" , "=Bandit expérimenté attaque")
     .addField("Lorsque le loup reçoit un coup :" , "=Bandit expérimenté défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit expérimenté récompenses")
@@ -704,8 +695,7 @@ bot.on('message', message => {
     .setTitle("Bandit sombre :" , "Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
     .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
     .addField("Point de vie :" , "200")
-    .addField("Points d'armure :" , "6")
-    .addField("Points de dégâts" , "40")
+    .addField("Points de dégâts" , "35")
     .addField("Pour engager le combat :" , "=Bandit sombre attaque")
     .addField("Lorsque le loup reçoit un coup :" , "=Bandit sombre défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit sombre récompenses")
@@ -1129,7 +1119,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup attaque")) {
-    const Dégâts = 16
+    const Dégâts = 12
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
@@ -1154,7 +1144,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Renard attaque")) {
-    const Dégâts = 4
+    const Dégâts = 5
      const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
@@ -1179,7 +1169,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Sanglier attaque")) {
-    const Dégâts = 6
+    const Dégâts = 4
      const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
@@ -1204,7 +1194,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chien attaque")) {
-    const Dégâts = 8
+    const Dégâts = 6
      const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
@@ -1229,7 +1219,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang attaque")) {
-    const Dégâts = 30
+    const Dégâts = 25
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
@@ -1254,7 +1244,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Slime attaque")) {
-    const Dégâts = 12
+    const Dégâts = 10
      const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
@@ -1279,7 +1269,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Lapin géant attaque")) {
-    const Dégâts = 8
+    const Dégâts = 10
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
@@ -1304,7 +1294,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
-    const Dégâts = 10
+    const Dégâts = 6
      const A = (Math.floor(((Dégâts*2.5))*Math.random()+(Dégâts/4)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
@@ -1328,7 +1318,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit expérimenté attaque")) {
-    const Dégâts = 20
+    const Dégâts = 10
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
@@ -1352,7 +1342,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre attaque")) {
-    const Dégâts = 40
+    const Dégâts = 35
      const A = (Math.floor(((Dégâts*3))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 10){
