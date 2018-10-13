@@ -3176,7 +3176,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
+         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2+ " points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -3185,7 +3185,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A+ " points de dégâts")
+            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
             .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
             .setTimestamp()
             message.channel.send({embed})
