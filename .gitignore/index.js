@@ -568,7 +568,7 @@ bot.on('message', message => {
       .addField("Point de vie :" , "20")
       .addField("Points de dégâts" , "4")
       .addField("Pour engager le combat :" , "=Sanglier attaque")
-      .addField("Lorsque le loup reçoit un coup :" , "=Sanglier défense [Points de dégâts de votre coup]")
+      .addField("Lorsque le sanglier reçoit un coup :" , "=Sanglier défense [Points de dégâts de votre coup]")
       .addField("Les récompenses une fois mort :" , "=Sanglier récompenses")
       .setTimestamp()
       message.channel.send({embed})
@@ -586,7 +586,7 @@ bot.on('message', message => {
         .addField("Point de vie :" , "15")
         .addField("Points de dégâts" , "5")
         .addField("Pour engager le combat :" , "=Renard attaque")
-        .addField("Lorsque le loup reçoit un coup :" , "=Renard défense : [Points de dégâts de votre coup]")
+        .addField("Lorsque le renard reçoit un coup :" , "=Renard défense : [Points de dégâts de votre coup]")
         .addField("Les récompenses une fois mort :" , "=Renard récompenses")
         .setTimestamp()
         message.channel.send({embed})
@@ -603,7 +603,7 @@ bot.on('message', message => {
           .addField("Point de vie :" , "10")
           .addField("Points de dégâts" , "6")
           .addField("Pour engager le combat :" , "=Chien attaque")
-          .addField("Lorsque le loup reçoit un coup :" , "=Chien défense : [Points de dégâts de votre coup]")
+          .addField("Lorsque le chien reçoit un coup :" , "=Chien défense : [Points de dégâts de votre coup]")
           .addField("Les récompenses une fois mort :" , "=Chien récompenses")
           .setTimestamp()
           message.channel.send({embed})
@@ -621,7 +621,7 @@ bot.on('message', message => {
             .addField("Point de vie :" , "30")
             .addField("Points de dégâts" , "10")
             .addField("Pour engager le combat :" , "=Lapin géant attaque")
-            .addField("Lorsque le loup reçoit un coup :" , "=Lapin géant défense : [Points de dégâts de votre coup]")
+            .addField("Lorsque le lapin géant reçoit un coup :" , "=Lapin géant défense : [Points de dégâts de votre coup]")
             .addField("Les récompenses une fois mort :" , "=Lapin géant récompenses")
             .setTimestamp()
             message.channel.send({embed})
@@ -639,7 +639,7 @@ bot.on('message', message => {
               .addField("Point de vie :" , "60")
               .addField("Points de dégâts" , "10")
               .addField("Pour engager le combat :" , "=Slime attaque")
-              .addField("Lorsque le loup reçoit un coup :" , "=Slime défense : [Points de dégâts de votre coup]")
+              .addField("Lorsque le slime reçoit un coup :" , "=Slime défense : [Points de dégâts de votre coup]")
               .addField("Les récompenses une fois mort :" , "=Slime récompenses")
               .setTimestamp()
               message.channel.send({embed})
@@ -657,7 +657,7 @@ bot.on('message', message => {
                 .addField("Point de vie :" , "150")
                 .addField("Points de dégâts" , "20")
                 .addField("Pour engager le combat :" , "=Loup de sang attaque")
-                .addField("Lorsque le loup reçoit un coup :" , "=Loup de sang défense : [Points de dégâts de votre coup]")
+                .addField("Lorsque le loup de sang reçoit un coup :" , "=Loup de sang défense : [Points de dégâts de votre coup]")
                 .addField("Les récompenses une fois mort :" , "=Loup de sang récompenses")
                 .setTimestamp()
                 message.channel.send({embed})
@@ -677,7 +677,7 @@ bot.on('message', message => {
     .addField("Point de vie :" , "30")
     .addField("Points de dégâts" , "6")
     .addField("Pour engager le combat :" , "=Bandit débutant attaque")
-    .addField("Lorsque le loup reçoit un coup :" , "=Bandit débutant défense : [Points de dégâts de votre coup]")
+    .addField("Lorsque le bandit débutant reçoit un coup :" , "=Bandit débutant défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit débutant récompenses")
     .setTimestamp()
     message.channel.send({embed})
@@ -697,7 +697,7 @@ bot.on('message', message => {
     .addField("Point de vie :" , "80")
     .addField("Points de dégâts" , "10")
     .addField("Pour engager le combat :" , "=Bandit expérimenté attaque")
-    .addField("Lorsque le loup reçoit un coup :" , "=Bandit expérimenté défense : [Points de dégâts de votre coup]")
+    .addField("Lorsque le bandit expérimenté reçoit un coup :" , "=Bandit expérimenté défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit expérimenté récompenses")
     .setTimestamp()
     message.channel.send({embed})
@@ -718,7 +718,7 @@ bot.on('message', message => {
     .addField("Point de vie :" , "200")
     .addField("Points de dégâts" , "35")
     .addField("Pour engager le combat :" , "=Bandit sombre attaque")
-    .addField("Lorsque le loup reçoit un coup :" , "=Bandit sombre défense : [Points de dégâts de votre coup]")
+    .addField("Lorsque le bandit sombre reçoit un coup :" , "=Bandit sombre défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit sombre récompenses")
     .setTimestamp()
     message.channel.send({embed})
@@ -738,7 +738,7 @@ bot.on('message', message => {
     .addField("Points d'armure :" , "10")
     .addField("Points de dégâts" , "50")
     .addField("Pour engager le combat :" , "=Urguf le chef attaque")
-    .addField("Lorsque le loup reçoit un coup :" , "=Urguf le chef défense : [Points de dégâts de votre coup]")
+    .addField("Lorsque Urguf le chef reçoit un coup :" , "=Urguf le chef défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Urguf le chef récompenses")
     .setTimestamp()
     message.channel.send({embed})
@@ -8196,7 +8196,7 @@ bot.on('message', message => {
                     
 
                                                                                                       bot.on('message', message => {
-                                                                                                        if (message.content.startsWith(prefix + "Ragoût de loup")) {
+                                                                                                          if (message.content === prefix + "Ragoût de loup") {
                                                                                                           const embed = new Discord.RichEmbed()
                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8217,7 +8217,7 @@ bot.on('message', message => {
 
                                                                                                           bot.on('message', message => {
                                                                                                             const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
+                                                                                                                 if (message.content === prefix + "Achat/fabrication/découverte du ragoût de loup") {
                                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8232,7 +8232,7 @@ bot.on('message', message => {
                         
 
                                                                                                           bot.on('message', message => {
-                                                                                                            if (message.content.startsWith(prefix + "Ragoût de loup de sang")) {
+                                                                                                               if (message.content === prefix + "Ragoût de loup de sang") {
                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8253,7 +8253,7 @@ bot.on('message', message => {
 
                                                                                                               bot.on('message', message => {
                                                                                                                 const HP = (Math.floor((41)*Math.random()+40))
-                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup de sang")) {
+                                                                                                                     if (message.content === prefix + "Achat/fabrication/découverte du ragoût de loup de sang") {
                                                                                                                       const embed = new Discord.RichEmbed()
                                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
