@@ -1141,7 +1141,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup attaque")) {
     const Dégâts = 12
-     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -1166,7 +1166,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Renard attaque")) {
     const Dégâts = 5
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/3)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -1216,7 +1216,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chien attaque")) {
     const Dégâts = 6
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/1.5)))
+     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -1241,7 +1241,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang attaque")) {
     const Dégâts = 25
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts)))
+     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -1266,7 +1266,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Slime attaque")) {
     const Dégâts = 10
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts)))
+     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -1291,7 +1291,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Lapin géant attaque")) {
     const Dégâts = 10
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/3)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -1316,7 +1316,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
     const Dégâts = 6
-     const A = (Math.floor(((Dégâts*2.5))*Math.random()+(Dégâts/4)))
+     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/4)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -1340,7 +1340,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit expérimenté attaque")) {
     const Dégâts = 10
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
+     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -1364,7 +1364,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre attaque")) {
     const Dégâts = 35
-     const A = (Math.floor(((Dégâts*3))*Math.random()+(Dégâts/1.5)))
+     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 10){
       const embed = new Discord.RichEmbed()
@@ -1389,7 +1389,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Urguf le chef attaque")) {
     const Dégâts = 50
-     const A = (Math.floor(((Dégâts*5))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor(((Dégâts*3))*Math.random()+(Dégâts/5)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
