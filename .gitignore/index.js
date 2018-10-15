@@ -199,7 +199,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :")
+      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :")
       .addField("Points d'expérience :" , +Expplaines)
       .addField("Cols :" , +Colsplaines)
       .addField("Potion légère de soin :" , +Potionsplaines)
