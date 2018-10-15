@@ -6368,7 +6368,7 @@ bot.on('message', message => {
                  .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
                  .addField("Prix d'achat :" , "160 cols")
                  .addField("Prix de revente :" , "80 cols")
-                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des épaulières rouillées)
+                 .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte des épaulières rouillées")
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
