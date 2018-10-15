@@ -3058,12 +3058,74 @@ bot.on('message', message => {
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
+      if (B < 60){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A+ " points de dégâts")
+       .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+      if (61 < B){
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+         .addField("│Vous réussissez votre esquive :" , "│► Vous ne prenez aucun points de dégâts")
+         .setImage("http://i.imgur.com/LjoYHp7.jpg")
+         .setTimestamp()
+         message.channel.send({embed})
+        }
+      }
+  });
+
+  
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Esquive avec bonus de 5")) {
+      let degats = args.slice(5).join(" : ");
+      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const B = (Math.floor((100)*Math.random()+1))
+      if (B < 55){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A+ " points de dégâts")
+       .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+      if (56 < B){
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+         .addField("│Vous réussissez votre esquive :" , "│► Vous ne prenez aucun points de dégâts")
+         .setImage("http://i.imgur.com/LjoYHp7.jpg")
+         .setTimestamp()
+         message.channel.send({embed})
+        }
+      }
+  });
+
+  
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Esquive  avec bonus de 10")) {
+      let degats = args.slice(5).join(" : ");
+      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const B = (Math.floor((100)*Math.random()+1))
       if (B < 50){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A*1.25+ " points de dégâts")
+       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A+ " points de dégâts")
        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -3085,7 +3147,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive avec bonus de 5")) {
+  if (message.content.startsWith(prefix + "Esquive avec bonus de 15")) {
       let degats = args.slice(5).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3094,74 +3156,12 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A*1.25+ " points de dégâts")
+       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A+ " points de dégâts")
        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
        .setTimestamp()
        message.channel.send({embed})
       }
       if (46 < B){
-         const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("│Vous réussissez votre esquive :" , "│► Vous ne prenez aucun points de dégâts")
-         .setImage("http://i.imgur.com/LjoYHp7.jpg")
-         .setTimestamp()
-         message.channel.send({embed})
-        }
-      }
-  });
-
-  
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive  avec bonus de 10")) {
-      let degats = args.slice(5).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B = (Math.floor((100)*Math.random()+1))
-      if (B < 40){
-       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A*1.25+ " points de dégâts")
-       .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-       .setTimestamp()
-       message.channel.send({embed})
-      }
-      if (41 < B){
-         const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("│Vous réussissez votre esquive :" , "│► Vous ne prenez aucun points de dégâts")
-         .setImage("http://i.imgur.com/LjoYHp7.jpg")
-         .setTimestamp()
-         message.channel.send({embed})
-        }
-      }
-  });
-
-  
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive avec bonus de 15")) {
-      let degats = args.slice(5).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B = (Math.floor((100)*Math.random()+1))
-      if (B < 35){
-       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("│Vous échouez votre esquive et vous subissez" , "│►" +A*1.25+ " points de dégâts")
-       .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-       .setTimestamp()
-       message.channel.send({embed})
-      }
-      if (36 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3187,7 +3187,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2+ " points de dégâts")
+         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2.5+ " points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -3217,7 +3217,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
+         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2.5+ " points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -3226,7 +3226,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A+ " points de dégâts")
+            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
             .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
             .setTimestamp()
             message.channel.send({embed})
@@ -3248,7 +3248,7 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
+           .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2.5+ " points de dégâts")
            .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
            .setTimestamp()
              message.channel.send({embed})}
@@ -3257,7 +3257,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(3447003)
-              .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A+ " points de dégâts")
+              .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
               .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
               .setTimestamp()
               message.channel.send({embed})
@@ -3278,7 +3278,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
+         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2.5+ " points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -3287,7 +3287,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A+ " points de dégâts")
+            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
             .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
             .setTimestamp()
             message.channel.send({embed})
@@ -3302,7 +3302,7 @@ bot.on('message', message => {
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
-      if (B < 50){
+      if (B < 55){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3312,7 +3312,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (51 < B){
+      if (56 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3330,6 +3330,37 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Parade avec bonus de 5")) {
+      let degats = args.slice(5).join(" : ");
+      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const B = (Math.floor((100)*Math.random()+1))
+      if (B < 50){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("│Vous échouez votre parade et vous subissez" , "│►" +A*2+ " points de dégâts")
+       .setImage("http://i.imgur.com/KTUgaa0.jpg")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+      if (51 < B){
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+                .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
+         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
+         .setTimestamp()
+         message.channel.send({embed})
+        }
+      }
+  });
+
+  
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Parade avec bonus de 10")) {
       let degats = args.slice(5).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3360,7 +3391,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Parade avec bonus de 10")) {
+  if (message.content.startsWith(prefix + "Parade avec bonus de 15")) {
       let degats = args.slice(5).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3375,37 +3406,6 @@ bot.on('message', message => {
        message.channel.send({embed})
       }
       if (41 < B){
-         const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-                .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
-         .setTimestamp()
-         message.channel.send({embed})
-        }
-      }
-  });
-
-  
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Parade avec bonus de 15")) {
-      let degats = args.slice(5).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B = (Math.floor((100)*Math.random()+1))
-      if (B < 35){
-       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("│Vous échouez votre parade et vous subissez" , "│►" +A*2+ " points de dégâts")
-       .setImage("http://i.imgur.com/KTUgaa0.jpg")
-       .setTimestamp()
-       message.channel.send({embed})
-      }
-      if (36 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3432,7 +3432,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Votre parade inflige :" , +A*1.25+ " points de dégâts")
+         .addField("Votre parade inflige :" , +A+ " points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
