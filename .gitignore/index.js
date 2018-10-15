@@ -619,7 +619,7 @@ bot.on('message', message => {
             .setTitle("Lapin géant :" , "Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
             .setImage("https://gor666.files.wordpress.com/2012/04/lapin-tueur-de-paques-i-gor-2012.jpg")
             .addField("Point de vie :" , "30")
-            .addField("Points de dégâts" , "10")
+            .addField("Points de dégâts" , "12")
             .addField("Pour engager le combat :" , "=Lapin géant attaque")
             .addField("Lorsque le lapin géant reçoit un coup :" , "=Lapin géant défense : [Points de dégâts de votre coup]")
             .addField("Les récompenses une fois mort :" , "=Lapin géant récompenses")
@@ -637,7 +637,7 @@ bot.on('message', message => {
               .setTitle("Slime :" , "Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
               .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-slime-5ac1b13e54af51.5535441915226432623469.png")
               .addField("Point de vie :" , "60")
-              .addField("Points de dégâts" , "10")
+              .addField("Points de dégâts" , "12")
               .addField("Pour engager le combat :" , "=Slime attaque")
               .addField("Lorsque le slime reçoit un coup :" , "=Slime défense : [Points de dégâts de votre coup]")
               .addField("Les récompenses une fois mort :" , "=Slime récompenses")
@@ -694,8 +694,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle("Bandit expérimenté :" , "Un bandit connaissant les techniques basiques d'assassin, il se situe dans les plaines du palier 1 !")
     .setImage("http://www.yuimen.net/galerie/albums/userpics/13631/Colm1.png")
-    .addField("Point de vie :" , "80")
-    .addField("Points de dégâts" , "10")
+    .addField("Point de vie :" , "60")
+    .addField("Points de dégâts" , "14")
     .addField("Pour engager le combat :" , "=Bandit expérimenté attaque")
     .addField("Lorsque le bandit expérimenté reçoit un coup :" , "=Bandit expérimenté défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit expérimenté récompenses")
@@ -715,8 +715,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle("Bandit sombre :" , "Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
     .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
-    .addField("Point de vie :" , "200")
-    .addField("Points de dégâts" , "35")
+    .addField("Point de vie :" , "250")
+    .addField("Points de dégâts" , "30")
     .addField("Pour engager le combat :" , "=Bandit sombre attaque")
     .addField("Lorsque le bandit sombre reçoit un coup :" , "=Bandit sombre défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort :" , "=Bandit sombre récompenses")
@@ -1265,7 +1265,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Slime attaque")) {
-    const Dégâts = 10
+    const Dégâts = 12
      const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
@@ -1290,7 +1290,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Lapin géant attaque")) {
-    const Dégâts = 10
+    const Dégâts = 12
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/3)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
@@ -1339,7 +1339,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit expérimenté attaque")) {
-    const Dégâts = 10
+    const Dégâts = 14
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
@@ -1363,8 +1363,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre attaque")) {
-    const Dégâts = 35
-     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts)))
+    const Dégâts = 30
+     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 10){
       const embed = new Discord.RichEmbed()
