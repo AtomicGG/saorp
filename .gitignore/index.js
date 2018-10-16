@@ -1792,7 +1792,7 @@ bot.on('message', message => {
      .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
     .setTitle("Plaines :" , "Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !")
-    .addField("Pour combattre :" , "=Plaines combat")
+    .addField("Pour combattre :" , "=Plaines combat : [Nombre de joueurs dans votre groupe]")
     .addField("Pour cueillir, niveau 1 minimum requis dans la spécialisation 'Cueilleur' :", "=Plaines cueillir")
     .addField("Pour chasser, niveau 1 minimum requis dans la spécialisation 'Chasseur' :", "=Plaines chasser")
     .addField("Pour avoir une quête :", "=Plaines quêtes")
@@ -1804,7 +1804,10 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Plaines Combat/////////////////////////////////////////////////////////////////////////////////////
 
                                         bot.on('message', message => {
+                                           let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
                                           if (message.content.startsWith(prefix + "Plaines combat")) {
+                                            let X = args.slice(2).join(" : ");
                                             if (talkedRecently.has(message.author.id+1000)) {
     const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -1815,11 +1818,11 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                              const B = (Math.floor((2)*Math.random()))
-                                              const C = (Math.floor((2)*Math.random()))
-                                              const D = (Math.floor((2)*Math.random()))
-                                              const E = (Math.floor((2*(0.80))*Math.random()))
-                                              const F = (Math.floor((2*(0.60))*Math.random()))
+                                              const B = (Math.floor((2+X)*Math.random()))
+                                              const C = (Math.floor((2+X)*Math.random()))
+                                              const D = (Math.floor((2+X)*Math.random()))
+                                              const E = (Math.floor(((2+X)*(0.80))*Math.random()))
+                                              const F = (Math.floor(((2+X)*(0.60))*Math.random()))
                                                const embed = new Discord.RichEmbed()
                                                .setAuthor(message.author.username , message.author.avatarURL)
                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1849,7 +1852,7 @@ bot.on('message', message => {
                                                    .setAuthor(message.author.username , message.author.avatarURL)
                                                   .setColor(1447003)
                                                   .setTitle("Forêt :" , "Bienvenue dans ce lieu habité par des loups dangereux et bien plus !")
-                                                  .addField("Pour combattre :" , "=Forêt combat")
+                                                  .addField("Pour combattre :" , "=Forêt combat : [Nombre de joueurs dans votre groupe]")
                                                   .addField("Pour cueillir, niveau 2 minimum requis dans la spécialisation 'Cueilleur' :", "=Forêt cueillir")
                                                   .addField("Pour chasser, niveau 2 minimum requis dans la spécialisation 'Chasseur' :", "=Forêt chasser")
                                                   .addField("Pour miner, niveau 1 minimum requis dans la spécialisation 'Mineur' :", "=Forêt miner")
@@ -1864,7 +1867,10 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Forêt Combat/////////////////////////////////////////////////////////////////////////////////////
 
                                                 bot.on('message', message => {
+                                                   let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
                                                 if (message.content.startsWith(prefix + "Forêt combat")) {
+                                                  let X = args.slice(2).join(" : ");
                                                                                     if (talkedRecently.has(message.author.id+1000)) {
     const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -1875,11 +1881,11 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                                    const B = (Math.floor((2)*Math.random()))
-                                                    const C = (Math.floor((2)*Math.random()))
-                                                    const D = (Math.floor((2)*Math.random()))
-                                                    const E = (Math.floor((2*(0.60))*Math.random()))
-                                                    const F = (Math.floor((2*(0.80))*Math.random()))
+                                                    const B = (Math.floor((2+X)*Math.random()))
+                                                    const C = (Math.floor((2+X)*Math.random()))
+                                                    const D = (Math.floor((2+X)*Math.random()))
+                                                    const E = (Math.floor(((2+X)*(0.60))*Math.random()))
+                                                    const F = (Math.floor(((2+X)*(0.80))*Math.random()))
                                                      const embed = new Discord.RichEmbed()
                                                      .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
