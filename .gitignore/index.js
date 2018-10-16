@@ -153,8 +153,8 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
 } else {
-    const Expplaines = (Math.floor((71)*Math.random()+30))
-    const Colsplaines = (Math.floor((71)*Math.random()+30))
+    const Expplaines = (Math.floor((30)*Math.random()+30))
+    const Colsplaines = (Math.floor((30)*Math.random()+30))
     const Potionsplaines = (Math.floor((2*0.5)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.75)*Math.random()))
     const embed = new Discord.RichEmbed()
@@ -190,8 +190,8 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
 } else {
-    const Expplaines = (Math.floor((150)*Math.random()+50))
-    const Colsplaines = (Math.floor((150)*Math.random()+50))
+    const Expplaines = (Math.floor((50)*Math.random()+50))
+    const Colsplaines = (Math.floor((50)*Math.random()+50))
     const Potionsplaines = (Math.floor((2*0.5)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.75)*Math.random()))
     const embed = new Discord.RichEmbed()
