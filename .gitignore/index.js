@@ -1087,7 +1087,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
                                                 if (message.content.startsWith(prefix + "Bandit sombre récompenses")) {
                                                   let Z = args.slice(3).join(" : ");
-                      const I = (Math.floor((2-(0.90))*Z)*Math.random()))
+                      const I = (Math.floor(((2-(0.90))*Z)*Math.random()))
                   const J = (Math.floor(((2*(0.95))*Z)*Math.random()))
                   const K = (Math.floor(((2*(0.95))*Z)*Math.random()))
                   const L = (Math.floor(((2*(0.95))*Z)*Math.random()))
