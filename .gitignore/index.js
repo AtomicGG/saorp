@@ -1804,10 +1804,10 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Plaines Combat/////////////////////////////////////////////////////////////////////////////////////
 
                                         bot.on('message', message => {
-                                           let cont = message.content.slice(prefix.length).split(" ");
+                                             let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
                                           if (message.content.startsWith(prefix + "Plaines combat")) {
-                                            let X = args.slice(2).join(" : ");
+                                            let Z = args.slice(2).join(" : ");
                                             if (talkedRecently.has(message.author.id+1000)) {
     const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -1818,11 +1818,11 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                              const B = (Math.floor((1+X)*Math.random()))
-                                              const C = (Math.floor((1+X)*Math.random()))
-                                              const D = (Math.floor((1+X)*Math.random()))
-                                              const E = (Math.floor(((1+X)*0.80)*Math.random()))
-                                              const F = (Math.floor(((1+X)*0.60)*Math.random()))
+                                              const B = (Math.floor((1+Z)*Math.random()))
+                                              const C = (Math.floor((1+Z)*Math.random()))
+                                              const D = (Math.floor((1+Z)*Math.random()))
+                                              const E = (Math.floor(((1+Z)*(0.80))*Math.random()))
+                                              const F = (Math.floor(((1+Z)*(0.60))*Math.random()))
                                                const embed = new Discord.RichEmbed()
                                                .setAuthor(message.author.username , message.author.avatarURL)
                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1867,10 +1867,10 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Forêt Combat/////////////////////////////////////////////////////////////////////////////////////
 
                                                 bot.on('message', message => {
-                                                   let cont = message.content.slice(prefix.length).split(" ");
+                                                    let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
                                                 if (message.content.startsWith(prefix + "Forêt combat")) {
-                                                  let X = args.slice(2).join(" : ");
+                                                  let Z = args.slice(2).join(" : ");
                                                                                     if (talkedRecently.has(message.author.id+1000)) {
     const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -1881,11 +1881,11 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                                    const B = (Math.floor((1+X)*Math.random()))
-                                                    const C = (Math.floor((1+X)*Math.random()))
-                                                    const D = (Math.floor((1+X)*Math.random()))
-                                                    const E = (Math.floor(((1+X)*0.60)*Math.random()))
-                                                    const F = (Math.floor(((1+X)*0.80)*Math.random()))
+                                                    const B = (Math.floor((1+Z)*Math.random()))
+                                                    const C = (Math.floor((1+Z)*Math.random()))
+                                                    const D = (Math.floor((1+Z)*Math.random()))
+                                                    const E = (Math.floor(((1+Z)*(0.60))*Math.random()))
+                                                    const F = (Math.floor(((1+Z)*(0.80))*Math.random()))
                                                      const embed = new Discord.RichEmbed()
                                                      .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
