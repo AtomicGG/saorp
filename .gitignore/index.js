@@ -1805,6 +1805,16 @@ bot.on('message', message => {
 
                                         bot.on('message', message => {
                                           if (message.content.startsWith(prefix + "Plaines combat")) {
+                                            if (talkedRecently.has(message.author.id+1000)) {
+    const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+     .setTimestamp()
+     message.channel.send({embed})
+} else {
                                               const B = (Math.floor((3*(0.50))*Math.random()))
                                               const C = (Math.floor((3*(0.50))*Math.random()))
                                               const D = (Math.floor((3*(0.50))*Math.random()))
@@ -1822,8 +1832,13 @@ bot.on('message', message => {
                                                .addField("Bandit débutant :" , +F)
                                                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                .setTimestamp()
-                                               message.channel.send({embed})
-                                              }})
+                                                   message.channel.send({embed})}
+    talkedRecently.add(message.author.id+1000);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+1000);
+     }, 900000);
+  }
+  })
 
 //////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
@@ -1850,10 +1865,20 @@ bot.on('message', message => {
 
                                                 bot.on('message', message => {
                                                 if (message.content.startsWith(prefix + "Forêt combat")) {
+                                                                                    if (talkedRecently.has(message.author.id+1000)) {
+    const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+     .setTimestamp()
+     message.channel.send({embed})
+} else {
                                                     const B = (Math.floor((3*(0.50))*Math.random()))
                                                     const C = (Math.floor((3*(0.50))*Math.random()))
                                                     const D = (Math.floor((3*(0.80))*Math.random()))
-                                                    const E = (Math.floor((2*(0.90))*Math.random()))
+                                                    const E = (Math.floor((2*(0.95))*Math.random()))
                                                     const F = (Math.floor((2*(0.95))*Math.random()))
                                                      const embed = new Discord.RichEmbed()
                                                      .setAuthor(message.author.username , message.author.avatarURL)
@@ -1867,8 +1892,13 @@ bot.on('message', message => {
                                                      .addField("Loup de sang :" , +F)
                                                      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                      .setTimestamp()
-                                                     message.channel.send({embed})
-                                                    }})
+                                                         message.channel.send({embed})}
+    talkedRecently.add(message.author.id+1000);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+1000);
+     }, 900000);
+  }
+  })
 
 
 
