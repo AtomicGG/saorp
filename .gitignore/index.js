@@ -1143,12 +1143,12 @@ bot.on('message', message => {
 
                     bot.on('message', message => {
                       if (message.content.startsWith(prefix + "Urguf le chef récompenses")) {
-                      const B = (Math.floor(((3)*Math.random()))
-                      const C = (Math.floor(((3)*Math.random()))
-                      const D = (Math.floor(((2*(0.75))*Math.random()))
-                      const E = (Math.floor(((2*(0.85))*Math.random()))
-                      const F = (Math.floor(((201)*Math.random()+200))
-                      const G = (Math.floor(((101)*Math.random()+100))
+                      const B = (Math.floor((3)*Math.random()))
+                      const C = (Math.floor((3)*Math.random()))
+                      const D = (Math.floor((2*(0.75))*Math.random()))
+                      const E = (Math.floor((2*(0.85))*Math.random()))
+                      const F = (Math.floor((201)*Math.random()+200))
+                      const G = (Math.floor((101)*Math.random()+100))
                         const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username , message.author.avatarURL)
