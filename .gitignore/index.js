@@ -551,7 +551,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "12")
     .addField("Pour engager le combat :" , "=Loup attaque")
     .addField("Lorsque le loup reçoit un coup :" , "=Loup défense [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Loup récompenses : [Nombre qu'il y avait]")
+    .addField("Les récompenses une fois mort :" , "=Loup récompenses")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -587,7 +587,7 @@ bot.on('message', message => {
         .addField("Points de dégâts" , "5")
         .addField("Pour engager le combat :" , "=Renard attaque")
         .addField("Lorsque le renard reçoit un coup :" , "=Renard défense : [Points de dégâts de votre coup]")
-        .addField("Les récompenses une fois mort :" , "=Renard récompenses : [Nombre qu'il y avait]")
+        .addField("Les récompenses une fois mort :" , "=Renard récompenses")
         .setTimestamp()
         message.channel.send({embed})
         }
@@ -604,7 +604,7 @@ bot.on('message', message => {
           .addField("Points de dégâts" , "6")
           .addField("Pour engager le combat :" , "=Chien attaque")
           .addField("Lorsque le chien reçoit un coup :" , "=Chien défense : [Points de dégâts de votre coup]")
-          .addField("Les récompenses une fois mort :" , "=Chien récompenses : [Nombre qu'il y avait]")
+          .addField("Les récompenses une fois mort :" , "=Chien récompenses")
           .setTimestamp()
           message.channel.send({embed})
           }
@@ -622,7 +622,7 @@ bot.on('message', message => {
             .addField("Points de dégâts" , "12")
             .addField("Pour engager le combat :" , "=Lapin géant attaque")
             .addField("Lorsque le lapin géant reçoit un coup :" , "=Lapin géant défense : [Points de dégâts de votre coup]")
-            .addField("Les récompenses une fois mort :" , "=Lapin géant récompenses : [Nombre qu'il y avait]")
+            .addField("Les récompenses une fois mort :" , "=Lapin géant récompenses")
             .setTimestamp()
             message.channel.send({embed})
             }
@@ -640,7 +640,7 @@ bot.on('message', message => {
               .addField("Points de dégâts" , "12")
               .addField("Pour engager le combat :" , "=Slime attaque")
               .addField("Lorsque le slime reçoit un coup :" , "=Slime défense : [Points de dégâts de votre coup]")
-              .addField("Les récompenses une fois mort :" , "=Slime récompenses : [Nombre qu'il y avait]")
+              .addField("Les récompenses une fois mort :" , "=Slime récompenses")
               .setTimestamp()
               message.channel.send({embed})
               }
@@ -658,7 +658,7 @@ bot.on('message', message => {
                 .addField("Points de dégâts" , "20")
                 .addField("Pour engager le combat :" , "=Loup de sang attaque")
                 .addField("Lorsque le loup de sang reçoit un coup :" , "=Loup de sang défense : [Points de dégâts de votre coup]")
-                .addField("Les récompenses une fois mort :" , "=Loup de sang récompenses : [Nombre qu'il y avait]")
+                .addField("Les récompenses une fois mort :" , "=Loup de sang récompenses")
                 .setTimestamp()
                 message.channel.send({embed})
                 }
@@ -678,7 +678,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "6")
     .addField("Pour engager le combat :" , "=Bandit débutant attaque")
     .addField("Lorsque le bandit débutant reçoit un coup :" , "=Bandit débutant défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Bandit débutant récompenses : [Nombre qu'il y avait]")
+    .addField("Les récompenses une fois mort :" , "=Bandit débutant récompenses")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -698,7 +698,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "14")
     .addField("Pour engager le combat :" , "=Bandit expérimenté attaque")
     .addField("Lorsque le bandit expérimenté reçoit un coup :" , "=Bandit expérimenté défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Bandit expérimenté récompenses : [Nombre qu'il y avait]")
+    .addField("Les récompenses une fois mort :" , "=Bandit expérimenté récompenses")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -719,7 +719,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "30")
     .addField("Pour engager le combat :" , "=Bandit sombre attaque")
     .addField("Lorsque le bandit sombre reçoit un coup :" , "=Bandit sombre défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Bandit sombre récompenses : [Nombre qu'il y avait]")
+    .addField("Les récompenses une fois mort :" , "=Bandit sombre récompenses")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -739,7 +739,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "50")
     .addField("Pour engager le combat :" , "=Urguf le chef attaque")
     .addField("Lorsque Urguf le chef reçoit un coup :" , "=Urguf le chef défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Urguf le chef récompenses : [Nombre qu'il y avait]")
+    .addField("Les récompenses une fois mort :" , "=Urguf le chef récompenses")
     .setTimestamp()
     message.channel.send({embed})
     }
