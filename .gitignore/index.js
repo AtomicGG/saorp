@@ -22,9 +22,9 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on('message', msg => {
-    const privateMessagesChannel = client.channels.get("id", "457413666485043210");
-    const friendsRequestChannel = client.channels.get("id", "462905940333690880");
-    const tradeChannel = client.channels.get("id", "462905733353177088");
+    const privateMessagesChannel = bot.channels.get("id", "457413666485043210");
+    const friendsRequestChannel = bot.channels.get("id", "462905940333690880");
+    const tradeChannel = bot.channels.get("id", "462905733353177088");
 
     const mess = msg.content.toLowerCase();
     const args = msg.content.substring("/".length).split(" ");
