@@ -25,30 +25,31 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', msg => {
     // C DU KK TOUT SA
-    // const privateMessagesChannel = client.channels.get("id", "457413666485043210");
+    const privateMessagesChannel = client.channels.get("id", "457413666485043210"); //SAUF SA
     // const friendsRequestChannel = client.channels.get("id", "462905940333690880");
     // const tradeChannel = client.channels.get("id", "462905733353177088");
 
     const mess = msg.content.toLowerCase();
     const args = msg.content.substring("/".length).split(" ");
 
-    if(msg.channel.id === "457413666485043210"){
-        try{
+    if (msg.channel.id === "457413666485043210") {
+        console.log("First condition has been passed")
+        try {
             const mentionedUser = message.mentions.user.first();
             const content = args[1];
-            if(content.contains("<@")) return;
+            if (content.contains("<@")) return;
             msg.delete();
             let embed = new discord.RichEmbed();
             embed.setTitle("Message privé de " + msg.author.username() + " à " + mentionedUser.author.username())
             embed.setDescription(content)
             embed.addBlankField(true);
             embed.setFooter("『SAO Community [RP]』©• TIMESTAMP ICI :hi:", "https://images-ext-2.discordapp.net/external/61reOkBvPtcPtURLbvUCMlt9kOcjXWemwAgZQ3qvUlY/http/www.copyrightfrance.com/images/copyright.png")
-        }catch(e){
+            privateMessagesChannel.send(embed);
+        } catch (e) {
             console.log(e);
         }
     }
 });
-
 
 bot.on('message', message => {
 
