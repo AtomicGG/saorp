@@ -3816,7 +3816,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en ville entre les différents lieux :\n\n=Trajet ville\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n=Trajet palier 1\n\nQuand vous passez de l'extérieur à l'intérieur de la ville, vous pouvez arriver à l'endroit de que souhaitez être !\n\nExemple, si des plaines j'arrive à la ville, je peux arriver directement à l'auberge !")
+    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n=Trajet palier 1\n\nQuand vous êtes en ville, il n'y a pas de contrainte de temps, il n'y a que dans les zones extérieurs !")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
