@@ -21,7 +21,30 @@ bot.on('guildMemberAdd', member => {
 });
 
 
+client.on('message', msg => {
+    const privateMessagesChannel = client.channels.get("id", "457413666485043210");
+    const friendsRequestChannel = client.channels.get("id", "462905940333690880");
+    const tradeChannel = client.channels.get("id", "462905733353177088");
 
+    const mess = msg.content.toLowerCase();
+    const args = msg.content.substring("/".length).split(" ");
+
+    if(msg.channel === privateMessagesChannel){
+        try{
+            const mentionedUser = message.mentions.user.first();
+            const content = args[1];
+            if(content.contains("<@")) return;
+            msg.delete();
+            let embed = new discord.RichEmbed();
+            embed.setTitle("Message privé de " + msg.author.username() + " à " + mentionedUser.author.username())
+            embed.setDescription(content)
+            embed.addBlankField(true);
+            embed.setFooter("『SAO Community [RP]』©• TIMESTAMP ICI :hi:", "https://images-ext-2.discordapp.net/external/61reOkBvPtcPtURLbvUCMlt9kOcjXWemwAgZQ3qvUlY/http/www.copyrightfrance.com/images/copyright.png")
+        }catch(e){
+            console.log(e);
+        }
+    }
+});
 
 
 bot.on('message', message => {
