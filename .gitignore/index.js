@@ -815,7 +815,7 @@ bot.on('message', message => {
                                                   
       const B = (Math.floor((3*1)*Math.random()))
       const C = (Math.floor((3)*Math.random()))
-      const D = (Math.floor((2)*(0.75))*Math.random()))
+      const D = (Math.floor((2*(0.75))*Math.random()))
       const E = (Math.floor((2*(0.85))*Math.random()))
       const F = (Math.floor((11*1)*Math.random()+10*1))
       const G = (Math.floor((6*1)*Math.random()+5*1))
@@ -3107,7 +3107,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Esquive sans bonus")) {
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B = (Math.floor((100)*Math.random()+1))
+      const B =  (Math.floor((degats)*Math.random()+1*(degats)))
       if (B < 60){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
