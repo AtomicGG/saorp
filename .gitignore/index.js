@@ -21,7 +21,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 
-client.on('message', msg => {
+bot.on('message', msg => {
     const privateMessagesChannel = client.channels.get("id", "457413666485043210");
     const friendsRequestChannel = client.channels.get("id", "462905940333690880");
     const tradeChannel = client.channels.get("id", "462905733353177088");
