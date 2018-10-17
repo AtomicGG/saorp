@@ -3829,7 +3829,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-        .addField("Trajet en ville :\n\nPlaines\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nForêt\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nColline\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nMontagne\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nGrotte\n‖\n‖\n‖ [5 minutes]\n‖\n‖\Labyrinthe")
+        .addField("Trajet en ville :" , "Plaines\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nForêt\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nColline\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nMontagne\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nGrotte\n‖\n‖\n‖ [5 minutes]\n‖\n‖\Labyrinthe")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3843,7 +3843,7 @@ bot.on('message', message => {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
-    .addField("Trajet en ville :\n\nAuberge\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nArène\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEcole\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nBanque\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nJardin\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nExecution publique\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPlace principal\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nParc\\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPrison\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSombre ruelle\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nCommerce\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nHall de guilde\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nTemple\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSouterrains\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nConstructions joueurs")
+    .addField("Trajet en ville :" , "Auberge\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nArène\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEcole\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nBanque\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nJardin\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nExecution publique\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPlace principal\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nParc\\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPrison\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSombre ruelle\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nCommerce\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nHall de guilde\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nTemple\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSouterrains\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nConstructions joueurs")
         .setTimestamp()
         message.channel.send({embed})
       }   
