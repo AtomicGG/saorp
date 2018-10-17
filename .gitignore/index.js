@@ -751,17 +751,16 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Monstres récompenses////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+
                                                 if (message.content.startsWith(prefix + "Loup récompenses")) {
-                                                  let Z = args.slice(2).join(" : ");
-  const B = (Math.floor(((3)*Z)*Math.random()))
-  const C = (Math.floor(((3)*Z)*Math.random()))
-  const D = (Math.floor(((2+(Z*1))*(0.75))*Math.random()))
-  const E = (Math.floor(((2+(Z*1))*(0.85))*Math.random()))
-  const F = (Math.floor(((14)*Z)*Math.random()+14*Z))
-  const G = (Math.floor(((11)*Z)*Math.random()+10*Z))
-  const I = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
+                                               
+  const B = (Math.floor(((3)*1)*Math.random()))
+  const C = (Math.floor(((3)*1)*Math.random()))
+  const D = (Math.floor(((2)*(0.75))*Math.random()))
+  const E = (Math.floor(((2)*(0.85))*Math.random()))
+  const F = (Math.floor(((14)*1)*Math.random()+14*1))
+  const G = (Math.floor(((11)*1)*Math.random()+10*1))
+  const I = (Math.floor(((2)*(0.90))*Math.random()))
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -782,16 +781,15 @@ bot.on('message', message => {
   }) ;
 
   bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+   
                                                 if (message.content.startsWith(prefix + "Renard récompenses")) {
-                                                  let Z = args.slice(2).join(" : ");
-    const B = (Math.floor(((3)*Z)*Math.random()))
-    const C = (Math.floor(((3)*Z)*Math.random()))
-    const D = (Math.floor(((2+(Z*1))*(0.75))*Math.random()))
-    const E = (Math.floor(((2+(Z*1))*(0.85))*Math.random()))
-    const F = (Math.floor(((11)*Z)*Math.random()+10*Z))
-    const G = (Math.floor(((6)*Z)*Math.random()+5*Z))
+                                                  
+    const B = (Math.floor(((3)*1)*Math.random()))
+    const C = (Math.floor(((3)*1)*Math.random()))
+    const D = (Math.floor(((2)*(0.75))*Math.random()))
+    const E = (Math.floor(((2)*(0.85))*Math.random()))
+    const F = (Math.floor(((11)*1)*Math.random()+10*1))
+    const G = (Math.floor(((6)*1)*Math.random()+5*1))
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -812,16 +810,15 @@ bot.on('message', message => {
 
 
     bot.on('message', message => {
-     let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+     
                                                 if (message.content.startsWith(prefix + "Sanglier récompenses")) {
-                                                  let Z = args.slice(2).join(" : ");
-      const B = (Math.floor(((3)*Z)*Math.random()))
+                                                  
+      const B = (Math.floor(((3)*1)*Math.random()))
       const C = (Math.floor(((3))*Math.random()))
-      const D = (Math.floor(((2+(Z*1))*(0.75))*Math.random()))
-      const E = (Math.floor(((2+(Z*1))*(0.85))*Math.random()))
-      const F = (Math.floor(((11)*Z)*Math.random()+10*Z))
-      const G = (Math.floor(((6)*Z)*Math.random()+5*Z))
+      const D = (Math.floor(((2)*(0.75))*Math.random()))
+      const E = (Math.floor(((2)*(0.85))*Math.random()))
+      const F = (Math.floor(((11)*1)*Math.random()+10*1))
+      const G = (Math.floor(((6)*1)*Math.random()+5*1))
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -842,16 +839,15 @@ bot.on('message', message => {
 
 
       bot.on('message', message => {
-      let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+  
                                                 if (message.content.startsWith(prefix + "Chien récompenses")) {
-                                                  let Z = args.slice(2).join(" : ");
-        const B = (Math.floor(((3)*Z)*Math.random()))
-        const C = (Math.floor(((3)*Z)*Math.random()))
-        const D = (Math.floor(((2+(Z*1))*(0.75))*Math.random()))
-        const E = (Math.floor(((2+(Z*1))*(0.85))*Math.random()))
-        const F = (Math.floor(((11)*Z)*Math.random()+10*Z))
-        const G = (Math.floor(((6)*Z)*Math.random()+5*Z))
+                                                  
+        const B = (Math.floor(((3)*1)*Math.random()))
+        const C = (Math.floor(((3)*1)*Math.random()))
+        const D = (Math.floor(((2)*(0.75))*Math.random()))
+        const E = (Math.floor(((2)*(0.85))*Math.random()))
+        const F = (Math.floor(((11)*1)*Math.random()+10*1))
+        const G = (Math.floor(((6)*1)*Math.random()+5*1))
           const embed = new Discord.RichEmbed()
           .setColor(3447003)
           .setAuthor(message.author.username , message.author.avatarURL)
@@ -872,17 +868,16 @@ bot.on('message', message => {
 
 
         bot.on('message', message => {
-          let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+          
                                                 if (message.content.startsWith(prefix + "Lapin géant récompenses")) {
-                                                  let Z = args.slice(3).join(" : ");
-          const B = (Math.floor(((3)*Z)*Math.random()))
-          const C = (Math.floor(((3)*Z)*Math.random()))
-          const D = (Math.floor(((2+(Z*1))*(0.75))*Math.random()))
-          const E = (Math.floor(((2+(Z*1))*(0.85))*Math.random()))
-          const I = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
-          const F = (Math.floor(((17)*Z)*Math.random()+17*Z))
-          const G = (Math.floor(((21)*Z)*Math.random()+20*Z))
+                                                 
+          const B = (Math.floor(((3)*1)*Math.random()))
+          const C = (Math.floor(((3)*1)*Math.random()))
+          const D = (Math.floor(((2)*(0.75))*Math.random()))
+          const E = (Math.floor(((2)*(0.85))*Math.random()))
+          const I = (Math.floor(((2)*(0.90))*Math.random()))
+          const F = (Math.floor(((17)*1)*Math.random()+17*1))
+          const G = (Math.floor(((21)*1)*Math.random()+20*1))
             const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username , message.author.avatarURL)
@@ -904,15 +899,14 @@ bot.on('message', message => {
         
       
           bot.on('message', message => {
-          let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+        
                                                 if (message.content.startsWith(prefix + "Loup de sang récompenses")) {
-                                                  let Z = args.slice(4).join(" : ");
+                                                 
             const B = (Math.floor(((3)*Z)*Math.random()))
             const C = (Math.floor(((3)*Z)*Math.random()))
-            const D = (Math.floor(((2+(Z*1))*(0.80))*Math.random()))
-            const E = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
-            const I = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
+            const D = (Math.floor(((2)*(0.80))*Math.random()))
+            const E = (Math.floor(((2)*(0.90))*Math.random()))
+            const I = (Math.floor(((2)*(0.95))*Math.random()))
             const F = (Math.floor(((28)*Z)*Math.random()+28*Z))
             const G = (Math.floor(((21)*Z)*Math.random()+20*Z))
               const embed = new Discord.RichEmbed()
@@ -936,24 +930,23 @@ bot.on('message', message => {
           
   
             bot.on('message', message => {
-             let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+            
                                                 if (message.content.startsWith(prefix + "Slime récompenses")) {
-                                                  let Z = args.slice(2).join(" : ");
-              const B = (Math.floor(((3)*Z)*Math.random()))
-              const C = (Math.floor(((2+(Z*1))*(0.50))*Math.random()))
-              const F = (Math.floor(((14)*Z)*Math.random()+14*Z))
-              const G = (Math.floor(((11)*Z)*Math.random()+10*Z))
-              const H = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const I = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const J = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const K = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const L = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const M = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const N = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const O = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const P = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-              const Q = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
+                                                  
+              const B = (Math.floor(((3)*1)*Math.random()))
+              const C = (Math.floor(((2)*(0.50))*Math.random()))
+              const F = (Math.floor(((14)*1)*Math.random()+14*1))
+              const G = (Math.floor(((11)*1)*Math.random()+10*1))
+              const H = (Math.floor(((2)*(0.95))*Math.random()))
+              const I = (Math.floor(((2)*(0.95))*Math.random()))
+              const J = (Math.floor(((2)*(0.95))*Math.random()))
+              const K = (Math.floor(((2)*(0.95))*Math.random()))
+              const L = (Math.floor(((2)*(0.95))*Math.random()))
+              const M = (Math.floor(((2)*(0.95))*Math.random()))
+              const N = (Math.floor(((2)*(0.95))*Math.random()))
+              const O = (Math.floor(((2)*(0.95))*Math.random()))
+              const P = (Math.floor(((2)*(0.95))*Math.random()))
+              const Q = (Math.floor(((2)*(0.95))*Math.random()))
                 const embed = new Discord.RichEmbed()
                 .setColor(3447003)
                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -982,26 +975,25 @@ bot.on('message', message => {
 
 
               bot.on('message', message => {
-                let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+                
                                                 if (message.content.startsWith(prefix + "Bandit débutant récompenses")) {
-                                                  let Z = args.slice(3).join(" : ");
-                  const I = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-                  const J = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const K = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const L = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const M = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const N = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const O = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const P = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const Q = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                   const R = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                    const S = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                     const T = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
-                      const U = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
-                      const V = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
-                const F = (Math.floor(((11)*Z)*Math.random()+10*Z))
-                const G = (Math.floor(((6)*Z)*Math.random()+5*Z))
+                                              
+                  const I = (Math.floor(((2)*(0.95))*Math.random()))
+                  const J = (Math.floor(((2)*(0.97))*Math.random()))
+                  const K = (Math.floor(((2)*(0.97))*Math.random()))
+                  const L = (Math.floor(((2)*(0.97))*Math.random()))
+                  const M = (Math.floor(((2)*(0.97))*Math.random()))
+                  const N = (Math.floor(((2)*(0.97))*Math.random()))
+                  const O = (Math.floor(((2)*(0.97))*Math.random()))
+                  const P = (Math.floor(((2)*(0.97))*Math.random()))
+                  const Q = (Math.floor(((2)*(0.97))*Math.random()))
+                   const R = (Math.floor(((2)*(0.97))*Math.random()))
+                    const S = (Math.floor(((2)*(0.97))*Math.random()))
+                     const T = (Math.floor(((2)*(0.90))*Math.random()))
+                      const U = (Math.floor(((2)*(0.90))*Math.random()))
+                      const V = (Math.floor(((2)*(0.90))*Math.random()))
+                const F = (Math.floor(((11)*1)*Math.random()+10*1))
+                const G = (Math.floor(((6)*1)*Math.random()+5*1))
                   const embed = new Discord.RichEmbed()
                   .setColor(3447003)
                   .setAuthor(message.author.username , message.author.avatarURL)
@@ -1032,26 +1024,23 @@ bot.on('message', message => {
 
 
                 bot.on('message', message => {
-                 let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
                                                 if (message.content.startsWith(prefix + "Bandit expérimenté récompenses")) {
-                                                  let Z = args.slice(3).join(" : ");
-                  const I = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-                  const J = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const K = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const L = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const M = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const N = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const O = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const P = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                  const Q = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                     const R = (Math.floor(((2+(Z*1))*(0.97))*Math.random()))
-                    const S = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
-                     const T = (Math.floor(((2+(Z*1))*(0.90))*Math.random()))
-                      const U = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-                      const V = (Math.floor(((2+(Z*1))*(0.95))*Math.random()))
-                  const F = (Math.floor(((14)*Z)*Math.random()+14*Z))
-                  const G = (Math.floor(((11)*Z)*Math.random()+10*Z))
+                  const I = (Math.floor(((2)*(0.95))*Math.random()))
+                  const J = (Math.floor(((2)*(0.97))*Math.random()))
+                  const K = (Math.floor(((2)*(0.97))*Math.random()))
+                  const L = (Math.floor(((2)*(0.97))*Math.random()))
+                  const M = (Math.floor(((2)*(0.97))*Math.random()))
+                  const N = (Math.floor(((2)*(0.97))*Math.random()))
+                  const O = (Math.floor(((2)*(0.97))*Math.random()))
+                  const P = (Math.floor(((2)*(0.97))*Math.random()))
+                  const Q = (Math.floor(((2)*(0.97))*Math.random()))
+                     const R = (Math.floor(((2)*(0.97))*Math.random()))
+                    const S = (Math.floor(((2)*(0.90))*Math.random()))
+                     const T = (Math.floor(((2)*(0.90))*Math.random()))
+                      const U = (Math.floor(((2)*(0.95))*Math.random()))
+                      const V = (Math.floor(((2)*(0.95))*Math.random()))
+                  const F = (Math.floor(((14)*1)*Math.random()+14*1))
+                  const G = (Math.floor(((11)*1)*Math.random()+10*1))
                     const embed = new Discord.RichEmbed()
                     .setColor(3447003)
                     .setAuthor(message.author.username , message.author.avatarURL)
@@ -1083,30 +1072,27 @@ bot.on('message', message => {
 
 
                   bot.on('message', message => {
-                    let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
                                                 if (message.content.startsWith(prefix + "Bandit sombre récompenses")) {
-                                                  let AB = args.slice(3).join(" : ");
-                      const I = (Math.floor(((AB*1+1)*(0.90))*Math.random()))
-                  const J = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const K = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const L = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const M = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const N = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const O = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const P = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const Q = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const R = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                  const S = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                     const T = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                      const U = (Math.floor(((AB/1+1)*(0.90))*Math.random()))
-                      const V = (Math.floor(((AB/1+1)*(0.90))*Math.random()))
-                      const W = (Math.floor(((AB/1+1)*(0.90))*Math.random()))
-                      const X = (Math.floor(((AB/1+1)*(0.90))*Math.random()))
-                       const Y = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                        const Z = (Math.floor(((AB/1+1)*(0.95))*Math.random()))
-                    const F = (Math.floor(((28)*AB)*Math.random()+28*AB))
-                    const G = (Math.floor(((21)*AB)*Math.random()+20*AB))
+                      const I = (Math.floor(((2*(0.90))*Math.random()))
+                  const J = (Math.floor(((2*(0.95))*Math.random()))
+                  const K = (Math.floor(((2*(0.95))*Math.random()))
+                  const L = (Math.floor(((2*(0.95))*Math.random()))
+                  const M = (Math.floor(((2*(0.95))*Math.random()))
+                  const N = (Math.floor(((2*(0.95))*Math.random()))
+                  const O = (Math.floor(((2*(0.95))*Math.random()))
+                  const P = (Math.floor(((2*(0.95))*Math.random()))
+                  const Q = (Math.floor(((2*(0.95))*Math.random()))
+                  const R = (Math.floor(((2*(0.95))*Math.random()))
+                  const S = (Math.floor(((2*(0.95))*Math.random()))
+                     const T = (Math.floor(((2*(0.95))*Math.random()))
+                      const U = (Math.floor(((2*(0.90))*Math.random()))
+                      const V = (Math.floor(((2*(0.90))*Math.random()))
+                      const W = (Math.floor(((2*(0.90))*Math.random()))
+                      const X = (Math.floor(((2*(0.90))*Math.random()))
+                       const Y = (Math.floor(((2*(0.95))*Math.random()))
+                        const Z = (Math.floor(((2*(0.95))*Math.random()))
+                    const F = (Math.floor(((28)*1)*Math.random()+28*1))
+                    const G = (Math.floor(((21)*1)*Math.random()+20*1))
                       const embed = new Discord.RichEmbed()
                       .setColor(3447003)
                       .setAuthor(message.author.username , message.author.avatarURL)
