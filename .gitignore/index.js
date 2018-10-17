@@ -3829,7 +3829,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-        .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nPlaines\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nForêt\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nColline\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nMontagne\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nGrotte\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nLabyrinthe")
+        .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nPlaines\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nForêt\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nDonjon sauvage\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nColline\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nMontagne\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nGrotte\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nLabyrinthe")
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
