@@ -3817,7 +3817,7 @@ bot.on('message', message => {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
     .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n=Trajet palier 1\n\nQuand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y a que dans les zones extérieurs !\n\nPour vous rendre de la ville à l'extérieur, il faudra passer par 'Entrée de la ville' !")
-    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }   
@@ -3830,7 +3830,7 @@ bot.on('message', message => {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
         .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nPlaines\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nForêt\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nColline\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nMontagne\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nGrotte\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nLabyrinthe")
-    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }   
@@ -3842,7 +3842,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
     .addField("Trajet en ville :" , "Auberge\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nArène\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEcole\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nBanque\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nJardin\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nExecution publique\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPlace principal\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nParc\\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPrison\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSombre ruelle\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nCommerce\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nHall de guilde\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nTemple\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSouterrains\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nConstructions joueurs\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEntrée de la ville")
         .setTimestamp()
         message.channel.send({embed})
