@@ -3786,11 +3786,69 @@ bot.on('message', message => {
        .addField("Zones :" , "Permet d'apprendre le système de zone !\n=Zones")
     .addBlankField(true)
        .addField("Quiz :" , "Pour être sûr que vous avez compris l'essentiel du fonctionnement du RP !\n=Quiz")
+        .addBlankField(true)
+           .addField("Suite:" , "Permet d'afficher la suite du menu SAO !\n=Menu SAO 4")
+
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
       }   
 });
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Menu SAO 4")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Trajet :" , "Permet d'apprendre le système de trajet !\n=Trajet)
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Trajet")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en ville entre les différents lieux :\n\n=Trajet ville\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n=Trajet palier 1")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Trajet palier 1")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+        .addField("Trajet en ville :\n\nPlaines\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nForêt\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nColline\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nMontagne\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nGrotte\n‖\n‖\n‖ [5 minutes]\n‖\n‖\Labyrinthe")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Trajet ville")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .addField("Trajet en ville :\n\nAuberge\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nArène\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEcole\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nBanque\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nJardin\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nExecution publique\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPlace principal\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nParc\\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPrison\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSombre ruelle\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nCommerce\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nHall de guilde\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nTemple\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSouterrains\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nConstructions joueurs")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
 
 
 bot.on('message', message => {
