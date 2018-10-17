@@ -3802,7 +3802,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Trajet :" , "Permet d'apprendre le système de trajet !\n=Trajet)
+       .addField("Trajet :" , "Permet d'apprendre le système de trajet !\n=Trajet")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
