@@ -22,7 +22,6 @@ bot.on('guildMemberAdd', member => {
 
 
 
-
 bot.on('message', msg => {
     // C DU KK TOUT SA
     const privateMessagesChannel = client.channels.get("id", "457413666485043210"); //SAUF SA
@@ -35,7 +34,7 @@ bot.on('message', msg => {
     if (msg.channel.id === "457413666485043210") {
         console.log("First condition has been passed")
         try {
-            const mentionedUser = message.mentions.user.first();
+            const mentionedUser = msg.mentions.user.first();
             const content = args[1];
             if (content.contains("<@")) return;
             msg.delete();
