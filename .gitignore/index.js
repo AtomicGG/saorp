@@ -3107,7 +3107,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Esquive sans bonus")) {
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B =  (Math.floor((degats)*Math.random()+1*(degats)))
+      const B =  (Math.floor((100)*Math.random()+1))
       if (B < 60){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
