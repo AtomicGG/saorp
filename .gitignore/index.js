@@ -8310,20 +8310,7 @@ bot.on('message', message => {
                                                                                                         }   
                                                                                                       });
 
-                                                                                                      bot.on('message', message => {
-                                                                                                        const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                            if (message.content === (prefix) + "Achat/fabrication/découverte du ragoût de lapin"){
-                                                                                                              const embed = new Discord.RichEmbed()
-                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                 .setColor(3447003)
-                                                                                                                 .addField("Ragoût de lapin :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                 .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
-                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                  .setTimestamp()
-                                                                                                                  message.channel.send({embed})
-                                                                                                                }   
-                                                                                                              });
+                           
                     
 
                                                                                                       bot.on('message', message => {
