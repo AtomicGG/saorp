@@ -3118,7 +3118,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (61 > B){
+      if (61 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3149,7 +3149,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (56 > B){
+      if (56 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
