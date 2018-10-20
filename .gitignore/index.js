@@ -1897,11 +1897,11 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                                    const B = (Math.floor(((Z*3)+3)*Math.random()+0))
+                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const C = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const D = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const E = (Math.floor((((Z*1)+1)*(0.80))*Math.random()+0))
-                                                    const F = (Math.floor((((Z*2)+2)*(0.60))*Math.random()+0))
+                                                    const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
                                                      const embed = new Discord.RichEmbed()
                                                      .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
