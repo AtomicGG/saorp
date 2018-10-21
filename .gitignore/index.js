@@ -3538,7 +3538,7 @@ if (message.content.startsWith(prefix + "Interception avec bonus de 5")) {
      .setTimestamp()
      message.channel.send({embed})
     }
-    if (46 < B)
+    if (46 < B){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
