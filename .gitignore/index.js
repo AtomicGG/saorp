@@ -2057,7 +2057,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Points de vitalité")) {
         let X = args.slice(3).join(" : ");
-        const A = X*3
+        const A = X*5
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3525,7 +3525,7 @@ bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Interception avec bonus de 5")) {
- let degats = args.slice(3).join(" : ");
+ let degats = args.slice(5).join(" : ");
     const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 45){
@@ -3538,7 +3538,7 @@ if (message.content.startsWith(prefix + "Interception avec bonus de 5")) {
      .setTimestamp()
      message.channel.send({embed})
     }
-    if (46 < B){
+    if (46 < B)
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5111,7 +5111,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Cueilleur :" , "Niveau 1 : Aucun\nNiveau 2 : 3 HP supplémentaire !\nNiveau 3 : 6 HP supplémentaire !\nNiveau 4 : 9 HP supplémentaire !\nNiveau 5 : 12 HP supplémentaire !\nNiveau 6 : 15 HP supplémentaire !\nNiveau 7 : 18 HP supplémentaire !\nNiveau 8 : 21 HP supplémentaire !\nNiveau 9 : 24 HP supplémentaire !\nNiveau 10 : 27 HP supplémentaire !")
+        .addField("Cueilleur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 10 HP supplémentaire !\nNiveau 4 : 15 HP supplémentaire !\nNiveau 5 : 12 HP supplémentaire !\nNiveau 6 : 15 HP supplémentaire !\nNiveau 7 : 18 HP supplémentaire !\nNiveau 8 : 21 HP supplémentaire !\nNiveau 9 : 24 HP supplémentaire !\nNiveau 10 : 27 HP supplémentaire !")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
          .setTimestamp()
          message.channel.send({embed})
