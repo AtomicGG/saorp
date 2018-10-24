@@ -6599,7 +6599,83 @@ bot.on('message', message => {
                               message.channel.send({embed})
                             }   
                           });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Anneau rouillé")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Anneau rouillé :" , "C'est un anneau toucher par l'érosion constitué de cuivre médiocre !")
+             .addField("Niveau minimum requis pour le porter :" , "6")
+             .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+             .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 2 coeur de loup, 2 coeur de taupe")
+             .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+             .addField("Prix d'achat :" , "200 cols")
+             .addField("Prix de revente :" , "50 cols")
+             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'anneau rouillé")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Amulette rouillée")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Amulette rouillée :" , "C'est une amulette toucher par l'érosion constitué de cuivre médiocre !")
+             .addField("Niveau minimum requis pour le porter :" , "6")
+             .addField("Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet :" , "1")
+             .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 2 coeur de loup, 2 coeur de taupe")
+             .addField("Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer :" , "4")
+             .addField("Prix d'achat :" , "200 cols")
+             .addField("Prix de revente :" , "50 cols")
+             .addField("Pour acheter ou fabriquer cet objet :" , "=Achat/fabrication/découverte de l'amulette rouillée")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
     
+
+
+
+                          bot.on('message', message => {
+                            const Défense = (Math.floor((4)*Math.random()+1))
+                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau rouillé")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Anneau rouillé :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+
+                          bot.on('message', message => {
+                            const Défense = (Math.floor((4)*Math.random()+1))
+                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette rouillée")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Amulette rouillée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
 
                           bot.on('message', message => {
                             const HP = (Math.floor((3)*Math.random()+3))
