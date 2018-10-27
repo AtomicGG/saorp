@@ -21,23 +21,12 @@ bot.on('guildMemberAdd', member => {
 });
 
 
-bot.on('guildMemberAdd', member => {
-  member.createDM().then(channel => {
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .addField("test :" , "test")
-       .setTimestamp()
-        message.channel.send({embed})})          
-});        
 
 
-
-bot.on('message', message => {
+bot.on('guildMemberAdd', message => {
 if (message.content.startsWith(prefix + "Alerte")) {
     member.createDM().then(channel => {
-return channel.send("**__۝▬▬๑₪۩۞『SAO Community ©』۞۩₪๑▬▬۝ __**\n\n\nBonjour ou bonsoir, toi qui lis ce message !\n\n\nTu doit certainement pas comprendre pourquoi tu reçois ce message, et bien je suis un bot, plus particulièrement le bot du serveur nommé : SAO Community [RP] !\n\n\nMon maître ma charger de transmettre ce message à tous les membres, de nouvelles parties sont disponibles tel que : la partie pub, la partie rencontre, la partie gaming, la partie RP, la partie pub, la partie mini-jeux textuels, la partie histoire interactive, la partie aide aux devoirs, la partie programmation, la partie bots ainsi que la partie pour annoncer des lives ou des vidéos à tous !\n\n\nC'est à peux près tous, dans le salon qui se nomme ├──📟ᴠᴏs-sᴀʟᴏɴs vous aurez la possibilité de choisir en appuyant sur la bonne réaction, quel parties vous voulez voir et pouvoir utiliser !\n\n\nSi pouvez aussi dans le salon ├──👑ɴᴏᴛᴇ-﹠ᴀᴠɪs mettre une note au discord, et donner votre avis sur ce qui est positif ou négatif !\n\n\nMerci d'avoir lus, et n'hésites pas à venir parler ou demander au staff si tu es en difficulté !**__۝▬▬๑₪۩۞『:ribbon:』۞۩₪๑▬▬۝__**")
+return channel.send("**__۝▬▬๑₪۩۞『SAO Community ©』۞۩₪๑▬▬۝ __**\n\n\n```Bonjour ou bonsoir, toi qui lis ce message !\n\n\nTu doit certainement pas comprendre pourquoi tu reçois ce message, et bien je suis un bot, plus particulièrement le bot du serveur nommé : SAO Community [RP] !\n\n\nMon maître ma charger de transmettre ce message à tous les membres, de nouvelles parties sont disponibles tel que : la partie pub, la partie rencontre, la partie gaming, la partie RP, la partie pub, la partie mini-jeux textuels, la partie histoire interactive, la partie aide aux devoirs, la partie programmation, la partie bots ainsi que la partie pour annoncer des lives ou des vidéos à tous !\n\n\nC'est à peux près tous, dans le salon qui se nomme ├──📟ᴠᴏs-sᴀʟᴏɴs vous aurez la possibilité de choisir en appuyant sur la bonne réaction, quel parties vous voulez voir et pouvoir utiliser !\n\n\nSi pouvez aussi dans le salon ├──👑ɴᴏᴛᴇ-﹠ᴀᴠɪs mettre une note au discord, et donner votre avis sur ce qui est positif ou négatif !\n\n\nMerci d'avoir lus, et n'hésites pas à venir parler ou demander au staff si tu es en difficulté !```**__۝▬▬๑₪۩۞『:ribbon:』۞۩₪๑▬▬۝__**")
 }).catch(console.error)}})
 
 
