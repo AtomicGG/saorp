@@ -21,6 +21,21 @@ bot.on('guildMemberAdd', member => {
 });
 
 
+bot.on('guildMemberAdd', member => {
+
+  member.createDM().then(channel => {
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .addField("test :" , "test")
+       .setTimestamp()
+        message.channel.send({embed})}
+      }).catch(console.error)
+  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
+});
+
+
 
 bot.on('message', message => {
 
