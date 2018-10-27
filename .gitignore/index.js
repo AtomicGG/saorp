@@ -22,7 +22,6 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on('guildMemberAdd', member => {
-
   member.createDM().then(channel => {
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
@@ -30,10 +29,9 @@ bot.on('guildMemberAdd', member => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .addField("test :" , "test")
        .setTimestamp()
-        message.channel.send({embed})}
-                         )
-                       })
+        message.channel.send({embed})})                    
       }).catch(console.error)
+
 
 
 
