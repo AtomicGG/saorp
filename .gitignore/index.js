@@ -34,8 +34,7 @@ bot.on('guildMemberAdd', member => {
                          )
                        })
       }).catch(console.error)
-  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
-});
+);
 
 
 
