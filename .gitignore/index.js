@@ -3697,7 +3697,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
 } else {
-  message.channel.send("Cher @『MODERATEUR』 et @『ASSISTANT』, j'ai une question à vous poser !");
+  message.channel.send("Cher @MODERATEUR et @ASSISTANT, j'ai une question à vous poser !");
        talkedRecently.add(message.author.id+1300);
        setTimeout(() => {
         talkedRecently.delete(message.author.id+1300);
