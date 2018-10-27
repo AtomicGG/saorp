@@ -30,7 +30,7 @@ bot.on('guildMemberAdd', member => {
          .addField("test :" , "test")
        .setTimestamp()
         message.channel.send({embed})})                    
-      }).catch(console.error)
+
 
 
 
