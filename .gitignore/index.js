@@ -31,6 +31,7 @@ bot.on('guildMemberAdd', member => {
          .addField("test :" , "test")
        .setTimestamp()
         message.channel.send({embed})}
+                         )
       }).catch(console.error)
   // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
 });
