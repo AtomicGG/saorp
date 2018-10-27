@@ -3685,7 +3685,18 @@ bot.on('message', message => {
 
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
-
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Aide")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+        .addField("Demande d'aide :" , "Cher @『MODERATEUR』 et @『ASSISTANT』, j'ai une question à vous poser !")
+        .setImage("https://www.clipartmax.com/png/middle/292-2925743_do-sword-art-online-kirito-hairstyle.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+});
 
 
 bot.on('message', message => {
