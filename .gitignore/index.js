@@ -34,7 +34,7 @@ bot.on('guildMemberAdd', member => {
                          )
                        })
       }).catch(console.error)
-);
+
 
 
 
