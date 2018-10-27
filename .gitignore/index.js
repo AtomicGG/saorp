@@ -3687,7 +3687,7 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Aide")) {
-      if (talkedRecently.has(message.author.id+7)) {
+      if (talkedRecently.has(message.author.id+1300)) {
                               const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3698,9 +3698,9 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
      message.channel.send("Cher @『MODERATEUR』 et @『ASSISTANT』, j'ai une question à vous poser !");
-                           talkedRecently.add(message.author.id+13);
+                           talkedRecently.add(message.author.id+1300);
                                  setTimeout(() => {
-                                  talkedRecently.delete(message.author.id+13);
+                                  talkedRecently.delete(message.author.id+1300);
                                 }, 1500000);
   }
 });
