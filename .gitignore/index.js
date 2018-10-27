@@ -3687,16 +3687,24 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Aide")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-        .addField("Demande d'aide :" , "Cher @『MODERATEUR』 et @『ASSISTANT』, j'ai une question à vous poser !")
-        .setImage("https://www.clipartmax.com/png/middle/292-2925743_do-sword-art-online-kirito-hairstyle.png")
-        .setTimestamp()
-        message.channel.send({embed})
-      }   
+      if (talkedRecently.has(message.author.id+7)) {
+                              const embed = new Discord.RichEmbed()
+                               .setAuthor(message.author.username , message.author.avatarURL)
+                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                               .setColor(3447003)
+                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                               .setTimestamp()
+                               message.channel.send({embed})
+                      } else {
+     message.channel.send("Cher @『MODERATEUR』 et @『ASSISTANT』, j'ai une question à vous poser !");
+                           talkedRecently.add(message.author.id+13);
+                                 setTimeout(() => {
+                                  talkedRecently.delete(message.author.id+13);
+                                }, 1500000);
+  }
 });
+   
 
 
 bot.on('message', message => {
@@ -4232,7 +4240,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
