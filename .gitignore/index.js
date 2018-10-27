@@ -29,8 +29,8 @@ bot.on('guildMemberAdd', member => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .addField("test :" , "test")
        .setTimestamp()
-        message.channel.send({embed})})                    
-
+        message.channel.send({embed})
+})           })        
 
 
 
