@@ -9025,7 +9025,7 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-          }   
+          
     });
 
                                
