@@ -3167,7 +3167,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive  avec bonus de 10")) {
+  if (message.content.startsWith(prefix + "Esquive avec bonus de 10")) {
       let degats = args.slice(5).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
