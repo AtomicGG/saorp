@@ -2391,7 +2391,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Coup d'estoc sans bonus")) {
   let degats = args.slice(4).join(" : ");
-  const A = (Math.floor((degats)*Math.random()+1*(degats/2)))
+  const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 5){
    const embed = new Discord.RichEmbed()
@@ -2433,7 +2433,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup d'estoc avec bonus de 5")) {
     let degats = args.slice(6).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats/2)))
+    const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 5){
      const embed = new Discord.RichEmbed()
@@ -2475,7 +2475,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup d'estoc avec bonus de 10")) {
     let degats = args.slice(6).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats/2)))
+    const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 5){
      const embed = new Discord.RichEmbed()
@@ -2517,7 +2517,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup d'estoc avec bonus de 15")) {
     let degats = args.slice(6).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats/2)))
+    const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 5){
      const embed = new Discord.RichEmbed()
