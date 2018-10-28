@@ -3109,7 +3109,7 @@ bot.on('message', message => {
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B =  (Math.floor((100)*Math.random()+1))
-      if (B < 60){
+      if (B < 50){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3119,7 +3119,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (61 < B){
+      if (51 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3138,9 +3138,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Esquive avec bonus de 5")) {
       let degats = args.slice(5).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
-      if (B < 55){
+      if (B < 45){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3150,7 +3150,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (56 < B){
+      if (46 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3169,9 +3169,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Esquive  avec bonus de 10")) {
       let degats = args.slice(5).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
-      if (B < 50){
+      if (B < 40){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3181,7 +3181,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (51 > B){
+      if (41 > B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3200,9 +3200,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Esquive avec bonus de 15")) {
       let degats = args.slice(5).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
-      if (B < 45){
+      if (B < 35){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3212,7 +3212,7 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (46 < B){
+      if (36 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3238,7 +3238,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2.5+ " points de dégâts")
+         .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*2.25+ " points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -3247,7 +3247,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.5+ " points de dégâts")
+            .addField("│Vous bloquez l'attaque et vous ne subissez que :" , "│►" +A*1.25+ " points de dégâts")
             .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
             .setTimestamp()
             message.channel.send({embed})
