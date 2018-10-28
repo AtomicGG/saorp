@@ -8735,7 +8735,7 @@ bot.on('message', message => {
                                  .setColor(3447003)
                                                                   .addField("Le donjon sauvage:" , "Pour entrer dans ce donjon, il vous faudra une clef du donjon sauvage par personne, seulement 5 personnes sont autorisés à rentrer en même temps, une fois à l'intérieur, la clef disparaîtra...")
                               .addField("Niveau conseillé :" , "10")
-                                .addField("Actions possibles une fois à l'intérieur :" , "=Déplacement sur la gauche au donjon sauvage\n=Déplacement sur la droite au donjon sauvage\n=Déplacement en avant au donjon sauvage\n=Passage secret au donjon sauvage\n=")
+                                .addField("Actions possibles une fois à l'intérieur :" , "=Déplacement sur la gauche au donjon sauvage\n=Déplacement sur la droite au donjon sauvage\n=Déplacement en avant au donjon sauvage\n=Passage secret au donjon sauvage")
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                    message.channel.send({embed})
