@@ -8738,9 +8738,9 @@ bot.on('message', message => {
                                 .addField("Actions possibles une fois à l'intérieur :" , "=Déplacement sur la gauche au donjon sauvage\n=Déplacement sur la droite au donjon sauvage\n=Déplacement en avant au donjon sauvage\n=Passage secret au donjon sauvage\n=")
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
-                                 message.channel.send({embed})}
-                          }
-                            });
+                                   message.channel.send({embed})
+      }   
+    });
 
 
                                
