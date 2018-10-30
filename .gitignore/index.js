@@ -10026,3 +10026,66 @@ bot.on('message', message => {
 }                 
                                         });
 
+
+
+
+
+
+
+
+
+
+
+
+                                    bot.on('message', message => {
+                                      if (message.content.startsWith(prefix + "Bonbon étrange")) {
+                                        const image = (Math.floor(100)*Math.random()+1)
+                                        if(image < 20){
+                                        const embed = new Discord.RichEmbed()
+                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                           .setColor(3447003)
+                                        .addField("Transformation en lapin géant :" , "Vos pieds double de volume et de longues et fines oreilles poussent sur votre tête, des poils apparaîssent tous le long de vos bras et jambes ainsi que votre torse, de longues dents poussent à l'intérieur de votre bouche\n\nVotre transformation dure 24 H et vous confère 50 HP max supplémentaire ainsi que 4 points de défense !")
+                                           .setImage("https://vignette.wikia.nocookie.net/sfgame/images/0/06/Grauenvoller_monsterhase.png/revision/latest?cb=20090708085014&path-prefix=de")
+                                            .setTimestamp()
+                                            message.channel.send({embed}) }
+                                            if(21 < image & image < 40){
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                               .addField("Transformation en slime :" , "Votre corps devient gelatineux, vous réduisez de taille mais vous vous sentez très à l'aise comme ceci malgrè que vous êtes presque liquide d'une couleur verte clair\n\nVotre transformation dure 24 H et vous confère 75 HP max supplémentaire ainsi que 6 points de défense !")
+                                                 .setImage("https://vignette.wikia.nocookie.net/sfery/images/6/6b/59pf1_gabrieldevue.jpeg/revision/latest?cb=20141130234640")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed}) }
+                                                  if(41 < image & image < 60){
+                                                    const embed = new Discord.RichEmbed()
+                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                       .setColor(3447003)
+                                                       .setImage("https://i0.wp.com/www.syldi-studio.com/wp-content/uploads/2017/10/loup-garou-foret-face-gros-plan.jpg?fit=640%2C585&ssl=1")
+                                                        .setTimestamp()
+                                                     .addField("Transformation en loup garou :" , "Vos mains deviennent très poilus avec des griffes sur le bout des doigts, vous doublez presque de taille et de volume physiquement et un museau apparaît sur votre visage, des crocs font aussi leur apparition sortant de votre bouche.\n\nVotre transformation dure 24 H et vous confère 10 points de dégâts supplémentaires ainsi que 50 HP !")
+                                                        message.channel.send({embed}) }
+                                                        if(61 < image & image < 80){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                             .setColor(3447003)
+                                                           .addField("Transformation en roi des kobolts :" , "Une hache assez large apparaît dans votre main et un bouclier dans l'autre pendant que votre corps triple voir même quadruple de taille, votre peau devient d'une couleur rouge foncé avec des symboles dessus, et vous sentez aussi que vos yeux ont changés pour une couleur rouge très voyante presque lumineuse\n\nVotre transformation dure 24 H et vous confère 10 dégâts supplémentaires ainsi que 50 HP et 10 points d'armure !")
+                                                             .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/f/f0/SAO_E02.png/revision/latest?cb=20120911050512")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed}) }
+                                                              if(81 < image & image < 100){
+                                                                const embed = new Discord.RichEmbed()
+                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                   .setColor(3447003)
+                                                                 .addField("Transformation en gleam eyes :" , "Une gigantesque épée de formes complexes apparaît dans vos deux mains, votre corps devient tellement immense que vous ne savez plus la notion de la taille humaine, votre peau devient bleu foncé et vos yeux de la même couleur, des cornes poussent sur votre tête ainsi que des genre de sabots à vos pied\n\nVotre transformation dure 24 H et vous confère 20 dégâts supplémentaires ainsi que 100 HP et 10 points d'armure !")
+                                                                   .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/a/ab/TheGleamEyes.png/revision/latest?cb=20170611161342&path-prefix=fr")
+                                                                    .setTimestamp()
+                                                                    message.channel.send({embed}) }
+                                                                   
+}                 
+                                        });
+
