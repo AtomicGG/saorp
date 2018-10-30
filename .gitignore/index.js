@@ -9117,7 +9117,7 @@ bot.on('message', message => {
                       });
 
                        bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Viande de loup")) {
+     if (message.content === prefix + "Viande de loup") {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9134,7 +9134,7 @@ bot.on('message', message => {
 
 
       bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Viande de loup de sang")) {
+         if (message.content === prefix + "Viande de loup de sang") {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9253,7 +9253,7 @@ bot.on('message', message => {
 
                       
                   bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Peau de loup")) {
+                     if (message.content === prefix + "Peau de loup") {
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9271,7 +9271,7 @@ bot.on('message', message => {
 
                       
                   bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Peau de loup de sang")) {
+                     if (message.content === prefix + "Peau de loup de sang") {
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9387,7 +9387,7 @@ bot.on('message', message => {
                                           });
 
                                           bot.on('message', message => {
-                                            if (message.content.startsWith(prefix + "Coeur de loup")) {
+                                             if (message.content === prefix + "Coeur de loup") {
                                               const embed = new Discord.RichEmbed()
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9405,7 +9405,7 @@ bot.on('message', message => {
 
                                               
                                           bot.on('message', message => {
-                                            if (message.content.startsWith(prefix + "Coeur de loup de sang")) {
+                                             if (message.content === prefix + "Coeur de loup de sang") {
                                               const embed = new Discord.RichEmbed()
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9525,7 +9525,7 @@ bot.on('message', message => {
 
 
                                                                   bot.on('message', message => {
-                                                                    if (message.content.startsWith(prefix + "Oeil de loup")) {
+                                                                     if (message.content === prefix + "Oeil de loup") {
                                                                       const embed = new Discord.RichEmbed()
                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9560,7 +9560,7 @@ bot.on('message', message => {
     
                                                                       
                                                                   bot.on('message', message => {
-                                                                    if (message.content.startsWith(prefix + "Oeil de loup de sang")) {
+                                                                     if (message.content === prefix + "Oeil de loup de sang") {
                                                                       const embed = new Discord.RichEmbed()
                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
