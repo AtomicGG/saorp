@@ -768,7 +768,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField("Récompenses :" , "Suite à votre combat contre le loup, vous obtenez :")
-    .addField(":poultry_leg: Viande de loup : " +B+ , "")
+    .addField(":poultry_leg: Viande de loup : " +B , "")
     .addField(":knife: Peau de loup :" , +C)
     .addField(":eye: Oeil de loup :" , +D)
     .addField(":cupid: Coeur de loup :" , +E)
