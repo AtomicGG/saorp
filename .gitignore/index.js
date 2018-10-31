@@ -10097,14 +10097,21 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-
-                                                if (message.content.startsWith(prefix + "Testeux")) {
-                                               
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Testeux")) {
+  let X = args.slice(1).join(" : "); 
+  if(X = 5){
+    const Z = 6 }
+    if(X = 6){
+    const Z = 12 }
+    if(X = 7){
+    const Z = 15 }
   const B = (Math.floor((3*1)*Math.random()))
   const C = (Math.floor((3*1)*Math.random()))
   const D = (Math.floor((2-(0.75))*Math.random()))
   const E = (Math.floor((2-(0.85))*Math.random()))
-  const F = (Math.floor((14*1)*Math.random()+14*1))
+  const F = (Math.floor(((14*1)-Z)*Math.random()+(14*1)-Z))
   const G = (Math.floor((11*1)*Math.random()+10*1))
   const I = (Math.floor((2-(0.90))*Math.random()))
     const embed = new Discord.RichEmbed()
@@ -10118,4 +10125,5 @@ bot.on('message', message => {
         }
   }) ;
 
+      
 
