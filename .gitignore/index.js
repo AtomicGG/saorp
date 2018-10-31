@@ -10101,12 +10101,16 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Testeux")) {
   let X = args.slice(1).join(" : "); 
+    const Z = 0
   if(X = 5){
-    const Z = 6 }
+    const Z = 6 
+    }
     if(X = 6){
-    const Z = 12 }
+    const Z = 12 
+    }
     if(X = 7){
-    const Z = 15 }
+    const Z = 15 
+    }
   const B = (Math.floor((3*1)*Math.random()))
   const C = (Math.floor((3*1)*Math.random()))
   const D = (Math.floor((2-(0.75))*Math.random()))
