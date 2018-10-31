@@ -10112,7 +10112,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "Suite à votre combat contre le loup, vous obtenez :\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ ":eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G+ ")
+    .addField("Récompenses :" , "Suite à votre combat contre le loup, vous obtenez :\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ ":eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
     .setTimestamp()
     message.channel.send({embed})
         }
