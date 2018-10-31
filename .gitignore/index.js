@@ -775,7 +775,7 @@ bot.on('message', message => {
     .addField(":gem: Croc de loup :" , +I)
     .addField(":sparkles: Points d'expérience :" , +F)
     .addField(":x: Si vous êtes du niveau de 10 ou plus :" , "Vous ne gagnez plus d'expérience sur ce monstre")
-    .addField(": arge_orange_diamond:]Cols :" , +G)
+    .addField(":large_orange_diamond: Cols :" , +G)
     .setTimestamp()
     message.channel.send({embed})
         }
@@ -10088,4 +10088,34 @@ bot.on('message', message => {
                                                                    
 }                 
                                         });
+
+
+
+
+
+
+
+
+bot.on('message', message => {
+
+                                                if (message.content.startsWith(prefix + "Testeux")) {
+                                               
+  const B = (Math.floor((3*1)*Math.random()))
+  const C = (Math.floor((3*1)*Math.random()))
+  const D = (Math.floor((2-(0.75))*Math.random()))
+  const E = (Math.floor((2-(0.85))*Math.random()))
+  const F = (Math.floor((14*1)*Math.random()+14*1))
+  const G = (Math.floor((11*1)*Math.random()+10*1))
+  const I = (Math.floor((2-(0.90))*Math.random()))
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField("Récompenses :" , "Suite à votre combat contre le loup, vous obtenez :\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ ":eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G+ ")
+    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
 
