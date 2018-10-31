@@ -10101,17 +10101,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Testeux")) {
   let X = args.slice(1).join(" : "); 
-    const Z = 0
   if(X = 5){
     const Z = 6 
-    }
-    if(X = 6){
-    const Z = 12 
-    }
-    if(X = 7){
-    const Z = 15 
-    }
-  const B = (Math.floor((3*1)*Math.random()))
+    const B = (Math.floor((3*1)*Math.random()))
   const C = (Math.floor((3*1)*Math.random()))
   const D = (Math.floor((2-(0.75))*Math.random()))
   const E = (Math.floor((2-(0.85))*Math.random()))
@@ -10126,6 +10118,43 @@ bot.on('message', message => {
     .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
     .setTimestamp()
     message.channel.send({embed})
+    }
+    if(X = 6){
+    const Z = 12 
+    const B = (Math.floor((3*1)*Math.random()))
+  const C = (Math.floor((3*1)*Math.random()))
+  const D = (Math.floor((2-(0.75))*Math.random()))
+  const E = (Math.floor((2-(0.85))*Math.random()))
+  const F = (Math.floor(((14*1)-Z)*Math.random()+(14*1)-Z))
+  const G = (Math.floor((11*1)*Math.random()+10*1))
+  const I = (Math.floor((2-(0.90))*Math.random()))
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+    if(X = 7){
+    const Z = 15 
+    const B = (Math.floor((3*1)*Math.random()))
+  const C = (Math.floor((3*1)*Math.random()))
+  const D = (Math.floor((2-(0.75))*Math.random()))
+  const E = (Math.floor((2-(0.85))*Math.random()))
+  const F = (Math.floor(((14*1)-Z)*Math.random()+(14*1)-Z))
+  const G = (Math.floor((11*1)*Math.random()+10*1))
+  const I = (Math.floor((2-(0.90))*Math.random()))
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
+    .setTimestamp()
+    message.channel.send({embed})
+    }
         }
   }) ;
 
