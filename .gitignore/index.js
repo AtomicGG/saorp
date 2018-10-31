@@ -768,7 +768,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 10 ou plus...\n:large_orange_diamond: Cols : " +G)
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
     .setTimestamp()
     message.channel.send({embed})
         }
@@ -790,7 +790,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField("Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 5 ou plus...\n:large_orange_diamond: Cols : " +G)
+          .addField("Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
 
       .setTimestamp()
       message.channel.send({embed})
@@ -814,7 +814,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 5 ou plus...\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
 
         .setTimestamp()
         message.channel.send({embed})
@@ -838,7 +838,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                   .addField("Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 5 ou plus...\n:large_orange_diamond: Cols : " +G)
+                   .addField("Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
 
           .setTimestamp()
           message.channel.send({embed})
@@ -863,7 +863,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField("Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 8 ou plus...\n:large_orange_diamond: Cols : " +G)
+          .addField("Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 8 ou plus\n:large_orange_diamond: Cols : " +G)
             .setTimestamp()
             message.channel.send({embed})
                 }
@@ -887,7 +887,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 15 ou plus...\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 15 ou plus\n:large_orange_diamond: Cols : " +G)
               .setTimestamp()
               message.channel.send({embed})
                   }
@@ -918,7 +918,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Casque rouillé : " +H+ "\n:scales: Epaulières rouillées : " +I+ "\n:scales: Cape endommagée : " +J+ "\n:scales: Plastron rouillé : " +K+ "\n:scales: Gantelets rouillés : " +L+ "\n:scales: Ceinture rouillée : " +M+ "\n:scales: Jambières rouillées : " +N+ "\n:scales: Bottes rouillées : " +O+ "\n:scales: Anneau rouillé : " +P+ "\n:scales: Amulette rouillée : " +Q+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 10 ou plus...\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Casque rouillé : " +H+ "\n:scales: Epaulières rouillées : " +I+ "\n:scales: Cape endommagée : " +J+ "\n:scales: Plastron rouillé : " +K+ "\n:scales: Gantelets rouillés : " +L+ "\n:scales: Ceinture rouillée : " +M+ "\n:scales: Jambières rouillées : " +N+ "\n:scales: Bottes rouillées : " +O+ "\n:scales: Anneau rouillé : " +P+ "\n:scales: Amulette rouillée : " +Q+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
                 .setTimestamp()
                 message.channel.send({embed})
                     }
@@ -951,7 +951,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Rapière basique à une main : " +I+ "\n:scales: Casque en peau arraché : " +J+ "\n:scales: Epaulières en peau arrachées : " +K+ "\n:scales: Cape en peau arrachée : " +L+ "\n:scales: Plastron en peau arraché : " +M+ "\n:scales: Gantelets en peau arrachés : " +N+ "\n:scales: Ceinture en peau arrachée : " +O+ "\n:scales: Jambières en peau arrachées : " +P+ "\n:scales: Bottes en peau arrachées : " +Q+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 8 ou plus...\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:scales: Rapière basique à une main : " +I+ "\n:scales: Casque en peau arraché : " +J+ "\n:scales: Epaulières en peau arrachées : " +K+ "\n:scales: Cape en peau arrachée : " +L+ "\n:scales: Plastron en peau arraché : " +M+ "\n:scales: Gantelets en peau arrachés : " +N+ "\n:scales: Ceinture en peau arrachée : " +O+ "\n:scales: Jambières en peau arrachées : " +P+ "\n:scales: Bottes en peau arrachées : " +Q+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 8 ou plus\n:large_orange_diamond: Cols : " +G)
                   .setTimestamp()
                   message.channel.send({embed})
                       }
@@ -983,7 +983,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Epée basique à une main : " +I+ "\n:scales: Casque en peau résistante : " +J+ "\n:scales: Epaulières en peau résistantes : " +K+ "\n:scales: Cape en peau résistante : " +L+ "\n:scales: Plastron en peau résistante : " +M+ "\n:scales: Gantelets en peau résistantes : " +N+ "\n:scales: Ceinture en peau  résistante : " +O+ "\n:scales: Jambières en peau résistantes : " +P+ "\n:scales: Bottes en peau résistantes : " +Q+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 13 ou plus...\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:scales: Epée basique à une main : " +I+ "\n:scales: Casque en peau résistante : " +J+ "\n:scales: Epaulières en peau résistantes : " +K+ "\n:scales: Cape en peau résistante : " +L+ "\n:scales: Plastron en peau résistante : " +M+ "\n:scales: Gantelets en peau résistantes : " +N+ "\n:scales: Ceinture en peau  résistante : " +O+ "\n:scales: Jambières en peau résistantes : " +P+ "\n:scales: Bottes en peau résistantes : " +Q+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 13 ou plus\n:large_orange_diamond: Cols : " +G)
                     .setTimestamp()
                     message.channel.send({embed})
                         }
@@ -1019,7 +1019,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Dague basique à une main : " +I+ "\n:scales: Casque en peau résistante : " +J+ "\n:scales: Epaulières en peau résistantes : " +K+ "\n:scales: Cape en peau résistante : " +L+ "\n:scales: Plastron en peau résistante : " +M+ "\n:scales: Gantelets en peau résistantes : " +N+ "\n:scales: Ceinture en peau  résistante : " +O+ "\n:scales: Jambières en peau résistantes : " +P+ "\n:scales: Bottes en peau résistantes : " +Q+ "\n:scales: Anneau du croc : " +R+ "\n:scales: Amulette du croc: " +S+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +X+ "\n:sparkles: Points d'expérience : " +F+ ", aucun si vous êtes de niveau 20 ou plus...\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:scales: Dague basique à une main : " +I+ "\n:scales: Casque en peau résistante : " +J+ "\n:scales: Epaulières en peau résistantes : " +K+ "\n:scales: Cape en peau résistante : " +L+ "\n:scales: Plastron en peau résistante : " +M+ "\n:scales: Gantelets en peau résistantes : " +N+ "\n:scales: Ceinture en peau  résistante : " +O+ "\n:scales: Jambières en peau résistantes : " +P+ "\n:scales: Bottes en peau résistantes : " +Q+ "\n:scales: Anneau du croc : " +R+ "\n:scales: Amulette du croc: " +S+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +X+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 20 ou plus\n:large_orange_diamond: Cols : " +G)
                       .setTimestamp()
                       message.channel.send({embed})
                           }
