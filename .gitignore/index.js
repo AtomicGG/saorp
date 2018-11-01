@@ -1065,9 +1065,7 @@ bot.on('message', message => {
       .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
       .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
-      message.channel.send({embed})
-         
-                  }) ;
+      message.channel.send({embed})};
 
 
 
@@ -1085,9 +1083,7 @@ bot.on('message', message => {
       .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
       .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
-       message.channel.send({embed})
-         
-                  }) ;
+       message.channel.send({embed})};
 
 
 
