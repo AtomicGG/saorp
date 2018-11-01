@@ -1621,7 +1621,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Citrouille vivante défense")) {
-    let Dégâts = args.slice(2).join(" : ");
+    let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((8)*Math.random()+4))
