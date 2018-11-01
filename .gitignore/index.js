@@ -1645,7 +1645,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Citrouille vivante géante :" , "La citrouille vivante saute avant votre coup et retombe violemment sur le sol, faisant tomber le joueur l'ayant attaquer, l'empêchant d'attaquer à son prochain tour")
+          .addField("Citrouille vivante :" , "La citrouille vivante saute avant votre coup et retombe violemment sur le sol, faisant tomber le joueur l'ayant attaquer, l'empêchant d'attaquer à son prochain tour")
           .setTimestamp()
        message.channel.send({embed})}
           }
@@ -1658,17 +1658,17 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Citrouille vivante géante défense")) {
     let Dégâts = args.slice(4).join(" : ");
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/3)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((8)*Math.random()+4))
-     if (B < 40){
+     if (B < 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Citrouille vivante géante :" , "La citrouille vivante géante n'est pas assez réactive et se prend votre coup de plein fouet qui inflige " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (41 < B & B < 90){
+      if (31 < B & B < 86){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1676,7 +1676,7 @@ bot.on('message', message => {
         .addField("Citrouille vivante géante :" , "La citrouille vivante géante vivante bouge rapidement à l'aide de ses racines sur le côté en voyant votre coup")
         .setTimestamp()
         message.channel.send({embed})}
-        if (91 < B){
+        if (85 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
