@@ -1317,7 +1317,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Citrouille vivante attaque")) {
-    const Dégâts = 14
+    const Dégâts = 20
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const Z = (Math.floor((2)*Math.random()+2))
@@ -1351,7 +1351,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Citrouille vivante géante attaque")) {
-    const Dégâts = 100
+    const Dégâts = 200
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const Z = (Math.floor((2)*Math.random()+2))
