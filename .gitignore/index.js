@@ -1066,7 +1066,7 @@ bot.on('message', message => {
       .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
       message.channel.send({embed})
-         }
+         
                   }) ;
 
 
@@ -1086,7 +1086,7 @@ bot.on('message', message => {
       .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
        message.channel.send({embed})
-         }
+         
                   }) ;
 
 
