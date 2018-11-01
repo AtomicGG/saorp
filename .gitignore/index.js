@@ -1350,7 +1350,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField("Citrouille vivante :" , "La citrouille vivante réussis à tounoyer sur elle-même rapidement du bout de ses lianes, elle inflige " +A+ " points de dégâts à " +Z+ " alliés")
         .setTimestamp()
-        message.channel.send({embed})}
+           message.channel.send({embed})}
           }
     }
 );
@@ -1384,7 +1384,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField("Citrouille vivante géante :" , "La citrouille vivante géante réussis à tounoyer sur elle-même rapidement du bout de ses lianes, elle inflige " +A+ " points de dégâts à " +Z+ " alliés")
         .setTimestamp()
-        message.channel.send({embed})}
+          message.channel.send({embed})}
           }
     }
 );
@@ -1408,7 +1408,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField("Bandit sombre :" , "Le bandit sombre sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
         .setTimestamp()
-        message.channel.send({embed})}
+         message.channel.send({embed})}
           }
     }
 );
@@ -1654,9 +1654,9 @@ bot.on('message', message => {
           .setColor(3447003)
           .addField("Citrouille vivante géante :" , "La citrouille vivante saute avant votre coup et retombe violemment sur le sol, faisant tomber le joueur l'ayant attaquer, l'empêchant d'attaquer à son prochain tour")
           .setTimestamp()
-          message.channel.send({embed})}
-            }
+       message.channel.send({embed})}
           }
+    }
 );
 
 
@@ -1690,9 +1690,9 @@ bot.on('message', message => {
           .setColor(3447003)
           .addField("Citrouille vivante géante :" , "La citrouille vivante géante saute avant votre coup et retombe violemment sur le sol, faisant tomber tous le monde et lui offrant une attaque")
           .setTimestamp()
-          message.channel.send({embed})}
-            }
+        message.channel.send({embed})}
           }
+    }
 );
 
 
