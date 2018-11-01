@@ -1661,14 +1661,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/3)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((8)*Math.random()+4))
-     if (B < 30){
+     if (B < 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Citrouille vivante géante :" , "La citrouille vivante géante n'est pas assez réactive et se prend votre coup de plein fouet qui inflige " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (31 < B & B < 86){
+      if (41 < B & B < 86){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
