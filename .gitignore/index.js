@@ -1625,14 +1625,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((8)*Math.random()+4))
-     if (B < 70){
+     if (B < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Citrouille vivante :" , "La citrouille vivante n'est pas assez réactive et se prend votre coup de plein fouet qui inflige " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (71 < B & B < 95){
+      if (61 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1640,7 +1640,7 @@ bot.on('message', message => {
         .addField("Citrouille vivante :" , "La citrouille vivante bouge rapidement à l'aide de ses racines sur le côté en voyant votre coup")
         .setTimestamp()
         message.channel.send({embed})}
-        if (96 < B){
+        if (91 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1661,14 +1661,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((8)*Math.random()+4))
-     if (B < 70){
+     if (B < 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Citrouille vivante géante :" , "La citrouille vivante géante n'est pas assez réactive et se prend votre coup de plein fouet qui inflige " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (71 < B & B < 95){
+      if (41 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -1676,7 +1676,7 @@ bot.on('message', message => {
         .addField("Citrouille vivante géante :" , "La citrouille vivante géante vivante bouge rapidement à l'aide de ses racines sur le côté en voyant votre coup")
         .setTimestamp()
         message.channel.send({embed})}
-        if (96 < B){
+        if (91 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
