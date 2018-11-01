@@ -756,13 +756,13 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup récompenses")) {
   let Z = args.slice(1).join(" : "); 
-    const B = (Math.floor((3*1*Z)*Math.random()))
-  const C = (Math.floor((3*1*Z)*Math.random()))
-  const D = (Math.floor(((2-(0.75))*Z)*Math.random()))
-  const E = (Math.floor(((2-(0.85))*Z)*Math.random()))
-  const F = (Math.floor((14*1*Z)*Math.random()+14*1*Z))
-  const G = (Math.floor((11*1*Z)*Math.random()+10*1*Z))
-  const I = (Math.floor(((2-(0.90))*Z)*Math.random()))
+    const B = (Math.floor((3*1)*Math.random()))
+  const C = (Math.floor((3*1)*Math.random()))
+  const D = (Math.floor((2-(0.75))*Math.random()))
+  const E = (Math.floor((2-(0.85))*Math.random()))
+  const F = (Math.floor((14*1)*Math.random()+14*1*Z))
+  const G = (Math.floor((11*1)*Math.random()+10*1*Z))
+  const I = (Math.floor((2-(0.90))*Math.random()))
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -863,7 +863,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField("Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
+          .addField("Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
             .setTimestamp()
             message.channel.send({embed})
                 }
