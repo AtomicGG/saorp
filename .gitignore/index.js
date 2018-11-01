@@ -8258,7 +8258,7 @@ bot.on('message', message => {
                                                                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                    .setColor(3447003)
-                                                                                                   .addField("Poison faible :" , "Vous arrivez pas à empoisonner votre cible ce qui lui inflige " +Dégâts+ " points de dégâts !")
+                                                                                                   .addField("Poison faible :" , "Vous arrivez à empoisonner votre cible ce qui lui inflige " +Dégâts+ " points de dégâts !")
                                                                                                     .setTimestamp()
                                                                                                     message.channel.send({embed})}
                                                                                               }
