@@ -1051,9 +1051,7 @@ bot.on('message', message => {
                       }) ;
                     
 
-                                        if (message.content.startsWith(prefix + "Citrouille vivante récompenses")) {
-                                              
-                                                  
+                                         if (message.content === prefix + "Citrouille vivante récompenses") {    
     const B = (Math.floor((1)*Math.random()+1))
     const C = (Math.floor((2-(0.95))*Math.random()))
     const D = (Math.floor((2-(0.95))*Math.random()))
@@ -1065,16 +1063,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
-          .addField("Récompenses :" , "\n:poultry_leg: Bonbon étrange : " +B+ "\n:knife: Masque de clown tueur : " +C+ "\n:eye: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
+          .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
 
       .setTimestamp()
-      message.channel.send({embed})
-          }
-    }) ;
+       message.channel.send({embed})
+                            }
+                      }) ;
 
-                                        if (message.content.startsWith(prefix + "Citrouille vivante géante récompenses")) {
-                                              
-                                                  
+
+                                         if (message.content === prefix + "Citrouille vivante géante récompenses") {                           
     const B = (Math.floor((2*1)*Math.random()+3))
     const C = (Math.floor((2-(0.80))*Math.random()))
     const D = (Math.floor((2-(0.80))*Math.random()))
@@ -1086,12 +1083,12 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
-          .addField("Récompenses :" , "\n:poultry_leg: Bonbon étrange : " +B+ "\n:knife: Masque de clown tueur : " +C+ "\n:eye: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
+          .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
 
       .setTimestamp()
       message.channel.send({embed})
-          }
-    }) ;
+                            }
+                      }) ;
 
 
 
