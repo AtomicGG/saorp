@@ -63,7 +63,7 @@ bot.on("message", (message) => {
         .addBlankField(true)
         .addField("Pour effectuer un coup d'estoc :" , "=Coup d'estoc sans bonus : [Vos dégâts]\n=Coup d'estoc avec bonus de 5 : [Vos dégâts]\n=Coup d'estoc avec bonus de 10 : [Vos dégâts]\n=Coup d'estoc avec bonus de 15 : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup provocateur :" , "=Coup provocateur sans bonus : [Vos dégâts]\n=Coup provocateur avec bonus de 5 : [Vos dégâts moins les points d'armure de l'ennemis]\n=Coup provocateur avec bonus de 10 : [Vos dégâts]\n=Coup provocateur avec bonus de 15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup provocateur :" , "=Coup provocateur sans bonus : [Vos dégâts]\n=Coup provocateur avec bonus de 5 : [Vos dégâts]\n=Coup provocateur avec bonus de 10 : [Vos dégâts]\n=Coup provocateur avec bonus de 15 : [Vos dégâts]")
         .addBlankField(true)
         .addField("Pour effectuer un coup circulaire :" , "=Coup circulaire sans bonus : [Vos dégâts]\n=Coup circulaire avec bonus de 5 : [Vos dégâts]\n=Coup circulaire avec bonus de 10 : [Vos dégâts]\n=Coup circulaire avec bonus de 15 : [Vos dégâts]")
         .addBlankField(true)
