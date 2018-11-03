@@ -8817,9 +8817,10 @@ bot.on('message', message => {
                                                                                                                      .addField("Si vous trouvez cette oeuf :" , "=Découverte d'un oeuf déformé")
                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                               .setTimestamp()
-                                                                                                                              message.channel.send({embed})
-                                                                                                                            }   
-                                                                                                                          }); 
+                                                                                                                              message.channel.send({embed})}
+                            }   
+    });
+
 
 
                                        bot.on('message', message => {
@@ -8905,8 +8906,10 @@ bot.on('message', message => {
                                                                                                                               .addField("Bébé loup de sang :" ,"Après chacunes de vos attaques, le bébé renard attaque : =Bébé loup de sang attaque")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
-                                                                                                                              });
+                                                                                                                                 message.channel.send({embed})}
+                            }   
+    });
+
                                          
 
       bot.on('message', message => {
@@ -8932,10 +8935,10 @@ bot.on('message', message => {
                                                                                                                               .addField("Bébé renard :" ,"Le bébé renard fonce rapidement sur sa cible en poussant un petit crie avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
-                                                                                                                            
-                                                                                                                          }); 
-        
+                                                                                                                                message.channel.send({embed})}
+                            }   
+    });
+
         
            bot.on('message', message => {
                                                  const A = (Math.floor((100)*Math.random()+1))  
@@ -8960,9 +8963,10 @@ bot.on('message', message => {
                                                                                                                               .addField("Bébé loup :" ,"Le bébé loup bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
-                                                                                                                            
-                                                                                                                          }); 
+                                                                                                                                message.channel.send({embed})}
+                            }   
+    });
+
              
                      
            bot.on('message', message => {
@@ -8988,9 +8992,10 @@ bot.on('message', message => {
                                                                                                                               .addField("Bébé loup de sang :" ,"Le bébé loup de sang hurle de rage avec un bruit glaçant le sang, il bondit sur sa cible les griffes immenses en avant et le plante, il inflige " +B+ " points de dégâts !")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
-                                                                                                                            
-                                                                                                                          }); 
+                                                                                                                                 message.channel.send({embed})}
+                            }   
+    });
+
 
 
 
