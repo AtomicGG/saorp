@@ -5610,16 +5610,14 @@ bot.on('message', message => {
       }   
     });
 
+
     bot.on('message', message => {
-      let cont = message.content.slice(prefix.length).split(" ");
-      const args = cont.slice(1);
-      if (message.content.startsWith(prefix + "Constructions prix")) {
-        let X = args.slice(2).join(" : ");
+       if (message.content === prefix + "Constructions prix") {
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-        .addField("Prix des constructions :" , "Pas encore disponible")
+        .addField("Prix des constructions :" , "Cabane : 2 500 cols\nUn bar : 5 000 cols\nUne maison : 10 000 cols\nUne demeure : 15 000 cols\nUne planque : 20 000 cols\nUne boutique : 25 000 cols\nUne écurie : 30 000 cols\nUne ferme : 40 000 cols\nUn repaire de guilde : 75 000 cols\nUn temple : 150 000 cols\nUn fort : 250 000 cols\nUne arène : 500 000 cols\nUn fief : 1 000 000 cols\nUne partie de la ville : 10 000 000 cols\nLa ville entière : 100 000 000 cols")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
@@ -9430,7 +9428,7 @@ bot.on('message', message => {
                                   });
 
                                   bot.on('message', message => {
-                                    if (message.content.startsWith(prefix + "Coeur de lapin")) {
+                                      if (message.content === prefix + "Coeur de lapin") {
                                       const embed = new Discord.RichEmbed()
                                       .setAuthor(message.author.username , message.author.avatarURL)
                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9447,7 +9445,7 @@ bot.on('message', message => {
     
 
                                       bot.on('message', message => {
-                                        if (message.content.startsWith(prefix + "Coeur de lapin géant")) {
+                                           if (message.content === prefix + "Coeur de lapin géant") {
                                           const embed = new Discord.RichEmbed()
                                           .setAuthor(message.author.username , message.author.avatarURL)
                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
