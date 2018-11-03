@@ -763,12 +763,13 @@ bot.on('message', message => {
   const F = (Math.floor((14*1)*Math.random()+14*1))
   const G = (Math.floor((11*1)*Math.random()+10*1))
   const I = (Math.floor((2-(0.90))*Math.random()))
+  const Oeufs = (Math.floor((2-(0.98))*Math.random()))
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
     .setTimestamp()
     message.channel.send({embed})
         }
@@ -785,12 +786,13 @@ bot.on('message', message => {
     const E = (Math.floor((2-(0.85))*Math.random()))
     const F = (Math.floor((11*1)*Math.random()+10*1))
     const G = (Math.floor((6*1)*Math.random()+5*1))
+    const Oeufs = (Math.floor((2-(0.99))*Math.random()))
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField("Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
+          .addField("Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ ":gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
 
       .setTimestamp()
       message.channel.send({embed})
@@ -809,12 +811,13 @@ bot.on('message', message => {
       const E = (Math.floor((2-(0.85))*Math.random()))
       const F = (Math.floor((11*1)*Math.random()+10*1))
       const G = (Math.floor((6*1)*Math.random()+5*1))
+      const Oeufs = (Math.floor((2-(0.99))*Math.random()))
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ ":gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
 
         .setTimestamp()
         message.channel.send({embed})
@@ -833,12 +836,13 @@ bot.on('message', message => {
         const E = (Math.floor((2-(0.85))*Math.random()))
         const F = (Math.floor((11*1)*Math.random()+10*1))
         const G = (Math.floor((6*1)*Math.random()+5*1))
+        const Oeufs = (Math.floor((2-(0.99))*Math.random()))
           const embed = new Discord.RichEmbed()
           .setColor(3447003)
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                   .addField("Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
+                   .addField("Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ ":gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 5 ou plus\n:large_orange_diamond: Cols : " +G)
 
           .setTimestamp()
           message.channel.send({embed})
@@ -858,12 +862,13 @@ bot.on('message', message => {
           const I = (Math.floor((2-(0.90))*Math.random()))
           const F = (Math.floor((17*1)*Math.random()+17*1))
           const G = (Math.floor((21*1)*Math.random()+20*1))
+          const Oeufs = (Math.floor((2-(0.98))*Math.random()))
             const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField("Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
+          .addField("Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ ":gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
             .setTimestamp()
             message.channel.send({embed})
                 }
@@ -882,12 +887,13 @@ bot.on('message', message => {
             const I = (Math.floor((2-(0.95))*Math.random()))
             const F = (Math.floor((28)*Math.random()+28))
             const G = (Math.floor((21)*Math.random()+20))
+            const Oeufs = (Math.floor((2-(0.97))*Math.random()))
               const embed = new Discord.RichEmbed()
               .setColor(3447003)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 15 ou plus\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ ":gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 15 ou plus\n:large_orange_diamond: Cols : " +G)
               .setTimestamp()
               message.channel.send({embed})
                   }
@@ -5617,7 +5623,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-        .addField("Prix des constructions :" , "Cabane : 2 500 cols [2 salons discord maximum]\nUn bar : 5 000 cols [3 salons discord maximum]\nUne maison : 10 000 cols [5 salons discord maximum]\nUne demeure : 15 000 cols [8 salons discord maximum]\nUne planque : 20 000 cols [10 salons discord maximum]\nUne boutique : 25 000 cols [13 salons discord maximum]\nUne écurie : 30 000 cols [16 salons discord maximum]\nUne ferme : 40 000 cols [20 salons discord maximum]\nUn repaire de guilde : 75 000 cols [30 salons discord maximum]\nUne prison : 125 000  [50 salons discord maximum]\Un manoir : 175 000 [75 salons discord maximum]Un temple : 250 000 cols [100 salons discord maximum]\nUn fort : 500 000 cols [125 salons discord maximum]\nUne arène : 1 000 000 cols [200 salons discord maximum]\nUn fief : 2 500 000 cols [300 salons discord maximum]\nUne partie de la ville : 10 000 000 cols\nLa ville entière : 100 000 000 cols")
+        .addField("Prix des constructions :" , "Cabane : 2 500 cols [2 salons discord maximum]\nUn bar : 5 000 cols [3 salons discord maximum]\nUne maison : 10 000 cols [5 salons discord maximum]\nUne demeure : 15 000 cols [8 salons discord maximum]\nUne planque : 20 000 cols [10 salons discord maximum]\nUne boutique : 25 000 cols [13 salons discord maximum]\nUne écurie : 30 000 cols [16 salons discord maximum]\nUne ferme : 40 000 cols [20 salons discord maximum]\nUn repaire de guilde : 75 000 cols [30 salons discord maximum]\nUne prison : 125 000  [50 salons discord maximum]\nUn manoir : 175 000 [75 salons discord maximum]Un temple : 250 000 cols [100 salons discord maximum]\nUn fort : 500 000 cols [125 salons discord maximum]\nUne arène : 1 000 000 cols [200 salons discord maximum]\nUn fief : 2 500 000 cols [300 salons discord maximum]\nUne partie de la ville : 10 000 000 cols\nLa ville entière : 100 000 000 cols")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
@@ -8794,6 +8800,200 @@ bot.on('message', message => {
                                                                                                                                   message.channel.send({embed})
                                                                                                                                 }   
                                                                                                                               }); 
+
+ //////////////////////////////////////////////////////////////////OEUFS ET FAMILIERS///////////////////////////////////////////////////////////////////////    
+
+
+                                                                                                                      bot.on('message', message => {
+                                                                                                                        if (message.content.startsWith(prefix + "Oeuf déformé")) {
+                                                                                                                          const embed = new Discord.RichEmbed()
+                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                             .setColor(3447003)
+                                                                                                                             .addField("Oeuf déformé :" , "C'est un oeuf assez étrange, déformé qui renferme parfois un bébé animal trouvable dans le palier 1 !")
+                                 
+                                                                                                                     .addField("Prix d'achat :" , "1000 cols")
+                                                                                                                     .addField("Prix de revente :" , "250 cols")
+                                                                                                                     .addField("Si vous trouvez cette oeuf :" , "=Découverte d'un oeuf déformé")
+                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                              .setTimestamp()
+                                                                                                                              message.channel.send({embed})
+                                                                                                                            }   
+                                                                                                                          }); 
+
+
+                                       bot.on('message', message => {
+                                         const A = (Math.floor((100)*Math.random()+1))                          
+                                                                                                                                                      if (message.content.startsWith(prefix + "Découverte d'un oeuf déformé")) {
+                                                                                                                              if(A < 50){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous ne découvrez aucun bébé animal malheureusement...")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                     if(A > 51 & A < 60){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé lapin !")
+                                                                                                                              .addField("Bébé lapin :" ,"Confère 20 HP max supplémentaires !")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                   if(A > 61 & A < 70){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé renard !")
+                                                                                                                              .addField("Bébé renard :" ,"Après chacunes de vos attaques, le bébé renard attaque : =Bébé renard attaque")
+                                                                                                                              
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                   if(A > 71 & A < 80){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé chien !")
+                                                                                                                              .addField("Bébé chien :" ,"Confère 5 points de dégâts supplémentaires !")
+                                                                                                                           
+                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                   if(A > 81 & A < 90){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé sanglier")
+                                                                                                                              .addField("Bébé sanglier :" ,"Confère 2 points d'armure supplémentaires !")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                   if(A > 91 & A < 95){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé taupe !")
+                                                                                                                              .addField("Bébé taupe :" ,"Confère 4 points d'armure supplémentaires !")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})} 
+                                                                                                                                   if(A > 96 & A < 98){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé loup !")
+                                                                                                                              .addField("Bébé loup :" ,"Après chacunes de vos attaques, le bébé renard attaque : =Bébé loup attaque")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                   if(A > 99){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé loup de sang !")
+                                                                                                                              .addField("Bébé loup de sang :" ,"Après chacunes de vos attaques, le bébé renard attaque : =Bébé loup de sang attaque")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                              });
+                                         
+
+      bot.on('message', message => {
+                                                 const A = (Math.floor((100)*Math.random()+1))  
+                                                    const B = (Math.floor((6)*Math.random()+3))  
+                                                                                                                        if (message.content.startsWith(prefix + "Bébé renard attaque")) {
+                                                                                                                         if(A < 50){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé sanglier")
+                                                                                                                              .addField("Bébé renard :" ,"Le bébé renard tente de mordre sa cible mais il est trop petit et n'arrive pas à lui infliger de dégats...")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                           if(A > 51){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé sanglier")
+                                                                                                                              .addField("Bébé renard :" ,"Le bébé renard fonce rapidement sur sa cible en poussant un petit crie avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                            
+                                                                                                                          }); 
+        
+        
+           bot.on('message', message => {
+                                                 const A = (Math.floor((100)*Math.random()+1))  
+                                                    const B = (Math.floor((13)*Math.random()+6))  
+                                                                                                                        if (message.content.startsWith(prefix + "Bébé loup attaque")) {
+                                                                                                                         if(A < 50){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé sanglier")
+                                                                                                                              .addField("Bébé loup :" ,"Le bébé loup essaye de bondir sur la cible mais se rate et retombe par terre et n'arrive pas à lui infliger de dégâts...")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                           if(A > 51){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé sanglier")
+                                                                                                                              .addField("Bébé loup :" ,"Le bébé loup bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                            
+                                                                                                                          }); 
+             
+                     
+           bot.on('message', message => {
+                                                 const A = (Math.floor((100)*Math.random()+1))  
+                                                    const B = (Math.floor((25)*Math.random()+12))  
+                                                                                                                        if (message.content.startsWith(prefix + "Bébé loup de sang attaque")) {
+                                                                                                                         if(A < 50){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé sanglier")
+                                                                                                                              .addField("Bébé loup de sang :" ,"Le bébé loup de sang hurle pour faire peur à l'ennemis avant de foncer dessus, mais il n'est pas assez rapide et n'arrive pas à lui infliger de dégâts...")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                           if(A > 51){
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+     .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé sanglier")
+                                                                                                                              .addField("Bébé loup de sang :" ,"Le bébé loup de sang hurle de rage avec un bruit glaçant le sang, il bondit sur sa cible les griffes immenses en avant et le plante, il inflige " +B+ " points de dégâts !")
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                            
+                                                                                                                          }); 
+
+
+
  //////////////////////////////////////////////////////////////////DONJON///////////////////////////////////////////////////////////////////////    
 
 
