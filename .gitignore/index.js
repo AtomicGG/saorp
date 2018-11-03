@@ -8814,7 +8814,7 @@ bot.on('message', message => {
                                  
                                                                                                                      .addField("Prix d'achat :" , "1000 cols")
                                                                                                                      .addField("Prix de revente :" , "250 cols")
-                                                                                                                     .addField("Si vous trouvez cette oeuf :" , "=Découverte d'un oeuf déformé")
+                                                                                                                     .addField("Si vous trouvez ou acheter cette oeuf :" , "=Achat/découverte d'un oeuf déformé")
                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                               .setTimestamp()
                                                                                                           message.channel.send({embed})
@@ -8823,7 +8823,7 @@ bot.on('message', message => {
 
                                        bot.on('message', message => {
                                          const A = (Math.floor((100)*Math.random()+1))                          
-                                                                                                                                                      if (message.content.startsWith(prefix + "Découverte d'un oeuf déformé")) {
+                                                                                                                                                      if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf déformé")) {
                                                                                                                               if(A < 50){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
