@@ -4959,8 +4959,8 @@ bot.on('message', message => {
    
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length)
-  const args = cont.slice(1);
+ let cont = message.content.slice(prefix.length).split(" ");
+                  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Combattant")) {
      if (talkedRecently.has(message.author.id+101)) {
       const embed = new Discord.RichEmbed()
