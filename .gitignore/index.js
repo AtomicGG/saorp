@@ -4926,7 +4926,7 @@ bot.on('message', message => {
         });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Combat")) {
+ if (message.content === prefix + "Combat") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4961,7 +4961,7 @@ bot.on('message', message => {
 bot.on('message', message => {
  let cont = message.content.slice(prefix.length).split(" ");
                   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Combattant")) {
+ if (message.content === prefix + "Combattant") {
      if (talkedRecently.has(message.author.id+101)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
@@ -4978,7 +4978,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants, vous produisez un coup déstabilisant sur votre adversaire qui inflige " +A+ " dégâts, il aura un malus de -25 sur ses coups pendant trois tours !")
+       .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants, vous produisez un coup déstabilisant sur votre adversaire qui inflige " +A+ " dégâts, il ne pourra faire aucunes esquives ni de parades pendant trois tours !")
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
