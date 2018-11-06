@@ -10505,7 +10505,7 @@ bot.on('message', message => {
                                                  .setColor(3447003)
                                                                                       .addField("Brouillard" , "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...")
 
-                                                 .setImage("https://i.pinimg.com/originals/3c/d2/24/3cd22423146142a36d2712ad656c2cc1.jpg")
+                                                 .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/December_Fog_01_edit2.jpg/1200px-December_Fog_01_edit2.jpg")
                                                   .setTimestamp()
                                                   message.channel.send({embed}) }
                                                   if(81 < image & image < 90){
