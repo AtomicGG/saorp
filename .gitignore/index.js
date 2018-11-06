@@ -2518,7 +2518,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup perce armure")) {
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+      const A = (Math.floor((degats/4)*Math.random()+1*(degats/2)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 40){
        const embed = new Discord.RichEmbed()
