@@ -10446,6 +10446,93 @@ bot.on('message', message => {
 
 
 
+                                    bot.on('message', message => {
+                                      if (message.content.startsWith(prefix + "Météo du jour")) {
+                                        const image = (Math.floor(100)*Math.random()+1)
+                                        if(image < 30){
+                                        const embed = new Discord.RichEmbed()
+                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                           .setColor(3447003)
+                                        .addField("Ciel dégagé :" , "Aujourd'hui, la météo est un ciel dégagé sans aucuns nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !")
+                                           .setImage("https://www.infoclimat.fr/photolive/photos/2015-09/30572217920151847.jpg")
+                                            .setTimestamp()
+                                            message.channel.send({embed}) }
+                                            if(31 < image & image < 40){
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                                                      .addField("Sombre :" , "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...")
+
+                                                 .setImage("https://vignette.wikia.nocookie.net/creepypasta/images/5/53/Clouds.jpg/revision/latest?cb=20150418001214&path-prefix=de")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed}) }
+                                                  if(41 < image & image < 50){
+                                                    const embed = new Discord.RichEmbed()
+                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                       .setColor(3447003)
+                                                                                            .addField("Soleil :" , "Aujourd'hui, malgrè quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil soit là !")
+
+                                                       .setImage("https://sitel.com.mk/sites/default/files/article/teaser-images/2018/april/sonce-soncevo-vreme-175810.jpg")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed}) }
+                                                        if(51 < image & image < 60){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                             .setFooter("『SAO Community [RP]』©", "https://vignette.wikia.nocookie.net/fairytail/images/a/a1/Elie%27s_boobs.png/revision/latest?cb=20130824220631")
+                                                             .setColor(3447003)
+                                                                                                  .addField("Arc en ciel :" , "Aujourd'hui, quelques nuages et un peu de pluie mais un arc en ciel va se former à la fin de la journée avant que le soleil se couche, vous avez de la chance !")
+
+                                                             .setImage("http://ekladata.com/R64I3AX173zliIFqGrdku1qFK8E.jpg")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed}) }
+                                                              if(61 < image & image < 70){
+                                                                const embed = new Discord.RichEmbed()
+                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                   .setColor(3447003)
+                                                                                                        .addField("Vents violents" , "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...")
+
+                                                                   .setImage("https://cdnfr2.img.sputniknews.com/images/103275/77/1032757713.jpg")
+                                                                    .setTimestamp()
+                                                                    message.channel.send({embed}) }
+                                                                     if(71 < image & image < 80){
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                                                      .addField("Brouillard" , "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...")
+
+                                                 .setImage("https://i.pinimg.com/originals/3c/d2/24/3cd22423146142a36d2712ad656c2cc1.jpg")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed}) }
+                                                  if(81 < image & image < 90){
+                                                    const embed = new Discord.RichEmbed()
+                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                       .setColor(3447003)
+                                                                                            .addField("Pluie et orage :" , "Aujourd'hui, la pluie est présente avec quelques nuages sans aucun soleil en vue, ce n'est pas vraiment le jour pour sortir et se relaxer surtout avec des orages possibles...")
+
+                                                       .setImage("https://p0.storage.canalblog.com/06/80/987217/87418395_o.jpg")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed}) }
+                                                        if(91 < image){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                             .setColor(3447003)
+                                                                                                  .addField("Neige et grêle :" , "Aujourd'hui, le gel et le froid sont bien présents autant dans la ville qu'à l'extérieur, de la grêle ainsi que de la neige tombe du ciel partout, une bonne nouvelle pour certains mais une mauvaise pour les autres n'aimant pas la neige !")
+
+                                                             .setImage("https://www.le-pradet.fr/wp-content/uploads/2018/02/neige-4-1.jpg")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed}) }
+                                                          
+}                 
+                                        });
+
+
 
 
       
