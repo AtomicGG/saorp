@@ -2466,17 +2466,18 @@ bot.on('message', message => {
         }
       }
   });
-///////////////////////////////////////////////////////////////Coup perce armure//////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////Coup sauté//////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup perce armure")) {
-      let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats/3)*Math.random()+1*(degats/2)))
+  if (message.content.startsWith(prefix + "Coup sauté")) {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
-      if (B < 35){
+      if (B < 50){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2486,13 +2487,56 @@ bot.on('message', message => {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (36 < B){
+      if (51 < B & B < 80){
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+         .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+         .setTimestamp()
+         message.channel.send({embed})
+        }
+    if (81 < B){
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+         .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+         .setTimestamp()
+         message.channel.send({embed})
+        }
+      }
+  });
+
+///////////////////////////////////////////////////////////////Coup perce armure//////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup perce armure")) {
+      let degats = args.slice(3).join(" : ");
+      const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+      const B = (Math.floor((100)*Math.random()+1))
+      if (B < 40){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+      if (41 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
          .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
+         .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
          .setTimestamp()
          message.channel.send({embed})
         }
