@@ -10463,7 +10463,7 @@ bot.on('message', message => {
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
-                                                                                      .addField("Sombre :" , "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...\n\nMalus de -10 pour les actions visuellesainsi qu'un bonus de 10 sur les actions discrètes aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
+                                                                                      .addField("Sombre :" , "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...\n\nMalus de -10 pour les actions visuelles ainsi qu'un bonus de 10 sur les actions discrètes aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
 
                                                  .setImage("https://vignette.wikia.nocookie.net/creepypasta/images/5/53/Clouds.jpg/revision/latest?cb=20150418001214&path-prefix=de")
                                                   .setTimestamp()
@@ -10473,7 +10473,7 @@ bot.on('message', message => {
                                                     .setAuthor(message.author.username , message.author.avatarURL)
                                                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                        .setColor(3447003)
-                                                                                            .addField("Soleil :" , "Aujourd'hui, malgrè quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil soit là !\n\nBonus de 10 pour les fuites en combat et en dehors aujourd'hui !\n=Roll : 10\n=Fuite avec bonus de 10")
+                                                                                            .addField("Soleil :" , "Aujourd'hui, malgrè quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil soit là !\n\nBonus de 10 pour les fuites en dehors d'un combat aujourd'hui !\n=Roll : 10\n=Fuite avec bonus de 10")
 
                                                        .setImage("https://sitel.com.mk/sites/default/files/article/teaser-images/2018/april/sonce-soncevo-vreme-175810.jpg")
                                                         .setTimestamp()
@@ -10493,7 +10493,7 @@ bot.on('message', message => {
                                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                    .setColor(3447003)
-                                                                                                        .addField("Vents violents" , "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...\n\nMalus de 10 pour les actions auditives, ainsi qu'un malus de 10 sur les actions visuellesa aujourd'hui !\n\n=Roll : -10")
+                                                                                                        .addField("Vents violents" , "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...\n\nMalus de 10 pour les actions auditives, ainsi qu'un malus de 10 sur les actions visuelles aujourd'hui !\n\n=Roll : -10")
 
                                                                    .setImage("https://cdnfr2.img.sputniknews.com/images/103275/77/1032757713.jpg")
                                                                     .setTimestamp()
@@ -10503,7 +10503,7 @@ bot.on('message', message => {
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
-                                                                                      .addField("Brouillard" , "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...\n\nMalus de 20 sur les actions visuelles
+                                                                                      .addField("Brouillard" , "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...\n\nMalus de 20 sur les actions visuelles, ainsi qu'un malus de 10 sur les fuites en dehors d'un combat aujourd'hui !\n\n=Roll : -20\n=Roll : -10")
 
                                                  .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/December_Fog_01_edit2.jpg/1200px-December_Fog_01_edit2.jpg")
                                                   .setTimestamp()
@@ -10513,7 +10513,7 @@ bot.on('message', message => {
                                                     .setAuthor(message.author.username , message.author.avatarURL)
                                                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                        .setColor(3447003)
-                                                                                            .addField("Pluie et orage :" , "Aujourd'hui, la pluie est présente avec quelques nuages sans aucun soleil en vue, ce n'est pas vraiment le jour pour sortir et se relaxer surtout avec des orages possibles...")
+                                                                                            .addField("Pluie et orage :" , "Aujourd'hui, la pluie est présente avec quelques nuages sans aucun soleil en vue, ce n'est pas vraiment le jour pour sortir et se relaxer surtout avec des orages possibles...\n\nMalus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10")
 
                                                        .setImage("https://p0.storage.canalblog.com/06/80/987217/87418395_o.jpg")
                                                         .setTimestamp()
@@ -10523,7 +10523,7 @@ bot.on('message', message => {
                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                              .setColor(3447003)
-                                                                                                  .addField("Neige et grêle :" , "Aujourd'hui, le gel et le froid sont bien présents autant dans la ville qu'à l'extérieur, de la grêle ainsi que de la neige tombe du ciel partout, une bonne nouvelle pour certains mais une mauvaise pour les autres n'aimant pas la neige !")
+                                                                                                  .addField("Neige et grêle :" , "Aujourd'hui, le gel et le froid sont bien présents autant dans la ville qu'à l'extérieur, de la grêle ainsi que de la neige tombe du ciel partout, une bonne nouvelle pour certains mais une mauvaise pour les autres n'aimant pas la neige !\n\nMalus de 10 sur les fuites en dehors d'un combat, ainsi qu'un bonus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
 
                                                              .setImage("https://www.le-pradet.fr/wp-content/uploads/2018/02/neige-4-1.jpg")
                                                               .setTimestamp()
