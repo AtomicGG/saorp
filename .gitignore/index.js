@@ -10454,7 +10454,7 @@ bot.on('message', message => {
                                         .setAuthor(message.author.username , message.author.avatarURL)
                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                            .setColor(3447003)
-                                        .addField("Ciel dégagé :" , "Aujourd'hui, la météo est un ciel dégagé sans aucuns nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !\n\nAucun bonus/malus aujourd'hui !
+                                        .addField("Ciel dégagé :" , "Aujourd'hui, la météo est un ciel dégagé sans aucuns nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !\n\nAucun bonus/malus aujourd'hui !")
                                            .setImage("https://www.infoclimat.fr/photolive/photos/2015-09/30572217920151847.jpg")
                                             .setTimestamp()
                                             message.channel.send({embed}) }
