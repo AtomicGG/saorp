@@ -10454,7 +10454,7 @@ bot.on('message', message => {
                                         .setAuthor(message.author.username , message.author.avatarURL)
                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                            .setColor(3447003)
-                                        .addField("Ciel dégagé :" , "Aujourd'hui, la météo est un ciel dégagé sans aucuns nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !")
+                                        .addField("Ciel dégagé :" , "Aujourd'hui, la météo est un ciel dégagé sans aucuns nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !\n\nAucun bonus/malus aujourd'hui !
                                            .setImage("https://www.infoclimat.fr/photolive/photos/2015-09/30572217920151847.jpg")
                                             .setTimestamp()
                                             message.channel.send({embed}) }
@@ -10463,7 +10463,7 @@ bot.on('message', message => {
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
-                                                                                      .addField("Sombre :" , "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...")
+                                                                                      .addField("Sombre :" , "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...\n\nMalus de -10 pour les actions visuellesainsi qu'un bonus de 10 sur les actions discrètes aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
 
                                                  .setImage("https://vignette.wikia.nocookie.net/creepypasta/images/5/53/Clouds.jpg/revision/latest?cb=20150418001214&path-prefix=de")
                                                   .setTimestamp()
@@ -10473,7 +10473,7 @@ bot.on('message', message => {
                                                     .setAuthor(message.author.username , message.author.avatarURL)
                                                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                        .setColor(3447003)
-                                                                                            .addField("Soleil :" , "Aujourd'hui, malgrè quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil soit là !")
+                                                                                            .addField("Soleil :" , "Aujourd'hui, malgrè quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil soit là !\n\nBonus de 10 pour les fuites en combat et en dehors aujourd'hui !\n=Roll : 10\n=Fuite avec bonus de 10")
 
                                                        .setImage("https://sitel.com.mk/sites/default/files/article/teaser-images/2018/april/sonce-soncevo-vreme-175810.jpg")
                                                         .setTimestamp()
@@ -10483,7 +10483,7 @@ bot.on('message', message => {
                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                              .setFooter("『SAO Community [RP]』©", "https://vignette.wikia.nocookie.net/fairytail/images/a/a1/Elie%27s_boobs.png/revision/latest?cb=20130824220631")
                                                              .setColor(3447003)
-                                                                                                  .addField("Arc en ciel :" , "Aujourd'hui, quelques nuages et un peu de pluie mais un arc en ciel va se former à la fin de la journée avant que le soleil se couche, vous avez de la chance !")
+                                                                                                  .addField("Arc en ciel :" , "Aujourd'hui, quelques nuages et un peu de pluie mais un arc en ciel va se former à la fin de la journée avant que le soleil se couche, vous avez de la chance !\n\nBonus de 10 pour les fuites en combat et en dehors, ainsi qu'un bonus de 10 sur les actions sociales aujourd'hui !\n\n=Roll : 10")
 
                                                              .setImage("http://ekladata.com/R64I3AX173zliIFqGrdku1qFK8E.jpg")
                                                               .setTimestamp()
@@ -10493,7 +10493,7 @@ bot.on('message', message => {
                                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                    .setColor(3447003)
-                                                                                                        .addField("Vents violents" , "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...")
+                                                                                                        .addField("Vents violents" , "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...\n\nMalus de 10 pour les actions auditives, ainsi qu'un malus de 10 sur les actions visuellesa aujourd'hui !\n\n=Roll : -10")
 
                                                                    .setImage("https://cdnfr2.img.sputniknews.com/images/103275/77/1032757713.jpg")
                                                                     .setTimestamp()
@@ -10503,7 +10503,7 @@ bot.on('message', message => {
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
-                                                                                      .addField("Brouillard" , "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...")
+                                                                                      .addField("Brouillard" , "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...\n\nMalus de 20 sur les actions visuelles
 
                                                  .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/December_Fog_01_edit2.jpg/1200px-December_Fog_01_edit2.jpg")
                                                   .setTimestamp()
