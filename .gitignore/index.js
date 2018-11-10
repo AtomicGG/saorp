@@ -8682,7 +8682,7 @@ bot.on('message', message => {
                                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer :" , "5")
                                                                                                                      .addField("Prix d'achat :" , "120 cols")
                                                                                                                      .addField("Prix de revente :" , "30 cols")
-                                                                                                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication de la potion faible de force")
+                                                                                                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Découverte/achat/fabrication de la potion faible de force")
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
