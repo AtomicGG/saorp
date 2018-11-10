@@ -10578,19 +10578,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Volonté de vivre")) {   
-    const B = (Math.floor((3*1)*Math.random()))
-  const C = (Math.floor((3*1)*Math.random()))
-  const D = (Math.floor((2-(0.75))*Math.random()))
-  const E = (Math.floor((2-(0.85))*Math.random()))
-  const EE = E*Z
-  const F = (Math.floor((14*1)*Math.random()+14*1))
-  const FF = F*Z
-  const G = (Math.floor((11*1)*Math.random()+10*1))
-  const GG = G*Z
-  const I = (Math.floor((2-(0.90))*Math.random()))
-  const II = I*Z
-  const O = (Math.floor((2-(0.98))*Math.random()))
-  const OO = O*Z
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
