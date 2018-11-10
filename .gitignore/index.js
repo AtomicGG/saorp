@@ -10076,7 +10076,7 @@ bot.on('message', message => {
                                                                                                  .addField("Estragon :" , "C'est une herbe basique que vous trouvez en cueillant dans la forêt du palier 1 !")
                                                                                                  .addField("Prix d'achat :" , "20 cols")
                                                                                                  .addField("Prix de revente :" , "5 cols")
-                                                                                                 .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lapin géant\n=Ragoût de taupe\n=Ragoût de loup\n=Ragoût de loup de sang")
+                                                                                                 .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de taupe\n=Ragoût de loup\n=Ragoût de loup de sang")
                                                                                                   .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
                                                                                                   .setTimestamp()
                                                                                                   message.channel.send({embed})
