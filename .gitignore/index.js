@@ -759,7 +759,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup récompenses")) {
-  let Z = args.slice(1).join(" : "); 
+  let Z = args.slice(2).join(" : "); 
     const B = (Math.floor((3*1)*Math.random()))
   const C = (Math.floor((3*1)*Math.random()))
   const D = (Math.floor((2-(0.75))*Math.random()))
@@ -773,7 +773,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +F+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G)
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B*Z+ "\n:knife: Peau de loup : " +C*Z+ "\n:eye: Oeil de loup : " +D*Z+ "\n:cupid: Coeur de loup : " +E*Z+ "\n:gem: Croc de loup : " +I*Z+ "\n:gem: Oeuf déformé : " +Oeufs*Z+ "\n:sparkles: Points d'expérience : " +F*Z+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +G*Z)
     .setTimestamp()
     message.channel.send({embed})
         }
