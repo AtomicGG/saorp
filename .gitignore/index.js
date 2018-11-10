@@ -10576,5 +10576,96 @@ bot.on('message', message => {
 
 
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Volonté de vivre")) {   
+    const B = (Math.floor((3*1)*Math.random()))
+  const C = (Math.floor((3*1)*Math.random()))
+  const D = (Math.floor((2-(0.75))*Math.random()))
+  const E = (Math.floor((2-(0.85))*Math.random()))
+  const EE = E*Z
+  const F = (Math.floor((14*1)*Math.random()+14*1))
+  const FF = F*Z
+  const G = (Math.floor((11*1)*Math.random()+10*1))
+  const GG = G*Z
+  const I = (Math.floor((2-(0.90))*Math.random()))
+  const II = I*Z
+  const O = (Math.floor((2-(0.98))*Math.random()))
+  const OO = O*Z
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField("Une fois les mots 'Volonté de vivre' dit oralement par l'un de vous, la porte s'ouvre, vous découvrez une salle de coffres IMMENSE, il y en a assez pour chaque joueurs présent [un coffre chacun] :" , "Pour reçevoir votre récompense dans le coffre, écrivez =Coffre secret")
+    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "test récompenses")) {   
+        let Z = args.slice(2).join(" : ");
+    const B = (Math.floor((3*1)*Math.random()))
+    const BB = B*Z
+  const C = (Math.floor((3*1)*Math.random()))
+  const CC = C*Z
+  const D = (Math.floor((2-(0.75))*Math.random()))
+  const DD = D*Z
+  const E = (Math.floor((2-(0.85))*Math.random()))
+  const EE = E*Z
+  const F = (Math.floor((14*1)*Math.random()+14*1))
+  const FF = F*Z
+  const G = (Math.floor((11*1)*Math.random()+10*1))
+  const GG = G*Z
+  const I = (Math.floor((2-(0.90))*Math.random()))
+  const II = I*Z
+  const O = (Math.floor((2-(0.98))*Math.random()))
+  const OO = O*Z
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +BB+ "\n:knife: Peau de loup : " +CC+ "\n:eye: Oeil de loup : " +DD+ "\n:cupid: Coeur de loup : " +EE+ "\n:gem: Croc de loup : " +II+ "\n:gem: Oeuf déformé : " +OO+ "\n:sparkles: Points d'expérience : " +FF+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +GG)
+    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+
+
+
+
+
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coffre secret")) {   
+  const B = (Math.floor((3*1)*Math.random()))
+   const E = (Math.floor((3*1)*Math.random()+1))
+      const A = (Math.floor((3*1)*Math.random()+1))
+      const F = (Math.floor((2*1)*Math.random()))
+       const C = (Math.floor((151)*Math.random()+100))
+       const G = (Math.floor((3*1)*Math.random()+1))
+       const H = (Math.floor((3*1)*Math.random()))
+        const D = (Math.floor((251)*Math.random()+250))
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField("Récompenses dans le coffre" , ":gem: Oeuf déformé : " +A+ "\n:gem: Equipement en peau résistante au choix : " +B+ "\n:gem: Equipement en peau arraché au choix : " +E+ "\n:gem: Deux armes à une main basique ou une arme à deux mains basique au choix : " +F+ ":gem: Potion faible de soin : " +G+ "\n:gem: Potion légère de soin : " +H+ "\n:sparkles: Points d'expérience : " +C+ "\n:large_orange_diamond: Cols : " +D)
+    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
       
 
