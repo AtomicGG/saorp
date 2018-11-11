@@ -10689,6 +10689,18 @@ bot.on('message', message => {
         }
   }) ;
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ambiances sonores")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste d'ambiances sonores :" , "")    message.channel.send({embed})
+        }
+  }) ;
+
+
+
 
 
 
