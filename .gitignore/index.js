@@ -10654,5 +10654,43 @@ bot.on('message', message => {
   }) ;
 
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Devenir partenaire")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Comment devenir partenaire ?" , "Pour pouvoir être partenaire avec SAO Community, ainsi que de pouvoir mettre votre RP dans la liste des RP, vous devrez remplir un formulaire disponible en écrivant :\n\n=Formulaire\n\nPour remplir ce formulaire, vous aurez besoin de mettre le thème et ce qui se trouve dans votre RP, vous avez la liste en écrivant :\n\n=Thème RP\n\nVous devez mettre au minimum 2 éléments, et maximum 10 éléments !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Formulaire")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Formulaire :" , "```**__۝▬▬๑₪۩۞『Le nom de votre RP』۞۩₪๑▬▬۝__**\n\n**Thème et éléments : [Selon le =Thème RP]**\n\n**Contexte de votre RP :\n\n**Niveau conseillé d'avoir :**\n\n**Informations spplémentaires : [Optionnel si vous voulez donner plus d'informations]**\n\n**__۝▬▬๑₪۩۞『Lien de votre RP』۞۩₪๑▬▬۝__**```")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Thème RP")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Les thèmes et éléments d'un RP :" , "@MÉDIEVAL\n@VIOLENCE\n@PSYCHOLOGIQUE\n@HÉROS\n@MULTIVERS\n@SEXUEL\n@COMTEMPORAIN\n@MÉDIÉVAL FANTASY\n@GUERRE\n@APOCALYPTIQUE\n@HORREUR\n@PRIMITIF\n@AVENTURE\n@HISTORIQUE\n@RÉALITÉ ALTERNATIVE\n@DARK FANTASY\n@FANTASY\n@THRILLER\n@ÉCOLE\n@CYBERPUNK\n@FUTURISTE\n@STEAMPUNK\n@OBSCURE\n@MORT-VIVANT\n@MAGIQUE\n@POLITIQUE\n@VOCAL\n@POST-APOCALYPTIQUE\n@TERRORISME\n@TECHNOLOGIE\n@UTOPIE\n@DYSTOPIE\n@MAFIA\n@ESPACE\n@RÉALISME\n@PARANORMAL\n@STRATÉGIE\n@FANTASTIQUE\n@UNIVERS EMPRUNTÉ\n\nConcernant le niveau conseillé à avoir pour votre RP :\n@DÉBUTANT\n@EXPERT\n\nConcernant la durée de votre RP :\n@DURÉE LIMITÉE\n@DURÉE ILLIMITÉE")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+
+
       
 
