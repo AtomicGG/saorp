@@ -10673,7 +10673,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Formulaire :" , "```**__۝▬▬๑₪۩۞『Le nom de votre RP』۞۩₪๑▬▬۝__**\n\n**Thème et éléments : [Selon le =Thème RP]**\n\n**Contexte de votre RP :\n\n**Niveau conseillé d'avoir :**\n\n**Informations spplémentaires : [Optionnel si vous voulez donner plus d'informations]**\n\n**__۝▬▬๑₪۩۞『Lien de votre RP』۞۩₪๑▬▬۝__**```")    .setTimestamp()
+.addField("Formulaire :" , "```**__۝▬▬๑₪۩۞『Le nom de votre RP』۞۩₪๑▬▬۝__**\n\n**Thème et éléments : [Selon le =Thème RP]**\n\n**Contexte de votre RP :\n\n**Niveau conseillé d'avoir : [Selon le =Thème RP]**\n\n**Informations spplémentaires : [Optionnel si vous voulez donner plus d'informations]**\n\n**__۝▬▬๑₪۩۞『Lien de votre RP』۞۩₪๑▬▬۝__**```")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
