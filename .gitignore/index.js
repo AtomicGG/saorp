@@ -10687,7 +10687,85 @@ bot.on('message', message => {
 
 
 
+/////////////////////////////////////////////////////////////////////LISTE D'OBJETS [PRIX + CRAFT]//////////////////////////////////////////////////////////////////   
 
-
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'objets")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux\n=Liste d'équipements\n=Liste d'armes\n=Liste des potions\n=Liste des ragoûts\nListe des parchemins")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
       
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste des matériaux" , "Voici la liste de tous les matériaux existants !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste des équipements" , "Voici la liste de tous les équipements existants !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste d'armes" , "Voici la liste de toutes les armes existantes !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+      
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des potions")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste des potions" , "Voici la liste de toutes les potions existants !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+      
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des ragoûts")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste des ragoûts" , "Voici la liste de tous les ragoûts existants !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des parchemins")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Liste des parchemins" , "Voici la liste de tous les parchemins existants !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
