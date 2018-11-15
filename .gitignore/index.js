@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const prefix = "=";
-const talkedRecently = new Set();
 let userCooldown = {};
 
 
@@ -5038,7 +5037,7 @@ bot.on('message', message => {
 bot.on('message', message => {
  let cont = message.content.slice(prefix.length).split(" ");
                   const args = cont.slice(1);
- if (message.content === prefix + "Combattant") {
+  if (message.content.startsWith(prefix + "Combattant")) {
      if (talkedRecently.has(message.author.id+101)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
@@ -5050,7 +5049,7 @@ bot.on('message', message => {
        message.channel.send({embed})
 } else {
     let X = args.slice(1).join(" : ");
-    const A = (Math.floor((X*1.25)*Math.random()+1*(X*1)))
+    const A = (Math.floor((X*1.5)*Math.random()+1*(X*1)))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
