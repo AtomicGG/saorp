@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
+const talkedRecently = new Set();
 const prefix = "=";
 let userCooldown = {};
 
