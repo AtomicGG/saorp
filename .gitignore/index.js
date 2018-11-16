@@ -10695,26 +10695,58 @@ bot.on('message', message => {
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux\n=Liste d'équipements\n=Liste d'armes\n=Liste des potions\n=Liste des ragoûts\n=Liste des parchemins")    .setTimestamp()
+.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux 1\n=Liste d'équipements 1\n=Liste d'armes 1\n=Liste des potions 1\n=Liste des ragoûts 1\n=Liste des parchemins 1")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
       
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux")) {   
+  if (message.content.startsWith(prefix + "Liste des matériaux 1")) {   
     const embed = new Discord.RichEmbed()
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste des matériaux" , "Voici la liste de tous les matériaux existants !")    .setTimestamp()
+    .addField("Liste des matériaux" , "Voici la liste de tous les matériaux existants !")
+    .addField("Viande de lapin :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Viande de renard :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Viande de sanglier :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Viande de chien :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Peau de lapin :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Peau de renard :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Peau de sanglier :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Peau de chien :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Pour voir la suite :" , "=Liste des matériaux 2")
+    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux 2")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(6447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField("Liste des matériaux" , "Voici la liste de tous les matériaux existants !")
+    .addField("Coeur de lapin :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Coeur de renard :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Coeur de sanglier :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Coeur de chien :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Oeil de lapin :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Oeil de renard :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Oeil de sanglier :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Oeil de chien :" , "[Achat : X cols] [Revente : x cols]")
+    .addField("Pour voir la suite :" , "=Liste des matériaux 2")
+    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
 
 
+
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements")) {   
+  if (message.content.startsWith(prefix + "Liste d'équipements 1")) {   
     const embed = new Discord.RichEmbed()
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -10725,7 +10757,7 @@ bot.on('message', message => {
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes")) {   
+  if (message.content.startsWith(prefix + "Liste d'armes 1")) {   
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -10737,7 +10769,7 @@ bot.on('message', message => {
       
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des potions")) {   
+  if (message.content.startsWith(prefix + "Liste des potions 1")) {   
     const embed = new Discord.RichEmbed()
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -10749,7 +10781,7 @@ bot.on('message', message => {
       
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des ragoûts")) {   
+  if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {   
     const embed = new Discord.RichEmbed()
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -10760,7 +10792,7 @@ bot.on('message', message => {
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des parchemins")) {   
+  if (message.content.startsWith(prefix + "Liste des parchemins 1")) {   
     const embed = new Discord.RichEmbed()
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
