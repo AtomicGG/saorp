@@ -9855,7 +9855,7 @@ bot.on('message', message => {
 
 
                                                               bot.on('message', message => {
-                                                                if (message.content === prefix + "Oeil de lapin géant")
+                                                            if (message.content === prefix + "Oeil de lapin géant") {
                                                                   const embed = new Discord.RichEmbed()
                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
