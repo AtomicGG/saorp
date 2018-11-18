@@ -10828,3 +10828,40 @@ message.awaitReactions(filter, { max: 1})
     });
      }
   }) ;
+
+
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Test réaction 3")) {   
+message.react('👍')
+    message.react('👎')
+    message.react(':white_check_mark:')
+    message.react(':raised_back_of_hand:')
+const filter = (reaction, user) => {
+    return ['👍', '👎', ':raised_back_of_hand:', ':white_check_mark:'].includes(reaction.emoji.name) && user.id === message.author.id;
+};
+message.awaitReactions(filter, { max: 1})
+    .then(collected => {
+        const reaction = collected.first();
+        if (reaction.emoji.name === '👍') {
+            message.reply('A');
+        }
+        if (reaction.emoji.name === '👎') {
+            message.reply('B');
+        }
+   if (reaction.emoji.name === ':white_check_mark:') {
+            message.reply('C');
+        }
+   if (reaction.emoji.name === ':raised_back_of_hand:') {
+            message.reply('D');
+        }
+    })
+    .catch(collected => {
+        console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
+        message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
+    });
+     }
+  }) ;
+
