@@ -145,7 +145,7 @@ bot.on("message", (message) => {
 
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Plaines quêtes accomplis"){
+  if (message.content === (prefix) + "Plaines quêtes accomplies"){
     if (talkedRecently.has(message.author.id+17)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
@@ -183,7 +183,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Forêt quêtes accomplis"){
+  if (message.content === (prefix) + "Forêt quêtes accomplies"){
     if (talkedRecently.has(message.author.id+17)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
@@ -251,7 +251,7 @@ bot.on('message', message => {
       .addField("Chiens errant :" , +Chien)
       .addField("Bandits débutant :" , +Bandit)
       .addField("Lapins géant :" , +Lapin)
-      .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplis" )
+      .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies" )
       .setTimestamp()
       message.channel.send({embed})}
       talkedRecently.add(message.author.id+18);
@@ -291,7 +291,7 @@ bot.on('message', message => {
       .addField("Bandit experimenté :" , +Chien)
       .addField("Bandit sombre :" , +Bandit)
       .addField("Loup de sang :" , +Lapin)
-      .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplis" )
+      .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies" )
       .setTimestamp()
       message.channel.send({embed})}
       talkedRecently.add(message.author.id+18);
