@@ -10703,22 +10703,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 1")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(6447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Liste des matériaux" , "Voici la liste de tous les matériaux existants !")
-    .addField("Viande de lapin :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Viande de renard :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Viande de sanglier :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Viande de chien :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Peau de lapin :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Peau de renard :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Peau de sanglier :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Peau de chien :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Pour voir la suite :" , "=Liste des matériaux 2")
-    .setTimestamp()
-    message.channel.send({embed})
+ message.channel.send("```Viande de lapin :\n[Achat : X cols] [Revente : X cols]\n\nViande de renard :\n[Achat : X cols] [Revente : X cols]\n\nViande de chien :\n[Achat : X cols] [Revente : X cols]\n\nViande de sanglier :\n[Achat : X cols] [Revente : X cols]\n\nViande de lapin géant :\n[Achat : X cols] [Revente : X cols]\n\nViande de loup :\n[Achat : X cols] [Revente : X cols]\n\nViande de loup de sang :\n[Achat : X cols] [Revente : X cols]\n\nPeau de lapin :\n[Achat : X cols] [Revente : X cols]\n\nPeau de renard :\n[Achat : X cols] [Revente : X cols]\n\nPeau de chien :\n[Achat : X cols] [Revente : X cols]\n\nPeau de sanglier :\n[Achat : X cols] [Revente : X cols]\n\nPeau de lapin géant :\n[Achat : X cols] [Revente : X cols]\n\nPeau de loup :\n[Achat : X cols] [Revente : X cols]\n\nPeau de loup de sang :\n[Achat : X cols] [Revente : X cols]\n\nCoeur de lapin :\n[Achat : X cols] [Revente : X cols]\n\nCoeur de renard :\n[Achat : X cols] [Revente : X cols]\n\nCoeur de chien :\n[Achat : X cols] [Revente : X cols]\n\nCoeur de sanglier :\n[Achat : X cols] [Revente : X cols]\n\nCoeur de lapin géant :\n[Achat : X cols] [Revente : X cols]\n\nCoeur de loup :\n[Achat : X cols] [Revente : X cols]\n\nCoeur de loup de sang :\n[Achat : X cols] [Revente : X cols]\n\nOeil de lapin :\n[Achat : X cols] [Revente : X cols]\n\nOeil de renard :\n[Achat : X cols] [Revente : X cols]\n\nOeil de chien :\n[Achat : X cols] [Revente : X cols]\n\nOeil de sanglier :\n[Achat : X cols] [Revente : X cols]\n\nOeil de lapin géant :\n[Achat : X cols] [Revente : X cols]\n\nOeil de loup :\n[Achat : X cols] [Revente : X cols]\n\nOeil de loup de sang :\n[Achat : X cols] [Revente : X cols]")
         }
   }) ;
 
