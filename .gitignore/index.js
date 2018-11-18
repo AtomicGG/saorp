@@ -10702,29 +10702,14 @@ bot.on('message', message => {
       
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 1")) {   
- message.channel.send("```Viande de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]```")
+ message.channel.send("```Viande de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nSuite en écrivant :\n=Liste des matériaux 2```")
         }
   }) ;
 
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 2")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(6447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Liste des matériaux" , "Voici la liste de tous les matériaux existants !")
-    .addField("Coeur de lapin :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Coeur de renard :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Coeur de sanglier :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Coeur de chien :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Oeil de lapin :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Oeil de renard :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Oeil de sanglier :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Oeil de chien :" , "[Achat : X cols] [Revente : x cols]")
-    .addField("Pour voir la suite :" , "=Liste des matériaux 2")
-    .setTimestamp()
-    message.channel.send({embed})
+ message.channel.send("```Oeil de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nGelatine :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOreille de lapin géant\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCroc de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPierre de poison faible :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCuivre médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCuivre commun :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nBois de frêne médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nBois de frêne commun :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPersil :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nEstragon :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nHerbe médicinale faible :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nHerbe médicinale :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nBaie :\nCoûts : [Achat : X cols] [Revente : X cols]```")
         }
   }) ;
 
@@ -10732,57 +10717,42 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 1")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(6447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste des équipements" , "Voici la liste de tous les équipements existants !")    .setTimestamp()
-    message.channel.send({embed})
+ message.channel.send("```Casque en peau arraché :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Casque en peau arraché]\n\nEpaulières en peau arrachées :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Epaulières en peau arrachées]\n\nCape en peau arrachée :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Cape en peau arrachée]\n\nPlastron en peau arraché :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Plastron en peau arraché]\n\nGantelets en peau arrachés :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Gantelets en peau arrachés]\n\nCeinture en peau arrachée :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ceinture en peau arrachée]\n\nJambières en peau arrachées :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Jambières en peau arrachées]\n\nBottes en peau arrachées :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Bottes en peau arrachées]\n\nAnneau en coeur d'animal faible :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Anneau en coeur d'animal faible]\n\nAmulette en coeur d'animal faible :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Amulette en coeur d'animal faible]\n\nCasque en peau résistante :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Casque en peau résistante]\n\nEpaulières en peau résistantes :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Epaulières en peau résistantee]\n\nCape en peau résistante :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Cape en peau résistante]\n\nPlastron en peau résistante :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Plastron en peau résistante]\n\nGantelets en peau résistantes :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Gantelets en peau résistantes]\n\nCeinture en peau résistante :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ceinture en peau résistante]\n\nSuite en écrivant :\n=Liste d'équipements 2```")
         }
   }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 2")) {   
+ message.channel.send("```Jambières en peau résistantes :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Jambières en peau résistantes]\n\nBottes en peau résistantes :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Bottes en peau résistantes]\n\nAnneau du croc :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Anneau du croc]\n\nAmulette du croc :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Amulette du croc]```")
+        }
+  }) ;
+
+
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 1")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste d'armes" , "Voici la liste de toutes les armes existantes !")    .setTimestamp()
-    message.channel.send({embed})
+ message.channel.send("```Epée basique à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Epée basique à deux mains]\n\nEpée basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Epée basique à une main]\n\nMasse basique à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Masse basique à deux mains]\n\nMasse basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Masse basique à une main]\n\nHache basique à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Hache basique à deux mains]\n\nHache basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Hache basique à une main]\n\nRapière basique à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Rapière basique à deux mains]\n\nRapière basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Rapière basique à une main]\n\nCimeterre basique à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Cimeterre basique à deux mains]\n\nCimeterre basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Cimeterre basique à une main]\n\nKatana basique à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Katana basique à deux mains]\n\nKatana basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Katana basique à une main]\n\nGlaive basique à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Glaive basique à deux mains]\n\nDague basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Dague basique à une main]\n\nBouclier basique à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Bouclier basique à une main]```")
         }
   }) ;
-      
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des potions 1")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(6447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste des potions" , "Voici la liste de toutes les potions existants !")    .setTimestamp()
-    message.channel.send({embed})
-        }
-  }) ;
-      
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(6447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste des ragoûts" , "Voici la liste de tous les ragoûts existants !")    .setTimestamp()
-    message.channel.send({embed})
+ message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Ragoût de loup de sang]```")
         }
   }) ;
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des potions 1")) {   
+ message.channel.send("```Potion faible de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Potion faible de soin]\n\nPotion faible de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Potion faible de force]\n\nPotion faible de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Potion faible de défense]\n\nPotion légère de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Potion légère de soin]\n\nPotion légère de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Potion légère de force]\n\nPotion légère de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Potion légère de défense]```")
+        }
+  }) ;
+      
+      
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des parchemins 1")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(6447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste des parchemins" , "Voici la liste de tous les parchemins existants !")    .setTimestamp()
-    message.channel.send({embed})
+ message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : X cols] [Revente : X cols]\nCraft : [=Parchemin de poison faible]```")
         }
   }) ;
