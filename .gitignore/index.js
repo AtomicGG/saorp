@@ -2108,7 +2108,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
- if (message.content === prefix + "Régénération") {
+          if (message.content.startsWith(prefix + "Régénération")) {
       if (talkedRecently.has(message.author.id+100)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
@@ -3923,7 +3923,7 @@ bot.on('message', message => {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
        .addField("Objets :" , "Permet d'afficher tous les objets existants !\n=Objets")
-       .addField("Régénération :" , "Permet d'apprendre le système de régénération !\n=Régénération en ville")
+       .addField("Rétablissement :" , "Permet d'apprendre le système de rétablissement !\n=Rétablissement")
        .addField("Mort :" , "Permet d'apprendre le système de mort !\n=Mort")
        .addField("Menus :" , "Permet d'apprendre le système de menus !\n=Menus")
        .addField("Dirigeant :" , "Permet d'apprendre le système de dirigeant !\n=Dirigeant")
@@ -6996,19 +6996,19 @@ bot.on('message', message => {
 
   
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Casque en peau arraché")) {
+    if (message.content.startsWith(prefix + "Casque en peau arrachée")) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Casque en peau arraché :" , "C'est un casque très fragile constitué de peau animal mais très utile pour les débutants !")
+         .addField("Casque en peau arrachée :" , "C'est un casque très fragile constitué de peau animal mais très utile pour les débutants !")
          .addField("Niveau minimum requis pour le porter :" , "1")
          .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "1")
          .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
          .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
          .addField("Prix d'achat :" , "80 cols")
          .addField("Prix de revente :" , "20 cols")
-         .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte du casque en peau arraché")
+         .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte du casque en peau arrachée")
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
@@ -7019,12 +7019,12 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Casque en peau arraché :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+             .addField("Casque en peau arrachée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
              .addField("HP :" , +HP)
              .addField("Points d'armure :" , +Défense)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7071,18 +7071,18 @@ bot.on('message', message => {
               });
 
       bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Épaulières en peaux arrachées")) {
+        if (message.content.startsWith(prefix + "Épaulières en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Epaulières en peaux arrachées :" , "Ce sont des épaulières très fragiles constitué de peau animal mais très utile pour les débutants !")
+             .addField("Epaulières en peau arrachée :" , "Ce sont des épaulières très fragiles constitué de peau animal mais très utile pour les débutants !")
              .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "1")
              .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
              .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
              .addField("Prix d'achat :" , "80 cols")
              .addField("Prix de revente :" , "20 cols")
-             .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des épaulières en peaux arrachées")
+             .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des épaulières en peau arrachée")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -7093,12 +7093,12 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peaux arrachées")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Epaulières en peaux arrachées :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+             .addField("Epaulières en peau arrachée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
              .addField("HP :" , +HP)
              .addField("Points d'armure :" , +Défense)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7111,19 +7111,19 @@ bot.on('message', message => {
           
 
           bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Épaulières en peaux résistantes")) {
+            if (message.content.startsWith(prefix + "Épaulières en peau résistante")) {
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
-                 .addField("Epaulières en peaux résistantes :" , "Ce sont des épaulières assez résistantes constitué de peau animal mais très utile pour les débutants !")
+                 .addField("Epaulières en peau résistante :" , "Ce sont des épaulières assez résistantes constitué de peau animal mais très utile pour les débutants !")
                  .addField("Niveau minimum requis pour le porter :" , "6")
                  .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "2")
                  .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                  .addField("Prix d'achat :" , "200 cols")
                  .addField("Prix de revente :" , "50 cols")
-                 .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des epaulières en peaux résistantes")
+                 .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des epaulières en peau résistante")
                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
@@ -7133,12 +7133,12 @@ bot.on('message', message => {
               bot.on('message', message => {
                 const HP = (Math.floor((6)*Math.random()+6))
                 const Défense = (Math.floor((2-(0.50))*Math.random()))
-                if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peaux résistantes")) {
+                if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau résistante")) {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                      .setColor(3447003)
-                     .addField("Epaulières en peaux résistantes :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                     .addField("Epaulières en peau résistante :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
                      .addField("HP :" , +HP)
                      .addField("Points d'armure :" , +Défense)
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7153,7 +7153,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
-                 .addField("Cape en peau arraché :" , "C'est une cape très fragile constitué de peau animal mais très utile pour les débutants !")
+                 .addField("Cape en peau arrachée :" , "C'est une cape très fragile constitué de peau animal mais très utile pour les débutants !")
                  .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "1")
                  .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
@@ -7170,12 +7170,12 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Cape en peau arraché :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+             .addField("Cape en peau arrachée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
              .addField("HP :" , +HP)
              .addField("Points d'armure :" , +Défense)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7223,18 +7223,18 @@ bot.on('message', message => {
                       });
 
               bot.on('message', message => {
-                if (message.content.startsWith(prefix + "Plastron en peau arraché")) {
+                if (message.content.startsWith(prefix + "Plastron en peau arrachée")) {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                      .setColor(3447003)
-                     .addField("Plastron en peau arraché :" , "C'est un plastron très fragile constitué de peau animal mais très utile pour les débutants !")
+                     .addField("Plastron en peau arrachée :" , "C'est un plastron très fragile constitué de peau animal mais très utile pour les débutants !")
                      .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "1")
                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                      .addField("Prix d'achat :" , "80 cols")
                      .addField("Prix de revente :" , "20 cols")
-                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte du plastron en peau arraché")
+                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte du plastron en peau arrachée")
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
@@ -7245,12 +7245,12 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau arraché")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Plastron en peau arraché :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+             .addField("Plastron en peau arrachée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
              .addField("HP :" , +HP)
              .addField("Points d'armure :" , +Défense)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7298,18 +7298,18 @@ bot.on('message', message => {
                           });
 
                   bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Gantelets en peau arrachés")) {
+                    if (message.content.startsWith(prefix + "Gantelets en peau arrachée")) {
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                          .setColor(3447003)
-                         .addField("Gantelets en peaux arrachés :" , "Ce sont des gantelets très fragiles constitué de peau animal mais très utile pour les débutants !")
+                         .addField("Gantelets en peau arrachée :" , "Ce sont des gantelets très fragiles constitué de peau animal mais très utile pour les débutants !")
                          .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "1")
                          .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
                          .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                          .addField("Prix d'achat :" , "80 cols")
                          .addField("Prix de revente :" , "20 cols")
-                         .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des gantelets en peaux arrachés")
+                         .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des gantelets en peau arrachée")
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
@@ -7320,12 +7320,12 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peaux arrachés")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Gantelets en peaux arrachés :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+             .addField("Gantelets en peau arrachée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
              .addField("HP :" , +HP)
              .addField("Points d'armure :" , +Défense)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7336,19 +7336,19 @@ bot.on('message', message => {
 
 
                       bot.on('message', message => {
-                        if (message.content.startsWith(prefix + "Gantelets en peaux résistantes")) {
+                        if (message.content.startsWith(prefix + "Gantelets en peau résistante")) {
                           const embed = new Discord.RichEmbed()
                           .setAuthor(message.author.username , message.author.avatarURL)
                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                              .setColor(3447003)
-                             .addField("Gantelets en peaux résistantes :" , "Ce sont des gantelets assez résistants constitué de peau animal mais très utile pour les débutants !")
+                             .addField("Gantelets en peau résistante :" , "Ce sont des gantelets assez résistants constitué de peau animal mais très utile pour les débutants !")
                              .addField("Niveau minimum requis pour le porter :" , "6")
                              .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "2")
                              .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                              .addField("Prix d'achat :" , "200 cols")
                              .addField("Prix de revente :" , "50 cols")
-                             .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des gantelets en peaux résistantes")
+                             .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des gantelets en peau résistante")
                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
@@ -7358,12 +7358,12 @@ bot.on('message', message => {
                           bot.on('message', message => {
                             const HP = (Math.floor((6)*Math.random()+6))
                             const Défense = (Math.floor((2-(0.50))*Math.random()))
-                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peaux résistantes")) {
+                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau résistante")) {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Gantelets en peaux résistantes :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                 .addField("Gantelets en peau résistante :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
                                  .addField("HP :" , +HP)
                                  .addField("Points d'armure :" , +Défense)
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7448,18 +7448,18 @@ bot.on('message', message => {
                                   });
 
                           bot.on('message', message => {
-                            if (message.content.startsWith(prefix + "Jambières en peaux arrachées")) {
+                            if (message.content.startsWith(prefix + "Jambières en peau arrachée")) {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Jambières en peaux arrachées :" , "Ce sont des jambières très fragiles constitué de peau animal mais très utile pour les débutants !")
+                                 .addField("Jambières en peau arrachée :" , "Ce sont des jambières très fragiles constitué de peau animal mais très utile pour les débutants !")
                                  .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "1")
                                  .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
                                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                                  .addField("Prix d'achat :" , "80 cols")
                                  .addField("Prix de revente :" , "20 cols")
-                                 .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des jambières en peaux arrachées")
+                                 .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des jambières en peau arrachée")
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
@@ -7470,12 +7470,12 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peaux arrachées")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Jambières en peaux arrachées :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+             .addField("Jambières en peau arrachée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
              .addField("HP :" , +HP)
              .addField("Points d'armure :" , +Défense)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7486,19 +7486,19 @@ bot.on('message', message => {
 
 
                               bot.on('message', message => {
-                                if (message.content.startsWith(prefix + "Jambières en peaux résistantes")) {
+                                if (message.content.startsWith(prefix + "Jambières en peau résistante")) {
                                   const embed = new Discord.RichEmbed()
                                   .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
-                                     .addField("Jambières en peaux résistantes :" , "Ce sont des jambières assez résistantes constitué de peau animal mais très utile pour les débutants !")
+                                     .addField("Jambières en peau résistante :" , "Ce sont des jambières assez résistantes constitué de peau animal mais très utile pour les débutants !")
                                      .addField("Niveau minimum requis pour le porter :" , "6")
                                      .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "2")
                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                                      .addField("Prix d'achat :" , "200 cols")
                                      .addField("Prix de revente :" , "50 cols")
-                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des jambières en peaux résistantes")
+                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des jambières en peau résistante")
                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
@@ -7508,12 +7508,12 @@ bot.on('message', message => {
                                   bot.on('message', message => {
                                     const HP = (Math.floor((6)*Math.random()+6))
                                     const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peaux résistantes")) {
+                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau résistante")) {
                                       const embed = new Discord.RichEmbed()
                                       .setAuthor(message.author.username , message.author.avatarURL)
                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                          .setColor(3447003)
-                                         .addField("Jambières en peaux résistantes :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                         .addField("Jambières en peau résistante :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
                                          .addField("HP :" , +HP)
                                          .addField("Points d'armure :" , +Défense)
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7523,18 +7523,18 @@ bot.on('message', message => {
                                       });
 
                               bot.on('message', message => {
-                                if (message.content.startsWith(prefix + "Bottes en peaux arrachées")) {
+                                if (message.content.startsWith(prefix + "Bottes en peau arrachée")) {
                                   const embed = new Discord.RichEmbed()
                                   .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
-                                     .addField("Bottes en peaux arrachées :" , "Ce sont des bottes très fragiles constitué de peau animal mais très utile pour les débutants !")
+                                     .addField("Bottes en peau arrachée :" , "Ce sont des bottes très fragiles constitué de peau animal mais très utile pour les débutants !")
                                      .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "1")
                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "4")
                                      .addField("Prix d'achat :" , "80 cols")
                                      .addField("Prix de revente :" , "20 cols")
-                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des bottes en peaux arrachées")
+                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des bottes en peau arrachée")
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
@@ -7545,12 +7545,12 @@ bot.on('message', message => {
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peaux arrachées")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Bottes en peaux arrachées :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+             .addField("Bottes en peau arrachée :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
              .addField("HP :" , +HP)
              .addField("Points d'armure :" , +Défense)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7561,19 +7561,19 @@ bot.on('message', message => {
 
 
                                   bot.on('message', message => {
-                                    if (message.content.startsWith(prefix + "Bottes en peau résistantes")) {
+                                    if (message.content.startsWith(prefix + "Bottes en peau résistante")) {
                                       const embed = new Discord.RichEmbed()
                                       .setAuthor(message.author.username , message.author.avatarURL)
                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                          .setColor(3447003)
-                                         .addField("Bottes en peaux résistantes :" , "Ce sont des bottes assez résistantes constitué de peau animal mais très utile pour les débutants !")
+                                         .addField("Bottes en peau résistante :" , "Ce sont des bottes assez résistantes constitué de peau animal mais très utile pour les débutants !")
                                          .addField("Niveau minimum requis pour le porter :" , "6")
                                          .addField("Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet :" , "2")
                                          .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
                                          .addField("Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer :" , "6")
                                          .addField("Prix d'achat :" , "200 cols")
                                          .addField("Prix de revente :" , "50 cols")
-                                         .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des bottes en peaux résistantes")
+                                         .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte des bottes en peau résistante")
                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
@@ -7583,12 +7583,12 @@ bot.on('message', message => {
                                       bot.on('message', message => {
                                         const HP = (Math.floor((6)*Math.random()+6))
                                         const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peaux résistantes")) {
+                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau résistante")) {
                                           const embed = new Discord.RichEmbed()
                                           .setAuthor(message.author.username , message.author.avatarURL)
                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                              .setColor(3447003)
-                                             .addField("Bottes en peaux résistantes :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                             .addField("Bottes en peau résistante :" , "Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
                                              .addField("HP :" , +HP)
                                              .addField("Points d'armure :" , +Défense)
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -10718,14 +10718,14 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 1")) {   
- message.channel.send("```Casque en peau arraché :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Casque en peau arraché]\n\nEpaulières en peaux arrachées :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Epaulières en peaux arrachées]\n\nCape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Cape en peau arrachée]\n\nPlastron en peau arraché :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Plastron en peau arraché]\n\nGantelets en peaux arrachés :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Gantelets en peaux arrachés]\n\nCeinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Ceinture en peau arrachée]\n\nJambières en peaux arrachées :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Jambières en peaux arrachées]\n\nBottes en peaux arrachées :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Bottes en peaux arrachées]\n\nAnneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nCraft : [=Anneau en coeur d'animal faible]\n\nAmulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nCraft : [=Amulette en coeur d'animal faible]\n\nCasque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Casque en peau résistante]\n\nEpaulières en peaux résistantes :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Epaulières en peaux résistantee]\n\nCape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Cape en peau résistante]\n\nPlastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Plastron en peau résistante]\n\nGantelets en peaux résistantes :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Gantelets en peaux résistantes]\n\nCeinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Ceinture en peau résistante]\n\nSuite en écrivant :\n=Liste d'équipements 2```")
+ message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Casque en peau arrachée]\n\nEpaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Epaulière en peaux arrachée]\n\nCape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Cape en peau arrachée]\n\nPlastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Plastron en peau arrachée]\n\nGantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Gantelets en peau arrachée]\n\nCeinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Ceinture en peau arrachée]\n\nJambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Jambières en peau arrachée]\n\nBottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nCraft : [=Bottes en peau arrachée]\n\nAnneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nCraft : [=Anneau en coeur d'animal faible]\n\nAmulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nCraft : [=Amulette en coeur d'animal faible]\n\nCasque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Casque en peau résistante]\n\nEpaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Epaulières en peau résistante]\n\nCape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Cape en peau résistante]\n\nPlastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Plastron en peau résistante]\n\nGantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Gantelets en peau résistante]\n\nCeinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Ceinture en peau résistante]\n\nSuite en écrivant :\n=Liste d'équipements 2```")
         }
   }) ;
 
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 2")) {   
- message.channel.send("```Jambières en peaux résistantes :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Jambières en peaux résistantes]\n\nBottes en peaux résistantes :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Bottes en peaux résistantes]\n\nAnneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nCraft : [=Anneau du croc]\n\nAmulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nCraft : [=Amulette du croc]\n\nCasque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Casque rouillé]\n\nEpaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Epaulières rouillées]\n\nCape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Cape endommagée]\n\nPlastron rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Plastron rouillé]\n\nGantelets rouillés :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Gantelets rouillés]\n\nCeinture rouillée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Ceinture rouillée]\n\nJambières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Jambières rouillées]\n\nBottes rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Bottes rouillées]\n\nAnneau rouillé :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Anneau rouillé]\n\nAmulette rouillée :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Amulette rouillée]```")
+ message.channel.send("```Jambières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Jambières en peau résistante]\n\nBottes en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Bottes en peau résistante]\n\nAnneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nCraft : [=Anneau du croc]\n\nAmulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nCraft : [=Amulette du croc]\n\nCasque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Casque rouillé]\n\nEpaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Epaulières rouillées]\n\nCape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Cape endommagée]\n\nPlastron rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Plastron rouillé]\n\nGantelets rouillés :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Gantelets rouillés]\n\nCeinture rouillée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Ceinture rouillée]\n\nJambières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Jambières rouillées]\n\nBottes rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nCraft : [=Bottes rouillées]\n\nAnneau rouillé :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Anneau rouillé]\n\nAmulette rouillée :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nCraft : [=Amulette rouillée]```")
         }
   }) ;
 
