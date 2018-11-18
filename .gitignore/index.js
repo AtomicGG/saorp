@@ -9431,7 +9431,7 @@ bot.on('message', message => {
 
 
               bot.on('message', message => {
-                if (message.content.startsWith(prefix + "Viande de lapin")) {
+                if (message.content === prefix + "Viande de lapin") {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9565,7 +9565,7 @@ bot.on('message', message => {
 
 
                   bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Peau de lapin géant")) {
+                    if (message.content === prefix + "Peau de lapin géant") {
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9583,7 +9583,7 @@ bot.on('message', message => {
 
                       
                   bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Peau de lapin")) {
+                    if (message.content === prefix + "Peau de lapin") {
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9838,7 +9838,7 @@ bot.on('message', message => {
 
 
                                                           bot.on('message', message => {
-                                                            if (message.content.startsWith(prefix + "Oeil de lapin")) {
+                                                            if (message.content === prefix + "Oeil de lapin") {
                                                               const embed = new Discord.RichEmbed()
                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9855,7 +9855,7 @@ bot.on('message', message => {
 
 
                                                               bot.on('message', message => {
-                                                                if (message.content.startsWith(prefix + "Oeil de lapin géant")) {
+                                                                if (message.content === prefix + "Oeil de lapin géant")
                                                                   const embed = new Discord.RichEmbed()
                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -10702,7 +10702,7 @@ bot.on('message', message => {
       
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 1")) {   
- message.channel.send("```Viande de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nSuite en écrivant :\n=Liste des matériaux 2```")
+ message.channel.send("```Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nViande de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nViande de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPeau de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de taupe :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nCoeur de loup de sang :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de renard :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de chien :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de sanglier :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOeil de lapin géant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nSuite en écrivant :\n=Liste des matériaux 2```")
         }
   }) ;
 
