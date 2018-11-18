@@ -10779,12 +10779,40 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Test réaction")) {   
+  if (message.content.startsWith(prefix + "Test réaction 1")) {   
 message.react('👍').then(() => message.react('👎'));
 const filter = (reaction, user) => {
     return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
 };
 message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
+    .then(collected => {
+        const reaction = collected.first();
+        if (reaction.emoji.name === '👍') {
+            message.reply('you reacted with a thumbs up.');
+        }
+        else {
+            message.reply('you reacted with a thumbs down.');
+        }
+    })
+    .catch(collected => {
+        console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
+        message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
+    });
+     }
+  }) ;
+
+
+
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Test réaction 2")) {   
+message.react('👍').then(() => message.react('👎'));
+const filter = (reaction, user) => {
+    return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
+};
+message.awaitReactions(filter, { max: 1})
     .then(collected => {
         const reaction = collected.first();
         if (reaction.emoji.name === '👍') {
