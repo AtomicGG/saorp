@@ -10837,8 +10837,8 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Test réaction 3")) {   
 message.react('👍')
     message.react('👎')
-    message.react(':white_check_mark:')
-    message.react(':raised_back_of_hand:')
+    message.react('😃')
+    message.react('😾')
 const filter = (reaction, user) => {
     return ['👍', '👎', ':raised_back_of_hand:', ':white_check_mark:'].includes(reaction.emoji.name) && user.id === message.author.id;
 };
@@ -10851,10 +10851,10 @@ message.awaitReactions(filter, { max: 1})
         if (reaction.emoji.name === '👎') {
             message.reply('B');
         }
-   if (reaction.emoji.name === ':white_check_mark:') {
+   if (reaction.emoji.name === '😃') {
             message.reply('C');
         }
-   if (reaction.emoji.name === ':raised_back_of_hand:') {
+   if (reaction.emoji.name === '😾') {
             message.reply('D');
         }
     })
