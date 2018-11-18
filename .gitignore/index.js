@@ -10695,7 +10695,7 @@ bot.on('message', message => {
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux 1\n=Liste d'équipements 1\n=Liste d'armes 1\n=Liste des potions 1\n=Liste des ragoûts 1\n=Liste des parchemins 1")    .setTimestamp()
+.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux 1\n=Liste d'équipements 1\n=Liste d'armes 1\n=Liste des potions 1\n=Liste des ragoûts 1\n=Liste des parchemins 1\n=Liste des oeufs 1")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -10754,5 +10754,11 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des parchemins 1")) {   
  message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nCraft : [=Parchemin de poison faible]```")
+        }
+  }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des oeufs 1")) {   
+ message.channel.send("```Oeuf déformé :\nCoûts [Achat : 1000 cols] [Revente : 250 cols]\nCraft : [=Oeuf déformé]```")
         }
   }) ;
