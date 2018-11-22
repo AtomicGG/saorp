@@ -8622,7 +8622,7 @@ bot.on('message', message => {
                                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer :" , "4")
                                                                                                                      .addField("Prix d'achat :" , "60 cols")
                                                                                                                      .addField("Prix de revente :" , "15 cols")
-                                                                                                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte du ragoût de loup")
+                                                                                                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte du ragoût de taupe")
                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                       .setTimestamp()
                                                                                                                       message.channel.send({embed})
