@@ -6,7 +6,7 @@ let userCooldown = {};
 
 
 bot.on('ready', () => {
-  bot.user.setGame('Nouveau ? Ecris : =Menu SAO 1')
+  bot.user.setGame('Nouveau ? Écris : =Menu SAO 1')
 })
 
 
