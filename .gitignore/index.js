@@ -3,7 +3,11 @@ const bot = new Discord.Client()
 const talkedRecently = new Set();
 const prefix = "=";
 let userCooldown = {};
-DiscordGameStatus: "=Menu SAO 1"
+
+
+bot.on('ready', () => {
+  bot.user.setGame('=Menu SAO 1')
+})
 
 
 bot.on('ready', function () {
