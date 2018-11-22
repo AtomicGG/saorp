@@ -14,23 +14,3 @@
     "discord.js": "^11.3.2"
   }
 }
-
-const fs = require('fs');
-let bdd = JSON.parse(fs.readFileSync("./bdd.json", "utf8"));
-if(message.content.startsWith(prefix + "coin")){
-let mentionned = message.mentions.users.first();
-let auteur;
-if(mentionned) {
-let auteur = mentionned;
-}else{
-let auteur = message.author;
-}
-if(auteur === message.author) return message.channel.send('Vous ne pouvez pas vous donnez de coin');//pour empecher de vous donner des coins
-if(!bdd[auteur.id]){
-bdd[auteur.id] = {"coin": "0"};
-fs.writeFile("./bdd.json", JSON.stringify(bdd), (err) => {if (err) console.error(err);});//Permet d'écrir dans la bdd
-}
-bdd[auteur.id].coin++; //ajoute 1 coin a la personne mentionnée
-message.channel.send("Vous avez donné 1 coin à " + mentionned)
-fs.writeFile("./bdd.json", JSON.stringify(bdd), (err) => {if (err) console.error(err);});//Permet d'écrir dans la bdd
-}
