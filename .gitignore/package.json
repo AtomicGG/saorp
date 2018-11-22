@@ -18,12 +18,12 @@
 const fs = require('fs');
 let bdd = JSON.parse(fs.readFileSync("./bdd.json", "utf8"));
 if(message.content.startsWith(prefix + "coin")){
-var mentionned = message.mentions.users.first();
-var auteur;
+let mentionned = message.mentions.users.first();
+let auteur;
 if(mentionned) {
-var auteur = mentionned;
+let auteur = mentionned;
 }else{
-var auteur = message.author;
+let auteur = message.author;
 }
 if(auteur === message.author) return message.channel.send('Vous ne pouvez pas vous donnez de coin');//pour empecher de vous donner des coins
 if(!bdd[auteur.id]){
