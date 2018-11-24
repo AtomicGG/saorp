@@ -10665,7 +10665,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Comment devenir partenaire ?" , "Il existe deux types de partenariats qui sont :\n\n:one: Les partenariats RP\n\n:two: Les partenariats simples\n\n\nSi vous vouelz savoir comment devenir partenaire simple, écrivez :\n**=Devenir partenaire simple**\n\nSi vous voulez savoir comment devenir partenaire RP, écrivez :\n**=Devenir partenaire RP**")    .setTimestamp()
+.addField("Comment devenir partenaire ?" , "Il existe deux types de partenariats qui sont :\n\n:one: Les partenariats RP\n\n:two: Les partenariats simples\n\n\nSi vous voulez savoir comment devenir partenaire simple, écrivez :\n**=Devenir partenaire simple**\n\nSi vous voulez savoir comment devenir partenaire RP, écrivez :\n**=Devenir partenaire RP**")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -10677,7 +10677,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Comment devenir partenaire ?" , "Voici les critères du partenariat si vous souhaitez devenir partenaire avec nous :\n\n:one: Avoir au minimum 100 membres\n\n:two: Avoir une communauté active\n\n:three: Les membres ne devront pas venir troll ou pub MP nos membres\n\nLa contrepartie sera que vous mettez notre pub sur votre discord, qui se situe sur ce lien à la page 1 et 2 :\n\nhttps://docs.google.com/document/d/1J8LZbLrHO9jL_epnq5Zj1l570AiFrcIGkUZ1oqyJjGw/edit?usp=sharing")    .setTimestamp()
+.addField("Comment devenir partenaire ?" , "Voici les critères du partenariat simple :\n\n:one: Avoir au minimum 100 membres\n\n:two: Avoir une communauté active\n\n:three: Les membres ne devront pas venir troll ou pub MP nos membres\n\nLa contrepartie sera que vous mettez notre pub sur votre discord, qui se situe sur ce lien à la page 1 et 2 :\n\nhttps://docs.google.com/document/d/1J8LZbLrHO9jL_epnq5Zj1l570AiFrcIGkUZ1oqyJjGw/edit?usp=sharing")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -10688,7 +10688,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Comment devenir partenaire ?" , "Voici les critères du partenariat si vous souhaitez devenir partenaire avec nous :\n\n:one: Avoir au minimum 20 membres\n\n:two: Avoir une communauté active et sympa\n\n:three: Les membres ne devront pas venir troll ou pub MP nos membres\n\n\nVous devrez remplir un formulaire disponible en écrivant :\n\n**=Formulaire**\n\nPour remplir ce formulaire, vous aurez besoin de mettre le thème et ce qui se trouve dans votre RP, vous avez la liste en écrivant :\n\n**=Thème RP**\n\nVous devez mettre au minimum 2 éléments, et maximum 10 éléments !\n\nLa contrepartie sera que vous mettez notre pub RP sur votre discord, qui se situe sur ce lien à la page 3 et 4 :\n\nhttps://docs.google.com/document/d/1J8LZbLrHO9jL_epnq5Zj1l570AiFrcIGkUZ1oqyJjGw/edit?usp=sharing")    .setTimestamp()
+.addField("Comment devenir partenaire ?" , "Voici les critères du partenariat RP :\n\n:one: Avoir au minimum 20 membres\n\n:two: Avoir une communauté active et sympa\n\n:three: Les membres ne devront pas venir troll ou pub MP nos membres\n\n\nVous devrez remplir un formulaire disponible en écrivant :\n\n**=Formulaire**\n\nPour remplir ce formulaire, vous aurez besoin de mettre le thème et ce qui se trouve dans votre RP, vous avez la liste en écrivant :\n\n**=Thème RP**\n\nVous devez mettre au minimum 2 éléments, et maximum 10 éléments !\n\nLa contrepartie sera que vous mettez notre pub RP sur votre discord, qui se situe sur ce lien à la page 3 et 4 :\n\nhttps://docs.google.com/document/d/1J8LZbLrHO9jL_epnq5Zj1l570AiFrcIGkUZ1oqyJjGw/edit?usp=sharing\n\nUne fois le formulaire remplis, veuillez l'envoyer au fondateur en messages privés")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
