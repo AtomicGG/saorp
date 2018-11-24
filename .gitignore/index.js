@@ -2776,7 +2776,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(2);
   if (message.content.startsWith(prefix + "Combo +5")) {
-      let degats = args.slice(5).join(" : ");
+      let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const D = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2819,7 +2819,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Combo +10")) {
-      let degats = args.slice(3).join(" : ");
+      let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const D = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
