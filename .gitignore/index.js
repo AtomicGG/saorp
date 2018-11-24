@@ -95,7 +95,7 @@ bot.on("message", (message) => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Pour effectuer une parade :" , "=Parade : [Dégâts de l'attaque de l'ennemis]\n=Parade avec bonus de 5 : [Dégâts de l'attaque de l'ennemis]\n=Parade avec bonus de 10 : [Dégâts de l'attaque de l'ennemis]\n=Parade avec bonus de 15 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer une parade :" , "=Parade +0 : [Dégâts de l'attaque de l'ennemis]\n=Parade +5 : [Dégâts de l'attaque de l'ennemis]\n=Parade +10 : [Dégâts de l'attaque de l'ennemis]\n=Parade +15 : [Dégâts de l'attaque de l'ennemis]")
         .addBlankField(true)
         .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "=Interception +0 : [Dégâts de l'attaque de l'ennemis]\n=Interception ++5 : [Dégâts de l'attaque de l'ennemis]")
          .addBlankField(true)
