@@ -8684,7 +8684,7 @@ bot.on('message', message => {
                                                                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer :" , "5")
                                                                                                                      .addField("Prix d'achat :" , "120 cols")
                                                                                                                      .addField("Prix de revente :" , "30 cols")
-                                                                                                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Découverte/achat/fabrication de la potion faible de force")
+                                                                                                                     .addField("Si vous trouvez ou fabriquer ou acheter cet objet :" , "=Achat/fabrication/découverte de la potion faible de force")
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
@@ -10665,16 +10665,38 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Comment devenir partenaire ?" , "Pour pouvoir devenir partenaire avec notre discord si vous n'êtes pas un discord RP, voici les critères :\n\n:one: Avoir au minimum 100 membres\n\n:two: Avoir une communauté active\n\n:three: Les membres ne devront pas venir troll ou pub MP nos membres\n\n\nPour pouvoir devenir partenaire avec notre discord si vous êtes un discord RP, vous devrez remplir un formulaire disponible en écrivant :\n\n**=Formulaire**\n\nPour remplir ce formulaire, vous aurez besoin de mettre le thème et ce qui se trouve dans votre RP, vous avez la liste en écrivant :\n\n**=Thème RP**\n\nVous devez mettre au minimum 2 éléments, et maximum 10 éléments !\n\nLa contrepartie sera que vous mettez notre pub RP sur votre discord avec la mention @everyone\n\n")    .setTimestamp()
+.addField("Comment devenir partenaire ?" , "Il existe deux types de partenariats qui sont :\n\n:one: Les partenariats RP\n:two: Les partenariats simples\n\nSi vous vouelz savoir comment devenir partenaire simple, écrivez : **=Devenir partenaire 1**\n\nSi vous voulez savoir comment devenir partenaire RP, écrivez : **=Devenir partenaire 2**")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
 
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Devenir partenaire 1")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Comment devenir partenaire ?" , "Voici les critères du partenariat si vous souhaitez devenir partenaire avec nous :\n\n:one: Avoir au minimum 100 membres\n\n:two: Avoir une communauté active\n\n:three: Les membres ne devront pas venir troll ou pub MP nos membres\n\nLa contrepartie sera que vous mettez notre pub sur votre discord, qui se situe sur ce lien à la page 1 et 2 :\n\nhttps://docs.google.com/document/d/1J8LZbLrHO9jL_epnq5Zj1l570AiFrcIGkUZ1oqyJjGw/edit?usp=sharing")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Devenir partenaire 2")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.addField("Comment devenir partenaire ?" , "Voici les critères du partenariat si vous souhaitez devenir partenaire avec nous :\n\n:one: Avoir au minimum 20 membres\n\n:two: Avoir une communauté active et sympa\n\n:three: Les membres ne devront pas venir troll ou pub MP nos membres\n\n\nVous devrez remplir un formulaire disponible en écrivant :\n\n**=Formulaire**\n\nPour remplir ce formulaire, vous aurez besoin de mettre le thème et ce qui se trouve dans votre RP, vous avez la liste en écrivant :\n\n**=Thème RP**\n\nVous devez mettre au minimum 2 éléments, et maximum 10 éléments !\n\nLa contrepartie sera que vous mettez notre pub RP sur votre discord, qui se situe sur ce lien à la page 3 et 4 :\n\nhttps://docs.google.com/document/d/1J8LZbLrHO9jL_epnq5Zj1l570AiFrcIGkUZ1oqyJjGw/edit?usp=sharing")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Formulaire")) {   
-    message.channel.send("```**__۝▬▬๑₪۩۞『Le nom de votre RP』۞۩₪๑▬▬۝__**\n\n**Thème et éléments : [Selon le =Thème RP]**\n\n**Contexte de votre RP :\n\n**Niveau conseillé d'avoir : [Selon le =Thème RP]**\n\n**Durée de votre RP : [Selon le =Thème RP]**\n\n**Informations spplémentaires : [Optionnel si vous voulez donner plus d'informations]**\n\n**__۝▬▬๑₪۩۞『Lien de votre RP』۞۩₪๑▬▬۝__**```")
+    message.channel.send("```**__۝▬▬๑₪۩۞『Le nom de votre RP』۞۩₪๑▬▬۝__**\n\n**Thème et éléments : [Ecrivez =Thème RP]**\n\n**Contexte de votre RP :\n\n**Niveau conseillé d'avoir : [Ecrivez =Thème RP]**\n\n**Durée de votre RP : [Ecrivez le =Thème RP]**\n\n**Informations spplémentaires : [Optionnel si vous voulez donner plus d'informations]**\n\n**__۝▬▬๑₪۩۞『Lien de votre RP』۞۩₪๑▬▬۝__**```")
         }
   }) ;
 
