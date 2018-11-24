@@ -2485,7 +2485,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup sauté +0") {
+                                                                                                           if (message.content.startsWith(prefix + "Coup sauté +0")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
@@ -2529,8 +2529,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup perce armure +0") {
-
+if (message.content.startsWith(prefix + "Coup perce armure +0")) {
       let degats = args.slice(4).join(" : ");
       const A = (Math.floor((degats/4)*Math.random()+1*(degats/2)))
       const B = (Math.floor((100)*Math.random()+1))
