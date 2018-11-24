@@ -62,23 +62,23 @@ bot.on("message", (message) => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Pour effectuer un coup normal :" , "=Coup normal sans bonus : [Vos dégâts]\n=Coup normal avec bonus de 5 : [Vos dégâts]\n=Coup normal avec bonus de 10 : [Vos dégâts]\n=Coup normal avec bonus de 15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup normal :" , "=Coup normal +0 : [Vos dégâts]\n=Coup normal +5 : [Vos dégâts]\n=Coup normal +10 : [Vos dégâts]\n=Coup normal +15 : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup précis :" , "=Coup Précis : [Vos dégâts]\n=Coup précis +5 : [Vos dégâts]\n=Coup précis +10 : [Vos dégâts]\n=Coup précis +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup précis :" , "=Coup précis +0 : [Vos dégâts]\n=Coup précis +5 : [Vos dégâts]\n=Coup précis +10 : [Vos dégâts]\n=Coup précis +15 : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup d'estoc :" , "=Coup d'estoc : [Vos dégâts]\n=Coup d'estoc +5 : [Vos dégâts]\n=Coup d'estoc +10 : [Vos dégâts]\n=Coup d'estoc +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup d'estoc :" , "=Coup d'estoc +0 : [Vos dégâts]\n=Coup d'estoc +5 : [Vos dégâts]\n=Coup d'estoc +10 : [Vos dégâts]\n=Coup d'estoc +15 : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup provocateur :" , "=Coup provocateur : [Vos dégâts]\n=Coup provocateur +5 : [Vos dégâts]\n=Coup provocateur +10 : [Vos dégâts]\n=Coup provocateur +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup provocateur :" , "=Coup provocateur +0 : [Vos dégâts]\n=Coup provocateur +5 : [Vos dégâts]\n=Coup provocateur +10 : [Vos dégâts]\n=Coup provocateur +15 : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup circulaire :" , "=Coup circulaire : [Vos dégâts]\n=Coup circulaire +5 : [Vos dégâts]\n=Coup circulaire +10 : [Vos dégâts]\n=Coup circulaire +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup circulaire :" , "=Coup circulaire +0 : [Vos dégâts]\n=Coup circulaire +5 : [Vos dégâts]\n=Coup circulaire +10 : [Vos dégâts]\n=Coup circulaire +15 : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un cri de provocation :" , "=Cri de provocation\n=Cri de provocation +5\n=Cri de provocation +10\n=Cri de provocation +15")
+        .addField("Pour effectuer un cri de provocation :" , "=Cri de provocation +0\n=Cri de provocation +5\n=Cri de provocation +10\n=Cri de provocation +15")
         .addBlankField(true)
-        .addField("Pour effectuer un combo :" , "=Combo sans bonus : [Vos dégâts]\n=Combo +5 : [Vos dégâts]\n=Combo +10 : [Vos dégâts]\n=Combo +15 : [Vos dégâts]")
+        .addField("Pour effectuer un combo :" , "=Combo +0 : [Vos dégâts]\n=Combo +5 : [Vos dégâts]\n=Combo +10 : [Vos dégâts]\n=Combo +15 : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer une esquive :" , "=Esquive : [Dégâts de l'attaque de l'ennemis]\n=Esquive +5 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +10 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +15 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer une esquive :" , "=Esquive +0 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +5 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +10 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +15 : [Dégâts de l'attaque de l'ennemis]")
         .addBlankField(true)
-        .addField("Pour effectuer un blocage :" , "=Blocage : [Dégâts de l'attaque de l'ennemis]\n=Blocage +5 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +10 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +15 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer un blocage :" , "=Blocage +0 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +5 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +10 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +15 : [Dégâts de l'attaque de l'ennemis]")
         .addBlankField(true)
         .addField("Pour savoir ce que vous débloquez selon le niveau :" , "=Coups et défenses apprentissage")
            .addBlankField(true)
@@ -97,9 +97,9 @@ bot.on("message", (message) => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .addField("Pour effectuer une parade :" , "=Parade : [Dégâts de l'attaque de l'ennemis]\n=Parade avec bonus de 5 : [Dégâts de l'attaque de l'ennemis]\n=Parade avec bonus de 10 : [Dégâts de l'attaque de l'ennemis]\n=Parade avec bonus de 15 : [Dégâts de l'attaque de l'ennemis]")
         .addBlankField(true)
-        .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "=Interception : [Dégâts de l'attaque de l'ennemis]\n=Interception ++5 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "=Interception +0 : [Dégâts de l'attaque de l'ennemis]\n=Interception ++5 : [Dégâts de l'attaque de l'ennemis]")
          .addBlankField(true)
-        .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "=Fuite\n=Fuite +10")
+        .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "=Fuite +0\n=Fuite +10")
          .addBlankField(true)
       .addField("Pour effectuer un coup sauté :" , "=Coup sauté : [Vos dégâts]")
           .addBlankField(true)
@@ -2231,9 +2231,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup normal") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup normal +0")) {
 
-      let degats = args.slice(2).join(" : ");
+      let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 25){
@@ -2263,7 +2263,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content === prefix + "Coup normal +5") {
+                                                                                                              if (message.content.startsWith(prefix + "Coup normal +5")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+(degats/2)))
@@ -2294,7 +2294,7 @@ bot.on('message', message => {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup normal +10") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup normal +10")) {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats)*Math.random()+(degats/2)))
     const B = (Math.floor((100)*Math.random()+1))
@@ -2325,7 +2325,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup normal +15") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup normal +15")) {
   let degats = args.slice(3).join(" : ");
   const A = (Math.floor((degats)*Math.random()+(degats/2)))
   const B = (Math.floor((100)*Math.random()+1))
@@ -2355,9 +2355,9 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                          if (message.content === prefix + "Coup précis") {
+                                                                                                           if (message.content.startsWith(prefix + "Coup précis +0")) {
 
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 50){
@@ -2387,7 +2387,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup précis +5") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup précis +5")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
@@ -2419,7 +2419,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup précis +10") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup précis +10")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
@@ -2451,7 +2451,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup précis +15") {
+                                                                                                            if (message.content.startsWith(prefix + "Coup précis +15")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
@@ -2487,7 +2487,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
                                                                                                             if (message.content === prefix + "Coup sauté") {
 
-      let degats = args.slice(2).join(" : ");
+      let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 50){
@@ -2561,9 +2561,9 @@ bot.on('message', message => {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                          if (message.content === prefix + "Coup d'estoc") {
+                                                                                                           if (message.content.startsWith(prefix + "Coup d'estoc +0")) {
 
-  let degats = args.slice(2).join(" : ");
+  let degats = args.slice(3).join(" : ");
   const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 5){
@@ -2604,7 +2604,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup d'estoc +5") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc +5")) {
 
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
@@ -2647,7 +2647,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup d'estoc +10") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc +10")) {
 
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
@@ -2690,7 +2690,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Coup d'estoc +15") {
+                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc +15")) {
 
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
@@ -2732,9 +2732,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Combo") {
+                                                                                                             if (message.content.startsWith(prefix + "Combo +0")) {
 
-      let degats = args.slice(1).join(" : ");
+      let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const D = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2776,7 +2776,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(2);
- if (message.content === prefix + "Combo +5") {
+  if (message.content.startsWith(prefix + "Combo +5")) {
       let degats = args.slice(5).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2819,7 +2819,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content === prefix + "Combo +10") {
+    if (message.content.startsWith(prefix + "Combo +10")) {
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2862,7 +2862,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === prefix + "Combo +15") {
+   if (message.content.startsWith(prefix + "Combo +15")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2904,9 +2904,9 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-                                                                                                              if (message.content === prefix + "Coup provocateur") {
+                                                                                                               if (message.content.startsWith(prefix + "Coup provocateur +0")) {
 
-        let degats = args.slice(2).join(" : ");
+        let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 50){
@@ -2938,7 +2938,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content === prefix + "Coup provocateur +5") {
+     if (message.content.startsWith(prefix + "Coup provocateur +5")) {
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -2971,7 +2971,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-   if (message.content === prefix + "Coup provocateur +10") {
+    if (message.content.startsWith(prefix + "Coup provocateur +10")) {
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3004,7 +3004,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content === prefix + "Coup provocateur +15") {
+     if (message.content.startsWith(prefix + "Coup provocateur +15")) {
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3037,9 +3037,9 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-                                                                                                                 if (message.content === prefix + "Coup circulaire") {
+   if (message.content.startsWith(prefix + "Coup circulaire +0")) {
 
-            let degats = args.slice(2).join(" : ");
+            let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
@@ -3071,7 +3071,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-        if (message.content === prefix + "Coup circulaire +5") {
+        if (message.content.startsWith(prefix + "Coup circulaire +5")) {
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
             const B = (Math.floor((100)*Math.random()+1))
@@ -3103,7 +3103,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-        if (message.content === prefix + "Coup circulaire +10") {
+         if (message.content.startsWith(prefix + "Coup circulaire +10")) {
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
             const B = (Math.floor((100)*Math.random()+1))
@@ -3137,7 +3137,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-        if (message.content === prefix + "Coup circulaire +15") {
+         if (message.content.startsWith(prefix + "Coup circulaire +15")) {
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
             const B = (Math.floor((100)*Math.random()+1))
@@ -3167,7 +3167,7 @@ bot.on('message', message => {
 /////////////////////////////////////////////////////Crie de provocation////////////////////////////////////////////////////////////////////////////////////////////
 
         bot.on('message', message => {
-                                                                                                                   if (message.content === prefix + "Cri de provocation") {
+      if (message.content.startsWith(prefix + "Cri de provocation +0")) {
 
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3196,7 +3196,7 @@ bot.on('message', message => {
 
           
         bot.on('message', message => {
-          if (message.content === prefix + "Cri de provocation +5") {
+           if (message.content.startsWith(prefix + "Cri de provocation +5")) {
               let degats = args.slice(1).join(" ");
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3225,7 +3225,7 @@ bot.on('message', message => {
 
           
         bot.on('message', message => {
-          if (message.content === prefix + "Cri de provocation +10") {
+           if (message.content.startsWith(prefix + "Cri de provocation +10")) {
               let degats = args.slice(1).join(" ");
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3254,7 +3254,7 @@ bot.on('message', message => {
 
           
         bot.on('message', message => {
-          if (message.content === prefix + "Cri de provocation +15") {
+           if (message.content.startsWith(prefix + "Cri de provocation +15")) {
               const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3285,9 +3285,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                           if (message.content === prefix + "Esquive") {
+                                                                                                            if (message.content.startsWith(prefix + "Esquive +0")) {
 
-      let degats = args.slice(1).join(" : ");
+      let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B =  (Math.floor((100)*Math.random()+1))
       if (B < 50){
@@ -3317,7 +3317,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === prefix + "Esquive +5") {
+   if (message.content.startsWith(prefix + "Esquive +5")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3348,7 +3348,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === prefix + "Esquive +10") {
+   if (message.content.startsWith(prefix + "Esquive +10")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3379,7 +3379,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === prefix + "Esquive +15") {
+   if (message.content.startsWith(prefix + "Esquive +15")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3410,9 +3410,9 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-                                                                                                              if (message.content === prefix + "Blocage") {
+                                                                                                               if (message.content.startsWith(prefix + "Blocage +0")) {
 
-        let degats = args.slice(1).join(" : ");
+        let degats = args.slice(2).join(" : ");
         const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 50){
@@ -3441,7 +3441,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-   if (message.content === prefix + "Blocage +5") {
+   if (message.content.startsWith(prefix + "Blocage +5")) {
         let degats = args.slice(2).join(" : ");
         const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3472,7 +3472,7 @@ bot.on('message', message => {
     bot.on('message', message => {
       let cont = message.content.slice(prefix.length).split(" ");
       const args = cont.slice(1);
-      if (message.content === prefix + "Blocage +10") {
+      if (message.content.startsWith(prefix + "Blocage +10")) {
           let degats = args.slice(2).join(" : ");
           const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
           const B = (Math.floor((100)*Math.random()+1))
@@ -3502,7 +3502,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content === prefix + "Blocage +10") {
+     if (message.content.startsWith(prefix + "Blocage +15")) {
         let degats = args.slice(2).join(" : ");
         const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3531,9 +3531,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content === prefix + "Parade") {
+                                                                                                             if (message.content.startsWith(prefix + "Parade +0")) {
 
-      let degats = args.slice(1).join(" : ");
+      let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 60){
@@ -3563,7 +3563,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === prefix + "Parade +5") {
+   if (message.content.startsWith(prefix + "Parade +5")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3594,7 +3594,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === prefix + "Parade +10") {
+   if (message.content.startsWith(prefix + "Parade +10")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3625,7 +3625,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === prefix + "Parade +15") {
+   if (message.content.startsWith(prefix + "Parade +15")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3677,9 +3677,9 @@ bot.on('message', message => {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                          if (message.content === prefix + "Interception") {
+                                                                                                           if (message.content.startsWith(prefix + "Interception +0")) {
 
-    let degats = args.slice(1).join(" : ");
+    let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 50){
@@ -3709,7 +3709,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-if (message.content === prefix + "Interception +5") {
+ if (message.content.startsWith(prefix + "Interception +5")) {
  let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
     const B = (Math.floor((100)*Math.random()+1))
@@ -3740,8 +3740,8 @@ if (message.content === prefix + "Interception +5") {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-if (message.content === prefix + "Fuite") {
-    let degats = args.slice(1).join(" : ");
+ if (message.content.startsWith(prefix + "Fuite +0")) {
+    let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 70){
@@ -3771,7 +3771,7 @@ if (message.content === prefix + "Fuite") {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-if (message.content === prefix + "Fuite +10") {
+ if (message.content.startsWith(prefix + "Fuite +10")) {
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
