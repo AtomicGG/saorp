@@ -10665,14 +10665,14 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Comment devenir partenaire ?" , "Il existe deux types de partenariats qui sont :\n\n:one: Les partenariats RP\n:two: Les partenariats simples\n\nSi vous vouelz savoir comment devenir partenaire simple, écrivez : **=Devenir partenaire 1**\n\nSi vous voulez savoir comment devenir partenaire RP, écrivez : **=Devenir partenaire 2**")    .setTimestamp()
+.addField("Comment devenir partenaire ?" , "Il existe deux types de partenariats qui sont :\n\n:one: Les partenariats RP\n\n:two: Les partenariats simples\n\n\nSi vous vouelz savoir comment devenir partenaire simple, écrivez :\n**=Devenir partenaire simple**\n\nSi vous voulez savoir comment devenir partenaire RP, écrivez :\n**=Devenir partenaire RP**")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Devenir partenaire 1")) {   
+   if (message.content === prefix + "Devenir partenaire simple") {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -10683,7 +10683,7 @@ bot.on('message', message => {
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Devenir partenaire 2")) {   
+    if (message.content === prefix + "Devenir partenaire RP") {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
