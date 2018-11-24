@@ -10660,7 +10660,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Devenir partenaire")) {   
+ if (message.content === prefix + "Devenir partenaire") {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
