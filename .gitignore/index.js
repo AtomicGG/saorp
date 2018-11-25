@@ -10659,7 +10659,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
