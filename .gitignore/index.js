@@ -10672,6 +10672,7 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField("Récompenses journalières :" , "Vous venez d'ouvrir votre menu journalier, vous recevez " +Cols+ " cols !")
     .setTimestamp()
+     message.channel.send({embed})
     talkedRecently.add(message.author.id+10145);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+10145);
