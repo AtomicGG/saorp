@@ -10664,7 +10664,7 @@ bot.on('message', message => {
                                .setTimestamp()
                                message.channel.send({embed})
                       } else {
-  const Cols = (Math.floor(76)*Math.random()+25)
+  const Cols = (Math.floor((76)*Math.random()+25))
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
