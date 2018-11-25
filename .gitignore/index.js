@@ -10654,6 +10654,16 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Récompenses journalières")) {   
+         if (talkedRecently.has(message.author.id+10145)) {
+                              const embed = new Discord.RichEmbed()
+                               .setAuthor(message.author.username , message.author.avatarURL)
+                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                               .setColor(3447003)
+                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                               .setTimestamp()
+                               message.channel.send({embed})
+                      } else {
   const Cols = (Math.floor(76)*Math.random()+25))
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
@@ -10662,10 +10672,61 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField("Récompenses journalières :" , "Vous venez d'ouvrir votre menu journalier, vous recevez " +Cols+ " cols !)
     .setTimestamp()
-    message.channel.send({embed})
-        }
-  }) ;
+    talkedRecently.add(message.author.id+10145);
+                               setTimeout(() => {
+                                talkedRecently.delete(message.author.id+10145);
+                              }, 86400000);
+                          }
+                               }
+                          });
 
+
+
+ bot.on('message', message => {
+                          let cont = message.content.slice(prefix.length).split(" ");
+                          const args = cont.slice(1);
+                          if (message.content.startsWith(prefix + "Frost strike")) {
+                            if (talkedRecently.has(message.author.id+4)) {
+                              const embed = new Discord.RichEmbed()
+                               .setAuthor(message.author.username , message.author.avatarURL)
+                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                               .setColor(3447003)
+                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                               .setTimestamp()
+                               message.channel.send({embed})
+                      } else {
+                              let degats = args.slice(2).join(" : ");
+                              const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+                              const B = (Math.floor(100)*Math.random()+1)
+                              const C = (Math.floor((3)*Math.random()+1))
+                              if(B < 50){
+                               const embed = new Discord.RichEmbed()
+                               .setAuthor(message.author.username , message.author.avatarURL)
+                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                               .setColor(3447003)
+                               .addField("Vous réussissez votre compétence 'Frost strike' qui inflige :" , A+ " points de dégâts")
+                               .addField("Gèle :" , "Vous n'arrivez cependant pas à geler votre cible...")
+                               .setImage("https://i.gifer.com/BHNt.gif")
+                               .setTimestamp()
+                               message.channel.send({embed})}
+                               if(B > 51){
+                               const embed = new Discord.RichEmbed()
+                               .setAuthor(message.author.username , message.author.avatarURL)
+                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                               .setColor(3447003)
+                               .addField("Vous réussissez votre compétence 'Frost strike' qui inflige :" , A+ " points de dégâts")
+                               .addField("Gèle :" , "Vous arrivez à geler votre cible pendant " +C+ " tours, l'empêchant de faire la moindre attaque !")
+                               .setImage("https://i.gifer.com/BHNt.gif")
+                               .setTimestamp()
+                               message.channel.send({embed})}
+                               talkedRecently.add(message.author.id+4);
+                               setTimeout(() => {
+                                talkedRecently.delete(message.author.id+4);
+                              }, 3000000);
+                          }
+                               }
+                          });
 
 
 
