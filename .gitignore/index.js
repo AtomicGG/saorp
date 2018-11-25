@@ -62,23 +62,23 @@ bot.on("message", (message) => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Pour effectuer un coup normal :" , "=Coup normal +0 : [Vos dégâts]\n=Coup normal +5 : [Vos dégâts]\n=Coup normal +10 : [Vos dégâts]\n=Coup normal +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup normal :" , "=Coup normal simple : [Vos dégâts]\n=Coup normal amélioré : [Vos dégâts]\n=Coup normal supérieur : [Vos dégâts]\n=Coup normal suprême : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup précis :" , "=Coup précis +0 : [Vos dégâts]\n=Coup précis +5 : [Vos dégâts]\n=Coup précis +10 : [Vos dégâts]\n=Coup précis +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup précis :" , "=Coup précis simple : [Vos dégâts]\n=Coup précis amélioré : [Vos dégâts]\n=Coup précis supérieur : [Vos dégâts]\n=Coup précis suprême : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup d'estoc :" , "=Coup d'estoc +0 : [Vos dégâts]\n=Coup d'estoc +5 : [Vos dégâts]\n=Coup d'estoc +10 : [Vos dégâts]\n=Coup d'estoc +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup d'estoc :" , "=Coup d'estoc simple : [Vos dégâts]\n=Coup d'estoc amélioré : [Vos dégâts]\n=Coup d'estoc supérieur : [Vos dégâts]\n=Coup d'estoc suprême : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup provocateur :" , "=Coup provocateur +0 : [Vos dégâts]\n=Coup provocateur +5 : [Vos dégâts]\n=Coup provocateur +10 : [Vos dégâts]\n=Coup provocateur +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup provocateur :" , "=Coup provocateur simple : [Vos dégâts]\n=Coup provocateur amélioré : [Vos dégâts]\n=Coup provocateur supérieur : [Vos dégâts]\n=Coup provocateur suprême : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un coup circulaire :" , "=Coup circulaire +0 : [Vos dégâts]\n=Coup circulaire +5 : [Vos dégâts]\n=Coup circulaire +10 : [Vos dégâts]\n=Coup circulaire +15 : [Vos dégâts]")
+        .addField("Pour effectuer un coup circulaire :" , "=Coup circulaire simple : [Vos dégâts]\n=Coup circulaire amélioré : [Vos dégâts]\n=Coup circulaire supérieur : [Vos dégâts]\n=Coup circulaire suprême : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer un cri de provocation :" , "=Cri de provocation +0\n=Cri de provocation +5\n=Cri de provocation +10\n=Cri de provocation +15")
+        .addField("Pour effectuer un cri de provocation :" , "=Cri de provocation simple\n=Cri de provocation amélioré\n=Cri de provocation supérieur\n=Cri de provocation suprême")
         .addBlankField(true)
-        .addField("Pour effectuer un combo :" , "=Combo +0 : [Vos dégâts]\n=Combo +5 : [Vos dégâts]\n=Combo +10 : [Vos dégâts]\n=Combo +15 : [Vos dégâts]")
+        .addField("Pour effectuer un combo :" , "=Combo simple : [Vos dégâts]\n=Combo amélioré : [Vos dégâts]\n=Combo supérieur : [Vos dégâts]\n=Combo suprême : [Vos dégâts]")
         .addBlankField(true)
-        .addField("Pour effectuer une esquive :" , "=Esquive +0 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +5 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +10 : [Dégâts de l'attaque de l'ennemis]\n=Esquive +15 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer une esquive :" , "=Esquive simple : [Dégâts de l'attaque de l'ennemis]\n=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]\n=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]\n=Esquive suprême : [Dégâts de l'attaque de l'ennemis]")
         .addBlankField(true)
-        .addField("Pour effectuer un blocage :" , "=Blocage +0 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +5 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +10 : [Dégâts de l'attaque de l'ennemis]\n=Blocage +15 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer un blocage :" , "=Blocage simple : [Dégâts de l'attaque de l'ennemis]\n=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]\n=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]\n=Blocage suprême : [Dégâts de l'attaque de l'ennemis]")
         .addBlankField(true)
         .addField("Pour savoir ce que vous débloquez selon le niveau :" , "=Coups et défenses apprentissage")
            .addBlankField(true)
@@ -95,15 +95,15 @@ bot.on("message", (message) => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Pour effectuer une parade :" , "=Parade +0 : [Dégâts de l'attaque de l'ennemis]\n=Parade +5 : [Dégâts de l'attaque de l'ennemis]\n=Parade +10 : [Dégâts de l'attaque de l'ennemis]\n=Parade +15 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer une parade :" , "=Parade simple : [Dégâts de l'attaque de l'ennemis]\n=Parade améliorée : [Dégâts de l'attaque de l'ennemis]\n=Parade supérieure: [Dégâts de l'attaque de l'ennemis]\n=Parade suprême : [Dégâts de l'attaque de l'ennemis]")
         .addBlankField(true)
-        .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "=Interception +0 : [Dégâts de l'attaque de l'ennemis]\n=Interception +5 : [Dégâts de l'attaque de l'ennemis]")
+        .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "=Interception simple : [Dégâts de l'attaque de l'ennemis]\n=Interception améliorée : [Dégâts de l'attaque de l'ennemis]")
          .addBlankField(true)
-        .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "=Fuite +0\n=Fuite +10")
+        .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "=Fuite simple\n=Fuite améliorée")
          .addBlankField(true)
-      .addField("Pour effectuer un coup sauté :" , "=Coup sauté +0 : [Vos dégâts]")
+      .addField("Pour effectuer un coup sauté :" , "=Coup sauté simple : [Vos dégâts]")
           .addBlankField(true)
-        .addField("Pour effectuer un coup perce armure :" , "=Coup perce armure +0 : [Vos dégâts]")
+        .addField("Pour effectuer un coup perce armure :" , "=Coup perce armure simple : [Vos dégâts]")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})}
@@ -2231,7 +2231,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup normal +0")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup normal simple")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
@@ -2263,7 +2263,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                              if (message.content.startsWith(prefix + "Coup normal +5")) {
+                                                                                                              if (message.content.startsWith(prefix + "Coup normal amélioré")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+(degats/2)))
@@ -2294,7 +2294,7 @@ bot.on('message', message => {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup normal +10")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup normal supérieur")) {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats)*Math.random()+(degats/2)))
     const B = (Math.floor((100)*Math.random()+1))
@@ -2325,7 +2325,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup normal +15")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup normal suprême")) {
   let degats = args.slice(3).join(" : ");
   const A = (Math.floor((degats)*Math.random()+(degats/2)))
   const B = (Math.floor((100)*Math.random()+1))
@@ -2355,7 +2355,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                           if (message.content.startsWith(prefix + "Coup précis +0")) {
+                                                                                                           if (message.content.startsWith(prefix + "Coup précis simple")) {
 
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
@@ -2387,7 +2387,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup précis +5")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup précis amélioré")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
@@ -2419,7 +2419,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup précis +10")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup précis supérieur")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
@@ -2451,7 +2451,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content.startsWith(prefix + "Coup précis +15")) {
+                                                                                                            if (message.content.startsWith(prefix + "Coup précis suprême")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
@@ -2485,7 +2485,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                           if (message.content.startsWith(prefix + "Coup sauté +0")) {
+                                                                                                           if (message.content.startsWith(prefix + "Coup sauté simple")) {
 
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
@@ -2529,7 +2529,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-if (message.content.startsWith(prefix + "Coup perce armure +0")) {
+if (message.content.startsWith(prefix + "Coup perce armure simple")) {
       let degats = args.slice(4).join(" : ");
       const A = (Math.floor((degats/4)*Math.random()+1*(degats/2)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -2560,7 +2560,7 @@ if (message.content.startsWith(prefix + "Coup perce armure +0")) {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                           if (message.content.startsWith(prefix + "Coup d'estoc +0")) {
+                                                                                                           if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
 
   let degats = args.slice(3).join(" : ");
   const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
@@ -2603,7 +2603,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc +5")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc amélioré")) {
 
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
@@ -2646,7 +2646,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc +10")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc supérieur")) {
 
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
@@ -2689,7 +2689,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc +15")) {
+                                                                                                             if (message.content.startsWith(prefix + "Coup d'estoc suprême")) {
 
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
@@ -2731,7 +2731,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Combo +0")) {
+                                                                                                             if (message.content.startsWith(prefix + "Combo simple")) {
 
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2775,7 +2775,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(2);
-  if (message.content.startsWith(prefix + "Combo +5")) {
+  if (message.content.startsWith(prefix + "Combo amélioré")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2818,7 +2818,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Combo +10")) {
+    if (message.content.startsWith(prefix + "Combo supérieur")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2861,7 +2861,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Combo +15")) {
+   if (message.content.startsWith(prefix + "Combo suprême")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
       const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
@@ -2903,7 +2903,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-                                                                                                               if (message.content.startsWith(prefix + "Coup provocateur +0")) {
+                                                                                                               if (message.content.startsWith(prefix + "Coup provocateur simple")) {
 
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
@@ -2937,7 +2937,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-     if (message.content.startsWith(prefix + "Coup provocateur +5")) {
+     if (message.content.startsWith(prefix + "Coup provocateur amélioré")) {
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -2970,7 +2970,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Coup provocateur +10")) {
+    if (message.content.startsWith(prefix + "Coup provocateur supérieur")) {
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3003,7 +3003,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-     if (message.content.startsWith(prefix + "Coup provocateur +15")) {
+     if (message.content.startsWith(prefix + "Coup provocateur suprême")) {
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats)*Math.random()+1*(degats)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3036,7 +3036,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Coup circulaire +0")) {
+   if (message.content.startsWith(prefix + "Coup circulaire simple")) {
 
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
@@ -3070,7 +3070,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-        if (message.content.startsWith(prefix + "Coup circulaire +5")) {
+        if (message.content.startsWith(prefix + "Coup circulaire amélioré")) {
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
             const B = (Math.floor((100)*Math.random()+1))
@@ -3102,7 +3102,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-         if (message.content.startsWith(prefix + "Coup circulaire +10")) {
+         if (message.content.startsWith(prefix + "Coup circulaire supérieur")) {
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
             const B = (Math.floor((100)*Math.random()+1))
@@ -3136,7 +3136,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
-         if (message.content.startsWith(prefix + "Coup circulaire +15")) {
+         if (message.content.startsWith(prefix + "Coup circulaire suprême")) {
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
             const B = (Math.floor((100)*Math.random()+1))
@@ -3166,7 +3166,7 @@ bot.on('message', message => {
 /////////////////////////////////////////////////////Crie de provocation////////////////////////////////////////////////////////////////////////////////////////////
 
         bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Cri de provocation +0")) {
+      if (message.content.startsWith(prefix + "Cri de provocation simple")) {
 
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3195,7 +3195,7 @@ bot.on('message', message => {
 
           
         bot.on('message', message => {
-           if (message.content.startsWith(prefix + "Cri de provocation +5")) {
+           if (message.content.startsWith(prefix + "Cri de provocation amélioré")) {
               let degats = args.slice(1).join(" ");
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3224,7 +3224,7 @@ bot.on('message', message => {
 
           
         bot.on('message', message => {
-           if (message.content.startsWith(prefix + "Cri de provocation +10")) {
+           if (message.content.startsWith(prefix + "Cri de provocation supérieur")) {
               let degats = args.slice(1).join(" ");
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3253,7 +3253,7 @@ bot.on('message', message => {
 
           
         bot.on('message', message => {
-           if (message.content.startsWith(prefix + "Cri de provocation +15")) {
+           if (message.content.startsWith(prefix + "Cri de provocation suprême")) {
               const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
               const B = (Math.floor((100)*Math.random()+1))
               const C = (Math.floor((3)*Math.random()+2))
@@ -3284,7 +3284,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                            if (message.content.startsWith(prefix + "Esquive +0")) {
+                                                                                                            if (message.content.startsWith(prefix + "Esquive simple")) {
 
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
@@ -3316,7 +3316,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Esquive +5")) {
+   if (message.content.startsWith(prefix + "Esquive améliorée")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3347,7 +3347,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Esquive +10")) {
+   if (message.content.startsWith(prefix + "Esquive supérieure")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3378,7 +3378,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Esquive +15")) {
+   if (message.content.startsWith(prefix + "Esquive suprême")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3409,7 +3409,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-                                                                                                               if (message.content.startsWith(prefix + "Blocage +0")) {
+                                                                                                               if (message.content.startsWith(prefix + "Blocage simple")) {
 
         let degats = args.slice(2).join(" : ");
         const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
@@ -3440,7 +3440,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Blocage +5")) {
+   if (message.content.startsWith(prefix + "Blocage amélioré")) {
         let degats = args.slice(2).join(" : ");
         const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3471,7 +3471,7 @@ bot.on('message', message => {
     bot.on('message', message => {
       let cont = message.content.slice(prefix.length).split(" ");
       const args = cont.slice(1);
-      if (message.content.startsWith(prefix + "Blocage +10")) {
+      if (message.content.startsWith(prefix + "Blocage supérieur")) {
           let degats = args.slice(2).join(" : ");
           const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
           const B = (Math.floor((100)*Math.random()+1))
@@ -3501,7 +3501,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-     if (message.content.startsWith(prefix + "Blocage +15")) {
+     if (message.content.startsWith(prefix + "Blocage suprême")) {
         let degats = args.slice(2).join(" : ");
         const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -3530,7 +3530,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                                                                             if (message.content.startsWith(prefix + "Parade +0")) {
+                                                                                                             if (message.content.startsWith(prefix + "Parade simple")) {
 
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
@@ -3562,7 +3562,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Parade +5")) {
+   if (message.content.startsWith(prefix + "Parade améliorée")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3593,7 +3593,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Parade +10")) {
+   if (message.content.startsWith(prefix + "Parade supérieure")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3624,7 +3624,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-   if (message.content.startsWith(prefix + "Parade +15")) {
+   if (message.content.startsWith(prefix + "Parade suprême")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -3676,7 +3676,7 @@ bot.on('message', message => {
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
-                                                                                                           if (message.content.startsWith(prefix + "Interception +0")) {
+                                                                                                           if (message.content.startsWith(prefix + "Interception simple")) {
 
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
@@ -3708,7 +3708,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
- if (message.content.startsWith(prefix + "Interception +5")) {
+ if (message.content.startsWith(prefix + "Interception améliorée")) {
  let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
     const B = (Math.floor((100)*Math.random()+1))
@@ -3739,7 +3739,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
- if (message.content.startsWith(prefix + "Fuite +0")) {
+ if (message.content.startsWith(prefix + "Fuite simple")) {
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
@@ -3770,7 +3770,7 @@ const args = cont.slice(1);
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
- if (message.content.startsWith(prefix + "Fuite +10")) {
+ if (message.content.startsWith(prefix + "Fuite améliorée")) {
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
@@ -3890,6 +3890,9 @@ bot.on('message', message => {
   });
 
 
+
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Menu SAO 1")) {
     const embed = new Discord.RichEmbed()
@@ -3973,6 +3976,7 @@ bot.on('message', message => {
        .setColor(3447003)
        .addField("Trajets :" , "Permet d'apprendre le système de trajet !\n=Trajets")
     .addField("Liste d'objets :" , "Permet de consulter tous les objets existants !\n=Liste d'objets")
+    .addField("Amélioration :" , "Permet d'apprendre le système d'amélioration !\n=Amélioration")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -4019,7 +4023,18 @@ bot.on('message', message => {
       }   
     });
 
-
+ bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amélioration")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera un coup ou une action défensive selon l'arme\n\nLes améliorations sont les suivantes :\n\nAmélioré(e)\nSupérieur(e)\nSuprême\nDivin(e)\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si par exemple j'ai une épée à deux mains qui améliore le combo en combo supérieur, si je possède une particularité qui améliore le combo en plus de l'épée à deux mains, le combo supérieur devient le combo suprême, et si quelque chose encore améliore le combo, il devient un combo divin !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+       .setTimestamp()
+       message.channel.send({embed})
+      }   
+    });
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Menus")) {
@@ -4136,10 +4151,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Les armes, partie 1 :" , "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, voici la liste des armes existantes ainsi que les bonus qu'elles confèrent :\n\nLes épées : Confère un bonus pour les combos !\n\nLes dagues : Confère un bonus pour les coups précis !\n\nLes glaives : Confère un bonus pour les coups d'estocs !\n\nLes masses : Confère un bonus pour les coups provocateurs !\n\nLes haches : Confère un bonus pour les coups circulaires !\n\nLes rapières : Confère un bonus pour les coup d'estocs !\n\nLes cimeterres : Confère un bonus pour les esquives !\n\nLes katanas : Confère un bonus pour les parades  !\n\nLes boucliers : Confère un bonus pour les blocages !")
-       .addBlankField(true)
-       .addField("Les armes, partie 2 :" , "Lorsque vous créez votre personnage, vous avez droit d'avoir une arme de base dans cette liste, cependant l'arme de base ne donnera aucun bonus !\n\nA savoir qu'il existe un système d'armes à deux mains ou d'armes à une main, c'est à dire que vous avez le droit sois d'avoir une arme à deux mains, sois vous avez le droit d'avoir deux armes à une main, comme par exemple deux épées à une main ou une hache à deux main !\n\nLes armes à une main confèrent un bonus de 5, et les armes à deux mains confèrent un bonus de 10 pour le coup en question !\n\nSi par exemple, je possède une épée à une main et une hache à une main, j'aurais un bonus de 5 pour les combos et les coups circulaires !\n\nSi je possède une masse à deux mains, j'aurais un bonus de 10 pour les coups provocateurs !")
-
+       .addField("Les armes :" , "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une main, ou des armes à deux mains, et chaque armes améliorent un coup ou une action défensive !\n\nVous saurez quel arme permet d'amélioré quel coups ou action défensives en affichant les infos sur celle-ci en écrivant : **=[Nom de l'arme]**\n\nLorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste suivante :\n\nLes épées\nLes dagues\nLes glaives\nLes masses\nLes haches\nLes rapières\nLes cimeterres\nLes katanas\nLes boucliers\n\nCependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, que vous achèterez ou que vous fabriquerez !")
        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -4209,7 +4221,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                    .setColor(3447003)
-                   .addField("Liste des particularités, partie 1 :" , "Bonus de 5 pour les coups normaux !\n\nBonus de 5 pour les coups précis !\n\nBonus de 5 pour les combos !\n\nBonus de 5 pour les coups estocs !\n\nBonus de 5 pour coups provocateurs !\n\nBonus de 5 pour les coups circulaires !\n\nBonus de 5 pour les compétences !\n\nBonus de 5 pour les parades !\n\nBonus de 5 pour les blocages !\n\nBonus de 5 pour les esquives !\n\nBonus de 5 pour les provocations !\n\nBonus de 5 pour les interceptions !\n\nBonus de 10 pour la fuite en combat ou en dehors !")
+                   .addField("Liste des particularités, partie 1 :" , "Amélioration du coup normal simple en coup normal amélioré !\n\nAmélioration du coup précis simple en coup précis amélioré !\n\nAmélioration du combo simple en combo amélioré !\n\nAmélioration du coup d'estoc simple en coup d'estoc amélioré !\n\nAmélioration du coup provocateur simple en coup provocateur amélioré !\n\nAmélioration du coup circulaire simple en coup circulaire amélioré !\n\nAmélioration de la parade simple en parade améliorée !\n\nAmélioration du blocage simple en blocage amélioré !\n\nAmélioration de l'esquive simple en esquive améliorée !\n\nAmélioration du cri de provocation simple en cri de provocation amélioré !\n\nAmélioration de l'interception simple en interception amélioré !\n\nBonus de 10 pour la fuite en combat ou en dehors !")
                    .addBlankField(true)
                    .addField("Liste des particularités, partie 2 :" , "Bonus de 10 pour escalader et grimper !\n\nBonus de 10 pour la discrètion !\n\nBonus de 10 pour les actions défensives en dehors des combats !\n\nBonus de 10 pour les actions offensives en dehors des combats !\n\nBonus de 20 pour tenter un bluff !\n\nBonus de 20 pour le marchandage et les négociations !\n\nBonus de 20 pour la diplomatie !\n\nBonus de 20 pour se contrôler, et ne pas changer d'état dans une situation !\n\nBonus de 20 pour la sociabilité, inspiré confiance !")
                    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
@@ -7780,7 +7792,8 @@ bot.on('message', message => {
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                      .setColor(3447003)
                                                      .addField("Epée basique à deux mains :" , "C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                     .addField("Niveau minimum requis pour le porter :" , "1")
+                                                     .addField("Améliore le 'Combo' en :" , "'Combo supérieur'")
+                                                  .addField("Niveau minimum requis pour le porter :" , "1")
                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 bois médiocre")
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
@@ -7815,7 +7828,8 @@ bot.on('message', message => {
                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                          .setColor(3447003)
                                                          .addField("Epée basique à une main :" , "C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                         .addField("Niveau minimum requis pour le porter :" , "1")
+                                                         .addField("Améliore le 'Combo' en :" , "'Combo amélioré'")
+                                                      .addField("Niveau minimum requis pour le porter :" , "1")
                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
@@ -7851,7 +7865,8 @@ bot.on('message', message => {
                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                          .setColor(3447003)
                                                          .addField("Masse basique à deux mains :" , "C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                         .addField("Niveau minimum requis pour le porter :" , "1")
+                                                       .addField("Améliore le 'Coup provocateur' en :" , "'Coup provocateur supérieur'")
+                                                      .addField("Niveau minimum requis pour le porter :" , "1")
                                                          .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                          .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 bois médiocre")
                                                          .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
@@ -7887,7 +7902,8 @@ bot.on('message', message => {
                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                              .setColor(3447003)
                                                              .addField("Masse basique à une main :" , "C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                             .addField("Niveau minimum requis pour le porter :" , "1")
+                                                          .addField("Améliore le 'Coup provocateur' en :" , "'Coup provocateur amélioré'")
+                                                          .addField("Niveau minimum requis pour le porter :" , "1")
                                                              .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                              .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
@@ -7923,7 +7939,8 @@ bot.on('message', message => {
                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                              .setColor(3447003)
                                                              .addField("Hache basique à deux mains :" , "C'est une hache peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                             .addField("Niveau minimum requis pour le porter :" , "1")
+                                                            .addField("Améliore le 'Coup circulaire' en :" , "'Coup circulaire supérieur'")
+                                                          .addField("Niveau minimum requis pour le porter :" , "1")
                                                              .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                              .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 bois médiocre")
                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
@@ -7960,7 +7977,8 @@ bot.on('message', message => {
                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                              .setColor(3447003)
                                                              .addField("Hache basique à une main :" , "C'est une hache peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                             .addField("Niveau minimum requis pour le porter :" , "1")
+                                                          .addField("Améliore le 'Coup circulaire' en :" , "'Coup circulaire amélioré'")
+                                                          .addField("Niveau minimum requis pour le porter :" , "1")
                                                              .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                              .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
@@ -7996,7 +8014,8 @@ bot.on('message', message => {
                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                  .setColor(3447003)
                                                                  .addField("Rapière basique à deux mains :" , "C'est une rapière peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                 .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc supérieur'")
+                                                              .addField("Niveau minimum requis pour le porter :" , "1")
                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 bois médiocre")
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
@@ -8031,7 +8050,8 @@ bot.on('message', message => {
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                      .setColor(3447003)
                                                                      .addField("Rapière basique à une main :" , "C'est une rapière peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                     .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                  .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc amélioré'")
+                                                                  .addField("Niveau minimum requis pour le porter :" , "1")
                                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
@@ -8069,7 +8089,8 @@ bot.on('message', message => {
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                      .setColor(3447003)
                                                                      .addField("Cimeterre basique à deux mains :" , "C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                     .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                   .addField("Améliore 'Esquive' en :" , "'Esquive supérieure'")
+                                                                  .addField("Niveau minimum requis pour le porter :" , "1")
                                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 bois médiocre")
                                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
@@ -8107,7 +8128,8 @@ bot.on('message', message => {
                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                      .setColor(3447003)
                                                                      .addField("Cimeterre basique à une main :" , "C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                     .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                     .addField("Améliore 'Esquive' en :" , "'Esquive améliorée'")
+                                                                  .addField("Niveau minimum requis pour le porter :" , "1")
                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
@@ -8142,7 +8164,8 @@ bot.on('message', message => {
                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                          .setColor(3447003)
                                                                          .addField("Katana basique à deux mains :" , "C'est un katana peu puissant constitué de bois et de métal mais très utile pour les débutants !")
-                                                                         .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                        .addField("Améliore la 'Parade' en :" , "'Parade supérieure'")
+                                                                      .addField("Niveau minimum requis pour le porter :" , "1")
                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 bois médiocre")
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
@@ -8177,7 +8200,8 @@ bot.on('message', message => {
                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                              .setColor(3447003)
                                                                              .addField("Katana basique à une main :" , "C'est un katana peu puissant constitué de bois et de métal mais très utile pour les débutants !")
-                                                                             .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                            .addField("Améliore la 'Parade' en :" , "'Parade améliorée'")
+                                                                          .addField("Niveau minimum requis pour le porter :" , "1")
                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
@@ -8212,7 +8236,8 @@ bot.on('message', message => {
                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                              .setColor(3447003)
                                                                              .addField("Glaive basique à deux mains :" , "C'est un glaive peu puissant constitué de bois et de métal mais très utile pour les débutants !")
-                                                                             .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                           .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc supérieur'")
+                                                                          .addField("Niveau minimum requis pour le porter :" , "1")
                                                                              .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                                              .addField("Matériaux nécessaires pour fabriquer cet objet :" , "4 cuivre médiocre, 4 bois médiocre")
                                                                              .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "4")
@@ -8247,7 +8272,8 @@ bot.on('message', message => {
                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                  .setColor(3447003)
                                                                                  .addField("Dague basique à une main :" , "C'est une dague peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                                 .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                              .addField("Améliore le 'Coup précis' en :" , "'Coup précis amélioré'")
+                                                                              .addField("Niveau minimum requis pour le porter :" , "1")
                                                                                  .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                                                  .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                                                  .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
@@ -8282,7 +8308,8 @@ bot.on('message', message => {
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                      .setColor(3447003)
                                                                                      .addField("Bouclier basique à deux mains :" , "C'est un bouclier peu protecteur constitué de bois et de métal mais très utile pour les débutants !")
-                                                                                     .addField("Niveau minimum requis pour le porter :" , "1")
+                                                                                   .addField("Améliore le 'Blocage' en :" , "'Blocage amélioré'")
+                                                                                  .addField("Niveau minimum requis pour le porter :" , "1")
                                                      .addField("Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet :" , "1")
                                                      .addField("Matériaux nécessaires pour fabriquer cet objet :" , "2 cuivre médiocre, 2 bois médiocre")
                                                      .addField("Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer :" , "2")
