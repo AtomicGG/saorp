@@ -11130,7 +11130,7 @@ bot.on('message', message => {
     let B = args.slice(2).join(" :"); 
     let C = args.slice(3).join(" :");  
     let D = args.slice(4).join(" :");  
- message.channel.send("Test :\n\n" +A+ "\n\n" +B+ "\n\n" +C+ "\n\n" +D")
+ message.channel.send("Test :\n\n" +A+ "\n\n" +B+ "\n\n" +C+ "\n\n" +D+")
         }
   }) ;
 
