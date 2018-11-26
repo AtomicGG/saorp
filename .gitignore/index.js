@@ -1179,13 +1179,13 @@ let cont = message.content.slice(prefix.length).split(" ");
 let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup gigantesque récompenses")) {
-  let X = args.slice(4).join(" : ");                                         
+  let X = args.slice(3).join(" : ");                                         
             const B = (Math.floor((3)*Math.random()))
             const C = (Math.floor((3)*Math.random()))
             const D = (Math.floor((2-(0.80))*Math.random()))
             const E = (Math.floor((2-(0.90))*Math.random()))
             const I = (Math.floor((2-(0.95))*Math.random()))
-            const F = (Math.floor((80)*Math.random()+80))
+            const F = (Math.floor((91)*Math.random()+90))
             const FF = F-(X*4)
             const G = (Math.floor((41)*Math.random()+40))
             const Oeufs = (Math.floor((2-(0.90))*Math.random()))
