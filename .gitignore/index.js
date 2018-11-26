@@ -11126,20 +11126,11 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Testeu")) {   
-      let A = args.slice(0).join(" "); 
-    let B = args.slice(1).join(" "); 
-    let C = args.slice(2).join(" ");  
-    let D = args.slice(3).join(" ");  
+      let A = args.slice(0).join(" "); args.shift(1);
+    let B = args.slice(1).join(" "); args.shift(1);
+    let C = args.slice(2).join(" ");  args.shift(1);
+    let D = args.slice(3).join(" ");  args.shift(1);
  message.channel.send("Test :\n\n" +A+ "\n\n" +B+ "\n\n" +C+ "\n\n" +D)
         }
   }) ;
-
-
-
-if (command === "Test") {
-  let age = args[0]; 
-  let sex = args[1];
-  let location = args[2];
-  message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
-}
 
