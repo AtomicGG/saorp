@@ -561,7 +561,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "12")
     .addField("Pour engager le combat :" , "=Loup attaque")
     .addField("Lorsque le loup reçoit un coup :" , "=Loup défense [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Loup récompenses : [Votre niveaux]")
+    .addField("Les récompenses une fois mort :" , "=Loup récompenses : [Votre niveau]")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -579,7 +579,7 @@ bot.on('message', message => {
       .addField("Points de dégâts" , "4")
       .addField("Pour engager le combat :" , "=Sanglier attaque")
       .addField("Lorsque le sanglier reçoit un coup :" , "=Sanglier défense [Points de dégâts de votre coup]")
-      .addField("Les récompenses une fois mort :" , "=Sanglier récompenses : [Votre niveaux]")
+      .addField("Les récompenses une fois mort :" , "=Sanglier récompenses : [Votre niveau]")
       .setTimestamp()
       message.channel.send({embed})
       }
@@ -597,7 +597,7 @@ bot.on('message', message => {
         .addField("Points de dégâts" , "5")
         .addField("Pour engager le combat :" , "=Renard attaque")
         .addField("Lorsque le renard reçoit un coup :" , "=Renard défense : [Points de dégâts de votre coup]")
-        .addField("Les récompenses une fois mort :" , "=Renard récompenses : [Votre niveaux]")
+        .addField("Les récompenses une fois mort :" , "=Renard récompenses : [Votre niveau]")
         .setTimestamp()
         message.channel.send({embed})
         }
@@ -614,7 +614,7 @@ bot.on('message', message => {
           .addField("Points de dégâts" , "6")
           .addField("Pour engager le combat :" , "=Chien attaque")
           .addField("Lorsque le chien reçoit un coup :" , "=Chien défense : [Points de dégâts de votre coup]")
-          .addField("Les récompenses une fois mort :" , "=Chien récompenses : [Votre niveaux]")
+          .addField("Les récompenses une fois mort :" , "=Chien récompenses : [Votre niveau]")
           .setTimestamp()
           message.channel.send({embed})
           }
@@ -632,7 +632,7 @@ bot.on('message', message => {
             .addField("Points de dégâts" , "12")
             .addField("Pour engager le combat :" , "=Lapin géant attaque")
             .addField("Lorsque le lapin géant reçoit un coup :" , "=Lapin géant défense : [Points de dégâts de votre coup]")
-            .addField("Les récompenses une fois mort :" , "=Lapin géant récompenses : [Votre niveaux]")
+            .addField("Les récompenses une fois mort :" , "=Lapin géant récompenses : [Votre niveau]")
             .setTimestamp()
             message.channel.send({embed})
             }
@@ -650,7 +650,7 @@ bot.on('message', message => {
               .addField("Points de dégâts" , "12")
               .addField("Pour engager le combat :" , "=Slime attaque")
               .addField("Lorsque le slime reçoit un coup :" , "=Slime défense : [Points de dégâts de votre coup]")
-              .addField("Les récompenses une fois mort :" , "=Slime récompenses : [Votre niveaux]")
+              .addField("Les récompenses une fois mort :" , "=Slime récompenses : [Votre niveau]")
               .setTimestamp()
               message.channel.send({embed})
               }
@@ -668,7 +668,7 @@ bot.on('message', message => {
                 .addField("Points de dégâts" , "20")
                 .addField("Pour engager le combat :" , "=Loup de sang attaque")
                 .addField("Lorsque le loup de sang reçoit un coup :" , "=Loup de sang défense : [Points de dégâts de votre coup]")
-                .addField("Les récompenses une fois mort :" , "=Loup de sang récompenses : [Votre niveaux]")
+                .addField("Les récompenses une fois mort :" , "=Loup de sang récompenses : [Votre niveau]")
                 .setTimestamp()
                 message.channel.send({embed})
                 }
@@ -688,7 +688,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "6")
     .addField("Pour engager le combat :" , "=Bandit débutant attaque")
     .addField("Lorsque le bandit débutant reçoit un coup :" , "=Bandit débutant défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Bandit débutant récompenses : [Votre niveaux]")
+    .addField("Les récompenses une fois mort :" , "=Bandit débutant récompenses : [Votre niveau]")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -708,7 +708,7 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "14")
     .addField("Pour engager le combat :" , "=Bandit expérimenté attaque")
     .addField("Lorsque le bandit expérimenté reçoit un coup :" , "=Bandit expérimenté défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Bandit expérimenté récompenses : [Votre niveaux]")
+    .addField("Les récompenses une fois mort :" , "=Bandit expérimenté récompenses : [Votre niveau]")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -729,12 +729,29 @@ bot.on('message', message => {
     .addField("Points de dégâts" , "30")
     .addField("Pour engager le combat :" , "=Bandit sombre attaque")
     .addField("Lorsque le bandit sombre reçoit un coup :" , "=Bandit sombre défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Bandit sombre récompenses : [Votre niveaux]")
+    .addField("Les récompenses une fois mort :" , "=Bandit sombre récompenses : [Votre niveau]")
     .setTimestamp()
     message.channel.send({embed})
     }
   })
 
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Loup gigantesque"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Bandit sombre :" , "Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
+    .setImage("https://db4sgowjqfwig.cloudfront.net/campaigns/144226/assets/629552/wolves-wargs.jpg?1471440473")
+    .addField("Point de vie :" , "1000")
+    .addField("Points de dégâts" , "60")
+    .addField("Pour engager le combat :" , "=Loup gigantesque attaque")
+    .addField("Lorsque le loup gigantesque reçoit un coup :" , "=Loup gigantesque défense : [Points de dégâts de votre coup]")
+    .addField("Les récompenses une fois mort :" , "=Loup gigantesque récompenses : [Votre niveau]")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
 
   
 bot.on('message', message => {
@@ -1158,6 +1175,44 @@ let cont = message.content.slice(prefix.length).split(" ");
 
 
 
+ bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup gigantesque récompenses")) {
+  let X = args.slice(4).join(" : ");                                         
+            const B = (Math.floor((3)*Math.random()))
+            const C = (Math.floor((3)*Math.random()))
+            const D = (Math.floor((2-(0.80))*Math.random()))
+            const E = (Math.floor((2-(0.90))*Math.random()))
+            const I = (Math.floor((2-(0.95))*Math.random()))
+            const F = (Math.floor((80)*Math.random()+80))
+            const FF = F-(X*4)
+            const G = (Math.floor((41)*Math.random()+40))
+            const Oeufs = (Math.floor((2-(0.90))*Math.random()))
+             if(FF > 0) {
+              const embed = new Discord.RichEmbed()
+              .setColor(3447003)
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup gigantesque : " +B+ "\n:knife: Peau de loup gigantesque : " +C+ "\n:eye: Oeil de loup gigantesque : " +D+ "\n:cupid: Coeur de loup gigantesque : " +E+ "\n:gem: Croc de loup gigantesque : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+              .setTimestamp()
+              message.channel.send({embed})}
+    if(FF < 0) {
+        const embed = new Discord.RichEmbed()
+              .setColor(3447003)
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+              .setTimestamp()
+              message.channel.send({embed})}
+                  }
+            }) ;
+
+
+
+
 
 
                     bot.on('message', message => {
@@ -1244,6 +1299,31 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Loup :" , "Le loup bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Loup gigantesque attaque")) {
+    const Dégâts = 60
+     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts)))
+     const B = (Math.floor((100)*Math.random()+1))
+     if (B < 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Loup gigantesque :" , "Le loup gigantesque hurle et cours rapidement mais glisse sur le côté par son manque d'attention du sol de la salle assez détruit")
+      message.channel.send({embed})}
+      if (41 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup gigantesque :" , "Le loup gigantesque lâche un regard meurtrier les yeux injecté de sang avant d'embrocher sa victime, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -1934,6 +2014,36 @@ bot.on('message', message => {
           }
     }
 );
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup gigantesque défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/1.5)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((41)*Math.random()+20))
+     if (B < 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Loup gigantesque :" , "Le loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (51 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup gigantesque :" , "Le loup gigantesque voit que vous vous jetez dessus et il vous projette d'un coup de patte très rapide contre un mur, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
 
 
 bot.on('message', message => {
@@ -9283,6 +9393,8 @@ bot.on('message', message => {
                               const L = (Math.floor((5*0.75)*Math.random()))
                               const M = (Math.floor((5*0.75)*Math.random()))
                               const N = (Math.floor((5*0.75)*Math.random()))
+                              const Piège1 = (Math.floor((26)*Math.random()+25))
+                              const Piège2 = (Math.floor((51)*Math.random()+50))
                               if(A < 75){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
@@ -9298,11 +9410,21 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                              if(A > 76 & A < 85){
+                              if(A > 76 & A < 80){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, pendant plusieurs minutes, vous ne trouvez rien sur votre chemin")
+                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...")
+                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .setColor(3447003)
+                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+                                 .setTimestamp()
+                                 message.channel.send({embed})}
+                                  if(A > 81 & A < 85){
+                                 const embed = new Discord.RichEmbed()
+                                 .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...")
                                  .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
@@ -9379,11 +9501,21 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                              if(A > 76 & A < 85){
+                             if(A > 76 & A < 80){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, pendant plusieurs minutes, vous ne trouvez rien sur votre chemin")
+                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...")
+                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .setColor(3447003)
+                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+                                 .setTimestamp()
+                                 message.channel.send({embed})}
+                                  if(A > 81 & A < 85){
+                                 const embed = new Discord.RichEmbed()
+                                 .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...")
                                  .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
@@ -9461,12 +9593,22 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                              if(A > 76 & A < 85){
+                              if(A > 76 & A < 80){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, pendant plusieurs minutes, vous ne trouvez rien sur votre chemin")
-                                .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...")
+                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .setColor(3447003)
+                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+                                 .setTimestamp()
+                                 message.channel.send({embed})}
+                                  if(A > 81 & A < 85){
+                                 const embed = new Discord.RichEmbed()
+                                 .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...")
+                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
@@ -10708,37 +10850,6 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "test récompenses")) {   
-        let Z = args.slice(2).join(" : ");
-    const B = (Math.floor((3*1)*Math.random()))
-    const BB = B*Z
-  const C = (Math.floor((3*1)*Math.random()))
-  const CC = C*Z
-  const D = (Math.floor((2-(0.75))*Math.random()))
-  const DD = D*Z
-  const E = (Math.floor((2-(0.85))*Math.random()))
-  const EE = E*Z
-  const F = (Math.floor((14*1)*Math.random()+14*1))
-  const FF = F*Z
-  const G = (Math.floor((11*1)*Math.random()+10*1))
-  const GG = G*Z
-  const I = (Math.floor((2-(0.90))*Math.random()))
-  const II = I*Z
-  const O = (Math.floor((2-(0.98))*Math.random()))
-  const OO = O*Z
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +BB+ "\n:knife: Peau de loup : " +CC+ "\n:eye: Oeil de loup : " +DD+ "\n:cupid: Coeur de loup : " +EE+ "\n:gem: Croc de loup : " +II+ "\n:gem: Oeuf déformé : " +OO+ "\n:sparkles: Points d'expérience : " +FF+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +GG)
-    .setTimestamp()
-    message.channel.send({embed})
-        }
-  }) ;
 
 
 
@@ -10763,38 +10874,6 @@ bot.on('message', message => {
   }) ;
 
 
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "test récompenses")) {   
-        let Z = args.slice(2).join(" : ");
-    const B = (Math.floor((3*1)*Math.random()))
-    const BB = B*Z
-  const C = (Math.floor((3*1)*Math.random()))
-  const CC = C*Z
-  const D = (Math.floor((2-(0.75))*Math.random()))
-  const DD = D*Z
-  const E = (Math.floor((2-(0.85))*Math.random()))
-  const EE = E*Z
-  const F = (Math.floor((14*1)*Math.random()+14*1))
-  const FF = F*Z
-  const G = (Math.floor((11*1)*Math.random()+10*1))
-  const GG = G*Z
-  const I = (Math.floor((2-(0.90))*Math.random()))
-  const II = I*Z
-  const O = (Math.floor((2-(0.98))*Math.random()))
-  const OO = O*Z
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +BB+ "\n:knife: Peau de loup : " +CC+ "\n:eye: Oeil de loup : " +DD+ "\n:cupid: Coeur de loup : " +EE+ "\n:gem: Croc de loup : " +II+ "\n:gem: Oeuf déformé : " +OO+ "\n:sparkles: Points d'expérience : " +FF+ ", aucun pour les niveaux 10 ou plus\n:large_orange_diamond: Cols : " +GG)
-    .setTimestamp()
-    message.channel.send({embed})
-        }
-  }) ;
 
 
 
@@ -11121,16 +11200,4 @@ message.awaitReactions(filter, { max: 1})
 
 
 
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test")) {   
-      let A = args.slice(0).join(" ");
-    let B = args.slice(1).join(" "); 
-    let C = args.slice(2).join(" "); 
-    let D = args.slice(3).join(" "); 
- message.channel.send("Test :\n\n" +A+ "\n\n" +B+ "\n\n" +C+ "\n\n" +D)
-        }
-  }) ;
 
