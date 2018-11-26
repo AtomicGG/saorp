@@ -3890,18 +3890,6 @@ bot.on('message', message => {
   });
 
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "XDXD")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-        .addField("Bienvenue sur le menu d'aide de SAO !" , "Pour apprendre le fonctionnement du jeu, écris l'une des commandes suivantes :\n=SAO\n=Personnage\n=Compétences\n=Particularités\n=Combat\n=Caractéristiques\n=Spécialisations\n=Cristal\n=Armes\n=Niveaux\n=Crafts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-        .setTimestamp()
-        message.channel.send({embed})
-      }   
-});
 
 
 
