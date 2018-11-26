@@ -1174,7 +1174,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 
 
 
-
+Epée du clan des loups à deux mains
  bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -1185,6 +1185,7 @@ let cont = message.content.slice(prefix.length).split(" ");
             const D = (Math.floor((2-(0.80))*Math.random()))
             const E = (Math.floor((2-(0.90))*Math.random()))
             const I = (Math.floor((2-(0.95))*Math.random()))
+             const Epée = (Math.floor((2-(0.95))*Math.random()))
             const F = (Math.floor((91)*Math.random()+90))
             const FF = F-(X*4)
             const G = (Math.floor((41)*Math.random()+40))
@@ -1195,7 +1196,7 @@ let cont = message.content.slice(prefix.length).split(" ");
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup gigantesque : " +B+ "\n:knife: Peau de loup gigantesque : " +C+ "\n:eye: Oeil de loup gigantesque : " +D+ "\n:cupid: Coeur de loup gigantesque : " +E+ "\n:gem: Croc de loup gigantesque : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup gigantesque : " +B+ "\n:knife: Peau de loup gigantesque : " +C+ "\n:eye: Oeil de loup gigantesque : " +D+ "\n:cupid: Coeur de loup gigantesque : " +E+ "\n:gem: Croc de loup gigantesque : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:scales: Epée du clan des loups à deux mains : " +Epée+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
               .setTimestamp()
               message.channel.send({embed})}
     if(FF < 0) {
@@ -11036,7 +11037,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 1")) {   
- message.channel.send("```Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\nEpée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\nMasse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\nMasse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\nHache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\nHache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\nRapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\nRapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\nCimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\nCimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\nKatana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\nKatana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\nGlaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\nDague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\nBouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]```")
+ message.channel.send("```Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\nEpée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\nMasse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\nMasse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\nHache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\nHache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\nRapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\nRapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\nCimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\nCimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\nKatana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\nKatana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\nGlaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\nDague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\nBouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]\n\nEpée du clan des loups à deux mains :\nCoûts : [Revente : 100 cols]\nInfos : [=Epée du clan des loups à deux mains]```")
         }
   }) ;
 
