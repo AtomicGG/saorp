@@ -741,7 +741,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle("Bandit sombre :" , "Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
+    .setTitle("Loup gigantesque :" , "Un loup énorme qui n'est trouvable que dans la salle du boss du donjon sauvage du palier 1 !")
     .setImage("https://db4sgowjqfwig.cloudfront.net/campaigns/144226/assets/629552/wolves-wargs.jpg?1471440473")
     .addField("Point de vie :" , "1000")
     .addField("Points de dégâts" , "60")
@@ -11012,7 +11012,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 2")) {   
- message.channel.send("```Oeil de taupe :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\nGelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nCroc de loup :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nPierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 12 cols]\n\nCuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nCuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nBois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPersil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nEstragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nHerbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nHerbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBaie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]```")
+ message.channel.send("```Oeil de taupe :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\nGelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nCroc de loup :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nPierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 12 cols]\n\nCuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nCuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nBois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPersil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nEstragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nHerbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nHerbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBaie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nViande de loup gigantesque :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\nPeau de loup gigantesque :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\nCoeur de loup gigantesque :\nCoûts : [Achat : 240 cols] [Revente : 60 cols]\n\nOeil de loup gigantesque :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\n\nBaie :\nCroc de loup gigantesque : [Achat : 200 cols] [Revente : 50 cols]```")
         }
   }) ;
 
@@ -11062,7 +11062,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des oeufs 1")) {   
- message.channel.send("```Oeuf déformé :\nCoûts [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
+ message.channel.send("```Oeuf déformé :\nCoûts [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
         }
   }) ;
 
