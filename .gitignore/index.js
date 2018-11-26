@@ -1174,7 +1174,6 @@ let cont = message.content.slice(prefix.length).split(" ");
 
 
 
-Epée du clan des loups à deux mains
  bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
