@@ -11126,10 +11126,10 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Test")) {   
-      let A = args.slice.split(0).join(" ");
-    let B = args.slice.split(1).join(" "); 
-    let C = args.slice.split(2).join(" "); 
-    let D = args.slice.split(3).join(" "); 
+      let A = args.split(0).join(" ");
+    let B = args.split(1).join(" "); 
+    let C = args.split(2).join(" "); 
+    let D = args.split(3).join(" "); 
  message.channel.send("Test :\n\n" +A+ "\n\n" +B+ "\n\n" +C+ "\n\n" +D)
         }
   }) ;
