@@ -11125,11 +11125,11 @@ message.awaitReactions(filter, { max: 1})
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Testeu")) {   
-      let A = args.slice(0).join(" "); args.shift(0);
-    let B = args.slice(1).join(" "); args.shift(1);
-    let C = args.slice(2).join(" ");  args.shift(2);
-    let D = args.slice(3).join(" ");  args.shift(3);
+  if (message.content.startsWith(prefix + "Test")) {   
+      let A = args.slice.split(0).join(" ");
+    let B = args.slice.split(1).join(" "); 
+    let C = args.slice.split(2).join(" "); 
+    let D = args.slice.split(3).join(" "); 
  message.channel.send("Test :\n\n" +A+ "\n\n" +B+ "\n\n" +C+ "\n\n" +D)
         }
   }) ;
