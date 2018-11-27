@@ -6,7 +6,7 @@ let userCooldown = {};
 
 
 bot.on('ready', () => {
-  bot.user.setGame('Nouveau ? Écris : =Menu SAO 1')
+  bot.user.setGame('Nouveau ? Écris : =Menu SAO')
 })
 
 
@@ -20,7 +20,7 @@ bot.on('ready', function () {
 bot.on('guildMemberAdd', member => {
 
   member.createDM().then(channel => {
-    return channel.send("**__۝▬▬๑₪۩۞『SAO Community ©』۞۩₪๑▬▬۝ __**\n\n\n:hand_splayed:`Bienvenue à toi sur『SAO Community [RP]』© !`\n\n\n:white_check_mark:`Pour voir les salons de 『SAO Community [RP]』©, il faudra lire le réglement dans le salon├──📃ʀᴇ̀ɢʟᴇᴍᴇɴᴛ-a-lire, puis appuyer sur la case verte où il est écrit [J'accepte le réglement !] situé tout en haut, pour avoir accès aux différents salons de base !`\n\n\n:book:`N'oubliez pas aussi d'aller voir les salons #├──🎮ᴠᴏs-ᴊᴇᴜx ainsi que #├──📌ᴠᴏs-ɪɴғᴏʀᴍᴀᴛɪᴏɴs et #├──📟ᴠᴏs-sᴀʟᴏɴs permettant d'obtenir les rôles que vous souhaitez avoir, ainsi que de pouvoir avoir accès aux parties du discord que vous souhaitez voir !`\n\n\n:link:`Notre discord permettant de faire votre pub : https://discord.gg/NYH43Ks`\n\n\n:chart_with_upwards_trend:`Le discord principal évolue petit à petit, hésite pas à parler et faire venir tes amis, il est en constante évolution selon vos avis c'est d'ailleurs pour cela que dans le salon #├──👑ɴᴏᴛᴇ-﹠ᴀᴠɪs vous pouvez noter le discord ainsi que donner votre avis !`\n\n\n:writing_hand:`Que vous soyez un débutant ou un expert en RP, vous êtes les bienvenues, vous aurez toutes les informations nécessaire pour comprendre en écrivant sur le discord dans un salon de commande ceci : =Menu SAO 1`\n\n\n:hand_splayed: `Si vous voulez devenir partenaire avec notre discord, ou pouvoir mettre votre RP dans notre liste de RP, écrivez : =Devenir partenaire`\n\n\nhttps://66.media.tumblr.com/169c730d52faf3f7e5680ed44ec4bf7a/tumblr_nbd255coqa1r4vymlo1_500.gif\n\n\n**__۝▬▬๑₪۩۞『:ribbon:』۞۩₪๑▬▬۝__**")
+    return channel.send("**__۝▬▬๑₪۩۞『SAO Community ©』۞۩₪๑▬▬۝ __**\n\n\n:hand_splayed:`Bienvenue à toi sur『SAO Community [RP]』© !`\n\n\n:white_check_mark:`Pour voir les salons de 『SAO Community [RP]』©, il faudra lire le réglement dans le salon├──📃ʀᴇ̀ɢʟᴇᴍᴇɴᴛ-a-lire, puis appuyer sur la case verte où il est écrit [J'accepte le réglement !] situé tout en haut, pour avoir accès aux différents salons de base !`\n\n\n:book:`N'oubliez pas aussi d'aller voir les salons #├──🎮ᴠᴏs-ᴊᴇᴜx ainsi que #├──📌ᴠᴏs-ɪɴғᴏʀᴍᴀᴛɪᴏɴs et #├──📟ᴠᴏs-sᴀʟᴏɴs permettant d'obtenir les rôles que vous souhaitez avoir, ainsi que de pouvoir avoir accès aux parties du discord que vous souhaitez voir !`\n\n\n:link:`Notre discord permettant de faire votre pub : https://discord.gg/NYH43Ks`\n\n\n:chart_with_upwards_trend:`Le discord principal évolue petit à petit, hésite pas à parler et faire venir tes amis, il est en constante évolution selon vos avis c'est d'ailleurs pour cela que dans le salon #├──👑ɴᴏᴛᴇ-﹠ᴀᴠɪs vous pouvez noter le discord ainsi que donner votre avis !`\n\n\n:writing_hand:`Que vous soyez un débutant ou un expert en RP, vous êtes les bienvenues, vous aurez toutes les informations nécessaire pour comprendre en écrivant sur le discord dans un salon de commande ceci : =Menu SAO`\n\n\n:hand_splayed: `Si vous voulez devenir partenaire avec notre discord, ou pouvoir mettre votre RP dans notre liste de RP, écrivez : =Devenir partenaire`\n\n\nhttps://66.media.tumblr.com/169c730d52faf3f7e5680ed44ec4bf7a/tumblr_nbd255coqa1r4vymlo1_500.gif\n\n\n**__۝▬▬๑₪۩۞『:ribbon:』۞۩₪๑▬▬۝__**")
   }).catch(console.error)
   // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
 });
@@ -4238,7 +4238,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n=Trajet palier 1\n\nQuand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y a que dans les zones extérieurs !\n\nPour vous rendre de la ville à l'extérieur, il faudra passer par 'Entrée de la ville' !")
+    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\nQuand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y a que dans les zones extérieurs !\n\nPour vous rendre de la ville à l'extérieur, il faudra passer par 'Entrée de la ville' !")
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -4251,7 +4251,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-        .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nPlaines\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nForêt\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nDonjon sauvage\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nColline\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nMontagne\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nGrotte\n‖\n‖\n‖ [5 minutes]\n‖\n‖\nLabyrinthe")
+        .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nPlaines\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nForêt\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nDonjon sauvage\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nColline\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nMontagne\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nGrotte\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nLabyrinthe")
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -4277,7 +4277,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera un coup ou une action défensive selon l'arme\n\nLes améliorations sont les suivantes :\n\nAmélioré(e)\nSupérieur(e)\nSuprême\nDivin(e)\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si par exemple j'ai une épée à deux mains qui améliore le combo en combo supérieur, si je possède une particularité qui améliore le combo en plus de l'épée à deux mains, le combo supérieur devient le combo suprême, et si quelque chose encore améliore le combo, il devient un combo divin !")
+      .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera un coup ou une action défensive selon l'arme\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e)**\n**Supérieur(e)**\n**Suprême**\n**Divin(e)**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si par exemple j'ai une épée à deux mains qui améliore le combo en combo supérieur, si je possède une particularité qui améliore le combo en plus de l'épée à deux mains, le combo supérieur devient le combo suprême, et si quelque chose encore améliore le combo, il devient un combo divin !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
        .setTimestamp()
        message.channel.send({embed})
