@@ -4130,7 +4130,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations sur chacunes de ces commandes, leur importance est classé de haut en bas !\n\n`=SAO`\n`=Personnage`\n`=Classes`\n`=Compétences`\n`=Particularités`\n`=Amélioration`\n`=Armes`\n`=Trajets`\n`=Rolls`\n`=Combat`\n`=Etats`\n`=Quêtes`\n`=Mort`\n`=Rétablissement`\n`=Niveaux`\n`=Caractéristiques`\n`=Zones`\n`=Liste d'objets`\n`=Crafts`\n`=Spécialisations`\n`=Cristal`\n`=Ville`\n`=Extérieur`\n`=Souterrains`\n`=Constructions`\n`=Menus`\n`=Donjons`\n`=Familiers`\n`=Guilde`\n`=Métiers`\n`=Dirigeant`\n`=Garde`\n`=Mercenaire`\n`=Prison`")
+    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, leur importance est classé de haut en bas, tu n'est pas obligé de tout savoir obligatoirement dés le début alors prend ton temps !\n\n`=SAO`\n`=Personnage`\n`=Classes`\n`=Compétences`\n`=Particularités`\n`=Amélioration`\n`=Armes`\n`=Trajets`\n`=Rolls`\n`=Combat`\n`=Etats`\n`=Quêtes`\n`=Mort`\n`=Rétablissement`\n`=Niveaux`\n`=Caractéristiques`\n`=Zones`\n`=Liste d'objets`\n`=Crafts`\n`=Spécialisations`\n`=Cristal`\n`=Ville`\n`=Extérieur`\n`=Souterrains`\n`=Constructions`\n`=Menus`\n`=Donjons`\n`=Familiers`\n`=Guilde`\n`=Métiers`\n`=Dirigeant`\n`=Garde`\n`=Mercenaire`\n`=Prison`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
