@@ -11107,12 +11107,6 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Test")) {   
-    const A = [test]
- message.channel.send("la variable c'est " +A)
-        }
-  }) ;
 
 
 
