@@ -11107,17 +11107,13 @@ bot.on('message', message => {
 
 
 
-
-const uneCommande = '!abc '
-
 bot.on('message', message => {
-  if (message.content.startsWith(Test)) {
-    const str = message.content.substring(uneCommande.length)
-    message.channel.sendMessage(str)
-  }
+    if (String.prototype.startsWith('!abc')) {
+    str.substr(5);
+    console.log('(1): ' + str.substr(1));  
+    message.channel.sendMessage(str);
+}
 });
-
-
 
 
 
