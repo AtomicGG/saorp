@@ -11108,12 +11108,13 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-    if (String.prototype.startsWith('!abc')) {
-    str.substr(5);
-    console.log('(1): ' + str.substr(1));  
-    message.channel.sendMessage(str);
-}
-});
+  if (message.content.startsWith(prefix + "Test")) {   
+    const A = [test]
+ message.channel.send("la variable c'est " +A)
+        }
+  }) ;
+
+
 
 
 
