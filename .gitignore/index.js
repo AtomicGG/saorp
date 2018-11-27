@@ -11108,7 +11108,7 @@ bot.on('message', message => {
 
 
 
-const Test = '!abc '
+const uneCommande = '!abc '
 
 bot.on('message', message => {
   if (message.content.startsWith(Test)) {
