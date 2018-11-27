@@ -11106,95 +11106,16 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Test réaction 1")) {   
-message.react('👍').then(() => message.react('👎'));
-const filter = (reaction, user) => {
-    return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
-};
-message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
-    .then(collected => {
-        const reaction = collected.first();
-        if (reaction.emoji.name === '👍') {
-            message.reply('you reacted with a thumbs up.');
-        }
-        else {
-            message.reply('you reacted with a thumbs down.');
-        }
-    })
-    .catch(collected => {
-        console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
-    });
-     }
-  }) ;
 
 
-
-
-
+const Test = '!abc '
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Test réaction 2")) {   
-message.react('👍').then(() => message.react('👎'));
-const filter = (reaction, user) => {
-    return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
-};
-message.awaitReactions(filter, { max: 1})
-    .then(collected => {
-        const reaction = collected.first();
-        if (reaction.emoji.name === '👍') {
-            message.reply('you reacted with a thumbs up.');
-        }
-        else {
-            message.reply('you reacted with a thumbs down.');
-        }
-    })
-    .catch(collected => {
-        console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
-    });
-     }
-  }) ;
-
-
-
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Test réaction 3")) {   
-message.react('👍')
-    message.react('👎')
-    message.react('😃')
-    message.react('😾')
-const filter = (reaction, user) => {
-    return ['👍', '👎', ':raised_back_of_hand:', ':white_check_mark:'].includes(reaction.emoji.name) && user.id === message.author.id;
-};
-message.awaitReactions(filter, { max: 1})
-    .then(collected => {
-        const reaction = collected.first();
-        if (reaction.emoji.name === '👍') {
-            message.reply('A');
-        }
-        if (reaction.emoji.name === '👎') {
-            message.reply('B');
-        }
-   if (reaction.emoji.name === '😃') {
-            message.reply('C');
-        }
-   if (reaction.emoji.name === '😾') {
-            message.reply('D');
-        }
-    })
-    .catch(collected => {
-        console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
-    });
-     }
-  }) ;
-
-
-
+  if (message.content.startsWith(Test)) {
+    const str = message.content.substring(uneCommande.length)
+    message.channel.sendMessage(str)
+  }
+});
 
 
 
