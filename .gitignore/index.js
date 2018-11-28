@@ -11146,7 +11146,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Explications du RP :" , "Le RP suit des règles et des systèmes pour bien se dérouler, vous avez la liste des commandes d'explications ci-dessous !")    .setTimestamp()
+.addField("Explications du RP :" , "Le RP suit des règles et des systèmes pour bien se dérouler, vous avez la liste des commandes d'explications ci-dessous !\n\n`=Contexte`\n`=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Atouts`\n`=Invasion`\n`=Nourriture`\n`=Soif`\n`=Transformation`\n`=Habitations`\n`=Fabrication`\n`=Mine`\n`=Jardin`\n`=Banque`\n`=Exile`\n`=Santé`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Ressources`\n`=Plans`\n`=Défenses`\n`=Combats`\n`=Déplacements`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
