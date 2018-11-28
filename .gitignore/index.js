@@ -11121,9 +11121,35 @@ bot.on('message', message => {
 
 
 
+////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Contexte")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("Contexte du RP :" , "L'apocalypse du monde est enfin venus, un virus qui se répand et transforme les gens en zombie ainsi que le chaos sur terre la transformant en un désert géant...\n\nVous êtes un des survivants ayant réussis à trouver refuge dans cette ville proche mais c'est loin d'être facile, la partie ne fait que commencer...\n\nCombien de temps allez vous réussir à survivre avant de finir dévoré jusqu'aux os ?")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Explications")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("Explications du RP :" , "Le RP suit des règles et des systèmes pour bien se dérouler, vous avez la liste des commandes d'explications ci-dessous !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
 
 
 
