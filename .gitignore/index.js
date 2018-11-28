@@ -11159,6 +11159,36 @@ bot.on('message', message => {
 
 
 
+      bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Fouille zone proche")) {                     
+                      const A = (Math.floor(1000)*Math.random()+1))
+                     if(FF > 0) {
+                      const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Dague basique à une main : " +I+ "\n:scales: Casque en peau résistante : " +J+ "\n:scales: Epaulières en peau résistantes : " +K+ "\n:scales: Cape en peau résistante : " +L+ "\n:scales: Plastron en peau résistante : " +M+ "\n:scales: Gantelets en peau résistantes : " +N+ "\n:scales: Ceinture en peau  résistante : " +O+ "\n:scales: Jambières en peau résistantes : " +P+ "\n:scales: Bottes en peau résistantes : " +Q+ "\n:scales: Anneau du croc : " +R+ "\n:scales: Amulette du croc: " +S+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+    if(FF < 0) {
+       const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Dague basique à une main : " +I+ "\n:scales: Casque en peau résistante : " +J+ "\n:scales: Epaulières en peau résistantes : " +K+ "\n:scales: Cape en peau résistante : " +L+ "\n:scales: Plastron en peau résistante : " +M+ "\n:scales: Gantelets en peau résistantes : " +N+ "\n:scales: Ceinture en peau  résistante : " +O+ "\n:scales: Jambières en peau résistantes : " +P+ "\n:scales: Bottes en peau résistantes : " +Q+ "\n:scales: Anneau du croc : " +R+ "\n:scales: Amulette du croc: " +S+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                          }
+                    }) ;
+
+
+
+
+
+
+
 
 
 
