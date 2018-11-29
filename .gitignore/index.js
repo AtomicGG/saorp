@@ -2498,7 +2498,7 @@ bot.on('message', message => {
                                                                                                               if (message.content.startsWith(prefix + "Coup normal amélioré")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+(degats)))
+       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 20){
        const embed = new Discord.RichEmbed()
@@ -2528,7 +2528,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Coup normal supérieur")) {
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+(degats)))
+     const A = (Math.floor((degats)*Math.random()+1*(degats)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 15){
      const embed = new Discord.RichEmbed()
@@ -2559,7 +2559,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Coup normal suprême")) {
   let degats = args.slice(3).join(" : ");
-  const A = (Math.floor((degats)*Math.random()+(degats)))
+   const A = (Math.floor((degats)*Math.random()+1*(degats)))
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 10){
    const embed = new Discord.RichEmbed()
