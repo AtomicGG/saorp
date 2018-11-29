@@ -11152,6 +11152,114 @@ bot.on('message', message => {
   }) ;
 
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Fouille")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("La fouille :" , "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la zone où vous vous situez :\n\n`=Fouille zone proche`\n`=Fouille zone semi éloigné`\n`=Fouille zone éloigné`\n`=Fouille zone très éloigné`\n`=Fouille zone dangereuse`\n`=Fouille zone très dangereuse`\n`=Fouille zone mortelle`")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Maladies")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("Les maladies :" , "Parfois, ou suite à un évènement, vous attraperez certainement une maladie plus ou moins grave possible à soigner !\n\nCertaines maladies ne sont que temporaires et ne nécessite aucunes interventions médicales, mais certains en demanderont obligatoirement avant que sa n'empire...\n\nUniquement les médecins s'occuper des médicaments dans la ville, de les donner aux personnes qui en ont le plus besoin !\n\nVoici la liste des maladies :\n\n")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Médicaments")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("Les médicaments :" , "Une fois atteint d'une maladie, vous devrez certainement prendre des médicaments adaptés que seulement les médecins peuvent vous donner !\n\nAttention, si vous prenez un mauvais médicament, vous pourrez avoir des effets négatifs...\n\nVoici la liste des médicaments :\n\n")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Soif")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("L'eau :" , "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas deux jours de suites, vous commencerez à avoir des effets négatifs ainsi que de perdre des HP jusqu'à mourir complètement...\n\nVoici le cycle de perte d'HP :\n\nJour 2 : Perte de 25 % de vos HP max\nJour 3 : Perte de 50 % de vos HP max\nJour 4 : Mort de soif")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Nourriture")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("La nourriture :" , "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas deux jours de suites, vous commencerez à avoir des effets négatifs ainsi que de perdre des HP jusqu'à mourir complètement...\n\nVoici le cycle de perte d'HP :\n\nJour 2 : Perte de 25 % de vos HP max\nJour 3 : Perte de 50 % de vos HP max\nJour 4 : Perte de 75 % de vos HP max\nJour 5 : Mort de faim")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Santé")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("La santé :" , "Plus important que les ressources, votre santé puisqu'en effet, votre personnage possèdera un certain nombre de HP, s'il atteint 0 HP il meurt....\n\nCependant, pour éviter la mort, il suffit de vous nourrir, de boire, d'éviter de combattre de trop grands groupes de zombies, et de prendre des médicaments s'il faut !\n\nUn simple citoyen possèdera 20 HP, alors qu'un veilleur possèdera 40 HP !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Atouts")) {   
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("Les atouts:" , "Votre personnage possèdera un atout ou plusieurs, permettant d'avoir des avantages ou de pouvoir faire des choses que les autres ne pourront pas forcément faire !\n\nVoici la liste des atouts disponibles :\n\nMédecin : Permet de pouvoir soigner les gens, de les amputer ainsi que de leur donner les bon médicaments !\nVeilleur : Il possède le double de HP d'un simple citoyen !\nCollecteur : Collecte le double de matières premières à l'extérieur !\nOuvrier : Créer et transforme plus vite les ressources !\nAlcoolique : Quand il boit de l'alcool, il n'est pas bourré et ne ressent pas les effets négatifs !\nProtecteur : Il possède le double de dégâts avec des armes !\nCuisinier : Permet de pouvoir cuisiner des plats !\nBrigand : Possède beaucoup plus de chance d'intimider quelqu'un !\nVoleur : Possède beaucoup moins de chance de se faire voir pendant un vol !\nRésistant : Possède beaucoup plus de chances de ne pas se transformer en zombie suite à une infection !\nNaturaliste : Possède plus de chance de survivre en extérieur la nuit qu'un citoyen normal !\nArchitecte : Permet d'avoir le double de points de défense dans sa maison !\nCannibale : Permet de pouvoir dévorer un humain, ou son cadavre pour reprendre de la vie !\nObservateur : Permet d'avoir plus de chance de fuite en extérieur face à des zombies !\nErmite : Trouve plus facilement de l'eau et de la nourriture en dehors !\nBricoleur : Permet d'ouvrir les portes des bâtiments abandonnés !\nJardinier : Permet de s'occuper des plantes et de l'agriculture du jardin en ville !\nMineur : double les matières qu'il récupére à la mine")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
