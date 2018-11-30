@@ -316,15 +316,11 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Plaines cueillir")) {
- let X = args.slice(2).join(" : ");  
      const Persils = (Math.floor((3*0.25)*Math.random()+1))
 const Herbes = (Math.floor((3*0.25)*Math.random()+1))
 const Baies = (Math.floor((3*0.25)*Math.random()+1))
 const Exp = (Math.floor((3)*Math.random()+2))
-const FF = Exp-(X*2)
 if (talkedRecently.has(message.author.id+19)) { 
 const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
@@ -335,36 +331,22 @@ const embed = new Discord.RichEmbed()
 .setTimestamp()
 message.channel.send({embed})
 } else {
-  talkedRecently.add(message.author.id+19);
+const embed = new Discord.RichEmbed()
+.setColor(3447003)
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+.addField("Cueillette :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
+.addField("Persil :" , +Persils)
+.addField("Herbe médicinale faible :" , +Herbes)
+.addField("Baie :" , +Baies)
+.addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +Exp)
+.setTimestamp()
+message.channel.send({embed})}
+    talkedRecently.add(message.author.id+19);
  setTimeout(() => {
   talkedRecently.delete(message.author.id+19);
 }, 3600000);
-if(FF > 0) {
-const embed = new Discord.RichEmbed()
-.setColor(3447003)
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-.addField("Cueillette :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-.addField("Persil :" , +Persils)
-.addField("Herbe médicinale faible :" , +Herbes)
-.addField("Baie :" , +Baies)
-.addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +FF)
-.setTimestamp()
-message.channel.send({embed})}
-if(FF < 0) {
-const embed = new Discord.RichEmbed()
-.setColor(3447003)
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-.addField("Cueillette :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-.addField("Persil :" , +Persils)
-.addField("Herbe médicinale faible :" , +Herbes)
-.addField("Baie :" , +Baies)
-.addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +FF)
-.setTimestamp()
-message.channel.send({embed})}}
 }
 })
 
