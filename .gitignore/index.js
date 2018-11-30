@@ -319,7 +319,7 @@ bot.on('message', message => {
        let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaines cueillir")) {
-      let X = args.slice(3).join(" : ");  
+      let X = args.slice(2).join(" : ");  
           const Persils = (Math.floor((3*0.25)*Math.random()+1))
     const Herbes = (Math.floor((3*0.25)*Math.random()+1))
     const Baies = (Math.floor((3*0.25)*Math.random()+1))
