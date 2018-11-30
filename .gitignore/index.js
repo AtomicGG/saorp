@@ -347,7 +347,7 @@ bot.on('message', message => {
     .addField("Baie :" , +Baies)
     .addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +FF)
     .setTimestamp()
-    message.channel.send({embed})}}
+    message.channel.send({embed})}
    talkedRecently.add(message.author.id+19);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+19);
@@ -364,7 +364,7 @@ bot.on('message', message => {
     .addField("Baie :" , +Baies)
     .addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +FF)
     .setTimestamp()
-    message.channel.send({embed})}}
+    message.channel.send({embed})}
     talkedRecently.add(message.author.id+19);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+19);
