@@ -182,7 +182,7 @@ bot.on('message', message => {
       .addField("Potion faible de soin :" , +Potionsplaines)
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
       .setTimestamp()
-      message.channel.send({embed})}}
+      message.channel.send({embed})}
       talkedRecently.add(message.author.id+17);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+17);
@@ -248,7 +248,7 @@ bot.on('message', message => {
       .addField("Potion légère de soin :" , +Potionsplaines)
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
       .setTimestamp()
-      message.channel.send({embed})}}
+      message.channel.send({embed})}
       talkedRecently.add(message.author.id+17);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+17);
