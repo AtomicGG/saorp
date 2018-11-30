@@ -1184,10 +1184,10 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Loup gigantesque récompenses")) {
     let X = args.slice(3).join(" : ");                
-      const AA = (Math.floor((2-(0.50))*Math.random()))
+      const AA = (Math.floor((2-(0.75))*Math.random()))
                const BB = (Math.floor((2-(0.90))*Math.random()))
-      const CC = (Math.floor((2-(0.75))*Math.random()))
-      const DD = (Math.floor((2-(0.75))*Math.random()))
+      const CC = (Math.floor((2-(0.80))*Math.random()))
+      const DD = (Math.floor((2-(0.80))*Math.random()))
                  const YY = (Math.floor((2-(0.98))*Math.random()))
               const Exp = (Math.floor((80)*Math.random()+80))
               const FFF = Exp-(X*4)
