@@ -325,16 +325,6 @@ bot.on('message', message => {
     const Baies = (Math.floor((3*0.25)*Math.random()+1))
     const Exp = (Math.floor((3)*Math.random()+2))
     const FF = Exp-(X*2)
-  if (talkedRecently.has(message.author.id+19)) { 
-    const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-     .setTimestamp()
-     message.channel.send({embed})
-} else {
     if(FF > 0) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
@@ -347,7 +337,7 @@ bot.on('message', message => {
     .addField("Baie :" , +Baies)
     .addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +FF)
     .setTimestamp()
-    message.channel.send({embed})}}
+    message.channel.send({embed})}
    talkedRecently.add(message.author.id+19);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+19);
@@ -364,11 +354,21 @@ bot.on('message', message => {
     .addField("Baie :" , +Baies)
     .addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +FF)
     .setTimestamp()
-    message.channel.send({embed})}}
+    message.channel.send({embed})}
+    
     talkedRecently.add(message.author.id+19);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+19);
      }, 3600000);
+      if (talkedRecently.has(message.author.id+19)) { 
+    const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+     .setTimestamp()
+     message.channel.send({embed})}
  }
 })
 
