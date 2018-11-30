@@ -154,16 +154,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content === (prefix) + "Plaines quêtes accomplies"){
       let X = args.slice(3).join(" : ");   
-    if (talkedRecently.has(message.author.id+17)) {
-      const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-} else {
    if(FF > 0) {
     const Expplaines = (Math.floor((30)*Math.random()+30))
     const FF = Expplaines-(X*3)
@@ -183,10 +173,6 @@ bot.on('message', message => {
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
       .setTimestamp()
       message.channel.send({embed})}
-      talkedRecently.add(message.author.id+17);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+17);
-     }, 86400000);
     if(FF < 0) {
        const Expplaines = (Math.floor((30)*Math.random()+30))
     const FF = Expplaines-(X*3)
@@ -205,14 +191,9 @@ bot.on('message', message => {
       .addField("Potion faible de soin :" , +Potionsplaines)
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
       .setTimestamp()
-      message.channel.send({embed})}}
-      talkedRecently.add(message.author.id+17);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+17);
-     }, 86400000);
+      message.channel.send({embed})}
  }
-      })
-
+  })
 
 
 bot.on('message', message => {
@@ -220,16 +201,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content === (prefix) + "Forêt quêtes accomplies"){
       let X = args.slice(3).join(" : ");   
-    if (talkedRecently.has(message.author.id+17)) {
-      const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-} else {
      if(FF > 0) {
     const Expplaines = (Math.floor((50)*Math.random()+50))
     const Colsplaines = (Math.floor((50)*Math.random()+50))
@@ -249,10 +220,6 @@ bot.on('message', message => {
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
       .setTimestamp()
       message.channel.send({embed})}
-      talkedRecently.add(message.author.id+17);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+17);
-     }, 86400000);
   if(FF < 0) {
      const Expplaines = (Math.floor((50)*Math.random()+50))
     const Colsplaines = (Math.floor((50)*Math.random()+50))
@@ -271,11 +238,7 @@ bot.on('message', message => {
       .addField("Potion légère de soin :" , +Potionsplaines)
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
       .setTimestamp()
-      message.channel.send({embed})}}
-      talkedRecently.add(message.author.id+17);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+17);
-     }, 86400000);
+      message.channel.send({embed})}
  }
       })
 
