@@ -154,12 +154,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content === (prefix) + "Plaines quêtes accomplies"){
       let X = args.slice(3).join(" : ");   
-   if(FF > 0) {
-    const Expplaines = (Math.floor((30)*Math.random()+30))
+        const Expplaines = (Math.floor((30)*Math.random()+30))
     const FF = Expplaines-(X*3)
     const Colsplaines = (Math.floor((30)*Math.random()+30))
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
+   if(FF > 0) {
     const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -174,11 +174,6 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})}
     if(FF < 0) {
-       const Expplaines = (Math.floor((30)*Math.random()+30))
-    const FF = Expplaines-(X*3)
-    const Colsplaines = (Math.floor((30)*Math.random()+30))
-    const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
-    const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
     const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
