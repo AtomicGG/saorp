@@ -196,7 +196,7 @@ bot.on('message', message => {
       let X = args.slice(3).join(" : ");   
         const A = (Math.floor((50)*Math.random()+50))
     const Colsplaines = (Math.floor((50)*Math.random()+50))
-    const FF = Expplaines-(X*4)
+    const FF = A-(X*4)
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
      if(FF > 0) {
