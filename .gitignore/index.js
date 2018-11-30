@@ -152,7 +152,7 @@ bot.on("message", (message) => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === (prefix) + "Plaines quêtes accomplies"){
+  if (message.content.startsWith(prefix + "Plaines quêtes accomplies")) {
       let X = args.slice(3).join(" : ");   
         const A = (Math.floor((30)*Math.random()+30))
     const FF = A-(X*3)
@@ -185,14 +185,14 @@ bot.on('message', message => {
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
       .setTimestamp()
       message.channel.send({embed})}
- }
-  })
+          }
+    }) ;
 
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === (prefix) + "Forêt quêtes accomplies"){
+  if (message.content.startsWith(prefix + "Forêt quêtes accomplies")) {
       let X = args.slice(3).join(" : ");   
         const A = (Math.floor((50)*Math.random()+50))
     const Colsplaines = (Math.floor((50)*Math.random()+50))
@@ -225,8 +225,8 @@ bot.on('message', message => {
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
       .setTimestamp()
       message.channel.send({embed})}
- }
-      })
+          }
+    }) ;
 
 
       
