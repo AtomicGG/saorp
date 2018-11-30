@@ -1179,60 +1179,6 @@ let cont = message.content.slice(prefix.length).split(" ");
 
 
 
- bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup gigantesque récompenses")) {
-  let X = args.slice(3).join(" : ");                
-    const AA = (Math.floor((2-(0.98)*Math.random()))
-    const BB = (Math.floor((2-(0.98)*Math.random()))
-    const CC = (Math.floor((2-(0.98)*Math.random()))
-    const DD = (Math.floor((2-(0.98)*Math.random()))
-    const EE = (Math.floor((2-(0.98)*Math.random()))
-    const FF = (Math.floor((2-(0.98)*Math.random()))
-    const GG = (Math.floor((2-(0.98)*Math.random()))
-    const HH = (Math.floor((2-(0.98)*Math.random()))
-    const II = (Math.floor((2-(0.98)*Math.random()))
-    const JJ = (Math.floor((2-(0.98)*Math.random()))
-    const KK = (Math.floor((2-(0.98)*Math.random()))
-    const LL = (Math.floor((2-(0.98)*Math.random()))
-    const MM = (Math.floor((2-(0.98)*Math.random()))
-    const NN = (Math.floor((2-(0.98)*Math.random()))
-    const OO = (Math.floor((2-(0.98)*Math.random()))
-    const PP = (Math.floor((2-(0.98)*Math.random()))
-    const QQ = (Math.floor((2-(0.98)*Math.random()))
-    const RR = (Math.floor((2-(0.98)*Math.random()))
-    const SS = (Math.floor((2-(0.98)*Math.random()))
-    const TT = (Math.floor((2-(0.98)*Math.random()))
-    const UU = (Math.floor((2-(0.98)*Math.random()))
-    const VV = (Math.floor((2-(0.98)*Math.random()))
-    const WW = (Math.floor((2-(0.98)*Math.random()))
-    const XX = (Math.floor((2-(0.98)*Math.random()))
-               const YY = (Math.floor((2-(0.98)*Math.random()))
-            const Exp = (Math.floor((80)*Math.random()+80))
-            const FFF = Exp-(X*4)
-            const GGG = (Math.floor((41)*Math.random()+40))
-            const Oeufs = (Math.floor((2-(0.90))*Math.random()))
-             if(FFF > 0) {
-              const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , ":scales: Casque du clan des loups : " +AA+ "\n:scales: Epaulières du clan des loups : " +BB+ "\n:scales: Cape du clan des loups : " +CC+ "\n:scales: Plastron du clan des loups : " +DD+ "\n:scales: Gantelets du clan des loups : " +EE+ "\n:scales: Ceinture du clan des loups : " +FF+ "\n:scales: Jambières du clan des loups : " +GG+ "\n:scales: Bottes du clan des loups : " +HH+ "\n:scales: Anneau du clan des loups : " +II+ "\n:scales: Amulette du clan des loups : " +JJ+ "\n:scales: Epée du clan des loups à deux mains : " +KK+ "\n:scales: Epée du clan des loups à une main : " +LL+ "\n:scales: Hache du clan des loups à deux mains : " +MM+ "\n:scales: Hache du clan des loups à une main : " +NN+ "\n:scales: Masse du clan des loups à deux mains : " +OO+ "\n:scales: Masse du clan des loups à une main : " +PP+ "\n:scales: Katana du clan des loups à deux mains : " +QQ+ "\n:scales: Katana du clan des loups à une main : " +RR+ "\n:scales: Cimeterre du clan des loups à deux mains : " +SS+ "\n:scales: Cimeterre du clan des loups à une main : " +TT+ "\n:scales: Rapière du clan des loups à deux mains : " +UU+ "\n:scales: Rapière du clan des loups à une main : " +VV+ "\n:scales: Glaive du clan des loups à deux mains : " +WW+ "\n:scales: Dague du clan des loups à une main : " +XX+ "\n:scales: Bouclier du clan des loups à une main : " +YY+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FFF+ "\n:large_orange_diamond: Cols : " +GGG)
-              .setTimestamp()
-              message.channel.send({embed})}
-    if(FFF < 0) {
-        const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                              .addField("Récompenses :" , ":scales: Casque du clan des loups : " +AA+ "\n:scales: Epaulières du clan des loups : " +BB+ "\n:scales: Cape du clan des loups : " +CC+ "\n:scales: Plastron du clan des loups : " +DD+ "\n:scales: Gantelets du clan des loups : " +EE+ "\n:scales: Ceinture du clan des loups : " +FF+ "\n:scales: Jambières du clan des loups : " +GG+ "\n:scales: Bottes du clan des loups : " +HH+ "\n:scales: Anneau du clan des loups : " +II+ "\n:scales: Amulette du clan des loups : " +JJ+ "\n:scales: Epée du clan des loups à deux mains : " +KK+ "\n:scales: Epée du clan des loups à une main : " +LL+ "\n:scales: Hache du clan des loups à deux mains : " +MM+ "\n:scales: Hache du clan des loups à une main : " +NN+ "\n:scales: Masse du clan des loups à deux mains : " +OO+ "\n:scales: Masse du clan des loups à une main : " +PP+ "\n:scales: Katana du clan des loups à deux mains : " +QQ+ "\n:scales: Katana du clan des loups à une main : " +RR+ "\n:scales: Cimeterre du clan des loups à deux mains : " +SS+ "\n:scales: Cimeterre du clan des loups à une main : " +TT+ "\n:scales: Rapière du clan des loups à deux mains : " +UU+ "\n:scales: Rapière du clan des loups à une main : " +VV+ "\n:scales: Glaive du clan des loups à deux mains : " +WW+ "\n:scales: Dague du clan des loups à une main : " +X+ "\n:scales: Bouclier du clan des loups à une main : " +YY+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +GGG)
-        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-              .setTimestamp()
-              message.channel.send({embed})}
-                  }
-            }) ;
 
 
 
