@@ -261,7 +261,7 @@ bot.on('message', message => {
       .addField("Chiens errant :" , +Chien)
       .addField("Bandits débutant :" , +Bandit)
       .addField("Lapins géant :" , +Lapin)
-      .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies" )
+      .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies : [Votre niveau]" )
       .setTimestamp()
       message.channel.send({embed})}
       talkedRecently.add(message.author.id+18);
@@ -301,7 +301,7 @@ bot.on('message', message => {
       .addField("Bandit experimenté :" , +Chien)
       .addField("Bandit sombre :" , +Bandit)
       .addField("Loup de sang :" , +Lapin)
-      .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies" )
+      .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies : [Votre niveau]" )
       .setTimestamp()
       message.channel.send({embed})}
       talkedRecently.add(message.author.id+18);
