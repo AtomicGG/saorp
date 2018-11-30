@@ -1182,7 +1182,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "")) {
+    if (message.content.startsWith(prefix + "Loup gigantesque récompenses")) {
     let X = args.slice(3).join(" : ");                
       const AA = (Math.floor((2-(0.75))*Math.random()))
                const BB = (Math.floor((2-(0.95))*Math.random()))
