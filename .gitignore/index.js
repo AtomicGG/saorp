@@ -154,8 +154,8 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content === (prefix) + "Plaines quêtes accomplies"){
       let X = args.slice(3).join(" : ");   
-        const Expplaines = (Math.floor((30)*Math.random()+30))
-    const FF = Expplaines-(X*3)
+        const A = (Math.floor((30)*Math.random()+30))
+    const FF = A-(X*3)
     const Colsplaines = (Math.floor((30)*Math.random()+30))
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
@@ -166,8 +166,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :")
-      .addField("Points d'expérience :" , +Expplaines)
-      .addField("Si vous êtes du niveau de 5 ou plus :" , "Vous ne gagnez plus d'expérience")
+      .addField("Points d'expérience :" , +A)
       .addField("Cols :" , +Colsplaines)
       .addField("Potion faible de soin :" , +Potionsplaines)
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
@@ -181,7 +180,6 @@ bot.on('message', message => {
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :")
       .addField("Points d'expérience :" , "0")
-      .addField("Si vous êtes du niveau de 5 ou plus :" , "Vous ne gagnez plus d'expérience")
       .addField("Cols :" , +Colsplaines)
       .addField("Potion faible de soin :" , +Potionsplaines)
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
@@ -196,31 +194,25 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content === (prefix) + "Forêt quêtes accomplies"){
       let X = args.slice(3).join(" : ");   
-     if(FF > 0) {
-    const Expplaines = (Math.floor((50)*Math.random()+50))
+        const A = (Math.floor((50)*Math.random()+50))
     const Colsplaines = (Math.floor((50)*Math.random()+50))
     const FF = Expplaines-(X*4)
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
+     if(FF > 0) {
     const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :")
-      .addField("Points d'expérience :" , +Expplaines)
-                           .addField("Si vous êtes du niveau de 10 ou plus :" , "Vous ne gagnez plus d'expérience")
+      .addField("Points d'expérience :" , +A)
       .addField("Cols :" , +Colsplaines)
       .addField("Potion légère de soin :" , +Potionsplaines)
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
       .setTimestamp()
       message.channel.send({embed})}
   if(FF < 0) {
-     const Expplaines = (Math.floor((50)*Math.random()+50))
-    const Colsplaines = (Math.floor((50)*Math.random()+50))
-    const FF = Expplaines-(X*4)
-    const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
-    const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
     const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -228,7 +220,6 @@ bot.on('message', message => {
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :")
       .addField("Points d'expérience :" , "0")
-                           .addField("Si vous êtes du niveau de 10 ou plus :" , "Vous ne gagnez plus d'expérience")
       .addField("Cols :" , +Colsplaines)
       .addField("Potion légère de soin :" , +Potionsplaines)
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
