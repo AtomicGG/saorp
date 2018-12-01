@@ -157,6 +157,7 @@ bot.on('message', message => {
         const A = (Math.floor((30)*Math.random()+30))
     const FF = A-(X*3)
     const Colsplaines = (Math.floor((30)*Math.random()+30))
+    const Orge = (Math.floor((31)*Math.random()+20))
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
    if(FF > 0) {
@@ -170,6 +171,7 @@ bot.on('message', message => {
       .addField("Cols :" , +Colsplaines)
       .addField("Potion faible de soin :" , +Potionsplaines)
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
+        .addField("Sucres d'orge :" , +Orge)
       .setTimestamp()
       message.channel.send({embed})}
     if(FF < 0) {
@@ -183,6 +185,7 @@ bot.on('message', message => {
       .addField("Cols :" , +Colsplaines)
       .addField("Potion faible de soin :" , +Potionsplaines)
       .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
+    .addField("Sucres d'orge :" , +Orge)
       .setTimestamp()
       message.channel.send({embed})}
           }
@@ -197,6 +200,7 @@ bot.on('message', message => {
         const A = (Math.floor((50)*Math.random()+50))
     const Colsplaines = (Math.floor((50)*Math.random()+50))
     const FF = A-(X*4)
+    const Orge = (Math.floor((31)*Math.random()+20))
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
      if(FF > 0) {
@@ -210,6 +214,7 @@ bot.on('message', message => {
       .addField("Cols :" , +Colsplaines)
       .addField("Potion légère de soin :" , +Potionsplaines)
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
+        .addField("Sucres d'orge :" , +Orge)
       .setTimestamp()
       message.channel.send({embed})}
   if(FF < 0) {
@@ -223,6 +228,7 @@ bot.on('message', message => {
       .addField("Cols :" , +Colsplaines)
       .addField("Potion légère de soin :" , +Potionsplaines)
       .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
+        .addField("Sucres d'orge :" , +Orge)
       .setTimestamp()
       message.channel.send({embed})}
           }
