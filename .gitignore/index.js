@@ -322,7 +322,7 @@ bot.on('message', message => {
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
           .addField("Quête de la forêt :" , "Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
-          .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies : [Votre niveau]" )
+          .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies : [Votre niveau]" )
           .setTimestamp()
           message.channel.send({embed})}
       talkedRecently.add(message.author.id+18);
