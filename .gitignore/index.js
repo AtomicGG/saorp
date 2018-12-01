@@ -261,9 +261,9 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})}
    if(X > 51){
-    const Percil = (Math.floor((3)*Math.random()+2))
-    const Baie = (Math.floor((3)*Math.random()+2))
-     const ViandeLapin = (Math.floor((3)*Math.random()+2))
+    const Percil = (Math.floor((2)*Math.random()+1))
+    const Baie = (Math.floor((2)*Math.random()+1))
+     const ViandeLapin = (Math.floor((2)*Math.random()+1))
       const PeauLapin = (Math.floor((2)*Math.random()+1))
         const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -311,10 +311,10 @@ bot.on('message', message => {
           .setTimestamp()
           message.channel.send({embed})}
        if(X > 51){
-        const Minerai = (Math.floor((3)*Math.random()+2))
-        const Bois = (Math.floor((3)*Math.random()+2))
-         const Estragon = (Math.floor((3)*Math.random()+2))
-          const ViandeTaupe = (Math.floor((3)*Math.random()+2))
+        const Minerai = (Math.floor((2)*Math.random()+1))
+        const Bois = (Math.floor((2)*Math.random()+1))
+         const Estragon = (Math.floor((2)*Math.random()+1))
+          const ViandeTaupe = (Math.floor((2)*Math.random()+1))
            const PeauTaupe = (Math.floor((2)*Math.random()+1))
             const embed = new Discord.RichEmbed()
           .setColor(3447003)
