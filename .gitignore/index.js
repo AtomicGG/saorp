@@ -166,12 +166,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :")
-      .addField("Points d'expérience :" , +FF)
-      .addField("Cols :" , +Colsplaines)
-      .addField("Potion faible de soin :" , +Potionsplaines)
-      .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
-        .addField("Sucres d'orge :" , +Orge)
+      .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion faible de soin : " +Potionsplaines+ "\n:scales: Equipement en peau arraché au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
       message.channel.send({embed})}
     if(FF < 0) {
@@ -180,11 +175,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :")
-      .addField("Points d'expérience :" , "0")
-      .addField("Cols :" , +Colsplaines)
-      .addField("Potion faible de soin :" , +Potionsplaines)
-      .addField("Equipement en peau arraché au choix :" , +Equipementsplaines)
+      .addField("Quête des plaines :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion faible de soin : " +Potionsplaines+ "\n:scales: Equipement en peau arraché au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
     .addField("Sucres d'orge :" , +Orge)
       .setTimestamp()
       message.channel.send({embed})}
@@ -209,12 +200,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :")
-      .addField("Points d'expérience :" , +FF)
-      .addField("Cols :" , +Colsplaines)
-      .addField("Potion légère de soin :" , +Potionsplaines)
-      .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
-        .addField("Sucres d'orge :" , +Orge)
+      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
       message.channel.send({embed})}
   if(FF < 0) {
@@ -223,11 +209,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :")
-      .addField("Points d'expérience :" , "0")
-      .addField("Cols :" , +Colsplaines)
-      .addField("Potion légère de soin :" , +Potionsplaines)
-      .addField("Equipement en peau résistante au choix :" , +Equipementsplaines)
+      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
         .addField("Sucres d'orge :" , +Orge)
       .setTimestamp()
       message.channel.send({embed})}
