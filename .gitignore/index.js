@@ -235,6 +235,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Plaines quêtes"){
+     const X = (Math.floor((100)*Math.random()+1))
     if (talkedRecently.has(message.author.id+18)) {
       const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
@@ -244,7 +245,7 @@ bot.on('message', message => {
        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
        .setTimestamp()
        message.channel.send({embed})
-} else {
+} else if (X < 50) {
     const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((3)*Math.random()+2))
@@ -255,12 +256,21 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête des plaines :" , "Votre quête sera de tuer les cibles suivantes :")
-      .addField("Sanglier :" , +Sanglier)
-      .addField("Renard :" , +Renard)
-      .addField("Chiens errant :" , +Chien)
-      .addField("Bandits débutant :" , +Bandit)
-      .addField("Lapins géant :" , +Lapin)
+      .addField("Quête des plaines :" , "Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
+      .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies : [Votre niveau]" )
+      .setTimestamp()
+      message.channel.send({embed})}
+   if(X > 51){
+    const Percil = (Math.floor((3)*Math.random()+2))
+    const Baie = (Math.floor((3)*Math.random()+2))
+     const ViandeLapin = (Math.floor((3)*Math.random()+2))
+      const PeauLapin = (Math.floor((2)*Math.random()+1))
+        const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField("Quête des plaines :" , "Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " +Percil+ "\n:pick: Baies : " +Baie+ "\n:pick: Viandes de lapin : " +ViandeLapin+ "\n:pick: Peaus de lapin : " +PeauLapin)
       .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies : [Votre niveau]" )
       .setTimestamp()
       message.channel.send({embed})}
@@ -273,37 +283,48 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-  if (message.content === (prefix) + "Forêt quêtes"){
-    if (talkedRecently.has(message.author.id+18)) {
-      const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-} else {
-    const Sanglier = (Math.floor((3)*Math.random()+2))
-    const Renard = (Math.floor((3)*Math.random()+2))
-    const Chien = (Math.floor((2)*Math.random()))
-    const Bandit = (Math.floor((2*(0.50))*Math.random()))
-    const Lapin = (Math.floor((2*0.75)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête de la forêt :" , "Votre quête sera de tuer les cibles suivantes :")
-      .addField("Loup :" , +Sanglier)
-      .addField("Slime :" , +Renard)
-      .addField("Bandit experimenté :" , +Chien)
-      .addField("Bandit sombre :" , +Bandit)
-      .addField("Loup de sang :" , +Lapin)
-      .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies : [Votre niveau]" )
-      .setTimestamp()
-      message.channel.send({embed})}
+   bot.on('message', message => {
+      if (message.content === (prefix) + "Forêt quêtes"){
+          const X = (Math.floor((100)*Math.random()+1))
+        if (talkedRecently.has(message.author.id+18)) {
+          const embed = new Discord.RichEmbed()
+           .setAuthor(message.author.username , message.author.avatarURL)
+           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+           .setColor(3447003)
+           .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+           .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+           .setTimestamp()
+           message.channel.send({embed})
+          } else if (X < 50) {
+        const Sanglier = (Math.floor((3)*Math.random()+2))
+        const Renard = (Math.floor((3)*Math.random()+2))
+        const Chien = (Math.floor((2)*Math.random()))
+        const Bandit = (Math.floor((2*(0.50))*Math.random()))
+        const Lapin = (Math.floor((2*0.75)*Math.random()))
+          const embed = new Discord.RichEmbed()
+          .setColor(3447003)
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+          .addField("Quête de la forêt :" , "Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Sanglier+ "\n:crossed_swords: Slimes : " +Renard+ "\n:crossed_swords: Bandits expérimentés : " +Chien+ "\n:crossed_swords: Bandits sombres : " +Bandit+ "\n:crossed_swords: Loups de sang : " +Lapin)
+          .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies : [Votre niveau]" )
+          .setTimestamp()
+          message.channel.send({embed})}
+       if(X > 51){
+        const Minerai = (Math.floor((3)*Math.random()+2))
+        const Bois = (Math.floor((3)*Math.random()+2))
+         const Estragon = (Math.floor((3)*Math.random()+2))
+          const ViandeTaupe = (Math.floor((3)*Math.random()+2))
+           const PeauTaupe = (Math.floor((2)*Math.random()+1))
+            const embed = new Discord.RichEmbed()
+          .setColor(3447003)
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+          .addField("Quête de la forêt :" , "Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
+          .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies : [Votre niveau]" )
+          .setTimestamp()
+          message.channel.send({embed})}
       talkedRecently.add(message.author.id+18);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
