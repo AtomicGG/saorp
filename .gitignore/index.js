@@ -8049,7 +8049,7 @@ bot.on('message', message => {
           .addField("Niveau minimum requis pour le porter :" , "11")
              .addField("Prix de revente :" , "500 cols")
              .addField("Si vous trouvez cet objet :" , "=Découverte de la faux du roi déchus à deux mains")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setImage("https://static1.millenium.org/article_old/images/contenu/actus/wow/wow_news_top20armes_numero16_hd.jpg")
               .setTimestamp()
               message.channel.send({embed})
             }   
@@ -8308,7 +8308,7 @@ bot.on('message', message => {
                                  .setColor(3447003)
                                  .addField("Faux du roi déchus à deux mains :" , "Vous venez de découvrir cet objet !")
                               .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setImage("https://static1.millenium.org/article_old/images/contenu/actus/wow/wow_news_top20armes_numero16_hd.jpg")
                                   .setTimestamp()
                                   message.channel.send({embed})
                                 }   
