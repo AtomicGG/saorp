@@ -8282,7 +8282,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
                             const Dégâts = (Math.floor((31)*Math.random()+20))
-                             if (message.content.startsWith(prefix + "Découvert de la faux du roi déchus à deux mains")) {
+                             if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
