@@ -248,6 +248,10 @@ bot.on('message', message => {
       .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies : [Votre niveau]" )
       .setTimestamp()
       message.channel.send({embed})}
+     talkedRecently.add(message.author.id+18);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+18);
+     }, 86400000);
    if(X > 51){
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
@@ -298,6 +302,10 @@ bot.on('message', message => {
           .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies : [Votre niveau]" )
           .setTimestamp()
           message.channel.send({embed})}
+         talkedRecently.add(message.author.id+18);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+18);
+     }, 86400000);
        if(X > 51){
         const Minerai = (Math.floor((2)*Math.random()+1))
         const Bois = (Math.floor((2)*Math.random()+1))
