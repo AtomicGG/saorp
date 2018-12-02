@@ -232,12 +232,12 @@ bot.on('message', message => {
        .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
        .setTimestamp()
-       message.channel.send({embed})}
-         talkedRecently.add(message.author.id+18000);
+       message.channel.send({embed})
+    } else if (X < 50) {
+      talkedRecently.add(message.author.id+18000);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18000);
      }, 86400000);
-    if (X < 50) {
     const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((3)*Math.random()+2))
@@ -251,12 +251,8 @@ bot.on('message', message => {
       .addField("Quête des plaines :" , "Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
       .addField("Les récompenses une fois la quête accomplis :" , "=Plaines quêtes accomplies : [Votre niveau]" )
       .setTimestamp()
-      message.channel.send({embed})}
-     talkedRecently.add(message.author.id+18000);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+18000);
-     }, 86400000);
- if (X > 51) {
+      message.channel.send({embed})
+    } else if (X > 51) {
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
      const ViandeLapin = (Math.floor((2)*Math.random()+1))
@@ -290,12 +286,12 @@ bot.on('message', message => {
            .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
            .setTimestamp()
-           message.channel.send({embed})}
-             talkedRecently.add(message.author.id+18000);
+           message.channel.send({embed})
+        } else if (X < 50) {
+          talkedRecently.add(message.author.id+18000);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18000);
      }, 86400000);
-        if (X < 50) {
         const Sanglier = (Math.floor((3)*Math.random()+2))
         const Renard = (Math.floor((3)*Math.random()+2))
         const Chien = (Math.floor((2)*Math.random()))
@@ -309,12 +305,8 @@ bot.on('message', message => {
           .addField("Quête de la forêt :" , "Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Sanglier+ "\n:crossed_swords: Slimes : " +Renard+ "\n:crossed_swords: Bandits expérimentés : " +Chien+ "\n:crossed_swords: Bandits sombres : " +Bandit+ "\n:crossed_swords: Loups de sang : " +Lapin)
           .addField("Les récompenses une fois la quête accomplis :" , "=Forêt quêtes accomplies : [Votre niveau]" )
           .setTimestamp()
-          message.channel.send({embed})}
-         talkedRecently.add(message.author.id+18000);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+18000);
-     }, 86400000);
-     if (X > 51) {
+          message.channel.send({embed})
+        } else if (X > 51) {
         const Minerai = (Math.floor((2)*Math.random()+1))
         const Bois = (Math.floor((2)*Math.random()+1))
          const Estragon = (Math.floor((2)*Math.random()+1))
