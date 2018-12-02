@@ -8016,12 +8016,12 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Faux du roi déchus")) {
+        if (message.content.startsWith(prefix + "Faux du roi déchus à deux mains")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Faux du roi déchus :" , "C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Faux du roi déchus à deux mains :" , "C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !")
            .addField("Améliore le 'Combo' en :" , "'Combo supérieur'")
           .addField("Améliore le 'Coup normal' en :" , "'Coup normal supérieur'")
           .addField("Améliore le 'Coup précis' en :" , "'Coup précis supérieur'")
@@ -8029,7 +8029,7 @@ bot.on('message', message => {
           .addField("Améliore 'Esquive' en :" , "''")
           .addField("Niveau minimum requis pour le porter :" , "11")
              .addField("Prix de revente :" , "500 cols")
-             .addField("Si vous trouvez cet objet :" , "=Découverte de la faux du roi déchus")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la faux du roi déchus à deux mains")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -8273,6 +8273,21 @@ bot.on('message', message => {
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
                                  .addField("Glaive du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((31)*Math.random()+20))
+                             if (message.content.startsWith(prefix + "Découvert de la faux du roi déchus à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Faux du roi déchus à deux mains :" , "Vous venez de découvrir cet objet !")
                               .addField("Points de dégâts :" , +Dégâts)
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
