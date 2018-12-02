@@ -287,7 +287,7 @@ bot.on('message', message => {
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
            .setTimestamp()
            message.channel.send({embed})
-          } if (X < 50) {
+          } else if (X < 50) {
         const Sanglier = (Math.floor((3)*Math.random()+2))
         const Renard = (Math.floor((3)*Math.random()+2))
         const Chien = (Math.floor((2)*Math.random()))
