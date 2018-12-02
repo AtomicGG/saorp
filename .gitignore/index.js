@@ -223,9 +223,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Plaines quêtes"){
-     const X = (Math.floor((100)*Math.random()+1))
+         const X = (Math.floor((100)*Math.random()+1))
     if (talkedRecently.has(message.author.id+18)) {
       const embed = new Discord.RichEmbed()
+      const X = -1
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
        .setColor(3447003)
@@ -252,7 +253,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
- else {
+ if (X > 51) {
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
      const ViandeLapin = (Math.floor((2)*Math.random()+1))
@@ -280,6 +281,7 @@ bot.on('message', message => {
           const X = (Math.floor((100)*Math.random()+1))
         if (talkedRecently.has(message.author.id+18)) {
           const embed = new Discord.RichEmbed()
+              const X = -1
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
@@ -306,7 +308,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
-      else {
+     if (X > 51) {
         const Minerai = (Math.floor((2)*Math.random()+1))
         const Bois = (Math.floor((2)*Math.random()+1))
          const Estragon = (Math.floor((2)*Math.random()+1))
