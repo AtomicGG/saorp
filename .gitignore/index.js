@@ -203,7 +203,7 @@ bot.on('message', message => {
       .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
       message.channel.send({embed})}
-  if(FF < 0) {
+  else (FF < 0) {
     const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -233,7 +233,7 @@ bot.on('message', message => {
        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
        .setTimestamp()
        message.channel.send({embed})
-} if (X < 50) {
+} else if (X < 50) {
     const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((3)*Math.random()+2))
@@ -252,7 +252,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
-  if (X > 51){
+ else (X > 51){
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
      const ViandeLapin = (Math.floor((2)*Math.random()+1))
