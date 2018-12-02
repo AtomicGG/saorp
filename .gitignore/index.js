@@ -782,8 +782,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle("Loup gigantesque :" , "Un loup énorme qui n'est trouvable que dans la salle du boss du donjon sauvage du palier 1 !")
     .setImage("https://db4sgowjqfwig.cloudfront.net/campaigns/144226/assets/629552/wolves-wargs.jpg?1471440473")
-    .addField("Point de vie :" , "1000")
-    .addField("Points de dégâts" , "60")
+    .addField("Point de vie :" , "2000")
+    .addField("Points de dégâts" , "80")
     .addField("Pour engager le combat :" , "=Loup gigantesque attaque")
     .addField("Lorsque le loup gigantesque reçoit un coup :" , "=Loup gigantesque défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort en solo :" , "=Loup gigantesque récompenses solo : [Votre niveau]")
@@ -1812,7 +1812,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup gigantesque attaque")) {
-    const Dégâts = 60
+    const Dégâts = 80
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts)))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 40){
