@@ -10802,12 +10802,13 @@ message.channel.send({embed})}
                           bot.on('message', message => {
                             let cont = message.content.slice(prefix.length).split(" ");
                             const args = cont.slice(1);
-                            if (message.content.startsWith(prefix + "Donjon sauvage")) {
+                               if (message.content === prefix + "Donjon sauvage") {
+
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                                                  .addField("Le donjon sauvage:" , "Pour entrer dans ce donjon, il vous faudra une clef du donjon sauvage par personne, seulement 5 personnes sont autorisés à rentrer en même temps, une fois à l'intérieur, la clef disparaîtra...\n\nNiveau conseillé : 10\n\nLes mouvements possibles une fois à l'intérieur :\n\n=Déplacement sur la gauche au donjon sauvage\n=Déplacement sur la droite au donjon sauvage\n=Déplacement en avant au donjon sauvage")
+                                                                  .addField("Le donjon sauvage:" , "Pour entrer dans ce donjon, il vous faudra une clef du donjon sauvage par personne, seulement 5 personnes sont autorisés à rentrer en même temps, une fois à l'intérieur, la clef disparaîtra...\n\nNiveau conseillé : 10\n\nPour commencer et se déplacer dans le donjon :\n\n=Donjon sauvage déplacement")
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                    message.channel.send({embed})
@@ -10820,13 +10821,13 @@ message.channel.send({embed})}
 bot.on('message', message => {
                             let cont = message.content.slice(prefix.length).split(" ");
                             const args = cont.slice(1);
-                            if (message.content.startsWith(prefix + "Déplacement sur la gauche au donjon sauvage")) {
+                            if (message.content.startsWith(prefix + "Donjon sauvage déplacement")) {
                               const A = (Math.floor((100)*Math.random()+1))
                               const B = (Math.floor((3)*Math.random()+2))
                               const C = (Math.floor((3)*Math.random()+2))
-                              const D = (Math.floor((3)*Math.random()+1))
+                              const D = (Math.floor((2)*Math.random()+1))
                               const E = (Math.floor((3)*Math.random()+2))
-                              const F = (Math.floor((3)*Math.random()+1))
+                              const F = (Math.floor((2)*Math.random()+1))
                               const G = (Math.floor((251)*Math.random()+250))
                               const H = (Math.floor((5*0.50)*Math.random()))
                               const I = (Math.floor((5*0.50)*Math.random()))
@@ -10835,19 +10836,19 @@ bot.on('message', message => {
                               const L = (Math.floor((5*0.75)*Math.random()))
                               const M = (Math.floor((5*0.75)*Math.random()))
                               const N = (Math.floor((5*0.75)*Math.random()))
-                              const Piège1 = (Math.floor((26)*Math.random()+25))
-                              const Piège2 = (Math.floor((51)*Math.random()+50))
+                              const Piège1 = (Math.floor((51)*Math.random()+50))
+                              const Piège2 = (Math.floor((76)*Math.random()+75))
                               if(A < 75){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, mais vous tombez nez à nez face à un groupe de monstre qui se baladait dans les longs couloirs...")
+                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, mais vous tombez nez à nez face à un groupe de monstre qui se baladait dans les longs couloirs...")
                                  .addField("Loup" , +B)
                                  .addField("Slime" , +C)
                                  .addField("Loup de sang" , +D)
                                  .addField("Bandit expérimenté" , +E)
                                  .addField("Bandit sombre" , +F)
-                                 .addField("Suite :" , "Une fois le combat finis, vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .addField("Suite :" , "Une fois le combat finis, vous pouvez continuer à vous déplacer dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
@@ -10856,8 +10857,8 @@ bot.on('message', message => {
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...")
-                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...")
+                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
@@ -10866,8 +10867,8 @@ bot.on('message', message => {
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...")
-                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...")
+                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
@@ -10876,7 +10877,7 @@ bot.on('message', message => {
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, vous finissez par tomber sur un coffre contenant des biens précieux !")
+                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous finissez par tomber sur un coffre contenant des biens précieux !")
                                  .addField("Cols :" , +G)
                                  .addField("Potions faibles de soin :" , +H)
                                  .addField("Potions légères de force :" , +I)
@@ -10885,7 +10886,7 @@ bot.on('message', message => {
                                  .addField("Equipements en peau résistante au choix :" , +L)
                                  .addField("Armes à une main basique au choix :" , +M)
                                  .addField("Armes à deux mains basique au choix :" , +N)
-                                 .addField("Suite :" , "Une fois les récompenses du coffres répartis entre vous, vous pouvez continuer à vous déplacer dans une direction dans le donjon")
+                                 .addField("Suite :" , "Une fois les récompenses du coffres répartis entre vous, vous pouvez continuer à vous déplacer dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
@@ -10894,208 +10895,20 @@ bot.on('message', message => {
                                   const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la gauche :" , "Vous vous déplacez à travers le donjon par la gauche, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, un loup gigantesque  apparaît au milieu de la salle")
+                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, un loup gigantesque  apparaît au milieu de la salle")
                                  .addField("Loup" , +B)
                                  .addField("Slime" , +C)
                                  .addField("Loup de sang" , +D)
                                  .addField("Bandit expérimenté" , +E)
                                  .addField("Bandit sombre" , +F)
                                  .addField("Loup gigantesque" , "1")
-                                 .addField("Donjon sauvage terminé :" , "Une fois que vous avez finis le combat, écrivez :\n\n=Donjon sauvage récompenses")
+                                 .addField("Donjon sauvage terminé :" , "Une fois que vous avez finis le combat :\n\n=Donjon sauvage récompenses")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                   message.channel.send({embed})}
                             }   
     });
-
-
-bot.on('message', message => {
-                            let cont = message.content.slice(prefix.length).split(" ");
-                            const args = cont.slice(1);
-                            if (message.content.startsWith(prefix + "Déplacement sur la droite au donjon sauvage")) {
-                                const A = (Math.floor((100)*Math.random()+1))
-                              const B = (Math.floor((3)*Math.random()+2))
-                              const C = (Math.floor((3)*Math.random()+2))
-                              const D = (Math.floor((3)*Math.random()+1))
-                              const E = (Math.floor((3)*Math.random()+2))
-                              const F = (Math.floor((3)*Math.random()+1))
-                              const G = (Math.floor((251)*Math.random()+250))
-                              const H = (Math.floor((5*0.50)*Math.random()))
-                              const I = (Math.floor((5*0.50)*Math.random()))
-                              const J = (Math.floor((5*0.50)*Math.random()))
-                               const Piège1 = (Math.floor((26)*Math.random()+25))
-                              const Piège2 = (Math.floor((51)*Math.random()+50))
-                              const K = (Math.floor((4*0.80)*Math.random()))
-                              const L = (Math.floor((5*0.75)*Math.random()))
-                              const M = (Math.floor((5*0.75)*Math.random()))
-                              const N = (Math.floor((5*0.75)*Math.random()))
-                              if(A < 75){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, mais vous tombez nez à nez face à un groupe de monstre qui se baladait dans les longs couloirs...")
-                                 .addField("Loup" , +B)
-                                 .addField("Slime" , +C)
-                                 .addField("Loup de sang" , +D)
-                                 .addField("Bandit expérimenté" , +E)
-                                 .addField("Bandit sombre" , +F)
-                                 .addField("Suite :" , "Une fois le combat finis, vous pouvez continuer à vous déplacer dans une direction dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                             if(A > 76 & A < 80){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...")
-                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                                  if(A > 81 & A < 85){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...")
-                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                              if(A > 86 & A < 90){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, vous finissez par tomber sur un coffre contenant des biens précieux !")
-                                 .addField("Cols :" , +G)
-                                 .addField("Potions faibles de soin :" , +H)
-                                 .addField("Potions légères de force :" , +I)
-                                 .addField("Potions légères de défense :" , +J)
-                                 .addField("Parchemin de poison faible :" , +K)
-                                 .addField("Equipements en peau résistante au choix :" , +L)
-                                 .addField("Armes à une main basique au choix :" , +M)
-                                 .addField("Armes à deux mains basique au choix :" , +N)
-                                 .addField("Suite :" , "Une fois les récompenses du coffres répartis entre vous, vous pouvez continuer à vous déplacer dans une dictement dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                                if(A > 91 & A < 100){
-                                  const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement sur la droite :" , "Vous vous déplacez à travers le donjon par la droite, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, un loup gigantesque  apparaît au milieu de la salle")
-                                  .addField("Loup" , +B)
-                                 .addField("Slime" , +C)
-                                 .addField("Loup de sang" , +D)
-                                 .addField("Bandit expérimenté" , +E)
-                                 .addField("Bandit sombre" , +F)
-                                 .addField("Loup gigantesque" , "1")
-                                 .addField("Donjon sauvage terminé :" , "Une fois que vous avez finis le combat, écrivez :\n\n=Donjon sauvage récompenses")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                            }   
-    });
-
-
-
-bot.on('message', message => {
-                            let cont = message.content.slice(prefix.length).split(" ");
-                            const args = cont.slice(1);
-                            if (message.content.startsWith(prefix + "Déplacement en avant au donjon sauvage")) {
-                             const A = (Math.floor((100)*Math.random()+1))
-                              const B = (Math.floor((3)*Math.random()+2))
-                              const C = (Math.floor((3)*Math.random()+2))
-                              const D = (Math.floor((3)*Math.random()+1))
-                              const E = (Math.floor((3)*Math.random()+2))
-                              const F = (Math.floor((3)*Math.random()+1))
-                               const Piège1 = (Math.floor((26)*Math.random()+25))
-                              const Piège2 = (Math.floor((51)*Math.random()+50))
-                              const G = (Math.floor((251)*Math.random()+250))
-                              const H = (Math.floor((5*0.50)*Math.random()))
-                              const I = (Math.floor((5*0.50)*Math.random()))
-                              const J = (Math.floor((5*0.50)*Math.random()))
-                              const K = (Math.floor((4*0.80)*Math.random()))
-                              const L = (Math.floor((5*0.75)*Math.random()))
-                              const M = (Math.floor((5*0.75)*Math.random()))
-                              const N = (Math.floor((5*0.75)*Math.random()))
-                              if(A < 75){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, mais vous tombez nez à nez face à un groupe de monstre qui se baladait dans les longs couloirs...")
-                                 .addField("Loup" , +B)
-                                 .addField("Slime" , +C)
-                                 .addField("Loup de sang" , +D)
-                                 .addField("Bandit expérimenté" , +E)
-                                 .addField("Bandit sombre" , +F)
-                                 .addField("Suite :" , "Une fois le combat finis, vous pouvez continuer à vous déplacer dans une direction dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                              if(A > 76 & A < 80){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...")
-                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                                  if(A > 81 & A < 85){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...")
-                                 .addField("Suite :" , "Vous pouvez continuer à vous déplacer dans une direction dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                              if(A > 86 & A < 90){
-                                 const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, vous finissez par tomber sur un coffre contenant des biens précieux !")
-                                 .addField("Cols :" , +G)
-                                 .addField("Potions faibles de soin :" , +H)
-                                 .addField("Potions légères de force :" , +I)
-                                 .addField("Potions légères de défense :" , +J)
-                                 .addField("Parchemin de poison faible :" , +K)
-                                 .addField("Equipements en peau résistante au choix :" , +L)
-                                 .addField("Armes à une main basique au choix :" , +M)
-                                 .addField("Armes à deux mains basique au choix :" , +N)
-                                 .addField("Suite :" , "Une fois les récompenses du coffres répartis entre vous, vous pouvez continuer à vous déplacer dans une direction dans le donjon")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                                if(A > 91 & A < 100){
-                                  const embed = new Discord.RichEmbed()
-                                 .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, un loup gigantesque  apparaît au milieu de la salle")
-                                 .addField("Loup" , +B)
-                                 .addField("Slime" , +C)
-                                 .addField("Loup de sang" , +D)
-                                 .addField("Bandit expérimenté" , +E)
-                                 .addField("Bandit sombre" , +F)
-                                 .addField("Loup gigantesque" , "1")
-                                 .addField("Donjon sauvage terminé :" , "Une fois que vous avez finis le combat, écrivez :\n\n=Donjon sauvage récompenses")
-                                 .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-                                 .setTimestamp()
-                                 message.channel.send({embed})}
-                            }   
-    });
-
 
 
 
@@ -11113,7 +10926,7 @@ bot.on('message', message => {
                                const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Coffre de fin du donjon sauvage :" , "Vous finissez à peine le combat final que vous trouvez finalement le coffre suivant, partagez le entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Parchemin de poison faible : " +H+ "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\nArme du clan des loups à une main : " +K+ "\nArme du clan des loups à deux mains : " +L+ "\n:scales: Faux du roi déchus à deux mains : " +Faux)
+                                 .addField("Coffre de fin du donjon sauvage :" , "Vous finissez à peine le combat final que vous trouvez finalement le coffre suivant, partagez le entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Parchemin de poison faible : " +H+ "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales:Arme du clan des loups à une main : " +K+ "\n:scales:Arme du clan des loups à deux mains : " +L+ "\n:scales: Faux du roi déchus à deux mains : " +Faux)
                                  .setColor(3447003)
       .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                  .setTimestamp()
