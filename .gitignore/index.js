@@ -8026,7 +8026,7 @@ bot.on('message', message => {
           .addField("Améliore le 'Coup normal' en :" , "'Coup normal supérieur'")
           .addField("Améliore le 'Coup précis' en :" , "'Coup précis supérieur'")
           .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc supérieur'")
-          .addField("Améliore 'Esquive' en :" , "''")
+          .addField("Améliore 'Esquive' en :" , "'Esquive supérieure'")
           .addField("Niveau minimum requis pour le porter :" , "11")
              .addField("Prix de revente :" , "500 cols")
              .addField("Si vous trouvez cet objet :" , "=Découverte de la faux du roi déchus à deux mains")
