@@ -1214,7 +1214,7 @@ let cont = message.content.slice(prefix.length).split(" ");
             const FF = F-(X*4)
             const G = (Math.floor((21)*Math.random()+20))
             const Oeufs = (Math.floor((2-(0.97))*Math.random()))
-              const Clef = (Math.floor((2-(0.96))*Math.random()))
+              const Clef = (Math.floor((2-(0.97))*Math.random()))
 
              if(FF > 0) {
               const embed = new Discord.RichEmbed()
@@ -1556,7 +1556,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       const V = (Math.floor((2-(0.90))*Math.random()))
                       const W = (Math.floor((2-(0.90))*Math.random()))
                       const XX = (Math.floor((2-(0.90))*Math.random()))
-                        const Clef = (Math.floor((2-(0.95))*Math.random()))
+                        const Clef = (Math.floor((2-(0.97))*Math.random()))
 
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
@@ -1606,7 +1606,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                      const T = (Math.floor((2-(0.98))*Math.random()))
                       const U = (Math.floor((2-(0.95))*Math.random()))
                       const V = (Math.floor((2-(0.95))*Math.random()))
-                        const Clef = (Math.floor((2-(0.97))*Math.random()))
+                        const Clef = (Math.floor((2-(0.98))*Math.random()))
 
                       const W = (Math.floor((2-(0.95))*Math.random()))
                       const XX = (Math.floor((2-(0.95))*Math.random()))
@@ -10857,7 +10857,7 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                                  if(A > 81 & A < 85){
+                                  if(A > 81 & A < 90){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -10866,7 +10866,7 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                              if(A > 86 & A < 90){
+                              if(A > 91 & A < 95){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -10875,7 +10875,7 @@ bot.on('message', message => {
                                  .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                                if(A > 91 & A < 100){
+                                if(A > 96 & A < 100){
                                   const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
