@@ -10872,7 +10872,7 @@ bot.on('message', message => {
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous finissez par tomber sur un coffre contenant des biens précieux, n'oubliez pas de le partager entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:syringe: Potion légère de soin : " +H+ "\n:syringe: Potion légère de force : " +I+ "\n:syringe: Potion légère de défense : " +J+ "\n:scales: Equipement du clan des loups au choix : " +L+ "\n:scales: Bijoux du clan des loups au choix : " +Bijou+ "\n:scales: Arme du clan des loups à une main au choix : " +M+ "\n:scales: Arme du clan des loup à deux mains : " +N)
                                  .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+                                 .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                  .setTimestamp()
                                  message.channel.send({embed})}
                                 if(A > 91 & A < 100){
@@ -10881,7 +10881,7 @@ bot.on('message', message => {
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, un loup gigantesque  apparaît au milieu de la salle et hurle ce qui rassemble un paquet de monstres...\n\n:crossed_swords: Loup : " +B+ "\n:crossed_swords: Slime : " +C+ "\n:crossed_swords: Bandit expérimenté : " +E+ "\n:crossed_swords: Loup de sang : " +D+ "\n:crossed_swords: Bandit sombre : " +F+ "\n:crossed_swords: Loup gigantesque : 1\n\nUne fois que vous avez finis le combat :\n`=Donjon sauvage récompenses`")
                                  .setColor(3447003)
-                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+                                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
                                  .setTimestamp()
                                   message.channel.send({embed})}
                             }   
