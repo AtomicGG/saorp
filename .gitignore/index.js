@@ -10598,7 +10598,7 @@ bot.on('message', message => {
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
-                                                                                                                                 .addField("Clef du donjon sauvage:" , "C'est une clef permettant d'ouvrir la porte pour accèder au donjon sauvage [PAS ENCORE DISPO] !")
+                                                                                                                                 .addField("Clef du donjon sauvage:" , "C'est une clef permettant d'ouvrir la porte pour accèder au donjon sauvage !\n\nPrix d'achat : X\n\nPrix de revente : 200")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
@@ -12219,7 +12219,7 @@ bot.on('message', message => {
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux 1\n=Liste d'équipements 1\n=Liste d'armes 1\n=Liste des potions 1\n=Liste des ragoûts 1\n=Liste des parchemins 1\n=Liste des oeufs 1")    .setTimestamp()
+.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux 1\n=Liste d'équipements 1\n=Liste d'armes 1\n=Liste des potions 1\n=Liste des ragoûts 1\n=Liste des parchemins 1\n=Liste des oeufs 1\n=Liste des clefs 1")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -12302,10 +12302,17 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des oeufs 1")) {   
- message.channel.send("```Oeuf déformé :\nCoûts [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
+ message.channel.send("```Oeuf déformé :\nCoûts : [Achat : X cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
         }
   }) ;
 
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des clefs 1")) {   
+ message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
+        }
+  }) ;
 
 
 
