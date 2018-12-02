@@ -275,6 +275,7 @@ bot.on('message', message => {
 
 
 
+
    bot.on('message', message => {
       if (message.content === (prefix) + "Forêt quêtes"){
           const X = (Math.floor((100)*Math.random()+1))
@@ -7383,7 +7384,911 @@ bot.on('message', message => {
                                
   //////////////////////////////////////////////////////////////////OBJETS A ACHETER OU CRAFT///////////////////////////////////////////////////////////////////////    
 
-          
+           bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Casque du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Casque du clan des loups :" , "C'est un casque rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte du casque du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+ bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Epaulières du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Epaulières du clan des loups :" , "Ce sont des épaulières rares uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte des épaulières du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+  bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Cape du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Cape du clan des loups :" , "C'est une cape rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la cape du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+  bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Plastron du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Plastron du clan des loups :" , "C'est un plastron rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte du plastron du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+  bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Gantelets du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Gantelets du clan des loups :" , "Ce sont des gantelets rares uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte des gantelets du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+  bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Ceinture du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Ceinture du clan des loups :" , "C'est une ceinture rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la ceinture du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+  bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Jambières du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Jambières du clan des loups :" , "Ce sont des jambières rares uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte des jambières du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+  bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Bottes du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Bottes du clan des loups :" , "Ce sont des bottes rares uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "100 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte des bottes du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+  bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Amulette du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Amulette du clan des loups :" , "C'est une amulette rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de l'amulette du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Anneau du clan des loups")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Anneau du clan des loups :" , "C'est un anneau rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de l'anneau du clan des loups")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+                          bot.on('message', message => {
+                            const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte du casque du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Casque du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+    bot.on('message', message => {
+                           const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte des épaulières du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Epaulières du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+    bot.on('message', message => {
+                          const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte de la cape du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Cape du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+    bot.on('message', message => {
+                           const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte du plastron du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Plastron du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+    bot.on('message', message => {
+                               const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte des gantelets du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Gantelets du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+    bot.on('message', message => {
+                              const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte de la ceinture du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Ceinture du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+
+
+    bot.on('message', message => {
+                              const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte des jambières du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Jambières du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+    bot.on('message', message => {
+                               const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                            if (message.content.startsWith(prefix + "Découverte des bottes du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Bottes du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+
+    bot.on('message', message => {
+                           const Défense = (Math.floor((2)*Math.random()+1))
+                            const HP = (Math.floor((6)*Math.random()+5))
+                            const Dégâts = (Math.floor((6)*Math.random()+5))
+                            if (message.content.startsWith(prefix + "Découverte de l'amulette du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Amulette du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                         .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+    bot.on('message', message => {
+                           const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((15)*Math.random()+15))
+                                                        const Dégâts = (Math.floor((6)*Math.random()+5))
+
+                            if (message.content.startsWith(prefix + "Découverte de l'anneau du clan des loups")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Anneau du clan des loups :" , "Vous venez de découvrir cet objet !")
+                                 .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Epée du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Epée du clan des loups à une main :" , "C'est une épée rare uniquement possible à trouver dans le donjon sauvage !")
+           .addField("Améliore le 'Combo' en :" , "'Combo amélioré'")
+          .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc amélioré'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de l'épée du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Rapière du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Rapière du clan des loups à une main :" , "C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !")
+           .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc amélioré'")
+          .addField("Améliore le 'Coup précis' en :" , "'Coup précis amélioré'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la rapière du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Hache du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Hache du clan des loups à une main :" , "C'est une hache rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore le 'Coup circulaire' en :" , "'Coup circulaire amélioré'")
+          .addField("Améliore le 'Coup provocateur' en :" , "'Coup provocateur amélioré'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la hache du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Masse du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Masse du clan des loups à une main :" , "C'est une masse rare uniquement possible à trouver dans le donjon sauvage !")
+          .addField("Améliore le 'Coup provocateur' en :" , "'Coup provocateur amélioré'")  
+          .addField("Améliore le 'Blocage' en :" , "'Blocage amélioré'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la masse du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Katana du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Katana du clan des loups à une main :" , "C'est un katana rare uniquement possible à trouver dans le donjon sauvage !")
+           .addField("Améliore la 'Parade' en :" , "'Parade améliorée'")
+          .addField("Améliore le 'Coup normal' en :" , "'Coup normal amélioré'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte du katana du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Cimeterre du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Cimeterre du clan des loups à une main :" , "C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore 'Esquive' en :" , "'Esquive améliorée'")
+          .addField("Améliore la 'Parade' en :" , "'Parade améliorée'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la cimeterre du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Dague du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Dague du clan des loups à une main :" , "C'est une dague rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore le 'Coup précis' en :" , "'Coup précis amélioré'")
+           .addField("Améliore le 'Combo' en :" , "'Combo amélioré'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la dague du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Bouclier du clan des loups à une main")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Bouclier du clan des loups à une main :" , "C'est un bouclier rare uniquement possible à trouver dans le donjon sauvage !")
+          .addField("Améliore le 'Blocage' en :" , "'Blocage amélioré'")
+          .addField("Améliore le 'Coup normal' en :" , "'Coup normal amélioré'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "75 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte du bouclier du clan des loups à une main")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Epée du clan des loups à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Epée du clan des loups à deux mains :" , "C'est une épée rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore le 'Combo' en :" , "'Combo supérieur'")
+           .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc supérieur'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de l'épée du clan des loups à deux mains")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Rapière du clan des loups à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Rapière du clan des loups à deux mains :" , "C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc supérieur'")
+          .addField("Améliore le 'Coup précis' en :" , "'Coup précis supérieur'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la rapière du clan des loups à deux mains")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Hache du clan des loups à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Hache du clan des loups à deux mains :" , "C'est une hache rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Améliore le 'Coup circulaire' en :" , "'Coup circulaire supérieur'")
+          .addField("Améliore le 'Coup provocateur' en :" , "'Coup provocateur supérieur'")
+                    .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la hache du clan des loups à deux mains")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Masse du clan des loups à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Masse du clan des loups à deux mains :" , "C'est une masse rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore le 'Coup provocateur' en :" , "'Coup provocateur supérieur'")
+          .addField("Améliore le 'Blocage' en :" , "'Blocage supérieur'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la masse du clan des loups à deux mains")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Katana du clan des loups à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Katana du clan des loups à deux mains :" , "C'est un katana rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore la 'Parade' en :" , "'Parade supérieure'")
+          .addField("Améliore le 'Coup normal' en :" , "'Coup normal supérieur'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte du katana du clan des loups à deux mains")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Cimeterre du clan des loups à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Cimeterre du clan des loups à deux mains :" , "C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !")
+            .addField("Améliore 'Esquive' en :" , "'Esquive supérieure'")
+          .addField("Améliore la 'Parade' en :" , "'Parade supérieur'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la cimeterre du clan des loups à deux mains")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Glaive du clan des loups à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Glaive du clan des loups à deux mains :" , "C'est un glaive rare uniquement possible à trouver dans le donjon sauvage !")
+             .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc supérieur'")
+          .addField("Améliore le 'Coup circulaire' en :" , "'Coup circulaire supérieur'")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "150 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte du glaive du clan des loups à deux mains")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Faux du roi déchus")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Faux du roi déchus :" , "C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !")
+           .addField("Améliore le 'Combo' en :" , "'Combo supérieur'")
+          .addField("Améliore le 'Coup normal' en :" , "'Coup normal supérieur'")
+          .addField("Améliore le 'Coup précis' en :" , "'Coup précis supérieur'")
+          .addField("Améliore le 'Coup d'estoc' en :" , "'Coup d'estoc supérieur'")
+          .addField("Améliore 'Esquive' en :" , "''")
+          .addField("Niveau minimum requis pour le porter :" , "11")
+             .addField("Prix de revente :" , "500 cols")
+             .addField("Si vous trouvez cet objet :" , "=Découverte de la faux du roi déchus")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+
+
+
+
+
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((7)*Math.random()+4))
+                             if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Epée du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((7)*Math.random()+4))
+                             if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Rapière du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((7)*Math.random()+4))
+                             if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Hache du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((7)*Math.random()+4))
+                             if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Masse du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((7)*Math.random()+4))
+                             if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Katana du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((7)*Math.random()+4))
+                             if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Cimeterre du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((7)*Math.random()+4))
+                             if (message.content.startsWith(prefix + "Découverte de la dague du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Dague du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                                        const Défense = (Math.floor((6)*Math.random()+2))
+                            const HP = (Math.floor((26)*Math.random()+25))
+                             if (message.content.startsWith(prefix + "Découverte du bouclier du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Bouclier du clan des loups à une main :" , "Vous venez de découvrir cet objet !")
+                               .addField("Points d'armure :" , +Défense)
+                              .addField("HP :" , +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+
+
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((13)*Math.random()+8))
+                             if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Epée du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((13)*Math.random()+8))
+                             if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Rapière du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((13)*Math.random()+8))
+                             if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Hache du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((13)*Math.random()+8))
+                             if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Masse du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((13)*Math.random()+8))
+                             if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Katana du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((13)*Math.random()+8))
+                             if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Cimeterre du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+bot.on('message', message => {
+                            const Dégâts = (Math.floor((13)*Math.random()+8))
+                             if (message.content.startsWith(prefix + "Découverte du glaive du clan des loups à deux mains")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField("Glaive du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
+                              .addField("Points de dégâts :" , +Dégâts)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+
+
+
+
+
+
+
+
       bot.on('message', message => {
         if (message.content.startsWith(prefix + "Casque rouillé")) {
           const embed = new Discord.RichEmbed()
@@ -10166,34 +11071,20 @@ bot.on('message', message => {
                             let cont = message.content.slice(prefix.length).split(" ");
                             const args = cont.slice(1);
                             if (message.content.startsWith(prefix + "Donjon sauvage récompenses")) {
-                              const A = (Math.floor((100)*Math.random()+1))
-                              const B = (Math.floor((3)*Math.random()+2))
-                              const C = (Math.floor((3)*Math.random()+2))
-                              const D = (Math.floor((2*0.50)*Math.random()+1))
-                              const E = (Math.floor((3)*Math.random()+2))
-                              const F = (Math.floor((2*0.50)*Math.random()+1))
-                              const G = (Math.floor((751)*Math.random()+750))
-                              const H = (Math.floor((7*0.50)*Math.random()))
-                              const I = (Math.floor((7*0.50)*Math.random()))
-                              const J = (Math.floor((7*0.50)*Math.random()))
-                              const K = (Math.floor((6*0.80)*Math.random()))
-                              const L = (Math.floor((7*0.75)*Math.random()))
+                              const G = (Math.floor((1001)*Math.random()+1000))
+                              const H = (Math.floor((2)*Math.random()+1))
+                              const I = (Math.floor((3)*Math.random()+1))
+                              const J = (Math.floor((2)*Math.random()))
+                              const K = (Math.floor((2)*Math.random()+1))
+                              const L = (Math.floor((2)*Math.random()))
                               const M = (Math.floor((7*0.75)*Math.random()))
                               const N = (Math.floor((7*0.75)*Math.random()))
                                const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Déplacement en avant :" , "Vous vous déplacez à travers le donjon en avant, vous finissez par tomber sur un coffre contenant des biens précieux !")
-                                 .addField("Cols :" , +G)
-                                 .addField("Potions faibles de soin :" , +H)
-                                 .addField("Potions légères de force :" , +I)
-                                 .addField("Potions légères de défense :" , +J)
-                                 .addField("Parchemin de poison faible :" , +K)
-                                 .addField("Equipements en peau résistante au choix :" , +L)
-                                 .addField("Armes à une main basique au choix :" , +M)
-                                 .addField("Armes à deux mains basique au choix :" , +N)
+                                 .addField("Coffre de fin du donjon sauvage :" , "Vous finissez à peine le combat final que vous trouvez finalement le coffre suivant, partagez le entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Parchemin de poison faible : " +H+ "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\nArme du clan des loups à une main : " +K+ "\nArme du clan des loups à deux mains : " +L)
                                  .setColor(3447003)
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                  .setTimestamp()
                                  message.channel.send({embed})}
           
