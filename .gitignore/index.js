@@ -194,13 +194,14 @@ bot.on('message', message => {
     const Orge = (Math.floor((31)*Math.random()+20))
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
+    const Clef = (Math.floor((2-(0.90))*Math.random()))
      if(FF > 0) {
     const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
+      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
       .setTimestamp()
       message.channel.send({embed})}
   if (FF < 0) {
@@ -209,7 +210,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
+      .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
         .addField("Sucres d'orge :" , +Orge)
       .setTimestamp()
       message.channel.send({embed})}
@@ -835,13 +836,14 @@ bot.on('message', message => {
   const I = (Math.floor((2-(0.90))*Math.random()))
   const Oeufs = (Math.floor((2-(0.98))*Math.random()))
   const Orge = (Math.floor((5)*Math.random()+1))
+  const Clef = (Math.floor((2-(0.98))*Math.random()))
   if(FF > 0) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
     .setTimestamp()
     message.channel.send({embed})}
     if(FF < 0) {
@@ -850,7 +852,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
     .setTimestamp()
     message.channel.send({embed})}
         }
@@ -872,13 +874,14 @@ bot.on('message', message => {
   const G = (Math.floor((8*1)*Math.random()+7*1))
   const I = (Math.floor((2-(0.90))*Math.random()))
   const Oeufs = (Math.floor((2-(0.98))*Math.random()))
+    const Clef = (Math.floor((2-(0.99))*Math.random()))
   if(FF > 0) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
     .setTimestamp()
     message.channel.send({embed})}
     if(FF < 0) {
@@ -887,7 +890,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+    .addField("Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
     .setTimestamp()
     message.channel.send({embed})}
         }
@@ -1211,13 +1214,15 @@ let cont = message.content.slice(prefix.length).split(" ");
             const FF = F-(X*4)
             const G = (Math.floor((21)*Math.random()+20))
             const Oeufs = (Math.floor((2-(0.97))*Math.random()))
+              const Clef = (Math.floor((2-(0.96))*Math.random()))
+
              if(FF > 0) {
               const embed = new Discord.RichEmbed()
               .setColor(3447003)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
               .setTimestamp()
               message.channel.send({embed})}
     if(FF < 0) {
@@ -1226,7 +1231,7 @@ let cont = message.content.slice(prefix.length).split(" ");
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
               .setTimestamp()
               message.channel.send({embed})}
                   }
@@ -1248,13 +1253,15 @@ let cont = message.content.slice(prefix.length).split(" ");
             const G = (Math.floor((15)*Math.random()+15))
             const Orge = (Math.floor((5)*Math.random()+1))
             const Oeufs = (Math.floor((2-(0.97))*Math.random()))
+              const Clef = (Math.floor((2-(0.98))*Math.random()))
+
              if(FF > 0) {
               const embed = new Discord.RichEmbed()
               .setColor(3447003)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
               .setTimestamp()
               message.channel.send({embed})}
     if(FF < 0) {
@@ -1263,7 +1270,7 @@ let cont = message.content.slice(prefix.length).split(" ");
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
               .setTimestamp()
               message.channel.send({embed})}
                   }
@@ -1283,13 +1290,15 @@ let cont = message.content.slice(prefix.length).split(" ");
               const D = (Math.floor((2-(0.80))*Math.random()))
               const Orge = (Math.floor((5)*Math.random()+1))
               const E = (Math.floor((2-(0.95))*Math.random()))
+                const Clef = (Math.floor((2-(0.98))*Math.random()))
+
                if(FF > 0) {
                 const embed = new Discord.RichEmbed()
                 .setColor(3447003)
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                 .setTimestamp()
                 message.channel.send({embed})}
     if(FF < 0) {
@@ -1298,7 +1307,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                 .setTimestamp()
                 message.channel.send({embed})}
                     }
@@ -1318,13 +1327,15 @@ let cont = message.content.slice(prefix.length).split(" ");
               const D = (Math.floor((2-(0.90))*Math.random()))
               const E = (Math.floor((2-(0.98))*Math.random()))
               const Orge = (Math.floor((3)*Math.random()+1))
+                const Clef = (Math.floor((2-(0.99))*Math.random()))
+
                if(FF > 0) {
                 const embed = new Discord.RichEmbed()
                 .setColor(3447003)
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                 .setTimestamp()
                 message.channel.send({embed})}
     if(FF < 0) {
@@ -1333,7 +1344,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                 .setTimestamp()
                 message.channel.send({embed})}
                     }
@@ -1450,6 +1461,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                      const T = (Math.floor((2-(0.90))*Math.random()))
                       const U = (Math.floor((2-(0.95))*Math.random()))
                       const V = (Math.floor((2-(0.95))*Math.random()))
+                        const Clef = (Math.floor((2-(0.98))*Math.random()))
+
                       const Orge = (Math.floor((5)*Math.random()+1))
                   const F = (Math.floor((25*1)*Math.random()+25*1))
                   const FF = F-(X*3)
@@ -1460,7 +1473,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                     .setTimestamp()
                     message.channel.send({embed})}
     if(FF < 0) {
@@ -1469,7 +1482,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                     .setTimestamp()
                     message.channel.send({embed})}
                         }
@@ -1492,6 +1505,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                      const R = (Math.floor((2-(0.99))*Math.random()))
                     const S = (Math.floor((2-(0.95))*Math.random()))
                      const T = (Math.floor((2-(0.95))*Math.random()))
+                       const Clef = (Math.floor((2-(0.99))*Math.random()))
+
                       const U = (Math.floor((2-(0.98))*Math.random()))
                       const V = (Math.floor((2-(0.98))*Math.random()))
                       const Orge = (Math.floor((3)*Math.random()+1))
@@ -1504,7 +1519,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                     .setTimestamp()
                     message.channel.send({embed})}
     if(FF < 0) {
@@ -1513,7 +1528,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                     .setTimestamp()
                     message.channel.send({embed})}
                         }
@@ -1541,6 +1556,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                       const V = (Math.floor((2-(0.90))*Math.random()))
                       const W = (Math.floor((2-(0.90))*Math.random()))
                       const XX = (Math.floor((2-(0.90))*Math.random()))
+                        const Clef = (Math.floor((2-(0.95))*Math.random()))
+
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
@@ -1553,7 +1570,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                       .setTimestamp()
                       message.channel.send({embed})}
     if(FF < 0) {
@@ -1562,7 +1579,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                       .setTimestamp()
                       message.channel.send({embed})}
                           }
@@ -1589,6 +1606,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                      const T = (Math.floor((2-(0.98))*Math.random()))
                       const U = (Math.floor((2-(0.95))*Math.random()))
                       const V = (Math.floor((2-(0.95))*Math.random()))
+                        const Clef = (Math.floor((2-(0.97))*Math.random()))
+
                       const W = (Math.floor((2-(0.95))*Math.random()))
                       const XX = (Math.floor((2-(0.95))*Math.random()))
                        const Y = (Math.floor((2-(0.98))*Math.random()))
@@ -1602,7 +1621,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                       .setTimestamp()
                       message.channel.send({embed})}
     if(FF < 0) {
@@ -1611,7 +1630,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
                       .setTimestamp()
                       message.channel.send({embed})}
                           }
