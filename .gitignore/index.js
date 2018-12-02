@@ -252,7 +252,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
-   if(X > 51){
+  else if(X > 51){
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
      const ViandeLapin = (Math.floor((2)*Math.random()+1))
@@ -306,7 +306,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
-       if(X > 51){
+      else if(X > 51){
         const Minerai = (Math.floor((2)*Math.random()+1))
         const Bois = (Math.floor((2)*Math.random()+1))
          const Estragon = (Math.floor((2)*Math.random()+1))
