@@ -8300,7 +8300,7 @@ bot.on('message', message => {
                               });
 
 bot.on('message', message => {
-                            const Dégâts = (Math.floor((31)*Math.random()+20))
+                            const Dégâts = (Math.floor((26)*Math.random()+25))
                              if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
