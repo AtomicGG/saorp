@@ -232,8 +232,12 @@ bot.on('message', message => {
        .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
        .setTimestamp()
-       message.channel.send({embed})
-} else if (X < 50) {
+       message.channel.send({embed})}
+         talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+18000);
+     }, 86400000);
+    else if (X < 50) {
     const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((3)*Math.random()+2))
@@ -286,8 +290,12 @@ bot.on('message', message => {
            .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
            .setTimestamp()
-           message.channel.send({embed})
-          } else if (X < 50) {
+           message.channel.send({embed})}
+             talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+18000);
+     }, 86400000);
+        else if (X < 50) {
         const Sanglier = (Math.floor((3)*Math.random()+2))
         const Renard = (Math.floor((3)*Math.random()+2))
         const Chien = (Math.floor((2)*Math.random()))
