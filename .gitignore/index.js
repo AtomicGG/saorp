@@ -233,7 +233,7 @@ bot.on('message', message => {
        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
        .setTimestamp()
        message.channel.send({embed})
-} else if (X < 50) {
+} if (X < 50) {
     const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((3)*Math.random()+2))
@@ -252,7 +252,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
-  else if(X > 51){
+  if (X > 51){
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
      const ViandeLapin = (Math.floor((2)*Math.random()+1))
@@ -287,7 +287,7 @@ bot.on('message', message => {
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
            .setTimestamp()
            message.channel.send({embed})
-          } else if (X < 50) {
+          } if (X < 50) {
         const Sanglier = (Math.floor((3)*Math.random()+2))
         const Renard = (Math.floor((3)*Math.random()+2))
         const Chien = (Math.floor((2)*Math.random()))
@@ -306,7 +306,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
-      else if(X > 51){
+      if (X > 51){
         const Minerai = (Math.floor((2)*Math.random()+1))
         const Bois = (Math.floor((2)*Math.random()+1))
          const Estragon = (Math.floor((2)*Math.random()+1))
