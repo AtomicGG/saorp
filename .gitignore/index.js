@@ -237,7 +237,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18000);
      }, 86400000);
-    else if (X < 50) {
+    if (X < 50) {
     const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((3)*Math.random()+2))
@@ -295,7 +295,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18000);
      }, 86400000);
-        else if (X < 50) {
+        if (X < 50) {
         const Sanglier = (Math.floor((3)*Math.random()+2))
         const Renard = (Math.floor((3)*Math.random()+2))
         const Chien = (Math.floor((2)*Math.random()))
