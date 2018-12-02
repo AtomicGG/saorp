@@ -203,7 +203,7 @@ bot.on('message', message => {
       .addField("Quête de la forêt :" , "Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
       message.channel.send({embed})}
-  else (FF < 0) {
+  if (FF < 0) {
     const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -252,7 +252,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
- else (X > 51){
+ else {
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
      const ViandeLapin = (Math.floor((2)*Math.random()+1))
@@ -306,7 +306,7 @@ bot.on('message', message => {
       setTimeout(() => {
        talkedRecently.delete(message.author.id+18);
      }, 86400000);
-      if (X > 51){
+      else {
         const Minerai = (Math.floor((2)*Math.random()+1))
         const Bois = (Math.floor((2)*Math.random()+1))
          const Estragon = (Math.floor((2)*Math.random()+1))
