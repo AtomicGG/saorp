@@ -2821,7 +2821,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((61)*Math.random()+40))
+     const C = (Math.floor((51)*Math.random()+30))
      if (B < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2849,7 +2849,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(4).join(" : ");
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((81)*Math.random()+50))
+     const C = (Math.floor((61)*Math.random()+40))
      if (B < 55){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
