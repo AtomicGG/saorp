@@ -99,7 +99,7 @@ bot.on("message", (message) => {
         .addBlankField(true)
         .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "=Interception simple : [Dégâts de l'attaque de l'ennemis]\n=Interception améliorée : [Dégâts de l'attaque de l'ennemis]")
          .addBlankField(true)
-        .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "=Fuite simple\n=Fuite améliorée")
+        .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "=Fuite simple\n=Fuite améliorée\n=Fuite supérieure\n=Fuite suprême")
          .addBlankField(true)
       .addField("Pour effectuer un coup sauté :" , "=Coup sauté simple : [Vos dégâts]")
           .addBlankField(true)
@@ -4477,7 +4477,7 @@ const args = cont.slice(1);
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B < 60){
+    if (B < 50){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4508,7 +4508,7 @@ const args = cont.slice(1);
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
- if (B < 50){
+ if (B < 45){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4518,7 +4518,70 @@ const args = cont.slice(1);
      .setTimestamp()
      message.channel.send({embed})
     }
-    if (51 < B){
+    if (46 < B){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Vous réussissez à fuir le combat :" , "La chance est avec vous")
+      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+    }
+});
+
+
+bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+ if (message.content.startsWith(prefix + "Fuite supérieure")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+ if (B < 40){
+     const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("Vous n'arrivez pas à fuir..." , "Dommage pour vous")
+     .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+     .setTimestamp()
+     message.channel.send({embed})
+    }
+    if (41 < B){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Vous réussissez à fuir le combat :" , "La chance est avec vous")
+      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+       .setTimestamp()
+       message.channel.send({embed})
+      }
+    }
+});
+
+
+
+bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+ if (message.content.startsWith(prefix + "Fuite suprême")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+ if (B < 35){
+     const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("Vous n'arrivez pas à fuir..." , "Dommage pour vous")
+     .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+     .setTimestamp()
+     message.channel.send({embed})
+    }
+    if (36 < B){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
