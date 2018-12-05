@@ -709,6 +709,29 @@ bot.on('message', message => {
               })
 
 
+
+            bot.on('message', message => {
+              if (message.content === prefix + "Loup de sang d'élite") {
+                const embed = new Discord.RichEmbed()
+                .setColor(3447003)
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setTitle("Loup de sang :" , "Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
+                .addField("Point de vie :" , "600")
+                .addField("Points de dégâts" , "35")
+                .addField("Pour engager le combat :" , "=Loup de sang d'élite attaque")
+                .addField("Lorsque le loup de sang reçoit un coup :" , "=Loup de sang d'élite défense : [Points de dégâts de votre coup]")
+                .addField("Les récompenses une fois mort en solo :" , "=Loup de sang d'élite récompenses solo : [Votre niveau]")
+                                .addField("Les récompenses une fois mort en groupe :" , "=Loup de sang d'élite récompenses groupe : [Votre niveau]")
+
+                .setTimestamp()
+                message.channel.send({embed})
+                }
+              })
+
+
+
+
               
 
 bot.on('message', message => {
@@ -773,6 +796,26 @@ bot.on('message', message => {
     message.channel.send({embed})
     }
   })
+
+
+bot.on('message', message => {
+ if (message.content === prefix + "Bandit sombre d'élite") {
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Bandit sombre :" , "Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
+    .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
+    .addField("Point de vie :" , "750")
+    .addField("Points de dégâts" , "50")
+    .addField("Pour engager le combat :" , "=Bandit sombre d'élite attaque")
+    .addField("Lorsque le bandit sombre reçoit un coup :" , "=Bandit sombre d'élite défense : [Points de dégâts de votre coup]")
+    .addField("Les récompenses une fois mort en solo :" , "=Bandit sombre d'élite récompenses solo : [Votre niveau]")
+     .addField("Les récompenses une fois mort en groupe :" , "=Bandit sombre d'élite récompenses groupe : [Votre niveau]")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
+
 
 
 bot.on('message', message => {
@@ -1238,6 +1281,107 @@ let cont = message.content.slice(prefix.length).split(" ");
             }) ;
 
 
+
+  bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup de sang d'élite récompenses solo")) {
+  let X = args.slice(6).join(" : ");                                         
+  const I = (Math.floor((2-(0.95))*Math.random()))
+                  const J = (Math.floor((2-(0.98))*Math.random()))
+                  const K = (Math.floor((2-(0.95))*Math.random()))
+                  const L = (Math.floor((2-(0.98))*Math.random()))
+                  const M = (Math.floor((2-(0.95))*Math.random()))
+                  const N = (Math.floor((2-(0.95))*Math.random()))
+                  const O = (Math.floor((2-(0.95))*Math.random()))
+                  const P = (Math.floor((2-(0.95))*Math.random()))
+                  const Q = (Math.floor((2-(0.95))*Math.random()))
+                  const R = (Math.floor((2-(0.95))*Math.random()))
+                  const S = (Math.floor((2-(0.95))*Math.random()))
+                     const T = (Math.floor((2-(0.95))*Math.random()))
+                      const U = (Math.floor((2-(0.90))*Math.random()))
+                      const V = (Math.floor((2-(0.90))*Math.random()))
+                      const W = (Math.floor((2-(0.90))*Math.random()))
+                      const XX = (Math.floor((2-(0.90))*Math.random()))
+                       const Y = (Math.floor((2-(0.95))*Math.random()))
+                        const YY = (Math.floor((2-(0.95))*Math.random()))
+                        const Orge = (Math.floor((9)*Math.random()+2))
+                    const F = (Math.floor((65*1)*Math.random()+65*1))
+                    const FF = F-(X*4)
+                    const G = (Math.floor((28*1)*Math.random()+28*1))
+             if(FF > 0) {
+              const embed = new Discord.RichEmbed()
+              .setColor(3447003)
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+              .setTimestamp()
+              message.channel.send({embed})}
+    if(FF < 0) {
+        const embed = new Discord.RichEmbed()
+              .setColor(3447003)
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+              .setTimestamp()
+              message.channel.send({embed})}
+                  }
+            }) ;
+
+
+ bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup de sang d'élite récompenses groupe")) {
+  let X = args.slice(6).join(" : ");                       
+                      const I = (Math.floor((2-(0.97))*Math.random()))
+                  const J = (Math.floor((2-(0.99))*Math.random()))
+                  const K = (Math.floor((2-(0.97))*Math.random()))
+                  const L = (Math.floor((2-(0.99))*Math.random()))
+                  const M = (Math.floor((2-(0.95))*Math.random()))
+                  const N = (Math.floor((2-(0.95))*Math.random()))
+                  const O = (Math.floor((2-(0.95))*Math.random()))
+                  const P = (Math.floor((2-(0.95))*Math.random()))
+                  const Q = (Math.floor((2-(0.95))*Math.random()))
+                  const R = (Math.floor((2-(0.95))*Math.random()))
+                  const S = (Math.floor((2-(0.95))*Math.random()))
+                     const T = (Math.floor((2-(0.95))*Math.random()))
+                      const U = (Math.floor((2-(0.90))*Math.random()))
+                      const V = (Math.floor((2-(0.90))*Math.random()))
+                      const W = (Math.floor((2-(0.90))*Math.random()))
+                      const XX = (Math.floor((2-(0.90))*Math.random()))
+                       const Y = (Math.floor((2-(0.95))*Math.random()))
+                        const YY = (Math.floor((2-(0.95))*Math.random()))
+                        const Orge = (Math.floor((9)*Math.random()+2))
+                    const F = (Math.floor((50*1)*Math.random()+50*1))
+                    const FF = F-(X*4)
+                    const G = (Math.floor((19*1)*Math.random()+18*1))
+                     if(FF > 0) {
+                      const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+    if(FF < 0) {
+       const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                          }
+                    }) ;
+
+
+
+
           bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -1261,7 +1405,7 @@ let cont = message.content.slice(prefix.length).split(" ");
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField("Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
               .setTimestamp()
               message.channel.send({embed})}
     if(FF < 0) {
@@ -1580,6 +1724,105 @@ let cont = message.content.slice(prefix.length).split(" ");
                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
                 .addField("Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                          }
+                    }) ;
+
+
+ bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses solo")) {
+  let X = args.slice(5).join(" : ");                       
+                      const I = (Math.floor((2-(0.95))*Math.random()))
+                  const J = (Math.floor((2-(0.98))*Math.random()))
+                  const K = (Math.floor((2-(0.95))*Math.random()))
+                  const L = (Math.floor((2-(0.98))*Math.random()))
+                  const M = (Math.floor((2-(0.95))*Math.random()))
+                  const N = (Math.floor((2-(0.95))*Math.random()))
+                  const O = (Math.floor((2-(0.95))*Math.random()))
+                  const P = (Math.floor((2-(0.95))*Math.random()))
+                  const Q = (Math.floor((2-(0.95))*Math.random()))
+                  const R = (Math.floor((2-(0.95))*Math.random()))
+                  const S = (Math.floor((2-(0.95))*Math.random()))
+                     const T = (Math.floor((2-(0.95))*Math.random()))
+                      const U = (Math.floor((2-(0.90))*Math.random()))
+                      const V = (Math.floor((2-(0.90))*Math.random()))
+                      const W = (Math.floor((2-(0.90))*Math.random()))
+                      const XX = (Math.floor((2-(0.90))*Math.random()))
+                       const Y = (Math.floor((2-(0.95))*Math.random()))
+                        const YY = (Math.floor((2-(0.95))*Math.random()))
+                        const Orge = (Math.floor((9)*Math.random()+2))
+                    const F = (Math.floor((70*1)*Math.random()+70*1))
+                    const FF = F-(X*4)
+                    const G = (Math.floor((31*1)*Math.random()+30*1))
+                     if(FF > 0) {
+                      const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+    if(FF < 0) {
+       const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                          }
+                    }) ;
+
+
+
+ bot.on('message', message => {
+let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses groupe")) {
+  let X = args.slice(5).join(" : ");                       
+                      const I = (Math.floor((2-(0.97))*Math.random()))
+                  const J = (Math.floor((2-(0.99))*Math.random()))
+                  const K = (Math.floor((2-(0.97))*Math.random()))
+                  const L = (Math.floor((2-(0.99))*Math.random()))
+                  const M = (Math.floor((2-(0.95))*Math.random()))
+                  const N = (Math.floor((2-(0.95))*Math.random()))
+                  const O = (Math.floor((2-(0.95))*Math.random()))
+                  const P = (Math.floor((2-(0.95))*Math.random()))
+                  const Q = (Math.floor((2-(0.95))*Math.random()))
+                  const R = (Math.floor((2-(0.95))*Math.random()))
+                  const S = (Math.floor((2-(0.95))*Math.random()))
+                     const T = (Math.floor((2-(0.95))*Math.random()))
+                      const U = (Math.floor((2-(0.90))*Math.random()))
+                      const V = (Math.floor((2-(0.90))*Math.random()))
+                      const W = (Math.floor((2-(0.90))*Math.random()))
+                      const XX = (Math.floor((2-(0.90))*Math.random()))
+                       const Y = (Math.floor((2-(0.95))*Math.random()))
+                        const YY = (Math.floor((2-(0.95))*Math.random()))
+                        const Orge = (Math.floor((9)*Math.random()+2))
+                    const F = (Math.floor((56*1)*Math.random()+55*1))
+                    const FF = F-(X*4)
+                    const G = (Math.floor((22*1)*Math.random()+22*1))
+                     if(FF > 0) {
+                      const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+                      .setTimestamp()
+                      message.channel.send({embed})}
+    if(FF < 0) {
+       const embed = new Discord.RichEmbed()
+                      .setColor(3447003)
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                .addField("Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
                       .setTimestamp()
                       message.channel.send({embed})}
                           }
@@ -1936,6 +2179,30 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Loup de sang d'élite attaque")) {
+    const Dégâts = 35
+     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts)))
+     const B = (Math.floor((100)*Math.random()+1))
+     if (B < 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Loup de sang :" , "Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (21 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup de sang :" , "Le loup de sang d'élite hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Slime attaque")) {
     const Dégâts = 12
      const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
@@ -2123,6 +2390,33 @@ bot.on('message', message => {
           }
     }
 );
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bandit sombre d'élite attaque")) {
+    const Dégâts = 50
+     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts*1.5)))
+     const B = (Math.floor((100)*Math.random()+1))
+     if (B < 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Bandit sombre :" , "Le bandit sombre d'élite tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (6 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Bandit sombre :" , "Le bandit sombre d'élite sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
 
 
 bot.on('message', message => {
@@ -2435,6 +2729,34 @@ bot.on('message', message => {
 );
 
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup de sang d'élite défense")) {
+    let Dégâts = args.slice(5).join(" : ");
+     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/1.5)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((46)*Math.random()+25))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Loup de sang :" , "Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup de sang :" , "Le loup de sang d'élite arrive à attraper votre arme dans sa gueule, entre ses crocs, et se jette sur vous et votre cou qu'il mord, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -2505,9 +2827,37 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit sombre :" , "Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      .addField("Bandit sombre :" , "Le bandit sombre d'élite souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Bandit sombre :" , "Le bandit sombre d'élite sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bandit sombre d'élite défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((81)*Math.random()+50))
+     if (B < 55){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Bandit sombre :" , "Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (56 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
