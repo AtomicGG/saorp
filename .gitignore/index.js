@@ -6809,7 +6809,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Les monstres :" , "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :\n\n`=Renard`\n`=Sanglier`\n`=Chien`\n`=Lapin géant`\n`=Bandit débutant`\n`=Loup`\n`=Slime`\n`=Loup de sang`\n`=Bandit expérimenté`\n`=Bandit sombre`\n`=Loup de sang d'élite`\n`=Bandit sombre d'élite`")
+       .addField("Les monstres :" , "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :\n\n`=Renard`\n`=Sanglier`\n`=Chien`\n`=Lapin géant`\n`=Bandit débutant`\n`=Loup`\n`=Slime`\n`=Loup de sang`\n`=Bandit expérimenté`\n`=Bandit sombre`\n`=Loup de sang d'élite`\n`=Bandit sombre d'élite`\n`=Loup gigantesque`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
