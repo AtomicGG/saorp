@@ -10927,7 +10927,7 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                              if(A > 76 & A < 80){
+                              if(A > 76 & A < 85){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -10936,7 +10936,7 @@ bot.on('message', message => {
                                  .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                                if(A > 81 & A < 100){
+                                if(A > 86 & A < 100){
                                   const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
