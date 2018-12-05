@@ -5045,7 +5045,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, leur importance est classé de haut en bas, tu n'est pas obligé de tout savoir obligatoirement dés le début alors prend ton temps !\n\n`=SAO`\n`=Personnage`\n`=Classes`\n`=Compétences`\n`=Particularités`\n`=Amélioration`\n`=Armes`\n`=Trajets`\n`=Rolls`\n`=Combat`\n`=Etats`\n`=Quêtes`\n`=Mort`\n`=Rétablissement`\n`=Niveaux`\n`=Caractéristiques`\n`=Zones`\n`=Liste d'objets`\n`=Crafts`\n`=Spécialisations`\n`=Cristal`\n`=Ville`\n`=Extérieur`\n`=Souterrains`\n`=Constructions`\n`=Menus`\n`=Donjons`\n`=Familiers`\n`=Guilde`\n`=Métiers`\n`=Dirigeant`\n`=Garde`\n`=Mercenaire`\n`=Prison`")
+    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, leur importance est classé de haut en bas, tu n'est pas obligé de tout savoir obligatoirement dés le début alors prend ton temps !\n\n`=SAO`\n`=Personnage`\n`=Classes`\n`=Compétences`\n`=Particularités`\n`=Amélioration`\n`=Armes`\n`=Trajets`\n`=Rolls`\n`=Combat`\n`=Etats`\n`=Quêtes`\n`=Mort`\n`=Rétablissement`\n`=Niveaux`\n`=Caractéristiques`\n`=Zones`\n`=Monstres`\n`=Liste d'objets`\n`=Crafts`\n`=Spécialisations`\n`=Cristal`\n`=Ville`\n`=Extérieur`\n`=Souterrains`\n`=Constructions`\n`=Menus`\n`=Donjons`\n`=Familiers`\n`=Guilde`\n`=Métiers`\n`=Dirigeant`\n`=Garde`\n`=Mercenaire`\n`=Prison`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -5224,7 +5224,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Les zones :" , "Quand vous entrez dans une zone et que vous voulez voir les activités ainsi que ce qui se cache à l'intérieur, vous pourrez écrire :\n\n=[Nom de la zone]\n\nPar exemple si vous arrivez dans les plaines pour découvrir le lieu, écrivez =Plaines !\n\nLes zones actuellement disponible sont :\n\n=Plaines\n=Forêt")
+    .addField("Les zones :" , "Quand vous entrez dans une zone et que vous voulez voir les activités ainsi que ce qui se cache à l'intérieur, vous pourrez écrire :\n\n`=[Nom de la zone]`\n\nPar exemple si vous arrivez dans les plaines pour découvrir le lieu et voir ce qui est possible de faire à l'intérieur, écrivez `=Plaines` !\n\nLes zones actuellement disponible sont :\n\n`=Plaines`\n`=Forêt`")
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -6796,6 +6796,20 @@ bot.on('message', message => {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
        .addField("Les quêtes :" , "Ce sont des objectifs à accomplir pour avoir accès à des récompenses comme des cols, des points d'expériences ainsi que des objets !\n\nVous aurez le droit à avoir une quête aléatoire selon la zone, par exemples les quêtes aux plaines sont différentes des quêtes en forêt !\n\nVous n'aurez droit que d'accomplir une seul quêtes par jour, vous aurez droit d'en refaire une seulement 24 H plus tard minimum !")
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Monstres")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField("Les monstres :" , "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :\n\n`=Renard`\n`=Sanglier`\n`=Chien`\n`=Lapin géant`\n`=Bandit débutant`\n`=Loup`\n`=Slime`\n`=Loup de sang`\n`=Bandit expérimenté`\n`=Bandit sombre`\n`=Loup de sang d'élite`\n`=Bandit sombre d'élite`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
