@@ -256,8 +256,8 @@ bot.on('message', message => {
     } else if (X > 51) {
     const Percil = (Math.floor((2)*Math.random()+1))
     const Baie = (Math.floor((2)*Math.random()+1))
-     const ViandeLapin = (Math.floor((2)*Math.random()+1))
-      const PeauLapin = (Math.floor((2)*Math.random()+1))
+     const ViandeLapin = (Math.floor((2)*Math.random()))
+      const PeauLapin = (Math.floor((2)*Math.random()))
         const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -312,8 +312,8 @@ bot.on('message', message => {
         const Minerai = (Math.floor((2)*Math.random()+1))
         const Bois = (Math.floor((2)*Math.random()+1))
          const Estragon = (Math.floor((2)*Math.random()+1))
-          const ViandeTaupe = (Math.floor((2)*Math.random()+1))
-           const PeauTaupe = (Math.floor((2)*Math.random()+1))
+          const ViandeTaupe = (Math.floor((2)*Math.random()))
+           const PeauTaupe = (Math.floor((2)*Math.random()))
             const embed = new Discord.RichEmbed()
           .setColor(3447003)
           .setAuthor(message.author.username , message.author.avatarURL)
@@ -2327,7 +2327,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Slime :" , "Le slime se déplace sur le côté lors de votre coup et crache un genre de projectile d'acide sur vous, vous n'arrivez pas à le toucher, il ne prend aucun dégâts et il inflige" +C+ " points de dégâts")
+          .addField("Slime :" , "Le slime se déplace sur le côté lors de votre coup et crache un genre de projectile d'acide sur vous, vous n'arrivez pas à le toucher, il ne prend aucun dégâts et il inflige " +C+ " points de dégâts")
           .setTimestamp()
           message.channel.send({embed})}
             }
@@ -4284,7 +4284,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-        .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
+        .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -4315,7 +4315,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-                .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
+                .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -4346,7 +4346,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-                .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
+                .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -4377,7 +4377,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre parade :" , "=Parade réussis : [Vos dégâts]")
+         .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -4391,7 +4391,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Parade réussis")) {
+  if (message.content.startsWith(prefix + "Parade réussie")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
@@ -10909,25 +10909,25 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                              if(A > 76 & A < 80){
+                              if(A > 61 & A < 70){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...\n\nVous pouvez continuer à vous déplacer dans le donjon")
+                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...\n\n[Votre armure ne réduit rien]\n\nVous pouvez continuer à vous déplacer dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                                  if(A > 81 & A < 90){
+                                  if(A > 71 & A < 80){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...\n\nVous pouvez continuer à vous déplacer dans le donjon")
+                                 .addField("Donjon sauvage :" , "Vous vous déplacez à travers le donjon, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...\n\n[Votre armure ne réduit rien]\n\nVous pouvez continuer à vous déplacer dans le donjon")
                                  .setColor(3447003)
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                              if(A > 91 & A < 95){
+                              if(A > 81 & A < 85){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -10936,7 +10936,7 @@ bot.on('message', message => {
                                  .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-                                if(A > 96 & A < 100){
+                                if(A > 86 & A < 100){
                                   const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
