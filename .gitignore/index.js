@@ -2183,7 +2183,7 @@ bot.on('message', message => {
         .addField("Chien :" , "Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
-      if (B < 91){
+      if (91 < B){
     const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
