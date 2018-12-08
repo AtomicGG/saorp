@@ -11150,7 +11150,7 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
      .addField("Oeuf déformé" , "En ouvrant l'oeuf déformé, vous découvrez un bébé loup de sang !")
-                                                                                                                              .addField("Bébé loup de sang :" ,"Après chacunes de vos attaques, le bébé renard attaque : =Bébé loup de sang attaque")
+                                                                                                                              .addField("Bébé loup de sang :" ,"Après chacunes de vos attaques, le bébé loup de sang attaque : =Bébé loup de sang attaque")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                         message.channel.send({embed})}
