@@ -2019,6 +2019,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup attaque")) {
      const A = (Math.floor((7)*Math.random()+10))
      const B = (Math.floor((100)*Math.random()+1))
+     const B = (Math.floor((6)*Math.random()+5))
      if (B < 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2026,12 +2027,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Loup :" , "Le loup sautant sur vous, il n'arrive pas à vous toucher et retombe lourdement au sol, vous avez de la chance !")
       message.channel.send({embed})}
-      if (51 < B){
+      if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Loup :" , "Le loup bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+       if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup :" , "Le loup bondit sur vous ses crocs deviennent étrangement rouge et grandissent, il inflige " +A+ " points de dégâts et reprend " +Z+ " HP)
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2093,6 +2102,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Renard attaque")) {
      const A = (Math.floor((3)*Math.random()+4))
      const B = (Math.floor((100)*Math.random()+1))
+     const Z = (Math.floor((3)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2100,12 +2110,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Renard :" , "Le renard d'un coup rapide de griffe, il n'arrive tous de même pas à vous toucher, vous avez de la chance !")
       message.channel.send({embed})}
-      if (26 < B){
+      if (26 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Renard :" , "Le renard sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+    if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Renard :" , "Le renard court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2124,12 +2142,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Sanglier :" , "Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
       message.channel.send({embed})}
-      if (51 < B){
+      if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Sanglier :" , "Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Sanglier :" , "Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre ni attaquer pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2140,7 +2166,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chien attaque")) {
      const A = (Math.floor((3)*Math.random()+5))
-     const B = (Math.floor((100)*Math.random()+1))
+     const Z = (Math.floor((5)*Math.random()+8))
+          const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2148,12 +2175,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Chien :" , "Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
       message.channel.send({embed})}
-      if (26 < B){
+      if (26 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Chien :" , "Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+      if (B < 91){
+    const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Chien :" , "Le chien s'approche de vous doucement et fait son chien mignon mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2165,6 +2200,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang attaque")) {
      const A = (Math.floor((13)*Math.random()+22))
      const B = (Math.floor((100)*Math.random()+1))
+     const Z = (Math.floor((2)*Math.random()+2))
      if (B < 25){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2172,12 +2208,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Loup de sang :" , "Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
       message.channel.send({embed})}
-      if (26 < B){
+      if (26 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Loup de sang :" , "Le loup de sang hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+     if (96 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup de sang :" , "Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2189,6 +2233,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang d'élite attaque")) {
      const A = (Math.floor((21)*Math.random()+50))
      const B = (Math.floor((100)*Math.random()+1))
+     const Z = (Math.floor((2)*Math.random()+2))
      if (B < 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2202,6 +2247,14 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Loup de sang :" , "Le loup de sang d'élite hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+     if (96 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup de sang :" , "Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups de sangs apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2219,12 +2272,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Slime :" , "Le slime essaye de se rapprocher de vous pour s'accrocher à vous, mais il est trop lent, vous avez de la chance !")
       message.channel.send({embed})}
-      if (26 < B){
+      if (26 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Slime :" , "Le slime se rapproche de vous et arrive à s'accrocher à vous en tentant de vous étouffer, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+    if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Slime :" , "Le slime double de volume avant de vous absorber à l'intérieur de lui, il inflige " +A+ " points de dégâts et vous empêche d'attaquer ou de vous défendre pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2234,7 +2295,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Lapin géant attaque")) {
-     const A = (Math.floor((9)*Math.random()+12))
+     const A = (Math.floor((9)*Math.random()+10))
+     const Z = (Math.floor((11)*Math.random()+14))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -2249,6 +2311,14 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Lapin géant :" , "Le lapin géant bondit d'un coup sec sur vous et griffe tous votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+      if (51 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Lapin géant :" , "Le lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " +Z+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
