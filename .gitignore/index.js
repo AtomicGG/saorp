@@ -2847,14 +2847,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit sombre :" , "Le bandit sombre d'élite souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      .addField("Bandit sombre :" , "Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre d'élite sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+        .addField("Bandit sombre :" , "Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
