@@ -2305,7 +2305,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Lapin géant :" , "Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
       message.channel.send({embed})}
-      if (51 < B){
+      if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2313,7 +2313,7 @@ bot.on('message', message => {
         .addField("Lapin géant :" , "Le lapin géant bondit d'un coup sec sur vous et griffe tous votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
-      if (51 < B){
+      if (91 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2661,7 +2661,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((Dégâts/10)*Math.random()+1))
+     const C = (Math.floor((Dégâts/5)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
