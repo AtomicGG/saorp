@@ -2040,7 +2040,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup :" , "Le loup bondit sur vous ses crocs deviennent étrangement rouge et grandissent, il inflige " +A+ " points de dégâts et reprend " +Z+ " HP)
+        .addField("Loup :" , "Le loup bondit sur vous ses crocs deviennent étrangement rouge et grandissent, il inflige " +A+ " points de dégâts et reprend " +Z+ " HP")
         .setTimestamp()
         message.channel.send({embed})}
           }
