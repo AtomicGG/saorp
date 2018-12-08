@@ -806,7 +806,7 @@ bot.on('message', message => {
     .setTitle("Bandit sombre :" , "Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
     .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
     .addField("Point de vie :" , "750")
-    .addField("Points de dégâts" , "50")
+    .addField("Points de dégâts" , "40")
     .addField("Pour engager le combat :" , "=Bandit sombre d'élite attaque")
     .addField("Lorsque le bandit sombre reçoit un coup :" , "=Bandit sombre d'élite défense : [Points de dégâts de votre coup]")
     .addField("Les récompenses une fois mort en solo :" , "=Bandit sombre d'élite récompenses solo : [Votre niveau]")
@@ -2030,8 +2030,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup attaque")) {
-    const Dégâts = 12
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor(7)*Math.random()+10))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -2056,7 +2055,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup gigantesque attaque")) {
     const Dégâts = 80
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts)))
+     const A = (Math.floor((81)*Math.random()+100))
+     const C = (Math.floor((101)*Math.random()+200))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 40){
       const embed = new Discord.RichEmbed()
@@ -2065,12 +2065,36 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Loup gigantesque :" , "Le loup gigantesque hurle et cours rapidement mais glisse sur le côté par son manque d'attention du sol de la salle assez détruit")
       message.channel.send({embed})}
-      if (41 < B){
+      if (41 < B & B < 80){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Loup gigantesque :" , "Le loup gigantesque lâche un regard meurtrier les yeux injecté de sang avant d'embrocher sa victime, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+     if (81 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup gigantesque :" , "Le loup gigantesque arrive à embrocher deux personnes avec ses immenses griffes, il inflige " +A+ " points de dégâts à chacune d'elle")
+        .setTimestamp()
+        message.channel.send({embed})}
+    if (91 < B & B < 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup gigantesque :" , "Le loup gigantesque arrive à embrocher trois personnes avec ses immenses griffes, il inflige " +A+ " points de dégâts à chacune d'elle")
+        .setTimestamp()
+        message.channel.send({embed})}
+    if (96 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Loup gigantesque :" , "Le loup gigantesque hurle avant de bondir sur une personne, il inflige " +C+ " points de dégâts et la personne n'aura pas droit à une défense [Le loup gigantesque résistera à la provocation]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2080,8 +2104,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Renard attaque")) {
-    const Dégâts = 5
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/3)))
+     const A = (Math.floor((3)*Math.random()+4))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -2105,8 +2128,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Sanglier attaque")) {
-    const Dégâts = 4
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts)))
+     const A = (Math.floor((2)*Math.random()+3))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -2130,8 +2152,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chien attaque")) {
-    const Dégâts = 6
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor((3)*Math.random()+5))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -2155,8 +2176,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang attaque")) {
-    const Dégâts = 25
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/1.5)))
+     const A = (Math.floor((13)*Math.random()+22))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -2180,8 +2200,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang d'élite attaque")) {
-    const Dégâts = 35
-     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts)))
+     const A = (Math.floor((21)*Math.random()+50))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 20){
       const embed = new Discord.RichEmbed()
@@ -2204,8 +2223,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Slime attaque")) {
-    const Dégâts = 12
-     const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor((5)*Math.random()+10))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -2229,8 +2247,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Lapin géant attaque")) {
-    const Dégâts = 12
-     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/3)))
+     const A = (Math.floor((9)*Math.random()+12))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -2255,7 +2272,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
     const Dégâts = 6
-     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/4)))
+     const A = (Math.floor((4)*Math.random()+5))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 50){
       const embed = new Discord.RichEmbed()
@@ -2278,8 +2295,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit expérimenté attaque")) {
-    const Dégâts = 14
-     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
+     const A = (Math.floor((7)*Math.random()+14))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -2369,9 +2385,9 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre attaque")) {
-    const Dégâts = 30
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts)))
+     const A = (Math.floor((21)*Math.random()+25))
      const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((6)*Math.random()+5))
      if (B < 10){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2379,12 +2395,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Bandit sombre :" , "Le bandit sombre tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
       message.channel.send({embed})}
-      if (11 < B){
+      if (11 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Bandit sombre :" , "Le bandit sombre sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+    if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Bandit sombre :" , "Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +B+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -2395,9 +2419,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre d'élite attaque")) {
-    const Dégâts = 50
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts*1.5)))
+    const Dégâts = 40
+     const A = (Math.floor((31)*Math.random()+60))
      const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((11)*Math.random()+10))
      if (B < 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2405,12 +2430,20 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Bandit sombre :" , "Le bandit sombre d'élite tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
       message.channel.send({embed})}
-      if (6 < B){
+      if (6 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField("Bandit sombre :" , "Le bandit sombre d'élite sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Bandit sombre :" , "Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +B+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
         .setTimestamp()
          message.channel.send({embed})}
           }
