@@ -2374,7 +2374,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre attaque")) {
      const A = (Math.floor((21)*Math.random()+25))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((6)*Math.random()+5))
+     const C = (Math.floor((11)*Math.random()+10))
      if (B < 10){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2395,7 +2395,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +B+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+        .addField("Bandit sombre :" , "Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -2409,7 +2409,7 @@ bot.on('message', message => {
     const Dégâts = 40
      const A = (Math.floor((31)*Math.random()+60))
      const B = (Math.floor((100)*Math.random()+1))
-      const C = (Math.floor((11)*Math.random()+10))
+      const C = (Math.floor((16)*Math.random()+15))
      if (B < 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -2430,7 +2430,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +B+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+        .addField("Bandit sombre :" , "Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
         .setTimestamp()
          message.channel.send({embed})}
           }
