@@ -1380,6 +1380,7 @@ let cont = message.content.slice(prefix.length).split(" ");
             const D = (Math.floor((2-(0.90))*Math.random()))
             const E = (Math.floor((2-(0.95))*Math.random()))
             const I = (Math.floor((2-(0.98))*Math.random()))
+             const J = (Math.floor((2-(0.98))*Math.random()))
             const F = (Math.floor((31)*Math.random()+31))
             const FF = F-(X*4)
             const G = (Math.floor((15)*Math.random()+15))
