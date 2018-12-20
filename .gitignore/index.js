@@ -5152,7 +5152,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, leur importance est classé de haut en bas, tu n'est pas obligé de tout savoir obligatoirement dés le début alors prend ton temps !\n\n`=SAO`\n`=Personnage`\n`=Classes`\n`=Compétences`\n`=Particularités`\n`=Amélioration`\n`=Armes`\n`=Trajets`\n`=Rolls`\n`=Combat`\n`=Etats`\n`=Quêtes`\n`=Mort`\n`=Rétablissement`\n`=Niveaux`\n`=Caractéristiques`\n`=Zones`\n`=Monstres`\n`=Liste d'objets`\n`=Crafts`\n`=Spécialisations`\n`=Cristal`\n`=Ville`\n`=Extérieur`\n`=Souterrains`\n`=Constructions`\n`=Menus`\n`=Donjons`\n`=Familiers`\n`=Guilde`\n`=Métiers`\n`=Dirigeant`\n`=Garde`\n`=Mercenaire`\n`=Prison`")
+    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, leur importance est classé de haut en bas, tu n'est pas obligé de tout savoir obligatoirement dés le début alors prend ton temps !\n\n:sao_kirito_by_kanda_yakumod8c06q:`=SAO`\n:bust_in_silhouette:`=Personnage`\n:diamond_shape_with_a_dot_inside:`=Classes`\n:cyclone:`=Compétences`\n:trident: `=Particularités`\n:hammer:`=Amélioration`\n:dagger:`=Armes`\n:walking:`=Trajets`\n:game_die:`=Rolls`\n:crossed_swords:`=Combat`\n:eight_pointed_black_star:`=Etats`\n:book:`=Quêtes`\n:skull:`=Mort`\n:heartbeat:`=Rétablissement`\n:sparkles:`=Niveaux`\n:100:`=Caractéristiques`\n:globe_with_meridians:`=Zones`\n:japanese_ogre:`=Monstres`\n:scroll:`=Liste d'objets`\n:tools:`=Crafts`\n:hammer_pick:`=Spécialisations`\n:large_orange_diamond:`=Cristal`\n:cityscape:`=Ville`\n:sunrise_over_mountains:`=Extérieur`\n:classical_building:`=Souterrains`\n:homes:`=Constructions`\n:loud_sound:`=Menus`\n:bank:`=Donjons`\n:fox:`=Familiers`\n:busts_in_silhouette:`=Guilde`\n:alembic:`=Métiers`\n:microphone2:`=Dirigeant`\n:shield:`=Garde`\n:bow_and_arrow:`=Mercenaire`\n:chains:`=Prison`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -5265,7 +5265,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\nQuand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y a que dans les zones extérieurs !\n\nPour vous rendre de la ville à l'extérieur, il faudra passer par 'Entrée de la ville' !")
+    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\nQuand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y a que dans les zones extérieurs !\n\nPour vous rendre de la ville à l'extérieur, il faudra passer par 'Entrée de la ville' !\n\nPour mieux comprendre ce système, imaginez que vous êtes à un magasin de 15 min de chez vous, pour revenir vous mettrez 15 minutes !\n\nLes chemins entre les zones permettent de pouvoir continuer à RP avant d'arriver à la zone que vous souhaitez !")
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -5304,7 +5304,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera un coup ou une action défensive selon l'arme\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e)**\n**Supérieur(e)**\n**Suprême**\n**Divin(e)**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si par exemple j'ai une épée à deux mains qui améliore le combo en combo supérieur, si je possède une particularité qui améliore le combo en plus de l'épée à deux mains, le combo supérieur devient le combo suprême, et si quelque chose encore améliore le combo, il devient un combo divin !")
+      .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera un coup ou une action défensive selon l'arme\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e) [+5]**\n**Supérieur(e) [+10]**\n**Suprême [+15]**\n**Divin(e) [+20]**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si par exemple j'ai une épée à deux mains qui améliore le combo en combo supérieur, si je possède une particularité qui améliore le combo en plus de l'épée à deux mains, le combo supérieur devient le combo suprême, et si quelque chose encore améliore le combo, il devient un combo divin !\n\nPour comprendre ce systèpme encore plus facilement, comme marqué à côté des améliorations [+5/10/15/20] les améliorations se cumulent de cette manière !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
        .setTimestamp()
        message.channel.send({embed})
@@ -5317,8 +5317,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Les menus, partie 1 :" , "Il existe plusieurs menus [salon sur le discord] permettant d'écrire des choses à l'intérieur :\n\nLe menu cimetière permettant d'écrire lorsque vous mourrez !\n\nLe menu des annonces permettant de faire vos annonces de tout types que ce soit pour un métier, une offre, une demande d'aide etc...\n\nLe menu d'infos sur les guildes permettant de mettre les infos de chaque guildes, chaque membres, chaques rôles et autres infos !\n\nLe menu des métiers permettant d'écrire qui possède quel métier pour une meilleur organisation ! [Effacer votre message si votre personnage meurt]\n\Le menu des échanges pour faire vos échanges à l'intérieur")
-      .addField("Les menus, partie 2 :" , "Le menu de régénération permettant de faire votre regénération naturel en ville !\n\nLe menu des objets permettant d'écrire les commandes de récompenses à l'intérieur lorsque vous gagnez des objets sur des monstres ou dans des activités, ainsi que les crafts que vous faites !\n\nLe menu des MP permettant d'ajouter quelqu'un en amis ainsi que de pouvoir envoyer des messages à vos amis !\n\Le menu des clefs de l'auberge pour savoir qui possède quel chambre pour combien de temps !\n\nLe menu commerce pour mettre une annonce en rapport au commerce, que ce soit pour acheter ou vendre quelque chose !")
+    .addField("Les menus, partie 1 :" , "Il existe plusieurs menus [salon sur le discord] permettant d'écrire des choses à l'intérieur :\n\nLe menu cimetière permettant d'écrire lorsque vous mourrez !\n\nLe menu des annonces permettant de faire vos annonces de tout types que ce soit pour un métier, une offre, une demande d'aide etc...\n\nLe menu d'infos sur les guildes permettant de mettre les infos de chaque guildes, chaque membres, chaques rôles et autres infos !\n\nLe menu des métiers permettant d'écrire qui possède quel métier pour une meilleur organisation ! [Effacer votre message si votre personnage meurt]\n\nLe menu des échanges pour faire vos échanges à l'intérieur")
+      .addField("Les menus, partie 2 :" , "Le menu de régénération permettant de faire votre regénération naturel en ville !\n\nLe menu des objets permettant d'écrire les commandes de récompenses à l'intérieur lorsque vous gagnez des objets sur des monstres ou dans des activités, ainsi que les crafts que vous faites !\n\nLe menu des MP permettant d'ajouter quelqu'un en amis ainsi que de pouvoir envoyer des messages à vos amis !\n\Le menu des clefs de l'auberge pour savoir qui possède quel chambre pour combien de temps !\n\nLe menu commerce pour mettre une annonce en rapport au commerce, que ce soit pour acheter ou vendre quelque chose !\n\nLe menu météo permettant d'afficher chaques jours une nouvelle météo avec des effets !")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -5426,7 +5426,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Les armes :" , "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une main, ou des armes à deux mains, et chaque armes améliorent un coup ou une action défensive !\n\nVous saurez quel arme permet d'amélioré quel coups ou action défensives en affichant les infos sur celle-ci en écrivant : **=[Nom de l'arme]**\n\nLorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste suivante :\n\nLes épées\nLes dagues\nLes glaives\nLes masses\nLes haches\nLes rapières\nLes cimeterres\nLes katanas\nLes boucliers\n\nCependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, que vous achèterez ou que vous fabriquerez !")
+       .addField("Les armes :" , "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une main, ou des armes à deux mains, et chaque armes améliorent un coup ou une action défensive !\n\nVous saurez quel arme permet d'amélioré quel coups ou action défensives en affichant les infos sur celle-ci en écrivant : **=[Nom de l'arme]**\n\nLorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste suivante :\n\nLes épées\nLes dagues\nLes glaives\nLes masses\nLes haches\nLes rapières\nLes cimeterres\nLes katanas\nLes boucliers\n\nCependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, que vous achèterez ou que vous fabriquerez !\n\nLes seuls exceptions sont : Les dagues ne sont qu'à une main ainsi que les boucliers, et les glaives ne sont qu'à deux mains !")
        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -5620,7 +5620,7 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 const B = (Math.floor(100)*Math.random()+1)
-                                const tours = (Math.floor((3)*Math.random()+1))
+                                const tours = (Math.floor((3)*Math.random()+2))
                                 if(B < 25){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
@@ -5666,7 +5666,7 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
                               let degats = args.slice(2).join(" : ");
-                              const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+                              const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
                               const B = (Math.floor(100)*Math.random()+1)
                               const C = (Math.floor((3)*Math.random()+1))
                               if(B < 50){
@@ -5716,7 +5716,7 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
                               let degats = args.slice(2).join(" : ");
-                              const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+                              const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
                               const B = (Math.floor(100)*Math.random()+1)
                               const C = (Math.floor((3)*Math.random()+1))
                               if(B < 50){
@@ -5802,7 +5802,7 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
                               let degats = args.slice(2).join(" : ");
-                              const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+                              const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
                               const B = (Math.floor(100)*Math.random()+1)
                               const C = (Math.floor((3)*Math.random()+1))
                               if(B < 50){
@@ -5849,7 +5849,7 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
                               let degats = args.slice(2).join(" : ");
-                              const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+                              const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
                               const B = (Math.floor(100)*Math.random()+1)
                               const C = (Math.floor((2)*Math.random()+1))
                               if(B < 75){
@@ -5896,7 +5896,7 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 let degats = args.slice(2).join(" : ");
-                                const A = (Math.floor((degats/2)*Math.random()+1*(degats/3)))
+                                const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
                                 const B = (Math.floor(100)*Math.random()+1)
                                 const C = (Math.floor((2)*Math.random()+1))
                                 const D = (Math.floor((degats)*Math.random()+1*(degats)))
@@ -5944,10 +5944,10 @@ bot.on('message', message => {
                                    message.channel.send({embed})
                           } else {
                                   let degats = args.slice(2).join(" : ");
-                                  const A = (Math.floor((degats/2)*Math.random()+1*(degats/3)))
+                                  const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
                                   const B = (Math.floor(100)*Math.random()+1)
                                   const C = (Math.floor((3)*Math.random()+1))
-                                  const D = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+                                  const D = (Math.floor((degats/1.5)*Math.random()+1*(degats/1.5)))
                                   if(B < 50){
                                    const embed = new Discord.RichEmbed()
                                    .setAuthor(message.author.username , message.author.avatarURL)
@@ -5994,12 +5994,12 @@ bot.on('message', message => {
                           } else {
                                   let degats = args.slice(1).join(" : ");
                                   
-                                  const premier = (Math.floor((degats/4)*Math.random()+1*(degats/6)))
-                                  const deuxième = (Math.floor((degats/4)*Math.random()+1*(degats/6)))
+                                  const premier = (Math.floor((degats/3)*Math.random()+1*(degats/2)))
+                                  const deuxième = (Math.floor((degats/3)*Math.random()+1*(degats/2)))
                                   const A = premier+deuxième
                                   const B = (Math.floor(100)*Math.random()+1)
                                   const C = (Math.floor((5)*Math.random()+1))
-                                  const D = (Math.floor((degats/3)*Math.random()+1*(degats/3)))
+                                  const D = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
                                   if(B < 50){
                                    const embed = new Discord.RichEmbed()
                                    .setAuthor(message.author.username , message.author.avatarURL)
@@ -6049,9 +6049,9 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
                               let degats = args.slice(2).join(" : ");
-                              const B = (Math.floor((degats)*Math.random()+1*(degats/3)))
-                              const C = (Math.floor((degats)*Math.random()+1*(degats/3)))
-                              const D = (Math.floor((degats)*Math.random()+1*(degats/3)))
+                              const B = (Math.floor((degats/1.75)*Math.random()+1*(degats/3)))
+                              const C = (Math.floor((degats/1.75)*Math.random()+1*(degats/3)))
+                              const D = (Math.floor((degats/1.75)*Math.random()+1*(degats/3)))
                               const A = B+C+D
                                const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
@@ -6087,11 +6087,11 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 let degats = args.slice(1).join(" : ");
-                                const B = (Math.floor((degats/8)*Math.random()+1*(degats/10)))
-                                const C = (Math.floor((degats/8)*Math.random()+1*(degats/10)))
-                                const D = (Math.floor((degats/8)*Math.random()+1*(degats/10)))
-                                const E = (Math.floor((degats/8)*Math.random()+1*(degats/10)))
-                                const F = (Math.floor((degats/8)*Math.random()+1*(degats/10)))
+                                const B = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
+                                const C = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
+                                const D = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
+                                const E = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
+                                const F = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
                                 const I = (Math.floor((3)*Math.random()+1))
                                 const A = B+C+D+E+F
                                  const embed = new Discord.RichEmbed()
@@ -6132,8 +6132,8 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 let degats = args.slice(2).join(" : ");
-                                const B = (Math.floor((degats/2)*Math.random()+1*(degats/3)))
-                                const C = (Math.floor((degats/2)*Math.random()+1*(degats/3)))
+                                const B = (Math.floor((degats)*Math.random()+1*(degats/2)))
+                                const C = (Math.floor((degats)*Math.random()+1*(degats/2)))
                                 const D = (Math.floor((3)*Math.random()+1))
                                 const A = B+C
                                  const embed = new Discord.RichEmbed()
@@ -6170,7 +6170,7 @@ bot.on('message', message => {
                                    message.channel.send({embed})
                           } else {
                                   let degats = args.slice(2).join(" : ");
-                                  const A = (Math.floor((degats)*Math.random()+1*(degats)))
+                                  const A = (Math.floor((degats*2)*Math.random()+1*(degats)))
                                    const embed = new Discord.RichEmbed()
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6202,7 +6202,7 @@ bot.on('message', message => {
                                      message.channel.send({embed})
                             } else {
                                     let degats = args.slice(2).join(" : ");
-                                    const A = (Math.floor((degats*3)*Math.random()+1*(degats/1.5)))
+                                    const A = (Math.floor((degats*2)*Math.random()+1*(degats)))
                                      const embed = new Discord.RichEmbed()
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6234,10 +6234,10 @@ bot.on('message', message => {
                                      message.channel.send({embed})
                             } else {
                                     let degats = args.slice(2).join(" : ");
-                                    const B = (Math.floor((degats*1.10)*Math.random()+1*(degats/10)))
-                                    const C = (Math.floor((degats*1.10)*Math.random()+1*(degats/10)))
-                                    const D = (Math.floor((degats*1.10)*Math.random()+1*(degats/10)))
-                                    const E = (Math.floor((degats*1.10)*Math.random()+1*(degats/10)))
+                                    const B = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
+                                    const C = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
+                                    const D = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
+                                    const E = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
                                     const A = B+C+D+E
                                      const embed = new Discord.RichEmbed()
                                      .setAuthor(message.author.username , message.author.avatarURL)
@@ -6702,7 +6702,7 @@ bot.on('message', message => {
        .setColor(3447003)
        .addField("Les niveaux, partie 1 :" , "Vous gagnerez des niveaux en tuant des monstres, en accomplissant des quêtes et des donjons, selon votre niveaux vous débloquerez l'accès à certains coups, mais aussi vous gagnerez des points de caractéristiques et des bonus !\n\nLes points d'expérience lorsque vous gagnez un niveau ne se re remettent pas à 0, ils restent présent dans vos points d'expérience !\n\nPour comprendre ce que c'est que ce système de 'Points de caractéristiques', écrivez :\n\n`=Caractéristiques`\n\nPour calculer votre niveau selon vos points d'expérience, écrivez :\n\n`=Calculateur d'expérience de niveaux : [Vos points d'expérience]`\n\nPour consulter les informations et l'expérience nécessaire d'un niveau, écrivez :\n\n`=Tableau des niveaux`")
        .addBlankField(true)
-       .addField("Les niveaux, partie 2 :" , "Pour consulter les bonus à chaques niveaux pour un Combattant, écrivez\n\n`=Bonus des niveaux de combattant`\n\nPour consulter les bonus à chaques niveaux pour un Assassin, écrivez\n\n`=Bonus des niveaux d'assassin`\n\nPour consulter les bonus à chaques niveaux pour un Berserker, écrivez\n\n`=Bonus des niveaux de berserker`\n\nPour consulter les bonus à chaques niveaux pour un Chevalier, écrivez\n\n`=Bonus des niveaux de chevalier`\n\nPour consulter les bonus à chaques niveaux pour un Paladin, écrivez\n\n`=Bonus des niveaux de paladin`\n\nPour consulter les bonus à chaques niveaux pour un Vindicateur, écrivez\n\n`=Bonus des niveaux de vindicateur`\n\nA savoir qu'une fois que vous gagnez un niveau, vous récupérez tous vos HP !")
+       .addField("Les niveaux, partie 2 :" , "Pour consulter les bonus à chaques niveaux pour un Combattant, écrivez\n\n`=Bonus combattant`\n\nPour consulter les bonus à chaques niveaux pour un Assassin, écrivez\n\n`=Bonus assassin`\n\nPour consulter les bonus à chaques niveaux pour un Berserker, écrivez\n\n`=Bonus berserker`\n\nPour consulter les bonus à chaques niveaux pour un Chevalier, écrivez\n\n`=Bonus chevalier`\n\nPour consulter les bonus à chaques niveaux pour un Paladin, écrivez\n\n`=Bonus paladin`\n\nPour consulter les bonus à chaques niveaux pour un Vindicateur, écrivez\n\n`=Bonus vindicateur`\n\nA savoir qu'une fois que vous gagnez un niveau, vous récupérez tous vos HP !")
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -6710,7 +6710,7 @@ bot.on('message', message => {
     });
 
     bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Bonus des niveaux de combattant")) {
+      if (message.content.startsWith(prefix + "Bonus combattant")) {
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6727,7 +6727,7 @@ bot.on('message', message => {
         });
 
         bot.on('message', message => {
-          if (message.content.startsWith(prefix + "Bonus des niveaux d'assassin")) {
+          if (message.content.startsWith(prefix + "Bonus assassin")) {
             const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6744,7 +6744,7 @@ bot.on('message', message => {
             });
 
             bot.on('message', message => {
-              if (message.content.startsWith(prefix + "Bonus des niveaux de berserker")) {
+              if (message.content.startsWith(prefix + "Bonus berserker")) {
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6761,7 +6761,7 @@ bot.on('message', message => {
                 });
 
                 bot.on('message', message => {
-                  if (message.content.startsWith(prefix + "Bonus des niveaux de chevalier")) {
+                  if (message.content.startsWith(prefix + "Bonus chevalier")) {
                     const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL)
                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6778,7 +6778,7 @@ bot.on('message', message => {
                     });
 
                     bot.on('message', message => {
-                      if (message.content.startsWith(prefix + "Bonus des niveaux de paladin")) {
+                      if (message.content.startsWith(prefix + "Bonus paladin")) {
                         const embed = new Discord.RichEmbed()
                         .setAuthor(message.author.username , message.author.avatarURL)
                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6795,7 +6795,7 @@ bot.on('message', message => {
                         });
 
                         bot.on('message', message => {
-                          if (message.content.startsWith(prefix + "Bonus des niveaux de vindicateur")) {
+                          if (message.content.startsWith(prefix + "Bonus vindicateur")) {
                             const embed = new Discord.RichEmbed()
                             .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
