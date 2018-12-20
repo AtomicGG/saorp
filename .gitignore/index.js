@@ -6049,9 +6049,9 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
                               let degats = args.slice(2).join(" : ");
-                              const B = (Math.floor((degats/1.75)*Math.random()+1*(degats/3)))
-                              const C = (Math.floor((degats/1.75)*Math.random()+1*(degats/3)))
-                              const D = (Math.floor((degats/1.75)*Math.random()+1*(degats/3)))
+                              const B = (Math.floor((degats*0.70)*Math.random()+1*(degats/3)))
+                              const C = (Math.floor((degats*0.70)*Math.random()+1*(degats/3)))
+                              const D = (Math.floor((degats*0.70)*Math.random()+1*(degats/3)))
                               const A = B+C+D
                                const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
@@ -6087,11 +6087,11 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 let degats = args.slice(1).join(" : ");
-                                const B = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
-                                const C = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
-                                const D = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
-                                const E = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
-                                const F = (Math.floor((degats/5)*Math.random()+1*(degats/5)))
+                                const B = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
+                                const C = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
+                                const D = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
+                                const E = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
+                                const F = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
                                 const I = (Math.floor((3)*Math.random()+1))
                                 const A = B+C+D+E+F
                                  const embed = new Discord.RichEmbed()
@@ -6132,8 +6132,8 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 let degats = args.slice(2).join(" : ");
-                                const B = (Math.floor((degats)*Math.random()+1*(degats/2)))
-                                const C = (Math.floor((degats)*Math.random()+1*(degats/2)))
+                                const B = (Math.floor((degats*0.4)*Math.random()+1*(degats/3)))
+                                const C = (Math.floor((degats*0.4)*Math.random()+1*(degats/3)))
                                 const D = (Math.floor((3)*Math.random()+1))
                                 const A = B+C
                                  const embed = new Discord.RichEmbed()
