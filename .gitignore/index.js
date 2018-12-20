@@ -5602,7 +5602,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+1);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+1);
-                              }, 3600000000);
+                              }, 3600000);
                           }
                                }
                           });
@@ -5644,7 +5644,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+2);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+2);
-                                }, 3600000000);
+                                }, 3600000);
                             }
                                  }
                             });
@@ -5692,7 +5692,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+3);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+3);
-                              }, 3600000000);
+                              }, 3600000);
                           }
                                }
                           });
@@ -5742,7 +5742,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+4);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+4);
-                              }, 3600000000);
+                              }, 3600000);
                           }
                                }
                           });
@@ -5780,7 +5780,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+5);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+5);
-                              }, 3600000000);
+                              }, 3600000);
                           }
                           });
 
@@ -5828,7 +5828,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+6);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+6);
-                              }, 3600000000);
+                              }, 3600000);
                           }
                                }
                           });
@@ -5875,7 +5875,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+7);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+7);
-                              }, 3600000000);
+                              }, 3600000);
                           }
                                }
                           });
@@ -5923,7 +5923,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+8);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+8);
-                                }, 3600000000);
+                                }, 3600000);
                             }
                                  }
                             });
@@ -5971,7 +5971,7 @@ bot.on('message', message => {
                                    talkedRecently.add(message.author.id+9);
                                    setTimeout(() => {
                                     talkedRecently.delete(message.author.id+9);
-                                  }, 3600000000);
+                                  }, 3600000);
                               }
                                    }
                               });
@@ -6027,7 +6027,7 @@ bot.on('message', message => {
                                    talkedRecently.add(message.author.id+10);
                                    setTimeout(() => {
                                     talkedRecently.delete(message.author.id+10);
-                                  }, 3600000000);
+                                  }, 3600000);
                               }
                                    }
                               });
@@ -6067,7 +6067,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+11);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+11);
-                              }, 3600000000);
+                              }, 3600000);
                           }
                           });
 
@@ -6111,7 +6111,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+12);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+12);
-                                }, 3600000000);
+                                }, 3600000);
                             }
                             });
 
@@ -6150,7 +6150,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+13);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+13);
-                                }, 3600000000);
+                                }, 3600000);
                             }
                             });
 
@@ -6182,7 +6182,7 @@ bot.on('message', message => {
                                    talkedRecently.add(message.author.id+14);
                                    setTimeout(() => {
                                     talkedRecently.delete(message.author.id+14);
-                                  }, 3600000000);
+                                  }, 3600000);
                               }
                               });
 
@@ -6214,7 +6214,7 @@ bot.on('message', message => {
                                      talkedRecently.add(message.author.id+15);
                                      setTimeout(() => {
                                       talkedRecently.delete(message.author.id+15);
-                                    }, 3600000000);
+                                    }, 3600000);
                                 }
                                 });
 
@@ -6254,7 +6254,7 @@ bot.on('message', message => {
                                      talkedRecently.add(message.author.id+16);
                                      setTimeout(() => {
                                       talkedRecently.delete(message.author.id+16);
-                                    }, 3600000000);
+                                    }, 3600000);
                                 }
                                 });
     
