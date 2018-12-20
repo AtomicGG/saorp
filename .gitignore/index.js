@@ -5571,7 +5571,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
@@ -5602,7 +5602,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+1);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+1);
-                              }, 3000000);
+                              }, 3600000000);
                           }
                                }
                           });
@@ -5614,7 +5614,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                                 .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                  .setTimestamp()
                                  message.channel.send({embed})
@@ -5644,7 +5644,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+2);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+2);
-                                }, 1500000);
+                                }, 3600000000);
                             }
                                  }
                             });
@@ -5660,7 +5660,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
@@ -5692,7 +5692,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+3);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+3);
-                              }, 1500000);
+                              }, 3600000000);
                           }
                                }
                           });
@@ -5710,7 +5710,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
@@ -5742,7 +5742,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+4);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+4);
-                              }, 3000000);
+                              }, 3600000000);
                           }
                                }
                           });
@@ -5759,7 +5759,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
@@ -5780,7 +5780,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+5);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+5);
-                              }, 3000000);
+                              }, 3600000000);
                           }
                           });
 
@@ -5796,7 +5796,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
@@ -5828,7 +5828,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+6);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+6);
-                              }, 1500000);
+                              }, 3600000000);
                           }
                                }
                           });
@@ -5843,7 +5843,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
@@ -5875,7 +5875,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+7);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+7);
-                              }, 3000000);
+                              }, 3600000000);
                           }
                                }
                           });
@@ -5890,7 +5890,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                                 .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                  .setTimestamp()
                                  message.channel.send({embed})
@@ -5923,7 +5923,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+8);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+8);
-                                }, 3000000);
+                                }, 3600000000);
                             }
                                  }
                             });
@@ -5938,7 +5938,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                                   .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                    .setTimestamp()
                                    message.channel.send({embed})
@@ -5971,7 +5971,7 @@ bot.on('message', message => {
                                    talkedRecently.add(message.author.id+9);
                                    setTimeout(() => {
                                     talkedRecently.delete(message.author.id+9);
-                                  }, 3000000);
+                                  }, 3600000000);
                               }
                                    }
                               });
@@ -5987,7 +5987,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                                   .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                    .setTimestamp()
                                    message.channel.send({embed})
@@ -6027,7 +6027,7 @@ bot.on('message', message => {
                                    talkedRecently.add(message.author.id+10);
                                    setTimeout(() => {
                                     talkedRecently.delete(message.author.id+10);
-                                  }, 3000000);
+                                  }, 3600000000);
                               }
                                    }
                               });
@@ -6043,7 +6043,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                               .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                .setTimestamp()
                                message.channel.send({embed})
@@ -6067,7 +6067,7 @@ bot.on('message', message => {
                                talkedRecently.add(message.author.id+11);
                                setTimeout(() => {
                                 talkedRecently.delete(message.author.id+11);
-                              }, 1500000);
+                              }, 3600000000);
                           }
                           });
 
@@ -6081,7 +6081,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                                 .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                  .setTimestamp()
                                  message.channel.send({embed})
@@ -6111,7 +6111,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+12);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+12);
-                                }, 1500000);
+                                }, 3600000000);
                             }
                             });
 
@@ -6126,7 +6126,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                                 .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                  .setTimestamp()
                                  message.channel.send({embed})
@@ -6150,7 +6150,7 @@ bot.on('message', message => {
                                  talkedRecently.add(message.author.id+13);
                                  setTimeout(() => {
                                   talkedRecently.delete(message.author.id+13);
-                                }, 1500000);
+                                }, 3600000000);
                             }
                             });
 
@@ -6164,7 +6164,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                                   .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                    .setTimestamp()
                                    message.channel.send({embed})
@@ -6182,7 +6182,7 @@ bot.on('message', message => {
                                    talkedRecently.add(message.author.id+14);
                                    setTimeout(() => {
                                     talkedRecently.delete(message.author.id+14);
-                                  }, 1500000);
+                                  }, 3600000000);
                               }
                               });
 
@@ -6196,7 +6196,7 @@ bot.on('message', message => {
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
-                                     .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                                     .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                      .setTimestamp()
                                      message.channel.send({embed})
@@ -6214,7 +6214,7 @@ bot.on('message', message => {
                                      talkedRecently.add(message.author.id+15);
                                      setTimeout(() => {
                                       talkedRecently.delete(message.author.id+15);
-                                    }, 1500000);
+                                    }, 3600000000);
                                 }
                                 });
 
@@ -6228,7 +6228,7 @@ bot.on('message', message => {
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
-                                     .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+                                     .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
                                      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                                      .setTimestamp()
                                      message.channel.send({embed})
@@ -6254,7 +6254,7 @@ bot.on('message', message => {
                                      talkedRecently.add(message.author.id+16);
                                      setTimeout(() => {
                                       talkedRecently.delete(message.author.id+16);
-                                    }, 1500000);
+                                    }, 3600000000);
                                 }
                                 });
     
