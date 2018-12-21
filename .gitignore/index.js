@@ -3203,7 +3203,47 @@ bot.on('message', message => {
      }, 0);
   }
   })
+//////////////////////////////////////////////////////////Montagnes/////////////////////////////////////////////////////////////////////////////////////
 
+   bot.on('message', message => {
+                                                if (message.content === (prefix) + "Montagne"){
+                                                   const embed = new Discord.RichEmbed()
+                                                   .setAuthor(message.author.username , message.author.avatarURL)
+                                                  .setColor(1447003)
+                                                  .setTitle("Montagne :" , "Bienvenue dans ce lieu habité principalement par des kobolts !")
+                                                  .addField("Pour combattre :" , "`=Montagne combat : [Nombre de joueurs dans votre groupe]`")
+                                                  .addField("Pour cueillir, niveau 3 minimum requis dans la spécialisation 'Cueilleur' :", "`=Montagne cueillir`")
+                                                  .addField("Pour chasser, niveau 3 minimum requis dans la spécialisation 'Chasseur' :", "`=Montagne chasser`")
+                                                  .addField("Pour miner, niveau 2 minimum requis dans la spécialisation 'Mineur' :", "`=Montagne miner`")
+                                                  .addField("Pour bûcheronner, niveau 2 minimum requis dans la spécialisation 'Bûcheron' :", "`=Montagne bûcheronner`")
+                                                  .addField("Pour avoir une quête :", "`=Montagne quêtes`")
+                                                  .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }
+                                              })
+
+
+
+
+//////////////////////////////////////////////////////////Grotte/////////////////////////////////////////////////////////////////////////////////////
+
+
+   bot.on('message', message => {
+                                                if (message.content === (prefix) + "Grotte"){
+                                                   const embed = new Discord.RichEmbed()
+                                                   .setAuthor(message.author.username , message.author.avatarURL)
+                                                  .setColor(1447003)
+                                                  .setTitle("Grotte :" , "Bienvenue dans ce lieu habité principalement par des kobolts qui est aussi le lieu menant au boss du palier 1 !")
+                                                  .addField("Pour combattre :" , "`=Grotte combat : [Nombre de joueurs dans votre groupe]`")
+                                                  .addField("Pour cueillir, niveau 4 minimum requis dans la spécialisation 'Cueilleur' :", "`=Grotte cueillir`")
+                                                  .addField("Pour miner, niveau 3 minimum requis dans la spécialisation 'Mineur' :", "`=Grotte miner`")
+                                                  .addField("Pour avoir une quête :", "`=Grotte quêtes`")
+                                                  .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }
+                                              })
 
 
 
