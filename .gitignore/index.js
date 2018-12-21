@@ -5899,7 +5899,7 @@ bot.on('message', message => {
                                 const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
                                 const B = (Math.floor(100)*Math.random()+1)
                                 const C = (Math.floor((2)*Math.random()+1))
-                                const D = (Math.floor((degats)*Math.random()+1*(degats)))
+                                const D = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
                                 if(B < 50){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
@@ -5947,7 +5947,7 @@ bot.on('message', message => {
                                   const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
                                   const B = (Math.floor(100)*Math.random()+1)
                                   const C = (Math.floor((3)*Math.random()+1))
-                                  const D = (Math.floor((degats/1.5)*Math.random()+1*(degats/1.5)))
+                                  const D = (Math.floor((degats/2.5)*Math.random()+1*(degats/2.5)))
                                   if(B < 50){
                                    const embed = new Discord.RichEmbed()
                                    .setAuthor(message.author.username , message.author.avatarURL)
@@ -5999,7 +5999,7 @@ bot.on('message', message => {
                                   const A = premier+deuxième
                                   const B = (Math.floor(100)*Math.random()+1)
                                   const C = (Math.floor((5)*Math.random()+1))
-                                  const D = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+                                  const D = (Math.floor((degats/3)*Math.random()+1*(degats/3)))
                                   if(B < 50){
                                    const embed = new Discord.RichEmbed()
                                    .setAuthor(message.author.username , message.author.avatarURL)
