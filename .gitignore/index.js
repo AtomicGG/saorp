@@ -726,7 +726,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setTitle("Loup de sang :" , "Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
-                .addField("Point de vie :" , "600")
+                .addField("Point de vie :" , "750")
                 .addField("Pour engager le combat :" , "`=Loup de sang d'élite attaque`")
                 .addField("Lorsque le loup de sang reçoit un coup :" , "`=Loup de sang d'élite défense : [Points de dégâts de votre coup]`")
                 .addField("Les récompenses une fois mort en solo :" , "`=Loup de sang d'élite récompenses solo : [Votre niveau]`")
@@ -810,7 +810,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle("Bandit sombre :" , "Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
     .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
-    .addField("Point de vie :" , "750")
+    .addField("Point de vie :" , "1000")
     .addField("Pour engager le combat :" , "`=Bandit sombre d'élite attaque`")
     .addField("Lorsque le bandit sombre reçoit un coup :" , "`=Bandit sombre d'élite défense : [Points de dégâts de votre coup]`")
     .addField("Les récompenses une fois mort en solo :" , "`=Bandit sombre d'élite récompenses solo : [Votre niveau]`")
@@ -829,7 +829,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle("Loup gigantesque :" , "Un loup énorme qui n'est trouvable que dans la salle du boss du donjon sauvage du palier 1 !")
     .setImage("https://db4sgowjqfwig.cloudfront.net/campaigns/144226/assets/629552/wolves-wargs.jpg?1471440473")
-    .addField("Point de vie :" , "2000")
+    .addField("Point de vie :" , "2500")
     .addField("Pour engager le combat :" , "`=Loup gigantesque attaque`")
     .addField("Lorsque le loup gigantesque reçoit un coup :" , "`=Loup gigantesque défense : [Points de dégâts de votre coup]`")
     .addField("Les récompenses une fois mort en solo :" , "`=Loup gigantesque récompenses solo : [Votre niveau]`")
@@ -2068,7 +2068,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup gigantesque attaque")) {
     const Dégâts = 80
-     const A = (Math.floor((81)*Math.random()+100))
+     const A = (Math.floor((76)*Math.random()+125))
      const C = (Math.floor((101)*Math.random()+200))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 40){
@@ -2215,7 +2215,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang attaque")) {
-     const A = (Math.floor((13)*Math.random()+22))
+     const A = (Math.floor((13)*Math.random()+25))
      const B = (Math.floor((100)*Math.random()+1))
      const Z = (Math.floor((2)*Math.random()+2))
      if (B < 25){
@@ -2248,7 +2248,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang d'élite attaque")) {
-     const A = (Math.floor((21)*Math.random()+50))
+     const A = (Math.floor((51)*Math.random()+70))
      const B = (Math.floor((100)*Math.random()+1))
      const Z = (Math.floor((2)*Math.random()+2))
      if (B < 20){
@@ -2280,7 +2280,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Slime attaque")) {
-     const A = (Math.floor((5)*Math.random()+10))
+     const A = (Math.floor((5)*Math.random()+12))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -2369,7 +2369,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit expérimenté attaque")) {
-     const A = (Math.floor((7)*Math.random()+14))
+     const A = (Math.floor((7)*Math.random()+16))
      const B = (Math.floor((100)*Math.random()+1))
      if (B < 25){
       const embed = new Discord.RichEmbed()
@@ -2459,7 +2459,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre attaque")) {
-     const A = (Math.floor((21)*Math.random()+25))
+     const A = (Math.floor((11)*Math.random()+30))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((11)*Math.random()+10))
      if (B < 10){
@@ -2494,7 +2494,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre d'élite attaque")) {
     const Dégâts = 40
-     const A = (Math.floor((31)*Math.random()+60))
+     const A = (Math.floor((41)*Math.random()+80))
      const B = (Math.floor((100)*Math.random()+1))
       const C = (Math.floor((16)*Math.random()+15))
      if (B < 5){
