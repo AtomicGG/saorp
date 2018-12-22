@@ -843,27 +843,151 @@ bot.on('message', message => {
 
 
 
+
+
   
 bot.on('message', message => {
-  if (message.content === (prefix) + "Urguf le chef"){
+  if (message.content === (prefix) + "Jeune kobolt"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle("Urguf le chef :" , "Le chef des bandits aussi puissant que destructeur, il se situe dans la forêt du palier 1 !")
-    .setImage("https://i.pinimg.com/originals/72/8a/14/728a1417c0911e7592c120a8ad08e32a.jpg")
-    .addField("Point de vie :" , "500")
-    .addField("Points d'armure :" , "10")
-    .addField("Points de dégâts" , "50")
-    .addField("Pour engager le combat :" , "=Urguf le chef attaque")
-    .addField("Lorsque Urguf le chef reçoit un coup :" , "=Urguf le chef défense : [Points de dégâts de votre coup]")
-    .addField("Les récompenses une fois mort :" , "=Urguf le chef récompenses")
+    .setTitle("Jeune kobolt :" , "Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setImage("http://vignette2.wikia.nocookie.net/chroniclesofarn/images/b/b2/Kobold-11.jpg/revision/latest?cb=20130810171342")
+    .addField("Point de vie :" , "300")
+    .addField("Pour engager le combat :" , "`=Jeune kobolt attaque`")
+    .addField("Lorsque le jeune kobolt reçoit un coup :" , "`=Jeune kobolt défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Jeune kobolt récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Jeune kobolt récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt mineur"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Kobolt mineur :" , "Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
+    .addField("Point de vie :" , "400")
+    .addField("Pour engager le combat :" , "`=Kobolt mineur attaque`")
+    .addField("Lorsque le kobolt mineur reçoit un coup :" , "`=Kobolt mineur défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Kobolt mineur récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Kobolt mineur récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
     }
   })
 
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt ouvrier"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Kobolt ouvrier :" , "Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setImage("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5e/KoboldMG.png/300px-KoboldMG.png?version=b6cc120769e6300e7b5eb863ef828278")
+    .addField("Point de vie :" , "500")
+    .addField("Pour engager le combat :" , "`=Loup gigantesque attaque`")
+    .addField("Lorsque le kobolt ouvrier reçoit un coup :" , "`=Kobolt ouvrier défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Kobolt ouvrier récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Kobolt ouvrier récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
   
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt explorateur"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Kobolt explorateur :" , "Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setImage("https://i.pinimg.com/originals/73/6a/cf/736acf4e514eed57b8f255aff493f4ea.jpg")
+    .addField("Point de vie :" , "450")
+    .addField("Pour engager le combat :" , "`=Kobolt explorateur attaque`")
+    .addField("Lorsque le kobolt explorateur reçoit un coup :" , "`=Kobolt explorateur défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Kobolt explorateur récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Kobolt explorateur récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
+
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt garde"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Kobolt garde :" , "Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
+    .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
+    .addField("Point de vie :" , "1000")
+    .addField("Pour engager le combat :" , "`=Kobolt garde attaque`")
+    .addField("Lorsque le kobolt garde reçoit un coup :" , "`=Kobolt garde défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Kobolt garde récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Kobolt garde récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt combattant"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Kobolt combattant :" , "Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
+    .addField("Point de vie :" , "1100")
+    .addField("Pour engager le combat :" , "`=Kobolt combattant attaque`")
+    .addField("Lorsque le kobolt combattant reçoit un coup :" , "`=Kobolt combattant défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Kobolt combattant récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Kobolt combattant récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
+
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt espion"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Kobolt espion :" , "Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
+    .setImage("https://i.pinimg.com/564x/63/c0/c3/63c0c3bfc02566d63326eed4af43db78.jpg")
+    .addField("Point de vie :" , "1200")
+    .addField("Pour engager le combat :" , "`=Kobolt espion attaque`")
+    .addField("Lorsque le kobolt espion reçoit un coup :" , "`=Kobolt espion défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Kobolt espion récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Kobolt espion récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
+
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt géant rouge"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle("Kobolt géant rouge :" , "Un kobolt géant rare qui n'est trouvable que dans la grotte du palier 1 !")
+    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+    .addField("Point de vie :" , "4000")
+    .addField("Pour engager le combat :" , "`=Kobolt géant rouge attaque`")
+    .addField("Lorsque le kobolt géant rouge reçoit un coup :" , "`=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
+    .addField("Les récompenses une fois mort en solo :" , "`=Kobolt géant rouge récompenses solo : [Votre niveau]`")
+     .addField("Les récompenses une fois mort en groupe :" , "`=Kobolt géant rouge récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+    }
+  })
+
+
 
 //////////////////////////////////////////////////////////Monstres récompenses////////////////////////////////////////////////////////////////////////////////////
 
@@ -2984,7 +3108,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((41)*Math.random()+20))
+     const C = (Math.floor((21)*Math.random()+30))
      if (B < 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -3111,7 +3235,7 @@ bot.on('message', message => {
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+     .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
      .setTimestamp()
      message.channel.send({embed})
@@ -3119,7 +3243,7 @@ bot.on('message', message => {
                                               const B = (Math.floor(((Z*1)+1)*Math.random()+0))
                                               const C = (Math.floor(((Z*1)+1)*Math.random()+0))
                                               const D = (Math.floor(((Z*1)+1)*Math.random()+0))
-                                              const E = (Math.floor((((Z*1)+1)*(0.80))*Math.random()+0))
+                                              const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
                                               const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
                                                const embed = new Discord.RichEmbed()
                                                .setAuthor(message.author.username , message.author.avatarURL)
@@ -3137,7 +3261,7 @@ bot.on('message', message => {
     talkedRecently.add(message.author.id+1000);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+1000);
-     }, 0);
+     }, 600000);
   }
   })
 
@@ -3174,7 +3298,7 @@ bot.on('message', message => {
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Cooldown :" , " Vous devrez attendre 15 minutes avant de pouvoir refaire ceci !")
+     .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
      .setTimestamp()
      message.channel.send({embed})
@@ -3182,7 +3306,7 @@ bot.on('message', message => {
                                                     const B = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const C = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const D = (Math.floor(((Z*1)+1)*Math.random()+0))
-                                                    const E = (Math.floor((((Z*1)+1)*(0.80))*Math.random()+0))
+                                                    const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
                                                     const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
                                                      const embed = new Discord.RichEmbed()
                                                      .setAuthor(message.author.username , message.author.avatarURL)
@@ -3200,7 +3324,7 @@ bot.on('message', message => {
     talkedRecently.add(message.author.id+1000);
       setTimeout(() => {
        talkedRecently.delete(message.author.id+1000);
-     }, 0);
+     }, 600000 );
   }
   })
 //////////////////////////////////////////////////////////Montagnes/////////////////////////////////////////////////////////////////////////////////////
@@ -3225,6 +3349,44 @@ bot.on('message', message => {
 
 
 
+            bot.on('message', message => {
+                                                    let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+                                                if (message.content.startsWith(prefix + "Forêt combat")) {
+                                                  let Z = args.slice(2).join(" : ");
+                                                                                    if (talkedRecently.has(message.author.id+1000)) {
+    const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+     .setTimestamp()
+     message.channel.send({embed})
+} else {
+                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                                    const C = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                                    const E = (Math.floor((((Z*1)+1)*(0.50))*Math.random()+0))
+                                                    const F = (Math.floor((((Z*1)+1)*(0.50))*Math.random()+0))
+                                                     const embed = new Discord.RichEmbed()
+                                                     .setAuthor(message.author.username , message.author.avatarURL)
+                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                     .setColor(3447003)
+                                                     .addField("Forêt :" , "En marchant dans la forêt, vous rencontrez les ennemis suivants")
+                                                     .addField("Jeune kobolt :" , +B)
+                                                     .addField("Kobolt explorateur :" , +C)
+                                                     .addField("Kobolt ouvrier :" , +E)
+                                                     .addField("Kobolt mineur :" , +F)
+                                                     .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+                                                     .setTimestamp()
+                                                         message.channel.send({embed})}
+    talkedRecently.add(message.author.id+1000);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+1000);
+     }, 600000 );
+  }
+  })
+
 
 //////////////////////////////////////////////////////////Grotte/////////////////////////////////////////////////////////////////////////////////////
 
@@ -3244,6 +3406,45 @@ bot.on('message', message => {
                                                   message.channel.send({embed})
                                                 }
                                               })
+
+
+          bot.on('message', message => {
+                                                    let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+                                                if (message.content.startsWith(prefix + "Grotte combat")) {
+                                                  let Z = args.slice(2).join(" : ");
+                                                                                    if (talkedRecently.has(message.author.id+1000)) {
+    const embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setColor(3447003)
+     .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+     .setTimestamp()
+     message.channel.send({embed})
+} else {
+                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                                    const C = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                                    const E = (Math.floor((((Z*1)+1)*(0.70))*Math.random()+0))
+                                                    const F = (Math.floor((((Z*1)+1)*(0.95))*Math.random()+0))
+                                                     const embed = new Discord.RichEmbed()
+                                                     .setAuthor(message.author.username , message.author.avatarURL)
+                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                     .setColor(3447003)
+                                                     .addField("Forêt :" , "En marchant dans la forêt, vous rencontrez les ennemis suivants")
+                                                     .addField("Kobolt garde :" , +B)
+                                                     .addField("Kobolt combattant :" , +C)
+                                                     .addField("Kobolt espion :" , +E)
+                                                     .addField("Kobolt géant rouge :" , +F)
+                                                     .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+                                                     .setTimestamp()
+                                                         message.channel.send({embed})}
+    talkedRecently.add(message.author.id+1000);
+      setTimeout(() => {
+       talkedRecently.delete(message.author.id+1000);
+     }, 600000 );
+  }
+  })
 
 
 
