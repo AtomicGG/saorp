@@ -1433,7 +1433,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((55*1)*Math.random()+55*1))
+                    const F = (Math.floor((55*1)*Math.random()+90*1))
                     const FF = F-(X*5)
                     const G = (Math.floor((28*1)*Math.random()+28*1))
              if(FF > 0) {
@@ -1482,7 +1482,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((45*1)*Math.random()+45*1))
+                    const F = (Math.floor((45*1)*Math.random()+75*1))
                     const FF = F-(X*5)
                     const G = (Math.floor((19*1)*Math.random()+18*1))
                      if(FF > 0) {
@@ -1884,7 +1884,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((60*1)*Math.random()+60*1))
+                    const F = (Math.floor((60*1)*Math.random()+90*1))
                     const FF = F-(X*5)
                     const G = (Math.floor((31*1)*Math.random()+30*1))
                      if(FF > 0) {
@@ -1934,7 +1934,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((50*1)*Math.random()+50*1))
+                    const F = (Math.floor((50*1)*Math.random()+75*1))
                     const FF = F-(X*5)
                     const G = (Math.floor((22*1)*Math.random()+22*1))
                      if(FF > 0) {
