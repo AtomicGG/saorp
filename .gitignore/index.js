@@ -3240,7 +3240,7 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                              const B = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                              const B = (Math.floor(((Z*1)+1)*Math.random()+1))
                                               const C = (Math.floor(((Z*1)+1)*Math.random()+0))
                                               const D = (Math.floor(((Z*1)+1)*Math.random()+0))
                                               const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
@@ -3303,7 +3303,7 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+1))
                                                     const C = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const D = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
@@ -3352,7 +3352,7 @@ bot.on('message', message => {
             bot.on('message', message => {
                                                     let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-                                                if (message.content.startsWith(prefix + "Forêt combat")) {
+                                                if (message.content.startsWith(prefix + "Montagne combat")) {
                                                   let Z = args.slice(2).join(" : ");
                                                                                     if (talkedRecently.has(message.author.id+1000)) {
     const embed = new Discord.RichEmbed()
@@ -3364,7 +3364,7 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+1))
                                                     const C = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const E = (Math.floor((((Z*1)+1)*(0.50))*Math.random()+0))
                                                     const F = (Math.floor((((Z*1)+1)*(0.50))*Math.random()+0))
@@ -3423,7 +3423,7 @@ bot.on('message', message => {
      .setTimestamp()
      message.channel.send({embed})
 } else {
-                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+0))
+                                                    const B = (Math.floor(((Z*1)+1)*Math.random()+1))
                                                     const C = (Math.floor(((Z*1)+1)*Math.random()+0))
                                                     const E = (Math.floor((((Z*1)+1)*(0.70))*Math.random()+0))
                                                     const F = (Math.floor((((Z*1)+1)*(0.95))*Math.random()+0))
