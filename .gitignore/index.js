@@ -1001,7 +1001,7 @@ bot.on('message', message => {
   const D = (Math.floor((2-(0.75))*Math.random()))
   const E = (Math.floor((2-(0.85))*Math.random()))
   const F = (Math.floor((30*1)*Math.random()+30*1))
-  const FF = F-(X*3)
+  const FF = F-(X*4)
   const G = (Math.floor((11*1)*Math.random()+10*1))
   const I = (Math.floor((2-(0.90))*Math.random()))
   const Oeufs = (Math.floor((2-(0.98))*Math.random()))
@@ -1040,7 +1040,7 @@ bot.on('message', message => {
   const E = (Math.floor((2-(0.95))*Math.random()))
   const F = (Math.floor((25*1)*Math.random()+25*1))
   const Orge = (Math.floor((3)*Math.random()+1))
-  const FF = F-(X*3)
+  const FF = F-(X*4)
   const G = (Math.floor((8*1)*Math.random()+7*1))
   const I = (Math.floor((2-(0.90))*Math.random()))
   const Oeufs = (Math.floor((2-(0.98))*Math.random()))
@@ -1077,7 +1077,7 @@ let cont = message.content.slice(prefix.length).split(" ");
     const E = (Math.floor((2-(0.85))*Math.random()))
     const F = (Math.floor((15*1)*Math.random()+15*1))
     const Orge = (Math.floor((5)*Math.random()+1))
-    const FF = F-(X*2)
+    const FF = F-(X*3)
     const G = (Math.floor((6*1)*Math.random()+5*1))
     const Oeufs = (Math.floor((2-(0.99))*Math.random()))
      if(FF > 0) {
@@ -1114,7 +1114,7 @@ let cont = message.content.slice(prefix.length).split(" ");
     const E = (Math.floor((2-(0.95))*Math.random()))
     const F = (Math.floor((10*1)*Math.random()+10*1))
     const Orge = (Math.floor((3)*Math.random()+1))
-    const FF = F-(X*2)
+    const FF = F-(X*3)
     const G = (Math.floor((4*1)*Math.random()+3*1))
     const Oeufs = (Math.floor((2-(0.99))*Math.random()))
      if(FF > 0) {
@@ -1152,7 +1152,7 @@ let cont = message.content.slice(prefix.length).split(" ");
       const E = (Math.floor((2-(0.85))*Math.random()))
       const F = (Math.floor((15*1)*Math.random()+15*1))
       const Orge = (Math.floor((5)*Math.random()+1))
-      const FF = F-(X*2)
+      const FF = F-(X*3)
       const G = (Math.floor((6*1)*Math.random()+5*1))
       const Oeufs = (Math.floor((2-(0.99))*Math.random()))
        if(FF > 0) {
@@ -1191,7 +1191,7 @@ let cont = message.content.slice(prefix.length).split(" ");
       const E = (Math.floor((2-(0.95))*Math.random()))
       const F = (Math.floor((10*1)*Math.random()+10*1))
       const Orge = (Math.floor((3)*Math.random()+1))
-      const FF = F-(X*2)
+      const FF = F-(X*3)
       const G = (Math.floor((4*1)*Math.random()+3*1))
       const Oeufs = (Math.floor((2-(0.99))*Math.random()))
        if(FF > 0) {
@@ -1229,7 +1229,7 @@ let cont = message.content.slice(prefix.length).split(" ");
         const E = (Math.floor((2-(0.85))*Math.random()))
         const F = (Math.floor((15*1)*Math.random()+15*1))
         const Orge = (Math.floor((5)*Math.random()+1))
-        const FF = F-(X*2)
+        const FF = F-(X*3)
         const G = (Math.floor((6*1)*Math.random()+5*1))
         const Oeufs = (Math.floor((2-(0.99))*Math.random()))
          if(FF > 0) {
@@ -1267,7 +1267,7 @@ let cont = message.content.slice(prefix.length).split(" ");
         const E = (Math.floor((2-(0.95))*Math.random()))
         const Orge = (Math.floor((3)*Math.random()+1))
         const F = (Math.floor((10*1)*Math.random()+10*1))
-        const FF = F-(X*2)
+        const FF = F-(X*3)
         const G = (Math.floor((4*1)*Math.random()+3*1))
         const Oeufs = (Math.floor((2-(0.99))*Math.random()))
          if(FF > 0) {
@@ -1306,8 +1306,8 @@ let cont = message.content.slice(prefix.length).split(" ");
           const E = (Math.floor((2-(0.85))*Math.random()))
           const I = (Math.floor((2-(0.90))*Math.random()))
           const F = (Math.floor((22*1)*Math.random()+22*1))
-          const FF = F-(X*3)
-          const G = (Math.floor((21*1)*Math.random()+20*1))
+          const FF = F-(X*4)
+          const G = (Math.floor((25*1)*Math.random()+25*1))
           const Oeufs = (Math.floor((2-(0.98))*Math.random()))
            if(FF > 0) {
             const embed = new Discord.RichEmbed()
@@ -1343,8 +1343,8 @@ let cont = message.content.slice(prefix.length).split(" ");
           const E = (Math.floor((2-(0.95))*Math.random()))
           const Orge = (Math.floor((5)*Math.random()+1))
           const I = (Math.floor((2-(0.97))*Math.random()))
-          const F = (Math.floor((17*1)*Math.random()+17*1))
-          const FF = F-(X*3)
+          const F = (Math.floor((20*1)*Math.random()+20*1))
+          const FF = F-(X*4)
           const G = (Math.floor((15*1)*Math.random()+15*1))
           const Oeufs = (Math.floor((2-(0.98))*Math.random()))
            if(FF > 0) {
@@ -1381,7 +1381,7 @@ let cont = message.content.slice(prefix.length).split(" ");
             const I = (Math.floor((2-(0.95))*Math.random()))
             const F = (Math.floor((45)*Math.random()+45))
             const Orge = (Math.floor((9)*Math.random()+2))
-            const FF = F-(X*4)
+            const FF = F-(X*5)
             const G = (Math.floor((21)*Math.random()+20))
             const Oeufs = (Math.floor((2-(0.97))*Math.random()))
               const Clef = (Math.floor((2-(0.97))*Math.random()))
@@ -1433,8 +1433,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((70*1)*Math.random()+70*1))
-                    const FF = F-(X*4)
+                    const F = (Math.floor((55*1)*Math.random()+55*1))
+                    const FF = F-(X*5)
                     const G = (Math.floor((28*1)*Math.random()+28*1))
              if(FF > 0) {
               const embed = new Discord.RichEmbed()
@@ -1482,8 +1482,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((55*1)*Math.random()+55*1))
-                    const FF = F-(X*4)
+                    const F = (Math.floor((45*1)*Math.random()+45*1))
+                    const FF = F-(X*5)
                     const G = (Math.floor((19*1)*Math.random()+18*1))
                      if(FF > 0) {
                       const embed = new Discord.RichEmbed()
@@ -1521,7 +1521,7 @@ let cont = message.content.slice(prefix.length).split(" ");
             const I = (Math.floor((2-(0.98))*Math.random()))
              const J = (Math.floor((2-(0.98))*Math.random()))
             const F = (Math.floor((35)*Math.random()+35))
-            const FF = F-(X*4)
+            const FF = F-(X*5)
             const G = (Math.floor((15)*Math.random()+15))
             const Orge = (Math.floor((5)*Math.random()+1))
             const Oeufs = (Math.floor((2-(0.97))*Math.random()))
@@ -1557,7 +1557,7 @@ let cont = message.content.slice(prefix.length).split(" ");
               const B = (Math.floor((3*1)*Math.random()))
               const C = (Math.floor((2-(0.75))*Math.random()))
               const F = (Math.floor((30*1)*Math.random()+30*1))
-              const FF = F-(X*3)
+              const FF = F-(X*4)
               const G = (Math.floor((11*1)*Math.random()+10*1))
               const D = (Math.floor((2-(0.80))*Math.random()))
               const Orge = (Math.floor((5)*Math.random()+1))
@@ -1594,7 +1594,7 @@ let cont = message.content.slice(prefix.length).split(" ");
               const B = (Math.floor((2*1)*Math.random()))
               const C = (Math.floor((2-(0.90))*Math.random()))
               const F = (Math.floor((25*1)*Math.random()+25*1))
-              const FF = F-(X*3)
+              const FF = F-(X*4)
               const G = (Math.floor((7*1)*Math.random()+8*1))
               const D = (Math.floor((2-(0.90))*Math.random()))
               const E = (Math.floor((2-(0.98))*Math.random()))
@@ -1644,7 +1644,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       const V = (Math.floor((2-(0.90))*Math.random()))
                       const Orge = (Math.floor((5)*Math.random()+1))
                 const F = (Math.floor((18*1)*Math.random()+18*1))
-                const FF = F-(X*2)
+                const FF = F-(X*3)
                 const G = (Math.floor((6*1)*Math.random()+5*1))
                  if(FF > 0) {
                   const embed = new Discord.RichEmbed()
@@ -1690,7 +1690,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       const V = (Math.floor((2-(0.95))*Math.random()))
                       const Orge = (Math.floor((3)*Math.random()+1))
                 const F = (Math.floor((13*1)*Math.random()+13*1))
-                const FF = F-(X*2)
+                const FF = F-(X*3)
                 const G = (Math.floor((4*1)*Math.random()+3*1))
                  if(FF > 0) {
                   const embed = new Discord.RichEmbed()
@@ -1737,7 +1737,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 
                       const Orge = (Math.floor((5)*Math.random()+1))
                   const F = (Math.floor((30*1)*Math.random()+30*1))
-                  const FF = F-(X*3)
+                  const FF = F-(X*4)
                   const G = (Math.floor((11*1)*Math.random()+10*1))
                    if(FF > 0) {
                     const embed = new Discord.RichEmbed()
@@ -1783,7 +1783,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                       const V = (Math.floor((2-(0.98))*Math.random()))
                       const Orge = (Math.floor((3)*Math.random()+1))
                   const F = (Math.floor((25*1)*Math.random()+25*1))
-                  const FF = F-(X*3)
+                  const FF = F-(X*4)
                   const G = (Math.floor((7*1)*Math.random()+8*1))
                    if(FF > 0) {
                     const embed = new Discord.RichEmbed()
@@ -1805,6 +1805,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                     message.channel.send({embed})}
                         }
                   }) ;
+
+
 
 
                   bot.on('message', message => {
@@ -1833,8 +1835,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((60*1)*Math.random()+60*1))
-                    const FF = F-(X*4)
+                    const F = (Math.floor((50*1)*Math.random()+50*1))
+                    const FF = F-(X*5)
                     const G = (Math.floor((21*1)*Math.random()+20*1))
                      if(FF > 0) {
                       const embed = new Discord.RichEmbed()
@@ -1882,8 +1884,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((55*1)*Math.random()+55*1))
-                    const FF = F-(X*4)
+                    const F = (Math.floor((60*1)*Math.random()+60*1))
+                    const FF = F-(X*5)
                     const G = (Math.floor((31*1)*Math.random()+30*1))
                      if(FF > 0) {
                       const embed = new Discord.RichEmbed()
@@ -1932,8 +1934,8 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.95))*Math.random()))
                         const YY = (Math.floor((2-(0.95))*Math.random()))
                         const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((55*1)*Math.random()+55*1))
-                    const FF = F-(X*4)
+                    const F = (Math.floor((50*1)*Math.random()+50*1))
+                    const FF = F-(X*5)
                     const G = (Math.floor((22*1)*Math.random()+22*1))
                      if(FF > 0) {
                       const embed = new Discord.RichEmbed()
@@ -1984,7 +1986,7 @@ let cont = message.content.slice(prefix.length).split(" ");
                        const Y = (Math.floor((2-(0.98))*Math.random()))
                         const YY = (Math.floor((2-(0.98))*Math.random()))
                     const F = (Math.floor((40*1)*Math.random()+40*1))
-                    const FF = F-(X*4)
+                    const FF = F-(X*5)
                     const G = (Math.floor((14*1)*Math.random()+15*1))
                      if(FF > 0) {
                       const embed = new Discord.RichEmbed()
@@ -2020,7 +2022,7 @@ bot.on('message', message => {
       const DD = (Math.floor((2-(0.70))*Math.random()))
                  const YY = (Math.floor((2-(0.98))*Math.random()))
               const Exp = (Math.floor((101)*Math.random()+100))
-              const FFF = Exp-(X*4)
+              const FFF = Exp-(X*5)
               const GGG = (Math.floor((51)*Math.random()+50))
               const Oeufs = (Math.floor((2-(0.85))*Math.random()))
                if(FFF > 0) {
