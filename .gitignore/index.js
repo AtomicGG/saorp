@@ -2617,10 +2617,13 @@ bot.on('message', message => {
 
 
 
+
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre d'élite attaque")) {
     const Dégâts = 40
-     const A = (Math.floor((41)*Math.random()+80))
+     const A = (Math.floor((41)*Math.random()+50))
      const B = (Math.floor((100)*Math.random()+1))
       const C = (Math.floor((16)*Math.random()+15))
      if (B < 5){
@@ -2652,29 +2655,302 @@ bot.on('message', message => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Urguf le chef attaque")) {
-    const Dégâts = 50
-     const A = (Math.floor(((Dégâts*3))*Math.random()+(Dégâts/5)))
+  if (message.content.startsWith(prefix + "Jeune kobolt attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((31)*Math.random()+60))
      const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((41)*Math.random()+90))
      if (B < 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Urguf le chef :" , "Urguf le chef sors sa hache à deux mains imposante et tente de la lancer, mais il surestime sa force et sa hache reste dans ses mains, vous avez de la chance !")
+      .addField("Jeune kobolt :" , "Le jeune kobolt tente de sauter sur vous afin de vous étrangler probablement mais il glisse et tombe sur le côté, vous avez de la chance !")
       message.channel.send({embed})}
-      if (51 < B){
+      if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Urguf le chef :" , "Urguf crie de rage avec sa hache à deux mains avant de courir et de vous mettre un coup puissant horizontal, vous faisant tomber et voler assez loin, il inflige " +A+ " points de dégâts")
+        .addField("Jeune kobolt :" , "Le jeune kobolt saute d'un bond en avant très rapide et met un coup de tête puissant, il inflige " +A+ " points de dégâts")
         .setTimestamp()
-        message.channel.send({embed})}
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Jeune kobolt :" , "Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez tous les dégâts des trois tours donc " +C*3+ " ]")
+        .setTimestamp()
+         message.channel.send({embed})}
           }
     }
 );
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt explorateur attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((41)*Math.random()+70))
+     const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((61)*Math.random()+80))
+     if (B < 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt explorateur :" , "Le kobolt explorateur essaye de balancer sa dague vers vous mais elle atteris sur le côté, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (41 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt explorateur :" , "Le kobolt explorateur court plus rapidement que les autres kobolts ce qui lui permet de vous faire tomber sur le sol et vous planter, il inflige " +A+ " points de dégâts et réduit vos prochains dégâts de 20")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt explorateur :" , "Le kobolt explorateur sort une sorte de poudre qu'il balance dans l'air ce qui vous aveugle, il en profite pour planter sa dague dans votre bide avant de fuir loin de vous en ricanant, il inflige " +C+ " points de dégâts [L'armure ne comptera pas]")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt mineur attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((41)*Math.random()+75))
+     const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((61)*Math.random()+100))
+     if (B < 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt mineur :" , "Le kobolt mineur dégaine sa pioche et tente de vous mettre un coup horizontal mais celle-ci est trop lent, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (41 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt mineur :" , "Le kobolt mineur saute en avant et arrive à vous mettre un coup de pioche bien placé verticalement, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt mineur :" , "Le kobolt mineur sort deux pioches et gémis de rage avant de les balancer sur vous en même temps, il inflige " +C+ " points de dégâts [Aucune défense possible]")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt ouvrier attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((51)*Math.random()+80))
+     const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((51)*Math.random()+80))
+     if (B < 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt ouvrier :" , "Le kobolt ouvrier aggripe un objet autour de lui et essaye de vous frapper mais celui-ci ne fait rien, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (31 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt ouvrier :" , "Le kobolt ouvrier sort une clé à molette et la prend à deux mains avant de mettre un coup puissant vers vous, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt ouvrier :" , "Le kobolt ouvrier sous la rage arrive à soulever un rocher avant de le fracasser sur vous d'une puissance immense, il inflige " +C+ " points de dégâts et vous étourdis pendant un tour")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt garde attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((61)*Math.random()+140))
+     const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((2)*Math.random()+1))
+     if (B < 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt garde :" , "Le kobolt garde brandit son bouclier en avant pour pouvoir vous toucher de son épée mais il n'y arrive pas sous le poids, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (26 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt garde :" , "Le kobolt garde fonce le bouclier en avant et l'épée elle aussi en avant afin de vous empaler, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt garde :" , "Le kobolt garde pendant un instant arrive à soulever très haut son bouclier avant de le faire tomber lourdement sur vous, il inflige " +A+ " points de dégâts et vous étourdis pendant" +C+ " tours")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt combattant attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((81)*Math.random()+160))
+     const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((101)*Math.random()+200))
+     if (B < 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt combattant :" , "Le kobolt combattant tente de faire un mouvement circulaire de son épée sur vous mais il perd l'équilibre, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (21 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt combattant :" , "Le kobolt s'élance en avant tel un épéiste expérimenté avant de trouver une occasion de mettre un coup rapide, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt combattant :" , "Le kobolt combattant commence un mouvement circulaire très rapide et impressionnant avec son épée avant de se rapprocher rapidement de vous en une fraction de seconde, il inflige " +A+ " points de dégâts sur vous et deux autres joueurs")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt espion attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((91)*Math.random()+180))
+     const B = (Math.floor((100)*Math.random()+1))
+      const C = (Math.floor((2)*Math.random()+1))
+     if (B < 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt espion :" , "Le kobolt espion sort discrètement plusieurs kunais de son manteau noir et le lance dans votre direction mais ils tombent avant de vous atteindre, vous avez de la chances !")
+      message.channel.send({embed})}
+      if (11 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt espion :" , "Le kobolt espion se déplace de gauche à droite rapidement afin de sauter et de balancer une nuée de kunais sur vous tel un ninja, il inflige " +A+ " points de dégâts")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt espion:" , "Le kobolt espion s'approche de vous et sort subitement une poudre qu'il vous balance en pleine face ce qui vous fait perdre le contrôle, vous êtes sous son charme pendant " +C+ " tours [Vous devrez attaquer aléatoirement les autres joueurs, ou si vous êtes seul vous frapper vous même, le kobolt ne vous attaquera pas pendant la durée du charme si vous êtes seul")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt géant rouge attaque")) {
+    const Dégâts = 40
+     const A = (Math.floor((101)*Math.random()+200))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((151)*Math.random()+300))
+     if (B < 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt géant rouge :" , "Le kobolt géant rouge sort deux épées de son dos et les fait frotter le sol en courant vers vous mais sa course le fait tomber à cause de son immensité, vous avez de la chance !")
+      message.channel.send({embed})}
+      if (31 < B & B < 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt géant rouge :" , "Le kobolt géant rouge sort et balance ses deux épées ainsi que ses bras gigantesques vers vous d'une vitesse colossale, il inflige " +A+ " points de dégâts à deux joueurs")
+        .setTimestamp()
+         message.channel.send({embed})}
+     if (91 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt géant rouge :" , "Le kobolt géant rouge commence à avoir des yeux complètement injectés de sang et se déchaîne complètement en balançant ses bras et ses épées dans tous les sens autour de lui, il inflige " + A+ " points de dégâts à tous les joueurs, ou s'il n'y a qu'un joueur " +C+ " points de dégâts à la place [Seulement l'esquive est possible]")
+        .setTimestamp()
+         message.channel.send({embed})}
+          }
+    }
+);
+
+
+
 
 
 
@@ -3133,27 +3409,247 @@ bot.on('message', message => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Urguf le chef défense")) {
-    let Dégâts = args.slice(4).join(" : ");
-     const A = (Math.floor(((Dégâts*2.25))*Math.random()+(Dégâts/2)))
+  if (message.content.startsWith(prefix + "Jeune kobolt défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((50)*Math.random()+25))
-     if (B < 75){
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Urguf le chef :" , "Urguf tente de mettre un coup de manche avec sa hache pour vous faire tomber pendant votre coup, mais il se rate et se prend le coup de plein fouet, vous infligez " +A+ " points de dégâts")
+      .addField("Jeune kobolt :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (76 < B){
+      if (66 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Urguf le chef :" , "Urguf donne un violent coup de manche sur votre arme lorsque vous tentez de lui mettre un coup, le choc de l'arme et du manche vous fait tombé par terre et il en profite pour mettre un violent coup vertical, il inflige " +C+ " point de dégâts")
+        .addField("Jeune kobolt :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt explorateur défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt explorateur :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt explorateur :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt ouvrier défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt ouvrier :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt ouvrier :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt mineur défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt mineur :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt mineur :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt combattant défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt combattant :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt combattant :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt garde défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts*1.75)*Math.random()+(Dégâts/2)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt garde :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt garde :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt espion défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt espion :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt espion :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt géant rouge défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+     const A = (Math.floor((Dégâts*1.5)*Math.random()+(Dégâts/1.5)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((3)*Math.random()+3))
+     if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Kobolt géant rouge :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (61 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Kobolt géant rouge :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
