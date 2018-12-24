@@ -3927,7 +3927,7 @@ bot.on('message', message => {
    .addField("Règle [6]" , "Pas de menaces de toutes sortes comme du DDOS")
    .addField("Règle [7]" , "Pas de pub en message privés sous différentes formes")
    .addField("Valider le règlement pour voir les salons :" , "Il suffit d'appuyer sur :white_check_mark: juste au dessus de ce message !\n\nUne fois validé, tu verras de nouveaux salons apparaîtrent dont 'Vos informations' 'Vos jeux' 'Vos tags' 'Vos tags RP' 'Vos salons' qui permettent de choisir vos rôles et de choisir quels parties du discord voir !")
-   .addField("Comprendre le principe du discord et du RP :" , "Ecrivez tous simplement dans un salon de commande ceci, puis lisez : =Menu SAO")
+   .addField("Comprendre le principe du discord et du RP :" , "Ecrivez tous simplement dans un salon de commande ceci, puis lisez : `=Menu SAO`")
    .addField("Besoin d'aide ?" , "Vous pourrez écrire `=Aide` pour que le staff vous aide !")
    .addField("Invitation vers le discord :" , "https://discord.gg/QEYaNfQ")
    .addField("Invitation vers notre discord pub :" , "https://discord.gg/NYH43Ks")
