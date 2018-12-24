@@ -3428,7 +3428,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Jeune kobolt défense")) {
     let Dégâts = args.slice(3).join(" : ");
-     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((3)*Math.random()+3))
      if (B < 60){
@@ -3458,7 +3458,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt explorateur défense")) {
     let Dégâts = args.slice(3).join(" : ");
-     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((21)*Math.random()+40))
      if (B < 50){
@@ -3496,7 +3496,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt ouvrier défense")) {
     let Dégâts = args.slice(3).join(" : ");
-     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((3)*Math.random()+3))
      if (B < 40){
@@ -3525,7 +3525,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt mineur défense")) {
     let Dégâts = args.slice(3).join(" : ");
-     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((21)*Math.random()+40))
      if (B < 40){
@@ -3565,7 +3565,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt combattant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((31)*Math.random()+60))
      if (B < 60){
@@ -3638,7 +3638,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt espion défense")) {
     let Dégâts = args.slice(3).join(" : ");
-     const A = (Math.floor((Dégâts)*Math.random()+(Dégâts)))
+     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((41)*Math.random()+60))
      if (B < 40){
