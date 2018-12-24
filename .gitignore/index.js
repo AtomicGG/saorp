@@ -3673,7 +3673,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt géant rouge défense")) {
-    let Dégâts = args.slice(3).join(" : ");
+    let Dégâts = args.slice(4).join(" : ");
      const A = (Math.floor((Dégâts*1.5)*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((51)*Math.random()+100))
