@@ -2247,6 +2247,8 @@ bot.on('message', message => {
                                                                   const A = (Math.floor((2)*Math.random()+1))
                                                                   const B = (Math.floor((2-(0.75))*Math.random()))
                                                                   const C = (Math.floor((2-(0.85))*Math.random()))
+                                                                  const D = (Math.floor((2-(0.99))*Math.random()))
+                                                                  const E = (Math.floor((2-(0.98))*Math.random()))
                                                                   const F = (Math.floor((51*1)*Math.random()+90*1))
                                                                                     const FF = F-(X*6)
                                                                                     const G = (Math.floor((31*1)*Math.random()+30*1))
@@ -2256,7 +2258,7 @@ bot.on('message', message => {
                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                                                                                .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nCarte au trésor : " +D+ "\nBottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})}
                                                                     if(FF < 0) {
@@ -2265,11 +2267,130 @@ bot.on('message', message => {
                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                      .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+                                                                                      .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nCarte au trésor : " +D+ "\nBottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})}
                                                                                           }
                                                                                     }) ;
+
+
+
+
+                                                                                    bot.on('message', message => {
+                                                                                      let cont = message.content.slice(prefix.length).split(" ");
+                                                                                        const args = cont.slice(1);
+                                                                                        if (message.content.startsWith(prefix + "Kobolt explorateur récompenses groupe")) {
+                                                                                        let X = args.slice(4).join(" : ");       
+                                                                                        const A = (Math.floor((2)*Math.random()+1))
+                                                                                        const B = (Math.floor((2-(0.85))*Math.random()))
+                                                                                        const C = (Math.floor((2-(0.95))*Math.random()))
+                                                                                        const D = (Math.floor((2-(0.995))*Math.random()))
+                                                                                        const E = (Math.floor((2-(0.99))*Math.random()))
+                                                                                        const F = (Math.floor((41*1)*Math.random()+80*1))
+                                                                                                          const FF = F-(X*6)
+                                                                                                          const G = (Math.floor((31*1)*Math.random()+30*1))
+                                                                                                           if(FF > 0) {
+                                                                                                            const embed = new Discord.RichEmbed()
+                                                                                                            .setColor(3447003)
+                                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                                                                                                      .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nCarte au trésor : " +D+ "\nBottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                                                                                                            .setTimestamp()
+                                                                                                            message.channel.send({embed})}
+                                                                                          if(FF < 0) {
+                                                                                             const embed = new Discord.RichEmbed()
+                                                                                                            .setColor(3447003)
+                                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                                                                                                            .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nCarte au trésor : " +D+ "\nBottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+                                                                                                            .setTimestamp()
+                                                                                                            message.channel.send({embed})}
+                                                                                                                }
+                                                                                                          }) ;
+
+
+
+
+
+
+                                                                                                          bot.on('message', message => {
+                                                                                                            let cont = message.content.slice(prefix.length).split(" ");
+                                                                                                              const args = cont.slice(1);
+                                                                                                              if (message.content.startsWith(prefix + "Kobolt mineur récompenses solo")) {
+                                                                                                              let X = args.slice(4).join(" : ");       
+                                                                                                              const A = (Math.floor((2)*Math.random()+1))
+                                                                                                              const B = (Math.floor((2-(0.75))*Math.random()))
+                                                                                                              const C = (Math.floor((2-(0.85))*Math.random()))
+                                                                                                              const D = (Math.floor((2-(0.95))*Math.random()))
+                                                                                                              const E = (Math.floor((2-(0.95))*Math.random()))
+                                                                                                              const H = (Math.floor((2-(0.95))*Math.random()))
+                                                                                                              const I = (Math.floor((2-(0.95))*Math.random()))
+                                                                                                              const J = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                              const F = (Math.floor((51*1)*Math.random()+90*1))
+                                                                                                                                const FF = F-(X*6)
+                                                                                                                                const G = (Math.floor((31*1)*Math.random()+30*1))
+                                                                                                                                 if(FF > 0) {
+                                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                                  .setColor(3447003)
+                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                                                                                                                            .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nPioche de kobolt : " +D+ "\nHache de kobolt : " +E+ "\nCouteau de kobolt : " +H+ "\nFaucille de kobolt : " +I+ "\nCasque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}
+                                                                                                                if(FF < 0) {
+                                                                                                                   const embed = new Discord.RichEmbed()
+                                                                                                                                  .setColor(3447003)
+                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                                                                                                                                  .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nPioche de kobolt : " +D+ "\nHache de kobolt : " +E+ "\nCouteau de kobolt : " +H+ "\nFaucille de kobolt : " +I+ "\nCasque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})}
+                                                                                                                                      }
+                                                                                                                                }) ;
+
+
+                                                                                                                                bot.on('message', message => {
+                                                                                                                                  let cont = message.content.slice(prefix.length).split(" ");
+                                                                                                                                    const args = cont.slice(1);
+                                                                                                                                    if (message.content.startsWith(prefix + "Kobolt mineur récompenses groupe")) {
+                                                                                                                                    let X = args.slice(4).join(" : ");       
+                                                                                                                                    const A = (Math.floor((2)*Math.random()+1))
+                                                                                                                                    const B = (Math.floor((2-(0.85))*Math.random()))
+                                                                                                                                    const C = (Math.floor((2-(0.95))*Math.random()))
+                                                                                                                                    const D = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                    const E = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                    const H = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                    const I = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                    const J = (Math.floor((2-(0.99))*Math.random()))
+                                                                                                                                    const F = (Math.floor((41*1)*Math.random()+80*1))
+                                                                                                          const FF = F-(X*6)
+                                                                                                          const G = (Math.floor((31*1)*Math.random()+30*1))
+                                                                                                                                                       if(FF > 0) {
+                                                                                                                                                        const embed = new Discord.RichEmbed()
+                                                                                                                                                        .setColor(3447003)
+                                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                                        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                                                                                                                                                  .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nPioche de kobolt : " +D+ "\nHache de kobolt : " +E+ "\nCouteau de kobolt : " +H+ "\nFaucille de kobolt : " +I+ "\nCasque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                                        .setTimestamp()
+                                                                                                                                                        message.channel.send({embed})}
+                                                                                                                                      if(FF < 0) {
+                                                                                                                                         const embed = new Discord.RichEmbed()
+                                                                                                                                                        .setColor(3447003)
+                                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                                        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+                                                                                                                                                        .addField("Récompenses :" , "\nOreille de kobolt : " +A+ "\nEchantillon de kobolt : " +B+ "\nDent de kobolt : "+C+ "\nPioche de kobolt : " +D+ "\nHache de kobolt : " +E+ "\nCouteau de kobolt : " +H+ "\nFaucille de kobolt : " +I+ "\nCasque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                                        .setTimestamp()
+                                                                                                                                                        message.channel.send({embed})}
+                                                                                                                                                            }
+                                                                                                                                                      }) ;
+                                            
+                      
 
 
 
