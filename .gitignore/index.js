@@ -62,29 +62,29 @@ bot.on("message", (message) => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Pour effectuer un coup normal :" , "`=Coup normal simple : [Vos dégâts]`\n`=Coup normal amélioré : [Vos dégâts]`\n`=Coup normal supérieur : [Vos dégâts]`\n`=Coup normal suprême : [Vos dégâts]`")
+        .addField(":crossed_swords: Pour effectuer un coup normal :" , ":crossed_swords: `=Coup normal simple : [Vos dégâts]`\n:crossed_swords: `=Coup normal amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup normal supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup normal suprême : [Vos dégâts]`")
         .addBlankField(true)
-        .addField("Pour effectuer un coup précis :" , "`=Coup précis simple : [Vos dégâts]`\n`=Coup précis amélioré : [Vos dégâts]`\n`=Coup précis supérieur : [Vos dégâts]`\n`=Coup précis suprême : [Vos dégâts]`")
+        .addField(":crossed_swords: Pour effectuer un coup précis :" , ":crossed_swords: `=Coup précis simple : [Vos dégâts]`\n:crossed_swords: `=Coup précis amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup précis supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup précis suprême : [Vos dégâts]`")
         .addBlankField(true)
-        .addField("Pour effectuer un coup d'estoc :" , "`=Coup d'estoc simple : [Vos dégâts]`\n`=Coup d'estoc amélioré : [Vos dégâts]`\n`=Coup d'estoc supérieur : [Vos dégâts]`\n`=Coup d'estoc suprême : [Vos dégâts]`")
+        .addField(":crossed_swords: Pour effectuer un coup d'estoc :" , ":crossed_swords: `=Coup d'estoc simple : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc suprême : [Vos dégâts]`")
         .addBlankField(true)
-        .addField("Pour effectuer un coup provocateur :" , "`=Coup provocateur simple : [Vos dégâts]`\n`=Coup provocateur amélioré : [Vos dégâts]`\n`=Coup provocateur supérieur : [Vos dégâts]`\n`=Coup provocateur suprême : [Vos dégâts]`")
+        .addField(":crossed_swords: Pour effectuer un coup provocateur :" , ":crossed_swords: `=Coup provocateur simple : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur suprême : [Vos dégâts]`")
         .addBlankField(true)
-        .addField("Pour effectuer un coup circulaire :" , "`=Coup circulaire simple : [Vos dégâts]`\n`=Coup circulaire amélioré : [Vos dégâts]`\n`=Coup circulaire supérieur : [Vos dégâts]`\n`=Coup circulaire suprême : [Vos dégâts]`")
+        .addField(":crossed_swords: Pour effectuer un coup circulaire :" , ":crossed_swords: `=Coup circulaire simple : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire suprême : [Vos dégâts]`")
         .addBlankField(true)
-        .addField("Pour effectuer un cri de provocation :" , "`=Cri de provocation simple`\n`=Cri de provocation amélioré`\n`=Cri de provocation supérieur`\n`=Cri de provocation suprême`")
+        .addField(":crossed_swords: Pour effectuer un cri de provocation :" , ":crossed_swords: `=Cri de provocation simple`\n:crossed_swords: `=Cri de provocation amélioré`\n:crossed_swords: `=Cri de provocation supérieur`\n:crossed_swords: `=Cri de provocation suprême`")
         .addBlankField(true)
-        .addField("Pour effectuer un combo :" , "`=Combo simple : [Vos dégâts]`\n`=Combo amélioré : [Vos dégâts]`\n`=Combo supérieur : [Vos dégâts]`\n`=Combo suprême : [Vos dégâts]`")
+        .addField(":crossed_swords: Pour effectuer un combo :" , ":crossed_swords: `=Combo simple : [Vos dégâts]`\n:crossed_swords: `=Combo amélioré : [Vos dégâts]`\n:crossed_swords: `=Combo supérieur : [Vos dégâts]`\n:crossed_swords: `=Combo suprême : [Vos dégâts]`")
         .addBlankField(true)
-        .addField("Pour effectuer une esquive :" , "`=Esquive simple : [Dégâts de l'attaque de l'ennemis]`\n`=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]`\n`=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]`\n`=Esquive suprême : [Dégâts de l'attaque de l'ennemis]`")
+        .addField(":shield: Pour effectuer une esquive :" , ":shield: `=Esquive simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive suprême : [Dégâts de l'attaque de l'ennemis]`")
         .addBlankField(true)
-        .addField("Pour effectuer un blocage :" , "`=Blocage simple : [Dégâts de l'attaque de l'ennemis]`\n`=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]`\n`=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]`\n`=Blocage suprême : [Dégâts de l'attaque de l'ennemis]`")
+        .addField(":shield: Pour effectuer un blocage :" , ":shield: `=Blocage simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage suprême : [Dégâts de l'attaque de l'ennemis]`")
         .addBlankField(true)
-        .addField("Pour savoir ce que vous débloquez selon le niveau :" , "`=Coups et défenses apprentissage`")
+        .addField(":book: Pour savoir ce que vous débloquez selon le niveau :" , ":book: `=Coups et défenses apprentissage`")
         .addBlankField(true)
-        .addField("Pour comprendre à quoi sert chaques coups et défenses :" , "`=Coups et défenses descriptions`")
+        .addField(":book: Pour comprendre à quoi sert chaques coups et défenses :" , ":book: `=Coups et défenses descriptions`")
            .addBlankField(true)
-        .addField("Pour la suite des coups et défenses possibles :" , "`=Coups et défenses 2`")
+        .addField(":crossed_swords:Pour la suite des coups et défenses possibles :" , "`=Coups et défenses 2`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})}
@@ -110,15 +110,15 @@ bot.on("message", (message) => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Pour effectuer une parade :" , "`=Parade simple : [Dégâts de l'attaque de l'ennemis]`\n`=Parade améliorée : [Dégâts de l'attaque de l'ennemis]`\n`=Parade supérieure: [Dégâts de l'attaque de l'ennemis]`\n`=Parade suprême : [Dégâts de l'attaque de l'ennemis]`")
+        .addField(":shield: Pour effectuer une parade :" , ":shield: `=Parade simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade supérieure: [Dégâts de l'attaque de l'ennemis]`\n`=Parade suprême : [Dégâts de l'attaque de l'ennemis]`")
         .addBlankField(true)
-        .addField("Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , "`=Interception simple : [Dégâts de l'attaque de l'ennemis]`\n`=Interception améliorée : [Dégâts de l'attaque de l'ennemis]`")
+        .addField(":shield: Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , ":shield: `=Interception simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Interception améliorée : [Dégâts de l'attaque de l'ennemis]`")
          .addBlankField(true)
-        .addField("Pour effectuer une fuite [Utilisable que pendant votre tour] :" , "`=Fuite simple`\n`=Fuite améliorée`\n`=Fuite supérieure`\n`=Fuite suprême`")
+        .addField(":shield: Pour effectuer une fuite [Utilisable que pendant votre tour] :" , ":shield: `=Fuite simple`\n:shield: `=Fuite améliorée`\n:shield: `=Fuite supérieure`\n:shield: `=Fuite suprême`")
          .addBlankField(true)
-      .addField("Pour effectuer un coup sauté :" , "`=Coup sauté simple : [Vos dégâts]`")
+      .addField(":crossed_swords: Pour effectuer un coup sauté :" , ":shield: `=Coup sauté simple : [Vos dégâts]`\n:shield: `=Coup sauté amélioré : [Vos dégâts]`\n:shield: `=Coup sauté supérieur : [Vos dégâts]`\n:shield: `=Coup sauté suprême : [Vos dégâts]`")
           .addBlankField(true)
-        .addField("Pour effectuer un coup perce armure :" , "`=Coup perce armure simple : [Vos dégâts]`")
+        .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n:shield: `=Coup perce armure amélioré : [Vos dégâts]`\n:shield: `=Coup perce armure supérieur : [Vos dégâts]`\n:shield: `=Coup perce armure suprême : [Vos dégâts]`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})}
@@ -131,29 +131,29 @@ bot.on("message", (message) => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Niveau requis pour effectuer un coup normal, un coup sauté :" , "Niveau 1")
+        .addField(":sparkles: Niveau requis pour effectuer un coup normal, un coup sauté :" , ":sparkles: Niveau 1")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer une esquive :" , "Niveau 1")
+        .addField(":sparkles: Niveau requis pour effectuer une esquive :" , ":sparkles: Niveau 1")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer une interception :" , "Niveau 1")
+        .addField(":sparkles: Niveau requis pour effectuer une interception :" , ":sparkles: Niveau 1")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer une fuite :" , "Niveau 1")
+        .addField(":sparkles: Niveau requis pour effectuer une fuite :" , ":sparkles: Niveau 1")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un coup d'estoc :" , "Niveau 2")
+        .addField(":sparkles: Niveau requis pour effectuer un coup d'estoc :" , ":sparkles: Niveau 2")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer une parade :" , "Niveau 3")
+        .addField(":sparkles: Niveau requis pour effectuer une parade :" , ":sparkles: Niveau 3")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un coup précis, un coup perce armure :" , "Niveau 4")
+        .addField(":sparkles: Niveau requis pour effectuer un coup précis, un coup perce armure :" , ":sparkles: Niveau 4")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un blocage :" , "Niveau 5")
+        .addField(":sparkles: Niveau requis pour effectuer un blocage :" , ":sparkles: Niveau 5")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un coup circulaire :" , "Niveau 6")
+        .addField(":sparkles: Niveau requis pour effectuer un coup circulaire :" , ":sparkles: Niveau 6")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un coup provocateur :" , "Niveau 7")
+        .addField(":sparkles: Niveau requis pour effectuer un coup provocateur :" , ":sparkles: Niveau 7")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un crie de provocation :" , "Niveau 8")
+        .addField(":sparkles: Niveau requis pour effectuer un crie de provocation :" , ":sparkles: Niveau 8")
         .addBlankField(true)
-        .addField("Niveau requis pour effectuer un combo :" , "Niveau 10")
+        .addField(":sparkles: Niveau requis pour effectuer un combo :" , ":sparkles: Niveau 10")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})}
@@ -4815,7 +4815,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup normal simple")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 25){
        const embed = new Discord.RichEmbed()
@@ -4847,7 +4847,7 @@ bot.on('message', message => {
                                                                                                               if (message.content.startsWith(prefix + "Coup normal amélioré")) {
 
       let degats = args.slice(3).join(" : ");
-       const A = (Math.floor((degats)*Math.random()+1*(degats)))
+       const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 20){
        const embed = new Discord.RichEmbed()
@@ -4877,7 +4877,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Coup normal supérieur")) {
     let degats = args.slice(3).join(" : ");
-     const A = (Math.floor((degats)*Math.random()+1*(degats)))
+     const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 15){
      const embed = new Discord.RichEmbed()
@@ -4908,7 +4908,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Coup normal suprême")) {
   let degats = args.slice(3).join(" : ");
-   const A = (Math.floor((degats)*Math.random()+1*(degats)))
+   const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 10){
    const embed = new Discord.RichEmbed()
@@ -5104,6 +5104,137 @@ bot.on('message', message => {
       }
   });
 
+
+
+
+  bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+                                                                                                             if (message.content.startsWith(prefix + "Coup sauté amélioré")) {
+  
+        let degats = args.slice(3).join(" : ");
+        const A = (Math.floor((degats)*Math.random()+1*(degats)))
+        const B = (Math.floor((100)*Math.random()+1))
+        if (B < 45){
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+         .setTimestamp()
+         message.channel.send({embed})
+        }
+        if (46 < B & B < 75){
+           const embed = new Discord.RichEmbed()
+           .setAuthor(message.author.username , message.author.avatarURL)
+           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+           .setColor(3447003)
+           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+           .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+           .setTimestamp()
+           message.channel.send({embed})
+          }
+      if (76 < B){
+           const embed = new Discord.RichEmbed()
+           .setAuthor(message.author.username , message.author.avatarURL)
+           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+           .setColor(3447003)
+           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+           .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+           .setTimestamp()
+           message.channel.send({embed})
+          }
+        }
+    });
+
+
+    bot.on('message', message => {
+      let cont = message.content.slice(prefix.length).split(" ");
+      const args = cont.slice(1);
+                                                                                                               if (message.content.startsWith(prefix + "Coup sauté supérieur")) {
+    
+          let degats = args.slice(3).join(" : ");
+          const A = (Math.floor((degats)*Math.random()+1*(degats)))
+          const B = (Math.floor((100)*Math.random()+1))
+          if (B < 40){
+           const embed = new Discord.RichEmbed()
+           .setAuthor(message.author.username , message.author.avatarURL)
+           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+           .setColor(3447003)
+           .addField("Vous ratez votre coup..." , "Dommage pour vous")
+           .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+           .setTimestamp()
+           message.channel.send({embed})
+          }
+          if (41 < B & B < 70){
+             const embed = new Discord.RichEmbed()
+             .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+             .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+             .setTimestamp()
+             message.channel.send({embed})
+            }
+        if (71 < B){
+             const embed = new Discord.RichEmbed()
+             .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+             .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+             .setTimestamp()
+             message.channel.send({embed})
+            }
+          }
+      });
+
+
+
+
+      bot.on('message', message => {
+        let cont = message.content.slice(prefix.length).split(" ");
+        const args = cont.slice(1);
+                                                                                                                 if (message.content.startsWith(prefix + "Coup sauté suprême")) {
+      
+            let degats = args.slice(3).join(" : ");
+            const A = (Math.floor((degats)*Math.random()+1*(degats)))
+            const B = (Math.floor((100)*Math.random()+1))
+            if (B < 35){
+             const embed = new Discord.RichEmbed()
+             .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+             .setTimestamp()
+             message.channel.send({embed})
+            }
+            if (36 < B & B < 65){
+               const embed = new Discord.RichEmbed()
+               .setAuthor(message.author.username , message.author.avatarURL)
+               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+               .setColor(3447003)
+               .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+               .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+               .setTimestamp()
+               message.channel.send({embed})
+              }
+          if (66 < B){
+               const embed = new Discord.RichEmbed()
+               .setAuthor(message.author.username , message.author.avatarURL)
+               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+               .setColor(3447003)
+               .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+               .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+               .setTimestamp()
+               message.channel.send({embed})
+              }
+            }
+        });
+
+
 ///////////////////////////////////////////////////////////////Coup perce armure//////////////////////////////////////////////////////////////////////////////////
 
 
@@ -5112,7 +5243,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Coup perce armure simple")) {
       let degats = args.slice(4).join(" : ");
-      const A = (Math.floor((degats/4)*Math.random()+1*(degats/2)))
+      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 40){
        const embed = new Discord.RichEmbed()
@@ -5136,6 +5267,99 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
         }
       }
   });
+
+
+  bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup perce armure amélioré")) {
+        let degats = args.slice(4).join(" : ");
+        const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
+        const B = (Math.floor((100)*Math.random()+1))
+        if (B < 35){
+         const embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL)
+         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+         .setColor(3447003)
+         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+         .setTimestamp()
+         message.channel.send({embed})
+        }
+        if (36 < B){
+           const embed = new Discord.RichEmbed()
+           .setAuthor(message.author.username , message.author.avatarURL)
+           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+           .setColor(3447003)
+           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
+           .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+           .setTimestamp()
+           message.channel.send({embed})
+          }
+        }
+    });
+
+
+    bot.on('message', message => {
+      let cont = message.content.slice(prefix.length).split(" ");
+      const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Coup perce armure supérieur")) {
+          let degats = args.slice(4).join(" : ");
+          const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
+          const B = (Math.floor((100)*Math.random()+1))
+          if (B < 30){
+           const embed = new Discord.RichEmbed()
+           .setAuthor(message.author.username , message.author.avatarURL)
+           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+           .setColor(3447003)
+           .addField("Vous ratez votre coup..." , "Dommage pour vous")
+           .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+           .setTimestamp()
+           message.channel.send({embed})
+          }
+          if (31 < B){
+             const embed = new Discord.RichEmbed()
+             .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
+             .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+             .setTimestamp()
+             message.channel.send({embed})
+            }
+          }
+      });
+
+
+      bot.on('message', message => {
+        let cont = message.content.slice(prefix.length).split(" ");
+        const args = cont.slice(1);
+      if (message.content.startsWith(prefix + "Coup perce armure suprême")) {
+            let degats = args.slice(4).join(" : ");
+            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
+            const B = (Math.floor((100)*Math.random()+1))
+            if (B < 25){
+             const embed = new Discord.RichEmbed()
+             .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+             .setTimestamp()
+             message.channel.send({embed})
+            }
+            if (26 < B){
+               const embed = new Discord.RichEmbed()
+               .setAuthor(message.author.username , message.author.avatarURL)
+               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+               .setColor(3447003)
+               .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
+               .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+               .setTimestamp()
+               message.channel.send({embed})
+              }
+            }
+        });
 ///////////////////////////////////////////////////////////////Coup d'estoc//////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
@@ -5144,7 +5368,7 @@ const args = cont.slice(1);
                                                                                                            if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
 
   let degats = args.slice(3).join(" : ");
-  const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
+  const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 5){
    const embed = new Discord.RichEmbed()
@@ -5187,7 +5411,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc amélioré")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
+    const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 5){
      const embed = new Discord.RichEmbed()
@@ -5230,7 +5454,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc supérieur")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
+    const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 5){
      const embed = new Discord.RichEmbed()
@@ -5273,7 +5497,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc suprême")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*3/4)*Math.random()+1*(degats/2)))
+    const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 5){
      const embed = new Discord.RichEmbed()
@@ -6884,9 +7108,9 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                    .setColor(3447003)
-                   .addField("Liste des particularités, partie 1 :" , "Amélioration du coup normal simple en coup normal amélioré !\n\nAmélioration du coup précis simple en coup précis amélioré !\n\nAmélioration du combo simple en combo amélioré !\n\nAmélioration du coup d'estoc simple en coup d'estoc amélioré !\n\nAmélioration du coup provocateur simple en coup provocateur amélioré !\n\nAmélioration du coup circulaire simple en coup circulaire amélioré !\n\nAmélioration de la parade simple en parade améliorée !\n\nAmélioration du blocage simple en blocage amélioré !\n\nAmélioration de l'esquive simple en esquive améliorée !\n\nAmélioration du cri de provocation simple en cri de provocation amélioré !\n\nAmélioration de l'interception simple en interception amélioré !\n\nBonus de 10 pour la fuite en combat ou en dehors !")
+                   .addField("Liste des particularités, partie 1 :" , "Amélioration du coup normal simple en coup normal amélioré !\n\nAmélioration du coup précis simple en coup précis amélioré !\n\nAmélioration du combo simple en combo amélioré !\n\nAmélioration du coup d'estoc simple en coup d'estoc amélioré !\n\nAmélioration du coup provocateur simple en coup provocateur amélioré !\n\nAmélioration du coup circulaire simple en coup circulaire amélioré !\n\nAmélioration du coup sauté en coup sauté amélioré !\n\nAmélioration du coup perce armure en coup perce armure amélioré !\n\nAmélioration de la parade simple en parade améliorée !\n\nAmélioration du blocage simple en blocage amélioré !\n\nAmélioration de l'esquive simple en esquive améliorée !\n\nAmélioration du cri de provocation simple en cri de provocation amélioré !\n\nAmélioration de l'interception simple en interception amélioré !")
                    .addBlankField(true)
-                   .addField("Liste des particularités, partie 2 :" , "Bonus de 10 pour escalader et grimper !\n\nBonus de 10 pour la discrètion !\n\nBonus de 10 pour les actions défensives en dehors des combats !\n\nBonus de 10 pour les actions offensives en dehors des combats !\n\nBonus de 20 pour tenter un bluff !\n\nBonus de 20 pour le marchandage et les négociations !\n\nBonus de 20 pour la diplomatie !\n\nBonus de 20 pour se contrôler, et ne pas changer d'état dans une situation !\n\nBonus de 20 pour la sociabilité, inspiré confiance !")
+                   .addField("Liste des particularités, partie 2 :" , "Bonus de 10 pour la fuite en combat ou en dehors !\n\nBonus de 10 pour escalader et grimper !\n\nBonus de 10 pour la discrètion !\n\nBonus de 10 pour les actions défensives en dehors des combats !\n\nBonus de 10 pour les actions offensives en dehors des combats !\n\nBonus de 20 pour tenter un bluff !\n\nBonus de 20 pour le marchandage et les négociations !\n\nBonus de 20 pour la diplomatie !\n\nBonus de 20 pour se contrôler, et ne pas changer d'état dans une situation !\n\nBonus de 20 pour la sociabilité, inspiré confiance !")
                    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                     .setTimestamp()
                     message.channel.send({embed})
