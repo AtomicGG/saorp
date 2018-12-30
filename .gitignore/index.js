@@ -368,11 +368,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-.addField("Cueillette :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-.addField("Persil :" , +Persils)
-.addField("Herbe médicinale faible :" , +Herbes)
-.addField("Baie :" , +Baies)
-.addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +Exp)
+.addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Persil : " +Persils+ "\n:wilted_rose: Herbe médicinale faible : " +Herbe+ "\n:wilted_rose: Baie : " +Baies+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
 .setTimestamp()
 message.channel.send({embed})}
     talkedRecently.add(message.author.id+19);
@@ -405,10 +401,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-    .addField("Cueillette :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-    .addField("Estragon :" , +Persils)
-    .addField("Herbes médicinale :" , +Herbes)
-    .addField("Points d'expérience dans la spécialisation 'Ceuilleur' :" , +Exp)
+    .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Estragon : " +Persils+ "\n:wilted_rose: Herbe médicinale : " +Herbe+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
     .setTimestamp()
     message.channel.send({embed})}
     talkedRecently.add(message.author.id+19);
@@ -441,10 +434,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-    .addField("Minage :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-    .addField("Cuivre médiocre :" , +Cuivre)
-    .addField("Cuivre commun :" , +CuivreRare)
-    .addField("Points d'expérience dans la spécialisation 'Mineur' :" , +Exp)
+    .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre médiocre : " +Cuivre+ "\n:pick: Cuivre commun : " +CuivreRare+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
+
     .setTimestamp()
     message.channel.send({embed})}
     talkedRecently.add(message.author.id+19);
@@ -477,10 +468,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
-    .addField("Bûcheron:" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-    .addField("Bois de frêne médiocre :" , +Bois)
-    .addField("Bois de frêne commun :" , +BoisRare)
-    .addField("Points d'expérience dans la spécialisation 'Bûcheron' :" , +Exp)
+    .addField(":deciduous_tree: Bûcheron:" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne médiocre : " +Bois+ "\n:deciduous_tree: Bois de frêne commun : " +BoisRare+ "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " +Exp)
+
     .setTimestamp()
     message.channel.send({embed})}
     talkedRecently.add(message.author.id+19);
@@ -523,12 +512,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField("Chasse :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-      .addField("Viande de lapin :" , +Viande)
-      .addField("Peau de lapin :" , +Peau)
-      .addField("Coeur de lapin :" , +Coeur)
-      .addField("Oeil de lapin :" , +Oeil)
-      .addField("Points d'expérience dans la spécialisation 'Chasseur' :" , +Exp)
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de lapin : " +Viande+ "\n:knife: Peau de lapin : " +Peau+ "\n:cupid: Coeur de lapin : " +Coeur+ "\n:eye: Oeil de lapin : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
       .setTimestamp()
       message.channel.send({embed})}
       talkedRecently.add(message.author.id+19);
@@ -564,12 +548,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField("Chasse :" , "Vous obtenez suite à votre recherche, les objets suivants :" )
-      .addField("Viande de taupe :" , +Viande)
-      .addField("Peau de taupe :" , +Peau)
-      .addField("Coeur de taupe :" , +Coeur)
-      .addField("Oeil de taupe :" , +Oeil)
-      .addField("Points d'expérience dans la spécialisation 'Chasseur' :" , +Exp)
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de taupe : " +Viande+ "\n:knife: Peau de taupe : " +Peau+ "\n:cupid: Coeur de taupe : " +Coeur+ "\n:eye: Oeil de taupe : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
       .setTimestamp()
       message.channel.send({embed})}
       talkedRecently.add(message.author.id+19);
