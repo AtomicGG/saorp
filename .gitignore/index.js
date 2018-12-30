@@ -2784,14 +2784,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Loup :" , "Le loup sautant sur vous, il n'arrive pas à vous toucher et retombe lourdement au sol, vous avez de la chance !")
+      .addField(":crossed_swords: Loup :" , ":crossed_swords: Le loup sautant sur vous, il n'arrive pas à vous toucher et retombe lourdement au sol, vous avez de la chance !")
       message.channel.send({embed})}
       if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup :" , "Le loup bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Loup :" , ":crossed_swords: Le loup bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
        if (91 < B){
@@ -2799,7 +2799,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup :" , "Le loup bondit sur vous ses crocs deviennent étrangement rouge et grandissent, il inflige " +A+ " points de dégâts et reprend " +Z+ " HP")
+        .addField(":crossed_swords: Loup :" , ":crossed_swords: Le loup bondit sur vous ses crocs deviennent étrangement rouge et grandissent, il inflige " +A+ " points de dégâts et reprend " +Z+ " HP")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2818,14 +2818,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Loup gigantesque :" , "Le loup gigantesque hurle et cours rapidement mais glisse sur le côté par son manque d'attention du sol de la salle assez détruit")
+      .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque hurle et cours rapidement mais glisse sur le côté par son manque d'attention du sol de la salle assez détruit")
       message.channel.send({embed})}
       if (41 < B & B < 80){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup gigantesque :" , "Le loup gigantesque lâche un regard meurtrier les yeux injecté de sang avant d'embrocher sa victime, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque lâche un regard meurtrier les yeux injecté de sang avant d'embrocher sa victime, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
      if (81 < B & B < 90){
@@ -2833,7 +2833,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup gigantesque :" , "Le loup gigantesque arrive à embrocher deux personnes avec ses immenses griffes, il inflige " +A+ " points de dégâts à chacune d'elle")
+        .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque arrive à embrocher deux personnes avec ses immenses griffes, il inflige " +A+ " points de dégâts à chacune d'elle")
         .setTimestamp()
         message.channel.send({embed})}
     if (91 < B & B < 95){
@@ -2841,7 +2841,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup gigantesque :" , "Le loup gigantesque arrive à embrocher trois personnes avec ses immenses griffes, il inflige " +A+ " points de dégâts à chacune d'elle")
+        .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque arrive à embrocher trois personnes avec ses immenses griffes, il inflige " +A+ " points de dégâts à chacune d'elle")
         .setTimestamp()
         message.channel.send({embed})}
     if (96 < B){
@@ -2849,7 +2849,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup gigantesque :" , "Le loup gigantesque hurle avant de bondir sur une personne, il inflige " +C+ " points de dégâts et la personne n'aura pas droit à une défense [Le loup gigantesque résistera à la provocation]")
+        .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque hurle avant de bondir sur une personne, il inflige " +C+ " points de dégâts et la personne n'aura pas droit à une défense [Le loup gigantesque résistera à la provocation]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2867,14 +2867,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Renard :" , "Le renard d'un coup rapide de griffe, il n'arrive tous de même pas à vous toucher, vous avez de la chance !")
+      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard d'un coup rapide de griffe, il n'arrive tous de même pas à vous toucher, vous avez de la chance !")
       message.channel.send({embed})}
       if (26 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Renard :" , "Le renard sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
     if (91 < B){
@@ -2882,7 +2882,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Renard :" , "Le renard court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
+        .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2899,14 +2899,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Sanglier :" , "Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
       message.channel.send({embed})}
       if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Sanglier :" , "Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
      if (91 < B){
@@ -2914,7 +2914,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Sanglier :" , "Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre ni attaquer pendant 1 tour")
+        .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre ni attaquer pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2932,14 +2932,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Chien :" , "Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
       message.channel.send({embed})}
       if (26 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Chien :" , "Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
       if (91 < B){
@@ -2947,7 +2947,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Chien :" , "Le chien s'approche de vous doucement et fait son chien mignon mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
+        .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait son chien mignon mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2965,14 +2965,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Loup de sang :" , "Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
+      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
       message.channel.send({embed})}
       if (26 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup de sang :" , "Le loup de sang hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
      if (96 < B){
@@ -2980,7 +2980,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup de sang :" , "Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
+        .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -2998,14 +2998,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Loup de sang :" , "Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
+      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
       message.channel.send({embed})}
       if (21 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup de sang :" , "Le loup de sang d'élite hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang d'élite hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
      if (96 < B){
@@ -3013,7 +3013,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup de sang :" , "Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups de sangs apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
+        .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups de sangs apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3029,14 +3029,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Slime :" , "Le slime essaye de se rapprocher de vous pour s'accrocher à vous, mais il est trop lent, vous avez de la chance !")
+      .addField(":crossed_swords: Slime :" , ":crossed_swords: Le slime essaye de se rapprocher de vous pour s'accrocher à vous, mais il est trop lent, vous avez de la chance !")
       message.channel.send({embed})}
       if (26 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Slime :" , "Le slime se rapproche de vous et arrive à s'accrocher à vous en tentant de vous étouffer, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Slime :" , ":crossed_swords: Le slime se rapproche de vous et arrive à s'accrocher à vous en tentant de vous étouffer, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
     if (91 < B){
@@ -3044,7 +3044,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Slime :" , "Le slime double de volume avant de vous absorber à l'intérieur de lui, il inflige " +A+ " points de dégâts et vous empêche d'attaquer ou de vous défendre pendant 1 tour")
+        .addField(":crossed_swords: Slime :" , ":crossed_swords: Le slime double de volume avant de vous absorber à l'intérieur de lui, il inflige " +A+ " points de dégâts et vous empêche d'attaquer ou de vous défendre pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3062,14 +3062,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Lapin géant :" , "Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
+      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
       message.channel.send({embed})}
       if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Lapin géant :" , "Le lapin géant bondit d'un coup sec sur vous et griffe tous votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit d'un coup sec sur vous et griffe tous votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
       if (91 < B){
@@ -3077,7 +3077,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Lapin géant :" , "Le lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " +Z+ " points de dégâts")
+        .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " +Z+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3095,14 +3095,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit débutant :" , "Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
+      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
       message.channel.send({embed})}
       if (51 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit débutant :" , "Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3118,14 +3118,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit expérimenté :" , "Le bandit expérimenté sors deux dagues et s'approche de vous rapidement, mais il ralentis en voyant qu'il perd l'équilibre, vous avez de la chance !")
+      .addField(":crossed_swords: Bandit expérimenté :" , ":crossed_swords: Le bandit expérimenté sors deux dagues et s'approche de vous rapidement, mais il ralentis en voyant qu'il perd l'équilibre, vous avez de la chance !")
       message.channel.send({embed})}
       if (26 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit expérimenté :" , "Le bandit expérimenté sors ses deux dagues et les plante sur un endroit vital en souriant, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Bandit expérimenté :" , ":crossed_swords: Le bandit expérimenté sors ses deux dagues et les plante sur un endroit vital en souriant, il inflige " +A+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3209,14 +3209,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit sombre :" , "Le bandit sombre tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
+      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
       message.channel.send({embed})}
       if (11 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
     if (91 < B){
@@ -3224,7 +3224,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+        .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3247,14 +3247,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit sombre :" , "Le bandit sombre d'élite tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
+      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre d'élite tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
       message.channel.send({embed})}
       if (6 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre d'élite sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre d'élite sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3262,7 +3262,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+        .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3298,14 +3298,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Jeune kobolt :" , "Le jeune kobolt tente de sauter sur vous afin de vous étrangler probablement mais il glisse et tombe sur le côté, vous avez de la chance !")
+      .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt tente de sauter sur vous afin de vous étrangler probablement mais il glisse et tombe sur le côté, vous avez de la chance !")
       message.channel.send({embed})}
       if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Jeune kobolt :" , "Le jeune kobolt saute d'un bond en avant très rapide et met un coup de tête puissant, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt saute d'un bond en avant très rapide et met un coup de tête puissant, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3313,7 +3313,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Jeune kobolt :" , "Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez tous les dégâts des trois tours donc " +C*3+ " ]")
+        .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez tous les dégâts des trois tours donc " +C*3+ " ]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3333,14 +3333,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt explorateur :" , "Le kobolt explorateur essaye de balancer sa dague vers vous mais elle atteris sur le côté, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt explorateur :" , ":crossed_swords: Le kobolt explorateur essaye de balancer sa dague vers vous mais elle atteris sur le côté, vous avez de la chance !")
       message.channel.send({embed})}
       if (41 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt explorateur :" , "Le kobolt explorateur court plus rapidement que les autres kobolts ce qui lui permet de vous faire tomber sur le sol et vous planter, il inflige " +A+ " points de dégâts et réduit vos prochains dégâts de 20")
+        .addField(":crossed_swords: Kobolt explorateur :" , ":crossed_swords: Le kobolt explorateur court plus rapidement que les autres kobolts ce qui lui permet de vous faire tomber sur le sol et vous planter, il inflige " +A+ " points de dégâts et réduit vos prochains dégâts de 20")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3348,7 +3348,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt explorateur :" , "Le kobolt explorateur sort une sorte de poudre qu'il balance dans l'air ce qui vous aveugle, il en profite pour planter sa dague dans votre bide avant de fuir loin de vous en ricanant, il inflige " +C+ " points de dégâts [L'armure ne comptera pas]")
+        .addField(":crossed_swords: Kobolt explorateur :" , ":crossed_swords: Le kobolt explorateur sort une sorte de poudre qu'il balance dans l'air ce qui vous aveugle, il en profite pour planter sa dague dans votre bide avant de fuir loin de vous en ricanant, il inflige " +C+ " points de dégâts [L'armure ne comptera pas]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3368,14 +3368,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt mineur :" , "Le kobolt mineur dégaine sa pioche et tente de vous mettre un coup horizontal mais celle-ci est trop lent, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt mineur :" , ":crossed_swords: Le kobolt mineur dégaine sa pioche et tente de vous mettre un coup horizontal mais celle-ci est trop lent, vous avez de la chance !")
       message.channel.send({embed})}
       if (41 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt mineur :" , "Le kobolt mineur saute en avant et arrive à vous mettre un coup de pioche bien placé verticalement, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Kobolt mineur :" , ":crossed_swords: Le kobolt mineur saute en avant et arrive à vous mettre un coup de pioche bien placé verticalement, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3383,7 +3383,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt mineur :" , "Le kobolt mineur sort deux pioches et gémis de rage avant de les balancer sur vous en même temps, il inflige " +C+ " points de dégâts [Aucune défense possible]")
+        .addField(":crossed_swords: Kobolt mineur :" , ":crossed_swords: Le kobolt mineur sort deux pioches et gémis de rage avant de les balancer sur vous en même temps, il inflige " +C+ " points de dégâts [Aucune défense possible]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3403,14 +3403,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt ouvrier :" , "Le kobolt ouvrier aggripe un objet autour de lui et essaye de vous frapper mais celui-ci ne fait rien, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt ouvrier :" , ":crossed_swords: Le kobolt ouvrier aggripe un objet autour de lui et essaye de vous frapper mais celui-ci ne fait rien, vous avez de la chance !")
       message.channel.send({embed})}
       if (31 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt ouvrier :" , "Le kobolt ouvrier sort une clé à molette et la prend à deux mains avant de mettre un coup puissant vers vous, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Kobolt ouvrier :" , ":crossed_swords: Le kobolt ouvrier sort une clé à molette et la prend à deux mains avant de mettre un coup puissant vers vous, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3418,7 +3418,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt ouvrier :" , "Le kobolt ouvrier sous la rage arrive à soulever un rocher avant de le fracasser sur vous d'une puissance immense, il inflige " +C+ " points de dégâts et vous étourdis pendant un tour")
+        .addField(":crossed_swords: Kobolt ouvrier :" , ":crossed_swords: Le kobolt ouvrier sous la rage arrive à soulever un rocher avant de le fracasser sur vous d'une puissance immense, il inflige " +C+ " points de dégâts et vous étourdis pendant un tour")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3438,14 +3438,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt garde :" , "Le kobolt garde brandit son bouclier en avant pour pouvoir vous toucher de son épée mais il n'y arrive pas sous le poids, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt garde :" , ":crossed_swords: Le kobolt garde brandit son bouclier en avant pour pouvoir vous toucher de son épée mais il n'y arrive pas sous le poids, vous avez de la chance !")
       message.channel.send({embed})}
       if (26 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt garde :" , "Le kobolt garde fonce le bouclier en avant et l'épée elle aussi en avant afin de vous empaler, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Kobolt garde :" , ":crossed_swords: Le kobolt garde fonce le bouclier en avant et l'épée elle aussi en avant afin de vous empaler, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3453,7 +3453,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt garde :" , "Le kobolt garde pendant un instant arrive à soulever très haut son bouclier avant de le faire tomber lourdement sur vous, il inflige " +A+ " points de dégâts et vous étourdis pendant" +C+ " tours")
+        .addField(":crossed_swords: Kobolt garde :" , ":crossed_swords: Le kobolt garde pendant un instant arrive à soulever très haut son bouclier avant de le faire tomber lourdement sur vous, il inflige " +A+ " points de dégâts et vous étourdis pendant" +C+ " tours")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3473,14 +3473,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt combattant :" , "Le kobolt combattant tente de faire un mouvement circulaire de son épée sur vous mais il perd l'équilibre, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt combattant :" , ":crossed_swords: Le kobolt combattant tente de faire un mouvement circulaire de son épée sur vous mais il perd l'équilibre, vous avez de la chance !")
       message.channel.send({embed})}
       if (21 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt combattant :" , "Le kobolt s'élance en avant tel un épéiste expérimenté avant de trouver une occasion de mettre un coup rapide, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Kobolt combattant :" , ":crossed_swords: Le kobolt s'élance en avant tel un épéiste expérimenté avant de trouver une occasion de mettre un coup rapide, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3488,7 +3488,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt combattant :" , "Le kobolt combattant commence un mouvement circulaire très rapide et impressionnant avec son épée avant de se rapprocher rapidement de vous en une fraction de seconde, il inflige " +A+ " points de dégâts sur vous et deux autres joueurs")
+        .addField(":crossed_swords: Kobolt combattant :" , ":crossed_swords: Le kobolt combattant commence un mouvement circulaire très rapide et impressionnant avec son épée avant de se rapprocher rapidement de vous en une fraction de seconde, il inflige " +A+ " points de dégâts sur vous et deux autres joueurs")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3509,14 +3509,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt espion :" , "Le kobolt espion sort discrètement plusieurs kunais de son manteau noir et le lance dans votre direction mais ils tombent avant de vous atteindre, vous avez de la chances !")
+      .addField(":crossed_swords: Kobolt espion :" , ":crossed_swords: Le kobolt espion sort discrètement plusieurs kunais de son manteau noir et le lance dans votre direction mais ils tombent avant de vous atteindre, vous avez de la chances !")
       message.channel.send({embed})}
       if (11 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt espion :" , "Le kobolt espion se déplace de gauche à droite rapidement afin de sauter et de balancer une nuée de kunais sur vous tel un ninja, il inflige " +A+ " points de dégâts")
+        .addField(":crossed_swords: Kobolt espion :" , ":crossed_swords: Le kobolt espion se déplace de gauche à droite rapidement afin de sauter et de balancer une nuée de kunais sur vous tel un ninja, il inflige " +A+ " points de dégâts")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3524,7 +3524,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt espion:" , "Le kobolt espion s'approche de vous et sort subitement une poudre qu'il vous balance en pleine face ce qui vous fait perdre le contrôle, vous êtes sous son charme pendant " +C+ " tours [Vous devrez attaquer aléatoirement les autres joueurs, ou si vous êtes seul vous frapper vous même, le kobolt ne vous attaquera pas pendant la durée du charme si vous êtes seul")
+        .addField(":crossed_swords: Kobolt espion:" , ":crossed_swords: Le kobolt espion s'approche de vous et sort subitement une poudre qu'il vous balance en pleine face ce qui vous fait perdre le contrôle, vous êtes sous son charme pendant " +C+ " tours [Vous devrez attaquer aléatoirement les autres joueurs, ou si vous êtes seul vous frapper vous même, le kobolt ne vous attaquera pas pendant la durée du charme si vous êtes seul")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3543,14 +3543,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt géant rouge :" , "Le kobolt géant rouge sort deux épées de son dos et les fait frotter le sol en courant vers vous mais sa course le fait tomber à cause de son immensité, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt géant rouge :" , ":crossed_swords: Le kobolt géant rouge sort deux épées de son dos et les fait frotter le sol en courant vers vous mais sa course le fait tomber à cause de son immensité, vous avez de la chance !")
       message.channel.send({embed})}
       if (31 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt géant rouge :" , "Le kobolt géant rouge sort et balance ses deux épées ainsi que ses bras gigantesques vers vous d'une vitesse colossale, il inflige " +A+ " points de dégâts à deux joueurs")
+        .addField(":crossed_swords: Kobolt géant rouge :" , ":crossed_swords: Le kobolt géant rouge sort et balance ses deux épées ainsi que ses bras gigantesques vers vous d'une vitesse colossale, il inflige " +A+ " points de dégâts à deux joueurs")
         .setTimestamp()
          message.channel.send({embed})}
      if (91 < B){
@@ -3558,7 +3558,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt géant rouge :" , "Le kobolt géant rouge commence à avoir des yeux complètement injectés de sang et se déchaîne complètement en balançant ses bras et ses épées dans tous les sens autour de lui, il inflige " + A+ " points de dégâts à tous les joueurs, ou s'il n'y a qu'un joueur " +C+ " points de dégâts à la place [Esquive uniquement possible de la part de tous les joueurs]")
+        .addField(":crossed_swords: Kobolt géant rouge :" , ":crossed_swords: Le kobolt géant rouge commence à avoir des yeux complètement injectés de sang et se déchaîne complètement en balançant ses bras et ses épées dans tous les sens autour de lui, il inflige " + A+ " points de dégâts à tous les joueurs, ou s'il n'y a qu'un joueur " +C+ " points de dégâts à la place [Esquive uniquement possible de la part de tous les joueurs]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3588,7 +3588,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Loup :" , "Le loup tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+       .addField(":shield: Loup :" , ":shield: Le loup tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
        .setTimestamp()
        message.channel.send({embed})}
       if (51 < B){
@@ -3596,7 +3596,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Loup :" , "Le loup saute sur le côté et arrive à esquiver votre coup, il se met à mordre votre jambe profondément, il inflige " +C+ " points de dégâts")
+         .addField(":shield: Loup :" , ":shield: Le loup saute sur le côté et arrive à esquiver votre coup, il se met à mordre votre jambe profondément, il inflige " +C+ " points de dégâts")
          .setTimestamp()
          message.channel.send({embed})}
       }
@@ -3616,14 +3616,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Sanglier :" , "Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (51 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Sanglier :" , "Le sanglier recule assez pour que vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
+        .addField(":shield: Sanglier :" , ":shield: Le sanglier recule assez pour que vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3644,14 +3644,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Renard :" , "Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (51 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Renard :" , "Le renard cours rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
+        .addField(":shield: Renard :" , ":shield: Le renard cours rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3673,14 +3673,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Chien :" , "Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (76 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Chien :" , "Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+        .addField(":shield: Chien :" , ":shield: Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3702,14 +3702,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Lapin géant :" , "Le lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgrè ceci, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgrè ceci, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (70 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Lapin géant :" , "Le lapin géant met ses pattes d'une manière étrange au dessus de sa tête ce qui réduis énormément les dégâts qu'il subit, vous lui infligez " +C+ " points de dégâts")
+        .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes d'une manière étrange au dessus de sa tête ce qui réduis énormément les dégâts qu'il subit, vous lui infligez " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3731,14 +3731,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Slime :" , "Le slime se déplace de côté pour essayer de ne pas prendre le coup, mais il est trop lent et se le prend, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Slime :" , ":shield: Le slime se déplace de côté pour essayer de ne pas prendre le coup, mais il est trop lent et se le prend, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B & B < 80){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Slime :" , "Le slime se déplace sur le côté lors de votre coup et essaye de cracher un genre de projectile d'acide qui ne vous atteint pas, vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
+        .addField(":shield: Slime :" , ":shield: Le slime se déplace sur le côté lors de votre coup et essaye de cracher un genre de projectile d'acide qui ne vous atteint pas, vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
         if (81 < B){
@@ -3746,7 +3746,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Slime :" , "Le slime se déplace sur le côté lors de votre coup et crache un genre de projectile d'acide sur vous, vous n'arrivez pas à le toucher, il ne prend aucun dégâts et il inflige " +C+ " points de dégâts")
+          .addField(":shield: Slime :" , ":shield: Le slime se déplace sur le côté lors de votre coup et crache un genre de projectile d'acide sur vous, vous n'arrivez pas à le toucher, il ne prend aucun dégâts et il inflige " +C+ " points de dégâts")
           .setTimestamp()
           message.channel.send({embed})}
             }
@@ -3839,14 +3839,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Loup de sang :" , "Le loup de sang essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (71 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup de sang :" , "Le loup de sang arrive à attraper votre arme dans sa gueule, entre ses crocs, et se jette sur vous et votre cou qu'il mord, il inflige " +C+ " points de dégâts")
+        .addField(":shield: Loup de sang :" , ":shield: Le loup de sang arrive à attraper votre arme dans sa gueule, entre ses crocs, et se jette sur vous et votre cou qu'il mord, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3867,14 +3867,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Loup de sang :" , "Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup de sang :" , "Le loup de sang d'élite arrive à attraper votre arme dans sa gueule, entre ses crocs, et se jette sur vous et votre cou qu'il mord, il inflige " +C+ " points de dégâts")
+        .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite arrive à attraper votre arme dans sa gueule, entre ses crocs, et se jette sur vous et votre cou qu'il mord, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3895,14 +3895,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit débutant :" , "Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " +A+ " points de dégâts")
+      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (51 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit débutant :" , "Le bandit débutant court rapidement en voyant votre coup, ne sachant pas vraiment faire d'esquives, il ne prend aucun dégâts")
+        .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant court rapidement en voyant votre coup, ne sachant pas vraiment faire d'esquives, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3924,14 +3924,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit expérimenté :" , "Le bandit expérimenté tente de parer votre coup à l'aide de ses deux dagues, mais votre attaque est assez puissante et il se la prend, vous infligez " +A+ " points de dégâts")
+      .addField(":shield: Bandit expérimenté :" , ":shield: Le bandit expérimenté tente de parer votre coup à l'aide de ses deux dagues, mais votre attaque est assez puissante et il se la prend, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (71 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit expérimenté :" , "Le bandit expérimenté arrive à parer votre coup en bloquant votre coup entre ses deux dagues, il vous met un coup de pied avant de profiter de cette occasion pour planter ses deux dagues, il inflige " +C+ " points de dégâts")
+        .addField(":shield: Bandit expérimenté :" , ":shield: Le bandit expérimenté arrive à parer votre coup en bloquant votre coup entre ses deux dagues, il vous met un coup de pied avant de profiter de cette occasion pour planter ses deux dagues, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3952,14 +3952,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit sombre :" , "Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+        .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -3980,14 +3980,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Bandit sombre :" , "Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (56 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Bandit sombre :" , "Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+        .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -4008,14 +4008,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Loup gigantesque :" , "Le loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Loup gigantesque :" , ":shield: Le loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (51 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Loup gigantesque :" , "Le loup gigantesque voit que vous vous jetez dessus et il vous projette d'un coup de patte très rapide contre un mur, il inflige " +C+ " points de dégâts")
+        .addField(":shield: Loup gigantesque :" , ":shield: Le loup gigantesque voit que vous vous jetez dessus et il vous projette d'un coup de patte très rapide contre un mur, il inflige " +C+ " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -4052,14 +4052,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Jeune kobolt :" , "Le jeune kobolt ne semble même pas réagir et ne pas encore avoir le réflexe d'esquiver les coups, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Jeune kobolt :" , ":shield: Le jeune kobolt ne semble même pas réagir et ne pas encore avoir le réflexe d'esquiver les coups, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Jeune kobolt :" , "Le jeune kobolt ne fait que se déplacer d'un pas sur le côté sans même faire attention à votre coup, il ne prend aucun dégâts")
+        .addField(":shield: Jeune kobolt :" , ":shield: Le jeune kobolt ne fait que se déplacer d'un pas sur le côté sans même faire attention à votre coup, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -4082,14 +4082,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt explorateur :" , "Le kobolt explorateur tente avec sa dague de contrer votre coup mais elle est trop minuscule, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Kobolt explorateur :" , ":shield: Le kobolt explorateur tente avec sa dague de contrer votre coup mais elle est trop minuscule, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (51 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt explorateur :" , "Le kobolt explorateur effectue un coup rapide vers votre arme une fois que votre coup arrive afin de vous déstabiliser, il ne prend aucun dégâts")
+        .addField(":shield: Kobolt explorateur :" , ":shield: Le kobolt explorateur effectue un coup rapide vers votre arme une fois que votre coup arrive afin de vous déstabiliser, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
         if (91 < B){
@@ -4097,7 +4097,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Kobolt explorateur :" , "Le kobolt explorateur arrive à l'aide de sa dague et d'un coup sec et rapide à vous faire basculer pendant votre coup, il inflige " +C+ " points de dégâts")
+          .addField(":shield: Kobolt explorateur :" , ":shield: Le kobolt explorateur arrive à l'aide de sa dague et d'un coup sec et rapide à vous faire basculer pendant votre coup, il inflige " +C+ " points de dégâts")
           .setTimestamp()
           message.channel.send({embed})}
           }
@@ -4120,14 +4120,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt ouvrier :" , "Le kobolt ouvrier tente de se cacher derrière un objet autour de lui par réflexe mais il se prend le coup de plein fouet, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Kobolt ouvrier :" , ":shield: Le kobolt ouvrier tente de se cacher derrière un objet autour de lui par réflexe mais il se prend le coup de plein fouet, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (41 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt ouvrier :" , "Le kobolt ouvrier court rapidement en arrière en voyant votre arme bouger, il ne prend aucun dégâts")
+        .addField(":shield: Kobolt ouvrier :" , ":shield: Le kobolt ouvrier court rapidement en arrière en voyant votre arme bouger, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
           }
@@ -4149,14 +4149,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt mineur :" , "Le kobolt mineur essaye d'utiliser sa pioche pour arrêter votre coup mais elle n'est pas assez résistante, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Kobolt mineur :" , ":shield: Le kobolt mineur essaye d'utiliser sa pioche pour arrêter votre coup mais elle n'est pas assez résistante, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (41 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt mineur :" , "Le kobolt ouvrier arrive à bloquer votre coup à l'aide de sa pioche entre le manche et l'acier, il ne prend aucun dégâts")
+        .addField(":shield: Kobolt mineur :" , ":shield: Le kobolt ouvrier arrive à bloquer votre coup à l'aide de sa pioche entre le manche et l'acier, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
         if (91 < B){
@@ -4164,7 +4164,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Kobolt mineur :" , "Le kobolt mineur voit le coup et par réflexe vous met un coup de pioche très rapide que vous prenez subitement, il inflige " +C+ " points de dégâts et vous étourdis pendant 1 tour")
+          .addField(":shield: Kobolt mineur :" , ":shield: Le kobolt mineur voit le coup et par réflexe vous met un coup de pioche très rapide que vous prenez subitement, il inflige " +C+ " points de dégâts et vous étourdis pendant 1 tour")
           .setTimestamp()
           message.channel.send({embed})}
           }
@@ -4189,14 +4189,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt combattant :" , "Le kobolt combattant effectue un duel de force avec vous et votre arme mais il n'est pas assez puissant, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Kobolt combattant :" , ":shield: Le kobolt combattant effectue un duel de force avec vous et votre arme mais il n'est pas assez puissant, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B & B < 91){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt combattant :" , "Le kobolt combattant effectue un duel de force avec vous et votre arme et il vous met un coup de pied pour vous faire reculer, il ne prend aucun dégâts et réduit votre armure de 5 points lors du prochain coup que vous prendrez")
+        .addField(":shield: Kobolt combattant :" , ":shield: Le kobolt combattant effectue un duel de force avec vous et votre arme et il vous met un coup de pied pour vous faire reculer, il ne prend aucun dégâts et réduit votre armure de 5 points lors du prochain coup que vous prendrez")
         .setTimestamp()
         message.channel.send({embed})}
         if (91 < B){
@@ -4204,7 +4204,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Kobolt combattant :" , "Le kobolt combattant voyant votre coup arrive se met sur le côté afin d'esquive le coup et effectue un coup de manche de son épée en plein dans votre visage ce qui vous fait tomber et il en profite pour vous empaler, il inflige " +C+ " points de dégâts et réduit votre armure de 10 points lors du prochain coup que vous prendrez")
+          .addField(":shield: Kobolt combattant :" , ":shield: Le kobolt combattant voyant votre coup arrive se met sur le côté afin d'esquive le coup et effectue un coup de manche de son épée en plein dans votre visage ce qui vous fait tomber et il en profite pour vous empaler, il inflige " +C+ " points de dégâts et réduit votre armure de 10 points lors du prochain coup que vous prendrez")
           .setTimestamp()
           message.channel.send({embed})}
           }
@@ -4225,14 +4225,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt garde :" , "Le kobolt garde tente de bloquer le coup mais il n'arrive pas à garder son bouclier devant lui bien droit, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Kobolt garde :" , ":shield: Le kobolt garde tente de bloquer le coup mais il n'arrive pas à garder son bouclier devant lui bien droit, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (41 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt garde :" , "Le kobolt garde bloque facilement le coup en gardant son bouclier devant lui comme une roche très résistante, il ne prend aucun dégâts et réduit vos points de dégâts de 10 lors de votre prochaine attaque")
+        .addField(":shield: Kobolt garde :" , ":shield: Le kobolt garde bloque facilement le coup en gardant son bouclier devant lui comme une roche très résistante, il ne prend aucun dégâts et réduit vos points de dégâts de 10 lors de votre prochaine attaque")
         .setTimestamp()
         message.channel.send({embed})}
         if (91 < B){
@@ -4240,7 +4240,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Kobolt garde :" , "Le kobolt garde d'un élan de puissance incroyable arrive à mettre un coup de bouclier rapide dans votre arme pendant votre coup ce qui vous fait perdre l'équilibre et il en profite pour vous mettre un coup rapide dans le ventre, il inflige " +C+ " point de dégâts et réduit vos dégâts de 20 lors de votre prochaine attaque")
+          .addField(":shield: Kobolt garde :" , ":shield: Le kobolt garde d'un élan de puissance incroyable arrive à mettre un coup de bouclier rapide dans votre arme pendant votre coup ce qui vous fait perdre l'équilibre et il en profite pour vous mettre un coup rapide dans le ventre, il inflige " +C+ " point de dégâts et réduit vos dégâts de 20 lors de votre prochaine attaque")
           .setTimestamp()
           message.channel.send({embed})}
           }
@@ -4262,14 +4262,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt espion :" , "Le kobolt espion tente de sortir quelque chance de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion tente de sortir quelque chance de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (41 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt espion :" , "Le kobolt espion à travers son manteau arrive à parer votre coup avec deux kunais et à vous faire tomber par terre en levant ses bras, il ne prend aucun dégâts et vous étourdis pendant 1 tour")
+        .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion à travers son manteau arrive à parer votre coup avec deux kunais et à vous faire tomber par terre en levant ses bras, il ne prend aucun dégâts et vous étourdis pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
         if (91 < B){
@@ -4277,7 +4277,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Kobolt espion :" , "Le kobolt espion sors une sorte de bombe étrange de son manteau et la balance si rapidement que vous pouvez à peine faire une esquive, il inflige " +C+ " points de dégâts à tous les joueurs [Esquive uniquement possible de la part de tous les joueurs]")
+          .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion sors une sorte de bombe étrange de son manteau et la balance si rapidement que vous pouvez à peine faire une esquive, il inflige " +C+ " points de dégâts à tous les joueurs [Esquive uniquement possible de la part de tous les joueurs]")
           .setTimestamp()
           message.channel.send({embed})}
           }
@@ -4298,14 +4298,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Kobolt géant rouge :" , "Le kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
       if (61 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Kobolt géant rouge :" , "Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et étourdis tous les joueurs pendant 1 tour")
+        .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et étourdis tous les joueurs pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
         if (96 < B){
@@ -4313,7 +4313,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Kobolt géant rouge :" , "Le kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " +C+ " points de dégâts à tous les joueurs et étourdis de 2 tours [Esquive uniquement possible de la part de tous les joueurs, si l'esquive marche vous ne prenez pas l'étourdissement]")
+          .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " +C+ " points de dégâts à tous les joueurs et étourdis de 2 tours [Esquive uniquement possible de la part de tous les joueurs, si l'esquive marche vous ne prenez pas l'étourdissement]")
           .setTimestamp()
           message.channel.send({embed})}
           }
@@ -4375,7 +4375,7 @@ bot.on('message', message => {
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField("Plaines :" , "Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaines combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaines cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaines chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaines quêtes`")
+    .addField(":sunrise_over_moutains: Plaines :" , ":sunrise_over_moutains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaines combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaines cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaines chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaines quêtes`")
     .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -4407,7 +4407,7 @@ bot.on('message', message => {
                                                .setAuthor(message.author.username , message.author.avatarURL)
                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                .setColor(3447003)
-                                               .addField("Plaines :" , "En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
+                                               .addField(":sunrise_over_moutains: Plaines :" , ":sunrise_over_moutains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
                                                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                .setTimestamp()
                                                    message.channel.send({embed})}
@@ -4426,7 +4426,7 @@ bot.on('message', message => {
                                                    const embed = new Discord.RichEmbed()
                                                    .setAuthor(message.author.username , message.author.avatarURL)
                                                   .setColor(1447003)
-                                                  .addField("Forêt :" , "Bienvenue dans ce lieu habité par des loups dangereux et bien plus !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Forêt combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 2 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt cueillir`\n\n:knife: Pour chasser, niveau 2 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n:pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Forêt miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 1 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Forêt quêtes`")
+                                                  .addField(":park: Forêt :" , ":park: Bienvenue dans ce lieu habité par des loups dangereux et bien plus !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Forêt combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 2 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt cueillir`\n\n:knife: Pour chasser, niveau 2 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n:pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Forêt miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 1 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Forêt quêtes`")
                                                   .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -4459,7 +4459,7 @@ bot.on('message', message => {
                                                      .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                      .setColor(3447003)
-                                                     .addField("Forêt :" , "En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n:crossed_swords: Loup(s) : " +B+ "\n:crossed_swords: Slime(s) " +C+ "\n:crossed_swords: Bandit(s) expérimenté(s) : " +D+ "\n:crossed_swords: Bandit(s) sombre(s) : " +E+ "\n:crossed_swords: Loup(s) de sang(s) : " +F)
+                                                     .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n:crossed_swords: Loup(s) : " +B+ "\n:crossed_swords: Slime(s) " +C+ "\n:crossed_swords: Bandit(s) expérimenté(s) : " +D+ "\n:crossed_swords: Bandit(s) sombre(s) : " +E+ "\n:crossed_swords: Loup(s) de sang(s) : " +F)
                                                      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                      .setTimestamp()
                                                          message.channel.send({embed})}
@@ -4476,7 +4476,7 @@ bot.on('message', message => {
                                                    const embed = new Discord.RichEmbed()
                                                    .setAuthor(message.author.username , message.author.avatarURL)
                                                   .setColor(1447003)
-                                                  .addField("Montagne :" , "Bienvenue dans ce lieu habité principalement par des kobolts !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Montagne combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n:knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n:pick: Pour miner, niveau 2 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 2 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
+                                                  .addField(":moutain_snow: Montagne :" , ":moutain_snow: Bienvenue dans ce lieu habité principalement par des kobolts !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Montagne combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n:knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n:pick: Pour miner, niveau 2 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 2 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
                                                   .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -4508,7 +4508,7 @@ bot.on('message', message => {
                                                      .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                      .setColor(3447003)
-                                                     .addField("Montagne :" , "En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F)
+                                                     .addField(":moutain_snow: Montagne :" , ":moutain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F)
                                                      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                      .setTimestamp()
                                                          message.channel.send({embed})}
@@ -4528,7 +4528,7 @@ bot.on('message', message => {
                                                    const embed = new Discord.RichEmbed()
                                                    .setAuthor(message.author.username , message.author.avatarURL)
                                                   .setColor(1447003)
-                                                  .addField("Grotte :" , "Bienvenue dans ce lieu habité principalement par des kobolts qui est aussi le lieu menant au boss du palier 1 !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Grotte combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 4 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n:pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n:book: Pour avoir une quête :\n:book: `=Grotte quêtes`")
+                                                  .addField(":mount_fuji: Grotte :" , ":mount_fuji: Bienvenue dans ce lieu habité principalement par des kobolts qui est aussi le lieu menant au boss du palier 1 !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Grotte combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 4 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n:pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n:book: Pour avoir une quête :\n:book: `=Grotte quêtes`")
                                                   .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -4559,7 +4559,7 @@ bot.on('message', message => {
                                                      .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                      .setColor(3447003)
-                                                     .addField("Grotte :" , "En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n:crossed_swords: Kobolt(s) garde(s) : " +B+ "\n:crossed_swords: Kobolt(s) combattant(s) " +C+ "\n:crossed_swords: Kobolt(s) espion(s) : " +E+ "\n:crossed_swords: Kobolt(s) géant(s) rouge(s) : " +F)
+                                                     .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n:crossed_swords: Kobolt(s) garde(s) : " +B+ "\n:crossed_swords: Kobolt(s) combattant(s) " +C+ "\n:crossed_swords: Kobolt(s) espion(s) : " +E+ "\n:crossed_swords: Kobolt(s) géant(s) rouge(s) : " +F)
                                                      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                      .setTimestamp()
                                                          message.channel.send({embed})}
@@ -4688,7 +4688,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("En restant en ville, vous reprenez :" , +A+ " HP")
+       .addField(":gift_heart: Régénération :" , ":gift_heart: En restant en ville, vous reprenez `" +A+ "` HP !")
        .setImage("https://img00.deviantart.net/62ab/i/2013/118/2/6/sao____kirito_health_bar_by_xxexternalhopexx-d63diy6.png")
        .setTimestamp()
        message.channel.send({embed})
@@ -4799,7 +4799,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -4809,7 +4809,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
          .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -4831,7 +4831,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -4841,7 +4841,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
          .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -4861,7 +4861,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous ratez votre coup..." , "Dommage pour vous")
+     .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
      .setTimestamp()
      message.channel.send({embed})
@@ -4871,7 +4871,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+       .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
        .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -4892,7 +4892,7 @@ const args = cont.slice(1);
    .setAuthor(message.author.username , message.author.avatarURL)
    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
    .setColor(3447003)
-   .addField("Vous ratez votre coup..." , "Dommage pour vous")
+   .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
    .setTimestamp()
    message.channel.send({embed})
@@ -4902,7 +4902,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+     .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
      .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
      .setTimestamp()
      message.channel.send({embed})
@@ -4923,7 +4923,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous ratez votre coup..." , "Dommage pour vous")
+     .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
      .setTimestamp()
      message.channel.send({embed})
@@ -4933,7 +4933,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+       .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
        .setTimestamp()
        message.channel.send({embed})
@@ -4955,7 +4955,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -4965,7 +4965,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
          .setTimestamp()
          message.channel.send({embed})
@@ -4987,7 +4987,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -4997,7 +4997,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
          .setTimestamp()
          message.channel.send({embed})
@@ -5019,7 +5019,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -5029,7 +5029,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
          .setTimestamp()
          message.channel.send({embed})
@@ -5053,7 +5053,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -5063,7 +5063,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+         .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts mais votre cible ne tombe pas")
          .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5073,7 +5073,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+         .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et votre cible tombe ne lui permettant pas de pouvoir se défendre")
          .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5097,7 +5097,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
          .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5107,7 +5107,7 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+           .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts mais votre cible ne tombe pas")
            .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
            .setTimestamp()
            message.channel.send({embed})
@@ -5117,7 +5117,7 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+           .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et votre cible tombe ne lui permettant pas de pouvoir se défendre")
            .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
            .setTimestamp()
            message.channel.send({embed})
@@ -5139,7 +5139,7 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous ratez votre coup..." , "Dommage pour vous")
+           .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
            .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
            .setTimestamp()
            message.channel.send({embed})
@@ -5149,7 +5149,7 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+             .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts mais votre cible ne tombe pas")
              .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5159,7 +5159,7 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+             .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et votre cible tombe ne lui permettant pas de pouvoir se défendre")
              .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5183,7 +5183,7 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
              .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5193,7 +5193,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible ne tombe malheureusement pas...")
+               .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts mais votre cible ne tombe pas")
                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5203,7 +5203,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, votre cible tombe et ne pourra pas faire sa prochaine action défensive !")
+               .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et votre cible tombe ne lui permettant pas de pouvoir se défendre")
                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5227,7 +5227,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre coup..." , "Dommage pour vous")
+       .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -5237,7 +5237,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
+         .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse")
          .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
          .setTimestamp()
          message.channel.send({embed})
@@ -5258,7 +5258,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
          .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5268,7 +5268,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
+           .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse")
            .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
            .setTimestamp()
            message.channel.send({embed})
@@ -5289,7 +5289,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous ratez votre coup..." , "Dommage pour vous")
+           .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
            .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
            .setTimestamp()
            message.channel.send({embed})
@@ -5299,7 +5299,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
+             .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse")
              .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
              .setTimestamp()
              message.channel.send({embed})
@@ -5320,7 +5320,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
              .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5330,7 +5330,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, ignorant l'armure de la cible")
+               .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse")
                .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
                .setTimestamp()
                message.channel.send({embed})
@@ -5346,13 +5346,14 @@ const args = cont.slice(1);
 
   let degats = args.slice(3).join(" : ");
   const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
+  const C = A*1.5
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 5){
    const embed = new Discord.RichEmbed()
    .setAuthor(message.author.username , message.author.avatarURL)
    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
    .setColor(3447003)
-   .addField("Vous ratez votre coup..." , "Dommage pour vous")
+   .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
    .setTimestamp()
    message.channel.send({embed})
@@ -5362,7 +5363,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+     .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
      .setTimestamp()
      message.channel.send({embed})
@@ -5372,7 +5373,7 @@ const args = cont.slice(1);
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Vous réussissez votre coup qui inflige :" , A*1.5+ " points de dégâts")
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts")
       .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -5395,7 +5396,7 @@ bot.on('message', message => {
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous ratez votre coup..." , "Dommage pour vous")
+     .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
      .setTimestamp()
      message.channel.send({embed})
@@ -5405,7 +5406,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+       .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
        .setTimestamp()
        message.channel.send({embed})
@@ -5415,7 +5416,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Vous réussissez votre coup qui inflige :" , A*1.5+ " points de dégâts")
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts")
         .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -5438,7 +5439,7 @@ bot.on('message', message => {
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous ratez votre coup..." , "Dommage pour vous")
+     .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
      .setTimestamp()
      message.channel.send({embed})
@@ -5448,7 +5449,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+       .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
        .setTimestamp()
        message.channel.send({embed})
@@ -5458,7 +5459,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Vous réussissez votre coup qui inflige :" , A*1.5+ " points de dégâts")
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts")
         .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -5481,7 +5482,7 @@ bot.on('message', message => {
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous ratez votre coup..." , "Dommage pour vous")
+     .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
      .setTimestamp()
      message.channel.send({embed})
@@ -5491,7 +5492,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
+       .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts")
        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
        .setTimestamp()
        message.channel.send({embed})
@@ -5501,7 +5502,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Vous réussissez votre coup qui inflige :" , A*1.5+ " points de dégâts")
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts")
         .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -5527,7 +5528,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre combo..." , "Dommage pour vous")
+       .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -5537,13 +5538,13 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre combo qui inflige au total :" , H+ " points de dégâts")
-         .addField("Votre premier coup inflige :" , A+ " points de dégâts")
-         .addField("Votre deuxième coup inflige :" , C+ " points de dégâts")
-         .addField("Votre troisième coup inflige :" , D+ " points de dégâts")
-         .addField("Votre quatrième coup inflige :" , E+ " points de dégâts")
-         .addField("Votre cinquième coup inflige :" , F+ " points de dégâts")
-         .addField("Votre sixième coup inflige :" , G+ " points de dégâts")
+         .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total grâce aux six coups")
+         .addField(":crossed_swords: Votre premier coup inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Votre deuxième coup inflige :" , C+ " points de dégâts")
+         .addField(":crossed_swords: Votre troisième coup inflige :" , D+ " points de dégâts")
+         .addField(":crossed_swords: Votre quatrième coup inflige :" , E+ " points de dégâts")
+         .addField(":crossed_swords: Votre cinquième coup inflige :" , F+ " points de dégâts")
+         .addField(":crossed_swords: Votre sixième coup inflige :" , G+ " points de dégâts")
          .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5570,7 +5571,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre combo..." , "Dommage pour vous")
+       .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -5580,13 +5581,13 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre combo qui inflige au total :" , H+ " points de dégâts")
-         .addField("Votre premier coup inflige :" , A+ " points de dégâts")
-         .addField("Votre deuxième coup inflige :" , C+ " points de dégâts")
-         .addField("Votre troisième coup inflige :" , D+ " points de dégâts")
-         .addField("Votre quatrième coup inflige :" , E+ " points de dégâts")
-         .addField("Votre cinquième coup inflige :" , F+ " points de dégâts")
-         .addField("Votre sixième coup inflige :" , G+ " points de dégâts")
+         .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total grâce aux six coups")
+         .addField(":crossed_swords: Votre premier coup inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Votre deuxième coup inflige :" , C+ " points de dégâts")
+         .addField(":crossed_swords: Votre troisième coup inflige :" , D+ " points de dégâts")
+         .addField(":crossed_swords: Votre quatrième coup inflige :" , E+ " points de dégâts")
+         .addField(":crossed_swords: Votre cinquième coup inflige :" , F+ " points de dégâts")
+         .addField(":crossed_swords: Votre sixième coup inflige :" , G+ " points de dégâts")
          .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5613,7 +5614,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre combo..." , "Dommage pour vous")
+       .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -5623,13 +5624,13 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre combo qui inflige au total :" , H+ " points de dégâts")
-         .addField("Votre premier coup inflige :" , A+ " points de dégâts")
-         .addField("Votre deuxième coup inflige :" , C+ " points de dégâts")
-         .addField("Votre troisième coup inflige :" , D+ " points de dégâts")
-         .addField("Votre quatrième coup inflige :" , E+ " points de dégâts")
-         .addField("Votre cinquième coup inflige :" , F+ " points de dégâts")
-         .addField("Votre sixième coup inflige :" , G+ " points de dégâts")
+         .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total grâce aux six coups")
+         .addField(":crossed_swords: Votre premier coup inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Votre deuxième coup inflige :" , C+ " points de dégâts")
+         .addField(":crossed_swords: Votre troisième coup inflige :" , D+ " points de dégâts")
+         .addField(":crossed_swords: Votre quatrième coup inflige :" , E+ " points de dégâts")
+         .addField(":crossed_swords: Votre cinquième coup inflige :" , F+ " points de dégâts")
+         .addField(":crossed_swords: Votre sixième coup inflige :" , G+ " points de dégâts")
          .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5656,7 +5657,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous ratez votre combo..." , "Dommage pour vous")
+       .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -5666,13 +5667,13 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre combo qui inflige au total :" , H+ " points de dégâts")
-         .addField("Votre premier coup inflige :" , A+ " points de dégâts")
-         .addField("Votre deuxième coup inflige :" , C+ " points de dégâts")
-         .addField("Votre troisième coup inflige :" , D+ " points de dégâts")
-         .addField("Votre quatrième coup inflige :" , E+ " points de dégâts")
-         .addField("Votre cinquième coup inflige :" , F+ " points de dégâts")
-         .addField("Votre sixième coup inflige :" , G+ " points de dégâts")
+         .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total grâce aux six coups")
+         .addField(":crossed_swords: Votre premier coup inflige :" , A+ " points de dégâts")
+         .addField(":crossed_swords: Votre deuxième coup inflige :" , C+ " points de dégâts")
+         .addField(":crossed_swords: Votre troisième coup inflige :" , D+ " points de dégâts")
+         .addField(":crossed_swords: Votre quatrième coup inflige :" , E+ " points de dégâts")
+         .addField(":crossed_swords: Votre cinquième coup inflige :" , F+ " points de dégâts")
+         .addField(":crossed_swords: Votre sixième coup inflige :" , G+ " points de dégâts")
          .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5693,7 +5694,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
          .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5703,8 +5704,7 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
-           .addField("Provocation :" , "La cible sera obligé de vous attaquer à son prochain coup")
+           .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour")
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
            .setTimestamp()
            message.channel.send({embed})
@@ -5726,7 +5726,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
          .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5736,8 +5736,8 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
-           .addField("Provocation :" , "La cible sera obligé de vous attaquer à son prochain coup")
+           .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour")
+
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
            .setTimestamp()
            message.channel.send({embed})
@@ -5759,7 +5759,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
          .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5769,8 +5769,8 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
-           .addField("Provocation :" , "La cible sera obligé de vous attaquer à son prochain coup")
+           .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour")
+
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
            .setTimestamp()
            message.channel.send({embed})
@@ -5792,7 +5792,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous ratez votre coup..." , "Dommage pour vous")
+         .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
          .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -5802,8 +5802,8 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts")
-           .addField("Provocation :" , "La cible sera obligé de vous attaquer à son prochain coup")
+           .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour")
+
            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
            .setTimestamp()
            message.channel.send({embed})
@@ -5819,7 +5819,7 @@ bot.on('message', message => {
    if (message.content.startsWith(prefix + "Coup circulaire simple")) {
 
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+            const A = (Math.floor((degats/3)*Math.random()+1*(degats/3)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 50){
@@ -5827,7 +5827,7 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
              .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5837,7 +5837,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous réussissez votre coup touchant " +C+ " ennemis qui inflige :" , A+ " points de dégâts à chacun")
+               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5860,7 +5860,7 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
              .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5870,7 +5870,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous réussissez votre coup touchant " +C+ " ennemis qui inflige :" , A+ " points de dégâts à chacun")
+               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5892,7 +5892,7 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
              .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5902,7 +5902,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous réussissez votre coup touchant " +C+ " ennemis qui inflige :" , A+ " points de dégâts à chacun")
+               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5926,7 +5926,7 @@ bot.on('message', message => {
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField("Vous ratez votre coup..." , "Dommage pour vous")
+             .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
              .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
              .setTimestamp()
              message.channel.send({embed})
@@ -5936,7 +5936,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous réussissez votre coup touchant " +C+ " ennemis qui inflige :" , A+ " points de dégâts à chacun")
+               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5955,7 +5955,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous ratez votre crie de provocation..." , "Dommage pour vous")
+               .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5965,7 +5965,7 @@ bot.on('message', message => {
                  .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
-                 .addField("Vous réussissez votre crie de provocation sur " +C+ " ennemis :" , "Les cibles seront obligés de vous attaquer à leur prochain coup")
+                 .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
                  .setImage("https://i.stack.imgur.com/baOUT.png")
                  .setTimestamp()
                  message.channel.send({embed})
@@ -5984,7 +5984,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous ratez votre crie de provocation..." , "Dommage pour vous")
+               .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -5994,7 +5994,7 @@ bot.on('message', message => {
                  .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
-                 .addField("Vous réussissez votre crie de provocation sur " +C+ " ennemis :" , "Les cibles seront obligés de vous attaquer à leur prochain coup")
+                 .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
                  .setImage("https://i.stack.imgur.com/baOUT.png")
                  .setTimestamp()
                  message.channel.send({embed})
@@ -6013,7 +6013,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous ratez votre crie de provocation..." , "Dommage pour vous")
+               .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -6023,7 +6023,7 @@ bot.on('message', message => {
                  .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
-                 .addField("Vous réussissez votre crie de provocation sur " +C+ " ennemis :" , "Les cibles seront obligés de vous attaquer à leur prochain coup")
+                 .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
                  .setImage("https://i.stack.imgur.com/baOUT.png")
                  .setTimestamp()
                  message.channel.send({embed})
@@ -6042,7 +6042,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Vous ratez votre crie de provocation..." , "Dommage pour vous")
+               .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -6052,7 +6052,7 @@ bot.on('message', message => {
                  .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
-                 .addField("Vous réussissez votre crie de provocation sur " +C+ " ennemis :" , "Les cibles seront obligés de vous attaquer à leur prochain coup")
+                 .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
                  .setImage("https://i.stack.imgur.com/baOUT.png")
                  .setTimestamp()
                  message.channel.send({embed})
@@ -6074,7 +6074,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre esquive et vous subissez" , A+ " points de dégâts")
+       .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6084,7 +6084,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre esquive :" , "Vous ne prenez aucun points de dégâts")
+         .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
          .setImage("http://i.imgur.com/LjoYHp7.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -6105,7 +6105,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre esquive et vous subissez" , A+ " points de dégâts")
+       .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6115,7 +6115,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre esquive :" , "Vous ne prenez aucun points de dégâts")
+         .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
          .setImage("http://i.imgur.com/LjoYHp7.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -6136,7 +6136,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre esquive et vous subissez" , A+ " points de dégâts")
+       .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6146,7 +6146,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre esquive :" , "Vous ne prenez aucun points de dégâts")
+         .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
          .setImage("http://i.imgur.com/LjoYHp7.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -6167,7 +6167,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre esquive et vous subissez" , A+ " points de dégâts")
+       .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6177,7 +6177,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre esquive :" , "Vous ne prenez aucun points de dégâts")
+         .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
          .setImage("http://i.imgur.com/LjoYHp7.jpg")
          .setTimestamp()
          message.channel.send({embed})
@@ -6199,7 +6199,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*2.25+ " points de dégâts")
+         .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -6208,7 +6208,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*1.25+ " points de dégâts")
+            .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
             .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
             .setTimestamp()
             message.channel.send({embed})
@@ -6229,7 +6229,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*2.25+ " points de dégâts")
+         .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -6238,7 +6238,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*1.25+ " points de dégâts")
+            .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
             .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
             .setTimestamp()
             message.channel.send({embed})
@@ -6260,7 +6260,7 @@ bot.on('message', message => {
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
            .setColor(3447003)
-           .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*2.25+ " points de dégâts")
+           .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
            .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
            .setTimestamp()
              message.channel.send({embed})}
@@ -6269,7 +6269,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(3447003)
-              .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*1.25+ " points de dégâts")
+              .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
               .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
               .setTimestamp()
               message.channel.send({embed})
@@ -6290,7 +6290,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*2.25+ " points de dégâts")
+         .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
          .setTimestamp()
            message.channel.send({embed})}
@@ -6299,7 +6299,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Vous bloquez l'attaque et vous ne subissez que :" , A*1.25+ " points de dégâts")
+            .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
             .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
             .setTimestamp()
             message.channel.send({embed})
@@ -6320,7 +6320,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre parade et vous subissez" , A*1.5+ " points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6330,7 +6330,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-        .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
+        .addField(":shield: Parade :" , ":shield: Vous réussissez votre parade et vous pouvez riposter : `=Parade réussie : [Vos dégâts]`")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -6351,7 +6351,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre parade et vous subissez" , A*1.5+ " points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6361,7 +6361,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-                .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
+         .addField(":shield: Parade :" , ":shield: Vous réussissez votre parade et vous pouvez riposter : `=Parade réussie : [Vos dégâts]`")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -6382,7 +6382,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre parade et vous subissez" , A*1.5+ " points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6392,7 +6392,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-                .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
+         .addField(":shield: Parade :" , ":shield: Vous réussissez votre parade et vous pouvez riposter : `=Parade réussie : [Vos dégâts]`")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -6413,7 +6413,7 @@ bot.on('message', message => {
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous échouez votre parade et vous subissez" , A*1.5+ " points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6423,7 +6423,7 @@ bot.on('message', message => {
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Vous réussissez votre parade :" , "=Parade réussie : [Vos dégâts]")
+         .addField(":shield: Parade :" , ":shield: Vous réussissez votre parade et vous pouvez riposter : `=Parade réussie : [Vos dégâts]`")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
@@ -6440,17 +6440,23 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Parade réussie")) {
       let degats = args.slice(2).join(" : ");
       const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B = (Math.floor((100)*Math.random()+1))
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField("Votre parade inflige :" , +A+ " points de dégâts")
+         .addField(":crossed_swords: Parade réussie :" , ":crossed_swords: Vous parade réussie inflige `" +A+ "` points de dégâts")
          .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/0/0d/Kirito_using_Dual_Blades_BD.png/revision/latest?cb=20130202024109")
          .setTimestamp()
          message.channel.send({embed})
       }
   });
+
+
+
+
+
+////////////////////////////////////////////////////////////////////Interception/////////////////////////////////////////////////////////////////////////////
+
 
 
 bot.on('message', message => {
@@ -6466,7 +6472,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous ratez votre interception..." , "Dommage pour vous")
+     .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
      .setTimestamp()
      message.channel.send({embed})
@@ -6476,7 +6482,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez votre interception et vous prenez à la place du joueur :" , A+ " points de dégâts, le reste des dégâts vont sur le joueur")
+       .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
        .setTimestamp()
        message.channel.send({embed})
@@ -6497,7 +6503,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous ratez votre interception..." , "Dommage pour vous")
+     .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
      .setTimestamp()
      message.channel.send({embed})
@@ -6507,7 +6513,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez votre interception et vous prenez à la place du joueur :" , A+ " points de dégâts, le reste des dégâts vont sur le joueur")
+       .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
        .setTimestamp()
        message.channel.send({embed})
@@ -6515,6 +6521,7 @@ const args = cont.slice(1);
     }
 });
 
+////////////////////////////////////////////////////////////////////Fuite////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
@@ -6528,7 +6535,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous n'arrivez pas à fuir..." , "Dommage pour vous")
+     .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
      .setTimestamp()
      message.channel.send({embed})
@@ -6538,7 +6545,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez à fuir le combat :" , "La chance est avec vous")
+       .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
        .setTimestamp()
        message.channel.send({embed})
@@ -6559,7 +6566,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous n'arrivez pas à fuir..." , "Dommage pour vous")
+     .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
      .setTimestamp()
      message.channel.send({embed})
@@ -6569,7 +6576,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez à fuir le combat :" , "La chance est avec vous")
+       .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
       .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
        .setTimestamp()
        message.channel.send({embed})
@@ -6590,7 +6597,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous n'arrivez pas à fuir..." , "Dommage pour vous")
+     .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
      .setTimestamp()
      message.channel.send({embed})
@@ -6600,7 +6607,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez à fuir le combat :" , "La chance est avec vous")
+       .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
       .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
        .setTimestamp()
        message.channel.send({embed})
@@ -6622,7 +6629,7 @@ const args = cont.slice(1);
      .setAuthor(message.author.username , message.author.avatarURL)
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setColor(3447003)
-     .addField("Vous n'arrivez pas à fuir..." , "Dommage pour vous")
+     .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
      .setTimestamp()
      message.channel.send({embed})
@@ -6632,7 +6639,7 @@ const args = cont.slice(1);
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Vous réussissez à fuir le combat :" , "La chance est avec vous")
+       .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
       .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
        .setTimestamp()
        message.channel.send({embed})
@@ -6741,7 +6748,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, leur importance est classé de haut en bas alors prend ton temps de lire !\n\n:closed_book:`=SAO`\n:bust_in_silhouette:`=Personnage`\n:diamond_shape_with_a_dot_inside:`=Classes`\n:cyclone:`=Compétences`\n:trident: `=Particularités`\n:hammer:`=Amélioration`\n:dagger:`=Armes`\n:walking:`=Trajets`\n:game_die:`=Rolls`\n:crossed_swords:`=Combat`\n:eight_pointed_black_star:`=Etats`\n:book:`=Quêtes`\n:skull:`=Mort`\n:heartbeat:`=Rétablissement`\n:sparkles:`=Niveaux`\n:100:`=Caractéristiques`\n:globe_with_meridians:`=Zones`\n:japanese_ogre:`=Monstres`\n:scroll:`=Liste d'objets`\n:tools:`=Crafts`\n:hammer_pick:`=Spécialisations`\n:large_orange_diamond:`=Cristal`\n:cityscape:`=Ville`\n:sunrise_over_mountains:`=Extérieur`\n:classical_building:`=Souterrains`\n:homes:`=Constructions`\n:loud_sound:`=Menus`\n:bank:`=Donjons`\n:fox:`=Familiers`\n:busts_in_silhouette:`=Guilde`\n:alembic:`=Métiers`\n:microphone2:`=Dirigeant`\n:shield:`=Garde`\n:bow_and_arrow:`=Mercenaire`\n:chains:`=Prison`")
+    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, leur importance est classé de haut en bas alors prend ton temps de lire !\n\n:closed_book:`=SAO`\n:bust_in_silhouette:`=Personnage`\n:diamond_shape_with_a_dot_inside:`=Classes`\n:cyclone:`=Compétences`\n:trident: `=Particularités`\n:hammer:`=Amélioration`\n:dagger:`=Armes`\n:walking:`=Trajets`\n:game_die:`=Rolls`\n:crossed_swords:`=Combat`\n:white_flower:`=Etats`\n:book:`=Quêtes`\n:skull:`=Mort`\n:heartbeat:`=Rétablissement`\n:sparkles:`=Niveaux`\n:100:`=Caractéristiques`\n:globe_with_meridians:`=Zones`\n:japanese_ogre:`=Monstres`\n:scroll:`=Liste d'objets`\n:tools:`=Crafts`\n:hammer_pick:`=Spécialisations`\n:large_orange_diamond:`=Cristal`\n:cityscape:`=Ville`\n:sunrise_over_mountains:`=Extérieur`\n:classical_building:`=Souterrains`\n:homes:`=Constructions`\n:loud_sound:`=Menus`\n:bank:`=Donjons`\n:fox:`=Familiers`\n:busts_in_silhouette:`=Guilde`\n:alembic:`=Métiers`\n:microphone2:`=Dirigeant`\n:shield:`=Garde`\n:bow_and_arrow:`=Mercenaire`\n:chains:`=Prison`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
