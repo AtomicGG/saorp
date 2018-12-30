@@ -7661,9 +7661,9 @@ bot.on('message', message => {
                                message.channel.send({embed})
                       } else {
                               let degats = args.slice(2).join(" : ");
-                              const B = (Math.floor((degats*0.70)*Math.random()+1*(degats/3)))
-                              const C = (Math.floor((degats*0.70)*Math.random()+1*(degats/3)))
-                              const D = (Math.floor((degats*0.70)*Math.random()+1*(degats/3)))
+                              const B = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
+                              const C = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
+                              const D = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
                               const A = B+C+D
                                const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
@@ -7699,11 +7699,11 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 let degats = args.slice(1).join(" : ");
-                                const B = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
-                                const C = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
-                                const D = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
-                                const E = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
-                                const F = (Math.floor((degats/7)*Math.random()+1*(degats/7)))
+                                const B = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+                                const C = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+                                const D = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+                                const E = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+                                const F = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
                                 const I = (Math.floor((3)*Math.random()+1))
                                 const A = B+C+D+E+F
                                  const embed = new Discord.RichEmbed()
@@ -7744,8 +7744,8 @@ bot.on('message', message => {
                                  message.channel.send({embed})
                         } else {
                                 let degats = args.slice(2).join(" : ");
-                                const B = (Math.floor((degats*0.4)*Math.random()+1*(degats/3)))
-                                const C = (Math.floor((degats*0.4)*Math.random()+1*(degats/3)))
+                                const B = (Math.floor((degats*0.67)*Math.random()+1*(degats*0.33)))
+                                const C = (Math.floor((degats*0.67)*Math.random()+1*(degats*0.33)))
                                 const D = (Math.floor((3)*Math.random()+1))
                                 const A = B+C
                                  const embed = new Discord.RichEmbed()
@@ -7782,7 +7782,7 @@ bot.on('message', message => {
                                    message.channel.send({embed})
                           } else {
                                   let degats = args.slice(2).join(" : ");
-                                  const A = (Math.floor((degats*2)*Math.random()+1*(degats)))
+                                  const A = (Math.floor((degats*2.5)*Math.random()+1*(degats*1.5)))
                                    const embed = new Discord.RichEmbed()
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7814,7 +7814,7 @@ bot.on('message', message => {
                                      message.channel.send({embed})
                             } else {
                                     let degats = args.slice(2).join(" : ");
-                                    const A = (Math.floor((degats*2)*Math.random()+1*(degats)))
+                                    const A = (Math.floor((degats*2.5)*Math.random()+1*(degats*1.5)))
                                      const embed = new Discord.RichEmbed()
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7846,10 +7846,10 @@ bot.on('message', message => {
                                      message.channel.send({embed})
                             } else {
                                     let degats = args.slice(2).join(" : ");
-                                    const B = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
-                                    const C = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
-                                    const D = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
-                                    const E = (Math.floor((degats/2)*Math.random()+1*(degats/4)))
+                                    const B = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
+                                    const C = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
+                                    const D = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
+                                    const E = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
                                     const A = B+C+D+E
                                      const embed = new Discord.RichEmbed()
                                      .setAuthor(message.author.username , message.author.avatarURL)
@@ -10452,6 +10452,7 @@ bot.on('message', message => {
                                  .setColor(3447003)
                                  .addField("Faux du roi déchus à deux mains :" , "Vous venez de découvrir cet objet !")
                               .addField("Points de dégâts :" , +Dégâts)
+                              .addField("Cette faux offre l'attaque suivante :" , ":crossed_swords: `=Coup du roi déchus : [Vos dégâts]")
                                   .setImage("https://static1.millenium.org/article_old/images/contenu/actus/wow/wow_news_top20armes_numero16_hd.jpg")
                                   .setTimestamp()
                                   message.channel.send({embed})
@@ -10461,7 +10462,50 @@ bot.on('message', message => {
 
 
 
-
+                              bot.on('message', message => {
+                                let cont = message.content.slice(prefix.length).split(" ");
+                                const args = cont.slice(1);
+                                if (message.content.startsWith(prefix + "Coup du roi déchus")) {
+                                  if (talkedRecently.has(message.author.id+9)) {
+                                    const embed = new Discord.RichEmbed()
+                                     .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+                                     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                                     .setTimestamp()
+                                     message.channel.send({embed})
+                            } else {
+                                    let degats = args.slice(4).join(" : ");
+                                    const A = (Math.floor((degats*1.5)*Math.random()+1*(degats*1.25)))
+                                    const B = (Math.floor(100)*Math.random()+1)
+                                    const C = (Math.floor((3)*Math.random()+1))
+                                    const D = (Math.floor((101)*Math.random()+100))
+                                    if(B < 25){
+                                     const embed = new Discord.RichEmbed()
+                                     .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField("Vous ratez votre coup..." , "Dommage pour vous")
+                                     .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+                                     .setTimestamp()
+                                     message.channel.send({embed})}
+                                     if(B > 26){
+                                     const embed = new Discord.RichEmbed()
+                                     .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField("Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, une aura vous entoure au contact de l'ennemis et vous rend " +D+ " HP !")
+                                     .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+                                     .setTimestamp()
+                                     message.channel.send({embed})}
+                                     talkedRecently.add(message.author.id+1231);
+                                     setTimeout(() => {
+                                      talkedRecently.delete(message.author.id+1231);
+                                    }, 1800000);
+                                }
+                                     }
+                                });
 
 
 
