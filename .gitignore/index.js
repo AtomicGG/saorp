@@ -7174,14 +7174,15 @@ bot.on('message', message => {
                       } else {
                               const B = (Math.floor(100)*Math.random()+1)
                               const tours = (Math.floor((3)*Math.random()+1))
+                              const tourss = (Math.floor((3)*Math.random()+1))
                               const cibles = (Math.floor((5)*Math.random()+1))
+                              const cibless = (Math.floor((3)*Math.random()+1))
                               if(B < 25){
                                const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Cyclone' qui inflige :" , "Aucun points de dégâts")
-                               .addField("Etourdissement :" , "Vous n'arrivez cependant pas à étourdir vos cibles...")
+                               .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `" +cibless+ "` ennemis pendant `" +tourss+ "` tours, empêchant de faire leur action défensive !")
                                .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7190,8 +7191,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Cyclone' qui inflige :" , "Aucun points de dégâts")
-                               .addField("Etourdissement :" , "Vous arrivez à étourdir " +cibles + " cible(s) pendant " +tours+ " tours, l'empêchant de faire la moindre action défensive !")
+                               .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `" +cibles+ "` ennemis pendant `" +tours+ "` tours, empêchant de faire leur action défensive !")
                                .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7217,13 +7217,13 @@ bot.on('message', message => {
                         } else {
                                 const B = (Math.floor(100)*Math.random()+1)
                                 const tours = (Math.floor((3)*Math.random()+2))
+                                const tours = (Math.floor((2)*Math.random()+1))
                                 if(B < 25){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Vous réussissez votre compétence 'Sonic leap' qui inflige :" , "Aucun points de dégâts")
-                                 .addField("Charme :" , "Vous n'arrivez cependant pas à charmer votre cible...")
+                                 .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant pendant `" +tourss+ "` tours, l'obligeant à vous obéir !")
                                  .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                                  .setTimestamp()
                                  message.channel.send({embed})}
@@ -7232,8 +7232,8 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Vous réussissez votre compétence 'Sonic leap' qui inflige :" , "Aucun points de dégâts")
-                                 .addField("Charme :" , "Vous arrivez à charmer votre cible pendant " +tours+ " tours, elle obéira à vos ordres !")
+                                 .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant pendant `" +tours+ "` tours, l'obligeant à vous obéir !")
+
                                  .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                                  .setTimestamp()
                                  message.channel.send({embed})}
