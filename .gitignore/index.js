@@ -7270,8 +7270,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Furious' qui inflige :" , A+ " points de dégâts")
-                               .addField("Etourdissement :" , "Vous n'arrivez cependant pas à étourdir votre cible...")
+                               .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, mais n'étourdis pas l'ennemis !")
                                .setImage("https://orig00.deviantart.net/beec/f/2014/360/3/3/sao_kirito_vs_heathcliff_gif_by_mooeybear2001-d8bdqhf.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7280,8 +7279,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Furious' qui inflige :" , A+ " points de dégâts")
-                               .addField("Etourdissement :" , "Vous arrivez à étourdir votre cible pendant " +C+ " tours, l'empêchant de faire la moindre action défensive !")
+                               .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, et étourdis l'ennemis pendant `" +C+ "` tours, empêchant de faire son action défensive !")
                                .setImage("https://orig00.deviantart.net/beec/f/2014/360/3/3/sao_kirito_vs_heathcliff_gif_by_mooeybear2001-d8bdqhf.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7320,8 +7318,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Frost strike' qui inflige :" , A+ " points de dégâts")
-                               .addField("Gèle :" , "Vous n'arrivez cependant pas à geler votre cible...")
+                               .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, mais ne gèle pas l'ennemis !")
                                .setImage("https://i.gifer.com/BHNt.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7330,8 +7327,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Frost strike' qui inflige :" , A+ " points de dégâts")
-                               .addField("Gèle :" , "Vous arrivez à geler votre cible pendant " +C+ " tours, l'empêchant de faire la moindre attaque !")
+                               .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, et gèle l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque !")
                                .setImage("https://i.gifer.com/BHNt.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7368,8 +7364,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Blood insanity' qui vous inflige :" , A+ " points de dégâts")
-                               .addField("Boost de dégâts :" , "Vous doublez les dégâts que vous infligez pendant " +C+ " tours !")
+                               .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" +A+ "` points de dégâts, mais vos dégâts seront doublés pendant `" +C+ "` tours !")
                                .setImage("https://media.giphy.com/media/6noApitdXGOtO/giphy.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7406,8 +7401,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Sleeping silence' qui inflige :" , A+ " points de dégâts")
-                               .addField("Sommeil :" , "Vous n'arrivez cependant pas à endormir votre cible...")
+                               .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, mais n'endort pas l'ennemis !")
                                .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7416,8 +7410,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Sleeping silence' qui inflige :" , A+ " points de dégâts")
-                               .addField("Sommeil :" , "Vous arrivez à endormir votre cible pendant " +C+ " tours, l'empêchant d'agir mais le moindre coup la reveillera !")
+                               .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `" +C+ "` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup !")
                                .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7448,21 +7441,22 @@ bot.on('message', message => {
                               const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
                               const B = (Math.floor(100)*Math.random()+1)
                               const C = (Math.floor((2)*Math.random()+1))
-                              if(B < 75){
+                              if(B < 65){
                                const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Lightning fall' qui inflige :" , A+ " points de dégâts")
-                               .addField("Paralysie :" , "Vous n'arrivez cependant pas à paralyser votre cible...")
+                               .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" +A+ "` points de dégâts, mais ne paralyse pas l'ennemis !")
                                .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
                                .setTimestamp()
                                message.channel.send({embed})}
-                               if(B > 75){
+                               if(B > 66){
                                const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
+                               .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" +A+ "` points de dégâts, et paralyse l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque ou son action défensive !")
+
                                .addField("Vous réussissez votre compétence 'Lightning fall' qui inflige :" , A+ " points de dégâts")
                                .addField("Paralysie :" , "Vous arrivez à paralyser votre cible pendant " +C+ " tours, l'empêchant de faire une attaque ou un action défensive !")
                                .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
