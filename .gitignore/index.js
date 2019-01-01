@@ -7456,9 +7456,6 @@ bot.on('message', message => {
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
                                .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" +A+ "` points de dégâts, et paralyse l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque ou son action défensive !")
-
-                               .addField("Vous réussissez votre compétence 'Lightning fall' qui inflige :" , A+ " points de dégâts")
-                               .addField("Paralysie :" , "Vous arrivez à paralyser votre cible pendant " +C+ " tours, l'empêchant de faire une attaque ou un action défensive !")
                                .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7495,8 +7492,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Vous réussissez votre compétence 'Deadly sins' qui inflige :" , A+ " points de dégâts")
-                                 .addField("Empoisonnement :" , "Vous n'arrivez cependant pas à empoisonner votre cible...")
+                                 .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, mais n'empoisonne pas l'ennemis !")
                                  .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
                                  .setTimestamp()
                                  message.channel.send({embed})}
@@ -7505,8 +7501,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Vous réussissez votre compétence 'Deadly sins' qui inflige :" , A+ " points de dégâts")
-                                 .addField("Empoisonnement :" , "Vous arrivez à empoisonné votre cible pendant " +C+ " tours, elle subira " +D+ " points de dégâts par tours !")
+                                 .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
                                  .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
                                  .setTimestamp()
                                  message.channel.send({embed})}
@@ -7543,8 +7538,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Vous réussissez votre compétence 'Burning slash' qui inflige :" , A+ " points de dégâts")
-                                   .addField("Enflammer :" , "Vous n'arrivez cependant pas à emflamer votre cible...")
+                                   .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, mais n'enflamme pas l'ennemis !")
                                    .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
                                    .setTimestamp()
                                    message.channel.send({embed})}
@@ -7553,9 +7547,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Vous réussissez votre compétence 'Burning slash' qui inflige :" , A+ " points de dégâts")
-                                   .addField("Enflammer :" , "Vous arrivez enflammer votre cible pendant " +C+ " tours, elle subira " +D+ " points de dégâts par tours !")
-                                   .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+                                   .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !")                                   .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
                                    .setTimestamp()
                                    message.channel.send({embed})}
                                    talkedRecently.add(message.author.id+9);
@@ -7595,10 +7587,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Vous réussissez votre compétence 'Crucifixion' qui inflige :" , A+ " points de dégâts")
-                                   .addField("Votre premier coup horizontal rapide inflige :" , premier+ " points de dégâts")
-                               .addField("Votre deuxième coup horizontal rapide inflige :" , deuxième+ " points de dégâts")
-                                   .addField("Saignement :" , "Vous n'arrivez cependant pas à faire saigner votre cible...")
+                                   .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, mais ne saigne pas l'ennemis !\n\nVotre premier coup horizontal rapide inflige `" +premier+ " points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
                                    .setImage("https://data.whicdn.com/images/132920508/original.gif")
                                    .setTimestamp()
                                    message.channel.send({embed})}
@@ -7607,10 +7596,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Vous réussissez votre compétence 'Crucifixion' qui inflige :" , A+ " points de dégâts")
-                                   .addField("Votre premier coup horizontal rapide inflige :" , premier+ " points de dégâts")
-                               .addField("Votre deuxième coup horizontal rapide inflige :" , deuxième+ " points de dégâts")
-                                   .addField("Saignement :" , "Vous arrivez faire saigner votre cible pendant " +C+ " tours, elle subira " +D+ " points de dégâts par tours !")
+                                   .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, et fait saigner l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\nVotre premier coup horizontal rapide inflige `" +premier+ " points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
                                    .setImage("https://data.whicdn.com/images/132920508/original.gif")
                                    .setTimestamp()
                                    message.channel.send({embed})}
