@@ -7587,7 +7587,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, mais ne saigne pas l'ennemis !\n\nVotre premier coup horizontal rapide inflige `" +premier+ " points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
+                                   .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, mais ne saigne pas l'ennemis !\n\nVotre premier coup horizontal rapide inflige `" +premier+ "` points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
                                    .setImage("https://data.whicdn.com/images/132920508/original.gif")
                                    .setTimestamp()
                                    message.channel.send({embed})}
@@ -7633,7 +7633,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                              .addField(":cyclone: Vorpal strike :" , ":cyclone: Votre compétence 'Vorpal strike' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup horizontal rapide inflige `" +B+ " points de dégâts, le deuxième coup horizontal rapide inflige `" +C+ "` points de dégâts et le troisième coup horizontal rapide inflige `" +D+ "` points de dégâts !")
+                              .addField(":cyclone: Vorpal strike :" , ":cyclone: Votre compétence 'Vorpal strike' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup horizontal rapide inflige `" +B+ "` points de dégâts, le deuxième coup horizontal rapide inflige `" +C+ "` points de dégâts et le troisième coup horizontal rapide inflige `" +D+ "` points de dégâts !")
                                .setImage("https://gifer.com/i/8Z1S.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7671,7 +7671,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +I+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ " points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
+                                 .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +I+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
                                  .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
                                  .setTimestamp()
                                  message.channel.send({embed})}
@@ -7707,7 +7707,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A+ "` points de dégâts au total à `" +D+ "` ennemis !\n\nVotre premier coup en avant inflige `" +B+ " points de dégâts et le deuxième coup en avant inflige `" +C+ "` points de dégâts !")
+                                 .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A+ "` points de dégâts au total à `" +D+ "` ennemis !\n\nVotre premier coup en avant inflige `" +B+ "` points de dégâts et le deuxième coup en avant inflige `" +C+ "` points de dégâts !")
                                  .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
                                  .setTimestamp()
                                  message.channel.send({embed})}
@@ -7807,7 +7807,7 @@ bot.on('message', message => {
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
-                                     .addField(":cyclone: Quadruple pain :" , ":cyclone: Votre compétence 'Quadruple pain' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup d'estoc inflige `" +B+ " points de dégâts, le deuxième coup d'estoc inflige `" +C+ "` points de dégâts, le troisième coup d'estoc inflige `" +D+ "` points de dégâts et le quatrième coup d'estoc inflige `" +E+ "` points de dégâts !")
+                                     .addField(":cyclone: Quadruple pain :" , ":cyclone: Votre compétence 'Quadruple pain' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup d'estoc inflige `" +B+ "` points de dégâts, le deuxième coup d'estoc inflige `" +C+ "` points de dégâts, le troisième coup d'estoc inflige `" +D+ "` points de dégâts et le quatrième coup d'estoc inflige `" +E+ "` points de dégâts !")
 
                                      .addField("Vous réussissez votre compétence 'Quadruple pain' qui inflige :" , A+ " points de dégâts")
                                      .addField("Votre premier coup d'estoc inflige :" , B+ " points de dégâts")
