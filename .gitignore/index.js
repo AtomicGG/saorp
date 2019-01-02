@@ -7035,7 +7035,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Contexte :" , "En 2022, l'humanité a réussi à créer une réalité virtuelle.\n\nGrâce à un casque, les humains peuvent se plonger entièrement dans le monde virtuel en étant comme déconnectés de la réalité, et Sword Art Online est le premier MMORPG a utiliser ce système.\n\nMais voila que le premier jour de jeu, 10 000 personnes se retrouvent piégées dans cette réalité virtuelle par son créateur : Akihiko Kayaba.\n\nLe seul moyen d'en sortir est de finir le jeu.\n\nMais ce ne sera pas facile de sortir de ce monde virtuel puisque si un joueur perd la partie, il meurt également dans la vraie vie.\n\nVous êtes l'un de ces joueurs qui ont voulus test le jeu SAO mais qui malheureusement n'aurait jamais du y rentrer...\n\nVous l'aurez compris, vous êtes donc bloqués dans l'aincrad avant de réussir à passer toutes les épreuves du jeu, mais la question est plutôt : Survivrez-vous ?")
+       .addField(":closed_book: Contexte :" , ":closed_book: En 2022, l'humanité a réussi à créer une réalité virtuelle.\n\nGrâce à un casque, les humains peuvent se plonger entièrement dans le monde virtuel en étant comme déconnectés de la réalité, et Sword Art Online est le premier MMORPG a utiliser ce système.\n\nMais voila que le premier jour de jeu, 10 000 personnes se retrouvent piégées dans cette réalité virtuelle par son créateur : Akihiko Kayaba.\n\nLe seul moyen d'en sortir est de finir le jeu.\n\nMais ce ne sera pas facile de sortir de ce monde virtuel puisque si un joueur perd la partie, il meurt également dans la vraie vie.\n\nVous êtes l'un de ces joueurs qui ont voulus test le jeu SAO mais qui malheureusement n'aurait jamais du y rentrer...\n\nVous l'aurez compris, vous êtes donc bloqués dans l'aincrad avant de réussir à passer toutes les épreuves du jeu, mais la question est plutôt : Survivrez-vous ?")
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -7079,7 +7079,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField("Les particularités :" , "Une particularité est un effet passif, naturel sur votre personnage qui vous donne un bonus à certaines actions que vous faites !\n\nVous commencez votre aventure avec une seule particularité !\n\nPour savoir à quel niveaux vous aurez le droit d'avoir d'autres particularités, écrivez :\n\n`=Apprentissage des particularités`\n\nPour consulter la liste des particularités existantes possibles, écrivez :\n\n`=Liste des particularités`")
+               .addField(":trident: Les particularités :" , ":trident: Une particularité est un effet passif, naturel sur votre personnage qui vous donne un bonus à certaines actions que vous faites !\n\n:trident: Vous commencez votre aventure avec une seule particularité !\n\n:trident: Pour savoir à quel niveaux vous aurez le droit d'avoir d'autres particularités, écrivez :\n\n:trident: `=Apprentissage des particularités`\n\n:trident: Pour consulter la liste des particularités existantes possibles, écrivez :\n\n:trident: `=Liste des particularités`")
                 .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                 .setTimestamp()
                 message.channel.send({embed})
@@ -7092,9 +7092,9 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                    .setColor(3447003)
-                   .addField("Liste des particularités, partie 1 :" , "Amélioration du coup normal simple en coup normal amélioré !\n\nAmélioration du coup précis simple en coup précis amélioré !\n\nAmélioration du combo simple en combo amélioré !\n\nAmélioration du coup d'estoc simple en coup d'estoc amélioré !\n\nAmélioration du coup provocateur simple en coup provocateur amélioré !\n\nAmélioration du coup circulaire simple en coup circulaire amélioré !\n\nAmélioration du coup sauté en coup sauté amélioré !\n\nAmélioration du coup perce armure en coup perce armure amélioré !\n\nAmélioration de la parade simple en parade améliorée !\n\nAmélioration du blocage simple en blocage amélioré !\n\nAmélioration de l'esquive simple en esquive améliorée !\n\nAmélioration du cri de provocation simple en cri de provocation amélioré !\n\nAmélioration de l'interception simple en interception amélioré !")
+                   .addField(":trident: Liste des particularités, partie 1 :" , ":trident: Amélioration du coup normal simple en coup normal amélioré !\n\n:trident: Amélioration du coup précis simple en coup précis amélioré !\n\n:trident: Amélioration du combo simple en combo amélioré !\n\n:trident: Amélioration du coup d'estoc simple en coup d'estoc amélioré !\n\n:trident: Amélioration du coup provocateur simple en coup provocateur amélioré !\n\n:trident: Amélioration du coup circulaire simple en coup circulaire amélioré !\n\n:trident: Amélioration du coup sauté en coup sauté amélioré !\n\n:trident: Amélioration du coup perce armure en coup perce armure amélioré !\n\n:trident: Amélioration de la parade simple en parade améliorée !\n\n:trident: Amélioration du blocage simple en blocage amélioré !\n\n:trident: Amélioration de l'esquive simple en esquive améliorée !\n\n:trident: Amélioration du cri de provocation simple en cri de provocation amélioré !\n\n:trident: Amélioration de l'interception simple en interception amélioré !")
                    .addBlankField(true)
-                   .addField("Liste des particularités, partie 2 :" , "Bonus de 10 pour la fuite en combat ou en dehors !\n\nBonus de 10 pour escalader et grimper !\n\nBonus de 10 pour la discrètion !\n\nBonus de 10 pour les actions défensives en dehors des combats !\n\nBonus de 10 pour les actions offensives en dehors des combats !\n\nBonus de 20 pour tenter un bluff !\n\nBonus de 20 pour le marchandage et les négociations !\n\nBonus de 20 pour la diplomatie !\n\nBonus de 20 pour se contrôler, et ne pas changer d'état dans une situation !\n\nBonus de 20 pour la sociabilité, inspiré confiance !")
+                   .addField(":trident: Liste des particularités, partie 2 :" , ":trident: Bonus de 10 pour la fuite en combat ou en dehors !\n\n:trident: Bonus de 10 pour escalader et grimper !\n\n:trident: Bonus de 10 pour la discrètion !\n\n:trident: Bonus de 10 pour les actions défensives en dehors des combats !\n\n:trident: Bonus de 10 pour les actions offensives en dehors des combats !\n\n:trident: Bonus de 20 pour tenter un bluff !\n\n:trident: Bonus de 20 pour le marchandage et les négociations !\n\n:trident: Bonus de 20 pour la diplomatie !\n\n:trident: Bonus de 20 pour se contrôler, et ne pas changer d'état dans une situation !\n\n:trident: Bonus de 20 pour la sociabilité, inspiré confiance !")
                    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                     .setTimestamp()
                     message.channel.send({embed})
@@ -7633,10 +7633,7 @@ bot.on('message', message => {
                                .setAuthor(message.author.username , message.author.avatarURL)
                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                .setColor(3447003)
-                               .addField("Vous réussissez votre compétence 'Vorpal Strike' qui inflige :" , A+ " points de dégâts")
-                               .addField("Votre premier coup horizontal rapide inflige :" , B+ " points de dégâts")
-                               .addField("Votre deuxième coup horizontal rapide inflige :" , C+ " points de dégâts")
-                               .addField("Votre troisième coup horizontal rapide inflige :" , D+ " points de dégâts")
+                              .addField(":cyclone: Vorpal strike :" , ":cyclone: Votre compétence 'Vorpal strike' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup horizontal rapide inflige `" +B+ " points de dégâts, le deuxième coup horizontal rapide inflige `" +C+ "` points de dégâts et le troisième coup horizontal rapide inflige `" +D+ "` points de dégâts !")
                                .setImage("https://gifer.com/i/8Z1S.gif")
                                .setTimestamp()
                                message.channel.send({embed})}
@@ -7674,13 +7671,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Vous réussissez votre compétence 'Tourbillon' qui inflige :" , A+ " points de dégâts")
-                                 .addField("Vous touchez avec vos cinqs coups :" , I+ " ennemis !")
-                                 .addField("Votre premier coup pendant le tourbillon inflige :" , B+ " points de dégâts")
-                                 .addField("Votre deuxième coup pendant le tourbillon inflige :" , C+ " points de dégâts")
-                                 .addField("Votre troisième coup pendant le tourbillon inflige :" , D+ " points de dégâts")
-                                 .addField("Votre quatrième coup pendant le tourbillon inflige :" , E+ " points de dégâts")
-                                 .addField("Votre cinquième coup pendant le tourbillon inflige :" , F+ " points de dégâts")
+                                 .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +I+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ " points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
                                  .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
                                  .setTimestamp()
                                  message.channel.send({embed})}
@@ -7716,10 +7707,7 @@ bot.on('message', message => {
                                  .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField("Vous réussissez votre compétence 'Treble scythe' qui inflige :" , A+ " points de dégâts !")
-                                 .addField("Vous touchez avec vos deux coups :" , D+ " ennemis !")
-                                 .addField("Votre premier coup en avant inflige :" , B+ " points de dégâts")
-                                 .addField("Votre deuxième coup en avant inflige :" , C+ " points de dégâts")
+                                 .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A+ "` points de dégâts au total à `" +D+ "` ennemis !\n\nVotre premier coup en avant inflige `" +B+ " points de dégâts et le deuxième coup en avant inflige `" +C+ "` points de dégâts !")
                                  .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
                                  .setTimestamp()
                                  message.channel.send({embed})}
@@ -7751,7 +7739,7 @@ bot.on('message', message => {
                                    .setAuthor(message.author.username , message.author.avatarURL)
                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                    .setColor(3447003)
-                                   .addField("Vous réussissez votre compétence 'Vertical arc' qui inflige :" , A+ " points de dégâts !")
+                                   .addField(":cyclone: Vertical arc :" , ":cyclone: Votre compétence 'Vertical arc' inflige `" +A+ "` points de dégâts !\n\nCette compétence empêche une tentative de blocage !")
                                    .setImage("https://media.giphy.com/media/108rdBZBYAc7bq/giphy.gif")
                                    .setTimestamp()
                                    message.channel.send({embed})}
@@ -7783,7 +7771,7 @@ bot.on('message', message => {
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
-                                     .addField("Vous réussissez votre compétence 'Rage spike' qui inflige :" , A+ " points de dégâts !")
+                                     .addField(":cyclone: Rage spike :" , ":cyclone: Votre compétence 'Rage spike' inflige `" +A+ "` points de dégâts !\n\nCette compétence empêche une tentative de parade !")
                                      .setImage("https://i.pinimg.com/originals/ea/38/ec/ea38ec9fc2bf709adeed3624c9d08be3.gif")
                                      .setTimestamp()
                                      message.channel.send({embed})}
@@ -7819,6 +7807,8 @@ bot.on('message', message => {
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
+                                     .addField(":cyclone: Quadruple pain :" , ":cyclone: Votre compétence 'Quadruple pain' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup d'estoc inflige `" +B+ " points de dégâts, le deuxième coup d'estoc inflige `" +C+ "` points de dégâts, le troisième coup d'estoc inflige `" +D+ "` points de dégâts et le quatrième coup d'estoc inflige `" +E+ "` points de dégâts !")
+
                                      .addField("Vous réussissez votre compétence 'Quadruple pain' qui inflige :" , A+ " points de dégâts")
                                      .addField("Votre premier coup d'estoc inflige :" , B+ " points de dégâts")
                                      .addField("Votre deuxième coup d'estoc inflige :" , C+ " points de dégâts")
@@ -7875,7 +7865,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Création de votre personnage :" , "Pour créer votre personnage, écrivez :\n\n`=Fiche de personnage`\n\nIl faudra remplir la fiche de votre personnage et une fois que vous avez finis, copiez la et coller là dans le salon 'Fiche à valider' en attendant qu'un membre du staff vous valide et vous aide !\n\nUne fois votre personnage créer, un membre du staff vous créera un salon classé par ordre alphabétique sur ce discord : https://discord.gg/ByaFWzc\n\nCe salon permettra de justement noter toutes les informations concernant votre personnage durant votre aventure !\n\nUne fois tous ça finis, vous devrez vous renommé sur le RP de la manière suivante : [Pseudo] [Niveau] [HP] [Dégâts] [Défense] !\n\nPar exemple : [Yato][1][40/40][6][0]\n\nQuand vous perdrez des HP ou que vos stats changent, il suffira de modifier votre pseudo et de bien le noter sur la fiche de votre personnage de l'autre serveur discord !")
+       .addField(":bust_in_silhouette: Création de votre personnage :" , ":bust_in_silhouette: Pour créer votre personnage, écrivez :\n\n:bust_in_silhouette: `=Fiche de personnage`\n\n:bust_in_silhouette: Il faudra remplir la fiche de votre personnage et une fois que vous avez finis, copiez la et coller là dans le salon 'Fiche à valider' en attendant qu'un membre du staff vous valide et vous aide !\n\n:bust_in_silhouette: Une fois votre personnage créer, un membre du staff vous créera un salon classé par ordre alphabétique sur ce discord : https://discord.gg/ByaFWzc\n\n:bust_in_silhouette: Ce salon permettra de justement noter toutes les informations concernant votre personnage durant votre aventure !\n\n:bust_in_silhouette: Une fois tous ça finis, vous devrez vous renommé sur le RP de la manière suivante : [Pseudo] [Niveau] [HP] [Dégâts] [Défense] !\n\n:bust_in_silhouette: Par exemple : [Yato][1][40/40][6][0]\n\n:bust_in_silhouette: Quand vous perdrez des HP ou que vos stats changent, il suffira de modifier votre pseudo et de bien le noter sur la fiche de votre personnage de l'autre serveur discord !")
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -7912,7 +7902,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField("Les classes :" , "Lorsque vous créez votre personnage, vous devrez choisir une des classes suivantes :\n\n[Combattant] : Possède beaucoup de HP, pas mal de dégâts mais peu d'armure !\n[Assassin] : Possède beaucoup de dégâts, pas mal d'armure mais peu de HP !\n[Paladin] : Possède beaucoup d'armure, pas mal de dégâts mais peu de HP !\n[Vindicateur] : Possède beaucoup d'HP, pas mal d'armure mais peu de dégâts !\n[Chevalier] : Possède beaucoup d'armure, pas mal d'HP mais peu de dégâts !\n[Berserker] : Possède beaucoup de dégâts, pas mal d'HP mais peu d'armure !\n\nCes classes vous permettent de déclencher une fois par jour, une compétence unique et très puissante !\n\nPour déclencher la compétence selon votre classe :\n\n`=Combattant : [Vos dégâts]`\n`=Assassin : [Vos dégâts]`\n`=Chevalier`\n`=Paladin : [Vos HP max]`\n`=Vindicateur`\n`=Berserker : [Vos dégâts]`\n\nUne classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n`=Niveaux`")
+       .addField(":diamond_shape_with_a_dot_inside: Les classes :" , "Lorsque vous créez votre personnage, vous devrez choisir une des classes suivantes :\n\n[Combattant] : Possède beaucoup de HP, pas mal de dégâts mais peu d'armure !\n[Assassin] : Possède beaucoup de dégâts, pas mal d'armure mais peu de HP !\n[Paladin] : Possède beaucoup d'armure, pas mal de dégâts mais peu de HP !\n[Vindicateur] : Possède beaucoup d'HP, pas mal d'armure mais peu de dégâts !\n[Chevalier] : Possède beaucoup d'armure, pas mal d'HP mais peu de dégâts !\n[Berserker] : Possède beaucoup de dégâts, pas mal d'HP mais peu d'armure !\n\nCes classes vous permettent de déclencher une fois par jour, une compétence unique et très puissante !\n\nPour déclencher la compétence selon votre classe :\n\n`=Combattant : [Vos dégâts]`\n`=Assassin : [Vos dégâts]`\n`=Chevalier`\n`=Paladin : [Vos HP max]`\n`=Vindicateur`\n`=Berserker : [Vos dégâts]`\n\nUne classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n`=Niveaux`")
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -10416,7 +10406,7 @@ bot.on('message', message => {
                                  .setColor(3447003)
                                  .addField("Faux du roi déchus à deux mains :" , "Vous venez de découvrir cet objet !")
                               .addField("Points de dégâts :" , +Dégâts)
-                              .addField("Cette faux offre l'attaque suivante :" , ":crossed_swords: `=Coup du roi déchus : [Vos dégâts]")
+                              .addField("Cette faux offre l'attaque suivante :" , ":crossed_swords: `=Coup du roi déchus : [Vos dégâts]`")
                                   .setImage("https://static1.millenium.org/article_old/images/contenu/actus/wow/wow_news_top20armes_numero16_hd.jpg")
                                   .setTimestamp()
                                   message.channel.send({embed})
@@ -10430,7 +10420,7 @@ bot.on('message', message => {
                                 let cont = message.content.slice(prefix.length).split(" ");
                                 const args = cont.slice(1);
                                 if (message.content.startsWith(prefix + "Coup du roi déchus")) {
-                                  if (talkedRecently.has(message.author.id+9)) {
+                                  if (talkedRecently.has(message.author.id+12311)) {
                                     const embed = new Discord.RichEmbed()
                                      .setAuthor(message.author.username , message.author.avatarURL)
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -10463,9 +10453,9 @@ bot.on('message', message => {
                                      .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
                                      .setTimestamp()
                                      message.channel.send({embed})}
-                                     talkedRecently.add(message.author.id+1231);
+                                     talkedRecently.add(message.author.id+12311);
                                      setTimeout(() => {
-                                      talkedRecently.delete(message.author.id+1231);
+                                      talkedRecently.delete(message.author.id+12311);
                                     }, 1800000);
                                 }
                                      }
