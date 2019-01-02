@@ -350,7 +350,7 @@ bot.on('message', message => {
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Plaines cueillir")) {
      const Persils = (Math.floor((3*0.25)*Math.random()+1))
-const Herbes = (Math.floor((3*0.25)*Math.random()+1))
+const Herbe = (Math.floor((3*0.25)*Math.random()+1))
 const Baies = (Math.floor((3*0.25)*Math.random()+1))
 const Exp = (Math.floor((3)*Math.random()+2))
 if (talkedRecently.has(message.author.id+19)) { 
@@ -4375,7 +4375,7 @@ bot.on('message', message => {
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":sunrise_over_moutains: Plaines :" , ":sunrise_over_moutains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaines combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaines cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaines chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaines quêtes`")
+    .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_moutains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaines combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaines cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaines chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaines quêtes`")
     .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
     .setTimestamp()
     message.channel.send({embed})
