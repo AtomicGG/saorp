@@ -7217,7 +7217,7 @@ bot.on('message', message => {
                         } else {
                                 const B = (Math.floor(100)*Math.random()+1)
                                 const tours = (Math.floor((3)*Math.random()+2))
-                                const tours = (Math.floor((2)*Math.random()+1))
+                                const tourss = (Math.floor((2)*Math.random()+1))
                                 if(B < 25){
                                  const embed = new Discord.RichEmbed()
                                  .setAuthor(message.author.username , message.author.avatarURL)
