@@ -4375,7 +4375,7 @@ bot.on('message', message => {
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_moutains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaines combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaines cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaines chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaines quêtes`")
+    .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaines combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaines cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaines chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaines quêtes`")
     .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -4407,7 +4407,7 @@ bot.on('message', message => {
                                                .setAuthor(message.author.username , message.author.avatarURL)
                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                .setColor(3447003)
-                                               .addField(":sunrise_over_moutains: Plaines :" , ":sunrise_over_moutains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
+                                               .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
                                                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                .setTimestamp()
                                                    message.channel.send({embed})}
