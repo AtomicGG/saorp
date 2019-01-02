@@ -394,7 +394,7 @@ bot.on('message', message => {
        message.channel.send({embed})
   } else {
     const Persils = (Math.floor((3*0.25)*Math.random()+1))
-    const Herbes = (Math.floor((3*0.25)*Math.random()+1))
+    const Herbe = (Math.floor((3*0.25)*Math.random()+1))
     const Exp = (Math.floor((4)*Math.random()+4))
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
