@@ -4671,7 +4671,7 @@ bot.on('message', message => {
                                                    const embed = new Discord.RichEmbed()
                                                    .setAuthor(message.author.username , message.author.avatarURL)
                                                   .setColor(1447003)
-                                                  .addField(":moutain_snow: Montagne :" , ":moutain_snow: Bienvenue dans ce lieu habité principalement par des kobolts !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Montagne combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n:knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n:pick: Pour miner, niveau 2 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 2 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
+                                                  .addField(":mountain_snow: Montagne :" , ":mountain_snow: Bienvenue dans ce lieu habité principalement par des kobolts !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Montagne combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n:knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n:pick: Pour miner, niveau 2 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 2 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
                                                   .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -4703,7 +4703,7 @@ bot.on('message', message => {
                                                      .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                      .setColor(3447003)
-                                                     .addField(":moutain_snow: Montagne :" , ":moutain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F)
+                                                     .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F)
                                                      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                                                      .setTimestamp()
                                                          message.channel.send({embed})}
