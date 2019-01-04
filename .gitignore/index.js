@@ -4792,7 +4792,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup normal simple")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
+      const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 25){
        const embed = new Discord.RichEmbed()
@@ -4824,7 +4824,7 @@ bot.on('message', message => {
                                                                                                               if (message.content.startsWith(prefix + "Coup normal amélioré")) {
 
       let degats = args.slice(3).join(" : ");
-       const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
+       const A = (Math.floor((degats)*Math.random()+1*(degats)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 20){
        const embed = new Discord.RichEmbed()
@@ -4854,7 +4854,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Coup normal supérieur")) {
     let degats = args.slice(3).join(" : ");
-     const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
+     const A = (Math.floor((degats)*Math.random()+1*(degats)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 15){
      const embed = new Discord.RichEmbed()
@@ -4885,7 +4885,7 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Coup normal suprême")) {
   let degats = args.slice(3).join(" : ");
-   const A = (Math.floor((degats)*Math.random()+1*(degats*1.25)))
+   const A = (Math.floor((degats)*Math.random()+1*(degats)))
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 10){
    const embed = new Discord.RichEmbed()
@@ -5046,7 +5046,7 @@ bot.on('message', message => {
                                                                                                            if (message.content.startsWith(prefix + "Coup sauté simple")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 50){
        const embed = new Discord.RichEmbed()
@@ -5090,7 +5090,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup sauté amélioré")) {
   
         let degats = args.slice(3).join(" : ");
-        const A = (Math.floor((degats)*Math.random()+1*(degats)))
+        const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 45){
          const embed = new Discord.RichEmbed()
@@ -5132,7 +5132,7 @@ bot.on('message', message => {
                                                                                                                if (message.content.startsWith(prefix + "Coup sauté supérieur")) {
     
           let degats = args.slice(3).join(" : ");
-          const A = (Math.floor((degats)*Math.random()+1*(degats)))
+          const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
           const B = (Math.floor((100)*Math.random()+1))
           if (B < 40){
            const embed = new Discord.RichEmbed()
@@ -5176,7 +5176,7 @@ bot.on('message', message => {
                                                                                                                  if (message.content.startsWith(prefix + "Coup sauté suprême")) {
       
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats)*Math.random()+1*(degats)))
+            const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
             const B = (Math.floor((100)*Math.random()+1))
             if (B < 35){
              const embed = new Discord.RichEmbed()
@@ -5220,7 +5220,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Coup perce armure simple")) {
       let degats = args.slice(4).join(" : ");
-      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
+      const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 40){
        const embed = new Discord.RichEmbed()
@@ -5251,7 +5251,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
     const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup perce armure amélioré")) {
         let degats = args.slice(4).join(" : ");
-        const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
+        const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 35){
          const embed = new Discord.RichEmbed()
@@ -5282,7 +5282,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
       const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Coup perce armure supérieur")) {
           let degats = args.slice(4).join(" : ");
-          const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
+          const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
           const B = (Math.floor((100)*Math.random()+1))
           if (B < 30){
            const embed = new Discord.RichEmbed()
@@ -5313,7 +5313,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
         const args = cont.slice(1);
       if (message.content.startsWith(prefix + "Coup perce armure suprême")) {
             let degats = args.slice(4).join(" : ");
-            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats/2)))
+            const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
             const B = (Math.floor((100)*Math.random()+1))
             if (B < 25){
              const embed = new Discord.RichEmbed()
@@ -5345,8 +5345,8 @@ const args = cont.slice(1);
                                                                                                            if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
 
   let degats = args.slice(3).join(" : ");
-  const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
-  const C = A*1.5
+  const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
+  const C = A*1.25
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 5){
    const embed = new Discord.RichEmbed()
@@ -5389,8 +5389,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc amélioré")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
+    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
     const B = (Math.floor((100)*Math.random()+1))
+    const C = A*1.25
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5432,8 +5433,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc supérieur")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
+    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
     const B = (Math.floor((100)*Math.random()+1))
+    const C = A*1.25
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5475,8 +5477,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc suprême")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*0.75)))
+    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
     const B = (Math.floor((100)*Math.random()+1))
+    const C = A*1.25
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5515,12 +5518,12 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Combo simple")) {      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const D = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const E = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const F = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const G = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
+      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 75){
@@ -5558,12 +5561,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Combo amélioré")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const D = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const E = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const F = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const G = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
+      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 70){
@@ -5601,12 +5604,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Combo supérieur")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const D = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const E = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const F = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const G = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
+      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 65){
@@ -5644,12 +5647,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Combo suprême")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const C = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const D = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const E = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const F = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
-      const G = (Math.floor((degats/6)*Math.random()+1*(degats/3)))
+      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 60){
@@ -5687,7 +5690,7 @@ bot.on('message', message => {
                                                                                                                if (message.content.startsWith(prefix + "Coup provocateur simple")) {
 
         let degats = args.slice(3).join(" : ");
-        const A = (Math.floor((degats)*Math.random()+1*(degats)))
+        const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 50){
          const embed = new Discord.RichEmbed()
@@ -5719,7 +5722,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
      if (message.content.startsWith(prefix + "Coup provocateur amélioré")) {
         let degats = args.slice(3).join(" : ");
-        const A = (Math.floor((degats)*Math.random()+1*(degats)))
+        const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 45){
          const embed = new Discord.RichEmbed()
@@ -5752,7 +5755,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Coup provocateur supérieur")) {
         let degats = args.slice(3).join(" : ");
-        const A = (Math.floor((degats)*Math.random()+1*(degats)))
+        const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 40){
          const embed = new Discord.RichEmbed()
@@ -5785,7 +5788,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
      if (message.content.startsWith(prefix + "Coup provocateur suprême")) {
         let degats = args.slice(3).join(" : ");
-        const A = (Math.floor((degats)*Math.random()+1*(degats)))
+        const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
         const B = (Math.floor((100)*Math.random()+1))
         if (B < 35){
          const embed = new Discord.RichEmbed()
@@ -5819,7 +5822,7 @@ bot.on('message', message => {
    if (message.content.startsWith(prefix + "Coup circulaire simple")) {
 
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats/3)*Math.random()+1*(degats/3)))
+            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 50){
@@ -5852,7 +5855,7 @@ bot.on('message', message => {
         const args = cont.slice(1);
         if (message.content.startsWith(prefix + "Coup circulaire amélioré")) {
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 45){
@@ -5884,7 +5887,7 @@ bot.on('message', message => {
         const args = cont.slice(1);
          if (message.content.startsWith(prefix + "Coup circulaire supérieur")) {
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 40){
@@ -5918,7 +5921,7 @@ bot.on('message', message => {
         const args = cont.slice(1);
          if (message.content.startsWith(prefix + "Coup circulaire suprême")) {
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 35){
