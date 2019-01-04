@@ -5996,7 +5996,7 @@ bot.on('message', message => {
    if (message.content.startsWith(prefix + "Coup circulaire simple")) {
 
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
+            const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.3)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 50){
@@ -6014,7 +6014,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
+               .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -6029,7 +6029,7 @@ bot.on('message', message => {
         const args = cont.slice(1);
         if (message.content.startsWith(prefix + "Coup circulaire amélioré")) {
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
+            const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.3)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 45){
@@ -6047,7 +6047,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
+               .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -6061,7 +6061,7 @@ bot.on('message', message => {
         const args = cont.slice(1);
          if (message.content.startsWith(prefix + "Coup circulaire supérieur")) {
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
+            const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.3)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 40){
@@ -6079,7 +6079,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
+               .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -6095,7 +6095,7 @@ bot.on('message', message => {
         const args = cont.slice(1);
          if (message.content.startsWith(prefix + "Coup circulaire suprême")) {
             let degats = args.slice(3).join(" : ");
-            const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
+            const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.3)))
             const B = (Math.floor((100)*Math.random()+1))
             const C = (Math.floor((3)*Math.random()+2))
             if (B < 35){
@@ -6113,7 +6113,7 @@ bot.on('message', message => {
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                .setColor(3447003)
-               .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
+               .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts à `" +C+ "` ennemis")
                .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
                .setTimestamp()
                message.channel.send({embed})
@@ -9684,7 +9684,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Casque du clan des loups :" , ":scales: C'est un casque rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque du clan des loups`")
+             .addField(":scales: Casque du clan des loups :" , ":scales: C'est un casque rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque du clan des loups`")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
