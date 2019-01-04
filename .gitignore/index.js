@@ -9684,10 +9684,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Casque du clan des loups :" , ":scales: C'est un casque rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte du casque du clan des loups`")
+             .addField(":scales: Casque du clan des loups :" , ":scales: C'est un casque rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque du clan des loups`")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9700,10 +9697,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Epaulières du clan des loups :" , ":scales: Ce sont des épaulières rares uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte des épaulières du clan des loups`")
+             .addField(":scales: Epaulières du clan des loups :" , ":scales: Ce sont des épaulières rares uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des épaulières du clan des loups`")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9716,10 +9710,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Cape du clan des loups :" , ":scales: C'est une cape rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la cape du clan des loups`")
+             .addField(":scales: Cape du clan des loups :" , ":scales: C'est une cape rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape du clan des loups`")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9732,10 +9723,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Plastron du clan des loups :" , ":scales: C'est un plastron rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte du plastron du clan des loups`")
+             .addField(":scales: Plastron du clan des loups :" , ":scales: C'est un plastron rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron du clan des loups`")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9748,10 +9736,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Gantelets du clan des loups :" , ":scales: Ce sont des gantelets rares uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte des gantelets du clan des loups`")
+             .addField(":scales: Gantelets du clan des loups :" , ":scales: Ce sont des gantelets rares uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets du clan des loups`")
+            
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9765,10 +9751,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Ceinture du clan des loups :" , ":scales: C'est une ceinture rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture du clan des loups`")
+             .addField(":scales: Ceinture du clan des loups :" , ":scales: C'est une ceinture rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture du clan des loups`")
+             
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9782,10 +9766,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Jambières du clan des loups :" , ":scales: Ce sont des jambières rares uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte des jambières du clan des loups`")
+             .addField(":scales: Jambières du clan des loups :" , ":scales: Ce sont des jambières rares uniquement possible à trouver dans le donjon sauvage !:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières du clan des loups`")
+            
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9798,10 +9780,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Bottes du clan des loups :" , ":scales: Ce sont des bottes rares uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 100 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte des bottes du clan des loups`")
+             .addField(":scales: Bottes du clan des loups :" , ":scales: Ce sont des bottes rares uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes du clan des loups`")
+      
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9815,10 +9795,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Amulette du clan des loups :" , ":scales: C'est une amulette rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette du clan des loups`")
+             .addField(":scales: Amulette du clan des loups :" , ":scales: C'est une amulette rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette du clan des loups`")
+           
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -9832,10 +9810,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Anneau du clan des loups :" , ":scales: C'est un anneau rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau du clan des loups`")
+             .addField(":scales: Anneau du clan des loups :" , ":scales: C'est un anneau rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau du clan des loups`")
+           
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -10037,102 +10013,8 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Epée du clan des loups à une main :" , ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !")
-           .addField(":crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'")
-          .addField(":crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à une main`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Rapière du clan des loups à une main")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Rapière du clan des loups à une main :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !")
-           .addField(":crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'")
-          .addField(":crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à une main`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Hache du clan des loups à une main")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Hache du clan des loups à une main :" , ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'")
-          .addField(":crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups à une main`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Masse du clan des loups à une main")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Masse du clan des loups à une main :" , ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !")
-          .addField(":crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'")  
-          .addField(":shield: Améliore le 'Blocage' en : 'Blocage amélioré'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups à une main`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Katana du clan des loups à une main")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Katana du clan des loups à une main :" , ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !")
-           .addField(":shield: Améliore la 'Parade' en :" , "'Parade améliorée'")
-          .addField(":crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups à une main`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Cimeterre du clan des loups à une main")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Cimeterre du clan des loups à une main :" , ":scales: C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":shield: Améliore 'Esquive' en : 'Esquive améliorée'")
-          .addField(":shield: Améliore la 'Parade' en : 'Parade améliorée'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la cimeterre du clan des loups à une main`")
+             .addField(":scales: Epée du clan des loups à une main :" , ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à une main`")
+          
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -10140,192 +10022,240 @@ bot.on('message', message => {
           });
 
 
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Rapière du clan des loups à une main")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                 .setColor(3447003)
+                 .addField(":scales: Rapière du clan des loups à une main :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à une main`")
+              
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Hache du clan des loups à une main")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Hache du clan des loups à une main :" , ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups à une main`")
+                  
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+                    if (message.content.startsWith(prefix + "Masse du clan des loups à une main")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":scales: Masse du clan des loups à une main :" , ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups à une main`")
+                      
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
+
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Katana du clan des loups à une main")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":scales: Katana du clan des loups à une main :" , ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups à une main`")
+                          
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+
+
+
+                          bot.on('message', message => {
+                            if (message.content.startsWith(prefix + "Cimeterre du clan des loups à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField(":scales: Cimeterre du clan des loups à une main :" , ":scales: C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cimeterre du clan des loups à une main`")
+                              
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+
+                              bot.on('message', message => {
+                                if (message.content.startsWith(prefix + "Dague du clan des loups à une main")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Dague du clan des loups à une main :" , ":scales: C'est une dague rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague du clan des loups à une main`")
+                                  
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+
+                                  bot.on('message', message => {
+                                    if (message.content.startsWith(prefix + "Bouclier du clan des loups à une main")) {
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: C'est un bouclier rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du clan des loups à une main`")
+                                      
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+
+
+                                      bot.on('message', message => {
+                                        if (message.content.startsWith(prefix + "Epée du clan des loups à deux mains")) {
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Epée du clan des loups à deux mains :" , ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à deux mains`")
+                                          
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
+
+                                          bot.on('message', message => {
+                                            if (message.content.startsWith(prefix + "Rapière du clan des loups à deux mains")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à deux mains`")
+                                              
+                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
+    
+    
 bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Dague du clan des loups à une main")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Dague du clan des loups à une main :" , ":scales: C'est une dague rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'")
-           .addField(":crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la dague du clan des loups à une main`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
+if (message.content.startsWith(prefix + "Rapière du clan des loups à deux mains")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à deux mains`")
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
+        
 bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Bouclier du clan des loups à une main")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: C'est un bouclier rare uniquement possible à trouver dans le donjon sauvage !")
-          .addField(":shield: Améliore le 'Blocage' en : 'Blocage amélioré'")
-          .addField(":crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 75 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du clan des loups à une main`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
+if (message.content.startsWith(prefix + "Hache du clan des loups à deux mains")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Hache du clan des loups à deux mains :" , ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups à deux mains`")
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
 
 
 bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Epée du clan des loups à deux mains")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Epée du clan des loups à deux mains :" , ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":crossed_swords: Améliore le 'Combo' en : 'Combo supérieur'")
-           .addField(":crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc supérieur'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à deux mains`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
+  if (message.content.startsWith(prefix + "Masse du clan des loups à deux mains")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Masse du clan des loups à deux mains :" , ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups à deux mains`")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Katana du clan des loups à deux mains")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Katana du clan des loups à deux mains :" , ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups à deux mains`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
+
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Cimeterre du clan des loups à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Cimeterre du clan des loups à deux mains :" , ":scales: C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cimeterre du clan des loups à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
 
 
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Rapière du clan des loups à deux mains")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc supérieur'")
-          .addField(":crossed_swords: Améliore le 'Coup précis' en : 'Coup précis supérieur'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à deux mains`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Hache du clan des loups à deux mains")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Hache du clan des loups à deux mains :" , ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField(":crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'")
-          .addField(":crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur supérieur'")
-                    .addField(":sparkles: Niveau minimum requis pour le porter  11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups à deux mains`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Masse du clan des loups à deux mains")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Masse du clan des loups à deux mains :" , ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur supérieur'")
-          .addField(":shield: Améliore le 'Blocage' en : 'Blocage supérieur'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups à deux mains`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Katana du clan des loups à deux mains")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Katana du clan des loups à deux mains :" , ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":shield: Améliore la 'Parade' en : 'Parade supérieure'")
-          .addField(":crossed_swords: Améliore le 'Coup normal' en : 'Coup normal supérieur'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups à deux mains`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Cimeterre du clan des loups à deux mains")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Cimeterre du clan des loups à deux mains :" , ":scales: C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !")
-            .addField(":shield: Améliore 'Esquive' en : 'Esquive supérieure'")
-          .addField(":shield: Améliore la 'Parade' en : 'Parade supérieur'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la cimeterre du clan des loups à deux mains`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-bot.on('message', message => {
+      bot.on('message', message => {
         if (message.content.startsWith(prefix + "Glaive du clan des loups à deux mains")) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Glaive du clan des loups à deux mains :" , ":scales: C'est un glaive rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du glaive du clan des loups à deux mains`")
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+        }   
+        });
+
+
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Faux du roi déchus à deux mains")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Glaive du clan des loups à deux mains :" , ":scales: C'est un glaive rare uniquement possible à trouver dans le donjon sauvage !")
-             .addField("Améliore le 'Coup d'estoc' en : 'Coup d'estoc supérieur'")
-          .addField("Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 150 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte du glaive du clan des loups à deux mains`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchus à deux mains`")
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
           });
 
 
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Faux du roi déchus à deux mains")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !")
-          .addField(":crossed_swords: Améliore le 'Coup normal' en : 'Coup normal supérieur'")
-          .addField(":crossed_swords: Améliore le 'Coup précis' en : 'Coup précis supérieur'")
-          .addField(":sparkles: Niveau minimum requis pour le porter : 11")
-             .addField(":large_orange_diamond: Prix de revente : 500 cols")
-             .addField(":keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchus à deux mains`")
-              .setImage("https://static1.millenium.org/article_old/images/contenu/actus/wow/wow_news_top20armes_numero16_hd.jpg")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
+
+
+
+
+
+
+
 
 
 
@@ -10645,19 +10575,13 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
-             .addField(":scales: Casque rouillé :" , ":scales: C'est un casque toucher par l'érosion constitué de cuivre médiocre !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-             .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre")
-             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-             .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-             .addField(":large_orange_diamond: Prix de revente : 40 cols")
-             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du casque rouillé`")
+             .addField(":scales: Casque rouillé :" , ":scales: C'est un casque toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du casque rouillé`")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
             }   
           });
+
 
           bot.on('message', message => {
             if (message.content.startsWith(prefix + "Épaulières rouillées")) {
@@ -10665,14 +10589,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
-                 .addField(":scales: Épaulières rouillées :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
-                 .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre")
-                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-                 .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                 .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                 .addField(":keyboard:Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des épaulières rouillées`")
+                 .addField(":scales: Casque rouillé :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des épaulières rouillées")
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
@@ -10685,19 +10602,15 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                      .setColor(3447003)
-                     .addField(":scales: Cape endommagée :" , ":scales: C'est une cape déchiré au fil du temps constitué de cuivre médiocre et de peau !")
-                     .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 peau de loup")
-                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                     .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                     .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cape endommagée`")
+                     .addField(":scales: Cape endommagée :" , ":scales: C'est une cape déchiré au fil du temps constitué de cuivre médiocre et de peau!\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cape endommagée")
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
                     }   
                   });
+    
+
+
 
                   bot.on('message', message => {
                     if (message.content.startsWith(prefix + "Plastron rouillé")) {
@@ -10705,145 +10618,102 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                          .setColor(3447003)
-                         .addField(":scales: Plastron rouillé :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
-                         .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre")
-                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-                         .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                         .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du plastron rouillé`")
+                         .addField(":scales: Plastron rouillé :" , ":scales: C'est un plastron toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du plastron rouillé`")
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
                         }   
                       });
 
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Gantelets rouillés")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":scales: Gantelets rouillés :" , ":scales: Ce sont des gantelets toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des gantelets rouillés`")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
 
+                          bot.on('message', message => {
+                            if (message.content.startsWith(prefix + "Ceinture rouillée")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField(":scales: Ceinture rouillée :" , ":scales: C'est une ceinture toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la ceinture rouillée`")
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+        
+                              bot.on('message', message => {
+                                if (message.content.startsWith(prefix + "Jambières rouillées")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Jambières rouillées :" , ":scales: Ce sont des jambières toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des jambières rouillées`")
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+              
+              
+                                  bot.on('message', message => {
+                                    if (message.content.startsWith(prefix + "Bottes rouillées")) {
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Bottes rouillées :" , ":scales: Ce sont des bottes toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des bottes rouillées`")
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+               
+
+
+                                      bot.on('message', message => {
+                                        if (message.content.startsWith(prefix + "Anneau rouillé")) {
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Anneau rouillé :" , ":scales: C'est un anneau toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 2 coeur de loup, 2 coeur de taupe\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau rouillé`")
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
+
+                                          bot.on('message', message => {
+                                        if (message.content.startsWith(prefix + "Amulette rouillée")) {
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Amulette rouillée :" , ":scales: C'est une amulette toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 2 coeur de loup, 2 coeur de taupe\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'amulette rouillée`")
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
+
+
+
+                          
                       
-                  bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Gantelets rouillés")) {
-                      const embed = new Discord.RichEmbed()
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                         .setColor(3447003)
-                         .addField(":scales: Gantelets rouillés :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
-                         .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre")
-                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-                         .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                         .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des gantelets rouillés`")
-                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                          .setTimestamp()
-                          message.channel.send({embed})
-                        }   
-                      });
-
-
-                      bot.on('message', message => {
-                        if (message.content.startsWith(prefix + "Ceinture rouillée")) {
-                          const embed = new Discord.RichEmbed()
-                          .setAuthor(message.author.username , message.author.avatarURL)
-                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                             .setColor(3447003)
-                             .addField(":scales: Ceinture rouillée :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
-                             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre")
-                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-                             .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                             .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la ceinture rouillée`")
-                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                              .setTimestamp()
-                              message.channel.send({embed})
-                            }   
-                          });
-
-                          
-                      bot.on('message', message => {
-                        if (message.content.startsWith(prefix + "Jambières rouillées")) {
-                          const embed = new Discord.RichEmbed()
-                          .setAuthor(message.author.username , message.author.avatarURL)
-                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                             .setColor(3447003)
-                             .addField(":scales: Jambières rouillées :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
-                             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre")
-                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-                             .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                             .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des jambières rouillées`")
-                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                              .setTimestamp()
-                              message.channel.send({embed})
-                            }   
-                          });
 
 
                           
-                      bot.on('message', message => {
-                        if (message.content.startsWith(prefix + "Bottes rouillées")) {
-                          const embed = new Discord.RichEmbed()
-                          .setAuthor(message.author.username , message.author.avatarURL)
-                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                             .setColor(3447003)
-                             .addField(":scales: Bottes rouillées :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !")
-                             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre")
-                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-                             .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                             .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des bottes rouillées`")
-                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                              .setTimestamp()
-                              message.channel.send({embed})
-                            }   
-                          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Anneau rouillé")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Anneau rouillé :" , ":scales: C'est un anneau toucher par l'érosion constitué de cuivre médiocre !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-             .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 2 coeur de loup, 2 coeur de taupe")
-             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-             .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-             .addField(":large_orange_diamond: Prix de revente : 50 cols")
-             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau rouillé`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Amulette rouillée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Amulette rouillée :" , ":scales: C'est une amulette toucher par l'érosion constitué de cuivre médiocre !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-             .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 2 coeur de loup, 2 coeur de taupe")
-             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 4")
-             .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-             .addField(":large_orange_diamond: Prix de revente : 50 cols")
-             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'amulette rouillée`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
+              
     
 
 
@@ -11028,19 +10898,276 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
          .setColor(3447003)
-         .addField(":scales: Casque en peau arrachée :" , ":scales: C'est un casque très fragile constitué de peau animal mais très utile pour les débutants !")
-         .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-         .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-         .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-         .addField(":large_orange_diamond: Prix de revente : 20 cols")
-         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du casque en peau arrachée`")
+         .addField(":scales: Casque en peau arrachée :" , ":scales: C'est un casque très fragile constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du casque en peau arrachée`")
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
         }   
       });
+
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Épaulières en peau arrachée")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+             .setColor(3447003)
+             .addField(":scales: Épaulières en peau arrachée :" , ":scales: Ce sont des épaulières très fragiles constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des épaulières en peau arrachée`")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+            }   
+          });
+
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Cape en peau arrachée")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                 .setColor(3447003)
+                 .addField(":scales: Cape en peau arrachée :" , ":scales: C'est une cape très fragile constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cape en peau arrachée`")
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Plastron en peau arrachée")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Plastron en peau arrachée :" , ":scales: C'est un plastron très fragile constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du plastron en peau arrachée`")
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Gantelets en peau arrachée")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                 .setColor(3447003)
+                 .addField(":scales: Gantelets en peau arrachée :" , ":scales: Ce sont des gantelets très fragiles constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des gantelets en peau arrachée`")
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Ceinture en peau arrachée")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Ceinture en peau arrachée :" , ":scales: C'est une ceinture très fragile constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la ceinture en peau arrachée`")
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+
+                  bot.on('message', message => {
+                    if (message.content.startsWith(prefix + "Jambières en peau arrachée")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":scales: Jambières en peau arrachée :" , ":scales: Ce sont des jambières très fragiles constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des jambières en peau arrachée`")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
+
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Bottes en peau arrachée")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":scales: Bottes en peau arrachée :" , ":scales: Ce sont des bottes très fragiles constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des bottes en peau arrachée`")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+
+
+bot.on('message', message => {
+if (message.content.startsWith(prefix + "Casque en peau résistante")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Casque en peau résistante :" , ":scales: C'est un casque assez résistant constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du casque en peau résistante`")
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Épaulières en peau résistante")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Épaulières en peau résistante :" , ":scales: Ce sont des épaulières assez résistantes constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des épaulières en peau résistante`")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape en peau résistante")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape en peau résistante :" , ":scales: C'est une cape assez résistante constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cape en peau résistante`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
+
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Plastron en peau résistante")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Plastron en peau résistante :" , ":scales: C'est un plastron assez résistant constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du plastron en peau résistante`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
+
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Gantelets en peau résistante")) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Gantelets en peau résistante :" , ":scales: Ce sont des gantelets assez résistants constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des gantelets en peau résistante`")
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+        }   
+        });
+
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Ceinture en peau résistante")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Ceinture en peau résistante :" , ":scales: C'est une ceinture assez résistante constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la ceinture en peau résistante`")
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
+          });
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Jambières en peau résistante")) {
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières en peau résistante :" , ":scales: Ce sont des jambières assez résistantes constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des jambières en peau résistante`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+            message.channel.send({embed})
+            }   
+            });
+
+             bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Bottes en peau résistante")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Bottes en peau résistante :" , ":scales: Ce sont des bottes assez résistantes constitué de peau animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des bottes en peau résistante`")
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
+          });
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Anneau en coeur d'animal faible")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                 .setColor(3447003)
+                 .addField(":scales: Anneau en coeur d'animal faible :" , ":scales: C'est un anneau minuscule constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de renard, 1 coeur de sanglier, 1 coeur de chien, 1 coeur de lapin, 1 coeur de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 120 cols\n\n:large_orange_diamond: Prix de revente : 30 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau en coeur d'animal faible`")
+                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Amulette en coeur d'animal faible")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Amulette en coeur d'animal faible :" , ":scales: C'est une amulette minuscule constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de renard, 1 coeur de sanglier, 1 coeur de chien, 1 coeur de lapin, 1 coeur de lapin géant\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 120 cols\n\n:large_orange_diamond: Prix de revente : 30 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'amulette en coeur d'animal faible`")
+                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+                                            if (message.content.startsWith(prefix + "Amulette du croc")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Amulette du croc :" , ":scales: C'est une amulette légèrement tranchante constitué de coeur d'animal et de croc de loup mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de taupe, 2 crocs de loup\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 380 cols\n\n:large_orange_diamond: Prix de revente : 95 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'amulette du croc`")
+                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
+
+                                                          bot.on('message', message => {
+                                            if (message.content.startsWith(prefix + "Anneau du croc")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Anneau du croc :" , ":scales: C'est un anneau légèrement tranchant constitué de coeur d'animal et de croc de loup mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de taupe, 2 crocs de loup\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 380 cols\n\n:large_orange_diamond: Prix de revente : 95 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau du croc`")
+                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       bot.on('message', message => {
@@ -11060,25 +11187,7 @@ bot.on('message', message => {
             }   
           });
 
-      bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Casque en peau résistante")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Casque en peau résistante :" , ":scales: C'est un casque assez résistant constitué de peau animal mais très utile pour les débutants !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-             .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-             .addField(":large_orange_diamond: Prix de revente : 50 cols")
-             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du casque en peau résistante`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
+      
 
           bot.on('message', message => {
             const HP = (Math.floor((6)*Math.random()+6))
@@ -11097,25 +11206,7 @@ bot.on('message', message => {
                 }   
               });
 
-      bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Épaulières en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Epaulières en peau arrachée :" , ":scales: Ce sont des épaulières très fragiles constitué de peau animal mais très utile pour les débutants !")
-             .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-             .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-             .addField(":large_orange_diamond: Prix de revente : 20 cols")
-             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des épaulières en peau arrachée`")
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
+
 
           
       bot.on('message', message => {
@@ -11138,25 +11229,7 @@ bot.on('message', message => {
 
           
 
-          bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Épaulières en peau résistante")) {
-              const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username , message.author.avatarURL)
-                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                 .setColor(3447003)
-                 .addField(":scales: Epaulières en peau résistante :" , ":scales: Ce sont des épaulières assez résistantes constitué de peau animal mais très utile pour les débutants !")
-                 .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                 .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-                 .addField(":large_orange_diamond: Prix de revente : 50 cols")
-                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des epaulières en peau résistante`")
-                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                  .setTimestamp()
-                  message.channel.send({embed})
-                }   
-              });
+       
 
               bot.on('message', message => {
                 const HP = (Math.floor((6)*Math.random()+6))
@@ -11175,25 +11248,7 @@ bot.on('message', message => {
                     }   
                   });
 
-          bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Cape en peau arrachée")) {
-              const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username , message.author.avatarURL)
-                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                 .setColor(3447003)
-                 .addField(":scales: Cape en peau arrachée :" , ":scales: C'est une cape très fragile constitué de peau animal mais très utile pour les débutants !")
-                 .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-                 .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                 .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cape en peau arrachée`")
-                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                  .setTimestamp()
-                  message.channel.send({embed})
-                }   
-              });
+          
 
               
       bot.on('message', message => {
@@ -11214,25 +11269,7 @@ bot.on('message', message => {
           });
 
 
-              bot.on('message', message => {
-                if (message.content.startsWith(prefix + "Cape en peau résistante")) {
-                  const embed = new Discord.RichEmbed()
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                     .setColor(3447003)
-                     .addField(":scales: Cape en peau résistante :" , ":scales: C'est une cape assez résistante constitué de peau animal mais très utile pour les débutants !")
-                     .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                     .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-                     .addField(":large_orange_diamond: Prix de revente : 50 cols")
-                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : =Achat/fabrication/découverte de la cape en peau résistante")
-                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                      .setTimestamp()
-                      message.channel.send({embed})
-                    }   
-                  });
+           
 
                   bot.on('message', message => {
                     const HP = (Math.floor((6)*Math.random()+6))
@@ -11251,25 +11288,7 @@ bot.on('message', message => {
                         }   
                       });
 
-              bot.on('message', message => {
-                if (message.content.startsWith(prefix + "Plastron en peau arrachée")) {
-                  const embed = new Discord.RichEmbed()
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                     .setColor(3447003)
-                     .addField(":scales: Plastron en peau arrachée :" , ":scales: C'est un plastron très fragile constitué de peau animal mais très utile pour les débutants !")
-                     .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du plastron en peau arrachée`")
-                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                      .setTimestamp()
-                      message.channel.send({embed})
-                    }   
-                  });
+            
 
                   
       bot.on('message', message => {
@@ -11290,25 +11309,7 @@ bot.on('message', message => {
           });
 
 
-                  bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Plastron en peau résistante")) {
-                      const embed = new Discord.RichEmbed()
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                         .setColor(3447003)
-                         .addField(":scales: Plastron en peau résistante :" , ":scales: C'est un plastron assez résistant constitué de peau animal mais très utile pour les débutants !")
-                         .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                         .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-                         .addField(":large_orange_diamond: Prix de revente : 50 cols")
-                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du plastron en peau résistante`")
-                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                          .setTimestamp()
-                          message.channel.send({embed})
-                        }   
-                      });
+                
 
                       bot.on('message', message => {
                         const HP = (Math.floor((6)*Math.random()+6))
@@ -11327,25 +11328,6 @@ bot.on('message', message => {
                             }   
                           });
 
-                  bot.on('message', message => {
-                    if (message.content.startsWith(prefix + "Gantelets en peau arrachée")) {
-                      const embed = new Discord.RichEmbed()
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                         .setColor(3447003)
-                         .addField(":scales: Gantelets en peau arrachée :" , ":scales: Ce sont des gantelets très fragiles constitué de peau animal mais très utile pour les débutants !")
-                         .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-                         .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                         .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des gantelets en peau arrachée`")
-                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                          .setTimestamp()
-                          message.channel.send({embed})
-                        }   
-                      });
 
                       
       bot.on('message', message => {
@@ -11366,25 +11348,7 @@ bot.on('message', message => {
           });
 
 
-                      bot.on('message', message => {
-                        if (message.content.startsWith(prefix + "Gantelets en peau résistante")) {
-                          const embed = new Discord.RichEmbed()
-                          .setAuthor(message.author.username , message.author.avatarURL)
-                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                             .setColor(3447003)
-                             .addField(":scales: Gantelets en peau résistante :" , ":scales: Ce sont des gantelets assez résistants constitué de peau animal mais très utile pour les débutants !")
-                             .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                             .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-                             .addField(":large_orange_diamond: Prix de revente : 50 cols")
-                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des gantelets en peau résistante`")
-                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                              .setTimestamp()
-                              message.channel.send({embed})
-                            }   
-                          });
+                 
 
                           bot.on('message', message => {
                             const HP = (Math.floor((6)*Math.random()+6))
@@ -11403,25 +11367,7 @@ bot.on('message', message => {
                                 }   
                               });
 
-                      bot.on('message', message => {
-                        if (message.content.startsWith(prefix + "Ceinture en peau arrachée")) {
-                          const embed = new Discord.RichEmbed()
-                          .setAuthor(message.author.username , message.author.avatarURL)
-                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                             .setColor(3447003)
-                             .addField(":scales: Ceinture en peau arraché :" , ":scales: C'est une ceinture très fragile constitué de peau animal mais très utile pour les débutants !")
-                             .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-                             .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                             .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la ceinture en peau arrachée`")
-                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                              .setTimestamp()
-                              message.channel.send({embed})
-                            }   
-                          });
+                
 
                           
       bot.on('message', message => {
@@ -11442,25 +11388,7 @@ bot.on('message', message => {
           });
 
 
-                          bot.on('message', message => {
-                            if (message.content.startsWith(prefix + "Ceinture en peau résistante")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Ceinture en peau résistante :" , ":scales: C'est une ceinture assez résistante constitué de peau animal mais très utile pour les débutants !")
-                                 .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                                 .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-                                 .addField(":large_orange_diamond: Prix de revente : 50 cols")
-                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la ceinture en peau résistante`")
-                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
+                     
 
                               bot.on('message', message => {
                                 const HP = (Math.floor((6)*Math.random()+6))
@@ -11478,26 +11406,6 @@ bot.on('message', message => {
                                       message.channel.send({embed})
                                     }   
                                   });
-
-                          bot.on('message', message => {
-                            if (message.content.startsWith(prefix + "Jambières en peau arrachée")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Jambières en peau arrachée :" , ":scales: Ce sont des jambières très fragiles constitué de peau animal mais très utile pour les débutants !")
-                                 .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-                                 .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                 .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des jambières en peau arrachée`)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
                               
       bot.on('message', message => {
@@ -11518,25 +11426,7 @@ bot.on('message', message => {
           });
 
 
-                              bot.on('message', message => {
-                                if (message.content.startsWith(prefix + "Jambières en peau résistante")) {
-                                  const embed = new Discord.RichEmbed()
-                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                     .setColor(3447003)
-                                     .addField(":scales: Jambières en peau résistante :" , ":scales: Ce sont des jambières assez résistantes constitué de peau animal mais très utile pour les débutants !")
-                                     .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                                     .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-                                     .addField(":large_orange_diamond: Prix de revente : 50 cols")
-                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des jambières en peau résistante`")
-                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                      .setTimestamp()
-                                      message.channel.send({embed})
-                                    }   
-                                  });
+                        
 
                                   bot.on('message', message => {
                                     const HP = (Math.floor((6)*Math.random()+6))
@@ -11555,25 +11445,7 @@ bot.on('message', message => {
                                         }   
                                       });
 
-                              bot.on('message', message => {
-                                if (message.content.startsWith(prefix + "Bottes en peau arrachée")) {
-                                  const embed = new Discord.RichEmbed()
-                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                     .setColor(3447003)
-                                     .addField(":scales: Bottes en peau arrachée :" , ":scales: Ce sont des bottes très fragiles constitué de peau animal mais très utile pour les débutants !")
-                                     .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 1")
-                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin")
-                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 4")
-                                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des bottes en peau arrachée`")
-                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                      .setTimestamp()
-                                      message.channel.send({embed})
-                                    }   
-                                  });
+                         
 
                                   
       bot.on('message', message => {
@@ -11594,25 +11466,7 @@ bot.on('message', message => {
           });
 
 
-                                  bot.on('message', message => {
-                                    if (message.content.startsWith(prefix + "Bottes en peau résistante")) {
-                                      const embed = new Discord.RichEmbed()
-                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                         .setColor(3447003)
-                                         .addField(":scales: Bottes en peau résistante :" , ":scales: Ce sont des bottes assez résistantes constitué de peau animal mais très utile pour les débutants !")
-                                         .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître du cuir' requis pour fabriquer cet objet : 2")
-                                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant")
-                                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître du cuir' une fois l'objet fabriquer : 6")
-                                         .addField(":large_orange_diamond: Prix d'achat : 200 cols")
-                                         .addField(":large_orange_diamond: Prix de revente : 50 cols")
-                                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des bottes en peau résistante`")
-                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                          .setTimestamp()
-                                          message.channel.send({embed})
-                                        }   
-                                      });
+                              
 
                                       bot.on('message', message => {
                                         const HP = (Math.floor((6)*Math.random()+6))
@@ -11632,26 +11486,7 @@ bot.on('message', message => {
                                           });
 
 
-                                      bot.on('message', message => {
-                                        if (message.content.startsWith(prefix + "Anneau en coeur d'animal faible")) {
-                                          const embed = new Discord.RichEmbed()
-                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                             .setColor(3447003)
-                                             .addField(":scales: Anneau en coeur d'animal faible :" , ":scales: C'est un anneau minuscule constitué de coeur d'animal mais très utile pour les débutants !")
-                                             .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de renard, 1 coeur de sanglier, 1 coeur de chien, 1 coeur de lapin, 1 coeur de lapin géant")
-                                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6")
-                                             .addField(":large_orange_diamond: Prix d'achat : 120 cols")
-                                             .addField(":large_orange_diamond: Prix de revente : 30 cols")
-                                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau en coeur d'animal faible`")
-                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                              .setTimestamp()
-                                              message.channel.send({embed})
-                                            }   
-                                          });
-
+                                   
                                           bot.on('message', message => {
                                             const HP = (Math.floor((2)*Math.random()+1))
                                             const Dégâts = (Math.floor((3)*Math.random()+1))
@@ -11669,25 +11504,7 @@ bot.on('message', message => {
                                                 }   
                                               });
 
-                                          bot.on('message', message => {
-                                            if (message.content.startsWith(prefix + "Amulette en coeur d'animal faible")) {
-                                              const embed = new Discord.RichEmbed()
-                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                 .setColor(3447003)
-                                                 .addField(":scales: Amulette en coeur d'animal faible :" , ":scales: C'est une amulette minuscule constitué de coeur d'animal mais très utile pour les débutants !")
-                                                 .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1")
-                                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de renard, 1 coeur de sanglier, 1 coeur de chien, 1 coeur de lapin, 1 coeur de lapin géant")
-                                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6")
-                                                 .addField(":large_orange_diamond: Prix d'achat : 120 cols")
-                                                 .addField(":large_orange_diamond: Prix de revente : 30 cols")
-                                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet :`=Achat/fabrication/découverte de l'amulette en coeur d'animal faible`")
-                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                  .setTimestamp()
-                                                  message.channel.send({embed})
-                                                }   
-                                              });
+                                  
 
                                               bot.on('message', message => {
                                                 const HP = (Math.floor((2)*Math.random()+1))
@@ -11707,26 +11524,7 @@ bot.on('message', message => {
                                                   });
     
                                               
-                                          bot.on('message', message => {
-                                            if (message.content.startsWith(prefix + "Amulette du croc")) {
-                                              const embed = new Discord.RichEmbed()
-                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                 .setColor(3447003)
-                                                 .addField(":scales: Amulette du croc :" , ":scales: C'est une amulette légèrement tranchante constitué de coeur d'animal et de croc de loup mais très utile pour les débutants !")
-                                                 .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2")
-                                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de taupe, 2 crocs de loup")
-                                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6")
-                                                 .addField(":large_orange_diamond: Prix d'achat : 380 cols")
-                                                 .addField(":large_orange_diamond: Prix de revente : 95 cols")
-                                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'amulette du croc`")
-                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                  .setTimestamp()
-                                                  message.channel.send({embed})
-                                                }   
-                                              });
-
+                                       
 
                                               bot.on('message', message => {
                                                 const HP = (Math.floor((3)*Math.random()+2))
@@ -11746,26 +11544,7 @@ bot.on('message', message => {
                                                   });
     
 
-                                                    bot.on('message', message => {
-                                            if (message.content.startsWith(prefix + "Anneau du croc")) {
-                                              const embed = new Discord.RichEmbed()
-                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                 .setColor(3447003)
-                                                 .addField(":scales: Anneau du croc :" , ":scales: C'est un anneau légèrement tranchant constitué de coeur d'animal et de croc de loup mais très utile pour les débutants !")
-                                                 .addField(":sparkles: Niveau minimum requis pour le porter : 6")
-                                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2")
-                                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de taupe, 2 crocs de loup")
-                                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6")
-                                                 .addField(":large_orange_diamond: Prix d'achat : 380 cols")
-                                                 .addField(":large_orange_diamond: Prix de revente : 95 cols")
-                                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau du croc`")
-                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                  .setTimestamp()
-                                                  message.channel.send({embed})
-                                                }   
-                                              });
-
+                                        
                                               bot.on('message', message => {
                                                 const HP = (Math.floor((3)*Math.random()+2))
                                             const Dégâts = (Math.floor((4)*Math.random()+2))
@@ -11784,26 +11563,210 @@ bot.on('message', message => {
                                                   });
     
 
-                                              bot.on('message', message => {
-                                                if (message.content.startsWith(prefix + "Epée basique à deux mains")) {
-                                                  const embed = new Discord.RichEmbed()
-                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                     .setColor(3447003)
-                                                     .addField(":scales: Epée basique à deux mains :" , ":scales: C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                     .addField(":crossed_swords: Améliore le 'Combo' en : 'Combo supérieur'")
-                                                  .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre")
-                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4")
-                                                     .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                     .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée basique à deux mains`")
-                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                      .setTimestamp()
-                                                      message.channel.send({embed})
-                                                    }   
-                                                  });
+
+
+
+
+
+
+
+
+
+bot.on('message', message => {
+if (message.content.startsWith(prefix + "Epée basique à deux mains")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Epée basique à deux mains :" , ":scales: C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée basique à deux mains`")
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Masse basique à deux mains")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Masse basique à deux mains :" , ":scales: C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse basique à deux mains`")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Hache basique à deux mains")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Hache basique à deux mains :" , ":scales: C'est une hache peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache basique à deux mains`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
+
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Rapière basique à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Rapière basique à deux mains :" , ":scales: C'est une rapière peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière basique à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
+
+       bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Katana basique à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Katana basique à deux mains :" , ":scales: C'est un katana peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana basique à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
+
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Cimeterre basique à deux mains")) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Cimeterre basique à deux mains :" , ":scales: C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre basique à deux mains`")
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+        }   
+        });
+
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Glaive basique à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Glaive basique à deux mains :" , ":scales: C'est un glaive peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Coup d'estoc' en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du glaive basique à deux mains`")
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
+          });
+
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Epée basique à une main")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                 .setColor(3447003)
+                 .addField(":scales: Epée basique à une main :" , ":scales: C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée basique à une main`")
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Masse basique à une main")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Masse basique à une main :" , ":scales: C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse basique à une main`")
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+                    if (message.content.startsWith(prefix + "Hache basique à une main")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":scales: Hache basique à une main :" , ":scales: C'est une hache peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache basique à une main`")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
+
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Rapière basique à une main")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":scales: Rapière basique à une main :" , ":scales: C'est une rapière peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière basique à une main`")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+
+                          bot.on('message', message => {
+                            if (message.content.startsWith(prefix + "Dague basique à une main")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField(":scales: Dague basique à une main :" , ":scales: C'est une dague peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la dague basique à une main`")
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+                              bot.on('message', message => {
+                                if (message.content.startsWith(prefix + "Cimeterre basique à une main")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Cimeterre basique à une main :" , ":scales: C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre basique à une main`")
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+
+                                  bot.on('message', message => {
+                                    if (message.content.startsWith(prefix + "Katana basique à une main")) {
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Katana basique à une main :" , ":scales: C'est un katana peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana basique à une main`")
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+              
+          
+      
+  
+
+
+
+
+
+
+
+
 
                                                   bot.on('message', message => {
                                                 const Dégâts = (Math.floor((5)*Math.random()+2))
@@ -11820,26 +11783,7 @@ bot.on('message', message => {
                                                         }   
                                                       });
 
-                                                  bot.on('message', message => {
-                                                    if (message.content.startsWith(prefix + "Epée basique à une main")) {
-                                                      const embed = new Discord.RichEmbed()
-                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                         .setColor(3447003)
-                                                         .addField(":scales: Epée basique à une main :" , ":scales: C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                         .addField(":crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'")
-                                                      .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée basique à une main`")
-                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                          .setTimestamp()
-                                                          message.channel.send({embed})
-                                                        }   
-                                                      });
+                                                  
 
 
                                                       bot.on('message', message => {
@@ -11857,27 +11801,6 @@ bot.on('message', message => {
                                                                 }   
                                                               });
 
-                                                  bot.on('message', message => {
-                                                    if (message.content.startsWith(prefix + "Masse basique à deux mains")) {
-                                                      const embed = new Discord.RichEmbed()
-                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                         .setColor(3447003)
-                                                         .addField(":scales: Masse basique à deux mains :" , ":scales: C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                       .addField(":crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur supérieur'")
-                                                      .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre")
-                                                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4")
-                                                         .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                         .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse basique à deux mains`")
-                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                          .setTimestamp()
-                                                          message.channel.send({embed})
-                                                        }   
-                                                      });
-
 
                                                       bot.on('message', message => {
                                                         const Dégâts = (Math.floor((5)*Math.random()+2))
@@ -11894,26 +11817,7 @@ bot.on('message', message => {
                                                                 }   
                                                               });
 
-                                                      bot.on('message', message => {
-                                                        if (message.content.startsWith(prefix + "Masse basique à une main")) {
-                                                          const embed = new Discord.RichEmbed()
-                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                             .setColor(3447003)
-                                                             .addField(":scales: Masse basique à une main :" , ":scales: C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                          .addField(":crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'")
-                                                          .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                             .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                             .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse basique à une main`")
-                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                              .setTimestamp()
-                                                              message.channel.send({embed})
-                                                            }   
-                                                          });
+                                                     
 
                                                           bot.on('message', message => {
                                                             const Dégâts = (Math.floor((3)*Math.random()+1))
@@ -11931,26 +11835,7 @@ bot.on('message', message => {
                                                                   });
 
 
-                                                      bot.on('message', message => {
-                                                        if (message.content.startsWith(prefix + "Hache basique à deux mains")) {
-                                                          const embed = new Discord.RichEmbed()
-                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                             .setColor(3447003)
-                                                             .addField(":scales: Hache basique à deux mains :" , ":scales: C'est une hache peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                            .addField(":crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'")
-                                                          .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre")
-                                                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4")
-                                                             .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                             .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache basique à deux mains`")
-                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                              .setTimestamp()
-                                                              message.channel.send({embed})
-                                                            }   
-                                                          });
+                                                     
 
                                                           bot.on('message', message => {
                                                             const Dégâts = (Math.floor((5)*Math.random()+2))
@@ -11969,26 +11854,7 @@ bot.on('message', message => {
 
                                                           
 
-                                                      bot.on('message', message => {
-                                                        if (message.content.startsWith(prefix + "Hache basique à une main")) {
-                                                          const embed = new Discord.RichEmbed()
-                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                             .setColor(3447003)
-                                                             .addField(":scales: Hache basique à une main :" , ":scales: C'est une hache peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                          .addField(":crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'")
-                                                          .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                             .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                             .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache basique à une main`")
-                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                              .setTimestamp()
-                                                              message.channel.send({embed})
-                                                            }   
-                                                          });
+                                                     
 
                                                           bot.on('message', message => {
                                                             const Dégâts = (Math.floor((3)*Math.random()+1))
@@ -12006,26 +11872,7 @@ bot.on('message', message => {
                                                                   });
 
 
-                                                          bot.on('message', message => {
-                                                            if (message.content.startsWith(prefix + "Rapière basique à deux mains")) {
-                                                              const embed = new Discord.RichEmbed()
-                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                 .setColor(3447003)
-                                                                 .addField(":scales: Rapière basique à deux mains :" , ":scales: C'est une rapière peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                .addField(":crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc supérieur'")
-                                                              .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre")
-                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4")
-                                                     .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                     .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière basique à deux mains`")
-                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                  .setTimestamp()
-                                                                  message.channel.send({embed})
-                                                                }   
-                                                              });
+                                                          
 
                                                               bot.on('message', message => {
                                                                 const Dégâts = (Math.floor((5)*Math.random()+2))
@@ -12042,26 +11889,7 @@ bot.on('message', message => {
                                                                         }   
                                                                       });
 
-                                                              bot.on('message', message => {
-                                                                if (message.content.startsWith(prefix + "Rapière basique à une main")) {
-                                                                  const embed = new Discord.RichEmbed()
-                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                     .setColor(3447003)
-                                                                     .addField(":scales: Rapière basique à une main :" , ":scales: C'est une rapière peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                  .addField(":crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'")
-                                                                  .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière basique à une main`")
-                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                      .setTimestamp()
-                                                                      message.channel.send({embed})
-                                                                    }   
-                                                                  });
+                                                              
 
                                                                   bot.on('message', message => {
                                                                     const Dégâts = (Math.floor((3)*Math.random()+1))
@@ -12081,26 +11909,7 @@ bot.on('message', message => {
                                   
 
                                 
-                                                              bot.on('message', message => {
-                                                                if (message.content.startsWith(prefix + "Cimeterre basique à deux mains")) {
-                                                                  const embed = new Discord.RichEmbed()
-                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                     .setColor(3447003)
-                                                                     .addField(":scales: Cimeterre basique à deux mains :" , ":scales: C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                   .addField(":shield: Améliore 'Esquive' en : 'Esquive supérieure'")
-                                                                  .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre")
-                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4")
-                                                                     .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                                     .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre basique à deux mains`")
-                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                      .setTimestamp()
-                                                                      message.channel.send({embed})
-                                                                    }   
-                                                                  });
+                                                             
 
                                                                   bot.on('message', message => {
                                                                     const Dégâts = (Math.floor((5)*Math.random()+2))
@@ -12120,26 +11929,7 @@ bot.on('message', message => {
                                                                   
 
                                 
-                                                              bot.on('message', message => {
-                                                                if (message.content.startsWith(prefix + "Cimeterre basique à une main")) {
-                                                                  const embed = new Discord.RichEmbed()
-                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                     .setColor(3447003)
-                                                                     .addField(":scales: Cimeterre basique à une main :" , ":scales: C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                     .addField(":shield: Améliore 'Esquive' en : 'Esquive améliorée'")
-                                                                  .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre basique à une main`")
-                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                      .setTimestamp()
-                                                                      message.channel.send({embed})
-                                                                    }   
-                                                                  });
+                                                             
 
                                                                   bot.on('message', message => {
                                                                     const Dégâts = (Math.floor((3)*Math.random()+1))
@@ -12156,26 +11946,7 @@ bot.on('message', message => {
                                                                             }   
                                                                           });
 
-                                                                  bot.on('message', message => {
-                                                                    if (message.content.startsWith(prefix + "Katana basique à deux mains")) {
-                                                                      const embed = new Discord.RichEmbed()
-                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                         .setColor(3447003)
-                                                                         .addField(":scales: Katana basique à deux mains :" , ":scales: C'est un katana peu puissant constitué de bois et de métal mais très utile pour les débutants !")
-                                                                        .addField(":shield: Améliore la 'Parade' en : 'Parade supérieure'")
-                                                                      .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre")
-                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4")
-                                                     .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                     .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana basique à deux mains`")
-                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                          .setTimestamp()
-                                                                          message.channel.send({embed})
-                                                                        }   
-                                                                      });
+                                                               
 
                                                                       bot.on('message', message => {
                                                                         const Dégâts = (Math.floor((5)*Math.random()+2))
@@ -12192,27 +11963,7 @@ bot.on('message', message => {
                                                                                 }   
                                                                               });
 
-                                                                      bot.on('message', message => {
-                                                                        if (message.content.startsWith(prefix + "Katana basique à une main")) {
-                                                                          const embed = new Discord.RichEmbed()
-                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                             .setColor(3447003)
-                                                                             .addField(":scales: Katana basique à une main :" , ":scales: C'est un katana peu puissant constitué de bois et de métal mais très utile pour les débutants !")
-                                                                            .addField(":shield: Améliore la 'Parade' en : 'Parade améliorée'")
-                                                                          .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana basique à une main`")
-                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                              .setTimestamp()
-                                                                              message.channel.send({embed})
-                                                                            }   
-                                                                          });
-
+                                                                     
                                                                           bot.on('message', message => {
                                                                             const Dégâts = (Math.floor((3)*Math.random()+1))
                                                                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à une main")) {
@@ -12228,26 +11979,8 @@ bot.on('message', message => {
                                                                                     }   
                                                                                   });
 
-                                                                      bot.on('message', message => {
-                                                                        if (message.content.startsWith(prefix + "Glaive basique à deux mains")) {
-                                                                          const embed = new Discord.RichEmbed()
-                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                             .setColor(3447003)
-                                                                             .addField(":scales: Glaive basique à deux mains :" , ":scales: C'est un glaive peu puissant constitué de bois et de métal mais très utile pour les débutants !")
-                                                                           .addField(":crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc supérieur'")
-                                                                          .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre")
-                                                                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4")
-                                                                             .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                                             .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du glaive basique à deux mains`")
-                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                              .setTimestamp()
-                                                                              message.channel.send({embed})
-                                                                            }   
-                                                                          });
+                                                                      
+                                                                          
 
                                                                           bot.on('message', message => {
                                                                             const Dégâts = (Math.floor((5)*Math.random()+2))
@@ -12264,26 +11997,7 @@ bot.on('message', message => {
                                                                                     }   
                                                                                   });
 
-                                                                          bot.on('message', message => {
-                                                                            if (message.content.startsWith(prefix + "Dague basique à une main")) {
-                                                                              const embed = new Discord.RichEmbed()
-                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                 .setColor(3447003)
-                                                                                 .addField(":scales: Dague basique à une main :" , ":scales: C'est une dague peu puissante constitué de bois et de métal mais très utile pour les débutants !")
-                                                                              .addField(":crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'")
-                                                                              .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                                                 .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                                                 .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : =Achat/fabrication/découverte de la dague basique à une main")
-                                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                  .setTimestamp()
-                                                                                  message.channel.send({embed})
-                                                                                }   
-                                                                              });
+                                                                          
 
                                                                               bot.on('message', message => {
                                                                                 const Dégâts = (Math.floor((3)*Math.random()+1))
@@ -12306,15 +12020,8 @@ bot.on('message', message => {
                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                      .setColor(3447003)
-                                                                                     .addField(":scales: Bouclier basique à deux mains :" , ":scales: C'est un bouclier peu protecteur constitué de bois et de métal mais très utile pour les débutants !")
-                                                                                   .addField(":shield: Améliore le 'Blocage' en : 'Blocage amélioré'")
-                                                                                  .addField(":sparkles: Niveau minimum requis pour le porter : 1")
-                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1")
-                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre")
-                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2")
-                                                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du bouclier basique à une main`")
+                                                                                     .addField(":scales: Bouclier basique à deux mains :" , ":scales: C'est un bouclier peu protecteur constitué de bois et de métal mais très utile pour les débutants !\n\n:shield: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du bouclier basique à une main`")
+                                                                                  
                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})
@@ -12343,14 +12050,8 @@ bot.on('message', message => {
                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                      .setColor(3447003)
-                                                                                     .addField(":scroll: Parchemin de poison faible :" , ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué d'oeil d'animal ainsi que de pierre de poison faible !")
-                                                                                     .addField(":sparkles: Niveau minimum requis pour l'utiliser : 6")
-                                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 1")
-                                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de lapin géant, 5 pierre de poison faible ")
-                                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 12")
-                                                                                     .addField(":large_orange_diamond: Prix d'achat : 460 cols")
-                                                                                     .addField(":large_orange_diamond: Prix de revente : 115 cols")
-                                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de poison faible`")
+                                                                                     .addField(":scroll: Parchemin de poison faible :" , ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué d'oeil d'animal ainsi que de pierre de poison faible !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de lapin géant, 5 pierre de poison faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : 460 cols\n\n:large_orange_diamond: Prix de revente : 115 cols\n\:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de poison faible`")
+                
                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})
@@ -12402,19 +12103,51 @@ bot.on('message', message => {
                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                          .setColor(3447003)
-                                                                                         .addField(":meat_on_bone: Ragoût de renard :" , ":meat_on_bone: C'est un ragoût constitué de viande de renard et de persil mais très utile pour les débutants !")
-                                                                                         .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 1")
-                                                                                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1")
-                                                                                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de renard, 2 persil")
-                                                                                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2")
-                                                                                         .addField(":large_orange_diamond: Prix d'achat : 30 cols")
-                                                                                         .addField(":large_orange_diamond: Prix de revente : 7 cols")
-                                                                                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de renard`")
+                                                                                         .addField(":meat_on_bone: Ragoût de renard :" , ":meat_on_bone: C'est un ragoût constitué de viande de renard et de persil mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de renard, 2 persil\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 30 cols\n\n:large_orange_diamond: Prix de revente : 7 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de renard`")
                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                           .setTimestamp()
                                                                                           message.channel.send({embed})
                                                                                         }   
                                                                                       });
+
+                                                                                      bot.on('message', message => {
+                                                                                        if (message.content.startsWith(prefix + "Ragoût de sanglier")) {
+                                                                                          const embed = new Discord.RichEmbed()
+                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                             .setColor(3447003)
+                                                                                             .addField(":meat_on_bone: Ragoût de sanglier :" , ":meat_on_bone: C'est un ragoût constitué de viande de sanglier et de persil mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de sanglier, 2 persil\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 30 cols\n\n:large_orange_diamond: Prix de revente : 7 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de sanglier`")
+                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                              .setTimestamp()
+                                                                                              message.channel.send({embed})
+                                                                                            }   
+                                                                                          });
+
+                                                                                           bot.on('message', message => {
+                                                                                    if (message.content.startsWith(prefix + "Ragoût de chien")) {
+                                                                                      const embed = new Discord.RichEmbed()
+                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                         .setColor(3447003)
+                                                                                         .addField(":meat_on_bone: Ragoût de chien :" , ":meat_on_bone: C'est un ragoût constitué de viande de chien et de persil mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de chien, 2 persil\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 30 cols\n\n:large_orange_diamond: Prix de revente : 7 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de chien`")
+                                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                          .setTimestamp()
+                                                                                          message.channel.send({embed})
+                                                                                        }   
+                                                                                      });
+
+                                                                                      bot.on('message', message => {
+                                                                                        if (message.content.startsWith(prefix + "Ragoût de lapin")) {
+                                                                                          const embed = new Discord.RichEmbed()
+                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                             .setColor(3447003)
+                                                                                             .addField(":meat_on_bone: Ragoût de lapin :" , ":meat_on_bone: C'est un ragoût constitué de viande de lapin et de persil mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lapin, 2 persil\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 30 cols\n\n:large_orange_diamond: Prix de revente : 7 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de lapin`")
+                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                              .setTimestamp()
+                                                                                              message.channel.send({embed})
+                                                                                            }   
+                                                                                          });
 
                                                                                       bot.on('message', message => {
                                                                                         const HP = (Math.floor((11)*Math.random()+10))
@@ -12433,25 +12166,6 @@ bot.on('message', message => {
     
                                                                                       
 
-                                                                                      bot.on('message', message => {
-                                                                                        if (message.content.startsWith(prefix + "Ragoût de sanglier")) {
-                                                                                          const embed = new Discord.RichEmbed()
-                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                             .setColor(3447003)
-                                                                                             .addField(":meat_on_bone: Ragoût de sanglier :" , ":meat_on_bone: C'est un ragoût constitué de viande de sanglier et de persil mais très utile pour les débutants !")
-                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                              .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 1")
-                                                                                              .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1")
-                                                                                              .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de sanglier, 2 persil")
-                                                                                              .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2")
-                                                                                              .addField(":large_orange_diamond: Prix d'achat : 30 cols")
-                                                                                              .addField(":large_orange_diamond: Prix de revente : 7 cols")
-                                                                                              .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de sanglier`")
-                                                                                              .setTimestamp()
-                                                                                              message.channel.send({embed})
-                                                                                            }   
-                                                                                          });
 
                                                                                           bot.on('message', message => {
                                                                                             const HP = (Math.floor((11)*Math.random()+10))
@@ -12470,25 +12184,7 @@ bot.on('message', message => {
         
 
 
-                                                                                          bot.on('message', message => {
-                                                                                            if (message.content.startsWith(prefix + "Ragoût de chien")) {
-                                                                                              const embed = new Discord.RichEmbed()
-                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                 .setColor(3447003)
-                                                                                                 .addField(":meat_on_bone: Ragoût de chien :" , ":meat_on_bone: C'est un ragoût constitué de viande de chien et de persil mais très utile pour les débutants !")
-                                                                                                 .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 1")
-                                                                                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1")
-                                                                                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de chien, 2 persil")
-                                                                                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2")
-                                                                                                 .addField(":large_orange_diamond: Prix d'achat : 30 cols")
-                                                                                                 .addField(":large_orange_diamond: Prix de revente : 7 cols")
-                                                                                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de chien`")
-                                                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                  .setTimestamp()
-                                                                                                  message.channel.send({embed})
-                                                                                                }   
-                                                                                              });
+                                                                                         
 
                                                                                               bot.on('message', message => {
                                                                                                 const HP = (Math.floor((11)*Math.random()+10))
@@ -12523,26 +12219,25 @@ bot.on('message', message => {
                                                                                                                   message.channel.send({embed})
                                                                                                                 }   
                                                                                                               });
+
+
+                                                                                                              bot.on('message', message => {
+                                                                                                                if (message.content.startsWith(prefix + "Ragoût de lapin géant")) {
+                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                     .setColor(3447003)
+                                                                                                                     .addField(":meat_on_bone: Ragoût de lapin géant :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lapin géant et de persil mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 3\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lapin géant, 4 persil\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de lapin géant`")
+                                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                      .setTimestamp()
+                                                                                                                      message.channel.send({embed})
+                                                                                                                    }   
+                                                                                                                  });
+
+
+
                     
- bot.on('message', message => {
-                                                                                                if (message.content === prefix + "Ragoût de lapin géant") {
-                                                                                                  const embed = new Discord.RichEmbed()
-                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                     .setColor(3447003)
-                                                                                                     .addField(":meat_on_bone: Ragoût de lapin géant :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lapin géant et de persil mais très utile pour les débutants !")
-                                                                                                     .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 3")
-                                                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2")
-                                                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lapin géant, 4 persil")
-                                                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4")
-                                                                                                     .addField(":large_orange_diamond: Prix d'achat : 80 cols")
-                                                                                                     .addField(":large_orange_diamond: Prix de revente : 20 cols")
-                                                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de lapin géant`")
-                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                      .setTimestamp()
-                                                                                                      message.channel.send({embed})
-                                                                                                    }   
-                                                                                                  });
+
 
                                                                                                   bot.on('message', message => {
                                                                                                     const HP = (Math.floor((21)*Math.random()+20))
@@ -12561,26 +12256,7 @@ bot.on('message', message => {
                 
                 
 
-                                                                                                  bot.on('message', message => {
-                                                                                                    if (message.content === (prefix) + "Ragoût de lapin"){
-                                                                                                      const embed = new Discord.RichEmbed()
-                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                         .setColor(3447003)
-                                                                                                         .addField(":meat_on_bone: Ragoût de lapin :" , ":meat_on_bone: C'est un ragoût constitué de viande de lapin et de persil mais très utile pour les débutants !")
-                                                                                                         .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 1")
-                                                                                                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 1")
-                                                                                                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lapin, 2 persil")
-                                                                                                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 2")
-                                                                                                         .addField(":large_orange_diamond: Prix d'achat : 30 cols")
-                                                                                                         .addField(":large_orange_diamond: Prix de revente : 7 cols")
-                                                                                                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de lapin`")
-                                                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                          .setTimestamp()
-                                                                                                          message.channel.send({embed})
-                                                                                                        }   
-                                                                                                      });
-
+                                      
                            
                     
 
@@ -12590,19 +12266,29 @@ bot.on('message', message => {
                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                              .setColor(3447003)
-                                                                                                             .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: C'est un ragoût constitué de viande de loup et d'estragon mais très utile pour les débutants !")
-                                                                                                             .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 6")
-                                                                                                             .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2")
-                                                                                                             .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup, 2 estragon")
-                                                                                                             .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4")
-                                                                                                             .addField(":large_orange_diamond: Prix d'achat : 60 cols")
-                                                                                                             .addField(":large_orange_diamond: Prix de revente : 15 cols")
-                                                                                                             .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup`")
+                                                                                                             .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: C'est un ragoût constitué de viande de loup et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup, 2 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 60 cols\n\n:large_orange_diamond: Prix de revente : 15 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup`")
+                                                                                                         
                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                               .setTimestamp()
                                                                                                               message.channel.send({embed})
                                                                                                             }   
                                                                                                           });
+
+
+
+                                                                                                          bot.on('message', message => {
+                                                                                                            if (message.content === prefix + "Ragoût de taupe") {
+                                                                                                            const embed = new Discord.RichEmbed()
+                                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                               .setColor(3447003)
+                                                                                                               .addField(":meat_on_bone: Ragoût de taupe :" , ":meat_on_bone: C'est un ragoût constitué de viande de taupe et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taupe, 2 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 60 cols\n\n:large_orange_diamond: Prix de revente : 15 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de taupe`")
+                                                                                                           
+                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                .setTimestamp()
+                                                                                                                message.channel.send({embed})
+                                                                                                              }   
+                                                                                                            });
 
                                                                                                           bot.on('message', message => {
                                                                                                             const HP = (Math.floor((21)*Math.random()+20))
@@ -12626,14 +12312,8 @@ bot.on('message', message => {
                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                  .setColor(3447003)
-                                                                                                                 .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de loup de sang et d'estragon mais très utile pour les débutants !")
-                                                                                                                 .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 10")
-                                                                                                                 .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 3")
-                                                                                                                 .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup de sang, 4 estragon")
-                                                                                                                 .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 6")
-                                                                                                                 .addField(":large_orange_diamond: Prix d'achat : 160 cols")
-                                                                                                                 .addField(":large_orange_diamond: Prix de revente : 40 cols")
-                                                                                                                 .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup de sang`")
+                                                                                                                 .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de loup de sang et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 10\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup de sang, 4 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup de sang`")
+                                                                                                                 
                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
@@ -12659,25 +12339,7 @@ bot.on('message', message => {
                                                                                                           
                             
 
-                                                                                                              bot.on('message', message => {
-                                                                                                                if (message.content.startsWith(prefix + "Ragoût de taupe")) {
-                                                                                                                  const embed = new Discord.RichEmbed()
-                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                     .setColor(3447003)
-                                                                                                                     .addField(":meat_on_bone: Ragoût de taupe :" , ":meat_on_bone: C'est un ragoût constitué de viande de taupe et d'estragon mais très utile pour les débutants !")
-                                                                                                                     .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 6")
-                                                                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2")
-                                                                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taupe, 2 estragon")
-                                                                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4")
-                                                                                                                     .addField(":large_orange_diamond: Prix d'achat : 60 cols")
-                                                                                                                     .addField(":large_orange_diamond: Prix de revente : 15 cols")
-                                                                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de taupe`")
-                                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                      .setTimestamp()
-                                                                                                                      message.channel.send({embed})
-                                                                                                                    }   
-                                                                                                                  });
+                                                                                                             
 
                                                                                                                   bot.on('message', message => {
                                                                                                                     const HP = (Math.floor((21)*Math.random()+20))
@@ -12701,40 +12363,47 @@ bot.on('message', message => {
                                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
-                                                                                                                         .addField("Potion faible de soin :" , "C'est une potion permettant de reprendre des HP constitué de coeur d'animal mais très utile pour les débutants !")
-                                                                                                                         .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 1")
-                                                                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1")
-                                                                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de renard, 1 coeur de chien, 1 coeur de lapin, 1 coeur de sanglier, 2 baie, 2 herbe médicinale faible")
-                                                                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5")
-                                                                                                                     .addField(":large_orange_diamond: Prix d'achat : 100 cols")
-                                                                                                                     .addField(":large_orange_diamond: Prix de revente : 25 cols")
-                                                                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de soin`")
+                                                                                                                         .addField(":syringe: Potion faible de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de renard, 1 coeur de chien, 1 coeur de lapin, 1 coeur de sanglier, 2 baie, 2 herbe médicinale faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5\n\n:large_orange_diamond: Prix d'achat : 100 cols\n\n:large_orange_diamond: Prix de revente : 25 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de soin`")
+                                                         
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
                                                                                                                         }   
                                                                                                                       });
 
-                                                                                                                      
-                                                                                                                  bot.on('message', message => {
+
+                                                                                                                                                                                                               bot.on('message', message => {
                                                                                                                     if (message.content.startsWith(prefix + "Potion faible de force")) {
                                                                                                                       const embed = new Discord.RichEmbed()
                                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
-                                                                                                                         .addField(":syringe: Potion faible de force :" , ":syringe: C'est une potion permettant de gagner un peu de force constitué d'oeil d'animal mais très utile pour les débutants !")
-                                                                                                                         .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 1")
-                                                                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1")
-                                                                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de renard, 1 oeil de chien, 1 oeil de lapin, 1 oeil de sanglier, 2 baie, 2 herbe médicinale faible")
-                                                                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5")
-                                                                                                                     .addField(":large_orange_diamond: Prix d'achat : 120 cols")
-                                                                                                                     .addField(":large_orange_diamond: Prix de revente : 30 cols")
-                                                                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de force`")
+                                                                                                                         .addField(":syringe: Potion faible de force :" , ":syringe: C'est une potion permettant de gagner un peu de force constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de renard, 1 oeil de chien, 1 oeil de lapin, 1 oeil de sanglier, 2 baie, 2 herbe médicinale faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5\n\n:large_orange_diamond: Prix d'achat : 120 cols\n\n:large_orange_diamond: Prix de revente : 30 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de force`")
+                                                         
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
                                                                                                                         }   
                                                                                                                       });
+
+
+                                                                                                                                                                                                                 bot.on('message', message => {
+                                                                                                                    if (message.content.startsWith(prefix + "Potion faible de défense")) {
+                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                         .setColor(3447003)
+                                                                                                                         .addField(":syringe: Potion faible de défense :" , ":syringe: C'est une potion permettant de gagner un peu de défense constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de renard, 1 oeil de chien, 1 oeil de lapin, 1 oeil de sanglier, 2 baie, 2 herbe médicinale faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5\n\n:large_orange_diamond: Prix d'achat : 120 cols\n\n:large_orange_diamond: Prix de revente : 30 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de défense`")
+                                                         
+                                                                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                          .setTimestamp()
+                                                                                                                          message.channel.send({embed})
+                                                                                                                        }   
+                                                                                                                      });
+
+
+                                                                                                                      
+                                                                                                                
 
                                                                                                                       bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((3)*Math.random()+2))
@@ -12752,25 +12421,7 @@ bot.on('message', message => {
                                                                                                                               });
 
 
-                                                                                                                      bot.on('message', message => {
-                                                                                                                        if (message.content.startsWith(prefix + "Potion faible de défense")) {
-                                                                                                                          const embed = new Discord.RichEmbed()
-                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                             .setColor(3447003)
-                                                                                                                             .addField(":syringe: Potion faible de défense :" , ":syringe: C'est une potion permettant de gagner un peu de défense constitué d'oeil d'animal mais très utile pour les débutants !")
-                                                                                                                             .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 1")
-                                                                                                                         .addField(":sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1")
-                                                                                                                         .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de renard, 1 oeil de chien, 1 oeil de lapin, 1 oeil de sanglier, 2 baie, 2 herbe médicinale faible")
-                                                                                                                         .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5")
-                                                                                                                         .addField(":large_orange_diamond: Prix d'achat : 120 cols")
-                                                                                                                         .addField(":large_orange_diamond: Prix de revente : 30 cols")
-                                                                                                                         .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de défense`")
-                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                              .setTimestamp()
-                                                                                                                              message.channel.send({embed})
-                                                                                                                            }   
-                                                                                                                          });
+                                                                                                                      
 
                                                                                                                           bot.on('message', message => {
                                                                                                                             const HP = (Math.floor((2)*Math.random()+1))
@@ -12803,28 +12454,50 @@ bot.on('message', message => {
                                                                                                                                   message.channel.send({embed})
                                                                                                                                 }   
                                                                                                                               });
-                                    
-    
 
-                                                                                                                      bot.on('message', message => {
-                                                                                                                        if (message.content.startsWith(prefix + "Potion légère de soin")) {
-                                                                                                                          const embed = new Discord.RichEmbed()
-                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                             .setColor(3447003)
-                                                                                                                             .addField(":syringe: Potion légère de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et d'oeil d'animal mais très utile pour les débutants !")
-                                                                                                                             .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 6")
-                                                                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2")
-                                                                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de lapin géant, 1 coeur de taupe, 1 coeur de loup, 1 coeur de loup de sang, 4 herbe médicinale")
-                                                                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10")
-                                                                                                                     .addField(":large_orange_diamond: Prix d'achat : 320 cols")
-                                                                                                                     .addField(":large_orange_diamond: Prix de revente : 80 cols")
-                                                                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de soin`")
-                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                              .setTimestamp()
-                                                                                                                              message.channel.send({embed})
-                                                                                                                            }   
-                                                                                                                          }); 
+
+                                                                                                                                                                                                                         bot.on('message', message => {
+                                                                                                                    if (message.content.startsWith(prefix + "Potion légère de soin")) {
+                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                         .setColor(3447003)
+                                                                                                                         .addField(":syringe: Potion légère de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de lapin géant, 1 coeur de taupe, 1 coeur de loup, 1 coeur de loup de sang, 4 herbe médicinale\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : 320 cols\n\n:large_orange_diamond: Prix de revente : 80 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de soin`")
+                                                         
+                                                                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                          .setTimestamp()
+                                                                                                                          message.channel.send({embed})
+                                                                                                                        }   
+                                                                                                                      });
+                                    
+                                                                                                                      if (message.content.startsWith(prefix + "Potion légère de force")) {
+                                                                                                                        const embed = new Discord.RichEmbed()
+                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                           .setColor(3447003)
+                                                                                                                           .addField(":syringe: Potion légère de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de lapin géant, 1 oeil de taupe, 1 oeil de loup, 1 oeil de loup de sang, 4 herbe médicinale\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de force`")
+                                                           
+                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                            .setTimestamp()
+                                                                                                                            message.channel.send({embed})
+                                                                                                                          }   
+                                                                                                                        });
+
+                                                                                                                                                                                                               if (message.content.startsWith(prefix + "Potion légère de défense")) {
+                                                                                                                        const embed = new Discord.RichEmbed()
+                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                           .setColor(3447003)
+                                                                                                                           .addField(":syringe: Potion légère de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de lapin géant, 1 oeil de taupe, 1 oeil de loup, 1 oeil de loup de sang, 4 herbe médicinale\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de défense`")
+                                                           
+                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                            .setTimestamp()
+                                                                                                                            message.channel.send({embed})
+                                                                                                                          }   
+                                                                                                                        });
+
+
+                                                                                      
 
 
                                                                                                                           bot.on('message', message => {
@@ -12842,25 +12515,7 @@ bot.on('message', message => {
                                                                                                                     }   
                                                                                                                   });
 
-                                                                                                                  bot.on('message', message => {
-                                                                                                                    if (message.content.startsWith(prefix + "Potion légère de défense")) {
-                                                                                                                      const embed = new Discord.RichEmbed()
-                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                         .setColor(3447003)
-                                                                                                                         .addField(":syringe: Potion légère de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal mais très utile pour les débutants !")
-                                                                                                                         .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 6")
-                                                                                                                     .addField(":sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2")
-                                                                                                                     .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de taupe, 1 oeil de loup, 1 oeil de lapin géant, 1 oeil de loup de sang, 4 herbe médicinale ")
-                                                                                                                     .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10")
-                                                                                                                     .addField(":large_orange_diamond: Prix d'achat : 400 cols")
-                                                                                                                     .addField(":large_orange_diamond: Prix de revente : 100 cols")
-                                                                                                                     .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de défense`")
-                                                                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                          .setTimestamp()
-                                                                                                                          message.channel.send({embed})
-                                                                                                                        }   
-                                                                                                                      });
+                                                                                                                  
 
                                                                                                                        bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((5)*Math.random()+4))
@@ -12894,25 +12549,7 @@ bot.on('message', message => {
 
 
 
-                                                                                                                      bot.on('message', message => {
-                                                                                                                      if (message.content.startsWith(prefix + "Potion légère de force")) {
-                                                                                                                        const embed = new Discord.RichEmbed()
-                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                           .setColor(3447003)
-                                                                                                                           .addField(":syringe: Potion légère de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal mais très utile pour les débutants !")
-                                                                                                                           .addField(":sparkles: Niveau minimum requis pour l'utiliser' : 6")
-                                                                                                                       .addField(":sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2")
-                                                                                                                       .addField(":wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de taupe, 1 oeil de loup, 1 oeil de lapin géant, 1 oeil de loup de sang, 4 herbe médicinale ")
-                                                                                                                       .addField(":sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10")
-                                                                                                                       .addField(":large_orange_diamond: Prix d'achat : 400 cols")
-                                                                                                                       .addField(":large_orange_diamond: Prix de revente : 100 cols")
-                                                                                                                       .addField(":keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de force`")
-                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                            .setTimestamp()
-                                                                                                                            message.channel.send({embed})
-                                                                                                                          }   
-                                                                                                                        });
+                                                                                                                     
                         
 
                                                                                                                           bot.on('message', message => {
