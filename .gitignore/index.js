@@ -1025,7 +1025,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Jeune kobolt :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("http://vignette2.wikia.nocookie.net/chroniclesofarn/images/b/b2/Kobold-11.jpg/revision/latest?cb=20130810171342")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 250")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Jeune kobolt attaque`")
     .addField(":shield: Lorsque le jeune kobolt reçoit un coup :" , ":shield: `=Jeune kobolt défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Jeune kobolt récompenses solo : [Votre niveau]`")
@@ -1042,7 +1042,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt mineur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt mineur attaque`")
     .addField(":shield: Lorsque le kobolt mineur reçoit un coup :" , ":shield: `=Kobolt mineur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt mineur récompenses solo : [Votre niveau]`")
@@ -1060,7 +1060,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt ouvrier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5e/KoboldMG.png/300px-KoboldMG.png?version=b6cc120769e6300e7b5eb863ef828278")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 500")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup gigantesque attaque`")
     .addField(":shield: Lorsque le kobolt ouvrier reçoit un coup :" , ":shield: `=Kobolt ouvrier défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt ouvrier récompenses solo : [Votre niveau]`")
@@ -1078,7 +1078,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt explorateur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://i.pinimg.com/originals/73/6a/cf/736acf4e514eed57b8f255aff493f4ea.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 450")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 350")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt explorateur attaque`")
     .addField(":shield: Lorsque le kobolt explorateur reçoit un coup :" , ":shield: `=Kobolt explorateur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt explorateur récompenses solo : [Votre niveau]`")
@@ -1096,7 +1096,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt garde :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 900")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt garde attaque`")
     .addField(":shield: Lorsque le kobolt garde reçoit un coup :" , ":shield: `=Kobolt garde défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt garde récompenses solo : [Votre niveau]`")
@@ -1113,7 +1113,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt combattant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1100")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt combattant attaque`")
     .addField(":shield: Lorsque le kobolt combattant reçoit un coup :" , ":shield: `=Kobolt combattant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt combattant récompenses solo : [Votre niveau]`")
@@ -1131,7 +1131,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt espion :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://i.pinimg.com/564x/63/c0/c3/63c0c3bfc02566d63326eed4af43db78.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1200")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt espion attaque`")
     .addField(":shield: Lorsque le kobolt espion reçoit un coup :" , ":shield: `=Kobolt espion défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt espion récompenses solo : [Votre niveau]`")
@@ -1149,7 +1149,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt géant rouge :" , ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 4000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 3000")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt géant rouge attaque`")
     .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :" , ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt géant rouge récompenses solo : [Votre niveau]`")
@@ -3485,9 +3485,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Jeune kobolt attaque")) {
     const Dégâts = 40
-     const A = (Math.floor((31)*Math.random()+60))
+     const A = (Math.floor((31)*Math.random()+50))
      const B = (Math.floor((100)*Math.random()+1))
-      const C = (Math.floor((41)*Math.random()+90))
+      const C = (Math.floor((41)*Math.random()+60))
      if (B < 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -3508,7 +3508,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez tous les dégâts des trois tours donc " +C*3+ " ]")
+        .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " par tour pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez tous les dégâts des trois tours donc " +C*1.5+ " ]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -3520,9 +3520,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt explorateur attaque")) {
     const Dégâts = 40
-     const A = (Math.floor((41)*Math.random()+70))
+     const A = (Math.floor((31)*Math.random()+55))
      const B = (Math.floor((100)*Math.random()+1))
-      const C = (Math.floor((61)*Math.random()+80))
+      const C = (Math.floor((51)*Math.random()+70))
      if (B < 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -3555,9 +3555,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt mineur attaque")) {
     const Dégâts = 40
-     const A = (Math.floor((41)*Math.random()+75))
+     const A = (Math.floor((31)*Math.random()+55))
      const B = (Math.floor((100)*Math.random()+1))
-      const C = (Math.floor((61)*Math.random()+100))
+      const C = (Math.floor((41)*Math.random()+80))
      if (B < 35){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -3590,9 +3590,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt ouvrier attaque")) {
     const Dégâts = 40
-     const A = (Math.floor((51)*Math.random()+80))
+     const A = (Math.floor((31)*Math.random()+55))
      const B = (Math.floor((100)*Math.random()+1))
-      const C = (Math.floor((51)*Math.random()+80))
+      const C = (Math.floor((41)*Math.random()+80))
      if (B < 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -4141,7 +4141,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((51)*Math.random()+30))
+     const C = (Math.floor((11)*Math.random()+20))
      if (B < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -4169,7 +4169,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(4).join(" : ");
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((61)*Math.random()+40))
+     const C = (Math.floor((21)*Math.random()+40))
      if (B < 55){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -4197,7 +4197,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((21)*Math.random()+30))
+     const C = (Math.floor((31)*Math.random()+50))
      if (B < 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
