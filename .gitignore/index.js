@@ -12470,19 +12470,19 @@ bot.on('message', message => {
                                                                                                                         }   
                                                                                                                       });
                                     
+                                                                                                                      bot.on('message', message => {
                                                                                                                       if (message.content.startsWith(prefix + "Potion légère de force")) {
                                                                                                                         const embed = new Discord.RichEmbed()
                                                                                                                         .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                            .setColor(3447003)
                                                                                                                            .addField(":syringe: Potion légère de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de lapin géant, 1 oeil de taupe, 1 oeil de loup, 1 oeil de loup de sang, 4 herbe médicinale\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de force`")
-                                                           
                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                             .setTimestamp()
                                                                                                                             message.channel.send({embed})
                                                                                                                           }   
                                                                                                                         });
-
+                                                                                                                        bot.on('message', message => {
                                                                                                                                                                                                                if (message.content.startsWith(prefix + "Potion légère de défense")) {
                                                                                                                         const embed = new Discord.RichEmbed()
                                                                                                                         .setAuthor(message.author.username , message.author.avatarURL)
