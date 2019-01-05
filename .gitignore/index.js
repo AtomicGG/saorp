@@ -12194,7 +12194,19 @@ bot.on('message', message => {
                             
 
                                                                                                              
-
+                                                                                                              bot.on('message', message => {
+                                                                                                                if (message.content.startsWith(prefix + "Potion moyenne de soin")) {
+                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                     .setColor(3447003)
+                                                                                                                     .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 2 plantrus médiocre, 1 plantrus commun, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de soin`")
+                                                     
+                                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                      .setTimestamp()
+                                                                                                                      message.channel.send({embed})
+                                                                                                                    }   
+                                                                                                                  });
                                                                                                                   
                                 
 
@@ -12242,9 +12254,96 @@ bot.on('message', message => {
                                                                                                                         }   
                                                                                                                       });
 
+                                                                                                                      bot.on('message', message => {
+                                                                                                                        if (message.content.startsWith(prefix + "Potion guérissante minuscule de poison")) {
+                                                                                                                          const embed = new Discord.RichEmbed()
+                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                             .setColor(3447003)
+                                                                                                                             .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: C'est une potion permettant de supprimer l'état 'Poison' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion ne guérit l'état 'Poison' que pour les niveaux de 1 à 25\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de poison`")
+                                                             
+                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                              .setTimestamp()
+                                                                                                                              message.channel.send({embed})
+                                                                                                                            }   
+                                                                                                                          });
 
+                                                                                                                          bot.on('message', message => {
+                                                                                                                            if (message.content.startsWith(prefix + "Potion guérissante minuscule de saignement")) {
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+                                                                                                                                 .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: C'est une potion permettant de supprimer l'état 'Saignement' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion ne guérit l'état 'Saignement' que pour les niveaux de 1 à 25\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de saignement`")
+                                                                 
+                                                                                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})
+                                                                                                                                }   
+                                                                                                                              });
+
+                                                                                                                              bot.on('message', message => {
+                                                                                                                                if (message.content.startsWith(prefix + "Potion guérissante minuscule de brûlure")) {
+                                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                     .setColor(3447003)
+                                                                                                                                     .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: C'est une potion permettant de supprimer l'état 'Enflammer' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion ne guérit l'état 'Enflammer' que pour les niveaux de 1 à 25\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de brûlure`")
+                                                                     
+                                                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                      .setTimestamp()
+                                                                                                                                      message.channel.send({embed})
+                                                                                                                                    }   
+                                                                                                                                  });
+
+
+
+                                                                                                                                  bot.on('message', message => {
+                                                                                                                                    const HP = (Math.floor((51)*Math.random()+50))
+                                                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion guérissante minuscule de poison")) {
+                                                                                                                                          const embed = new Discord.RichEmbed()
+                                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                             .setColor(3447003)
+                                                                                                                                             .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Poison' est supprimé !")
+                                                                                                                                            
+                                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                              .setTimestamp()
+                                                                                                                                              message.channel.send({embed})
+                                                                                                                                            }   
+                                                                                                                                          });
+
+                                                                                                                                          bot.on('message', message => {
+                                                                                                                                    const HP = (Math.floor((51)*Math.random()+50))
+                                                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion guérissante minuscule de saignement")) {
+                                                                                                                                          const embed = new Discord.RichEmbed()
+                                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                             .setColor(3447003)
+                                                                                                                                             .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Saignement' est supprimé !")
+                                                                                                                                            
+                                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                              .setTimestamp()
+                                                                                                                                              message.channel.send({embed})
+                                                                                                                                            }   
+                                                                                                                                          });
                                                                                                                       
-                                                                                                                
+                                                                                                                      
+                                                                                                                                          bot.on('message', message => {
+                                                                                                                                            const HP = (Math.floor((51)*Math.random()+50))
+                                                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion guérissante minuscule de brûlure")) {
+                                                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                                     .setColor(3447003)
+                                                                                                                                                     .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Enflammer' est supprimé !")
+                                                                                                                                                    
+                                                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                                      .setTimestamp()
+                                                                                                                                                      message.channel.send({embed})
+                                                                                                                                                    }   
+                                                                                                                                                  });
+                                                                                                                              
 
                                                                                                                       bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((3)*Math.random()+3))
@@ -12340,6 +12439,22 @@ bot.on('message', message => {
                                                                                                                                       });
 
 
+                                                                                                                                      bot.on('message', message => {
+                                                                                                                        const HP = (Math.floor((81)*Math.random()+120))
+                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de soin")) {
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+                                                                                                                                 .addField(":syringe: Potion moyenne de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                                
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})
+                                                                                                                                }   
+                                                                                                                              });
+
+
                                                                                                                                                                                                                          bot.on('message', message => {
                                                                                                                     if (message.content.startsWith(prefix + "Potion légère de soin")) {
                                                                                                                       const embed = new Discord.RichEmbed()
@@ -12366,6 +12481,34 @@ bot.on('message', message => {
                                                                                                                             message.channel.send({embed})
                                                                                                                           }   
                                                                                                                         });
+
+                                                                                                                        bot.on('message', message => {
+                                                                                                                          if (message.content.startsWith(prefix + "Potion moyenne de force")) {
+                                                                                                                            const embed = new Discord.RichEmbed()
+                                                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                               .setColor(3447003)
+                                                                                                                               .addField(":syringe: Potion moyenne de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 2 plantrus médiocre, 1 plantrus commun, 3 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de force`")
+                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                .setTimestamp()
+                                                                                                                                message.channel.send({embed})
+                                                                                                                              }   
+                                                                                                                            });
+
+                                                                                                                            bot.on('message', message => {
+                                                                                                                              if (message.content.startsWith(prefix + "Potion moyenne de défense")) {
+                                                                                                                                const embed = new Discord.RichEmbed()
+                                                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                   .setColor(3447003)
+                                                                                                                                   .addField(":syringe: Potion moyenne de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal  et d'échantillon de kobolt ainsi que de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 2 plantrus médiocre, 1 plantrus commun, 3 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de défense`")
+                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                    .setTimestamp()
+                                                                                                                                    message.channel.send({embed})
+                                                                                                                                  }   
+                                                                                                                                });
+
+
                                                                                                                         bot.on('message', message => {
                                                                                                                                                                                                                if (message.content.startsWith(prefix + "Potion légère de défense")) {
                                                                                                                         const embed = new Discord.RichEmbed()
@@ -12381,55 +12524,43 @@ bot.on('message', message => {
                                                                                                                         });
 
 
-                                                                                      
+                                                                                                                        bot.on('message', message => {
+                                                                                                                          const HP = (Math.floor((14)*Math.random()+12))
+                                                                                                                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de force")) {
+                                                                                                                                const embed = new Discord.RichEmbed()
+                                                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                   .setColor(3447003)
+                                                                                                                                   .addField(":syringe: Potion moyenne de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
+                                                                                                                               
+                                                                                                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                    .setTimestamp()
+                                                                                                                                    message.channel.send({embed})
+                                                                                                                                  }   
+                                                                                                                                });
+
+                                                                                                                                bot.on('message', message => {
+                                                                                                                                  const HP = (Math.floor((7)*Math.random()+7))
+                                                                                                                                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de défense")) {
+                                                                                                                                        const embed = new Discord.RichEmbed()
+                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                           .setColor(3447003)
+                                                                                                                                           .addField(":syringe: Potion moyenne de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
+                                                                                                                                       
+                                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                            .setTimestamp()
+                                                                                                                                            message.channel.send({embed})
+                                                                                                                                          }   
+                                                                                                                                        });
 
 
-                                                                                                                          bot.on('message', message => {
-                                                                                                            const HP = (Math.floor((41)*Math.random()+60))
-                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de soin")) {
-                                                                                                                  const embed = new Discord.RichEmbed()
-                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                     .setColor(3447003)
-                                                                                                                     .addField(":syringe: Potion légère de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                     .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
-                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                      .setTimestamp()
-                                                                                                                      message.channel.send({embed})
-                                                                                                                    }   
-                                                                                                                  });
+                                                                                                                          
 
                                                                                                                   
 
-                                                                                                                       bot.on('message', message => {
-                                                                                                                        const HP = (Math.floor((6)*Math.random()+5))
-                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de force")) {
-                                                                                                                              const embed = new Discord.RichEmbed()
-                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                 .setColor(3447003)
-                                                                                                                                 .addField(":syringe: Potion légère de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                                 .addField("Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez des dégâts supplémentaires :" , +HP)
-                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                                  .setTimestamp()
-                                                                                                                                  message.channel.send({embed})
-                                                                                                                                }   
-                                                                                                                              });
-
-                                                                                                                               bot.on('message', message => {
-                                                                                                                        const HP = (Math.floor((4)*Math.random()+3))
-                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de défense")) {
-                                                                                                                              const embed = new Discord.RichEmbed()
-                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                 .setColor(3447003)
-                                                                                                                                 .addField(":syringe: Potion légère de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                                 .addField("Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez de la défense supplémentaire :" , +HP)
-                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                                  .setTimestamp()
-                                                                                                                                  message.channel.send({embed})
-                                                                                                                                }   
-                                                                                                                              });
+                                                               
+                                                                                                                               
 
 
 
