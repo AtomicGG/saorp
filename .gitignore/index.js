@@ -9827,184 +9827,154 @@ bot.on('message', message => {
                               .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField(":scales: Casque du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
+                                 .addField(":scales: Casque du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
                                 }   
                               });
 
+                              bot.on('message', message => {
+                                const Défense = (Math.floor((2)*Math.random()+1))
+                                const HP = (Math.floor((11)*Math.random()+10))
+                                if (message.content.startsWith(prefix + "Découverte des épaulières du clan des loups")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Épaulières du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
 
-    bot.on('message', message => {
-                           const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((11)*Math.random()+10))
-                            if (message.content.startsWith(prefix + "Découverte des épaulières du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Epaulières du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
+                                  bot.on('message', message => {
+                                    const Défense = (Math.floor((2)*Math.random()+1))
+                                    const HP = (Math.floor((11)*Math.random()+10))
+                                    if (message.content.startsWith(prefix + "Découverte de la cape du clan des loups")) {
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Cape du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
 
+                                      bot.on('message', message => {
+                                        const Défense = (Math.floor((2)*Math.random()+1))
+                                        const HP = (Math.floor((11)*Math.random()+10))
+                                        if (message.content.startsWith(prefix + "Découverte du plastron du clan des loups")) {
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Plastron du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
 
-    bot.on('message', message => {
-                          const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((11)*Math.random()+10))
-                            if (message.content.startsWith(prefix + "Découverte de la cape du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Cape du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
+                                          bot.on('message', message => {
+                                            const Défense = (Math.floor((2)*Math.random()+1))
+                                            const HP = (Math.floor((11)*Math.random()+10))
+                                            if (message.content.startsWith(prefix + "Découverte des gantelets du clan des loups")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Gantelets du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
 
-
-    bot.on('message', message => {
-                           const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((11)*Math.random()+10))
-                            if (message.content.startsWith(prefix + "Découverte du plastron du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Plastron du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-    bot.on('message', message => {
-                               const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((11)*Math.random()+10))
-                            if (message.content.startsWith(prefix + "Découverte des gantelets du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Gantelets du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-    bot.on('message', message => {
-                              const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((11)*Math.random()+10))
-                            if (message.content.startsWith(prefix + "Découverte de la ceinture du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Ceinture du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
+                                               bot.on('message', message => {
+                                const Défense = (Math.floor((2)*Math.random()+1))
+                                const HP = (Math.floor((11)*Math.random()+10))
+                                if (message.content.startsWith(prefix + "Découverte de la ceinture du clan des loups")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Ceinture du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
 
 
+                                   bot.on('message', message => {
+                                const Défense = (Math.floor((2)*Math.random()+1))
+                                const HP = (Math.floor((11)*Math.random()+10))
+                                if (message.content.startsWith(prefix + "Découverte des jambières du clan des loups")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Jambières du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+
+                                  bot.on('message', message => {
+                                    const Défense = (Math.floor((2)*Math.random()+1))
+                                    const HP = (Math.floor((11)*Math.random()+10))
+                                    if (message.content.startsWith(prefix + "Découverte des bottes du clan des loups")) {
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Bottes du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+
+                                      bot.on('message', message => {
+                                        const Défense = (Math.floor((2)*Math.random()+1))
+                                        const HP = (Math.floor((6)*Math.random()+5))
+                                        if (message.content.startsWith(prefix + "Découverte de l'amulette du clan des loups")) {
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Amulette du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
 
 
-    bot.on('message', message => {
-                              const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((11)*Math.random()+10))
-                            if (message.content.startsWith(prefix + "Découverte des jambières du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Jambières du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-    bot.on('message', message => {
-                               const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((11)*Math.random()+10))
-                            if (message.content.startsWith(prefix + "Découverte des bottes du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Bottes du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
+                                          bot.on('message', message => {
+                                            const Défense = (Math.floor((3)*Math.random()+3))
+                                            const HP = (Math.floor((6)*Math.random()+5))
+                                            const Dégâts = (Math.floor((6)*Math.random()+5))
+                                            if (message.content.startsWith(prefix + "Découverte de l'anneau du clan des loups")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Anneau du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
 
 
 
-    bot.on('message', message => {
-                           const Défense = (Math.floor((2)*Math.random()+1))
-                            const HP = (Math.floor((6)*Math.random()+5))
-                            const Dégâts = (Math.floor((5)*Math.random()+4))
-                            if (message.content.startsWith(prefix + "Découverte de l'amulette du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Amulette du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                         .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
-
-    bot.on('message', message => {
-                           const Défense = (Math.floor((3)*Math.random()+1))
-                            const HP = (Math.floor((6)*Math.random()+5))
-                                                        const Dégâts = (Math.floor((5)*Math.random()+4))
-
-                            if (message.content.startsWith(prefix + "Découverte de l'anneau du clan des loups")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Anneau du clan des loups :" , ":scales: Vous venez de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
 
 bot.on('message', message => {
@@ -10261,113 +10231,119 @@ bot.on('message', message => {
 
 
 
+          bot.on('message', message => {
+            
+            if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à une main")) {
+              const Dégâts = (Math.floor((7)*Math.random()+4))
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                 .setColor(3447003)
+                 .addField(":scales: Epée du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                }   
+              });
+
+              bot.on('message', message => {
+            
+                if (message.content.startsWith(prefix + "Découverte de la dague du clan des loups à une main")) {
+                  const Dégâts = (Math.floor((7)*Math.random()+4))
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Dague du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
 
 
+                  bot.on('message', message => {
+            
+                    if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à une main")) {
+                      const Dégâts = (Math.floor((7)*Math.random()+4))
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":scales: Cimeterre du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
 
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((7)*Math.random()+4))
-                             if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à une main")) {
+                      bot.on('message', message => {
+            
+                if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à une main")) {
+                  const Dégâts = (Math.floor((7)*Math.random()+4))
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Katana du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+            
+                    if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à une main")) {
+                      const Dégâts = (Math.floor((7)*Math.random()+4))
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":scales: Masse du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
+
+
+                      bot.on('message', message => {
+            
+                        if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à une main")) {
+                          const Dégâts = (Math.floor((7)*Math.random()+4))
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":scales: Hache du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+
+
+                          bot.on('message', message => {
+            
+                            if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à une main")) {
+                              const Dégâts = (Math.floor((7)*Math.random()+4))
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField(":scales: Epée du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
+                                 .addField(":scales: Rapière du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
                                 }   
                               });
 
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((7)*Math.random()+4))
-                             if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à une main")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Rapière du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((7)*Math.random()+4))
-                             if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à une main")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Hache du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((7)*Math.random()+4))
-                             if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à une main")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Masse du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((7)*Math.random()+4))
-                             if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à une main")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Katana du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((7)*Math.random()+4))
-                             if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à une main")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Cimeterre du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((7)*Math.random()+4))
-                             if (message.content.startsWith(prefix + "Découverte de la dague du clan des loups à une main")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Dague du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
 bot.on('message', message => {
                                         const Défense = (Math.floor((6)*Math.random()+2))
@@ -10377,9 +10353,8 @@ bot.on('message', message => {
                               .setAuthor(message.author.username , message.author.avatarURL)
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
-                                 .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !")
-                               .addField("Points d'armure :" , +Défense)
-                              .addField("HP :" , +HP)
+                                 .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                              
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
@@ -10387,135 +10362,127 @@ bot.on('message', message => {
                               });
 
 
+                              bot.on('message', message => {
+            
+                                if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à deux mains")) {
+                                  const Dégâts = (Math.floor((13)*Math.random()+8))
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+
+                                  bot.on('message', message => {
+            
+                                    if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à deux mains")) {
+                                      const Dégâts = (Math.floor((13)*Math.random()+8))
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Hache du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+
+                                      bot.on('message', message => {
+            
+                                        if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à deux mains")) {
+                                          const Dégâts = (Math.floor((13)*Math.random()+8))
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Masse du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
+
+                                          bot.on('message', message => {
+            
+                                            if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à deux mains")) {
+                                              const Dégâts = (Math.floor((13)*Math.random()+8))
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
+
+                                              bot.on('message', message => {
+            
+                                                if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à deux mains")) {
+                                                  const Dégâts = (Math.floor((13)*Math.random()+8))
+                                                  const embed = new Discord.RichEmbed()
+                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                     .setColor(3447003)
+                                                     .addField(":scales: Cimeterre du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})
+                                                    }   
+                                                  });
+
+                                                   bot.on('message', message => {
+            
+                                if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à deux mains")) {
+                                  const Dégâts = (Math.floor((13)*Math.random()+8))
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Katana du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+
+                                  bot.on('message', message => {
+            
+                                    if (message.content.startsWith(prefix + "Découverte du glaive du clan des loups à deux mains")) {
+                                      const Dégâts = (Math.floor((13)*Math.random()+8))
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Glaive du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+
+                                      bot.on('message', message => {
+            
+                                        if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
+                                          const Dégâts = (Math.floor((16)*Math.random()+15))
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:crossed_swords: Cette faux offre l'attaque suivante :" , ":crossed_swords: `=Coup du roi déchus : [Vos dégâts]`")
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
 
 
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((13)*Math.random()+8))
-                             if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Epée du clan des loups à deux mains:" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((13)*Math.random()+8))
-                             if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Rapière du clan des loups à deux mains:" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((13)*Math.random()+8))
-                             if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Hache du clan des loups à deux mains:" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((13)*Math.random()+8))
-                             if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Masse du clan des loups à deux mains:" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((13)*Math.random()+8))
-                             if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Katana du clan des loups à deux mains:" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((13)*Math.random()+8))
-                             if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Cimeterre du clan des loups à deux mains:" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((13)*Math.random()+8))
-                             if (message.content.startsWith(prefix + "Découverte du glaive du clan des loups à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField("Glaive du clan des loups à deux mains:" , "Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-bot.on('message', message => {
-                            const Dégâts = (Math.floor((16)*Math.random()+15))
-                             if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: Vous venez de découvrir cet objet !")
-                              .addField("Points de dégâts :" , +Dégâts)
-                              .addField("Cette faux offre l'attaque suivante :" , ":crossed_swords: `=Coup du roi déchus : [Vos dégâts]`")
-                                  .setImage("https://static1.millenium.org/article_old/images/contenu/actus/wow/wow_news_top20armes_numero16_hd.jpg")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
 
 
 
@@ -10713,125 +10680,15 @@ bot.on('message', message => {
 
 
                           
-              
-    
-
-
-
-                          bot.on('message', message => {
-                            const Défense = (Math.floor((4)*Math.random()+1))
-                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau rouillé")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Anneau rouillé :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-
-                          bot.on('message', message => {
-                            const Défense = (Math.floor((4)*Math.random()+1))
-                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette rouillée")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Amulette rouillée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                 .addField("Points d'armure :" , +Défense)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-
-
-                          bot.on('message', message => {
-                            const HP = (Math.floor((3)*Math.random()+3))
-                            const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque rouillé")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Casque rouillé :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                 .addField("HP :" , +HP)
-                                 .addField("Points d'armure :" , +Défense)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-                              bot.on('message', message => {
-                                const HP = (Math.floor((3)*Math.random()+3))
-                                const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières rouillées")) {
-                                  const embed = new Discord.RichEmbed()
-                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                     .setColor(3447003)
-                                     .addField(":scales: Epaulières rouillées :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                     .addField("HP :" , +HP)
-                                     .addField("Points d'armure :" , +Défense)
-                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                      .setTimestamp()
-                                      message.channel.send({embed})
-                                    }   
-                                  });
-
-                                  bot.on('message', message => {
-                                    const HP = (Math.floor((3)*Math.random()+3))
-                                    const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape endommagée")) {
-                                      const embed = new Discord.RichEmbed()
-                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                         .setColor(3447003)
-                                         .addField(":scales: Cape endommagée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                         .addField("HP :" , +HP)
-                                         .addField("Points d'armure :" , +Défense)
-                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                          .setTimestamp()
-                                          message.channel.send({embed})
-                                        }   
-                                      });
-
-                                      bot.on('message', message => {
-                                        const HP = (Math.floor((3)*Math.random()+3))
-                                        const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron rouillé")) {
-                                          const embed = new Discord.RichEmbed()
-                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                             .setColor(3447003)
-                                             .addField(":scales: Plastron rouillé :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                             .addField("HP :" , +HP)
-                                             .addField("Points d'armure :" , +Défense)
-                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                              .setTimestamp()
-                                              message.channel.send({embed})
-                                            }   
-                                          });
-
-
                                           bot.on('message', message => {
-                                            const HP = (Math.floor((3)*Math.random()+3))
-                                            const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets rouillés")) {
+                                            const Défense = (Math.floor((4)*Math.random()+1))
+                                           
+                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau rouillé")) {
                                               const embed = new Discord.RichEmbed()
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
-                                                 .addField(":scales: Gantelets rouillés :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                 .addField("HP :" , +HP)
-                                                 .addField("Points d'armure :" , +Défense)
+                                                 .addField(":scales: Anneau rouillé :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense)
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
@@ -10839,35 +10696,36 @@ bot.on('message', message => {
                                               });
 
 
+
                                               bot.on('message', message => {
-                                                const HP = (Math.floor((3)*Math.random()+3))
-                                                const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture rouillée")) {
+                                                const Défense = (Math.floor((4)*Math.random()+1))
+                                               
+                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette rouillée")) {
                                                   const embed = new Discord.RichEmbed()
                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                      .setColor(3447003)
-                                                     .addField(":scales: Ceinture rouillée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                     .addField("HP :" , +HP)
-                                                     .addField("Points d'armure :" , +Défense)
+                                                     .addField(":scales: Amulette rouillée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense)
                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                       .setTimestamp()
                                                       message.channel.send({embed})
                                                     }   
                                                   });
+    
 
 
+
+                          
                                                   bot.on('message', message => {
                                                     const HP = (Math.floor((3)*Math.random()+3))
                                                     const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières rouillées")) {
+                                                   
+                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque rouillé")) {
                                                       const embed = new Discord.RichEmbed()
                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                          .setColor(3447003)
-                                                         .addField(":scales: Jambières rouillées :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                         .addField("HP :" , +HP)
-                                                         .addField("Points d'armure :" , +Défense)
+                                                         .addField(":scales: Casque rouillé :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                           .setTimestamp()
                                                           message.channel.send({embed})
@@ -10877,19 +10735,119 @@ bot.on('message', message => {
                                                       bot.on('message', message => {
                                                         const HP = (Math.floor((3)*Math.random()+3))
                                                         const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes rouillées")) {
+                                                       
+                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières rouillées")) {
                                                           const embed = new Discord.RichEmbed()
                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                              .setColor(3447003)
-                                                             .addField(":scales: Bottes rouillées :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                             .addField("HP :" , +HP)
-                                                             .addField("Points d'armure :" , +Défense)
+                                                             .addField(":scales: Épaulières rouillées :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
                                                             }   
                                                           });
+
+                                                          bot.on('message', message => {
+                                                        const HP = (Math.floor((3)*Math.random()+3))
+                                                        const Défense = (Math.floor((2-(0.50))*Math.random()+1))
+                                                       
+                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape endommagée")) {
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                             .setColor(3447003)
+                                                             .addField(":scales: Cape endommagée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed})
+                                                            }   
+                                                          });
+
+                                                          bot.on('message', message => {
+                                                        const HP = (Math.floor((3)*Math.random()+3))
+                                                        const Défense = (Math.floor((2-(0.50))*Math.random()+1))
+                                                       
+                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron rouillé")) {
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                             .setColor(3447003)
+                                                             .addField(":scales: Plastron rouillé :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed})
+                                                            }   
+                                                          });
+
+                                                          bot.on('message', message => {
+                                                            const HP = (Math.floor((3)*Math.random()+3))
+                                                            const Défense = (Math.floor((2-(0.50))*Math.random()+1))
+                                                           
+                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets rouillés")) {
+                                                              const embed = new Discord.RichEmbed()
+                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                 .setColor(3447003)
+                                                                 .addField(":scales: Gantelets rouillés :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})
+                                                                }   
+                                                              });
+
+                                                              bot.on('message', message => {
+                                                                const HP = (Math.floor((3)*Math.random()+3))
+                                                                const Défense = (Math.floor((2-(0.50))*Math.random()+1))
+                                                               
+                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture rouillée")) {
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                     .setColor(3447003)
+                                                                     .addField(":scales: Ceinture rouillée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                      .setTimestamp()
+                                                                      message.channel.send({embed})
+                                                                    }   
+                                                                  });
+        
+    
+
+    
+                                                                  bot.on('message', message => {
+                                                                    const HP = (Math.floor((3)*Math.random()+3))
+                                                                    const Défense = (Math.floor((2-(0.50))*Math.random()+1))
+                                                                   
+                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières rouillées")) {
+                                                                      const embed = new Discord.RichEmbed()
+                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                         .setColor(3447003)
+                                                                         .addField(":scales: Jambières rouillées :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                          .setTimestamp()
+                                                                          message.channel.send({embed})
+                                                                        }   
+                                                                      });
+            
+                                                                      bot.on('message', message => {
+                                                                        const HP = (Math.floor((3)*Math.random()+3))
+                                                                        const Défense = (Math.floor((2-(0.50))*Math.random()+1))
+                                                                       
+                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes rouillées")) {
+                                                                          const embed = new Discord.RichEmbed()
+                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                             .setColor(3447003)
+                                                                             .addField(":scales: Bottes rouillées :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})
+                                                                            }   
+                                                                          });
+                
+                         
 
   
   bot.on('message', message => {
@@ -11167,400 +11125,316 @@ bot.on('message', message => {
 
 
 
+bot.on('message', message => {
+const HP = (Math.floor((3)*Math.random()+3))
+const Défense = (Math.floor((2-(0.80))*Math.random()))
+if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau arrachée")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Casque en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
+
+bot.on('message', message => {
+  const HP = (Math.floor((3)*Math.random()+3))
+  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau arrachée")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Épaulières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
+
+  bot.on('message', message => {
+    const HP = (Math.floor((3)*Math.random()+3))
+    const Défense = (Math.floor((2-(0.80))*Math.random()))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau arrachée")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
+
+bot.on('message', message => {
+  const HP = (Math.floor((3)*Math.random()+3))
+  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau arrachée")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Cape en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
+
+  bot.on('message', message => {
+    const HP = (Math.floor((3)*Math.random()+3))
+    const Défense = (Math.floor((2-(0.80))*Math.random()))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau arrachée")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
 
 
+    bot.on('message', message => {
+      const HP = (Math.floor((3)*Math.random()+3))
+      const Défense = (Math.floor((2-(0.80))*Math.random()))
+      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau arrachée")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Ceinture en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
 
       bot.on('message', message => {
         const HP = (Math.floor((3)*Math.random()+3))
         const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau arrachée")) {
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau arrachée")) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Jambières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+        }   
+        });
+
+        bot.on('message', message => {
+          const HP = (Math.floor((3)*Math.random()+3))
+          const Défense = (Math.floor((2-(0.80))*Math.random()))
+          if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau arrachée")) {
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Casque en peau arrachée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Bottes en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
           });
-
-      
 
           bot.on('message', message => {
             const HP = (Math.floor((6)*Math.random()+6))
             const Défense = (Math.floor((2-(0.50))*Math.random()))
             if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau résistante")) {
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+            message.channel.send({embed})
+            }   
+            });
+
+            bot.on('message', message => {
+              const HP = (Math.floor((6)*Math.random()+6))
+              const Défense = (Math.floor((2-(0.50))*Math.random()))
+              if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau résistante")) {
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
-                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                 .setColor(3447003)
-                 .addField(":scales: Casque en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                 .addField("HP :" , +HP)
-                 .addField("Points d'armure :" , +Défense)
-                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                  .setTimestamp()
-                  message.channel.send({embed})
-                }   
-              });
-
-
-
-          
-      bot.on('message', message => {
-        const HP = (Math.floor((3)*Math.random()+3))
-        const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Epaulières en peau arrachée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(3447003)
+              .addField(":scales: Épaulières en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
-          });
-
-
-          
-
-       
+              }   
+              });
 
               bot.on('message', message => {
                 const HP = (Math.floor((6)*Math.random()+6))
                 const Défense = (Math.floor((2-(0.50))*Math.random()))
-                if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau résistante")) {
+                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau résistante")) {
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Plastron en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+                message.channel.send({embed})
+                }   
+                });
+  
+                bot.on('message', message => {
+                  const HP = (Math.floor((6)*Math.random()+6))
+                  const Défense = (Math.floor((2-(0.50))*Math.random()))
+                  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau résistante")) {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
-                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                     .setColor(3447003)
-                     .addField(":scales: Epaulières en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                     .addField("HP :" , +HP)
-                     .addField("Points d'armure :" , +Défense)
-                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                      .setTimestamp()
-                      message.channel.send({embed})
-                    }   
+                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField(":scales: Cape en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                  }   
                   });
-
-          
-
-              
-      bot.on('message', message => {
-        const HP = (Math.floor((3)*Math.random()+3))
-        const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Cape en peau arrachée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-           
 
                   bot.on('message', message => {
                     const HP = (Math.floor((6)*Math.random()+6))
                     const Défense = (Math.floor((2-(0.50))*Math.random()))
-                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau résistante")) {
-                      const embed = new Discord.RichEmbed()
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                         .setColor(3447003)
-                         .addField(":scales: Cape en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                         .addField("HP :" , +HP)
-                         .addField("Points d'armure :" , +Défense)
-                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                          .setTimestamp()
-                          message.channel.send({embed})
-                        }   
-                      });
+                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau résistante")) {
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Gantelets en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                    .setTimestamp()
+                    message.channel.send({embed})
+                    }   
+                    });
 
-            
+                    bot.on('message', message => {
+              const HP = (Math.floor((6)*Math.random()+6))
+              const Défense = (Math.floor((2-(0.50))*Math.random()))
+              if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau résistante")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(3447003)
+              .addField(":scales: Ceinture en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+              }   
+              });
+
+              bot.on('message', message => {
+                const HP = (Math.floor((6)*Math.random()+6))
+                const Défense = (Math.floor((2-(0.50))*Math.random()))
+                if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau résistante")) {
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Jambières en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+                message.channel.send({embed})
+                }   
+                });
+
+                bot.on('message', message => {
+                  const HP = (Math.floor((6)*Math.random()+6))
+                  const Défense = (Math.floor((2-(0.50))*Math.random()))
+                  if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau résistante")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField(":scales: Bottes en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                  }   
+                  });
+
+                  bot.on('message', message => {
+                    const HP = (Math.floor((2)*Math.random()+1))
+                                            const Dégâts = (Math.floor((3)*Math.random()+1))
+                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette en coeur d'animal faible")) {
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Amulette en coeur d'animal faible :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                    .setTimestamp()
+                    message.channel.send({embed})
+                    }   
+                    });
+
+                    bot.on('message', message => {
+                    const HP = (Math.floor((2)*Math.random()+1))
+                                            const Dégâts = (Math.floor((3)*Math.random()+1))
+                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau en coeur d'animal faible")) {
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Anneau en coeur d'animal faible :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                    .setTimestamp()
+                    message.channel.send({embed})
+                    }   
+                    });
 
                   
-      bot.on('message', message => {
-        const HP = (Math.floor((3)*Math.random()+3))
-        const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Plastron en peau arrachée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
 
-
-                
+                    bot.on('message', message => {
+                      const HP = (Math.floor((3)*Math.random()+2))
+                                            const Dégâts = (Math.floor((4)*Math.random()+2))
+                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette du croc")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(3447003)
+                      .addField(":scales: Amulette du croc :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                      }   
+                      });
 
                       bot.on('message', message => {
-                        const HP = (Math.floor((6)*Math.random()+6))
-                        const Défense = (Math.floor((2-(0.50))*Math.random()))
-                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau résistante")) {
-                          const embed = new Discord.RichEmbed()
-                          .setAuthor(message.author.username , message.author.avatarURL)
-                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                             .setColor(3447003)
-                             .addField(":scales: Plastron en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                             .addField("HP :" , +HP)
-                             .addField("Points d'armure :" , +Défense)
-                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                              .setTimestamp()
-                              message.channel.send({embed})
-                            }   
-                          });
-
-
-                      
-      bot.on('message', message => {
-        const HP = (Math.floor((3)*Math.random()+3))
-        const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Gantelets en peau arrachée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-                 
-
-                          bot.on('message', message => {
-                            const HP = (Math.floor((6)*Math.random()+6))
-                            const Défense = (Math.floor((2-(0.50))*Math.random()))
-                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau résistante")) {
-                              const embed = new Discord.RichEmbed()
-                              .setAuthor(message.author.username , message.author.avatarURL)
-                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                 .setColor(3447003)
-                                 .addField(":scales: Gantelets en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                 .addField("HP :" , +HP)
-                                 .addField("Points d'armure :" , +Défense)
-                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                  .setTimestamp()
-                                  message.channel.send({embed})
-                                }   
-                              });
-
-                
-
-                          
-      bot.on('message', message => {
-        const HP = (Math.floor((3)*Math.random()+3))
-        const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Ceinture en peau arraché :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-                     
-
-                              bot.on('message', message => {
-                                const HP = (Math.floor((6)*Math.random()+6))
-                                const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau résistante")) {
-                                  const embed = new Discord.RichEmbed()
-                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                     .setColor(3447003)
-                                     .addField(":scales: Ceinture en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                     .addField("HP :" , +HP)
-                                     .addField("Points d'armure :" , +Défense)
-                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                      .setTimestamp()
-                                      message.channel.send({embed})
-                                    }   
-                                  });
-
-                              
-      bot.on('message', message => {
-        const HP = (Math.floor((3)*Math.random()+3))
-        const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Jambières en peau arrachée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-                        
-
-                                  bot.on('message', message => {
-                                    const HP = (Math.floor((6)*Math.random()+6))
-                                    const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau résistante")) {
-                                      const embed = new Discord.RichEmbed()
-                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                         .setColor(3447003)
-                                         .addField(":scales: Jambières en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                         .addField("HP :" , +HP)
-                                         .addField("Points d'armure :" , +Défense)
-                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                          .setTimestamp()
-                                          message.channel.send({embed})
-                                        }   
-                                      });
-
-                         
-
-                                  
-      bot.on('message', message => {
-        const HP = (Math.floor((3)*Math.random()+3))
-        const Défense = (Math.floor((2-(0.80))*Math.random()))
-        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau arrachée")) {
-          const embed = new Discord.RichEmbed()
-          .setAuthor(message.author.username , message.author.avatarURL)
-             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-             .setColor(3447003)
-             .addField(":scales: Bottes en peau arrachée :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-             .addField("HP :" , +HP)
-             .addField("Points d'armure :" , +Défense)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-              message.channel.send({embed})
-            }   
-          });
-
-
-                              
-
-                                      bot.on('message', message => {
-                                        const HP = (Math.floor((6)*Math.random()+6))
-                                        const Défense = (Math.floor((2-(0.50))*Math.random()))
-                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau résistante")) {
-                                          const embed = new Discord.RichEmbed()
-                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                             .setColor(3447003)
-                                             .addField(":scales: Bottes en peau résistante :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                             .addField("HP :" , +HP)
-                                             .addField("Points d'armure :" , +Défense)
-                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                              .setTimestamp()
-                                              message.channel.send({embed})
-                                            }   
-                                          });
-
-
-                                   
-                                          bot.on('message', message => {
-                                            const HP = (Math.floor((2)*Math.random()+1))
-                                            const Dégâts = (Math.floor((3)*Math.random()+1))
-                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette en coeur d'animal faible")) {
-                                              const embed = new Discord.RichEmbed()
-                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                 .setColor(3447003)
-                                                 .addField(":scales: Amulette en coeur d'animal faible :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                 .addField("HP :" , +HP)
-                                                 .addField("Points de dégâts :" , +Dégâts)
-                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                  .setTimestamp()
-                                                  message.channel.send({embed})
-                                                }   
-                                              });
-
+                        const HP = (Math.floor((3)*Math.random()+2))
+                                            const Dégâts = (Math.floor((4)*Math.random()+2))
+                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau du croc")) {
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Anneau du croc :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                        .setTimestamp()
+                        message.channel.send({embed})
+                        }   
+                        });
+                                
                                   
 
-                                              bot.on('message', message => {
-                                                const HP = (Math.floor((2)*Math.random()+1))
-                                            const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau en coeur d'animal faible")) {
-                                                  const embed = new Discord.RichEmbed()
-                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                     .setColor(3447003)
-                                                     .addField(":scales: Anneau en coeur d'animal faible :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                     .addField("HP :" , +HP)
-                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                      .setTimestamp()
-                                                      message.channel.send({embed})
-                                                    }   
-                                                  });
-    
+                                        
                                               
                                        
 
-                                              bot.on('message', message => {
-                                                const HP = (Math.floor((3)*Math.random()+2))
-                                            const Dégâts = (Math.floor((4)*Math.random()+2))
-                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette du croc")) {
-                                                  const embed = new Discord.RichEmbed()
-                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                     .setColor(3447003)
-                                                     .addField(":scales: Amulette du croc :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                     .addField("HP :" , +HP)
-                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                      .setTimestamp()
-                                                      message.channel.send({embed})
-                                                    }   
-                                                  });
-    
-
-                                        
-                                              bot.on('message', message => {
-                                                const HP = (Math.floor((3)*Math.random()+2))
-                                            const Dégâts = (Math.floor((4)*Math.random()+2))
-                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau du croc")) {
-                                                  const embed = new Discord.RichEmbed()
-                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                     .setColor(3447003)
-                                                     .addField(":scales: Anneau du croc :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                     .addField("HP :" , +HP)
-                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                      .setTimestamp()
-                                                      message.channel.send({embed})
-                                                    }   
-                                                  });
+                                             
     
 
 
@@ -11764,257 +11638,223 @@ bot.on('message', message => {
 
 
 
+bot.on('message', message => {
+const Dégâts = (Math.floor((5)*Math.random()+2))
+if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique à deux mains")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Epée basique à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
 
 
 
 
-                                                  bot.on('message', message => {
-                                                const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique à deux mains")) {
-                                                      const embed = new Discord.RichEmbed()
-                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                         .setColor(3447003)
-                                                         .addField(":scales: Epée basique à deux mains :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                         .addField("Points de dégâts :" , +Dégâts)
-                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                          .setTimestamp()
-                                                          message.channel.send({embed})
-                                                        }   
-                                                      });
-
-                                                  
+bot.on('message', message => {
+  const Dégâts = (Math.floor((5)*Math.random()+2))
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique à deux mains")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Hache basique à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
 
 
-                                                      bot.on('message', message => {
-                                                        const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique à une main")) {
-                                                              const embed = new Discord.RichEmbed()
-                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                 .setColor(3447003)
-                                                                 .addField(":scales: Epée basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                 .addField("Points de dégâts :" , +Dégâts)
-                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                  .setTimestamp()
-                                                                  message.channel.send({embed})
-                                                                }   
-                                                              });
+  bot.on('message', message => {
+    const Dégâts = (Math.floor((5)*Math.random()+2))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique à deux mains")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Masse basique à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
+
+    bot.on('message', message => {
+      const Dégâts = (Math.floor((5)*Math.random()+2))
+      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Cimeterre basique à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
+
+      bot.on('message', message => {
+        const Dégâts = (Math.floor((5)*Math.random()+2))
+        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à deux mains")) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Katana basique à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+        }   
+        });
+
+        bot.on('message', message => {
+          const Dégâts = (Math.floor((5)*Math.random()+2))
+          if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive basique à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Glaive basique à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
+          });
+
+          bot.on('message', message => {
+            const Dégâts = (Math.floor((5)*Math.random()+2))
+            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique à deux mains")) {
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Rapière basique à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+            message.channel.send({embed})
+            }   
+            });
+
+            bot.on('message', message => {
+              const Dégâts = (Math.floor((3)*Math.random()+1))
+              if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique à une main")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(3447003)
+              .addField(":scales: Epée basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+              }   
+              });
+
+              bot.on('message', message => {
+                const Dégâts = (Math.floor((3)*Math.random()+1))
+                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique à une main")) {
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Hache basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+                message.channel.send({embed})
+                }   
+                });
+
+                bot.on('message', message => {
+                  const Dégâts = (Math.floor((3)*Math.random()+1))
+                  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique à une main")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField(":scales: Masse basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                  }   
+                  });
+
+                  bot.on('message', message => {
+                    const Dégâts = (Math.floor((3)*Math.random()+1))
+                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à une main")) {
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                    .setTimestamp()
+                    message.channel.send({embed})
+                    }   
+                    });
+
+                    bot.on('message', message => {
+                      const Dégâts = (Math.floor((3)*Math.random()+1))
+                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague basique à une main")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(3447003)
+                      .addField(":scales: Dague basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                      }   
+                      });
+
+                      bot.on('message', message => {
+                        const Dégâts = (Math.floor((3)*Math.random()+1))
+                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à une main")) {
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                        .setTimestamp()
+                        message.channel.send({embed})
+                        }   
+                        });
+
+                        bot.on('message', message => {
+                          const Dégâts = (Math.floor((3)*Math.random()+1))
+                          if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique à une main")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                          .setColor(3447003)
+                          .addField(":scales: Rapière basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                          }   
+                          });
 
 
-                                                      bot.on('message', message => {
-                                                        const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique à deux mains")) {
-                                                              const embed = new Discord.RichEmbed()
-                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                 .setColor(3447003)
-                                                                 .addField(":scales: Masse basique à deux mains :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                 .addField("Points de dégâts :" , +Dégâts)
-                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                  .setTimestamp()
-                                                                  message.channel.send({embed})
-                                                                }   
-                                                              });
-
-                                                     
-
-                                                          bot.on('message', message => {
-                                                            const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique à une main")) {
-                                                                  const embed = new Discord.RichEmbed()
-                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                     .setColor(3447003)
-                                                                     .addField(":scales: Masse basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                      .setTimestamp()
-                                                                      message.channel.send({embed})
-                                                                    }   
-                                                                  });
+                          bot.on('message', message => {
+                            const HP = (Math.floor((7)*Math.random()+3))
+                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier basique à une main")) {
+                            const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username , message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Bouclier basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
+                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                            .setTimestamp()
+                            message.channel.send({embed})
+                            }   
+                            });
 
 
-                                                     
-
-                                                          bot.on('message', message => {
-                                                            const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique à deux mains")) {
-                                                                  const embed = new Discord.RichEmbed()
-                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                     .setColor(3447003)
-                                                                     .addField(":scales: Hache basique à deux mains :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                      .setTimestamp()
-                                                                      message.channel.send({embed})
-                                                                    }   
-                                                                  });
-
-                                                          
-
-                                                     
-
-                                                          bot.on('message', message => {
-                                                            const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique à une main")) {
-                                                                  const embed = new Discord.RichEmbed()
-                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                     .setColor(3447003)
-                                                                     .addField(":scales: Hache basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                      .setTimestamp()
-                                                                      message.channel.send({embed})
-                                                                    }   
-                                                                  });
-
-
-                                                          
-
-                                                              bot.on('message', message => {
-                                                                const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique à deux mains")) {
-                                                                      const embed = new Discord.RichEmbed()
-                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                         .setColor(3447003)
-                                                                         .addField(":scales: Rapière basique à deux mains :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                         .addField("Points de dégâts :" , +Dégâts)
-                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                          .setTimestamp()
-                                                                          message.channel.send({embed})
-                                                                        }   
-                                                                      });
-
-                                                              
-
-                                                                  bot.on('message', message => {
-                                                                    const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique à une main")) {
-                                                                          const embed = new Discord.RichEmbed()
-                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                             .setColor(3447003)
-                                                                             .addField(":scales: Rapière basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                             .addField("Points de dégâts :" , +Dégâts)
-                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                              .setTimestamp()
-                                                                              message.channel.send({embed})
-                                                                            }   
-                                                                          });
-
-                                  
-
-                                
-                                                             
-
-                                                                  bot.on('message', message => {
-                                                                    const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à deux mains")) {
-                                                                          const embed = new Discord.RichEmbed()
-                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                             .setColor(3447003)
-                                                                             .addField(":scales: Cimeterre basique à deux main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                             .addField("Points de dégâts :" , +Dégâts)
-                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                              .setTimestamp()
-                                                                              message.channel.send({embed})
-                                                                            }   
-                                                                          });
-
-                                                                  
-
-                                
-                                                             
-
-                                                                  bot.on('message', message => {
-                                                                    const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à une main")) {
-                                                                          const embed = new Discord.RichEmbed()
-                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                             .setColor(3447003)
-                                                                             .addField(":scales: Cimeterre basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                             .addField("Points de dégâts :" , +Dégâts)
-                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                              .setTimestamp()
-                                                                              message.channel.send({embed})
-                                                                            }   
-                                                                          });
-
-                                                               
-
-                                                                      bot.on('message', message => {
-                                                                        const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à deux mains")) {
-                                                                              const embed = new Discord.RichEmbed()
-                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                 .setColor(3447003)
-                                                                                 .addField(":scales: Katana basique à deux mains :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                 .addField("Points de dégâts :" , +Dégâts)
-                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                  .setTimestamp()
-                                                                                  message.channel.send({embed})
-                                                                                }   
-                                                                              });
-
-                                                                     
-                                                                          bot.on('message', message => {
-                                                                            const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à une main")) {
-                                                                                  const embed = new Discord.RichEmbed()
-                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                     .setColor(3447003)
-                                                                                     .addField(":scales: Katana basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                      .setTimestamp()
-                                                                                      message.channel.send({embed})
-                                                                                    }   
-                                                                                  });
-
-                                                                      
-                                                                          
-
-                                                                          bot.on('message', message => {
-                                                                            const Dégâts = (Math.floor((5)*Math.random()+2))
-                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive basique à deux mains")) {
-                                                                                  const embed = new Discord.RichEmbed()
-                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                     .setColor(3447003)
-                                                                                     .addField(":scales: Glaive basique à deux mains :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                     .addField("Points de dégâts :" , +Dégâts)
-                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                      .setTimestamp()
-                                                                                      message.channel.send({embed})
-                                                                                    }   
-                                                                                  });
-
-                                                                          
-
-                                                                              bot.on('message', message => {
-                                                                                const Dégâts = (Math.floor((3)*Math.random()+1))
-                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague basique à une main")) {
-                                                                                      const embed = new Discord.RichEmbed()
-                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                         .setColor(3447003)
-                                                                                         .addField(":scales: Dague basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                         .addField("Points de dégâts :" , +Dégâts)
-                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                          .setTimestamp()
-                                                                                          message.channel.send({embed})
-                                                                                        }   
-                                                                                      });
-
-                                                                              bot.on('message', message => {
+            bot.on('message', message => {
                                                                                 if (message.content.startsWith(prefix + "Bouclier basique à une main")) {
                                                                                   const embed = new Discord.RichEmbed()
                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
@@ -12028,20 +11868,7 @@ bot.on('message', message => {
                                                                                     }   
                                                                                   });
 
-                                                                                  bot.on('message', message => {
-                                                                                    const HP = (Math.floor((7)*Math.random()+3))
-                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier basique à une main")) {
-                                                                                          const embed = new Discord.RichEmbed()
-                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                             .setColor(3447003)
-                                                                                             .addField(":scales: Bouclier basique à une main :" , ":scales: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                             .addField("HP :" , +HP)
-                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                              .setTimestamp()
-                                                                                              message.channel.send({embed})
-                                                                                            }   
-                                                                                          });
+                                                                                 
 
                                                                                   
                                                                               bot.on('message', message => {
@@ -12064,7 +11891,7 @@ bot.on('message', message => {
                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                              .setColor(3447003)
-                                                                                             .addField(":scroll: Parchemin de poison faible :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
+                                                                                             .addField(":scroll: Parchemin de poison faible :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégât à un ennemis : `=Poison faible`")
                                                                                              .addField("Chaque fois que vous infligez au moins 1 point de dégât à un ennemis :" , "=Poison faible")
                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                               .setTimestamp()
@@ -12081,7 +11908,7 @@ bot.on('message', message => {
                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                      .setColor(3447003)
-                                                                                                     .addField("Poison faible :" , "Vous n'arrivez pas à empoisonner votre cible...")
+                                                                                                     .addField(":crossed_swords: Poison faible :" , ":crossed_swords: Vous n'arrivez pas à empoisonner votre cible...")
                                                                                                       .setTimestamp()
                                                                                                       message.channel.send({embed})}
                                                                                                     
@@ -12090,11 +11917,17 @@ bot.on('message', message => {
                                                                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                    .setColor(3447003)
-                                                                                                   .addField("Poison faible :" , "Vous arrivez à empoisonner votre cible ce qui lui inflige " +Dégâts+ " points de dégâts !")
+                                                                                                   .addField(":crossed_swords: Poison faible :" , ":crossed_swords: Vous arrivez à empoisonner votre cible ce qui lui inflige " +Dégâts+ " points de dégâts, l'armure ne réduit pas les dégâts !")
                                                                                                     .setTimestamp()
                                                                                                     message.channel.send({embed})}
                                                                                               }
                                                                                               });
+
+
+
+
+
+
 
 
                                                                                   bot.on('message', message => {
@@ -12149,6 +11982,17 @@ bot.on('message', message => {
                                                                                             }   
                                                                                           });
 
+
+
+
+
+
+
+
+
+
+
+
                                                                                       bot.on('message', message => {
                                                                                         const HP = (Math.floor((11)*Math.random()+10))
                                                                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de renard")) {
@@ -12156,69 +12000,59 @@ bot.on('message', message => {
                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                  .setColor(3447003)
-                                                                                                 .addField(":meat_on_bone: Ragoût de renard :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                 .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
+                                                                                                 .addField(":meat_on_bone: Ragoût de renard :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                 
                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                   .setTimestamp()
                                                                                                   message.channel.send({embed})
                                                                                                 }   
                                                                                               });
     
-                                                                                      
-
-
-                                                                                          bot.on('message', message => {
-                                                                                            const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de sanglier")) {
-                                                                                                  const embed = new Discord.RichEmbed()
-                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                     .setColor(3447003)
-                                                                                                     .addField(":meat_on_bone: Ragoût de sanglier :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                     .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
-                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                      .setTimestamp()
-                                                                                                      message.channel.send({embed})
-                                                                                                    }   
-                                                                                                  });
-        
-
-
-                                                                                         
-
                                                                                               bot.on('message', message => {
                                                                                                 const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de chien")) {
+                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
                                                                                                       const embed = new Discord.RichEmbed()
                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                          .setColor(3447003)
-                                                                                                         .addField(":meat_on_bone: Ragoût de chien :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                         .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
+                                                                                                         .addField(":meat_on_bone: Ragoût de lapin :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                         
                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                           .setTimestamp()
                                                                                                           message.channel.send({embed})
                                                                                                         }   
                                                                                                       });
             
-
-
-                                                                                              
-
                                                                                                       bot.on('message', message => {
                                                                                                         const HP = (Math.floor((11)*Math.random()+10))
-                                                                                                          if (message.content === prefix + "Achat/fabrication/découverte du ragoût de lapin") {
+                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de chien")) {
                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                  .setColor(3447003)
-                                                                                                                 .addField(":meat_on_bone: Ragoût de lapin :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                 .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
+                                                                                                                 .addField(":meat_on_bone: Ragoût de chien :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                 
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
                                                                                                                 }   
                                                                                                               });
+                    
+                                                                                                              bot.on('message', message => {
+                                                                                                                const HP = (Math.floor((11)*Math.random()+10))
+                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de sanglier")) {
+                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                         .setColor(3447003)
+                                                                                                                         .addField(":meat_on_bone: Ragoût de sanglier :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                         
+                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                          .setTimestamp()
+                                                                                                                          message.channel.send({embed})
+                                                                                                                        }   
+                                                                                                                      });
+                            
 
 
                                                                                                               bot.on('message', message => {
@@ -12239,21 +12073,67 @@ bot.on('message', message => {
                     
 
 
-                                                                                                  bot.on('message', message => {
-                                                                                                    const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                    if (message.content === prefix + "Achat/fabrication/découverte du ragoût de lapin géant") {
-                                                                                                          const embed = new Discord.RichEmbed()
-                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                             .setColor(3447003)
-                                                                                                             .addField(":meat_on_bone: Ragoût de lapin géant :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                             .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
-                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                              .setTimestamp()
-                                                                                                              message.channel.send({embed})
-                                                                                                            }   
-                                                                                                          });
-                
+                                                                                                                  bot.on('message', message => {
+                                                                                                                    const HP = (Math.floor((21)*Math.random()+20))
+                                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de renard")) {
+                                                                                                                          const embed = new Discord.RichEmbed()
+                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                             .setColor(3447003)
+                                                                                                                             .addField(":meat_on_bone: Ragoût de lapin géant :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                             
+                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                              .setTimestamp()
+                                                                                                                              message.channel.send({embed})
+                                                                                                                            }   
+                                                                                                                          });
+
+                                                                                                                            bot.on('message', message => {
+                                                                                        const HP = (Math.floor((21)*Math.random()+20))
+                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de taupe")) {
+                                                                                              const embed = new Discord.RichEmbed()
+                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                 .setColor(3447003)
+                                                                                                 .addField(":meat_on_bone: Ragoût de taupe :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                 
+                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                  .setTimestamp()
+                                                                                                  message.channel.send({embed})
+                                                                                                }   
+                                                                                              });
+    
+                                
+                                                                                              bot.on('message', message => {
+                                                                                                const HP = (Math.floor((21)*Math.random()+20))
+                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
+                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                         .setColor(3447003)
+                                                                                                         .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                         
+                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                          .setTimestamp()
+                                                                                                          message.channel.send({embed})
+                                                                                                        }   
+                                                                                                      });
+            
+                                                                                                      bot.on('message', message => {
+                                                                                                        const HP = (Math.floor((41)*Math.random()+40))
+                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup de sang")) {
+                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                 .setColor(3447003)
+                                                                                                                 .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                 
+                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                  .setTimestamp()
+                                                                                                                  message.channel.send({embed})
+                                                                                                                }   
+                                                                                                              });
+                    
                 
 
                                       
@@ -12290,20 +12170,7 @@ bot.on('message', message => {
                                                                                                               }   
                                                                                                             });
 
-                                                                                                          bot.on('message', message => {
-                                                                                                            const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                                 if (message.content === prefix + "Achat/fabrication/découverte du ragoût de loup") {
-                                                                                                                  const embed = new Discord.RichEmbed()
-                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                     .setColor(3447003)
-                                                                                                                     .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                     .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
-                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                      .setTimestamp()
-                                                                                                                      message.channel.send({embed})
-                                                                                                                    }   
-                                                                                                                  });
+                                                                                                          
                         
 
                                                                                                           bot.on('message', message => {
@@ -12320,20 +12187,7 @@ bot.on('message', message => {
                                                                                                                 }   
                                                                                                               });
 
-                                                                                                              bot.on('message', message => {
-                                                                                                                const HP = (Math.floor((41)*Math.random()+40))
-                                                                                                                     if (message.content === prefix + "Achat/fabrication/découverte du ragoût de loup de sang") {
-                                                                                                                      const embed = new Discord.RichEmbed()
-                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                         .setColor(3447003)
-                                                                                                                         .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                         .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
-                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                          .setTimestamp()
-                                                                                                                          message.channel.send({embed})
-                                                                                                                        }   
-                                                                                                                      });
+                                                                                                              
                             
 
                                                                                                           
@@ -12341,20 +12195,7 @@ bot.on('message', message => {
 
                                                                                                              
 
-                                                                                                                  bot.on('message', message => {
-                                                                                                                    const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de taupe")) {
-                                                                                                                          const embed = new Discord.RichEmbed()
-                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                             .setColor(3447003)
-                                                                                                                             .addField(":meat_on_bone: Ragoût de taupe :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                             .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
-                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                              .setTimestamp()
-                                                                                                                              message.channel.send({embed})
-                                                                                                                            }   
-                                                                                                                          });
+                                                                                                                  
                                 
 
                                                                                                                   bot.on('message', message => {
@@ -12406,14 +12247,29 @@ bot.on('message', message => {
                                                                                                                 
 
                                                                                                                       bot.on('message', message => {
-                                                                                                                        const HP = (Math.floor((3)*Math.random()+2))
+                                                                                                                        const HP = (Math.floor((3)*Math.random()+3))
                                                                                                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion faible de force")) {
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
-                                                                                                                                 .addField(":syringe: Potion faible de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                                 .addField("Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez des dégâts supplémentaires :" , +HP)
+                                                                                                                                 .addField(":syringe: Potion faible de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
+                                                                                                                             
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})
+                                                                                                                                }   
+                                                                                                                              });
+
+                                                                                                                              bot.on('message', message => {
+                                                                                                                        const HP = (Math.floor((6)*Math.random()+5))
+                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de force")) {
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+                                                                                                                                 .addField(":syringe: Potion légère de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
+                                                                                                                             
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
@@ -12421,17 +12277,30 @@ bot.on('message', message => {
                                                                                                                               });
 
 
-                                                                                                                      
+                                                                                                                              bot.on('message', message => {
+                                                                                                                                const HP = (Math.floor((3)*Math.random()+1))
+                                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion faible de défense")) {
+                                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                         .setColor(3447003)
+                                                                                                                                         .addField(":syringe: Potion faible de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
+                                                                                                                                         
+                                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                          .setTimestamp()
+                                                                                                                                          message.channel.send({embed})
+                                                                                                                                        }   
+                                                                                                                                      });
 
                                                                                                                           bot.on('message', message => {
-                                                                                                                            const HP = (Math.floor((2)*Math.random()+1))
-                                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion faible de défense")) {
+                                                                                                                            const HP = (Math.floor((4)*Math.random()+3))
+                                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de défense")) {
                                                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                      .setColor(3447003)
-                                                                                                                                     .addField(":syringe: Potion faible de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !")
-                                                                                                                                     .addField("Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez de la défense supplémentaire :" , +HP)
+                                                                                                                                     .addField(":syringe: Potion légère de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
+                                                                                                                                     
                                                                                                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                       .setTimestamp()
                                                                                                                                       message.channel.send({embed})
@@ -12447,13 +12316,28 @@ bot.on('message', message => {
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
-                                                                                                                                 .addField(":syringe: Potion faible de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !")
-                                                                                                                                 .addField("Lorsque vous utilisez cet objet, vous regagnez des HP :" , +HP)
+                                                                                                                                 .addField(":syringe: Potion faible de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                                
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
                                                                                                                                 }   
                                                                                                                               });
+
+                                                                                                                              bot.on('message', message => {
+                                                                                                                                const HP = (Math.floor((41)*Math.random()+60))
+                                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de soin")) {
+                                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                         .setColor(3447003)
+                                                                                                                                         .addField(":syringe: Potion légère de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                                        
+                                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                          .setTimestamp()
+                                                                                                                                          message.channel.send({embed})
+                                                                                                                                        }   
+                                                                                                                                      });
 
 
                                                                                                                                                                                                                          bot.on('message', message => {
@@ -12518,7 +12402,7 @@ bot.on('message', message => {
                                                                                                                   
 
                                                                                                                        bot.on('message', message => {
-                                                                                                                        const HP = (Math.floor((5)*Math.random()+4))
+                                                                                                                        const HP = (Math.floor((6)*Math.random()+5))
                                                                                                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de force")) {
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -12533,7 +12417,7 @@ bot.on('message', message => {
                                                                                                                               });
 
                                                                                                                                bot.on('message', message => {
-                                                                                                                        const HP = (Math.floor((3)*Math.random()+2))
+                                                                                                                        const HP = (Math.floor((4)*Math.random()+3))
                                                                                                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de défense")) {
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
