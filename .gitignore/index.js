@@ -12387,7 +12387,7 @@ bot.on('message', message => {
 
                                                                                                                                           bot.on('message', message => {
                                                                                                                                             const HP = (Math.floor((76)*Math.random()+75))
-                                                                                                                                            const HP = (Math.floor((3)*Math.random()+2))
+                                                                                                                                            const X = (Math.floor((3)*Math.random()+2))
                                                                                                                                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération")) {
                                                                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
