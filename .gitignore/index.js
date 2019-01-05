@@ -12179,13 +12179,71 @@ bot.on('message', message => {
                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                  .setColor(3447003)
-                                                                                                                 .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de loup de sang et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 10\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup de sang, 4 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup de sang`")
+                                                                                                                 .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de loup de sang et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup de sang, 4 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup de sang`")
                                                                                                                  
                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
                                                                                                                 }   
                                                                                                               });
+
+                                                                                                              bot.on('message', message => {
+                                                                                                                if (message.content === prefix + "Ragoût de kobolt") {
+                                                                                                               const embed = new Discord.RichEmbed()
+                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                  .setColor(3447003)
+                                                                                                                  .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
+                                                                                                                  
+                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                   .setTimestamp()
+                                                                                                                   message.channel.send({embed})
+                                                                                                                 }   
+                                                                                                               });
+
+                                                                                                               bot.on('message', message => {
+                                                                                                                if (message.content === prefix + "Ragoût de ragondin") {
+                                                                                                               const embed = new Discord.RichEmbed()
+                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                  .setColor(3447003)
+                                                                                                                  .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de ragondin, 3 basilic\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de ragondin`")
+                                                                                                                  
+                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                   .setTimestamp()
+                                                                                                                   message.channel.send({embed})
+                                                                                                                 }   
+                                                                                                               });
+
+                                                                                                               bot.on('message', message => {
+                                                                                                                const HP = (Math.floor((51)*Math.random()+50))
+                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt")) {
+                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                         .setColor(3447003)
+                                                                                                                         .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                         
+                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                          .setTimestamp()
+                                                                                                                          message.channel.send({embed})
+                                                                                                                        }   
+                                                                                                                      });
+
+                                                                                                                      bot.on('message', message => {
+                                                                                                                const HP = (Math.floor((51)*Math.random()+50))
+                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de ragondin")) {
+                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                         .setColor(3447003)
+                                                                                                                         .addField(":meat_on_bone: Ragoût de ragondin :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                         
+                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                          .setTimestamp()
+                                                                                                                          message.channel.send({embed})
+                                                                                                                        }   
+                                                                                                                      });
 
                                                                                                               
                             
@@ -12208,7 +12266,19 @@ bot.on('message', message => {
                                                                                                                     }   
                                                                                                                   });
                                                                                                                   
-                                
+                                                                                                                  bot.on('message', message => {
+                                                                                                                    if (message.content.startsWith(prefix + "Potion moyenne de régénération")) {
+                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                         .setColor(3447003)
+                                                                                                                         .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 4 plantrus médiocre, 2 plantrus commun, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
+                                                         
+                                                                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                          .setTimestamp()
+                                                                                                                          message.channel.send({embed})
+                                                                                                                        }   
+                                                                                                                      });
 
                                                                                                                   bot.on('message', message => {
                                                                                                                     if (message.content.startsWith(prefix + "Potion faible de soin")) {
@@ -12296,6 +12366,8 @@ bot.on('message', message => {
                                                                                                                                     }   
                                                                                                                                   });
 
+                                                                                                                                  
+
 
 
                                                                                                                                   bot.on('message', message => {
@@ -12312,6 +12384,22 @@ bot.on('message', message => {
                                                                                                                                               message.channel.send({embed})
                                                                                                                                             }   
                                                                                                                                           });
+
+                                                                                                                                          bot.on('message', message => {
+                                                                                                                                            const HP = (Math.floor((76)*Math.random()+75))
+                                                                                                                                            const HP = (Math.floor((3)*Math.random()+2))
+                                                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération")) {
+                                                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                                     .setColor(3447003)
+                                                                                                                                                     .addField(":syringe: Potion moyenne de régénération :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP par tour pendant `" +X+ "` tours !")
+                                                                                                                                                    
+                                                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                                      .setTimestamp()
+                                                                                                                                                      message.channel.send({embed})
+                                                                                                                                                    }   
+                                                                                                                                                  });
 
                                                                                                                                           bot.on('message', message => {
                                                                                                                                     const HP = (Math.floor((51)*Math.random()+50))
