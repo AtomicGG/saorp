@@ -3510,7 +3510,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " par tour pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez tous les dégâts des trois tours donc " +C*1.5+ " ]")
+        .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " par tour pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez " +C*1.5+ " points de dégâts]")
         .setTimestamp()
          message.channel.send({embed})}
           }
@@ -11617,7 +11617,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                          .setColor(3447003)
-                         .addField(":crossed_swords: Bolas de kobolt :" , ":crossed_swords: Le bolas de kobolt inflige `" +A+ "` points de dégâts et immobilise la cible pendant `" +C+ "` tours, l'empêchant d'attaquer ou de se défendre !")
+                         .addField(":crossed_swords: Bolas de kobolt :" , ":crossed_swords: Le bolas de kobolt inflige `" +A+ "` points de dégâts et immobilise la cible pendant `" +C+ "` tours, l'empêchant d'attaquer et de se défendre !")
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})}
