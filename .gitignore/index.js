@@ -2574,8 +2574,9 @@ bot.on('message', message => {
                                                                                                                                                           const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                           const B = (Math.floor((2-(0.75))*Math.random()))
                                                                                                                                                           const C = (Math.floor((2-(0.85))*Math.random()))
-                                                                                                                                                          const D = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                                          const E = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                                          const D = (Math.floor((2-(0.96))*Math.random()))
+                                                                                                                                                          const E = (Math.floor((2-(0.96))*Math.random()))
+                                                                                                                                                          const EE = (Math.floor((2-(0.98))*Math.random()))
                                                                                                                                                           const F = (Math.floor((51*1)*Math.random()+90*1))
                                                                                                                                                                             const FF = F-(X*6)
                                                                                                                                                                             const G = (Math.floor((31*1)*Math.random()+30*1))
@@ -2585,7 +2586,7 @@ bot.on('message', message => {
                                                                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                                               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                        .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\:gem: nDent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                                                        .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: nDent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
                                                                                                                                                                               .setTimestamp()
                                                                                                                                                                               message.channel.send({embed})}
                                                                                                                                                             if(FF < 0) {
@@ -2594,7 +2595,7 @@ bot.on('message', message => {
                                                                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                                               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                              .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                                                              .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
                                                                                                                                                                               .setTimestamp()
                                                                                                                                                                               message.channel.send({embed})}
                                                                                                                                                                                   }
@@ -2611,8 +2612,9 @@ bot.on('message', message => {
                                                                                                                                                                                 const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                                                 const B = (Math.floor((2-(0.85))*Math.random()))
                                                                                                                                                                                 const C = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                                                                                                const D = (Math.floor((2-(0.99))*Math.random()))
-                                                                                                                                                                                const E = (Math.floor((2-(0.99))*Math.random()))
+                                                                                                                                                                                const D = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                                                                const E = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                                                                const EE = (Math.floor((2-(0.99))*Math.random()))
                                                                                                                                                                                 const F = (Math.floor((41*1)*Math.random()+80*1))
                                                                                                                                                                                 const FF = F-(X*6)
                                                                                                                                                                                 const G = (Math.floor((25*1)*Math.random()+25*1))
@@ -2622,7 +2624,7 @@ bot.on('message', message => {
                                                                                                                                                                                                     .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                                                                     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                                              .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                                                                              .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
                                                                                                                                                                                                     .setTimestamp()
                                                                                                                                                                                                     message.channel.send({embed})}
                                                                                                                                                                                   if(FF < 0) {
@@ -2631,7 +2633,7 @@ bot.on('message', message => {
                                                                                                                                                                                                     .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                                                                     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                                                    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                                                                                    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
                                                                                                                                                                                                     .setTimestamp()
                                                                                                                                                                                                     message.channel.send({embed})}
                                                                                                                                                                                                         }
@@ -11433,9 +11435,306 @@ bot.on('message', message => {
                                         
                                               
                                        
+bot.on('message', message => {
+if (message.content.startsWith(prefix + "Casque de kobolt")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Casque de kobolt :" , ":scales: C'est un casque résistant que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du casque de kobolt`")
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
 
-                                             
-    
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Épaulières de kobolt")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Épaulières de kobolt :" , ":scales: Ce sont des épaulières résistantes que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des épaulières de kobolt`")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape de kobolt")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape de kobolt :" , ":scales: C'est une cape résistante que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cape de kobolt`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
+                                            
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Plastron de kobolt")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Plastron de kobolt :" , ":scales: C'est un plastron résistant que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du plastron de kobolt`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
+
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Gantelets de kobolt")) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Gantelets de kobolt :" , ":scales: Ce sont des gantelets que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des gantelets de kobolt`")
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+        }   
+        });
+
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Ceinture de kobolt")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Ceinture de kobolt :" , ":scales: C'est une ceinture résistante que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la ceinture de kobolt`")
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
+          });
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Jambières de kobolt")) {
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières de kobolt :" , ":scales: Ce sont des jambières résisantes que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des jambières de kobolt`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+            message.channel.send({embed})
+            }   
+            });
+
+            bot.on('message', message => {
+              if (message.content.startsWith(prefix + "Bottes de kobolt")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(3447003)
+              .addField(":scales: Bottes de kobolt :" , ":scales: Ce sont des bottes résisantes que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte des bottes de kobolt`")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+              }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Amulette de kobolt")) {
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Amulette de kobolt :" , ":scales: C'est une amulette assez imposante et lourde à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobolt, 2 cuivre rare, 4 cuivre médiocre, 8 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'amulette de kobolt`")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+                message.channel.send({embed})
+                }   
+                });
+
+                bot.on('message', message => {
+                  if (message.content.startsWith(prefix + "Anneau de kobolt")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField(":scales: Anneau de kobolt :" , ":scales: C'est un anneau assez imposant et lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobolt, 2 cuivre rare, 4 cuivre médiocre, 8 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau de kobolt`")
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                  }   
+                  });
+
+
+
+
+
+
+
+
+
+
+
+
+              bot.on('message', message => {
+                const Défense = (Math.floor((3)*Math.random()+1))
+                const HP = (Math.floor((13)*Math.random()+12))
+                if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque de kobolt")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":scales: Casque de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+                    const Défense = (Math.floor((3)*Math.random()+1))
+                    const HP = (Math.floor((13)*Math.random()+12))
+                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières de kobolt")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":scales: Épaulières de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
+
+                      bot.on('message', message => {
+                        const Défense = (Math.floor((3)*Math.random()+1))
+                        const HP = (Math.floor((13)*Math.random()+12))
+                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape de kobolt")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":scales: Cape de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})
+                            }   
+                          });
+
+                          bot.on('message', message => {
+                            const Défense = (Math.floor((3)*Math.random()+1))
+                            const HP = (Math.floor((13)*Math.random()+12))
+                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron de kobolt")) {
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                 .setColor(3447003)
+                                 .addField(":scales: Plastron de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                  .setTimestamp()
+                                  message.channel.send({embed})
+                                }   
+                              });
+
+                              bot.on('message', message => {
+                                const Défense = (Math.floor((3)*Math.random()+1))
+                                const HP = (Math.floor((13)*Math.random()+12))
+                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture de kobolt")) {
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                     .setColor(3447003)
+                                     .addField(":scales: Ceinture de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                      .setTimestamp()
+                                      message.channel.send({embed})
+                                    }   
+                                  });
+
+                                  bot.on('message', message => {
+                                    const Défense = (Math.floor((3)*Math.random()+1))
+                                    const HP = (Math.floor((13)*Math.random()+12))
+                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets de kobolt")) {
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                         .setColor(3447003)
+                                         .addField(":scales: Gantelets de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                          .setTimestamp()
+                                          message.channel.send({embed})
+                                        }   
+                                      });
+
+                                      bot.on('message', message => {
+                                        const Défense = (Math.floor((3)*Math.random()+1))
+                                        const HP = (Math.floor((13)*Math.random()+12))
+                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières de kobolt")) {
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                             .setColor(3447003)
+                                             .addField(":scales: Jambières de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                              .setTimestamp()
+                                              message.channel.send({embed})
+                                            }   
+                                          });
+
+                                          bot.on('message', message => {
+                                            const Défense = (Math.floor((3)*Math.random()+1))
+                                            const HP = (Math.floor((13)*Math.random()+12))
+                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes de kobolt")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Bottes de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
+
+
+
+
+bot.on('message', message => {
+                                            const Défense = (Math.floor((5)*Math.random()+4))
+                                            const HP = (Math.floor((9)*Math.random()+8))
+                                            const Dégâts = (Math.floor((7)*Math.random()+6))
+                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau de kobolt")) {
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                 .setColor(3447003)
+                                                 .addField(":scales: Anneau de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})
+                                                }   
+                                              });
+
+                                              bot.on('message', message => {
+                                                const Défense = (Math.floor((5)*Math.random()+4))
+                                                const HP = (Math.floor((9)*Math.random()+8))
+                                                const Dégâts = (Math.floor((7)*Math.random()+6))
+                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette de kobolt")) {
+                                                  const embed = new Discord.RichEmbed()
+                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                     .setColor(3447003)
+                                                     .addField(":scales: Amulette de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})
+                                                    }   
+                                                  });
+
+
+
+
+
 
 
 
