@@ -11568,7 +11568,88 @@ bot.on('message', message => {
 
 
 
+                  bot.on('message', message => {
+                    const Défense = (Math.floor((3)*Math.random()+1))
+                    const HP = (Math.floor((13)*Math.random()+12))
+                    if (message.content.startsWith(prefix + "Kunai de kobolt")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":crossed_swords: Kunai de kobolt :" , ":crossed_swords: Le kunai de kobolt est une petite lame qui se lance sur une cible, infligeant des dégâts et pouvant faire même saigner, la cible ne peux pas se défendre !\n\n:crossed_swords: Pour lancer un kunai : `=Lancer un kunai de kobolt`")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                        }   
+                      });
 
+                       bot.on('message', message => {
+                const Défense = (Math.floor((3)*Math.random()+1))
+                const HP = (Math.floor((13)*Math.random()+12))
+                if (message.content.startsWith(prefix + "Bolas de kobolt")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                     .setColor(3447003)
+                     .addField(":crossed_swords: Bolas de kobolt :" , ":crossed_swords: Le bolas de kobolt est une corde reliant deux pierres assez imposantes et tranchantes, infligeant des dégâts et pouvant immobiliser une cible, la cible ne peux pas se défendre !\n\n:crossed_swords: Pour lancer un bolas : `=Lancer un bolas de kobolt`")
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                    }   
+                  });
+
+                  bot.on('message', message => {
+                    const A = (Math.floor((51)*Math.random()+50))
+                    const B = (Math.floor((100)*Math.random()+1))
+                    const C = (Math.floor((2)*Math.random()+1))
+                    if (message.content.startsWith(prefix + "Lancer un bolas de kobolt")) {
+                      if (B < 80){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":crossed_swords: Bolas de kobolt :" , ":crossed_swords: Le bolas de kobolt inflige `" +A+ "` points de dégâts mais n'immobilise pas la cible...")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})}
+                          if (B > 80){
+                            const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                         .setColor(3447003)
+                         .addField(":crossed_swords: Bolas de kobolt :" , ":crossed_swords: Le bolas de kobolt inflige `" +A+ "` points de dégâts et immobilise la cible pendant `" +C+ "` tours, l'empêchant d'attaquer ou de se défendre !")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})}
+                        }   
+                      });
+
+                      bot.on('message', message => {
+                        const A = (Math.floor((51)*Math.random()+50))
+                        const B = (Math.floor((100)*Math.random()+1))
+                        const C = (Math.floor((2)*Math.random()+1))
+                        const D = (Math.floor((21)*Math.random()+20))
+                        if (message.content.startsWith(prefix + "Lancer un kunai de kobolt")) {
+                          if (B < 50){
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":crossed_swords: Kunai de kobolt :" , ":crossed_swords: Le kunai de kobolt inflige `" +A+ "` points de dégâts mais ne fait pas saigner la cible...")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})}
+                              if (B > 70){
+                                const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                             .setColor(3447003)
+                             .addField(":crossed_swords: Kunai de kobolt :" , ":crossed_swords: Le kunai de kobolt inflige `" +A+ "` points de dégâts et fait saigner la cible pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tours et l'armure ne réduit pas les dégâts du saignement !")
+                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                              .setTimestamp()
+                              message.channel.send({embed})}
+                            }   
+                          });
 
 
 
