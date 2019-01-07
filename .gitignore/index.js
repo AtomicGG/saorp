@@ -11110,14 +11110,38 @@ bot.on('message', message => {
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
                                                  .addField(":scales: Anneau du croc :" , ":scales: C'est un anneau légèrement tranchant constitué de coeur d'animal et de croc de loup mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de taupe, 2 crocs de loup\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : 380 cols\n\n:large_orange_diamond: Prix de revente : 95 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'anneau du croc`")
-                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                 .setImage("http://www.wallmania.be/fr/media/catalog/product/cache/13/image/650x/040ec09b1e35df139433887a97daa66f/A/d/Adventure_foto_0000_12_schatkaart-foto_1.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
                                                 }   
                                               });
 
 
-
+                                              bot.on('message', message => {
+                                                const A = (Math.floor((100)*Math.random()+1))
+                                                    if (message.content.startsWith(prefix + "Carte au trésor")) {
+                                                      if(A < 50){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                         .setColor(3447003)
+                                                         .addField(":map: Carte au trésor :" , ":map: Cette carte indique un endroit dans la montagne, vous devriez vous y rendre !\n\n:map: Une fois à la montagne : `=Coffre secret de la montagne`")
+                                                         
+                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})}
+                                                          if(A > 51){
+                                                            const embed = new Discord.RichEmbed()
+                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                               .setColor(3447003)
+                                                               .addField(":map: Carte au trésor :" , ":map: Cette carte indique un endroit dans la grotte, vous devriez vous y rendre !\n\n:map: Une fois à la grotte : `=Coffre secret de la grotte`")
+                                                               
+                                                                .setImage("http://www.wallmania.be/fr/media/catalog/product/cache/13/image/650x/040ec09b1e35df139433887a97daa66f/A/d/Adventure_foto_0000_12_schatkaart-foto_1.png")
+                                                                .setTimestamp()
+                                                                message.channel.send({embed})}
+                                                        }   
+                                                      });
 
 
 
