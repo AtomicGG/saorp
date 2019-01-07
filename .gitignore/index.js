@@ -11630,7 +11630,7 @@ bot.on('message', message => {
                         const C = (Math.floor((2)*Math.random()+1))
                         const D = (Math.floor((21)*Math.random()+20))
                         if (message.content.startsWith(prefix + "Lancer un kunai de kobolt")) {
-                          if (B < 50){
+                          if (B < 70){
                           const embed = new Discord.RichEmbed()
                           .setAuthor(message.author.username , message.author.avatarURL)
                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11639,7 +11639,7 @@ bot.on('message', message => {
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})}
-                              if (B > 70){
+                              if (B > 71){
                                 const embed = new Discord.RichEmbed()
                           .setAuthor(message.author.username , message.author.avatarURL)
                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
