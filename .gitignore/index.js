@@ -2,7 +2,6 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const talkedRecently = new Set();
 const prefix = "=";
-let userCooldown = {};
 
 
 bot.on('ready', () => {
@@ -14918,21 +14917,6 @@ bot.on('message', message => {
 .addField("Les atouts:" , "Votre personnage possèdera un atout ou plusieurs, permettant d'avoir des avantages ou de pouvoir faire des choses que les autres ne pourront pas forcément faire !")    .setTimestamp()
  .addField("Liste des atouts 1 :" , "Voici la liste des atouts disponibles :\n\nMédecin : Permet de pouvoir soigner les gens, de les amputer ainsi que de leur donner les bon médicaments !\n\nVeilleur : Il possède le double de HP d'un simple citoyen !\n\nCollecteur : Collecte le double de matières premières à l'extérieur !\n\nOuvrier : Créer et transforme plus vite les ressources !\n\nAlcoolique : Quand il boit de l'alcool, il n'est pas bourré et ne ressent pas les effets négatifs !\n\nProtecteur : Il possède le double de dégâts avec des armes !\n\nCuisinier : Permet de pouvoir cuisiner des plats !\n\nBrigand : Possède beaucoup plus de chance d'intimider quelqu'un !\n\nVoleur : Possède beaucoup moins de chance de se faire voir pendant un vol !\n\nRésistant : Possède beaucoup plus de chances de ne pas se transformer en zombie suite à une infection !\n\nNaturaliste : Possède plus de chance de survivre en extérieur la nuit qu'un citoyen normal !")
  .addField("Liste des atouts 2 :" , "Architecte : Permet d'avoir le double de points de défense dans sa maison !\n\nCannibale : Permet de pouvoir dévorer un humain, ou son cadavre pour reprendre de la vie !\n\nObservateur : Permet d'avoir plus de chance de fuite en extérieur face à des zombies !\n\nErmite : Trouve plus facilement de l'eau et de la nourriture en dehors !\n\nBricoleur : Permet d'ouvrir les portes des bâtiments abandonnés !\n\nJardinier : Permet de s'occuper des plantes et de l'agriculture du jardin en ville !\n\nMineur : double les matières qu'il récupére à la mine")
-    message.channel.send({embed})
-        }
-  }) ;
-
-
-
-  bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Caca")) {   
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les atouts:" , "Votre personnage possèdera un atout ou plusieurs, permettant d'avoir des avantages ou de pouvoir faire des choses que les autres ne pourront pas forcément faire !")    .setTimestamp()
- .addField("test :" , "Voici la liste des atouts disponibles :\n\nMédecin : Permet de pouvoir soigner les gens, de les amputer ainsi que de leur donner les bon médicaments !\n\nVeilleur : Il possède le double de HP d'un simple citoyen !\n\nCollecteur : Collecte le double de matières premières à l'extérieur !\n\nOuvrier : Créer et transforme plus vite les ressources !\n\nAlcoolique : Quand il boit de l'alcool, il n'est pas bourré et ne ressent pas les effets négatifs !\n\nProtecteur : Il possède le double de dégâts avec des armes !\n\nCuisinier : Permet de pouvoir cuisiner des plats !\n\nBrigand : Possède beaucoup plus de chance d'intimider quelqu'un !\n\nVoleur : Possède beaucoup moins de chance de se faire voir pendant un vol !\n\nRésistant : Possède beaucoup plus de chances de ne pas se transformer en zombie suite à une infection !\n\nNaturaliste : Possède plus de chance de survivre en extérieur la nuit qu'un citoyen normal !")
     message.channel.send({embed})
         }
   }) ;
