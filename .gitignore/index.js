@@ -767,7 +767,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Loup :" , ":japanese_ogre: Aussi rapide que dangereux, il se situe dans la forêt du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c8/Wolf.png/revision/latest?cb=20140308115118")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 80")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 90")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup attaque`")
     .addField(":shield: Lorsque le loup reçoit un coup :" , ":shield: `=Loup défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup récompenses solo : [Votre niveau]`")
@@ -785,7 +785,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setTitle(":japanese_ogre: Sanglier :" , ":japanese_ogre: Assez imposant et résistant, il se situe dans les plaines du palier 1 !")
       .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/4/4a/Frenzy_Boar.png/revision/latest?cb=20170612194328&path-prefix=fr")
-      .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 25")
+      .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 30")
       .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Sanglier attaque`")
       .addField(":shield: Lorsque le sanglier reçoit un coup :" , ":shield: `=Sanglier défense : [Points de dégâts de votre coup]`")
       .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Sanglier récompenses solo : [Votre niveau]`")
@@ -804,7 +804,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setTitle(":japanese_ogre: Renard :" , ":japanese_ogre: Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
         .setImage("https://www.lpo.fr/images/actualites/2018/en_moselle_nuits_nouveau_tranquilles_renard/renard_fabrice_cahez_650_.jpg")
-        .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 20")
+        .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 25")
         .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Renard attaque`")
         .addField(":shield: Lorsque le renard reçoit un coup :" , ":shield: `=Renard défense : [Points de dégâts de votre coup]`")
         .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Renard récompenses solo : [Votre niveau]`")
@@ -839,7 +839,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setTitle(":japanese_ogre: Lapin géant :" , ":japanese_ogre: Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
             .setImage("https://gor666.files.wordpress.com/2012/04/lapin-tueur-de-paques-i-gor-2012.jpg")
-            .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 60")
+            .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 70")
             .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lapin géant attaque`")
             .addField(":shield: Lorsque le lapin géant reçoit un coup :" , ":shield: `=Lapin géant défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Lapin géant récompenses solo : [Votre niveau]`")
@@ -858,7 +858,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setTitle(":japanese_ogre: Slime :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
               .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-slime-5ac1b13e54af51.5535441915226432623469.png")
-              .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 100")
+              .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 115")
               .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime attaque`")
               .addField(":shield: Lorsque le slime reçoit un coup :" , ":shield: `=Slime défense : [Points de dégâts de votre coup]`")
               .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Slime récompenses solo : [Votre niveau]`")
@@ -877,7 +877,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setTitle(":japanese_ogre: Loup de sang :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
-                .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400")
+                .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 450")
                 .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang attaque`")
                 .addField(":shield: Lorsque le loup de sang reçoit un coup :" , ":shield: `=Loup de sang défense : [Points de dégâts de votre coup]`")
                 .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup de sang récompenses solo : [Votre niveau]`")
@@ -897,7 +897,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setTitle(":japanese_ogre: Loup de sang :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
-                .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 750")
+                .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
                 .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang d'élite attaque`")
                 .addField(":shield: Lorsque le loup de sang reçoit un coup :" , ":shield: `=Loup de sang d'élite défense : [Points de dégâts de votre coup]`")
                 .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup de sang d'élite récompenses solo : [Votre niveau]`")
@@ -920,7 +920,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bandit débutant :" , ":japanese_ogre: Un simple bandit n'étant pas très dangereux, il se situe dans les plaines du palier 1 !")
     .setImage("https://i.pinimg.com/originals/37/cb/69/37cb69474ab104f8ec40ca993101a042.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 50")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 60")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit débutant attaque`")
     .addField(":shield: Lorsque le bandit débutant reçoit un coup :" , ":shield: `=Bandit débutant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit débutant récompenses solo : [Votre niveau]`")
@@ -941,7 +941,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bandit expérimenté :" , ":japanese_ogre: Un bandit connaissant les techniques basiques d'assassin, il se situe dans les plaines du palier 1 !")
     .setImage("http://www.yuimen.net/galerie/albums/userpics/13631/Colm1.png")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 140")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 160")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit expérimenté attaque`")
     .addField(":shield: Lorsque le bandit expérimenté reçoit un coup :" , ":shield: `=Bandit expérimenté défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit expérimenté récompenses solo : [Votre niveau]`")
@@ -963,7 +963,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bandit sombre :" , ":japanese_ogre: Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
     .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 500")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 550")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit sombre attaque`")
     .addField(":shield: Lorsque le bandit sombre reçoit un coup :" , ":shield: `=Bandit sombre défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit sombre récompenses solo : [Votre niveau]`")
@@ -1024,7 +1024,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Jeune kobolt :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("http://vignette2.wikia.nocookie.net/chroniclesofarn/images/b/b2/Kobold-11.jpg/revision/latest?cb=20130810171342")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 250")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 275")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Jeune kobolt attaque`")
     .addField(":shield: Lorsque le jeune kobolt reçoit un coup :" , ":shield: `=Jeune kobolt défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Jeune kobolt récompenses solo : [Votre niveau]`")
@@ -1041,7 +1041,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt mineur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 330")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt mineur attaque`")
     .addField(":shield: Lorsque le kobolt mineur reçoit un coup :" , ":shield: `=Kobolt mineur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt mineur récompenses solo : [Votre niveau]`")
@@ -1059,7 +1059,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt ouvrier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5e/KoboldMG.png/300px-KoboldMG.png?version=b6cc120769e6300e7b5eb863ef828278")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 330")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup gigantesque attaque`")
     .addField(":shield: Lorsque le kobolt ouvrier reçoit un coup :" , ":shield: `=Kobolt ouvrier défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt ouvrier récompenses solo : [Votre niveau]`")
@@ -1077,7 +1077,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt explorateur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://i.pinimg.com/originals/73/6a/cf/736acf4e514eed57b8f255aff493f4ea.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 350")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 385")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt explorateur attaque`")
     .addField(":shield: Lorsque le kobolt explorateur reçoit un coup :" , ":shield: `=Kobolt explorateur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt explorateur récompenses solo : [Votre niveau]`")
@@ -1095,7 +1095,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt garde :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 900")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt garde attaque`")
     .addField(":shield: Lorsque le kobolt garde reçoit un coup :" , ":shield: `=Kobolt garde défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt garde récompenses solo : [Votre niveau]`")
@@ -1112,7 +1112,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt combattant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 900")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt combattant attaque`")
     .addField(":shield: Lorsque le kobolt combattant reçoit un coup :" , ":shield: `=Kobolt combattant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt combattant récompenses solo : [Votre niveau]`")
@@ -1130,7 +1130,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt espion :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://i.pinimg.com/564x/63/c0/c3/63c0c3bfc02566d63326eed4af43db78.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1100")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt espion attaque`")
     .addField(":shield: Lorsque le kobolt espion reçoit un coup :" , ":shield: `=Kobolt espion défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt espion récompenses solo : [Votre niveau]`")
@@ -1148,7 +1148,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt géant rouge :" , ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 3000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 3500")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt géant rouge attaque`")
     .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :" , ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt géant rouge récompenses solo : [Votre niveau]`")
@@ -3779,7 +3779,7 @@ bot.on('message', message => {
       const A = (Math.floor(((degats*2))*Math.random()+degats*1))
       const B = (Math.floor((100)*Math.random()+1))
       const C = (Math.floor((16)*Math.random()+1))
-      if (B < 50){
+      if (B < 65){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3787,7 +3787,7 @@ bot.on('message', message => {
        .addField(":shield: Loup :" , ":shield: Le loup tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
        .setTimestamp()
        message.channel.send({embed})}
-      if (51 < B){
+      if (66 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3807,14 +3807,14 @@ bot.on('message', message => {
     let Dégâts = args.slice(2).join(" : ");
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
-     if (B < 50){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (51 < B){
+      if (71 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3835,14 +3835,14 @@ bot.on('message', message => {
     let Dégâts = args.slice(2).join(" : ");
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
-     if (B < 50){
+     if (B < 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (51 < B){
+      if (66 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3864,14 +3864,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((3)*Math.random()+3))
-     if (B < 75){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (76 < B){
+      if (71 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3893,14 +3893,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((Dégâts/5)*Math.random()+1))
-     if (B < 50){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgrè ceci, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (70 < B){
+      if (71 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3922,14 +3922,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((8)*Math.random()+4))
-     if (B < 60){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Slime :" , ":shield: Le slime se déplace de côté pour essayer de ne pas prendre le coup, mais il est trop lent et se le prend, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (61 < B & B < 80){
+      if (71 < B & B < 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3937,7 +3937,7 @@ bot.on('message', message => {
         .addField(":shield: Slime :" , ":shield: Le slime se déplace sur le côté lors de votre coup et essaye de cracher un genre de projectile d'acide qui ne vous atteint pas, vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
-        if (81 < B){
+        if (91 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4030,14 +4030,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((30)*Math.random()+15))
-     if (B < 70){
+     if (B < 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Loup de sang :" , ":shield: Le loup de sang essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (71 < B){
+      if (76 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4058,14 +4058,14 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((46)*Math.random()+25))
-     if (B < 60){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (61 < B){
+      if (71 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4086,14 +4086,14 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
-     if (B < 50){
+     if (B < 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (51 < B){
+      if (66 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4143,6 +4143,34 @@ bot.on('message', message => {
      const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((11)*Math.random()+20))
+     if (B < 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      message.channel.send({embed})}
+      if (71 < B){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})}
+          }
+    }
+);
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bandit sombre d'élite défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
+     const B = (Math.floor((100)*Math.random()+1))
+     const C = (Math.floor((21)*Math.random()+40))
      if (B < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -4166,47 +4194,19 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bandit sombre d'élite défense")) {
-    let Dégâts = args.slice(4).join(" : ");
-     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
-     const B = (Math.floor((100)*Math.random()+1))
-     const C = (Math.floor((21)*Math.random()+40))
-     if (B < 55){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
-      message.channel.send({embed})}
-      if (56 < B){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
-        .setTimestamp()
-        message.channel.send({embed})}
-          }
-    }
-);
-
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup gigantesque défense")) {
     let Dégâts = args.slice(3).join(" : ");
      const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((31)*Math.random()+50))
-     if (B < 50){
+     if (B < 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Loup gigantesque :" , ":shield: Le loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (51 < B){
+      if (66 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4243,14 +4243,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((3)*Math.random()+3))
-     if (B < 60){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Jeune kobolt :" , ":shield: Le jeune kobolt ne semble même pas réagir et ne pas encore avoir le réflexe d'esquiver les coups, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (61 < B){
+      if (71 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4273,14 +4273,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((21)*Math.random()+40))
-     if (B < 50){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Kobolt explorateur :" , ":shield: Le kobolt explorateur tente avec sa dague de contrer votre coup mais elle est trop minuscule, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (51 < B & B < 90){
+      if (71 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4288,7 +4288,7 @@ bot.on('message', message => {
         .addField(":shield: Kobolt explorateur :" , ":shield: Le kobolt explorateur effectue un coup rapide vers votre arme une fois que votre coup arrive afin de vous déstabiliser, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
-        if (91 < B){
+        if (96 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4311,14 +4311,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((3)*Math.random()+3))
-     if (B < 40){
+     if (B < 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Kobolt ouvrier :" , ":shield: Le kobolt ouvrier tente de se cacher derrière un objet autour de lui par réflexe mais il se prend le coup de plein fouet, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (41 < B){
+      if (66 < B){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4340,14 +4340,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((21)*Math.random()+40))
-     if (B < 40){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Kobolt mineur :" , ":shield: Le kobolt mineur essaye d'utiliser sa pioche pour arrêter votre coup mais elle n'est pas assez résistante, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (41 < B & B < 90){
+      if (71 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4355,7 +4355,7 @@ bot.on('message', message => {
         .addField(":shield: Kobolt mineur :" , ":shield: Le kobolt ouvrier arrive à bloquer votre coup à l'aide de sa pioche entre le manche et l'acier, il ne prend aucun dégâts")
         .setTimestamp()
         message.channel.send({embed})}
-        if (91 < B){
+        if (96 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4380,14 +4380,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((31)*Math.random()+60))
-     if (B < 60){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Kobolt combattant :" , ":shield: Le kobolt combattant effectue un duel de force avec vous et votre arme mais il n'est pas assez puissant, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (61 < B & B < 91){
+      if (71 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4395,7 +4395,7 @@ bot.on('message', message => {
         .addField(":shield: Kobolt combattant :" , ":shield: Le kobolt combattant effectue un duel de force avec vous et votre arme et il vous met un coup de pied pour vous faire reculer, il ne prend aucun dégâts et réduit votre armure de 5 points lors du prochain coup que vous prendrez")
         .setTimestamp()
         message.channel.send({embed})}
-        if (91 < B){
+        if (96 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4416,14 +4416,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1.75)*Math.random()+(Dégâts/2)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((31)*Math.random()+50))
-     if (B < 40){
+     if (B < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Kobolt garde :" , ":shield: Le kobolt garde tente de bloquer le coup mais il n'arrive pas à garder son bouclier devant lui bien droit, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (41 < B & B < 90){
+      if (61 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4431,7 +4431,7 @@ bot.on('message', message => {
         .addField(":shield: Kobolt garde :" , ":shield: Le kobolt garde bloque facilement le coup en gardant son bouclier devant lui comme une roche très résistante, il ne prend aucun dégâts et réduit vos points de dégâts de 10 lors de votre prochaine attaque")
         .setTimestamp()
         message.channel.send({embed})}
-        if (91 < B){
+        if (96 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4453,14 +4453,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((41)*Math.random()+60))
-     if (B < 40){
+     if (B < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion tente de sortir quelque chance de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (41 < B & B < 90){
+      if (71 < B & B < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4468,7 +4468,7 @@ bot.on('message', message => {
         .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion à travers son manteau arrive à parer votre coup avec deux kunais et à vous faire tomber par terre en levant ses bras, il ne prend aucun dégâts et vous étourdis pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
-        if (91 < B){
+        if (96 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4489,14 +4489,14 @@ bot.on('message', message => {
      const A = (Math.floor((Dégâts*1.5)*Math.random()+(Dégâts/1.5)))
      const B = (Math.floor((100)*Math.random()+1))
      const C = (Math.floor((51)*Math.random()+100))
-     if (B < 60){
+     if (B < 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})}
-      if (61 < B & B < 95){
+      if (76 < B & B < 96){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4504,7 +4504,7 @@ bot.on('message', message => {
         .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et étourdis tous les joueurs pendant 1 tour")
         .setTimestamp()
         message.channel.send({embed})}
-        if (96 < B){
+        if (97 < B){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
