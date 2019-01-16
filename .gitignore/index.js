@@ -11677,7 +11677,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Casque de kobolt supérieur")) {
+  if (message.content === prefix + "Casque de kobolt supérieur") {
 const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11690,7 +11690,7 @@ message.channel.send({embed})
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières de kobolt supérieures")) {
+if (message.content === prefix + "Épaulières de kobolt supérieures") {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11703,8 +11703,8 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cape de kobolt supérieure")) {
-    const embed = new Discord.RichEmbed()
+    if (message.content === prefix + "Cape de kobolt supérieure") {
+      const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11716,8 +11716,8 @@ bot.on('message', message => {
     });
 
     bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Plastron de kobolt supérieur")) {
-      const embed = new Discord.RichEmbed()
+      if (message.content === prefix + "Plastron de kobolt supérieur") {
+        const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
@@ -11729,8 +11729,8 @@ bot.on('message', message => {
       });
 
       bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Gantelets de kobolt supérieurs")) {
-        const embed = new Discord.RichEmbed()
+        if (message.content === prefix + "Gantelets de kobolt supérieurs") {
+          const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
@@ -11742,8 +11742,8 @@ bot.on('message', message => {
         });
 
         bot.on('message', message => {
-          if (message.content.startsWith(prefix + "Ceinture de kobolt supérieure")) {
-          const embed = new Discord.RichEmbed()
+          if (message.content === prefix + "Ceinture de kobolt supérieure") {
+            const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
@@ -11756,8 +11756,8 @@ bot.on('message', message => {
 
 
           bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Jambières de kobolt supérieures")) {
-            const embed = new Discord.RichEmbed()
+            if (message.content === prefix + "Jambières de kobolt supérieures") {
+              const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
@@ -11769,8 +11769,8 @@ bot.on('message', message => {
             });
 
             bot.on('message', message => {
-              if (message.content.startsWith(prefix + "Bottes de kobolt supérieures")) {
-              const embed = new Discord.RichEmbed()
+              if (message.content === prefix + "Bottes de kobolt supérieures") {
+                const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(3447003)
@@ -11782,8 +11782,8 @@ bot.on('message', message => {
               });
                           
               bot.on('message', message => {
-                if (message.content.startsWith(prefix + "Amulette de kobolt supérieure")) {
-                const embed = new Discord.RichEmbed()
+                if (message.content === prefix + "Amulette de kobolt supérieure") {
+                  const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
@@ -11795,8 +11795,8 @@ bot.on('message', message => {
                 });
 
                 bot.on('message', message => {
-                  if (message.content.startsWith(prefix + "Anneau de kobolt supérieur")) {
-                  const embed = new Discord.RichEmbed()
+                  if (message.content === prefix + "Anneau de kobolt supérieur") {
+                    const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
@@ -12160,7 +12160,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":scales: Epée kobolt à deux mains :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée kobolt à deux mains`")
+.addField(":scales: Epée kobolt à deux mains :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée kobolt à deux mains`")
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
@@ -12173,7 +12173,7 @@ bot.on('message', message => {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":scales: Hache kobolt à deux mains :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache kobolt à deux mains`")
+  .addField(":scales: Hache kobolt à deux mains :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocren\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache kobolt à deux mains`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -12186,7 +12186,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse kobolt à deux mains :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse kobolt à deux mains`")
+    .addField(":scales: Masse kobolt à deux mains :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12199,7 +12199,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Rapière kobolt à deux mains :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
+      .addField(":scales: Rapière kobolt à deux mains :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -12212,7 +12212,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":scales: Glaive kobolt à deux mains :" , ":scales: C'est un glaive assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
+        .addField(":scales: Glaive kobolt à deux mains :" , ":scales: C'est un glaive assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
@@ -12225,7 +12225,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField(":scales: Cimeterre kobolt à deux mains :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
+          .addField(":scales: Cimeterre kobolt à deux mains :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
@@ -12238,7 +12238,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana kobolt à deux mains :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana kobolt à deux mains`")
+            .addField(":scales: Katana kobolt à deux mains :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana kobolt à deux mains`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
@@ -12251,7 +12251,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(3447003)
-              .addField(":scales: Epée kobolt à un main :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée kobolt à une main`")
+              .addField(":scales: Epée kobolt à un main :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée kobolt à une main`")
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
@@ -12264,7 +12264,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Dague kobolt à un main :" , ":scales: C'est une dague assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la dague kobolt à une main`")
+                .addField(":scales: Dague kobolt à un main :" , ":scales: C'est une dague assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la dague kobolt à une main`")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
@@ -12277,7 +12277,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
-                  .addField(":scales: Masse kobolt à un main :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse kobolt à une main`")
+                  .addField(":scales: Masse kobolt à un main :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse kobolt à une main`")
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
@@ -12290,7 +12290,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache kobolt à un main :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache kobolt à une main`")
+                    .addField(":scales: Hache kobolt à un main :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache kobolt à une main`")
                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
@@ -12303,7 +12303,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setColor(3447003)
-                      .addField(":scales: Cimeterre kobolt à un main :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre kobolt à une main`")
+                      .addField(":scales: Cimeterre kobolt à un main :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre kobolt à une main`")
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
@@ -12316,7 +12316,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana kobolt à un main :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana kobolt à une main`")
+                        .addField(":scales: Katana kobolt à un main :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana kobolt à une main`")
                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                         .setTimestamp()
                         message.channel.send({embed})
@@ -12329,7 +12329,7 @@ bot.on('message', message => {
                           .setAuthor(message.author.username , message.author.avatarURL)
                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                           .setColor(3447003)
-                          .addField(":scales: Rapière kobolt à un main :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à une main`")
+                          .addField(":scales: Rapière kobolt à un main :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à une main`")
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
@@ -12342,12 +12342,20 @@ bot.on('message', message => {
                             .setAuthor(message.author.username , message.author.avatarURL)
                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setColor(3447003)
-                            .addField(":scales: Bouclier kobolt à un main :" , ":scales: C'est un bouclier assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du bouclier kobolt à une main`")
+                            .addField(":scales: Bouclier kobolt à un main :" , ":scales: C'est un bouclier assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du bouclier kobolt à une main`")
                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                             .setTimestamp()
                             message.channel.send({embed})
                             }   
                             });
+
+
+
+
+
+
+
+
 
                             bot.on('message', message => {
             
@@ -12576,6 +12584,32 @@ bot.on('message', message => {
                                                 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bot.on('message', message => {
+if (message.content.startsWith(prefix + "Epée kobolt supérieur à deux mains")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Epée kobolt supérieur à deux mains :" , ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre parfait, 4 cuivre rare, 6 cuivre commun, 4 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée kobolt à deux mains`")
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
 
 
 
