@@ -11459,8 +11459,8 @@ bot.on('message', message => {
                                               
                                        
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Casque de kobolt")) {
-const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Casque de kobolt") {
+    const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
@@ -11472,7 +11472,7 @@ message.channel.send({embed})
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières de kobolt")) {
+if (message.content === prefix + "Épaulières de kobolt") {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11485,8 +11485,7 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cape de kobolt")) {
-    const embed = new Discord.RichEmbed()
+    if (message.content === prefix + "Cape de kobolt") {    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11498,8 +11497,7 @@ bot.on('message', message => {
     });
                                             
     bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Plastron de kobolt")) {
-      const embed = new Discord.RichEmbed()
+      if (message.content === prefix + "Plastron de kobolt") {      const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
@@ -11511,8 +11509,7 @@ bot.on('message', message => {
       });
 
       bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Gantelets de kobolt")) {
-        const embed = new Discord.RichEmbed()
+        if (message.content === prefix + "Gantelets de kobolt") {        const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
@@ -11524,8 +11521,7 @@ bot.on('message', message => {
         });
 
         bot.on('message', message => {
-          if (message.content.startsWith(prefix + "Ceinture de kobolt")) {
-          const embed = new Discord.RichEmbed()
+          if (message.content === prefix + "Ceinture de kobolt") {          const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
@@ -11537,8 +11533,7 @@ bot.on('message', message => {
           });
 
           bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Jambières de kobolt")) {
-            const embed = new Discord.RichEmbed()
+            if (message.content === prefix + "Jambières de kobolt") {            const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
@@ -11550,8 +11545,7 @@ bot.on('message', message => {
             });
 
             bot.on('message', message => {
-              if (message.content.startsWith(prefix + "Bottes de kobolt")) {
-              const embed = new Discord.RichEmbed()
+              if (message.content === prefix + "Bottes de kobolt") {              const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(3447003)
@@ -11563,8 +11557,7 @@ bot.on('message', message => {
               });
 
               bot.on('message', message => {
-                if (message.content.startsWith(prefix + "Amulette de kobolt")) {
-                const embed = new Discord.RichEmbed()
+                if (message.content === prefix + "Amulette de kobolt") {                const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
@@ -11576,8 +11569,8 @@ bot.on('message', message => {
                 });
 
                 bot.on('message', message => {
-                  if (message.content.startsWith(prefix + "Anneau de kobolt")) {
-                  const embed = new Discord.RichEmbed()
+                  if (message.content === prefix + "Anneau de kobolt") {
+                    const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
