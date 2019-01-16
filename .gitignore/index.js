@@ -2573,9 +2573,9 @@ bot.on('message', message => {
                                                                                                                                                           const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                           const B = (Math.floor((2-(0.75))*Math.random()))
                                                                                                                                                           const C = (Math.floor((2-(0.85))*Math.random()))
-                                                                                                                                                          const D = (Math.floor((2-(0.96))*Math.random()))
-                                                                                                                                                          const E = (Math.floor((2-(0.96))*Math.random()))
-                                                                                                                                                          const EE = (Math.floor((2-(0.98))*Math.random()))
+                                                                                                                                                          const D = (Math.floor((2-(0.95))*Math.random()))
+                                                                                                                                                          const E = (Math.floor((2-(0.90))*Math.random()))
+                                                                                                                                                          const EE = (Math.floor((2-(0.97))*Math.random()))
                                                                                                                                                           const F = (Math.floor((51*1)*Math.random()+90*1))
                                                                                                                                                                             const FF = F-(X*6)
                                                                                                                                                                             const G = (Math.floor((31*1)*Math.random()+30*1))
@@ -2585,7 +2585,7 @@ bot.on('message', message => {
                                                                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                                                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                                               .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                        .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: nDent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+                                                                                                                                                                        .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
                                                                                                                                                                               .setTimestamp()
                                                                                                                                                                               message.channel.send({embed})}
                                                                                                                                                             if(FF < 0) {
@@ -12135,6 +12135,450 @@ bot.on('message', message => {
                           message.channel.send({embed})
                         }   
                       });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bot.on('message', message => {
+if (message.content.startsWith(prefix + "Epée kobolt à deux mains")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Epée kobolt à deux mains :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée kobolt à deux mains`")
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Hache kobolt à deux mains")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Hache kobolt à deux mains :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache kobolt à deux mains`")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+  }   
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Masse kobolt à deux mains")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Masse kobolt à deux mains :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse kobolt à deux mains`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+    }   
+    });
+
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Rapière kobolt à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Rapière kobolt à deux mains :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      }   
+      });
+
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Glaive kobolt à deux mains")) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Glaive kobolt à deux mains :" , ":scales: C'est un glaive assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+        }   
+        });
+
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Cimeterre kobolt à deux mains")) {
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(3447003)
+          .addField(":scales: Cimeterre kobolt à deux mains :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à deux mains`")
+          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+          .setTimestamp()
+          message.channel.send({embed})
+          }   
+          });
+
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Katana kobolt à deux mains")) {
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Katana kobolt à deux mains :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana kobolt à deux mains`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+            message.channel.send({embed})
+            }   
+            });
+
+            bot.on('message', message => {
+              if (message.content.startsWith(prefix + "Epée kobolt à une main")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(3447003)
+              .addField(":scales: Epée kobolt à un main :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de l'épée kobolt à une main`")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+              }   
+              });
+
+              bot.on('message', message => {
+                if (message.content.startsWith(prefix + "Dague kobolt à une main")) {
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Dague kobolt à un main :" , ":scales: C'est une dague assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la dague kobolt à une main`")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+                message.channel.send({embed})
+                }   
+                });
+
+                bot.on('message', message => {
+                  if (message.content.startsWith(prefix + "Masse kobolt à une main")) {
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField(":scales: Masse kobolt à un main :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la masse kobolt à une main`")
+                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                  .setTimestamp()
+                  message.channel.send({embed})
+                  }   
+                  });
+
+                  bot.on('message', message => {
+                    if (message.content.startsWith(prefix + "Hache kobolt à une main")) {
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache kobolt à un main :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la hache kobolt à une main`")
+                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                    .setTimestamp()
+                    message.channel.send({embed})
+                    }   
+                    });
+
+                    bot.on('message', message => {
+                      if (message.content.startsWith(prefix + "Cimeterre kobolt à une main")) {
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(3447003)
+                      .addField(":scales: Cimeterre kobolt à un main :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre kobolt à une main`")
+                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                      .setTimestamp()
+                      message.channel.send({embed})
+                      }   
+                      });
+
+                      bot.on('message', message => {
+                        if (message.content.startsWith(prefix + "Katana kobolt à une main")) {
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana kobolt à un main :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du katana kobolt à une main`")
+                        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                        .setTimestamp()
+                        message.channel.send({embed})
+                        }   
+                        });
+
+                        bot.on('message', message => {
+                          if (message.content.startsWith(prefix + "Rapière kobolt à une main")) {
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                          .setColor(3447003)
+                          .addField(":scales: Rapière kobolt à un main :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière kobolt à une main`")
+                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                          .setTimestamp()
+                          message.channel.send({embed})
+                          }   
+                          });
+
+                          bot.on('message', message => {
+                            if (message.content.startsWith(prefix + "Bouclier kobolt à une main")) {
+                            const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username , message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Bouclier kobolt à un main :" , ":scales: C'est un bouclier assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 4 cuivre commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du bouclier kobolt à une main`")
+                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                            .setTimestamp()
+                            message.channel.send({embed})
+                            }   
+                            });
+
+                            bot.on('message', message => {
+            
+                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de l'épée kobolt à deux mains")) {
+                                const Dégâts = (Math.floor((16)*Math.random()+10))
+                                const embed = new Discord.RichEmbed()
+                                .setAuthor(message.author.username , message.author.avatarURL)
+                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                   .setColor(3447003)
+                                   .addField(":scales: Epée de kobolt à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                    .setTimestamp()
+                                    message.channel.send({embed})
+                                  }   
+                                });
+  
+                                bot.on('message', message => {
+            
+                                  if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la hache kobolt à deux mains")) {
+                                    const Dégâts = (Math.floor((16)*Math.random()+10))
+                                    const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                       .setColor(3447003)
+                                       .addField(":scales: Hache de kobolt à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                        .setTimestamp()
+                                        message.channel.send({embed})
+                                      }   
+                                    });
+
+                                    bot.on('message', message => {
+            
+                                      if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la masse kobolt à deux mains")) {
+                                        const Dégâts = (Math.floor((16)*Math.random()+10))
+                                        const embed = new Discord.RichEmbed()
+                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                           .setColor(3447003)
+                                           .addField(":scales: Masse de kobolt à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                            .setTimestamp()
+                                            message.channel.send({embed})
+                                          }   
+                                        });
+
+                                        bot.on('message', message => {
+            
+                                          if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du glaive kobolt à deux mains")) {
+                                            const Dégâts = (Math.floor((16)*Math.random()+10))
+                                            const embed = new Discord.RichEmbed()
+                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                               .setColor(3447003)
+                                               .addField(":scales: Glaive de kobolt à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                .setTimestamp()
+                                                message.channel.send({embed})
+                                              }   
+                                            });
+
+                                            bot.on('message', message => {
+            
+                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du katana kobolt à deux mains")) {
+                                                const Dégâts = (Math.floor((16)*Math.random()+10))
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                   .setColor(3447003)
+                                                   .addField(":scales: Katana de kobolt à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                    .setTimestamp()
+                                                    message.channel.send({embed})
+                                                  }   
+                                                });
+
+                                                bot.on('message', message => {
+            
+                                      if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la rapière kobolt à deux mains")) {
+                                        const Dégâts = (Math.floor((16)*Math.random()+10))
+                                        const embed = new Discord.RichEmbed()
+                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                           .setColor(3447003)
+                                           .addField(":scales: Rapière de kobolt à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                            .setTimestamp()
+                                            message.channel.send({embed})
+                                          }   
+                                        });
+
+                                        bot.on('message', message => {
+            
+                                          if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la cimeterre kobolt à deux mains")) {
+                                            const Dégâts = (Math.floor((16)*Math.random()+10))
+                                            const embed = new Discord.RichEmbed()
+                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                               .setColor(3447003)
+                                               .addField(":scales: Cimeterre de kobolt à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                .setTimestamp()
+                                                message.channel.send({embed})
+                                              }   
+                                            });
+
+                                            bot.on('message', message => {
+            
+                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de l'épée kobolt à une main")) {
+                                                const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                   .setColor(3447003)
+                                                   .addField(":scales: Epée de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                    .setTimestamp()
+                                                    message.channel.send({embed})
+                                                  }   
+                                                });
+
+                                                bot.on('message', message => {
+            
+                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la masse kobolt à une main")) {
+                                                const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                   .setColor(3447003)
+                                                   .addField(":scales: Masse de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                    .setTimestamp()
+                                                    message.channel.send({embed})
+                                                  }   
+                                                });
+
+                                                bot.on('message', message => {
+            
+                                                  if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la hache kobolt à une main")) {
+                                                    const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                    const embed = new Discord.RichEmbed()
+                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                       .setColor(3447003)
+                                                       .addField(":scales: Hache de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed})
+                                                      }   
+                                                    });
+
+                                                    bot.on('message', message => {
+            
+                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la rapière kobolt à une main")) {
+                                                const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                   .setColor(3447003)
+                                                   .addField(":scales: Rapière de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                    .setTimestamp()
+                                                    message.channel.send({embed})
+                                                  }   
+                                                });
+
+                                                bot.on('message', message => {
+            
+                                                  if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la cimeterre kobolt à une main")) {
+                                                    const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                    const embed = new Discord.RichEmbed()
+                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                       .setColor(3447003)
+                                                       .addField(":scales: Cimeterre de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed})
+                                                      }   
+                                                    });
+
+                                                    bot.on('message', message => {
+            
+                                                      if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la dague kobolt à une main")) {
+                                                        const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                        const embed = new Discord.RichEmbed()
+                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                           .setColor(3447003)
+                                                           .addField(":scales: Dague de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                            .setTimestamp()
+                                                            message.channel.send({embed})
+                                                          }   
+                                                        });
+
+
+                                                        bot.on('message', message => {
+            
+                                                          if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du bouclier kobolt à une main")) {
+                                                            const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                            const embed = new Discord.RichEmbed()
+                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                               .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                               .setColor(3447003)
+                                                               .addField(":scales: Bouclier de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                .setTimestamp()
+                                                                message.channel.send({embed})
+                                                              }   
+                                                            });
+
+                                                            bot.on('message', message => {
+            
+                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du katana kobolt à une main")) {
+                                                const Dégâts = (Math.floor((9)*Math.random()+5))
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                   .setColor(3447003)
+                                                   .addField(":scales: Katana de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                    .setTimestamp()
+                                                    message.channel.send({embed})
+                                                  }   
+                                                });
+
+
+
+
+
 
 
 
