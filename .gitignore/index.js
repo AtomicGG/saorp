@@ -12351,7 +12351,7 @@ bot.on('message', message => {
 
                             bot.on('message', message => {
             
-                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de l'épée kobolt à deux mains")) {
+                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée kobolt à deux mains")) {
                                 const Dégâts = (Math.floor((16)*Math.random()+10))
                                 const embed = new Discord.RichEmbed()
                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -12366,7 +12366,7 @@ bot.on('message', message => {
   
                                 bot.on('message', message => {
             
-                                  if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la hache kobolt à deux mains")) {
+                                  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache kobolt à deux mains")) {
                                     const Dégâts = (Math.floor((16)*Math.random()+10))
                                     const embed = new Discord.RichEmbed()
                                     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12381,7 +12381,7 @@ bot.on('message', message => {
 
                                     bot.on('message', message => {
             
-                                      if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la masse kobolt à deux mains")) {
+                                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse kobolt à deux mains")) {
                                         const Dégâts = (Math.floor((16)*Math.random()+10))
                                         const embed = new Discord.RichEmbed()
                                         .setAuthor(message.author.username , message.author.avatarURL)
@@ -12396,7 +12396,7 @@ bot.on('message', message => {
 
                                         bot.on('message', message => {
             
-                                          if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du glaive kobolt à deux mains")) {
+                                          if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive kobolt à deux mains")) {
                                             const Dégâts = (Math.floor((16)*Math.random()+10))
                                             const embed = new Discord.RichEmbed()
                                             .setAuthor(message.author.username , message.author.avatarURL)
@@ -12411,7 +12411,7 @@ bot.on('message', message => {
 
                                             bot.on('message', message => {
             
-                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du katana kobolt à deux mains")) {
+                                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana kobolt à deux mains")) {
                                                 const Dégâts = (Math.floor((16)*Math.random()+10))
                                                 const embed = new Discord.RichEmbed()
                                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -12426,7 +12426,7 @@ bot.on('message', message => {
 
                                                 bot.on('message', message => {
             
-                                      if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la rapière kobolt à deux mains")) {
+                                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière kobolt à deux mains")) {
                                         const Dégâts = (Math.floor((16)*Math.random()+10))
                                         const embed = new Discord.RichEmbed()
                                         .setAuthor(message.author.username , message.author.avatarURL)
@@ -12441,7 +12441,7 @@ bot.on('message', message => {
 
                                         bot.on('message', message => {
             
-                                          if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la cimeterre kobolt à deux mains")) {
+                                          if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre kobolt à deux mains")) {
                                             const Dégâts = (Math.floor((16)*Math.random()+10))
                                             const embed = new Discord.RichEmbed()
                                             .setAuthor(message.author.username , message.author.avatarURL)
@@ -12456,7 +12456,7 @@ bot.on('message', message => {
 
                                             bot.on('message', message => {
             
-                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de l'épée kobolt à une main")) {
+                                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
                                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -12471,7 +12471,7 @@ bot.on('message', message => {
 
                                                 bot.on('message', message => {
             
-                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la masse kobolt à une main")) {
+                                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
                                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -12486,7 +12486,7 @@ bot.on('message', message => {
 
                                                 bot.on('message', message => {
             
-                                                  if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la hache kobolt à une main")) {
+                                                  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache kobolt à une main")) {
                                                     const Dégâts = (Math.floor((9)*Math.random()+5))
                                                     const embed = new Discord.RichEmbed()
                                                     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12501,7 +12501,7 @@ bot.on('message', message => {
 
                                                     bot.on('message', message => {
             
-                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la rapière kobolt à une main")) {
+                                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
                                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -12516,7 +12516,7 @@ bot.on('message', message => {
 
                                                 bot.on('message', message => {
             
-                                                  if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la cimeterre kobolt à une main")) {
+                                                  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre kobolt à une main")) {
                                                     const Dégâts = (Math.floor((9)*Math.random()+5))
                                                     const embed = new Discord.RichEmbed()
                                                     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12531,7 +12531,7 @@ bot.on('message', message => {
 
                                                     bot.on('message', message => {
             
-                                                      if (message.content.startsWith(prefix + "=Achat/fabrication/découverte de la dague kobolt à une main")) {
+                                                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague kobolt à une main")) {
                                                         const Dégâts = (Math.floor((9)*Math.random()+5))
                                                         const embed = new Discord.RichEmbed()
                                                         .setAuthor(message.author.username , message.author.avatarURL)
@@ -12547,7 +12547,7 @@ bot.on('message', message => {
 
                                                         bot.on('message', message => {
             
-                                                          if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du bouclier kobolt à une main")) {
+                                                          if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier kobolt à une main")) {
                                                             const Dégâts = (Math.floor((9)*Math.random()+5))
                                                             const embed = new Discord.RichEmbed()
                                                             .setAuthor(message.author.username , message.author.avatarURL)
@@ -12562,7 +12562,7 @@ bot.on('message', message => {
 
                                                             bot.on('message', message => {
             
-                                              if (message.content.startsWith(prefix + "=Achat/fabrication/découverte du katana kobolt à une main")) {
+                                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
                                                 .setAuthor(message.author.username , message.author.avatarURL)
