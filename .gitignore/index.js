@@ -13472,7 +13472,7 @@ bot.on('message', message => {
                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                      .setColor(3447003)
-                                                                                     .addField(":scroll: Parchemin de poison faible :" , ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué d'oeil d'animal ainsi que de pierre de poison faible !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de lapin géant, 5 pierre de poison faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : 460 cols\n\n:large_orange_diamond: Prix de revente : 115 cols\n\:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de poison faible`")
+                                                                                     .addField(":scroll: Parchemin de poison faible :" , ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué d'oeil d'animal ainsi que de pierre de poison faible !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de lapin géant, 5 pierre de poison faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : 460 cols\n\n:large_orange_diamond: Prix de revente : 115 cols\n\:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de poison faible`\n\n:warning: Un seul enchantement actif possible")
                 
                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                       .setTimestamp()
@@ -13487,7 +13487,7 @@ bot.on('message', message => {
                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                              .setColor(3447003)
                                                                                              .addField(":scroll: Parchemin de poison faible :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégât à un ennemis : `=Poison faible`")
-                                                                                             .addField("Chaque fois que vous infligez au moins 1 point de dégât à un ennemis :" , "=Poison faible")
+                                                                                    
                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                               .setTimestamp()
                                                                                               message.channel.send({embed})
@@ -13496,7 +13496,7 @@ bot.on('message', message => {
 
                                                                                           bot.on('message', message => {
                                                                                             const Poison = (Math.floor((100)*Math.random()+1))
-                                                                                            const Dégâts = (Math.floor((7)*Math.random()+3))
+                                                                                            const Dégâts = (Math.floor((11)*Math.random()+5))
                                                                                             if (message.content.startsWith(prefix + "Poison faible")) {
                                                                                                 if(Poison < 50){
                                                                                                   const embed = new Discord.RichEmbed()
@@ -13513,6 +13513,30 @@ bot.on('message', message => {
                                                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                    .setColor(3447003)
                                                                                                    .addField(":crossed_swords: Poison faible :" , ":crossed_swords: Vous arrivez à empoisonner votre cible ce qui lui inflige " +Dégâts+ " points de dégâts, l'armure ne réduit pas les dégâts !")
+                                                                                                    .setTimestamp()
+                                                                                                    message.channel.send({embed})}
+                                                                                              }
+                                                                                              });
+
+                                                                                              bot.on('message', message => {
+                                                                                            const Poison = (Math.floor((100)*Math.random()+1))
+                                                                                            const Dégâts = (Math.floor((26)*Math.random()+25))
+                                                                                            if (message.content.startsWith(prefix + "Feu faible")) {
+                                                                                                if(Poison < 25){
+                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                     .setColor(3447003)
+                                                                                                     .addField(":crossed_swords: Feu faible :" , ":crossed_swords: Vous n'arrivez pas à enflammer votre cible...")
+                                                                                                      .setTimestamp()
+                                                                                                      message.channel.send({embed})}
+                                                                                                    
+                                                                                              if(Poison > 26){
+                                                                                                const embed = new Discord.RichEmbed()
+                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                   .setColor(3447003)
+                                                                                                   .addField(":crossed_swords: Feu faible :" , ":crossed_swords: Vous arrivez à emflammer votre cible ce qui lui inflige " +Dégâts+ " points de dégâts, l'armure réduit les dégâts !")
                                                                                                     .setTimestamp()
                                                                                                     message.channel.send({embed})}
                                                                                               }
@@ -13788,7 +13812,35 @@ bot.on('message', message => {
                                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                   .setColor(3447003)
-                                                                                                                  .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
+                                                                                                                  .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
+                                                                                                                  
+                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                   .setTimestamp()
+                                                                                                                   message.channel.send({embed})
+                                                                                                                 }   
+                                                                                                               });
+
+                                                                                                               bot.on('message', message => {
+                                                                                                                if (message.content === prefix + "Ragoût de kobolt supérieur") {
+                                                                                                               const embed = new Discord.RichEmbed()
+                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                  .setColor(3447003)
+                                                                                                                  .addField(":meat_on_bone: Ragoût de kobolt supérieur :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de ragondin et de d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de ragondin, 3 basilic, 5 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt supérieur`")
+                                                                                                                  
+                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                   .setTimestamp()
+                                                                                                                   message.channel.send({embed})
+                                                                                                                 }   
+                                                                                                               });
+
+                                                                                                               bot.on('message', message => {
+                                                                                                                if (message.content === prefix + "Ragoût de kobolt géant rouge") {
+                                                                                                               const embed = new Discord.RichEmbed()
+                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                  .setColor(3447003)
+                                                                                                                  .addField(":meat_on_bone: Ragoût de kobolt géant rouge :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de ragondin et de d'oreille de kobolt géant rouge mais aussi de basilic et le meilleur des ragoûts du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 viande de ragondin, 5 basilic, 5 oreille de kobolt géant rouge\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 16\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt géant rouge`")
                                                                                                                   
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                    .setTimestamp()
@@ -13826,6 +13878,36 @@ bot.on('message', message => {
                                                                                                                       });
 
                                                                                                                       bot.on('message', message => {
+                                                                                                                        const HP = (Math.floor((101)*Math.random()+100))
+                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt supérieur")) {
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+                                                                                                                                 .addField(":meat_on_bone: Ragoût de kobolt supérieur :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                                 
+                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})
+                                                                                                                                }   
+                                                                                                                              });
+
+                                                                                                                              bot.on('message', message => {
+                                                                                                                                const HP = (Math.floor((151)*Math.random()+150))
+                                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt géant rouge")) {
+                                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                         .setColor(3447003)
+                                                                                                                                         .addField(":meat_on_bone: Ragoût de kobolt géant rouge :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                                         
+                                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                          .setTimestamp()
+                                                                                                                                          message.channel.send({embed})
+                                                                                                                                        }   
+                                                                                                                                      });
+
+                                                                                                                      bot.on('message', message => {
                                                                                                                 const HP = (Math.floor((51)*Math.random()+50))
                                                                                                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de ragondin")) {
                                                                                                                       const embed = new Discord.RichEmbed()
@@ -13843,7 +13925,75 @@ bot.on('message', message => {
                                                                                                               
                             
 
-                                                                                                          
+                                                                                                                      bot.on('message', message => {
+                                                                                                                        if (message.content.startsWith(prefix + "Potion imposante de soin")) {
+                                                                                                                          const embed = new Discord.RichEmbed()
+                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                             .setColor(3447003)
+                                                                                                                             .addField(":syringe: Potion imposante de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion imposante de soin`")
+                                                             
+                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                              .setTimestamp()
+                                                                                                                              message.channel.send({embed})
+                                                                                                                            }   
+                                                                                                                          });
+
+                                                                                                                          bot.on('message', message => {
+                                                                                                                            if (message.content.startsWith(prefix + "Potion vitale de kobolt")) {
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+                                                                                                                                 .addField(":syringe: Potion vitale de kobolt :" , ":syringe: C'est une potion permettant de reprendre des HP ainsi que de gagner de la force et de la défense constitué de coeur et d'oeil d'animal et la meilleur de toute les potions du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 oeil de ragondin, 1 plantrus parfait, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt géant rouge\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 30\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion vitale de kobolt`")
+                                                                 
+                                                                                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})
+                                                                                                                                }   
+                                                                                                                              });
+
+                                                                                                                          bot.on('message', message => {
+                                                                                                                            if (message.content.startsWith(prefix + "Potion imposante de défense")) {
+                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                 .setColor(3447003)
+                                                                                                                                 .addField(":syringe: Potion imposante de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion imposante de défense`")
+                                                                                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                  .setTimestamp()
+                                                                                                                                  message.channel.send({embed})
+                                                                                                                                }   
+                                                                                                                              });
+
+                                                                                                                              bot.on('message', message => {
+                                                                                                                                if (message.content.startsWith(prefix + "Potion imposante de force")) {
+                                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                     .setColor(3447003)
+                                                                                                                                     .addField(":syringe: Potion imposante de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion imposante de force`")
+                                                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                      .setTimestamp()
+                                                                                                                                      message.channel.send({embed})
+                                                                                                                                    }   
+                                                                                                                                  });
+
+                                                                                                                          bot.on('message', message => {
+                                                                                                                    if (message.content.startsWith(prefix + "Potion imposante de régénération")) {
+                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                         .setColor(3447003)
+                                                                                                                         .addField(":syringe: Potion imposante de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion imposante de régénération`")
+                                                         
+                                                                                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                          .setTimestamp()
+                                                                                                                          message.channel.send({embed})
+                                                                                                                        }   
+                                                                                                                      });
+
+
                             
 
                                                                                                              
@@ -13867,7 +14017,7 @@ bot.on('message', message => {
                                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
-                                                                                                                         .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 4 plantrus médiocre, 2 plantrus commun, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
+                                                                                                                         .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 4 plantrus médiocre, 2 plantrus commun, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
                                                          
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
@@ -13982,6 +14132,22 @@ bot.on('message', message => {
 
                                                                                                                                           bot.on('message', message => {
                                                                                                                                             const HP = (Math.floor((76)*Math.random()+75))
+                                                                                                                                            const X = (Math.floor((3)*Math.random()+2))
+                                                                                                                                                if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération")) {
+                                                                                                                                                  const embed = new Discord.RichEmbed()
+                                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                                     .setColor(3447003)
+                                                                                                                                                     .addField(":syringe: Potion moyenne de régénération :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP par tour pendant `" +X+ "` tours !")
+                                                                                                                                                    
+                                                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                                      .setTimestamp()
+                                                                                                                                                      message.channel.send({embed})
+                                                                                                                                                    }   
+                                                                                                                                                  });
+
+                                                                                                                                                   bot.on('message', message => {
+                                                                                                                                            const HP = (Math.floor((151)*Math.random()+150))
                                                                                                                                             const X = (Math.floor((3)*Math.random()+2))
                                                                                                                                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération")) {
                                                                                                                                                   const embed = new Discord.RichEmbed()
@@ -14137,6 +14303,38 @@ bot.on('message', message => {
                                                                                                                                 }   
                                                                                                                               });
 
+                                                                                                                              bot.on('message', message => {
+                                                                                                                                const HP = (Math.floor((161)*Math.random()+240))
+                                                                                                                                    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de soin")) {
+                                                                                                                                      const embed = new Discord.RichEmbed()
+                                                                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                         .setColor(3447003)
+                                                                                                                                         .addField(":syringe: Potion imposante de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+                                                                                                                                        
+                                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                          .setTimestamp()
+                                                                                                                                          message.channel.send({embed})
+                                                                                                                                        }   
+                                                                                                                                      });
+
+                                                                                                                                      bot.on('message', message => {
+                                                                                                                                        const A = (Math.floor((201)*Math.random()+300))
+                                                                                                                                        const B = (Math.floor((13)*Math.random()+18))
+                                                                                                                                        const C = (Math.floor((21)*Math.random()+40))
+                                                                                                                                            if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion vitale de kobolt")) {
+                                                                                                                                              const embed = new Discord.RichEmbed()
+                                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                                 .setColor(3447003)
+                                                                                                                                                 .addField(":syringe: Potion vitale de kobolt :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +A+ "` HP !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +B+ "` points d'armure supplémentaires !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +C+ "` points de dégâts supplémentaires !")
+                                                                                                                                                
+                                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                                  .setTimestamp()
+                                                                                                                                                  message.channel.send({embed})
+                                                                                                                                                }   
+                                                                                                                                              });
+
 
                                                                                                                                                                                                                          bot.on('message', message => {
                                                                                                                     if (message.content.startsWith(prefix + "Potion légère de soin")) {
@@ -14223,6 +14421,21 @@ bot.on('message', message => {
                                                                                                                                 });
 
                                                                                                                                 bot.on('message', message => {
+                                                                                                                                  const HP = (Math.floor((27)*Math.random()+24))
+                                                                                                                                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de force")) {
+                                                                                                                                        const embed = new Discord.RichEmbed()
+                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                           .setColor(3447003)
+                                                                                                                                           .addField(":syringe: Potion imposante de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
+                                                                                                                                       
+                                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                            .setTimestamp()
+                                                                                                                                            message.channel.send({embed})
+                                                                                                                                          }   
+                                                                                                                                        });
+
+                                                                                                                                bot.on('message', message => {
                                                                                                                                   const HP = (Math.floor((7)*Math.random()+7))
                                                                                                                                       if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de défense")) {
                                                                                                                                         const embed = new Discord.RichEmbed()
@@ -14237,13 +14450,68 @@ bot.on('message', message => {
                                                                                                                                           }   
                                                                                                                                         });
 
+                                                                                                                                        bot.on('message', message => {
+                                                                                                                                  const HP = (Math.floor((13)*Math.random()+12))
+                                                                                                                                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de défense")) {
+                                                                                                                                        const embed = new Discord.RichEmbed()
+                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                           .setColor(3447003)
+                                                                                                                                           .addField(":syringe: Potion imposante de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
+                                                                                                                                       
+                                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                            .setTimestamp()
+                                                                                                                                            message.channel.send({embed})
+                                                                                                                                          }   
+                                                                                                                                        });
+
 
                                                                                                                           
 
-                                                                                                                  
+                                                                                                                                        bot.on('message', message => {
+                                                                                                                                          const HP = (Math.floor((13)*Math.random()+12))
+                                                                                                                                              if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
+                                                                                                                                                const embed = new Discord.RichEmbed()
+                                                                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                                   .setColor(3447003)
+                                                                                                                                                   .addField(":scroll: Potion imposante de défense :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
+                                                                                                                                               
+                                                                                                                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                                    .setTimestamp()
+                                                                                                                                                    message.channel.send({embed})
+                                                                                                                                                  }   
+                                                                                                                                                });
 
                                                                
-                                                                                                                               
+                                                                                                                                        bot.on('message', message => {
+                                                                                                                                          if (message.content === prefix + "Parchemin de feu rouge faible") {
+                                                                                                                                         const embed = new Discord.RichEmbed()
+                                                                                                                                         .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                            .setColor(3447003)
+                                                                                                                                            .addField(":scroll: Parchemin de feu rouge faible :" , ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 24\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
+                                                                                                                                            
+                                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                             .setTimestamp()
+                                                                                                                                             message.channel.send({embed})
+                                                                                                                                           }   
+                                                                                                                                         });
+
+                                                                                                                                         bot.on('message', message => {
+                                                                                                                                  const HP = (Math.floor((13)*Math.random()+12))
+                                                                                                                                      if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de défense")) {
+                                                                                                                                        const embed = new Discord.RichEmbed()
+                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                                                           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                                                           .setColor(3447003)
+                                                                                                                                           .addField(":syringe: Potion imposante de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
+                                                                                                                                       
+                                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                                                                                                                                            .setTimestamp()
+                                                                                                                                            message.channel.send({embed})
+                                                                                                                                          }   
+                                                                                                                                        });
 
 
 
