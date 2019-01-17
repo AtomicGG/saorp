@@ -10219,6 +10219,68 @@ bot.on('message', message => {
           }   
           });
 
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Bouclier du roi déchus à une main")) {
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bouclier du roi déchus à une main :" , ":scales: C'est un bouclier extrêmement rare uniquement possible à sur les kobolts gardes qui parfois ne se rendent pas compte du bouclier qu'ils ont !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:crossed_swords: Améliore 'Interception' en : 'Interception améliorée'\n\n:crossed_swords: Améliore le 'cri de provocation' en : 'Cri de provocation amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du roi déchus à une main`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+            message.channel.send({embed})
+            }   
+            });
+
+            bot.on('message', message => {
+              const Défense = (Math.floor((7)*Math.random()+12))
+              
+  const HP = (Math.floor((31)*Math.random()+60))
+   if (message.content.startsWith(prefix + "Découverte du bouclier du roi déchus à une main")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField(":scales: Découverte du bouclier du roi déchus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:warning: En portant ce bouclier, vous êtes immunisé des effets de saignement !")
+    
+        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }   
+    });
+
+    bot.on('message', message => {
+      const Défense = (Math.floor((3)*Math.random()+1))
+                const HP = (Math.floor((13)*Math.random()+18))
+if (message.content.startsWith(prefix + "Découverte du casque de mineur kobolt")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Découverte du casque de mineur kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:warning: En portant ce casque, vous gagnez le double de cuivre [médiocre] et [commun] ainsi que [rare] lorsque vous minez !")
+
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
+
+bot.on('message', message => {
+  const Défense = (Math.floor((3)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+18))
+if (message.content.startsWith(prefix + "Découverte des bottes d'exploration kobolt")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":scales: Découverte des bottes d'exploration kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:warning: En portant ces bottes, vos temps de trajets pour le palier 1 et 2 sont réduits de deux minutes !")
+
+.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+.setTimestamp()
+message.channel.send({embed})
+}   
+});
+
 
 
 
@@ -11188,8 +11250,31 @@ bot.on('message', message => {
                 
           });
 
-
-
+          bot.on('message', message => {
+            if (message.content.startsWith(prefix + "Casque de mineur kobolt")) {
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque de mineur kobolt :" , ":scales: C'est un casque que portent les kobolts mineurs afin d'éclairer et de miner plus facilement et rapidement !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Découverte du casque de mineur kobolt`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+            message.channel.send({embed})
+            }   
+            });
+            
+            bot.on('message', message => {
+              if (message.content.startsWith(prefix + "Bottes d'exploration kobolt")) {
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(3447003)
+              .addField(":scales: Bottes d'exploration kobolt :" , ":scales: Ce sont des bottes que portent les kobolts explorateurs afin d'aller plus vite et de pouvoir explorer les alentours de leur territoires plus facilement !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Découverte des bottes d'exploration kobolt`")
+              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+              .setTimestamp()
+              message.channel.send({embed})
+              }   
+              });
 
 
 
