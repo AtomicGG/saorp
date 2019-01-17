@@ -11147,7 +11147,7 @@ bot.on('message', message => {
                                                       bot.on('message', message => {
                                                         let cont = message.content.slice(prefix.length).split(" ");
                                                         const args = cont.slice(1);
-                                                        if (message.content.startsWith(prefix + "Donjon secret de la montagne")) {
+                                                        if (message.content.startsWith(prefix + "Coffre secret de la montagne")) {
                                                           const G = (Math.floor((501)*Math.random()+500))
                                                           const H = (Math.floor((2)*Math.random()+1))
                                                           const I = (Math.floor((2-(0.75))*Math.random()))
@@ -11169,7 +11169,7 @@ bot.on('message', message => {
                                 bot.on('message', message => {
                                   let cont = message.content.slice(prefix.length).split(" ");
                                   const args = cont.slice(1);
-                                  if (message.content.startsWith(prefix + "Donjon secret de la grotte")) {
+                                  if (message.content.startsWith(prefix + "Coffre secret de la grotte")) {
                                     const G = (Math.floor((1001)*Math.random()+100))
                                     const H = (Math.floor((2)*Math.random()+1))
                                     const I = (Math.floor((2-(0.75))*Math.random()))
@@ -16109,7 +16109,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Coffre secret")) {   
+  if (message.content.startsWith(prefix + "Coffre secret event")) {   
   const B = (Math.floor((3*1)*Math.random()))
    const E = (Math.floor((3*1)*Math.random()+1))
       const A = (Math.floor((3*1)*Math.random()+1))
