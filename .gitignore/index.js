@@ -11144,6 +11144,52 @@ bot.on('message', message => {
 
 
 
+                                                      bot.on('message', message => {
+                                                        let cont = message.content.slice(prefix.length).split(" ");
+                                                        const args = cont.slice(1);
+                                                        if (message.content.startsWith(prefix + "Donjon secret de la montagne")) {
+                                                          const G = (Math.floor((501)*Math.random()+500))
+                                                          const H = (Math.floor((2)*Math.random()+1))
+                                                          const I = (Math.floor((2-(0.75))*Math.random()))
+                                                          const J = (Math.floor((2-(0.50))*Math.random()))
+                                                          const K = (Math.floor((2)*Math.random()+1))
+                                                          const L = (Math.floor((2-(0.95))*Math.random()))
+                                                          const M = (Math.floor((2-(0.90))*Math.random()))
+                                                           const embed = new Discord.RichEmbed()
+                                                             .setAuthor(message.author.username , message.author.avatarURL)
+                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                             .addField(":moneybag: Coffre secret de la montagne :" , ":moneybag: Vous suivez les indications de la carte au trésor jusqu'à le bonne emplacement à travers les hauteurs dangereuses de la montagne, et vous découvrez effectivement un coffre !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Equipement de kobolt au choix : " +H+ "\n:scales: Bijoux de kobolt au choix : " +I+ "\n:scales: Arme de kobolt à deux mains : " +J+ "\n:scales: Arme de kobolt à une main : " +K+ "\n:scales: Faux du roi déchus à deux mains : " +L+ "\n:scales: Bouclier du roi déchus à une main : " +M)
+                                                             .setColor(3447003)
+                                  .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
+                                                             .setTimestamp()
+                                                             message.channel.send({embed})}
+                                      
+                                });
+
+                                bot.on('message', message => {
+                                  let cont = message.content.slice(prefix.length).split(" ");
+                                  const args = cont.slice(1);
+                                  if (message.content.startsWith(prefix + "Donjon secret de la grotte")) {
+                                    const G = (Math.floor((501)*Math.random()+500))
+                                    const H = (Math.floor((2)*Math.random()+1))
+                                    const I = (Math.floor((2-(0.75))*Math.random()))
+                                    const J = (Math.floor((2-(0.50))*Math.random()))
+                                    const K = (Math.floor((2)*Math.random()+1))
+                                    const L = (Math.floor((2-(0.95))*Math.random()))
+                                    const M = (Math.floor((2-(0.90))*Math.random()))
+                                     const embed = new Discord.RichEmbed()
+                                       .setAuthor(message.author.username , message.author.avatarURL)
+                                       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                       .addField(":moneybag: Coffre secret de la grotte :" , ":moneybag: Vous suivez les indications de la carte au trésor jusqu'à le bonne emplacement à travers les profondeurs sombres de la grotte, et vous découvrez effectivement un coffre !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Equipement de kobolt supérieur au choix : " +H+ "\n:scales: Bijoux de kobolt supérieur au choix : " +I+ "\n:scales: Arme de kobolt supérieure à deux mains : " +J+ "\n:scales: Arme de kobolt supérieure à une main : " +K+ "\n:scales: Faux du roi déchus à deux mains : " +L+ "\n:scales: Bouclier du roi déchus à une main : " +M)
+                                       .setColor(3447003)
+            .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
+                                       .setTimestamp()
+                                       message.channel.send({embed})}
+                
+          });
+
+
+
 
 
 
