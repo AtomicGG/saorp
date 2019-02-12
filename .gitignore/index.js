@@ -1060,7 +1060,7 @@ bot.on('message', message => {
     .setTitle(":japanese_ogre: Kobolt ouvrier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5e/KoboldMG.png/300px-KoboldMG.png?version=b6cc120769e6300e7b5eb863ef828278")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 330")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup gigantesque attaque`")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt ouvrier attaque`")
     .addField(":shield: Lorsque le kobolt ouvrier reçoit un coup :" , ":shield: `=Kobolt ouvrier défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt ouvrier récompenses solo : [Votre niveau]`")
      .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt ouvrier récompenses groupe : [Votre niveau]`")
@@ -1153,6 +1153,7 @@ bot.on('message', message => {
     .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :" , ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt géant rouge récompenses solo : [Votre niveau]`")
      .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt géant rouge récompenses groupe : [Votre niveau]`")
+     .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :" , ":warning: Provocation, étourdissement")
     .setTimestamp()
     message.channel.send({embed})
     }
@@ -13875,20 +13876,7 @@ bot.on('message', message => {
                     
 
 
-                                                                                                                  bot.on('message', message => {
-                                                                                                                    const HP = (Math.floor((21)*Math.random()+20))
-                                                                                                                        if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de renard")) {
-                                                                                                                          const embed = new Discord.RichEmbed()
-                                                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                             .setColor(3447003)
-                                                                                                                             .addField(":meat_on_bone: Ragoût de renard :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                             
-                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                                                                                                                              .setTimestamp()
-                                                                                                                              message.channel.send({embed})
-                                                                                                                            }   
-                                                                                                                          });
+                                                                                                                  
 
                                                                                                                             bot.on('message', message => {
                                                                                         const HP = (Math.floor((21)*Math.random()+20))
