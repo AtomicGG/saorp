@@ -10309,7 +10309,7 @@ bot.on('message', message => {
     });
 
     bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Hache de kobolt")) {
+      if (message.content === (prefix) + "Hache de kobolt"){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
