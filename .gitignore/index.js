@@ -5113,7 +5113,7 @@ const args = cont.slice(1);
                                                                                                            if (message.content.startsWith(prefix + "Coup précis simple")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 50){
      const embed = new Discord.RichEmbed()
@@ -5145,7 +5145,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup précis amélioré")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+      const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 45){
        const embed = new Discord.RichEmbed()
@@ -5177,7 +5177,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup précis supérieur")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+      const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 40){
        const embed = new Discord.RichEmbed()
@@ -5209,7 +5209,7 @@ bot.on('message', message => {
                                                                                                             if (message.content.startsWith(prefix + "Coup précis suprême")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+      const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 35){
        const embed = new Discord.RichEmbed()
@@ -5419,7 +5419,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
       let degats = args.slice(4).join(" : ");
       const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
       const B = (Math.floor((100)*Math.random()+1))
-      if (B < 40){
+      if (B < 45){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5429,7 +5429,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (41 < B){
+      if (46 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5450,7 +5450,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
         let degats = args.slice(4).join(" : ");
         const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
         const B = (Math.floor((100)*Math.random()+1))
-        if (B < 35){
+        if (B < 40){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5460,7 +5460,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
          .setTimestamp()
          message.channel.send({embed})
         }
-        if (36 < B){
+        if (41 < B){
            const embed = new Discord.RichEmbed()
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5481,7 +5481,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
           let degats = args.slice(4).join(" : ");
           const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
           const B = (Math.floor((100)*Math.random()+1))
-          if (B < 30){
+          if (B < 35){
            const embed = new Discord.RichEmbed()
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5491,7 +5491,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
            .setTimestamp()
            message.channel.send({embed})
           }
-          if (31 < B){
+          if (36 < B){
              const embed = new Discord.RichEmbed()
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5512,7 +5512,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
             let degats = args.slice(4).join(" : ");
             const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
             const B = (Math.floor((100)*Math.random()+1))
-            if (B < 25){
+            if (B < 30){
              const embed = new Discord.RichEmbed()
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5522,7 +5522,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
              .setTimestamp()
              message.channel.send({embed})
             }
-            if (26 < B){
+            if (31 < B){
                const embed = new Discord.RichEmbed()
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5542,8 +5542,8 @@ const args = cont.slice(1);
                                                                                                            if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
 
   let degats = args.slice(3).join(" : ");
-  const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
-  const C = A*1.25
+  const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+  const C = A*1.10
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 5){
    const embed = new Discord.RichEmbed()
@@ -5586,9 +5586,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc amélioré")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.25
+    const C = A*1.10
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5630,9 +5630,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc supérieur")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.25
+    const C = A*1.10
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5674,9 +5674,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc suprême")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.25
+    const C = A*1.10
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5715,12 +5715,12 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Combo simple")) {      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 75){
@@ -5752,12 +5752,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Combo amélioré")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 70){
@@ -5790,12 +5790,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Combo supérieur")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 65){
@@ -5828,12 +5828,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Combo suprême")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 60){
@@ -6492,14 +6492,14 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Parade simple")) {
 
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 60){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6523,14 +6523,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Parade améliorée")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 55){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6554,14 +6554,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Parade supérieure")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 50){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6585,14 +6585,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Parade suprême")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 45){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6618,7 +6618,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Parade réussie")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.15)*Math.random()+1*(degats*1.15)))
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -16359,9 +16359,16 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 3")) {   
- message.channel.send("```Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\nCeinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\nJambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\nBottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\nAnneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\nAmulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]```")
+ message.channel.send("```Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\nCeinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\nJambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\nBottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\nAnneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\nAmulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\nCasque de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de kobolt]\n\nEpaulières de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epaulières de kobolt]\n\nCape de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt]\n\nPlastron de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt]\n\nGantelets de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt]\n\nCeinture de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt]\n\nJambières de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt]\n\nBottes de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt]\n\nAmulette de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt]\n\nAnneau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt]\n\nCasque de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de kobolt supérieur]\n\nSuite en écrivant :\n=Liste d'équipements 4```")
         }
   }) ;
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste d'équipements 4")) {   
+   message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Épaulières de kobolt supérieures]\n\nCape de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt supérieure]\n\nPlastron de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt supérieur]\n\nGantelets de kobolt supérieurs :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\nCeinture de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt supérieure]\n\nJambières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt supérieures]\n\nBottes de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt supérieures]\n\nAmulette de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt supérieure]\n\nAnneau de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt supérieur]```")
+          }
+    }) ;
+  
 
 
 
@@ -16381,15 +16388,40 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 3")) {   
- message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\nGlaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\nFaux du roi déchus à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchus à deux mains]```")
+ message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\nGlaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\nFaux du roi déchus à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchus à deux mains]\n\nBouclier du roi déchus à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier du roi déchus à une main]\n\nEpée de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à une main]\n\nEpée de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à deux mains]\n\nHache de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à une main]\n\nHache de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à deux mains]\n\nMasse de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à une main]\n\nMasse de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à deux mains]\n\nRapière de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à une main]\n\nRapière de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à deux mains]\n\nCimeterre de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à une main]\n\nCimeterre de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 4```")
         }
   }) ;
 
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste d'armes 4")) {   
+   message.channel.send("```\n\nKatana de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt à une main]\n\nKatana de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt à deux mains]\n\nDague de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Dague de kobolt à une main]\n\nBouclier de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier de kobolt à une main]\n\nGlaive de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Glaive de kobolt à deux mains]\n\nEpée de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\nEpée de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\nHache de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\nHache de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\nMasse de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\nMasse de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\nRapière de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\nRapière de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 5```")
+          }
+    }) ;
+
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Liste d'armes 5")) {   
+     message.channel.send("```Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\nCimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\nKatana de kobolt supérieur à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\nKatana de kobolt supérieur à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\nDague de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\nBouclier de kobolt supérieur à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\nGlaive de kobolt supérieur à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]```")
+            }
+      }) ;
+
+
+
+
+
+
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {   
- message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]```")
+ message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur\n\nRagoûts de ragondin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de ragondin]\n\nRagoûts de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt géant rouge]```")
         }
   }) ;
+
+
+
+
+
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des potions 1")) {   
@@ -16399,17 +16431,32 @@ bot.on('message', message => {
       
       
 
+
+
+
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des parchemins 1")) {   
- message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]```")
+ message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\nParchemin de feu rouge faible :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Parchemin de feu rouge faible]```")
         }
   }) ;
+
+
+
+
+
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des oeufs 1")) {   
  message.channel.send("```Oeuf déformé :\nCoûts : [Achat : X cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
         }
   }) ;
+
+
+
+
 
 
 
