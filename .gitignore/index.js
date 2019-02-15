@@ -5113,7 +5113,7 @@ const args = cont.slice(1);
                                                                                                            if (message.content.startsWith(prefix + "Coup précis simple")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 50){
      const embed = new Discord.RichEmbed()
@@ -5145,7 +5145,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup précis amélioré")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+      const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 45){
        const embed = new Discord.RichEmbed()
@@ -5177,7 +5177,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup précis supérieur")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+      const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 40){
        const embed = new Discord.RichEmbed()
@@ -5209,7 +5209,7 @@ bot.on('message', message => {
                                                                                                             if (message.content.startsWith(prefix + "Coup précis suprême")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+      const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 35){
        const embed = new Discord.RichEmbed()
@@ -5419,7 +5419,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
       let degats = args.slice(4).join(" : ");
       const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
       const B = (Math.floor((100)*Math.random()+1))
-      if (B < 40){
+      if (B < 45){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5429,7 +5429,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
        .setTimestamp()
        message.channel.send({embed})
       }
-      if (41 < B){
+      if (46 < B){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5450,7 +5450,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
         let degats = args.slice(4).join(" : ");
         const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
         const B = (Math.floor((100)*Math.random()+1))
-        if (B < 35){
+        if (B < 40){
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5460,7 +5460,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
          .setTimestamp()
          message.channel.send({embed})
         }
-        if (36 < B){
+        if (41 < B){
            const embed = new Discord.RichEmbed()
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5481,7 +5481,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
           let degats = args.slice(4).join(" : ");
           const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
           const B = (Math.floor((100)*Math.random()+1))
-          if (B < 30){
+          if (B < 35){
            const embed = new Discord.RichEmbed()
            .setAuthor(message.author.username , message.author.avatarURL)
            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5491,7 +5491,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
            .setTimestamp()
            message.channel.send({embed})
           }
-          if (31 < B){
+          if (36 < B){
              const embed = new Discord.RichEmbed()
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5512,7 +5512,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
             let degats = args.slice(4).join(" : ");
             const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
             const B = (Math.floor((100)*Math.random()+1))
-            if (B < 25){
+            if (B < 30){
              const embed = new Discord.RichEmbed()
              .setAuthor(message.author.username , message.author.avatarURL)
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5522,7 +5522,7 @@ if (message.content.startsWith(prefix + "Coup perce armure simple")) {
              .setTimestamp()
              message.channel.send({embed})
             }
-            if (26 < B){
+            if (31 < B){
                const embed = new Discord.RichEmbed()
                .setAuthor(message.author.username , message.author.avatarURL)
                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5542,8 +5542,8 @@ const args = cont.slice(1);
                                                                                                            if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
 
   let degats = args.slice(3).join(" : ");
-  const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
-  const C = A*1.25
+  const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+  const C = A*1.10
   const B = (Math.floor((100)*Math.random()+1))
   if (B < 5){
    const embed = new Discord.RichEmbed()
@@ -5586,9 +5586,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc amélioré")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.25
+    const C = A*1.10
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5630,9 +5630,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc supérieur")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.25
+    const C = A*1.10
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5674,9 +5674,9 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup d'estoc suprême")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.8)*Math.random()+1*(degats*0.8)))
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.25
+    const C = A*1.10
     if (B < 5){
      const embed = new Discord.RichEmbed()
      .setAuthor(message.author.username , message.author.avatarURL)
@@ -5715,12 +5715,12 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Combo simple")) {      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 75){
@@ -5752,12 +5752,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Combo amélioré")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 70){
@@ -5790,12 +5790,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Combo supérieur")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 65){
@@ -5828,12 +5828,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Combo suprême")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const C = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const D = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const E = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const F = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
-      const G = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.3)))
+      const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+      const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
       const H = A+C+D+E+F+G
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 60){
@@ -6492,14 +6492,14 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Parade simple")) {
 
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 60){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6523,14 +6523,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Parade améliorée")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 55){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6554,14 +6554,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Parade supérieure")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 50){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6585,14 +6585,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
    if (message.content.startsWith(prefix + "Parade suprême")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 45){
        const embed = new Discord.RichEmbed()
        .setAuthor(message.author.username , message.author.avatarURL)
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
-       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*1.5+ "` points de dégâts")
+       .addField(":shield: Parade :" , ":shield: Vous ratez votre parade et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
        .setImage("http://i.imgur.com/KTUgaa0.jpg")
        .setTimestamp()
        message.channel.send({embed})
@@ -6618,7 +6618,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Parade réussie")) {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const A = (Math.floor((degats*1.15)*Math.random()+1*(degats*1.15)))
          const embed = new Discord.RichEmbed()
          .setAuthor(message.author.username , message.author.avatarURL)
          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
