@@ -16404,11 +16404,24 @@ bot.on('message', message => {
             }
       }) ;
 
+
+
+
+
+
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {   
- message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]```")
+ message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur\n\nRagoûts de ragondin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de ragondin]\n\nRagoûts de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt géant rouge]```")
         }
   }) ;
+
+
+
+
+
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des potions 1")) {   
@@ -16418,17 +16431,32 @@ bot.on('message', message => {
       
       
 
+
+
+
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des parchemins 1")) {   
- message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]```")
+ message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\nParchemin de feu rouge faible :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Parchemin de feu rouge faible]```")
         }
   }) ;
+
+
+
+
+
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des oeufs 1")) {   
  message.channel.send("```Oeuf déformé :\nCoûts : [Achat : X cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
         }
   }) ;
+
+
+
+
 
 
 
