@@ -5113,7 +5113,7 @@ const args = cont.slice(1);
                                                                                                            if (message.content.startsWith(prefix + "Coup précis simple")) {
 
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
+    const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B < 50){
      const embed = new Discord.RichEmbed()
@@ -5145,7 +5145,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup précis amélioré")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
+      const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 45){
        const embed = new Discord.RichEmbed()
@@ -5177,7 +5177,7 @@ bot.on('message', message => {
                                                                                                              if (message.content.startsWith(prefix + "Coup précis supérieur")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
+      const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 40){
        const embed = new Discord.RichEmbed()
@@ -5209,7 +5209,7 @@ bot.on('message', message => {
                                                                                                             if (message.content.startsWith(prefix + "Coup précis suprême")) {
 
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats*1.3)))
+      const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
       const B = (Math.floor((100)*Math.random()+1))
       if (B < 35){
        const embed = new Discord.RichEmbed()
