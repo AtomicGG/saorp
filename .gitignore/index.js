@@ -16318,7 +16318,7 @@ bot.on('message', message => {
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n=Liste des matériaux 1\n=Liste d'équipements 1\n=Liste d'armes 1\n=Liste des potions 1\n=Liste des ragoûts 1\n=Liste des parchemins 1\n=Liste des oeufs 1\n=Liste des clefs 1")    .setTimestamp()
+.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -16365,7 +16365,7 @@ bot.on('message', message => {
 
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Liste d'équipements 4")) {   
-   message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Épaulières de kobolt supérieures]\n\nCape de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt supérieure]\n\nPlastron de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt supérieur]\n\nGantelets de kobolt supérieurs :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\nCeinture de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt supérieure]\n\nJambières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt supérieures]\n\nBottes de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt supérieures]\n\nAmulette de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt supérieure]\n\nAnneau de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt supérieur]```")
+   message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Épaulières de kobolt supérieures]\n\nCape de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt supérieure]\n\nPlastron de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt supérieur]\n\nGantelets de kobolt supérieurs :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\nCeinture de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt supérieure]\n\nJambières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt supérieures]\n\nBottes de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt supérieures]\n\nAmulette de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt supérieure]\n\nAnneau de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt supérieur]\n\nCasque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de mineur kobolt]\n\nBottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes d'exploration kobolt]```")
           }
     }) ;
   
@@ -16471,6 +16471,37 @@ bot.on('message', message => {
  message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
         }
   }) ;
+
+
+
+
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste d'objets utiles 1")) {   
+   message.channel.send("```Bolas de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bolas de kobolt]\n\nKunai de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Kunai de kobolt]```")
+          }
+    }) ;
+
+
+
+
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste des cartes au trésor 1")) {   
+   message.channel.send("```Carte au trésor :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Carte au trésor]```")
+          }
+    }) ;
+
+
+
+
+
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste des outils 1")) {   
+   message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt]\n\nPioche de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pioche de kobolt]\n\nFaucille de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Faucille de kobolt]\n\nCouteau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Couteau de kobolt]```")
+          }
+    }) ;
 
 
 
