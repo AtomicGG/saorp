@@ -16318,7 +16318,7 @@ bot.on('message', message => {
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")    .setTimestamp()
+.addField("Liste d'objets" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des plans 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -16461,6 +16461,13 @@ bot.on('message', message => {
   }) ;
 
 
+
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste des plans 1")) {   
+   message.channel.send("```Plan d'arme kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlan d'armure kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlan de bijoux kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]```")
+          }
+    }) ;
 
 
 
