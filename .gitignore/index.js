@@ -16325,7 +16325,7 @@ bot.on('message', message => {
 /////////////////////////////////////////////////////////////////////LISTE D'OBJETS [PRIX + CRAFT]//////////////////////////////////////////////////////////////////   
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'objets")) {   
+  if (message.content === prefix + "Liste d'objets") {
     const embed = new Discord.RichEmbed()
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
