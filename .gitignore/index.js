@@ -10584,7 +10584,6 @@ bot.on('message', message => {
                                       });
 
                                       bot.on('message', message => {
-            
                                         if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
                                           const Dégâts = (Math.floor((16)*Math.random()+15))
                                           const embed = new Discord.RichEmbed()
