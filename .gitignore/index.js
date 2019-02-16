@@ -10586,13 +10586,13 @@ bot.on('message', message => {
                                     
 
                                           bot.on('message', message => {
-                                            if (message.content === prefix + "Découverte de la faux du roi déchus à deux mains") {
+                                            if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
                                               const Dégâts = (Math.floor((16)*Math.random()+15))
                                               const embed = new Discord.RichEmbed()
                                               .setAuthor(message.author.username , message.author.avatarURL)
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
-                                                 .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:crossed_swords: Cette faux offre l'attaque suivante :" , ":crossed_swords: `=Coup du roi déchus : [Vos dégâts]`")
+                                                 .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:crossed_swords: Cette faux offre l'attaque suivante :\n\n:crossed_swords: `=Coup du roi déchus : [Vos dégâts]`")
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
