@@ -3,44 +3,31 @@ const bot = new Discord.Client()
 const talkedRecently = new Set();
 const prefix = "=";
 
-
 bot.on('ready', () => {
   bot.user.setGame('Nouveau ? Écris : =Menu SAO')
 })
 
-
 bot.on('ready', function () {
-
   console.log("Je suis connecté !")
 });
 
-
-
 bot.on('guildMemberAdd', member => {
-
   member.createDM().then(channel => {
     return channel.send("**__۝▬▬๑₪۩۞『SAO Community ©』۞۩₪๑▬▬۝ __**\n\n\n:hand_splayed:`Bienvenue à toi sur『SAO Community [RP]』© !`\n\n\n:white_check_mark:`Pour voir les salons de 『SAO Community [RP]』©, il faudra lire le réglement dans le salon├──📃ʀᴇ̀ɢʟᴇᴍᴇɴᴛ-a-lire, puis appuyer sur la case verte où il est écrit [J'accepte le réglement !] situé tout en haut, pour avoir accès aux différents salons de base !`\n\n\n:book:`N'oubliez pas aussi d'aller voir les salons #├──🎮ᴠᴏs-ᴊᴇᴜx ainsi que #├──📌ᴠᴏs-ɪɴғᴏʀᴍᴀᴛɪᴏɴs et #├──📟ᴠᴏs-sᴀʟᴏɴs permettant d'obtenir les rôles que vous souhaitez avoir, ainsi que de pouvoir avoir accès aux parties du discord que vous souhaitez voir !`\n\n\n:link:`Notre discord permettant de faire votre pub : https://discord.gg/NYH43Ks`\n\n\n:chart_with_upwards_trend:`Le discord principal évolue petit à petit, hésite pas à parler et faire venir tes amis, il est en constante évolution selon vos avis c'est d'ailleurs pour cela que dans le salon #├──👑ɴᴏᴛᴇ-﹠ᴀᴠɪs vous pouvez noter le discord ainsi que donner votre avis !`\n\n\n:writing_hand:`Que vous soyez un débutant ou un expert en RP, vous êtes les bienvenues, vous aurez toutes les informations nécessaire pour comprendre en écrivant sur le discord dans un salon de commande ceci : =Menu SAO`\n\n\n:hand_splayed: `Si vous voulez devenir partenaire avec notre discord, ou pouvoir mettre votre RP dans notre liste de RP, écrivez : =Devenir partenaire`\n\n\nhttps://66.media.tumblr.com/169c730d52faf3f7e5680ed44ec4bf7a/tumblr_nbd255coqa1r4vymlo1_500.gif\n\n\n**__۝▬▬๑₪۩۞『:ribbon:』۞۩₪๑▬▬۝__**")
   }).catch(console.error)
   // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
 });
 
-
-
-
 bot.on('message', message => {
-
   if (message.content === 'ping') {
     message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**`+ ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**`+ ' **Ms** ] pour repondre')
   }
 });
 
-
-
 bot.login(process.env.TOKEN)
 
 bot.on("message", (message) => {
   if (!message.content.startsWith(prefix)) return;
-
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   } else
@@ -49,228 +36,220 @@ bot.on("message", (message) => {
   }
 });
 
-
-
-
-
 ////////////////////////////////////////////////////////Coups et défenses/////////////////////////////////////////////////////////////////////////////////////
 
-    bot.on('message', message => {
-      if (message.content === (prefix) + "Coups et défenses"){
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField(":crossed_swords: Pour effectuer un coup normal :" , ":crossed_swords: `=Coup normal simple : [Vos dégâts]`\n:crossed_swords: `=Coup normal amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup normal supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup normal suprême : [Vos dégâts]`")
-        .addBlankField(true)
-        .addField(":crossed_swords: Pour effectuer un coup précis :" , ":crossed_swords: `=Coup précis simple : [Vos dégâts]`\n:crossed_swords: `=Coup précis amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup précis supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup précis suprême : [Vos dégâts]`")
-        .addBlankField(true)
-        .addField(":crossed_swords: Pour effectuer un coup d'estoc :" , ":crossed_swords: `=Coup d'estoc simple : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc suprême : [Vos dégâts]`")
-        .addBlankField(true)
-        .addField(":crossed_swords: Pour effectuer un coup provocateur :" , ":crossed_swords: `=Coup provocateur simple : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur suprême : [Vos dégâts]`")
-        .addBlankField(true)
-        .addField(":crossed_swords: Pour effectuer un coup circulaire :" , ":crossed_swords: `=Coup circulaire simple : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire suprême : [Vos dégâts]`")
-        .addBlankField(true)
-        .addField(":crossed_swords: Pour effectuer un cri de provocation :" , ":crossed_swords: `=Cri de provocation simple`\n:crossed_swords: `=Cri de provocation amélioré`\n:crossed_swords: `=Cri de provocation supérieur`\n:crossed_swords: `=Cri de provocation suprême`")
-        .addBlankField(true)
-        .addField(":crossed_swords: Pour effectuer un combo :" , ":crossed_swords: `=Combo simple : [Vos dégâts]`\n:crossed_swords: `=Combo amélioré : [Vos dégâts]`\n:crossed_swords: `=Combo supérieur : [Vos dégâts]`\n:crossed_swords: `=Combo suprême : [Vos dégâts]`")
-        .addBlankField(true)
-        .addField(":shield: Pour effectuer une esquive :" , ":shield: `=Esquive simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive suprême : [Dégâts de l'attaque de l'ennemis]`")
-        .addBlankField(true)
-        .addField(":shield: Pour effectuer un blocage :" , ":shield: `=Blocage simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage suprême : [Dégâts de l'attaque de l'ennemis]`")
-        .addBlankField(true)
-        .addField(":book: Pour savoir ce que vous débloquez selon le niveau :" , ":book: `=Coups et défenses apprentissage`")
-        .addBlankField(true)
-        .addField(":book: Pour comprendre à quoi sert chaques coups et défenses :" , ":book: `=Coups et défenses descriptions`")
-           .addBlankField(true)
-        .addField(":crossed_swords:Pour la suite des coups et défenses possibles :" , "`=Coups et défenses 2`")
-        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-        .setTimestamp()
-        message.channel.send({embed})}
-      }
-    )
+bot.on('message', message => {
+  if (message.content === (prefix) + "Coups et défenses"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField(":crossed_swords: Pour effectuer un coup normal :" , ":crossed_swords: `=Coup normal simple : [Vos dégâts]`\n:crossed_swords: `=Coup normal amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup normal supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup normal suprême : [Vos dégâts]`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un coup précis :" , ":crossed_swords: `=Coup précis simple : [Vos dégâts]`\n:crossed_swords: `=Coup précis amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup précis supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup précis suprême : [Vos dégâts]`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un coup d'estoc :" , ":crossed_swords: `=Coup d'estoc simple : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc suprême : [Vos dégâts]`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un coup provocateur :" , ":crossed_swords: `=Coup provocateur simple : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur suprême : [Vos dégâts]`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un coup circulaire :" , ":crossed_swords: `=Coup circulaire simple : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire suprême : [Vos dégâts]`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un cri de provocation :" , ":crossed_swords: `=Cri de provocation simple`\n:crossed_swords: `=Cri de provocation amélioré`\n:crossed_swords: `=Cri de provocation supérieur`\n:crossed_swords: `=Cri de provocation suprême`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un combo :" , ":crossed_swords: `=Combo simple : [Vos dégâts]`\n:crossed_swords: `=Combo amélioré : [Vos dégâts]`\n:crossed_swords: `=Combo supérieur : [Vos dégâts]`\n:crossed_swords: `=Combo suprême : [Vos dégâts]`")
+    .addBlankField(true)
+    .addField(":shield: Pour effectuer une esquive :" , ":shield: `=Esquive simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive suprême : [Dégâts de l'attaque de l'ennemis]`")
+    .addBlankField(true)
+    .addField(":shield: Pour effectuer un blocage :" , ":shield: `=Blocage simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage suprême : [Dégâts de l'attaque de l'ennemis]`")
+    .addBlankField(true)
+    .addField(":book: Pour savoir ce que vous débloquez selon le niveau :" , ":book: `=Coups et défenses apprentissage`")
+    .addBlankField(true)
+    .addField(":book: Pour comprendre à quoi sert chaques coups et défenses :" , ":book: `=Coups et défenses descriptions`")
+    .addBlankField(true)
+    .addField(":crossed_swords:Pour la suite des coups et défenses possibles :" , "`=Coups et défenses 2`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})}
+  }
+)
 
- bot.on('message', message => {
-      if (message.content === (prefix) + "Coups et défenses descriptions"){
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\nLe coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\nLe coup précis est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\nLe combo est un enchaînement de coups qui inflige énormément de dégâts mais ayant une chance de toucher très faible\n\nLe coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\nLe coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\nLe coup sauté est un coup ayant une chance de faire tomber la cible\n\nLe cri de provocation sert à provoquer les ennemis\n\nL'esquive permet d'esquiver un coup ou de le prendre\n\nLe blocage sert à réduire les dégâts\n\nLa parade permet de sois prendre plus de dégâts, sois de pouvoir lui en infliger\n\nL'interception permet de prendre une partie des dégâts d'une attaque à la place d'un allié")
-        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-        .setTimestamp()
-        message.channel.send({embed})}
-      }
-    )
+bot.on('message', message => {
+  if (message.content === (prefix) + "Coups et défenses descriptions"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\nLe coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\nLe coup précis est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\nLe combo est un enchaînement de coups qui inflige énormément de dégâts mais ayant une chance de toucher très faible\n\nLe coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\nLe coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\nLe coup sauté est un coup ayant une chance de faire tomber la cible\n\nLe cri de provocation sert à provoquer les ennemis\n\nL'esquive permet d'esquiver un coup ou de le prendre\n\nLe blocage sert à réduire les dégâts\n\nLa parade permet de sois prendre plus de dégâts, sois de pouvoir lui en infliger\n\nL'interception permet de prendre une partie des dégâts d'une attaque à la place d'un allié")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})}
+  }
+)
 
-  bot.on('message', message => {
-      if (message.content === (prefix) + "Coups et défenses 2"){
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField(":shield: Pour effectuer une parade :" , ":shield: `=Parade simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade supérieure: [Dégâts de l'attaque de l'ennemis]`\n`=Parade suprême : [Dégâts de l'attaque de l'ennemis]`")
-        .addBlankField(true)
-        .addField(":shield: Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , ":shield: `=Interception simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Interception améliorée : [Dégâts de l'attaque de l'ennemis]`")
-         .addBlankField(true)
-        .addField(":shield: Pour effectuer une fuite [Utilisable que pendant votre tour] :" , ":shield: `=Fuite simple`\n:shield: `=Fuite améliorée`\n:shield: `=Fuite supérieure`\n:shield: `=Fuite suprême`")
-         .addBlankField(true)
-      .addField(":crossed_swords: Pour effectuer un coup sauté :" , ":shield: `=Coup sauté simple : [Vos dégâts]`\n:shield: `=Coup sauté amélioré : [Vos dégâts]`\n:shield: `=Coup sauté supérieur : [Vos dégâts]`\n:shield: `=Coup sauté suprême : [Vos dégâts]`")
-          .addBlankField(true)
-        .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n:shield: `=Coup perce armure amélioré : [Vos dégâts]`\n:shield: `=Coup perce armure supérieur : [Vos dégâts]`\n:shield: `=Coup perce armure suprême : [Vos dégâts]`")
-        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-        .setTimestamp()
-        message.channel.send({embed})}
-      }
-    )
+bot.on('message', message => {
+  if (message.content === (prefix) + "Coups et défenses 2"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField(":shield: Pour effectuer une parade :" , ":shield: `=Parade simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade supérieure: [Dégâts de l'attaque de l'ennemis]`\n`=Parade suprême : [Dégâts de l'attaque de l'ennemis]`")
+    .addBlankField(true)
+    .addField(":shield: Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , ":shield: `=Interception simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Interception améliorée : [Dégâts de l'attaque de l'ennemis]`")
+    .addBlankField(true)
+    .addField(":shield: Pour effectuer une fuite [Utilisable que pendant votre tour] :" , ":shield: `=Fuite simple`\n:shield: `=Fuite améliorée`\n:shield: `=Fuite supérieure`\n:shield: `=Fuite suprême`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un coup sauté :" , ":shield: `=Coup sauté simple : [Vos dégâts]`\n:shield: `=Coup sauté amélioré : [Vos dégâts]`\n:shield: `=Coup sauté supérieur : [Vos dégâts]`\n:shield: `=Coup sauté suprême : [Vos dégâts]`")
+    .addBlankField(true)
+    .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n:shield: `=Coup perce armure amélioré : [Vos dégâts]`\n:shield: `=Coup perce armure supérieur : [Vos dégâts]`\n:shield: `=Coup perce armure suprême : [Vos dégâts]`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})}
+  }
+)
 
-    bot.on('message', message => {
-      if (message.content === (prefix) + "Coups et défenses apprentissage"){
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .addField(":sparkles: Niveau requis pour effectuer un coup normal, un coup sauté :" , ":sparkles: Niveau 1")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer une esquive :" , ":sparkles: Niveau 1")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer une interception :" , ":sparkles: Niveau 1")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer une fuite :" , ":sparkles: Niveau 1")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer un coup d'estoc :" , ":sparkles: Niveau 2")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer une parade :" , ":sparkles: Niveau 3")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer un coup précis, un coup perce armure :" , ":sparkles: Niveau 4")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer un blocage :" , ":sparkles: Niveau 5")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer un coup circulaire :" , ":sparkles: Niveau 6")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer un coup provocateur :" , ":sparkles: Niveau 7")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer un crie de provocation :" , ":sparkles: Niveau 8")
-        .addBlankField(true)
-        .addField(":sparkles: Niveau requis pour effectuer un combo :" , ":sparkles: Niveau 10")
-        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-        .setTimestamp()
-        message.channel.send({embed})}
-      }
-    )
-
+bot.on('message', message => {
+  if (message.content === (prefix) + "Coups et défenses apprentissage"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField(":sparkles: Niveau requis pour effectuer un coup normal, un coup sauté :" , ":sparkles: Niveau 1")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer une esquive :" , ":sparkles: Niveau 1")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer une interception :" , ":sparkles: Niveau 1")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer une fuite :" , ":sparkles: Niveau 1")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer un coup d'estoc :" , ":sparkles: Niveau 2")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer une parade :" , ":sparkles: Niveau 3")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer un coup précis, un coup perce armure :" , ":sparkles: Niveau 4")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer un blocage :" , ":sparkles: Niveau 5")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer un coup circulaire :" , ":sparkles: Niveau 6")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer un coup provocateur :" , ":sparkles: Niveau 7")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer un crie de provocation :" , ":sparkles: Niveau 8")
+    .addBlankField(true)
+    .addField(":sparkles: Niveau requis pour effectuer un combo :" , ":sparkles: Niveau 10")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})}
+  }
+)
 
 //////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
-
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaines quêtes accomplies")) {
-      let X = args.slice(3).join(" : ");   
-        const A = (Math.floor((30)*Math.random()+30))
+    let X = args.slice(3).join(" : ");
+    const A = (Math.floor((30)*Math.random()+30))
     const FF = A-(X*3)
     const Colsplaines = (Math.floor((30)*Math.random()+30))
     const Orge = (Math.floor((31)*Math.random()+20))
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
-   if(FF > 0) {
-    const embed = new Discord.RichEmbed()
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion faible de soin : " +Potionsplaines+ "\n:scales: Equipement en peau arraché au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
-      message.channel.send({embed})}
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-    const embed = new Discord.RichEmbed()
+      const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion faible de soin : " +Potionsplaines+ "\n:scales: Equipement en peau arraché au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
-      message.channel.send({embed})}
-          }
-    }) ;
-
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt quêtes accomplies")) {
-      let X = args.slice(3).join(" : ");   
-        const A = (Math.floor((50)*Math.random()+50))
+    let X = args.slice(3).join(" : ");
+    const A = (Math.floor((50)*Math.random()+50))
     const Colsplaines = (Math.floor((50)*Math.random()+50))
     const FF = A-(X*4)
     const Orge = (Math.floor((31)*Math.random()+20))
     const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
     const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
     const Clef = (Math.floor((2-(0.90))*Math.random()))
-     if(FF > 0) {
-    const embed = new Discord.RichEmbed()
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
       .setTimestamp()
-      message.channel.send({embed})}
-  if (FF < 0) {
-    const embed = new Discord.RichEmbed()
+      message.channel.send({embed})
+    }
+    if (FF < 0) {
+      const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
       .setTimestamp()
-      message.channel.send({embed})}
-          }
-    }) ;
-
-
-      
-
-
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Plaines quêtes"){
-         const X = (Math.floor((100)*Math.random()+1))
+    const X = (Math.floor((100)*Math.random()+1))
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
     } else if (X < 50) {
       talkedRecently.add(message.author.id+18000);
       setTimeout(() => {
-       talkedRecently.delete(message.author.id+18000);
-     }, 86400000);
+      talkedRecently.delete(message.author.id+18000);
+    }, 86400000);
     const Sanglier = (Math.floor((3)*Math.random()+2))
     const Renard = (Math.floor((3)*Math.random()+2))
     const Chien = (Math.floor((3)*Math.random()+2))
     const Bandit = (Math.floor((2)*Math.random()+1))
     const Lapin = (Math.floor((2*0.75)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
-      .setTimestamp()
-      message.channel.send({embed})
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+    .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
+    .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
+    .setTimestamp()
+    message.channel.send({embed})
     } else if (X > 51) {
-    const Percil = (Math.floor((2)*Math.random()+1))
-    const Baie = (Math.floor((2)*Math.random()+1))
-     const ViandeLapin = (Math.floor((2)*Math.random()))
+      const Percil = (Math.floor((2)*Math.random()+1))
+      const Baie = (Math.floor((2)*Math.random()+1))
+      const ViandeLapin = (Math.floor((2)*Math.random()))
       const PeauLapin = (Math.floor((2)*Math.random()))
-        const embed = new Discord.RichEmbed()
+      const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -278,184 +257,177 @@ bot.on('message', message => {
       .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " +Percil+ "\n:pick: Baies : " +Baie+ "\n:pick: Viandes de lapin : " +ViandeLapin+ "\n:pick: Peaux de lapin : " +PeauLapin)
       .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
       .setTimestamp()
-      message.channel.send({embed})}
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+18000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+18000);
+    }, 86400000);
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Forêt quêtes"){
+    const X = (Math.floor((100)*Math.random()+1))
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else if (X < 50) {
       talkedRecently.add(message.author.id+18000);
       setTimeout(() => {
-       talkedRecently.delete(message.author.id+18000);
-     }, 86400000);
- }
-    })
-
-
-
-
-   bot.on('message', message => {
-      if (message.content === (prefix) + "Forêt quêtes"){
-          const X = (Math.floor((100)*Math.random()+1))
-        if (talkedRecently.has(message.author.id+18000)) {
-          const embed = new Discord.RichEmbed()
-           .setAuthor(message.author.username , message.author.avatarURL)
-           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-           .setColor(3447003)
-           .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-           .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-           .setTimestamp()
-           message.channel.send({embed})
-        } else if (X < 50) {
-          talkedRecently.add(message.author.id+18000);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+18000);
-     }, 86400000);
-        const Sanglier = (Math.floor((3)*Math.random()+2))
-        const Renard = (Math.floor((3)*Math.random()+2))
-        const Chien = (Math.floor((2)*Math.random()))
-        const Bandit = (Math.floor((2*(0.50))*Math.random()))
-        const Lapin = (Math.floor((2*0.75)*Math.random()))
-          const embed = new Discord.RichEmbed()
-          .setColor(3447003)
-          .setAuthor(message.author.username , message.author.avatarURL)
-          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-          .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-          .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Sanglier+ "\n:crossed_swords: Slimes : " +Renard+ "\n:crossed_swords: Bandits expérimentés : " +Chien+ "\n:crossed_swords: Bandits sombres : " +Bandit+ "\n:crossed_swords: Loups de sang : " +Lapin)
-          .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
-          .setTimestamp()
-          message.channel.send({embed})
-        } else if (X > 51) {
-        const Minerai = (Math.floor((2)*Math.random()+1))
-        const Bois = (Math.floor((2)*Math.random()+1))
-         const Estragon = (Math.floor((2)*Math.random()+1))
-          const ViandeTaupe = (Math.floor((2)*Math.random()))
-           const PeauTaupe = (Math.floor((2)*Math.random()))
-            const embed = new Discord.RichEmbed()
-          .setColor(3447003)
-          .setAuthor(message.author.username , message.author.avatarURL)
-          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-          .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-          .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
-          .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
-          .setTimestamp()
-          message.channel.send({embed})}
-      talkedRecently.add(message.author.id+18000);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+18000);
-     }, 86400000);
- }
-    })
-
+        talkedRecently.delete(message.author.id+18000);
+      }, 86400000);
+      const Sanglier = (Math.floor((3)*Math.random()+2))
+      const Renard = (Math.floor((3)*Math.random()+2))
+      const Chien = (Math.floor((2)*Math.random()))
+      const Bandit = (Math.floor((2*(0.50))*Math.random()))
+      const Lapin = (Math.floor((2*0.75)*Math.random()))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Sanglier+ "\n:crossed_swords: Slimes : " +Renard+ "\n:crossed_swords: Bandits expérimentés : " +Chien+ "\n:crossed_swords: Bandits sombres : " +Bandit+ "\n:crossed_swords: Loups de sang : " +Lapin)
+      .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+      .setTimestamp()
+      message.channel.send({embed})
+    } else if (X > 51) {
+      const Minerai = (Math.floor((2)*Math.random()+1))
+      const Bois = (Math.floor((2)*Math.random()+1))
+      const Estragon = (Math.floor((2)*Math.random()+1))
+      const ViandeTaupe = (Math.floor((2)*Math.random()))
+      const PeauTaupe = (Math.floor((2)*Math.random()))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
+      .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+18000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+18000);
+    }, 86400000);
+  }
+})
 
 //////////////////////////////////////////////////////////Cueilleur/////////////////////////////////////////////////////////////////////////////////////
 
-
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Plaines cueillir")) {
-     const Persils = (Math.floor((3*0.25)*Math.random()+1))
-const Herbe = (Math.floor((3*0.25)*Math.random()+1))
-const Baies = (Math.floor((3*0.25)*Math.random()+1))
-const Exp = (Math.floor((3)*Math.random()+2))
-if (talkedRecently.has(message.author.id+19)) { 
-const embed = new Discord.RichEmbed()
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setColor(3447003)
-.addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-.setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-.setTimestamp()
-message.channel.send({embed})
-} else {
-const embed = new Discord.RichEmbed()
-.setColor(3447003)
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-.addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Persil : " +Persils+ "\n:wilted_rose: Herbe médicinale faible : " +Herbe+ "\n:wilted_rose: Baie : " +Baies+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
-.setTimestamp()
-message.channel.send({embed})}
+  if (message.content.startsWith(prefix + "Plaines cueillir")) {
+    const Persils = (Math.floor((3*0.25)*Math.random()+1))
+    const Herbe = (Math.floor((3*0.25)*Math.random()+1))
+    const Baies = (Math.floor((3*0.25)*Math.random()+1))
+    const Exp = (Math.floor((3)*Math.random()+2))
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Persil : " +Persils+ "\n:wilted_rose: Herbe médicinale faible : " +Herbe+ "\n:wilted_rose: Baie : " +Baies+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     talkedRecently.add(message.author.id+19);
- setTimeout(() => {
-  talkedRecently.delete(message.author.id+19);
-}, 3600000);
-}
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
 })
-
-
-
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt cueillir")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-  } else {
-    const Persils = (Math.floor((3*0.25)*Math.random()+1))
-    const Herbe = (Math.floor((3*0.25)*Math.random()+1))
-    const Exp = (Math.floor((4)*Math.random()+4))
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-    .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Estragon : " +Persils+ "\n:wilted_rose: Herbe médicinale : " +Herbe+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
-    .setTimestamp()
-    message.channel.send({embed})}
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Persils = (Math.floor((3*0.25)*Math.random()+1))
+      const Herbe = (Math.floor((3*0.25)*Math.random()+1))
+      const Exp = (Math.floor((4)*Math.random()+4))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Estragon : " +Persils+ "\n:wilted_rose: Herbe médicinale : " +Herbe+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     talkedRecently.add(message.author.id+19);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+19);
-     }, 3600000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
   }
-  })
-
-
-  
+})
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Montagne cueillir")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-  } else {
-    const Persils = (Math.floor((3*0.25)*Math.random()+1))
-    const Herbe = (Math.floor((3*0.5)*Math.random()))
-    const Exp = (Math.floor((5)*Math.random()+8))
-    const Plantrus = (Math.floor((2*0.75)*Math.random()))
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-    .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Basilic : " +Persils+ "\n:wilted_rose: Plantrus médiocre : " +Herbe+ "\n:wilted_rose: Plantrus commun : " +Plantrus+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
-    .setTimestamp()
-    message.channel.send({embed})}
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Persils = (Math.floor((3*0.25)*Math.random()+1))
+      const Herbe = (Math.floor((3*0.5)*Math.random()))
+      const Exp = (Math.floor((5)*Math.random()+8))
+      const Plantrus = (Math.floor((2*0.75)*Math.random()))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Basilic : " +Persils+ "\n:wilted_rose: Plantrus médiocre : " +Herbe+ "\n:wilted_rose: Plantrus commun : " +Plantrus+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     talkedRecently.add(message.author.id+19);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+19);
-     }, 3600000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
   }
-  })
+})
 
-
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Grotte cueillir")) {
-      if (talkedRecently.has(message.author.id+19)) {
-        const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-         .setTimestamp()
-         message.channel.send({embed})
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Grotte cueillir")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
     } else {
       const Persils = (Math.floor((2*0.5)*Math.random()+1))
       const Herbe = (Math.floor((2*0.75)*Math.random()))
@@ -468,59 +440,59 @@ bot.on('message', message => {
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Plantrus commun : " +Persils+ "\n:wilted_rose: Plantrus rare : " +Herbe+ "\n:wilted_rose: Plantrus parfait : " +Plantrus+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
       .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+19);
-        setTimeout(() => {
-         talkedRecently.delete(message.author.id+19);
-       }, 3600000);
+      message.channel.send({embed})
     }
-    })
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
 
 //////////////////////////////////////////////////////////Mineur/////////////////////////////////////////////////////////////////////////////////////
-
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt miner")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-  } else {
-    const Cuivre = (Math.floor((3)*Math.random()+1))
-    const CuivreRare = (Math.floor((2*0.90)*Math.random()))
-    const Exp = (Math.floor((3)*Math.random()+2))
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-    .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre médiocre : " +Cuivre+ "\n:pick: Cuivre commun : " +CuivreRare+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
-
-    .setTimestamp()
-    message.channel.send({embed})}
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Cuivre = (Math.floor((3)*Math.random()+1))
+      const CuivreRare = (Math.floor((2*0.90)*Math.random()))
+      const Exp = (Math.floor((3)*Math.random()+2))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre médiocre : " +Cuivre+ "\n:pick: Cuivre commun : " +CuivreRare+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     talkedRecently.add(message.author.id+19);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+19);
-     }, 3600000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
   }
-  })
+})
 
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Montagne miner")) {
-      if (talkedRecently.has(message.author.id+19)) {
-        const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-         .setTimestamp()
-         message.channel.send({embed})
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Montagne miner")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
     } else {
       const Cuivre = (Math.floor((2*0.5)*Math.random()+1))
       const CuivreRare = (Math.floor((2*0.80)*Math.random()))
@@ -531,94 +503,92 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
       .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre commun : " +Cuivre+ "\n:pick: Cuivre rare : " +CuivreRare+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
-  
       .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+19);
-        setTimeout(() => {
-         talkedRecently.delete(message.author.id+19);
-       }, 3600000);
+      message.channel.send({embed})
     }
-    })
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
 
-
-    bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Grotte miner")) {
-        if (talkedRecently.has(message.author.id+19)) {
-          const embed = new Discord.RichEmbed()
-           .setAuthor(message.author.username , message.author.avatarURL)
-           .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-           .setColor(3447003)
-           .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-           .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-           .setTimestamp()
-           message.channel.send({embed})
-      } else {
-        const Cuivre = (Math.floor((2*0.5)*Math.random()+1))
-        const CuivreRare = (Math.floor((2*0.80)*Math.random()))
-        const Feu = (Math.floor((2*0.95)*Math.random()))
-        const Exp = (Math.floor((5)*Math.random()+8))
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-        .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre rare : " +Cuivre+ "\n:pick: Cuivre parfait : " +CuivreRare+ "\n:pick: Pierre de feu faible : " +Feu+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
-    
-        .setTimestamp()
-        message.channel.send({embed})}
-        talkedRecently.add(message.author.id+19);
-          setTimeout(() => {
-           talkedRecently.delete(message.author.id+19);
-         }, 3600000);
-      }
-      })
-  
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Grotte miner")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Cuivre = (Math.floor((2*0.5)*Math.random()+1))
+      const CuivreRare = (Math.floor((2*0.80)*Math.random()))
+      const Feu = (Math.floor((2*0.95)*Math.random()))
+      const Exp = (Math.floor((5)*Math.random()+8))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre rare : " +Cuivre+ "\n:pick: Cuivre parfait : " +CuivreRare+ "\n:pick: Pierre de feu faible : " +Feu+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
 
 //////////////////////////////////////////////////////////Bucheron/////////////////////////////////////////////////////////////////////////////////////
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt bûcheronner")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-  } else {
-    const Bois = (Math.floor((3)*Math.random()+1))
-    const BoisRare = (Math.floor((2-(0.75))*Math.random()))
-    const Exp = (Math.floor((3)*Math.random()+2))
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
-    .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne médiocre : " +Bois+ "\n:deciduous_tree: Bois de frêne commun : " +BoisRare+ "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " +Exp)
-
-    .setTimestamp()
-    message.channel.send({embed})}
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Bois = (Math.floor((3)*Math.random()+1))
+      const BoisRare = (Math.floor((2-(0.75))*Math.random()))
+      const Exp = (Math.floor((3)*Math.random()+2))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
+      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne médiocre : " +Bois+ "\n:deciduous_tree: Bois de frêne commun : " +BoisRare+ "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     talkedRecently.add(message.author.id+19);
-      setTimeout(() => {
-       talkedRecently.delete(message.author.id+19);
-     }, 3600000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
   }
-  })
+})
 
-
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Montagne bûcheronner")) {
-      if (talkedRecently.has(message.author.id+19)) {
-        const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-         .setTimestamp()
-         message.channel.send({embed})
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Montagne bûcheronner")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
     } else {
       const Bois = (Math.floor((2*0.5)*Math.random()+1))
       const BoisRare = (Math.floor((2-(0.75))*Math.random()))
@@ -629,40 +599,30 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
       .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne commun : " +Bois+ "\n:deciduous_tree: Bois de frêne rare : " +BoisRare+ "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " +Exp)
-  
       .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+19);
-        setTimeout(() => {
-         talkedRecently.delete(message.author.id+19);
-       }, 3600000);
+      message.channel.send({embed})
     }
-    })
-  
-
-
-
-
-  
-
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
 
 //////////////////////////////////////////////////////////Chasseur/////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Plaines chasser")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-} else {
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
       const Viande = (Math.floor((3)*Math.random()+1))
       const Peau = (Math.floor((2-0.50)*Math.random()))
       const Coeur = (Math.floor((2-0.75)*Math.random()))
@@ -675,30 +635,27 @@ bot.on('message', message => {
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
       .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de lapin : " +Viande+ "\n:knife: Peau de lapin : " +Peau+ "\n:cupid: Coeur de lapin : " +Coeur+ "\n:eye: Oeil de lapin : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
       .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+19);
-setTimeout(() => {
-talkedRecently.delete(message.author.id+19);
-}, 3600000);
-}
-  })
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
 
-
-
-
-  
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt chasser")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
-       .setAuthor(message.author.username , message.author.avatarURL)
-       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-       .setColor(3447003)
-       .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-       .setTimestamp()
-       message.channel.send({embed})
-} else {
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
       const Viande = (Math.floor((3*0.25)*Math.random()+1))
       const Peau = (Math.floor((2-0.50)*Math.random()))
       const Coeur = (Math.floor((2-0.75)*Math.random()))
@@ -711,54 +668,51 @@ bot.on('message', message => {
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
       .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de taupe : " +Viande+ "\n:knife: Peau de taupe : " +Peau+ "\n:cupid: Coeur de taupe : " +Coeur+ "\n:eye: Oeil de taupe : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
       .setTimestamp()
-      message.channel.send({embed})}
-      talkedRecently.add(message.author.id+19);
-setTimeout(() => {
-talkedRecently.delete(message.author.id+19);
-}, 3600000);
-}
-  })
-
-
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Montagne chasser")) {
-      if (talkedRecently.has(message.author.id+19)) {
-        const embed = new Discord.RichEmbed()
-         .setAuthor(message.author.username , message.author.avatarURL)
-         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-         .setColor(3447003)
-         .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-         .setTimestamp()
-         message.channel.send({embed})
-  } else {
-        const Viande = (Math.floor((3*0.25)*Math.random()+1))
-        const Peau = (Math.floor((2-0.50)*Math.random()))
-        const Coeur = (Math.floor((2-0.75)*Math.random()))
-        const Oeil = (Math.floor((2-0.75)*Math.random()))
-        const Exp = (Math.floor((5)*Math.random()+8))
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-        .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de ragondin : " +Viande+ "\n:knife: Peau de ragondin : " +Peau+ "\n:cupid: Coeur de ragondin : " +Coeur+ "\n:eye: Oeil de ragondin : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
-        .setTimestamp()
-        message.channel.send({embed})}
-        talkedRecently.add(message.author.id+19);
-  setTimeout(() => {
-  talkedRecently.delete(message.author.id+19);
-  }, 3600000);
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
   }
-    })
+})
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Montagne chasser")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Viande = (Math.floor((3*0.25)*Math.random()+1))
+      const Peau = (Math.floor((2-0.50)*Math.random()))
+      const Coeur = (Math.floor((2-0.75)*Math.random()))
+      const Oeil = (Math.floor((2-0.75)*Math.random()))
+      const Exp = (Math.floor((5)*Math.random()+8))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de ragondin : " +Viande+ "\n:knife: Peau de ragondin : " +Peau+ "\n:cupid: Coeur de ragondin : " +Coeur+ "\n:eye: Oeil de ragondin : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
 
 //////////////////////////////////////////////////////////Pêcheur/////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////Monstres////////////////////////////////////////////////////////////////////////////////////
-
-
-        
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Loup"){
@@ -774,144 +728,127 @@ bot.on('message', message => {
     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Loup récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
+  }
+})
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Sanglier"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Sanglier :" , ":japanese_ogre: Assez imposant et résistant, il se situe dans les plaines du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/4/4a/Frenzy_Boar.png/revision/latest?cb=20170612194328&path-prefix=fr")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 30")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Sanglier attaque`")
+    .addField(":shield: Lorsque le sanglier reçoit un coup :" , ":shield: `=Sanglier défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Sanglier récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Sanglier récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
-  bot.on('message', message => {
-    if (message.content === (prefix) + "Sanglier"){
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setTitle(":japanese_ogre: Sanglier :" , ":japanese_ogre: Assez imposant et résistant, il se situe dans les plaines du palier 1 !")
-      .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/4/4a/Frenzy_Boar.png/revision/latest?cb=20170612194328&path-prefix=fr")
-      .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 30")
-      .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Sanglier attaque`")
-      .addField(":shield: Lorsque le sanglier reçoit un coup :" , ":shield: `=Sanglier défense : [Points de dégâts de votre coup]`")
-      .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Sanglier récompenses solo : [Votre niveau]`")
-            .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Sanglier récompenses groupe : [Votre niveau]`")
+bot.on('message', message => {
+  if (message.content === (prefix) + "Renard"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Renard :" , ":japanese_ogre: Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
+    .setImage("https://www.lpo.fr/images/actualites/2018/en_moselle_nuits_nouveau_tranquilles_renard/renard_fabrice_cahez_650_.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 25")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Renard attaque`")
+    .addField(":shield: Lorsque le renard reçoit un coup :" , ":shield: `=Renard défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Renard récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Renard récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
-      .setTimestamp()
-      message.channel.send({embed})
-      }
-    })
-     
+bot.on('message', message => {
+  if (message.content === (prefix) + "Chien"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Chien :" , ":japanese_ogre: Solitaire mais très aggressif, il se situe dans les plaines du palier 1 !")
+    .setImage("https://st2.depositphotos.com/2195902/6735/v/950/depositphotos_67358017-stock-illustration-angry-dog.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 15")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien attaque")
+    .addField(":shield: Lorsque le chien reçoit un coup :" , ":shield: `=Chien défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Chien récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Chien récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
-    bot.on('message', message => {
-      if (message.content === (prefix) + "Renard"){
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setTitle(":japanese_ogre: Renard :" , ":japanese_ogre: Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
-        .setImage("https://www.lpo.fr/images/actualites/2018/en_moselle_nuits_nouveau_tranquilles_renard/renard_fabrice_cahez_650_.jpg")
-        .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 25")
-        .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Renard attaque`")
-        .addField(":shield: Lorsque le renard reçoit un coup :" , ":shield: `=Renard défense : [Points de dégâts de votre coup]`")
-        .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Renard récompenses solo : [Votre niveau]`")
-                .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Renard récompenses groupe : [Votre niveau]`")
-        .setTimestamp()
-        message.channel.send({embed})
-        }
-      })
+bot.on('message', message => {
+  if (message.content === (prefix) + "Lapin géant"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Lapin géant :" , ":japanese_ogre: Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
+    .setImage("https://gor666.files.wordpress.com/2012/04/lapin-tueur-de-paques-i-gor-2012.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 70")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lapin géant attaque`")
+    .addField(":shield: Lorsque le lapin géant reçoit un coup :" , ":shield: `=Lapin géant défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Lapin géant récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Lapin géant récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
-      bot.on('message', message => {
-        if (message.content === (prefix) + "Chien"){
-          const embed = new Discord.RichEmbed()
-          .setColor(3447003)
-          .setAuthor(message.author.username , message.author.avatarURL)
-          .setTitle(":japanese_ogre: Chien :" , ":japanese_ogre: Solitaire mais très aggressif, il se situe dans les plaines du palier 1 !")
-          .setImage("https://st2.depositphotos.com/2195902/6735/v/950/depositphotos_67358017-stock-illustration-angry-dog.jpg")
-          .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 15")
-          .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien attaque")
-          .addField(":shield: Lorsque le chien reçoit un coup :" , ":shield: `=Chien défense : [Points de dégâts de votre coup]`")
-          .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Chien récompenses solo : [Votre niveau]`")
-          .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Chien récompenses groupe : [Votre niveau]`")
-          .setTimestamp()
-          message.channel.send({embed})
-          }
-        })
+bot.on('message', message => {
+  if (message.content === (prefix) + "Slime"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Slime :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
+    .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-slime-5ac1b13e54af51.5535441915226432623469.png")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 115")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime attaque`")
+    .addField(":shield: Lorsque le slime reçoit un coup :" , ":shield: `=Slime défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Slime récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Slime récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Loup de sang"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Loup de sang :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 450")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang attaque`")
+    .addField(":shield: Lorsque le loup de sang reçoit un coup :" , ":shield: `=Loup de sang défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup de sang récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Loup de sang récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
-        bot.on('message', message => {
-          if (message.content === (prefix) + "Lapin géant"){
-            const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username , message.author.avatarURL)
-            .setTitle(":japanese_ogre: Lapin géant :" , ":japanese_ogre: Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
-            .setImage("https://gor666.files.wordpress.com/2012/04/lapin-tueur-de-paques-i-gor-2012.jpg")
-            .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 70")
-            .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lapin géant attaque`")
-            .addField(":shield: Lorsque le lapin géant reçoit un coup :" , ":shield: `=Lapin géant défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Lapin géant récompenses solo : [Votre niveau]`")
-                        .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Lapin géant récompenses groupe : [Votre niveau]`")
-
-            .setTimestamp()
-            message.channel.send({embed})
-            }
-          })
-
-
-          bot.on('message', message => {
-            if (message.content === (prefix) + "Slime"){
-              const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setTitle(":japanese_ogre: Slime :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
-              .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-slime-5ac1b13e54af51.5535441915226432623469.png")
-              .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 115")
-              .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime attaque`")
-              .addField(":shield: Lorsque le slime reçoit un coup :" , ":shield: `=Slime défense : [Points de dégâts de votre coup]`")
-              .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Slime récompenses solo : [Votre niveau]`")
-                            .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Slime récompenses groupe : [Votre niveau]`")
-
-              .setTimestamp()
-              message.channel.send({embed})
-              }
-            })
-
-
-            bot.on('message', message => {
-              if (message.content === (prefix) + "Loup de sang"){
-                const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setTitle(":japanese_ogre: Loup de sang :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
-                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
-                .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 450")
-                .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang attaque`")
-                .addField(":shield: Lorsque le loup de sang reçoit un coup :" , ":shield: `=Loup de sang défense : [Points de dégâts de votre coup]`")
-                .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup de sang récompenses solo : [Votre niveau]`")
-                                .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Loup de sang récompenses groupe : [Votre niveau]`")
-
-                .setTimestamp()
-                message.channel.send({embed})
-                }
-              })
-
-
-
-            bot.on('message', message => {
-              if (message.content === prefix + "Loup de sang d'élite") {
-                const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setTitle(":japanese_ogre: Loup de sang :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
-                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
-                .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
-                .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang d'élite attaque`")
-                .addField(":shield: Lorsque le loup de sang reçoit un coup :" , ":shield: `=Loup de sang d'élite défense : [Points de dégâts de votre coup]`")
-                .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup de sang d'élite récompenses solo : [Votre niveau]`")
-                                .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Loup de sang d'élite récompenses groupe : [Votre niveau]`")
-
-                .setTimestamp()
-                message.channel.send({embed})
-                }
-              })
-
-
-
-
-              
+bot.on('message', message => {
+  if (message.content === prefix + "Loup de sang d'élite") {
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Loup de sang :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang d'élite attaque`")
+    .addField(":shield: Lorsque le loup de sang reçoit un coup :" , ":shield: `=Loup de sang d'élite défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup de sang d'élite récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Loup de sang d'élite récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Bandit débutant"){
@@ -924,15 +861,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit débutant attaque`")
     .addField(":shield: Lorsque le bandit débutant reçoit un coup :" , ":shield: `=Bandit débutant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit débutant récompenses solo : [Votre niveau]`")
-        .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit débutant récompenses groupe : [Votre niveau]`")
-
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit débutant récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
-
-  
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Bandit expérimenté"){
@@ -945,16 +878,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit expérimenté attaque`")
     .addField(":shield: Lorsque le bandit expérimenté reçoit un coup :" , ":shield: `=Bandit expérimenté défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit expérimenté récompenses solo : [Votre niveau]`")
-        .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit expérimenté récompenses groupe : [Votre niveau]`")
-
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit expérimenté récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
-
-  
-  
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Bandit sombre"){
@@ -967,12 +895,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit sombre attaque`")
     .addField(":shield: Lorsque le bandit sombre reçoit un coup :" , ":shield: `=Bandit sombre défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit sombre récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit sombre récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit sombre récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
+  }
+})
 
 bot.on('message', message => {
  if (message.content === prefix + "Bandit sombre d'élite") {
@@ -985,13 +912,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit sombre d'élite attaque`")
     .addField(":shield: Lorsque le bandit sombre reçoit un coup :" , ":shield: `=Bandit sombre d'élite défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit sombre d'élite récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit sombre d'élite récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit sombre d'élite récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
-
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Loup gigantesque"){
@@ -1004,19 +929,12 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup gigantesque attaque`")
     .addField(":shield: Lorsque le loup gigantesque reçoit un coup :" , ":shield: `=Loup gigantesque défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Loup gigantesque récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Loup gigantesque récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Loup gigantesque récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
+  }
+})
 
-
-
-
-
-
-
-  
 bot.on('message', message => {
   if (message.content === (prefix) + "Jeune kobolt"){
     const embed = new Discord.RichEmbed()
@@ -1028,11 +946,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Jeune kobolt attaque`")
     .addField(":shield: Lorsque le jeune kobolt reçoit un coup :" , ":shield: `=Jeune kobolt défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Jeune kobolt récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Jeune kobolt récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Jeune kobolt récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt mineur"){
@@ -1045,12 +963,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt mineur attaque`")
     .addField(":shield: Lorsque le kobolt mineur reçoit un coup :" , ":shield: `=Kobolt mineur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt mineur récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt mineur récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt mineur récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt ouvrier"){
@@ -1063,12 +980,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt ouvrier attaque`")
     .addField(":shield: Lorsque le kobolt ouvrier reçoit un coup :" , ":shield: `=Kobolt ouvrier défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt ouvrier récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt ouvrier récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt ouvrier récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-  
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt explorateur"){
@@ -1081,12 +997,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt explorateur attaque`")
     .addField(":shield: Lorsque le kobolt explorateur reçoit un coup :" , ":shield: `=Kobolt explorateur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt explorateur récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt explorateur récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt explorateur récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt garde"){
@@ -1099,11 +1014,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt garde attaque`")
     .addField(":shield: Lorsque le kobolt garde reçoit un coup :" , ":shield: `=Kobolt garde défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt garde récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt garde récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt garde récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt combattant"){
@@ -1116,12 +1031,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt combattant attaque`")
     .addField(":shield: Lorsque le kobolt combattant reçoit un coup :" , ":shield: `=Kobolt combattant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt combattant récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt combattant récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt combattant récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt espion"){
@@ -1134,12 +1048,11 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt espion attaque`")
     .addField(":shield: Lorsque le kobolt espion reçoit un coup :" , ":shield: `=Kobolt espion défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt espion récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt espion récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt espion récompenses groupe : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
+  }
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt géant rouge"){
@@ -1152,14 +1065,12 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt géant rouge attaque`")
     .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :" , ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt géant rouge récompenses solo : [Votre niveau]`")
-     .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt géant rouge récompenses groupe : [Votre niveau]`")
-     .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :" , ":warning: Provocation, étourdissement")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt géant rouge récompenses groupe : [Votre niveau]`")
+    .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :" , ":warning: Provocation, étourdissement")
     .setTimestamp()
     message.channel.send({embed})
-    }
-  })
-
-
+  }
+})
 
 //////////////////////////////////////////////////////////Monstres récompenses////////////////////////////////////////////////////////////////////////////////////
 
@@ -1167,82 +1078,85 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup récompenses solo")) {
-  let X = args.slice(3).join(" : ");   
+    let X = args.slice(3).join(" : ");
     const B = (Math.floor((3*1)*Math.random()))
-  const C = (Math.floor((3*1)*Math.random()))
-  const D = (Math.floor((2-(0.75))*Math.random()))
-  const E = (Math.floor((2-(0.85))*Math.random()))
-  const F = (Math.floor((30*1)*Math.random()+30*1))
-  const FF = F-(X*4)
-  const G = (Math.floor((11*1)*Math.random()+10*1))
-  const I = (Math.floor((2-(0.90))*Math.random()))
-  const Oeufs = (Math.floor((2-(0.98))*Math.random()))
-  const Orge = (Math.floor((5)*Math.random()+1))
-  const Clef = (Math.floor((2-(0.98))*Math.random()))
-  if(FF > 0) {
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-    .setTimestamp()
-    message.channel.send({embed})}
+    const C = (Math.floor((3*1)*Math.random()))
+    const D = (Math.floor((2-(0.75))*Math.random()))
+    const E = (Math.floor((2-(0.85))*Math.random()))
+    const F = (Math.floor((30*1)*Math.random()+30*1))
+    const FF = F-(X*4)
+    const G = (Math.floor((11*1)*Math.random()+10*1))
+    const I = (Math.floor((2-(0.90))*Math.random()))
+    const Oeufs = (Math.floor((2-(0.98))*Math.random()))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const Clef = (Math.floor((2-(0.98))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-    .setTimestamp()
-    message.channel.send({embed})}
-        }
-  }) ;
-
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup récompenses groupe")) {
-  let X = args.slice(3).join(" : ");   
+    let X = args.slice(3).join(" : ");
     const B = (Math.floor((2*1)*Math.random()))
-  const C = (Math.floor((2*1)*Math.random()))
-  const D = (Math.floor((2-(0.90))*Math.random()))
-  const E = (Math.floor((2-(0.95))*Math.random()))
-  const F = (Math.floor((25*1)*Math.random()+25*1))
-  const Orge = (Math.floor((3)*Math.random()+1))
-  const FF = F-(X*4)
-  const G = (Math.floor((8*1)*Math.random()+7*1))
-  const I = (Math.floor((2-(0.90))*Math.random()))
-  const Oeufs = (Math.floor((2-(0.98))*Math.random()))
+    const C = (Math.floor((2*1)*Math.random()))
+    const D = (Math.floor((2-(0.90))*Math.random()))
+    const E = (Math.floor((2-(0.95))*Math.random()))
+    const F = (Math.floor((25*1)*Math.random()+25*1))
+    const Orge = (Math.floor((3)*Math.random()+1))
+    const FF = F-(X*4)
+    const G = (Math.floor((8*1)*Math.random()+7*1))
+    const I = (Math.floor((2-(0.90))*Math.random()))
+    const Oeufs = (Math.floor((2-(0.98))*Math.random()))
     const Clef = (Math.floor((2-(0.99))*Math.random()))
-  if(FF > 0) {
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-    .setTimestamp()
-    message.channel.send({embed})}
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-    .setTimestamp()
-    message.channel.send({embed})}
-        }
-  }) ;
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " +B+ "\n:knife: Peau de loup : " +C+ "\n:eye: Oeil de loup : " +D+ "\n:cupid: Coeur de loup : " +E+ "\n:gem: Croc de loup : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-  bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Renard récompenses solo")) {
-  let X = args.slice(3).join(" : ");    
+    let X = args.slice(3).join(" : ");
     const B = (Math.floor((3*1)*Math.random()))
     const C = (Math.floor((3*1)*Math.random()))
     const D = (Math.floor((2-(0.75))*Math.random()))
@@ -1252,34 +1166,34 @@ let cont = message.content.slice(prefix.length).split(" ");
     const FF = F-(X*3)
     const G = (Math.floor((6*1)*Math.random()+5*1))
     const Oeufs = (Math.floor((2-(0.99))*Math.random()))
-     if(FF > 0) {
+    if(FF > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
-      message.channel.send({embed})}
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
-      message.channel.send({embed})}
-          }
-    }) ;
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
- bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Renard récompenses groupe")) {
-  let X = args.slice(3).join(" : ");    
+    let X = args.slice(3).join(" : ");
     const B = (Math.floor((2*1)*Math.random()))
     const C = (Math.floor((2*1)*Math.random()))
     const D = (Math.floor((2-(0.90))*Math.random()))
@@ -1289,1369 +1203,1325 @@ let cont = message.content.slice(prefix.length).split(" ");
     const FF = F-(X*3)
     const G = (Math.floor((4*1)*Math.random()+3*1))
     const Oeufs = (Math.floor((2-(0.99))*Math.random()))
-     if(FF > 0) {
+    if(FF > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
-      message.channel.send({embed})}
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " +B+ "\n:knife: Peau de renard : " +C+ "\n:eye: Oeil de renard : " +D+ "\n:cupid: Coeur de renard : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
       .setTimestamp()
-      message.channel.send({embed})}
-          }
-    }) ;
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-    bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Sanglier récompenses solo")) {
-  let X = args.slice(3).join(" : ");             
-      const B = (Math.floor((3*1)*Math.random()))
-      const C = (Math.floor((3*1)*Math.random()))
-      const D = (Math.floor((2-(0.75))*Math.random()))
-      const E = (Math.floor((2-(0.85))*Math.random()))
-      const F = (Math.floor((15*1)*Math.random()+15*1))
-      const Orge = (Math.floor((5)*Math.random()+1))
-      const FF = F-(X*3)
-      const G = (Math.floor((6*1)*Math.random()+5*1))
-      const Oeufs = (Math.floor((2-(0.99))*Math.random()))
-       if(FF > 0) {
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
-        .setTimestamp()
-        message.channel.send({embed})}
+    let X = args.slice(3).join(" : ");
+    const B = (Math.floor((3*1)*Math.random()))
+    const C = (Math.floor((3*1)*Math.random()))
+    const D = (Math.floor((2-(0.75))*Math.random()))
+    const E = (Math.floor((2-(0.85))*Math.random()))
+    const F = (Math.floor((15*1)*Math.random()+15*1))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const FF = F-(X*3)
+    const G = (Math.floor((6*1)*Math.random()+5*1))
+    const Oeufs = (Math.floor((2-(0.99))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-       const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-        .setTimestamp()
-        message.channel.send({embed})}
-            }
-      }) ;
-
-
-
-    bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Sanglier récompenses groupe")) {
-  let X = args.slice(3).join(" : ");             
-      const B = (Math.floor((2*1)*Math.random()))
-      const C = (Math.floor((2*1)*Math.random()))
-      const D = (Math.floor((2-(0.90))*Math.random()))
-      const E = (Math.floor((2-(0.95))*Math.random()))
-      const F = (Math.floor((10*1)*Math.random()+10*1))
-      const Orge = (Math.floor((3)*Math.random()+1))
-      const FF = F-(X*3)
-      const G = (Math.floor((4*1)*Math.random()+3*1))
-      const Oeufs = (Math.floor((2-(0.99))*Math.random()))
-       if(FF > 0) {
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
-        .setTimestamp()
-        message.channel.send({embed})}
+    let X = args.slice(3).join(" : ");
+    const B = (Math.floor((2*1)*Math.random()))
+    const C = (Math.floor((2*1)*Math.random()))
+    const D = (Math.floor((2-(0.90))*Math.random()))
+    const E = (Math.floor((2-(0.95))*Math.random()))
+    const F = (Math.floor((10*1)*Math.random()+10*1))
+    const Orge = (Math.floor((3)*Math.random()+1))
+    const FF = F-(X*3)
+    const G = (Math.floor((4*1)*Math.random()+3*1))
+    const Oeufs = (Math.floor((2-(0.99))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-       const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " +B+ "\n:knife: Peau de sanglier : " +C+ "\n:eye: Oeil de sanglier : " +D+ "\n:cupid: Coeur de sanglier : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-        .setTimestamp()
-        message.channel.send({embed})}
-            }
-      }) ;
-
-
-      bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Chien récompenses solo")) {
-  let X = args.slice(3).join(" : ");                             
-        const B = (Math.floor((3*1)*Math.random()))
-        const C = (Math.floor((3*1)*Math.random()))
-        const D = (Math.floor((2-(0.75))*Math.random()))
-        const E = (Math.floor((2-(0.85))*Math.random()))
-        const F = (Math.floor((15*1)*Math.random()+15*1))
-        const Orge = (Math.floor((5)*Math.random()+1))
-        const FF = F-(X*3)
-        const G = (Math.floor((6*1)*Math.random()+5*1))
-        const Oeufs = (Math.floor((2-(0.99))*Math.random()))
-         if(FF > 0) {
-          const embed = new Discord.RichEmbed()
-          .setColor(3447003)
-          .setAuthor(message.author.username , message.author.avatarURL)
-          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                   .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
-          .setTimestamp()
-          message.channel.send({embed})}
+    let X = args.slice(3).join(" : ");
+    const B = (Math.floor((3*1)*Math.random()))
+    const C = (Math.floor((3*1)*Math.random()))
+    const D = (Math.floor((2-(0.75))*Math.random()))
+    const E = (Math.floor((2-(0.85))*Math.random()))
+    const F = (Math.floor((15*1)*Math.random()+15*1))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const FF = F-(X*3)
+    const G = (Math.floor((6*1)*Math.random()+5*1))
+    const Oeufs = (Math.floor((2-(0.99))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-          .setColor(3447003)
-          .setAuthor(message.author.username , message.author.avatarURL)
-          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                   .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-          .setTimestamp()
-          message.channel.send({embed})}
-              }
-        }) ;
-
-
-      bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Chien récompenses groupe")) {
-  let X = args.slice(3).join(" : ");                             
-        const B = (Math.floor((2*1)*Math.random()))
-        const C = (Math.floor((2*1)*Math.random()))
-        const D = (Math.floor((2-(0.90))*Math.random()))
-        const E = (Math.floor((2-(0.95))*Math.random()))
-        const Orge = (Math.floor((3)*Math.random()+1))
-        const F = (Math.floor((10*1)*Math.random()+10*1))
-        const FF = F-(X*3)
-        const G = (Math.floor((4*1)*Math.random()+3*1))
-        const Oeufs = (Math.floor((2-(0.99))*Math.random()))
-         if(FF > 0) {
-          const embed = new Discord.RichEmbed()
-          .setColor(3447003)
-          .setAuthor(message.author.username , message.author.avatarURL)
-          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                   .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-
-          .setTimestamp()
-          message.channel.send({embed})}
+    let X = args.slice(3).join(" : ");
+    const B = (Math.floor((2*1)*Math.random()))
+    const C = (Math.floor((2*1)*Math.random()))
+    const D = (Math.floor((2-(0.90))*Math.random()))
+    const E = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((3)*Math.random()+1))
+    const F = (Math.floor((10*1)*Math.random()+10*1))
+    const FF = F-(X*3)
+    const G = (Math.floor((4*1)*Math.random()+3*1))
+    const Oeufs = (Math.floor((2-(0.99))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-          .setColor(3447003)
-          .setAuthor(message.author.username , message.author.avatarURL)
-          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                   .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " +B+ "\n:knife: Peau de chien : " +C+ "\n:eye: Oeil de chien : " +D+ "\n:cupid: Coeur de chien : " +E+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-          .setTimestamp()
-          message.channel.send({embed})}
-              }
-        }) ;
-
-
-        bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Lapin géant récompenses solo")) {
-  let X = args.slice(4).join(" : ");                                
-          const B = (Math.floor((3*1)*Math.random()))
-          const C = (Math.floor((3*1)*Math.random()))
-          const D = (Math.floor((2-(0.75))*Math.random()))
-          const Orge = (Math.floor((9)*Math.random()+2))
-          const E = (Math.floor((2-(0.85))*Math.random()))
-          const I = (Math.floor((2-(0.90))*Math.random()))
-          const F = (Math.floor((20*1)*Math.random()+20*1))
-          const FF = F-(X*4)
-          const G = (Math.floor((25*1)*Math.random()+25*1))
-          const Oeufs = (Math.floor((2-(0.98))*Math.random()))
-           if(FF > 0) {
-            const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username , message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-            .setTimestamp()
-            message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const B = (Math.floor((3*1)*Math.random()))
+    const C = (Math.floor((3*1)*Math.random()))
+    const D = (Math.floor((2-(0.75))*Math.random()))
+    const Orge = (Math.floor((9)*Math.random()+2))
+    const E = (Math.floor((2-(0.85))*Math.random()))
+    const I = (Math.floor((2-(0.90))*Math.random()))
+    const F = (Math.floor((20*1)*Math.random()+20*1))
+    const FF = F-(X*4)
+    const G = (Math.floor((25*1)*Math.random()+25*1))
+    const Oeufs = (Math.floor((2-(0.98))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username , message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-            .setTimestamp()
-            message.channel.send({embed})}
-                }
-          }) ;
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-
-        bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Lapin géant récompenses groupe")) {
-  let X = args.slice(4).join(" : ");                                
-          const B = (Math.floor((2*1)*Math.random()))
-          const C = (Math.floor((2*1)*Math.random()))
-          const D = (Math.floor((2-(0.90))*Math.random()))
-          const E = (Math.floor((2-(0.95))*Math.random()))
-          const Orge = (Math.floor((5)*Math.random()+1))
-          const I = (Math.floor((2-(0.97))*Math.random()))
-          const F = (Math.floor((15*1)*Math.random()+15*1))
-          const FF = F-(X*4)
-          const G = (Math.floor((15*1)*Math.random()+15*1))
-          const Oeufs = (Math.floor((2-(0.98))*Math.random()))
-           if(FF > 0) {
-            const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username , message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-            .setTimestamp()
-            message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const B = (Math.floor((2*1)*Math.random()))
+    const C = (Math.floor((2*1)*Math.random()))
+    const D = (Math.floor((2-(0.90))*Math.random()))
+    const E = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const I = (Math.floor((2-(0.97))*Math.random()))
+    const F = (Math.floor((15*1)*Math.random()+15*1))
+    const FF = F-(X*4)
+    const G = (Math.floor((15*1)*Math.random()+15*1))
+    const Oeufs = (Math.floor((2-(0.98))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username , message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-            .setTimestamp()
-            message.channel.send({embed})}
-                }
-          }) ;
-        
-      
-          bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " +B+ "\n:knife: Peau de lapin géant : " +C+ "\n:eye: Oeil de lapin géant : " +D+ "\n:cupid: Coeur de lapin géant : " +E+ "\n:gem: Oreille de lapin : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup de sang récompenses solo")) {
-  let X = args.slice(5).join(" : ");                                         
-            const B = (Math.floor((3)*Math.random()))
-            const C = (Math.floor((3)*Math.random()))
-            const D = (Math.floor((2-(0.80))*Math.random()))
-            const E = (Math.floor((2-(0.90))*Math.random()))
-            const I = (Math.floor((2-(0.95))*Math.random()))
-            const F = (Math.floor((30)*Math.random()+45))
-            const Orge = (Math.floor((9)*Math.random()+2))
-            const FF = F-(X*5)
-            const G = (Math.floor((21)*Math.random()+20))
-            const Oeufs = (Math.floor((2-(0.97))*Math.random()))
-              const Clef = (Math.floor((2-(0.97))*Math.random()))
-
-             if(FF > 0) {
-              const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-              .setTimestamp()
-              message.channel.send({embed})}
+    let X = args.slice(5).join(" : ");
+    const B = (Math.floor((3)*Math.random()))
+    const C = (Math.floor((3)*Math.random()))
+    const D = (Math.floor((2-(0.80))*Math.random()))
+    const E = (Math.floor((2-(0.90))*Math.random()))
+    const I = (Math.floor((2-(0.95))*Math.random()))
+    const F = (Math.floor((30)*Math.random()+45))
+    const Orge = (Math.floor((9)*Math.random()+2))
+    const FF = F-(X*5)
+    const G = (Math.floor((21)*Math.random()+20))
+    const Oeufs = (Math.floor((2-(0.97))*Math.random()))
+    const Clef = (Math.floor((2-(0.97))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-        const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-              .setTimestamp()
-              message.channel.send({embed})}
-                  }
-            }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-
-  bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup de sang d'élite récompenses solo")) {
-  let X = args.slice(6).join(" : ");                                         
-  const I = (Math.floor((2-(0.95))*Math.random()))
-                  const J = (Math.floor((2-(0.98))*Math.random()))
-                  const K = (Math.floor((2-(0.95))*Math.random()))
-                  const L = (Math.floor((2-(0.98))*Math.random()))
-                  const M = (Math.floor((2-(0.95))*Math.random()))
-                  const N = (Math.floor((2-(0.95))*Math.random()))
-                  const O = (Math.floor((2-(0.95))*Math.random()))
-                  const P = (Math.floor((2-(0.95))*Math.random()))
-                  const Q = (Math.floor((2-(0.95))*Math.random()))
-                  const R = (Math.floor((2-(0.95))*Math.random()))
-                  const S = (Math.floor((2-(0.95))*Math.random()))
-                     const T = (Math.floor((2-(0.95))*Math.random()))
-                      const U = (Math.floor((2-(0.90))*Math.random()))
-                      const V = (Math.floor((2-(0.90))*Math.random()))
-                      const W = (Math.floor((2-(0.90))*Math.random()))
-                      const XX = (Math.floor((2-(0.90))*Math.random()))
-                       const Y = (Math.floor((2-(0.95))*Math.random()))
-                        const YY = (Math.floor((2-(0.95))*Math.random()))
-                        const Orge = (Math.floor((9)*Math.random()+2))
-                        const F = (Math.floor((50*1)*Math.random()+75*1))
-                    const FF = F-(X*5)
-                    const G = (Math.floor((28*1)*Math.random()+28*1))
-             if(FF > 0) {
-              const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-              .setTimestamp()
-              message.channel.send({embed})}
+    let X = args.slice(6).join(" : ");
+    const I = (Math.floor((2-(0.95))*Math.random()))
+    const J = (Math.floor((2-(0.98))*Math.random()))
+    const K = (Math.floor((2-(0.95))*Math.random()))
+    const L = (Math.floor((2-(0.98))*Math.random()))
+    const M = (Math.floor((2-(0.95))*Math.random()))
+    const N = (Math.floor((2-(0.95))*Math.random()))
+    const O = (Math.floor((2-(0.95))*Math.random()))
+    const P = (Math.floor((2-(0.95))*Math.random()))
+    const Q = (Math.floor((2-(0.95))*Math.random()))
+    const R = (Math.floor((2-(0.95))*Math.random()))
+    const S = (Math.floor((2-(0.95))*Math.random()))
+    const T = (Math.floor((2-(0.95))*Math.random()))
+    const U = (Math.floor((2-(0.90))*Math.random()))
+    const V = (Math.floor((2-(0.90))*Math.random()))
+    const W = (Math.floor((2-(0.90))*Math.random()))
+    const XX = (Math.floor((2-(0.90))*Math.random()))
+    const Y = (Math.floor((2-(0.95))*Math.random()))
+    const YY = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((9)*Math.random()+2))
+    const F = (Math.floor((50*1)*Math.random()+75*1))
+    const FF = F-(X*5)
+    const G = (Math.floor((28*1)*Math.random()+28*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-        const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-              .setTimestamp()
-              message.channel.send({embed})}
-                  }
-            }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
- bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup de sang d'élite récompenses groupe")) {
-  let X = args.slice(6).join(" : ");                       
-                      const I = (Math.floor((2-(0.97))*Math.random()))
-                  const J = (Math.floor((2-(0.99))*Math.random()))
-                  const K = (Math.floor((2-(0.97))*Math.random()))
-                  const L = (Math.floor((2-(0.99))*Math.random()))
-                  const M = (Math.floor((2-(0.95))*Math.random()))
-                  const N = (Math.floor((2-(0.95))*Math.random()))
-                  const O = (Math.floor((2-(0.95))*Math.random()))
-                  const P = (Math.floor((2-(0.95))*Math.random()))
-                  const Q = (Math.floor((2-(0.95))*Math.random()))
-                  const R = (Math.floor((2-(0.95))*Math.random()))
-                  const S = (Math.floor((2-(0.95))*Math.random()))
-                     const T = (Math.floor((2-(0.95))*Math.random()))
-                      const U = (Math.floor((2-(0.90))*Math.random()))
-                      const V = (Math.floor((2-(0.90))*Math.random()))
-                      const W = (Math.floor((2-(0.90))*Math.random()))
-                      const XX = (Math.floor((2-(0.90))*Math.random()))
-                       const Y = (Math.floor((2-(0.95))*Math.random()))
-                        const YY = (Math.floor((2-(0.95))*Math.random()))
-                        const Orge = (Math.floor((9)*Math.random()+2))
-                        const F = (Math.floor((40*1)*Math.random()+90*1))
-                    const FF = F-(X*5)
-                    const G = (Math.floor((19*1)*Math.random()+18*1))
-                     if(FF > 0) {
-                      const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                      .setTimestamp()
-                      message.channel.send({embed})}
+    let X = args.slice(6).join(" : ");
+    const I = (Math.floor((2-(0.97))*Math.random()))
+    const J = (Math.floor((2-(0.99))*Math.random()))
+    const K = (Math.floor((2-(0.97))*Math.random()))
+    const L = (Math.floor((2-(0.99))*Math.random()))
+    const M = (Math.floor((2-(0.95))*Math.random()))
+    const N = (Math.floor((2-(0.95))*Math.random()))
+    const O = (Math.floor((2-(0.95))*Math.random()))
+    const P = (Math.floor((2-(0.95))*Math.random()))
+    const Q = (Math.floor((2-(0.95))*Math.random()))
+    const R = (Math.floor((2-(0.95))*Math.random()))
+    const S = (Math.floor((2-(0.95))*Math.random()))
+    const T = (Math.floor((2-(0.95))*Math.random()))
+    const U = (Math.floor((2-(0.90))*Math.random()))
+    const V = (Math.floor((2-(0.90))*Math.random()))
+    const W = (Math.floor((2-(0.90))*Math.random()))
+    const XX = (Math.floor((2-(0.90))*Math.random()))
+    const Y = (Math.floor((2-(0.95))*Math.random()))
+    const YY = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((9)*Math.random()+2))
+    const F = (Math.floor((40*1)*Math.random()+90*1))
+    const FF = F-(X*5)
+    const G = (Math.floor((19*1)*Math.random()+18*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-       const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                      .setTimestamp()
-                      message.channel.send({embed})}
-                          }
-                    }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-
-
-          bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup de sang récompenses groupe")) {
-  let X = args.slice(5).join(" : ");                                         
-            const B = (Math.floor((2)*Math.random()))
-            const C = (Math.floor((2)*Math.random()))
-            const D = (Math.floor((2-(0.90))*Math.random()))
-            const E = (Math.floor((2-(0.95))*Math.random()))
-            const I = (Math.floor((2-(0.98))*Math.random()))
-             const J = (Math.floor((2-(0.98))*Math.random()))
-            const F = (Math.floor((25)*Math.random()+40))
-            const FF = F-(X*5)
-            const G = (Math.floor((15)*Math.random()+15))
-            const Orge = (Math.floor((5)*Math.random()+1))
-            const Oeufs = (Math.floor((2-(0.97))*Math.random()))
-              const Clef = (Math.floor((2-(0.98))*Math.random()))
-
-             if(FF > 0) {
-              const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-              .setTimestamp()
-              message.channel.send({embed})}
+    let X = args.slice(5).join(" : ");
+    const B = (Math.floor((2)*Math.random()))
+    const C = (Math.floor((2)*Math.random()))
+    const D = (Math.floor((2-(0.90))*Math.random()))
+    const E = (Math.floor((2-(0.95))*Math.random()))
+    const I = (Math.floor((2-(0.98))*Math.random()))
+    const J = (Math.floor((2-(0.98))*Math.random()))
+    const F = (Math.floor((25)*Math.random()+40))
+    const FF = F-(X*5)
+    const G = (Math.floor((15)*Math.random()+15))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const Oeufs = (Math.floor((2-(0.97))*Math.random()))
+    const Clef = (Math.floor((2-(0.98))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-        const embed = new Discord.RichEmbed()
-              .setColor(3447003)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-              .setTimestamp()
-              message.channel.send({embed})}
-                  }
-            }) ;
-          
-  
-            bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " +B+ "\n:knife: Peau de loup de sang : " +C+ "\n:eye: Oeil de loup de sang : " +D+ "\n:cupid: Coeur de loup de sang : " +E+ "\n:gem: Croc de loup de sang : " +I+ "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Slime récompenses solo")) {
-  let X = args.slice(3).join(" : ");                    
-              const B = (Math.floor((3*1)*Math.random()))
-              const C = (Math.floor((2-(0.75))*Math.random()))
-              const F = (Math.floor((30*1)*Math.random()+30*1))
-              const FF = F-(X*4)
-              const G = (Math.floor((11*1)*Math.random()+10*1))
-              const D = (Math.floor((2-(0.80))*Math.random()))
-              const Orge = (Math.floor((5)*Math.random()+1))
-              const E = (Math.floor((2-(0.95))*Math.random()))
-                const Clef = (Math.floor((2-(0.98))*Math.random()))
-
-               if(FF > 0) {
-                const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                .setTimestamp()
-                message.channel.send({embed})}
+    let X = args.slice(3).join(" : ");
+    const B = (Math.floor((3*1)*Math.random()))
+    const C = (Math.floor((2-(0.75))*Math.random()))
+    const F = (Math.floor((30*1)*Math.random()+30*1))
+    const FF = F-(X*4)
+    const G = (Math.floor((11*1)*Math.random()+10*1))
+    const D = (Math.floor((2-(0.80))*Math.random()))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const E = (Math.floor((2-(0.95))*Math.random()))
+    const Clef = (Math.floor((2-(0.98))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-        const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                .setTimestamp()
-                message.channel.send({embed})}
-                    }
-              }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-            bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Slime récompenses groupe")) {
-  let X = args.slice(3).join(" : ");                    
-              const B = (Math.floor((2*1)*Math.random()))
-              const C = (Math.floor((2-(0.90))*Math.random()))
-              const F = (Math.floor((25*1)*Math.random()+25*1))
-              const FF = F-(X*4)
-              const G = (Math.floor((7*1)*Math.random()+8*1))
-              const D = (Math.floor((2-(0.90))*Math.random()))
-              const E = (Math.floor((2-(0.98))*Math.random()))
-              const Orge = (Math.floor((3)*Math.random()+1))
-                const Clef = (Math.floor((2-(0.99))*Math.random()))
-
-               if(FF > 0) {
-                const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                .setTimestamp()
-                message.channel.send({embed})}
+    let X = args.slice(3).join(" : ");
+    const B = (Math.floor((2*1)*Math.random()))
+    const C = (Math.floor((2-(0.90))*Math.random()))
+    const F = (Math.floor((25*1)*Math.random()+25*1))
+    const FF = F-(X*4)
+    const G = (Math.floor((7*1)*Math.random()+8*1))
+    const D = (Math.floor((2-(0.90))*Math.random()))
+    const E = (Math.floor((2-(0.98))*Math.random()))
+    const Orge = (Math.floor((3)*Math.random()+1))
+    const Clef = (Math.floor((2-(0.99))*Math.random()))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-        const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                .setTimestamp()
-                message.channel.send({embed})}
-                    }
-              }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " +B+ "\n:gem: Pierre de poison faible : " +C+ "\n:scales: Equipement rouillé au choix : " +D+ "\n:scales: Bijoux rouillé au choix : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-              bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit débutant récompenses solo")) {
-  let X = args.slice(4).join(" : ");   
-                  const I = (Math.floor((2-(0.80))*Math.random()))
-                  const J = (Math.floor((2-(0.95))*Math.random()))
-                  const K = (Math.floor((2-(0.97))*Math.random()))
-                  const L = (Math.floor((2-(0.97))*Math.random()))
-                  const M = (Math.floor((2-(0.97))*Math.random()))
-                  const N = (Math.floor((2-(0.97))*Math.random()))
-                  const O = (Math.floor((2-(0.97))*Math.random()))
-                  const P = (Math.floor((2-(0.97))*Math.random()))
-                  const Q = (Math.floor((2-(0.97))*Math.random()))
-                   const R = (Math.floor((2-(0.97))*Math.random()))
-                    const S = (Math.floor((2-(0.97))*Math.random()))
-                     const T = (Math.floor((2-(0.90))*Math.random()))
-                      const U = (Math.floor((2-(0.90))*Math.random()))
-                      const V = (Math.floor((2-(0.90))*Math.random()))
-                      const Orge = (Math.floor((5)*Math.random()+1))
-                const F = (Math.floor((18*1)*Math.random()+18*1))
-                const FF = F-(X*3)
-                const G = (Math.floor((6*1)*Math.random()+5*1))
-                 if(FF > 0) {
-                  const embed = new Discord.RichEmbed()
-                  .setColor(3447003)
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                  .setTimestamp()
-                  message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const I = (Math.floor((2-(0.80))*Math.random()))
+    const J = (Math.floor((2-(0.95))*Math.random()))
+    const K = (Math.floor((2-(0.97))*Math.random()))
+    const L = (Math.floor((2-(0.97))*Math.random()))
+    const M = (Math.floor((2-(0.97))*Math.random()))
+    const N = (Math.floor((2-(0.97))*Math.random()))
+    const O = (Math.floor((2-(0.97))*Math.random()))
+    const P = (Math.floor((2-(0.97))*Math.random()))
+    const Q = (Math.floor((2-(0.97))*Math.random()))
+    const R = (Math.floor((2-(0.97))*Math.random()))
+    const S = (Math.floor((2-(0.97))*Math.random()))
+    const T = (Math.floor((2-(0.90))*Math.random()))
+    const U = (Math.floor((2-(0.90))*Math.random()))
+    const V = (Math.floor((2-(0.90))*Math.random()))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const F = (Math.floor((18*1)*Math.random()+18*1))
+    const FF = F-(X*3)
+    const G = (Math.floor((6*1)*Math.random()+5*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-                  .setColor(3447003)
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                  .setTimestamp()
-                  message.channel.send({embed})}
-                      }
-                }) ;
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-
-              bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit débutant récompenses groupe")) {
-  let X = args.slice(4).join(" : ");   
-                  const I = (Math.floor((2-(0.90))*Math.random()))
-                  const J = (Math.floor((2-(0.98))*Math.random()))
-                  const K = (Math.floor((2-(0.97))*Math.random()))
-                  const L = (Math.floor((2-(0.97))*Math.random()))
-                  const M = (Math.floor((2-(0.97))*Math.random()))
-                  const N = (Math.floor((2-(0.97))*Math.random()))
-                  const O = (Math.floor((2-(0.97))*Math.random()))
-                  const P = (Math.floor((2-(0.97))*Math.random()))
-                  const Q = (Math.floor((2-(0.97))*Math.random()))
-                   const R = (Math.floor((2-(0.99))*Math.random()))
-                    const S = (Math.floor((2-(0.99))*Math.random()))
-                     const T = (Math.floor((2-(0.95))*Math.random()))
-                      const U = (Math.floor((2-(0.95))*Math.random()))
-                      const V = (Math.floor((2-(0.95))*Math.random()))
-                      const Orge = (Math.floor((3)*Math.random()+1))
-                const F = (Math.floor((13*1)*Math.random()+13*1))
-                const FF = F-(X*3)
-                const G = (Math.floor((4*1)*Math.random()+3*1))
-                 if(FF > 0) {
-                  const embed = new Discord.RichEmbed()
-                  .setColor(3447003)
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                  .setTimestamp()
-                  message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const I = (Math.floor((2-(0.90))*Math.random()))
+    const J = (Math.floor((2-(0.98))*Math.random()))
+    const K = (Math.floor((2-(0.97))*Math.random()))
+    const L = (Math.floor((2-(0.97))*Math.random()))
+    const M = (Math.floor((2-(0.97))*Math.random()))
+    const N = (Math.floor((2-(0.97))*Math.random()))
+    const O = (Math.floor((2-(0.97))*Math.random()))
+    const P = (Math.floor((2-(0.97))*Math.random()))
+    const Q = (Math.floor((2-(0.97))*Math.random()))
+    const R = (Math.floor((2-(0.99))*Math.random()))
+    const S = (Math.floor((2-(0.99))*Math.random()))
+    const T = (Math.floor((2-(0.95))*Math.random()))
+    const U = (Math.floor((2-(0.95))*Math.random()))
+    const V = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((3)*Math.random()+1))
+    const F = (Math.floor((13*1)*Math.random()+13*1))
+    const FF = F-(X*3)
+    const G = (Math.floor((4*1)*Math.random()+3*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-                  .setColor(3447003)
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                  .setTimestamp()
-                  message.channel.send({embed})}
-                      }
-                }) ;
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " +I+ "\n:scales: Bijoux en coeur d'animal faible au choix : " +J+ "\n:syringe: Potion faible de soin : " +R+ "\n:meat_on_bone: Ragoût de sanglier : " +S+ "\n:meat_on_bone:  Ragoût de chien : " +T+ "\n:meat_on_bone: Ragoût de renard : " +U+ "\n:meat_on_bone: Ragoût de lapin : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-                bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit expérimenté récompenses solo")) {
-  let X = args.slice(4).join(" : ");               
-                  const I = (Math.floor((2-(0.80))*Math.random()))
-                  const J = (Math.floor((2-(0.95))*Math.random()))
-                  const K = (Math.floor((2-(0.90))*Math.random()))
-                  const L = (Math.floor((2-(0.95))*Math.random()))
-                  const M = (Math.floor((2-(0.97))*Math.random()))
-                  const N = (Math.floor((2-(0.97))*Math.random()))
-                  const O = (Math.floor((2-(0.97))*Math.random()))
-                  const P = (Math.floor((2-(0.97))*Math.random()))
-                  const Q = (Math.floor((2-(0.97))*Math.random()))
-                     const R = (Math.floor((2-(0.97))*Math.random()))
-                    const S = (Math.floor((2-(0.90))*Math.random()))
-                     const T = (Math.floor((2-(0.90))*Math.random()))
-                      const U = (Math.floor((2-(0.95))*Math.random()))
-                      const V = (Math.floor((2-(0.95))*Math.random()))
-                        const Clef = (Math.floor((2-(0.98))*Math.random()))
-
-                      const Orge = (Math.floor((5)*Math.random()+1))
-                  const F = (Math.floor((30*1)*Math.random()+30*1))
-                  const FF = F-(X*4)
-                  const G = (Math.floor((11*1)*Math.random()+10*1))
-                   if(FF > 0) {
-                    const embed = new Discord.RichEmbed()
-                    .setColor(3447003)
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                    .setTimestamp()
-                    message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const I = (Math.floor((2-(0.80))*Math.random()))
+    const J = (Math.floor((2-(0.95))*Math.random()))
+    const K = (Math.floor((2-(0.90))*Math.random()))
+    const L = (Math.floor((2-(0.95))*Math.random()))
+    const M = (Math.floor((2-(0.97))*Math.random()))
+    const N = (Math.floor((2-(0.97))*Math.random()))
+    const O = (Math.floor((2-(0.97))*Math.random()))
+    const P = (Math.floor((2-(0.97))*Math.random()))
+    const Q = (Math.floor((2-(0.97))*Math.random()))
+    const R = (Math.floor((2-(0.97))*Math.random()))
+    const S = (Math.floor((2-(0.90))*Math.random()))
+    const T = (Math.floor((2-(0.90))*Math.random()))
+    const U = (Math.floor((2-(0.95))*Math.random()))
+    const V = (Math.floor((2-(0.95))*Math.random()))
+    const Clef = (Math.floor((2-(0.98))*Math.random()))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const F = (Math.floor((30*1)*Math.random()+30*1))
+    const FF = F-(X*4)
+    const G = (Math.floor((11*1)*Math.random()+10*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-                    .setColor(3447003)
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                    .setTimestamp()
-                    message.channel.send({embed})}
-                        }
-                  }) ;
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
- bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit expérimenté récompenses groupe")) {
-  let X = args.slice(4).join(" : ");               
-                  const I = (Math.floor((2-(0.90))*Math.random()))
-                  const J = (Math.floor((2-(0.98))*Math.random()))
-                  const K = (Math.floor((2-(0.95))*Math.random()))
-                  const L = (Math.floor((2-(0.98))*Math.random()))
-                  const M = (Math.floor((2-(0.97))*Math.random()))
-                  const N = (Math.floor((2-(0.97))*Math.random()))
-                  const O = (Math.floor((2-(0.97))*Math.random()))
-                  const P = (Math.floor((2-(0.97))*Math.random()))
-                  const Q = (Math.floor((2-(0.97))*Math.random()))
-                     const R = (Math.floor((2-(0.99))*Math.random()))
-                    const S = (Math.floor((2-(0.95))*Math.random()))
-                     const T = (Math.floor((2-(0.95))*Math.random()))
-                       const Clef = (Math.floor((2-(0.99))*Math.random()))
-
-                      const U = (Math.floor((2-(0.98))*Math.random()))
-                      const V = (Math.floor((2-(0.98))*Math.random()))
-                      const Orge = (Math.floor((3)*Math.random()+1))
-                  const F = (Math.floor((25*1)*Math.random()+25*1))
-                  const FF = F-(X*4)
-                  const G = (Math.floor((7*1)*Math.random()+8*1))
-                   if(FF > 0) {
-                    const embed = new Discord.RichEmbed()
-                    .setColor(3447003)
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                    .setTimestamp()
-                    message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const I = (Math.floor((2-(0.90))*Math.random()))
+    const J = (Math.floor((2-(0.98))*Math.random()))
+    const K = (Math.floor((2-(0.95))*Math.random()))
+    const L = (Math.floor((2-(0.98))*Math.random()))
+    const M = (Math.floor((2-(0.97))*Math.random()))
+    const N = (Math.floor((2-(0.97))*Math.random()))
+    const O = (Math.floor((2-(0.97))*Math.random()))
+    const P = (Math.floor((2-(0.97))*Math.random()))
+    const Q = (Math.floor((2-(0.97))*Math.random()))
+    const R = (Math.floor((2-(0.99))*Math.random()))
+    const S = (Math.floor((2-(0.95))*Math.random()))
+    const T = (Math.floor((2-(0.95))*Math.random()))
+    const Clef = (Math.floor((2-(0.99))*Math.random()))
+    const U = (Math.floor((2-(0.98))*Math.random()))
+    const V = (Math.floor((2-(0.98))*Math.random()))
+    const Orge = (Math.floor((3)*Math.random()+1))
+    const F = (Math.floor((25*1)*Math.random()+25*1))
+    const FF = F-(X*4)
+    const G = (Math.floor((7*1)*Math.random()+8*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
       const embed = new Discord.RichEmbed()
-                    .setColor(3447003)
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                    .setTimestamp()
-                    message.channel.send({embed})}
-                        }
-                  }) ;
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +R+ "\n:meat_on_bone: Ragoût de loup : " +S+ "\n:meat_on_bone: Ragoût de taupe : " +T+ "\n:meat_on_bone: Ragoût de lapin géant : " +U+ "\n:meat_on_bone: Ragoût de loup de sang : " +V+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-
-
-                  bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre récompenses solo")) {
-  let X = args.slice(4).join(" : ");                       
-                      const I = (Math.floor((2-(0.70))*Math.random()))
-                  const J = (Math.floor((2-(0.92))*Math.random()))
-                  const K = (Math.floor((2-(0.85))*Math.random()))
-                  const L = (Math.floor((2-(0.90))*Math.random()))
-                  const M = (Math.floor((2-(0.95))*Math.random()))
-                  const N = (Math.floor((2-(0.95))*Math.random()))
-                  const O = (Math.floor((2-(0.95))*Math.random()))
-                  const P = (Math.floor((2-(0.95))*Math.random()))
-                  const Q = (Math.floor((2-(0.95))*Math.random()))
-                  const R = (Math.floor((2-(0.95))*Math.random()))
-                  const S = (Math.floor((2-(0.95))*Math.random()))
-                     const T = (Math.floor((2-(0.95))*Math.random()))
-                      const U = (Math.floor((2-(0.90))*Math.random()))
-                      const V = (Math.floor((2-(0.90))*Math.random()))
-                      const W = (Math.floor((2-(0.90))*Math.random()))
-                      const XX = (Math.floor((2-(0.90))*Math.random()))
-                        const Clef = (Math.floor((2-(0.97))*Math.random()))
-
-                       const Y = (Math.floor((2-(0.95))*Math.random()))
-                        const YY = (Math.floor((2-(0.95))*Math.random()))
-                        const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((35*1)*Math.random()+45*1))
-                    const FF = F-(X*5)
-                    const G = (Math.floor((21*1)*Math.random()+20*1))
-                     if(FF > 0) {
-                      const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                      .setTimestamp()
-                      message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const I = (Math.floor((2-(0.70))*Math.random()))
+    const J = (Math.floor((2-(0.92))*Math.random()))
+    const K = (Math.floor((2-(0.85))*Math.random()))
+    const L = (Math.floor((2-(0.90))*Math.random()))
+    const M = (Math.floor((2-(0.95))*Math.random()))
+    const N = (Math.floor((2-(0.95))*Math.random()))
+    const O = (Math.floor((2-(0.95))*Math.random()))
+    const P = (Math.floor((2-(0.95))*Math.random()))
+    const Q = (Math.floor((2-(0.95))*Math.random()))
+    const R = (Math.floor((2-(0.95))*Math.random()))
+    const S = (Math.floor((2-(0.95))*Math.random()))
+    const T = (Math.floor((2-(0.95))*Math.random()))
+    const U = (Math.floor((2-(0.90))*Math.random()))
+    const V = (Math.floor((2-(0.90))*Math.random()))
+    const W = (Math.floor((2-(0.90))*Math.random()))
+    const XX = (Math.floor((2-(0.90))*Math.random()))
+    const Clef = (Math.floor((2-(0.97))*Math.random()))
+    const Y = (Math.floor((2-(0.95))*Math.random()))
+    const YY = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((9)*Math.random()+2))
+    const F = (Math.floor((35*1)*Math.random()+45*1))
+    const FF = F-(X*5)
+    const G = (Math.floor((21*1)*Math.random()+20*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-       const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                      .setTimestamp()
-                      message.channel.send({embed})}
-                          }
-                    }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
- bot.on('message', message => {
+bot.on('message', message => {
 let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses solo")) {
-  let X = args.slice(5).join(" : ");                       
-                      const I = (Math.floor((2-(0.95))*Math.random()))
-                  const J = (Math.floor((2-(0.98))*Math.random()))
-                  const K = (Math.floor((2-(0.95))*Math.random()))
-                  const L = (Math.floor((2-(0.98))*Math.random()))
-                  const M = (Math.floor((2-(0.95))*Math.random()))
-                  const N = (Math.floor((2-(0.95))*Math.random()))
-                  const O = (Math.floor((2-(0.95))*Math.random()))
-                  const P = (Math.floor((2-(0.95))*Math.random()))
-                  const Q = (Math.floor((2-(0.95))*Math.random()))
-                  const R = (Math.floor((2-(0.95))*Math.random()))
-                  const S = (Math.floor((2-(0.95))*Math.random()))
-                     const T = (Math.floor((2-(0.95))*Math.random()))
-                      const U = (Math.floor((2-(0.90))*Math.random()))
-                      const V = (Math.floor((2-(0.90))*Math.random()))
-                      const W = (Math.floor((2-(0.90))*Math.random()))
-                      const XX = (Math.floor((2-(0.90))*Math.random()))
-                       const Y = (Math.floor((2-(0.95))*Math.random()))
-                        const YY = (Math.floor((2-(0.95))*Math.random()))
-                        const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((50*1)*Math.random()+90*1))
-                    const FF = F-(X*5)
-                    const G = (Math.floor((31*1)*Math.random()+30*1))
-                     if(FF > 0) {
-                      const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                      .setTimestamp()
-                      message.channel.send({embed})}
+    let X = args.slice(5).join(" : ");
+    const I = (Math.floor((2-(0.95))*Math.random()))
+    const J = (Math.floor((2-(0.98))*Math.random()))
+    const K = (Math.floor((2-(0.95))*Math.random()))
+    const L = (Math.floor((2-(0.98))*Math.random()))
+    const M = (Math.floor((2-(0.95))*Math.random()))
+    const N = (Math.floor((2-(0.95))*Math.random()))
+    const O = (Math.floor((2-(0.95))*Math.random()))
+    const P = (Math.floor((2-(0.95))*Math.random()))
+    const Q = (Math.floor((2-(0.95))*Math.random()))
+    const R = (Math.floor((2-(0.95))*Math.random()))
+    const S = (Math.floor((2-(0.95))*Math.random()))
+    const T = (Math.floor((2-(0.95))*Math.random()))
+    const U = (Math.floor((2-(0.90))*Math.random()))
+    const V = (Math.floor((2-(0.90))*Math.random()))
+    const W = (Math.floor((2-(0.90))*Math.random()))
+    const XX = (Math.floor((2-(0.90))*Math.random()))
+    const Y = (Math.floor((2-(0.95))*Math.random()))
+    const YY = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((9)*Math.random()+2))
+    const F = (Math.floor((50*1)*Math.random()+90*1))
+    const FF = F-(X*5)
+    const G = (Math.floor((31*1)*Math.random()+30*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-       const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                      .setTimestamp()
-                      message.channel.send({embed})}
-                          }
-                    }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-
- bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses groupe")) {
-  let X = args.slice(5).join(" : ");                       
-                      const I = (Math.floor((2-(0.97))*Math.random()))
-                  const J = (Math.floor((2-(0.99))*Math.random()))
-                  const K = (Math.floor((2-(0.97))*Math.random()))
-                  const L = (Math.floor((2-(0.99))*Math.random()))
-                  const M = (Math.floor((2-(0.95))*Math.random()))
-                  const N = (Math.floor((2-(0.95))*Math.random()))
-                  const O = (Math.floor((2-(0.95))*Math.random()))
-                  const P = (Math.floor((2-(0.95))*Math.random()))
-                  const Q = (Math.floor((2-(0.95))*Math.random()))
-                  const R = (Math.floor((2-(0.95))*Math.random()))
-                  const S = (Math.floor((2-(0.95))*Math.random()))
-                     const T = (Math.floor((2-(0.95))*Math.random()))
-                      const U = (Math.floor((2-(0.90))*Math.random()))
-                      const V = (Math.floor((2-(0.90))*Math.random()))
-                      const W = (Math.floor((2-(0.90))*Math.random()))
-                      const XX = (Math.floor((2-(0.90))*Math.random()))
-                       const Y = (Math.floor((2-(0.95))*Math.random()))
-                        const YY = (Math.floor((2-(0.95))*Math.random()))
-                        const Orge = (Math.floor((9)*Math.random()+2))
-                    const F = (Math.floor((40*1)*Math.random()+75*1))
-                    const FF = F-(X*5)
-                    const G = (Math.floor((22*1)*Math.random()+22*1))
-                     if(FF > 0) {
-                      const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                      .setTimestamp()
-                      message.channel.send({embed})}
+    let X = args.slice(5).join(" : ");
+    const I = (Math.floor((2-(0.97))*Math.random()))
+    const J = (Math.floor((2-(0.99))*Math.random()))
+    const K = (Math.floor((2-(0.97))*Math.random()))
+    const L = (Math.floor((2-(0.99))*Math.random()))
+    const M = (Math.floor((2-(0.95))*Math.random()))
+    const N = (Math.floor((2-(0.95))*Math.random()))
+    const O = (Math.floor((2-(0.95))*Math.random()))
+    const P = (Math.floor((2-(0.95))*Math.random()))
+    const Q = (Math.floor((2-(0.95))*Math.random()))
+    const R = (Math.floor((2-(0.95))*Math.random()))
+    const S = (Math.floor((2-(0.95))*Math.random()))
+    const T = (Math.floor((2-(0.95))*Math.random()))
+    const U = (Math.floor((2-(0.90))*Math.random()))
+    const V = (Math.floor((2-(0.90))*Math.random()))
+    const W = (Math.floor((2-(0.90))*Math.random()))
+    const XX = (Math.floor((2-(0.90))*Math.random()))
+    const Y = (Math.floor((2-(0.95))*Math.random()))
+    const YY = (Math.floor((2-(0.95))*Math.random()))
+    const Orge = (Math.floor((9)*Math.random()+2))
+    const F = (Math.floor((40*1)*Math.random()+75*1))
+    const FF = F-(X*5)
+    const G = (Math.floor((22*1)*Math.random()+22*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-       const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
-                      .setTimestamp()
-                      message.channel.send({embed})}
-                          }
-                    }) ;
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-                  bot.on('message', message => {
-let cont = message.content.slice(prefix.length).split(" ");
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre récompenses groupe")) {
-  let X = args.slice(4).join(" : ");                       
-                      const I = (Math.floor((2-(0.85))*Math.random()))
-                  const J = (Math.floor((2-(0.96))*Math.random()))
-                  const K = (Math.floor((2-(0.90))*Math.random()))
-                  const L = (Math.floor((2-(0.95))*Math.random()))
-                  const M = (Math.floor((2-(0.98))*Math.random()))
-                  const N = (Math.floor((2-(0.98))*Math.random()))
-                  const O = (Math.floor((2-(0.98))*Math.random()))
-                  const Orge = (Math.floor((5)*Math.random()+1))
-                  const P = (Math.floor((2-(0.98))*Math.random()))
-                  const Q = (Math.floor((2-(0.98))*Math.random()))
-                  const R = (Math.floor((2-(0.98))*Math.random()))
-                  const S = (Math.floor((2-(0.98))*Math.random()))
-                     const T = (Math.floor((2-(0.98))*Math.random()))
-                      const U = (Math.floor((2-(0.95))*Math.random()))
-                      const V = (Math.floor((2-(0.95))*Math.random()))
-                        const Clef = (Math.floor((2-(0.98))*Math.random()))
-
-                      const W = (Math.floor((2-(0.95))*Math.random()))
-                      const XX = (Math.floor((2-(0.95))*Math.random()))
-                       const Y = (Math.floor((2-(0.98))*Math.random()))
-                        const YY = (Math.floor((2-(0.98))*Math.random()))
-                    const F = (Math.floor((25*1)*Math.random()+40*1))
-                    const FF = F-(X*5)
-                    const G = (Math.floor((14*1)*Math.random()+15*1))
-                     if(FF > 0) {
-                      const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                      .setTimestamp()
-                      message.channel.send({embed})}
+    let X = args.slice(4).join(" : ");
+    const I = (Math.floor((2-(0.85))*Math.random()))
+    const J = (Math.floor((2-(0.96))*Math.random()))
+    const K = (Math.floor((2-(0.90))*Math.random()))
+    const L = (Math.floor((2-(0.95))*Math.random()))
+    const M = (Math.floor((2-(0.98))*Math.random()))
+    const N = (Math.floor((2-(0.98))*Math.random()))
+    const O = (Math.floor((2-(0.98))*Math.random()))
+    const Orge = (Math.floor((5)*Math.random()+1))
+    const P = (Math.floor((2-(0.98))*Math.random()))
+    const Q = (Math.floor((2-(0.98))*Math.random()))
+    const R = (Math.floor((2-(0.98))*Math.random()))
+    const S = (Math.floor((2-(0.98))*Math.random()))
+    const T = (Math.floor((2-(0.98))*Math.random()))
+    const U = (Math.floor((2-(0.95))*Math.random()))
+    const V = (Math.floor((2-(0.95))*Math.random()))
+    const Clef = (Math.floor((2-(0.98))*Math.random()))
+    const W = (Math.floor((2-(0.95))*Math.random()))
+    const XX = (Math.floor((2-(0.95))*Math.random()))
+    const Y = (Math.floor((2-(0.98))*Math.random()))
+    const YY = (Math.floor((2-(0.98))*Math.random()))
+    const F = (Math.floor((25*1)*Math.random()+40*1))
+    const FF = F-(X*5)
+    const G = (Math.floor((14*1)*Math.random()+15*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if(FF < 0) {
-       const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
-                      .setAuthor(message.author.username , message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
-                      .setTimestamp()
-                      message.channel.send({embed})}
-                          }
-                    }) ;
-
-
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Loup gigantesque récompenses solo")) {
-    let X = args.slice(4).join(" : ");                
-      const AA = (Math.floor((2-(0.75))*Math.random()))
-               const BB = (Math.floor((2-(0.85))*Math.random()))
-      const CC = (Math.floor((2-(0.70))*Math.random()))
-      const DD = (Math.floor((2-(0.70))*Math.random()))
-                 const YY = (Math.floor((2-(0.98))*Math.random()))
-              const Exp = (Math.floor((101)*Math.random()+100))
-              const FFF = Exp-(X*5)
-              const GGG = (Math.floor((101)*Math.random()+100))
-              const Oeufs = (Math.floor((2-(0.85))*Math.random()))
-               if(FFF > 0) {
-                const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                  .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FFF+ "\n:large_orange_diamond: Cols : " +GGG)
-                .setTimestamp()
-                message.channel.send({embed})}
-      if(FFF < 0) {
-          const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +GGG)
-          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .setTimestamp()
-                message.channel.send({embed})}
-                    }
-              }) ;
-  
-
-
-
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:candy: Sucres d'orge : " +Orge+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Loup gigantesque récompenses groupe")) {
-    let X = args.slice(4).join(" : ");                
-      const AA = (Math.floor((2-(0.75))*Math.random()))
-               const BB = (Math.floor((2-(0.90))*Math.random()))
-      const CC = (Math.floor((2-(0.80))*Math.random()))
-      const DD = (Math.floor((2-(0.80))*Math.random()))
-                 const YY = (Math.floor((2-(0.98))*Math.random()))
-              const Exp = (Math.floor((81)*Math.random()+80))
-              const FFF = Exp-(X*4)
-              const GGG = (Math.floor((81)*Math.random()+80))
-              const Oeufs = (Math.floor((2-(0.90))*Math.random()))
-               if(FFF > 0) {
-                const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                  .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FFF+ "\n:large_orange_diamond: Cols : " +GGG)
-                .setTimestamp()
-                message.channel.send({embed})}
-      if(FFF < 0) {
-          const embed = new Discord.RichEmbed()
-                .setColor(3447003)
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +GGG)
-          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                .setTimestamp()
-                message.channel.send({embed})}
-                    }
-              }) ;
-  
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup gigantesque récompenses solo")) {
+    let X = args.slice(4).join(" : ");
+    const AA = (Math.floor((2-(0.75))*Math.random()))
+    const BB = (Math.floor((2-(0.85))*Math.random()))
+    const CC = (Math.floor((2-(0.70))*Math.random()))
+    const DD = (Math.floor((2-(0.70))*Math.random()))
+    const YY = (Math.floor((2-(0.98))*Math.random()))
+    const Exp = (Math.floor((101)*Math.random()+100))
+    const FFF = Exp-(X*5)
+    const GGG = (Math.floor((101)*Math.random()+100))
+    const Oeufs = (Math.floor((2-(0.85))*Math.random()))
+    if(FFF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FFF+ "\n:large_orange_diamond: Cols : " +GGG)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FFF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +GGG)
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup gigantesque récompenses groupe")) {
+    let X = args.slice(4).join(" : ");
+    const AA = (Math.floor((2-(0.75))*Math.random()))
+    const BB = (Math.floor((2-(0.90))*Math.random()))
+    const CC = (Math.floor((2-(0.80))*Math.random()))
+    const DD = (Math.floor((2-(0.80))*Math.random()))
+    const YY = (Math.floor((2-(0.98))*Math.random()))
+    const Exp = (Math.floor((81)*Math.random()+80))
+    const FFF = Exp-(X*4)
+    const GGG = (Math.floor((81)*Math.random()+80))
+    const Oeufs = (Math.floor((2-(0.90))*Math.random()))
+    if(FFF > 0) {
+    const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FFF+ "\n:large_orange_diamond: Cols : " +GGG)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FFF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +GGG)
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Urguf le chef récompenses")) {
+    const B = (Math.floor((3)*Math.random()))
+    const C = (Math.floor((3)*Math.random()))
+    const D = (Math.floor((2*(0.75))*Math.random()))
+    const E = (Math.floor((2*(0.85))*Math.random()))
+    const F = (Math.floor((201)*Math.random()+200))
+    const G = (Math.floor((101)*Math.random()+100))
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField("Récompenses :" , "Suite à votre combat contre Urguf le chef, vous obtenez :")
+    .addField("Points d'expérience :" , +F)
+    .addField("Si vous êtes du niveau de 25 ou plus :" , "Vous ne gagnez plus d'expérience sur ce monstre")
+    .addField("Cols :" , +G)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
 
-
-
-
-
-                    bot.on('message', message => {
-                     
-                      if (message.content.startsWith(prefix + "Urguf le chef récompenses")) {
-                     
-                      const B = (Math.floor((3)*Math.random()))
-                      const C = (Math.floor((3)*Math.random()))
-                      const D = (Math.floor((2*(0.75))*Math.random()))
-                      const E = (Math.floor((2*(0.85))*Math.random()))
-                      const F = (Math.floor((201)*Math.random()+200))
-                      const G = (Math.floor((101)*Math.random()+100))
-                        const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username , message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                        .addField("Récompenses :" , "Suite à votre combat contre Urguf le chef, vous obtenez :")
-                        .addField("Points d'expérience :" , +F)
-                       .addField("Si vous êtes du niveau de 25 ou plus :" , "Vous ne gagnez plus d'expérience sur ce monstre")
-                        .addField("Cols :" , +G)
-                        .setTimestamp()
-                        message.channel.send({embed})
-                        }
-                  }) ;
-                    
- bot.on('message', message => {
-    if (message.content === prefix + "Citrouille vivante récompenses") {    
+bot.on('message', message => {
+  if (message.content === prefix + "Citrouille vivante récompenses") {
     const B = (Math.floor((0)*Math.random()+1))
     const C = (Math.floor((2-(0.95))*Math.random()))
     const D = (Math.floor((2-(0.95))*Math.random()))
     const E = (Math.floor((2-(0.95))*Math.random()))
     const F = (Math.floor((51)*Math.random()+50))
     const G = (Math.floor((101)*Math.random()+100))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
-      .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-       message.channel.send({embed})
-                        }
-                  }) ;
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
+    .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
+    .setTimestamp()
+     message.channel.send({embed})
+  }
+}) ;
 
- bot.on('message', message => {
-                                         if (message.content === prefix + "Citrouille vivante géante récompenses") {                           
+bot.on('message', message => {
+  if (message.content === prefix + "Citrouille vivante géante récompenses") {
     const B = (Math.floor((2*1)*Math.random()+3))
     const C = (Math.floor((2-(0.80))*Math.random()))
     const D = (Math.floor((2-(0.80))*Math.random()))
     const E = (Math.floor((2-(0.80))*Math.random()))
     const F = (Math.floor((201)*Math.random()+200))
     const G = (Math.floor((401)*Math.random()+400))
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
+    .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Jeune kobolt récompenses solo")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.75))*Math.random()))
+    const C = (Math.floor((2-(0.85))*Math.random()))
+    const F = (Math.floor((51*1)*Math.random()+90*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((31*1)*Math.random()+30*1))
+    if(FF > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
-      .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
-        message.channel.send({embed})
-                        }
-                  }) ;
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Jeune kobolt récompenses groupe")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.85))*Math.random()))
+    const C = (Math.floor((2-(0.95))*Math.random()))
+    const F = (Math.floor((41*1)*Math.random()+80*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((25*1)*Math.random()+25*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt explorateur récompenses solo")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.75))*Math.random()))
+    const C = (Math.floor((2-(0.85))*Math.random()))
+    const D = (Math.floor((2-(0.98))*Math.random()))
+    const E = (Math.floor((2-(0.97))*Math.random()))
+    const F = (Math.floor((51*1)*Math.random()+90*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((31*1)*Math.random()+30*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt explorateur récompenses groupe")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.85))*Math.random()))
+    const C = (Math.floor((2-(0.95))*Math.random()))
+    const D = (Math.floor((2-(0.99))*Math.random()))
+    const E = (Math.floor((2-(0.98))*Math.random()))
+    const F = (Math.floor((41*1)*Math.random()+80*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((25*1)*Math.random()+25*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt mineur récompenses solo")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.75))*Math.random()))
+    const C = (Math.floor((2-(0.85))*Math.random()))
+    const D = (Math.floor((2-(0.95))*Math.random()))
+    const E = (Math.floor((2-(0.95))*Math.random()))
+    const H = (Math.floor((2-(0.95))*Math.random()))
+    const I = (Math.floor((2-(0.95))*Math.random()))
+    const J = (Math.floor((2-(0.97))*Math.random()))
+    const F = (Math.floor((51*1)*Math.random()+90*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((31*1)*Math.random()+30*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt mineur récompenses groupe")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.85))*Math.random()))
+    const C = (Math.floor((2-(0.95))*Math.random()))
+    const D = (Math.floor((2-(0.98))*Math.random()))
+    const E = (Math.floor((2-(0.98))*Math.random()))
+    const H = (Math.floor((2-(0.98))*Math.random()))
+    const I = (Math.floor((2-(0.98))*Math.random()))
+    const J = (Math.floor((2-(0.98))*Math.random()))
+    const F = (Math.floor((41*1)*Math.random()+80*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((25*1)*Math.random()+25*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt ouvrier récompenses solo")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.75))*Math.random()))
+    const C = (Math.floor((2-(0.85))*Math.random()))
+    const D = (Math.floor((2-(0.95))*Math.random()))
+    const E = (Math.floor((2-(0.90))*Math.random()))
+    const EE = (Math.floor((2-(0.97))*Math.random()))
+    const F = (Math.floor((51*1)*Math.random()+90*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((31*1)*Math.random()+30*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt ouvrier récompenses groupe")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.85))*Math.random()))
+    const C = (Math.floor((2-(0.95))*Math.random()))
+    const D = (Math.floor((2-(0.98))*Math.random()))
+    const E = (Math.floor((2-(0.98))*Math.random()))
+    const EE = (Math.floor((2-(0.99))*Math.random()))
+    const F = (Math.floor((41*1)*Math.random()+80*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((25*1)*Math.random()+25*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
-
-
-
-
-
-
-
-
-                  bot.on('message', message => {
-                    let cont = message.content.slice(prefix.length).split(" ");
-                      const args = cont.slice(1);
-                      if (message.content.startsWith(prefix + "Jeune kobolt récompenses solo")) {
-                      let X = args.slice(4).join(" : ");       
-                      const A = (Math.floor((2)*Math.random()+1))
-                      const B = (Math.floor((2-(0.75))*Math.random()))
-                      const C = (Math.floor((2-(0.85))*Math.random()))
-                      const F = (Math.floor((51*1)*Math.random()+90*1))
-                                        const FF = F-(X*6)
-                                        const G = (Math.floor((31*1)*Math.random()+30*1))
-                                         if(FF > 0) {
-                                          const embed = new Discord.RichEmbed()
-                                          .setColor(3447003)
-                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                          .setTimestamp()
-                                          message.channel.send({embed})}
-                        if(FF < 0) {
-                           const embed = new Discord.RichEmbed()
-                                          .setColor(3447003)
-                                          .setAuthor(message.author.username , message.author.avatarURL)
-                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                          .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                          .setTimestamp()
-                                          message.channel.send({embed})}
-                                              }
-                                        }) ;
-
-
-
-
-                                        bot.on('message', message => {
-                                          let cont = message.content.slice(prefix.length).split(" ");
-                                            const args = cont.slice(1);
-                                            if (message.content.startsWith(prefix + "Jeune kobolt récompenses groupe")) {
-                                            let X = args.slice(4).join(" : ");       
-                                            const A = (Math.floor((2)*Math.random()+1))
-                                            const B = (Math.floor((2-(0.85))*Math.random()))
-                                            const C = (Math.floor((2-(0.95))*Math.random()))
-                                            const F = (Math.floor((41*1)*Math.random()+80*1))
-                                                              const FF = F-(X*6)
-                                                              const G = (Math.floor((25*1)*Math.random()+25*1))
-                                                               if(FF > 0) {
-                                                                const embed = new Discord.RichEmbed()
-                                                                .setColor(3447003)
-                                                                .setAuthor(message.author.username , message.author.avatarURL)
-                                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                          .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                                                .setTimestamp()
-                                                                message.channel.send({embed})}
-                                              if(FF < 0) {
-                                                 const embed = new Discord.RichEmbed()
-                                                                .setColor(3447003)
-                                                                .setAuthor(message.author.username , message.author.avatarURL)
-                                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                                                .setTimestamp()
-                                                                message.channel.send({embed})}
-                                                                    }
-                                                              }) ;
-
-
-
-
-                                                              bot.on('message', message => {
-                                                                let cont = message.content.slice(prefix.length).split(" ");
-                                                                  const args = cont.slice(1);
-                                                                  if (message.content.startsWith(prefix + "Kobolt explorateur récompenses solo")) {
-                                                                  let X = args.slice(4).join(" : ");       
-                                                                  const A = (Math.floor((2)*Math.random()+1))
-                                                                  const B = (Math.floor((2-(0.75))*Math.random()))
-                                                                  const C = (Math.floor((2-(0.85))*Math.random()))
-                                                                  const D = (Math.floor((2-(0.98))*Math.random()))
-                                                                  const E = (Math.floor((2-(0.97))*Math.random()))
-                                                                  const F = (Math.floor((51*1)*Math.random()+90*1))
-                                                                                    const FF = F-(X*6)
-                                                                                    const G = (Math.floor((31*1)*Math.random()+30*1))
-                                                                                     if(FF > 0) {
-                                                                                      const embed = new Discord.RichEmbed()
-                                                                                      .setColor(3447003)
-                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                                                                      .setTimestamp()
-                                                                                      message.channel.send({embed})}
-                                                                    if(FF < 0) {
-                                                                       const embed = new Discord.RichEmbed()
-                                                                                      .setColor(3447003)
-                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                                                                      .setTimestamp()
-                                                                                      message.channel.send({embed})}
-                                                                                          }
-                                                                                    }) ;
-
-
-
-
-                                                                                    bot.on('message', message => {
-                                                                                      let cont = message.content.slice(prefix.length).split(" ");
-                                                                                        const args = cont.slice(1);
-                                                                                        if (message.content.startsWith(prefix + "Kobolt explorateur récompenses groupe")) {
-                                                                                        let X = args.slice(4).join(" : ");       
-                                                                                        const A = (Math.floor((2)*Math.random()+1))
-                                                                                        const B = (Math.floor((2-(0.85))*Math.random()))
-                                                                                        const C = (Math.floor((2-(0.95))*Math.random()))
-                                                                                        const D = (Math.floor((2-(0.99))*Math.random()))
-                                                                                        const E = (Math.floor((2-(0.98))*Math.random()))
-                                                                                        const F = (Math.floor((41*1)*Math.random()+80*1))
-                                                                                                          const FF = F-(X*6)
-                                                                                                          const G = (Math.floor((25*1)*Math.random()+25*1))
-                                                                                                           if(FF > 0) {
-                                                                                                            const embed = new Discord.RichEmbed()
-                                                                                                            .setColor(3447003)
-                                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                                                                                            .setTimestamp()
-                                                                                                            message.channel.send({embed})}
-                                                                                          if(FF < 0) {
-                                                                                             const embed = new Discord.RichEmbed()
-                                                                                                            .setColor(3447003)
-                                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                            .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:map: Carte au trésor : " +D+ "\n:scales: Bottes d'exploration kobolt : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                                                                                            .setTimestamp()
-                                                                                                            message.channel.send({embed})}
-                                                                                                                }
-                                                                                                          }) ;
-
-
-
-
-
-
-                                                                                                          bot.on('message', message => {
-                                                                                                            let cont = message.content.slice(prefix.length).split(" ");
-                                                                                                              const args = cont.slice(1);
-                                                                                                              if (message.content.startsWith(prefix + "Kobolt mineur récompenses solo")) {
-                                                                                                              let X = args.slice(4).join(" : ");       
-                                                                                                              const A = (Math.floor((2)*Math.random()+1))
-                                                                                                              const B = (Math.floor((2-(0.75))*Math.random()))
-                                                                                                              const C = (Math.floor((2-(0.85))*Math.random()))
-                                                                                                              const D = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                              const E = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                              const H = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                              const I = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                              const J = (Math.floor((2-(0.97))*Math.random()))
-                                                                                                              const F = (Math.floor((51*1)*Math.random()+90*1))
-                                                                                                                                const FF = F-(X*6)
-                                                                                                                                const G = (Math.floor((31*1)*Math.random()+30*1))
-                                                                                                                                 if(FF > 0) {
-                                                                                                                                  const embed = new Discord.RichEmbed()
-                                                                                                                                  .setColor(3447003)
-                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                            .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                  .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}
-                                                                                                                if(FF < 0) {
-                                                                                                                   const embed = new Discord.RichEmbed()
-                                                                                                                                  .setColor(3447003)
-                                                                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                  .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                  .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                  .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}
-                                                                                                                                      }
-                                                                                                                                }) ;
-
-
-                                                                                                                                bot.on('message', message => {
-                                                                                                                                  let cont = message.content.slice(prefix.length).split(" ");
-                                                                                                                                    const args = cont.slice(1);
-                                                                                                                                    if (message.content.startsWith(prefix + "Kobolt mineur récompenses groupe")) {
-                                                                                                                                    let X = args.slice(4).join(" : ");       
-                                                                                                                                    const A = (Math.floor((2)*Math.random()+1))
-                                                                                                                                    const B = (Math.floor((2-(0.85))*Math.random()))
-                                                                                                                                    const C = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                                                    const D = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                    const E = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                    const H = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                    const I = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                    const J = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                    const F = (Math.floor((41*1)*Math.random()+80*1))
-                                                                                                          const FF = F-(X*6)
-                                                                                                          const G = (Math.floor((25*1)*Math.random()+25*1))
-                                                                                                                                                       if(FF > 0) {
-                                                                                                                                                        const embed = new Discord.RichEmbed()
-                                                                                                                                                        .setColor(3447003)
-                                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                                        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                  .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                                        .setTimestamp()
-                                                                                                                                                        message.channel.send({embed})}
-                                                                                                                                      if(FF < 0) {
-                                                                                                                                         const embed = new Discord.RichEmbed()
-                                                                                                                                                        .setColor(3447003)
-                                                                                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                                        .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                        .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Pioche de kobolt : " +D+ "\n:scales: Hache de kobolt : " +E+ "\n:scales: Couteau de kobolt : " +H+ "\n:scales: Faucille de kobolt : " +I+ "\n:scales: Casque de mineur kobolt : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                                        .setTimestamp()
-                                                                                                                                                        message.channel.send({embed})}
-                                                                                                                                                            }
-                                                                                                                                                      }) ;
-                                            
-                      
-
-
-
-                                                                                                                                                      bot.on('message', message => {
-                                                                                                                                                        let cont = message.content.slice(prefix.length).split(" ");
-                                                                                                                                                          const args = cont.slice(1);
-                                                                                                                                                          if (message.content.startsWith(prefix + "Kobolt ouvrier récompenses solo")) {
-                                                                                                                                                          let X = args.slice(4).join(" : ");       
-                                                                                                                                                          const A = (Math.floor((2)*Math.random()+1))
-                                                                                                                                                          const B = (Math.floor((2-(0.75))*Math.random()))
-                                                                                                                                                          const C = (Math.floor((2-(0.85))*Math.random()))
-                                                                                                                                                          const D = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                                                                          const E = (Math.floor((2-(0.90))*Math.random()))
-                                                                                                                                                          const EE = (Math.floor((2-(0.97))*Math.random()))
-                                                                                                                                                          const F = (Math.floor((51*1)*Math.random()+90*1))
-                                                                                                                                                                            const FF = F-(X*6)
-                                                                                                                                                                            const G = (Math.floor((31*1)*Math.random()+30*1))
-                                                                                                                                                                             if(FF > 0) {
-                                                                                                                                                                              const embed = new Discord.RichEmbed()
-                                                                                                                                                                              .setColor(3447003)
-                                                                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                                                              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                        .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                                                              .setTimestamp()
-                                                                                                                                                                              message.channel.send({embed})}
-                                                                                                                                                            if(FF < 0) {
-                                                                                                                                                               const embed = new Discord.RichEmbed()
-                                                                                                                                                                              .setColor(3447003)
-                                                                                                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                                                              .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                              .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                                                              .setTimestamp()
-                                                                                                                                                                              message.channel.send({embed})}
-                                                                                                                                                                                  }
-                                                                                                                                                                            }) ;
-
-
-
-
-                                                                                                                                                                            bot.on('message', message => {
-                                                                                                                                                                              let cont = message.content.slice(prefix.length).split(" ");
-                                                                                                                                                                                const args = cont.slice(1);
-                                                                                                                                                                                if (message.content.startsWith(prefix + "Kobolt ouvrier récompenses groupe")) {
-                                                                                                                                                                                let X = args.slice(4).join(" : ");       
-                                                                                                                                                                                const A = (Math.floor((2)*Math.random()+1))
-                                                                                                                                                                                const B = (Math.floor((2-(0.85))*Math.random()))
-                                                                                                                                                                                const C = (Math.floor((2-(0.95))*Math.random()))
-                                                                                                                                                                                const D = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                                                                const E = (Math.floor((2-(0.98))*Math.random()))
-                                                                                                                                                                                const EE = (Math.floor((2-(0.99))*Math.random()))
-                                                                                                                                                                                const F = (Math.floor((41*1)*Math.random()+80*1))
-                                                                                                                                                                                const FF = F-(X*6)
-                                                                                                                                                                                const G = (Math.floor((25*1)*Math.random()+25*1))
-                                                                                                                                                                                                   if(FF > 0) {
-                                                                                                                                                                                                    const embed = new Discord.RichEmbed()
-                                                                                                                                                                                                    .setColor(3447003)
-                                                                                                                                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                                                                                    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                                              .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                                                                                    .setTimestamp()
-                                                                                                                                                                                                    message.channel.send({embed})}
-                                                                                                                                                                                  if(FF < 0) {
-                                                                                                                                                                                     const embed = new Discord.RichEmbed()
-                                                                                                                                                                                                    .setColor(3447003)
-                                                                                                                                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
-                                                                                                                                                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                                                                                                                                                                                    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-                                                                                                                                                                                                    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:ticket: Plan d'armure kobolt : " +D+ "\n:ticket: Plan d'arme kobolt : " +E+ "\n:ticket: Plan de bijoux kobolt : " +EE+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-                                                                                                                                                                                                    .setTimestamp()
-                                                                                                                                                                                                    message.channel.send({embed})}
-                                                                                                                                                                                                        }
-                                                                                                                                                                                                  }) ;
-
-
-
-
-
-
-
-
-
-                                                                                                                                                                                                  bot.on('message', message => {
+bot.on('message', message => {
                                                                                                                                                                                                     let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                       const args = cont.slice(1);
                                                                                                                                                                                                       if (message.content.startsWith(prefix + "Kobolt combattant récompenses solo")) {
-                                                                                                                                                                                                      let X = args.slice(4).join(" : ");       
+                                                                                                                                                                                                      let X = args.slice(4).join(" : ");
                                                                                                                                                                                                       const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                                                                       const B = (Math.floor((2-(0.55))*Math.random()))
                                                                                                                                                                                                       const C = (Math.floor((2-(0.65))*Math.random()))
@@ -2686,7 +2556,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                           let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                                             const args = cont.slice(1);
                                                                                                                                                                                                                             if (message.content.startsWith(prefix + "Kobolt combattant récompenses groupe")) {
-                                                                                                                                                                                                                            let X = args.slice(4).join(" : ");       
+                                                                                                                                                                                                                            let X = args.slice(4).join(" : ");
                                                                                                                                                                                                                             const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                                                                                             const B = (Math.floor((2-(0.70))*Math.random()))
                                                                                                                                                                                                                             const C = (Math.floor((2-(0.80))*Math.random()))
@@ -2727,7 +2597,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                                                 let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                                                                   const args = cont.slice(1);
                                                                                                                                                                                                                                                   if (message.content.startsWith(prefix + "Kobolt garde récompenses solo")) {
-                                                                                                                                                                                                                                                  let X = args.slice(4).join(" : ");       
+                                                                                                                                                                                                                                                  let X = args.slice(4).join(" : ");
                                                                                                                                                                                                                                                   const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                                                                                                                   const B = (Math.floor((2-(0.55))*Math.random()))
                                                                                                                                                                                                                                                   const C = (Math.floor((2-(0.65))*Math.random()))
@@ -2767,7 +2637,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                                                                       let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                                                                                         const args = cont.slice(1);
                                                                                                                                                                                                                                                                         if (message.content.startsWith(prefix + "Kobolt garde récompenses groupe")) {
-                                                                                                                                                                                                                                                                        let X = args.slice(4).join(" : ");       
+                                                                                                                                                                                                                                                                        let X = args.slice(4).join(" : ");
                                                                                                                                                                                                                                                                         const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                                                                                                                                         const B = (Math.floor((2-(0.70))*Math.random()))
                                                                                                                                                                                                                                                                         const C = (Math.floor((2-(0.80))*Math.random()))
@@ -2810,7 +2680,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                                                                                             let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                                                                                                               const args = cont.slice(1);
                                                                                                                                                                                                                                                                                               if (message.content.startsWith(prefix + "Kobolt espion récompenses solo")) {
-                                                                                                                                                                                                                                                                                              let X = args.slice(4).join(" : ");       
+                                                                                                                                                                                                                                                                                              let X = args.slice(4).join(" : ");
                                                                                                                                                                                                                                                                                               const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                                                                                                                                                               const B = (Math.floor((2-(0.55))*Math.random()))
                                                                                                                                                                                                                                                                                               const C = (Math.floor((2-(0.65))*Math.random()))
@@ -2848,7 +2718,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                                                                                                                   let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                                                                                                                                     const args = cont.slice(1);
                                                                                                                                                                                                                                                                                                                     if (message.content.startsWith(prefix + "Kobolt espion récompenses groupe")) {
-                                                                                                                                                                                                                                                                                                                    let X = args.slice(4).join(" : ");       
+                                                                                                                                                                                                                                                                                                                    let X = args.slice(4).join(" : ");
                                                                                                                                                                                                                                                                                                                     const A = (Math.floor((2)*Math.random()+1))
                                                                                                                                                                                                                                                                                                                     const B = (Math.floor((2-(0.70))*Math.random()))
                                                                                                                                                                                                                                                                                                                     const C = (Math.floor((2-(0.80))*Math.random()))
@@ -2886,7 +2756,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                                                                                                                                         let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                                                                                                                                                           const args = cont.slice(1);
                                                                                                                                                                                                                                                                                                                                           if (message.content.startsWith(prefix + "Kobolt géant rouge récompenses solo")) {
-                                                                                                                                                                                                                                                                                                                                          let X = args.slice(5).join(" : ");       
+                                                                                                                                                                                                                                                                                                                                          let X = args.slice(5).join(" : ");
                                                                                                                                                                                                                                                                                                                                           const A = (Math.floor((3)*Math.random()+2))
                                                                                                                                                                                                                                                                                               const B = (Math.floor((2-(0.35))*Math.random()))
                                                                                                                                                                                                                                                                                               const C = (Math.floor((2-(0.55))*Math.random()))
@@ -2927,7 +2797,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                                                                                                                                                               let cont = message.content.slice(prefix.length).split(" ");
                                                                                                                                                                                                                                                                                                                                                                 const args = cont.slice(1);
                                                                                                                                                                                                                                                                                                                                                                 if (message.content.startsWith(prefix + "Kobolt géant rouge récompenses groupe")) {
-                                                                                                                                                                                                                                                                                                                                                                let X = args.slice(5).join(" : ");       
+                                                                                                                                                                                                                                                                                                                                                                let X = args.slice(5).join(" : ");
                                                                                                                                                                                                                                                                                                                                                                 const A = (Math.floor((3)*Math.random()+2))
                                                                                                                                                                                                                                                                                                                                                                 const B = (Math.floor((2-(0.35))*Math.random()))
                                                                                                                                                                                                                                                                                                                                                                 const C = (Math.floor((2-(0.55))*Math.random()))
@@ -2937,7 +2807,7 @@ bot.on('message', message => {
                                                                                                                                                                                                                                                                                                                                                                 const I = (Math.floor((2-(0.96))*Math.random()))
                                                                                                                                                                                                                                                                                                                                                                 const J = (Math.floor((2-(0.98))*Math.random()))
                                                                                                                                                                                                                                                                                                                                                                 const F = (Math.floor((101*1)*Math.random()+130*1))
-                                                                                                                                                                                                                                                                                                                                                                
+
                                                                                                                                                                                                                                                                                                                                                                                   const FF = F-(X*8)
                                                                                                                                                                                                                                                                                                                                                                                   const G = (Math.floor((125*1)*Math.random()+125*1))
                                                                                                                                                                                                                                                                                                                                                                                    if(FF > 0) {
@@ -2968,7 +2838,7 @@ bot.on('message', message => {
 
 
 //////////////////////////////////////////////////////////Monstres attaques////////////////////////////////////////////////////////////////////////////////////
-  
+
 
 
 bot.on('message', message => {
@@ -3770,7 +3640,7 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Monstres défense////////////////////////////////////////////////////////////////////////////////////
 
 
-        
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -3800,7 +3670,7 @@ bot.on('message', message => {
    }
 );
 
-       
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -4561,9 +4431,9 @@ bot.on('message', message => {
 
 
 
- 
 
-      
+
+
 
 
 
@@ -4794,7 +4664,7 @@ bot.on('message', message => {
    .addField("Invitation vers notre discord pub :" , "https://discord.gg/NYH43Ks")
    .setTimestamp()
    message.channel.send({embed});
-   
+
   }
 })
 ///////////////////////////////////////////////////////////Echange/////////////////////////////////////////////////////////////////////////////////////
@@ -4814,9 +4684,9 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
           });
- 
+
 
             bot.on('message', message => {
               let cont = message.content.slice(prefix.length).split(" ");
@@ -4833,7 +4703,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
           });
 
 
@@ -4847,7 +4717,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
           });
 
           bot.on('message', message => {
@@ -4860,7 +4730,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
           });
 
 
@@ -5170,7 +5040,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -5202,7 +5072,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -5285,7 +5155,7 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
                                                                                                              if (message.content.startsWith(prefix + "Coup sauté amélioré")) {
-  
+
         let degats = args.slice(3).join(" : ");
         const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
         const B = (Math.floor((100)*Math.random()+1))
@@ -5327,7 +5197,7 @@ bot.on('message', message => {
       let cont = message.content.slice(prefix.length).split(" ");
       const args = cont.slice(1);
                                                                                                                if (message.content.startsWith(prefix + "Coup sauté supérieur")) {
-    
+
           let degats = args.slice(3).join(" : ");
           const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
           const B = (Math.floor((100)*Math.random()+1))
@@ -5371,7 +5241,7 @@ bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
         const args = cont.slice(1);
                                                                                                                  if (message.content.startsWith(prefix + "Coup sauté suprême")) {
-      
+
             let degats = args.slice(3).join(" : ");
             const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
             const B = (Math.floor((100)*Math.random()+1))
@@ -5622,7 +5492,7 @@ bot.on('message', message => {
     }
   });
 
-  
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -5666,7 +5536,7 @@ bot.on('message', message => {
     }
   });
 
-  
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -5746,7 +5616,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -5784,7 +5654,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -5821,8 +5691,8 @@ bot.on('message', message => {
         }
       }
   });
-  
-  
+
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -5891,7 +5761,7 @@ bot.on('message', message => {
         }
     });
 
-    
+
 
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -5923,8 +5793,8 @@ bot.on('message', message => {
           }
         }
     });
-    
-    
+
+
 
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -5956,8 +5826,8 @@ bot.on('message', message => {
           }
         }
     });
-    
-    
+
+
 
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -5990,7 +5860,7 @@ bot.on('message', message => {
         }
     });
     ////////////////////////////////////////////////////////////////Coup circulaire/////////////////////////////////////////////////////////////////////////////////
-    
+
 
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
@@ -6024,7 +5894,7 @@ bot.on('message', message => {
             }
         });
 
-        
+
 
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
@@ -6090,7 +5960,7 @@ bot.on('message', message => {
         });
 
 
-        
+
 
       bot.on('message', message => {
         let cont = message.content.slice(prefix.length).split(" ");
@@ -6152,7 +6022,7 @@ bot.on('message', message => {
               }
           });
 
-          
+
         bot.on('message', message => {
            if (message.content.startsWith(prefix + "Cri de provocation amélioré")) {
               let degats = args.slice(1).join(" ");
@@ -6181,7 +6051,7 @@ bot.on('message', message => {
               }
           });
 
-          
+
         bot.on('message', message => {
            if (message.content.startsWith(prefix + "Cri de provocation supérieur")) {
               let degats = args.slice(1).join(" ");
@@ -6210,7 +6080,7 @@ bot.on('message', message => {
               }
           });
 
-          
+
         bot.on('message', message => {
            if (message.content.startsWith(prefix + "Cri de provocation suprême")) {
               const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
@@ -6238,7 +6108,7 @@ bot.on('message', message => {
                 }
               }
           });
-    
+
   ///////////////////////////////////////////////////////////////////Esquive//////////////////////////////////////////////////////////////////////////////
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -6271,7 +6141,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -6302,7 +6172,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -6333,7 +6203,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -6395,7 +6265,7 @@ bot.on('message', message => {
         }
     });
 
-    
+
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
@@ -6426,7 +6296,7 @@ bot.on('message', message => {
     });
 
 
-  
+
     bot.on('message', message => {
       let cont = message.content.slice(prefix.length).split(" ");
       const args = cont.slice(1);
@@ -6455,8 +6325,8 @@ bot.on('message', message => {
             }
           }
       });
-    
-      
+
+
   bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
@@ -6517,7 +6387,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -6548,7 +6418,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -6579,7 +6449,7 @@ bot.on('message', message => {
       }
   });
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -6612,7 +6482,7 @@ bot.on('message', message => {
 
 
 
-  
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -6849,7 +6719,7 @@ const args = cont.slice(1);
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
 
 
@@ -6869,7 +6739,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-    }   
+    }
 });
 
 
@@ -6931,7 +6801,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
 
 
@@ -6964,7 +6834,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
 
 
@@ -6990,7 +6860,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
 
 bot.on('message', message => {
@@ -7014,7 +6884,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
 
 
@@ -7030,7 +6900,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
 
 
@@ -7044,7 +6914,7 @@ bot.on('message', message => {
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7057,7 +6927,7 @@ bot.on('message', message => {
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7070,7 +6940,7 @@ bot.on('message', message => {
     .addField("Trajet en ville :" , "Auberge\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nArène\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEcole\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nBanque\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nJardin\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nExecution publique\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPlace principal\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nParc\\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPrison\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSombre ruelle\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nCommerce\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nHall de guilde\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nTemple\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSouterrains\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nConstructions joueurs\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEntrée de la ville")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
  bot.on('message', message => {
@@ -7083,7 +6953,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
        .setTimestamp()
        message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7097,7 +6967,7 @@ bot.on('message', message => {
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7110,7 +6980,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7123,7 +6993,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7136,7 +7006,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7149,7 +7019,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7162,7 +7032,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 
@@ -7176,7 +7046,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 
@@ -7190,7 +7060,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 
@@ -7205,7 +7075,7 @@ bot.on('message', message => {
        .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 bot.on('message', message => {
@@ -7218,7 +7088,7 @@ bot.on('message', message => {
         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
     bot.on('message', message => {
@@ -7231,7 +7101,7 @@ bot.on('message', message => {
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
             message.channel.send({embed})
-          }   
+          }
         });
 
         bot.on('message', message => {
@@ -7246,7 +7116,7 @@ bot.on('message', message => {
                              .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                 .setTimestamp()
                 message.channel.send({embed})
-              }   
+              }
             });
 
 
@@ -7262,7 +7132,7 @@ bot.on('message', message => {
                 .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                 .setTimestamp()
                 message.channel.send({embed})
-              }   
+              }
             });
 
             bot.on('message', message => {
@@ -7277,10 +7147,10 @@ bot.on('message', message => {
                    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                     .setTimestamp()
                     message.channel.send({embed})
-                  }   
+                  }
                 });
 
-                
+
                 bot.on('message', message => {
                   if (message.content.startsWith(prefix + "Liste des compétences 1")) {
                     const embed = new Discord.RichEmbed()
@@ -7311,7 +7181,7 @@ bot.on('message', message => {
                         .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                         .setTimestamp()
                         message.channel.send({embed})
-                      }   
+                      }
                     });
 
                     bot.on('message', message => {
@@ -7334,11 +7204,11 @@ bot.on('message', message => {
                             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                             .setTimestamp()
                             message.channel.send({embed})
-                          }   
+                          }
                         });
-                     
 
-                       
+
+
                         bot.on('message', message => {
                           if (message.content.startsWith(prefix + "Cyclone")) {
                             if (talkedRecently.has(message.author.id+1)) {
@@ -7736,9 +7606,9 @@ bot.on('message', message => {
                               }
                                    }
                               });
-  
-                            
-                              
+
+
+
                             bot.on('message', message => {
                               let cont = message.content.slice(prefix.length).split(" ");
                               const args = cont.slice(1);
@@ -7754,7 +7624,7 @@ bot.on('message', message => {
                                    message.channel.send({embed})
                           } else {
                                   let degats = args.slice(1).join(" : ");
-                                  
+
                                   const premier = (Math.floor((degats/3)*Math.random()+1*(degats/2)))
                                   const deuxième = (Math.floor((degats/3)*Math.random()+1*(degats/2)))
                                   const A = premier+deuxième
@@ -7788,7 +7658,7 @@ bot.on('message', message => {
                               });
 
 
-                        
+
                         bot.on('message', message => {
                           let cont = message.content.slice(prefix.length).split(" ");
                           const args = cont.slice(1);
@@ -8002,11 +7872,11 @@ bot.on('message', message => {
                                     }, 3600000);
                                 }
                                 });
-    
-  
 
 
-               
+
+
+
 
             bot.on('message', message => {
               if (message.content.startsWith(prefix + "Apprentissage des compétences")) {
@@ -8020,11 +7890,11 @@ bot.on('message', message => {
                    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
                     .setTimestamp()
                     message.channel.send({embed})
-                  }   
+                  }
                 });
 
 
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Objets")) {
     const embed = new Discord.RichEmbed()
@@ -8035,9 +7905,9 @@ bot.on('message', message => {
         .setImage("https://vignette.wikia.nocookie.net/powerlisting/images/3/39/Elucidator.png/revision/latest?cb=20150111073313")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Personnage")) {
     const embed = new Discord.RichEmbed()
@@ -8048,14 +7918,14 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 
     bot.on('message', message => {
       if (message.content.startsWith(prefix + "Fiche de personnage")) {
         message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE PERSONNAGE`』▬▬▬▬▬▬▬▬۝\n\nNom :【A remplir】\n\nPrénom :【A remplir】\n\nPseudo :【A remplir】\n\nÂge : 【A remplir】\n\nSexe : 【A remplir】\n\nPhysique :【A remplir avec image si vous voulez, c'est conseillé】\n\nPersonnalité :【A remplir】\n\nPourquoi être venus dans SAO, votre histoire :【A remplir et c'est la raison RP】\n\nArme de base :【A remplir en écrivant =Armes】\n\nClasse :【A remplir en écrivant =Classes】\n\nCompétence :【A remplir en écrivant =Compétences】\n\nParticularité :【A remplir en écrivant =Particularités】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nNiveau : 1\n\nExp : 0/200\n\nGuilde : aucune\n\nDéfense total : 0 points\n\nAttaque total : 6 points \n\nHP : 40/40\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nArme :【Votre arme de base】\n\nCasque : aucun\n\nEpaulières : aucunes\n\nPlastron : aucun\n\nCape : aucune\n\nCeinture : aucune\n\nGantelets : aucun\n\nJambières : aucunes\n\nBotte : aucunes\n\nAnneau : aucun\n\nAmulette : aucune\n\nFamilier : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nCaractéristiques :\n\n0 points de puissance\n\n0 points de défense\n\n0 points de vitalité\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nJoueurs tués : aucun\n\nMonstres tués : aucun\n\nSanglier : aucun\n\nRenard : aucun\n\nLoup : aucun\n\nSlime : aucun\n\nLoup de sang : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nChasseur niveau 1 : 0/50\n\nCueilleur niveau 1 : 0/50\n\nMineur niveau 1 : 0/50\n\nBûcheron niveau 1 : 0/50\n\nPêcheur niveau 1 : 0/50\n\nMaître d'armes niveau 1 : 0/50\n\nMaître du cuir niveau 1 : 0/50\n\nForgeron niveau 1 : 0/50\n\nCouturier niveau 1 : 0/50\n\nCuisinier niveau 1 : 0/50\n\nAlchimiste niveau 1 : 0/50\n\nEnchanteur niveau 1 : 0/50\n\nEbeniste niveau 1 : 0/50\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nListe d'amis : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nInventaire :\n\n100 Cols\n\n1 Potion faible de soin [+40 HP]\n\n1 Ragoût de lapin [+20 HP]\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
-           }   
+           }
         });
 
 bot.on('message', message => {
@@ -8071,7 +7941,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
 
 
@@ -8085,11 +7955,11 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
 });
-  
-  
-   
+
+
+
 
 bot.on('message', message => {
  let cont = message.content.slice(prefix.length).split(" ");
@@ -8279,7 +8149,7 @@ bot.on('message', message => {
  }}
     })
 
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Caractéristiques")) {
     const embed = new Discord.RichEmbed()
@@ -8290,7 +8160,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
     bot.on('message', message => {
@@ -8305,11 +8175,11 @@ bot.on('message', message => {
            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-          }   
+          }
         });
 
-  
-    
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Spécialisations")) {
     const embed = new Discord.RichEmbed()
@@ -8324,7 +8194,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
      .setTimestamp()
      message.channel.send({embed})
-    }   
+    }
   });
 
   bot.on('message', message => {
@@ -8337,7 +8207,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
        .setTimestamp()
        message.channel.send({embed})
-      }   
+      }
     });
 
 
@@ -8351,7 +8221,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
          .setTimestamp()
          message.channel.send({embed})
-        }   
+        }
       });
 
       bot.on('message', message => {
@@ -8364,7 +8234,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
            .setTimestamp()
            message.channel.send({embed})
-          }   
+          }
         });
 
         bot.on('message', message => {
@@ -8377,7 +8247,7 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
              .setTimestamp()
              message.channel.send({embed})
-            }   
+            }
           });
 
           bot.on('message', message => {
@@ -8390,10 +8260,10 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                .setTimestamp()
                message.channel.send({embed})
-              }   
+              }
             });
-    
-  
+
+
 
 
   bot.on('message', message => {
@@ -8406,11 +8276,11 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
        .setTimestamp()
        message.channel.send({embed})
-      }   
+      }
     });
 
-  
-    
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Cristal")) {
     const embed = new Discord.RichEmbed()
@@ -8423,9 +8293,9 @@ bot.on('message', message => {
         .addField("Le cristal, partie 2 :" , "Pour acquérir le cristal orange, vous devez avoir frapper un joueur que ce soit avec une arme ou à mains nues ou l'avoir menacé oralement de mort ou l'avoir voler ou même l'avoir emmener de force quelque part comme une séquestration mais aussi, si vous rentrez par effraction chez quelqu'un et que vous n'êtes pas autorisé\n\nPour acquérir le cristal rouge, vous devez avoir tué un joueur ou du moins, que ce soit votre coup final qui achève un joueur, si vous faites trop de meurtres, votre cristal deviendra noir...\n\nPeux importe la couleur de votre cristal, vous pouvez aller en prison si vous méritez une sanction cependant il existe une règle :\n\nUn joueur cristal vert qui attaque un joueur cristal orange, deviendra lui même cristal orange !\n\nUn joueur cristal vert qui attaque un joueur cristal rouge, ne deviendra pas orange, tous les joueurs ont droit de tué un joueur cristal rouge à vue sans que le cristal vert d'un joueur change !")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Mort")) {
     const embed = new Discord.RichEmbed()
@@ -8436,9 +8306,9 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Niveaux")) {
     const embed = new Discord.RichEmbed()
@@ -8451,7 +8321,7 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
     bot.on('message', message => {
@@ -8468,7 +8338,7 @@ bot.on('message', message => {
            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-          }   
+          }
         });
 
         bot.on('message', message => {
@@ -8485,7 +8355,7 @@ bot.on('message', message => {
                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-              }   
+              }
             });
 
             bot.on('message', message => {
@@ -8502,7 +8372,7 @@ bot.on('message', message => {
                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
-                  }   
+                  }
                 });
 
                 bot.on('message', message => {
@@ -8519,7 +8389,7 @@ bot.on('message', message => {
                        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                         .setTimestamp()
                         message.channel.send({embed})
-                      }   
+                      }
                     });
 
                     bot.on('message', message => {
@@ -8536,7 +8406,7 @@ bot.on('message', message => {
                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                             .setTimestamp()
                             message.channel.send({embed})
-                          }   
+                          }
                         });
 
                         bot.on('message', message => {
@@ -8553,12 +8423,12 @@ bot.on('message', message => {
                                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                 .setTimestamp()
                                 message.channel.send({embed})
-                              }   
+                              }
                             });
-    
 
 
-    
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Tableau des niveaux")) {
     const embed = new Discord.RichEmbed()
@@ -8571,9 +8441,9 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 
 bot.on('message', message => {
  if (message.content === prefix + "Rétablissement") {
@@ -8585,10 +8455,10 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
-    
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Crafts")) {
     const embed = new Discord.RichEmbed()
@@ -8599,9 +8469,9 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Donjons")) {
     const embed = new Discord.RichEmbed()
@@ -8612,7 +8482,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
     bot.on('message', message => {
@@ -8625,9 +8495,9 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-          }   
+          }
         });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Familiers")) {
     const embed = new Discord.RichEmbed()
@@ -8638,9 +8508,9 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Quêtes")) {
     const embed = new Discord.RichEmbed()
@@ -8651,7 +8521,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 
@@ -8665,9 +8535,9 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Guilde")) {
     const embed = new Discord.RichEmbed()
@@ -8680,9 +8550,9 @@ bot.on('message', message => {
        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Etats")) {
     const embed = new Discord.RichEmbed()
@@ -8693,10 +8563,10 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Métiers")) {
     const embed = new Discord.RichEmbed()
@@ -8707,9 +8577,9 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Ville")) {
     const embed = new Discord.RichEmbed()
@@ -8720,9 +8590,9 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Extérieur")) {
     const embed = new Discord.RichEmbed()
@@ -8733,10 +8603,10 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
-    
+
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Souterrains")) {
     const embed = new Discord.RichEmbed()
@@ -8747,9 +8617,9 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
-    
+
 bot.on('message', message => {
   if (message.content === prefix + "Constructions") {
     const embed = new Discord.RichEmbed()
@@ -8760,7 +8630,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 
@@ -8774,13 +8644,13 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-          }   
+          }
         });
-    
 
 
-    
-                            
+
+
+
     bot.on('message', message => {
       let cont = message.content.slice(prefix.length).split(" ");
       const args = cont.slice(1);
@@ -8795,11 +8665,11 @@ bot.on('message', message => {
        .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
 
-    
+
 //////////////////////////////////////////////////////////////////Calcul d'exp niveaux de spécialisations///////////////////////////////////////////////////////////////////////////////
 
 
@@ -8974,7 +8844,7 @@ bot.on('message', message => {
                     }
                   })
 
-           
+
 
 
 //////////////////////////////////////////////////////////////////Calcul d'exp niveaux///////////////////////////////////////////////////////////////////////////////
@@ -9025,7 +8895,7 @@ bot.on('message', message => {
     }
   })
 
-  
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -9050,7 +8920,7 @@ bot.on('message', message => {
   })
 
 
-      
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -9069,12 +8939,12 @@ bot.on('message', message => {
         .addBlankField(true)
         .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
         .setTimestamp()
-        message.channel.send({embed})     
+        message.channel.send({embed})
       }
     }
   })
 
-      
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -9098,7 +8968,7 @@ bot.on('message', message => {
     }
   })
 
-    
+
     bot.on('message', message => {
       let cont = message.content.slice(prefix.length).split(" ");
       const args = cont.slice(1);
@@ -9144,7 +9014,7 @@ bot.on('message', message => {
           }
         })
 
-        
+
         bot.on('message', message => {
           let cont = message.content.slice(prefix.length).split(" ");
           const args = cont.slice(1);
@@ -9167,7 +9037,7 @@ bot.on('message', message => {
             }
           })
 
-          
+
           bot.on('message', message => {
             let cont = message.content.slice(prefix.length).split(" ");
             const args = cont.slice(1);
@@ -9190,7 +9060,7 @@ bot.on('message', message => {
               }
             })
 
-            
+
             bot.on('message', message => {
               let cont = message.content.slice(prefix.length).split(" ");
               const args = cont.slice(1);
@@ -9213,7 +9083,7 @@ bot.on('message', message => {
                 }
               })
 
-              
+
               bot.on('message', message => {
                 let cont = message.content.slice(prefix.length).split(" ");
                 const args = cont.slice(1);
@@ -9235,8 +9105,8 @@ bot.on('message', message => {
                     }
                   }
                 })
-                
-                
+
+
                 bot.on('message', message => {
                   let cont = message.content.slice(prefix.length).split(" ");
                   const args = cont.slice(1);
@@ -9259,7 +9129,7 @@ bot.on('message', message => {
                     }
                   })
 
-                  
+
                   bot.on('message', message => {
                     let cont = message.content.slice(prefix.length).split(" ");
                     const args = cont.slice(1);
@@ -9282,7 +9152,7 @@ bot.on('message', message => {
                       }
                     })
 
-                    
+
                     bot.on('message', message => {
                       let cont = message.content.slice(prefix.length).split(" ");
                       const args = cont.slice(1);
@@ -9328,7 +9198,7 @@ bot.on('message', message => {
                           }
                         })
 
-                        
+
                         bot.on('message', message => {
                           let cont = message.content.slice(prefix.length).split(" ");
                           const args = cont.slice(1);
@@ -9351,7 +9221,7 @@ bot.on('message', message => {
                             }
                           })
 
-                          
+
                           bot.on('message', message => {
                             let cont = message.content.slice(prefix.length).split(" ");
                             const args = cont.slice(1);
@@ -9374,7 +9244,7 @@ bot.on('message', message => {
                               }
                             })
 
-                            
+
                             bot.on('message', message => {
                               let cont = message.content.slice(prefix.length).split(" ");
                               const args = cont.slice(1);
@@ -9467,7 +9337,7 @@ bot.on('message', message => {
                                     })
 
 
-                                    
+
                                   bot.on('message', message => {
                                     let cont = message.content.slice(prefix.length).split(" ");
                                     const args = cont.slice(1);
@@ -9514,7 +9384,7 @@ bot.on('message', message => {
                                       })
 
 
-                                      
+
                                     bot.on('message', message => {
                                       let cont = message.content.slice(prefix.length).split(" ");
                                       const args = cont.slice(1);
@@ -9538,7 +9408,7 @@ bot.on('message', message => {
                                       })
 
 
-                                             
+
                                     bot.on('message', message => {
                                       let cont = message.content.slice(prefix.length).split(" ");
                                       const args = cont.slice(1);
@@ -9562,7 +9432,7 @@ bot.on('message', message => {
                                       })
 
 
-                                                     
+
                                     bot.on('message', message => {
                                       let cont = message.content.slice(prefix.length).split(" ");
                                       const args = cont.slice(1);
@@ -9630,8 +9500,8 @@ bot.on('message', message => {
                                               }
                                             }
                                           })
-  
-                               
+
+
                                           bot.on('message', message => {
                                             let cont = message.content.slice(prefix.length).split(" ");
                                             const args = cont.slice(1);
@@ -9676,9 +9546,9 @@ bot.on('message', message => {
                                                 }
                                               }
                                             })
-  
-                               
-  //////////////////////////////////////////////////////////////////OBJETS A ACHETER OU CRAFT///////////////////////////////////////////////////////////////////////    
+
+
+  //////////////////////////////////////////////////////////////////OBJETS A ACHETER OU CRAFT///////////////////////////////////////////////////////////////////////
 
            bot.on('message', message => {
         if (message.content.startsWith(prefix + "Casque du clan des loups")) {
@@ -9690,7 +9560,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
  bot.on('message', message => {
@@ -9703,7 +9573,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
   bot.on('message', message => {
@@ -9716,7 +9586,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
   bot.on('message', message => {
@@ -9729,7 +9599,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
   bot.on('message', message => {
@@ -9739,11 +9609,11 @@ bot.on('message', message => {
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
              .addField(":scales: Gantelets du clan des loups :" , ":scales: Ce sont des gantelets rares uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets du clan des loups`")
-            
+
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -9754,11 +9624,11 @@ bot.on('message', message => {
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
              .addField(":scales: Ceinture du clan des loups :" , ":scales: C'est une ceinture rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture du clan des loups`")
-             
+
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -9769,11 +9639,11 @@ bot.on('message', message => {
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
              .addField(":scales: Jambières du clan des loups :" , ":scales: Ce sont des jambières rares uniquement possible à trouver dans le donjon sauvage !:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières du clan des loups`")
-            
+
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
   bot.on('message', message => {
@@ -9783,11 +9653,11 @@ bot.on('message', message => {
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
              .addField(":scales: Bottes du clan des loups :" , ":scales: Ce sont des bottes rares uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes du clan des loups`")
-      
+
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -9798,11 +9668,11 @@ bot.on('message', message => {
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
              .addField(":scales: Amulette du clan des loups :" , ":scales: C'est une amulette rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette du clan des loups`")
-           
+
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -9813,11 +9683,11 @@ bot.on('message', message => {
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
              .addField(":scales: Anneau du clan des loups :" , ":scales: C'est un anneau rare uniquement possible à trouver dans le donjon sauvage !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau du clan des loups`")
-           
+
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -9833,7 +9703,7 @@ bot.on('message', message => {
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
 
                               bot.on('message', message => {
@@ -9848,7 +9718,7 @@ bot.on('message', message => {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
@@ -9863,7 +9733,7 @@ bot.on('message', message => {
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
 
                                       bot.on('message', message => {
@@ -9878,7 +9748,7 @@ bot.on('message', message => {
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
                                           bot.on('message', message => {
@@ -9893,7 +9763,7 @@ bot.on('message', message => {
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
                                                bot.on('message', message => {
@@ -9908,7 +9778,7 @@ bot.on('message', message => {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
 
@@ -9924,7 +9794,7 @@ bot.on('message', message => {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
@@ -9939,7 +9809,7 @@ bot.on('message', message => {
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
 
                                       bot.on('message', message => {
@@ -9954,7 +9824,7 @@ bot.on('message', message => {
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
 
@@ -9971,7 +9841,7 @@ bot.on('message', message => {
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
@@ -9986,11 +9856,11 @@ bot.on('message', message => {
              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
              .setColor(3447003)
              .addField(":scales: Epée du clan des loups à une main :" , ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à une main`")
-          
+
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -10002,11 +9872,11 @@ bot.on('message', message => {
                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                  .setColor(3447003)
                  .addField(":scales: Rapière du clan des loups à une main :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à une main`")
-              
+
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
               bot.on('message', message => {
@@ -10016,11 +9886,11 @@ bot.on('message', message => {
                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                      .setColor(3447003)
                      .addField(":scales: Hache du clan des loups à une main :" , ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups à une main`")
-                  
+
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
@@ -10030,11 +9900,11 @@ bot.on('message', message => {
                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                          .setColor(3447003)
                          .addField(":scales: Masse du clan des loups à une main :" , ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur amélioré'\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups à une main`")
-                      
+
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
@@ -10044,11 +9914,11 @@ bot.on('message', message => {
                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                              .setColor(3447003)
                              .addField(":scales: Katana du clan des loups à une main :" , ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups à une main`")
-                          
+
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
 
@@ -10060,11 +9930,11 @@ bot.on('message', message => {
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
                                  .addField(":scales: Cimeterre du clan des loups à une main :" , ":scales: C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cimeterre du clan des loups à une main`")
-                              
+
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
 
 
@@ -10075,11 +9945,11 @@ bot.on('message', message => {
                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                      .setColor(3447003)
                                      .addField(":scales: Dague du clan des loups à une main :" , ":scales: C'est une dague rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague du clan des loups à une main`")
-                                  
+
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
@@ -10089,11 +9959,11 @@ bot.on('message', message => {
                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                          .setColor(3447003)
                                          .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: C'est un bouclier rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du clan des loups à une main`")
-                                      
+
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
 
 
@@ -10104,11 +9974,11 @@ bot.on('message', message => {
                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                              .setColor(3447003)
                                              .addField(":scales: Epée du clan des loups à deux mains :" , ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo amélioré'\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à deux mains`")
-                                          
+
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
                                           bot.on('message', message => {
@@ -10118,14 +9988,14 @@ bot.on('message', message => {
                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                  .setColor(3447003)
                                                  .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' en : 'Coup d'estoc amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à deux mains`")
-                                              
+
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
-    
-    
+
+
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Rapière du clan des loups à deux mains")) {
 const embed = new Discord.RichEmbed()
@@ -10136,9 +10006,9 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
-        
+
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Hache du clan des loups à deux mains")) {
 const embed = new Discord.RichEmbed()
@@ -10149,7 +10019,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 
@@ -10163,7 +10033,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -10176,7 +10046,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -10189,7 +10059,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
 
@@ -10203,7 +10073,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
 
@@ -10217,7 +10087,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -10230,12 +10100,12 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
             bot.on('message', message => {
               const Défense = (Math.floor((7)*Math.random()+12))
-              
+
   const HP = (Math.floor((31)*Math.random()+60))
    if (message.content.startsWith(prefix + "Découverte du bouclier du roi déchus à une main")) {
     const embed = new Discord.RichEmbed()
@@ -10243,11 +10113,11 @@ bot.on('message', message => {
        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
        .setColor(3447003)
        .addField(":scales: Découverte du bouclier du roi déchus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: En portant ce bouclier, vous êtes immunisé des effets de saignement !")
-    
+
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-      }   
+      }
     });
 
     bot.on('message', message => {
@@ -10263,7 +10133,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -10279,7 +10149,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -10292,7 +10162,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -10305,7 +10175,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -10318,7 +10188,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -10331,10 +10201,10 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
-    
-  
+
+
 
 
 
@@ -10348,7 +10218,7 @@ bot.on('message', message => {
 
 
           bot.on('message', message => {
-            
+
             if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à une main")) {
               const Dégâts = (Math.floor((7)*Math.random()+4))
               const embed = new Discord.RichEmbed()
@@ -10359,11 +10229,11 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
               bot.on('message', message => {
-            
+
                 if (message.content.startsWith(prefix + "Découverte de la dague du clan des loups à une main")) {
                   const Dégâts = (Math.floor((7)*Math.random()+4))
                   const embed = new Discord.RichEmbed()
@@ -10374,12 +10244,12 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
 
                   bot.on('message', message => {
-            
+
                     if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à une main")) {
                       const Dégâts = (Math.floor((7)*Math.random()+4))
                       const embed = new Discord.RichEmbed()
@@ -10390,11 +10260,11 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
-            
+
                 if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à une main")) {
                   const Dégâts = (Math.floor((7)*Math.random()+4))
                   const embed = new Discord.RichEmbed()
@@ -10405,11 +10275,11 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
-            
+
                     if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à une main")) {
                       const Dégâts = (Math.floor((7)*Math.random()+4))
                       const embed = new Discord.RichEmbed()
@@ -10420,12 +10290,12 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
 
                       bot.on('message', message => {
-            
+
                         if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à une main")) {
                           const Dégâts = (Math.floor((7)*Math.random()+4))
                           const embed = new Discord.RichEmbed()
@@ -10436,12 +10306,12 @@ bot.on('message', message => {
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
 
                           bot.on('message', message => {
-            
+
                             if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à une main")) {
                               const Dégâts = (Math.floor((7)*Math.random()+4))
                               const embed = new Discord.RichEmbed()
@@ -10452,7 +10322,7 @@ bot.on('message', message => {
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
 
 
@@ -10470,16 +10340,16 @@ bot.on('message', message => {
                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                  .setColor(3447003)
                                  .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
-                              
+
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
 
 
                               bot.on('message', message => {
-            
+
                                 if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à deux mains")) {
                                   const Dégâts = (Math.floor((13)*Math.random()+8))
                                   const embed = new Discord.RichEmbed()
@@ -10490,11 +10360,11 @@ bot.on('message', message => {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
-            
+
                                     if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à deux mains")) {
                                       const Dégâts = (Math.floor((13)*Math.random()+8))
                                       const embed = new Discord.RichEmbed()
@@ -10505,11 +10375,11 @@ bot.on('message', message => {
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
 
                                       bot.on('message', message => {
-            
+
                                         if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à deux mains")) {
                                           const Dégâts = (Math.floor((13)*Math.random()+8))
                                           const embed = new Discord.RichEmbed()
@@ -10520,11 +10390,11 @@ bot.on('message', message => {
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
                                           bot.on('message', message => {
-            
+
                                             if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à deux mains")) {
                                               const Dégâts = (Math.floor((13)*Math.random()+8))
                                               const embed = new Discord.RichEmbed()
@@ -10535,11 +10405,11 @@ bot.on('message', message => {
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
                                               bot.on('message', message => {
-            
+
                                                 if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à deux mains")) {
                                                   const Dégâts = (Math.floor((13)*Math.random()+8))
                                                   const embed = new Discord.RichEmbed()
@@ -10550,11 +10420,11 @@ bot.on('message', message => {
                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                       .setTimestamp()
                                                       message.channel.send({embed})
-                                                    }   
+                                                    }
                                                   });
 
                                                    bot.on('message', message => {
-            
+
                                 if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à deux mains")) {
                                   const Dégâts = (Math.floor((13)*Math.random()+8))
                                   const embed = new Discord.RichEmbed()
@@ -10565,11 +10435,11 @@ bot.on('message', message => {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
-            
+
                                     if (message.content.startsWith(prefix + "Découverte du glaive du clan des loups à deux mains")) {
                                       const Dégâts = (Math.floor((13)*Math.random()+8))
                                       const embed = new Discord.RichEmbed()
@@ -10580,10 +10450,10 @@ bot.on('message', message => {
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
 
-                                    
+
 
                                           bot.on('message', message => {
                                             if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
@@ -10596,7 +10466,7 @@ bot.on('message', message => {
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
@@ -10662,7 +10532,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -10676,7 +10546,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
               bot.on('message', message => {
@@ -10689,9 +10559,9 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
-    
+
 
 
 
@@ -10705,7 +10575,7 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
@@ -10718,7 +10588,7 @@ bot.on('message', message => {
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
                           bot.on('message', message => {
@@ -10731,9 +10601,9 @@ bot.on('message', message => {
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
-        
+
                               bot.on('message', message => {
                                 if (message.content.startsWith(prefix + "Jambières rouillées")) {
                                   const embed = new Discord.RichEmbed()
@@ -10744,10 +10614,10 @@ bot.on('message', message => {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
-              
-              
+
+
                                   bot.on('message', message => {
                                     if (message.content.startsWith(prefix + "Bottes rouillées")) {
                                       const embed = new Discord.RichEmbed()
@@ -10758,9 +10628,9 @@ bot.on('message', message => {
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
-               
+
 
 
                                       bot.on('message', message => {
@@ -10773,7 +10643,7 @@ bot.on('message', message => {
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
                                           bot.on('message', message => {
@@ -10786,19 +10656,19 @@ bot.on('message', message => {
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
 
 
-                          
-                      
 
 
-                          
+
+
+
                                           bot.on('message', message => {
                                             const Défense = (Math.floor((4)*Math.random()+1))
-                                           
+
                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau rouillé")) {
                                               const embed = new Discord.RichEmbed()
                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -10808,14 +10678,14 @@ bot.on('message', message => {
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
 
                                               bot.on('message', message => {
                                                 const Défense = (Math.floor((4)*Math.random()+1))
-                                               
+
                                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette rouillée")) {
                                                   const embed = new Discord.RichEmbed()
                                                   .setAuthor(message.author.username , message.author.avatarURL)
@@ -10825,17 +10695,17 @@ bot.on('message', message => {
                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                       .setTimestamp()
                                                       message.channel.send({embed})
-                                                    }   
+                                                    }
                                                   });
-    
 
 
 
-                          
+
+
                                                   bot.on('message', message => {
                                                     const HP = (Math.floor((3)*Math.random()+3))
                                                     const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                   
+
                                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque rouillé")) {
                                                       const embed = new Discord.RichEmbed()
                                                       .setAuthor(message.author.username , message.author.avatarURL)
@@ -10845,13 +10715,13 @@ bot.on('message', message => {
                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                           .setTimestamp()
                                                           message.channel.send({embed})
-                                                        }   
+                                                        }
                                                       });
 
                                                       bot.on('message', message => {
                                                         const HP = (Math.floor((3)*Math.random()+3))
                                                         const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                       
+
                                                         if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières rouillées")) {
                                                           const embed = new Discord.RichEmbed()
                                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -10861,13 +10731,13 @@ bot.on('message', message => {
                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
-                                                            }   
+                                                            }
                                                           });
 
                                                           bot.on('message', message => {
                                                         const HP = (Math.floor((3)*Math.random()+3))
                                                         const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                       
+
                                                         if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape endommagée")) {
                                                           const embed = new Discord.RichEmbed()
                                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -10877,13 +10747,13 @@ bot.on('message', message => {
                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
-                                                            }   
+                                                            }
                                                           });
 
                                                           bot.on('message', message => {
                                                         const HP = (Math.floor((3)*Math.random()+3))
                                                         const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                       
+
                                                         if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron rouillé")) {
                                                           const embed = new Discord.RichEmbed()
                                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -10893,13 +10763,13 @@ bot.on('message', message => {
                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
-                                                            }   
+                                                            }
                                                           });
 
                                                           bot.on('message', message => {
                                                             const HP = (Math.floor((3)*Math.random()+3))
                                                             const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                           
+
                                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets rouillés")) {
                                                               const embed = new Discord.RichEmbed()
                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -10909,13 +10779,13 @@ bot.on('message', message => {
                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                   .setTimestamp()
                                                                   message.channel.send({embed})
-                                                                }   
+                                                                }
                                                               });
 
                                                               bot.on('message', message => {
                                                                 const HP = (Math.floor((3)*Math.random()+3))
                                                                 const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                               
+
                                                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture rouillée")) {
                                                                   const embed = new Discord.RichEmbed()
                                                                   .setAuthor(message.author.username , message.author.avatarURL)
@@ -10925,16 +10795,16 @@ bot.on('message', message => {
                                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                       .setTimestamp()
                                                                       message.channel.send({embed})
-                                                                    }   
+                                                                    }
                                                                   });
-        
-    
 
-    
+
+
+
                                                                   bot.on('message', message => {
                                                                     const HP = (Math.floor((3)*Math.random()+3))
                                                                     const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                                   
+
                                                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières rouillées")) {
                                                                       const embed = new Discord.RichEmbed()
                                                                       .setAuthor(message.author.username , message.author.avatarURL)
@@ -10944,13 +10814,13 @@ bot.on('message', message => {
                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                           .setTimestamp()
                                                                           message.channel.send({embed})
-                                                                        }   
+                                                                        }
                                                                       });
-            
+
                                                                       bot.on('message', message => {
                                                                         const HP = (Math.floor((3)*Math.random()+3))
                                                                         const Défense = (Math.floor((2-(0.50))*Math.random()+1))
-                                                                       
+
                                                                         if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes rouillées")) {
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -10960,12 +10830,12 @@ bot.on('message', message => {
                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                               .setTimestamp()
                                                                               message.channel.send({embed})
-                                                                            }   
+                                                                            }
                                                                           });
-                
-                         
 
-  
+
+
+
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Casque en peau arrachée")) {
       const embed = new Discord.RichEmbed()
@@ -10976,7 +10846,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-        }   
+        }
       });
 
       bot.on('message', message => {
@@ -10989,7 +10859,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -11003,7 +10873,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
               bot.on('message', message => {
@@ -11016,7 +10886,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
@@ -11029,7 +10899,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
               bot.on('message', message => {
@@ -11042,7 +10912,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
 
@@ -11056,7 +10926,7 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
@@ -11069,7 +10939,7 @@ bot.on('message', message => {
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
 
@@ -11083,7 +10953,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 
@@ -11097,7 +10967,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -11110,7 +10980,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -11123,7 +10993,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -11136,7 +11006,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -11149,7 +11019,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -11162,7 +11032,7 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
              bot.on('message', message => {
@@ -11175,7 +11045,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -11188,7 +11058,7 @@ bot.on('message', message => {
                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
               bot.on('message', message => {
@@ -11201,7 +11071,7 @@ bot.on('message', message => {
                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
@@ -11214,7 +11084,7 @@ bot.on('message', message => {
                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
                                                           bot.on('message', message => {
@@ -11227,7 +11097,7 @@ bot.on('message', message => {
                                                  .setImage("http://www.wallmania.be/fr/media/catalog/product/cache/13/image/650x/040ec09b1e35df139433887a97daa66f/A/d/Adventure_foto_0000_12_schatkaart-foto_1.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
@@ -11240,7 +11110,7 @@ bot.on('message', message => {
                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                          .setColor(3447003)
                                                          .addField(":map: Carte au trésor :" , ":map: Cette carte indique un endroit dans la montagne, vous devriez vous y rendre !\n\n:map: Une fois à la montagne : `=Coffre secret de la montagne`")
-                                                         
+
                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                           .setTimestamp()
                                                           message.channel.send({embed})}
@@ -11250,11 +11120,11 @@ bot.on('message', message => {
                                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                .setColor(3447003)
                                                                .addField(":map: Carte au trésor :" , ":map: Cette carte indique un endroit dans la grotte, vous devriez vous y rendre !\n\n:map: Une fois à la grotte : `=Coffre secret de la grotte`")
-                                                               
+
                                                                 .setImage("http://www.wallmania.be/fr/media/catalog/product/cache/13/image/650x/040ec09b1e35df139433887a97daa66f/A/d/Adventure_foto_0000_12_schatkaart-foto_1.png")
                                                                 .setTimestamp()
                                                                 message.channel.send({embed})}
-                                                        }   
+                                                        }
                                                       });
 
 
@@ -11278,7 +11148,7 @@ bot.on('message', message => {
                                   .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                                              .setTimestamp()
                                                              message.channel.send({embed})}
-                                      
+
                                 });
 
                                 bot.on('message', message => {
@@ -11300,7 +11170,7 @@ bot.on('message', message => {
             .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                        .setTimestamp()
                                        message.channel.send({embed})}
-                
+
           });
 
           bot.on('message', message => {
@@ -11313,9 +11183,9 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
-            
+
             bot.on('message', message => {
               if (message.content.startsWith(prefix + "Bottes d'exploration kobolt")) {
               const embed = new Discord.RichEmbed()
@@ -11326,7 +11196,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
 
@@ -11346,7 +11216,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -11361,7 +11231,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -11376,7 +11246,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
 bot.on('message', message => {
@@ -11391,7 +11261,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -11406,7 +11276,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
 
@@ -11422,7 +11292,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -11437,7 +11307,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -11452,7 +11322,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -11467,7 +11337,7 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
             bot.on('message', message => {
@@ -11482,7 +11352,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
               bot.on('message', message => {
@@ -11497,9 +11367,9 @@ bot.on('message', message => {
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-                }   
+                }
                 });
-  
+
                 bot.on('message', message => {
                   const HP = (Math.floor((6)*Math.random()+6))
                   const Défense = (Math.floor((2-(0.50))*Math.random()))
@@ -11512,7 +11382,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                  }   
+                  }
                   });
 
                   bot.on('message', message => {
@@ -11527,7 +11397,7 @@ bot.on('message', message => {
                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
-                    }   
+                    }
                     });
 
                     bot.on('message', message => {
@@ -11542,7 +11412,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
               bot.on('message', message => {
@@ -11557,7 +11427,7 @@ bot.on('message', message => {
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-                }   
+                }
                 });
 
                 bot.on('message', message => {
@@ -11572,7 +11442,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                  }   
+                  }
                   });
 
                   bot.on('message', message => {
@@ -11587,7 +11457,7 @@ bot.on('message', message => {
                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
-                    }   
+                    }
                     });
 
                     bot.on('message', message => {
@@ -11602,10 +11472,10 @@ bot.on('message', message => {
                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
-                    }   
+                    }
                     });
 
-                  
+
 
                     bot.on('message', message => {
                       const HP = (Math.floor((3)*Math.random()+2))
@@ -11619,7 +11489,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                      }   
+                      }
                       });
 
                       bot.on('message', message => {
@@ -11634,14 +11504,14 @@ bot.on('message', message => {
                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                         .setTimestamp()
                         message.channel.send({embed})
-                        }   
+                        }
                         });
-                                
-                                  
 
-                                        
-                                              
-                                       
+
+
+
+
+
 bot.on('message', message => {
   if (message.content === prefix + "Casque de kobolt") {
     const embed = new Discord.RichEmbed()
@@ -11652,7 +11522,7 @@ bot.on('message', message => {
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -11665,7 +11535,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -11677,9 +11547,9 @@ if (message.content === prefix + "Épaulières de kobolt") {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
-                                            
+
     bot.on('message', message => {
       if (message.content === prefix + "Plastron de kobolt") {      const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -11689,7 +11559,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -11701,7 +11571,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -11713,7 +11583,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -11725,7 +11595,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
             bot.on('message', message => {
@@ -11737,7 +11607,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
               bot.on('message', message => {
@@ -11749,7 +11619,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-                }   
+                }
                 });
 
                 bot.on('message', message => {
@@ -11762,7 +11632,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                  }   
+                  }
                   });
 
 
@@ -11780,7 +11650,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                        bot.on('message', message => {
@@ -11795,7 +11665,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
@@ -11821,7 +11691,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})}
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
@@ -11848,7 +11718,7 @@ if (message.content === prefix + "Épaulières de kobolt") {
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})}
-                            }   
+                            }
                           });
 
 
@@ -11863,7 +11733,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -11876,7 +11746,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -11889,7 +11759,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -11902,7 +11772,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -11915,7 +11785,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -11928,7 +11798,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
 
@@ -11942,7 +11812,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
             bot.on('message', message => {
@@ -11955,9 +11825,9 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
-                          
+
               bot.on('message', message => {
                 if (message.content === prefix + "Amulette de kobolt supérieure") {
                   const embed = new Discord.RichEmbed()
@@ -11968,7 +11838,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-                }   
+                }
                 });
 
                 bot.on('message', message => {
@@ -11981,7 +11851,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                  }   
+                  }
                   });
 
 
@@ -12016,7 +11886,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
@@ -12031,7 +11901,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
@@ -12046,7 +11916,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
                           bot.on('message', message => {
@@ -12061,7 +11931,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
 
                               bot.on('message', message => {
@@ -12076,7 +11946,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
@@ -12091,7 +11961,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
 
                                       bot.on('message', message => {
@@ -12106,7 +11976,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
                                           bot.on('message', message => {
@@ -12121,7 +11991,7 @@ if (message.content === prefix + "Épaulières de kobolt supérieures") {
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
@@ -12140,7 +12010,7 @@ bot.on('message', message => {
                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
                                               bot.on('message', message => {
@@ -12156,7 +12026,7 @@ bot.on('message', message => {
                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                       .setTimestamp()
                                                       message.channel.send({embed})
-                                                    }   
+                                                    }
                                                   });
 
 
@@ -12173,7 +12043,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -12188,7 +12058,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -12203,7 +12073,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -12218,7 +12088,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -12233,7 +12103,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -12248,7 +12118,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -12263,7 +12133,7 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
             bot.on('message', message => {
@@ -12278,7 +12148,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
               bot.on('message', message => {
@@ -12294,7 +12164,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
@@ -12310,7 +12180,7 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
 
@@ -12341,7 +12211,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -12354,7 +12224,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -12367,7 +12237,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -12380,7 +12250,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -12393,7 +12263,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -12406,7 +12276,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -12419,7 +12289,7 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
             bot.on('message', message => {
@@ -12432,7 +12302,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
               bot.on('message', message => {
@@ -12445,7 +12315,7 @@ bot.on('message', message => {
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-                }   
+                }
                 });
 
                 bot.on('message', message => {
@@ -12458,7 +12328,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                  }   
+                  }
                   });
 
                   bot.on('message', message => {
@@ -12471,7 +12341,7 @@ bot.on('message', message => {
                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
-                    }   
+                    }
                     });
 
                     bot.on('message', message => {
@@ -12484,7 +12354,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                      }   
+                      }
                       });
 
                       bot.on('message', message => {
@@ -12497,7 +12367,7 @@ bot.on('message', message => {
                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                         .setTimestamp()
                         message.channel.send({embed})
-                        }   
+                        }
                         });
 
                         bot.on('message', message => {
@@ -12510,7 +12380,7 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                          }   
+                          }
                           });
 
                           bot.on('message', message => {
@@ -12523,7 +12393,7 @@ bot.on('message', message => {
                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                             .setTimestamp()
                             message.channel.send({embed})
-                            }   
+                            }
                             });
 
 
@@ -12535,7 +12405,7 @@ bot.on('message', message => {
 
 
                             bot.on('message', message => {
-            
+
                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt à deux mains")) {
                                 const Dégâts = (Math.floor((16)*Math.random()+10))
                                 const embed = new Discord.RichEmbed()
@@ -12546,11 +12416,11 @@ bot.on('message', message => {
                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                     .setTimestamp()
                                     message.channel.send({embed})
-                                  }   
+                                  }
                                 });
-  
+
                                 bot.on('message', message => {
-            
+
                                   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt à deux mains")) {
                                     const Dégâts = (Math.floor((16)*Math.random()+10))
                                     const embed = new Discord.RichEmbed()
@@ -12561,11 +12431,11 @@ bot.on('message', message => {
                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                         .setTimestamp()
                                         message.channel.send({embed})
-                                      }   
+                                      }
                                     });
 
                                     bot.on('message', message => {
-            
+
                                       if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt à deux mains")) {
                                         const Dégâts = (Math.floor((16)*Math.random()+10))
                                         const embed = new Discord.RichEmbed()
@@ -12576,11 +12446,11 @@ bot.on('message', message => {
                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                             .setTimestamp()
                                             message.channel.send({embed})
-                                          }   
+                                          }
                                         });
 
                                         bot.on('message', message => {
-            
+
                                           if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive de kobolt à deux mains")) {
                                             const Dégâts = (Math.floor((16)*Math.random()+10))
                                             const embed = new Discord.RichEmbed()
@@ -12591,11 +12461,11 @@ bot.on('message', message => {
                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                 .setTimestamp()
                                                 message.channel.send({embed})
-                                              }   
+                                              }
                                             });
 
                                             bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt à deux mains")) {
                                                 const Dégâts = (Math.floor((16)*Math.random()+10))
                                                 const embed = new Discord.RichEmbed()
@@ -12606,11 +12476,11 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                 bot.on('message', message => {
-            
+
                                       if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt à deux mains")) {
                                         const Dégâts = (Math.floor((16)*Math.random()+10))
                                         const embed = new Discord.RichEmbed()
@@ -12621,11 +12491,11 @@ bot.on('message', message => {
                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                             .setTimestamp()
                                             message.channel.send({embed})
-                                          }   
+                                          }
                                         });
 
                                         bot.on('message', message => {
-            
+
                                           if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt à deux mains")) {
                                             const Dégâts = (Math.floor((16)*Math.random()+10))
                                             const embed = new Discord.RichEmbed()
@@ -12636,11 +12506,11 @@ bot.on('message', message => {
                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                 .setTimestamp()
                                                 message.channel.send({embed})
-                                              }   
+                                              }
                                             });
 
                                             bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
@@ -12651,11 +12521,11 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                 bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
@@ -12666,11 +12536,11 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                 bot.on('message', message => {
-            
+
                                                   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt à une main")) {
                                                     const Dégâts = (Math.floor((9)*Math.random()+5))
                                                     const embed = new Discord.RichEmbed()
@@ -12681,11 +12551,11 @@ bot.on('message', message => {
                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                         .setTimestamp()
                                                         message.channel.send({embed})
-                                                      }   
+                                                      }
                                                     });
 
                                                     bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
@@ -12696,11 +12566,11 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                 bot.on('message', message => {
-            
+
                                                   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt à une main")) {
                                                     const Dégâts = (Math.floor((9)*Math.random()+5))
                                                     const embed = new Discord.RichEmbed()
@@ -12711,11 +12581,11 @@ bot.on('message', message => {
                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                         .setTimestamp()
                                                         message.channel.send({embed})
-                                                      }   
+                                                      }
                                                     });
 
                                                     bot.on('message', message => {
-            
+
                                                       if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague de kobolt à une main")) {
                                                         const Dégâts = (Math.floor((9)*Math.random()+5))
                                                         const embed = new Discord.RichEmbed()
@@ -12726,7 +12596,7 @@ bot.on('message', message => {
                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                             .setTimestamp()
                                                             message.channel.send({embed})
-                                                          }   
+                                                          }
                                                         });
 
 
@@ -12739,15 +12609,15 @@ bot.on('message', message => {
                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                    .setColor(3447003)
                                                    .addField(":scales: Bouclier de kobolt à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
-                                                
+
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                             bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt à une main")) {
                                                 const Dégâts = (Math.floor((9)*Math.random()+5))
                                                 const embed = new Discord.RichEmbed()
@@ -12758,7 +12628,7 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
 
@@ -12786,7 +12656,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 bot.on('message', message => {
@@ -12799,7 +12669,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -12812,7 +12682,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -12825,7 +12695,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -12838,7 +12708,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -12851,7 +12721,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -12864,10 +12734,10 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
-    
-  
+
+
 
 
 
@@ -12886,7 +12756,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
               bot.on('message', message => {
@@ -12899,7 +12769,7 @@ bot.on('message', message => {
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-                }   
+                }
                 });
 
                 bot.on('message', message => {
@@ -12912,7 +12782,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                  }   
+                  }
                   });
 
                   bot.on('message', message => {
@@ -12925,7 +12795,7 @@ bot.on('message', message => {
                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
-                    }   
+                    }
                     });
 
                     bot.on('message', message => {
@@ -12938,7 +12808,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                      }   
+                      }
                       });
 
                       bot.on('message', message => {
@@ -12951,7 +12821,7 @@ bot.on('message', message => {
                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                         .setTimestamp()
                         message.channel.send({embed})
-                        }   
+                        }
                         });
 
                         bot.on('message', message => {
@@ -12964,7 +12834,7 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                          }   
+                          }
                           });
 
                           bot.on('message', message => {
@@ -12977,7 +12847,7 @@ bot.on('message', message => {
                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                             .setTimestamp()
                             message.channel.send({embed})
-                            }   
+                            }
                             });
 
 
@@ -12985,7 +12855,7 @@ bot.on('message', message => {
 
 
                             bot.on('message', message => {
-            
+
                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure à deux mains")) {
                                 const Dégâts = (Math.floor((23)*Math.random()+18))
                                 const embed = new Discord.RichEmbed()
@@ -12996,11 +12866,11 @@ bot.on('message', message => {
                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                     .setTimestamp()
                                     message.channel.send({embed})
-                                  }   
+                                  }
                                 });
 
                                 bot.on('message', message => {
-            
+
                                   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure à deux mains")) {
                                     const Dégâts = (Math.floor((23)*Math.random()+18))
                                     const embed = new Discord.RichEmbed()
@@ -13011,11 +12881,11 @@ bot.on('message', message => {
                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                         .setTimestamp()
                                         message.channel.send({embed})
-                                      }   
+                                      }
                                     });
 
                                     bot.on('message', message => {
-            
+
                                       if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure à deux mains")) {
                                         const Dégâts = (Math.floor((23)*Math.random()+18))
                                         const embed = new Discord.RichEmbed()
@@ -13026,11 +12896,11 @@ bot.on('message', message => {
                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                             .setTimestamp()
                                             message.channel.send({embed})
-                                          }   
+                                          }
                                         });
 
                                         bot.on('message', message => {
-            
+
                                           if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure à deux mains")) {
                                             const Dégâts = (Math.floor((23)*Math.random()+18))
                                             const embed = new Discord.RichEmbed()
@@ -13041,11 +12911,11 @@ bot.on('message', message => {
                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                 .setTimestamp()
                                                 message.channel.send({embed})
-                                              }   
+                                              }
                                             });
 
                                             bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt supérieure à deux mains")) {
                                                 const Dégâts = (Math.floor((23)*Math.random()+18))
                                                 const embed = new Discord.RichEmbed()
@@ -13056,11 +12926,11 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                  bot.on('message', message => {
-            
+
                                   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur à deux mains")) {
                                     const Dégâts = (Math.floor((23)*Math.random()+18))
                                     const embed = new Discord.RichEmbed()
@@ -13071,11 +12941,11 @@ bot.on('message', message => {
                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                         .setTimestamp()
                                         message.channel.send({embed})
-                                      }   
+                                      }
                                     });
 
                                     bot.on('message', message => {
-            
+
                                       if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive de kobolt supérieur à deux mains")) {
                                         const Dégâts = (Math.floor((23)*Math.random()+18))
                                         const embed = new Discord.RichEmbed()
@@ -13086,11 +12956,11 @@ bot.on('message', message => {
                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                             .setTimestamp()
                                             message.channel.send({embed})
-                                          }   
+                                          }
                                         });
 
                                         bot.on('message', message => {
-            
+
                                           if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure à une main")) {
                                             const Dégâts = (Math.floor((12)*Math.random()+9))
                                             const embed = new Discord.RichEmbed()
@@ -13101,11 +12971,11 @@ bot.on('message', message => {
                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                 .setTimestamp()
                                                 message.channel.send({embed})
-                                              }   
+                                              }
                                             });
 
                                             bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure à une main")) {
                                                 const Dégâts = (Math.floor((12)*Math.random()+9))
                                                 const embed = new Discord.RichEmbed()
@@ -13116,11 +12986,11 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                 bot.on('message', message => {
-            
+
                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure à une main")) {
                                                 const Dégâts = (Math.floor((12)*Math.random()+9))
                                                 const embed = new Discord.RichEmbed()
@@ -13131,11 +13001,11 @@ bot.on('message', message => {
                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                     .setTimestamp()
                                                     message.channel.send({embed})
-                                                  }   
+                                                  }
                                                 });
 
                                                 bot.on('message', message => {
-            
+
                                                   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure à une main")) {
                                                     const Dégâts = (Math.floor((12)*Math.random()+9))
                                                     const embed = new Discord.RichEmbed()
@@ -13146,11 +13016,11 @@ bot.on('message', message => {
                                                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                         .setTimestamp()
                                                         message.channel.send({embed})
-                                                      }   
+                                                      }
                                                     });
 
                                                     bot.on('message', message => {
-            
+
                                                       if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt supérieure à une main")) {
                                                         const Dégâts = (Math.floor((12)*Math.random()+9))
                                                         const embed = new Discord.RichEmbed()
@@ -13161,11 +13031,11 @@ bot.on('message', message => {
                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                             .setTimestamp()
                                                             message.channel.send({embed})
-                                                          }   
+                                                          }
                                                         });
 
                                                         bot.on('message', message => {
-            
+
                                                           if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur à une main")) {
                                                             const Dégâts = (Math.floor((12)*Math.random()+9))
                                                             const embed = new Discord.RichEmbed()
@@ -13176,11 +13046,11 @@ bot.on('message', message => {
                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                 .setTimestamp()
                                                                 message.channel.send({embed})
-                                                              }   
+                                                              }
                                                             });
 
                                                             bot.on('message', message => {
-            
+
                                                               if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague de kobolt supérieure à une main")) {
                                                                 const Dégâts = (Math.floor((12)*Math.random()+9))
                                                                 const embed = new Discord.RichEmbed()
@@ -13191,11 +13061,11 @@ bot.on('message', message => {
                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                     .setTimestamp()
                                                                     message.channel.send({embed})
-                                                                  }   
+                                                                  }
                                                                 });
 
-                                                               
-                
+
+
                                                                     bot.on('message', message => {
                                                                       const Défense = (Math.floor((11)*Math.random()+5))
                                                           const HP = (Math.floor((41)*Math.random()+40))
@@ -13205,14 +13075,14 @@ bot.on('message', message => {
                                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                .setColor(3447003)
                                                                .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
-                                                            
+
                                                                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                 .setTimestamp()
                                                                 message.channel.send({embed})
-                                                              }   
+                                                              }
                                                             });
-        
-    
+
+
 
 
 
@@ -13235,7 +13105,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 
@@ -13249,7 +13119,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
   bot.on('message', message => {
@@ -13262,7 +13132,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -13275,7 +13145,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
        bot.on('message', message => {
@@ -13288,7 +13158,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -13301,7 +13171,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -13314,7 +13184,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
 
@@ -13328,7 +13198,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
               bot.on('message', message => {
@@ -13341,7 +13211,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
                   bot.on('message', message => {
@@ -13354,7 +13224,7 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
@@ -13367,7 +13237,7 @@ bot.on('message', message => {
                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
                           bot.on('message', message => {
@@ -13380,7 +13250,7 @@ bot.on('message', message => {
                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
 
                               bot.on('message', message => {
@@ -13393,7 +13263,7 @@ bot.on('message', message => {
                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
@@ -13406,12 +13276,12 @@ bot.on('message', message => {
                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
-              
-          
-      
-  
+
+
+
+
 
 
 
@@ -13428,7 +13298,7 @@ const embed = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
 .setTimestamp()
 message.channel.send({embed})
-}   
+}
 });
 
 
@@ -13445,7 +13315,7 @@ bot.on('message', message => {
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
-  }   
+  }
   });
 
 
@@ -13460,7 +13330,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
-    }   
+    }
     });
 
     bot.on('message', message => {
@@ -13474,7 +13344,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-      }   
+      }
       });
 
       bot.on('message', message => {
@@ -13488,7 +13358,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
         .setTimestamp()
         message.channel.send({embed})
-        }   
+        }
         });
 
         bot.on('message', message => {
@@ -13502,7 +13372,7 @@ bot.on('message', message => {
           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
           .setTimestamp()
           message.channel.send({embed})
-          }   
+          }
           });
 
           bot.on('message', message => {
@@ -13516,7 +13386,7 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
             message.channel.send({embed})
-            }   
+            }
             });
 
             bot.on('message', message => {
@@ -13530,7 +13400,7 @@ bot.on('message', message => {
               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
               .setTimestamp()
               message.channel.send({embed})
-              }   
+              }
               });
 
               bot.on('message', message => {
@@ -13544,7 +13414,7 @@ bot.on('message', message => {
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
                 message.channel.send({embed})
-                }   
+                }
                 });
 
                 bot.on('message', message => {
@@ -13558,7 +13428,7 @@ bot.on('message', message => {
                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                  }   
+                  }
                   });
 
                   bot.on('message', message => {
@@ -13572,7 +13442,7 @@ bot.on('message', message => {
                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                     .setTimestamp()
                     message.channel.send({embed})
-                    }   
+                    }
                     });
 
                     bot.on('message', message => {
@@ -13586,7 +13456,7 @@ bot.on('message', message => {
                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                      }   
+                      }
                       });
 
                       bot.on('message', message => {
@@ -13600,7 +13470,7 @@ bot.on('message', message => {
                         .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                         .setTimestamp()
                         message.channel.send({embed})
-                        }   
+                        }
                         });
 
                         bot.on('message', message => {
@@ -13614,7 +13484,7 @@ bot.on('message', message => {
                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                          }   
+                          }
                           });
 
 
@@ -13629,7 +13499,7 @@ bot.on('message', message => {
                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                             .setTimestamp()
                             message.channel.send({embed})
-                            }   
+                            }
                             });
 
 
@@ -13640,16 +13510,16 @@ bot.on('message', message => {
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                      .setColor(3447003)
                                                                                      .addField(":scales: Bouclier basique à deux mains :" , ":scales: C'est un bouclier peu protecteur constitué de bois et de métal mais très utile pour les débutants !\n\n:shield: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du bouclier basique à une main`")
-                                                                                  
+
                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})
-                                                                                    }   
+                                                                                    }
                                                                                   });
 
-                                                                                 
 
-                                                                                  
+
+
                                                                               bot.on('message', message => {
                                                                                 if (message.content.startsWith(prefix + "Parchemin de poison faible")) {
                                                                                   const embed = new Discord.RichEmbed()
@@ -13657,11 +13527,11 @@ bot.on('message', message => {
                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                      .setColor(3447003)
                                                                                      .addField(":scroll: Parchemin de poison faible :" , ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué d'oeil d'animal ainsi que de pierre de poison faible !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de lapin géant, 5 pierre de poison faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : 460 cols\n\n:large_orange_diamond: Prix de revente : 115 cols\n\:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de poison faible`\n\n:warning: Un seul enchantement actif possible")
-                
+
                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})
-                                                                                    }   
+                                                                                    }
                                                                                   });
 
                                                                                   bot.on('message', message => {
@@ -13671,11 +13541,11 @@ bot.on('message', message => {
                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                              .setColor(3447003)
                                                                                              .addField(":scroll: Parchemin de poison faible :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégât à un ennemis : `=Poison faible`")
-                                                                                    
+
                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                               .setTimestamp()
                                                                                               message.channel.send({embed})
-                                                                                            }   
+                                                                                            }
                                                                                           });
 
                                                                                           bot.on('message', message => {
@@ -13690,7 +13560,7 @@ bot.on('message', message => {
                                                                                                      .addField(":crossed_swords: Poison faible :" , ":crossed_swords: Vous n'arrivez pas à empoisonner votre cible...")
                                                                                                       .setTimestamp()
                                                                                                       message.channel.send({embed})}
-                                                                                                    
+
                                                                                               if(Poison > 51){
                                                                                                 const embed = new Discord.RichEmbed()
                                                                                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -13714,7 +13584,7 @@ bot.on('message', message => {
                                                                                                      .addField(":crossed_swords: Feu faible :" , ":crossed_swords: Vous n'arrivez pas à enflammer votre cible...")
                                                                                                       .setTimestamp()
                                                                                                       message.channel.send({embed})}
-                                                                                                    
+
                                                                                               if(Poison > 26){
                                                                                                 const embed = new Discord.RichEmbed()
                                                                                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -13743,7 +13613,7 @@ bot.on('message', message => {
                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                           .setTimestamp()
                                                                                           message.channel.send({embed})
-                                                                                        }   
+                                                                                        }
                                                                                       });
 
                                                                                       bot.on('message', message => {
@@ -13756,7 +13626,7 @@ bot.on('message', message => {
                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                               .setTimestamp()
                                                                                               message.channel.send({embed})
-                                                                                            }   
+                                                                                            }
                                                                                           });
 
                                                                                            bot.on('message', message => {
@@ -13769,7 +13639,7 @@ bot.on('message', message => {
                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                           .setTimestamp()
                                                                                           message.channel.send({embed})
-                                                                                        }   
+                                                                                        }
                                                                                       });
 
                                                                                       bot.on('message', message => {
@@ -13782,7 +13652,7 @@ bot.on('message', message => {
                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                               .setTimestamp()
                                                                                               message.channel.send({embed})
-                                                                                            }   
+                                                                                            }
                                                                                           });
 
 
@@ -13804,13 +13674,13 @@ bot.on('message', message => {
                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                  .setColor(3447003)
                                                                                                  .addField(":meat_on_bone: Ragoût de renard :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                 
+
                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                   .setTimestamp()
                                                                                                   message.channel.send({embed})
-                                                                                                }   
+                                                                                                }
                                                                                               });
-    
+
                                                                                               bot.on('message', message => {
                                                                                                 const HP = (Math.floor((11)*Math.random()+10))
                                                                                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
@@ -13819,13 +13689,13 @@ bot.on('message', message => {
                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                          .setColor(3447003)
                                                                                                          .addField(":meat_on_bone: Ragoût de lapin :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                         
+
                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                           .setTimestamp()
                                                                                                           message.channel.send({embed})
-                                                                                                        }   
+                                                                                                        }
                                                                                                       });
-            
+
                                                                                                       bot.on('message', message => {
                                                                                                         const HP = (Math.floor((11)*Math.random()+10))
                                                                                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de chien")) {
@@ -13834,13 +13704,13 @@ bot.on('message', message => {
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                  .setColor(3447003)
                                                                                                                  .addField(":meat_on_bone: Ragoût de chien :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                 
+
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
-                                                                                                                }   
+                                                                                                                }
                                                                                                               });
-                    
+
                                                                                                               bot.on('message', message => {
                                                                                                                 const HP = (Math.floor((11)*Math.random()+10))
                                                                                                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de sanglier")) {
@@ -13849,13 +13719,13 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":meat_on_bone: Ragoût de sanglier :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                         
+
                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
-                            
+
 
 
                                                                                                               bot.on('message', message => {
@@ -13868,15 +13738,15 @@ bot.on('message', message => {
                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                       .setTimestamp()
                                                                                                                       message.channel.send({embed})
-                                                                                                                    }   
+                                                                                                                    }
                                                                                                                   });
 
 
 
-                    
 
 
-                                                                                                                  
+
+
 
                                                                                                                             bot.on('message', message => {
                                                                                         const HP = (Math.floor((21)*Math.random()+20))
@@ -13886,14 +13756,14 @@ bot.on('message', message => {
                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                  .setColor(3447003)
                                                                                                  .addField(":meat_on_bone: Ragoût de taupe :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                 
+
                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                   .setTimestamp()
                                                                                                   message.channel.send({embed})
-                                                                                                }   
+                                                                                                }
                                                                                               });
-    
-                                
+
+
                                                                                               bot.on('message', message => {
                                                                                                 const HP = (Math.floor((21)*Math.random()+20))
                                                                                                     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
@@ -13902,13 +13772,13 @@ bot.on('message', message => {
                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                          .setColor(3447003)
                                                                                                          .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                         
+
                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                           .setTimestamp()
                                                                                                           message.channel.send({embed})
-                                                                                                        }   
+                                                                                                        }
                                                                                                       });
-            
+
                                                                                                       bot.on('message', message => {
                                                                                                         const HP = (Math.floor((41)*Math.random()+40))
                                                                                                             if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup de sang")) {
@@ -13917,18 +13787,18 @@ bot.on('message', message => {
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                  .setColor(3447003)
                                                                                                                  .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                 
+
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
-                                                                                                                }   
+                                                                                                                }
                                                                                                               });
-                    
-                
 
-                                      
-                           
-                    
+
+
+
+
+
 
                                                                                                       bot.on('message', message => {
                                                                                                           if (message.content === prefix + "Ragoût de loup") {
@@ -13937,11 +13807,11 @@ bot.on('message', message => {
                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                              .setColor(3447003)
                                                                                                              .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: C'est un ragoût constitué de viande de loup et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup, 2 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 60 cols\n\n:large_orange_diamond: Prix de revente : 15 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup`")
-                                                                                                         
+
                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                               .setTimestamp()
                                                                                                               message.channel.send({embed})
-                                                                                                            }   
+                                                                                                            }
                                                                                                           });
 
 
@@ -13953,15 +13823,15 @@ bot.on('message', message => {
                                                                                                                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                .setColor(3447003)
                                                                                                                .addField(":meat_on_bone: Ragoût de taupe :" , ":meat_on_bone: C'est un ragoût constitué de viande de taupe et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taupe, 2 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 60 cols\n\n:large_orange_diamond: Prix de revente : 15 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de taupe`")
-                                                                                                           
+
                                                                                                                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                 .setTimestamp()
                                                                                                                 message.channel.send({embed})
-                                                                                                              }   
+                                                                                                              }
                                                                                                             });
 
-                                                                                                          
-                        
+
+
 
                                                                                                           bot.on('message', message => {
                                                                                                                if (message.content === prefix + "Ragoût de loup de sang") {
@@ -13970,11 +13840,11 @@ bot.on('message', message => {
                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                  .setColor(3447003)
                                                                                                                  .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de loup de sang et d'estragon mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de loup de sang, 4 estragon\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de loup de sang`")
-                                                                                                                 
+
                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
-                                                                                                                }   
+                                                                                                                }
                                                                                                               });
 
                                                                                                               bot.on('message', message => {
@@ -13984,11 +13854,11 @@ bot.on('message', message => {
                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                   .setColor(3447003)
                                                                                                                   .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
-                                                                                                                  
+
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                    .setTimestamp()
                                                                                                                    message.channel.send({embed})
-                                                                                                                 }   
+                                                                                                                 }
                                                                                                                });
 
                                                                                                                bot.on('message', message => {
@@ -13998,11 +13868,11 @@ bot.on('message', message => {
                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                   .setColor(3447003)
                                                                                                                   .addField(":meat_on_bone: Ragoût de kobolt supérieur :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de ragondin et de d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de ragondin, 3 basilic, 5 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt supérieur`")
-                                                                                                                  
+
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                    .setTimestamp()
                                                                                                                    message.channel.send({embed})
-                                                                                                                 }   
+                                                                                                                 }
                                                                                                                });
 
                                                                                                                bot.on('message', message => {
@@ -14012,11 +13882,11 @@ bot.on('message', message => {
                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                   .setColor(3447003)
                                                                                                                   .addField(":meat_on_bone: Ragoût de kobolt géant rouge :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de ragondin et de d'oreille de kobolt géant rouge mais aussi de basilic et le meilleur des ragoûts du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 viande de ragondin, 5 basilic, 5 oreille de kobolt géant rouge\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 16\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de kobolt géant rouge`")
-                                                                                                                  
+
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                    .setTimestamp()
                                                                                                                    message.channel.send({embed})
-                                                                                                                 }   
+                                                                                                                 }
                                                                                                                });
 
                                                                                                                bot.on('message', message => {
@@ -14026,11 +13896,11 @@ bot.on('message', message => {
                                                                                                                   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                   .setColor(3447003)
                                                                                                                   .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de ragondin, 3 basilic\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du ragoût de ragondin`")
-                                                                                                                  
+
                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                    .setTimestamp()
                                                                                                                    message.channel.send({embed})
-                                                                                                                 }   
+                                                                                                                 }
                                                                                                                });
 
                                                                                                                bot.on('message', message => {
@@ -14041,11 +13911,11 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                         
+
                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
 
                                                                                                                       bot.on('message', message => {
@@ -14056,11 +13926,11 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
                                                                                                                                  .addField(":meat_on_bone: Ragoût de kobolt supérieur :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                                 
+
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
                                                                                                                               bot.on('message', message => {
@@ -14071,11 +13941,11 @@ bot.on('message', message => {
                                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                          .setColor(3447003)
                                                                                                                                          .addField(":meat_on_bone: Ragoût de kobolt géant rouge :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                                         
+
                                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                           .setTimestamp()
                                                                                                                                           message.channel.send({embed})
-                                                                                                                                        }   
+                                                                                                                                        }
                                                                                                                                       });
 
                                                                                                                       bot.on('message', message => {
@@ -14086,15 +13956,15 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":meat_on_bone: Ragoût de ragondin :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                         
+
                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
 
-                                                                                                              
-                            
+
+
 
                                                                                                                       bot.on('message', message => {
                                                                                                                         if (message.content.startsWith(prefix + "Potion imposante de soin")) {
@@ -14103,11 +13973,11 @@ bot.on('message', message => {
                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                              .setColor(3447003)
                                                                                                                              .addField(":syringe: Potion imposante de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion imposante de soin`")
-                                                             
+
                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                               .setTimestamp()
                                                                                                                               message.channel.send({embed})
-                                                                                                                            }   
+                                                                                                                            }
                                                                                                                           });
 
                                                                                                                           bot.on('message', message => {
@@ -14117,11 +13987,11 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
                                                                                                                                  .addField(":syringe: Potion vitale de kobolt :" , ":syringe: C'est une potion permettant de reprendre des HP ainsi que de gagner de la force et de la défense constitué de coeur et d'oeil d'animal et la meilleur de toute les potions du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 oeil de ragondin, 1 plantrus parfait, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt géant rouge\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 30\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion vitale de kobolt`")
-                                                                 
+
                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
                                                                                                                           bot.on('message', message => {
@@ -14134,7 +14004,7 @@ bot.on('message', message => {
                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
                                                                                                                               bot.on('message', message => {
@@ -14147,7 +14017,7 @@ bot.on('message', message => {
                                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                       .setTimestamp()
                                                                                                                                       message.channel.send({embed})
-                                                                                                                                    }   
+                                                                                                                                    }
                                                                                                                                   });
 
                                                                                                                           bot.on('message', message => {
@@ -14157,17 +14027,17 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":syringe: Potion imposante de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion imposante de régénération`")
-                                                         
+
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
 
 
-                            
 
-                                                                                                             
+
+
                                                                                                               bot.on('message', message => {
                                                                                                                 if (message.content.startsWith(prefix + "Potion moyenne de soin")) {
                                                                                                                   const embed = new Discord.RichEmbed()
@@ -14175,13 +14045,13 @@ bot.on('message', message => {
                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                      .setColor(3447003)
                                                                                                                      .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 2 plantrus médiocre, 1 plantrus commun, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de soin`")
-                                                     
+
                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                       .setTimestamp()
                                                                                                                       message.channel.send({embed})
-                                                                                                                    }   
+                                                                                                                    }
                                                                                                                   });
-                                                                                                                  
+
                                                                                                                   bot.on('message', message => {
                                                                                                                     if (message.content.startsWith(prefix + "Potion moyenne de régénération")) {
                                                                                                                       const embed = new Discord.RichEmbed()
@@ -14189,11 +14059,11 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 4 plantrus médiocre, 2 plantrus commun, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
-                                                         
+
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
 
                                                                                                                   bot.on('message', message => {
@@ -14203,11 +14073,11 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":syringe: Potion faible de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de renard, 1 coeur de chien, 1 coeur de lapin, 1 coeur de sanglier, 2 baie, 2 herbe médicinale faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5\n\n:large_orange_diamond: Prix d'achat : 100 cols\n\n:large_orange_diamond: Prix de revente : 25 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de soin`")
-                                                         
+
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
 
 
@@ -14218,11 +14088,11 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":syringe: Potion faible de force :" , ":syringe: C'est une potion permettant de gagner un peu de force constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de renard, 1 oeil de chien, 1 oeil de lapin, 1 oeil de sanglier, 2 baie, 2 herbe médicinale faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5\n\n:large_orange_diamond: Prix d'achat : 120 cols\n\n:large_orange_diamond: Prix de revente : 30 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de force`")
-                                                         
+
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
 
 
@@ -14233,11 +14103,11 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":syringe: Potion faible de défense :" , ":syringe: C'est une potion permettant de gagner un peu de défense constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de renard, 1 oeil de chien, 1 oeil de lapin, 1 oeil de sanglier, 2 baie, 2 herbe médicinale faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 5\n\n:large_orange_diamond: Prix d'achat : 120 cols\n\n:large_orange_diamond: Prix de revente : 30 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion faible de défense`")
-                                                         
+
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
 
                                                                                                                       bot.on('message', message => {
@@ -14247,11 +14117,11 @@ bot.on('message', message => {
                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                              .setColor(3447003)
                                                                                                                              .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: C'est une potion permettant de supprimer l'état 'Poison' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion ne guérit l'état 'Poison' que pour les niveaux de 1 à 25\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de poison`")
-                                                             
+
                                                                                                                              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                               .setTimestamp()
                                                                                                                               message.channel.send({embed})
-                                                                                                                            }   
+                                                                                                                            }
                                                                                                                           });
 
                                                                                                                           bot.on('message', message => {
@@ -14261,11 +14131,11 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
                                                                                                                                  .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: C'est une potion permettant de supprimer l'état 'Saignement' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion ne guérit l'état 'Saignement' que pour les niveaux de 1 à 25\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de saignement`")
-                                                                 
+
                                                                                                                                  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
                                                                                                                               bot.on('message', message => {
@@ -14275,14 +14145,14 @@ bot.on('message', message => {
                                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                      .setColor(3447003)
                                                                                                                                      .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: C'est une potion permettant de supprimer l'état 'Enflammer' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion ne guérit l'état 'Enflammer' que pour les niveaux de 1 à 25\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de brûlure`")
-                                                                     
+
                                                                                                                                      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                       .setTimestamp()
                                                                                                                                       message.channel.send({embed})
-                                                                                                                                    }   
+                                                                                                                                    }
                                                                                                                                   });
 
-                                                                                                                                  
+
 
 
 
@@ -14294,11 +14164,11 @@ bot.on('message', message => {
                                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                              .setColor(3447003)
                                                                                                                                              .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Poison' est supprimé !")
-                                                                                                                                            
+
                                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                               .setTimestamp()
                                                                                                                                               message.channel.send({embed})
-                                                                                                                                            }   
+                                                                                                                                            }
                                                                                                                                           });
 
                                                                                                                                           bot.on('message', message => {
@@ -14310,11 +14180,11 @@ bot.on('message', message => {
                                                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                      .setColor(3447003)
                                                                                                                                                      .addField(":syringe: Potion moyenne de régénération :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP par tour pendant `" +X+ "` tours !")
-                                                                                                                                                    
+
                                                                                                                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                                       .setTimestamp()
                                                                                                                                                       message.channel.send({embed})
-                                                                                                                                                    }   
+                                                                                                                                                    }
                                                                                                                                                   });
 
                                                                                                                                                    bot.on('message', message => {
@@ -14326,11 +14196,11 @@ bot.on('message', message => {
                                                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                      .setColor(3447003)
                                                                                                                                                      .addField(":syringe: Potion moyenne de régénération :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP par tour pendant `" +X+ "` tours !")
-                                                                                                                                                    
+
                                                                                                                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                                       .setTimestamp()
                                                                                                                                                       message.channel.send({embed})
-                                                                                                                                                    }   
+                                                                                                                                                    }
                                                                                                                                                   });
 
                                                                                                                                           bot.on('message', message => {
@@ -14341,14 +14211,14 @@ bot.on('message', message => {
                                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                              .setColor(3447003)
                                                                                                                                              .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Saignement' est supprimé !")
-                                                                                                                                            
+
                                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                               .setTimestamp()
                                                                                                                                               message.channel.send({embed})
-                                                                                                                                            }   
+                                                                                                                                            }
                                                                                                                                           });
-                                                                                                                      
-                                                                                                                      
+
+
                                                                                                                                           bot.on('message', message => {
                                                                                                                                             const HP = (Math.floor((51)*Math.random()+50))
                                                                                                                                                 if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion guérissante minuscule de brûlure")) {
@@ -14357,13 +14227,13 @@ bot.on('message', message => {
                                                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                      .setColor(3447003)
                                                                                                                                                      .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Enflammer' est supprimé !")
-                                                                                                                                                    
+
                                                                                                                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                                       .setTimestamp()
                                                                                                                                                       message.channel.send({embed})
-                                                                                                                                                    }   
+                                                                                                                                                    }
                                                                                                                                                   });
-                                                                                                                              
+
 
                                                                                                                       bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((3)*Math.random()+3))
@@ -14373,11 +14243,11 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
                                                                                                                                  .addField(":syringe: Potion faible de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
-                                                                                                                             
+
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
                                                                                                                               bot.on('message', message => {
@@ -14388,11 +14258,11 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
                                                                                                                                  .addField(":syringe: Potion légère de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
-                                                                                                                             
+
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
 
@@ -14404,11 +14274,11 @@ bot.on('message', message => {
                                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                          .setColor(3447003)
                                                                                                                                          .addField(":syringe: Potion faible de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
-                                                                                                                                         
+
                                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                           .setTimestamp()
                                                                                                                                           message.channel.send({embed})
-                                                                                                                                        }   
+                                                                                                                                        }
                                                                                                                                       });
 
                                                                                                                           bot.on('message', message => {
@@ -14419,14 +14289,14 @@ bot.on('message', message => {
                                                                                                                                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                      .setColor(3447003)
                                                                                                                                      .addField(":syringe: Potion légère de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
-                                                                                                                                     
+
                                                                                                                                       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                       .setTimestamp()
                                                                                                                                       message.channel.send({embed})
-                                                                                                                                    }   
+                                                                                                                                    }
                                                                                                                                   });
-    
-    
+
+
 
                                                                                                                       bot.on('message', message => {
                                                                                                                         const HP = (Math.floor((21)*Math.random()+30))
@@ -14436,11 +14306,11 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
                                                                                                                                  .addField(":syringe: Potion faible de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                                
+
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
                                                                                                                               bot.on('message', message => {
@@ -14451,11 +14321,11 @@ bot.on('message', message => {
                                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                          .setColor(3447003)
                                                                                                                                          .addField(":syringe: Potion légère de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                                        
+
                                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                           .setTimestamp()
                                                                                                                                           message.channel.send({embed})
-                                                                                                                                        }   
+                                                                                                                                        }
                                                                                                                                       });
 
 
@@ -14467,11 +14337,11 @@ bot.on('message', message => {
                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                  .setColor(3447003)
                                                                                                                                  .addField(":syringe: Potion moyenne de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                                
+
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
+                                                                                                                                }
                                                                                                                               });
 
                                                                                                                               bot.on('message', message => {
@@ -14482,11 +14352,11 @@ bot.on('message', message => {
                                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                          .setColor(3447003)
                                                                                                                                          .addField(":syringe: Potion imposante de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-                                                                                                                                        
+
                                                                                                                                           .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                           .setTimestamp()
                                                                                                                                           message.channel.send({embed})
-                                                                                                                                        }   
+                                                                                                                                        }
                                                                                                                                       });
 
                                                                                                                                       bot.on('message', message => {
@@ -14499,11 +14369,11 @@ bot.on('message', message => {
                                                                                                                                                  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                  .setColor(3447003)
                                                                                                                                                  .addField(":syringe: Potion vitale de kobolt :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +A+ "` HP !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +B+ "` points d'armure supplémentaires !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +C+ "` points de dégâts supplémentaires !")
-                                                                                                                                                
+
                                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                                   .setTimestamp()
                                                                                                                                                   message.channel.send({embed})
-                                                                                                                                                }   
+                                                                                                                                                }
                                                                                                                                               });
 
 
@@ -14514,13 +14384,13 @@ bot.on('message', message => {
                                                                                                                          .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                          .setColor(3447003)
                                                                                                                          .addField(":syringe: Potion légère de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de lapin géant, 1 coeur de taupe, 1 coeur de loup, 1 coeur de loup de sang, 4 herbe médicinale\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : 320 cols\n\n:large_orange_diamond: Prix de revente : 80 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de soin`")
-                                                         
+
                                                                                                                          .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                           .setTimestamp()
                                                                                                                           message.channel.send({embed})
-                                                                                                                        }   
+                                                                                                                        }
                                                                                                                       });
-                                    
+
                                                                                                                       bot.on('message', message => {
                                                                                                                       if (message.content.startsWith(prefix + "Potion légère de force")) {
                                                                                                                         const embed = new Discord.RichEmbed()
@@ -14531,7 +14401,7 @@ bot.on('message', message => {
                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                             .setTimestamp()
                                                                                                                             message.channel.send({embed})
-                                                                                                                          }   
+                                                                                                                          }
                                                                                                                         });
 
                                                                                                                         bot.on('message', message => {
@@ -14544,7 +14414,7 @@ bot.on('message', message => {
                                                                                                                                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                 .setTimestamp()
                                                                                                                                 message.channel.send({embed})
-                                                                                                                              }   
+                                                                                                                              }
                                                                                                                             });
 
                                                                                                                             bot.on('message', message => {
@@ -14557,7 +14427,7 @@ bot.on('message', message => {
                                                                                                                                    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                     .setTimestamp()
                                                                                                                                     message.channel.send({embed})
-                                                                                                                                  }   
+                                                                                                                                  }
                                                                                                                                 });
 
 
@@ -14568,11 +14438,11 @@ bot.on('message', message => {
                                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                            .setColor(3447003)
                                                                                                                            .addField(":syringe: Potion légère de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de lapin géant, 1 oeil de taupe, 1 oeil de loup, 1 oeil de loup de sang, 4 herbe médicinale\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriquer : 10\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la potion légère de défense`")
-                                                           
+
                                                                                                                            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                             .setTimestamp()
                                                                                                                             message.channel.send({embed})
-                                                                                                                          }   
+                                                                                                                          }
                                                                                                                         });
 
 
@@ -14584,11 +14454,11 @@ bot.on('message', message => {
                                                                                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                    .setColor(3447003)
                                                                                                                                    .addField(":syringe: Potion moyenne de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
-                                                                                                                               
+
                                                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                     .setTimestamp()
                                                                                                                                     message.channel.send({embed})
-                                                                                                                                  }   
+                                                                                                                                  }
                                                                                                                                 });
 
                                                                                                                                 bot.on('message', message => {
@@ -14599,11 +14469,11 @@ bot.on('message', message => {
                                                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                            .setColor(3447003)
                                                                                                                                            .addField(":syringe: Potion imposante de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
-                                                                                                                                       
+
                                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                             .setTimestamp()
                                                                                                                                             message.channel.send({embed})
-                                                                                                                                          }   
+                                                                                                                                          }
                                                                                                                                         });
 
                                                                                                                                 bot.on('message', message => {
@@ -14614,11 +14484,11 @@ bot.on('message', message => {
                                                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                            .setColor(3447003)
                                                                                                                                            .addField(":syringe: Potion moyenne de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
-                                                                                                                                       
+
                                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                             .setTimestamp()
                                                                                                                                             message.channel.send({embed})
-                                                                                                                                          }   
+                                                                                                                                          }
                                                                                                                                         });
 
                                                                                                                                         bot.on('message', message => {
@@ -14629,15 +14499,15 @@ bot.on('message', message => {
                                                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                            .setColor(3447003)
                                                                                                                                            .addField(":syringe: Potion imposante de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
-                                                                                                                                       
+
                                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                             .setTimestamp()
                                                                                                                                             message.channel.send({embed})
-                                                                                                                                          }   
+                                                                                                                                          }
                                                                                                                                         });
 
 
-                                                                                                                          
+
 
                                                                                                                                         bot.on('message', message => {
                                                                                                                                           const HP = (Math.floor((13)*Math.random()+12))
@@ -14647,14 +14517,14 @@ bot.on('message', message => {
                                                                                                                                                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                                    .setColor(3447003)
                                                                                                                                                    .addField(":scroll: Potion imposante de défense :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
-                                                                                                                                               
+
                                                                                                                                                     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                                     .setTimestamp()
                                                                                                                                                     message.channel.send({embed})
-                                                                                                                                                  }   
+                                                                                                                                                  }
                                                                                                                                                 });
 
-                                                               
+
                                                                                                                                         bot.on('message', message => {
                                                                                                                                           if (message.content === prefix + "Parchemin de feu rouge faible") {
                                                                                                                                          const embed = new Discord.RichEmbed()
@@ -14662,11 +14532,11 @@ bot.on('message', message => {
                                                                                                                                             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                             .setColor(3447003)
                                                                                                                                             .addField(":scroll: Parchemin de feu rouge faible :" , ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 24\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
-                                                                                                                                            
+
                                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                              .setTimestamp()
                                                                                                                                              message.channel.send({embed})
-                                                                                                                                           }   
+                                                                                                                                           }
                                                                                                                                          });
 
                                                                                                                                          bot.on('message', message => {
@@ -14677,17 +14547,17 @@ bot.on('message', message => {
                                                                                                                                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                                            .setColor(3447003)
                                                                                                                                            .addField(":syringe: Potion imposante de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
-                                                                                                                                       
+
                                                                                                                                             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                             .setTimestamp()
                                                                                                                                             message.channel.send({embed})
-                                                                                                                                          }   
+                                                                                                                                          }
                                                                                                                                         });
 
 
 
-                                                                                                                     
-                        
+
+
 
                                                                                                                           bot.on('message', message => {
                                                                                                                             if (message.content.startsWith(prefix + "Clef du donjon sauvage")) {
@@ -14699,10 +14569,10 @@ bot.on('message', message => {
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})
-                                                                                                                                }   
-                                                                                                                              }); 
+                                                                                                                                }
+                                                                                                                              });
 
- //////////////////////////////////////////////////////////////////OEUFS ET FAMILIERS///////////////////////////////////////////////////////////////////////    
+ //////////////////////////////////////////////////////////////////OEUFS ET FAMILIERS///////////////////////////////////////////////////////////////////////
 
 
                                                                                                                       bot.on('message', message => {
@@ -14712,18 +14582,18 @@ bot.on('message', message => {
                                                                                                                              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                                                                                              .setColor(3447003)
                                                                                                                              .addField(":egg: Oeuf déformé :" , ":egg: C'est un oeuf assez étrange, déformé qui renferme parfois un bébé animal trouvable dans le palier 1 !")
-                                 
+
                                                                                                                      .addField(":large_orange_diamond: Prix d'achat : 1000 cols")
                                                                                                                      .addField(":large_orange_diamond: Prix de revente : 250 cols")
                                                                                                                      .addField(":keyboard: Si vous trouvez ou acheter cette oeuf : `=Achat/découverte d'un oeuf déformé`")
                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                               .setTimestamp()
                                                                                                           message.channel.send({embed})
-                                                                                                                          }   
+                                                                                                                          }
                                                                                                                         });
 
                                        bot.on('message', message => {
-                                         const A = (Math.floor((100)*Math.random()+1))                          
+                                         const A = (Math.floor((100)*Math.random()+1))
                                                                                                                                                       if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf déformé")) {
                                                                                                                               if(A < 50){
                                                                                                                               const embed = new Discord.RichEmbed()
@@ -14733,7 +14603,7 @@ bot.on('message', message => {
      .addField(":egg: Oeuf déformé" , ":egg: En ouvrant l'oeuf déformé, vous ne découvrez aucun bébé animal malheureusement...")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                                      if(A > 51 & A < 60){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14743,7 +14613,7 @@ bot.on('message', message => {
                                                                                                                               .addField(":egg: Bébé lapin :" ,":egg: Confère 20 HP max supplémentaires !")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                                    if(A > 61 & A < 70){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14751,10 +14621,10 @@ bot.on('message', message => {
                                                                                                                                  .setColor(3447003)
      .addField(":egg: Oeuf déformé" , ":egg: En ouvrant l'oeuf déformé, vous découvrez un bébé renard !")
                                                                                                                               .addField(":egg: Bébé renard :" ,":egg: Après chacunes de vos attaques, le bébé renard attaque : =Bébé renard attaque")
-                                                                                                                              
+
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                                    if(A > 71 & A < 80){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14762,10 +14632,10 @@ bot.on('message', message => {
                                                                                                                                  .setColor(3447003)
      .addField(":egg: Oeuf déformé" , ":egg: En ouvrant l'oeuf déformé, vous découvrez un bébé chien !")
                                                                                                                               .addField(":egg: Bébé chien :" ,":egg: Confère 5 points de dégâts supplémentaires !")
-                                                                                                                           
+
                                                                                                                               .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                                    if(A > 81 & A < 90){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14775,7 +14645,7 @@ bot.on('message', message => {
                                                                                                                               .addField(":egg: Bébé sanglier :" ,":egg: Confère 2 points d'armure supplémentaires !")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                                    if(A > 91 & A < 95){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14785,7 +14655,7 @@ bot.on('message', message => {
                                                                                                                               .addField(":egg: Bébé taupe :" ,":egg: Confère 4 points d'armure supplémentaires !")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})} 
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                                    if(A > 96 & A < 98){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14795,7 +14665,7 @@ bot.on('message', message => {
                                                                                                                               .addField(":egg: Bébé loup :" ,":egg: Après chacunes de vos attaques, le bébé renard attaque : =Bébé loup attaque")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                                    if(A > 99){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14806,13 +14676,13 @@ bot.on('message', message => {
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                         message.channel.send({embed})}
-                                                                                                                          }   
+                                                                                                                          }
                                                                                                                         });
-                                         
+
 
       bot.on('message', message => {
-                                                 const A = (Math.floor((100)*Math.random()+1))  
-                                                    const B = (Math.floor((6)*Math.random()+3))  
+                                                 const A = (Math.floor((100)*Math.random()+1))
+                                                    const B = (Math.floor((6)*Math.random()+3))
                                                                                                                         if (message.content.startsWith(prefix + "Bébé renard attaque")) {
                                                                                                                          if(A < 50){
                                                                                                                               const embed = new Discord.RichEmbed()
@@ -14822,7 +14692,7 @@ bot.on('message', message => {
                                                                                                                               .addField(":crossed_swords: Bébé renard :" , ":crossed_swords: Le bébé renard tente de mordre sa cible mais il est trop petit et n'arrive pas à lui infliger de dégats...")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                            if(A > 51){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14832,13 +14702,13 @@ bot.on('message', message => {
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
 message.channel.send({embed})}
-                                                                                                                          }   
+                                                                                                                          }
                                                                                                                         });
 
-        
+
            bot.on('message', message => {
-                                                 const A = (Math.floor((100)*Math.random()+1))  
-                                                    const B = (Math.floor((13)*Math.random()+6))  
+                                                 const A = (Math.floor((100)*Math.random()+1))
+                                                    const B = (Math.floor((13)*Math.random()+6))
                                                                                                                         if (message.content.startsWith(prefix + "Bébé loup attaque")) {
                                                                                                                          if(A < 50){
                                                                                                                               const embed = new Discord.RichEmbed()
@@ -14848,7 +14718,7 @@ message.channel.send({embed})}
                                                                                                                               .addField(":crossed_swords: Bébé loup :" ,":crossed_swords: Le bébé loup essaye de bondir sur la cible mais se rate et retombe par terre et n'arrive pas à lui infliger de dégâts...")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                            if(A > 51){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14858,14 +14728,14 @@ message.channel.send({embed})}
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                                        message.channel.send({embed})}
-                                                                                                                          }   
+                                                                                                                          }
                                                                                                                         });
 
-             
-                     
+
+
            bot.on('message', message => {
-                                                 const A = (Math.floor((100)*Math.random()+1))  
-                                                    const B = (Math.floor((25)*Math.random()+12))  
+                                                 const A = (Math.floor((100)*Math.random()+1))
+                                                    const B = (Math.floor((25)*Math.random()+12))
                                                                                                                         if (message.content.startsWith(prefix + "Bébé loup de sang attaque")) {
                                                                                                                          if(A < 50){
                                                                                                                               const embed = new Discord.RichEmbed()
@@ -14875,7 +14745,7 @@ message.channel.send({embed})}
                                                                                                                               .addField(":crossed_swords: Bébé loup de sang :" ,":crossed_swords: Le bébé loup de sang hurle pour faire peur à l'ennemis avant de foncer dessus, mais il n'est pas assez rapide et n'arrive pas à lui infliger de dégâts...")
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
-                                                                                                                                  message.channel.send({embed})}   
+                                                                                                                                  message.channel.send({embed})}
                                                                                                                            if(A > 51){
                                                                                                                               const embed = new Discord.RichEmbed()
                                                                                                                               .setAuthor(message.author.username , message.author.avatarURL)
@@ -14885,13 +14755,13 @@ message.channel.send({embed})}
                                                                                                                                   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                                                                                                                                   .setTimestamp()
                                                                                                       message.channel.send({embed})}
-                                                                                                                          }   
+                                                                                                                          }
                                                                                                                         });
 
 
 
 
- //////////////////////////////////////////////////////////////////DONJON///////////////////////////////////////////////////////////////////////    
+ //////////////////////////////////////////////////////////////////DONJON///////////////////////////////////////////////////////////////////////
 
 
 
@@ -14909,7 +14779,7 @@ message.channel.send({embed})}
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                                  .setTimestamp()
                                    message.channel.send({embed})
-      }   
+      }
     });
 
 
@@ -14983,7 +14853,7 @@ bot.on('message', message => {
                                  .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
                                  .setTimestamp()
                                   message.channel.send({embed})}
-                            }   
+                            }
     });
 
 
@@ -15007,13 +14877,13 @@ bot.on('message', message => {
       .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                                  .setTimestamp()
                                  message.channel.send({embed})}
-          
+
     });
 
-                               
-  //////////////////////////////////////////////////////////////////MATERIAUX ET OBJETS SUR LES MONSTRES///////////////////////////////////////////////////////////////////////    
 
-                             
+  //////////////////////////////////////////////////////////////////MATERIAUX ET OBJETS SUR LES MONSTRES///////////////////////////////////////////////////////////////////////
+
+
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Viande de renard")) {
       const embed = new Discord.RichEmbed()
@@ -15027,7 +14897,7 @@ bot.on('message', message => {
           .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
           .setTimestamp()
           message.channel.send({embed})
-        }   
+        }
       });
 
 
@@ -15044,7 +14914,7 @@ bot.on('message', message => {
               .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -15061,7 +14931,7 @@ bot.on('message', message => {
                   .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
 
@@ -15078,7 +14948,7 @@ bot.on('message', message => {
                       .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
 
@@ -15095,7 +14965,7 @@ bot.on('message', message => {
                           .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                        bot.on('message', message => {
@@ -15111,7 +14981,7 @@ bot.on('message', message => {
           .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
           .setTimestamp()
           message.channel.send({embed})
-        }   
+        }
       });
 
 
@@ -15128,7 +14998,7 @@ bot.on('message', message => {
               .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
 
@@ -15145,7 +15015,7 @@ bot.on('message', message => {
           .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
           .setTimestamp()
           message.channel.send({embed})
-        }   
+        }
       });
 
 
@@ -15162,7 +15032,7 @@ bot.on('message', message => {
               .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
               .setTimestamp()
               message.channel.send({embed})
-            }   
+            }
           });
 
           bot.on('message', message => {
@@ -15178,7 +15048,7 @@ bot.on('message', message => {
                   .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
                   .setTimestamp()
                   message.channel.send({embed})
-                }   
+                }
               });
 
 
@@ -15195,7 +15065,7 @@ bot.on('message', message => {
                       .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
                       .setTimestamp()
                       message.channel.send({embed})
-                    }   
+                    }
                   });
 
 
@@ -15212,11 +15082,11 @@ bot.on('message', message => {
                           .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
 
-                      
+
                   bot.on('message', message => {
                     if (message.content === prefix + "Peau de lapin") {
                       const embed = new Discord.RichEmbed()
@@ -15230,10 +15100,10 @@ bot.on('message', message => {
                           .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
-                      
+
                   bot.on('message', message => {
                      if (message.content === prefix + "Peau de loup") {
                       const embed = new Discord.RichEmbed()
@@ -15247,11 +15117,11 @@ bot.on('message', message => {
                           .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
 
-                      
+
                   bot.on('message', message => {
                      if (message.content === prefix + "Peau de loup de sang") {
                       const embed = new Discord.RichEmbed()
@@ -15265,7 +15135,7 @@ bot.on('message', message => {
                           .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
                           .setTimestamp()
                           message.channel.send({embed})
-                        }   
+                        }
                       });
 
                       bot.on('message', message => {
@@ -15281,7 +15151,7 @@ bot.on('message', message => {
                               .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
 
@@ -15300,7 +15170,7 @@ bot.on('message', message => {
                               .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                               .setTimestamp()
                               message.channel.send({embed})
-                            }   
+                            }
                           });
 
                           bot.on('message', message => {
@@ -15316,7 +15186,7 @@ bot.on('message', message => {
                                   .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                                   .setTimestamp()
                                   message.channel.send({embed})
-                                }   
+                                }
                               });
 
                               bot.on('message', message => {
@@ -15332,7 +15202,7 @@ bot.on('message', message => {
                                       .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                                       .setTimestamp()
                                       message.channel.send({embed})
-                                    }   
+                                    }
                                   });
 
                                   bot.on('message', message => {
@@ -15348,9 +15218,9 @@ bot.on('message', message => {
                                           .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                                           .setTimestamp()
                                           message.channel.send({embed})
-                                        }   
+                                        }
                                       });
-    
+
 
                                       bot.on('message', message => {
                                            if (message.content === prefix + "Coeur de lapin géant") {
@@ -15365,7 +15235,7 @@ bot.on('message', message => {
                                               .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                                               .setTimestamp()
                                               message.channel.send({embed})
-                                            }   
+                                            }
                                           });
 
                                           bot.on('message', message => {
@@ -15381,11 +15251,11 @@ bot.on('message', message => {
                                                   .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
-                                              
+
                                           bot.on('message', message => {
                                              if (message.content === prefix + "Coeur de loup de sang") {
                                               const embed = new Discord.RichEmbed()
@@ -15399,11 +15269,11 @@ bot.on('message', message => {
                                                   .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
-                                              
+
                                           bot.on('message', message => {
                                             if (message.content.startsWith(prefix + "Coeur de taupe")) {
                                               const embed = new Discord.RichEmbed()
@@ -15417,7 +15287,7 @@ bot.on('message', message => {
                                                   .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
                                                   .setTimestamp()
                                                   message.channel.send({embed})
-                                                }   
+                                                }
                                               });
 
 
@@ -15434,7 +15304,7 @@ bot.on('message', message => {
                                                       .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                       .setTimestamp()
                                                       message.channel.send({embed})
-                                                    }   
+                                                    }
                                                   });
 
 
@@ -15451,7 +15321,7 @@ bot.on('message', message => {
                                                           .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                           .setTimestamp()
                                                           message.channel.send({embed})
-                                                        }   
+                                                        }
                                                       });
 
 
@@ -15468,7 +15338,7 @@ bot.on('message', message => {
                                                               .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                               .setTimestamp()
                                                               message.channel.send({embed})
-                                                            }   
+                                                            }
                                                           });
 
 
@@ -15485,7 +15355,7 @@ bot.on('message', message => {
                                                                   .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                                   .setTimestamp()
                                                                   message.channel.send({embed})
-                                                                }   
+                                                                }
                                                               });
 
 
@@ -15502,7 +15372,7 @@ bot.on('message', message => {
                                                                       .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                                       .setTimestamp()
                                                                       message.channel.send({embed})
-                                                                    }   
+                                                                    }
                                                                   });
 
 
@@ -15519,11 +15389,11 @@ bot.on('message', message => {
                                                                           .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                                           .setTimestamp()
                                                                           message.channel.send({embed})
-                                                                        }   
+                                                                        }
                                                                       });
 
 
-                                                                      
+
                                                                   bot.on('message', message => {
                                                                     if (message.content.startsWith(prefix + "Oeil de taupe")) {
                                                                       const embed = new Discord.RichEmbed()
@@ -15537,10 +15407,10 @@ bot.on('message', message => {
                                                                           .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                                           .setTimestamp()
                                                                           message.channel.send({embed})
-                                                                        }   
+                                                                        }
                                                                       });
-    
-                                                                      
+
+
                                                                   bot.on('message', message => {
                                                                      if (message.content === prefix + "Oeil de loup de sang") {
                                                                       const embed = new Discord.RichEmbed()
@@ -15554,7 +15424,7 @@ bot.on('message', message => {
                                                                           .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
                                                                           .setTimestamp()
                                                                           message.channel.send({embed})
-                                                                        }   
+                                                                        }
                                                                       });
 
 
@@ -15571,7 +15441,7 @@ bot.on('message', message => {
                                                                               .setImage("https://i.pinimg.com/736x/d2/61/db/d261db083d29d647989bc5ff1c7f8ea3--baby-ballet-evan.jpg")
                                                                               .setTimestamp()
                                                                               message.channel.send({embed})
-                                                                            }   
+                                                                            }
                                                                           });
 
 
@@ -15588,12 +15458,12 @@ bot.on('message', message => {
                                                                                   .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
                                                                                   .setTimestamp()
                                                                                   message.channel.send({embed})
-                                                                                }   
+                                                                                }
                                                                               });
 
 
 
-                                                                              
+
                                                                           bot.on('message', message => {
                                                                             if (message.content.startsWith(prefix + "Gelatine")) {
                                                                               const embed = new Discord.RichEmbed()
@@ -15607,11 +15477,11 @@ bot.on('message', message => {
                                                                                   .setImage("https://png.icons8.com/color/1600/jelly.png")
                                                                                   .setTimestamp()
                                                                                   message.channel.send({embed})
-                                                                                }   
+                                                                                }
                                                                               });
 
 
-                                                                                                            
+
                                                                           bot.on('message', message => {
                                                                             if (message.content.startsWith(prefix + "Pierre de poison faible")) {
                                                                               const embed = new Discord.RichEmbed()
@@ -15625,7 +15495,7 @@ bot.on('message', message => {
                                                                                   .setImage("https://thumbs.dreamstime.com/b/ic-ne-naturelle-verte-de-minerais-dans-le-style-de-bande-dessin%C3%A9e-d-isolement-sur-le-fond-blanc-minerais-et-actions-pr%C3%A9cieux-de-85611087.jpg")
                                                                                   .setTimestamp()
                                                                                   message.channel.send({embed})
-                                                                                }   
+                                                                                }
                                                                               });
 
 
@@ -15642,7 +15512,7 @@ bot.on('message', message => {
                                                                                       .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
                                                                                       .setTimestamp()
                                                                                       message.channel.send({embed})
-                                                                                    }   
+                                                                                    }
                                                                                   });
 
                                                                                   bot.on('message', message => {
@@ -15658,7 +15528,7 @@ bot.on('message', message => {
                                                                                           .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
                                                                                           .setTimestamp()
                                                                                           message.channel.send({embed})
-                                                                                        }   
+                                                                                        }
                                                                                       });
 
                                                                                   bot.on('message', message => {
@@ -15675,7 +15545,7 @@ bot.on('message', message => {
                                                                                           .setImage("https://png.icons8.com/color/1600/gold-ore.png")
                                                                                           .setTimestamp()
                                                                                           message.channel.send({embed})
-                                                                                        }   
+                                                                                        }
                                                                                       });
 
 
@@ -15694,7 +15564,7 @@ bot.on('message', message => {
                                                                                               .setImage("https://png.icons8.com/color/1600/gold-ore.png")
                                                                                               .setTimestamp()
                                                                                               message.channel.send({embed})
-                                                                                            }   
+                                                                                            }
                                                                                           });
 
 
@@ -15712,7 +15582,7 @@ bot.on('message', message => {
                                                                                                   .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
                                                                                                   .setTimestamp()
                                                                                                   message.channel.send({embed})
-                                                                                                }   
+                                                                                                }
                                                                                               });
 
                                                                                               bot.on('message', message => {
@@ -15729,12 +15599,12 @@ bot.on('message', message => {
                                                                                                       .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
                                                                                                       .setTimestamp()
                                                                                                       message.channel.send({embed})
-                                                                                                    }   
+                                                                                                    }
                                                                                                   });
 
 
                                                                                                   bot.on('message', message => {
-                                                                                                
+
                                                                                                       if (message.content === prefix + "Herbe médicinale faible") {
                                                                                                       const embed = new Discord.RichEmbed()
                                                                                                       .setAuthor(message.author.username , message.author.avatarURL)
@@ -15747,11 +15617,11 @@ bot.on('message', message => {
                                                                                                           .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
                                                                                                           .setTimestamp()
                                                                                                           message.channel.send({embed})
-                                                                                                        }   
+                                                                                                        }
                                                                                                       });
 
                                                                                                       bot.on('message', message => {
-                                                                                      
+
                                                                                                            if (message.content === prefix + "Herbe médicinale") {
                                                                                                           const embed = new Discord.RichEmbed()
                                                                                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -15764,7 +15634,7 @@ bot.on('message', message => {
                                                                                                               .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
                                                                                                               .setTimestamp()
                                                                                                               message.channel.send({embed})
-                                                                                                            }   
+                                                                                                            }
                                                                                                           });
 
                                                                                                           bot.on('message', message => {
@@ -15781,19 +15651,19 @@ bot.on('message', message => {
                                                                                                                   .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})
-                                                                                                                }   
+                                                                                                                }
                                                                                                               });
-                
 
 
 
 
 
-//////////////////////////////////////////////////////////////////Meurtres///////////////////////////////////////////////////////////////////////                         
+
+//////////////////////////////////////////////////////////////////Meurtres///////////////////////////////////////////////////////////////////////
                                     bot.on('message', message => {
-                                      if (message.content.startsWith(prefix + "Meurtre")) {            
+                                      if (message.content.startsWith(prefix + "Meurtre")) {
                                             const A = (Math.floor((4)*Math.random()+0))
-                                            const Cols = 25*A              
+                                            const Cols = 25*A
                                             const B = (Math.floor((2-(0.85))*Math.random()))
                                             const C = (Math.floor((2-(0.85))*Math.random()))
                                             const D = (Math.floor((2-(0.85))*Math.random()))
@@ -15827,7 +15697,7 @@ bot.on('message', message => {
                                             message.channel.send({embed})
                                       }
                                     })
-//////////////////////////////////////////////////////////////////Commandes pour montrer des expressions//////////////////////////////////////////////////////////////////////   
+//////////////////////////////////////////////////////////////////Commandes pour montrer des expressions//////////////////////////////////////////////////////////////////////
 
 
                                     bot.on('message', message => {
@@ -15913,7 +15783,7 @@ bot.on('message', message => {
                                                                          .setImage("https://i.pinimg.com/originals/10/79/2c/10792c623fab3e96b1f7b0a332aed2fd.jpg")
                                                                           .setTimestamp()
                                                                           message.channel.send({embed}) }
-}                 
+}
                                         });
 
 
@@ -15921,7 +15791,7 @@ bot.on('message', message => {
 
 
 
-                                        
+
                                     bot.on('message', message => {
                                       if (message.content.startsWith(prefix + "Boobs")) {
                                         const image = (Math.floor(100)*Math.random()+1)
@@ -16005,7 +15875,7 @@ bot.on('message', message => {
                                                                          .setImage("http://blog-imgs-64.fc2.com/y/a/r/yaraon/gx8cFeB.png")
                                                                           .setTimestamp()
                                                                           message.channel.send({embed}) }
-}                 
+}
                                         });
 
 
@@ -16067,8 +15937,8 @@ bot.on('message', message => {
                                                                    .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/a/ab/TheGleamEyes.png/revision/latest?cb=20170611161342&path-prefix=fr")
                                                                     .setTimestamp()
                                                                     message.channel.send({embed}) }
-                                                                   
-}                 
+
+}
                                         });
 
 
@@ -16160,8 +16030,8 @@ bot.on('message', message => {
                                                              .setImage("https://www.le-pradet.fr/wp-content/uploads/2018/02/neige-4-1.jpg")
                                                               .setTimestamp()
                                                               message.channel.send({embed}) }
-                                                          
-}                 
+
+}
                                         });
 
 
@@ -16181,7 +16051,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Volonté de vivre")) {   
+  if (message.content.startsWith(prefix + "Volonté de vivre")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16201,7 +16071,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Récompenses journalières")) {   
+  if (message.content.startsWith(prefix + "Récompenses journalières")) {
          if (talkedRecently.has(message.author.id+10145)) {
                               const embed = new Discord.RichEmbed()
                                .setAuthor(message.author.username , message.author.avatarURL)
@@ -16234,7 +16104,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Coffre secret event")) {   
+  if (message.content.startsWith(prefix + "Coffre secret event")) {
   const B = (Math.floor((3*1)*Math.random()))
    const E = (Math.floor((3*1)*Math.random()+1))
       const A = (Math.floor((3*1)*Math.random()+1))
@@ -16291,13 +16161,13 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Formulaire")) {   
+  if (message.content.startsWith(prefix + "Formulaire")) {
     message.channel.send("```**__۝▬▬๑₪۩۞『Le nom de votre RP』۞۩₪๑▬▬۝__**\n\n**Thème et éléments : [Ecrivez =Thème RP]**\n\n**Contexte de votre RP :\n\n**Niveau conseillé d'avoir : [Ecrivez =Thème RP]**\n\n**Durée de votre RP : [Ecrivez le =Thème RP]**\n\n**Informations spplémentaires : [Optionnel si vous voulez donner plus d'informations]**\n\n**__۝▬▬๑₪۩۞『Lien de votre RP』۞۩₪๑▬▬۝__**```")
         }
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Thème RP")) {   
+  if (message.content.startsWith(prefix + "Thème RP")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16317,12 +16187,12 @@ bot.on('message', message => {
 
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Musiques")) {   
+    if (message.content.startsWith(prefix + "Musiques")) {
    message.channel.send("Tu souhaites RP avec l'ambiance qui va avec ?\n\nIl suffit tout simplement d'écrire `!play [URL Youtube]` dans un salon vocal !\n\nMusique de combat SAO : `https://www.youtube.com/watch?v=n0AY4ebPy4w&t`\n\nMusique calme SAO : `https://www.youtube.com/watch?v=z5jf1jornm8`\n\nMusique d'ambiance taverne : `https://www.youtube.com/watch?v=dd10InDdvJE` ou `https://www.youtube.com/watch?v=tNZXDUZu2To`\n\nMusique d'ambiance ville/village : `https://www.youtube.com/watch?v=xu2pESvXcmM`\n\nMusique d'ambiance extérieur [Forêt surtout] : `https://www.youtube.com/watch?v=xHP2GgxYddY`\n\nMusique d'ambiance extérieur [Grotte surtout] : `https://www.youtube.com/watch?v=U4tbEJsi7ps` ou `https://www.youtube.com/watch?v=_2AAR9jRc7I`\n\nMusique d'ambiance de feu de camp / orage / pluie : `https://www.youtube.com/watch?v=3sL0omwElxw`\n\nMusique d'ambiance de port : `https://www.youtube.com/watch?v=frEJTGfLOhM`")
           }
     }) ;
 
-/////////////////////////////////////////////////////////////////////LISTE D'OBJETS [PRIX + CRAFT]//////////////////////////////////////////////////////////////////   
+/////////////////////////////////////////////////////////////////////LISTE D'OBJETS [PRIX + CRAFT]//////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   if (message.content === prefix + "Liste") {
@@ -16334,22 +16204,22 @@ bot.on('message', message => {
     message.channel.send({embed})
         }
   }) ;
-      
+
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 1")) {   
+  if (message.content.startsWith(prefix + "Liste des matériaux 1")) {
  message.channel.send("```Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nViande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nViande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nViande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPeau de lapin :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de renard :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPeau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nPeau de loup :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nPeau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\nCoeur de lapin :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\nCoeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\nCoeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\nCoeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\nOeil de lapin :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\nSuite en écrivant :\n=Liste des matériaux 2```")
         }
   }) ;
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 2")) {   
+  if (message.content.startsWith(prefix + "Liste des matériaux 2")) {
  message.channel.send("```Oeil de taupe :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\nGelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nCroc de loup :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nPierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 12 cols]\n\nCuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nCuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nBois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPersil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nEstragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nHerbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nHerbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBaie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nBasilic : \nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlantrus médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlantrus commun :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nPlantrus rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nPlantrus parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nCuivre rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nCuivre parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nBois de frêne rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nViande de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nPeau de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nCoeur de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nOeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nOreille de kobolt :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nSuite en écrivant :\n=Liste des matériaux 3```")
         }
   }) ;
 
   bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 3")) {   
+  if (message.content.startsWith(prefix + "Liste des matériaux 3")) {
  message.channel.send("```Echantillon de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nDent de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOreille de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nEchantillon de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nDent de kobolt géant rouge:\nCoûts : [Achat : X cols] [Revente : X cols]```")
         }
   }) ;
@@ -16357,61 +16227,61 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 1")) {   
+  if (message.content.startsWith(prefix + "Liste d'équipements 1")) {
  message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\nEpaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epaulière en peaux arrachée]\n\nCape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\nPlastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\nGantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Gantelets en peau arrachée]\n\nCeinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\nJambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Jambières en peau arrachée]\n\nBottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\nAnneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\nAmulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\nCasque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\nEpaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\nCape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\nPlastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\nGantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Gantelets en peau résistante]\n\nCeinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Ceinture en peau résistante]\n\nSuite en écrivant :\n=Liste d'équipements 2```")
         }
   }) ;
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 2")) {   
+  if (message.content.startsWith(prefix + "Liste d'équipements 2")) {
  message.channel.send("```Jambières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Jambières en peau résistante]\n\nBottes en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Bottes en peau résistante]\n\nAnneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Anneau du croc]\n\nAmulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Amulette du croc]\n\nCasque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Casque rouillé]\n\nEpaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epaulières rouillées]\n\nCape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cape endommagée]\n\nPlastron rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Plastron rouillé]\n\nGantelets rouillés :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Gantelets rouillés]\n\nCeinture rouillée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ceinture rouillée]\n\nJambières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Jambières rouillées]\n\nBottes rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Bottes rouillées]\n\nAnneau rouillé :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Anneau rouillé]\n\nAmulette rouillée :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Amulette rouillée]\n\nCasque du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Casque du clan des loups]\n\nEpaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\nCape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\nPlastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\nSuite en écrivant :\n=Liste d'équipements 3```")
         }
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 3")) {   
+  if (message.content.startsWith(prefix + "Liste d'équipements 3")) {
  message.channel.send("```Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\nCeinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\nJambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\nBottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\nAnneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\nAmulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\nCasque de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de kobolt]\n\nEpaulières de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epaulières de kobolt]\n\nCape de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt]\n\nPlastron de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt]\n\nGantelets de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt]\n\nCeinture de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt]\n\nJambières de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt]\n\nBottes de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt]\n\nAmulette de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt]\n\nAnneau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt]\n\nCasque de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de kobolt supérieur]\n\nSuite en écrivant :\n=Liste d'équipements 4```")
         }
   }) ;
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Liste d'équipements 4")) {   
+    if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
    message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Épaulières de kobolt supérieures]\n\nCape de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt supérieure]\n\nPlastron de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt supérieur]\n\nGantelets de kobolt supérieurs :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\nCeinture de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt supérieure]\n\nJambières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt supérieures]\n\nBottes de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt supérieures]\n\nAmulette de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt supérieure]\n\nAnneau de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt supérieur]\n\nCasque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de mineur kobolt]\n\nBottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes d'exploration kobolt]```")
           }
     }) ;
-  
+
 
 
 
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 1")) {   
+  if (message.content.startsWith(prefix + "Liste d'armes 1")) {
  message.channel.send("```Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\nEpée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\nMasse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\nMasse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\nHache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\nHache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\nRapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\nRapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\nCimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\nCimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\nKatana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\nKatana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\nGlaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\nDague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\nBouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]\n\nEpée du clan des loups à deux mains :\nCoûts : [Revente : 100 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 2```")
         }
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 2")) {   
+  if (message.content.startsWith(prefix + "Liste d'armes 2")) {
  message.channel.send("```Epée du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\nEpée du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups à une main]\n\nRapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\nRapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\nHache du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hache du clan des loups à deux mains]\n\nHache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\nMasse du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Masse du clan des loups à deux mains]\n\nMasse du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups à une main]\n\nKatana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\nKatana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\nCimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\nCimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\nDague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\nSuite en écrivant :\n=Liste d'armes 3```")
         }
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 3")) {   
+  if (message.content.startsWith(prefix + "Liste d'armes 3")) {
  message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\nGlaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\nFaux du roi déchus à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchus à deux mains]\n\nBouclier du roi déchus à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier du roi déchus à une main]\n\nEpée de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à une main]\n\nEpée de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à deux mains]\n\nHache de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à une main]\n\nHache de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à deux mains]\n\nMasse de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à une main]\n\nMasse de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à deux mains]\n\nRapière de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à une main]\n\nRapière de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à deux mains]\n\nCimeterre de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à une main]\n\nCimeterre de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 4```")
         }
   }) ;
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Liste d'armes 4")) {   
+    if (message.content.startsWith(prefix + "Liste d'armes 4")) {
    message.channel.send("```\n\nKatana de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt à une main]\n\nKatana de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt à deux mains]\n\nDague de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Dague de kobolt à une main]\n\nBouclier de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier de kobolt à une main]\n\nGlaive de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Glaive de kobolt à deux mains]\n\nEpée de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\nEpée de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\nHache de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\nHache de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\nMasse de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\nMasse de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\nRapière de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\nRapière de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 5```")
           }
     }) ;
 
     bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Liste d'armes 5")) {   
+      if (message.content.startsWith(prefix + "Liste d'armes 5")) {
      message.channel.send("```Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\nCimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\nKatana de kobolt supérieur à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\nKatana de kobolt supérieur à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\nDague de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\nBouclier de kobolt supérieur à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\nGlaive de kobolt supérieur à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]```")
             }
       }) ;
@@ -16424,7 +16294,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {   
+  if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {
  message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur\n\nRagoûts de ragondin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de ragondin]\n\nRagoûts de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt géant rouge]```")
         }
   }) ;
@@ -16436,18 +16306,18 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des potions 1")) {   
+  if (message.content.startsWith(prefix + "Liste des potions 1")) {
  message.channel.send("```Potion faible de soin :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\nInfos : [=Potion faible de soin]\n\nPotion faible de force :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de force]\n\nPotion faible de défense :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de défense]\n\nPotion légère de soin :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Potion légère de soin]\n\nPotion légère de force :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de force]\n\nPotion légère de défense :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de défense]\n\nPotion moyenne de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de soin]\n\nPotion régénération de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de régénération]\n\nPotion moyenne de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de force]\n\nPotion moyenne de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de défense]\n\nPotion guérissante minuscule de poison :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de poison]\n\nPotion guérissante minuscule de saignement :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\nPotion guérissante minuscule de brûlure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\nPotion imposante de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de soin]\n\nPotion imposante de régénération :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de régénération]\n\nPotion imposante de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de force]\n\nSuite en écrivant :\n=Liste des potions 2```")
         }
   }) ;
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Liste des potions 2")) {   
+    if (message.content.startsWith(prefix + "Liste des potions 2")) {
    message.channel.send("```Potion imposante de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de défense]\n\nPotion vitale de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion vitale de kobolt]```")
           }
     }) ;
-      
-      
+
+
 
 
 
@@ -16455,7 +16325,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des parchemins 1")) {   
+  if (message.content.startsWith(prefix + "Liste des parchemins 1")) {
  message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\nParchemin de feu rouge faible :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Parchemin de feu rouge faible]```")
         }
   }) ;
@@ -16467,7 +16337,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des oeufs 1")) {   
+  if (message.content.startsWith(prefix + "Liste des oeufs 1")) {
  message.channel.send("```Oeuf déformé :\nCoûts : [Achat : X cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
         }
   }) ;
@@ -16476,7 +16346,7 @@ bot.on('message', message => {
 
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Liste des plans 1")) {   
+    if (message.content.startsWith(prefix + "Liste des plans 1")) {
    message.channel.send("```Plan d'arme kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlan d'armure kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlan de bijoux kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]```")
           }
     }) ;
@@ -16486,7 +16356,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des clefs 1")) {   
+  if (message.content.startsWith(prefix + "Liste des clefs 1")) {
  message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
         }
   }) ;
@@ -16496,7 +16366,7 @@ bot.on('message', message => {
 
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Liste d'objets utiles 1")) {   
+    if (message.content.startsWith(prefix + "Liste d'objets utiles 1")) {
    message.channel.send("```Bolas de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bolas de kobolt]\n\nKunai de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Kunai de kobolt]```")
           }
     }) ;
@@ -16506,7 +16376,7 @@ bot.on('message', message => {
 
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Liste des cartes au trésor 1")) {   
+    if (message.content.startsWith(prefix + "Liste des cartes au trésor 1")) {
    message.channel.send("```Carte au trésor :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Carte au trésor]```")
           }
     }) ;
@@ -16517,7 +16387,7 @@ bot.on('message', message => {
 
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Liste des outils 1")) {   
+    if (message.content.startsWith(prefix + "Liste des outils 1")) {
    message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt]\n\nPioche de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pioche de kobolt]\n\nFaucille de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Faucille de kobolt]\n\nCouteau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Couteau de kobolt]```")
           }
     }) ;
@@ -16557,7 +16427,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Contexte")) {   
+  if (message.content.startsWith(prefix + "Contexte")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16569,7 +16439,7 @@ bot.on('message', message => {
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fouille")) {   
+  if (message.content.startsWith(prefix + "Fouille")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16584,7 +16454,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Maladies")) {   
+  if (message.content.startsWith(prefix + "Maladies")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16597,7 +16467,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Médicaments")) {   
+  if (message.content.startsWith(prefix + "Médicaments")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16610,7 +16480,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Soif")) {   
+  if (message.content.startsWith(prefix + "Soif")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16622,7 +16492,7 @@ bot.on('message', message => {
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Nourriture")) {   
+  if (message.content.startsWith(prefix + "Nourriture")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16635,7 +16505,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Santé")) {   
+  if (message.content.startsWith(prefix + "Santé")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16648,7 +16518,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Atouts")) {   
+  if (message.content.startsWith(prefix + "Atouts")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16660,39 +16530,3 @@ bot.on('message', message => {
     message.channel.send({embed})
         }
   }) ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
