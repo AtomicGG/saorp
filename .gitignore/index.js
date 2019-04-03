@@ -406,7 +406,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Basilic : " +Persils+ "\n:wilted_rose: Plantrus médiocre : " +Herbe+ "\n:wilted_rose: Plantrus commun : " +Plantrus+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Basilic : " +Persils+ "\n:wilted_rose: Plantrus médiocre : " +Herbe+ "\n:wilted_rose: Plantrus commun : " +Plantrus+ "\n:sparkles: Points d'expérience dans la spécialisation 'Cueilleur' : " +Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -6840,7 +6840,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le dirigeant :" , "Un dirigeant est désigné par les votes ou par des épreuves selon le contexte, il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville et des joueurs !\n\nPour être dirigeant, il suffit d'avoir plus de votes pour que les autres candidats, et si un dirigeant est détesté de tous, vous avez possibilité de vous rebellez !")
+    .addField("Le dirigeant :" , "Un dirigeant est désigné par les votes ou par des épreuves selon le contexte, il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville et des joueurs !\n\nPour être dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, vous avez possibilité de vous rebeller !")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -9613,7 +9613,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre du clan des loups à une main :" , ":scales: C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cimeterre du clan des loups à une main`")
+    .addField(":scales: Cimeterre du clan des loups à une main :" , ":scales: C'est un cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre du clan des loups à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -9730,7 +9730,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre du clan des loups à deux mains :" , ":scales: C'est une cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cimeterre du clan des loups à deux mains`")
+    .addField(":scales: Cimeterre du clan des loups à deux mains :" , ":scales: C'est un cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade améliorée'\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre du clan des loups à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -9904,7 +9904,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à une main")) {
+  if (message.content.startsWith(prefix + "Découverte du cimeterre du clan des loups à une main")) {
     const Dégâts = (Math.floor((7)*Math.random()+4))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -10045,7 +10045,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Découverte de la cimeterre du clan des loups à deux mains")) {
+  if (message.content.startsWith(prefix + "Découverte du cimeterre du clan des loups à deux mains")) {
     const Dégâts = (Math.floor((13)*Math.random()+8))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -11796,7 +11796,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt à deux mains :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la rapière de kobolt à deux mains`")
+    .addField(":scales: Cimeterre de kobolt à deux mains :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -11874,7 +11874,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt à un main :" , ":scales: C'est une cimeterre assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre de kobolt à une main`")
+    .addField(":scales: Cimeterre de kobolt à un main :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12005,7 +12005,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt à deux mains")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt à deux mains")) {
     const Dégâts = (Math.floor((16)*Math.random()+10))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12075,7 +12075,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt à une main")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt à une main")) {
     const Dégâts = (Math.floor((9)*Math.random()+5))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12190,7 +12190,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt supérieure à deux mains :" , ":scales: C'est une cimeterre très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 dent de kobolt géant rouge, 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre de kobolt supérieure à deux mains`")
+    .addField(":scales: Cimeterre de kobolt supérieure à deux mains :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 dent de kobolt géant rouge, 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12281,7 +12281,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt supérieure à une main :" , ":scales: C'est une cimeterre très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 1 dent de kobolt géant rouge, 1 bois de frêne rare, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre de kobolt supérieure à une main`")
+    .addField(":scales: Cimeterre de kobolt supérieure à une main :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 1 dent de kobolt géant rouge, 1 bois de frêne rare, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12384,7 +12384,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt supérieure à deux mains")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12482,7 +12482,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre de kobolt supérieure à une main")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt supérieure à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12609,7 +12609,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre basique à deux mains :" , ":scales: C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre basique à deux mains`")
+    .addField(":scales: Cimeterre basique à deux mains :" , ":scales: C'est un cimeterre peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du cimeterre basique à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12701,7 +12701,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre basique à une main :" , ":scales: C'est une cimeterre peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte de la cimeterre basique à une main`")
+    .addField(":scales: Cimeterre basique à une main :" , ":scales: C'est un cimeterre peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive améliorée'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriquer : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du cimeterre basique à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12765,7 +12765,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const Dégâts = (Math.floor((5)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à deux mains")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -12863,7 +12863,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const Dégâts = (Math.floor((3)*Math.random()+1))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cimeterre basique à une main")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre basique à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -13968,7 +13968,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":egg: Oeuf déformé" , ":egg: En ouvrant l'oeuf déformé, vous découvrez un bébé loup !")
-      .addField(":egg: Bébé loup :" ,":egg: Après chacunes de vos attaques, le bébé renard attaque : =Bébé loup attaque")
+      .addField(":egg: Bébé loup :" ,":egg: Après chacunes de vos attaques, le bébé loup attaque : =Bébé loup attaque")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -14386,7 +14386,7 @@ bot.on('message', message => {
     .addField("Peau de lapin :" , "C'est une peau basique que vous trouvez sur les lapins en chassant dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "10 cols")
     .addField("Prix de revente :" , "2 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque en peau arraché\n=Épaulières en peau arrachées\n=Cape en peau arrachée\n=Plastron en peau arraché\n=Gantelets en peau arrachés\n=Ceinture en peau arrachée\n=Jambières en peau arrachées\n=Bottes en peau arrachées")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque en peau arrachée\n=Épaulières en peau arrachées\n=Cape en peau arrachée\n=Plastron en peau arrachée\n=Gantelets en peau arrachées\n=Ceinture en peau arrachée\n=Jambières en peau arrachées\n=Bottes en peau arrachées")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15223,7 +15223,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Soleil :" , "Aujourd'hui, malgrè quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil soit là !\n\nBonus de 10 pour les fuites en dehors d'un combat aujourd'hui !\n=Roll : 10\n=Fuite avec bonus de 10")
+      .addField("Soleil :" , "Aujourd'hui, malgré quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil est là !\n\nBonus de 10 pour les fuites en dehors et en combat aujourd'hui")
       .setImage("https://sitel.com.mk/sites/default/files/article/teaser-images/2018/april/sonce-soncevo-vreme-175810.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -15433,7 +15433,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 1")) {
-    message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\nEpaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epaulière en peaux arrachée]\n\nCape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\nPlastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\nGantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Gantelets en peau arrachée]\n\nCeinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\nJambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Jambières en peau arrachée]\n\nBottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\nAnneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\nAmulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\nCasque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\nEpaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\nCape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\nPlastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\nGantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Gantelets en peau résistante]\n\nCeinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Ceinture en peau résistante]\n\nSuite en écrivant :\n=Liste d'équipements 2```")
+    message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\nÉpaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peaux arrachée]\n\nCape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\nPlastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\nGantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Gantelets en peau arrachée]\n\nCeinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\nJambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Jambières en peau arrachée]\n\nBottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\nAnneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\nAmulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\nCasque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\nEpaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\nCape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\nPlastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\nGantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Gantelets en peau résistante]\n\nCeinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Ceinture en peau résistante]\n\nSuite en écrivant :\n=Liste d'équipements 2```")
   }
 }) ;
 
@@ -15493,7 +15493,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des potions 1")) {
-    message.channel.send("```Potion faible de soin :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\nInfos : [=Potion faible de soin]\n\nPotion faible de force :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de force]\n\nPotion faible de défense :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de défense]\n\nPotion légère de soin :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Potion légère de soin]\n\nPotion légère de force :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de force]\n\nPotion légère de défense :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de défense]\n\nPotion moyenne de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de soin]\n\nPotion régénération de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de régénération]\n\nPotion moyenne de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de force]\n\nPotion moyenne de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de défense]\n\nPotion guérissante minuscule de poison :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de poison]\n\nPotion guérissante minuscule de saignement :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\nPotion guérissante minuscule de brûlure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\nPotion imposante de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de soin]\n\nPotion imposante de régénération :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de régénération]\n\nPotion imposante de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de force]\n\nSuite en écrivant :\n=Liste des potions 2```")
+    message.channel.send("```Potion faible de soin :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\nInfos : [=Potion faible de soin]\n\nPotion faible de force :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de force]\n\nPotion faible de défense :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de défense]\n\nPotion légère de soin :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Potion légère de soin]\n\nPotion légère de force :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de force]\n\nPotion légère de défense :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de défense]\n\nPotion moyenne de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de soin]\n\nPotion régénération de régénération :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de régénération]\n\nPotion moyenne de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de force]\n\nPotion moyenne de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de défense]\n\nPotion guérissante minuscule de poison :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de poison]\n\nPotion guérissante minuscule de saignement :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\nPotion guérissante minuscule de brûlure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\nPotion imposante de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de soin]\n\nPotion imposante de régénération :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de régénération]\n\nPotion imposante de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de force]\n\nSuite en écrivant :\n=Liste des potions 2```")
   }
 }) ;
 
