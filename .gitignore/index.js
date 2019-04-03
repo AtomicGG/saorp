@@ -13061,7 +13061,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.contentEquals(prefix + "Ragoût de lapin")) {
+  if (message.content.includes(prefix + "Ragoût de lapin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -13089,7 +13089,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = (Math.floor((11)*Math.random()+10))
-  if (message.content.contentEquals(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
+  if (message.content.includes(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -13103,7 +13103,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = (Math.floor((31)*Math.random()+30))
-  if (message.content.contentEquals(prefix + "Achat/fabrication/découverte du ragoût de lapin géant")) {
+  if (message.content.includes(prefix + "Achat/fabrication/découverte du ragoût de lapin géant")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -13144,7 +13144,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.contentEquals(prefix + "Ragoût de lapin géant")) {
+  if (message.content.includes(prefix + "Ragoût de lapin géant")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
