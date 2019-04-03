@@ -13099,9 +13099,9 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((11)*Math.random()+10))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
     if (message.content.includes("géant")) {
+      const HP = (Math.floor((31)*Math.random()+30))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -13111,6 +13111,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
+      const HP = (Math.floor((11)*Math.random()+10))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
