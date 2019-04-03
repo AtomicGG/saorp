@@ -2608,7 +2608,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchus à une main : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -2618,7 +2618,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchus à une main : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -2644,7 +2644,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchus à une main : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -2654,7 +2654,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchus à une main : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -9751,12 +9751,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Faux du roi déchus à deux mains")) {
+  if (message.content.startsWith(prefix + "Faux du roi déchu à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchus à deux mains`")
+    .addField(":scales: Faux du roi déchu à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal amélioré'\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire amélioré'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchu à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -9764,12 +9764,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bouclier du roi déchus à une main")) {
+  if (message.content.startsWith(prefix + "Bouclier du roi déchu à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier du roi déchus à une main :" , ":scales: C'est un bouclier extrêmement rare uniquement possible à sur les kobolts gardes qui parfois ne se rendent pas compte du bouclier qu'ils ont !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:crossed_swords: Améliore 'Interception' en : 'Interception améliorée'\n\n:crossed_swords: Améliore le 'cri de provocation' en : 'Cri de provocation amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du roi déchus à une main`")
+    .addField(":scales: Bouclier du roi déchu à une main :" , ":scales: C'est un bouclier extrêmement rare uniquement possible à sur les kobolts gardes qui parfois ne se rendent pas compte du bouclier qu'ils ont !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:crossed_swords: Améliore 'Interception' en : 'Interception améliorée'\n\n:crossed_swords: Améliore le 'cri de provocation' en : 'Cri de provocation amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du roi déchu à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -9779,12 +9779,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((7)*Math.random()+12))
   const HP = (Math.floor((31)*Math.random()+60))
-  if (message.content.startsWith(prefix + "Découverte du bouclier du roi déchus à une main")) {
+  if (message.content.startsWith(prefix + "Découverte du bouclier du roi déchu à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Découverte du bouclier du roi déchus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: En portant ce bouclier, vous êtes immunisé des effets de saignement !")
+    .addField(":scales: Découverte du bouclier du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: En portant ce bouclier, vous êtes immunisé des effets de saignement !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -10087,13 +10087,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Découverte de la faux du roi déchus à deux mains")) {
+  if (message.content.startsWith(prefix + "Découverte de la faux du roi déchu à deux mains")) {
     const Dégâts = (Math.floor((16)*Math.random()+15))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Faux du roi déchus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:crossed_swords: Cette faux offre l'attaque suivante :\n\n:crossed_swords: `=Coup du roi déchus : [Vos dégâts]`")
+    .addField(":scales: Faux du roi déchu à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:crossed_swords: Cette faux offre l'attaque suivante :\n\n:crossed_swords: `=Coup du roi déchu : [Vos dégâts]`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -10103,7 +10103,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup du roi déchus")) {
+  if (message.content.startsWith(prefix + "Coup du roi déchu")) {
     if (talkedRecently.has(message.author.id+12311)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -10725,7 +10725,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":moneybag: Coffre secret de la montagne :" , ":moneybag: Vous suivez les indications de la carte au trésor jusqu'à le bonne emplacement à travers les hauteurs dangereuses de la montagne, et vous découvrez effectivement un coffre !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Equipement de kobolt au choix : " +H+ "\n:scales: Bijoux de kobolt au choix : " +I+ "\n:scales: Arme de kobolt à deux mains : " +J+ "\n:scales: Arme de kobolt à une main : " +K+ "\n:scales: Faux du roi déchus à deux mains : " +L+ "\n:scales: Bouclier du roi déchus à une main : " +M)
+    .addField(":moneybag: Coffre secret de la montagne :" , ":moneybag: Vous suivez les indications de la carte au trésor jusqu'à le bonne emplacement à travers les hauteurs dangereuses de la montagne, et vous découvrez effectivement un coffre !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Equipement de kobolt au choix : " +H+ "\n:scales: Bijoux de kobolt au choix : " +I+ "\n:scales: Arme de kobolt à deux mains : " +J+ "\n:scales: Arme de kobolt à une main : " +K+ "\n:scales: Faux du roi déchu à deux mains : " +L+ "\n:scales: Bouclier du roi déchu à une main : " +M)
     .setColor(3447003)
     .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
     .setTimestamp()
@@ -10747,7 +10747,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":moneybag: Coffre secret de la grotte :" , ":moneybag: Vous suivez les indications de la carte au trésor jusqu'à le bonne emplacement à travers les profondeurs sombres de la grotte, et vous découvrez effectivement un coffre !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Equipement de kobolt supérieur au choix : " +H+ "\n:scales: Bijoux de kobolt supérieur au choix : " +I+ "\n:scales: Arme de kobolt supérieure à deux mains : " +J+ "\n:scales: Arme de kobolt supérieure à une main : " +K+ "\n:scales: Faux du roi déchus à deux mains : " +L+ "\n:scales: Bouclier du roi déchus à une main : " +M)
+    .addField(":moneybag: Coffre secret de la grotte :" , ":moneybag: Vous suivez les indications de la carte au trésor jusqu'à le bonne emplacement à travers les profondeurs sombres de la grotte, et vous découvrez effectivement un coffre !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Equipement de kobolt supérieur au choix : " +H+ "\n:scales: Bijoux de kobolt supérieur au choix : " +I+ "\n:scales: Arme de kobolt supérieure à deux mains : " +J+ "\n:scales: Arme de kobolt supérieure à une main : " +K+ "\n:scales: Faux du roi déchu à deux mains : " +L+ "\n:scales: Bouclier du roi déchu à une main : " +M)
     .setColor(3447003)
     .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
     .setTimestamp()
@@ -13089,7 +13089,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = (Math.floor((11)*Math.random()+10))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
+  if (message.content.equals(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -13103,7 +13103,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = (Math.floor((31)*Math.random()+30))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin géant")) {
+  if (message.content.equals(prefix + "Achat/fabrication/découverte du ragoût de lapin géant")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -14189,7 +14189,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":moneybag: Coffre de fin du donjon sauvage :" , ":moneybag: Vous finissez à peine le combat final que vous trouvez finalement le coffre suivant, partagez le entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Parchemin de poison faible : " +H+ "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales:Arme du clan des loups à une main : " +K+ "\n:scales:Arme du clan des loups à deux mains : " +L+ "\n:scales: Faux du roi déchus à deux mains : " +Faux)
+    .addField(":moneybag: Coffre de fin du donjon sauvage :" , ":moneybag: Vous finissez à peine le combat final que vous trouvez finalement le coffre suivant, partagez le entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Parchemin de poison faible : " +H+ "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales:Arme du clan des loups à une main : " +K+ "\n:scales:Arme du clan des loups à deux mains : " +L+ "\n:scales: Faux du roi déchu à deux mains : " +Faux)
     .setColor(3447003)
     .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
     .setTimestamp()
@@ -15483,7 +15483,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 3")) {
-    message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\nGlaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\nFaux du roi déchus à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchus à deux mains]\n\nBouclier du roi déchus à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier du roi déchus à une main]\n\nEpée de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à une main]\n\nEpée de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à deux mains]\n\nHache de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à une main]\n\nHache de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à deux mains]\n\nMasse de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à une main]\n\nMasse de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à deux mains]\n\nRapière de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à une main]\n\nRapière de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à deux mains]\n\nCimeterre de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à une main]\n\nCimeterre de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 4```")
+    message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\nGlaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\nFaux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\nBouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier du roi déchu à une main]\n\nEpée de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à une main]\n\nEpée de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à deux mains]\n\nHache de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à une main]\n\nHache de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à deux mains]\n\nMasse de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à une main]\n\nMasse de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à deux mains]\n\nRapière de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à une main]\n\nRapière de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à deux mains]\n\nCimeterre de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à une main]\n\nCimeterre de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 4```")
   }
 }) ;
 
