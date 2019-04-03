@@ -13102,6 +13102,20 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  const HP = (Math.floor((31)*Math.random()+30))
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin géant")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":meat_on_bone: Ragoût de lapin géant :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   const HP = (Math.floor((11)*Math.random()+10))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de chien")) {
     const embed = new Discord.RichEmbed()
