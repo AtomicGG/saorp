@@ -3050,7 +3050,7 @@ bot.on('message', message => {
       .addField(":crossed_swords: Loup de sang d'élite :" , ":crossed_swords: Le loup de sang d'élite hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
       message.channel.send({embed})
     }
-    if (21 < B){
+    if (21 < B && B < 95){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
