@@ -3483,7 +3483,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt enragé attaque")) {
     const Dégâts = 40
     const A = (Math.floor((31)*Math.random()+95))
@@ -3517,7 +3517,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt garde attaque")) {
@@ -4236,7 +4236,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt enragé défense")) {
@@ -4271,7 +4271,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
