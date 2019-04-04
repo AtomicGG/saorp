@@ -3484,6 +3484,42 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt enragé attaque")) {
+    const Dégâts = 40
+    const A = (Math.floor((31)*Math.random()+95))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((36)*Math.random()+110))
+    const D = (Math.floor((36)*Math.random()+110))
+    if (B < 15){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt enragé :" , ":crossed_swords: Le kobolt enragé pousse un cri pour vous intimider et vous impressionner mais il oublie d'attaquer. Vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (16 < B & B < 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt enragé :" , ":crossed_swords: Le kobolt enragé fulmine et donne un gros coup de masses pour écraser un joueur. Il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (86 < B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt enragé :" , ":crossed_swords: Le kobolt enragé bondit et attérit devant vous. Il vous assène deux coups violent de masses, l'un venant de la gauche puis l'autre venant de la droite. Il inflige " +C+ " points de dégâts avec son coup de gauche et " +D+ " points de dégats avec son coup de droite.\n (Un seul joueur est visé et vous devez effectuer deux défenses sur chaque coup.)")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt garde attaque")) {
     const Dégâts = 40
     const A = (Math.floor((61)*Math.random()+140))
