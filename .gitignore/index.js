@@ -4244,7 +4244,7 @@ bot.on('message', message => {
     const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((Dégâts/5)*Math.random()+1))
-    if (71 < B){
+    if (B < 71){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
