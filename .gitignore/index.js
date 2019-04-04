@@ -3047,7 +3047,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
+      .addField(":crossed_swords: Loup de sang d'élite :" , ":crossed_swords: Le loup de sang d'élite hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (21 < B){
@@ -3055,7 +3055,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang d'élite hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+      .addField(":crossed_swords: Loup de sang d'élite :" , ":crossed_swords: Le loup de sang d'élite hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -3064,7 +3064,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups de sangs apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
+      .addField(":crossed_swords: Loup de sang d'élite :" , ":crossed_swords: Le loup de sang d'élite hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups de sangs apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -6610,8 +6610,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, elles sont classées selon l'importance par ordre décroissant, prend le temps de lire !\n\n:closed_book:`=SAO`\n:bust_in_silhouette:`=Personnage`\n:diamond_shape_with_a_dot_inside:`=Classes`\n:cyclone:`=Compétences`\n:trident: `=Particularités`\n:hammer:`=Amélioration`\n:dagger:`=Armes`\n:walking:`=Trajets`\n:game_die:`=Rolls`\n:crossed_swords:`=Combat`\n:white_flower:`=Etats`\n:book:`=Quêtes`\n:skull:`=Mort`\n:heartbeat:`=Rétablissement`\n:sparkles:`=Niveaux`\n:100:`=Caractéristiques`\n:globe_with_meridians:`=Zones`\n:japanese_ogre:`=Monstres`\n:scroll:`=Liste`
-    \n:tools:`=Crafts`\n:hammer_pick:`=Spécialisations`\n:large_orange_diamond:`=Cristal`\n:cityscape:`=Ville`\n:sunrise_over_mountains:`=Extérieur`\n:classical_building:`=Souterrains`\n:homes:`=Constructions`\n:loud_sound:`=Menus`\n:bank:`=Donjons`\n:fox:`=Familiers`\n:busts_in_silhouette:`=Guilde`\n:alembic:`=Métiers`\n:microphone2:`=Dirigeant`\n:shield:`=Garde`\n:bow_and_arrow:`=Mercenaire`\n:chains:`=Prison`\n:notes:`=Musiques`")
+    .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, elles sont classées selon l'importance par ordre décroissant, prend le temps de lire !\n\n:closed_book:`=SAO`\n:bust_in_silhouette:`=Personnage`\n:diamond_shape_with_a_dot_inside:`=Classes`\n:cyclone:`=Compétences`\n:trident: `=Particularités`\n:hammer:`=Amélioration`\n:dagger:`=Armes`\n:walking:`=Trajets`\n:game_die:`=Rolls`\n:crossed_swords:`=Combat`\n:white_flower:`=Etats`\n:book:`=Quêtes`\n:skull:`=Mort`\n:heartbeat:`=Rétablissement`\n:sparkles:`=Niveaux`\n:100:`=Caractéristiques`\n:globe_with_meridians:`=Zones`\n:japanese_ogre:`=Monstres`\n:scroll:`=Liste `\n:tools:`=Crafts`\n:hammer_pick:`=Spécialisations`\n:large_orange_diamond:`=Cristal`\n:cityscape:`=Ville`\n:sunrise_over_mountains:`=Extérieur`\n:classical_building:`=Souterrains`\n:homes:`=Constructions`\n:loud_sound:`=Menus`\n:bank:`=Donjons`\n:fox:`=Familiers`\n:busts_in_silhouette:`=Guilde`\n:alembic:`=Métiers`\n:microphone2:`=Dirigeant`\n:shield:`=Garde`\n:bow_and_arrow:`=Mercenaire`\n:chains:`=Prison`\n:notes:`=Musiques`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
