@@ -1004,6 +1004,23 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt enragé"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt enragé :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setImage("https://cdn.discordapp.com/attachments/543345227604164618/563394870207709184/Kobolt_enrager.jpeg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 650")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt enragé attaque`")
+    .addField(":shield: Lorsque le kobolt enragé reçoit un coup :" , ":shield: `=Kobolt enragé défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt enragé récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt enragé récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt garde"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
