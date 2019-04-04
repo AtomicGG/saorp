@@ -4239,6 +4239,43 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt enragé défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((Dégâts/5)*Math.random()+1))
+    if (71 < B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé tente de bloquer votre coup à l'aide de ses masse mais il n'est pas assez rapide. Vous lui infligez " +A+ "points de dégats")
+      message.channel.send({embed})
+    }
+    if (71 < B & B < 92){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé bloque votre coup à l'aide de ses masse, réduisant fortement les dégats subits. Vous lui infligez " +C+ "points de dégats")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (93 < B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé crie tellement fort que vous ratez votre attaque et vous empêche d'attaquer au prochain tour en vous appeurant.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt combattant défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
