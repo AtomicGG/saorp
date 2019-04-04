@@ -3483,7 +3483,7 @@ bot.on('message', message => {
   }
 });
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt enragé attaque")) {
     const Dégâts = 40
     const A = (Math.floor((31)*Math.random()+95))
@@ -3517,7 +3517,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});*/
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt garde attaque")) {
@@ -4241,7 +4241,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt enragé défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
+    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((Dégâts/5)*Math.random()+1))
     if (B < 71){
@@ -4249,7 +4249,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé tente de bloquer votre coup à l'aide de ses masse mais il n'est pas assez rapide. Vous lui infligez " +A+ "points de dégats")
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé tente de bloquer votre coup à l'aide de ses masse mais il n'est pas assez rapide. Vous lui infligez " +A+ " points de dégats")
       message.channel.send({embed})
     }
     if (71 < B & B < 92){
@@ -4257,7 +4257,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé bloque votre coup à l'aide de ses masse, réduisant fortement les dégats subits. Vous lui infligez " +C+ "points de dégats")
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé bloque votre coup à l'aide de ses masse, réduisant fortement les dégats subits. Vous lui infligez " +C+ " points de dégats")
       .setTimestamp()
       message.channel.send({embed})
     }
