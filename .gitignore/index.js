@@ -2537,6 +2537,82 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt enragé récompenses solo")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.75))*Math.random()))
+    const C = (Math.floor((2-(0.85))*Math.random()))
+    const D = (Math.floor((2-(0.88))*Math.random()))
+    const E = (Math.floor((2-(0.92))*Math.random()))
+    const H = (Math.floor((2-(0.85))*Math.random()))
+    const I = (Math.floor((2-(0.92))*Math.random()))
+    const F = (Math.floor((66*1)*Math.random()+105*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((21*1)*Math.random()+50*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt au choix : " +H+ "\n:scales: Bijoux de kobolt au choix : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt au choix : " +H+ "\n:scales: Bijoux de kobolt au choix : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt enragé récompenses groupe")) {
+    let X = args.slice(4).join(" : ");
+    const A = (Math.floor((2)*Math.random()+1))
+    const B = (Math.floor((2-(0.85))*Math.random()))
+    const C = (Math.floor((2-(0.95))*Math.random()))
+    const D = (Math.floor((2-(0.94))*Math.random()))
+    const E = (Math.floor((2-(0.96))*Math.random()))
+    const H = (Math.floor((2-(0.93))*Math.random()))
+    const J = (Math.floor((2-(0.96))*Math.random()))
+    const F = (Math.floor((56*1)*Math.random()+95*1))
+    const FF = F-(X*6)
+    const G = (Math.floor((16*1)*Math.random()+45*1))
+    if(FF > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt au choix : " +H+ "\n:scales: Bijoux de kobolt au choix : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(FF < 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt au choix : " +H+ "\n:scales: Bijoux de kobolt au choix : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt combattant récompenses solo")) {
     let X = args.slice(4).join(" : ");
     const A = (Math.floor((2)*Math.random()+1))
