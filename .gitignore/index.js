@@ -5867,7 +5867,7 @@ bot.on('message', message => {
   }
 });
 
-/////////////////////////////////////////////////////Crie de provocation////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////Cri de provocation////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Cri de provocation simple")) {
@@ -5898,7 +5898,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Cri de provocation amélioré")) {
-    let degats = args.slice(1).join(" ");
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((3)*Math.random()+2))
     if (B < 20){
@@ -5926,7 +5925,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Cri de provocation supérieur")) {
-    let degats = args.slice(1).join(" ");
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((3)*Math.random()+2))
     if (B < 15){
@@ -6434,7 +6432,7 @@ bot.on('message', message => {
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B < 50){
+    if (B < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9512,8 +9510,9 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
+  const Défense = (Math.floor((3)*Math.random()+3))
   const HP = (Math.floor((6)*Math.random()+5))
+  const Dégâts = (Math.floor((6)*Math.random()+5))
   if (message.content.startsWith(prefix + "Découverte de l'amulette du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
