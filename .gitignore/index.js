@@ -11438,7 +11438,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieures")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
       const embed = new Discord.RichEmbed()
@@ -11466,7 +11466,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieure")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
       const embed = new Discord.RichEmbed()
@@ -11522,7 +11522,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieure")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
       const embed = new Discord.RichEmbed()
@@ -11550,35 +11550,35 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieurs")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":scales: Gantelets de kobolt supérieurs :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
-        .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-        .setTimestamp()
-        message.channel.send({embed})
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Gantelets de kobolt supérieurs :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
       const HP = (Math.floor((13)*Math.random()+12))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":scales: Gantelets de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Gantelets de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieures")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
       const embed = new Discord.RichEmbed()
@@ -11606,7 +11606,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieures")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
       const embed = new Discord.RichEmbed()
@@ -11664,7 +11664,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieure")) {
       const Défense = (Math.floor((7)*Math.random()+6))
       const HP = (Math.floor((16)*Math.random()+15))
       const Dégâts = (Math.floor((13)*Math.random()+12))
