@@ -6400,7 +6400,7 @@ bot.on('message', message => {
     let degats = args.slice(2).join(" : ");
     const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B < 66){
+    if (B < 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6411,6 +6411,66 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
     if (66 < B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
+      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Interception supérieure")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (61 < B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
+      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Interception suprême")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B < 55){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (56 < B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
