@@ -6832,98 +6832,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Menu SAO") {
+  if (message.content.startsWith(prefix + "Menu SAO")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Bienvenue sur le menu d'aide !" , "Tu auras des informations à propos du RP sur chacunes de ces commandes, elles sont classées selon l'importance par ordre décroissant, prend le temps de lire !\n\n:closed_book:`=SAO`\n:bust_in_silhouette:`=Personnage`\n:diamond_shape_with_a_dot_inside:`=Classes`\n:cyclone:`=Compétences`\n:trident: `=Particularités`\n:hammer:`=Amélioration`\n:dagger:`=Armes`\n:walking:`=Trajets`\n:game_die:`=Rolls`\n:crossed_swords:`=Combat`\n:white_flower:`=Etats`\n:book:`=Quêtes`\n:skull:`=Mort`\n:heartbeat:`=Rétablissement`\n:sparkles:`=Niveaux`\n:100:`=Caractéristiques`\n:globe_with_meridians:`=Zones`\n:japanese_ogre:`=Monstres`\n:scroll:`=Liste `\n:tools:`=Crafts`\n:hammer_pick:`=Spécialisations`\n:large_orange_diamond:`=Cristal`\n:cityscape:`=Ville`\n:sunrise_over_mountains:`=Extérieur`\n:classical_building:`=Souterrains`\n:homes:`=Constructions`\n:loud_sound:`=Menus`\n:bank:`=Donjons`\n:fox:`=Familiers`\n:busts_in_silhouette:`=Guilde`\n:alembic:`=Métiers`\n:microphone2:`=Dirigeant`\n:shield:`=Garde`\n:bow_and_arrow:`=Mercenaire`\n:chains:`=Prison`\n:notes:`=Musiques`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Menu SAO 1")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("SAO :" , "Permet d'apprendre le contexte !\n=SAO")
-    .addField("Personnage :" , "Permet de créer votre personnage !\n=Personnage")
-    .addField("Compétences :" , "Permet d'apprendre le système de compétence !\n=Compétences")
-    .addField("Particularités :" , "Permet d'apprendre le système de particularité !\n=Particularités")
-    .addField("Combat :" , "Permet d'apprendre le système de combat !\n=Combat")
-    .addField("Caractéristiques :" , "Permet d'apprendre le système de caractéristique !\n=Caractéristiques")
-    .addField("Spécialisations :" , "Permet d'apprendre le système de spécialisations !\n=Spécialisations")
-    .addField("Cristal :" , "Permet d'apprendre le système de cristal !\n=Cristal")
-    .addField("Armes :" , "Permet d'apprendre le système d'armes !\n=Armes")
-    .addField("Niveaux :" , "Permet d'apprendre le système de niveaux !\n=Niveaux")
-    .addField("Crafts :" , "Permet d'afficher tous les crafts existants !\n=Crafts")
-    .addField("Suite :" , "Permet d'afficher la suite du menu SAO !\n=Menu SAO 2")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Menu SAO 2")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Classes :" , "Permet d'apprendre le système de classes !\n=Classes")
-    .addField("Donjons :" , "Permet d'apprendre le système de donjons !\n=Donjons")
-    .addField("Familiers :" , "Permet d'apprendre le système de familiers !\n=Familiers")
-    .addField("Quêtes :" , "Permet d'apprendre le système de quêtes !\n=Quêtes")
-    .addField("Guilde :" , "Permet d'apprendre le système de guilde !\n=Guilde")
-    .addField("Etats :" , "Permet d'apprendre le système d'états !\n=Etats")
-    .addField("Métiers :" , "Permet d'apprendre le système de métiers !\n=Métiers")
-    .addField("Ville :" , "Permet d'afficher les informations concernant la ville !\n=Ville")
-    .addField("Extérieur :" , "Permet d'afficher les informations concernant l'extérieur !\n=Extérieur")
-    .addField("Souterrains :" , "Permet d'afficher les informations concernant les souterrains !\n=Souterrains")
-    .addField("Constructions :" , "Permet d'apprendre le système de constructions !\n=Constructions")
-    .addField("Suite:" , "Permet d'afficher la suite du menu SAO !\n=Menu SAO 3")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Menu SAO 3")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Rétablissement :" , "Permet d'apprendre le système de rétablissement !\n=Rétablissement")
-    .addField("Mort :" , "Permet d'apprendre le système de mort !\n=Mort")
-    .addField("Menus :" , "Permet d'apprendre le système de menus !\n=Menus")
-    .addField("Dirigeant :" , "Permet d'apprendre le système de dirigeant !\n=Dirigeant")
-    .addField("Garde :" , "Permet d'apprendre le système de garde !\n=Garde")
-    .addField("Mercenaire :" , "Permet d'apprendre le système de mercenaire !\n=Mercenaire")
-    .addField("Rolls :" , "Permet d'apprendre le système de Rolls !\n=Le rolls")
-    .addField("Prison :" , "Permet d'apprendre le système de prison !\n=Prison")
-    .addField("Zones :" , "Permet d'apprendre le système de zone !\n=Zones")
-    .addField("Quiz :" , "Pour être sûr que vous avez compris l'essentiel du fonctionnement du RP !\n=Quiz")
-    .addField("Suite:" , "Permet d'afficher la suite du menu SAO !\n=Menu SAO 4")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Menu SAO 4")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Trajets :" , "Permet d'apprendre le système de trajet !\n=Trajets")
-    .addField("Liste d'objets :" , "Permet de consulter tous les objets existants !\n=Liste d'objets")
-    .addField("Amélioration :" , "Permet d'apprendre le système d'amélioration !\n=Amélioration")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -8672,7 +8586,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (51 < A & A < 125){
+    if (50 < A & A < 125){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8691,7 +8605,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (126 < A & A < 225){
+    if (125 < A & A < 225){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8710,7 +8624,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (226 < A & A < 400){
+    if (225 < A & A < 400){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8729,7 +8643,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (401 < A & A < 700){
+    if (400 < A & A < 700){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8748,7 +8662,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (701 < A & A < 1200){
+    if (700 < A & A < 1200){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8767,7 +8681,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (1201 < A & A < 2000){
+    if (1200 < A & A < 2000){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8786,7 +8700,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (2001 < A & A < 3500){
+    if (2000 < A & A < 3500){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -8805,7 +8719,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
-    if (3501 < A & A < 6000){
+    if (3500 < A & A < 6000){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -13738,12 +13652,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = (Math.floor((151)*Math.random()+150))
   const X = (Math.floor((3)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de régénération")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de régénération :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP par tour pendant `" +X+ "` tours !")
+    .addField(":syringe: Potion imposante de régénération :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP par tour pendant `" +X+ "` tours !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14048,20 +13962,6 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField(":scroll: Parchemin de feu rouge faible :" , ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Enchanteur' une fois l'objet fabriquer : 24\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquer ou acheter cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  const HP = (Math.floor((13)*Math.random()+12))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de défense")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
