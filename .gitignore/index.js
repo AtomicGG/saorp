@@ -6831,7 +6831,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   if (message.content.startsWith(prefix + "Menu SAO")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -6842,7 +6842,7 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-});
+});*/
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Trajets")) {
