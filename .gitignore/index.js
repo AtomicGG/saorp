@@ -4669,7 +4669,7 @@ bot.on('message', message => {
     } else {
       const B = (Math.floor(((Z*1)+1)*Math.random()+1))
       const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor(((Z*1)+1)*(0.90))*Math.random()+0)
+      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
       const F = (Math.floor((((Z*1)+1)*(0.75))*Math.random()+0))
       const G = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
       const embed = new Discord.RichEmbed()
