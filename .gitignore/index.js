@@ -4652,7 +4652,7 @@ bot.on('message', message => {
   }
 })
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Montagne combat")) {
@@ -4669,7 +4669,7 @@ bot.on('message', message => {
     } else {
       const B = (Math.floor(((Z*1)+1)*Math.random()+1))
       const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor(((Z*1)+1)*(0.90))*Math.random()+0))
+      const E = (Math.floor(((Z*1)+1)*(0.90))*Math.random()+0)
       const F = (Math.floor((((Z*1)+1)*(0.75))*Math.random()+0))
       const G = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
       const embed = new Discord.RichEmbed()
@@ -4686,7 +4686,7 @@ bot.on('message', message => {
       talkedRecently.delete(message.author.id+1000);
     }, 600000 );
   }
-})*/
+})
 
 //////////////////////////////////////////////////////////Grotte/////////////////////////////////////////////////////////////////////////////////////
 
