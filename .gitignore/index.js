@@ -4652,7 +4652,7 @@ bot.on('message', message => {
   }
 })
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Montagne combat")) {
@@ -4686,7 +4686,7 @@ bot.on('message', message => {
       talkedRecently.delete(message.author.id+1000);
     }, 600000 );
   }
-})
+})*/
 
 //////////////////////////////////////////////////////////Grotte/////////////////////////////////////////////////////////////////////////////////////
 
