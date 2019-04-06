@@ -4652,7 +4652,7 @@ bot.on('message', message => {
   }
 })
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Montagne combat")) {
@@ -4676,7 +4676,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      //.addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G)
+      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -4686,7 +4686,7 @@ bot.on('message', message => {
       talkedRecently.delete(message.author.id+1000);
     }, 600000 );
   }
-})
+})*/
 
 //////////////////////////////////////////////////////////Grotte/////////////////////////////////////////////////////////////////////////////////////
 
