@@ -2534,7 +2534,7 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt enragé récompenses solo")) {
@@ -2608,7 +2608,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-}) ;
+}) ;*/
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -3559,7 +3559,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt enragé attaque")) {
     const Dégâts = 40
     const A = (Math.floor((31)*Math.random()+95))
@@ -3593,7 +3593,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt garde attaque")) {
@@ -4312,7 +4312,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt enragé défense")) {
@@ -4347,7 +4347,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -4671,12 +4671,12 @@ bot.on('message', message => {
       const C = (Math.floor(((Z*1)+1)*Math.random()+0))
       const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
       const F = (Math.floor((((Z*1)+1)*(0.75))*Math.random()+0))
-      const G = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
+      //const G = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G)
+      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F/*+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G*/)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
