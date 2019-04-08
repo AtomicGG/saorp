@@ -9993,7 +9993,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Faucille de kobolt :" , ":scales: C'est une faucille que possèdent les kobolts devant chercher des ressources, si vous possédez cette pioche vous gagnerez le double de plantrus [Médiocre] et [Commun] !")
+    .addField(":scales: Faucille de kobolt :" , ":scales: C'est une faucille que possèdent les kobolts devant chercher des ressources, si vous possédez cette faucille vous gagnerez le double de plantrus [Médiocre] et [Commun] !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15691,7 +15691,7 @@ bot.on('message', message => {
             message.channel.send({embed})
                 }
           }) ;
-      
+
 
 
   bot.on('message', message => {
