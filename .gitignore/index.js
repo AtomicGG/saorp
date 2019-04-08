@@ -15657,7 +15657,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Santé`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Santé`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -15680,6 +15680,18 @@ bot.on('message', message => {
            }
         });
 
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Nuit")) {
+            const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+        .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`")    .setTimestamp()
+            message.channel.send({embed})
+                }
+          }) ;
+      
 
 
   bot.on('message', message => {
@@ -15811,7 +15823,7 @@ bot.on('message', message => {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !")    .setTimestamp()
+  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !\n\nLorsqu'un zombie vous attaque, écrivez : `=Zombie attaque`")    .setTimestamp()
   message.channel.send({embed})
   }
   }) ;
@@ -15859,7 +15871,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La mine :" , "...")    .setTimestamp()
+            .addField("La mine :" , "En ville, vous aurez la possibilité à l'aide d'une pioche, d'aller tenter de miner des minerais plus ou moins rares pour la ville !\n\nCependant, il y a des risques parfois de rencontrer un zombie ou des risques d'éboulements qui peuvent blessés ou complètement vous écrabouillé...")    .setTimestamp()
             message.channel.send({embed})
             }
             }) ;
@@ -15871,7 +15883,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-              .addField("Le jardin :" , "...")    .setTimestamp()
+              .addField("Le jardin :" , "En ville, un jardin est présent afin de pouvoir y cultiver des légumes pour nourrir les survivants !\n\nCependant, il faudra utiliser de l'eau ou qu'il pleuve afin que les plantations poussent et ne pourrissent...")    .setTimestamp()
               message.channel.send({embed})
               }
               }) ;
@@ -15883,7 +15895,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                .addField("Les alcools :" , "...")    .setTimestamp()
+                .addField("Les alcools :" , "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater avec parfois des avantages comme des inconvénients comme le fait d'être bourré...")    .setTimestamp()
                 message.channel.send({embed})
                 }
                 }) ;
@@ -15895,7 +15907,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                  .addField("Les drogues :" , "...")    .setTimestamp()
+                  .addField("Les drogues :" , "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur ou d'être plus aggressive, mais les effets négatives comme la dépendance arrivent par la suite...\n\nA savoir, si vous devenez dépendant d'une drogue, vous devrez en prendre de nouveau du même type dans les 3 prochains jours ou vous serez atteint de l'état 'Folie'...")    .setTimestamp()
                   message.channel.send({embed})
                   }
                   }) ;
@@ -15907,7 +15919,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                    .addField("Les cargaisons :" , "...")    .setTimestamp()
+                    .addField("Les cargaisons :" , "Parfois pendant votre survie, il y aura un avion qui passe au dessus en larguant une cargaison aux alentours de celle-ci !\n\nDedans se trouvera des ressources, des armes, de la nourriture, de l'eau et bien d'autres choses possible selon votre chance !\n\nCependant, il faudra prendre le risque de sortir le récupérer, cela alerte beaucoup de zombies...")    .setTimestamp()
                     message.channel.send({embed})
                     }
                     }) ;
@@ -15919,7 +15931,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                      .addField("Les déplacements :" , "...")    .setTimestamp()
+                      .addField("Les déplacements :" , "Voici le temps de trajet entre les différentes zones :\n\n")    .setTimestamp()
                       message.channel.send({embed})
                       }
                       }) ;
