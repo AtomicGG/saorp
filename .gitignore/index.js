@@ -36,6 +36,19 @@ bot.on("message", (message) => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "SAO case"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField(":middle_finger::skin-tone-1: Vous êtes un :" , "GROS PIGEON")
+    .setImage("https://ds1.static.rtbf.be/article/image/1248x702/2/8/2/5168fdfd95388df33c182fcf28c11c16-1504714855.png")
+    .setTimestamp()
+    message.channel.send({embed})}
+  }
+)
+
 ////////////////////////////////////////////////////////Coups et défenses/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
