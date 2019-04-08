@@ -15762,7 +15762,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La fabrication :" , "Il sera très fréquent que dans la ville, vous devrez fabriquer des objets, des défenses, assembler des éléments avec d'autres pour en créer un nouvel élément\n\nLes informations des différentes fabrications et assemblages possibles sont affichés sur les matériaux en écrivant `=[Nom du matériau]`\n\nIl existe aussi le raffinage de ressource afin d'en obtenir une de meilleur qualité pour des usages encore plus performants !")    .setTimestamp()
+            .addField("La fabrication :" , "Il sera très fréquent que dans la ville, vous devrez fabriquer des objets, des défenses, assembler des éléments avec d'autres pour en créer un nouvel élément\n\nLes informations des différentes fabrications et assemblages possibles sont affichés sur les matériaux en écrivant `=[Nom du matériau]`\n\nIl existe aussi le raffinage de ressource afin d'en obtenir une de meilleur qualité pour des usages encore plus performants !\n\nPour voir la liste des fabrications existantes, écrivez : `=Liste de fabrication`")    .setTimestamp()
                 message.channel.send({embed})
                     }
               }) ;
@@ -15931,7 +15931,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                      .addField("Les déplacements :" , "Voici le temps de trajet entre les différentes zones :\n\n")    .setTimestamp()
+                      .addField("Les déplacements :" , "Grande porte\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nZone proche\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nZone semi éloigné\n‖\n‖\n‖ `[10 minutes]`\n‖\n‖\nZone éloigné\n‖\n‖\n‖ `[10 minutes]`\n‖\n‖\nZone très éloigné\n‖\n‖\n‖ `[10 minutes]`\n‖\n‖\nZone dangereuse\n‖\n‖\n‖ `[15 minutes]`\n‖\n‖\nZone très dangereuse\n‖\n‖\n‖ `[15 minutes]`\n‖\n‖\nZone mortelle")    .setTimestamp()
                       message.channel.send({embed})
                       }
                       }) ;
