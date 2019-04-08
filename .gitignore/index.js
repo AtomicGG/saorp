@@ -16135,7 +16135,7 @@ bot.on('message', message => {
 ////////////////////////////////////////////////////////////////Morsure et infection////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  const A = (Math.floor((3)*Math.random()+2))
+  const A = (Math.floor((100)*Math.random()))
   if (message.content.startsWith(prefix + "Morsure légère")) {
     if(A < 75){
       const embed = new Discord.RichEmbed()
@@ -16159,7 +16159,7 @@ bot.on('message', message => {
             }) ;
 
             bot.on('message', message => {
-              const A = (Math.floor((3)*Math.random()+2))
+              const A = (Math.floor((100)*Math.random()))
               if (message.content.startsWith(prefix + "Morsure sévère")) {
                 if(A < 50){
                   const embed = new Discord.RichEmbed()
