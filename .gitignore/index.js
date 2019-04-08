@@ -15829,7 +15829,7 @@ message.channel.send({embed})
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Zombie")) {
+  if (message.content === prefix + "Zombie") {
   const embed = new Discord.RichEmbed()
   .setColor(3447003)
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -16056,7 +16056,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const A = (Math.floor((3)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Zombie attaque")) {
+  if (message.content === prefix + "Zombie attaque") {
     if(A < 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
