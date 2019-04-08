@@ -16055,7 +16055,8 @@ bot.on('message', message => {
 ///////////////////////////////////////////////////////////////Attaque d'un zombie////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  const A = (Math.floor((3)*Math.random()+2))
+  const A = (Math.floor((100)*Math.random()))
+  const Dégâts = (Math.floor((3)*Math.random()+2))
   if (message.content === prefix + "Zombie attaque") {
     if(A < 20){
       const embed = new Discord.RichEmbed()
