@@ -16623,16 +16623,28 @@ bot.on('message', message => {
           }) ;
 
           bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Points de défense")) {   
+            if (message.content === prefix + "Points de défense") { 
               const embed = new Discord.RichEmbed()
               .setColor(3447003)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les points de défense :" , "Le but principal de la survie en ville sera de fabriquer des défenses afin de tuer un maximum de zombies lors des attaques tous les jours à 00 H 00 [Heure en France] !\n\nIl est possible pour un survivant de défendre aussi la ville des zombies restants qui arrivent à pénétrer l'intérieur de la ville...\n\nUn zombie vaut pour un 'point d'attaque' et une défense ou un survivant aura ses 'points de défense'\n\nSi par exemple, la ville possède 45 points de défense et qu'il y a 37 zombies attaquant au jour 3, il n'y a aucun zombies qui pénétreront dans la ville, ni aucun mort par la même occasion !\n\nCependant, si la ville possède 45 points de défense et qu'il y a 50 zombies qui attaquent, 5 zombies réussiront à pénétrer en ville...\n\nCes 5 zombies pourront être combattus et tuer par les survivants qui défendent l'entrée de la ville évidemment !\n\nNéanmoins, si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, dans les batîments ou même les batîments !\n\nPour déterminer quel joueur trouvera et attaquera le zombie, il faut écrire : `=Zombie infiltration : [Nombre de joueur restants en vie]`\n\nChaque joueur en début de partie possède un numéro, selon le numéro afficher de la commande, le joueur sera attaquer\n\nA savoir que se défendre en groupe est possible, et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies à l'intérieur de la ville soient tués !\n\nSi à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, peux importe vos points de défense, tous les zombies pourront rentrer...")    .setTimestamp()
+          .addField("Les points de défense 1 :" , "Le but principal de la survie en ville sera de fabriquer des défenses afin de tuer un maximum de zombies lors des attaques tous les jours à 00 H 00 [Heure en France] !\n\nIl est possible pour un survivant de défendre aussi la ville des zombies restants qui arrivent à pénétrer l'intérieur de la ville...\n\nUn zombie vaut pour un 'point d'attaque' et une défense ou un survivant aura ses 'points de défense'\n\nSi par exemple, la ville possède 45 points de défense et qu'il y a 37 zombies attaquant au jour 3, il n'y a aucun zombies qui pénétreront dans la ville, ni aucun mort par la même occasion !\n\nCependant, si la ville possède 45 points de défense et qu'il y a 50 zombies qui attaquent, 5 zombies réussiront à pénétrer en ville...\n\nCes 5 zombies pourront être combattus et tuer par les survivants qui défendent l'entrée de la ville évidemment !\n\nLa suite en écrivant : `=Points de défense 2`")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
+
+            bot.on('message', message => {
+              if (message.content === prefix + "Points de défense 2") {
+                const embed = new Discord.RichEmbed()
+                .setColor(3447003)
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .addField("Les points de défense 2 :" , "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, dans les batîments ou même les batîments !\n\nPour déterminer quel joueur trouvera et attaquera le zombie, il faut écrire : `=Zombie infiltration : [Nombre de joueur restants en vie]`\n\nChaque joueur en début de partie possède un numéro, selon le numéro afficher de la commande, le joueur sera attaquer\n\nA savoir que se défendre en groupe est possible, et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies à l'intérieur de la ville soient tués !\n\nSi à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, peux importe vos points de défense, tous les zombies pourront rentrer...")    .setTimestamp()
+                message.channel.send({embed})
+                    }
+              }) ;
 
             bot.on('message', message => {
               if (message.content.startsWith(prefix + "Fabrication")) {   
