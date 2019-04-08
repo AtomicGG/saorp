@@ -16108,7 +16108,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(3447003)
-              .addField("Zombie attaque :" , "Le zombie profite de votre bras assez exposé pour l'aggriper et le mordre de toutes ses forces avec tous le sang à la bouche...\n\nIl vous enlève " +Dégâts*1.25+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie sévère`...\n\nPour savoir si vous êtes infecté : `=Morsure légère`")
+              .addField("Zombie attaque :" , "Le zombie profite de votre bras assez exposé pour l'aggriper et le mordre de toutes ses forces avec tous le sang à la bouche...\n\nIl vous enlève " +Dégâts*1.25+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie sévère'...\n\nPour savoir si vous êtes infecté : `=Morsure légère`")
               .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
               .setTimestamp()
               message.channel.send({embed})}
@@ -16117,7 +16117,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
-                  .addField("Zombie attaque :" , "En courant vers vous, le zombie profite de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes ses forces avec tous le sang à la bouche...\n\nIl vous enlève " +Dégâts*1.25+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie sévère`...\n\nPour savoir si vous êtes infecté : `=Morsure légère`")
+                  .addField("Zombie attaque :" , "En courant vers vous, le zombie profite de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes ses forces avec tous le sang à la bouche...\n\nIl vous enlève " +Dégâts*1.25+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie sévère'...\n\nPour savoir si vous êtes infecté : `=Morsure légère`")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
@@ -16126,7 +16126,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("Zombie attaque :" , "Le zombie ayant du sang à la bouche se met à vous courir dessus très rapidement, se jette sur vous et arrive à mordre votre cou...\n\nIl vous enlève " +Dégâts*1.75+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie mortelle`...\n\nPour savoir si vous êtes infecté : `=Morsure sévère`")
+                    .addField("Zombie attaque :" , "Le zombie ayant du sang à la bouche se met à vous courir dessus très rapidement, se jette sur vous et arrive à mordre votre cou...\n\nIl vous enlève " +Dégâts*1.75+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie mortelle'...\n\nPour savoir si vous êtes infecté : `=Morsure sévère`")
                     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                     .setTimestamp()
                     message.channel.send({embed})}
