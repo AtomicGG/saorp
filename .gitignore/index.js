@@ -16560,10 +16560,29 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Santé`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`Points de défense`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Invasion`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Santé`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`Points de défense`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Horde survivant")) {   
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+  .addField("Les survivants :" , "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`")    .setTimestamp()
+      message.channel.send({embed})
+          }
+    }) ;
+
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Fiche de survivant")) {
+        message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\nNom :【A remplir】\n\nPrénom :【A remplir】\n\nÂge : 【A remplir】\n\nSexe : 【A remplir】\n\nPhysique :【A remplir avec image si vous voulez, c'est conseillé】\n\nPersonnalité :【A remplir】\n\nMétier : 【A remplir】\n\nAtout :【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nInventaire : Morceau de pain\nEau potable\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
+           }   
+        });
+
 
 
   bot.on('message', message => {
@@ -16573,7 +16592,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les armes :" , "...")    .setTimestamp()
+  .addField("Les armes :" , "Il sera assez fréquent de trouver des armes pour vous défendre en tuant les zombies, que ce soit des armes de corps à corps comme des armes à feu !\n\nLes armes de corps à corps auront un nombre d'utilisations limitées disponible sur les informations de l'arme en écrivant : `=[Nom de l'arme]`\n\nLes armes à feu ont besoin de munitions pour pouvoir être utiliser, les munitions nécessaires sont écrites sur les informations de l'arme en écrivant : `=[Nom de l'arme]'")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -16585,7 +16604,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Les plans :" , "...")    .setTimestamp()
+    .addField("Les plans :" , "Lorsque vous fouillez à l'extérieur de la ville, il est possible de trouver un plan plus ou moins rare, permettant de pouvoir fabriquer un objet, une arme, une défense, ou d'autres objets possibles !\n\nLes informations des plans sont écrites en écrivant : `=[Nom du plan]'")    .setTimestamp()
         message.channel.send({embed})
             }
       }) ;
@@ -16627,17 +16646,6 @@ bot.on('message', message => {
                     }
               }) ;
 
-              bot.on('message', message => {
-                if (message.content.startsWith(prefix + "...")) {   
-                  const embed = new Discord.RichEmbed()
-                  .setColor(3447003)
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-              .addField("... :" , "...")    .setTimestamp()
-                  message.channel.send({embed})
-                      }
-                }) ;
 
                 bot.on('message', message => {
                   if (message.content.startsWith(prefix + "Vol")) {   
@@ -16646,7 +16654,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                .addField("Le vol :" , "...")    .setTimestamp()
+                .addField("Le vol :" , "Il est possible de voler discrètement un survivant, les objets de la banque, ou même les objets d'une maison d'un survivant, cependant cela est considéré comme un crime et pourra mener à un exile si cela est fréquent et que les joueurs votent !\n\nPour tenter de voler un survivant : `=Voler le survivant`\nPour tenter de voler un batîment : `=Voler dans un batîment`\nPour tenter de voler dans une maison : `=Voler dans une maison`\n\nPour tenter de voler un survivant avec l'atout 'Voleur' : `=Voler le survivant [Voleur]`\nPour tenter de voler un batîment avec l'atout 'Voleur' : `=Voler dans un batîment [Voleur]`\nPour tenter de voler dans une maison avec l'atout 'Voleur' : `=Voler dans une maison [Voleur]`")    .setTimestamp()
                     message.channel.send({embed})
                         }
                   }) ;
@@ -16658,7 +16666,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                  .addField("L'exile :" , "...")    .setTimestamp()
+                  .addField("L'exile :" , "Il est possible qu'une fois trop de crime commis et si les survivants décident d'effectuer un vote, de vous faire exiler, c'est à dire que vous n'aurez plus le droit de retirer d'objets à la banque, vous devrez survivre de votre côté seul en quelque sorte...\n\nCependant, il est possible de ne pas respecter ces règles, mais si les survivants s'en aperçoivent, ils pourront alors vous mettre dehors et vous finirez en burger pour les zombies...\n\nL'exile peux-être temporaire comme définitif, et les règles définies peuvent être différentes d'une ville à une autre !")    .setTimestamp()
                       message.channel.send({embed})
                           }
                     }) ;
@@ -16670,7 +16678,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                    .addField("Le sommeil :" , "...")    .setTimestamp()
+                    .addField("Le sommeil :" , "Vous serez obligé de dormir au minimum 4 H dans le RP par jour ou sinon vous aurez l'état 'Fatigue' qui vous empêche de pouvoir réussir à fouiller une zone ou de fabriquer ou raffiner quelque chose...\n\nDe plus, avec cet état vous aurez plus de difficulté à fuir les zombies\n\nL'état disparaît une fois que vous avez justement dormis assez, c'est à dire 4 H !")    .setTimestamp()
                         message.channel.send({embed})
                             }
                       }) ;
@@ -16694,7 +16702,7 @@ bot.on('message', message => {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les zombies :" , "...")    .setTimestamp()
+  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !")    .setTimestamp()
   message.channel.send({embed})
   }
   }) ;
@@ -16711,18 +16719,6 @@ bot.on('message', message => {
     }
     }) ;
 
-    bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Invasion")) {   
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Les invasions :" , "...")    .setTimestamp()
-      message.channel.send({embed})
-      }
-      }) ;
-
       bot.on('message', message => {
         if (message.content.startsWith(prefix + "Transformation")) {   
         const embed = new Discord.RichEmbed()
@@ -16730,7 +16726,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les transformations :" , "...")    .setTimestamp()
+        .addField("Les transformations :" , "Une fois un stade important atteins lorsque vous êtes affecté par une morsure, vous deviendrez ce qu'on appelle non pas un zombie mais une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour, cependant si la goule décide de ne pas en dévorer, elle perdra peu à peu sa santé :\n\nVoici le cycle de perte d'HP :\n\nJour 2 : Perte de 50 % de vos HP max\nJour 3 : Perte de 75 % de vos HP max\nJour 4 : Mort de faim\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]")    .setTimestamp()
         message.channel.send({embed})
         }
         }) ;
@@ -16742,7 +16738,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les habitations :" , "...")    .setTimestamp()
+          .addField("Les habitations :" , "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 5 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'")    .setTimestamp()
           message.channel.send({embed})
           }
           }) ;
