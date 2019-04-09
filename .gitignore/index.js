@@ -16145,7 +16145,7 @@ bot.on('message', message => {
   .addBlankField(true)
   .addField(":crossed_swords: Pour effectuer un coup de pied circulaire :" , ":crossed_swords: `=Coup de pied circulaire`\n:crossed_swords: `=Coup de pied circulaire [Boxeur]`")
   .addBlankField(true)
-  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite`\n:shield: `=Fuite [Sprinter]`")
+  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite`\n:shield: `=Fuite [Sprinter]`\n:shield: `=Fuite [Fatigue]`")
   .addBlankField(true)
   .setTimestamp()
   message.channel.send({embed})}
@@ -16206,13 +16206,13 @@ bot.on('message', message => {
         }) ;
 
       bot.on('message', message => {
-          if (message.content.startsWith(prefix + "Habitations")) {
+        if (message.content === prefix + "Habitations") {
           const embed = new Discord.RichEmbed()
           .setColor(3447003)
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les habitations :" , "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 5 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Cachette`\n\nVotre maison peux s'améliorer, notamment elle possède ses propres points de défense lorsque des zombies attaqueront votre maison !\n\nSi vous possédez par exemple une 'Petite fosse' de 2 points de défense et que 5 zombies tentent d'entrer dans votre maison, seulement 3 resteront en vie et les 2 autres mourront ou seront bloqués !\n\nA savoir que les points de défense des habitations ne sont valables qu'une fois par nuit...\n\nSi vous fuiyez par exemple votre maison, que vous revenez poursuivis encore par des zombies, cette fois-ci votre maison malgrè ses points de défense ne stoppera pas les quelques zombies...")    .setTimestamp()
+          .addField("Les habitations :" , "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 5 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Cachette`\n\nVotre maison peux s'améliorer, notamment elle possède ses propres points de défense lorsque des zombies attaqueront votre maison !\n\nSi vous possédez par exemple une 'Petite fosse' de 2 points de défense et que 5 zombies tentent d'entrer dans votre maison, seulement 3 resteront en vie et les 2 autres mourront ou seront bloqués !\n\nA savoir que les points de défense des habitations ne sont valables qu'une fois par nuit...\n\nSi vous fuiyez par exemple votre maison, que vous revenez poursuivis encore par des zombies, cette fois-ci votre maison malgrè ses points de défense ne stoppera pas les quelques zombies...\n\nPour consulter la liste des améliorations : `=Habitations améliorations`")    .setTimestamp()
           message.channel.send({embed})
           }
           }) ;
