@@ -5647,36 +5647,307 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Combo simple")) {      let degats = args.slice(2).join(" : ");
-  const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-  const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-  const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-  const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-  const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-  const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-  const H = A+C+D+E+F+G
-  const B = (Math.floor((100)*Math.random()+1))
-  if (B <= 75){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-    .setTimestamp()
-    message.channel.send({embed})
+  if (message.content.startsWith(prefix + "New Combo simple 1 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 2 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
-  if (76 <= B){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning:  L'ennemis ne pourra pas faire de blocage et de parade !"*/)
-    .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-    .setTimestamp()
-    message.channel.send({embed})
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 2 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 3 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
-}
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 3 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 4 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 4 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.25)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 5 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 5 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 6 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 6 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.75)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 6 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 6 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 7 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 7 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 7 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 7 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 8 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 8 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2.25)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 8 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 8 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 9 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combo simple 9 ")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 9 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo 9 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous restez à Combo 9 !")
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Combo simple")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const H = A+C+D+E+F+G
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning:  L'ennemis ne pourra pas faire de blocage et de parade !"*/)
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
 });
 
 bot.on('message', message => {
