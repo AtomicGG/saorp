@@ -15874,7 +15874,7 @@ bot.on('message', message => {
   .addBlankField(true)
   .addField(":crossed_swords: Pour effectuer un coup de pied circulaire :" , ":crossed_swords: `=Coup de pied circulaire`\n:crossed_swords: `=Coup de pied circulaire [Boxeur]`")
   .addBlankField(true)
-  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite`\n::shield: `=Fuite [Sprinter]`")
+  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite`\n:shield: `=Fuite [Sprinter]`")
   .addBlankField(true)
   .setTimestamp()
   message.channel.send({embed})}
