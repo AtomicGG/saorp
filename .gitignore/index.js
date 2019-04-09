@@ -15950,33 +15950,24 @@ bot.on('message', message => {
             const A = (Math.floor((100)*Math.random()))
             const Dégâts = (Math.floor((3)*Math.random()+2))
             if (message.content === prefix + "Cachette") {
-              if(A < 50){
+              if(A < 60){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField("Cachette :" , "En essayant de courir vers vous, le zombie trébuche et se retrouve sur le sol, en prenant du temps à se relever, vous avez de la chance !\n\nLe zombie prendra le double de dégâts si vous attaquez celui-ci avant sa prochaine action !")
+                .addField("Cachette :" , "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils essayent de rentrer, vous avez 5 bonnes minutes pour décider de quoi faire...")
                 .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                 .setTimestamp()
                 message.channel.send({embed})}
-              if(A > 21 & A < 60){
+              if(A > 60){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField("Cachette :" , "Une fois proche de vous, le zombie tente de vous aggriper mais il est si lent dans ses mouvements qu'il n'y parvient pas, vous avez de la chance !")
+                .addField("Cachette :" , "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies passent devant votre maison et s'en vont !")
                 .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                 .setTimestamp()
                 message.channel.send({embed})}
-                if(A > 61 & A < 70){
-                  const embed = new Discord.RichEmbed()
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
-                  .addField("Cachette :" , "Lorsque le zombie arrive à votre contact, à l'aide de ses mains, il aggripe votre bras et le serre en y plantant ses ongles pourries...\n\nIl vous enlève " +Dégâts*0.75+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie légère`...")
-                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
-                  .setTimestamp()
-                  message.channel.send({embed})}
                           }
                       }) ;
 
