@@ -15870,7 +15870,7 @@ bot.on('message', message => {
   .addBlankField(true)
   .addField(":crossed_swords: Pour effectuer un coup de boule:" , ":crossed_swords: `=Coup de boule`\n:crossed_swords: `=Coup de boule [Boxeur]`")
   .addBlankField(true)
-  .addField(":crossed_swords: Pour effectuer une maîtrise :" , ":crossed_swords: `=Maîtrise`\n:crossed_swords: `=Maîtrise`")
+  .addField(":crossed_swords: Pour effectuer une maîtrise :" , ":crossed_swords: `=Maîtrise`\n:crossed_swords: `=Maîtrise [Boxeur]`")
   .addBlankField(true)
   .addField(":crossed_swords: Pour effectuer un coup de pied circulaire :" , ":crossed_swords: `=Coup de pied circulaire`\n:crossed_swords: `=Coup de pied circulaire [Boxeur]`")
   .addBlankField(true)
