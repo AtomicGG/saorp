@@ -15823,10 +15823,39 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les combats :" , "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un survivant en particulier sauf si vous vous interposez !\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLorsque des zombies pénètrent en ville : `=Cible zombie : [Nombre de survivant en ville]`\n\nLes différentes attaques spéciales grâce aux armes sont écrites sur les informations de l'arme en question !\n\nPour avoir la liste des actions possibles sans armes : `=Horde actions`")    .setTimestamp()
+.addField("Les combats, partie 1 :" , "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un survivant en particulier sauf si vous vous interposez !\n\nPour savoir combien de zombies infiltrés en ville la nuit suivront un survivant : `=Nombre de zombie : [Le nombre de zombie infiltrés/restants]\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLorsque des zombies pénètrent en ville : `=Cible zombie : [Nombre de survivant en ville]`\n\nLa suite en écrivant : `=Horde combat 2`")    .setTimestamp()
 message.channel.send({embed})
 }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Horde combat 2")) {
+  const embed = new Discord.RichEmbed()
+  .setColor(3447003)
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+  .addField("Les combats, partie 2 :" , "Les différentes attaques spéciales grâce aux armes sont écrites sur les informations de l'arme en question !\n\nPour avoir la liste des actions possibles sans armes : `=Horde actions`\n\nUne chose importante, si plusieurs survivants sont pourchassés par des zombies et que les survivants se regroupent, les zombies formeront plus qu'un groupe !\n\nLorsque vous fuiyez les zombies en allant ailleurs, vous aurez toujours l'initiative pour les attaquer !")    .setTimestamp()
+  message.channel.send({embed})
+  }
+  }) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Nombre de zombie")) {
+    let X = args.slice(3).join(" : ");
+    const Zombies = (Math.floor((X)*Math.random()+1))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Nombre de zombie :" , "Le nombre de zombie suivant le survivant sera de " +Zombies+ " !")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Horde actions")) {
