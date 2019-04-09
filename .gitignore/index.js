@@ -16159,7 +16159,7 @@ bot.on('message', message => {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !\n\nLorsqu'un zombie vous attaque : `=Zombie attaque`")    .setTimestamp()
+  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !\n\nLorsqu'un ou des zombies vous attaque : `=Zombies attaque`")    .setTimestamp()
   message.channel.send({embed})
   }
   }) ;
@@ -16438,25 +16438,26 @@ bot.on('message', message => {
 ///////////////////////////////////////////////////////////////Attaque d'un zombie////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  const A = (Math.floor((100)*Math.random()))
-  const Dégâts = (Math.floor((3)*Math.random()+2))
-  if (message.content === prefix + "Zombie attaque") {
-    if(A < 20){
+  const A = (Math.floor((100+(Zombie))*Math.random()))
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content === prefix + "Zombies attaque") {
+    let Zombie = args.slice(2).join(" : ");
+    const X = (Math.floor((Zombie/5)*Math.random()+1))
+    if(A < 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Zombie attaque :" , "En essayant de courir vers vous, le zombie trébuche et se retrouve sur le sol, en prenant du temps à se relever, vous avez de la chance !\n\nLe zombie prendra le double de dégâts si vous attaquez celui-ci avant sa prochaine action !")
-      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .addField("Zombies attaque :" , "En essayant de courir vers vous, les zombies trébuchent sur le sol, en prenant du temps à se relever, vous avez de la chance !\n\nles zombies n'agiront pas lors de leur prochaine action !")      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
-    if(A > 21 & A < 60){
+    if(A > 31 & A < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Zombie attaque :" , "Une fois proche de vous, le zombie tente de vous aggriper mais il est si lent dans ses mouvements qu'il n'y parvient pas, vous avez de la chance !")
-      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .addField("Zombies attaque :" , "Une fois proche de vous, les zombies tentent de vous aggriper mais ils sont si lents dans ses mouvements qu'il n'y parviennent pas, vous avez de la chance !")      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
       if(A > 61 & A < 70){
@@ -16464,8 +16465,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Zombie attaque :" , "Lorsque le zombie arrive à votre contact, à l'aide de ses mains, il aggripe votre bras et le serre en y plantant ses ongles pourries...\n\nIl vous enlève " +Dégâts*0.75+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie légère`...")
-        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+        .addField("Zombies attaque :" , "Lorsque les zombies arrivent à votre contact, à l'aide de ses mains et de leur bras en avant, ils aggripent votre bras et serre en y plantant leur ongles pourries...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémorragie légère` : `=Hémmoragie légère`")        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
         message.channel.send({embed})}
         if(A > 71 & A < 80){
@@ -16473,8 +16473,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(3447003)
-          .addField("Zombie attaque :" , "En arrivant à votre hauteur, le zombie essaye de vous aggriper mais il tombe légèrement et attrape votre jambe en la serrant avec ses ongles tout en essayant de vous mordre mais il n'y arrive pas...\n\nIl vous enlève " +Dégâts+ " HP et rend une fuite plus difficile tant qu'il reste accrocher...\n\n")
-          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+          .addField("Zombies attaque :" , "En arrivant à votre hauteur, les zombies essayent de vous aggriper mais ils tombent légèrement et attrape votre jambe en la serrant avec leur ongles tout en essayant de vous mordre mais ils n'y arrivent pas...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémorragie légère` : `=Hémmoragie légère`")          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
           .setTimestamp()
           message.channel.send({embed})}
           if(A > 81 & A < 90){
@@ -16482,8 +16481,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Zombie attaque :" , "D'une rapidité assez remarquable et d'un bond en avant, le zombie arrive à vous faire tomber sur le sol en serrant votre cou, en essayant de le mordre sans réussir...\n\nIl vous enlève " +Dégâts+ " HP et vous empêche de fuir tant qu'il vous garde sur le sol...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie légère`...")
-            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+            .addField("Zombies attaque :" , "D'une rapidité assez remarquable, les zombies arrivent à vous faire tomber sur le sol en serrant votre cou et les différentes parties du corps, en essayant de le mordre sans réussir...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémmoragie légère` : `=Hémorragie légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi vous êtes seul ou si les survivants n'arrivent pas à tuer ou repousser les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
             .setTimestamp()
             message.channel.send({embed})}
             if(A > 91 & A < 95){
@@ -16491,50 +16489,63 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(3447003)
-              .addField("Zombie attaque :" , "Le zombie profite de votre bras assez exposé pour l'aggriper et le mordre de toutes ses forces avec tous le sang à la bouche...\n\nIl vous enlève " +Dégâts*1.25+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie sévère'...\n\nPour savoir si vous êtes infecté : `=Morsure légère`")
-              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+              .addField("Zombies attaque :" , "Les zombies profitent de votre bras assez exposé pour l'aggriper et le mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémmoragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
               .setTimestamp()
               message.channel.send({embed})}
-                if(A > 96 & A < 98){
+                if(A > 96 & A < 100){
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
-                  .addField("Zombie attaque :" , "En courant vers vous, le zombie profite de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes ses forces avec tous le sang à la bouche...\n\nIl vous enlève " +Dégâts*1.25+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie sévère'...\n\nPour savoir si vous êtes infecté : `=Morsure légère`")
-                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .addField("Zombies attaque :" , "En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémorragie avancée` : `=Hémmoragie légère`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
-                  if(A > 99){
+                  if(A > 101 & A < 120){
                     const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("Zombie attaque :" , "Le zombie ayant du sang à la bouche se met à vous courir dessus très rapidement, se jette sur vous et arrive à mordre votre cou...\n\nIl vous enlève " +Dégâts*1.75+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie mortelle'...\n\nPour savoir si vous êtes infecté : `=Morsure sévère`")
-                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                    .addField("Zombies attaque :" , "Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémmoragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection avancée`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                     .setTimestamp()
                     message.channel.send({embed})}
+                    if(A > 111 & A < 140){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(3447003)
+                      .addField("Zombies attaque :" , "Dès que les zombies se trouvent à votre portée, ils entourent tous l'espace autour de vous et vous force à finir sur le sol entouré de toute part en vous faisant mordre et aggriper toutes les parties de votre corps...\n\nVous êtes maintenant atteint de l'état `Blessure mortelle`\n\nPour déterminer si vous subissez l'état `Hémorragie mortelle` : `=Hémmoragie mortelle`\n\nPour savoir si vous êtes infecté : `=Infection mortelle`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                      if(A > 141){
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("Zombies attaque :" , "Il y a tellement de zombies tous autour de vous qui vous entoure si rapidement en masse qu'il n'y a presque aucun espoir de vous en sortir ni de fuir, vous vous faites complètement dévoré vivant devant les autres survivants ou seul...\n\nVous êtes maintenant atteint de l'état `Blessure mortelle`\n\nPour déterminer si vous subissez l'état `Hémorragie mortelle` : `=Hémmoragie mortelle`\n\nPour savoir si vous êtes infecté : `=Infection mortelle`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")
+                        .setTimestamp()
+                        message.channel.send({embed})}
                 }
             }) ;
-////////////////////////////////////////////////////////////////Morsure et infection////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////Morsure et infection et hémmoragie////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()))
-  if (message.content.startsWith(prefix + "Morsure légère")) {
-    if(A < 75){
+  if (message.content.startsWith(prefix + "Infection légère")) {
+    if(A < 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Infection :" , "La morsure par chance ne vous infecte pas, vous avez de la chance !")
+      .addField("Infection légère :" , "Vous êtes malheureusement atteint de l'état `Infection légère`...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
-    if(A > 76){
+    if(A > 21){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Infection :" , "Malheureusement vous êtes infecté, vous êtes dorénavant atteint de l'état `Infection légère`")
+      .addField("Infection légère :" , "Vous n'êtes pas atteint de l'état `Infection légère` !")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
@@ -16543,36 +16554,130 @@ bot.on('message', message => {
 
             bot.on('message', message => {
               const A = (Math.floor((100)*Math.random()))
-              if (message.content.startsWith(prefix + "Morsure sévère")) {
-                if(A < 50){
+              if (message.content.startsWith(prefix + "Infection avancée")) {
+                if(A < 40){
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
-                  .addField("Infection :" , "La morsure par chance ne vous infecte pas, vous avez de la chance !")
+                  .addField("Infection avancée :" , "Vous êtes malheureusement atteint de l'état `Infection avancée`...")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
-                if(A > 51 & A < 75){
+                if(A > 41){
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
-                  .addField("Infection :" , "Malheureusement vous êtes infecté, vous êtes dorénavant atteint de l'état `Infection légère`")
+                  .addField("Infection avancée :" , "Vous n'êtes pas atteint de l'état `Infection avancée` !")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
-                  if(A > 51 & A < 75){
-                    const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField("Infection :" , "Malheureusement vous êtes infecté, vous êtes dorénavant atteint de l'état `Infection avancée`")
-                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
-                    .setTimestamp()
-                    message.channel.send({embed})}
                             }
                         }) ;
+
+                        bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()))
+  if (message.content.startsWith(prefix + "Infection mortelle")) {
+    if(A < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Infection mortelle :" , "Vous êtes malheureusement atteint de l'état `Infection mortelle`...")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+    if(A > 61){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Infection mortelle :" , "Vous n'êtes pas atteint de l'état `Infection mortelle` !")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
+            
+
+
+            bot.on('message', message => {
+              const A = (Math.floor((100)*Math.random()))
+              if (message.content.startsWith(prefix + "Hémorragie légère")) {
+                if(A < 30){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField("Hémorragie légère :" , "Vous êtes malheureusement atteint de l'état `Hémorragie légère`...")
+                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                if(A > 31){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField("Hémorragie légère :" , "Vous n'êtes pas atteint de l'état `Hémorragie légère` !")
+                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                            }
+                        }) ;
+
+                        bot.on('message', message => {
+                          const A = (Math.floor((100)*Math.random()))
+                          if (message.content.startsWith(prefix + "Hémorragie avancée")) {
+                            if(A < 50){
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                              .setColor(3447003)
+                              .addField("Hémorragie avancée :" , "Vous êtes malheureusement atteint de l'état `Hémorragie avancée`...")
+                              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                              .setTimestamp()
+                              message.channel.send({embed})}
+                            if(A > 51){
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                              .setColor(3447003)
+                              .addField("Hémorragie avancée :" , "Vous n'êtes pas atteint de l'état `Hémorragie avancée` !")
+                              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                              .setTimestamp()
+                              message.channel.send({embed})}
+                                        }
+                                    }) ;
+
+                                    bot.on('message', message => {
+              const A = (Math.floor((100)*Math.random()))
+              if (message.content.startsWith(prefix + "Hémorragie mortelle")) {
+                if(A < 70){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField("Hémorragie mortelle :" , "Vous êtes malheureusement atteint de l'état `Hémorragie mortelle`...")
+                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                if(A > 71){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField("Hémorragie mortelle :" , "Vous n'êtes pas atteint de l'état `Hémorragie mortelle` !")
+                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                            }
+                        }) ;
+            
+
+        
+         
 //////////////////////////////////////////////////////////////Météo Horde//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
