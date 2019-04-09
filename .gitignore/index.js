@@ -16441,9 +16441,9 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Zombies attaque")) {
-    let Zombie = args.slice(2).join(" : ");
-    const A = (Math.floor((100)*Math.random()+(Zombie)))
-    const X = (Math.floor((Zombie/5)*Math.random()+1))
+    let Z = args.slice(2).join(" : ");
+    const A = (Math.floor((100)*Math.random()+Z))
+    const X = (Math.floor((Z/5)*Math.random()+1))
     if(A < 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
