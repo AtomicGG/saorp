@@ -16443,8 +16443,8 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Zombies attaque")) {
     let Z = args.slice(2).join(" : ");
     const B = (Math.floor((100)*Math.random()+1))
-    const X = (Math.floor((Z/5)*Math.random()+1))
-    const A = B+Z
+    const X = (Math.floor((Z/10)*Math.random()+1))
+    const A = (B+Z)
     if(A < 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -16509,7 +16509,7 @@ bot.on('message', message => {
                     .addField("Zombies attaque :" , "Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémmoragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection avancée`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                     .setTimestamp()
                     message.channel.send({embed})}
-                    if(A > 111 & A < 140){
+                    if(A > 121 & A < 140){
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
