@@ -5648,7 +5648,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 1 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5678,7 +5678,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 2 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5708,7 +5708,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 3 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5738,7 +5738,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 4 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.25)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5768,7 +5768,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 5 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5798,7 +5798,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 6 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.75)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5828,7 +5828,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 7 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5858,7 +5858,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 8 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2.25)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
@@ -5888,7 +5888,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 9 ")) {
-    let degats = args.slice(2).join(" : ");
+    let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
