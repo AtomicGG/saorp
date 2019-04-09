@@ -15817,7 +15817,7 @@ bot.on('message', message => {
                       }) ;
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Horde combat")) {
+  if (message.content === prefix + "Horde combat") {
 const embed = new Discord.RichEmbed()
 .setColor(3447003)
 .setAuthor(message.author.username , message.author.avatarURL)
@@ -15829,7 +15829,7 @@ message.channel.send({embed})
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Horde combat 2")) {
+  if (message.content === prefix + "Horde combat 2") {
   const embed = new Discord.RichEmbed()
   .setColor(3447003)
   .setAuthor(message.author.username , message.author.avatarURL)
