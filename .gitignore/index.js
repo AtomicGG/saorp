@@ -16438,11 +16438,11 @@ bot.on('message', message => {
 ///////////////////////////////////////////////////////////////Attaque d'un zombie////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  const A = (Math.floor((100+(Zombie))*Math.random()))
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content === prefix + "Zombies attaque") {
     let Zombie = args.slice(2).join(" : ");
+    const A = (Math.floor((100+(Zombie))*Math.random()))
     const X = (Math.floor((Zombie/5)*Math.random()+1))
     if(A < 30){
       const embed = new Discord.RichEmbed()
