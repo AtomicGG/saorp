@@ -15956,7 +15956,7 @@ bot.on('message', message => {
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField("Cachette :" , "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils essayent de rentrer, vous avez 5 bonnes minutes pour décider de quoi faire...")
-                .setImage("https://steamuserimages-a.akamaihd.net/ugc/817812071722883784/643F8BFCA27239B8F1E2C9411C58EB80E521E3B6/")
+                .setImage("https://i.imgur.com/Gqbxucz.jpg")
                 .setTimestamp()
                 message.channel.send({embed})}
               if(A > 60){
