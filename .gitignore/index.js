@@ -16442,7 +16442,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Zombies attaque")) {
     let Zombie = args.slice(2).join(" : ");
-    const A = (Math.floor((100)*Math.random()+Zombie))
+    const A = (Math.floor((100)*Math.random()+(Zombie)))
     const X = (Math.floor((Zombie/5)*Math.random()+1))
     if(A < 30){
       const embed = new Discord.RichEmbed()
