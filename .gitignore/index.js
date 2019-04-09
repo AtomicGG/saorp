@@ -15687,7 +15687,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`")    .setTimestamp()
+        .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nSi les survivants encore vivants ont réussis à rester cacher dans leur habitation et que plus personne n'est pourchassé, les zombies restants sortiront de la ville et iront en dehors de celle-ci !\n\nCependant, les zombies restants qui n'ont pas été tués durant la nuit, reviendront la nuit prochaine avec les zombies de la nouvelle attaque !\n\nSi par exemple le jour 4 il reste 37 zombies en vie qui sortent de la ville, et que le jour 5 il y a 240 zombies attaquant la ville, il y en aura donc 277 zombies attaquant la ville...")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
@@ -15941,10 +15941,44 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les habitations :" , "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 5 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'")    .setTimestamp()
+          .addField("Les habitations :" , "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 5 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Cachette`")    .setTimestamp()
           message.channel.send({embed})
           }
           }) ;
+
+          bot.on('message', message => {
+            const A = (Math.floor((100)*Math.random()))
+            const Dégâts = (Math.floor((3)*Math.random()+2))
+            if (message.content === prefix + "Cachette") {
+              if(A < 50){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cachette :" , "En essayant de courir vers vous, le zombie trébuche et se retrouve sur le sol, en prenant du temps à se relever, vous avez de la chance !\n\nLe zombie prendra le double de dégâts si vous attaquez celui-ci avant sa prochaine action !")
+                .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                .setTimestamp()
+                message.channel.send({embed})}
+              if(A > 21 & A < 60){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cachette :" , "Une fois proche de vous, le zombie tente de vous aggriper mais il est si lent dans ses mouvements qu'il n'y parvient pas, vous avez de la chance !")
+                .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(A > 61 & A < 70){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField("Cachette :" , "Lorsque le zombie arrive à votre contact, à l'aide de ses mains, il aggripe votre bras et le serre en y plantant ses ongles pourries...\n\nIl vous enlève " +Dégâts*0.75+ " HP...\n\nVous êtes maintenant atteint de l'état 'Hémmoragie légère`...")
+                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                          }
+                      }) ;
 
           bot.on('message', message => {
             if (message.content.startsWith(prefix + "Mine")) {
