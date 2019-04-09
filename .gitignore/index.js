@@ -16205,7 +16205,7 @@ bot.on('message', message => {
         }
         }) ;
 
-        bot.on('message', message => {
+      bot.on('message', message => {
           if (message.content.startsWith(prefix + "Habitations")) {
           const embed = new Discord.RichEmbed()
           .setColor(3447003)
