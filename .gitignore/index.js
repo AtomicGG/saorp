@@ -16563,7 +16563,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField("Dernier espoir :" , "Dans un élan de rage et de courage, vous arrivez à repousser tous les zombies sur vous malgrè tous le sang qui coule et les blessures, en réussissant par la suite à vous enfuir de toute la horde !\n\nCependant, vous êtes atteint de l'état `Terreur` ainsi que `Blessure mortelle`...")
+        .addField("Dernier espoir :" , "Dans un élan de rage et de courage, vous arrivez à repousser tous les zombies sur vous malgrè tous le sang qui coule et les blessures, en réussissant par la suite à vous enfuir de toute la horde !\n\nCependant, vous êtes atteint de l'état `Blessure mortelle`...")
         .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
         message.channel.send({embed})}
