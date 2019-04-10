@@ -16134,7 +16134,7 @@ bot.on('message', message => {
   .addBlankField(true)
   .addField(":crossed_swords: Pour effectuer un coup de pied circulaire :" , ":crossed_swords: `=Coup de pied circulaire`\n:crossed_swords: `=Coup de pied circulaire [Boxeur]`")
   .addBlankField(true)
-  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite [Aucune blessure`\n:shield: `=Fuite [Blessure légère]`\n:shield: `=Fuite [Blessure]`\n:shield `=Fuite [Blessure sévère]`\n:shield: `=Fuite [Blessure mortelle`\n:shield: `=Fuite [Fatigue]`")
+  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite [Aucune blessure`\n:shield: `=Fuite [Blessure légère]`\n:shield: `=Fuite [Blessure]`\n:shield: `=Fuite [Blessure sévère]`\n:shield: `=Fuite [Blessure mortelle`\n:shield: `=Fuite [Fatigue]`")
   .addBlankField(true)
   .setTimestamp()
   message.channel.send({embed})}
