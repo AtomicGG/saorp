@@ -15928,7 +15928,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Tour`\n=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -16296,6 +16296,19 @@ bot.on('message', message => {
                                       }
                                   }) ;
 
+
+                                  bot.on('message', message => {
+                                    if (message.content === prefix + "Tour") {
+                                      const embed = new Discord.RichEmbed()
+                                      .setColor(0xff0000)
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+                                  .addField("La tour :" , "Parfois, vous aurez besoin de pouvoir garder un oeil sur la ville ou même sur l'extérieur en cas de problèmes, c'est pourquoi la tour bien qu'elle ne soit pas immense, existe !\n\nCependant, elle possède une vision de base assez restreinte, vous ne pourrez observer que la ville et les [Zones proches]...\n\nPour tenter de remarquer un survivant en danger, ou un zombie qui se balade en ville à découvert : `=Observation`")    .setTimestamp()
+                                      message.channel.send({embed})
+                                          }
+                                    }) ;
+
           bot.on('message', message => {
             if (message.content.startsWith(prefix + "Mine")) {
             const embed = new Discord.RichEmbed()
@@ -16472,6 +16485,34 @@ bot.on('message', message => {
     message.channel.send({embed})
         }
   }) ;
+///////////////////////////////////////////////////////////Observation/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()))
+  const X = (Math.floor((2)*Math.random()+1))
+  if (message.content.startsWith(prefix + "Observation")) {
+    if(A < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Observation :" , "Vous essayez de vous concentrer sur là où vous êtes en train de regarder mais vous ne trouvez rien de suspect ou d'étrange...")
+      .setTimestamp()
+      message.channel.send({embed})}
+    if(A > 61){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Observation :" , "En vous concentrant, vous arrivez à bien voir la scène depuis la tour et vous voyez ou non s'il y a des survivants en danger ou des zombies qui rôdent !")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
+
+
 //////////////////////////////////////////////////////////////Vol Horde//////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
