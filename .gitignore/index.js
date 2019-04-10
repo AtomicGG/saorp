@@ -16264,7 +16264,7 @@ bot.on('message', message => {
                             .setAuthor(message.author.username , message.author.avatarURL)
                             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setColor(0xff0000)
-                            .addField("Cachette :" , "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies passent devant votre maison et s'en vont !")
+                            .addField("Cachette :" , "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies s'en vont plus loin !")
                             .setImage("https://media1.giphy.com/media/nEuTuI4yvFXA1qSUaD/giphy.gif")
                             .setTimestamp()
                             message.channel.send({embed})}
