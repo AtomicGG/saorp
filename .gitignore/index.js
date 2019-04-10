@@ -16554,7 +16554,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Dernier espoir :" , "Par chance, vous arrivez malgrè tous les zombies autour de vous à vous débattre, foutre des coups de points partout autour de vous ce qui vous permet de fuir de justesse...\n\nCependant, vous êtes atteint de l'état `Terreur` ainsi que `Blessure mortelle`...")
+      .addField("Dernier espoir :" , "Par chance, vous arrivez malgrè tous les zombies autour de vous à vous débattre, foutre des coups de poings et des coups de pieds partout autour de vous ce qui vous permet de fuir de justesse...\n\nCependant, vous êtes atteint de l'état `Terreur` ainsi que `Blessure mortelle`...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
