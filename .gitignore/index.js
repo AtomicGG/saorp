@@ -16173,7 +16173,7 @@ bot.on('message', message => {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !\n\nLorsqu'un ou des zombies vous attaque : `=Zombies attaque`")    .setTimestamp()
+  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !\n\nLorsqu'un ou des zombies vous attaque : `=Zombies attaque : [Nombre de zombie]`")    .setTimestamp()
   message.channel.send({embed})
   }
   }) ;
