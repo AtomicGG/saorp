@@ -15928,7 +15928,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Santé`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -15940,7 +15940,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les survivants :" , "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`")    .setTimestamp()
+  .addField("Les survivants :" , "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de 5 objets sur lui !")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -16051,18 +16051,7 @@ bot.on('message', message => {
               }) ;
 
 
-                bot.on('message', message => {
-                  if (message.content.startsWith(prefix + "Vol")) {
-                    const embed = new Discord.RichEmbed()
-                    .setColor(3447003)
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                .addField("Le vol :" , "Il est possible de voler discrètement un survivant, les objets de la banque, ou même les objets d'une maison d'un survivant, cependant cela est considéré comme un crime et pourra mener à un exile si cela est fréquent et que les joueurs votent !\n\nPour tenter de voler un survivant : `=Voler le survivant`\nPour tenter de voler un batîment : `=Voler dans un batîment`\nPour tenter de voler dans une maison : `=Voler dans une maison`\n\nPour tenter de voler un survivant avec l'atout 'Voleur' : `=Voler le survivant [Voleur]`\nPour tenter de voler un batîment avec l'atout 'Voleur' : `=Voler dans un batîment [Voleur]`\nPour tenter de voler dans une maison avec l'atout 'Voleur' : `=Voler dans une maison [Voleur]`")    .setTimestamp()
-                    message.channel.send({embed})
-                        }
-                  }) ;
-
+              
                   bot.on('message', message => {
                     if (message.content.startsWith(prefix + "Exile")) {
                       const embed = new Discord.RichEmbed()
@@ -16433,13 +16422,13 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Santé")) {
+  if (message.content.startsWith(prefix + "Blessure")) {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("La santé :" , "Plus important que les ressources, votre santé puisqu'en effet, votre personnage possèdera un certain nombre de HP, s'il atteint 0 HP il meurt....\n\nCependant, pour éviter la mort, il suffit de vous nourrir, de boire, d'éviter de combattre de trop grands groupes de zombies, et de prendre des médicaments s'il faut !\n\nUn simple citoyen possèdera 20 HP, alors qu'un veilleur possèdera 40 HP !\n\nA savoir que vous pouvez être blessé légèrement ou gravement d'un membre ou d'une partie du corps, provoquant des effets négatifs plus ou moins importants\n\nVoici la liste des blessures :\n\n...")    .setTimestamp()
+.addField("Les blessures :" , "Plus important que les ressources, votre santé puisqu'en effet, votre personnage possèdera un certain nombre de HP, s'il atteint 0 HP il meurt....\n\nCependant, pour éviter la mort, il suffit de vous nourrir, de boire, d'éviter de combattre de trop grands groupes de zombies, et de prendre des médicaments s'il faut !\n\nUn simple citoyen possèdera 20 HP, alors qu'un veilleur possèdera 40 HP !\n\nA savoir que vous pouvez être blessé légèrement ou gravement d'un membre ou d'une partie du corps, provoquant des effets négatifs plus ou moins importants\n\nVoici la liste des blessures :\n\n...")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -16458,6 +16447,95 @@ bot.on('message', message => {
     message.channel.send({embed})
         }
   }) ;
+//////////////////////////////////////////////////////////////Vol Horde//////////////////////////////////////////////////////////////////////////////////////////////
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Vol")) {
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("Le vol :" , "Il est possible de voler discrètement un survivant ou sa maison si elle n'est pas fermé à clef ou même la banque, cependant cela est considéré comme un crime et pourra mener à un exile si cela est fréquent et que les joueurs votent !\n\nPour tenter de voler un survivant : `=Voler le survivant`\nPour tenter de voler un survivant avec l'atout 'Voleur' : `=Voler le survivant [Voleur]`\n\nUn survivant peux vous surprendre en train de voler, tous se joue en fonction du roll, celui qui fait le meilleur score !")    .setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+
+
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()))
+  const X = (Math.floor((2)*Math.random()+1))
+  if (message.content.startsWith(prefix + "Voler le survivant")) {
+    if(A < 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, de plus il vous voit en train d'essayer de le voler...")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+    if(A > 41 & A < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, mais par chance il ne remarque absolument rien !")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(A > 21){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Voler le survivant :" , "Vous réussisez à voler le survivant, et plus exactement vous arrivez à lui voler `" +X+ "` objets de son inventaire !\n\nLes objets obtenus sont aléatoires et non choisis [Jouez cela au roll]")
+        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+        .setTimestamp()
+        message.channel.send({embed})}
+                }
+            }) ;
+
+            bot.on('message', message => {
+              const A = (Math.floor((100)*Math.random()))
+              const X = (Math.floor((3)*Math.random()+1))
+              if (message.content.startsWith(prefix + "Voler le survivant [Voleur]")) {
+                if(A < 20){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, de plus il vous voit en train d'essayer de le voler...")
+                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                if(A > 21 & A < 40){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(3447003)
+                  .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, mais par chance il ne remarque absolument rien !")
+                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(A > 41){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Voler le survivant :" , "Vous réussisez à voler le survivant, et plus exactement vous arrivez à lui voler `" +X+ "` objets de son inventaire !\n\nLes objets obtenus sont aléatoires et non choisis [Jouez cela au roll]")
+                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                            }
+                        }) ;
+
+            
+
+
+
 ///////////////////////////////////////////////////////////////Attaque d'un zombie////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
@@ -16794,7 +16872,7 @@ bot.on('message', message => {
   /////////////////////////////////////////////////////////////Les jours, Horde//////////////////////////////////////////////////////////////////////////////////////
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Jour 1")) {
+    if (message.content === prefix + "Jour 1") {
       const Zombie = (Math.floor((16)*Math.random()+15))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -16808,7 +16886,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 2")) {
+  if (message.content === prefix + "Jour 2") {
     const Zombie = (Math.floor((27)*Math.random()+26))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16822,7 +16900,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 3")) {
+  if (message.content === prefix + "Jour 3") {
     const Zombie = (Math.floor((46)*Math.random()+45))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16837,7 +16915,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 4")) {
+  if (message.content === prefix + "Jour 4") {
     const Zombie = (Math.floor((81)*Math.random()+80))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16852,7 +16930,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 5")) {
+  if (message.content === prefix + "Jour 5") {
     const Zombie = (Math.floor((141)*Math.random()+140))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16867,7 +16945,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 6")) {
+  if (message.content === prefix + "Jour 6") {
     const Zombie = (Math.floor((221)*Math.random()+220))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16882,7 +16960,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 7")) {
+  if (message.content === prefix + "Jour 7") {
     const Zombie = (Math.floor((321)*Math.random()+320))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16897,7 +16975,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 8")) {
+  if (message.content === prefix + "Jour 8") {
     const Zombie = (Math.floor((451)*Math.random()+450))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16912,7 +16990,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 9")) {
+  if (message.content === prefix + "Jour 9") {
     const Zombie = (Math.floor((651)*Math.random()+650))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16927,7 +17005,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 10")) {
+  if (message.content === prefix + "Jour 10") {
     const Zombie = (Math.floor((951)*Math.random()+950))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16942,7 +17020,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 11")) {
+  if (message.content === prefix + "Jour 11") {
     const Zombie = (Math.floor((1351)*Math.random()+1350))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16957,7 +17035,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 12")) {
+  if (message.content === prefix + "Jour 12") {
     const Zombie = (Math.floor((1901)*Math.random()+1900))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16972,7 +17050,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 13")) {
+  if (message.content === prefix + "Jour 13") {
     const Zombie = (Math.floor((2601)*Math.random()+2600))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16987,7 +17065,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 14")) {
+  if (message.content === prefix + "Jour 14") {
     const Zombie = (Math.floor((3401)*Math.random()+3400))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17002,7 +17080,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 15")) {
+  if (message.content === prefix + "Jour 15") {
     const Zombie = (Math.floor((4201)*Math.random()+4200))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17017,7 +17095,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 16")) {
+  if (message.content === prefix + "Jour 16") {
     const Zombie = (Math.floor((5201)*Math.random()+5200))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17032,7 +17110,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 17")) {
+  if (message.content === prefix + "Jour 17") {
     const Zombie = (Math.floor((6501)*Math.random()+6500))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17047,7 +17125,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 18")) {
+  if (message.content === prefix + "Jour 18") {
     const Zombie = (Math.floor((8001)*Math.random()+8000))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17062,7 +17140,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 19")) {
+  if (message.content === prefix + "Jour 19") {
     const Zombie = (Math.floor((10001)*Math.random()+10001))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17077,7 +17155,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jour 20")) {
+  if (message.content === prefix + "Jour 20") {
     const Zombie = (Math.floor((13001)*Math.random()+13001))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
