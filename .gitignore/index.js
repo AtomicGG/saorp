@@ -16533,7 +16533,42 @@ bot.on('message', message => {
                         }) ;
 
             
+/////////////////////////////////////////////////////////////Dernier espoir///////////////////////////////////////////////////////////////////////////////////////
 
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()))
+  const X = (Math.floor((2)*Math.random()+1))
+  if (message.content.startsWith(prefix + "Voler le survivant")) {
+    if(A < 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, de plus il vous voit en train d'essayer de le voler...")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+    if(A > 41 & A < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, mais par chance il ne remarque absolument rien !")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(A > 21){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField("Voler le survivant :" , "Vous réussisez à voler le survivant, et plus exactement vous arrivez à lui voler `" +X+ "` objets de son inventaire !\n\nLes objets obtenus sont aléatoires et non choisis [Jouez cela au roll]")
+        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+        .setTimestamp()
+        message.channel.send({embed})}
+                }
+            }) ;
 
 
 ///////////////////////////////////////////////////////////////Attaque d'un zombie////////////////////////////////////////////////////////////////////////////
@@ -16599,7 +16634,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(3447003)
-                  .addField("Zombies attaque :" , "En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémorragie avancée` : `=Hémmoragie légère`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .addField("Zombies attaque :" , "En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémorragie avancée` : `=Hémmoragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
                   if(A > 101-Z & A < 120-Z){
