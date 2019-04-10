@@ -16543,7 +16543,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Zombies attaque")) {
     let ZZ = args.slice(2).join(" : ");
-    const Z = ZZ*3
+    const Z = ZZ*2
     const A = (Math.floor((100)*Math.random()+Z))
     const X = (Math.floor((Z/10)*Math.random()+1))
     if(A < 30-Z){
