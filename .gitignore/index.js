@@ -15924,7 +15924,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === prefix + "Horde") {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -15936,7 +15936,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Horde survivant")) {
       const embed = new Discord.RichEmbed()
-      .setColor(3447003)
+      .setColor(0xff0000)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -15954,7 +15954,7 @@ bot.on('message', message => {
         bot.on('message', message => {
           if (message.content.startsWith(prefix + "Nuit")) {
             const embed = new Discord.RichEmbed()
-            .setColor(3447003)
+            .setColor(0xff0000)
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -15966,7 +15966,7 @@ bot.on('message', message => {
           bot.on('message', message => {
             if (message.content.startsWith(prefix + "Matin")) {
               const embed = new Discord.RichEmbed()
-              .setColor(3447003)
+              .setColor(0xff0000)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -15980,7 +15980,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Horde armes")) {
       const embed = new Discord.RichEmbed()
-      .setColor(3447003)
+      .setColor(0xff0000)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -15992,7 +15992,7 @@ bot.on('message', message => {
     bot.on('message', message => {
       if (message.content.startsWith(prefix + "Plans")) {
         const embed = new Discord.RichEmbed()
-        .setColor(3447003)
+        .setColor(0xff0000)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16005,7 +16005,7 @@ bot.on('message', message => {
         bot.on('message', message => {
           if (message.content.startsWith(prefix + "Batîments")) {
             const embed = new Discord.RichEmbed()
-            .setColor(3447003)
+            .setColor(0xff0000)
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16017,7 +16017,7 @@ bot.on('message', message => {
           bot.on('message', message => {
             if (message.content === prefix + "Défense de la ville") {
               const embed = new Discord.RichEmbed()
-              .setColor(3447003)
+              .setColor(0xff0000)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16029,7 +16029,7 @@ bot.on('message', message => {
             bot.on('message', message => {
               if (message.content === prefix + "Défense de la ville 2") {
                 const embed = new Discord.RichEmbed()
-                .setColor(3447003)
+                .setColor(0xff0000)
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16041,7 +16041,7 @@ bot.on('message', message => {
             bot.on('message', message => {
               if (message.content.startsWith(prefix + "Fabrication")) {
                 const embed = new Discord.RichEmbed()
-                .setColor(3447003)
+                .setColor(0xff0000)
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16055,7 +16055,7 @@ bot.on('message', message => {
                   bot.on('message', message => {
                     if (message.content.startsWith(prefix + "Exile")) {
                       const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
+                      .setColor(0xff0000)
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16067,7 +16067,7 @@ bot.on('message', message => {
                     bot.on('message', message => {
                       if (message.content.startsWith(prefix + "Sommeil")) {
                         const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
+                        .setColor(0xff0000)
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16079,7 +16079,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === prefix + "Horde combat") {
 const embed = new Discord.RichEmbed()
-.setColor(3447003)
+.setColor(0xff0000)
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16091,7 +16091,7 @@ message.channel.send({embed})
 bot.on('message', message => {
   if (message.content === prefix + "Horde combat 2") {
   const embed = new Discord.RichEmbed()
-  .setColor(3447003)
+  .setColor(0xff0000)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16108,8 +16108,8 @@ bot.on('message', message => {
     const Zombies = (Math.floor((X)*Math.random()+1))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
     .addField("Nombre de zombie :" , "Le nombre de zombie suivant le survivant sera de " +Zombies+ " !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -16120,7 +16120,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Horde actions")) {
   const embed = new Discord.RichEmbed()
-  .setColor(3447003)
+  .setColor(0xff0000)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16144,7 +16144,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === prefix + "Zombie") {
   const embed = new Discord.RichEmbed()
-  .setColor(3447003)
+  .setColor(0xff0000)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16162,7 +16162,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Cible :" , "Le ou les zombies attaquent le survivant [" +Joueurs+ "]...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16173,7 +16173,7 @@ bot.on('message', message => {
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Horde liste d'objets")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16185,7 +16185,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         if (message.content.startsWith(prefix + "Transformation")) {
         const embed = new Discord.RichEmbed()
-        .setColor(3447003)
+        .setColor(0xff0000)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16197,7 +16197,7 @@ bot.on('message', message => {
       bot.on('message', message => {
         if (message.content === prefix + "Habitations") {
           const embed = new Discord.RichEmbed()
-          .setColor(3447003)
+          .setColor(0xff0000)
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16209,7 +16209,7 @@ bot.on('message', message => {
            bot.on('message', message => {
         if (message.content === prefix + "Habitations 2") {
           const embed = new Discord.RichEmbed()
-          .setColor(3447003)
+          .setColor(0xff0000)
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16230,7 +16230,7 @@ bot.on('message', message => {
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
+                .setColor(0xff0000)
                 .addField("Cachette :" , "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils essayent de rentrer, vous avez 5 bonnes minutes pour décider de quoi faire...")
                 .setImage("https://steamuserimages-a.akamaihd.net/ugc/92728095783109541/B548022B0D94FEF7F23777DB29D1C6DA1FED038D/")
                 .setTimestamp()
@@ -16239,7 +16239,7 @@ bot.on('message', message => {
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
+                .setColor(0xff0000)
                 .addField("Cachette :" , "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies passent devant votre maison et s'en vont !")
                 .setImage("https://media1.giphy.com/media/nEuTuI4yvFXA1qSUaD/giphy.gif")
                 .setTimestamp()
@@ -16254,7 +16254,7 @@ bot.on('message', message => {
                             const embed = new Discord.RichEmbed()
                             .setAuthor(message.author.username , message.author.avatarURL)
                             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                            .setColor(3447003)
+                            .setColor(0xff0000)
                             .addField("Cachette :" , "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils arrivent vers vous, vous avez une action et quelques secondes avant qu'ils ne soient là...")
                             .setImage("https://steamuserimages-a.akamaihd.net/ugc/92728095783109541/B548022B0D94FEF7F23777DB29D1C6DA1FED038D/")
                             .setTimestamp()
@@ -16263,7 +16263,7 @@ bot.on('message', message => {
                             const embed = new Discord.RichEmbed()
                             .setAuthor(message.author.username , message.author.avatarURL)
                             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                            .setColor(3447003)
+                            .setColor(0xff0000)
                             .addField("Cachette :" , "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies passent devant votre maison et s'en vont !")
                             .setImage("https://media1.giphy.com/media/nEuTuI4yvFXA1qSUaD/giphy.gif")
                             .setTimestamp()
@@ -16274,7 +16274,7 @@ bot.on('message', message => {
           bot.on('message', message => {
             if (message.content.startsWith(prefix + "Mine")) {
             const embed = new Discord.RichEmbed()
-            .setColor(3447003)
+            .setColor(0xff0000)
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16286,7 +16286,7 @@ bot.on('message', message => {
             bot.on('message', message => {
               if (message.content.startsWith(prefix + "Jardin")) {
               const embed = new Discord.RichEmbed()
-              .setColor(3447003)
+              .setColor(0xff0000)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16298,7 +16298,7 @@ bot.on('message', message => {
               bot.on('message', message => {
                 if (message.content.startsWith(prefix + "Alcool")) {
                 const embed = new Discord.RichEmbed()
-                .setColor(3447003)
+                .setColor(0xff0000)
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16310,7 +16310,7 @@ bot.on('message', message => {
                 bot.on('message', message => {
                   if (message.content.startsWith(prefix + "Drogue")) {
                   const embed = new Discord.RichEmbed()
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16322,7 +16322,7 @@ bot.on('message', message => {
                   bot.on('message', message => {
                     if (message.content.startsWith(prefix + "Cargaison")) {
                     const embed = new Discord.RichEmbed()
-                    .setColor(3447003)
+                    .setColor(0xff0000)
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16334,7 +16334,7 @@ bot.on('message', message => {
                     bot.on('message', message => {
                       if (message.content.startsWith(prefix + "Déplacements")) {
                       const embed = new Discord.RichEmbed()
-                      .setColor(3447003)
+                      .setColor(0xff0000)
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16346,7 +16346,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === prefix + "Horde contexte") {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16358,7 +16358,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fouille")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16373,7 +16373,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Maladies")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16386,7 +16386,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Médicaments")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16399,7 +16399,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Soif")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16411,7 +16411,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Nourriture")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16424,7 +16424,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blessure")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16437,7 +16437,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Atouts")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16452,7 +16452,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Vol")) {
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
@@ -16472,7 +16472,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, de plus il vous voit en train d'essayer de le voler...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16481,7 +16481,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, mais par chance il ne remarque absolument rien !")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16490,7 +16490,7 @@ bot.on('message', message => {
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
+        .setColor(0xff0000)
         .addField("Voler le survivant :" , "Vous réussisez à voler le survivant, et plus exactement vous arrivez à lui voler `" +X+ "` objets de son inventaire !\n\nLes objets obtenus sont aléatoires et non choisis [Jouez cela au roll]")
         .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
@@ -16506,7 +16506,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, de plus il vous voit en train d'essayer de le voler...")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16515,7 +16515,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, mais par chance il ne remarque absolument rien !")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16524,7 +16524,7 @@ bot.on('message', message => {
                     const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
+                    .setColor(0xff0000)
                     .addField("Voler le survivant :" , "Vous réussisez à voler le survivant, et plus exactement vous arrivez à lui voler `" +X+ "` objets de son inventaire !\n\nLes objets obtenus sont aléatoires et non choisis [Jouez cela au roll]")
                     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                     .setTimestamp()
@@ -16544,7 +16544,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, de plus il vous voit en train d'essayer de le voler...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16553,7 +16553,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, mais par chance il ne remarque absolument rien !")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16562,7 +16562,7 @@ bot.on('message', message => {
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
+        .setColor(0xff0000)
         .addField("Voler le survivant :" , "Vous réussisez à voler le survivant, et plus exactement vous arrivez à lui voler `" +X+ "` objets de son inventaire !\n\nLes objets obtenus sont aléatoires et non choisis [Jouez cela au roll]")
         .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
@@ -16585,7 +16585,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Zombies attaque :" , "En essayant de courir vers vous, les zombies trébuchent sur le sol, en prenant du temps à se relever, vous avez de la chance !\n\nles zombies n'agiront pas lors de leur prochaine action !")      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
@@ -16593,7 +16593,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Zombies attaque :" , "Une fois proche de vous, les zombies tentent de vous aggriper mais ils sont si lents dans ses mouvements qu'il n'y parviennent pas, vous avez de la chance !")      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
@@ -16601,63 +16601,63 @@ bot.on('message', message => {
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField("Zombies attaque :" , "Lorsque les zombies arrivent à votre contact, à l'aide de ses mains et de leur bras en avant, ils aggripent votre bras et serre en y plantant leur ongles pourries...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémorragie légère` : `=Hémmoragie légère`")        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+        .setColor(0xff0000)
+        .addField("Zombies attaque :" , "Lorsque les zombies arrivent à votre contact, à l'aide de ses mains et de leur bras en avant, ils aggripent votre bras et serre en y plantant leur ongles pourries...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémorragie légère` : `=Hémorragie légère`")        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
         message.channel.send({embed})}
         if(A > 71-Z & A < 80-Z){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-          .setColor(3447003)
-          .addField("Zombies attaque :" , "En arrivant à votre hauteur, les zombies essayent de vous aggriper mais ils tombent légèrement et attrape votre jambe en la serrant avec leur ongles tout en essayant de vous mordre mais ils n'y arrivent pas...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémorragie légère` : `=Hémmoragie légère`")          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+          .setColor(0xff0000)
+          .addField("Zombies attaque :" , "En arrivant à votre hauteur, les zombies essayent de vous aggriper mais ils tombent légèrement et attrape votre jambe en la serrant avec leur ongles tout en essayant de vous mordre mais ils n'y arrivent pas...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémorragie légère` : `=Hémorragie légère`")          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
           .setTimestamp()
           message.channel.send({embed})}
           if(A > 81-Z & A < 90-Z){
             const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Zombies attaque :" , "D'une rapidité assez remarquable, les zombies arrivent à vous faire tomber sur le sol en serrant votre cou et les différentes parties du corps, en essayant de le mordre sans réussir...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémmoragie légère` : `=Hémorragie légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi vous êtes seul ou si les survivants n'arrivent pas à tuer ou repousser les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+            .setColor(0xff0000)
+            .addField("Zombies attaque :" , "D'une rapidité assez remarquable, les zombies arrivent à vous faire tomber sur le sol en serrant votre cou et les différentes parties du corps, en essayant de le mordre sans réussir...\n\nVous êtes maintenant atteint de l'état `Blessure légère`\n\nPour déterminer si vous subissez l'état `Hémorragie légère` : `=Hémorragie légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi vous êtes seul ou si les survivants n'arrivent pas à tuer ou repousser les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
             .setTimestamp()
             message.channel.send({embed})}
             if(A > 91-Z & A < 95-Z){
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField("Zombies attaque :" , "Les zombies profitent de votre bras assez exposé pour l'aggriper et le mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémmoragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+              .setColor(0xff0000)
+              .addField("Zombies attaque :" , "Les zombies profitent de votre bras assez exposé pour l'aggriper et le mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémorragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
               .setTimestamp()
               message.channel.send({embed})}
                 if(A > 96-Z & A < 100-Z){
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
-                  .addField("Zombies attaque :" , "En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémorragie avancée` : `=Hémmoragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .setColor(0xff0000)
+                  .addField("Zombies attaque :" , "En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémorragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection légère`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
                   if(A > 101-Z & A < 120-Z){
                     const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField("Zombies attaque :" , "Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémmoragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection avancée`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                    .setColor(0xff0000)
+                    .addField("Zombies attaque :" , "Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\nVous êtes maintenant atteint de l'état `Blessure avancée`\n\nPour déterminer si vous subissez l'état `Hémorragie avancée` : `=Hémorragie avancée`\n\nPour savoir si vous êtes infecté : `=Infection avancée`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                     .setTimestamp()
                     message.channel.send({embed})}
                     if(A > 121-Z & A < 140-Z){
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setColor(3447003)
-                      .addField("Zombies attaque :" , "Dès que les zombies se trouvent à votre portée, ils entourent tous l'espace autour de vous et vous force à finir sur le sol entouré de toute part en vous faisant mordre et aggriper toutes les parties de votre corps...\n\nVous êtes maintenant atteint de l'état `Blessure mortelle`\n\nPour déterminer si vous subissez l'état `Hémorragie mortelle` : `=Hémmoragie mortelle`\n\nPour savoir si vous êtes infecté : `=Infection mortelle`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                      .setColor(0xff0000)
+                      .addField("Zombies attaque :" , "Dès que les zombies se trouvent à votre portée, ils entourent tous l'espace autour de vous et vous force à finir sur le sol entouré de toute part en vous faisant mordre et aggriper toutes les parties de votre corps...\n\nVous êtes maintenant atteint de l'état `Blessure mortelle`\n\nPour déterminer si vous subissez l'état `Hémorragie mortelle` : `=Hémoragie mortelle`\n\nPour savoir si vous êtes infecté : `=Infection mortelle`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous mordent !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous mordent à votre prochaine action... : `=Dernier espoir`")                      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                       .setTimestamp()
                       message.channel.send({embed})}
                       if(A > 141-Z){
                         const embed = new Discord.RichEmbed()
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
+                        .setColor(0xff0000)
                         .addField("Zombies attaque :" , "Il y a tellement de zombies tous autour de vous qui vous entoure si rapidement en masse qu'il n'y a presque aucun espoir de vous en sortir ni de fuir, vous vous faites complètement dévoré vivant devant les autres survivants ou seul...\n\nVous êtes maintenant atteint de l'état `Blessure mortelle`\n\nPour déterminer si vous subissez l'état `Hémorragie mortelle` : `=Hémmoragie mortelle`\n\nPour savoir si vous êtes infecté : `=Infection mortelle`\n\nLes survivants peuvent tenter de vous aider en repoussant ou en tuant les [" +X+ "] zombies qui vous immobilise !\n\nSi les survivants n'arrivent pas à vous aider et/ou que vous n'arrivez pas à repousser ou tuer les zombies qui vous immobilise à votre prochaine action... : `=Dernier espoir`")
                         .setTimestamp()
                         message.channel.send({embed})}
@@ -16672,7 +16672,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Infection légère :" , "Vous êtes malheureusement atteint de l'état `Infection légère`...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16681,7 +16681,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Infection légère :" , "Vous n'êtes pas atteint de l'état `Infection légère` !")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16696,7 +16696,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Infection avancée :" , "Vous êtes malheureusement atteint de l'état `Infection avancée`...")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16705,7 +16705,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Infection avancée :" , "Vous n'êtes pas atteint de l'état `Infection avancée` !")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16720,7 +16720,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Infection mortelle :" , "Vous êtes malheureusement atteint de l'état `Infection mortelle`...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16729,7 +16729,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Infection mortelle :" , "Vous n'êtes pas atteint de l'état `Infection mortelle` !")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16747,7 +16747,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Hémorragie légère :" , "Vous êtes malheureusement atteint de l'état `Hémorragie légère`...")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16756,7 +16756,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Hémorragie légère :" , "Vous n'êtes pas atteint de l'état `Hémorragie légère` !")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16771,7 +16771,7 @@ bot.on('message', message => {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                              .setColor(3447003)
+                              .setColor(0xff0000)
                               .addField("Hémorragie avancée :" , "Vous êtes malheureusement atteint de l'état `Hémorragie avancée`...")
                               .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                               .setTimestamp()
@@ -16780,7 +16780,7 @@ bot.on('message', message => {
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                              .setColor(3447003)
+                              .setColor(0xff0000)
                               .addField("Hémorragie avancée :" , "Vous n'êtes pas atteint de l'état `Hémorragie avancée` !")
                               .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                               .setTimestamp()
@@ -16795,7 +16795,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Hémorragie mortelle :" , "Vous êtes malheureusement atteint de l'état `Hémorragie mortelle`...")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16804,7 +16804,7 @@ bot.on('message', message => {
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(3447003)
+                  .setColor(0xff0000)
                   .addField("Hémorragie mortelle :" , "Vous n'êtes pas atteint de l'état `Hémorragie mortelle` !")
                   .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
@@ -16823,8 +16823,8 @@ bot.on('message', message => {
     if(image < 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Ciel dégagé :" , "Aujourd'hui, la météo est un ciel dégagé sans aucuns nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !")
       .setImage("https://www.infoclimat.fr/photolive/photos/2015-09/30572217920151847.jpg")
       .setTimestamp()
@@ -16833,8 +16833,8 @@ bot.on('message', message => {
     if(31 < image & image < 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Sombre :" , "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...\n\nMalus de -10 pour les actions visuelles ainsi qu'un bonus de 10 sur les actions discrètes aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
       .setImage("https://vignette.wikia.nocookie.net/creepypasta/images/5/53/Clouds.jpg/revision/latest?cb=20150418001214&path-prefix=de")
       .setTimestamp()
@@ -16843,8 +16843,8 @@ bot.on('message', message => {
     if(41 < image & image < 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Soleil :" , "Aujourd'hui, malgré quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil est là !\n\nBonus de 10 pour les fuites en dehors et en combat aujourd'hui")
       .setImage("https://sitel.com.mk/sites/default/files/article/teaser-images/2018/april/sonce-soncevo-vreme-175810.jpg")
       .setTimestamp()
@@ -16853,8 +16853,8 @@ bot.on('message', message => {
     if(51 < image & image < 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "https://vignette.wikia.nocookie.net/fairytail/images/a/a1/Elie%27s_boobs.png/revision/latest?cb=20130824220631")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Arc en ciel :" , "Aujourd'hui, quelques nuages et un peu de pluie mais un arc en ciel va se former à la fin de la journée avant que le soleil se couche, vous avez de la chance !\n\nBonus de 10 pour les fuites en combat et en dehors, ainsi qu'un bonus de 10 sur les actions sociales aujourd'hui !\n\n=Roll : 10")
       .setImage("http://ekladata.com/R64I3AX173zliIFqGrdku1qFK8E.jpg")
       .setTimestamp()
@@ -16863,8 +16863,8 @@ bot.on('message', message => {
     if(61 < image & image < 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Vents violents" , "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...\n\nMalus de 10 pour les actions auditives, ainsi qu'un malus de 10 sur les actions visuelles aujourd'hui !\n\n=Roll : -10")
       .setImage("https://cdnfr2.img.sputniknews.com/images/103275/77/1032757713.jpg")
       .setTimestamp()
@@ -16873,8 +16873,8 @@ bot.on('message', message => {
     if(71 < image & image < 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Brouillard" , "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...\n\nMalus de 20 sur les actions visuelles, ainsi qu'un malus de 10 sur les fuites en dehors d'un combat aujourd'hui !\n\n=Roll : -20\n=Roll : -10")
       .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/December_Fog_01_edit2.jpg/1200px-December_Fog_01_edit2.jpg")
       .setTimestamp()
@@ -16883,8 +16883,8 @@ bot.on('message', message => {
     if(81 < image & image < 90){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Pluie et orage :" , "Aujourd'hui, la pluie est présente avec quelques nuages sans aucun soleil en vue, ce n'est pas vraiment le jour pour sortir et se relaxer surtout avec des orages possibles...\n\nMalus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10")
       .setImage("https://p0.storage.canalblog.com/06/80/987217/87418395_o.jpg")
       .setTimestamp()
@@ -16893,8 +16893,8 @@ bot.on('message', message => {
     if(91 < image){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
       .addField("Neige et grêle :" , "Aujourd'hui, le gel et le froid sont bien présents autant dans la ville qu'à l'extérieur, de la grêle ainsi que de la neige tombe du ciel partout, une bonne nouvelle pour certains mais une mauvaise pour les autres n'aimant pas la neige !\n\nMalus de 10 sur les fuites en dehors d'un combat, ainsi qu'un bonus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
       .setImage("https://www.le-pradet.fr/wp-content/uploads/2018/02/neige-4-1.jpg")
       .setTimestamp()
@@ -16912,7 +16912,7 @@ bot.on('message', message => {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
+      .setColor(0xff0000)
       .addField("Attaque de zombie, jour 1 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
@@ -16926,7 +16926,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 2 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -16940,7 +16940,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 3 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -16955,7 +16955,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 4 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -16970,7 +16970,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 5 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -16985,7 +16985,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 6 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17000,7 +17000,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 7 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17015,7 +17015,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 8 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17030,7 +17030,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 9 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17045,7 +17045,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 10 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17060,7 +17060,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 11 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17075,7 +17075,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 12 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17090,7 +17090,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 13 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17105,7 +17105,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 14 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17120,7 +17120,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 15 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17135,7 +17135,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 16 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17150,7 +17150,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 17 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17165,7 +17165,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 18 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17180,7 +17180,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 19 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
@@ -17195,7 +17195,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
+    .setColor(0xff0000)
     .addField("Attaque de zombie, jour 20 :" , "Une horde de zombie court rapidement à la tombé de la nuit vers la grande porte...\n\nQue la chance sois avec vous, il y a " +Zombie+ " zombies actuellement devant votre ville...\n\nLa nuit ne fait que commencer !")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
