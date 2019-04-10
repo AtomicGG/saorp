@@ -16232,7 +16232,7 @@ bot.on('message', message => {
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
                 .addField("Cachette :" , "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils essayent de rentrer, vous avez 5 bonnes minutes pour décider de quoi faire...")
-                .setImage("https://steamuserimages-a.akamaihd.net/ugc/92728095783109541/B548022B0D94FEF7F23777DB29D1C6DA1FED038D/")
+                .setImage("https://media1.giphy.com/media/ZwA7zR7PWMiUE/giphy.gif")
                 .setTimestamp()
                 message.channel.send({embed})}
               if(A > 61){
@@ -16256,7 +16256,7 @@ bot.on('message', message => {
                             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setColor(0xff0000)
                             .addField("Cachette :" , "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils arrivent vers vous, vous avez une action et quelques secondes avant qu'ils ne soient là...")
-                            .setImage("https://steamuserimages-a.akamaihd.net/ugc/92728095783109541/B548022B0D94FEF7F23777DB29D1C6DA1FED038D/")
+                            .setImage("https://media1.giphy.com/media/ZwA7zR7PWMiUE/giphy.gif")
                             .setTimestamp()
                             message.channel.send({embed})}
                           if(A > 71){
@@ -16539,31 +16539,31 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()))
   const X = (Math.floor((2)*Math.random()+1))
-  if (message.content.startsWith(prefix + "Voler le survivant")) {
-    if(A < 40){
+  if (message.content.startsWith(prefix + "Dernier espoir")) {
+    if(A < 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, de plus il vous voit en train d'essayer de le voler...")
-      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .addField("Dernier espoir :" , "Trop blessé et complètement vide d'énergie, vous finissez par vous faire complètement dévoré vivant en voyant même vos propres organes à travers votre ventre complètement arraché...\n\nVous avez au moins survécus pas mal de temps !")
+      .setImage("http://pa1.narvii.com/6420/8885cc235ef803b7fba37806027468c409c92f99_hq.gif")
       .setTimestamp()
       message.channel.send({embed})}
-    if(A > 41 & A < 60){
+    if(A > 81 & A < 90){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Voler le survivant :" , "Vous ne réussissez pas à voler le survivant, mais par chance il ne remarque absolument rien !")
+      .addField("Dernier espoir :" , "Par chance, vous arrivez malgrè tous les zombies autour de vous à vous débattre, foutre des coups de points partout autour de vous ce qui vous permet de fuir de justesse...\n\nCependant, vous êtes atteint de l'état `Terreur` ainsi que `Blessure mortelle`...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
-      if(A > 21){
+      if(A > 91){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField("Voler le survivant :" , "Vous réussisez à voler le survivant, et plus exactement vous arrivez à lui voler `" +X+ "` objets de son inventaire !\n\nLes objets obtenus sont aléatoires et non choisis [Jouez cela au roll]")
+        .addField("Dernier espoir :" , "Dans un élan de rage et de courage, vous arrivez à repousser tous les zombies sur vous malgrè tous le sang qui coule et les blessures, en réussissant par la suite à vous enfuir de toute la horde !\n\nCependant, vous êtes atteint de l'état `Terreur` ainsi que `Blessure mortelle`...")
         .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
         message.channel.send({embed})}
@@ -16663,6 +16663,9 @@ bot.on('message', message => {
                         message.channel.send({embed})}
                 }
             }) ;
+
+
+
 ////////////////////////////////////////////////////////////////Morsure et infection et hémmoragie////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
