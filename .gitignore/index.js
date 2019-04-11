@@ -13544,7 +13544,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
     if (message.content.includes("de sang")) {
       const HP = (Math.floor((41)*Math.random()+40))
@@ -13568,7 +13568,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 bot.on('message', message => {
   if (message.content === prefix + "Ragoût de loup") {
