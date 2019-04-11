@@ -17293,7 +17293,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une pharmacie :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche pharmacie`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une pharmacie :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche pharmacie`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17303,7 +17303,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un hangar :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche hangar`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un hangar :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche hangar`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17313,7 +17313,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un batîment :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche batîment`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un bâtiment :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche bâtiment`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17323,7 +17323,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un magasin d'arme à feu :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche magasin d'arme à feu`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un magasin d'arme à feu :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche magasin d'arme à feu`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17333,7 +17333,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un supermarché :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche supermarché`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un supermarché :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche supermarché`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17343,7 +17343,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un hopital :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche hopital`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un hopital :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche hopital`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17353,7 +17353,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une caserne de pompier :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche caserne de pompier`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une caserne de pompier :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche caserne de pompier`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17363,7 +17363,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une école :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche école`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une école :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche école`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17373,7 +17373,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une mairie :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche mairie`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une mairie :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche mairie`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17383,7 +17383,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un commissariat :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche commissariat`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un commissariat :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche commissariat`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17393,7 +17393,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un restaurant :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche restaurant`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un restaurant :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche restaurant`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17403,7 +17403,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une demeure :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche demeure`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une demeure :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche demeure`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17413,7 +17413,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un hôtel :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche hôtel`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un hôtel :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche hôtel`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17423,7 +17423,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un musée :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche musée`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez un musée :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche musée`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17433,7 +17433,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une église :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche église`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une église :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche église`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17443,7 +17443,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight:Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une banque :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche banque`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
+      .addField(":flashlight: Fouille zone proche :" , ":flashlight: En fouillant les environs de cette zone, vous trouvez une banque :\n\n:flashlight: Pour commencer l'investigation : `=Zone proche banque`\n\n:warning: Vous devriez y aller avec d'autres survivants...")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -17486,6 +17486,216 @@ bot.on('message', message => {
     }
     });
 
+//////////////////////////////////////////////////////////////Bâtiments zones proches/////////////////////////////////////////////////////////////////////////
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche église") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche église :" , ":flashlight: Vous entrez à l'intérieur de cette église, une multitude de bancs ainsi qu'une géante croix de jésus au centre au fond...\n\n:warning: Vous pourrez fouiller seulement 5 fois l'église")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche musée") {
+    const Zombie = (Math.floor((13001)*Math.random()+13001))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche musée :" , ":flashlight: Vous entrez à l'intérieur de ce musée, des oeuvres d'arts ainsi que des sculptures de statues géantes de chaques côtés...\n\n:warning: Vous pourrez fouiller seulement 5 fois le musée")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche supermarché") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche supermarché :" , ":flashlight: Vous entrez à l'intérieur de ce supermarché, des rayons aussi grands et vides les uns que les autre avec des déchets sur le sol...\n\n:warning: Vous pourrez fouiller seulement 5 fois le supermarché")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche bâtiment") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche bâtiment :" , ":flashlight: Vous entrez à l'intérieur de ce bâtiment, des salles de chaque côtés des longs couloirs ainsi que des escaliers menant vers les étages supérieurs...\n\n:warning: Vous pourrez fouiller seulement 5 fois le bâtiment")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche caserne de pompier") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche caserne de pompier :" , ":flashlight: Vous entrez à l'intérieur de cette caserne de pompier, une ambiance qui sent le brûlé malgrè le lieu qui semble presque intact...\n\n:warning: Vous pourrez fouiller seulement 5 fois la caserne de pompier")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche pharmacie") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche pharmacie :" , ":flashlight: Vous entrez à l'intérieur de cette pharmacie, des boîtes de médicaments complètements vidés sur le sol ainsi que des médikits détruits...\n\n:warning: Vous pourrez fouiller seulement 5 fois la pharmacie")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche hangar") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche hangar :" , ":flashlight: Vous entrez à l'intérieur de ce hangar, avec des véhicules de partout qui sont très certainement endommagés...\n\n:warning: Vous pourrez fouiller seulement 5 fois le hangar")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche magasin d'arme à feu") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche magasin d'arme à feu :" , ":flashlight: Vous entrez à l'intérieur de ce magasin d'arme à feu, des armes à feu sur le sol ou plutôt des bouts accompagnés de balles vides...\n\n:warning: Vous pourrez fouiller seulement 5 fois le magasin d'arme à feu")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche hôpital") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche hôpital :" , ":flashlight: Vous entrez à l'intérieur de cette hôpital...\n\n:warning: Vous pourrez fouiller seulement 5 fois l'hôpital'")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche école") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche école :" , ":flashlight: Vous entrez à l'intérieur de cette école...\n\n:warning: Vous pourrez fouiller seulement 5 fois l'école")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche mairie") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche mairie:" , ":flashlight: Vous entrez à l'intérieur de cette mairie...\n\n:warning: Vous pourrez fouiller seulement 5 fois la mairie")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche commissariat") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche commissariat:" , ":flashlight: Vous entrez à l'intérieur de ce commissariat...\n\n:warning: Vous pourrez fouiller seulement 5 fois le commissariat")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche restaurant") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche restaurant:" , ":flashlight: Vous entrez à l'intérieur de cette restaurant...\n\n:warning: Vous pourrez fouiller seulement 5 fois le restaurant")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche demeure") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche demeure:" , ":flashlight: Vous entrez à l'intérieur de cette demeure...\n\n:warning: Vous pourrez fouiller seulement 5 fois la demeure")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche hôtel") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche hôtel:" , ":flashlight: Vous entrez à l'intérieur de cette hôtel...\n\n:warning: Vous pourrez fouiller seulement 5 fois l'hôtel")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Zone proche banque") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Zone proche banque:" , ":flashlight: Vous entrez à l'intérieur de cette banque...\n\n:warning: Vous pourrez fouiller seulement 5 fois la banque")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
 
 
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
