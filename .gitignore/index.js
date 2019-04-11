@@ -16394,7 +16394,7 @@ bot.on('message', message => {
   }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fouille")) {
+  if (message.content === prefix + "Fouille") {
     const embed = new Discord.RichEmbed()
     .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17265,7 +17265,7 @@ bot.on('message', message => {
 ////////////////////////////////////////////////////////////////////Fouille//////////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fouille zone proche")) {
+  if (message.content === prefix + "Fouille zone proche") {
     if (talkedRecently.has(message.author.id+12345)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
