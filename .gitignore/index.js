@@ -17478,10 +17478,10 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    talkedRecently.add(message.author.id+1);
+    talkedRecently.add(message.author.id+12345);
     setTimeout(() => {
-      talkedRecently.delete(message.author.id+1);
-    }, 3600000);
+      talkedRecently.delete(message.author.id+12345);
+    }, 7200000);
     }
     }
     });
