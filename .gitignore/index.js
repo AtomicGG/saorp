@@ -4608,7 +4608,7 @@ bot.on('message', message => {
       const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
       const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
       const G = B+C+D+E+F
-    } while (G < 1)
+    } while (G < 1);
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
