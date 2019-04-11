@@ -3395,7 +3395,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre d'élite tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
+      .addField(":crossed_swords: Bandit sombre d'élite :" , ":crossed_swords: Le bandit sombre d'élite tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (6 <= B & B <= 90){
@@ -3403,7 +3403,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre d'élite sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+      .addField(":crossed_swords: Bandit sombre d'élite :" , ":crossed_swords: Le bandit sombre d'élite sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -3412,7 +3412,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+      .addField(":crossed_swords: Bandit sombre d'élite :" , ":crossed_swords: Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -3535,7 +3535,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt ouvrier :" , ":crossed_swords: Le kobolt ouvrier aggripe un objet autour de lui et essaye de vous frapper mais celui-ci ne fait rien, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt ouvrier :" , ":crossed_swords: Le kobolt ouvrier agrippe un objet autour de lui et essaye de vous frapper mais celui-ci ne fait rien, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (31 <= B & B <= 90){
@@ -4139,7 +4139,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sourit avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
       message.channel.send({embed})
     }
     if (61 <= B){
@@ -4147,7 +4147,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sort légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -4586,6 +4586,46 @@ bot.on('message', message => {
   }
 })
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Test combat")) {
+    let Z = args.slice(2).join(" : ");
+    let G = 1;
+    if (talkedRecently.has(message.author.id+1000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+    do {
+        let B = (Math.floor(((Z*1)+2)*Math.random()+0))
+        let C = (Math.floor(((Z*1)+1)*Math.random()+0))
+        let D = (Math.floor(((Z*1)+1)*Math.random()+0))
+        let E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
+        let F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
+        G = (B+C+D+E+F)
+      } while (G < 1);
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
 //////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
@@ -4676,7 +4716,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G)
+      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) : " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -5484,7 +5524,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 5){
       const embed = new Discord.RichEmbed()
@@ -5526,7 +5566,7 @@ bot.on('message', message => {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     if (B <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -5567,7 +5607,7 @@ bot.on('message', message => {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     if (B <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -5608,7 +5648,7 @@ bot.on('message', message => {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     if (B <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -13545,31 +13585,28 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((21)*Math.random()+20))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  const HP = (Math.floor((41)*Math.random()+40))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup de sang")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
+    if (message.content.includes("de sang")) {
+      const HP = (Math.floor((41)*Math.random()+40))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const HP = (Math.floor((21)*Math.random()+20))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":meat_on_bone: Ragoût de loup :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -13665,30 +13702,28 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((51)*Math.random()+50))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  const HP = (Math.floor((101)*Math.random()+100))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt supérieur")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de kobolt supérieur :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
+    if (message.content.includes("supérieur")) {
+      const HP = (Math.floor((101)*Math.random()+100))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":meat_on_bone: Ragoût de kobolt supérieur :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const HP = (Math.floor((51)*Math.random()+50))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -14217,7 +14252,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scroll: Potion imposante de défense :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
+    .addField(":scroll: Parchemin de feu rouge faible :" , ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15861,7 +15896,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {
-    message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur\n\nRagoûts de ragondin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de ragondin]\n\nRagoûts de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt géant rouge]```")
+    message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur]\n\nRagoûts de kobolt supérieurs :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur]\n\nRagoûts de ragondin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de ragondin]\n\nRagoûts de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt géant rouge]```")
   }
 }) ;
 
@@ -16037,7 +16072,7 @@ bot.on('message', message => {
                 message.channel.send({embed})
                     }
               }) ;
-  
+
 
           bot.on('message', message => {
             if (message.content === prefix + "Défense de la ville") {
@@ -16076,7 +16111,7 @@ bot.on('message', message => {
               }) ;
 
 
-              
+
                   bot.on('message', message => {
                     if (message.content.startsWith(prefix + "Exile")) {
                       const embed = new Discord.RichEmbed()
@@ -16243,7 +16278,7 @@ bot.on('message', message => {
           }
           }) ;
 
-         
+
 
 
 
@@ -16598,7 +16633,7 @@ bot.on('message', message => {
                             }
                         }) ;
 
-            
+
 /////////////////////////////////////////////////////////////Dernier espoir///////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -16800,7 +16835,7 @@ bot.on('message', message => {
                 }
             }) ;
 
-            
+
 
 
             bot.on('message', message => {
@@ -16868,10 +16903,10 @@ bot.on('message', message => {
                   message.channel.send({embed})}
                             }
                         }) ;
-            
 
-        
-         
+
+
+
 //////////////////////////////////////////////////////////////Météo Horde//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
