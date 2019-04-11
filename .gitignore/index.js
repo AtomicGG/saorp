@@ -4591,6 +4591,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Test combat")) {
     let Z = args.slice(2).join(" : ");
+    let G = 1;
     if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -4601,13 +4602,13 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      do {
-        const B = (Math.floor(((Z*1)+2)*Math.random()+0))
-        const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-        const D = (Math.floor(((Z*1)+1)*Math.random()+0))
-        const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
-        const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
-        const G = B+C+D+E+F
+    do {
+        let B = (Math.floor(((Z*1)+2)*Math.random()+0))
+        let C = (Math.floor(((Z*1)+1)*Math.random()+0))
+        let D = (Math.floor(((Z*1)+1)*Math.random()+0))
+        let E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
+        let F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
+        G = (B+C+D+E+F)
       } while (G < 1);
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
