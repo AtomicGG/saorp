@@ -4586,46 +4586,6 @@ bot.on('message', message => {
   }
 })
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test combat")) {
-    let Z = args.slice(2).join(" : ");
-    let G = 1;
-    if (talkedRecently.has(message.author.id+1000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-    do {
-        let B = (Math.floor(((Z*1)+2)*Math.random()+0))
-        let C = (Math.floor(((Z*1)+1)*Math.random()+0))
-        let D = (Math.floor(((Z*1)+1)*Math.random()+0))
-        let E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
-        let F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
-        G = (B+C+D+E+F)
-      } while (G < 1);
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000);
-  }
-})
-
 //////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
