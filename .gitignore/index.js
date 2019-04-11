@@ -5484,7 +5484,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 5){
       const embed = new Discord.RichEmbed()
@@ -5526,7 +5526,7 @@ bot.on('message', message => {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     if (B <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -5567,7 +5567,7 @@ bot.on('message', message => {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     if (B <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -5608,7 +5608,7 @@ bot.on('message', message => {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = A*1.10
+    const C = Math.floor(A*1.10)
     if (B <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
