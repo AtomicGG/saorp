@@ -13544,7 +13544,7 @@ bot.on('message', message => {
   }
 });
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
     if (message.content.includes("de sang")) {
       const HP = (Math.floor((41)*Math.random()+40))
@@ -13556,7 +13556,7 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
-    } else if {
+    } else {
       const HP = (Math.floor((21)*Math.random()+20))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -13568,7 +13568,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});*/
+});
 
 bot.on('message', message => {
   if (message.content === prefix + "Ragoût de loup") {
