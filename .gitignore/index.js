@@ -14905,6 +14905,22 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Viande de ragondin")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Viande de ragondin :" , "C'est une viande basique vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt\n=Ragoût de kobolt supérieur\n=Ragoût de kobolt géant rouge")
+    .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Peau de sanglier")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15305,6 +15321,22 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Oeil de ragondin")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Oeil de ragondin :" , "C'est un oeil basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de force\n=Potion moyenne de défense\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
+    .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content === prefix + "Oeil de loup de sang") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15327,12 +15359,42 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oreille de lapin géant :" , "C'est une oreille rare que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
-    .addField("Prix d'achat :" , "100 cols")
-    .addField("Prix de revente :" , "25 cols")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "150 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
     .setImage("https://i.pinimg.com/736x/d2/61/db/d261db083d29d647989bc5ff1c7f8ea3--baby-ballet-evan.jpg")
     .setTimestamp()
     message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Oreille de kobolt")) {
+    if (message.content.includes("géant rouge")){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Oreille de kobolt géant rouge:" , "C'est une oreille rare que vous trouvez sur les kobolts géants rouges du palier 1 !")
+      .addField("Prix d'achat :" , "X cols")
+      .addField("Prix de revente :" , "X cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt géant rouge")
+      .setImage("http://wiki-dofus.eu/_images/4/44/OreilleKanigrou.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Oreille de kobolt :" , "C'est une oreille rare que vous trouvez sur les kobolts du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt\n=Ragoût de kobolt supérieur")
+    .setImage("http://wiki-dofus.eu/_images/4/44/OreilleKanigrou.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
   }
 });
 
@@ -15355,7 +15417,17 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Dent de kobolt")) {
     if (message.content.includes("géant rouge")) {
-
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Dent de kobolt géant rouge :" , "C'est une dent rare que vous trouvez sur les kobolts géants rouge dans la grotte du palier 1 !")
+      .addField("Prix d'achat :" , "X cols")
+      .addField("Prix de revente :" , "X cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt supérieures")
+      .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
     } else {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -15405,6 +15477,22 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre de feu faible")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre de feu faible :" , "C'est une pierre étrange que vous trouvez en minant dans la grotte du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de feu rouge faible")
+    .setImage("https://fargin.files.wordpress.com/2011/04/rubis-brut.jpg?w=590")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bois de frêne médiocre")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15427,6 +15515,22 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Bois de frêne commun :" , "C'est un bois commun que vous trouvez dans la forêt du palier 1 !")
+    .addField("Prix d'achat :" , "40 cols")
+    .addField("Prix de revente :" , "10 cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt\n=Armes de kobolt supérieures")
+    .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bois de frêne rare")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Bois de frêne rare :" , "C'est un bois rare que vous trouvez dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
     .addField("Prix de revente :" , "10 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt\n=Armes de kobolt supérieures")
@@ -15525,7 +15629,23 @@ bot.on('message', message => {
     .addField("Persil :" , "C'est une herbe basique que vous trouvez en cueillant dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "10 cols")
     .addField("Prix de revente :" , "2 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lapin\n=Ragoût de renard\n=Ragoût de chien\n=Ragoût de sanglier")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lapin\n=Ragoût de renard\n=Ragoût de chien\n=Ragoût de sanglier\n=Ragoût de lapin géant")
+    .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Basilic")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Basilic :" , "C'est une herbe basique que vous trouvez en cueillant dans les montagnes du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt\n=Ragoût de kobolt supérieur\n=Ragoût de kobolt géant rouge")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15541,7 +15661,7 @@ bot.on('message', message => {
     .addField("Herbe médicinale faible :" , "C'est une herbe basique que vous trouvez en cueillant dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "10 cols")
     .addField("Prix de revente :" , "2 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de soin\n=Potion faible de force\n=Potion faible de défense")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de soin\n=Potion faible de force\n=Potion faible de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15565,6 +15685,70 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content === prefix + "Plantrus médiocre") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plantrus médiocre :" , "C'est une herbe basique que vous trouvez en cueillant dans la montagne du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
+    .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Plantrus commun") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plantrus commun :" , "C'est une herbe commune que vous trouvez en cueillant dans la montagne et la grotte du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
+    .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Plantrus rare") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plantrus rare :" , "C'est une herbe rare que vous trouvez en cueillant dans la grotte du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
+    .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Plantrus parfait") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plantrus parfait :" , "C'est une herbe très rare que vous trouvez en cueillant dans la grotte du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
+    .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Baie")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15573,7 +15757,7 @@ bot.on('message', message => {
     .addField("Baie :" , "C'est une baie basique que vous trouvez en cueillant dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "10 cols")
     .addField("Prix de revente :" , "2 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de soin\n=Potion faible de force\n=Potion faible de défense")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de soin\n=Potion faible de force\n=Potion faible de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15613,7 +15797,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plan d'arme' kobolt")) {
+  if (message.content.startsWith(prefix + "Plan d'arme kobolt")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15625,6 +15809,36 @@ bot.on('message', message => {
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
     message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Echantillon de kobolt")) {
+    if (message.content.includes("géant rouge")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Echantillon de kobolt géant rouge :" , "C'est un prélèvement d'échantillon de Kobolt Géant Rouge du palier 1 !")
+      .addField("Prix d'achat :" , "X cols")
+      .addField("Prix de revente :" , "X cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion vitale de kobolt")
+      .setImage("https://img.freepik.com/icone-gratis/campione-di-sangue_318-137349.jpg?size=338&ext=jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Echantillon de kobolt :" , "C'est un prélèvement d'échantillon de Kobolt du palier 1 !")
+      .addField("Prix d'achat :" , "X cols")
+      .addField("Prix de revente :" , "X cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense")
+      .setImage("https://img.freepik.com/icone-gratis/campione-di-sangue_318-137349.jpg?size=338&ext=jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
