@@ -16435,7 +16435,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("La fouille :" , "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la zone où vous vous situez :\n\n`=Fouille zone proche`\n`=Fouille zone semi éloigné`\n`=Fouille zone éloigné`\n`=Fouille zone très éloigné`\n`=Fouille zone dangereuse`\n`=Fouille zone très dangereuse`\n`=Fouille zone mortelle`")    .setTimestamp()
+.addField("La fouille :" , "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la zone où vous vous situez :\n\n`=Fouille zone proche`\n`=Fouille zone semi éloigné`\n`=Fouille zone éloigné`\n`=Fouille zone très éloigné`\n`=Fouille zone dangereuse`\n`=Fouille zone très dangereuse`\n`=Fouille zone mortelle`\n\nLorsque vous fouillez un bâtiment à plusieurs survivants, lorsque celui-ci ne possède plus aucuns objets utiles à l'intérieur, les survivants n'auront plus besoin de continuer de fouiller et devront partir")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -17529,8 +17529,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche église :" , ":flashlight: Vous entrez à l'intérieur de cette église, une multitude de bancs ainsi qu'une géante croix de jésus au centre au fond...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche église : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois l'église")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche église :" , ":flashlight: Vous entrez à l'intérieur de cette église, une multitude de bancs ainsi qu'une géante croix de jésus au centre au fond...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche église : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17543,8 +17542,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche musée :" , ":flashlight: Vous entrez à l'intérieur de ce musée, des oeuvres d'arts ainsi que des sculptures de statues géantes de chaques côtés...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche musée : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois le musée")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche musée :" , ":flashlight: Vous entrez à l'intérieur de ce musée, des oeuvres d'arts ainsi que des sculptures de statues géantes de chaques côtés...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche musée : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17556,8 +17554,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche supermarché :" , ":flashlight: Vous entrez à l'intérieur de ce supermarché, des rayons aussi grands et vides les uns que les autre avec des déchets sur le sol...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche supermarché : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois le supermarché")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche supermarché :" , ":flashlight: Vous entrez à l'intérieur de ce supermarché, des rayons aussi grands et vides les uns que les autre avec des déchets sur le sol...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche supermarché : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17569,8 +17566,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche bâtiment :" , ":flashlight: Vous entrez à l'intérieur de ce bâtiment, des salles de chaque côtés des longs couloirs ainsi que des escaliers menant vers les étages supérieurs...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche bâtiment : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois le bâtiment")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche bâtiment :" , ":flashlight: Vous entrez à l'intérieur de ce bâtiment, des salles de chaque côtés des longs couloirs ainsi que des escaliers menant vers les étages supérieurs...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche bâtiment : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17582,8 +17578,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche caserne de pompier :" , ":flashlight: Vous entrez à l'intérieur de cette caserne de pompier, une ambiance qui sent le brûlé malgrè le lieu qui semble presque intact...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche caserne de pompier : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois la caserne de pompier")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche caserne de pompier :" , ":flashlight: Vous entrez à l'intérieur de cette caserne de pompier, une ambiance qui sent le brûlé malgrè le lieu qui semble presque intact...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche caserne de pompier : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17595,8 +17590,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche pharmacie :" , ":flashlight: Vous entrez à l'intérieur de cette pharmacie, des boîtes de médicaments complètements vidés sur le sol ainsi que des médikits détruits...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche pharmacie : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois la pharmacie")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche pharmacie :" , ":flashlight: Vous entrez à l'intérieur de cette pharmacie, des boîtes de médicaments complètements vidés sur le sol ainsi que des médikits détruits...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche pharmacie : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17608,8 +17602,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche hangar :" , ":flashlight: Vous entrez à l'intérieur de ce hangar, avec des véhicules de partout qui sont très certainement endommagés...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche hangar : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois le hangar")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche hangar :" , ":flashlight: Vous entrez à l'intérieur de ce hangar, avec des véhicules de partout qui sont très certainement endommagés...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche hangar : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17621,8 +17614,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche magasin d'arme à feu :" , ":flashlight: Vous entrez à l'intérieur de ce magasin d'arme à feu, des armes à feu sur le sol ou plutôt des bouts accompagnés de balles vides...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche magasin d'arme à feu : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois le magasin d'arme à feu")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche magasin d'arme à feu :" , ":flashlight: Vous entrez à l'intérieur de ce magasin d'arme à feu, des armes à feu sur le sol ou plutôt des bouts accompagnés de balles vides...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche magasin d'arme à feu : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17634,8 +17626,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche hôpital :" , ":flashlight: Vous entrez à l'intérieur de cette hôpital, des salles blanches avec des traces de sang dessus ainsi que du sang sur le sol...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche hôpital : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois l'hôpital'")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche hôpital :" , ":flashlight: Vous entrez à l'intérieur de cette hôpital, des salles blanches avec des traces de sang dessus ainsi que du sang sur le sol...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche hôpital : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17647,8 +17638,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche école :" , ":flashlight: Vous entrez à l'intérieur de cette école, des livres complètement brûlés ainsi que des tables dans les salles de cours complètement renversés...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche école : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois l'école")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche école :" , ":flashlight: Vous entrez à l'intérieur de cette école, des livres complètement brûlés ainsi que des tables dans les salles de cours complètement renversés...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche école : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17660,8 +17650,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche mairie:" , ":flashlight: Vous entrez à l'intérieur de cette mairie, remplis de documents sur les bureaux qui sont dans des états déplorables...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche mairie : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois la mairie")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche mairie:" , ":flashlight: Vous entrez à l'intérieur de cette mairie, remplis de documents sur les bureaux qui sont dans des états déplorables...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche mairie : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17673,8 +17662,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche commissariat:" , ":flashlight: Vous entrez à l'intérieur de ce commissariat, un cadavre décomposé attaché à un barreau d'une des cellules avec des menottes...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche commissariat : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois le commissariat")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche commissariat:" , ":flashlight: Vous entrez à l'intérieur de ce commissariat, un cadavre décomposé attaché à un barreau d'une des cellules avec des menottes...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche commissariat : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17686,8 +17674,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche restaurant:" , ":flashlight: Vous entrez à l'intérieur de cette restaurant, de la nourriture sur le sol en décomposition depuis déjà un bon moment ainsi que des cuisines ravagées...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche restaurant : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois le restaurant")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche restaurant:" , ":flashlight: Vous entrez à l'intérieur de cette restaurant, de la nourriture sur le sol en décomposition depuis déjà un bon moment ainsi que des cuisines ravagées...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche restaurant : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17699,8 +17686,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche demeure:" , ":flashlight: Vous entrez à l'intérieur de cette demeure, les rideaux sont déchirés et les lustres éclatés sur le sol après s'être détaché...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche demeure : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois la demeure")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche demeure:" , ":flashlight: Vous entrez à l'intérieur de cette demeure, les rideaux sont déchirés et les lustres éclatés sur le sol après s'être détaché...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche demeure : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17712,8 +17698,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche hôtel:" , ":flashlight: Vous entrez à l'intérieur de cette hôtel, les chambres et les couloirs ainsi que le sol qui sont couverts de griffures et de sang...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche hôtel : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois l'hôtel")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche hôtel:" , ":flashlight: Vous entrez à l'intérieur de cette hôtel, les chambres et les couloirs ainsi que le sol qui sont couverts de griffures et de sang...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche hôtel : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -17725,8 +17710,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Zone proche banque:" , ":flashlight: Vous entrez à l'intérieur de cette banque, de l'argent encore sur le sol ne servant plus à rien depuis l'apocalyspe...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche banque : fouille`\n\n:warning: Vous pourrez fouiller seulement 5 fois la banque")
-    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .addField(":flashlight: Zone proche banque:" , ":flashlight: Vous entrez à l'intérieur de cette banque, de l'argent encore sur le sol ne servant plus à rien depuis l'apocalyspe...\n\n:flashlight: Pour fouiller à vos risques et périls : `=Zone proche banque : fouille`")
     .setTimestamp()
     message.channel.send({embed})
   }
