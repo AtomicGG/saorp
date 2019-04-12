@@ -3199,8 +3199,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Lapin géant attaque")) {
-    const A = (Math.floor((9)*Math.random()+10))
-    const Z = (Math.floor((11)*Math.random()+14))
+    const A = (Math.floor((5)*Math.random()+10))
+    const Z = (Math.floor((6)*Math.random()+15))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
       const embed = new Discord.RichEmbed()
@@ -3210,7 +3210,7 @@ bot.on('message', message => {
       .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
       message.channel.send({embed})
     }
-    if (51 <= B & B <= 90){
+    if (51 <= B & B <= 95){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3219,7 +3219,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (91 <= B){
+    if (96 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15033,6 +15033,22 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Peau de ragondin")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Peau de ragondin :" , "C'est une peau basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Equipements de kobolt supérieurs")
+    .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Coeur de renard")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15154,6 +15170,22 @@ bot.on('message', message => {
     .addField("Prix d'achat :" , "30 cols")
     .addField("Prix de revente :" , "7 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc\n=Bijoux rouillés\n=Potion légère de soin")
+    .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coeur de ragondin")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Coeur de ragondin :" , "C'est un coeur basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt\n=Bijoux de kobolt supérieurs\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15321,6 +15353,26 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Dent de kobolt")) {
+    if (message.content.includes("géant rouge")) {
+
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Dent de kobolt :" , "C'est une dent rare que vous trouvez sur les kobolts dans la montagne et la grotte du palier 1 !")
+      .addField("Prix d'achat :" , "X cols")
+      .addField("Prix de revente :" , "X cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt")
+      .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Gelatine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15361,7 +15413,7 @@ bot.on('message', message => {
     .addField("Bois de frêne médiocre :" , "C'est un bois basique que vous trouvez dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
     .addField("Prix de revente :" , "5 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Epée basique à deux mains\n=Epée basique à une main\n=Masse basique à deux mains\n=Masse basique à une main\n=Hache basique à deux mains\n=Hache basique à une main\n=Rapière basique à deux mains\n=Rapière basique à une main\n=Cimeterre basique à deux mains\n=Cimeterre basique à une main\n=Katana basique à deux mains\n=Katana basique à une main\n=Glaive basique à deux mains\n=Dague basique à une main\n=Bouclier basique à une main")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes basiques")
     .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15374,10 +15426,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Bois de frêne commun :" , "C'est un bois étrange que vous trouvez dans la forêt du palier 1 !")
+    .addField("Bois de frêne commun :" , "C'est un bois commun que vous trouvez dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
     .addField("Prix de revente :" , "10 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15406,10 +15458,42 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Cuivre commun :" , "C'est un minerai étrange que vous trouvez en minant dans la forêt du palier 1 !")
+    .addField("Cuivre commun :" , "C'est un minerai commun que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
     .addField("Prix de revente :" , "10 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
+    .setImage("https://png.icons8.com/color/1600/gold-ore.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cuivre rare")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Cuivre rare :" , "C'est un minerai rare que vous trouvez en minant dans la montagne et la grotte du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
+    .setImage("https://png.icons8.com/color/1600/gold-ore.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cuivre rare")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Cuivre parfait :" , "C'est un minerai très rare que vous trouvez en minant dans la grotte du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures\n=Parchemin de feu rouge faible")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15506,6 +15590,38 @@ bot.on('message', message => {
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "X cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Equipements de kobolt supérieurs")
+    .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plan de bijoux kobolt")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plan de bijoux kobolt :" , "C'est un plan servant à la création des bijoux des Kobolts du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt\n=Bijoux de kobolt supérieurs")
+    .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plan d'arme' kobolt")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plan d'arme kobolt :" , "C'est un plan servant à la création des armes des Kobolts du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt\n=Armes de kobolt supérieurs")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
     message.channel.send({embed})
