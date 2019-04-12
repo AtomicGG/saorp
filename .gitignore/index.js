@@ -9679,6 +9679,69 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Equipements en peau résistante")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des équipements en peau résistante :" , "=Casque en peau résistante\n=Épaulières en peau résistante\n=Plastron en peau résistante\n=Cape en peau résistante\n=Ceinture en peau résistante\n=Gantelets en peau résistante\n=Jambières en peau résistante\n=Bottes en peau résistante")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Equipements rouillés")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des équipements rouillés :" , "=Casque rouillé\n=Épaulières rouillées\n=Plastron rouillé\n=Ceinture rouillée\n=Gantelets rouillés\n=Jambières rouillées\n=Bottes rouillées")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Equipements du clan des loups")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des équipements du clan des loups :" , "=Casque du clan des loups\n=Épaulières du clan des loups\n=Plastron du clan des loups\n=Cape du clan des loups\n=Ceinture du clan des loups\n=Gantelets du clan des loups\n=Jambières du clan des loups\n=Bottes du clan des loups")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Equipements de kobolt")) {
+    if (message.content.includes("supérieur")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt supérieur\n=Épaulières de kobolt supérieures\n=Plastron de kobolt supérieur\n=Cape de kobolt supérieure\n=Ceinture de kobolt supérieure\n=Gantelets de kobolt supérieurs\n=Jambières de kobolt supérieures\n=Bottes de kobolt supérieures")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt\n=Épaulières de kobolt\n=Plastron de kobolt\n=Cape de kobolt\n=Ceinture de kobolt\n=Gantelets de kobolt\n=Jambières de kobolt\n=Bottes de kobolt")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Casque du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -11519,7 +11582,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Cape de kobolt") {    const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Cape de kobolt") {
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11531,7 +11595,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Plastron de kobolt") {      const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Plastron de kobolt") {
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11543,7 +11608,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Gantelets de kobolt") {        const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Gantelets de kobolt") {
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11555,7 +11621,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Ceinture de kobolt") {          const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Ceinture de kobolt") {
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11567,7 +11634,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Jambières de kobolt") {            const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Jambières de kobolt") {
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11579,7 +11647,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Bottes de kobolt") {              const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Bottes de kobolt") {
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
@@ -11591,7 +11660,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Amulette de kobolt") {                const embed = new Discord.RichEmbed()
+  if (message.content === prefix + "Amulette de kobolt") {
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
