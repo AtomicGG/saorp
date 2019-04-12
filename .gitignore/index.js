@@ -7158,7 +7158,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera un coup ou une action défensive selon l'arme\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e) [+5]**\n**Supérieur(e) [+10]**\n**Suprême [+15]**\n**Divin(e) [+20]**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si par exemple j'ai une épée à deux mains qui améliore le combo en combo supérieur, si je possède une particularité qui améliore le combo en plus de l'épée à deux mains, le combo supérieur devient le combo suprême, et si quelque chose encore améliore le combo, il devient un combo divin !\n\nPour comprendre ce systèpme encore plus facilement, comme marqué à côté des améliorations [+5/10/15/20] les améliorations se cumulent de cette manière !")
+    .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera un coup ou une action défensive selon l'arme\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e) [+5]**\n**Supérieur(e) [+10]**\n**Suprême [+15]**\n**Divin(e) [+20]**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si par exemple j'ai une épée à deux mains qui améliore le combo en combo supérieur, si je possède une particularité qui améliore le combo en plus de l'épée à deux mains, le combo supérieur devient le combo suprême, et si quelque chose encore améliore le combo, il devient un combo divin !\n\nPour comprendre ce système encore plus facilement, comme marqué à côté des améliorations [+5/10/15/20] les améliorations se cumulent de cette manière !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -9664,6 +9664,19 @@ bot.on('message', message => {
 })
 
 //////////////////////////////////////////////////////////////////OBJETS A ACHETER OU CRAFT///////////////////////////////////////////////////////////////////////
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Equipements en peau arrachée")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des équipements en peau arrachée :" , "=Casque en peau arrachée\n=Épaulières en peau arrachée\n=Plastron en peau arrachée\n=Cape en peau arrachée\n=Ceinture en peau arrachée\n=Gantelets en peau arrachée\n=Jambières en peau arrachée\n=Bottes en peau arrachée")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Casque du clan des loups")) {
