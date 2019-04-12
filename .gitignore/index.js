@@ -9863,7 +9863,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Liste des armes de kobolt supérieures :" , "=Masse de kobolt supérieure à deux mains\n=Masse de kobolt supérieure à une main\n=Rapière de kobolt supérieure à deux mains\n=Rapière de kobolt supérieure à une main\n=Katana de kobolt supérieur à deux mains\n=Katana de kobolt supérieur à une main\n=Epée de kobolt supérieure à deux mains\n=Epée de kobolt supérieure à une main\n=Cimeterre de kobolt supérieur à deux mains\n=Cimeterre de kobolt supérieur à une main\n=Hache de kobolt supérieure à deux mains\n=Hache de kobolt supérieure à une main\n=Glaive de kobolt supérieur à deux mains\n=Dague de kobolt supérieure à une main\n=Bouclier de kobolt supérieur à une main"")
+      .addField(":scales: Liste des armes de kobolt supérieures :" , "=Masse de kobolt supérieure à deux mains\n=Masse de kobolt supérieure à une main\n=Rapière de kobolt supérieure à deux mains\n=Rapière de kobolt supérieure à une main\n=Katana de kobolt supérieur à deux mains\n=Katana de kobolt supérieur à une main\n=Epée de kobolt supérieure à deux mains\n=Epée de kobolt supérieure à une main\n=Cimeterre de kobolt supérieur à deux mains\n=Cimeterre de kobolt supérieur à une main\n=Hache de kobolt supérieure à deux mains\n=Hache de kobolt supérieure à une main\n=Glaive de kobolt supérieur à deux mains\n=Dague de kobolt supérieure à une main\n=Bouclier de kobolt supérieur à une main")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
