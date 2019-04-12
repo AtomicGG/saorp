@@ -9719,12 +9719,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Equipements de kobolt")) {
-    if (message.content.includes("supérieur")) {
+    if (message.content.includes("supérieurs")) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt supérieur\n=Épaulières de kobolt supérieures\n=Plastron de kobolt supérieur\n=Cape de kobolt supérieure\n=Ceinture de kobolt supérieure\n=Gantelets de kobolt supérieurs\n=Jambières de kobolt supérieures\n=Bottes de kobolt supérieures")
+      .addField(":scales: Liste des équipements de kobolt supérieurs:" , "=Casque de kobolt supérieur\n=Épaulières de kobolt supérieures\n=Plastron de kobolt supérieur\n=Cape de kobolt supérieure\n=Ceinture de kobolt supérieure\n=Gantelets de kobolt supérieurs\n=Jambières de kobolt supérieures\n=Bottes de kobolt supérieures")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -9734,6 +9734,145 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt\n=Épaulières de kobolt\n=Plastron de kobolt\n=Cape de kobolt\n=Ceinture de kobolt\n=Gantelets de kobolt\n=Jambières de kobolt\n=Bottes de kobolt")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bijoux en coeur d'animal faible")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des bijoux en coeur d'animal faible :" , "=Anneau en coeur d'animal faible\n=Amulette en coeur d'animal faible")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bijoux du croc")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des bijoux du croc :" , "=Anneau du croc\n=Amulette du croc")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bijoux rouillés")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des bijoux rouillés :" , "=Anneau rouilé\n=Amulette rouillée")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bijoux du clan des loups")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des bijoux du clan des loups :" , "=Anneau du clan des loups\n=Amulette du clan des loups")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bijoux de kobolt")) {
+    if (message.content.includes("supérieurs")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Liste des bijoux de kobolt supérieurs :" , "=Anneau de kobolt supérieur\n=Amulette de kobolt supérieure")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Liste des bijoux de kobolt :" , "=Anneau de kobolt\n=Amulette de kobolt")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Armes basiques")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des armes basiques :" , "=Masse basique à deux mains\n=Masse basique à une main\n=Rapière basique à deux mains\n=Rapière basique à une main\n=Katana basique à deux mains\n=Katana basique à une main\n=Epée basique à deux mains\n=Epée basique à une main\n=Cimeterre basique à deux mains\n=Cimeterre basique à une main\n=Hache basique à deux mains\n=Hache basique à une main\n=Glaive basique à deux mains\n=Dague basique à une main\n=Bouclier basique à une main")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Armes du clan des loups")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des armes du clan des loups :" , "=Masse du clan des loups à deux mains\n=Masse du clan des loups à une main\n=Rapière du clan des loups à deux mains\n=Rapière du clan des loups à une main\n=Katana du clan des loups à deux mains\n=Katana du clan des loups à une main\n=Epée du clan des loups à deux mains\n=Epée du clan des loups à une main\n=Cimeterre du clan des loups à deux mains\n=Cimeterre du clan des loups à une main\n=Hache du clan des loups à deux mains\n=Hache du clan des loups à une main\n=Glaive du clan des loups à deux mains\n=Dague du clan des loups à une main\n=Bouclier du clan des loups à une main")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Armes du roi déchu")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Liste des armes du roi déchu :" , "=Faux du roi déchu à deux mains\n=Bouclier du roi déchu à une main")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Armes de kobolt")) {
+    if (message.content.includes("supérieures")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Liste des armes de kobolt supérieures :" , "=Masse de kobolt supérieure à deux mains\n=Masse de kobolt supérieure à une main\n=Rapière de kobolt supérieure à deux mains\n=Rapière de kobolt supérieure à une main\n=Katana de kobolt supérieur à deux mains\n=Katana de kobolt supérieur à une main\n=Epée de kobolt supérieure à deux mains\n=Epée de kobolt supérieure à une main\n=Cimeterre de kobolt supérieur à deux mains\n=Cimeterre de kobolt supérieur à une main\n=Hache de kobolt supérieure à deux mains\n=Hache de kobolt supérieure à une main\n=Glaive de kobolt supérieur à deux mains\n=Dague de kobolt supérieure à une main\n=Bouclier de kobolt supérieur à une main"")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Liste des armes de kobolt :" , "=Masse de kobolt à deux mains\n=Masse de kobolt à une main\n=Rapière de kobolt à deux mains\n=Rapière de kobolt à une main\n=Katana de kobolt à deux mains\n=Katana de kobolt à une main\n=Epée de kobolt à deux mains\n=Epée de kobolt à une main\n=Cimeterre de kobolt à deux mains\n=Cimeterre de kobolt à une main\n=Hache de kobolt à deux mains\n=Hache de kobolt à une main\n=Glaive de kobolt à deux mains\n=Dague de kobolt à une main\n=Bouclier de kobolt à une main")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
