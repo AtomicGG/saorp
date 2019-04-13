@@ -5651,7 +5651,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.9)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5661,7 +5661,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5681,7 +5681,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5691,7 +5691,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5711,7 +5711,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.7)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5721,7 +5721,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5741,7 +5741,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.1)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5751,7 +5751,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5771,7 +5771,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5781,7 +5781,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5801,7 +5801,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.9)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5811,7 +5811,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5831,7 +5831,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*3.3)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5841,7 +5841,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5861,7 +5861,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*3.7)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5871,7 +5871,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5891,7 +5891,7 @@ bot.on('message', message => {
     let degats = args.slice(4).join(" : ");
     const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*4.1)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 80){
+    if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5901,7 +5901,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= B){
+    if (21 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
