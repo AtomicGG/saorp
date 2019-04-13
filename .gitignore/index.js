@@ -16130,6 +16130,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
+  });
   bot.on('message', message => {
         if (message.content.startsWith(prefix + "Bonbon magique")) {
               const image = (Math.floor(100)*Math.random()+1)
