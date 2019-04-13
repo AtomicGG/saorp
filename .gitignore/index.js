@@ -16137,7 +16137,7 @@ bot.on('message', message => {
               if(image <= 100){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png%22)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png%22")
                 .setColor(3447003)
                 .addField("Transformation en gleam eyes :" , "Une gigantesque épée de formes complexes apparaît dans vos deux mains, votre corps devient tellement immense que vous ne savez plus la notion de la taille humaine, votre peau devient bleu foncé et vos yeux de la même couleur, des cornes poussent sur votre tête ainsi que des genre de sabots à vos pied\n\nVotre transformation dure 24 H et vous confère 20 dégâts supplémentaires ainsi que 100 HP et 10 points d'armure !"
                 .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/a/ab/TheGleamEyes.png/revision/latest?cb=20170611161342&path-prefix=fr")
