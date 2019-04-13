@@ -18258,12 +18258,12 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content === prefix + "Aileons de poulet entamés") {
+  if (message.content === prefix + "Ailerons de poulet entamés") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Aileons de poulet entamés :" , "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...")
+    .addField("Ailerons de poulet entamés :" , "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...")
     .setTimestamp()
     message.channel.send({embed})
   }
