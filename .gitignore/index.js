@@ -16131,6 +16131,7 @@ bot.on('message', message => {
     }
   }
 });
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Météo du jour")) {
     const image = (Math.floor(100)*Math.random()+1)
