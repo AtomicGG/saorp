@@ -5552,7 +5552,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts\n\n:warning: L'ennemis ne pourra pas faire de blocage !")
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
       .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
       .setTimestamp()
       message.channel.send({embed})
