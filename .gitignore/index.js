@@ -5649,9 +5649,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 1 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.5)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.9)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5661,7 +5661,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5679,9 +5679,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 2 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5691,7 +5691,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5709,9 +5709,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 3 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.7)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5721,7 +5721,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5739,9 +5739,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 4 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.25)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.1)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5751,7 +5751,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5769,9 +5769,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 5 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.5)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5781,7 +5781,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5799,9 +5799,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 6 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*1.75)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.9)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5811,7 +5811,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5829,9 +5829,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 7 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*3.3)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5841,7 +5841,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5859,9 +5859,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 8 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2.25)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*3.7)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5871,7 +5871,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5889,9 +5889,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Combo simple 9 ")) {
     let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.25)*Math.random()+1*(degats*2.5)))
+    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*4.1)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5901,7 +5901,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (81 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
