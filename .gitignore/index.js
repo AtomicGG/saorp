@@ -16130,7 +16130,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-  });
+});
 
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bonbon magique")) {
@@ -16146,7 +16146,6 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
     }
-  }
 });
 
 bot.on('message', message => {
