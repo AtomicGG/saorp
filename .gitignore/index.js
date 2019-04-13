@@ -16142,7 +16142,7 @@ bot.on('message', message => {
                 .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/a/ab/TheGleamEyes.png/revision/latest?cb=20170611161342&path-prefix=fr")
                 .setTimestamp()
                 message.channel.send({embed})
-           }
+          }
       }
   }
 });
