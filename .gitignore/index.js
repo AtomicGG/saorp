@@ -7842,7 +7842,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (X >= 91 && Roll <= 95){
+      if (X >= 91 && X <= 95){
         const B1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
         const C1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
         const D1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
