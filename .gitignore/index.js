@@ -7695,13 +7695,13 @@ bot.on('message', message => {
       if(B <= 80){
         const embed = new Discord.RichEmbed()
         const D = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.2)))
-        /*.setAuthor(message.author.username , message.author.avatarURL)
+        .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `5` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
+        //.addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `5` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
         .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
         .setTimestamp()
-        message.channel.send({embed})*/
+        message.channel.send({embed})
       }
       if(B >= 81 && B <= 90){
         /*const embed = new Discord.RichEmbed()
