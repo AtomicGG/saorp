@@ -7750,7 +7750,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let degats = args.slice(1).join(" : ");
+      let degats = args.slice(2).join(" : ");
       const premier = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
       const deuxième = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
       const A = premier+deuxième
