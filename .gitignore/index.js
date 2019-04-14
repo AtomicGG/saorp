@@ -7914,6 +7914,68 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Treble scythe")) {
+    if (talkedRecently.has(message.author.id+13)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(3).join(" : ");
+      const B = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
+      const C = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
+      const D = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
+      const A = B+C+D
+      if (X <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup en avant inflige `" +B+ "` points de dégâts, votre deuxième coup en avant inflige `" +C+ "` points de dégâts et votre dernier coup en avant inflige `" +D+ "` points de dégâts !\n\n(Vous pouvez frapper jusqu'à deux fois la même cible)")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (X >= 91 && X <= 95){
+        const B1 = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
+        const C1 = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
+        const A1 = B+C
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A1+ "` points de dégâts au total !\n\nVotre premier coup en avant inflige `" +B1+ "` points de dégâts et le deuxième coup en avant inflige `" +C1+ "` points de dégâts !\n\n(Vous pouvez frapper jusqu'à deux fois la même cible)")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (X >= 96){
+        const E = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
+        const A2 = B+C+D+E
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A2+ "` points de dégâts au total !\n\nVotre premier coup en avant inflige `" +B+ "` points de dégâts, votre deuxième coup en avant inflige `" +C+ "` points de dégâts, votre troisième coup en avant inflige `" +D+ "` et votre dernier coup en avant inflige `" +E+ "` points de dégâts !\n\n(Vous pouvez frapper jusqu'à deux fois la même cible)")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    talkedRecently.add(message.author.id+13);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+13);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Vertical arc")) {
     if (talkedRecently.has(message.author.id+14)) {
       const embed = new Discord.RichEmbed()
