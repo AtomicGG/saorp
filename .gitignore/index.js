@@ -7809,7 +7809,7 @@ bot.on('message', message => {
   }
 });
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Tourbillon")) {
@@ -7834,6 +7834,13 @@ bot.on('message', message => {
         const E = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
         const F = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
         const A = B+C+D+E+F
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +Cible+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+        .setTimestamp()
+        message.channel.send({embed})
       }
       if (Roll >= 91 && Roll <= 95){
         const Cible = 2
@@ -7843,6 +7850,13 @@ bot.on('message', message => {
         const E = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.2)))
         const F = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.2)))
         const A = B+C+D+E+F
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +Cible+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+        .setTimestamp()
+        message.channel.send({embed})
       }
       if (Roll >= 96){
         const Cible = 5
@@ -7852,21 +7866,21 @@ bot.on('message', message => {
         const E = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
         const F = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
         const A = B+C+D+E+F
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +Cible+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+        .setTimestamp()
+        message.channel.send({embed})
       }
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +Cible+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
-      .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
-      .setTimestamp()
-      message.channel.send({embed})
     }
     talkedRecently.add(message.author.id+12);
     setTimeout(() => {
       talkedRecently.delete(message.author.id+12);
     }, 3600000);
   }
-});*/
+});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
