@@ -7832,8 +7832,8 @@ bot.on('message', message => {
       const F = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.15)))
       const I = (Math.floor((2)*Math.random()+3))
       const A = B+C+D+E+F
-      const embed = new Discord.RichEmbed()
       if (X <= 90){
+        const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
@@ -7849,6 +7849,7 @@ bot.on('message', message => {
         const E1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
         const F1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
         const A1 = B+C+D+E+F
+        const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
@@ -7858,6 +7859,7 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
       if (X >= 96){
+        const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
