@@ -7824,6 +7824,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(1).join(" : ");
+      const Roll = (Math.floor((100)*Math.random()+1))
       const embed = new Discord.RichEmbed()
       if (Roll <= 90){
         const Cible = (Math.floor((2)*Math.random()+3))
