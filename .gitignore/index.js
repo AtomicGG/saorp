@@ -7689,11 +7689,11 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      /*let degats = args.slice(3).join(" : ");
+      let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
       const B = (Math.floor(100*Math.random()+1))
       if(B <= 80){
-        const embed = new Discord.RichEmbed()
+        /*const embed = new Discord.RichEmbed()
         const D = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.2)))
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
