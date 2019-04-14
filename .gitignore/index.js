@@ -7739,6 +7739,65 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Crucifixion")) {
+    if (/*talkedRecently.has(message.author.id+10)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(1).join(" : ");
+      const premier = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
+      const deuxième = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
+      const A = premier+deuxième
+      const B = (Math.floor(100)*Math.random()+1)
+      const D = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.3)))
+      if(B <= 80){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, et fait saigner l'ennemis pendant `3` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\nVotre premier coup horizontal rapide inflige `" +premier+ "` points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
+        .setImage("https://data.whicdn.com/images/132920508/original.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 81 && B <= 90){
+        const D1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.5)))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, et fait saigner l'ennemis pendant `2` tours, infligeant `" +D1+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\nVotre premier coup horizontal rapide inflige `" +premier+ " points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
+        .setImage("https://data.whicdn.com/images/132920508/original.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (B >= 91) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, et fait saigner l'ennemis pendant `3` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\nVotre premier coup horizontal rapide inflige `" +premier+ " points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !\n\nDe plus, l'ennemi blessé est vulnérable. Pendant les 3 prochaines attaques réussies contre lui, ces dites attaques feront 0.2 dégâts supplémentaires.")
+        .setImage("https://data.whicdn.com/images/132920508/original.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+10);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+10);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Vorpal strike")) {
     if (talkedRecently.has(message.author.id+11)) {
       const embed = new Discord.RichEmbed()
