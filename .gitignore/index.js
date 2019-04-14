@@ -7724,6 +7724,65 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Burning slash")) {
+    if (/*talkedRecently.has(message.author.id+9)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(3).join(" : ");
+      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const D = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.35)))
+      if(B <= 80){
+        const C = (Math.floor((2)*Math.random()+2))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 81 && B <= 90){
+        const D1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.5)))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `2` tours, infligeant `" +D1+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (B >= 91){
+        const E = Math.floor(degats*1.1)
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `3` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !\n\nDe plus, votre épée reste enflammée et augmente vos dégâts à la valeur `" +E+ "` pendant ces 3 tours")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+9);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+9);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Crucifixion")) {
     if (talkedRecently.has(message.author.id+10)) {
       const embed = new Discord.RichEmbed()
