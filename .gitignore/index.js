@@ -7691,7 +7691,7 @@ bot.on('message', message => {
     } else {
       let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
-      const B = (Math.floor(100)*Math.random()+1)
+      const B = ((Math.floor(100)*Math.random()+1))
       if(B <= 80){
         const embed = new Discord.RichEmbed()
         const D = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.2)))
