@@ -7853,7 +7853,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A1+ "` points de dégâts au total à `2` ennemis !\n\nVotre premier coup circulaire inflige `" +B1+ "` points de dégâts, le deuxième coup circulaire inflige `" +C1+ "` points de dégâts, le troisième coup circulaire inflige `" +D1+ "` points de dégâts, le quatrième coup circulaire inflige `" +E1+ "` points de dégâts et le cinquième coup circulaire inflige `" +F1+ "` points de dégâts !")
+        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A1+ "` points de dégâts au total à `3` ennemis !\n\nVotre premier coup circulaire inflige `" +B1+ "` points de dégâts, le deuxième coup circulaire inflige `" +C1+ "` points de dégâts, le troisième coup circulaire inflige `" +D1+ "` points de dégâts, le quatrième coup circulaire inflige `" +E1+ "` points de dégâts et le cinquième coup circulaire inflige `" +F1+ "` points de dégâts !")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
         .setTimestamp()
         message.channel.send({embed})
