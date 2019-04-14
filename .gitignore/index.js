@@ -19102,6 +19102,320 @@ bot.on('message', message => {
   }
 }) ;
 
+bot.on('message', message => {
+  if (message.content === prefix + "Décapsuleur") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Décapsuleur :" , "Certaines pièces sont de vrais boîtes de conserve, rien de mieux qu'un outil approprié pour aller à la pêche aux objets utiles ! Malheureusement, étant en piteux état, ce décapsuleur ne pourra ouvrir qu'une seule porte")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Dés") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Dés :" , "Jouez aux dés avec d'autres perdants.")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Détonateur compact") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Détonateur compact :" , "Un dispositif compact qui peut faire exploser une petite charge d'explosif...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Eau croupie") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Eau croupie :" , "Ce bout de ferraille tordue a permis de capter de l'eau, en petite quantité\n\nLe problème, c'est qu'elle n'est pas potable, en l'état")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Eau croupie purifiée") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Eau croupie purifiée :" , "Ce bout de ferraille tordue a permis de capter de l'eau, en petite quantité\n\nC'est peu, mais c'est mieux que rien...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Epices fortes") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Epice fortes :" , "Un petit sachet d'épices...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Explosifs bruts") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Explosifs bruts :" , "Boum !")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Ferraille") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Ferraille :" , "Du métal... Un peu lourd, mais ça sert toujours !\n\nLe métal est utilisé pour la construction de bâtiments en ville")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fiole de poison") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fiole de poison :" , "Cette minusculte quantité de poison suffira à tuer n'importe quel concitoyen\n\nMélangez son contenu avec un aliment, une gourde ou une drogue et celle-ci sera contaminée, devenant ainsi une arme mortelle...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Four cancérigène") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Four cancérigène :" , "Les légendes racontent que la technologie à Micro-Ondes serait l'une des raisons du déclin de la civilisation\n\nCertains disent même que l'existence même des morts-vivants n'y serait pas étrangère")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fragment de tôle") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fragment de tôle :" , "Des morceaux de tôle qui ne demandent qu'à servir de protection dans votre maison... Pour peu que vous les assembliez correctement")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fumigène 'Senteur sapin'") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fumigène 'Senteur sapin' :" , "Un modèle très courant de fumigènes, celui-ci ayant la particularité de sentir le conifère\n\nIl dissimule aussi votre prochain mouvement s'il est effectué au plus tard 1 minute après l'utilisation du fumigène\n\nATTENTION : utilisez cet objet APRÈS avoir réalisé les actions que vous souhaitez masquer...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fusil d'assaut") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fusil d'assaut :" , "Une version peu courante du M16. Plus compacte, probablement destiné à un usage 'civil'...\n\nLa chasse à la Galinette Cendrée diront certains")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fusée éclairante") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fusée éclairante :" , "La Fusée Éclairante vous permet de réveler les informations d'une zone éloignée de la ville. Une fois retombée elle libère un petit emetteur qui transmet de suite les informations")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Grand bâton sec") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Grand bâton sec :" , "Il est suffisamment pointu pour empaler quelque chose, mais pas vraiment très résistant... Priez simplement pour qu'il tienne le choc")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Gros chat mignon") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Gros chat mignon :" , "C'est mignon, ça fait joli chez soi et ça sait à peu près se battre contre un zombie\n\nEt puis, si vous avez faim...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Gros coffre en métal") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Gros coffre en métal :" , "C'est particulièrement lourd et ça contient sûrement quelque chose de précieux...\n\nReste à trouver un outil plus adapté que vos dents pour l'ouvrir")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Gros colis postal") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Gros colis postal :" , "Un colis dont l'adresse est aujourd'hui illisible. Et on dirait bien qu'il y a quelque chose à l'intérieur... C'est Noël")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Grosse chaîne rouillée") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Grosse chaîne rouillée :" , "Cette vieille chaîne en fer est complètement distordue et n'a plus grande utilité... Mais on doit bien pouvoir étrangler quelqu'un avec")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Guitare artisanale") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Guitare artisanale :" , "Idéale pour draguer lors de nuit de feu de camp, elle reste très appréciée même depuis l'asexualisation des citoyens\n\nElle saura rendre joie et gaïté dans la ville")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Hydratone 100MG") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Hydratone 100MG :" , "Pratique, l'Hydratone tient dans la poche et peut étancher votre soif quelques minutes après l'ingestion\n\nToutefois, elle ne retire PAS les effets de la fatigue et ne régénère PAS les points d'action")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Jambon-beurre moisi") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Jambon-beurre moisi :" , "Un reste de casse-croute qui n'a d'appétissant que son souvenir...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Jerrycan plein") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Jerrycan plein :" , "Le Jerrycan contient plusieurs rations d'eau non-potable (non-purifiée)\n\nToutefois, il faut que la ville dispose du bâtiment de filtrage adapté pour en faire de l'eau potable")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Jus de mirabelle suspect") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Jus de mirabelle suspect :" , "Cette fiole soigneusement scellée contient du jus de mirabelle, c'est vraiment suspect\n\nD'autant qu'elle porte une étiquette : 'en cas d'ingestion, contacter le centre anti-poison le plus proche de chez vous'\n\nVous n'allez quand même pas boire ça ? Si ?")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Kalachnik'eau") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Kalachnik'eau :" , "Une puissante sulfateuse à eau, son mécanisme grippé ne résistera pas à plus d'un assaut")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Kit de bricolage") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Kit de bricolage :" , "Cette boîte en ferraille contient tout le nécessaire de base pour remettre en état à peu près n'importe quoi, sauf vos voisins morts")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
