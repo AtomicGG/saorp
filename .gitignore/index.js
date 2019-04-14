@@ -7505,6 +7505,40 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Blood insanity")) {
+    if (/*talkedRecently.has(message.author.id+5)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(3).join(" : ");
+      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
+      const B = ((0.2)*Math.random())+(1*(0.6))
+      const C = Math.floor(B*degats)
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" +A+ "` points de dégâts, mais vos dégâts valent désormais `" +C+ "`seront doublés pendant 3 tours !")
+      .setImage("https://media.giphy.com/media/6noApitdXGOtO/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+5);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+5);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Sleeping silence")) {
     if (talkedRecently.has(message.author.id+6)) {
       const embed = new Discord.RichEmbed()
