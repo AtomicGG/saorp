@@ -7678,6 +7678,64 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Deadly sins")) {
+    if (/*talkedRecently.has(message.author.id+8)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(3).join(" : ");
+      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
+      const B = (Math.floor(100)*Math.random()+1)
+      if(B <= 80){
+        const embed = new Discord.RichEmbed()
+        const D = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.2)))
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `5` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 81 && B <= 90){
+        const embed = new Discord.RichEmbed()
+        const D = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.15)))
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `10` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 91){
+        const D = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.15)))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `5` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !\n\nDe plus, votre arme reste imprégnée de poison pendant 5 tours, permettant de rajouter un tour de puissant à chaque fois que vous touchez votre cible.")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+8);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+8);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Burning slash")) {
     if (talkedRecently.has(message.author.id+9)) {
       const embed = new Discord.RichEmbed()
