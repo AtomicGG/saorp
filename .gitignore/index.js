@@ -7823,7 +7823,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let degats = args.slice(1).join(" : ");
+      let degats = args.slice(2).join(" : ");
       const Roll = (Math.floor((100)*Math.random()+1))
       const embed = new Discord.RichEmbed()
       if (Roll <= 90){
