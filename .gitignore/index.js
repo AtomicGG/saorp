@@ -7445,7 +7445,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, mais ne gèle pas l'ennemis !")
+        .addField(":cyclone: Frost strike :" , ":cyclone: Votre compétence 'Frost strike' inflige `" +A+ "` points de dégâts, mais ne gèle pas l'ennemis !")
         .setImage("https://i.gifer.com/BHNt.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -7455,7 +7455,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, et gèle l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque !")
+        .addField(":cyclone: Frost strike :" , ":cyclone: Votre compétence 'Frost strike' inflige `" +A+ "` points de dégâts, et gèle l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque !")
         .setImage("https://i.gifer.com/BHNt.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -7809,7 +7809,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Tourbillon")) {
@@ -7866,7 +7866,7 @@ bot.on('message', message => {
       talkedRecently.delete(message.author.id+12);
     }, 3600000);
   }
-});
+});*/
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
