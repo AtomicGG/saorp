@@ -7812,6 +7812,64 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Tourbillon")) {
+    if (talkedRecently.has(message.author.id+12)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(1).join(" : ");
+      const embed = new Discord.RichEmbed()
+      if (Roll <= 90){
+        const Cible = (Math.floor((2)*Math.random()+3))
+        const B = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const C = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const D = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const E = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const F = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const A = B+C+D+E+F
+      }
+      if (Roll >= 91 && Roll <= 95){
+        const Cible = 2
+        const B = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.2)))
+        const C = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.2)))
+        const D = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.2)))
+        const E = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.2)))
+        const F = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.2)))
+        const A = B+C+D+E+F
+      }
+      if (Roll >= 96){
+        const Cible = 5
+        const B = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const C = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const D = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const E = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const F = (Math.floor((degats*0.10)*Math.random()+1*(degats*0.15)))
+        const A = B+C+D+E+F
+      }
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +Cible+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
+      .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+12);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+12);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Treble scythe")) {
     if (talkedRecently.has(message.author.id+13)) {
       const embed = new Discord.RichEmbed()
