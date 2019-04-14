@@ -7930,6 +7930,7 @@ bot.on('message', message => {
       const C = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
       const D = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
       const A = B+C+D
+      const X = (Math.floor((100)*Math.random()+1))
       if (X <= 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
