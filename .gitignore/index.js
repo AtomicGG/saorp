@@ -7848,7 +7848,7 @@ bot.on('message', message => {
         const D1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
         const E1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
         const F1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
-        const A1 = B+C+D+E+F
+        const A1 = B1+C1+D1+E1+F1
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7915,7 +7915,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Treble scythe")) {
-    if (talkedRecently.has(message.author.id+13)) {
+    if (/*talkedRecently.has(message.author.id+13)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7943,7 +7943,7 @@ bot.on('message', message => {
       if (X >= 91 && X <= 95){
         const B1 = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
         const C1 = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
-        const A1 = B+C
+        const A1 = B1+C1
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
