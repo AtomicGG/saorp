@@ -7335,7 +7335,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "New Cyclone")) {
-    if (/*talkedRecently.has(message.author.id+1)*/) {
+    if (/*talkedRecently.has(message.author.id+1)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
