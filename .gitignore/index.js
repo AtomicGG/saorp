@@ -7425,6 +7425,64 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Furious rush")) {
+    if (/*talkedRecently.has(message.author.id+3)*/) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(3).join(" : ");
+      const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+      const B = (Math.floor(100)*Math.random()+1)
+      if(B <= 80){
+        const C = (Math.floor((3)*Math.random()+1))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts et étourdis l'ennemis pendant `" +C+ "` tour(s), empêchant de faire son action défensive !")
+        .setImage("https://orig00.deviantart.net/beec/f/2014/360/3/3/sao_kirito_vs_heathcliff_gif_by_mooeybear2001-d8bdqhf.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 81 && B <= 90){
+        const A1 = (Math.floor((degats)*Math.random()+1*(degats*1.8)))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A1+ "` points de dégâts, et étourdis l'ennemis pendant `2` tours, empêchant de faire son action défensive !")
+        .setImage("https://orig00.deviantart.net/beec/f/2014/360/3/3/sao_kirito_vs_heathcliff_gif_by_mooeybear2001-d8bdqhf.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (B >= 91){
+        const A2 = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.75)))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, et étourdis l'ennemis pendant `2` tours, empêchant de faire son action défensive ! De plus, vous projetez votre cible sur une autre. Si la première cible n'equive pas, la seconde se prend `" +A2+ "` dégâts et est étourdit pendant un tour !")
+        .setImage("https://orig00.deviantart.net/beec/f/2014/360/3/3/sao_kirito_vs_heathcliff_gif_by_mooeybear2001-d8bdqhf.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+3);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+3);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Frost strike")) {
     if (talkedRecently.has(message.author.id+4)) {
       const embed = new Discord.RichEmbed()
@@ -7803,10 +7861,10 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(3).join(" : ");
-      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
+      const A = (Math.floor((degats*0.2)*Math.random()+1*(degats*0.8)))
       const B = (Math.floor(100*Math.random()+1))
       if(B <= 80){
-        const D = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.2)))
+        const D = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.15)))
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7817,7 +7875,7 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
       if(B >= 81 && B <= 90){
-        const D1 = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.15)))
+        const D1 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.1)))
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
