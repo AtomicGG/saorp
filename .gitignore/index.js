@@ -8975,11 +8975,11 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Berserker")) {
-    if /*talkedRecently.has(message.author.id+103)*/false) {
+    if /*talkedRecently.has(message.author.id+103)*//*false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9004,7 +9004,7 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-});
+});*/
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Vindicateur")) {
@@ -9034,11 +9034,11 @@ bot.on('message', message => {
   }
 });
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Vindicateur")) {
-    if (/*talkedRecently.has(message.author.id+104)*//*false) {
+    if (/*talkedRecently.has(message.author.id+104)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9064,7 +9064,7 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-});*/
+});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
