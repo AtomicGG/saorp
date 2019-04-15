@@ -7675,11 +7675,11 @@ bot.on('message', message => {
   }
 });
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Deadly sins")) {
-    if (talkedRecently.has(message.author.id+8)) {
+    if (/*talkedRecently.has(message.author.id+8)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7693,8 +7693,8 @@ bot.on('message', message => {
       const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.5)))
       const B = (Math.floor(100*Math.random()+1))
       if(B <= 80){
-        const embed = new Discord.RichEmbed()
         const D = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.2)))
+        const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
@@ -7704,8 +7704,8 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
       if(B >= 81 && B <= 90){
-        const embed = new Discord.RichEmbed()
         const D1 = (Math.floor((degats*0.05)*Math.random()+1*(degats*0.15)))
+        const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
@@ -7731,7 +7731,7 @@ bot.on('message', message => {
       }, 3600000);
     }
   }
-});*/
+});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
