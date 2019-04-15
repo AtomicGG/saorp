@@ -7471,6 +7471,63 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Frost strike")) {
+    if (/*talkedRecently.has(message.author.id+4)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(3).join(" : ");
+      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const C = (Math.floor((2)*Math.random()+1))
+      if(B <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Frost strike :" , ":cyclone: Votre compétence 'Frost strike' inflige `" +A+ "` points de dégâts et gèle l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque !")
+        .setImage("https://i.gifer.com/BHNt.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 51 && B <= 90){
+        const D = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.2)))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Frost strike :" , ":cyclone: Votre compétence 'Frost strike' inflige `" +A+ "` points de dégâts et gèle l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque et lui faisant subir `" +D+ "` de dégâts de gel à chaque tour de l'effet !")
+        .setImage("https://i.gifer.com/BHNt.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 91) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Frost strike :" , ":cyclone: Votre compétence 'Frost strike' inflige `" +A+ "` points de dégâts et gèle l'ennemis pendant `X` tours, empêchant de faire son attaque ! A chaque tour, la cible gelée passera son tour d'attaque pour Roll. Si elle réussit, elle est dégelée. Dans le cas échéant, elle reste gelée.")
+        .setImage("https://i.gifer.com/BHNt.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+4);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+4);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Blood insanity")) {
     if (talkedRecently.has(message.author.id+5)) {
       const embed = new Discord.RichEmbed()
