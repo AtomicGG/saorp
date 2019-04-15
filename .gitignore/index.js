@@ -8843,7 +8843,7 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-})
+});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -8859,7 +8859,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let X = args.slice(1).join(" : ");
+      let X = args.slice(2).join(" : ");
       const A = X
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -8875,7 +8875,7 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-})
+});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -8907,7 +8907,40 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-})
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Assassin")) {
+    if (/*talkedRecently.has(message.author.id+102)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let atk = args.slice(2).join(" : ");
+      const degat = atk*2.5
+      const atkFinale = atk*1.1
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Compétence de l'assassin :" , "Vous déclenchez votre compétence appartenant à tous les assassins, vous produisez un coup rapide mais précis sur un point vital de votre adversaire qui inflige `" +degat+ "` dégâts ! Que votre coup touche ou non, votre attaque passe à `" +atkFinale+ "` pendant 3 tours.")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+102);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+102);
+      }, 86400000);
+    }
+  }
+});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -8940,7 +8973,38 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-})
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Berserker")) {
+    if /*talkedRecently.has(message.author.id+103)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let atk = args.slice(2).join(" : ");
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Compétence du berserker :" , "Vous déclenchez votre compétence appartenant à tous les berserkers. Pour les 3 prochains coups, vous récupérez `" +atk+ "` de points de vie à chaque fois que vous infligez des dommages avec une attaque !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+103);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+103);
+      }, 86400000);
+    }
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Vindicateur")) {
@@ -8968,7 +9032,39 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-})
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Vindicateur")) {
+    if (/*talkedRecently.has(message.author.id+104)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let def = args.slice(2).join(" : ");
+      const defFinale = def*0.5
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Compétence du vindicateur :" , "Vous déclenchez votre compétence appartenant à tous les vindicateurs. Pendant 3 tours maximum, votre armure diminue jusqu'à `" +defFinale+ "` et vous gagnez `" +def+ "` points d'attaque ! Vous pouvez révoquer l'effet quand vous le souhaitez.")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+104);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+104);
+      }, 86400000);
+    }
+  }
+});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -9000,7 +9096,39 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-})
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Paladin")) {
+    if (/*talkedRecently.has(message.author.id+105)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let def = args.slice(2).join(" : ");
+      const soin = def*1.5
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Compétence du paladin :" , "Vous déclenchez votre compétence appartenant à tous les paladins. Vous vous soignez de `" +soin+"` points de vie et jusqu'à deux autres personnes de `" +def+ "` points de vie. Ensuite, vous vous soignez les deux prochains tours de `" +def+ "` points de vie !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+105);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+105);
+      }, 86400000);
+    }
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chevalier")) {
@@ -9028,7 +9156,39 @@ bot.on('message', message => {
       }, 86400000);
     }
   }
-})
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "New Chevalier")) {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (/*talkedRecently.has(message.author.id+106)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let def = args.slice(2).join(" : ");
+      const armureVie
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Compétence du chevalier :" , "Vous déclenchez votre compétence appartenant à tout les chevaliers. Vous gagnez une barre d'armure de vie de `" +armureVie+ "` points de vie ! Cette barre ne protège pas des dégats de feu, poison, saignement ou perce armure. S'il n'a pas été brisé avant, il disparait à la fin du 3eme tour.")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+106);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+106);
+      }, 86400000);
+    }
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Caractéristiques")) {
