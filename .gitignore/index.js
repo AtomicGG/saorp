@@ -8365,14 +8365,13 @@ bot.on('message', message => {
       const B = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
       const C = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
       const D = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
-      const A = B+C+D
       const X = (Math.floor((100)*Math.random()+1))
       if (X <= 90){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup en avant inflige `" +B+ "` points de dégâts, votre deuxième coup en avant inflige `" +C+ "` points de dégâts et votre dernier coup en avant inflige `" +D+ "` points de dégâts !\n\n(Vous pouvez frapper jusqu'à deux fois la même cible)")
+        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre premier coup en avant inflige `" +B+ "` points de dégâts, votre deuxième coup en avant inflige `" +C+ "` points de dégâts et votre dernier coup en avant inflige `" +D+ "` points de dégâts !\n\n(Les coups sont partagés sur les cibles comme le veut le lanceur de la compétences. Il peut frapper jusqu'à deux fois la même cible. Si un ennemi a  provoque, il se prendra automatiquement les deux premiers coups.)")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
         .setTimestamp()
         message.channel.send({embed})
@@ -8380,24 +8379,22 @@ bot.on('message', message => {
       if (X >= 91 && X <= 95){
         const B1 = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
         const C1 = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
-        const A1 = B1+C1
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A1+ "` points de dégâts au total !\n\nVotre premier coup en avant inflige `" +B1+ "` points de dégâts et le deuxième coup en avant inflige `" +C1+ "` points de dégâts !\n\n(Vous pouvez frapper jusqu'à deux fois la même cible)")
+        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre premier coup en avant inflige `" +B1+ "` points de dégâts et le deuxième coup en avant inflige `" +C1+ "` points de dégâts !\n\n(Les coups sont partagés sur les cibles comme le veut le lanceur de la compétences. Il peut frapper jusqu'à deux fois la même cible. Si un ennemi a  provoque, il se prendra automatiquement les deux premiers coups.)")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
         .setTimestamp()
         message.channel.send({embed})
       }
       if (X >= 96){
         const E = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.7)))
-        const A2 = B+C+D+E
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A2+ "` points de dégâts au total !\n\nVotre premier coup en avant inflige `" +B+ "` points de dégâts, votre deuxième coup en avant inflige `" +C+ "` points de dégâts, votre troisième coup en avant inflige `" +D+ "` et votre dernier coup en avant inflige `" +E+ "` points de dégâts !\n\n(Vous pouvez frapper jusqu'à deux fois la même cible)")
+        .addField(":cyclone: Treble scythe :" , ":cyclone: Votre premier coup en avant inflige `" +B+ "` points de dégâts, votre deuxième coup en avant inflige `" +C+ "` points de dégâts, votre troisième coup en avant inflige `" +D+ "` et votre dernier coup en avant inflige `" +E+ "` points de dégâts !\n\n(Les coups sont partagés sur les cibles comme le veut le lanceur de la compétences. Il peut frapper jusqu'à deux fois la même cible. Si un ennemi a  provoque, il se prendra automatiquement les deux premiers coups.)")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
         .setTimestamp()
         message.channel.send({embed})
