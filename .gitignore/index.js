@@ -7642,7 +7642,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let degats = args.slice(2).join(" : ");
+      let degats = args.slice(3).join(" : ");
       const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
       const B = (Math.floor(100)*Math.random()+1)
       if(B <= 80){
