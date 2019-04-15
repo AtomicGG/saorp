@@ -9173,7 +9173,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let def = args.slice(2).join(" : ");
-      const armureVie
+      const armureVie = def*4.5
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
