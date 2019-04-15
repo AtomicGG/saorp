@@ -8677,6 +8677,38 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "New Combattant")) {
+    if (/*talkedRecently.has(message.author.id+101)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let X = args.slice(1).join(" : ");
+      const A = X
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants, vous invoquez " +A+ " Illfang le Seigneur Kobolt et les charme pour 9999 ordres chacun !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c7/Illfang.png/revision/latest?cb=20161225164329")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+101);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+101);
+      }, 86400000);
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Assassin")) {
     if (talkedRecently.has(message.author.id+102)) {
       const embed = new Discord.RichEmbed()
