@@ -8924,13 +8924,13 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let atk = args.slice(2).join(" : ");
-      const degat = atk*2.5
       const atkFinale = Math.floor(atk*1.1)
+      const degat = atkFinale*2.5
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Compétence de l'assassin :" , "Vous déclenchez votre compétence appartenant à tous les assassins, vous produisez un coup rapide mais précis sur un point vital de votre adversaire qui inflige `" +degat+ "` dégâts ! Que votre coup touche ou non, votre attaque passe à `" +atkFinale+ "` pendant 3 tours.")
+      .addField("Compétence de l'assassin :" , "Vous déclenchez votre compétence appartenant à tous les assassins. Votre attaque passe à `" +atkFinale+ "` pendant 3 tours. Vous produisez ensuite un coup rapide mais précis sur un point vital de votre adversaire qui inflige `" +degat+ "` dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -9049,7 +9049,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let def = args.slice(2).join(" : ");
-      const defFinale = def*0.5
+      const defFinale = def*(2/3)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9178,7 +9178,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Compétence du chevalier :" , "Vous déclenchez votre compétence appartenant à tout les chevaliers. Vous gagnez une barre d'armure de vie de `" +armureVie+ "` points de vie ! Cette barre ne protège pas des dégats de feu, poison, saignement ou perce armure. S'il n'a pas été brisé avant, il disparait à la fin du 3eme tour.")
+      .addField("Compétence du chevalier :" , "Vous déclenchez votre compétence appartenant à tout les chevaliers. Vous gagnez une barre d'armure de vie de `" +armureVie+ "` points de vie ! Cette barre ne protège pas des dégats de feu, poison, saignement ou perce armure. S'il n'a pas été brisé avant, il disparait à la fin du 3eme tour. Tant que l'effet est actif, vous gagnez une amélioration en interception !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
