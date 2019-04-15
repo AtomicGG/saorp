@@ -7430,6 +7430,36 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "New Sonic leap")) {
+    if (/*talkedRecently.has(message.author.id+2)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(100)*Math.random()+1)
+      const ordre = (Math.floor((3)*Math.random()+2))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant pendant `" +ordre+ "` ordres, l'obligeant à vous obéir !\n\nOrdres possibles :\n- Ordonner un coup normal sur une cible.  ( a voir si on accepte d'autres coups en dehors des comp )\n- Ordonner de ne pas se défendre.\n- Ordonner de ne rien faire ou de faire une action hors des actions de combat pendant le tour du charmé (tant que l'action ne désavantage pas la cible pour la suite du combat)\n- Ordonner d'interception (pour soi seulement) sur tout le tour.")
+      .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+2);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+2);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Furious rush")) {
