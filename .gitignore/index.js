@@ -8129,12 +8129,13 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
       if (B >= 91){
+        const D2 = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.45)))
         const E = Math.floor(degats*1.1)
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `3` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !\n\nDe plus, votre épée reste enflammée et augmente vos dégâts à la valeur `" +E+ "` pendant ces 3 tours")
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `2` tours, infligeant `" +D2+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !\n\nDe plus, votre épée reste enflammée et augmente vos dégâts à la valeur `" +E+ "` pendant ces 3 tours")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
         .setTimestamp()
         message.channel.send({embed})
@@ -8215,7 +8216,7 @@ bot.on('message', message => {
       const deuxième = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.75)))
       const A = premier+deuxième
       const B = (Math.floor(100)*Math.random()+1)
-      const D = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.3)))
+      const D = (Math.floor((degats*0.1)*Math.random()+1*(degats*0.25)))
       if(B <= 80){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
