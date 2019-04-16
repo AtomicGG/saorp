@@ -8876,7 +8876,7 @@ bot.on('message', message => {
         talkedRecently.delete(message.author.id+101);
       }, 86400000);
     }
-  })
+  }
 });
 
 bot.on('message', message => {
