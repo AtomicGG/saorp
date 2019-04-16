@@ -7709,7 +7709,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Cooldown :" , " Vous devre attendre 1 H avant de pouvoir refaire ceci !")
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
       .setTimestamp()
       message.channel.send({embed})
@@ -7722,7 +7722,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":cyclone: Armure sainte :" , ":cyclone: Votre compétence 'Armure sainte' vous inflige `" +A+ "` points de dégâts, mais votre armures valent désormais `" +C+ "` pendant 3 tours !")
+      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Armure sainte' vous inflige `" +A+ "` points de dégâts, mais votre armures valent désormais `" +C+ "` pendant 3 tours !")
       .setImage("https://s2.gifyu.com/images/1b2fd7e3773064806f354e60760852c02083997b_hq.gif")
       .setTimestamp()
       message.channel.send({embed})
@@ -7733,6 +7733,7 @@ bot.on('message', message => {
     }, 3600000);
   }
 });
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
