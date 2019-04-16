@@ -7722,7 +7722,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":cyclone: Armure sainte :" , ":cyclone: Votre compétence 'Armure sainte' vous inflige `" +A+ "` points de dégâts, mais votre armures seront doublés pendant `" +C+ "` tours !")
+      .addField(":cyclone: Armure sainte :" , ":cyclone: Votre compétence 'Armure sainte' vous inflige `" +A+ "` points de dégâts, mais votre armure sera doublés pendant `" +C+ "` tours !")
       .setImage("https://s2.gifyu.com/images/1b2fd7e3773064806f354e60760852c02083997b_hq.gif")
       .setTimestamp()
       message.channel.send({embed})
