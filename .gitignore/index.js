@@ -7703,7 +7703,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blood insanitys")) {
+  if (message.content.startsWith(prefix + "Blood)) {
     if (/*talkedRecently.has(message.author.id+5)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -7722,7 +7722,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" +A+ "` points de dégâts, mais vos dégâts valent désormais `" +C+ "` pendant 3 tours !")
+      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" +A+ "` points de dégâts, mais votre armures valent désormais `" +C+ "` pendant 3 tours !")
       .setImage("https://media.giphy.com/media/6noApitdXGOtO/giphy.gif")
       .setTimestamp()
       message.channel.send({embed})
@@ -7733,6 +7733,7 @@ bot.on('message', message => {
     }, 3600000);
   }
 });
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
