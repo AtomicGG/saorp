@@ -20757,17 +20757,6 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Nouilles chinoises épicées") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Nouilles chinoises épicées :" , "Des nouilles copieusement assaisonnées ! Hmm, ça va vous changer de vos repas à base de choses en décomposition")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
 
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
 
