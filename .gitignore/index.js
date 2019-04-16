@@ -7714,10 +7714,10 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((3)*Math.random()+1))
+      let degats = args.slice(3).join(" : ");
+      const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
+      const B = ((0.2)*Math.random())+(1*(0.6))
+      const C = Math.floor((B+1)*degats)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
