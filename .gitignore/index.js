@@ -7703,6 +7703,40 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Blood +")) {
+    if (talkedRecently.has(message.author.id+5)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const C = (Math.floor((3)*Math.random()+1))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" +A+ "` points de dégâts, mais vos dégâts seront doublés pendant `" +C+ "` tours !")
+      .setImage("https://media.giphy.com/media/6noApitdXGOtO/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+5);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+5);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "New Blood insanity")) {
     if (/*talkedRecently.has(message.author.id+5)*/false) {
       const embed = new Discord.RichEmbed()
