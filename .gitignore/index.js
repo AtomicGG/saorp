@@ -7703,7 +7703,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Blood insanity")) {
+  if (message.content.startsWith(prefix + "Blood insanitys")) {
     if (/*talkedRecently.has(message.author.id+5)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -7737,7 +7737,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blood insanitys")) {
+  if (message.content.startsWith(prefix + "New Blood insanity")) {
     if (/*talkedRecently.has(message.author.id+5)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
