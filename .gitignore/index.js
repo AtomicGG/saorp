@@ -7703,7 +7703,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blood Lyn")) {
+  if (message.content.startsWith(prefix + "Armure sainte")) {
     if (talkedRecently.has(message.author.id+5)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -7722,8 +7722,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":cyclone: Blood Lyn :" , ":cyclone: Votre compétence 'Blood Lyn' vous inflige `" +A+ "` points de dégâts, mais vos dégâts seront doublés pendant `" +C+ "` tours !")
-      .setImage("https://media.giphy.com/media/6noApitdXGOtO/giphy.gif")
+      .addField(":cyclone: Armure sainte :" , ":cyclone: Votre compétence 'Armure sainte' vous inflige `" +A+ "` points de dégâts, mais votre armures seront doublés pendant `" +C+ "` tours !")
+      .setImage("https://s2.gifyu.com/images/1b2fd7e3773064806f354e60760852c02083997b_hq.gif")
       .setTimestamp()
       message.channel.send({embed})
     }
