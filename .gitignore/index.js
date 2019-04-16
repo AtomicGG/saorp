@@ -8868,7 +8868,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants. Vous assennez deux coups à votre cible. Le premier coup vise à désarmer, infligeant `" +degat+ "` dégâts et faisant perdre `" +desarmement+ "` points d'attaque pendant trois tours. Le deuxième coup vise à briser l'armure, infligeant `" +degat+ "` et faisant perdre `" +briseArmure+ "` points d'armure pendant trois tours. (Vous devez faire deux défenses séparées, seul l'esquive réussie vous protégera des effets)")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c7/Illfang.png/revision/latest?cb=20161225164329")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
       talkedRecently.add(message.author.id+101);
