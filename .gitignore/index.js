@@ -8859,13 +8859,15 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let X = args.slice(2).join(" : ");
-      const A = X
+      let atk = args.slice(2).join(" : ");
+      const degat = Math.floor(atk*1.5)
+      const desarmement = Math.floor(atk*0.4)
+      const briseArmure = Math.floor(atk*0.2)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants, vous invoquez " +A+ " Illfang le Seigneur Kobolt et les charme pour 9999 ordres chacun !")
+      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants. Vous assennez deux coups à votre cible. Le premier coup vise à désarmer, infligeant `" +degat+ "` dégâts et faisant perdre `" +desarmement+ "` points d'attaque pendant trois tours. Le deuxième coup vise à briser l'armure, infligeant `" +degat+ "` et faisant perdre `" +briseArmure+ "` points d'armure pendant trois tours. (Vous devez faire deux défenses séparées, seul l'esquive réussie vous protégera des effets)")
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c7/Illfang.png/revision/latest?cb=20161225164329")
       .setTimestamp()
       message.channel.send({embed})
@@ -8874,7 +8876,7 @@ bot.on('message', message => {
         talkedRecently.delete(message.author.id+101);
       }, 86400000);
     }
-  }
+  })
 });
 
 bot.on('message', message => {
@@ -8925,7 +8927,7 @@ bot.on('message', message => {
     } else {
       let atk = args.slice(2).join(" : ");
       const atkFinale = Math.floor(atk*1.1)
-      const degat = atkFinale*2.5
+      const degat = Math.floor(atkFinale*2.5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9049,7 +9051,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let def = args.slice(2).join(" : ");
-      const defFinale = def*(2/3)
+      const defFinale = Math.floor(def*(2/3))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9113,7 +9115,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let def = args.slice(2).join(" : ");
-      const soin = def*1.5
+      const soin = Math.floor(def*1.5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -9173,7 +9175,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let def = args.slice(2).join(" : ");
-      const armureVie = def*4.5
+      const armureVie = Math.floor(def*4.5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
