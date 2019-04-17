@@ -17963,12 +17963,22 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les états, partie 6 :" , "`Blessure légère` : Vous avez étais blessé par un zombie ou par un autre survivant ou d'autres évènements, il faudra vous soignez rapidement\n\n`Blessure` > `Blessure avancée` > `Blessure mortelle` : Les différentes états de blessures sont croissants, si vous étiez atteint de l'état 'Blessure' et que vous subissez un état de nouveau 'Blessure légère' alors votre nouvelle état sera 'Blessure avancée', si vous ne comprenez pas alors imaginez que vous avez 5/5 HP, qu'une blessure légère retire 1 HP, une blessure 2 HP, une blessure avancée 3 HP et une blessure mortelle 4 HP avant la mort quand vous êtes à 0/5 HP\n\n`Goule` : Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez...\n\n`Ivresse` : Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre et parler difficilement aux autres citoyens")    .setTimestamp()
+        .addField("Les états, partie 6 :" , "`Blessure légère` : Vous avez étais blessé par un zombie ou par un autre survivant ou d'autres évènements, il faudra vous soignez rapidement\n\n`Blessure` > `Blessure avancée` > `Blessure mortelle` : Les différentes états de blessures sont croissants, si vous étiez atteint de l'état 'Blessure' et que vous subissez un état de nouveau 'Blessure légère' alors votre nouvelle état sera 'Blessure avancée', si vous ne comprenez pas alors imaginez que vous avez 5/5 HP, qu'une blessure légère retire 1 HP, une blessure 2 HP, une blessure avancée 3 HP et une blessure mortelle 4 HP avant la mort quand vous êtes à 0/5 HP\n\n`Goule` : Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez...\n\n`Ivresse` : Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre\n\nLa suite : `=Horde états 7`")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
 
-    
+          bot.on('message', message => {
+            if (message.content === prefix + "Horde états 7") {
+              const embed = new Discord.RichEmbed()
+              .setColor(0xff0000)
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+          .addField("Les états, partie 7 :" , "Les états de blessures, d'hémorragies et d'infections se cumulent, voici des exemples pour mieux comprendre :\n\n`Blessure légère` + `Blessure légère` = `Blessure`\n\n`Blessure` + `Blessure légère` = `Blessure avancée`\n\n`Blessure avancée` + `Blessure légère` = `Blessure mortelle`\n\n`Blessure mortelle` + `Blessure légère` = `Mort`\n\n\n`Blessure` + `Blessure` = `Blessure mortelle`\n\n`Blessure` + `Blessure avancée` = `Mort`\n\n`Infection légère` + `Infection légère` = `Infection`\n\n`Infection` + `Infection légère` = `Infection avancée`\n\n`Infection avancée` + `Infection légère` = `Infection mortelle`\n\n`Infection mortelle` + `Infection légère` = `Mort`\n\n`Infection` + `Infection` = `Infection mortelle`\n\n`Hémorragie légère` + `Hémorragie légère` = `Hémorragie`\n\n`Hémorragie` + `Hémorragie légère` = `Hémorragie avancée`\n\n`Hémorragie avancée` + `Hémorragie légère` = `Hémorragie mortelle`\n\n`Hémorragie mortelle` + `Hémorragie légère` = `Mort`\n\n`Hémorragie` + `Hémorragie` = `Hémorragie mortelle`")    .setTimestamp()
+              message.channel.send({embed})
+                  }
+            }) ;
 
 
 bot.on('message', message => {
