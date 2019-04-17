@@ -17404,10 +17404,22 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Maladies`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Tour`\n`=Mine`\n`=Jardin`\n`=Alcool`\n`=Drogue`\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Tour`\n`=Mine`\n`=Jardin`\n`=Points d'action\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Points d'action")) {
+      const embed = new Discord.RichEmbed()
+      .setColor(0xff0000)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+  .addField("Les points d'action :" , "Lorsque vous effectuez une action qui demande un effort, vous dépensez ce qu'on appelle un 'Point d'action' !\n\nVous disposez de 6 points d'actions par jour, que vous récupérez le lendemain à partir de 00 H 00 [Heure de France]\n\nLes points d'actions peuvent aussi se reprendre en buvant une ration d'eau ainsi qu'en mangeant ou bien même en buvant certains alcools ou en prenant certaines drogues...\n\nUne fois à cours de points d'action, vous ne pouvez plus effectuer d'action qui nécessite un effort...")    .setTimestamp()
+      message.channel.send({embed})
+          }
+    }) ;
 
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Horde survivant")) {
@@ -17416,14 +17428,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les survivants :" , "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de 5 objets sur lui !")    .setTimestamp()
+  .addField("Les survivants :" , "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de base de 5 objets sur lui !\n\nUne fois votre personne créer et valider par un membre du staff, vous devrez vous renommer de la manière suivante : [Nom] [Prénom] [Points d'action]\n\nPar exemple : [Oshiro][Yato][6/6]")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
 
     bot.on('message', message => {
       if (message.content.startsWith(prefix + "Fiche de survivant")) {
-        message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\nNom :【A remplir】\n\nPrénom :【A remplir】\n\nÂge : 【A remplir】\n\nSexe : 【A remplir】\n\nPhysique :【A remplir avec image si vous voulez, c'est conseillé】\n\nPersonnalité :【A remplir】\n\nMétier : 【A remplir】\n\nAtout :【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nInventaire : \nMorceau de pain\nEau potable\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
+        message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\nNom :【A remplir】\n\nPrénom :【A remplir】\n\nÂge : 【A remplir】\n\nSexe : 【A remplir】\n\nPhysique :【A remplir avec image si vous voulez, c'est conseillé】\n\nPersonnalité :【A remplir】\n\nHistoire avant l'apocalypse :【A remplir】\n\nMétier : 【A remplir】\n\nAtout :【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nInventaire : \nAffaires d'un citoyen\nRation d'eau\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
            }
         });
 
@@ -17885,16 +17897,78 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Maladies")) {
+  if (message.content.startsWith(prefix + "Horde états")) {
     const embed = new Discord.RichEmbed()
     .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les maladies :" , "Parfois, ou suite à un évènement, vous attraperez certainement une maladie plus ou moins grave possible à soigner !\n\nCertaines maladies ne sont que temporaires et ne nécessite aucunes interventions médicales, mais certains en demanderont obligatoirement avant que sa n'empire...\n\nUniquement les médecins s'occuper des médicaments dans la ville, de les donner aux personnes qui en ont le plus besoin !\n\nVoici la liste des maladies :\n\n")    .setTimestamp()
+.addField("Les états, partie 1 :" , "Parfois, ou suite à un évènement, vous aurez un état négatif ou positif\n\nCertains états ne sont que temporaires et ne nécessite aucunes interventions ou objets, mais certains en demanderont obligatoirement avant que sa n'empire jusqu'à une mort certaine...\n\nLes survivants possédant le métier de 'médecin' auront un bonus pour soigner et enlever un état en particulier, cependant il faudra obligatoirement qu'il se trouve au cabinet médical\n\nCertains états devront être jouer RP...\n\nVoici la liste des états :\n\n`Nausée` : Vous avez envie de vomir, aucun appétit, et vous êtes assez pâle [Double de points d'actions pour les actions en ville]\n\n`Fièvre` : Les efforts vous demande encore plus d'énergie que d'habitude, vous sentez votre front très chaud au bord de l'explosion [Double points d'actions pour les actions à l'extérieur de la ville]\n\nSuite : `=Horde états 2`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Horde états 2")) {
+      const embed = new Discord.RichEmbed()
+      .setColor(0xff0000)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+  .addField("Les états, partie 2 :" , "`Tremblements` : La peur n'est pas présente, vous avez juste des tremblements inhabituelles rendant vos phrases plus difficiles à comprendre\n\n`Perte d'équilibre` : Même sans vertiges, vous sentez en permanence une sensation de tomber sur le sol à tel point que marcher est un effort énorme [Double de temps à mettre pour les déplacements]\n\n`Douleurs gastriques` : L'envie de vomir constamment, rien que de penser à un bout de steak est assez pour vous faire vomir [Impossible de manger quoi que ce soit]\n\n`Migraine` : Réfléchir vous fait mal à la tête, vous n'arrivez même plus à vous concentrer à quoi que ce soit [Impossible de faire une action demandant un point d'action]\n\n`Insomnie` : Vous n'arrivez pas à dormir assez, et vous aurez toujours l'état 'Fatigue' jusqu'à que vous n'ayez plus ces insomnies\n\nSuite : `=Horde états 3`")    .setTimestamp()
+      message.channel.send({embed})
+          }
+    }) ;
+
+    bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Horde états 3")) {
+        const embed = new Discord.RichEmbed()
+        .setColor(0xff0000)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .addField("Les états, partie 3 :" , "`Fatigue` : Si vous dormez moins de 4 H par jour, votre énergie sera faible et la moindre action sera un effort immense [Double points d'actions pour toutes actions en ville comme en extérieur]\n\n`Drogué` : Vous êtes sous drogue, vous ne pourrez pas reprendre de drogue avant le lendemain\n\n`Dépendance` : L'abus de drogue vous mène à la dépendance, si vous ne prenez pas de drogue pendant un jour vous aurez l'état 'Hallucinations', si vous ne prenez pas de drogue pendant deux jours vous aurez l'état 'Folie' et si vous ne prenez pas de drogue pendant trois jours vous... mourrez...\n\n`Hallucinations` : Des ombres ou même des zombies imaginaires, vous voyez des choses iréelles\n\n`Folie` : Vous dites et faites n'importe quoi en permanence à tel point que vous avez des hallucinations en permanence et que vous êtes presque un danger pour les autres survivants [Impossible de faire une action demandant un point d'action]\n\nLa suite : `=Horde états 4`")    .setTimestamp()
+        message.channel.send({embed})
+            }
+      }) ;
+
+       bot.on('message', message => {
+      if (message.content.startsWith(prefix + "Horde états 4")) {
+        const embed = new Discord.RichEmbed()
+        .setColor(0xff0000)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .addField("Les états, partie 4 :" , "`Terreur` : La vision d'un zombie vous effraie tellement que vous ne vous défendrez pas, vous essayerez toujours de fuir [Fuite seulement autorisé durant les combats]\n\n`Rassasiement` : Vous avez mangé, vous ne pourrez pas manger de nouveau avant le lendemain\n\n`Faim` > `Très faim` > `Affamé` : Après l'état 'Rassasiement', le lendemain vous aurez l'état 'Faim', si vous ne mangez pas le lendemain vous aurez l'état 'Très faim', si vous ne mangez pas le lendemain vous aurez l'état 'Affamé' et si vous ne mangez toujours pas le lendemain vous... mourrez...\n\n`Hydratation` : Vous avez déjà bus, vous ne pourrez pas boire de nouveau avant le lendemain\n\n`Soif` > `Très soif` > `Assoifé` : Après l'état 'Hydratation', le lendemain vous aurez l'état 'Soif', si vous ne buvez pas le lendemain vous aurez l'état 'Très soif', si vous ne buvez pas le lendemain vous aurez l'état 'Assoifé' et si vous ne buvez toujours pas le lendemain vous... mourrez...\n\nLa suite : `=Horde états 5`")    .setTimestamp()
+        message.channel.send({embed})
+            }
+      }) ;
+
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Horde états 5")) {
+          const embed = new Discord.RichEmbed()
+          .setColor(0xff0000)
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .addField("Les états, partie 5 :" , "`Hémorragie légère` : Vous avez était blessé et vous saignez de cette blessure qui ne semble pas être à prendre à la légère\n\n`Hémorragie` > `Hémorragie avancée` > `Hémorragie mortelle` : Après l'état 'Hémorragie légère', le lendemain vous aurez l'état 'Hémorragie', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Hémorragie avancée', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Hémorragie mortelle' et si vous n'êtes toujours pas soigné le lendemain vous... mourrez...\n\n`Infection légère` : Vous avez manger de la viande périmé ou vous avez étais mordus par un zombie ou d'autres évènements, il faudra vous soigner rapidement\n\n`Infection` > `Infection avancée` > `Infection mortelle` : Après l'état 'Infection légère', le lendemain vous aurez l'état 'Infection', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Infection avancée', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Infection mortelle' et si vous n'êtes toujours pas soigné le lendemain vous... mourrez...\n\nLa suite : `=Horde états 6`")    .setTimestamp()
+          message.channel.send({embed})
+              }
+        }) ;
+
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Horde états 6")) {
+            const embed = new Discord.RichEmbed()
+            .setColor(0xff0000)
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+        .addField("Les états, partie 6 :" , "`Blessure légère` : Vous avez étais blessé par un zombie ou par un autre survivant ou d'autres évènements, il faudra vous soignez rapidement\n\n`Blessure` > `Blessure avancée` > `Blessure mortelle` : Les différentes états de blessures sont croissants, si vous étiez atteint de l'état 'Blessure' et que vous subissez un état de nouveau 'Blessure légère' alors votre nouvelle état sera 'Blessure avancée', si vous ne comprenez pas alors imaginez que vous avez 5/5 HP, qu'une blessure légère retire 1 HP, une blessure 2 HP, une blessure avancée 3 HP et une blessure mortelle 4 HP avant la mort quand vous êtes à 0/5 HP\n\n`Goule` : Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez...\n\n`Ivresse` : Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre et parler difficilement aux autres citoyens")    .setTimestamp()
+            message.channel.send({embed})
+                }
+          }) ;
+
+    
 
 
 bot.on('message', message => {
@@ -17904,7 +17978,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les médicaments :" , "Une fois atteint d'une maladie, vous devrez certainement prendre des médicaments adaptés que seulement les médecins peuvent vous donner !\n\nAttention, si vous prenez un mauvais médicament, vous pourrez avoir des effets négatifs...\n\nVoici la liste des médicaments :\n\n")    .setTimestamp()
+.addField("Les médicaments :" , "Une fois atteint d'un état, vous devrez certainement prendre des médicaments adaptés\n\nAttention, si vous prenez un mauvais médicament, vous pourrez avoir des effets négatifs...\n\nVoici la liste des médicaments :\n\n")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
