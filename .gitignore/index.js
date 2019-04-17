@@ -17897,7 +17897,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Horde états")) {
+  if (message.content === prefix + "Horde états") {
     const embed = new Discord.RichEmbed()
     .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17909,7 +17909,7 @@ bot.on('message', message => {
   }) ;
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Horde états 2")) {
+    if (message.content === prefix + "Horde états 2") {
       const embed = new Discord.RichEmbed()
       .setColor(0xff0000)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -17921,7 +17921,7 @@ bot.on('message', message => {
     }) ;
 
     bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Horde états 3")) {
+      if (message.content === prefix + "Horde états 3") {
         const embed = new Discord.RichEmbed()
         .setColor(0xff0000)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -17933,7 +17933,7 @@ bot.on('message', message => {
       }) ;
 
        bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Horde états 4")) {
+        if (message.content === prefix + "Horde états 4") {
         const embed = new Discord.RichEmbed()
         .setColor(0xff0000)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -17945,7 +17945,7 @@ bot.on('message', message => {
       }) ;
 
       bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Horde états 5")) {
+        if (message.content === prefix + "Horde états 5") {
           const embed = new Discord.RichEmbed()
           .setColor(0xff0000)
           .setAuthor(message.author.username , message.author.avatarURL)
@@ -17957,7 +17957,7 @@ bot.on('message', message => {
         }) ;
 
         bot.on('message', message => {
-          if (message.content.startsWith(prefix + "Horde états 6")) {
+          if (message.content === prefix + "Horde états 6") {
             const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username , message.author.avatarURL)
