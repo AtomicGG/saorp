@@ -17438,19 +17438,19 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Tour`\n`=Mine`\n`=Jardin`\n`=Points d'action\n`=Cargaison`\n`=Déplacements`\n")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Tour`\n`=Mine`\n`=Jardin`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
 
   bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Points d'action")) {
+    if (message.content.startsWith(prefix + "Points d'actions")) {
       const embed = new Discord.RichEmbed()
       .setColor(0xff0000)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les points d'action :" , "Lorsque vous effectuez une action qui demande un effort, vous dépensez ce qu'on appelle un 'Point d'action' !\n\nVous disposez de 6 points d'actions par jour, que vous récupérez le lendemain à partir de 00 H 00 [Heure de France]\n\nLes points d'actions peuvent aussi se reprendre en buvant une ration d'eau ainsi qu'en mangeant ou bien même en buvant certains alcools ou en prenant certaines drogues...\n\nUne fois à cours de points d'action, vous ne pouvez plus effectuer d'action qui nécessite un effort...")    .setTimestamp()
+  .addField("Les points d'actions :" , "Lorsque vous effectuez une action qui demande un effort, vous dépensez ce qu'on appelle un 'Point d'action' !\n\nVous disposez de 6 points d'actions par jour, que vous récupérez le lendemain à partir de 00 H 00 [Heure de France]\n\nLes points d'actions peuvent aussi se reprendre en buvant une ration d'eau ainsi qu'en mangeant ou bien même en buvant certains alcools ou en prenant certaines drogues...\n\nUne fois à cours de points d'actions, vous ne pouvez plus effectuer d'action qui nécessite un effort...")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -20824,7 +20824,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Hydratone 100MG :" , "Pratique, l'Hydratone tient dans la poche et peut étancher votre soif quelques minutes après l'ingestion\n\nToutefois, elle ne retire PAS les effets de la fatigue et ne régénère PAS les points d'action")
+    .addField("Hydratone 100MG :" , "Pratique, l'Hydratone tient dans la poche et peut étancher votre soif quelques minutes après l'ingestion\n\nToutefois, elle ne retire PAS les effets de la fatigue et ne régénère PAS les points d'actions")
     .setTimestamp()
     message.channel.send({embed})
   }
