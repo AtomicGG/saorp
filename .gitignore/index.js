@@ -7442,15 +7442,26 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       const B = (Math.floor(100)*Math.random()+1)
-      const ordre = (Math.floor((3)*Math.random()+2))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant pendant `" +ordre+ "` ordres, l'obligeant à vous obéir !\n\nOrdres possibles :\n- Ordonner un coup normal sur une cible.  ( a voir si on accepte d'autres coups en dehors des comp )\n- Ordonner de ne pas se défendre.\n- Ordonner de ne rien faire ou de faire une action hors des actions de combat pendant le tour du charmé (tant que l'action ne désavantage pas la cible pour la suite du combat)\n- Ordonner d'interception (pour soi seulement) sur tout le tour.")
-      .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-      .setTimestamp()
-      message.channel.send({embed})
+      if (B <= 80){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant pendant `4` ordres, l'obligeant à vous obéir !\n\nOrdres possibles :\n- Ordonner un coup normal sur une cible.  ( a voir si on accepte d'autres coups en dehors des comp )\n- Ordonner de ne pas se défendre.\n- Ordonner de ne rien faire ou de faire une action hors des actions de combat pendant le tour du charmé (tant que l'action ne désavantage pas la cible pour la suite du combat)\n- Ordonner d'interception (pour soi seulement) sur tout le tour.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (B >= 81){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant pendant `6` ordres, l'obligeant à vous obéir ! (Divisé par deux pour les joueurs et gros monstres)\n\nOrdres possibles :\n- Ordonner un coup normal sur une cible.  ( a voir si on accepte d'autres coups en dehors des comp )\n- Ordonner de ne pas se défendre.\n- Ordonner de ne rien faire ou de faire une action hors des actions de combat pendant le tour du charmé (tant que l'action ne désavantage pas la cible pour la suite du combat)\n- Ordonner d'interception (pour soi seulement) sur tout le tour.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
       talkedRecently.add(message.author.id+2);
       setTimeout(() => {
         talkedRecently.delete(message.author.id+2);
@@ -7832,31 +7843,52 @@ bot.on('message', message => {
       const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
       const B = (Math.floor(100)*Math.random()+1)
       if(B <= 80){
+        const C = (Math.floor(100)*Math.random()+1)
+        let tours
+        if (C <= 50){
+          tours = 4
+        } else {
+          tours = 6
+        }
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts et endors l'ennemis pendant `4` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts et endors l'ennemis pendant `" +tours+ "` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
         message.channel.send({embed})
       }
       if(B >= 81 && B <= 90){
+        const D = (Math.floor(100)*Math.random()+1)
+        let tours2
+        if (D <= 50){
+          tours2 = 6
+        } else {
+          tours2 = 8
+        }
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `6` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `" +tours2+ "` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
         message.channel.send({embed})
       }
       if (B >= 91){
+        const E = (Math.floor(100)*Math.random()+1)
+        let tours3
+        if (E <= 50){
+          tours3 = 4
+        } else {
+          tours3 = 6
+        }
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `8` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `" +tours3+ "` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! De plus, la cible est dans un sommeil profond, ce qui, s'il se réveille prématurément, la cible prendra la moitié des dégats en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -9088,11 +9120,12 @@ bot.on('message', message => {
     } else {
       let def = args.slice(2).join(" : ");
       const defFinale = Math.floor(def*(2/3))
+      const degat = Math.floor(def*7/6)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Compétence du vindicateur :" , "Vous déclenchez votre compétence appartenant à tous les vindicateurs. Pendant 3 tours maximum, votre armure diminue jusqu'à `" +defFinale+ "` et vous gagnez `" +def+ "` points d'attaque ! Vous pouvez révoquer l'effet quand vous le souhaitez.")
+      .addField("Compétence du vindicateur :" , "Vous déclenchez votre compétence appartenant à tous les vindicateurs. Pendant 3 tours maximum, votre armure diminue jusqu'à `" +defFinale+ "` et vous gagnez `" +degat+ "` points d'attaque ! Vous pouvez révoquer l'effet quand vous le souhaitez.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22467,5 +22500,3 @@ bot.on('message', message => {
        message.channel.send({embed})
      }
 });
-
-
