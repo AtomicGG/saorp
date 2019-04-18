@@ -17641,18 +17641,357 @@ bot.on('message', message => {
   .addBlankField(true)
   .addField(":crossed_swords: Pour effectuer un coup de pied :" , ":crossed_swords: `=Coup de pied`\n:crossed_swords: `=Coup de pied [Boxeur]`")
   .addBlankField(true)
-  .addField(":crossed_swords: Pour effectuer un coup de boule:" , ":crossed_swords: `=Coup de boule`\n:crossed_swords: `=Coup de boule [Boxeur]`")
-  .addBlankField(true)
-  .addField(":crossed_swords: Pour effectuer une maîtrise :" , ":crossed_swords: `=Maîtrise`\n:crossed_swords: `=Maîtrise [Boxeur]`")
-  .addBlankField(true)
   .addField(":crossed_swords: Pour effectuer un coup de pied circulaire :" , ":crossed_swords: `=Coup de pied circulaire`\n:crossed_swords: `=Coup de pied circulaire [Boxeur]`")
   .addBlankField(true)
-  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite [Aucune blessure`\n:shield: `=Fuite [Blessure légère]`\n:shield: `=Fuite [Blessure]`\n:shield: `=Fuite [Blessure sévère]`\n:shield: `=Fuite [Blessure mortelle`\n:shield: `=Fuite [Fatigue]`")
+  .addField(":shield: Pour effectuer une fuite :" , ":shield: `=Fuite [Aucune blessure]`\n:shield: `=Fuite [Blessure légère]`\n:shield: `=Fuite [Blessure]`\n:shield: `=Fuite [Blessure sévère]`\n:shield: `=Fuite [Blessure mortelle]`")
   .addBlankField(true)
   .setTimestamp()
   message.channel.send({embed})}
 }
 )
+///////////////////////////////////////////////////////////////////////////Coups et fuites//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()))
+  if (message.content === prefix + "Coup de poing") {
+    if(A < 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup de poing :" , "En prenant du recul avec votre poing avant de tapper le plus fort possible, celui-ci n'atteint pas la cible et vous ratez complètement ce qui était censé être badass...")
+      .setTimestamp()
+      message.channel.send({embed})}
+    if(A > 61 & A < 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup de poing :" , "Serrant le poing, vous touchez votre cible avec pas mal de force ce qui la repousse de quelques pas en arrière !\n\nSi la cible est un zombie, il ne pourra pas agir pendant son prochain tour !\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(A > 86 & A < 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Coup de poing :" , "D'un violent coup de poing en plein dans la tête, votre cible subit le choc si fort qu'elle en perd l'équilibre et tombe à la renverse sur le sol !\n\nSi la cible est un zombie, il ne pourra pas agir pendant ses deux prochains tours !\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(A > 96){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Coup de poing :" , "Le regard remplis de haine et de rage, vous y mettez tous votre puissance dans ce coup à tel point que vous entendez un craquement au niveau de la nuque de votre cible !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
+          .setTimestamp()
+          message.channel.send({embed})}
+                }
+            }) ;
+
+            bot.on('message', message => {
+              const A = (Math.floor((100)*Math.random()))
+              if (message.content === prefix + "Coup de poing [Boxeur]") {
+                if(A < 40){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Coup de poing [Boxeur] :" , "En prenant du recul avec votre poing avant de tapper le plus fort possible, celui-ci n'atteint pas la cible et vous ratez complètement ce qui était censé être badass...")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                if(A > 41 & A < 75){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Coup de poing [Boxeur] :" , "Serrant le poing, vous touchez votre cible avec pas mal de force ce qui la repousse de quelques pas en arrière !\n\nSi la cible est un zombie, il ne pourra pas agir pendant son prochain tour !\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(A > 76 & A < 90){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Coup de poing [Boxeur] :" , "D'un violent coup de poing en plein dans la tête, votre cible subit le choc si fort qu'elle en perd l'équilibre et tombe à la renverse sur le sol !\n\nSi la cible est un zombie, il ne pourra pas agir pendant ses deux prochains tours !\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                    if(A > 91){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField("Coup de poing [Boxeur] :" , "Le regard remplis de haine et de rage, vous y mettez tous votre puissance dans ce coup à tel point que vous entendez un craquement au niveau de la nuque de votre cible !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                            }
+                        }) ;
+
+                        bot.on('message', message => {
+                          const A = (Math.floor((100)*Math.random()))
+                          if (message.content === prefix + "Coup de pied") {
+                            if(A < 60){
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                              .setColor(0xff0000)
+                              .addField("Coup de pied :" , "Vous élancez votre jambe en avant ainsi que votre pied pour mettre un coup à votre cible mais au dernier moment, vous perdez l'équilibre ce qui vous force à stop votre mouvement pour ne pas tomber...")
+                              .setTimestamp()
+                              message.channel.send({embed})}
+                            if(A > 61 & A < 85){
+                              const embed = new Discord.RichEmbed()
+                              .setAuthor(message.author.username , message.author.avatarURL)
+                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                              .setColor(0xff0000)
+                              .addField("Coup de pied :" , "Lançant votre jambe en avant, la cible se la prend de pleins fouet dans le ventre ce qui la repousse d'un coup sec en arrière !\n\nSi la cible est un zombie, il ne pourra pas agir pendant son prochain tour !\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+                              .setTimestamp()
+                              message.channel.send({embed})}
+                              if(A > 86 & A < 95){
+                                const embed = new Discord.RichEmbed()
+                                .setAuthor(message.author.username , message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setColor(0xff0000)
+                                .addField("Coup de pied :" , "Une fois votre jambe en mouvement, vous décidez de viser les côtes en y mettant toute votre force, faisant tomber votre cible sur le sol tellement le choc était dur à supporter !\n\nSi la cible est un zombie, il ne pourra pas agir pendant ses deux prochains tours !\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+                                .setTimestamp()
+                                message.channel.send({embed})}
+                                if(A > 96){
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                  .setColor(0xff0000)
+                                  .addField("Coup de pied :" , "Dans une position assez spécial, votre jambe arrive facilement à atteindre la tête de votre cible, vous y mettez force et rapidité en croyant presque que la tête pourrait se décrocher !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
+                                  .setTimestamp()
+                                  message.channel.send({embed})}
+                                        }
+                                    }) ;
+
+                                    bot.on('message', message => {
+                                      const A = (Math.floor((100)*Math.random()))
+                                      if (message.content === prefix + "Coup de pied [Boxeur]") {
+                                        if(A < 40){
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                          .setColor(0xff0000)
+                                          .addField("Coup de pied [Boxeur] :" , "Vous élancez votre jambe en avant ainsi que votre pied pour mettre un coup à votre cible mais au dernier moment, vous perdez l'équilibre ce qui vous force à stop votre mouvement pour ne pas tomber...")
+                                          .setTimestamp()
+                                          message.channel.send({embed})}
+                                        if(A > 41 & A < 75){
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                          .setColor(0xff0000)
+                                          .addField("Coup de pied [Boxeur] :" , "Lançant votre jambe en avant, la cible se la prend de pleins fouet dans le ventre ce qui la repousse d'un coup sec en arrière !\n\nSi la cible est un zombie, il ne pourra pas agir pendant son prochain tour !\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+                                          .setTimestamp()
+                                          message.channel.send({embed})}
+                                          if(A > 76 & A < 90){
+                                            const embed = new Discord.RichEmbed()
+                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                            .setColor(0xff0000)
+                                            .addField("Coup de pied [Boxeur] :" , "Une fois votre jambe en mouvement, vous décidez de viser les côtes en y mettant toute votre force, faisant tomber votre cible sur le sol tellement le choc était dur à supporter !\n\nSi la cible est un zombie, il ne pourra pas agir pendant ses deux prochains tours !\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+                                            .setTimestamp()
+                                            message.channel.send({embed})}
+                                            if(A > 91){
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                              .setColor(0xff0000)
+                                              .addField("Coup de pied [Boxeur] :" , "Dans une position assez spécial, votre jambe arrive facilement à atteindre la tête de votre cible, vous y mettez force et rapidité en croyant presque que la tête pourrait se décrocher !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure avancée`")
+                                              .setTimestamp()
+                                              message.channel.send({embed})}
+                                                    }
+                                                }) ;
+
+                                                bot.on('message', message => {
+                                                  const A = (Math.floor((100)*Math.random()))
+                                                  if (message.content === prefix + "Coup de pied circulaire") {
+                                                    if(A < 80){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                      .setColor(0xff0000)
+                                                      .addField("Coup de pied circulaire :" , "En essayant de démarrer un coup de pied circulaire, vous glissez légèrement ce qui vous arrête dans le mouvement...")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})}
+                                                    if(A > 81 & A < 90){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                      .setColor(0xff0000)
+                                                      .addField("Coup de pied circulaire :" , "Dans un élan rapide, vous réussissez à mettre un coup de pied assez puissant sur deux cibles sans trop perdre l'équilibre, ce qui les repousse légèrement !\n\nSi les cibles sont des zombies, ils ne pourront pas agir pendant leur prochain tour !\n\nSi les cibles sont des survivants, ils subissent l'état `Blessure légère`")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})}
+                                                      if(A > 91 & A < 96){
+                                                        const embed = new Discord.RichEmbed()
+                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                        .setColor(0xff0000)
+                                                        .addField("Coup de pied circulaire :" , "Balançant votre jambe mais également vos bras pour y donner de l'effet, votre jambe touche deux cibles en plein dans les côtes ce qui les fait tomber quelques instants !\n\nSi les cibles sont des zombies, ils ne pourront pas agir pendant les deux prochains tours !\n\nSi les cibles sont des survivants, ils subissent l'état `Blessure`")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed})}
+                                                        if(A > 97){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                          .setColor(0xff0000)
+                                                          .addField("Coup de pied circulaire :" , "Presque comme si que vous étiez cascadeur, vous sautez en l'air avant d'asséner un coup de pied rapide et plein de grâce au niveau de la tête de deux cibles !\n\nSi les cibles sont des zombies, ils meurent !\n\nSi les cibles sont des survivants, ils subissent l'état `Blessure avancée`")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})}
+                                                                }
+                                                            }) ;
+
+                                                            bot.on('message', message => {
+                                                  const A = (Math.floor((100)*Math.random()))
+                                                  if (message.content === prefix + "Coup de pied circulaire [Boxeur]") {
+                                                    if(A < 70){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                      .setColor(0xff0000)
+                                                      .addField("Coup de pied circulaire [Boxeur] :" , "En essayant de démarrer un coup de pied circulaire, vous glissez légèrement ce qui vous arrête dans le mouvement...")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})}
+                                                    if(A > 71 & A < 85){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                      .setColor(0xff0000)
+                                                      .addField("Coup de pied circulaire [Boxeur] :" , "Dans un élan rapide, vous réussissez à mettre un coup de pied assez puissant sur deux cibles sans trop perdre l'équilibre, ce qui les repousse légèrement !\n\nSi les cibles sont des zombies, ils ne pourront pas agir pendant leur prochain tour !\n\nSi les cibles sont des survivants, ils subissent l'état `Blessure légère`")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})}
+                                                      if(A > 86 & A < 94){
+                                                        const embed = new Discord.RichEmbed()
+                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                        .setColor(0xff0000)
+                                                        .addField("Coup de pied circulaire [Boxeur] :" , "Balançant votre jambe mais également vos bras pour y donner de l'effet, votre jambe touche deux cibles en plein dans les côtes ce qui les fait tomber quelques instants !\n\nSi les cibles sont des zombies, ils ne pourront pas agir pendant les deux prochains tours !\n\nSi les cibles sont des survivants, ils subissent l'état `Blessure`")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed})}
+                                                        if(A > 95){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                          .setColor(0xff0000)
+                                                          .addField("Coup de pied circulaire [Boxeur] :" , "Presque comme si que vous étiez cascadeur, vous sautez en l'air avant d'asséner un coup de pied rapide et plein de grâce au niveau de la tête de deux cibles !\n\nSi les cibles sont des zombies, ils meurent !\n\nSi les cibles sont des survivants, ils subissent l'état `Blessure avancée`")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})}
+                                                                }
+                                                            }) ;
+
+                                                            bot.on('message', message => {
+                                                              const A = (Math.floor((100)*Math.random()))
+                                                              if (message.content === prefix + "Fuite [Aucune blessure]") {
+                                                                if(A < 40){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField("Fuite [Aucune blessure] :" , "Vous tentez de fuir le combat mais, c'est un échec...")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                if(A > 41){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField("Fuite [Aucune blessure] :" , "Vous réussissez à fuir le combat, vous avez de la chance !")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                            }
+                                                                        }) ;
+
+                                                                        bot.on('message', message => {
+                                                              const A = (Math.floor((100)*Math.random()))
+                                                              if (message.content === prefix + "Fuite [Blessure légère]") {
+                                                                if(A < 50){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField("Fuite [Blessure légère] :" , "Vous tentez de fuir le combat mais, c'est un échec...")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                if(A > 51){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField("Fuite [Blessure légère] :" , "Vous réussissez à fuir le combat, vous avez de la chance !")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                            }
+                                                                        }) ;
+
+                                                                          bot.on('message', message => {
+                                                              const A = (Math.floor((100)*Math.random()))
+                                                              if (message.content === prefix + "Fuite [Blessure]") {
+                                                                if(A < 60){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField("Fuite [Blessure] :" , "Vous tentez de fuir le combat mais, c'est un échec...")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                if(A > 61){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField("Fuite [Blessure] :" , "Vous réussissez à fuir le combat, vous avez de la chance !")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                            }
+                                                                        }) ;
+
+                                                                        bot.on('message', message => {
+                                                                          const A = (Math.floor((100)*Math.random()))
+                                                                          if (message.content === prefix + "Fuite [Blessure avancée]") {
+                                                                            if(A < 70){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField("Fuite [Blessure avancée] :" , "Vous tentez de fuir le combat mais, c'est un échec...")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                            if(A > 71){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField("Fuite [Blessure avancée] :" , "Vous réussissez à fuir le combat, vous avez de la chance !")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                                        }
+                                                                                    }) ;
+
+                                                                                    bot.on('message', message => {
+                                                                          const A = (Math.floor((100)*Math.random()))
+                                                                          if (message.content === prefix + "Fuite [Blessure mortelle]") {
+                                                                            if(A < 80){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField("Fuite [Blessure mortelle] :" , "Vous tentez de fuir le combat mais, c'est un échec...")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                            if(A > 81){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField("Fuite [Blessure mortelle] :" , "Vous réussissez à fuir le combat, vous avez de la chance !")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                                        }
+                                                                                    }) ;
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Zombie") {
@@ -17661,7 +18000,7 @@ bot.on('message', message => {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les zombies :" , "Lorsque vous rencontrez un zombie, il essayera toujours de vous attaquer et aura lui deux possibilités pour mourir !\n\nLa première consiste à lui donner des coups ou tirer plusieurs fois jusqu'à qu'il n'en puisse plus\n\nLa deuxième consiste à lui donner un coup ou tirer dans la tête ce qui est le principal point faible des zombies !\n\nLorsqu'un ou des zombies vous attaque : `=Zombies attaque : [Nombre de zombie]`")    .setTimestamp()
+  .addField("Les zombies :" , "Les zombies attaquent à vue les survivants, et se mettent à plusieurs sur le même quand ils en ont l'occasion la nuit comme le jour...\n\nLorsqu'un ou des zombies vous attaque : `=Zombies attaque : [Nombre de zombie]`")    .setTimestamp()
   message.channel.send({embed})
   }
   }) ;
@@ -17690,7 +18029,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Liste d'objets :" , "...")    .setTimestamp()
+    .addField("Liste d'objets :" , "Voici la liste des objets existants :")    .setTimestamp()
     message.channel.send({embed})
     }
     }) ;
@@ -17702,7 +18041,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les transformations :" , "Une fois un stade important atteins lorsque vous êtes affecté par une morsure, vous deviendrez ce qu'on appelle non pas un zombie mais une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour, cependant si la goule décide de ne pas en dévorer, elle perdra peu à peu sa santé :\n\nVoici le cycle de perte d'HP :\n\nJour 2 : Perte de 50 % de vos HP max\nJour 3 : Perte de 75 % de vos HP max\nJour 4 : Mort de faim\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]")    .setTimestamp()
+        .addField("Les transformations :" , "Une fois un stade important atteins lorsque vous êtes affecté par une morsure, vous deviendrez ce qu'on appelle non pas un zombie mais une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour ou alors elle mourra de faim...\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]")    .setTimestamp()
         message.channel.send({embed})
         }
         }) ;
@@ -17828,7 +18167,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                .addField("Les alcools :" , "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater avec parfois des avantages comme des inconvénients comme le fait d'être bourré...")    .setTimestamp()
+                .addField("Les alcools :" , "Lorsque vous fouillez l'extérieur de la ville, vous trouverez parfois de l'alcool !\n\nL'alcool permet de vous hydrater et de vous donner des points d'actions, mais attention à l'ivresse...\n\nPour mieux comprendre : `=Horde états 6`")    .setTimestamp()
                 message.channel.send({embed})
                 }
                 }) ;
@@ -17840,7 +18179,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                  .addField("Les drogues :" , "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur ou d'être plus aggressive, mais les effets négatives comme la dépendance arrivent par la suite...\n\nA savoir, si vous devenez dépendant d'une drogue, vous devrez en prendre de nouveau du même type dans les 3 prochains jours ou vous serez atteint de l'état 'Folie'...")    .setTimestamp()
+                  .addField("Les drogues :" , "Lorsque vous fuillez l'extérieur de la ville, vous trouverez parfois de la drogue !\n\nLa drogue permet principalement d'oublier une douleur, soigner un état mais aussi donner des points d'actions, mais les effets négatives comme la dépendance arrivent par la suite...\n\nPour mieux comprendre : `=Horde états 3`")    .setTimestamp()
                   message.channel.send({embed})
                   }
                   }) ;
@@ -17888,7 +18227,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("La fouille :" , "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la zone où vous vous situez :\n\n`=Fouille zone proche`\n`=Fouille zone semi éloigné`\n`=Fouille zone éloigné`\n`=Fouille zone très éloigné`\n`=Fouille zone dangereuse`\n`=Fouille zone très dangereuse`\n`=Fouille zone mortelle`\n\nLorsque vous fouillez un bâtiment à plusieurs survivants, lorsque celui-ci ne possède plus aucuns objets utiles à l'intérieur, les survivants n'auront plus besoin de continuer de fouiller et devront partir")    .setTimestamp()
+.addField("La fouille :" , "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la zone où vous vous situez :\n\n`=Fouille zone proche`\n`=Fouille zone semi éloigné`\n`=Fouille zone éloigné`\n`=Fouille zone très éloigné`\n`=Fouille zone dangereuse`\n`=Fouille zone très dangereuse`\n`=Fouille zone mortelle`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -17988,7 +18327,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les médicaments :" , "Une fois atteint d'un état, vous devrez certainement prendre des médicaments adaptés\n\nAttention, si vous prenez un mauvais médicament, vous pourrez avoir des effets négatifs...\n\nVoici la liste des médicaments :\n\n")    .setTimestamp()
+.addField("Les médicaments :" , "Une fois atteint d'un état, vous devrez certainement prendre des médicaments adaptés voir une drogue qui pourrait sûrement aider\n\nAttention, si vous prenez un mauvais médicament, vous pourrez avoir des effets négatifs encore pire...")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -18001,7 +18340,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("L'eau :" , "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas deux jours de suites, vous commencerez à avoir des effets négatifs ainsi que de perdre des HP jusqu'à mourir complètement...\n\nVoici le cycle de perte d'HP :\n\nJour 2 : Perte de 25 % de vos HP max\nJour 3 : Perte de 50 % de vos HP max\nJour 4 : Mort de soif")    .setTimestamp()
+.addField("L'eau :" , "Comme toute apocalypse, l'eau devient une ressource assez rare à trouver et à consommer, c'est pour cela qu'il faudra en prendre en temps voulus pour ne pas en gâcher !\n\nSi vous ne buvez pas, vous serez de plus en plus assoifé et vous finirez par mourir de soif\n\nPour mieux comprendre : `=Horde états 4`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -18013,7 +18352,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("La nourriture :" , "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas deux jours de suites, vous commencerez à avoir des effets négatifs ainsi que de perdre des HP jusqu'à mourir complètement...\n\nVoici le cycle de perte d'HP :\n\nJour 2 : Perte de 25 % de vos HP max\nJour 3 : Perte de 50 % de vos HP max\nJour 4 : Perte de 75 % de vos HP max\nJour 5 : Mort de faim")    .setTimestamp()
+.addField("La nourriture :" , "Comme l'eau, la nourriture deviendra une ressource assez rare qui demande d'être économiser le plus possible !\n\nSi vous ne mangez pas, vous serez de plus en plus affamé et vous finirez par mourir de faim...\n\nPour mieux comprendre : `=Horde états 4`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -18026,7 +18365,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les blessures :" , "Plus important que les ressources, votre santé puisqu'en effet, votre personnage possèdera un certain nombre de HP, s'il atteint 0 HP il meurt....\n\nCependant, pour éviter la mort, il suffit de vous nourrir, de boire, d'éviter de combattre de trop grands groupes de zombies, et de prendre des médicaments s'il faut !\n\nUn simple citoyen possèdera 20 HP, alors qu'un veilleur possèdera 40 HP !\n\nA savoir que vous pouvez être blessé légèrement ou gravement d'un membre ou d'une partie du corps, provoquant des effets négatifs plus ou moins importants\n\nVoici la liste des blessures :\n\n...")    .setTimestamp()
+.addField("Les blessures :" , "Durant votre survie, il sera très fréquent de finir blessé et il existe différents types de blessures :\n\n`Blessure légère`\n`Blessure`\n`Blessure avancée`\n`Blessure mortelle`\n\nLes blessures provoquent des malus pour fuir, et plus vous vous rapprochez d'une blessure mortelle, plus vous aurez de chance d'y rester...\n\nLes blessures se cumulent, pour comprendre cela : `=Horde états 7`\n\nLes blessures se soignent à l'aide de bandage, de médicaments, d'injections et d'un tas d'autres moyens probables et possibles...")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
