@@ -7878,6 +7878,7 @@ bot.on('message', message => {
       }
       if (B >= 91){
         const E = (Math.floor(100)*Math.random()+1)
+        const F = degat/2
         let tours3
         if (E <= 50){
           tours3 = 4
@@ -7888,7 +7889,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `" +tours3+ "` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! De plus, la cible est dans un sommeil profond, ce qui, s'il se réveille prématurément, la cible prendra la moitié des dégats en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `" +tours3+ "` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! De plus, la cible est dans un sommeil profond, ce qui, s'il se réveille prématurément, la cible prendra `" +F+ "` de dégats en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
         message.channel.send({embed})
