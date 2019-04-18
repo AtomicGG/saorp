@@ -7878,7 +7878,7 @@ bot.on('message', message => {
       }
       if (B >= 91){
         const E = (Math.floor(100)*Math.random()+1)
-        const F = degat/2
+        const F = degats/2
         let tours3
         if (E <= 50){
           tours3 = 4
