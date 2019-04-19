@@ -20932,7 +20932,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Lambeau de chair :" , "Un vieux bout de peau, ou de quoi que ce soit d'autre qui appartenait à un être vivant. Mais qu'est-ce que vous faites avec ça ?")
+    .addField("Lambeau de chair :" , "Un vieux bout de peau, ou de quoi que ce soit d'autre qui appartenait à un être vivant. Mais qu'est-ce que vous faites avec ça ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21232,7 +21232,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Napoltains moisis :" , "Une pâtisserie sous plastique : chocolat-vanille\n\nSi vous agitez l'emballage, vous avez l'impression que quelque chose s'est liquéfié là-dedans...")
+    .addField("Napoltains moisis :" , "Une pâtisserie sous plastique : chocolat-vanille\n\nSi vous agitez l'emballage, vous avez l'impression que quelque chose s'est liquéfié là-dedans...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21244,7 +21244,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Nouilles chinoises :" , "Malgré les années passées dans le désert, ces nouilles chinoises ont toujours le même gout et le même aspect")
+    .addField("Nouilles chinoises :" , "Malgré les années passées dans le désert, ces nouilles chinoises ont toujours le même gout et le même aspect\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21256,7 +21256,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Nouilles chinoises épicées :" , "Des nouilles copieusement assaisonnées ! Hmm, ça va vous changer de vos repas à base de choses en décomposition")
+    .addField("Nouilles chinoises épicées :" , "Des nouilles copieusement assaisonnées ! Hmm, ça va vous changer de vos repas à base de choses en décomposition\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21280,7 +21280,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Os charnu :" , "Un os avec encore un peu de viande autour... Bizarre. Ça a l'air encore frais en plus. Peut-être un animal tué pendant la nuit ?")
+    .addField("Os charnu :" , "Un os avec encore un peu de viande autour... Bizarre. Ça a l'air encore frais en plus. Peut-être un animal tué pendant la nuit ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21448,7 +21448,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Petits beurres rances :" , "C'est sec et ça a un aspect rassi, vous donneriez n'importe quoi pour faire passer le gout de ces biscuits...")
+    .addField("Petits beurres rances :" , "C'est sec et ça a un aspect rassi, vous donneriez n'importe quoi pour faire passer le gout de ces biscuits...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21472,7 +21472,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pim's périmé :" , "Une poignée de biscuits fourrés à la confiture de ... en fait vous l'ignorez...\n\nPeut-être un fruit, mais ça a un gout de viande maintenant")
+    .addField("Pim's périmé :" , "Une poignée de biscuits fourrés à la confiture de ... en fait vous l'ignorez...\n\nPeut-être un fruit, mais ça a un gout de viande maintenant\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21652,7 +21652,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plat fait-maison douteux :" , "Des ingrédients combinés un peu n'importe comment, une ébauche de cuisson et un assaisonnement au sable du désert")
+    .addField("Plat fait-maison douteux :" , "Des ingrédients combinés un peu n'importe comment, une ébauche de cuisson et un assaisonnement au sable du désert\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21664,7 +21664,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Poignée de bonbons :" , "Vous avez une petite larme à l'oeil en contemplant cette poignée de délicieux bonbons...")
+    .addField("Poignée de bonbons :" , "Vous avez une petite larme à l'oeil en contemplant cette poignée de délicieux bonbons...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21712,7 +21712,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pomme :" , "Si Newton avait reçu une pomme comme celle-ci sur la tête, il aurait surement pensé à autre chose qu'à la loi de la Gravitation Universelle...\n\nCela étant dit, il doit bien y avoir quelques vitamines là dedans")
+    .addField("Pomme :" , "Si Newton avait reçu une pomme comme celle-ci sur la tête, il aurait surement pensé à autre chose qu'à la loi de la Gravitation Universelle...\n\nCela étant dit, il doit bien y avoir quelques vitamines là dedans\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21844,7 +21844,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Purée de charognardes :" , "Ça sent vraiment très mauvais\n\nCette boule est un agrégat de 'Baies charognardes' qui ont poussé sur un cadavre quelconque\n\nSi vous n'avez pas peur de mourir d'une infection virulente, peut-être qu'elle pourrait vous rassasier si vous la mangiez ?")
+    .addField("Purée de charognardes :" , "Ça sent vraiment très mauvais\n\nCette boule est un agrégat de 'Baies charognardes' qui ont poussé sur un cadavre quelconque\n\nSi vous n'avez pas peur de mourir d'une infection virulente, peut-être qu'elle pourrait vous rassasier si vous la mangiez ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21892,7 +21892,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Ration d'eau :" , "La gourde vous permet de vous désaltérer en dehors de la ville\n\nL'eau permet de récupérer ses points d'action (1 fois par jour) et d'étancher la soif (pas de limitation par jour)")
+    .addField("Ration d'eau :" , "La gourde vous permet de vous désaltérer en dehors de la ville\n\nL'eau permet de récupérer ses points d'action (1 fois par jour) et d'étancher la soif (pas de limitation par jour)\n\nEn utilisant cet objet, vous obtenez l'état `Hydratation` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -22133,7 +22133,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Steak appétissant :" , "C'est un peu élastique et ça sent même le poisson... On se demande bien ce que ça peut être, mais c'est surement plein de vitamines")
+    .addField("Steak appétissant :" , "C'est un peu élastique et ça sent même le poisson... On se demande bien ce que ça peut être, mais c'est surement plein de vitamines\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -22145,7 +22145,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Steak de sciure :" , "Une tranche de viande recouverte de sciure et de copeaux de bois...\n\nA moins que ce ne soit pas des copeaux, mais des vers à bois, ce qui semblerait logique puisque ca n'arrête de pas de bouger")
+    .addField("Steak de sciure :" , "Une tranche de viande recouverte de sciure et de copeaux de bois...\n\nA moins que ce ne soit pas des copeaux, mais des vers à bois, ce qui semblerait logique puisque ca n'arrête de pas de bouger\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -22433,7 +22433,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Viande humaine :" , "Hop, on oublie rapidement ce qu'on vient d'avaler et on passe à la suite...")
+    .addField("Viande humaine :" , "Hop, on oublie rapidement ce qu'on vient d'avaler et on passe à la suite...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -22445,7 +22445,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Viande indéfinissable :" , "Vous êtes quasiment certain que cette chose molle et visqueuse peut se manger\n\nEn tous cas, ça ne sent pas mauvais et ça ne bouge pas")
+    .addField("Viande indéfinissable :" , "Vous êtes quasiment certain que cette chose molle et visqueuse peut se manger\n\nEn tous cas, ça ne sent pas mauvais et ça ne bouge pas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
