@@ -18348,7 +18348,19 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les états, partie 7 :" , "Les états de blessures, d'hémorragies et d'infections se cumulent, voici des exemples pour mieux comprendre :\n\n`Blessure légère` + `Blessure légère` = `Blessure`\n\n`Blessure` + `Blessure légère` = `Blessure avancée`\n\n`Blessure avancée` + `Blessure légère` = `Blessure mortelle`\n\n`Blessure mortelle` + `Blessure légère` = `Mort`\n\n\n`Blessure` + `Blessure` = `Blessure mortelle`\n\n`Blessure` + `Blessure avancée` = `Mort`\n\n`Infection légère` + `Infection légère` = `Infection`\n\n`Infection` + `Infection légère` = `Infection avancée`\n\n`Infection avancée` + `Infection légère` = `Infection mortelle`\n\n`Infection mortelle` + `Infection légère` = `Mort`\n\n`Infection` + `Infection` = `Infection mortelle`\n\n`Hémorragie légère` + `Hémorragie légère` = `Hémorragie`\n\n`Hémorragie` + `Hémorragie légère` = `Hémorragie avancée`\n\n`Hémorragie avancée` + `Hémorragie légère` = `Hémorragie mortelle`\n\n`Hémorragie mortelle` + `Hémorragie légère` = `Mort`\n\n`Hémorragie` + `Hémorragie` = `Hémorragie mortelle`")    .setTimestamp()
+          .addField("Les états, partie 7 :" , "Les états de blessures, d'hémorragies et d'infections se cumulent, voici des exemples pour mieux comprendre :\n\n`Blessure légère` + `Blessure légère` = `Blessure`\n\n`Blessure` + `Blessure légère` = `Blessure avancée`\n\n`Blessure avancée` + `Blessure légère` = `Blessure mortelle`\n\n`Blessure mortelle` + `Blessure légère` = `Mort`\n\n\n`Blessure` + `Blessure` = `Blessure mortelle`\n\n`Blessure` + `Blessure avancée` = `Mort`\n\n`Infection légère` + `Infection légère` = `Infection`\n\n`Infection` + `Infection légère` = `Infection avancée`\n\n`Infection avancée` + `Infection légère` = `Infection mortelle`\n\n`Infection mortelle` + `Infection légère` = `Mort`\n\n`Infection` + `Infection` = `Infection mortelle`\n\n`Hémorragie légère` + `Hémorragie légère` = `Hémorragie`\n\n`Hémorragie` + `Hémorragie légère` = `Hémorragie avancée`\n\n`Hémorragie avancée` + `Hémorragie légère` = `Hémorragie mortelle`\n\n`Hémorragie mortelle` + `Hémorragie légère` = `Mort`\n\nLa suite : `=Horde états 8`")    .setTimestamp()
+              message.channel.send({embed})
+                  }
+            }) ;
+
+            bot.on('message', message => {
+            if (message.content === prefix + "Horde états 8") {
+              const embed = new Discord.RichEmbed()
+              .setColor(0xff0000)
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+          .addField("Les états, partie 8 :" , "Comme dis au début, vous devrez jouer les états de manière RP\n\nLorsque vous avez une blessure, vous devrez jouer la douleur tous de même en fonction de la gravité de votre blessure\n\nLorsque vous avez une infection, jouez le fait que vous devenez pâle, que vous toussez voir cracher du sang\n\nConcernant les hémorragies, comparé à l'infection qui s'aggrave de jour en jour, l'hémorragie ne s'aggrave au fil du temps mais si elles sont cumulés, mais vous aurez un certain avant de soigner votre hémorragie avant de mourir...\n\nVoici les différents temps selon l'hémorragie :\n\n`Hémorragie` : Vous avez 24 H pour soigner cette hémorragie avant la mort...\n\n`Hémorragie avancée` : Vous avez 12 H pour soigner cette hémorragie avant la mort...\n\n`Hémorragie mortelle` : Vous avez 6 H pour soigner cette hémorragie avant la mort...")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
@@ -19621,7 +19633,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Affaires d'un citoyen :" , "C'est le petit container standard donné à tout citoyen qui arrive en ville. Un peu comme une pochette surprise, blague un peu dérisoire dans un monde sans perspective d'avenir")
+    .addField("Affaires d'un citoyen :" , "C'est le petit container standard donné à tout citoyen qui arrive en ville. Un peu comme une pochette surprise, blague un peu dérisoire dans un monde sans perspective d'avenir\n\nPour ouvrir : `=Ouverture affaires d'un citoyen`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -19633,7 +19645,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Ailerons de poulet entamés :" , "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...")
+    .addField("Ailerons de poulet entamés :" , "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -19790,7 +19802,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Biscuit fade :" , "Une tartelette qui sent vraiment fort... Pensez à quelque chose d'agréable pendant que vous l'avalerez")
+    .addField("Biscuit fade :" , "Une tartelette qui sent vraiment fort... Pensez à quelque chose d'agréable pendant que vous l'avalerez\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -19862,7 +19874,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bon plat fait-maison :" , "En apparence, ça n'est guère mieux qu'une ration quotidienne. Mais en réalité, ça a très bon goût et ça nourrit bien !")
+    .addField("Bon plat fait-maison :" , "En apparence, ça n'est guère mieux qu'une ration quotidienne. Mais en réalité, ça a très bon goût et ça nourrit bien !\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -19946,7 +19958,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boîte de conserve ouverte :" , "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après")
+    .addField("Boîte de conserve ouverte :" , "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -19982,7 +19994,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boîte-déjeuner :" , "A défaut d'un vrai repas autour d'une table, avec des couverts et des amis, vous avez cette boîte-déjeuner Armageddon que vous aviez caché il y un bon moment sous votre lit...")
+    .addField("Boîte-déjeuner :" , "A défaut d'un vrai repas autour d'une table, avec des couverts et des amis, vous avez cette boîte-déjeuner Armageddon que vous aviez caché il y un bon moment sous votre lit...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20114,7 +20126,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Café brûlant :" , "On se demande comment cette thermos a pu rester chaude aussi longtemps. Quoiqu'il en soit, elle contient suffisamment de café pour vous remettre en forme")
+    .addField("Café brûlant :" , "On se demande comment cette thermos a pu rester chaude aussi longtemps. Quoiqu'il en soit, elle contient suffisamment de café pour vous remettre en forme\n\nEn utilisant cet objet, vous supprimez l'état `Rassasiement` et vous gagnez que 6 points d'actions ! (1 fois par jour)")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20150,7 +20162,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Caisse de nourriture :" , "Une odeur abominable de moisi et de charogne émane de cette caisse... Mais vous êtes presque sûr(e) qu'elle contient un petit quelque chose de comestible")
+    .addField("Caisse de nourriture :" , "Une odeur abominable de moisi et de charogne émane de cette caisse... Mais vous êtes presque sûr(e) qu'elle contient un petit quelque chose de comestible\n\nPour ouvrir : `=Ouverture caisse de nourriture`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20210,7 +20222,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Ceinture à poches :" , "Cette ceinture vous permet de disposer d'1 emplacement de sac à dos supplémentaire. De plus, elle est particulièrement bien conçue car elle ne vous empêchera pas de prendre un autre sac plus tard...")
+    .addField("Ceinture à poches :" , "Cette ceinture vous permet de disposer d'1 emplacement de sac à dos supplémentaire. De plus, elle est particulièrement bien conçue car elle ne vous empêchera pas de prendre un autre sac plus tard...\n\nCet objet vous permet de porter 2 objets supplémentaires !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20282,7 +20294,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Chewing-gums séchés :" , "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas. Seulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...")
+    .addField("Chewing-gums séchés :" , "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20558,7 +20570,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Doggy-bag :" , "Un vieux sac tout graisseux en papier qui doit bien contenir quelque chose à manger... Notez qu'il sent mauvais")
+    .addField("Doggy-bag :" , "Un vieux sac tout graisseux en papier qui doit bien contenir quelque chose à manger... Notez qu'il sent mauvais\n\nPour ouvrir : `Ouverture doggy-bag`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20631,7 +20643,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Eau croupie purifiée :" , "Ce bout de ferraille tordue a permis de capter de l'eau, en petite quantité\n\nC'est peu, mais c'est mieux que rien...")
+    .addField("Eau croupie purifiée :" , "Ce bout de ferraille tordue a permis de capter de l'eau, en petite quantité\n\nC'est peu, mais c'est mieux que rien...\n\nEn utilisant cet objet, vous obtenez l'état `Hydratation` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20836,7 +20848,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Jambon-beurre moisi :" , "Un reste de casse-croute qui n'a d'appétissant que son souvenir...")
+    .addField("Jambon-beurre moisi :" , "Un reste de casse-croute qui n'a d'appétissant que son souvenir...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21040,7 +21052,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Légume suspect :" , "Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestiblen, ou pas")
+    .addField("Légume suspect :" , "Un genre de... légume, difficile à dire ce qui a essayé de pousser comme ça, mais le principal c'est que ça semble comestiblen, ou pas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
