@@ -16339,7 +16339,7 @@ bot.on('message', message => {
       .addField("Croc de loup de sang :" , "C'est un croc rare que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
       .addField("Prix d'achat :" , "100 cols")
       .addField("Prix de revente :" , "25 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun crafts.")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
       message.channel.send({embed})
