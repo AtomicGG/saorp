@@ -11539,7 +11539,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Epée du clan des loups à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14545,7 +14545,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Feu faible :" , ":crossed_swords: Vous arrivez à emflammer votre cible ce qui lui inflige " +Dégâts+ " points de dégâts, l'armure réduit les dégâts !")
+      .addField(":crossed_swords: Feu faible :" , ":crossed_swords: Vous arrivez à enflammer votre cible ce qui lui inflige " +Dégâts+ " points de dégâts, l'armure réduit les dégâts !")
       .setTimestamp()
       message.channel.send({embed})
     }
