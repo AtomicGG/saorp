@@ -17452,7 +17452,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Tour`\n`=Mine`\n`=Jardin`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -18172,17 +18172,7 @@ bot.on('message', message => {
                                   }) ;
 
 
-                                  bot.on('message', message => {
-                                    if (message.content === prefix + "Tour") {
-                                      const embed = new Discord.RichEmbed()
-                                      .setColor(0xff0000)
-                                      .setAuthor(message.author.username , message.author.avatarURL)
-                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                                          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                                  .addField("La tour :" , "Parfois, vous aurez besoin de pouvoir garder un oeil sur la ville ou même sur l'extérieur en cas de problèmes, c'est pourquoi la tour bien qu'elle ne soit pas immense, existe !\n\nCependant, elle possède une vision de base assez restreinte, vous ne pourrez observer que la ville et les [Zones proches]...\n\nPour tenter de remarquer un survivant en danger, ou un zombie qui se balade en ville à découvert : `=Observation`")    .setTimestamp()
-                                      message.channel.send({embed})
-                                          }
-                                    }) ;
+                                  
 
           bot.on('message', message => {
             if (message.content.startsWith(prefix + "Mine")) {
@@ -18275,7 +18265,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("La fouille :" , "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la zone où vous vous situez :\n\n`=Fouille zone proche`\n`=Fouille zone semi éloigné`\n`=Fouille zone éloigné`\n`=Fouille zone très éloigné`\n`=Fouille zone dangereuse`\n`=Fouille zone très dangereuse`\n`=Fouille zone mortelle`")    .setTimestamp()
+.addField("La fouille :" , "Dans ce monde, pour survivre l'objectif est de collecter un maximum de ressources et de s'en servir !\n\nCependant, pour trouver des objets, il faudra sortir de la ville et se rendre à l'extérieur pour trouver ces fameuses ressources !\n\nPlus vous irez loin de la ville, plus les ressources seront rares mais plus la présence de zombie sera importante alors... bonne chance...\n\nPour effectuer une fouille selon la distance :\n\n`=Fouille zone [chiffre] km`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -22508,6 +22498,141 @@ bot.on('message', message => {
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
     .addField("'Debout-les-morts' :" , "Un cocktail inventé par un certain Joey si on en croit l'étiquette\n\nMélange de rhum, de piment rouge et de whiskey, avec un doigt mariné qui flotte entre deux eaux...")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+/////////////////////////////////////////////////////////////////////Défenses et batiments/////////////////////////////////////////////////////////////////////////////////////
+
+bot.on('message', message => {
+  if (message.content === prefix + "Atelier") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Atelier :" , "Permet d'effectuer des transformations de ressources\n\nL'avancée d'une ville passe par la construction d'un atelier crasseux et rempli d'un bazar indéfinissable\n\nC'est un pré-requis pour tous les bâtiments avancés en ville afin de les construire ainsi qu'à l'assemblage de matériaux...:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`8 Ferrailles`\n`1 Pavés de béton informes`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Boucherie") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Boucherie :" , "Permet de transformer les animaux en nourriture\n\nPermet de transformer vos petits compagnons (chiens, chats, serpents…) en nourriture\n\nQuand on pense qu'il y en a qui préféraient le boeuf...\n\n:hammer_pick: Matériaux nécessaires :\n\n`9 Planche tordue`\n`4 Ferraille`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Crémato-cue") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Crémato-cue :" , "Permet d'obtenir 4 Viandes humaines à partir d'un citoyen mort\n\nBon, on sait tous ce qu'est un Crématorium ? On sait aussi à quoi sert un Barbecue ?\n\nEh bien c'est facile de deviner le fonctionnement et l'utilité du Crémato-Cue\n\nEn tout cas, fini la famine...\n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Poutre rafistolée`\n`1 Structures métalliques`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Manufacture") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Manufacture :" , "Réduit le coût des transformations de l'atelier de 1 PA\n\nCette version améliorée de l'atelier permet de réduire de 1 PA le coût de toutes les transformations effectuées dans l'atelier\n\n:hammer_pick: Matériaux nécessaires :\n\n`5 Poutre rafistolée`\n`5 Structures métalliques`\n`3 Poignée de vis et écrous`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Scies hurlantes") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Scies hurlantes :" , "Des scies circulaires bricolées à même le sol et activées par un savant système d'élastiques\n\nLe bruit strident produit par la rotation des scies fait étrangement penser à un cri humain...\n\n:hammer_pick: Matériaux nécessaires :\n\n`5 Ferraille`\n`2 Structures métalliques`\n`3 Poignée de vis et écrous`\n`2 Rustine`\n\n:shield: Points de défense : 30")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Tour") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Tour :" , "Permet de savoir observer les environs grâce à : `=Observation`\n\nCette tour placée près de l'entrée permet d'obtenir aussi une meilleur défense et une meilleur organisation en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Poutre rafistolée`\n`2 Structures métalliques`\n\n:shield: Points de défense : 5")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Dynamitage") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Dynamitage :" , "C'est le nom que l'on donne à cette genre de boule d'explosif qui permettra de rouler et faire pleuvoir des zombies en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Explosifs bruts`\n\n:shield: Points de défense [Utilisation unique] : 30")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Pièges à loups") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Piège à loups :" , "Ca ne tuera pas les zombies, mais ça les stoppera dans leur avancée en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`2 Ferraille`\n`1 Poignée de vis et écrous`\n`3 Viande humaine`\n\n:shield: Points de défense [Utilisation unique] : 25")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Pièges à loups") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Piège à loups :" , "Ca ne tuera pas les zombies, mais ça les stoppera dans leur avancée en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`2 Ferraille`\n`1 Poignée de vis et écrous`\n`3 Viande humaine`\n\n:shield: Points de défense [Utilisation unique] : 30")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Monticules pour canons") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Monticules pour canons :" , "Plusieurs monticules de terre renforcés par des poutres en bois\n\nLe pré-requis indispensable pour construire de puissantes tourelles de défense...\n\n:hammer_pick: Matériaux nécessaires :\n\n`7 Poutre rafistolée`\n`1 Structures métalliques`\n`3 Pavés de béton informes`\n\n:shield: Points de défense : 5")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Monticules pour canons") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Monticules pour canons :" , "Plusieurs monticules de terre renforcés par des poutres en bois\n\nLe pré-requis indispensable pour construire de puissantes tourelles de défense...\n\n:hammer_pick: Matériaux nécessaires :\n\n`7 Poutre rafistolée`\n`1 Structures métalliques`\n`3 Pavés de béton informes`\n\n:shield: Points de défense : 5")
     .setTimestamp()
     message.channel.send({embed})
   }
