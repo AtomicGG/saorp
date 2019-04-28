@@ -22615,6 +22615,139 @@ bot.on('message', message => {
   }
 }) ;
 
+bot.on('message', message => {
+  if (message.content === prefix + "Lance-tôle") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Lance-tôle :" , "Projetez de lourdes plaques de tôle en ligne droite dans le champ de bataille\n\nUne boucherie qu'on espère ne jamais revoir, mais c'est efficace\n\n:hammer_pick: Matériaux nécessaires :\n\n`5 Poutre rafistolée`\n`1 Structures métalliques`\n`5 Poignée de vis et écrous`\n`3 Plaque de tôle`\n`3 Explosifs bruts`\n\n:shield: Points de défense : 40")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Perforeuse") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Perforeuse :" , "Un mécanisme puissant à air comprimé qui projette des boules de clous tordus et autres ferrailles rouillées\n\nParfait pour faire des trous gros comme le poing dans n'importe quoi (qui)\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Structures métalliques`\n`15 Poignée de vis et écrous`\n`2 Tube de cuivre`\n`1 Composant électronique`\n\n:shield: Points de défense : 30")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Canon à briques") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Canon à briques :" , "Une tourelle automatisée qui projette des rochers à grande vitesse en direction de la porte\n\nIl s'active à minuit et tire sans discontinuer pendant plusieurs minutes (si vous comptiez dormir dans le silence, c'est loupé)\n\n:hammer_pick: Matériaux nécessaires :\n\n`5 Structures métalliques`\n`3 Pavés de béton informes`\n`2 Tube de cuivre`\n`1 Composant électronique`\n\n:shield: Points de défense : 35")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Tourniquet à poutres") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Tourniquet à poutres :" , "Quatre poutres en bois fixées sur un axe\n\nEt ça tourne très vite\n\n:hammer_pick: Matériaux nécessaires :\n\n`2 Poutre rafistolée`\n`1 Structures métalliques`\n\n:shield: Points de défense : 12")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Porte améliorée") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Porte améliorée :" , "Un bricolage un peu rustique qui renforce la porte capable de bloquer plus de zombies en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`2 Ferraille`\n\n:shield: Points de défense : 2")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Porte à piston") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Porte à piston :" , "Permet de fermer automatiquement la porte à 23h30\n\nGrâce à un puissant système de pistons, ce système ferme automatiquement la porte à 23:30 tous les soirs et bloque son ouverture jusqu'à l'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`3 Structures métalliques`\n`4 Poignée de vis et écrous`\n`1 Tube de cuivre`\n\n:shield: Points de défense : 10")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Blindage d'entrée") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Blindage d'entrée :" , "De gros renforts cloués à même la porte de la ville pour en améliorer la résistance\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Planche tordue`\n\n:shield: Points de défense : 5")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fondations") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fondations :" , "Les fondations permettent la réalisation de « Projets Insensés » (des constructions de longue haleine mais aux effets très puissants)\n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Planche tordue`\n`5 Ferrailles`\n`2 Pavés de béton informes`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fondations") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fondations :" , "Les zombies sont un peu simples dans leur tête, c'est bien connu\n\nSi vous construisez une seconde fausse ville, vous déporterez toute une partie de l'attaque là-bas...\n\nNécessite de posséder les 'Fondations' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Planche tordue`\n`20 Poutre rafistolée`\n`30 Ferraille`\n`10 Poignée de vis et écrous`\n\n:shield: Points de défense : 180")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Derrick artisanal") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Derrick artisanal :" , "Un Projet Insensé prévu pour l'extraction d'une grande quantité d'eau dans les nappes phréatiques les plus profondes ! Après ça, plus de problème d'eau au puits\n\nNécessite de posséder les 'Fondations' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Poutre rafistolée`\n`10 Structures métalliques`\n`3 Pavés de béton informes`\n`4 Tube de cuivre`\n\n:droplet: Rations d'eau supplémentaires : 150")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Le grand déménagement") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Le grand déménagement :" , "Ce Projet Insensé vise à restructurer la ville entière pour en améliorer la défense\n\nSerrez les maisons, barrez les ruelles, installez des tourelles sur tous les toits, c'est ça, le Grand Déménagement\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Poutre rafistolée`\n`7 Structures métalliques`\n`5 Pavés de béton informes`\n\n:shield: Points de défense : 110")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
