@@ -22511,7 +22511,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Atelier :" , "Permet d'effectuer des transformations de ressources\n\nL'avancée d'une ville passe par la construction d'un atelier crasseux et rempli d'un bazar indéfinissable\n\nC'est un pré-requis pour tous les bâtiments avancés en ville afin de les construire ainsi qu'à l'assemblage de matériaux...:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`8 Ferrailles`\n`1 Pavés de béton informes`")
+    .addField("Atelier :" , "Permet d'effectuer des transformations de ressources\n\nL'avancée d'une ville passe par la construction d'un atelier crasseux et rempli d'un bazar indéfinissable\n\nC'est un pré-requis pour tous les bâtiments avancés en ville afin de les construire ainsi qu'à l'assemblage de matériaux...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`8 Ferrailles`\n`1 Pavés de béton informes`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -22602,29 +22602,6 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Pièges à loups") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Piège à loups :" , "Ca ne tuera pas les zombies, mais ça les stoppera dans leur avancée en cas d'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`2 Ferraille`\n`1 Poignée de vis et écrous`\n`3 Viande humaine`\n\n:shield: Points de défense [Utilisation unique] : 30")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content === prefix + "Monticules pour canons") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Monticules pour canons :" , "Plusieurs monticules de terre renforcés par des poutres en bois\n\nLe pré-requis indispensable pour construire de puissantes tourelles de défense...\n\n:hammer_pick: Matériaux nécessaires :\n\n`7 Poutre rafistolée`\n`1 Structures métalliques`\n`3 Pavés de béton informes`\n\n:shield: Points de défense : 5")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Monticules pour canons") {
