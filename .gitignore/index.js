@@ -22591,7 +22591,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content === prefix + "Pièges à loups") {
+  if (message.content === prefix + "Piège à loups") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22867,17 +22867,7 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Projet Eden") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Projet Eden :" , "La solution de la dernière chance quand on n'a plus d'eau : perforer les nappes phréatiques à la dynamite pour étendre les réserves de la ville\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Structures métalliques`\n`5 Poutre rafistolée`\n`5 Explosifs bruts`\n\n:droplet: Rations d'eau supplémentaires : 70")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
+
 
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
 
