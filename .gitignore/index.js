@@ -22712,12 +22712,12 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content === prefix + "Fondations") {
+  if (message.content === prefix + "Fausse ville") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Fondations :" , "Les zombies sont un peu simples dans leur tête, c'est bien connu\n\nSi vous construisez une seconde fausse ville, vous déporterez toute une partie de l'attaque là-bas...\n\nNécessite de posséder les 'Fondations' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Planche tordue`\n`20 Poutre rafistolée`\n`30 Ferraille`\n`10 Poignée de vis et écrous`\n\n:shield: Points de défense : 180")
+    .addField("Fausse ville :" , "Les zombies sont un peu simples dans leur tête, c'est bien connu\n\nSi vous construisez une seconde fausse ville, vous déporterez toute une partie de l'attaque là-bas...\n\nNécessite de posséder les 'Fondations' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Planche tordue`\n`20 Poutre rafistolée`\n`30 Ferraille`\n`10 Poignée de vis et écrous`\n\n:shield: Points de défense : 180")
     .setTimestamp()
     message.channel.send({embed})
   }
