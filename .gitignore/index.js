@@ -22741,12 +22741,143 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Le grand déménagement :" , "Ce Projet Insensé vise à restructurer la ville entière pour en améliorer la défense\n\nSerrez les maisons, barrez les ruelles, installez des tourelles sur tous les toits, c'est ça, le Grand Déménagement\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Poutre rafistolée`\n`7 Structures métalliques`\n`5 Pavés de béton informes`\n\n:shield: Points de défense : 110")
+    .addField("Le grand déménagement :" , "Ce Projet Insensé vise à restructurer la ville entière pour en améliorer la défense\n\nSerrez les maisons, barrez les ruelles, installez des tourelles sur tous les toits, c'est ça, le Grand Déménagement\n\nNécessite de posséder les 'Fondations' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Poutre rafistolée`\n`7 Structures métalliques`\n`5 Pavés de béton informes`\n\n:shield: Points de défense : 110")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
 
+bot.on('message', message => {
+  if (message.content === prefix + "Pompe") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Pompe :" , "Permet de prendre plus d'une Ration d'eau par jour au puits\n\nLa pompe permet d'augmenter le rendement du puits et débloque l'ensemble des constructions basées sur l'eau\n\nElle augmente aussi sensiblement les réserves souterraines du puits\n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Ferraille`\n`1 Tube de cuivre`\n\n:droplet: Rations d'eau supplémentaires : 10")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Purificateur d'eau") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Purificateur d'eau :" , "Permet de transformer des Jerrycans pleins en  Rations d'eau\n\nTransforme l'eau des Jerrycans trouvés dans le désert en Rations d'eau potable\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`6 Planche tordue`\n`5 Ferraille`\n`1 Tube de cuivre`\n\n:droplet: Purifier un jerrycan plein en ration d'eau potable demande 1 PA ainsi que 15 minutes")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Potager") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Potager :" , "Le jardin permet de créer des légumes pas trop moisis, des fruits qui commencent à pourrir avant de mûrir\n\nBref, des rations alimentaires, si on ne fait pas trop le difficile...\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Poutre rafistolée`\n`10 Ration d'eau`\n`1 Produits pharmaceutiques`\n\n:corn: Permet de pouvoir faire de l'agriculture")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Champ de mines à eau") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Champ de mines à eau :" , "Assemblez de la poudre, des dispositifs détonateurs et de l'eau pure et vous obtiendrez une belle bouillie de chair putréfiée ce soir\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Ration d'eau`\n`3 Ferrailles`\n`1 Explosifs bruts`\n`1 Détonateur compact`\n\n:shield: Points de défense [Utilisation unique] : 60")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Tuyauteries") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Tuyauteries :" , "Grâce à ce réseau de tuyaux, vous pourrez bâtir de puissantes défenses à base d'eau en ville !\n\nDe plus, ce système apporte un petit surplus d'eau au puits\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`5 Ferrailles`\n`5 Structures métalliques`\n`5 Poignée de vis et écrous`\n`2 Tube de cuivre`\n\n:droplet: Rations d'eau supplémentaires : 15")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Arroseurs automatiques") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Arroseurs automatiques :" , "Traditionnellement utilisés dans un jardin, ils servent aussi de défense mortelle contre les Hordes\n\nIls tuent beaucoup de zombies, mais il faut prévoir un stock d'eau important\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`30 Ration d'eau`\n`15 Ferraille`\n`7 Poutre rafistolée`\n`1 Tube de cuivre`\n\n:shield: Points de défense : 50")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Sani-broyeur") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Sani-broyeur :" , "Deux grosses plaques autour du passage de l'entrée et un puissant système de pistons : quand on les actionne, ça écrase instantanément tout ce qui se trouvait au milieu\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Structures métalliques`\n`2 Poutre rafistolée`\n`2 Tube de cuivre`\n`2 Plaque de tôle`\n\n:shield: Points de défense : 20")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Vaporisateur de rue") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Vaporisateur de rue :" , "Le vaporisateur est un système qui consomme une quantité négligeable d'eau pure et qui la projette en fine vapeur brûlante dans les rues de la ville\n\nIdéale pour faire fondre vos amis putréfiés qui nous rendent visite chaque soir\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`10 Ration d'eau`\n`7 Structures métalliques`\n`1 Poignée de vis et écrous`\n\n:shield: Points de défense : 30")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Foreuse pour le puits") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Foreuse pour le puits :" , "Une foreuse artisanale qui permettra de puiser l'eau un peu plus profondément dans le sol et ainsi augmenter sensiblement les réserves disponibles\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`7 Poutre rafistolée`\n`2 Structures métalliques`\n\n:droplet: Rations d'eau supplémentaires : 40")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Projet Eden") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Projet Eden :" , "La solution de la dernière chance quand on n'a plus d'eau : perforer les nappes phréatiques à la dynamite pour étendre les réserves de la ville\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Structures métalliques`\n`5 Poutre rafistolée`\n`5 Explosifs bruts`\n\n:droplet: Rations d'eau supplémentaires : 70")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Projet Eden") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Projet Eden :" , "La solution de la dernière chance quand on n'a plus d'eau : perforer les nappes phréatiques à la dynamite pour étendre les réserves de la ville\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Structures métalliques`\n`5 Poutre rafistolée`\n`5 Explosifs bruts`\n\n:droplet: Rations d'eau supplémentaires : 70")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
 
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
 
