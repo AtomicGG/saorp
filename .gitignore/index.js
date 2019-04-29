@@ -7459,7 +7459,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Cri rabaissant :" , ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible pendant `" +tourss+ "` tours, l'obligeant aussi à vous visez!")
+        .addField(":cyclone: Cri rabaissant :" , ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible pendant `" +tours+ "` tours, l'obligeant aussi à vous visez!")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
         message.channel.send({embed})
