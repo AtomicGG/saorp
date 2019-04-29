@@ -22907,6 +22907,7 @@ bot.on('message', message => {
     .addField("Projet Eden :" , "La solution de la dernière chance quand on n'a plus d'eau : perforer les nappes phréatiques à la dynamite pour étendre les réserves de la ville\n\nNécessite de posséder la 'Pompe' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Structures métalliques`\n`5 Poutre rafistolée`\n`5 Explosifs bruts`\n\n:droplet: Rations d'eau supplémentaires : 70")
     .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
     .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
