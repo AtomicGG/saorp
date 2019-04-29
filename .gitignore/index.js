@@ -22911,9 +22911,201 @@ bot.on('message', message => {
   }
 }) ;
 
+bot.on('message', message => {
+  if (message.content === prefix + "Renforts de muraille") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Renforts de muraille :" , "Augmente sensiblement les défenses de la ville\n\nNécessite de posséder les 'Remparts avancés' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`6 Planche tordue`\n`4 Ferraille`\n\n:shield: Points de défense : 7")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
 
 
+bot.on('message', message => {
+  if (message.content === prefix + "Barbelés") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Barbelés :" , "C'est encore plus artisanal que du barbelé classique, puisqu'on ne dispose même pas de fil de fer\n\n:hammer_pick: Matériaux nécessaires :\n\n`3 Ferraille`\n\n:shield: Points de défense : 3")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
 
+bot.on('message', message => {
+  if (message.content === prefix + "Appâts") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Appâts :" , "Un bout de viande attaché aux barbelés pour retenir quelques zombies\n\n:hammer_pick: Matériaux nécessaires :\n\n`1 Os charnu`\n\n:shield: Points de défense [Utilisation Unique] : 10")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Barrières") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Barrières :" , "Des clôtures en bois tout autour de la ville qui 'devraient' ralentir suffisamment les hordes de zombies pendant l'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`6 Poutre rafistolée`\n`5 Poignée de vis et écrous`\n\n:shield: Points de défense : 20")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Grand fossé") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Grand fossé :" , "Le Grand Fossé est une défense efficace : un grand trou entourant la ville\n\nPratique sur le long terme, on pourra le remplir avec un tas de choses pour le rendre encore plus efficace ! \n\n:hammer_pick: Matériaux nécessaires :\n\n`8 Planche tordue`\n\n:shield: Points de défense : 20")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Champ de pieux") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Champ de pieux :" , "Une amélioration du Grand Fossé : le remplir de gros pieux en bois acérés\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Planche tordue`\n\n:shield: Points de défense : 30")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Douves") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Douves :" , "Une amélioration du Grand Fossé : y mettre de l'eau\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Ration d'eau`\n\n:shield: Points de défense : 25")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Rape à zombies") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Rape à zombies :" , "Couvrez une large surface de terre avec une multitude de morceaux de métal tranchant et vous obtiendrez la plus grande rape à fromage du monde\n\n:hammer_pick: Matériaux nécessaires :\n\n`20 Ferraille`\n`10 Poignée de vis et écrous`\n`3 Plaque de tôle`\n\n:shield: Points de défense : 35")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Oubliettes") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Oubliettes :" , "Plein de trous tout autour de la ville dissimulés sous des bâches\n\nIl ne reste alors plus qu'à attendre que quelque chose tombe dedans\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Planche tordue`\n`5 Toile de tente`\n\n:shield: Points de défense : 30")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Murailles rasoir") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Murailles rasoir :" , "Une recette simple : des morceaux de ferraille rouillés qui dépassent partout sur la Muraille de la ville pour en faire une sorte de rape à zombie\n\nNécessite de posséder les 'Remparts avancés' pour sa création\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Ferraille`\n`5 Poignée de vis et écrous`\n\n:shield: Points de défense : 20")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Remparts avancés") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Remparts avancés :" , "Tant pis pour les défenses ce soir, mais une muraille mieux construite permettra plus tard d'y ajouter de nombreuses améliorations\n\nLes remparts avancés débloquent l'ensemble des constructions basées sur la muraille\n\n:hammer_pick: Matériaux nécessaires :\n\n`9 Poutre rafistolée`\n`6 Structures métalliques`\n`6 Poignée de vis et écrous`\n\n:shield: Points de défense : 5")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fixations de défenses") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fixations de défenses :" , "Un système ingénieux pour optimiser l'usage de plaques de défenses (tôle ou autre)\n\nChaque objet pourra sûrement servir à améliorer la défense de la ville, cela permet de pouvoir les placer !\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Poutre rafistolée`\n`7 Structures métalliques`\n`7 Poignée de vis et écrous`\n\n:shield: Points de défense : 5")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Grogro mur") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Grogro mur :" , "Qu'est-ce qui est mieux qu'un mur ?\n\nUn gros mur\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Poutre rafistolée`\n`10 Planche tordue`\n`10 Structures métalliques`\n`2 Pavés de béton informes`\n\n:shield: Points de défense : 70")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Poutres de renfort") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Poutres de renfort :" , "Des structures métalliques pour renforcer les parties faibles de la muraille\n\n:hammer_pick: Matériaux nécessaires :\n\n`9 Structures métalliques`\n`5 Poutre rafistolée`\n`5 Poignée de vis et écrous`\n\n:shield: Points de défense : 15")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Murailles à pointes") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Murailles à pointes :" , "Un grand nombre de pieux métalliques fixés au sommet des remparts pour faire des brochettes de zombie à la tombée de la nuit\n\n:hammer_pick: Matériaux nécessaires :\n\n`15 Ferraille`\n`4 Poignée de vis et écrous`\n`2 Poutre rafistolée`\n\n:shield: Points de défense : 15")
+    .setThumbnail("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
 
 /////////////////////////////////////////////////////////////////////Référence d'animes////////////////////////////////////////////////////////////////////////////////////////
 
