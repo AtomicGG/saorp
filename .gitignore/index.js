@@ -7430,6 +7430,49 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cri rabaissant")) {
+    if (talkedRecently.has(message.author.id+2)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(100)*Math.random()+1)
+      const tours = (Math.floor((3)*Math.random()+2))
+      const tourss = (Math.floor((2)*Math.random()+1))
+      if(B <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cri rabaissant :" , ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible pendant `" +tourss+ "` tours, l'obligeant aussi à vous visez!")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 26){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cri rabaissant :" , ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible pendant `" +tourss+ "` tours, l'obligeant aussi à vous visez!")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+2);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+2);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "New Sonic leap")) {
     if (/*talkedRecently.has(message.author.id+2)*/false) {
       const embed = new Discord.RichEmbed()
@@ -18172,7 +18215,7 @@ bot.on('message', message => {
                                   }) ;
 
 
-                                  
+
 
           bot.on('message', message => {
             if (message.content.startsWith(prefix + "Mine")) {
