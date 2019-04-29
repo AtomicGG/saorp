@@ -7431,7 +7431,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Cri rabaissant")) {
-    if (talkedRecently.has(message.author.id+2)) {
+    if (/*talkedRecently.has(message.author.id+2)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
