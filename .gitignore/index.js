@@ -17495,7 +17495,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Batîments`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets`\n`=Horde liste des constructions\n`=Transformation`\n`=Habitations`\n`=Mine`\n`=Jardin`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -17582,37 +17582,37 @@ bot.on('message', message => {
 
 
         bot.on('message', message => {
-          if (message.content === prefix + "Batîments") {
+          if (message.content === prefix + "Lieux") {
             const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les batîments, partie 1 :" , "Banque : Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre!\n\nPlace principale : C'est une place assez grande qui permet de pouvoir se rassembler si besoin\n\nAuberge : Permet de pouvoir y écrire des annonces ou les objectifs du jour pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !\n\nPuits : Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimité mais le puit possède 50 L d'eau de départ ! [1L = Une bouteille]\n\nCabinet médicale : L'endroit où vous pourrez normalement trouver un médecin capable de vous soigner, si vous avez besoin de médicaments à cause d'une maladie ou infection, si vous avez besoin de bandages et de le mettre à cause d'une hémorragie, ou si... vous avez besoin de vous faire couper un membre trop infecté...\n\nLa suite : `=Batîments 2`")    .setTimestamp()
+        .addField("Les lieux, partie 1 :" , "Banque : Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre!\n\nPlace principale : C'est une place assez grande qui permet de pouvoir se rassembler si besoin\n\nAuberge : Permet de pouvoir y écrire des annonces ou les objectifs du jour pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !\n\nPuits : Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimité mais le puit possède 50 L d'eau de départ ! [1L = Une bouteille]\n\nCabinet médicale : L'endroit où vous pourrez normalement trouver un médecin capable de vous soigner, si vous avez besoin de médicaments à cause d'une maladie ou infection, si vous avez besoin de bandages et de le mettre à cause d'une hémorragie...\n\nLa suite : `=Lieux 2`")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
 
           bot.on('message', message => {
-            if (message.content === prefix + "Batîments 2") {
+            if (message.content === prefix + "Lieux 2") {
               const embed = new Discord.RichEmbed()
               .setColor(0xff0000)
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les batîments, partie 2 :" , "Tour : Celle-ci permet de pouvoir observer les environs et la ville, pour tenter de voir s'il y a des zombies à l'intérieur de la ville à découvert, ou si des survivants se font attaqués à l'extérieur\n\nBoucherie : Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nCuisine : Les survivants auront parfois besoin de se nourrire d'un bon repas pour satisfaire leur faim, c'est ici que se feront tous les repas et les rations pour survivre\n\nPrison : Comme le nom l'indique, c'est une prison où pourrons être mis des survivants qui sont devenus trop violents, ou même infectés, ou pour tout autre usage, celle-ci possède 10 cellules\n\nAtelier : Un autre batîment très important pour la survie de la ville qui est l'atelier, vous pourrez à l'intérieur travailler les matériaux, les transformer, les raffiner, les découper, les assembler avec le matériel de base pour le faire\n\nLa suite : `Batîments 3`")    .setTimestamp()
+          .addField("Les lieux, partie 2 :" , "Tour : Celle-ci permet de pouvoir observer les environs et la ville, pour tenter de voir s'il y a des zombies à l'intérieur de la ville à découvert, ou si des survivants se font attaqués à l'extérieur\n\nBoucherie : Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nCuisine : Les survivants auront parfois besoin de se nourrire d'un bon repas pour satisfaire leur faim, c'est ici que se feront tous les repas et les rations pour survivre\n\nPrison : Comme le nom l'indique, c'est une prison où pourrons être mis des survivants qui sont devenus trop violents, ou même infectés, ou pour tout autre usage, celle-ci possède 10 cellules\n\nAtelier : Un autre batîment très important pour la survie de la ville qui est l'atelier, vous pourrez à l'intérieur travailler les matériaux, les transformer, les raffiner, les découper, les assembler avec le matériel de base pour le faire\n\nLa suite : `Lieux 3`")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
 
             bot.on('message', message => {
-              if (message.content === prefix + "Batîments 3") {
+              if (message.content === prefix + "Lieux 3") {
                 const embed = new Discord.RichEmbed()
                 .setColor(0xff0000)
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les batîments, partie 3 :" , "Chantiers : Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes défenses que la ville aura besoin pour continuer de résister aux attaques des zombies\n\nMine : Vous pourrez tenter de miner à l'intérieur de cette mine des ressources que la ville a besoin, cependant il existe plusieurs risques à l'intérieur alors, à vos risques et périls\n\nJardin : Lorsque vous possédez des graines, vous pourrez tenter de les faire pousser ici, cependant la pousse prendra quelques jours et il faudra s'occuper des plantations en les arrosant de temps à autre avant qu'elles finissent mortes")    .setTimestamp()
+            .addField("Les lieux, partie 3 :" , "Chantiers : Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes bâtiments et défenses que la ville aura besoin pour continuer de résister aux attaques des zombies\n\nJardin : Lorsque vous possédez des graines, vous pourrez tenter de les faire pousser ici, cependant la pousse prendra quelques jours et il faudra s'occuper des plantations en les arrosant de temps à autre avant qu'elles finissent mortes\n\nLa plupart de ces lieux au départ de la ville, ne sont pas encore présent et c'est pour cela qu'il faudra les créer !")    .setTimestamp()
                 message.channel.send({embed})
                     }
               }) ;
@@ -23030,7 +23030,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content === prefix + "Murailles rasoir") {
+  if (message.content === prefix + "Muraille rasoir") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -23095,7 +23095,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content === prefix + "Murailles à pointes") {
+  if (message.content === prefix + "Muraille à pointes") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
