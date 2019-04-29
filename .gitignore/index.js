@@ -17507,7 +17507,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Liste des constructions, partie 1 :" , "`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Canon à briques`\n`=Crémato-cue`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `Horde liste des constructions 2")    .setTimestamp()
+  .addField("Liste des constructions, partie 1 :" , "`=Appâts`\n`=Arroseurs automatiques`\n`=Atelier`\n`=Barbelés`\n`=Barrières`\n`=Blindage d'entrée`\n`=Boucherie`\n`=Canon à briques`\n`=Champ de mines à eau`\n`=Crémato-cue`\n`=Derrick artisanal`\n`=Douves`\n`=Dynamitage`\n`=Fausse ville`\n`=Fixations de défenses`\n`=Fondations`\n`=Foreuse pour le puits`\n`=Grogro mur`\n`=Lance-tôle`\n`=Le grand déménagement`\n`=Manufacture`\n`=Monticules pour canons`\n`=Muraille à pointes`\n`=Muraille rasoir`\n`=Oubliettes`\n`=Perforeuse`\n`=Piège à loups`\n`=Pompe`\n`=Porte améliorée`\n`=Porte à piston`\n`=Potager`\n`=Poutres de renfort`\n`=Projet Eden`\n`=Purificateur d'eau`\n\nLa suite : `Horde liste des constructions 2")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -17519,7 +17519,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Liste des constructions, partie 2 :" , "``\n``\n")    .setTimestamp()
+    .addField("Liste des constructions, partie 2 :" , "`=Rape à zombies`\n`=Remparts avancés`\n`=Renforts de muraille`\n`=Sani-broyeur`\n`=Scies hurlantes`\n`=Tour`\n`=Tourniquet à poutres`\n`=Tuyauteries`")    .setTimestamp()
         message.channel.send({embed})
             }
       }) ;
