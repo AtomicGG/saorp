@@ -17657,7 +17657,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nSi les survivants encore vivants ont réussis à rester cacher dans leur habitation et que plus personne n'est pourchassé, les zombies restants sortiront de la ville et iront en dehors de celle-ci !\n\nCependant, les zombies restants qui n'ont pas été tués durant la nuit, reviendront la nuit prochaine avec les zombies de la nouvelle attaque !\n\nSi par exemple le jour 4 il reste 37 zombies en vie qui sortent de la ville, et que le jour 5 il y a 240 zombies attaquant la ville, il y en aura donc 277 zombies attaquant la ville...")    .setTimestamp()
+        .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
@@ -17669,7 +17669,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Le matin :" , "Chaque matin durant votre survie, si vous êtes encore en vie surtout, un évènment se passera à un moment précis de la journée ou alors à un moment aléatoire !\n\nLes évènements sont aléatoires et positifs comme négatifs alors faites très attention...\n\nPour déterminer la météo dans ce monde : `=Horde météo`\n\nPour déterminer l'évènement aléatoire : `=Evènement aléatoire`")    .setTimestamp()
+          .addField("Le matin :" , "Chaque matin durant votre survie, si vous êtes encore en vie surtout, un évènment se passera à un moment précis de la journée ou alors à un moment aléatoire !\n\nLes évènements sont aléatoires et positifs comme négatifs alors faites très attention...\n\nPour déterminer l'évènement aléatoire : `=Evènement aléatoire`")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
@@ -17745,7 +17745,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Défense de la ville 1 :" , "Le but principal de la survie en ville sera de fabriquer des défenses afin de tuer un maximum de zombies lors des attaques tous les jours à 00 H 00 [Heure en France] !\n\nIl est possible pour un survivant de défendre aussi la ville des zombies restants qui arrivent à pénétrer l'intérieur de la ville...\n\nUn zombie vaut pour un 'point d'attaque' et une défense ou un survivant aura ses 'points de défense'\n\nSi par exemple, la ville possède 45 points de défense et qu'il y a 37 zombies attaquant au jour 3, il n'y a aucun zombies qui pénétreront dans la ville, ni aucun mort par la même occasion !\n\nCependant, si la ville possède 45 points de défense et qu'il y a 50 zombies qui attaquent, 5 zombies réussiront à pénétrer en ville...\n\nCes 5 zombies pourront être combattus et tuer par les survivants qui défendent l'entrée de la ville évidemment !\n\nLa suite en écrivant : `=Défense de la ville 2`")    .setTimestamp()
+          .addField("Défense de la ville, partie 1 :" , "Le but principal de la survie en ville sera de fabriquer des défenses afin de tuer un maximum de zombies lors des attaques tous les jours à 00 H 00 [Heure en France] !\n\nIl est possible pour un survivant de défendre aussi la ville des zombies restants qui arrivent à pénétrer l'intérieur de la ville...\n\nUn zombie vaut pour un 'point d'attaque' et une défense ou un survivant aura ses 'points de défense'\n\nSi par exemple, la ville possède 45 points de défense et qu'il y a 37 zombies attaquant au jour 3, il n'y a aucun zombies qui pénétreront dans la ville, ni aucun mort par la même occasion !\n\nCependant, si la ville possède 45 points de défense et qu'il y a 50 zombies qui attaquent, 5 zombies réussiront à pénétrer en ville...\n\nCes 5 zombies pourront être combattus et tuer par les survivants qui défendent l'entrée de la ville évidemment !\n\nLa suite : `=Défense de la ville 2`")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
@@ -17757,10 +17757,37 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Défense de la ville 2 :" , "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nPour déterminer quel joueur trouvera et attaquera le zombie, il faut écrire : `=Zombie infiltration : [Nombre de survivants restants]`\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, le joueur sera attaquer\n\nA savoir que se défendre en groupe est possible, et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués !\n\nSi à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...")    .setTimestamp()
+            .addField("Défense de la ville, partie 2 :" , "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nPour déterminer quel joueur trouvera et attaquera le zombie, il faut écrire : `=Zombie infiltration : [Nombre de survivants restants]`\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, le joueur sera attaquer\n\nA savoir que se défendre en groupe est possible, et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués !\n\nLa suite : `=Défense de la ville 3`")    .setTimestamp()
                 message.channel.send({embed})
                     }
               }) ;
+
+              
+
+              bot.on('message', message => {
+                if (message.content === prefix + "Défense de la ville 3") {
+                  const embed = new Discord.RichEmbed()
+                  .setColor(0xff0000)
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+              .addField("Défense de la ville, partie 3 :" , "Si à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, il faudra impérativement mettre dans le salon #『🔨』ᴘᴏɪɴᴛs-ᴅᴇ-ᴅᴇ́ғᴇɴsᴇ si votre défense possède des points de défense, ou si vous souhaitez devenir veilleur\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nSi vous souhaitez devenir veilleur, veuillez l'écrire justement dans le salon #『🔨』ᴘᴏɪɴᴛs-ᴅᴇ-ᴅᴇ́ғᴇɴsᴇ en y mettant les points de défense qu'offre votre arme\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa suite : `=Défense de la ville 4`")    .setTimestamp()
+                  message.channel.send({embed})
+                      }
+                }) ;
+  
+                bot.on('message', message => {
+                  if (message.content === prefix + "Défense de la ville 4") {
+                    const embed = new Discord.RichEmbed()
+                    .setColor(0xff0000)
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+                .addField("Défense de la ville, partie 4 :" , "Une arme de corps à corps possède une durabilité avant d'être inutilisable/détruite\n\nSi par exemple vous avez un pied de biche utilisable pour 3 attaques, au bout de la troisième nuit en tant que veilleur et si vous êtes encore en vie, le pied de biche sera détruit\n\nSi vous avez une arme à feu ou du moins une arme à distance qui tire, celle-ci sera encore utilisable mais chaque nuit en tant que veilleur déchargera votre arme complètement, vous devrez la recharger avant de pouvoir la réutiliser\n\nA savoir que, pour utiliser une arme à feu ou une arme à distance pour être veilleur, il faudra que celle-ci soit complètement chargé")    .setTimestamp()
+                    message.channel.send({embed})
+                        }
+                  }) ;
+    
 
             bot.on('message', message => {
               if (message.content.startsWith(prefix + "Fabrication")) {
@@ -18393,7 +18420,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                      .addField("Les déplacements :" , "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutespour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', les déplacements en ville comme en extérieur demandera cinq minutes\n\nEn extérieur, lorsque vous passez d'une zone à une autre, vous devrez faire : `=Bruit : [KM]`\n\nPar exemple vous passez de la zone 1 KM à 2 KM, vous devrez faire : `=Bruit : 2`")    .setTimestamp()
+                      .addField("Les déplacements :" , "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutes pour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', les déplacements en ville comme en extérieur demandera cinq minutes\n\nEn extérieur, lorsque vous passez d'une zone à une autre, vous devrez faire : `=Bruit : [KM]`\n\nPar exemple vous passez de la zone 1 KM à 2 KM, vous devrez faire : `=Bruit : 2`")    .setTimestamp()
                       message.channel.send({embed})
                       }
                       }) ;
