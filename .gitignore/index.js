@@ -18393,7 +18393,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                      .addField("Les déplacements :" , "Grande porte\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nZone proche\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nZone semi éloigné\n‖\n‖\n‖ `[10 minutes]`\n‖\n‖\nZone éloigné\n‖\n‖\n‖ `[10 minutes]`\n‖\n‖\nZone très éloigné\n‖\n‖\n‖ `[10 minutes]`\n‖\n‖\nZone dangereuse\n‖\n‖\n‖ `[15 minutes]`\n‖\n‖\nZone très dangereuse\n‖\n‖\n‖ `[15 minutes]`\n‖\n‖\nZone mortelle")    .setTimestamp()
+                      .addField("Les déplacements :" , "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutespour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', les déplacements en ville comme en extérieur demandera cinq minutes\n\nEn extérieur, lorsque vous passez d'une zone à une autre, vous devrez faire : `=Bruit : [KM]`\n\nPar exemple vous passez de la zone 1 KM à 2 KM, vous devrez faire : `=Bruit : 2`")    .setTimestamp()
                       message.channel.send({embed})
                       }
                       }) ;
