@@ -18233,17 +18233,6 @@ bot.on('message', message => {
     }
   });
 
-  bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Horde liste d'objets")) {
-    const embed = new Discord.RichEmbed()
-    .setColor(0xff0000)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Liste d'objets :" , "Voici la liste des objets existants :")    .setTimestamp()
-    message.channel.send({embed})
-    }
-    }) ;
 
       bot.on('message', message => {
         if (message.content.startsWith(prefix + "Transformation")) {
