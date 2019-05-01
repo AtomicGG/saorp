@@ -3859,7 +3859,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Fox défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/1)))
+    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 65){
       const embed = new Discord.RichEmbed()
