@@ -3131,6 +3131,40 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Dog attaque")) {
+    const A = (Math.floor((3)*Math.random()+4))
+    const Z = (Math.floor((4)*Math.random()+6))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait son chien mignon mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang attaque")) {
     const A = (Math.floor((13)*Math.random()+25))
     const B = (Math.floor((100)*Math.random()+1))
@@ -3235,6 +3269,40 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Lapin géant attaque")) {
     const A = (Math.floor((5)*Math.random()+10))
     const Z = (Math.floor((6)*Math.random()+15))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= B & B <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit d'un coup sec sur vous et griffe tout votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " +Z+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Giant bunny attaque")) {
+    const A = (Math.floor((4)*Math.random()+8))
+    const Z = (Math.floor((5)*Math.random()+10))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
       const embed = new Discord.RichEmbed()
@@ -3854,32 +3922,6 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fox défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le Fox tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le Fox cours rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -3889,6 +3931,34 @@ bot.on('message', message => {
     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((3)*Math.random()+3))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Dog défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((2)*Math.random()+2))
     if (B <= 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
