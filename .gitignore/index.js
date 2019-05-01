@@ -3030,6 +3030,40 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Renardo attaque")) {
+    const A = (Math.floor((3)*Math.random()+4))
+    const B = (Math.floor((100)*Math.random()+1))
+    const Z = (Math.floor((3)*Math.random()+1))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renardo :" , ":crossed_swords: Le renardo attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renardo :" , ":crossed_swords: Le renardo sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renardo :" , ":crossed_swords: Le renardo court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Sanglier attaque")) {
     const A = (Math.floor((2)*Math.random()+3))
     const B = (Math.floor((100)*Math.random()+1))
