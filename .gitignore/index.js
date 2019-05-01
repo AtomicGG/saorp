@@ -241,7 +241,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
+      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
       .setTimestamp()
       message.channel.send({embed})
     } else if (X >= 51) {
@@ -255,7 +255,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " +Percil+ "\n:pick: Baies : " +Baie+ "\n:pick: Viandes de lapin : " +ViandeLapin+ "\n:pick: Peaux de lapin : " +PeauLapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
+      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -294,7 +294,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Sanglier+ "\n:crossed_swords: Slimes : " +Renard+ "\n:crossed_swords: Bandits expérimentés : " +Chien+ "\n:crossed_swords: Bandits sombres : " +Bandit+ "\n:crossed_swords: Loups de sang : " +Lapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
       .setTimestamp()
       message.channel.send({embed})
     } else if (X >= 51) {
@@ -309,7 +309,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
-      .addField(":bookmark: Les récompenses une fois la quête accomplis :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -17583,7 +17583,7 @@ bot.on('message', message => {
                   message.channel.send({embed})
                       }
                 }) ;
-                
+
                 bot.on('message', message => {
                   if (message.content === prefix + "Horde liste d'objets 8") {
                     const embed = new Discord.RichEmbed()
@@ -17762,7 +17762,7 @@ bot.on('message', message => {
                     }
               }) ;
 
-              
+
 
               bot.on('message', message => {
                 if (message.content === prefix + "Défense de la ville 3") {
@@ -17775,7 +17775,7 @@ bot.on('message', message => {
                   message.channel.send({embed})
                       }
                 }) ;
-  
+
                 bot.on('message', message => {
                   if (message.content === prefix + "Défense de la ville 4") {
                     const embed = new Discord.RichEmbed()
@@ -17787,7 +17787,7 @@ bot.on('message', message => {
                     message.channel.send({embed})
                         }
                   }) ;
-    
+
 
             bot.on('message', message => {
               if (message.content.startsWith(prefix + "Fabrication")) {
@@ -19760,7 +19760,7 @@ bot.on('message', message => {
                                                         .addField(":flashlight: Fouille zone 4 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un supermarché pillé\n\nCe gigantesque amas de brique et de métal était probablement autrefois un grand centre commercial grouillant d'activité et illuminé de mille feux\n\nAujourd'hui il n'y grouille que de la vermine et autres immondices rampants...\n\nNul doute toutefois qu'il recèle aussi bon nombre de richesses\n\nPour fouiller : `=Fouille supermarché pillé`")
                                                         .setTimestamp()
                                                         message.channel.send({embed})}
-                                                    
+
   }
 });
 
@@ -20021,8 +20021,8 @@ bot.on('message', message => {
                                                                   .addField(":flashlight: Fouille zone 5 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tranchée aménagée\n\nLes nombreux cratères et autres taches de sang séché laissent à penser qu'une bataille de grande envergure s'est déroulée ici\n\nLa plupart des tranchées se sont effondrées, mais il reste quelques trous à fouiller\n\nPour fouiller : `=Fouille tranchée aménagée`")
                                                                   .setTimestamp()
                                                                   message.channel.send({embed})}
-                                                            
-                                                    
+
+
   }
 });
 
@@ -20281,8 +20281,8 @@ bot.on('message', message => {
                                                                   .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tranchée aménagée\n\nLes nombreux cratères et autres taches de sang séché laissent à penser qu'une bataille de grande envergure s'est déroulée ici\n\nLa plupart des tranchées se sont effondrées, mais il reste quelques trous à fouiller\n\nPour fouiller : `=Fouille tranchée aménagée`")
                                                                   .setTimestamp()
                                                                   message.channel.send({embed})}
-                                                            
-                                                    
+
+
   }
 });
 
