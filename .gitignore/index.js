@@ -4414,7 +4414,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
     const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((14)*Math.random()+12))
+    const C = (Math.floor((14)*Math.random()+20))
     if (B <= 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -15408,7 +15408,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = (Math.floor((76)*Math.random()+75))
   const X = (Math.floor((3)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération/)) {
+  if (message.content.startsWith(prefix + /"Achat/fabrication/découverte de la potion moyenne de régénération")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15423,7 +15423,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = (Math.floor((151)*Math.random()+150))
   const X = (Math.floor((3)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de régénération/)) {
+  if (message.content.startsWith(prefix + /"Achat/fabrication/découverte de la potion imposante de régénération")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
