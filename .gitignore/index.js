@@ -3031,7 +3031,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fox attaque")) {
-    const A = (Math.floor((2)*Math.random()+2))
+    const A = (Math.floor((2)*Math.random()+3))
     const B = (Math.floor((100)*Math.random()+1))
     const Z = (Math.floor((2)*Math.random()+1))
     if (B <= 25){
@@ -3132,7 +3132,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Dog attaque")) {
-    const A = (Math.floor((3)*Math.random()+4))
+    const A = (Math.floor((3)*Math.random()+3))
     const Z = (Math.floor((4)*Math.random()+6))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 25){
@@ -3167,6 +3167,40 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup de sang attaque")) {
     const A = (Math.floor((13)*Math.random()+25))
+    const B = (Math.floor((100)*Math.random()+1))
+    const Z = (Math.floor((2)*Math.random()+2))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= B & B <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang :" , ":crossed_swords: Le loup de sang hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et " +Z+ " loups apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Wolf de sang attaque")) {
+    const A = (Math.floor((10)*Math.random()+23))
     const B = (Math.floor((100)*Math.random()+1))
     const Z = (Math.floor((2)*Math.random()+2))
     if (B <= 25){
@@ -3383,6 +3417,30 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bangit expérimenté attaque")) {
+    const A = (Math.floor((7)*Math.random()+13))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit expérimenté :" , ":crossed_swords: Le bandit expérimenté sors deux dagues et s'approche de vous rapidement, mais il ralentis en voyant qu'il perd l'équilibre, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit expérimenté :" , ":crossed_swords: Le bandit expérimenté sors ses deux dagues et les plante sur un endroit vital en souriant, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Citrouille vivante attaque")) {
     const Dégâts = 20
     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
@@ -3485,6 +3543,41 @@ bot.on('message', message => {
     }
   }
 });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bangit sombre attaque")) {
+    const A = (Math.floor((11)*Math.random()+15))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((11)*Math.random()+10))
+    if (B <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (11 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre d'élite attaque")) {
