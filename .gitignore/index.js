@@ -3348,7 +3348,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Slyme attaque")) {
-    const A = (Math.floor((13)*Math.random()+8))
+    const A = (Math.floor((6)*Math.random()+8))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 30){
       const embed = new Discord.RichEmbed()
@@ -3523,7 +3523,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bangit expérimenté attaque")) {
-    const A = (Math.floor((16)*Math.random()+10))
+    const A = (Math.floor((6)*Math.random()+10))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 25){
       const embed = new Discord.RichEmbed()
