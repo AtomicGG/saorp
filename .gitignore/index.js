@@ -3653,7 +3653,6 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bangit sombre attaque")) {
     const A = (Math.floor((11)*Math.random()+15))
     const B = (Math.floor((100)*Math.random()+1))
-    const Z = (Math.floor((6)*Math.random()+5))
     const C = (Math.floor((5)*Math.random()+2))
     if (B <= 25){
       const embed = new Discord.RichEmbed()
@@ -3677,7 +3676,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne et perce votre armure, il inflige " +Z+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne et perce votre armure, il inflige " +A+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -4351,7 +4350,6 @@ bot.on('message', message => {
     let Dégâts = args.slice(2).join(" : ");
     const A = (Math.floor(((Dégâts*0.7))*Math.random()+(Dégâts*0.8)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((8)*Math.random()+4))
     if (B <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
