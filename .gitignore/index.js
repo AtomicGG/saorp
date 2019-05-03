@@ -2944,7 +2944,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Wolf attaque")) {
-    const A = (Math.floor((7)*Math.random()+12))
+    const A = (Math.floor((6)*Math.random()+12))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 35){
       const embed = new Discord.RichEmbed()
