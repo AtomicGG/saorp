@@ -3170,7 +3170,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait son chien mignon mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait le beau, mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
