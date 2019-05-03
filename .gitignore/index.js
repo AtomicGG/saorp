@@ -3097,6 +3097,39 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Boar attaque")) {
+    const A = (Math.floor((3)*Math.random()+4))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (95 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre ni attaquer pendant 1 tour")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chien attaque")) {
     const A = (Math.floor((3)*Math.random()+5))
     const Z = (Math.floor((5)*Math.random()+8))
@@ -3132,8 +3165,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Dog attaque")) {
-    const A = (Math.floor((3)*Math.random()+3))
-    const Z = (Math.floor((4)*Math.random()+6))
+    const A = (Math.floor((3)*Math.random()+4))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 25){
       const embed = new Discord.RichEmbed()
@@ -3149,15 +3181,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait son chien mignon mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -3371,6 +3394,31 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
     const Dégâts = 6
     const A = (Math.floor((4)*Math.random()+5))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bangit débutant attaque")) {
+    const Dégâts = 6
+    const A = (Math.floor((5)*Math.random()+4))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
       const embed = new Discord.RichEmbed()
@@ -4020,6 +4068,33 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Boar défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts*0.8))*Math.random()+(Dégâts/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Sanglier :" , ":shield: Le sanglier recule assez pour que vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Renard défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
@@ -4037,7 +4112,34 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard cours rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
+      .addField(":shield: Renard :" , ":shield: Le renard court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Fox défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard :" , ":shield: Le renard court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -4078,7 +4180,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Dog défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
+    const A = (Math.floor(((Dégâts))*Math.random()+(Dégâts)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((2)*Math.random()+2))
     if (B <= 70){
@@ -4109,6 +4211,34 @@ bot.on('message', message => {
     const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((Dégâts/5)*Math.random()+1))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgré ceci, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes d'une manière étrange au dessus de sa tête ce qui réduit énormément les dégâts qu'il subit, vous lui infligez " +C+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Giant bunny défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = Math.floor((Dégâts*0.8)*Math.random()+(Dégâts*0.5))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = Math.floor((Dégâts*0.2)*Math.random()+(Dégâts*0.1))
     if (B <= 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -4330,6 +4460,33 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit débutant défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant court rapidement en voyant votre coup, ne sachant pas vraiment faire d'esquives, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bangit débutant défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 65){
       const embed = new Discord.RichEmbed()
@@ -11697,7 +11854,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Découverte du bouclier du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Il est impossible d'avoir un autre bouclier en le portant!")
+    .addField(":scales: Découverte du bouclier du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Résistance au saignement : 40 et Il est impossible d'avoir un autre bouclier en le portant!")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
