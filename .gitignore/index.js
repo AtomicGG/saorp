@@ -4071,7 +4071,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Wolf défense")) {
     let degats = args.slice(2).join(" : ");
-    const A = (Math.floor(((degats*2))*Math.random()+degats*1))
+    const A = (Math.floor(((degats*1.5))*Math.random()+degats*1))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 65){
       const embed = new Discord.RichEmbed()
