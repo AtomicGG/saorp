@@ -3814,7 +3814,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit expérimenté défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
+    const A = (Math.floor(((Dégâts*1))*Math.random()+(Dégâts*1)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((6)*Math.random()+10))
     if (B <= 70){
@@ -3940,7 +3940,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit sombre défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
+    const A = (Math.floor(((Dégâts*1))*Math.random()+(Dégâts*1)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((6)*Math.random()+10))
     if (B <= 70){
@@ -4370,7 +4370,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit sombre d'élite défense")) {
     let Dégâts = args.slice(4).join(" : ");
-    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
+    const A = (Math.floor(((Dégâts*1))*Math.random()+(Dégâts*1)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((11)*Math.random()+15))
     if (B <= 70){
@@ -4526,7 +4526,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Wolf gigantesque défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/1.5)))
+    const A = (Math.floor(((Dégâts*0.6))*Math.random()+(Dégâts*0.8)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 85){
       const embed = new Discord.RichEmbed()
