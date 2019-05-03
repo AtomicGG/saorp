@@ -4071,9 +4071,8 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Wolf défense")) {
     let degats = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
+    const A = (Math.floor(((degats*2))*Math.random()+degats*1))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((16)*Math.random()+1))
     if (B <= 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -4088,7 +4087,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup :" , ":shield: Le loup saute sur le côté et arrive à esquiver votre coup, il se met à mordre votre jambe profondément, il inflige " +C+ " points de dégâts")
+      .addField(":shield: Loup :" , ":shield: Le loup saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
       .setTimestamp()
       message.channel.send({embed})
     }
