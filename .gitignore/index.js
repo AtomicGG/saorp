@@ -4217,7 +4217,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup d'élite attaque")) {
-    const A = (Math.floor((33)*Math.random()+24))
+    const A = (Math.floor((9)*Math.random()+24))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 35){
       const embed = new Discord.RichEmbed()
@@ -4303,6 +4303,41 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bangit sombre d'élite attaque")) {
+    const A = (Math.floor((16)*Math.random()+30))
+    const B = (Math.floor((100)*Math.random()+1))
+    const Z = (Math.floor((7)*Math.random()+10))
+    const C = (Math.floor((5)*Math.random()+4))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit sombre d'élite :" , ":crossed_swords: Le bandit sombre d'élite tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit sombre d'élite :" , ":crossed_swords: Le bandit sombre d'élite sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit sombre d'élite :" , ":crossed_swords: Le bandit sombre d'élite sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous et qu'il vous touche et vous empoisonne et perce votre armure, il inflige " +Z+ " points de dégâts et infligera " +C+ " points de dégâts par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre d'élite défense")) {
@@ -4319,6 +4354,34 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
     if (61 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sort légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bangit sombre d'élite défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((11)*Math.random()+15))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sourit avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (11 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -4412,6 +4475,79 @@ bot.on('message', message => {
     }
   }
 });
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Wolf gigantesque attaque")) {
+    const A = (Math.floor((31)*Math.random()+50))
+    const C = (Math.floor((21)*Math.random()+40))
+    const Z = (Math.floor((31)*Math.random()+100))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque hurle et cours rapidement mais glisse sur le côté par son manque d'attention du sol de la salle assez détruit")
+      message.channel.send({embed})
+    }
+    if (36 <= B & B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque lâche un regard meurtrier les yeux injecté de sang avant d'embrocher sa victime, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= B & B <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque arrive à embrocher 3 personnes avec ses immenses griffes, il inflige " +C+ " points de dégâts à chacune d'elle")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque :" , ":crossed_swords: Le loup gigantesque hurle avant de bondir sur une personne, il inflige " +Z+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Wolf gigantesque défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup gigantesque :" , ":shield: Le loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (86 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup gigantesque :" , ":shield: Le loup gigantesque voit que vous vous jetez dessus et il vous projette d'un coup de patte très rapide et repousse votre attaque")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 
 
 
