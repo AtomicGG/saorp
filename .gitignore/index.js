@@ -5099,7 +5099,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(3).join(" : ");
     const A = (Math.floor(((Dégâts*1))*Math.random()+(Dégâts*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((Dégâts*0.6)*Math.random()+(Dégâts*0.7))
+    const C = Math.floor((Dégâts*0.6)*Math.random()+(Dégâts*0.7))
     if (B <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -5129,8 +5129,8 @@ bot.on('message', message => {
   }
 });
 
-
 //////////////////////////////////////////////////////////Grotte monstres////////////////////////////////////////////////////////////////////////////////////
+
 
 
 bot.on('message', message => {
