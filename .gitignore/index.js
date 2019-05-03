@@ -4087,7 +4087,7 @@ bot.on('message', message => {
 });
 
 
-//////////////////////////////////////////////////////////Donjon monstres////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////Donjon sauvages monstres////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -4125,6 +4125,40 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Wolf de sang d'élite attaque")) {
+    const A = (Math.floor((21)*Math.random()+40))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang d'élite :" , ":crossed_swords: Le loup de sang d'élite hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= B && B <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang d'élite :" , ":crossed_swords: Le loup de sang d'élite hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang d'élite :" , ":crossed_swords: Le loup de sang d'élite hurle mais son hurlement n'est pas celui habituelle mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, il inflige " +A+ " points de dégâts et 2 loups d'élite apparaîssent [Les loups qui apparaîssent ne donneront aucunes récompenses]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -4154,6 +4188,84 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Wolf de sang d'élite défense")) {
+    let Dégâts = args.slice(5).join(" : ");
+    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite saute en arrière et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Loup d'élite attaque")) {
+    const A = (Math.floor((33)*Math.random()+24))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup :" , ":crossed_swords: Le loup d'élite sautant sur vous, il n'arrive pas à vous toucher et retombe lourdement au sol, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= B & B <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup :" , ":crossed_swords: Le loup d'élite bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup d'élite défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup :" , ":shield: Le loup d'élite tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup :" , ":shield: Le loup d'élite saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bandit sombre d'élite attaque")) {
