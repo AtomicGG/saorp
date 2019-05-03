@@ -4180,7 +4180,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Dog défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((degats))*Math.random()+(degats)))
+    const A = (Math.floor(Dégâts*Math.random()+Dégâts)
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((2)*Math.random()+2))
     if (B <= 70){
