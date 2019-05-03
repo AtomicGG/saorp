@@ -4071,6 +4071,8 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Boar défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const A = (Math.floor(((Dégâts*0.8))*Math.random()+(Dégâts/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
