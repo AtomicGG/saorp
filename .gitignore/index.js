@@ -146,7 +146,7 @@ bot.on('message', message => {
 
 // Plaines | Quêtes
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaines quêtes accomplies")) {
@@ -177,7 +177,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});*/
+});
 
 //////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
 
@@ -5917,11 +5917,11 @@ bot.on('message', message => {
   }
 })
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Test Plaines combat 1")) {
-    if (/*talkedRecently.has(message.author.id+1000)*/false) {
+    if (/*talkedRecently.has(message.author.id+1000)*//*false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5991,7 +5991,7 @@ bot.on('message', message => {
       talkedRecently.delete(message.author.id+1000);
     }, 600000);
   }
-})
+})*/
 
 //////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
