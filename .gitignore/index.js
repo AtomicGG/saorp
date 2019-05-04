@@ -71,9 +71,9 @@ bot.on('message', message => {
     .addField(":crossed_swords:Pour la suite des coups et défenses possibles :" , "`=Coups et défenses 2`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
-    message.channel.send({embed})}
+    message.channel.send({embed})
   }
-)
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Coups et défenses 2"){
@@ -92,9 +92,9 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n:shield: `=Coup perce armure amélioré : [Vos dégâts]`\n:shield: `=Coup perce armure supérieur : [Vos dégâts]`\n:shield: `=Coup perce armure suprême : [Vos dégâts]`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
-    message.channel.send({embed})}
+    message.channel.send({embed})
   }
-)
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Coups et défenses descriptions"){
@@ -105,9 +105,9 @@ bot.on('message', message => {
     .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\nLe coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\nLe coup précis est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\nLe combo est un enchaînement de coups qui inflige énormément de dégâts mais ayant une chance de toucher très faible\n\nLe coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\nLe coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\nLe coup sauté est un coup ayant une chance de faire tomber la cible\n\nLe cri de provocation sert à provoquer les ennemis\n\nL'esquive permet d'esquiver un coup ou de le prendre\n\nLe blocage sert à réduire les dégâts\n\nLa parade permet de sois prendre plus de dégâts, sois de pouvoir lui en infliger\n\nL'interception permet de prendre une partie des dégâts d'une attaque à la place d'un allié")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
-    message.channel.send({embed})}
+    message.channel.send({embed})
   }
-)
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Coups et défenses apprentissage"){
@@ -140,13 +140,13 @@ bot.on('message', message => {
     .addField(":sparkles: Niveau requis pour effectuer un combo :" , ":sparkles: Niveau 10")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
-    message.channel.send({embed})}
+    message.channel.send({embed})
   }
-)
+})
 
 // Plaines | Quêtes
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaines quêtes accomplies")) {
@@ -177,7 +177,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 //////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
 
