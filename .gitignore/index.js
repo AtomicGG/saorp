@@ -5944,14 +5944,14 @@ bot.on('message', message => {
         message.channel.send({embed})
         break
         case 2 :
-        const embed = new Discord.RichEmbed()
+        const bla = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
         .addField(":sunrise_over_mountains: Plaines cas 2 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants :\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 0\n:crossed_swords: Chien(s) : 0\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
         .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
         .setTimestamp()
-        message.channel.send({embed})
+        message.channel.send({bla})
         break
         case 3 :/*
         const embed3 = new Discord.RichEmbed()
