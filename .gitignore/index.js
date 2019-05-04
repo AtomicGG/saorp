@@ -16792,7 +16792,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
   const HP = (Math.floor((27)*Math.random()+24))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de force")) {
     const embed = new Discord.RichEmbed()
