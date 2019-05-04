@@ -3067,7 +3067,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Boar attaque")) {
-    const A = (Math.floor((3)*Math.random()+4))
+    const A = (Math.floor((3)*Math.random()+3))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
       const embed = new Discord.RichEmbed()
@@ -3179,7 +3179,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Dog attaque")) {
-    const A = (Math.floor((3)*Math.random()+4))
+    const A = (Math.floor((2)*Math.random()+4))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 25){
       const embed = new Discord.RichEmbed()
@@ -3189,7 +3189,7 @@ bot.on('message', message => {
       .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
       message.channel.send({embed})
     }
-    if (26 <= B & B <= 90){
+    if (26 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3238,7 +3238,7 @@ bot.on('message', message => {
     const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((2)*Math.random()+2))
-    if (B <= 70){
+    if (B <= 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3246,7 +3246,7 @@ bot.on('message', message => {
       .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})
     }
-    if (71 <= B){
+    if (76 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
