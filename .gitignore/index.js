@@ -5942,7 +5942,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
         .setTimestamp()
         message.channel.send({embed1})
-        break;
+        break
         case 2 :
         const embed2 = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -5952,7 +5952,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
         .setTimestamp()
         message.channel.send({embed2})
-        break;
+        break
         case 3 :
         const embed3 = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -5962,7 +5962,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
         .setTimestamp()
         message.channel.send({embed3})
-        break;
+        break
         case 4 :
         const embed4 = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -5972,7 +5972,7 @@ bot.on('message', message => {
         .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
         .setTimestamp()
         message.channel.send({embed4})
-        break;
+        break
         case 5 :
         const embed5 = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
