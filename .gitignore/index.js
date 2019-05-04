@@ -6311,9 +6311,69 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup normal +0")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((11)*Math.random()+1*(degats)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (26 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire d'esquive !"*/)
+      .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup normal amélioré")) {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (21 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire d'esquive !"*/)
+      .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup normal +5")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((16)*Math.random()+1*(degats)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 20){
       const embed = new Discord.RichEmbed()
@@ -6406,6 +6466,36 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Coup précis simple")) {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de parade !"*/)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup léthal +0")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((56)*Math.random()+1*(degats)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
       const embed = new Discord.RichEmbed()
