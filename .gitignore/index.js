@@ -16794,7 +16794,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = (Math.floor((27)*Math.random()+24))
-  if (message.content.startsWith //(prefix + "Achat/fabrication/découverte de la potion imposante de force")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de force")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
