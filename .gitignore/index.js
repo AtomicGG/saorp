@@ -6465,7 +6465,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup précis simple")) {
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*1.1)*Math.random()+1*(degats*1.5)))
+    const A = (Math.floor((degats*1)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 50){
       const embed = new Discord.RichEmbed()
@@ -6495,9 +6495,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup léthal +0")) {
     let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((56)*Math.random()+1*(degats)))
+    const A = (Math.floor((degats*1)*Math.random()+1*(degats*1.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
+    if (B <= 52){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6507,7 +6507,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (51 <= B){
+    if (53 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
