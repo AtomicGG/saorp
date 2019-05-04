@@ -144,12 +144,12 @@ bot.on('message', message => {
   }
 })
 
-// Plaines | Quêtes
+// Plaine | Quêtes
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Plaines quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Plaine quêtes accomplies")) {
     let lvl = args.slice(3).join(" : ");
     const control = (Math.floor((30) * Math.random() + 30))
     const xp = control - (lvl * 3)
@@ -166,7 +166,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(FF <= 0) {
+    if(xp <= 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -179,45 +179,47 @@ bot.on('message', message => {
   }
 });
 
-//////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
+// Fôrets | Quêtes
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt quêtes accomplies")) {
-    let X = args.slice(3).join(" : ");
-    const A = (Math.floor((50)*Math.random()+50))
-    const Colsplaines = (Math.floor((50)*Math.random()+50))
-    const FF = A-(X*4)
-    //const Orge = (Math.floor((31)*Math.random()+20))
-    const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
-    const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
-    const Clef = (Math.floor((2-(0.90))*Math.random()))
-    if(FF > 0) {
+    let lvl = args.slice(3).join(" : ");
+    const control = (Math.floor((50) * Math.random() + 50))
+    const cols = (Math.floor((50) * Math.random() + 50))
+    const xp = control - (lvl * 4)
+    const potionLegereSoin = (Math.floor((2 * 0.25) * Math.random()))
+    const stuffPeauResistante = (Math.floor((2 * 0.80) * Math.random()))
+    const clefDonjonSauvage = (Math.floor((2 - (0.90)) * Math.random()))
+    if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines/*+ "\n:candy: Sucres d'orge : " +Orge*/+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +xp+ "\n:large_orange_diamond: Cols : " +cols+ "\n:syringe: Potion légère de soin : " +potionLegereSoin+ "\n:scales: Equipement en peau résistante au choix : " +stuffPeauResistante+ "\n:scales: Clef du donjon sauvage : " +clefDonjonSauvage)
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (FF <= 0) {
+    if (xp <= 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion légère de soin : " +Potionsplaines+ "\n:scales: Equipement en peau résistante au choix : " +Equipementsplaines/*+ "\n:candy: Sucres d'orge : " +Orge*/+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +cols+ "\n:syringe: Potion légère de soin : " +potionLegereSoin+ "\n:scales: Equipement en peau résistante au choix : " +stuffPeauResistante+ "\n:scales: Clef du donjon sauvage : " +clefDonjonSauvage)
       .setTimestamp()
       message.channel.send({embed})
     }
   }
-}) ;
+});
+
+//////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
+
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Plaines quêtes"){
+  if (message.content === (prefix) + "Plaine quêtes"){
     const X = (Math.floor((100)*Math.random()+1))
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -244,7 +246,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
+      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
       .setTimestamp()
       message.channel.send({embed})
     } else if (X >= 51) {
@@ -326,7 +328,7 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Cueilleur/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plaines cueillir")) {
+  if (message.content.startsWith(prefix + "Plaine cueillir")) {
     const Persils = (Math.floor((3*0.25)*Math.random()+1))
     const Herbe = (Math.floor((3*0.25)*Math.random()+1))
     const Baies = (Math.floor((3*0.25)*Math.random()+1))
@@ -615,7 +617,7 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Chasseur/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plaines chasser")) {
+  if (message.content.startsWith(prefix + "Plaine chasser")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -5868,11 +5870,11 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////Plaines/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Plaines"){
+  if (message.content === (prefix) + "Plaine"){
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaines combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaines cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaines chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaines quêtes`")
+    .addField(":sunrise_over_mountains: Plaine :" , ":sunrise_over_mountains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaine combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaine cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaine chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaine quêtes`")
     .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -5884,7 +5886,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Plaines combat")) {
+  if (message.content.startsWith(prefix + "Plaine combat")) {
     let Z = args.slice(2).join(" : ");
     if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
@@ -5920,7 +5922,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Plaines combat 1")) {
+  if (message.content.startsWith(prefix + "Test Plaine combat 1")) {
     if (/*talkedRecently.has(message.author.id+1000)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
