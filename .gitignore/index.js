@@ -148,7 +148,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Plaine quêtes"){
-    const roll = (Math.floor((100) * Math.random() + 1))
+    const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -164,11 +164,11 @@ bot.on('message', message => {
         setTimeout(() => {
           talkedRecently.delete(message.author.id+18000);
         }, 86400000);
-        const Sanglier = (Math.floor((3) * Math.random() + 2))
-        const Renard = (Math.floor((3) * Math.random() + 2))
-        const Chien = (Math.floor((3) * Math.random() + 2))
-        const Bandit = (Math.floor((2) * Math.random() + 1))
-        const Lapin = (Math.floor((2 * 0.75) * Math.random()))
+        const Sanglier = Math.floor(3 * Math.random() + 2)
+        const Renard = Math.floor(3 * Math.random() + 2)
+        const Chien = Math.floor(3 * Math.random() + 2)
+        const Bandit = Math.floor(2 * Math.random() + 1)
+        const Lapin = Math.floor(2 * 0.75 * Math.random())
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -180,10 +180,10 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
       if (roll >= 51) {
-        const Percil = (Math.floor((2) * Math.random() +1 ))
-        const Baie = (Math.floor((2) * Math.random() + 1))
-        const ViandeLapin = (Math.floor((2) * Math.random()))
-        const PeauLapin = (Math.floor((2) * Math.random()))
+        const Percil = Math.floor(2 * Math.random() +1 )
+        const Baie = Math.floor(2 * Math.random() + 1)
+        const ViandeLapin = Math.floor(2 * Math.random())
+        const PeauLapin = Math.floor(2 * Math.random())
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -207,11 +207,11 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaine quêtes accomplies")) {
     let lvl = args.slice(3).join(" : ");
-    const control = (Math.floor((30) * Math.random() + 30))
+    const control = Math.floor(30 * Math.random() + 30)
     const xp = control - (lvl * 3)
-    const cols = (Math.floor((30) * Math.random() + 30))
-    const potionFaibleSoin = (Math.floor((2 * 0.25) * Math.random()))
-    const stuffPeauArrache = (Math.floor((2 * 0.80) * Math.random()))
+    const cols = Math.floor(30 * Math.random() + 30)
+    const potionFaibleSoin = Math.floor(2 * 0.25 * Math.random())
+    const stuffPeauArrache = Math.floor(2 * 0.80 * Math.random())
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -239,10 +239,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Plaine cueillir")) {
-    const Persils = (Math.floor((3 * 0.25)*Math.random() + 1))
-    const Herbe = (Math.floor((3 * 0.25)*Math.random() + 1))
-    const Baies = (Math.floor((3 * 0.25)*Math.random() + 1))
-    const Exp = (Math.floor((3)*Math.random() + 2))
+    const Persils = Math.floor(3 * 0.25*Math.random() + 1)
+    const Herbe = Math.floor(3 * 0.25*Math.random() + 1)
+    const Baies = Math.floor(3 * 0.25*Math.random() + 1)
+    const Exp = Math.floor(3 * Math.random() + 2)
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -269,11 +269,44 @@ bot.on('message', message => {
   }
 })
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plaine chasser")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Viande = Math.floor(3 * Math.random() + 1)
+      const Peau = Math.floor((2 - 0.50) * Math.random())
+      const Coeur = Math.floor((2 - 0.75) * Math.random())
+      const Oeil = Math.floor((2 - 0.75) * Math.random())
+      const Exp = Math.floor(3 * Math.random() + 2)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de lapin : " +Viande+ "\n:knife: Peau de lapin : " +Peau+ "\n:cupid: Coeur de lapin : " +Coeur+ "\n:eye: Oeil de lapin : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
 // Forêt | Quêtes
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Forêt quêtes"){
-    const roll = (Math.floor((100) * Math.random() + 1))
+    const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -289,11 +322,11 @@ bot.on('message', message => {
         setTimeout(() => {
           talkedRecently.delete(message.author.id+18000);
         }, 86400000);
-        const Loup = (Math.floor((3) * Math.random() + 2))
-        const Slime = (Math.floor((3) * Math.random() + 2))
-        const BanditExp = (Math.floor((2) * Math.random()))
-        const BanditSombre = (Math.floor((2 * 0.50) * Math.random()))
-        const LoupDeSang = (Math.floor((2 * 0.75) * Math.random()))
+        const Loup = Math.floor(3 * Math.random() + 2)
+        const Slime = Math.floor(3 * Math.random() + 2)
+        const BanditExp = Math.floor(2 * Math.random())
+        const BanditSombre = Math.floor(2 * 0.50 * Math.random())
+        const LoupDeSang = Math.floor(2 * 0.75 * Math.random())
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -305,11 +338,11 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
       if (roll >= 51) {
-        const Minerai = (Math.floor((2) * Math.random() + 1))
-        const Bois = (Math.floor((2) * Math.random() + 1))
-        const Estragon = (Math.floor((2) * Math.random() + 1))
-        const ViandeTaupe = (Math.floor((2) * Math.random()))
-        const PeauTaupe = (Math.floor((2) * Math.random()))
+        const Minerai = Math.floor(2 * Math.random() + 1)
+        const Bois = Math.floor(2 * Math.random() + 1)
+        const Estragon = Math.floor(2 * Math.random() + 1)
+        const ViandeTaupe = Math.floor(2 * Math.random())
+        const PeauTaupe = Math.floor(2 * Math.random())
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -333,12 +366,12 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt quêtes accomplies")) {
     let lvl = args.slice(3).join(" : ");
-    const control = (Math.floor((50) * Math.random() + 50))
-    const cols = (Math.floor((50) * Math.random() + 50))
+    const control = Math.floor(50 * Math.random() + 50)
+    const cols = Math.floor(50 * Math.random() + 50)
     const xp = control - (lvl * 4)
-    const potionLegereSoin = (Math.floor((2 * 0.25) * Math.random()))
-    const stuffPeauResistante = (Math.floor((2 * 0.80) * Math.random()))
-    const clefDonjonSauvage = (Math.floor((2 - (0.90)) * Math.random()))
+    const potionLegereSoin = Math.floor(2 * 0.25 * Math.random())
+    const stuffPeauResistante = Math.floor(2 * 0.80 * Math.random())
+    const clefDonjonSauvage = Math.floor((2 - (0.90)) * Math.random())
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -376,9 +409,9 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Estragon = (Math.floor((3 * 0.25)*Math.random() + 1))
-      const Herbe = (Math.floor((3 * 0.25)*Math.random() + 1))
-      const Exp = (Math.floor((4)*Math.random() + 4))
+      const Estragon = Math.floor(3 * 0.25 * Math.random() + 1)
+      const Herbe = Math.floor(3 * 0.25 * Math.random() + 1)
+      const Exp = Math.floor(4 * Math.random() + 4)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -407,9 +440,9 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const CuivreMediocre = (Math.floor((3) * Math.random() + 1))
-      const CuivreCommun = (Math.floor((2 * 0.90) * Math.random()))
-      const Exp = (Math.floor((3) * Math.random() + 2))
+      const CuivreMediocre = Math.floor(3 * Math.random() + 1)
+      const CuivreCommun = Math.floor(2 * 0.90 * Math.random())
+      const Exp = Math.floor(3 * Math.random() + 2)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -438,9 +471,9 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const BoisMediocre = (Math.floor((3) * Math.random() + 1))
-      const BoisCommun = (Math.floor((2 - (0.75)) * Math.random()))
-      const Exp = (Math.floor((3) * Math.random() + 2))
+      const BoisMediocre = Math.floor(3 * Math.random() + 1)
+      const BoisCommun = Math.floor((2 - (0.75)) * Math.random())
+      const Exp = Math.floor(3 * Math.random() + 2)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -471,10 +504,10 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Basilic = (Math.floor((3 * 0.25) * Math.random() + 1))
-      const PlantrusMediocre = (Math.floor((3 * 0.5) * Math.random()))
-      const Exp = (Math.floor((5) * Math.random() + 8))
-      const PlantrusCommun = (Math.floor((2 * 0.75) * Math.random()))
+      const Basilic = Math.floor(3 * 0.25 * Math.random() + 1)
+      const PlantrusMediocre = Math.floor(3 * 0.5 * Math.random())
+      const Exp = Math.floor(5 * Math.random() + 8)
+      const PlantrusCommun = Math.floor(2 * 0.75 * Math.random())
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -503,15 +536,46 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const CuivreCommun = (Math.floor((2 * 0.5) * Math.random() + 1))
-      const CuivreRare = (Math.floor((2 * 0.80) * Math.random()))
-      const Exp = (Math.floor((4) * Math.random() + 4))
+      const CuivreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
+      const CuivreRare = Math.floor(2 * 0.80 * Math.random())
+      const Exp = Math.floor(4 * Math.random() + 4)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
       .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre commun : " + CuivreCommun + "\n:pick: Cuivre rare : " + CuivreRare + "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Montagne bûcheronner")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const BoisCommun = Math.floor(2 * 0.5 * Math.random() + 1)
+      const BoisRare = Math.floor((2 - 0.75) * Math.random())
+      const Exp = Math.floor(4 * Math.random() + 4)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
+      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n:deciduous_tree: Bois de frêne rare : " + BoisRare + "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -536,10 +600,10 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const PlantrusCommun = (Math.floor((2 * 0.5) * Math.random() + 1))
-      const PlantrusRare = (Math.floor((2 * 0.75) * Math.random()))
-      const Exp = (Math.floor((7) * Math.random() + 12))
-      const PlantrusParfait = (Math.floor((2 * 0.95) * Math.random()))
+      const PlantrusCommun = Math.floor(2 * 0.5 * Math.random() + 1)
+      const PlantrusRare = Math.floor(2 * 0.75 * Math.random())
+      const Exp = Math.floor(7 * Math.random() + 12)
+      const PlantrusParfait = Math.floor(2 * 0.95 * Math.random())
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -568,10 +632,10 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const CuivreRare = (Math.floor((2 * 0.5) * Math.random() + 1))
-      const CuivreParfait = (Math.floor((2 * 0.80) * Math.random()))
-      const Feu = (Math.floor((2 * 0.95) * Math.random()))
-      const Exp = (Math.floor((5) * Math.random() + 8))
+      const CuivreRare = Math.floor(2 * 0.5 * Math.random() + 1)
+      const CuivreParfait = Math.floor(2 * 0.80 * Math.random())
+      const Feu = Math.floor(2 * 0.95 * Math.random())
+      const Exp = Math.floor(5 * Math.random() + 8)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -588,75 +652,9 @@ bot.on('message', message => {
   }
 })
 
-//////////////////////////////////////////////////////////Bucheron/////////////////////////////////////////////////////////////////////////////////////
-
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Montagne bûcheronner")) {
-    if (talkedRecently.has(message.author.id+19)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const Bois = (Math.floor((2*0.5)*Math.random()+1))
-      const BoisRare = (Math.floor((2-(0.75))*Math.random()))
-      const Exp = (Math.floor((4)*Math.random()+4))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
-      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne commun : " +Bois+ "\n:deciduous_tree: Bois de frêne rare : " +BoisRare+ "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " +Exp)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+19);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+19);
-    }, 3600000);
-  }
-})
-
 //////////////////////////////////////////////////////////Chasseur/////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plaine chasser")) {
-    if (talkedRecently.has(message.author.id+19)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const Viande = (Math.floor((3)*Math.random()+1))
-      const Peau = (Math.floor((2-0.50)*Math.random()))
-      const Coeur = (Math.floor((2-0.75)*Math.random()))
-      const Oeil = (Math.floor((2-0.75)*Math.random()))
-      const Exp = (Math.floor((3)*Math.random()+2))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de lapin : " +Viande+ "\n:knife: Peau de lapin : " +Peau+ "\n:cupid: Coeur de lapin : " +Coeur+ "\n:eye: Oeil de lapin : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+19);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+19);
-    }, 3600000);
-  }
-})
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt chasser")) {
