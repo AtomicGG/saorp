@@ -1,3 +1,5 @@
+// Connexion
+
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const talkedRecently = new Set();
@@ -36,7 +38,7 @@ bot.on("message", (message) => {
   }
 });
 
-////////////////////////////////////////////////////////Coups et défenses/////////////////////////////////////////////////////////////////////////////////////
+// Coups & Défenses | Menus
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Coups et défenses"){
@@ -74,19 +76,6 @@ bot.on('message', message => {
 )
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Coups et défenses descriptions"){
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\nLe coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\nLe coup précis est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\nLe combo est un enchaînement de coups qui inflige énormément de dégâts mais ayant une chance de toucher très faible\n\nLe coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\nLe coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\nLe coup sauté est un coup ayant une chance de faire tomber la cible\n\nLe cri de provocation sert à provoquer les ennemis\n\nL'esquive permet d'esquiver un coup ou de le prendre\n\nLe blocage sert à réduire les dégâts\n\nLa parade permet de sois prendre plus de dégâts, sois de pouvoir lui en infliger\n\nL'interception permet de prendre une partie des dégâts d'une attaque à la place d'un allié")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})}
-  }
-)
-
-bot.on('message', message => {
   if (message.content === (prefix) + "Coups et défenses 2"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
@@ -101,6 +90,19 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour effectuer un coup sauté :" , ":shield: `=Coup sauté simple : [Vos dégâts]`\n:shield: `=Coup sauté amélioré : [Vos dégâts]`\n:shield: `=Coup sauté supérieur : [Vos dégâts]`\n:shield: `=Coup sauté suprême : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n:shield: `=Coup perce armure amélioré : [Vos dégâts]`\n:shield: `=Coup perce armure supérieur : [Vos dégâts]`\n:shield: `=Coup perce armure suprême : [Vos dégâts]`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})}
+  }
+)
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Coups et défenses descriptions"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\nLe coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\nLe coup précis est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\nLe combo est un enchaînement de coups qui inflige énormément de dégâts mais ayant une chance de toucher très faible\n\nLe coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\nLe coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\nLe coup sauté est un coup ayant une chance de faire tomber la cible\n\nLe cri de provocation sert à provoquer les ennemis\n\nL'esquive permet d'esquiver un coup ou de le prendre\n\nLe blocage sert à réduire les dégâts\n\nLa parade permet de sois prendre plus de dégâts, sois de pouvoir lui en infliger\n\nL'interception permet de prendre une partie des dégâts d'une attaque à la place d'un allié")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})}
@@ -142,26 +144,25 @@ bot.on('message', message => {
   }
 )
 
-//////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
+// Plaines | Quêtes
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaines quêtes accomplies")) {
-    let X = args.slice(3).join(" : ");
-    const A = (Math.floor((30)*Math.random()+30))
-    const FF = A-(X*3)
-    const Colsplaines = (Math.floor((30)*Math.random()+30))
-    //const Orge = (Math.floor((31)*Math.random()+20))
-    const Potionsplaines = (Math.floor((2*0.25)*Math.random()))
-    const Equipementsplaines = (Math.floor((2*0.80)*Math.random()))
-    if(FF > 0) {
+    let lvl = args.slice(3).join(" : ");
+    const control = (Math.floor((30) * Math.random() + 30))
+    const xp = control - (lvl * 3)
+    const cols = (Math.floor((30) * Math.random() + 30))
+    const potionFaibleSoin = (Math.floor((2 * 0.25) * Math.random()))
+    const stuffPeauArrache = (Math.floor((2 * 0.80) * Math.random()))
+    if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion faible de soin : " +Potionsplaines+ "\n:scales: Equipement en peau arraché au choix : " +Equipementsplaines/*+ "\n:candy: Sucres d'orge : " +Orge*/)
+      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -171,12 +172,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +Colsplaines+ "\n:syringe: Potion faible de soin : " +Potionsplaines+ "\n:scales: Equipement en peau arraché au choix : " +Equipementsplaines/*+ "\n:candy: Sucres d'orge : " +Orge*/)
+      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
       .setTimestamp()
       message.channel.send({embed})
     }
   }
-}) ;
+});
+
+//////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -5906,6 +5909,83 @@ bot.on('message', message => {
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Test Plaines combat 1")) {
+    if (/*talkedRecently.has(message.author.id+1000)*/) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const schema = Math.floor(5*Math.random()+1)
+      switch(schema){
+        case 1 :
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":sunrise_over_mountains: Plaines cas 1 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : 3\n:crossed_swords: Sanglier(s) : 0\n:crossed_swords: Chien(s) : 0\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+        break;
+        case 2 :
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":sunrise_over_mountains: Plaines cas 2 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 0\n:crossed_swords: Chien(s) : 0\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+        break;
+        case 3 :
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":sunrise_over_mountains: Plaines cas 3 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 1\n:crossed_swords: Chien(s) : 0\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+        break;
+        case 4 :
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":sunrise_over_mountains: Plaines cas 4 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 1\n:crossed_swords: Chien(s) : 1\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+        break;
+        case 5 :
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":sunrise_over_mountains: Plaines cas 5 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 0\n:crossed_swords: Chien(s) : 1\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+        break;
+        default :
+        break;
+      }
     }
     talkedRecently.add(message.author.id+1000);
     setTimeout(() => {
