@@ -5984,7 +5984,6 @@ bot.on('message', message => {
         message.channel.send({embed})
         break;
         default :
-        break;
       }
     }
     talkedRecently.add(message.author.id+1000);
