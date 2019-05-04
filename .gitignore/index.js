@@ -16820,7 +16820,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
   const HP = (Math.floor((13)*Math.random()+12))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de défense")) {
     const embed = new Discord.RichEmbed()
