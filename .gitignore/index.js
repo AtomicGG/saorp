@@ -148,7 +148,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Plaine quêtes"){
-    const roll = (Math.floor((100)*Math.random()+1))
+    const roll = (Math.floor((100) * Math.random() + 1))
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -164,32 +164,32 @@ bot.on('message', message => {
         setTimeout(() => {
           talkedRecently.delete(message.author.id+18000);
         }, 86400000);
-        const Sanglier = (Math.floor((3)*Math.random()+2))
-        const Renard = (Math.floor((3)*Math.random()+2))
-        const Chien = (Math.floor((3)*Math.random()+2))
-        const Bandit = (Math.floor((2)*Math.random()+1))
-        const Lapin = (Math.floor((2*0.75)*Math.random()))
+        const Sanglier = (Math.floor((3) * Math.random() + 2))
+        const Renard = (Math.floor((3) * Math.random() + 2))
+        const Chien = (Math.floor((3) * Math.random() + 2))
+        const Bandit = (Math.floor((2) * Math.random() + 1))
+        const Lapin = (Math.floor((2 * 0.75) * Math.random()))
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
+        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " + Sanglier + "\n:crossed_swords: Renards : " + Renard + "\n:crossed_swords: Chiens errants : " + Chien + "\n:crossed_swords: Bandits débutants : " + Bandit + "\n:crossed_swords: Lapins géants : " + Lapin)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
       if (roll >= 51) {
-        const Percil = (Math.floor((2)*Math.random()+1))
-        const Baie = (Math.floor((2)*Math.random()+1))
-        const ViandeLapin = (Math.floor((2)*Math.random()))
-        const PeauLapin = (Math.floor((2)*Math.random()))
+        const Percil = (Math.floor((2) * Math.random() +1 ))
+        const Baie = (Math.floor((2) * Math.random() + 1))
+        const ViandeLapin = (Math.floor((2) * Math.random()))
+        const PeauLapin = (Math.floor((2) * Math.random()))
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " +Percil+ "\n:pick: Baies : " +Baie+ "\n:pick: Viandes de lapin : " +ViandeLapin+ "\n:pick: Peaux de lapin : " +PeauLapin)
+        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " + Percil + "\n:pick: Baies : " + Baie + "\n:pick: Viandes de lapin : " + ViandeLapin + "\n:pick: Peaux de lapin : " + PeauLapin)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -235,11 +235,45 @@ bot.on('message', message => {
   }
 });
 
-// Fôrets | Quêtes
+// Plaine | Métiers
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plaine cueillir")) {
+    const Persils = (Math.floor((3 * 0.25)*Math.random() + 1))
+    const Herbe = (Math.floor((3 * 0.25)*Math.random() + 1))
+    const Baies = (Math.floor((3 * 0.25)*Math.random() + 1))
+    const Exp = (Math.floor((3)*Math.random() + 2))
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Persil : " + Persils + "\n:wilted_rose: Herbe médicinale faible : " + Herbe + "\n:wilted_rose: Baie : " + Baies + "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+// Forêt | Quêtes
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Forêt quêtes"){
-    const roll = (Math.floor((100)*Math.random()+1))
+    const roll = (Math.floor((100) * Math.random() + 1))
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -265,7 +299,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Loup+ "\n:crossed_swords: Slimes : " +Slime+ "\n:crossed_swords: Bandits expérimentés : " +BanditExp+ "\n:crossed_swords: Bandits sombres : " +BanditSombre+ "\n:crossed_swords: Loups de sang : " +LoupDeSang)
+        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " + Loup + "\n:crossed_swords: Slimes : " + Slime + "\n:crossed_swords: Bandits expérimentés : " + BanditExp + "\n:crossed_swords: Bandits sombres : " + BanditSombre + "\n:crossed_swords: Loups de sang : " + LoupDeSang)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -281,7 +315,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
+        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " + Minerai + "\n:pick: Bois de frêne médiocres : " + Bois + "\n:pick: Estragons : " + Estragon + "\n:pick: Viandes de taupe : " + ViandeTaupe + "\n:pick: Peaux de taupe : " + PeauTaupe)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -311,7 +345,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " +xp+ "\n:large_orange_diamond: Cols : " +cols+ "\n:syringe: Potion légère de soin : " +potionLegereSoin+ "\n:scales: Equipement en peau résistante au choix : " +stuffPeauResistante+ "\n:scales: Clef du donjon sauvage : " +clefDonjonSauvage)
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Clef du donjon sauvage : " + clefDonjonSauvage)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -321,46 +355,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +cols+ "\n:syringe: Potion légère de soin : " +potionLegereSoin+ "\n:scales: Equipement en peau résistante au choix : " +stuffPeauResistante+ "\n:scales: Clef du donjon sauvage : " +clefDonjonSauvage)
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Clef du donjon sauvage : " + clefDonjonSauvage)
       .setTimestamp()
       message.channel.send({embed})
     }
   }
 });
 
-//////////////////////////////////////////////////////////Cueilleur/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plaine cueillir")) {
-    const Persils = (Math.floor((3*0.25)*Math.random()+1))
-    const Herbe = (Math.floor((3*0.25)*Math.random()+1))
-    const Baies = (Math.floor((3*0.25)*Math.random()+1))
-    const Exp = (Math.floor((3)*Math.random()+2))
-    if (talkedRecently.has(message.author.id+19)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Persil : " +Persils+ "\n:wilted_rose: Herbe médicinale faible : " +Herbe+ "\n:wilted_rose: Baie : " +Baies+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+19);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+19);
-    }, 3600000);
-  }
-})
+// Forêt | Métiers
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt cueillir")) {
@@ -374,15 +376,15 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Persils = (Math.floor((3*0.25)*Math.random()+1))
-      const Herbe = (Math.floor((3*0.25)*Math.random()+1))
-      const Exp = (Math.floor((4)*Math.random()+4))
+      const Estragon = (Math.floor((3 * 0.25)*Math.random() + 1))
+      const Herbe = (Math.floor((3 * 0.25)*Math.random() + 1))
+      const Exp = (Math.floor((4)*Math.random() + 4))
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Estragon : " +Persils+ "\n:wilted_rose: Herbe médicinale : " +Herbe+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Estragon : " + Estragon + "\n:wilted_rose: Herbe médicinale : " + Herbe + "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -392,72 +394,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Montagne cueillir")) {
-    if (talkedRecently.has(message.author.id+19)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const Persils = (Math.floor((3*0.25)*Math.random()+1))
-      const Herbe = (Math.floor((3*0.5)*Math.random()))
-      const Exp = (Math.floor((5)*Math.random()+8))
-      const Plantrus = (Math.floor((2*0.75)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Basilic : " +Persils+ "\n:wilted_rose: Plantrus médiocre : " +Herbe+ "\n:wilted_rose: Plantrus commun : " +Plantrus+ "\n:sparkles: Points d'expérience dans la spécialisation 'Cueilleur' : " +Exp)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+19);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+19);
-    }, 3600000);
-  }
-})
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Grotte cueillir")) {
-    if (talkedRecently.has(message.author.id+19)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const Persils = (Math.floor((2*0.5)*Math.random()+1))
-      const Herbe = (Math.floor((2*0.75)*Math.random()))
-      const Exp = (Math.floor((7)*Math.random()+12))
-      const Plantrus = (Math.floor((2*0.95)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Plantrus commun : " +Persils+ "\n:wilted_rose: Plantrus rare : " +Herbe+ "\n:wilted_rose: Plantrus parfait : " +Plantrus+ "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " +Exp)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+19);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+19);
-    }, 3600000);
-  }
-})
-
-//////////////////////////////////////////////////////////Mineur/////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt miner")) {
@@ -471,15 +407,80 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Cuivre = (Math.floor((3)*Math.random()+1))
-      const CuivreRare = (Math.floor((2*0.90)*Math.random()))
-      const Exp = (Math.floor((3)*Math.random()+2))
+      const CuivreMediocre = (Math.floor((3) * Math.random() + 1))
+      const CuivreCommun = (Math.floor((2 * 0.90) * Math.random()))
+      const Exp = (Math.floor((3) * Math.random() + 2))
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre médiocre : " +Cuivre+ "\n:pick: Cuivre commun : " +CuivreRare+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre médiocre : " + CuivreMediocre + "\n:pick: Cuivre commun : " + CuivreCommun + "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Forêt bûcheronner")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const BoisMediocre = (Math.floor((3) * Math.random() + 1))
+      const BoisCommun = (Math.floor((2 - (0.75)) * Math.random()))
+      const Exp = (Math.floor((3) * Math.random() + 2))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
+      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne médiocre : " + BoisMediocre + "\n:deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+// Montagne | Métiers
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Montagne cueillir")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Basilic = (Math.floor((3 * 0.25) * Math.random() + 1))
+      const PlantrusMediocre = (Math.floor((3 * 0.5) * Math.random()))
+      const Exp = (Math.floor((5) * Math.random() + 8))
+      const PlantrusCommun = (Math.floor((2 * 0.75) * Math.random()))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Basilic : " + Basilic + "\n:wilted_rose: Plantrus médiocre : " + PlantrusMediocre + "\n:wilted_rose: Plantrus commun : " + PlantrusCommun + "\n:sparkles: Points d'expérience dans la spécialisation 'Cueilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -502,15 +503,49 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Cuivre = (Math.floor((2*0.5)*Math.random()+1))
-      const CuivreRare = (Math.floor((2*0.80)*Math.random()))
-      const Exp = (Math.floor((4)*Math.random()+4))
+      const CuivreCommun = (Math.floor((2 * 0.5) * Math.random() + 1))
+      const CuivreRare = (Math.floor((2 * 0.80) * Math.random()))
+      const Exp = (Math.floor((4) * Math.random() + 4))
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre commun : " +Cuivre+ "\n:pick: Cuivre rare : " +CuivreRare+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre commun : " + CuivreCommun + "\n:pick: Cuivre rare : " + CuivreRare + "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+// Grotte | Métiers
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Grotte cueillir")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const PlantrusCommun = (Math.floor((2 * 0.5) * Math.random() + 1))
+      const PlantrusRare = (Math.floor((2 * 0.75) * Math.random()))
+      const Exp = (Math.floor((7) * Math.random() + 12))
+      const PlantrusParfait = (Math.floor((2 * 0.95) * Math.random()))
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Plantrus commun : " + PlantrusCommun + "\n:wilted_rose: Plantrus rare : " + PlantrusRare + "\n:wilted_rose: Plantrus parfait : " + PlantrusParfait + "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -533,16 +568,16 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Cuivre = (Math.floor((2*0.5)*Math.random()+1))
-      const CuivreRare = (Math.floor((2*0.80)*Math.random()))
-      const Feu = (Math.floor((2*0.95)*Math.random()))
-      const Exp = (Math.floor((5)*Math.random()+8))
+      const CuivreRare = (Math.floor((2 * 0.5) * Math.random() + 1))
+      const CuivreParfait = (Math.floor((2 * 0.80) * Math.random()))
+      const Feu = (Math.floor((2 * 0.95) * Math.random()))
+      const Exp = (Math.floor((5) * Math.random() + 8))
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre rare : " +Cuivre+ "\n:pick: Cuivre parfait : " +CuivreRare+ "\n:pick: Pierre de feu faible : " +Feu+ "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " +Exp)
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre rare : " + CuivreRare + "\n:pick: Cuivre parfait : " + CuivreParfait + "\n:pick: Pierre de feu faible : " + Feu + "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -555,36 +590,7 @@ bot.on('message', message => {
 
 //////////////////////////////////////////////////////////Bucheron/////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Forêt bûcheronner")) {
-    if (talkedRecently.has(message.author.id+19)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const Bois = (Math.floor((3)*Math.random()+1))
-      const BoisRare = (Math.floor((2-(0.75))*Math.random()))
-      const Exp = (Math.floor((3)*Math.random()+2))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
-      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne médiocre : " +Bois+ "\n:deciduous_tree: Bois de frêne commun : " +BoisRare+ "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " +Exp)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+19);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+19);
-    }, 3600000);
-  }
-})
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Montagne bûcheronner")) {
