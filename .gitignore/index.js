@@ -5245,7 +5245,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt minor défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*0.5))
+    const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*0.5)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 70){
       const embed = new Discord.RichEmbed()
