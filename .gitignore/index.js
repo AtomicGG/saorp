@@ -16316,7 +16316,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
   const HP = (Math.floor((151)*Math.random()+150))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt géant rouge")) {
     const embed = new Discord.RichEmbed()
@@ -16527,10 +16527,10 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
   const HP = (Math.floor((76)*Math.random()+75))
   const X = (Math.floor((3)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Achat/fation/découverte de la potion moyenne de régénération")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -16542,10 +16542,10 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
   const HP = (Math.floor((151)*Math.random()+150))
   const X = (Math.floor((3)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Achat/faion/découverte de la potion imposante de régénération")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de régénération")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -16683,7 +16683,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
   const HP = (Math.floor((161)*Math.random()+240))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de soin")) {
     const embed = new Discord.RichEmbed()
@@ -16697,7 +16697,7 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
   const A = (Math.floor((201)*Math.random()+300))
   const B = (Math.floor((13)*Math.random()+18))
   const C = (Math.floor((21)*Math.random()+40))
