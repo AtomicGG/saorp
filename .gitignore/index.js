@@ -147,6 +147,62 @@ bot.on('message', message => {
 // Plaine | Quêtes
 
 bot.on('message', message => {
+  if (message.content === (prefix) + "Plaine quêtes"){
+    const roll = (Math.floor((100)*Math.random()+1))
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 50) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const Sanglier = (Math.floor((3)*Math.random()+2))
+        const Renard = (Math.floor((3)*Math.random()+2))
+        const Chien = (Math.floor((3)*Math.random()+2))
+        const Bandit = (Math.floor((2)*Math.random()+1))
+        const Lapin = (Math.floor((2*0.75)*Math.random()))
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 51) {
+        const Percil = (Math.floor((2)*Math.random()+1))
+        const Baie = (Math.floor((2)*Math.random()+1))
+        const ViandeLapin = (Math.floor((2)*Math.random()))
+        const PeauLapin = (Math.floor((2)*Math.random()))
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " +Percil+ "\n:pick: Baies : " +Baie+ "\n:pick: Viandes de lapin : " +ViandeLapin+ "\n:pick: Peaux de lapin : " +PeauLapin)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+18000);
+      }, 86400000);
+    }
+  }
+})
+
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaine quêtes accomplies")) {
@@ -182,6 +238,63 @@ bot.on('message', message => {
 // Fôrets | Quêtes
 
 bot.on('message', message => {
+  if (message.content === (prefix) + "Forêt quêtes"){
+    const roll = (Math.floor((100)*Math.random()+1))
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 50) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const Loup = (Math.floor((3) * Math.random() + 2))
+        const Slime = (Math.floor((3) * Math.random() + 2))
+        const BanditExp = (Math.floor((2) * Math.random()))
+        const BanditSombre = (Math.floor((2 * 0.50) * Math.random()))
+        const LoupDeSang = (Math.floor((2 * 0.75) * Math.random()))
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Loup+ "\n:crossed_swords: Slimes : " +Slime+ "\n:crossed_swords: Bandits expérimentés : " +BanditExp+ "\n:crossed_swords: Bandits sombres : " +BanditSombre+ "\n:crossed_swords: Loups de sang : " +LoupDeSang)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 51) {
+        const Minerai = (Math.floor((2) * Math.random() + 1))
+        const Bois = (Math.floor((2) * Math.random() + 1))
+        const Estragon = (Math.floor((2) * Math.random() + 1))
+        const ViandeTaupe = (Math.floor((2) * Math.random()))
+        const PeauTaupe = (Math.floor((2) * Math.random()))
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+18000);
+      }, 86400000);
+    }
+  }
+})
+
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt quêtes accomplies")) {
@@ -214,116 +327,6 @@ bot.on('message', message => {
     }
   }
 });
-
-//////////////////////////////////////////////////////////Quêtes/////////////////////////////////////////////////////////////////////////////////////
-
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Plaine quêtes"){
-    const X = (Math.floor((100)*Math.random()+1))
-    if (talkedRecently.has(message.author.id+18000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else if (X <= 50) {
-      talkedRecently.add(message.author.id+18000);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+18000);
-      }, 86400000);
-      const Sanglier = (Math.floor((3)*Math.random()+2))
-      const Renard = (Math.floor((3)*Math.random()+2))
-      const Chien = (Math.floor((3)*Math.random()+2))
-      const Bandit = (Math.floor((2)*Math.random()+1))
-      const Lapin = (Math.floor((2*0.75)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " +Sanglier+ "\n:crossed_swords: Renards : " +Renard+ "\n:crossed_swords: Chiens errants : " +Chien+ "\n:crossed_swords: Bandits débutants : " +Bandit+ "\n:crossed_swords: Lapins géants : " +Lapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
-      .setTimestamp()
-      message.channel.send({embed})
-    } else if (X >= 51) {
-      const Percil = (Math.floor((2)*Math.random()+1))
-      const Baie = (Math.floor((2)*Math.random()+1))
-      const ViandeLapin = (Math.floor((2)*Math.random()))
-      const PeauLapin = (Math.floor((2)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " +Percil+ "\n:pick: Baies : " +Baie+ "\n:pick: Viandes de lapin : " +ViandeLapin+ "\n:pick: Peaux de lapin : " +PeauLapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaines quêtes accomplies : [Votre niveau]`" )
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+18000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+18000);
-    }, 86400000);
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Forêt quêtes"){
-    const X = (Math.floor((100)*Math.random()+1))
-    if (talkedRecently.has(message.author.id+18000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else if (X <= 50) {
-      talkedRecently.add(message.author.id+18000);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+18000);
-      }, 86400000);
-      const Sanglier = (Math.floor((3)*Math.random()+2))
-      const Renard = (Math.floor((3)*Math.random()+2))
-      const Chien = (Math.floor((2)*Math.random()))
-      const Bandit = (Math.floor((2*(0.50))*Math.random()))
-      const Lapin = (Math.floor((2*0.75)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " +Sanglier+ "\n:crossed_swords: Slimes : " +Renard+ "\n:crossed_swords: Bandits expérimentés : " +Chien+ "\n:crossed_swords: Bandits sombres : " +Bandit+ "\n:crossed_swords: Loups de sang : " +Lapin)
-      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
-      .setTimestamp()
-      message.channel.send({embed})
-    } else if (X >= 51) {
-      const Minerai = (Math.floor((2)*Math.random()+1))
-      const Bois = (Math.floor((2)*Math.random()+1))
-      const Estragon = (Math.floor((2)*Math.random()+1))
-      const ViandeTaupe = (Math.floor((2)*Math.random()))
-      const PeauTaupe = (Math.floor((2)*Math.random()))
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " +Minerai+ "\n:pick: Bois de frêne médiocres : " +Bois+ "\n:pick: Estragons : " +Estragon+ "\n:pick: Viandes de taupe : " +ViandeTaupe+ "\n:pick: Peaux de taupe : " +PeauTaupe)
-      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+18000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+18000);
-    }, 86400000);
-  }
-})
 
 //////////////////////////////////////////////////////////Cueilleur/////////////////////////////////////////////////////////////////////////////////////
 
