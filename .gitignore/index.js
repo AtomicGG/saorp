@@ -5494,7 +5494,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt combattant :" , ":crossed_swords: Le chien adulte se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
+      .addField(":crossed_swords: Chien adultet :" , ":crossed_swords: Le chien adulte se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
       message.channel.send({embed})
     }
     if (26 <= B & B <= 90){
@@ -5502,7 +5502,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt combattant :" , ":crossed_swords: Le chien adulte tente de vous surprendre en vous mordant la jambe rapidement, il inflige " +A+ " points de dégâts")
+      .addField(":crossed_swords: Chien adulte :" , ":crossed_swords: Le chien adulte tente de vous surprendre en vous mordant la jambe rapidement, il inflige " +A+ " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -5511,7 +5511,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt espion:" , ":crossed_swords: Le chien adulte fonce sur votre bras et le mord sauvagement et inflige " +A+ " et vous fait saignez. Ce qui vous inflige " +C+ " pendant " +D+ " tours")
+      .addField(":crossed_swords: Chien adulte:" , ":crossed_swords: Le chien adulte fonce sur votre bras et le mord sauvagement et inflige " +A+ " et vous fait saignez et vous inflige " +C+ " points de dégâts suplémentaire pendant " +D+ " tours")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -5530,7 +5530,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien adulte tente d'equiver votre coup en partant rapidement en arrière, mais vous l'avez pris de court et votre coup le touche, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Chien adulte :" , ":shield: Le chien adulte tente d'equiver votre coup en partant rapidement en arrière, mais vous l'avez pris de court et votre coup le touche, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})
     }
     if (76 <= B){
@@ -5538,12 +5538,55 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien adulte se faufile des les espace étroit de la grotte. Vous ne pouvez pas l'atteindre ")
+      .addField(":shield: Chien adulte :" , ":shield: Le chien adulte se faufile des les espace étroit de la grotte. Vous ne pouvez pas l'atteindre ")
       .setTimestamp()
       message.channel.send({embed})
     }
   }
 });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt pilion attaque")) {
+    const A = (Math.floor((46)*Math.random()+75))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords: Le kobolt pilion fait tourner son marteau aux dessus de lui et essaye de vous frappez mais vous rater et frappe le sol ce qui fait un trambler le sol")
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords:Le kobolt pilion fait tourner son marteau aux dessus de lui et fait un coup vertical avec son marteau qui vous envoyer contre un mur, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt pilion défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = (Math.floor((Dégâts*0.8)*Math.random()+(Dégâts*0.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt pilione :" , ":shield: Le kobolt pilion tente de bloquer le coup avec son marteau puis réduire les dégâts, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+  }
+});
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt espion attaque")) {
