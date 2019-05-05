@@ -21709,30 +21709,6 @@ bot.on('message', message => {
               .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une cabane de jardin\n\nAu milieu d'un petit square totalement décrépi, vous trouvez un vaste abri de jardin. La porte cède facilement, révélant une vaste pièce remplie d'étagères et d'outillages en tous genres\n\nPour fouiller : `=Fouille cabane de jardin`")
               .setTimestamp()
               message.channel.send({embed})}
-              if(X < 10){
-                const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un laboratoire cosmétique\n\nCe bâtiment lugubre a servi autrefois pour divers tests de produits sur des animaux\n\nCa sent le camphre, l'ether et la charogne\n\nEt ce n'est que l'entrée\n\nPour fouiller : `=Fouille laboratoire cosmétique`")
-                .setTimestamp()
-                message.channel.send({embed})}
-                if(X < 10){
-                  const embed = new Discord.RichEmbed()
-                  .setAuthor(message.author.username , message.author.avatarURL)
-                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setColor(0xff0000)
-                  .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un petit bois obscur\n\nLes restes calcinés d'une forêt\n\nC'était probablement un endroit agréable avant...\n\nAujourd'hui, on prie juste pour ne jamais s'y perdre la nuit\n\nPour fouiller : `=Fouille petit bois obscur`")
-                  .setTimestamp()
-                  message.channel.send({embed})}
-                  if(X < 10){
-                    const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(0xff0000)
-                    .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une petite maison\n\nUne vieille bicoque laissée à l'abandon depuis des années\n\nPresque entièrement ensevelie sous le sable\n\nParfois, vous pouvez entendre des grattements inquiétants venant de ce qui doit être la cave\n\nPour fouiller : `=Fouille petite maison`")
-                    .setTimestamp()
-                    message.channel.send({embed})}
                     if(X < 10){
                       const embed = new Discord.RichEmbed()
                       .setAuthor(message.author.username , message.author.avatarURL)
@@ -21917,10 +21893,801 @@ bot.on('message', message => {
                                                                   .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tranchée aménagée\n\nLes nombreux cratères et autres taches de sang séché laissent à penser qu'une bataille de grande envergure s'est déroulée ici\n\nLa plupart des tranchées se sont effondrées, mais il reste quelques trous à fouiller\n\nPour fouiller : `=Fouille tranchée aménagée`")
                                                                   .setTimestamp()
                                                                   message.channel.send({embed})}
-
-
+                                                                  if(X < 10){
+                                                                    const embed = new Discord.RichEmbed()
+                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                    .setColor(0xff0000)
+                                                                    .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une centrale hydraulique\n\nCette centrale capte les eaux des nappes phréatiques environnantes et les transvase dans de gigantesques réservoirs en béton\n\nLe système de filtrage semble en panne, mais on doit pouvoir récupérer l'eau contaminée stockée ici\n\nPour fouiller : `=Fouille centrale hydraulique`")
+                                                                    .setTimestamp()
+                                                                    message.channel.send({embed})}
+                                                                    if(X < 10){
+                                                                      const embed = new Discord.RichEmbed()
+                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                      .setColor(0xff0000)
+                                                                      .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une épicerie\n\nUne enseigne de la chaîne de magasins Brian Fargo\n\nOn y trouve généralement tout ce qu'il faut pour nettoyer et entretenir sa maison\n\nLes plus démunis y trouveront de quoi manger...\n\nPour fouiller : `=Fouille épicerie`")
+                                                                      .setTimestamp()
+                                                                      message.channel.send({embed})}
+                                                                      if(X < 10){
+                                                                        const embed = new Discord.RichEmbed()
+                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                        .setColor(0xff0000)
+                                                                        .addField(":flashlight: Fouille zone 6 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un fast-food\n\nUne odeur atroce de cadavre faisandé émane de ce bâtiment : les réserves de viande se sont transformées en répugnants monticules de moisissure blanche qui ont commencé à 's'écouler' par les portes...\n\nPour fouiller : `=Fouille fast-food`")
+                                                                        .setTimestamp()
+                                                                        message.channel.send({embed})}
   }
 });
+
+////////////////////////////////////////////////////////////////////Fouille 7 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 7 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+      if(X < 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri de chantier\n\nUn très grand container métallique posé au milieu de nulle part\n\nIl devait se trouver à côté d'un chantier, à une époque, mais il n'en reste rien aujourd'hui\n\nA part cette 'cabane'\n\nPour fouiller : `=Fouille abri de chantier`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X < 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un ancien commissariat\n\nL'imposant bâtiment s'étend sur plusieurs centaines de mètres\n\nIl est divisé en nombreuses salles mais beaucoup se sont effondrées il y a bien longtemps\n\nSi on en croit les nombreux impacts de balles et les barricades improvisées, ce commissariat a été le théâtre d'affrontements particulièrement violents\n\nPour fouiller : `=Fouille ancien commissariat`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X < 10){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un café\n\nLe rendez-vous branché du désert : venez goûter notre Nuka-Cola, spécialité de la maison, aux vrais extraits d'hormones animales\n\nPour fouiller : `=Fouille café`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X < 10){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une bibliothèque de quartier\n\nUn ensemble de plusieurs petites maisons qui constituaient autrefois une bibliothèque de quartier\n\nAujourd'hui, les livres sont, pour la plupart, déchirés ou brûlés, le sol est jonché de pages arrachées et les étagères sont renversées\n\nPour fouiller : `=Fouille bibliothèque de quartier`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X < 10){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une cabane de jardin\n\nAu milieu d'un petit square totalement décrépi, vous trouvez un vaste abri de jardin. La porte cède facilement, révélant une vaste pièce remplie d'étagères et d'outillages en tous genres\n\nPour fouiller : `=Fouille cabane de jardin`")
+              .setTimestamp()
+              message.channel.send({embed})}
+                                        if(X < 10){
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                          .setColor(0xff0000)
+                                          .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un ancien velib\n\nUne ancienne gare à vélo jonchée de pièces de ferrailles, d'outils et de débris en tous genres\n\nPour fouiller : `=Fouille ancien velib`")
+                                          .setTimestamp()
+                                          message.channel.send({embed})}
+                                          if(X < 10){
+                                            const embed = new Discord.RichEmbed()
+                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                            .setColor(0xff0000)
+                                            .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une carlingue d'avion\n\nUn long courrier s'est écrasé au milieu de nulle part...\n\nDifficile de savoir ce qu'il transportait, le sable du désert l'a presque totalement rongé\n\nLa présence de quelques sièges suggère toutefois qu'il avait à son bord des passagers, entre autres\n\nAucune trace des corps...\n\nPour fouiller : `=Fouille carlingue d'avion`")
+                                            .setTimestamp()
+                                            message.channel.send({embed})}
+                                            if(X < 10){
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                              .setColor(0xff0000)
+                                              .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une chantier à l'abandon\n\nIl est impossible de déterminer ce qu'ils voulaient bâtir ici\n\nUne école, un parking, un grand magasin...\n\nSeules les structures métalliques rouillées témoignent encore du mystérieux projet qui se tramait ici\n\nPour fouiller : `=Fouille chantier à l'abandon`")
+                                              .setTimestamp()
+                                              message.channel.send({embed})}
+                                              if(X < 10){
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                .setColor(0xff0000)
+                                                .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles kiela`")
+                                                .setTimestamp()
+                                                message.channel.send({embed})}
+                                                if(X < 10){
+                                                  const embed = new Discord.RichEmbed()
+                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                  .setColor(0xff0000)
+                                                  .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un parc à l'abandon\n\nUn lieu de recueillement et de sérénité...\n\nPour peu que vous soyez armé(e) et prêt(e) à lutter pour votre survie\n\nLa végétation locale est sinistre et sent la mort à plein nez, des créatures indéfinissables se déplacent dans les ombres...\n\nVous avez constamment la sensation qu'une saleté va vous bondir dessus depuis un fourré\n\nPour fouiller : `=Fouille parc à l'abandon`")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})}
+                                                  if(X < 10){
+                                                    const embed = new Discord.RichEmbed()
+                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                    .setColor(0xff0000)
+                                                    .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une pharmacie détruite\n\nUne petite pharmacie de quartier perdue au milieu du désert\n\nLes odeurs innommables font penser à tout sauf à des médicaments\n\nPour fouiller : `=Fouille pharmacie détruite`")
+                                                    .setTimestamp()
+                                                    message.channel.send({embed})}
+                                                    if(X < 10){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                      .setColor(0xff0000)
+                                                      .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une route barrée\n\nCe qui s'est déroulé ici est assez incompréhensible : un énorme rocher semble s'être écrasé en plein milieu d'une route, comme tombé de nulle part...\n\nPour fouiller : `=Fouille route barrée`")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})}
+                                                      if(X < 10){
+                                                        const embed = new Discord.RichEmbed()
+                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                        .setColor(0xff0000)
+                                                        .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un supermarché pillé\n\nCe gigantesque amas de brique et de métal était probablement autrefois un grand centre commercial grouillant d'activité et illuminé de mille feux\n\nAujourd'hui il n'y grouille que de la vermine et autres immondices rampants...\n\nNul doute toutefois qu'il recèle aussi bon nombre de richesses\n\nPour fouiller : `=Fouille supermarché pillé`")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed})}
+                                                        if(X < 10){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                          .setColor(0xff0000)
+                                                          .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une armurerie\n\nUn filon d'armes pour qui aime bien tuer ou menacer\n\nLes crevasses, impacts de balles et décombres en disent long sur les évènements qui sont survenus ici...\n\nPour fouiller : `=Fouille armurerie`")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})}
+                                                            if(X < 10){
+                                                              const embed = new Discord.RichEmbed()
+                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                              .setColor(0xff0000)
+                                                              .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un magasin de bricolage\n\nLe relais des bricoleurs\n\nVéritable petit paradis rempli de trésors inestimables pour un monde comme le nôtre...\n\nLeur slogan est tout à fait d'actualité: « Pillez-nous avant que d'autres ne s'en chargent pour vous ! »\n\nPour fouiller : `=Fouille magasin de bricolage`")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed})}
+                                                              if(X < 10){
+                                                                const embed = new Discord.RichEmbed()
+                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                .setColor(0xff0000)
+                                                                .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un stand de fête foraine\n\nUn endroit comme celui-ci est une aubaine de nos jours...\n\nNul doute que vous trouverez ici de quoi vous équiper décemment en jouets en plastique et autres gadgets utiles\n\nPour fouiller : `=Fouille stand de fête foraine`")
+                                                                .setTimestamp()
+                                                                message.channel.send({embed})}
+                                                                if(X < 10){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tranchée aménagée\n\nLes nombreux cratères et autres taches de sang séché laissent à penser qu'une bataille de grande envergure s'est déroulée ici\n\nLa plupart des tranchées se sont effondrées, mais il reste quelques trous à fouiller\n\nPour fouiller : `=Fouille tranchée aménagée`")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                  if(X < 10){
+                                                                    const embed = new Discord.RichEmbed()
+                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                    .setColor(0xff0000)
+                                                                    .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une centrale hydraulique\n\nCette centrale capte les eaux des nappes phréatiques environnantes et les transvase dans de gigantesques réservoirs en béton\n\nLe système de filtrage semble en panne, mais on doit pouvoir récupérer l'eau contaminée stockée ici\n\nPour fouiller : `=Fouille centrale hydraulique`")
+                                                                    .setTimestamp()
+                                                                    message.channel.send({embed})}
+                                                                    if(X < 10){
+                                                                      const embed = new Discord.RichEmbed()
+                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                      .setColor(0xff0000)
+                                                                      .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une épicerie\n\nUne enseigne de la chaîne de magasins Brian Fargo\n\nOn y trouve généralement tout ce qu'il faut pour nettoyer et entretenir sa maison\n\nLes plus démunis y trouveront de quoi manger...\n\nPour fouiller : `=Fouille épicerie`")
+                                                                      .setTimestamp()
+                                                                      message.channel.send({embed})}
+                                                                      if(X < 10){
+                                                                        const embed = new Discord.RichEmbed()
+                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                        .setColor(0xff0000)
+                                                                        .addField(":flashlight: Fouille zone 7 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un fast-food\n\nUne odeur atroce de cadavre faisandé émane de ce bâtiment : les réserves de viande se sont transformées en répugnants monticules de moisissure blanche qui ont commencé à 's'écouler' par les portes...\n\nPour fouiller : `=Fouille fast-food`")
+                                                                        .setTimestamp()
+                                                                        message.channel.send({embed})}
+  }
+});
+
+////////////////////////////////////////////////////////////////////Fouille 8 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 8 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+      if(X < 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri de chantier\n\nUn très grand container métallique posé au milieu de nulle part\n\nIl devait se trouver à côté d'un chantier, à une époque, mais il n'en reste rien aujourd'hui\n\nA part cette 'cabane'\n\nPour fouiller : `=Fouille abri de chantier`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X < 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un ancien commissariat\n\nL'imposant bâtiment s'étend sur plusieurs centaines de mètres\n\nIl est divisé en nombreuses salles mais beaucoup se sont effondrées il y a bien longtemps\n\nSi on en croit les nombreux impacts de balles et les barricades improvisées, ce commissariat a été le théâtre d'affrontements particulièrement violents\n\nPour fouiller : `=Fouille ancien commissariat`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X < 10){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un café\n\nLe rendez-vous branché du désert : venez goûter notre Nuka-Cola, spécialité de la maison, aux vrais extraits d'hormones animales\n\nPour fouiller : `=Fouille café`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X < 10){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une bibliothèque de quartier\n\nUn ensemble de plusieurs petites maisons qui constituaient autrefois une bibliothèque de quartier\n\nAujourd'hui, les livres sont, pour la plupart, déchirés ou brûlés, le sol est jonché de pages arrachées et les étagères sont renversées\n\nPour fouiller : `=Fouille bibliothèque de quartier`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X < 10){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une cabane de jardin\n\nAu milieu d'un petit square totalement décrépi, vous trouvez un vaste abri de jardin. La porte cède facilement, révélant une vaste pièce remplie d'étagères et d'outillages en tous genres\n\nPour fouiller : `=Fouille cabane de jardin`")
+              .setTimestamp()
+              message.channel.send({embed})}
+                                                        if(X < 10){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                          .setColor(0xff0000)
+                                                          .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une armurerie\n\nUn filon d'armes pour qui aime bien tuer ou menacer\n\nLes crevasses, impacts de balles et décombres en disent long sur les évènements qui sont survenus ici...\n\nPour fouiller : `=Fouille armurerie`")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})}
+                                                            if(X < 10){
+                                                              const embed = new Discord.RichEmbed()
+                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                              .setColor(0xff0000)
+                                                              .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un magasin de bricolage\n\nLe relais des bricoleurs\n\nVéritable petit paradis rempli de trésors inestimables pour un monde comme le nôtre...\n\nLeur slogan est tout à fait d'actualité: « Pillez-nous avant que d'autres ne s'en chargent pour vous ! »\n\nPour fouiller : `=Fouille magasin de bricolage`")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed})}
+                                                              if(X < 10){
+                                                                const embed = new Discord.RichEmbed()
+                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                .setColor(0xff0000)
+                                                                .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un stand de fête foraine\n\nUn endroit comme celui-ci est une aubaine de nos jours...\n\nNul doute que vous trouverez ici de quoi vous équiper décemment en jouets en plastique et autres gadgets utiles\n\nPour fouiller : `=Fouille stand de fête foraine`")
+                                                                .setTimestamp()
+                                                                message.channel.send({embed})}
+                                                                if(X < 10){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tranchée aménagée\n\nLes nombreux cratères et autres taches de sang séché laissent à penser qu'une bataille de grande envergure s'est déroulée ici\n\nLa plupart des tranchées se sont effondrées, mais il reste quelques trous à fouiller\n\nPour fouiller : `=Fouille tranchée aménagée`")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                  if(X < 10){
+                                                                    const embed = new Discord.RichEmbed()
+                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                    .setColor(0xff0000)
+                                                                    .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une centrale hydraulique\n\nCette centrale capte les eaux des nappes phréatiques environnantes et les transvase dans de gigantesques réservoirs en béton\n\nLe système de filtrage semble en panne, mais on doit pouvoir récupérer l'eau contaminée stockée ici\n\nPour fouiller : `=Fouille centrale hydraulique`")
+                                                                    .setTimestamp()
+                                                                    message.channel.send({embed})}
+                                                                    if(X < 10){
+                                                                      const embed = new Discord.RichEmbed()
+                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                      .setColor(0xff0000)
+                                                                      .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une épicerie\n\nUne enseigne de la chaîne de magasins Brian Fargo\n\nOn y trouve généralement tout ce qu'il faut pour nettoyer et entretenir sa maison\n\nLes plus démunis y trouveront de quoi manger...\n\nPour fouiller : `=Fouille épicerie`")
+                                                                      .setTimestamp()
+                                                                      message.channel.send({embed})}
+                                                                      if(X < 10){
+                                                                        const embed = new Discord.RichEmbed()
+                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                        .setColor(0xff0000)
+                                                                        .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un fast-food\n\nUne odeur atroce de cadavre faisandé émane de ce bâtiment : les réserves de viande se sont transformées en répugnants monticules de moisissure blanche qui ont commencé à 's'écouler' par les portes...\n\nPour fouiller : `=Fouille fast-food`")
+                                                                        .setTimestamp()
+                                                                        message.channel.send({embed})}
+                                                                        if(X < 10){
+                                                                          const embed = new Discord.RichEmbed()
+                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                          .setColor(0xff0000)
+                                                                          .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un bureau de poste\n\nUn bâtiment qui semble avoir résisté aux affres du temps, vestige d'un antique service postal\n\nPeu de chances que vous y trouviez quoi que ce soit de grand intérêt, sauf si vous aimez la lecture...\n\nPour fouiller : `=Fouille bureau de poste`")
+                                                                          .setTimestamp()
+                                                                          message.channel.send({embed})}
+                                                                          if(X < 10){
+                                                                            const embed = new Discord.RichEmbed()
+                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                            .setColor(0xff0000)
+                                                                            .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un mini-market\n\nCe petit magasin proposait toutes sortes de produits de consommation courants : nourriture, boissons, produits d'entretien...\n\nOuvert 24h/24 et 7j/7 si on en croit ce qui est imprimé sur la vitrine\n\nLe trou béant dans la façade lui donne raison\n\nPour fouiller : `=Fouille mini-market`")
+                                                                            .setTimestamp()
+                                                                            message.channel.send({embed})}
+                                                                            if(X < 10){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un relais autoroutier\n\nA une certaine époque, c'était sûrement le coin le plus branché de toute l'autoroute A217, avec ses bières frelatées, son odeur d'urine et ses rats morts sur le comptoir\n\nPersonne avant vous ne semble s'y être arrêté depuis des lustres\n\nPour fouiller : `=Fouille relais autoroutier`")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                              if(X < 10){
+                                                                                const embed = new Discord.RichEmbed()
+                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                .setColor(0xff0000)
+                                                                                .addField(":flashlight: Fouille zone 8 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un silos à l'abandon\n\nCet endroit devait servir de stockage pour le grain\n\nMais avec le temps, les cuves ont fini par se remplir d'eau de pluie (c'était il y a bien longtemps...)\n\nIl doit y avoir de quoi s'approvisionner par ici\n\nPour fouiller : `=Fouille silos à l'abandon`")
+                                                                                .setTimestamp()
+                                                                                message.channel.send({embed})}
+  }
+});
+
+////////////////////////////////////////////////////////////////////Fouille 9 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 9 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+      if(X < 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri de chantier\n\nUn très grand container métallique posé au milieu de nulle part\n\nIl devait se trouver à côté d'un chantier, à une époque, mais il n'en reste rien aujourd'hui\n\nA part cette 'cabane'\n\nPour fouiller : `=Fouille abri de chantier`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X < 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un ancien commissariat\n\nL'imposant bâtiment s'étend sur plusieurs centaines de mètres\n\nIl est divisé en nombreuses salles mais beaucoup se sont effondrées il y a bien longtemps\n\nSi on en croit les nombreux impacts de balles et les barricades improvisées, ce commissariat a été le théâtre d'affrontements particulièrement violents\n\nPour fouiller : `=Fouille ancien commissariat`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X < 10){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un café\n\nLe rendez-vous branché du désert : venez goûter notre Nuka-Cola, spécialité de la maison, aux vrais extraits d'hormones animales\n\nPour fouiller : `=Fouille café`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X < 10){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une bibliothèque de quartier\n\nUn ensemble de plusieurs petites maisons qui constituaient autrefois une bibliothèque de quartier\n\nAujourd'hui, les livres sont, pour la plupart, déchirés ou brûlés, le sol est jonché de pages arrachées et les étagères sont renversées\n\nPour fouiller : `=Fouille bibliothèque de quartier`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X < 10){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une cabane de jardin\n\nAu milieu d'un petit square totalement décrépi, vous trouvez un vaste abri de jardin. La porte cède facilement, révélant une vaste pièce remplie d'étagères et d'outillages en tous genres\n\nPour fouiller : `=Fouille cabane de jardin`")
+              .setTimestamp()
+              message.channel.send({embed})}
+                                                                    if(X < 10){
+                                                                      const embed = new Discord.RichEmbed()
+                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                      .setColor(0xff0000)
+                                                                      .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une épicerie\n\nUne enseigne de la chaîne de magasins Brian Fargo\n\nOn y trouve généralement tout ce qu'il faut pour nettoyer et entretenir sa maison\n\nLes plus démunis y trouveront de quoi manger...\n\nPour fouiller : `=Fouille épicerie`")
+                                                                      .setTimestamp()
+                                                                      message.channel.send({embed})}
+                                                                      if(X < 10){
+                                                                        const embed = new Discord.RichEmbed()
+                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                        .setColor(0xff0000)
+                                                                        .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un fast-food\n\nUne odeur atroce de cadavre faisandé émane de ce bâtiment : les réserves de viande se sont transformées en répugnants monticules de moisissure blanche qui ont commencé à 's'écouler' par les portes...\n\nPour fouiller : `=Fouille fast-food`")
+                                                                        .setTimestamp()
+                                                                        message.channel.send({embed})}
+                                                                        if(X < 10){
+                                                                          const embed = new Discord.RichEmbed()
+                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                          .setColor(0xff0000)
+                                                                          .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un bureau de poste\n\nUn bâtiment qui semble avoir résisté aux affres du temps, vestige d'un antique service postal\n\nPeu de chances que vous y trouviez quoi que ce soit de grand intérêt, sauf si vous aimez la lecture...\n\nPour fouiller : `=Fouille bureau de poste`")
+                                                                          .setTimestamp()
+                                                                          message.channel.send({embed})}
+                                                                          if(X < 10){
+                                                                            const embed = new Discord.RichEmbed()
+                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                            .setColor(0xff0000)
+                                                                            .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un mini-market\n\nCe petit magasin proposait toutes sortes de produits de consommation courants : nourriture, boissons, produits d'entretien...\n\nOuvert 24h/24 et 7j/7 si on en croit ce qui est imprimé sur la vitrine\n\nLe trou béant dans la façade lui donne raison\n\nPour fouiller : `=Fouille mini-market`")
+                                                                            .setTimestamp()
+                                                                            message.channel.send({embed})}
+                                                                            if(X < 10){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un relais autoroutier\n\nA une certaine époque, c'était sûrement le coin le plus branché de toute l'autoroute A217, avec ses bières frelatées, son odeur d'urine et ses rats morts sur le comptoir\n\nPersonne avant vous ne semble s'y être arrêté depuis des lustres\n\nPour fouiller : `=Fouille relais autoroutier`")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                              if(X < 10){
+                                                                                const embed = new Discord.RichEmbed()
+                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                .setColor(0xff0000)
+                                                                                .addField(":flashlight: Fouille zone 9 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un silos à l'abandon\n\nCet endroit devait servir de stockage pour le grain\n\nMais avec le temps, les cuves ont fini par se remplir d'eau de pluie (c'était il y a bien longtemps...)\n\nIl doit y avoir de quoi s'approvisionner par ici\n\nPour fouiller : `=Fouille silos à l'abandon`")
+                                                                                .setTimestamp()
+                                                                                message.channel.send({embed})}
+  }
+});
+
+////////////////////////////////////////////////////////////////////Fouille 10 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 10 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+                                                                
+                                                                 
+                                                                        if(X < 10){
+                                                                          const embed = new Discord.RichEmbed()
+                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                          .setColor(0xff0000)
+                                                                          .addField(":flashlight: Fouille zone 10 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un bureau de poste\n\nUn bâtiment qui semble avoir résisté aux affres du temps, vestige d'un antique service postal\n\nPeu de chances que vous y trouviez quoi que ce soit de grand intérêt, sauf si vous aimez la lecture...\n\nPour fouiller : `=Fouille bureau de poste`")
+                                                                          .setTimestamp()
+                                                                          message.channel.send({embed})}
+                                                                          if(X < 10){
+                                                                            const embed = new Discord.RichEmbed()
+                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                            .setColor(0xff0000)
+                                                                            .addField(":flashlight: Fouille zone 10 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un mini-market\n\nCe petit magasin proposait toutes sortes de produits de consommation courants : nourriture, boissons, produits d'entretien...\n\nOuvert 24h/24 et 7j/7 si on en croit ce qui est imprimé sur la vitrine\n\nLe trou béant dans la façade lui donne raison\n\nPour fouiller : `=Fouille mini-market`")
+                                                                            .setTimestamp()
+                                                                            message.channel.send({embed})}
+                                                                            if(X < 10){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField(":flashlight: Fouille zone 10 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un relais autoroutier\n\nA une certaine époque, c'était sûrement le coin le plus branché de toute l'autoroute A217, avec ses bières frelatées, son odeur d'urine et ses rats morts sur le comptoir\n\nPersonne avant vous ne semble s'y être arrêté depuis des lustres\n\nPour fouiller : `=Fouille relais autoroutier`")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                              if(X < 10){
+                                                                                const embed = new Discord.RichEmbed()
+                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                .setColor(0xff0000)
+                                                                                .addField(":flashlight: Fouille zone 10 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un silos à l'abandon\n\nCet endroit devait servir de stockage pour le grain\n\nMais avec le temps, les cuves ont fini par se remplir d'eau de pluie (c'était il y a bien longtemps...)\n\nIl doit y avoir de quoi s'approvisionner par ici\n\nPour fouiller : `=Fouille silos à l'abandon`")
+                                                                                .setTimestamp()
+                                                                                message.channel.send({embed})}
+                                                                                if(X < 10){
+                                                                                  const embed = new Discord.RichEmbed()
+                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                  .setColor(0xff0000)
+                                                                                  .addField(":flashlight: Fouille zone 10 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri anti-atomique\n\nLe numéro est à moitié effacé, mais il s'agissait vraisemblablement de l'abri 14\n\nSi on en juge par les corps décrépis à l'intérieur, le système de fermeture du sas n'a pas dû fonctionner comme prévu, ça arrive\n\nPour fouiller : `=Fouille abri anti-atomique`")
+                                                                                  .setTimestamp()
+                                                                                  message.channel.send({embed})}
+                                                                                  if(X < 10){
+                                                                                    const embed = new Discord.RichEmbed()
+                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                    .setColor(0xff0000)
+                                                                                    .addField(":flashlight: Fouille zone 10 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un immeuble délabré\n\nUn bel immeuble de bureau où il devait faire bon venir travailler au petit matin, entouré de ses collègues anonymes pour accomplir on ne sait trop quel but global et avec pour seule préoccupation : sa propre survie\n\nVous vous dites que les choses n'ont peut-être finalement pas tant changé que ça...\n\nPour fouiller : `=Fouille immeuble délabré`")
+                                                                                    .setTimestamp()
+                                                                                    message.channel.send({embed})}
+                                                                                    if(X < 10){
+                                                                                      const embed = new Discord.RichEmbed()
+                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                      .setColor(0xff0000)
+                                                                                      .addField(":flashlight: Fouille zone 10 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une gare de triage désertée\n\nCette plaque tournante centrale du réseau ferroviaire du pays dispatchait et aiguillait les marchandises venues de tous les horizons, sans interruption, 24h/24\n\nAujourd'hui, le 'vaste réseau' en question mesure environ 150 mètres de long, si on compte les vestiges de rails, un peu plus loin\n\nPour fouiller : `=Fouille gare de triage désertée`")
+                                                                                      .setTimestamp()
+                                                                                      message.channel.send({embed})}
+  }
+});
+
+
+////////////////////////////////////////////////////////////////////Fouille 11 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 11 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+                                                                
+                                                                 
+                                                                        if(X < 10){
+                                                                          const embed = new Discord.RichEmbed()
+                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                          .setColor(0xff0000)
+                                                                          .addField(":flashlight: Fouille zone 11 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un bureau de poste\n\nUn bâtiment qui semble avoir résisté aux affres du temps, vestige d'un antique service postal\n\nPeu de chances que vous y trouviez quoi que ce soit de grand intérêt, sauf si vous aimez la lecture...\n\nPour fouiller : `=Fouille bureau de poste`")
+                                                                          .setTimestamp()
+                                                                          message.channel.send({embed})}
+                                                                          if(X < 10){
+                                                                            const embed = new Discord.RichEmbed()
+                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                            .setColor(0xff0000)
+                                                                            .addField(":flashlight: Fouille zone 11 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un mini-market\n\nCe petit magasin proposait toutes sortes de produits de consommation courants : nourriture, boissons, produits d'entretien...\n\nOuvert 24h/24 et 7j/7 si on en croit ce qui est imprimé sur la vitrine\n\nLe trou béant dans la façade lui donne raison\n\nPour fouiller : `=Fouille mini-market`")
+                                                                            .setTimestamp()
+                                                                            message.channel.send({embed})}
+                                                                            if(X < 10){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField(":flashlight: Fouille zone 11 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un relais autoroutier\n\nA une certaine époque, c'était sûrement le coin le plus branché de toute l'autoroute A217, avec ses bières frelatées, son odeur d'urine et ses rats morts sur le comptoir\n\nPersonne avant vous ne semble s'y être arrêté depuis des lustres\n\nPour fouiller : `=Fouille relais autoroutier`")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                              if(X < 10){
+                                                                                const embed = new Discord.RichEmbed()
+                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                .setColor(0xff0000)
+                                                                                .addField(":flashlight: Fouille zone 11 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un silos à l'abandon\n\nCet endroit devait servir de stockage pour le grain\n\nMais avec le temps, les cuves ont fini par se remplir d'eau de pluie (c'était il y a bien longtemps...)\n\nIl doit y avoir de quoi s'approvisionner par ici\n\nPour fouiller : `=Fouille silos à l'abandon`")
+                                                                                .setTimestamp()
+                                                                                message.channel.send({embed})}
+                                                                                if(X < 10){
+                                                                                  const embed = new Discord.RichEmbed()
+                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                  .setColor(0xff0000)
+                                                                                  .addField(":flashlight: Fouille zone 11 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri anti-atomique\n\nLe numéro est à moitié effacé, mais il s'agissait vraisemblablement de l'abri 14\n\nSi on en juge par les corps décrépis à l'intérieur, le système de fermeture du sas n'a pas dû fonctionner comme prévu, ça arrive\n\nPour fouiller : `=Fouille abri anti-atomique`")
+                                                                                  .setTimestamp()
+                                                                                  message.channel.send({embed})}
+                                                                                  if(X < 10){
+                                                                                    const embed = new Discord.RichEmbed()
+                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                    .setColor(0xff0000)
+                                                                                    .addField(":flashlight: Fouille zone 11 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un immeuble délabré\n\nUn bel immeuble de bureau où il devait faire bon venir travailler au petit matin, entouré de ses collègues anonymes pour accomplir on ne sait trop quel but global et avec pour seule préoccupation : sa propre survie\n\nVous vous dites que les choses n'ont peut-être finalement pas tant changé que ça...\n\nPour fouiller : `=Fouille immeuble délabré`")
+                                                                                    .setTimestamp()
+                                                                                    message.channel.send({embed})}
+                                                                                    if(X < 10){
+                                                                                      const embed = new Discord.RichEmbed()
+                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                      .setColor(0xff0000)
+                                                                                      .addField(":flashlight: Fouille zone 11 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une gare de triage désertée\n\nCette plaque tournante centrale du réseau ferroviaire du pays dispatchait et aiguillait les marchandises venues de tous les horizons, sans interruption, 24h/24\n\nAujourd'hui, le 'vaste réseau' en question mesure environ 150 mètres de long, si on compte les vestiges de rails, un peu plus loin\n\nPour fouiller : `=Fouille gare de triage désertée`")
+                                                                                      .setTimestamp()
+                                                                                      message.channel.send({embed})}
+  }
+});
+
+////////////////////////////////////////////////////////////////////Fouille 12 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 12 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+                                                                                if(X < 10){
+                                                                                  const embed = new Discord.RichEmbed()
+                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                  .setColor(0xff0000)
+                                                                                  .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri anti-atomique\n\nLe numéro est à moitié effacé, mais il s'agissait vraisemblablement de l'abri 14\n\nSi on en juge par les corps décrépis à l'intérieur, le système de fermeture du sas n'a pas dû fonctionner comme prévu, ça arrive\n\nPour fouiller : `=Fouille abri anti-atomique`")
+                                                                                  .setTimestamp()
+                                                                                  message.channel.send({embed})}
+                                                                                  if(X < 10){
+                                                                                    const embed = new Discord.RichEmbed()
+                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                    .setColor(0xff0000)
+                                                                                    .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un immeuble délabré\n\nUn bel immeuble de bureau où il devait faire bon venir travailler au petit matin, entouré de ses collègues anonymes pour accomplir on ne sait trop quel but global et avec pour seule préoccupation : sa propre survie\n\nVous vous dites que les choses n'ont peut-être finalement pas tant changé que ça...\n\nPour fouiller : `=Fouille immeuble délabré`")
+                                                                                    .setTimestamp()
+                                                                                    message.channel.send({embed})}
+                                                                                    if(X < 10){
+                                                                                      const embed = new Discord.RichEmbed()
+                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                      .setColor(0xff0000)
+                                                                                      .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une gare de triage désertée\n\nCette plaque tournante centrale du réseau ferroviaire du pays dispatchait et aiguillait les marchandises venues de tous les horizons, sans interruption, 24h/24\n\nAujourd'hui, le 'vaste réseau' en question mesure environ 150 mètres de long, si on compte les vestiges de rails, un peu plus loin\n\nPour fouiller : `=Fouille gare de triage désertée`")
+                                                                                      .setTimestamp()
+                                                                                      message.channel.send({embed})}
+                                                                                      if(X < 10){
+                                                                                        const embed = new Discord.RichEmbed()
+                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                        .setColor(0xff0000)
+                                                                                        .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un ancien aérodrome\n\nTout ce qui décolle de cet aérodrome pourrissant, ce sont les mouches\n\nPeut-être qu'en fouinant dans les entrepôts, vous parviendrez à mettre la main sur un truc utile\n\nGenre, un A360 en état de marche\n\nPour fouiller : `=Fouille ancien aérodrome`")
+                                                                                        .setTimestamp()
+                                                                                        message.channel.send({embed})}
+                                                                                        if(X < 10){
+                                                                                          const embed = new Discord.RichEmbed()
+                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                          .setColor(0xff0000)
+                                                                                          .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une mine effondrée\n\nUne ancienne mine qui n'a pas résisté aux outrages du temps\n\nDieu sait quel genre de lubie pouvait pousser les gens de l'époque à creuser si profond pour trouver quelque chose d'utile\n\nSurtout quand il suffit d'à peine gratter le sol pour dégoter un délicieux cafard à manger\n\n« Tiens, j'ai faim », pensez-vous\n\nPour fouiller : `=Fouille mine effondrée`")
+                                                                                          .setTimestamp()
+                                                                                          message.channel.send({embed})}
+                                                                                          if(X < 10){
+                                                                                            const embed = new Discord.RichEmbed()
+                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                            .setColor(0xff0000)
+                                                                                            .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un motel\n\nVous vous demandez quel genre de personne pouvait bien venir passer sa nuit dans un trou aussi paumé que ce motel miteux\n\nSans doute le genre : représentant pour une obscure société de livraison fuyant un passé qui le rattrapera tôt ou tard\n\n« Faudra que je pense à vérifier la chambre 215, au cas où », pensez-vous, sans trop savoir pourquoi\n\nPour fouiller : `=Fouille motel`")
+                                                                                            .setTimestamp()
+                                                                                            message.channel.send({embed})}
+                                                                                            if(X < 10){
+                                                                                              const embed = new Discord.RichEmbed()
+                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                              .setColor(0xff0000)
+                                                                                              .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tente\n\nUne bonne planque, c'est certain\n\nLe type qui a monté ce camp savait comment mettre ses fesses à l'abri des zombies : camouflage naturel, bonne visibilité alentours, plusieurs issues et même un trou pour se cacher sous terre au besoin\n\nLe nom « Shenji » est brodé dans la toile de la tente\n\nPour fouiller : `=Fouille tente`")
+                                                                                              .setTimestamp()
+                                                                                              message.channel.send({embed})}
+                                                                                              if(X < 10){
+                                                                                                const embed = new Discord.RichEmbed()
+                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                .setColor(0xff0000)
+                                                                                                .addField(":flashlight: Fouille zone 12 KM :" , ":Flashlight: En fouillant les environs, vous découvrez la villa de Duke\n\nLa maison d'un certain « Duke » si on en croit la plaque d'entrée calcinée, ancien « Héros Pour Toujours » ...\n\nPlus qu'une villa, l'endroit semble être une vaste forteresse aménagée\n\nPour fouiller : `=Fouille villa de duke`")
+                                                                                                .setTimestamp()
+                                                                                                message.channel.send({embed})}
+  }
+});
+
+////////////////////////////////////////////////////////////////////Fouille 13 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 13 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+                                                                                if(X < 10){
+                                                                                  const embed = new Discord.RichEmbed()
+                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                  .setColor(0xff0000)
+                                                                                  .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri anti-atomique\n\nLe numéro est à moitié effacé, mais il s'agissait vraisemblablement de l'abri 14\n\nSi on en juge par les corps décrépis à l'intérieur, le système de fermeture du sas n'a pas dû fonctionner comme prévu, ça arrive\n\nPour fouiller : `=Fouille abri anti-atomique`")
+                                                                                  .setTimestamp()
+                                                                                  message.channel.send({embed})}
+                                                                                  if(X < 10){
+                                                                                    const embed = new Discord.RichEmbed()
+                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                    .setColor(0xff0000)
+                                                                                    .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un immeuble délabré\n\nUn bel immeuble de bureau où il devait faire bon venir travailler au petit matin, entouré de ses collègues anonymes pour accomplir on ne sait trop quel but global et avec pour seule préoccupation : sa propre survie\n\nVous vous dites que les choses n'ont peut-être finalement pas tant changé que ça...\n\nPour fouiller : `=Fouille immeuble délabré`")
+                                                                                    .setTimestamp()
+                                                                                    message.channel.send({embed})}
+                                                                                    if(X < 10){
+                                                                                      const embed = new Discord.RichEmbed()
+                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                      .setColor(0xff0000)
+                                                                                      .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une gare de triage désertée\n\nCette plaque tournante centrale du réseau ferroviaire du pays dispatchait et aiguillait les marchandises venues de tous les horizons, sans interruption, 24h/24\n\nAujourd'hui, le 'vaste réseau' en question mesure environ 150 mètres de long, si on compte les vestiges de rails, un peu plus loin\n\nPour fouiller : `=Fouille gare de triage désertée`")
+                                                                                      .setTimestamp()
+                                                                                      message.channel.send({embed})}
+                                                                                      if(X < 10){
+                                                                                        const embed = new Discord.RichEmbed()
+                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                        .setColor(0xff0000)
+                                                                                        .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un ancien aérodrome\n\nTout ce qui décolle de cet aérodrome pourrissant, ce sont les mouches\n\nPeut-être qu'en fouinant dans les entrepôts, vous parviendrez à mettre la main sur un truc utile\n\nGenre, un A360 en état de marche\n\nPour fouiller : `=Fouille ancien aérodrome`")
+                                                                                        .setTimestamp()
+                                                                                        message.channel.send({embed})}
+                                                                                        if(X < 10){
+                                                                                          const embed = new Discord.RichEmbed()
+                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                          .setColor(0xff0000)
+                                                                                          .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une mine effondrée\n\nUne ancienne mine qui n'a pas résisté aux outrages du temps\n\nDieu sait quel genre de lubie pouvait pousser les gens de l'époque à creuser si profond pour trouver quelque chose d'utile\n\nSurtout quand il suffit d'à peine gratter le sol pour dégoter un délicieux cafard à manger\n\n« Tiens, j'ai faim », pensez-vous\n\nPour fouiller : `=Fouille mine effondrée`")
+                                                                                          .setTimestamp()
+                                                                                          message.channel.send({embed})}
+                                                                                          if(X < 10){
+                                                                                            const embed = new Discord.RichEmbed()
+                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                            .setColor(0xff0000)
+                                                                                            .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un motel\n\nVous vous demandez quel genre de personne pouvait bien venir passer sa nuit dans un trou aussi paumé que ce motel miteux\n\nSans doute le genre : représentant pour une obscure société de livraison fuyant un passé qui le rattrapera tôt ou tard\n\n« Faudra que je pense à vérifier la chambre 215, au cas où », pensez-vous, sans trop savoir pourquoi\n\nPour fouiller : `=Fouille motel`")
+                                                                                            .setTimestamp()
+                                                                                            message.channel.send({embed})}
+                                                                                            if(X < 10){
+                                                                                              const embed = new Discord.RichEmbed()
+                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                              .setColor(0xff0000)
+                                                                                              .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tente\n\nUne bonne planque, c'est certain\n\nLe type qui a monté ce camp savait comment mettre ses fesses à l'abri des zombies : camouflage naturel, bonne visibilité alentours, plusieurs issues et même un trou pour se cacher sous terre au besoin\n\nLe nom « Shenji » est brodé dans la toile de la tente\n\nPour fouiller : `=Fouille tente`")
+                                                                                              .setTimestamp()
+                                                                                              message.channel.send({embed})}
+                                                                                              if(X < 10){
+                                                                                                const embed = new Discord.RichEmbed()
+                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                .setColor(0xff0000)
+                                                                                                .addField(":flashlight: Fouille zone 13 KM :" , ":Flashlight: En fouillant les environs, vous découvrez la villa de Duke\n\nLa maison d'un certain « Duke » si on en croit la plaque d'entrée calcinée, ancien « Héros Pour Toujours » ...\n\nPlus qu'une villa, l'endroit semble être une vaste forteresse aménagée\n\nPour fouiller : `=Fouille villa de duke`")
+                                                                                                .setTimestamp()
+                                                                                                message.channel.send({embed})}
+  }
+});
+
+////////////////////////////////////////////////////////////////////Fouille 14 KM//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille zone 14 KM") {
+    const X = (Math.floor((100)*Math.random()+1))
+      const Zombie = (Math.floor((3)*Math.random()+1))
+                                                                                if(X < 10){
+                                                                                  const embed = new Discord.RichEmbed()
+                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                  .setColor(0xff0000)
+                                                                                  .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un abri anti-atomique\n\nLe numéro est à moitié effacé, mais il s'agissait vraisemblablement de l'abri 14\n\nSi on en juge par les corps décrépis à l'intérieur, le système de fermeture du sas n'a pas dû fonctionner comme prévu, ça arrive\n\nPour fouiller : `=Fouille abri anti-atomique`")
+                                                                                  .setTimestamp()
+                                                                                  message.channel.send({embed})}
+                                                                                  if(X < 10){
+                                                                                    const embed = new Discord.RichEmbed()
+                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                    .setColor(0xff0000)
+                                                                                    .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un immeuble délabré\n\nUn bel immeuble de bureau où il devait faire bon venir travailler au petit matin, entouré de ses collègues anonymes pour accomplir on ne sait trop quel but global et avec pour seule préoccupation : sa propre survie\n\nVous vous dites que les choses n'ont peut-être finalement pas tant changé que ça...\n\nPour fouiller : `=Fouille immeuble délabré`")
+                                                                                    .setTimestamp()
+                                                                                    message.channel.send({embed})}
+                                                                                    if(X < 10){
+                                                                                      const embed = new Discord.RichEmbed()
+                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                      .setColor(0xff0000)
+                                                                                      .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une gare de triage désertée\n\nCette plaque tournante centrale du réseau ferroviaire du pays dispatchait et aiguillait les marchandises venues de tous les horizons, sans interruption, 24h/24\n\nAujourd'hui, le 'vaste réseau' en question mesure environ 150 mètres de long, si on compte les vestiges de rails, un peu plus loin\n\nPour fouiller : `=Fouille gare de triage désertée`")
+                                                                                      .setTimestamp()
+                                                                                      message.channel.send({embed})}
+                                                                                      if(X < 10){
+                                                                                        const embed = new Discord.RichEmbed()
+                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                        .setColor(0xff0000)
+                                                                                        .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un ancien aérodrome\n\nTout ce qui décolle de cet aérodrome pourrissant, ce sont les mouches\n\nPeut-être qu'en fouinant dans les entrepôts, vous parviendrez à mettre la main sur un truc utile\n\nGenre, un A360 en état de marche\n\nPour fouiller : `=Fouille ancien aérodrome`")
+                                                                                        .setTimestamp()
+                                                                                        message.channel.send({embed})}
+                                                                                        if(X < 10){
+                                                                                          const embed = new Discord.RichEmbed()
+                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                          .setColor(0xff0000)
+                                                                                          .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une mine effondrée\n\nUne ancienne mine qui n'a pas résisté aux outrages du temps\n\nDieu sait quel genre de lubie pouvait pousser les gens de l'époque à creuser si profond pour trouver quelque chose d'utile\n\nSurtout quand il suffit d'à peine gratter le sol pour dégoter un délicieux cafard à manger\n\n« Tiens, j'ai faim », pensez-vous\n\nPour fouiller : `=Fouille mine effondrée`")
+                                                                                          .setTimestamp()
+                                                                                          message.channel.send({embed})}
+                                                                                          if(X < 10){
+                                                                                            const embed = new Discord.RichEmbed()
+                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                            .setColor(0xff0000)
+                                                                                            .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez un motel\n\nVous vous demandez quel genre de personne pouvait bien venir passer sa nuit dans un trou aussi paumé que ce motel miteux\n\nSans doute le genre : représentant pour une obscure société de livraison fuyant un passé qui le rattrapera tôt ou tard\n\n« Faudra que je pense à vérifier la chambre 215, au cas où », pensez-vous, sans trop savoir pourquoi\n\nPour fouiller : `=Fouille motel`")
+                                                                                            .setTimestamp()
+                                                                                            message.channel.send({embed})}
+                                                                                            if(X < 10){
+                                                                                              const embed = new Discord.RichEmbed()
+                                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                              .setColor(0xff0000)
+                                                                                              .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez une tente\n\nUne bonne planque, c'est certain\n\nLe type qui a monté ce camp savait comment mettre ses fesses à l'abri des zombies : camouflage naturel, bonne visibilité alentours, plusieurs issues et même un trou pour se cacher sous terre au besoin\n\nLe nom « Shenji » est brodé dans la toile de la tente\n\nPour fouiller : `=Fouille tente`")
+                                                                                              .setTimestamp()
+                                                                                              message.channel.send({embed})}
+                                                                                              if(X < 10){
+                                                                                                const embed = new Discord.RichEmbed()
+                                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                                .setColor(0xff0000)
+                                                                                                .addField(":flashlight: Fouille zone 14 KM :" , ":Flashlight: En fouillant les environs, vous découvrez la villa de Duke\n\nLa maison d'un certain « Duke » si on en croit la plaque d'entrée calcinée, ancien « Héros Pour Toujours » ...\n\nPlus qu'une villa, l'endroit semble être une vaste forteresse aménagée\n\nPour fouiller : `=Fouille villa de duke`")
+                                                                                                .setTimestamp()
+                                                                                                message.channel.send({embed})}
+  }
+});
+
+
+
+
 
 ////////////////////////////////////////////////////////////////////Fouille [ancienne version]//////////////////////////////////////////////////////////////////////////////////////////////////
 
