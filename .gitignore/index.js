@@ -5925,7 +5925,7 @@ bot.on('message', message => {
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 30){
+        if (roll <= 20){
           test = test + 4 + (2 * lapin);
           if (test <= (6 * joueurs)){
             lapin = lapin + 1;
