@@ -1530,6 +1530,78 @@ bot.on('message', message => {
   }
 }) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup gigantesque récompenses solo")) {
+    let lvl = args.slice(4).join(" : ");
+    const stuffClan = Math.floor((2 - 0.75) * Math.random())
+    const bijouxClan = Math.floor((2 - 0.85) * Math.random())
+    const armeClanUneMain = Math.floor((2 - 0.70) * Math.random())
+    const armeClanDeuxMains = Math.floor((2 - 0.70) * Math.random())
+    const Oeufs = Math.floor((2 - 0.85) * Math.random())
+    const controle = Math.floor(101 * Math.random() + 100)
+    const xp = Exp - (lvl * 5)
+    const cols = Math.floor(101 * Math.random() + 100)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup gigantesque récompenses groupe")) {
+    let lvl = args.slice(4).join(" : ");
+    const stuffClan = Math.floor((2 - 0.75) * Math.random())
+    const bijouxClan = Math.floor((2 - 0.90) * Math.random())
+    const armeClanUneMain = Math.floor((2 - 0.80) * Math.random())
+    const armeClanDeuxMains = Math.floor((2 - 0.80) * Math.random())
+    const Oeufs = Math.floor((2 - 0.90) * Math.random())
+    const controle = Math.floor(81 * Math.random() + 80)
+    const xp = Exp - (lvl * 4)
+    const cols = Math.floor(81 * Math.random() + 80)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
 // Montagne | Monstres | Descriptions
 
 bot.on('message', message => {
@@ -2045,79 +2117,7 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup gigantesque récompenses solo")) {
-    let X = args.slice(4).join(" : ");
-    const AA = (Math.floor((2-(0.75))*Math.random()))
-    const BB = (Math.floor((2-(0.85))*Math.random()))
-    const CC = (Math.floor((2-(0.70))*Math.random()))
-    const DD = (Math.floor((2-(0.70))*Math.random()))
-    const YY = (Math.floor((2-(0.98))*Math.random()))
-    const Exp = (Math.floor((101)*Math.random()+100))
-    const FFF = Exp-(X*5)
-    const GGG = (Math.floor((101)*Math.random()+100))
-    const Oeufs = (Math.floor((2-(0.85))*Math.random()))
-    if(FFF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FFF+ "\n:large_orange_diamond: Cols : " +GGG)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FFF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +GGG)
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup gigantesque récompenses groupe")) {
-    let X = args.slice(4).join(" : ");
-    const AA = (Math.floor((2-(0.75))*Math.random()))
-    const BB = (Math.floor((2-(0.90))*Math.random()))
-    const CC = (Math.floor((2-(0.80))*Math.random()))
-    const DD = (Math.floor((2-(0.80))*Math.random()))
-    const YY = (Math.floor((2-(0.98))*Math.random()))
-    const Exp = (Math.floor((81)*Math.random()+80))
-    const FFF = Exp-(X*4)
-    const GGG = (Math.floor((81)*Math.random()+80))
-    const Oeufs = (Math.floor((2-(0.90))*Math.random()))
-    if(FFF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " +FFF+ "\n:large_orange_diamond: Cols : " +GGG)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FFF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " +AA+ "\n:scales: Bijoux du clan des loups au choix : " +BB+ "\n:scales: Arme du clan des loups à une main au choix : " +CC+ "\n:scales: Arme du clan des loups à deux mains au choix : " +DD+ "\n :gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +GGG)
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Urguf le chef récompenses")) {
