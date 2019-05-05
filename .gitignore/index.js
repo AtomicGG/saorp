@@ -859,7 +859,7 @@ bot.on('message', message => {
     const controle = Math.floor(30 * Math.random() + 30)
     const xp = controle - (lvl * 4)
     const cols = Math.floor(11 * Math.random() + 10)
-    const Clef = Math.floor((2 - 0.98)) * Math.random())
+    const Clef = Math.floor((2 - 0.98) * Math.random())
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
