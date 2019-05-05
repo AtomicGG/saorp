@@ -1097,39 +1097,39 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre récompenses solo")) {
-    let X = args.slice(4).join(" : ");
-    const I = Math.floor((2 - 0.70) * Math.random())
-    const J = Math.floor((2 - 0.92) * Math.random())
-    const K = Math.floor((2 - 0.85) * Math.random())
-    const L = Math.floor((2 - 0.90) * Math.random())
-    const T = Math.floor((2 - 0.95) * Math.random())
-    const Y = Math.floor((2 - 0.95) * Math.random())
-    const YY = Math.floor((2 - 0.95) * Math.random())
-    const U = Math.floor((2 - 0.90) * Math.random())
-    const V = Math.floor((2 - 0.90) * Math.random())
-    const W = Math.floor((2 - 0.90) * Math.random())
-    const XX = Math.floor((2 - 0.90) * Math.random())
-    const F = Math.floor(35 * Math.random() + 45)
-    const FF = F - (X * 5)
-    const G = Math.floor(21 * Math.random() + 20)
+    let lvl = args.slice(4).join(" : ");
+    const stuffPeauResistante = Math.floor((2 - 0.70) * Math.random())
+    const bijouxCroc = Math.floor((2 - 0.92) * Math.random())
+    const armeBasiqueUneMain = Math.floor((2 - 0.85) * Math.random())
+    const armeBasiqueDeuxMains = Math.floor((2 - 0.90) * Math.random())
+    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+    const controle = Math.floor(35 * Math.random() + 45)
+    const xp = controle - (lvl * 5)
+    const cols = Math.floor(21 * Math.random() + 20)
     const Clef = Math.floor((2 - 0.97) * Math.random())
-    if(FF > 0) {
+    if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(FF <= 0) {
+    if(xp <= 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " +I+ "\n:scales: Bijoux du croc au choix : " +J+ "\n:scales: Arme basique à une main au choix : " +K+ "\n:scales: Arme basique à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G+ "\n:scales: Clef du donjon sauvage : " +Clef)
+      addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
