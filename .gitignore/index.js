@@ -5905,7 +5905,7 @@ bot.on('message', message => {
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 40){
           test = test + 1 + renard;
-          if (test < (6 * joueurs)){
+          if (test <= (6 * joueurs)){
             renard = renard + 1;
           }
         }
