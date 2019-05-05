@@ -23104,7 +23104,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(0xff0000)
-.addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Twinoïde 500MG`")
+.addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Twinoïde 500MG`")
 .setTimestamp()
 message.channel.send({embed})}
 if(X >= 22 & X <= 39){
@@ -23112,7 +23112,7 @@ if(X >= 22 & X <= 39){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(0xff0000)
-  .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Balise radius`")
+  .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Balise radius`")
   .setTimestamp()
   message.channel.send({embed})}
   if(X >= 40 & X <= 52){
@@ -23120,7 +23120,7 @@ if(X >= 22 & X <= 39){
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Kit de bricolage`")
+    .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Kit de bricolage`")
     .setTimestamp()
     message.channel.send({embed})}
     if(X >= 53 & X <= 65){
@@ -23128,7 +23128,7 @@ if(X >= 22 & X <= 39){
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte en métal`")
+      .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte en métal`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 66 & X <= 74){
@@ -23136,7 +23136,7 @@ if(X >= 22 & X <= 39){
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Batteur incomplet`")
+        .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Batteur incomplet`")
         .setTimestamp()
         message.channel.send({embed})}
         if(X >= 75 & X <= 82){
@@ -23144,7 +23144,7 @@ if(X >= 22 & X <= 39){
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Taser d'auto-défense (démonté)`")
+          .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Taser d'auto-défense (démonté)`")
           .setTimestamp()
           message.channel.send({embed})}
           if(X >= 83 & X <= 89){
@@ -23152,7 +23152,7 @@ if(X >= 22 & X <= 39){
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte de conserve`")
+            .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte de conserve`")
             .setTimestamp()
             message.channel.send({embed})}
             if(X >= 90 & X <= 96){
@@ -23160,7 +23160,7 @@ if(X >= 22 & X <= 39){
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pompe à jerrycan (démonté)`")
+              .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pompe à jerrycan (démonté)`")
               .setTimestamp()
               message.channel.send({embed})}
               if(X >= 97 & X <= 102){
@@ -23168,7 +23168,7 @@ if(X >= 22 & X <= 39){
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
-                .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
+                .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
                 .setTimestamp()
                 message.channel.send({embed})}
                 if(X >= 103 & X <= 107){
@@ -23176,7 +23176,7 @@ if(X >= 22 & X <= 39){
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(0xff0000)
-                  .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Devastator (démonté)`")
+                  .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Devastator (démonté)`")
                   .setTimestamp()
                   message.channel.send({embed})}
                   if(X >= 108 & X <= 113){
@@ -23184,7 +23184,7 @@ if(X >= 22 & X <= 39){
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Fragments de tôle`")
+                    .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Fragments de tôle`")
                     .setTimestamp()
                     message.channel.send({embed})}
                     if(X >= 114 & X <= 117){
@@ -23192,7 +23192,7 @@ if(X >= 22 & X <= 39){
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setColor(0xff0000)
-                      .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Composant électronique`")
+                      .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Composant électronique`")
                       .setTimestamp()
                       message.channel.send({embed})}
                       if(X >= 118 & X <= 121){
@@ -23200,7 +23200,7 @@ if(X >= 22 & X <= 39){
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(0xff0000)
-                        .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
+                        .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
                         .setTimestamp()
                         message.channel.send({embed})}
                         if(X >= 122 & X <= 124){
@@ -23208,7 +23208,7 @@ if(X >= 22 & X <= 39){
                           .setAuthor(message.author.username , message.author.avatarURL)
                           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                           .setColor(0xff0000)
-                          .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Fusil d'assaut`")
+                          .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Fusil d'assaut`")
                           .setTimestamp()
                           message.channel.send({embed})}
                           if(X >= 125 & X <= 126){
@@ -23216,7 +23216,7 @@ if(X >= 22 & X <= 39){
                             .setAuthor(message.author.username , message.author.avatarURL)
                             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setColor(0xff0000)
-                            .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Taser d'auto-défense`")
+                            .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Taser d'auto-défense`")
                             .setTimestamp()
                             message.channel.send({embed})}
                             if(X >= 127 & X <= 128){
@@ -23224,7 +23224,7 @@ if(X >= 22 & X <= 39){
                               .setAuthor(message.author.username , message.author.avatarURL)
                               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                               .setColor(0xff0000)
-                              .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tronçonneuse (démonté)`")
+                              .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tronçonneuse (démonté)`")
                               .setTimestamp()
                               message.channel.send({embed})}
                               if(X === 129){
@@ -23232,7 +23232,7 @@ if(X >= 22 & X <= 39){
                                 .setAuthor(message.author.username , message.author.avatarURL)
                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                 .setColor(0xff0000)
-                                .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Plaque de tôle`")
+                                .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Plaque de tôle`")
                                 .setTimestamp()
                                 message.channel.send({embed})}
                                 if(X === 130){
@@ -23240,7 +23240,7 @@ if(X >= 22 & X <= 39){
                                   .setAuthor(message.author.username , message.author.avatarURL)
                                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                   .setColor(0xff0000)
-                                  .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tournevis`")
+                                  .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tournevis`")
                                   .setTimestamp()
                                   message.channel.send({embed})}
                                   if(X === 131){
@@ -23248,7 +23248,7 @@ if(X >= 22 & X <= 39){
                                     .setAuthor(message.author.username , message.author.avatarURL)
                                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                     .setColor(0xff0000)
-                                    .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pile`")
+                                    .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pile`")
                                     .setTimestamp()
                                     message.channel.send({embed})}
                                     if(X === 132){
@@ -23256,7 +23256,7 @@ if(X >= 22 & X <= 39){
                                       .setAuthor(message.author.username , message.author.avatarURL)
                                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                       .setColor(0xff0000)
-                                      .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Gros coffre en métal`")
+                                      .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Gros coffre en métal`")
                                       .setTimestamp()
                                       message.channel.send({embed})}
                                       if(X >= 133){
@@ -23264,7 +23264,7 @@ if(X >= 22 & X <= 39){
                                         .setAuthor(message.author.username , message.author.avatarURL)
                                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                         .setColor(0xff0000)
-                                        .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+                                        .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
                                         .setTimestamp()
                                         message.channel.send({embed})}
                       
@@ -23280,7 +23280,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(0xff0000)
-.addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tréteau`")
+.addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tréteau`")
 .setTimestamp()
 message.channel.send({embed})}  
 if(X >= 13 & X <= 24){
@@ -23288,7 +23288,7 @@ if(X >= 13 & X <= 24){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(0xff0000)
-  .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Grosse chaîne rouillée`")
+  .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Grosse chaîne rouillée`")
   .setTimestamp()
   message.channel.send({embed})}   
   if(X >= 25 & X <= 34){
@@ -23296,7 +23296,7 @@ if(X >= 13 & X <= 24){
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
+    .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
     .setTimestamp()
     message.channel.send({embed})}    
     if(X >= 35 & X <= 44){
@@ -23304,7 +23304,7 @@ if(X >= 13 & X <= 24){
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
+      .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
       .setTimestamp()
       message.channel.send({embed})}         
       if(X >= 45 & X <= 53){
@@ -23312,7 +23312,7 @@ if(X >= 13 & X <= 24){
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
+        .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
         .setTimestamp()
         message.channel.send({embed})}   
         if(X >= 54 & X <= 61){
@@ -23320,7 +23320,7 @@ if(X >= 13 & X <= 24){
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Vieille porte`")
+          .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Vieille porte`")
           .setTimestamp()
           message.channel.send({embed})} 
           if(X >= 62 & X <= 69){
@@ -23328,7 +23328,7 @@ if(X >= 13 & X <= 24){
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Outils en vrac`")
+            .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Outils en vrac`")
             .setTimestamp()
             message.channel.send({embed})}
             if(X >= 70 & X <= 76){
@@ -23336,7 +23336,7 @@ if(X >= 13 & X <= 24){
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Clé à molette`")
+              .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Clé à molette`")
               .setTimestamp()
               message.channel.send({embed})}
               if(X >= 77 & X <= 82){
@@ -23344,7 +23344,7 @@ if(X >= 13 & X <= 24){
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
-                .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Mécanisme`")
+                .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Mécanisme`")
                 .setTimestamp()
                 message.channel.send({embed})}
                 if(X >= 83 & X <= 87){
@@ -23352,7 +23352,7 @@ if(X >= 13 & X <= 24){
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(0xff0000)
-                  .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tournevis`")
+                  .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tournevis`")
                   .setTimestamp()
                   message.channel.send({embed})}
                   if(X >= 88 & X <= 92){
@@ -23360,7 +23360,7 @@ if(X >= 13 & X <= 24){
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Barricades à clouer`")
+                    .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Barricades à clouer`")
                     .setTimestamp()
                     message.channel.send({embed})}
                     if(X >= 93 & X <= 98){
@@ -23368,7 +23368,7 @@ if(X >= 13 & X <= 24){
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setColor(0xff0000)
-                      .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Carton de matériaux`")
+                      .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Carton de matériaux`")
                       .setTimestamp()
                       message.channel.send({embed})}
                       if(X >= 99 & X <= 102){
@@ -23376,7 +23376,7 @@ if(X >= 13 & X <= 24){
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(0xff0000)
-                        .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Scie à métaux abîmée`")
+                        .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Scie à métaux abîmée`")
                         .setTimestamp()
                         message.channel.send({embed})}
                         if(X >= 103 & X <= 105){
@@ -23384,7 +23384,7 @@ if(X >= 13 & X <= 24){
                           .setAuthor(message.author.username , message.author.avatarURL)
                           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                           .setColor(0xff0000)
-                          .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Sac de ciment`")
+                          .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Sac de ciment`")
                           .setTimestamp()
                           message.channel.send({embed})}
                           if(X === 106){
@@ -23392,7 +23392,7 @@ if(X >= 13 & X <= 24){
                             .setAuthor(message.author.username , message.author.avatarURL)
                             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setColor(0xff0000)
-                            .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Carton`")
+                            .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Carton`")
                             .setTimestamp()
                             message.channel.send({embed})}
                             if(X === 107){
@@ -23400,7 +23400,7 @@ if(X >= 13 & X <= 24){
                               .setAuthor(message.author.username , message.author.avatarURL)
                               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                               .setColor(0xff0000)
-                              .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Scie à métaux`")
+                              .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Scie à métaux`")
                               .setTimestamp()
                               message.channel.send({embed})}
                               if(X === 108){
@@ -23408,7 +23408,7 @@ if(X >= 13 & X <= 24){
                                 .setAuthor(message.author.username , message.author.avatarURL)
                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                 .setColor(0xff0000)
-                                .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG`")
+                                .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG`")
                                 .setTimestamp()
                                 message.channel.send({embed})}
                                 if(X === 109){
@@ -23416,7 +23416,7 @@ if(X >= 13 & X <= 24){
                                   .setAuthor(message.author.username , message.author.avatarURL)
                                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                   .setColor(0xff0000)
-                                  .addField(":flashlight: Fouille abris de chantier :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG (démonté)`")
+                                  .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG (démonté)`")
                                   .setTimestamp()
                                   message.channel.send({embed})}
                                   if(X >= 110){
@@ -23424,7 +23424,7 @@ if(X >= 13 & X <= 24){
                                     .setAuthor(message.author.username , message.author.avatarURL)
                                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                     .setColor(0xff0000)
-                                    .addField(":flashlight: Fouille abris anti-atomique :" , ":Flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+                                    .addField(":flashlight: Fouille abris anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
                                     .setTimestamp()
                                     message.channel.send({embed})}
   }
@@ -23439,7 +23439,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(0xff0000)
-.addField(":flashlight: Fouille ambulance :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Médicament sans étiquette`")
+.addField(":flashlight: Fouille ambulance :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Médicament sans étiquette`")
 .setTimestamp()
 message.channel.send({embed})}  
 if(X >= 13 & X <= 17){
@@ -23447,7 +23447,7 @@ if(X >= 13 & X <= 17){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(0xff0000)
-  .addField(":flashlight: Fouille ambulance :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
+  .addField(":flashlight: Fouille ambulance :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
   .setTimestamp()
   message.channel.send({embed})}
   if(X >= 18 & X <= 19){
@@ -23455,7 +23455,7 @@ if(X >= 13 & X <= 17){
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Fouille ambulance :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Doggy-bag`")
+    .addField(":flashlight: Fouille ambulance :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Doggy-bag`")
     .setTimestamp()
     message.channel.send({embed})}
     if(X === 20){
@@ -23463,7 +23463,7 @@ if(X >= 13 & X <= 17){
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight: Fouille ambulance :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Scie à métaux abîmée`")
+      .addField(":flashlight: Fouille ambulance :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Scie à métaux abîmée`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 21 & X <= 23){
@@ -23471,7 +23471,7 @@ if(X >= 13 & X <= 17){
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille ambulance :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Bandage rudimentaire`")
+        .addField(":flashlight: Fouille ambulance :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Bandage rudimentaire`")
         .setTimestamp()
         message.channel.send({embed})}
         if(X >= 24){
@@ -23479,7 +23479,7 @@ if(X >= 13 & X <= 17){
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":flashlight: Fouille ambulance :" , ":Flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+          .addField(":flashlight: Fouille ambulance :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
           .setTimestamp()
           message.channel.send({embed})}
   }
@@ -23494,7 +23494,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(0xff0000)
-.addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
+.addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
 .setTimestamp()
 message.channel.send({embed})}  
 if(X >= 8 & X <= 9){
@@ -23502,7 +23502,7 @@ if(X >= 8 & X <= 9){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(0xff0000)
-  .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
+  .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
   .setTimestamp()
   message.channel.send({embed})} 
   if(X >= 10 & X <= 11){
@@ -23510,7 +23510,7 @@ if(X >= 8 & X <= 9){
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
+    .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
     .setTimestamp()
     message.channel.send({embed})}
      if(X >= 12 & X <= 13){
@@ -23518,7 +23518,7 @@ if(X >= 8 & X <= 9){
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Café brûlant`")
+      .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Café brûlant`")
       .setTimestamp()
       message.channel.send({embed})} 
       if(X === 14){
@@ -23526,7 +23526,7 @@ if(X >= 8 & X <= 9){
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Morceau de grillage`")
+        .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Morceau de grillage`")
         .setTimestamp()
         message.channel.send({embed})} 
         if(X === 15){
@@ -23534,7 +23534,7 @@ if(X >= 8 & X <= 9){
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Revolver`")
+          .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Revolver`")
           .setTimestamp()
           message.channel.send({embed})} 
           if(X === 16){
@@ -23542,7 +23542,7 @@ if(X >= 8 & X <= 9){
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Revolver (démonté)`")
+            .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Revolver (démonté)`")
             .setTimestamp()
             message.channel.send({embed})} 
             if(X === 17){
@@ -23550,7 +23550,7 @@ if(X >= 8 & X <= 9){
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Twinoïde 500MG`")
+              .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Twinoïde 500MG`")
               .setTimestamp()
               message.channel.send({embed})} 
               if(X >= 18){
@@ -23558,7 +23558,7 @@ if(X >= 8 & X <= 9){
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(0xff0000)
-                .addField(":flashlight: Fouille ancien aérodrome :" , ":Flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+                .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
                 .setTimestamp()
                 message.channel.send({embed})}
   }
