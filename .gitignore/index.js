@@ -4526,6 +4526,42 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Jeun kobolt attaque")) {
+    const Dégâts = 40
+    const A = (Math.floor((214)*Math.random()+547))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((41)*Math.random()+784))
+    if (B <= 1){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt tente de sauter sur vous afin de vous étrangler probablement mais il glisse et tombe sur le côté, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (2<= B & B <= 3){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt saute d'un bond en avant très rapide et met un coup de tête puissant, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (4 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Jeune kobolt :" , ":crossed_swords: Le jeune kobolt se met à courir rapidement sur le côté ce qui vous le fait perdre de votre champ de vision, et d'un coup vous vous faites étrangler, il inflige " +C+ " par tour pendant trois tours et vous ne pouvez rien faire pendant cette durée\n\n[Une seul personne a droit de faire un roll afin de le dégager, cela utilisera son prochain tour d'attaque, si vous êtes seul vous subissez " +C*1.5+ " points de dégâts]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Young kobolt attaque")) {
     const Dégâts = 40
     const A = (Math.floor((36)*Math.random()+25))
