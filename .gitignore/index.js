@@ -5067,7 +5067,7 @@ bot.on('message', message => {
       .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé tente de bloquer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " +A+ " points de dégats")
       message.channel.send({embed})
     }
-    if (21 <= B & B <= 92){
+    if (21 <= B & B <= 90){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5076,7 +5076,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (93 <= B){
+    if (91 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
