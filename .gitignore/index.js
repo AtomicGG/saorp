@@ -5937,7 +5937,7 @@ bot.on('message', message => {
             lapin = lapin + 1;
           } else break;
         }
-      } while (test < 3);
+      } while (true);
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
