@@ -942,6 +942,82 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup récompenses solo")) {
+    let lvl = args.slice(3).join(" : ");
+    const Viande = Math.floor(3 * Math.random())
+    const Peau = Math.floor(3 *Math.random())
+    const Oeil = Math.floor((2 - 0.75)*Math.random())
+    const Coeur = Math.floor((2 - 0.85)*Math.random())
+    const Croc = Math.floor((2 - 0.90) * Math.random())
+    const Oeufs = Math.floor((2 - 0.98) * Math.random())
+    const controle = Math.floor(30 * Math.random() + 30)
+    const xp = controle - (lvl * 4)
+    const cols = Math.floor(11 * Math.random() + 10)
+    const Clef = Math.floor((2 - 0.98) * Math.random())
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup récompenses groupe")) {
+    let lvl = args.slice(3).join(" : ");
+    const Viande = (Math.floor((2*1)*Math.random()))
+    const Peau = (Math.floor((2*1)*Math.random()))
+    const Oeil = (Math.floor((2-(0.90))*Math.random()))
+    const Coeur = (Math.floor((2-(0.95))*Math.random()))
+    const Croc = (Math.floor((2-(0.90))*Math.random()))
+    const Oeufs = (Math.floor((2-(0.98))*Math.random()))
+    const controle = (Math.floor((25*1)*Math.random()+25*1))
+    const xp = controle-(lvl*4)
+    const cols = (Math.floor((8*1)*Math.random()+7*1))
+    const Clef = (Math.floor((2-(0.99))*Math.random()))
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Slime récompenses solo")) {
     let lvl = args.slice(3).join(" : ");
     const gelatine = Math.floor(3 * Math.random())
@@ -1173,6 +1249,82 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
       addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup de sang récompenses solo")) {
+    let lvl = args.slice(5).join(" : ");
+    const Viande = Math.floor(3 * Math.random())
+    const Peau = Math.floor(3 * Math.random())
+    const Oeil = Math.floor((2 - 0.80) * Math.random())
+    const Coeur = Math.floor((2 - 0.90) * Math.random())
+    const Croc = Math.floor((2 - 0.95) * Math.random())
+    const Oeufs = Math.floor((2 - 0.97) * Math.random())
+    const controle = Math.floor(30 * Math.random() + 45)
+    const xp = controle - (lvl * 5)
+    const cols = Math.floor(21 * Math.random() + 20)
+    const Clef = Math.floor((2 - 0.97) * Math.random())
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup de sang récompenses groupe")) {
+    let lvl = args.slice(5).join(" : ");
+    const Viande = Math.floor(2 * Math.random())
+    const Peau = Math.floor(2 * Math.random())
+    const Oeil = Math.floor((2 - 0.90) * Math.random())
+    const Coeur = Math.floor((2 - 0.95) * Math.random())
+    const Croc = Math.floor((2 - 0.98) * Math.random())
+    const Oeufs = Math.floor((2 - 0.97) * Math.random())
+    const controle = Math.floor(25 * Math.random() + 40)
+    const xp = controle - (lvl * 5)
+    const cols = Math.floor(15 * Math.random() + 15)
+    const Clef = Math.floor((2 - 0.98) * Math.random())
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1691,157 +1843,7 @@ bot.on('message', message => {
 
 // Montagne | Monstres | Récompenses
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup récompenses solo")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = Math.floor(3 * Math.random())
-    const Peau = Math.floor(3 *Math.random())
-    const Oeil = Math.floor((2 - 0.75)*Math.random())
-    const Coeur = Math.floor((2 - 0.85)*Math.random())
-    const Croc = Math.floor((2 - 0.90) * Math.random())
-    const Oeufs = Math.floor((2 - 0.98) * Math.random())
-    const controle = Math.floor(30 * Math.random() + 30)
-    const xp = controle - (lvl * 4)
-    const cols = Math.floor(11 * Math.random() + 10)
-    const Clef = Math.floor((2 - 0.98) * Math.random())
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup récompenses groupe")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = (Math.floor((2*1)*Math.random()))
-    const Peau = (Math.floor((2*1)*Math.random()))
-    const Oeil = (Math.floor((2-(0.90))*Math.random()))
-    const Coeur = (Math.floor((2-(0.95))*Math.random()))
-    const Croc = (Math.floor((2-(0.90))*Math.random()))
-    const Oeufs = (Math.floor((2-(0.98))*Math.random()))
-    const controle = (Math.floor((25*1)*Math.random()+25*1))
-    const xp = controle-(lvl*4)
-    const cols = (Math.floor((8*1)*Math.random()+7*1))
-    const Clef = (Math.floor((2-(0.99))*Math.random()))
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup de sang récompenses solo")) {
-    let lvl = args.slice(5).join(" : ");
-    const Viande = Math.floor(3 * Math.random())
-    const Peau = Math.floor(3 * Math.random())
-    const Oeil = Math.floor((2 - 0.80) * Math.random())
-    const Coeur = Math.floor((2 - 0.90) * Math.random())
-    const Croc = Math.floor((2 - 0.95) * Math.random())
-    const Oeufs = Math.floor((2 - 0.97) * Math.random())
-    const controle = Math.floor(30 * Math.random() + 45)
-    const xp = controle - (lvl * 5)
-    const cols = Math.floor(21 * Math.random() + 20)
-    const Clef = Math.floor((2 - 0.97) * Math.random())
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup de sang récompenses groupe")) {
-    let lvl = args.slice(5).join(" : ");
-    const Viande = Math.floor(2 * Math.random())
-    const Peau = Math.floor(2 * Math.random())
-    const Oeil = Math.floor((2 - 0.90) * Math.random())
-    const Coeur = Math.floor((2 - 0.95) * Math.random())
-    const Croc = Math.floor((2 - 0.98) * Math.random())
-    const Oeufs = Math.floor((2 - 0.97) * Math.random())
-    const controle = Math.floor(25 * Math.random() + 40)
-    const xp = controle - (lvl * 5)
-    const cols = Math.floor(15 * Math.random() + 15)
-    const Clef = Math.floor((2 - 0.98) * Math.random())
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
 
 // Montagne | Métiers
 
@@ -2111,15 +2113,9 @@ bot.on('message', message => {
   }
 })
 
-//////////////////////////////////////////////////////////Monstres récompenses////////////////////////////////////////////////////////////////////////////////////
+// Commandes désactivées
 
-
-
-
-
-
-
-bot.on('message', message => {
+bot.on('message', message => {/*
   if (message.content.startsWith(prefix + "Urguf le chef récompenses")) {
     const B = (Math.floor((3)*Math.random()))
     const C = (Math.floor((3)*Math.random()))
@@ -2139,9 +2135,9 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-}) ;
+*/}) ;
 
-bot.on('message', message => {
+bot.on('message', message => {/*
   if (message.content === prefix + "Citrouille vivante récompenses") {
     const B = (Math.floor((0)*Math.random()+1))
     const C = (Math.floor((2-(0.95))*Math.random()))
@@ -2158,9 +2154,9 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-}) ;
+*/}) ;
 
-bot.on('message', message => {
+bot.on('message', message => {/*
   if (message.content === prefix + "Citrouille vivante géante récompenses") {
     const B = (Math.floor((2*1)*Math.random()+3))
     const C = (Math.floor((2-(0.80))*Math.random()))
@@ -2177,7 +2173,9 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-}) ;
+*/}) ;
+
+//////////////////////////////////////////////////////////Monstres récompenses////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
