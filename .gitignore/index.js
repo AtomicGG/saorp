@@ -5549,7 +5549,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt pilion attaque")) {
     const A = (Math.floor((46)*Math.random()+75))
     const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
+    if (B <= 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5557,12 +5557,12 @@ bot.on('message', message => {
       .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords: Le kobolt pilion fait tourner son marteau aux dessus de lui et essaye de vous frappez mais vous rater et frappe le sol ce qui fait un trambler le sol")
       message.channel.send({embed})
     }
-    if (66 <= B){
+    if (61 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords:Le kobolt pilion fait tourner son marteau aux dessus de lui et fait un coup vertical avec son marteau qui vous envoyer contre un mur, il inflige " +A+ " points de dégâts")
+      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords:Le kobolt pilion fait tourner son marteau aux dessus de lui et fait un coup vertical avec son marteau qui vous envoyer contre un mur, il inflige " +A+ " points de dégâts et baisse votre armure de 10 pour 1 tour")
       .setTimestamp()
       message.channel.send({embed})
     }
