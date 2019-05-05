@@ -1446,6 +1446,90 @@ bot.on('message', message => {
   }
 }) ;
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses solo")) {
+    let lvl = args.slice(6).join(" : ");
+    const stuffClan = Math.floor((2 - 0.95) * Math.random())
+    const bijouxClan = Math.floor((2 - 0.98) * Math.random())
+    const armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
+    const armeClanDeuxMains = Math.floor((2 - 0.98) * Math.random())
+    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+    const controle = Math.floor(50 * Math.random() + 90)
+    const xp = controle - (lvl * 5)
+    const cols = Math.floor(31 * Math.random() + 30)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses groupe")) {
+    let lvl = args.slice(6).join(" : ");
+    const stuffClan = Math.floor((2 - 0.97) * Math.random())
+    const bijouxClan = Math.floor((2 - 0.99) * Math.random())
+    const armeClanUneMain = Math.floor((2 - 0.97) * Math.random())
+    const armeClanDeuxMains = Math.floor((2 - 0.99) * Math.random())
+    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+    const controle = Math.floor(40 * Math.random() + 75)
+    const xp = controle - (lvl * 5)
+    const cols = Math.floor(22 * Math.random() + 22)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
 // Montagne | Monstres | Descriptions
 
 bot.on('message', message => {
@@ -1959,105 +2043,7 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses solo")) {
-    let X = args.slice(5).join(" : ");
-    const I = (Math.floor((2-(0.95))*Math.random()))
-    const J = (Math.floor((2-(0.98))*Math.random()))
-    const K = (Math.floor((2-(0.95))*Math.random()))
-    const L = (Math.floor((2-(0.98))*Math.random()))
-    const M = (Math.floor((2-(0.95))*Math.random()))
-    const N = (Math.floor((2-(0.95))*Math.random()))
-    const O = (Math.floor((2-(0.95))*Math.random()))
-    const P = (Math.floor((2-(0.95))*Math.random()))
-    const Q = (Math.floor((2-(0.95))*Math.random()))
-    const R = (Math.floor((2-(0.95))*Math.random()))
-    const S = (Math.floor((2-(0.95))*Math.random()))
-    const T = (Math.floor((2-(0.95))*Math.random()))
-    const U = (Math.floor((2-(0.90))*Math.random()))
-    const V = (Math.floor((2-(0.90))*Math.random()))
-    const W = (Math.floor((2-(0.90))*Math.random()))
-    const XX = (Math.floor((2-(0.90))*Math.random()))
-    const Y = (Math.floor((2-(0.95))*Math.random()))
-    const YY = (Math.floor((2-(0.95))*Math.random()))
-    //const Orge = (Math.floor((9)*Math.random()+2))
-    const F = (Math.floor((50*1)*Math.random()+90*1))
-    const FF = F-(X*5)
-    const G = (Math.floor((31*1)*Math.random()+30*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G/*+ "\n:candy: Sucres d'orge : " +Orge*/)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G/*+ "\n:candy: Sucres d'orge : " +Orge*/)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses groupe")) {
-    let X = args.slice(5).join(" : ");
-    const I = (Math.floor((2-(0.97))*Math.random()))
-    const J = (Math.floor((2-(0.99))*Math.random()))
-    const K = (Math.floor((2-(0.97))*Math.random()))
-    const L = (Math.floor((2-(0.99))*Math.random()))
-    const M = (Math.floor((2-(0.95))*Math.random()))
-    const N = (Math.floor((2-(0.95))*Math.random()))
-    const O = (Math.floor((2-(0.95))*Math.random()))
-    const P = (Math.floor((2-(0.95))*Math.random()))
-    const Q = (Math.floor((2-(0.95))*Math.random()))
-    const R = (Math.floor((2-(0.95))*Math.random()))
-    const S = (Math.floor((2-(0.95))*Math.random()))
-    const T = (Math.floor((2-(0.95))*Math.random()))
-    const U = (Math.floor((2-(0.90))*Math.random()))
-    const V = (Math.floor((2-(0.90))*Math.random()))
-    const W = (Math.floor((2-(0.90))*Math.random()))
-    const XX = (Math.floor((2-(0.90))*Math.random()))
-    const Y = (Math.floor((2-(0.95))*Math.random()))
-    const YY = (Math.floor((2-(0.95))*Math.random()))
-    //const Orge = (Math.floor((9)*Math.random()+2))
-    const F = (Math.floor((40*1)*Math.random()+75*1))
-    const FF = F-(X*5)
-    const G = (Math.floor((22*1)*Math.random()+22*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G/*+ "\n:candy: Sucres d'orge : " +Orge*/)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales: Arme du clan des loups à une main au choix : " +K+ "\n:scales: Arme du clan des loups à deux mains au choix : " +L+ "\n:syringe: Potion légère de soin : " +T+ "\n:syringe: Potion légère de défense : " +Y+ "\n:syringe: Potion légère de force : " +YY+ "\n:meat_on_bone: Ragoût de loup : " +U+ "\n:meat_on_bone: Ragoût de taupe : " +V+ "\n:meat_on_bone: Ragoût de lapin géant : " +W+ "\n:meat_on_bone: Ragoût de loup de sang : " +XX+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G/*+ "\n:candy: Sucres d'orge : " +Orge*/)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
