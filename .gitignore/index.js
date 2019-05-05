@@ -5907,35 +5907,35 @@ bot.on('message', message => {
           test = test + 1 + renard;
           if (test <= (6 * joueurs)){
             renard = renard + 1;
-          }
+          } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 2 + sanglier;
           if (test <= (6 * joueurs)){
             sanglier = sanglier + 1;
-          }
+          } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 40){
           test = test + 1 + chien;
           if (test <= (6 * joueurs)){
             chien = chien + 1;
-          }
+          } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 20){
           test = test + 3 + bandit;
           if (test <= (6 * joueurs)){
             bandit = bandit + 1;
-          }
+          } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 4 + lapin;
           if (test <= (6 * joueurs)){
             lapin = lapin + 1;
-          }
+          } else break;
         }
       } while (test < 3);
       const embed = new Discord.RichEmbed()
