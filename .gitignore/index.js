@@ -5484,6 +5484,68 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Chien adulte attaque")) {
+    const A = (Math.floor((36)*Math.random()+55))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((6)*Math.random()+10))
+    const D = (Math.floor((3)*Math.random()+1))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt combattant :" , ":crossed_swords: Le chien adulte se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
+      message.channel.send({embed})
+    }
+    if (26 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt combattant :" , ":crossed_swords: Le chien adulte tente de vous surprendre en vous mordant la jambe rapidement, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt espion:" , ":crossed_swords: Le chien adulte fonce sur votre bras et le mord sauvagement et inflige " +A+ " et vous fait saignez. Ce qui vous inflige " +C+ " pendant " +D+ " tours")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Chien adulte défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor((Dégâts*0.5)*Math.random()+(Dégâts*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien adulte tente d'equiver votre coup en partant rapidement en arrière, mais vous l'avez pris de court et votre coup le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (76 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien adulte se faufile des les espace étroit de la grotte. Vous ne pouvez pas l'atteindre ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt espion attaque")) {
     const Dégâts = 40
     const A = (Math.floor((91)*Math.random()+180))
