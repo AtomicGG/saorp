@@ -5881,6 +5881,21 @@ bot.on('message', message => {
   }
 })
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Chuka"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(1447003)
+    .addField("Pseudo :" , "Fuka")
+    .addField("Joyeux anniversaire :" , "Joyeux anniversaire Chuka ! On t'adore ! On t'aime ! Yahoo ! C'est ton anniverssaire il faut que se soit bien, mon cadeau est super c'est ce jolie refrains, alors chuka viens chanter avec moi cette chanson la elle est pour toi ! Joyeux anniversaire !")
+    .setImage("https://besthqwallpapers.com/Uploads/24-10-2018/69831/thumb2-kaito-birthday-cake-artwork-manga-happy-birthday.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+
 ///////////////////////////////////////////////////////////Info serveur//////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
