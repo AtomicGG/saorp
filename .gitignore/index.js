@@ -1871,8 +1871,6 @@ bot.on('message', message => {
 
 //////////////////////////////////////////////////////////Monstres récompenses////////////////////////////////////////////////////////////////////////////////////
 
-
-
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -5884,8 +5882,55 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Plaine combat 1")) {
+  if (message.content.startsWith(prefix + "Test Plaine combat")) {
+    let joueurs = args.slice(3).join(" : ");
     if (/*talkedRecently.has(message.author.id+1000)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let test = 0;
+      let renard = 0;
+      let sanglier = 0;
+      let chien = 0;
+      let bandit = 0;
+      let lapin = 0;
+      let roll = 0;
+      do {
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 40){
+          test = test + 1 + renard;
+          if (test < (6 * joueurs)){
+            renard = renard + 1;
+          }
+        }
+      } while (test < 3);
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +renard+ "\n:crossed_swords: Sanglier(s) " +sanglier+ "\n:crossed_swords: Chien(s) : " +chien+ "\n:crossed_swords: Bandit(s) débutant(s) : " +bandit+ "\n:crossed_swords: Lapin(s) géant(s) : " +lapin)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
+/*bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Test Plaine combat : 1")) {
+    if (/*talkedRecently.has(message.author.id+1000)*//*false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5952,7 +5997,7 @@ bot.on('message', message => {
       talkedRecently.delete(message.author.id+1000);
     }, 600000);
   }
-})
+})*/
 
 //////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
