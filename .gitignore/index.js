@@ -5909,6 +5909,34 @@ bot.on('message', message => {
             renard = renard + 1;
           }
         }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 30){
+          test = test + 2 + sanglier;
+          if (test <= (6 * joueurs)){
+            sanglier = sanglier + 1;
+          }
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 40){
+          test = test + 1 + chien;
+          if (test <= (6 * joueurs)){
+            chien = chien + 1;
+          }
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 20){
+          test = test + 3 + bandit;
+          if (test <= (6 * joueurs)){
+            bandit = bandit + 1;
+          }
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 30){
+          test = test + 4 + lapin;
+          if (test <= (6 * joueurs)){
+            lapin = lapin + 1;
+          }
+        }
       } while (test < 3);
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
