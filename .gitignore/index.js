@@ -763,7 +763,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
+                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
+                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
+                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
+                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -773,7 +781,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
+                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
+                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
+                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
+                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -800,7 +816,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n:knife: Peau de lapin géant : " + Peau + "\n:eye: Oeil de lapin géant : " + Oeil + "\n:cupid: Coeur de lapin géant : " + Coeur + "\n:gem: Oreille de lapin : " + Oreille + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
+                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
+                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
+                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
+                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -810,7 +833,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n:knife: Peau de lapin géant : " + Peau + "\n:eye: Oeil de lapin géant : " + Oeil + "\n:cupid: Coeur de lapin géant : " + Coeur + "\n:gem: Oreille de lapin : " + Oreille + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
+                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
+                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
+                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
+                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -837,7 +867,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n:knife: Peau de lapin géant : " + Peau + "\n:eye: Oeil de lapin géant : " + Oeil + "\n:cupid: Coeur de lapin géant : " + Coeur + "\n:gem: Oreille de lapin : " + Oreille + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
+                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
+                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
+                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
+                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -877,7 +914,11 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Persil : " + Persils + "\n:wilted_rose: Herbe médicinale faible : " + Herbe + "\n:wilted_rose: Baie : " + Baies + "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                               ":wilted_rose: Persil : " + Persils + "\n" +
+                                               ":wilted_rose: Herbe médicinale faible : " + Herbe + "\n" +
+                                               ":wilted_rose: Baie : " + Baies + "\n" +
+                                               ":sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -910,7 +951,12 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de lapin : " +Viande+ "\n:knife: Peau de lapin : " +Peau+ "\n:cupid: Coeur de lapin : " +Coeur+ "\n:eye: Oeil de lapin : " +Oeil+ "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                     ":knife: Viande de lapin : " +Viande+ "\n" +
+                                     ":knife: Peau de lapin : " +Peau+ "\n" +
+                                     ":cupid: Coeur de lapin : " +Coeur+ "\n" +
+                                     ":eye: Oeil de lapin : " +Oeil+ "\n" +
+                                     ":sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " +Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -951,7 +997,12 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Loups : " + Loup + "\n:crossed_swords: Slimes : " + Slime + "\n:crossed_swords: Bandits expérimentés : " + BanditExp + "\n:crossed_swords: Bandits sombres : " + BanditSombre + "\n:crossed_swords: Loups de sang : " + LoupDeSang)
+        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                     ":crossed_swords: Loups : " + Loup + "\n" +
+                                                     ":crossed_swords: Slimes : " + Slime + "\n" +
+                                                     ":crossed_swords: Bandits expérimentés : " + BanditExp + "\n" +
+                                                     ":crossed_swords: Bandits sombres : " + BanditSombre + "\n" +
+                                                     ":crossed_swords: Loups de sang : " + LoupDeSang)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -967,7 +1018,12 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Cuivres médiocres : " + Minerai + "\n:pick: Bois de frêne médiocres : " + Bois + "\n:pick: Estragons : " + Estragon + "\n:pick: Viandes de taupe : " + ViandeTaupe + "\n:pick: Peaux de taupe : " + PeauTaupe)
+        .addField(":bookmark: Quête de la forêt :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n" +
+                                                     ":pick: Cuivres médiocres : " + Minerai + "\n" +
+                                                     ":pick: Bois de frêne médiocres : " + Bois + "\n" +
+                                                     ":pick: Estragons : " + Estragon + "\n" +
+                                                     ":pick: Viandes de taupe : " + ViandeTaupe + "\n" +
+                                                     ":pick: Peaux de taupe : " + PeauTaupe)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -997,7 +1053,12 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Clef du donjon sauvage : " + clefDonjonSauvage)
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                   ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                                   ":scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                                   ":scales: Clef du donjon sauvage : " + clefDonjonSauvage)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1007,7 +1068,12 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Clef du donjon sauvage : " + clefDonjonSauvage)
+      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                   ":sparkles: Points d'expérience : 0\n" +
+                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                   ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                                   ":scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                                   ":scales: Clef du donjon sauvage : " + clefDonjonSauvage)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1124,7 +1190,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n" +
+                                               ":knife: Peau de loup : " + Peau + "\n" +
+                                               ":eye: Oeil de loup : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup : " + Coeur + "\n" +
+                                               ":gem: Croc de loup : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " +Oeufs+ "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1134,7 +1208,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n" +
+                                               ":knife: Peau de loup : " + Peau + "\n" +
+                                               ":eye: Oeil de loup : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup : " + Coeur + "\n" +
+                                               ":gem: Croc de loup : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " +Oeufs+ "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1162,7 +1244,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n" +
+                                               ":knife: Peau de loup : " + Peau + "\n" +
+                                               ":eye: Oeil de loup : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup : " + Coeur + "\n" +
+                                               ":gem: Croc de loup : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " +Oeufs+ "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1172,7 +1262,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n:knife: Peau de loup : " + Peau + "\n:eye: Oeil de loup : " + Oeil + "\n:cupid: Coeur de loup : " + Coeur + "\n:gem: Croc de loup : " + Croc + "\n:gem: Oeuf déformé : " +Oeufs+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n" +
+                                               ":knife: Peau de loup : " + Peau + "\n" +
+                                               ":eye: Oeil de loup : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup : " + Coeur + "\n" +
+                                               ":gem: Croc de loup : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " +Oeufs+ "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1198,7 +1296,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n:gem: Pierre de poison faible : " + poison + "\n:scales: Equipement rouillé au choix : " + stuffRouille + "\n:scales: Bijoux rouillé au choix : " + bijouxRouille + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n" +
+                                               ":gem: Pierre de poison faible : " + poison + "\n" +
+                                               ":scales: Equipement rouillé au choix : " + stuffRouille + "\n" +
+                                               ":scales: Bijoux rouillé au choix : " + bijouxRouille + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1208,7 +1312,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n:gem: Pierre de poison faible : " + poison + "\n:scales: Equipement rouillé au choix : " + stuffRouille + "\n:scales: Bijoux rouillé au choix : " + bijouxRouille + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n" +
+                                               ":gem: Pierre de poison faible : " + poison + "\n" +
+                                               ":scales: Equipement rouillé au choix : " + stuffRouille + "\n" +
+                                               ":scales: Bijoux rouillé au choix : " + bijouxRouille + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1234,7 +1344,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n:gem: Pierre de poison faible : " + poison + "\n:scales: Equipement rouillé au choix : " + stuffRouille + "\n:scales: Bijoux rouillé au choix : " + bijouxRouille + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n" +
+                                               ":gem: Pierre de poison faible : " + poison + "\n" +
+                                               ":scales: Equipement rouillé au choix : " + stuffRouille + "\n" +
+                                               ":scales: Bijoux rouillé au choix : " + bijouxRouille + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1244,7 +1360,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n:gem: Pierre de poison faible : " + poison + "\n:scales: Equipement rouillé au choix : " + stuffRouille + "\n:scales: Bijoux rouillé au choix : " + bijouxRouille + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n" +
+                                               ":gem: Pierre de poison faible : " + poison + "\n" +
+                                               ":scales: Equipement rouillé au choix : " + stuffRouille + "\n" +
+                                               ":scales: Bijoux rouillé au choix : " + bijouxRouille + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1275,7 +1397,18 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1285,7 +1418,18 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1316,7 +1460,18 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1326,7 +1481,18 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1359,7 +1525,20 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1369,7 +1548,20 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1402,7 +1594,20 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1412,7 +1617,20 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n:scales: Bijoux du croc au choix : " + bijouxCroc + "\n:scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n:scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                               ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                               ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                               ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1440,7 +1658,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n" +
+                                               ":knife: Peau de loup de sang : " + Peau + "\n" +
+                                               ":eye: Oeil de loup de sang : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup de sang : " + Coeur + "\n" +
+                                               ":gem: Croc de loup de sang : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1450,7 +1676,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n" +
+                                               ":knife: Peau de loup de sang : " + Peau + "\n" +
+                                               ":eye: Oeil de loup de sang : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup de sang : " + Coeur + "\n" +
+                                               ":gem: Croc de loup de sang : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1478,7 +1712,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n" +
+                                               ":knife: Peau de loup de sang : " + Peau + "\n" +
+                                               ":eye: Oeil de loup de sang : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup de sang : " + Coeur + "\n" +
+                                               ":gem: Croc de loup de sang : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1488,7 +1730,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n:knife: Peau de loup de sang : " + Peau + "\n:eye: Oeil de loup de sang : " + Oeil + "\n:cupid: Coeur de loup de sang : " + Coeur + "\n:gem: Croc de loup de sang : " + Croc + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:scales: Clef du donjon sauvage : " + Clef)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n" +
+                                               ":knife: Peau de loup de sang : " + Peau + "\n" +
+                                               ":eye: Oeil de loup de sang : " + Oeil + "\n" +
+                                               ":cupid: Coeur de loup de sang : " + Coeur + "\n" +
+                                               ":gem: Croc de loup de sang : " + Croc + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols + "\n" +
+                                               ":scales: Clef du donjon sauvage : " + Clef)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1517,7 +1767,10 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Estragon : " + Estragon + "\n:wilted_rose: Herbe médicinale : " + Herbe + "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                               ":wilted_rose: Estragon : " + Estragon + "\n" +
+                                               ":wilted_rose: Herbe médicinale : " + Herbe + "\n" +
+                                               ":sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1548,7 +1801,10 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre médiocre : " + CuivreMediocre + "\n:pick: Cuivre commun : " + CuivreCommun + "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                    ":pick: Cuivre médiocre : " + CuivreMediocre + "\n" +
+                                    ":pick: Cuivre commun : " + CuivreCommun + "\n" +
+                                    ":pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1579,7 +1835,10 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
-      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne médiocre : " + BoisMediocre + "\n:deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " + Exp)
+      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                                ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre + "\n" +
+                                                ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
+                                                ":deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -1612,7 +1871,12 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de taupe : " + Viande + "\n:knife: Peau de taupe : " + Peau + "\n:cupid: Coeur de taupe : " + Coeur + "\n:eye: Oeil de taupe : " + Oeil + "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " + Exp)
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                     ":knife: Viande de taupe : " + Viande + "\n" +
+                                     ":knife: Peau de taupe : " + Peau + "\n" +
+                                     ":cupid: Coeur de taupe : " + Coeur + "\n" +
+                                     ":eye: Oeil de taupe : " + Oeil + "\n" +
+                                     ":sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
