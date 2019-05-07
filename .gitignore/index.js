@@ -5991,41 +5991,41 @@ bot.on('message', message => {
       let roll = 0;
       do {
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 40){
+        if (roll <= 75){
           test = test + 1 + renard;
-          if (test <= (6 * joueurs)){
+          if (test <= (5 * joueurs)){
             renard = renard + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 30){
+        if (roll <= 60){
           test = test + 2 + sanglier;
-          if (test <= (6 * joueurs)){
+          if (test <= (5 * joueurs)){
             sanglier = sanglier + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 40){
-          test = test + 1 + chien;
-          if (test <= (6 * joueurs)){
+        if (roll <= 75){
+          test = test + 2 + chien;
+          if (test <= (5 * joueurs)){
             chien = chien + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 20){
+        if (roll <= 40){
           test = test + 3 + bandit;
-          if (test <= (6 * joueurs)){
+          if (test <= (5 * joueurs)){
             bandit = bandit + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 20){
+        if (roll <= 40){
           test = test + 4 + (2 * lapin);
-          if (test <= (6 * joueurs)){
+          if (test <= (5 * joueurs)){
             lapin = lapin + 1;
           } else break;
         }
-      } while (test <= (6 * joueurs));
+      } while (test <= (5 * joueurs));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6041,79 +6041,6 @@ bot.on('message', message => {
     }, 600000);
   }
 })
-
-/*bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Plaine combat : 1")) {
-    if (/*talkedRecently.has(message.author.id+1000)*//*false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const schema = Math.floor(5*Math.random()+1)
-      if(schema == 1) {
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":sunrise_over_mountains: Plaines cas 1 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants :\n\n:crossed_swords: Renard(s) : 3\n:crossed_swords: Sanglier(s) : 0\n:crossed_swords: Chien(s) : 0\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
-        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(schema == 2){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":sunrise_over_mountains: Plaines cas 2 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants :\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 0\n:crossed_swords: Chien(s) : 0\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
-        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(schema == 3){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":sunrise_over_mountains: Plaines cas 3 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants :\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 1\n:crossed_swords: Chien(s) : 0\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
-        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(schema == 4){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":sunrise_over_mountains: Plaines cas 4 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants :\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 1\n:crossed_swords: Chien(s) : 1\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
-        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(schema == 5){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":sunrise_over_mountains: Plaines cas 5 :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants :\n\n:crossed_swords: Renard(s) : 2\n:crossed_swords: Sanglier(s) : 0\n:crossed_swords: Chien(s) : 1\n:crossed_swords: Bandit(s) débutant(s) : 0\n:crossed_swords: Lapin(s) géant(s) : 0")
-        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000);
-  }
-})*/
 
 //////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
 
