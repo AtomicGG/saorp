@@ -235,7 +235,11 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " + Sanglier + "\n:crossed_swords: Renards : " + Renard + "\n:crossed_swords: Chiens errants : " + Chien + "\n:crossed_swords: Bandits débutants : " + Bandit + "\n:crossed_swords: Lapins géants : " + Lapin)
+        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " + Sanglier +
+                                                                                                                 "\n:crossed_swords: Renards : " + Renard +
+                                                                                                                 "\n:crossed_swords: Chiens errants : " + Chien +
+                                                                                                                 "\n:crossed_swords: Bandits débutants : " + Bandit +
+                                                                                                                 "\n:crossed_swords: Lapins géants : " + Lapin)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
