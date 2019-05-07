@@ -6005,13 +6005,6 @@ bot.on('message', message => {
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 75){
-          test = test + 2 + chien;
-          if (test <= (5 * joueurs)){
-            chien = chien + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
         if (roll <= 40){
           test = test + 3 + bandit;
           if (test <= (5 * joueurs)){
@@ -6024,6 +6017,13 @@ bot.on('message', message => {
           if (test <= (5 * joueurs)){
             lapin = lapin + 1;
           } else break;
+          roll = Math.floor(100*Math.random()+1)
+          if (roll <= 75){
+            test = test + 2 + chien;
+            if (test <= (5 * joueurs)){
+              chien = chien + 1;
+            } else break;
+          }
         }
       } while (test <= (5 * joueurs));
       const embed = new Discord.RichEmbed()
