@@ -254,7 +254,10 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " + Percil + "\n:pick: Baies : " + Baie + "\n:pick: Viandes de lapin : " + ViandeLapin + "\n:pick: Peaux de lapin : " + PeauLapin)
+        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " + Percil + "\n" +
+                                                                                                                        ":pick: Baies : " + Baie + "\n" +
+                                                                                                                        ":pick: Viandes de lapin : " + ViandeLapin + "\n" +
+                                                                                                                        ":pick: Peaux de lapin : " + PeauLapin)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -283,7 +286,11 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
+      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                   ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
+                                                   ":scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -293,7 +300,11 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
+      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                   ":sparkles: Points d'expérience : 0\n" +
+                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                   ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
+                                                   ":scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
       .setTimestamp()
       message.channel.send({embed})
     }
