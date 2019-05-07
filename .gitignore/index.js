@@ -54,23 +54,50 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":crossed_swords: Pour effectuer un coup normal :" , ":crossed_swords: `=Coup normal simple : [Vos dégâts]`\n:crossed_swords: `=Coup normal amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup normal supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup normal suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un coup normal :" , ":crossed_swords: `=Coup normal simple : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup normal amélioré : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup normal supérieur : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup normal suprême : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup précis :" , ":crossed_swords: `=Coup précis simple : [Vos dégâts]`\n:crossed_swords: `=Coup précis amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup précis supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup précis suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un coup précis :" , ":crossed_swords: `=Coup précis simple : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup précis amélioré : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup précis supérieur : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup précis suprême : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup d'estoc :" , ":crossed_swords: `=Coup d'estoc simple : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup d'estoc suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un coup d'estoc :" , ":crossed_swords: `=Coup d'estoc simple : [Vos dégâts]`\n" +
+                                                                    ":crossed_swords: `=Coup d'estoc amélioré : [Vos dégâts]`\n" +
+                                                                    ":crossed_swords: `=Coup d'estoc supérieur : [Vos dégâts]`\n" +
+                                                                    ":crossed_swords: `=Coup d'estoc suprême : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup provocateur :" , ":crossed_swords: `=Coup provocateur simple : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup provocateur suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un coup provocateur :" , ":crossed_swords: `=Coup provocateur simple : [Vos dégâts]`\n" +
+                                                                        ":crossed_swords: `=Coup provocateur amélioré : [Vos dégâts]`\n" +
+                                                                        ":crossed_swords: `=Coup provocateur supérieur : [Vos dégâts]`\n" +
+                                                                        ":crossed_swords: `=Coup provocateur suprême : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup circulaire :" , ":crossed_swords: `=Coup circulaire simple : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire amélioré : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire supérieur : [Vos dégâts]`\n:crossed_swords: `=Coup circulaire suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un coup circulaire :" , ":crossed_swords: `=Coup circulaire simple : [Vos dégâts]`\n" +
+                                                                       ":crossed_swords: `=Coup circulaire amélioré : [Vos dégâts]`\n" +
+                                                                       ":crossed_swords: `=Coup circulaire supérieur : [Vos dégâts]`\n" +
+                                                                       ":crossed_swords: `=Coup circulaire suprême : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un cri de provocation :" , ":crossed_swords: `=Cri de provocation simple`\n:crossed_swords: `=Cri de provocation amélioré`\n:crossed_swords: `=Cri de provocation supérieur`\n:crossed_swords: `=Cri de provocation suprême`")
+    .addField(":crossed_swords: Pour effectuer un cri de provocation :" , ":crossed_swords: `=Cri de provocation simple`\n" +
+                                                                          ":crossed_swords: `=Cri de provocation amélioré`\n" +
+                                                                          ":crossed_swords: `=Cri de provocation supérieur`\n" +
+                                                                          ":crossed_swords: `=Cri de provocation suprême`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un combo :" , ":crossed_swords: `=Combo simple : [Vos dégâts]`\n:crossed_swords: `=Combo amélioré : [Vos dégâts]`\n:crossed_swords: `=Combo supérieur : [Vos dégâts]`\n:crossed_swords: `=Combo suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un combo :" , ":crossed_swords: `=Combo simple : [Vos dégâts]`\n" +
+                                                             ":crossed_swords: `=Combo amélioré : [Vos dégâts]`\n" +
+                                                             ":crossed_swords: `=Combo supérieur : [Vos dégâts]`\n" +
+                                                             ":crossed_swords: `=Combo suprême : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":shield: Pour effectuer une esquive :" , ":shield: `=Esquive simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Esquive suprême : [Dégâts de l'attaque de l'ennemis]`")
+    .addField(":shield: Pour effectuer une esquive :" , ":shield: `=Esquive simple : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                        ":shield: `=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                        ":shield: `=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                        ":shield: `=Esquive suprême : [Dégâts de l'attaque de l'ennemis]`")
     .addBlankField(true)
-    .addField(":shield: Pour effectuer un blocage :" , ":shield: `=Blocage simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Blocage suprême : [Dégâts de l'attaque de l'ennemis]`")
+    .addField(":shield: Pour effectuer un blocage :" , ":shield: `=Blocage simple : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                       ":shield: `=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                       ":shield: `=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                       ":shield: `=Blocage suprême : [Dégâts de l'attaque de l'ennemis]`")
     .addBlankField(true)
     .addField(":book: Pour savoir ce que vous débloquez selon le niveau :" , ":book: `=Coups et défenses apprentissage`")
     .addBlankField(true)
