@@ -2062,7 +2062,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt mineur récompenses solo")) {
     let lvl = args.slice(4).join(" : ");
-    const oreille = Math.floor(2 * Math.random() + 1))
+    const oreille = Math.floor(2 * Math.random() + 1)
     const echantillon = Math.floor((2 - 0.75) * Math.random())
     const dent = Math.floor((2 - 0.85) * Math.random())
     const pioche = Math.floor((2 - 0.95) * Math.random())
@@ -2101,7 +2101,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt mineur récompenses groupe")) {
     let lvl = args.slice(4).join(" : ");
-    const oreille = Math.floor(2 * Math.random() + 1))
+    const oreille = Math.floor(2 * Math.random() + 1)
     const echantillon = Math.floor((2 - 0.85) * Math.random())
     const dent = Math.floor((2 - 0.95) * Math.random())
     const pioche = Math.floor((2 - 0.98) * Math.random())
