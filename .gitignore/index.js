@@ -1988,15 +1988,15 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt ouvrier récompenses solo")) {
     let X = args.slice(4).join(" : ");
-    const A = (Math.floor((2)*Math.random()+1))
-    const B = (Math.floor((2-(0.75))*Math.random()))
-    const C = (Math.floor((2-(0.85))*Math.random()))
-    const D = (Math.floor((2-(0.95))*Math.random()))
-    const E = (Math.floor((2-(0.90))*Math.random()))
-    const EE = (Math.floor((2-(0.97))*Math.random()))
-    const F = (Math.floor((51*1)*Math.random()+90*1))
-    const FF = F-(X*6)
-    const G = (Math.floor((31*1)*Math.random()+30*1))
+    const A = Math.floor(2 * Math.random() + 1))
+    const B = Math.floor((2 - 0.75) * Math.random())
+    const C = Math.floor((2 - 0.85) * Math.random())
+    const D = Math.floor((2 - 0.95) * Math.random())
+    const E = Math.floor((2 - 0.90) * Math.random())
+    const EE = Math.floor((2 - 0.97) * Math.random())
+    const F = Math.floor(51 * Math.random() + 90)
+    const FF = F - (X * 6)
+    const G = Math.floor(31 * Math.random() + 30)
     if(FF > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -5993,39 +5993,39 @@ bot.on('message', message => {
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 75){
           test = test + 1 + renard;
-          if (test <= (5 * joueurs)){
+          if (test <= (5.5 * joueurs)){
             renard = renard + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 60){
           test = test + 2 + sanglier;
-          if (test <= (5 * joueurs)){
+          if (test <= (5.5 * joueurs)){
             sanglier = sanglier + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 40){
           test = test + 3 + bandit;
-          if (test <= (5 * joueurs)){
+          if (test <= (5.5 * joueurs)){
             bandit = bandit + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 3 + (2 * lapin);
-          if (test <= (5 * joueurs)){
+          if (test <= (5.5 * joueurs)){
             lapin = lapin + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 75){
           test = test + 2 + chien;
-          if (test <= (5 * joueurs)){
+          if (test <= (5.5 * joueurs)){
             chien = chien + 1;
           } else break;
         }
-      } while (test <= (5 * joueurs));
+      } while (test <= (5.5 * joueurs));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
