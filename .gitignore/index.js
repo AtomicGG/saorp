@@ -19896,7 +19896,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les combats, partie 1 :" , "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un survivant en particulier sauf si vous vous interposez !\n\nPour savoir combien de zombies infiltrés en ville la nuit suivront un survivant : `=Nombre de zombie : [Le nombre de zombie infiltrés/restants]`\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Horde combat 2`")    .setTimestamp()
+.addField("Les combats, partie 1 :" , "Lorsque vous êtes en groupe contre un ou plusieurs zombies, il faudra déterminer qui sera le premier à agir, le second, et ainsi de suite comme des numéros et en tour par tour !\n\nLes zombies attaqueront toujours après les joueurs sauf s'il y a une embuscade ou une attaque dans le dos...\n\nA savoir que les zombies attaqueront toujours un ou plusieurs survivants en même temps...\n\nPour déterminer quel survivant le ou les zombies attaqueront : `=Cible : [Nombre de survivant dans le combat]`\n\nLa suite en écrivant : `=Horde combat 2`")    .setTimestamp()
 message.channel.send({embed})
 }
 }) ;
@@ -19908,7 +19908,7 @@ bot.on('message', message => {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les combats, partie 2 :" , "Les différentes attaques spéciales grâce aux armes sont écrites sur les informations de l'arme en question !\n\nPour avoir la liste des actions possibles sans armes : `=Horde actions`\n\nUne chose importante, si plusieurs survivants sont pourchassés par des zombies et que les survivants se regroupent, les zombies formeront plus qu'un groupe !\n\nLorsque vous fuiyez les zombies en allant ailleurs, vous aurez toujours l'initiative pour les attaquer !")    .setTimestamp()
+  .addField("Les combats, partie 2 :" , "Les différentes attaques spéciales grâce aux armes sont écrites sur les informations de l'arme en question !\n\nPour avoir la liste des actions possibles sans armes : `=Horde actions`\n\nLorsque vous fuiyez les zombies en allant ailleurs, vous aurez toujours l'initiative pour les attaquer si vous revenez !\n\nEn général, les combats s'apprennent sur le terrain alors n'hésite pas à observer comment les autres survivants font !")    .setTimestamp()
   message.channel.send({embed})
   }
   }) ;
@@ -19923,12 +19923,106 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Nombre de zombie :" , "Le nombre de zombie suivant le survivant sera de " +Zombies+ " !")
+    .addField("Nombre de zombie :" , "Le groupe sera constitué de " +Zombies+ " zombies...")
     .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Groupe de zombies")) {
+    const Groupe = (Math.floor((5)*Math.random()+1))
+    if(Groupe === 1){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Groupe de zombies :" , "Les zombies s'infiltrant dans votre ville forme un immense groupe alors bonne chance...")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(Groupe === 2){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Groupe de zombies :" , "Les zombies s'infiltrant dans votre ville forme 2 groupes alors bonne chance...")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(Groupe === 3){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Groupe de zombies :" , "Les zombies s'infiltrant dans votre ville forme 3 groupes alors bonne chance...")
+        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(Groupe === 4){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Groupe de zombies :" , "Les zombies s'infiltrant dans votre ville forme 4 groupes alors bonne chance...")
+          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(Groupe === 5){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Groupe de zombies :" , "Les zombies s'infiltrant dans votre ville forme 5 groupes alors bonne chance...")
+            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+            .setTimestamp()
+            message.channel.send({embed})}
+  }
+}) ;
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Cible")) {
+    let X = args.slice(1).join(" : ");
+    const Joueurs = (Math.floor((X)*Math.random()+1))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Cible :" , "Le groupe de zombie attaquera le survivant [" +Joueurs+ "]...")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Fin de l'attaque")) {
+    const X = (Math.floor((100)*Math.random()+1))
+    if(X < 75){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Fin de l'attaque :" , "Le groupe de zombie continue de faire des ravages en ville...")
+    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(X > 76){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Fin de l'attaque :" , "Le groupe de zombie repart en dehors de la ville !")
+      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      .setTimestamp()
+      message.channel.send({embed})}
+  }
+}) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Horde actions")) {
@@ -20305,22 +20399,6 @@ bot.on('message', message => {
   }
   }) ;
 
-  bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Cible")) {
-      let X = args.slice(1).join(" : ");
-      const Joueurs = (Math.floor((X)*Math.random()+1))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(0xff0000)
-      .addField("Cible :" , "Le ou les zombies attaquent le survivant [" +Joueurs+ "]...")
-      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  });
 
 
       bot.on('message', message => {
@@ -20837,6 +20915,7 @@ bot.on('message', message => {
     const Z = ZZ*2
     const A = (Math.floor((100)*Math.random()+Z))
     const X = (Math.floor((Z/10)*Math.random()+1))
+    const Survivants = (Math.floor((ZZ/6)*Math.random()+1))
     if(A < 30-Z){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -20858,7 +20937,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Lorsque les zombies arrivent à votre contact, à l'aide de ses mains et de leur bras en avant, ils aggripent votre bras et serre en y plantant leur ongles pourries...\n\n:heart: Votre état : `Blessure légère`\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`")        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Lorsque les zombies arrivent à votre contact, à l'aide de ses mains et de leur bras en avant, ils aggripent votre bras et serre en y plantant leur ongles pourries...\n\n:heart: Votre état : `Blessure légère`\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`")        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
         message.channel.send({embed})}
         if(A > 71-Z & A < 80-Z){
@@ -20866,7 +20945,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: En arrivant à votre hauteur, les zombies essayent de vous aggriper mais ils tombent légèrement et attrape votre jambe en la serrant avec leur ongles tout en essayant de vous mordre mais ils n'y arrivent pas...\n\n:heart: Votre état : `Blessure légère`\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`")          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+          .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: En arrivant à votre hauteur, les zombies essayent de vous aggriper mais ils tombent légèrement et attrape votre jambe en la serrant avec leur ongles tout en essayant de vous mordre mais ils n'y arrivent pas...\n\n:heart: Votre état : `Blessure légère`\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`")          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
           .setTimestamp()
           message.channel.send({embed})}
           if(A > 81-Z & A < 90-Z){
@@ -20874,7 +20953,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: D'une rapidité assez remarquable, les zombies arrivent à vous faire tomber sur le sol en serrant votre cou et les différentes parties du corps, en essayant de le mordre sans réussir...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider en repoussant ou en tuant les `" +X+ "` zombies autour de vous !\n\n:skull: En cas d'échec des survivants avant votre prochaine action, ou si vous êtes seul... : `=Dernier espoir`")            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+            .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: D'une rapidité assez remarquable, les zombies arrivent à vous faire tomber sur le sol en serrant votre cou et les différentes parties du corps, en essayant de le mordre sans réussir...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
             .setTimestamp()
             message.channel.send({embed})}
             if(A > 91-Z & A < 95-Z){
@@ -20882,7 +20961,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies profitent de votre bras assez exposé pour l'aggriper et le mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider en repoussant ou en tuant les `" +X+ "` zombies autour de vous !\n\n:skull: En cas d'échec des survivants avant votre prochaine action, ou si vous êtes seul... : `=Dernier espoir`")              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+              .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Les zombies profitent de votre bras assez exposé pour l'aggriper et le mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
               .setTimestamp()
               message.channel.send({embed})}
                 if(A > 96-Z & A < 100-Z){
@@ -20890,7 +20969,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(0xff0000)
-                  .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider en repoussant ou en tuant les `" +X+ "` zombies autour de vous !\n\n:skull: En cas d'échec des survivants avant votre prochaine action, ou si vous êtes seul... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
                   if(A > 101-Z & A < 120-Z){
@@ -20898,7 +20977,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\n:heart: Votre état : `Blessure avancée`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection avancée`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider en repoussant ou en tuant les `" +X+ "` zombies autour de vous !\n\n:skull: En cas d'échec des survivants avant votre prochaine action, ou si vous êtes seul... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                    .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\n:heart: Votre état : `Blessure avancée`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection avancée`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                     .setTimestamp()
                     message.channel.send({embed})}
                     if(A > 121-Z & A < 140-Z){
@@ -20906,7 +20985,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setColor(0xff0000)
-                      .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Dès que les zombies se trouvent à votre portée, ils entourent tous l'espace autour de vous et vous force à finir sur le sol entouré de toute part en vous faisant mordre et aggriper toutes les parties de votre corps...\n\n:heart: Votre état : `Blessure mortelle`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémoragie mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider en repoussant ou en tuant les `" +X+ "` zombies autour de vous !\n\n:skull: En cas d'échec des survivants avant votre prochaine action, ou si vous êtes seul... : `=Dernier espoir`")                      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                      .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Dès que les zombies se trouvent à votre portée, ils entourent tous l'espace autour de vous et vous force à finir sur le sol entouré de toute part en vous faisant mordre et aggriper toutes les parties de votre corps...\n\n:heart: Votre état : `Blessure mortelle`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémoragie mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                       .setTimestamp()
                       message.channel.send({embed})}
                       if(A > 141-Z){
@@ -20914,13 +20993,39 @@ bot.on('message', message => {
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(0xff0000)
-                        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Il y a tellement de zombies tous autour de vous qui vous entoure si rapidement en masse qu'il n'y a presque aucun espoir de vous en sortir ni de fuir, vous vous faites complètement dévoré vivant devant les autres survivants ou seul...\n\n:heart: Votre état : `Blessure mortelle`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémmoragie mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider en repoussant ou en tuant les `" +X+ "` zombies autour de vous !\n\n:skull: En cas d'échec des survivants avant votre prochaine action, ou si vous êtes seul... : `=Dernier espoir`")
+                        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Il y a tellement de zombies tous autour de vous qui vous entoure si rapidement en masse qu'il n'y a presque aucun espoir de vous en sortir ni de fuir, vous vous faites complètement dévoré vivant devant les autres survivants ou seul...\n\n:heart: Votre état : `Blessure mortelle`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémmoragie mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")
                         .setTimestamp()
                         message.channel.send({embed})}
                 }
             }) ;
 
+///////////////////////////////////////////////////////////////////Aider un survivant/////////////////////////////////////////////////////////////////////////
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Aide")) {
+    let XX = args.slice(1).join(" : ");
+    const A = XX*5
+    const X = (Math.floor((100)*Math.random()))
+    if(X < 70-A){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, mais c'est un échec...") 
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X > 71-A){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, et c'est une réussite !") 
+        .setTimestamp()
+        message.channel.send({embed})}
+                }
+            }) ;
 
 ////////////////////////////////////////////////////////////////Morsure et infection et hémmoragie////////////////////////////////////////////////////////////////////////////
 
