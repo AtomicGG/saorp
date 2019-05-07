@@ -419,7 +419,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n:knife: Peau de renard : " + Peau + "\n:eye: Oeil de renard : " + Oeil + "\n:cupid: Coeur de renard : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
+                                               ":knife: Peau de renard : " + Peau + "\n" +
+                                               ":eye: Oeil de renard : " + Oeil + "\n" +
+                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -429,7 +435,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n:knife: Peau de renard : " + Peau + "\n:eye: Oeil de renard : " + Oeil + "\n:cupid: Coeur de renard : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
+                                               ":knife: Peau de renard : " + Peau + "\n" +
+                                               ":eye: Oeil de renard : " + Oeil + "\n" +
+                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -455,7 +467,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n:knife: Peau de renard : " + Peau + "\n:eye: Oeil de renard : " + Oeil + "\n:cupid: Coeur de renard : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
+                                               ":knife: Peau de renard : " + Peau + "\n" +
+                                               ":eye: Oeil de renard : " + Oeil + "\n" +
+                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -465,7 +483,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n:knife: Peau de renard : " + Peau + "\n:eye: Oeil de renard : " + Oeil + "\n:cupid: Coeur de renard : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
+                                               ":knife: Peau de renard : " + Peau + "\n" +
+                                               ":eye: Oeil de renard : " + Oeil + "\n" +
+                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -491,7 +515,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n:knife: Peau de sanglier : " + Peau + "\n:eye: Oeil de sanglier : " + Oeil + "\n:cupid: Coeur de sanglier : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
+                                               ":knife: Peau de sanglier : " + Peau + "\n" +
+                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
+                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -501,7 +531,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n:knife: Peau de sanglier : " + Peau + "\n:eye: Oeil de sanglier : " + Oeil + "\n:cupid: Coeur de sanglier : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
+                                               ":knife: Peau de sanglier : " + Peau + "\n" +
+                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
+                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -527,7 +563,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n:knife: Peau de sanglier : " + Peau + "\n:eye: Oeil de sanglier : " + Oeil + "\n:cupid: Coeur de sanglier : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
+                                               ":knife: Peau de sanglier : " + Peau + "\n" +
+                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
+                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -537,7 +579,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n:knife: Peau de sanglier : " + Peau + "\n:eye: Oeil de sanglier : " + Oeil + "\n:cupid: Coeur de sanglier : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
+                                               ":knife: Peau de sanglier : " + Peau + "\n" +
+                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
+                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -563,7 +611,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n:knife: Peau de chien : " + Peau + "\n:eye: Oeil de chien : " + Oeil + "\n:cupid: Coeur de chien : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
+                                               ":knife: Peau de chien : " + Peau + "\n" +
+                                               ":eye: Oeil de chien : " + Oeil + "\n" +
+                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -573,7 +627,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n:knife: Peau de chien : " + Peau + "\n:eye: Oeil de chien : " + Oeil + "\n:cupid: Coeur de chien : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
+                                               ":knife: Peau de chien : " + Peau + "\n" +
+                                               ":eye: Oeil de chien : " + Oeil + "\n" +
+                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -599,7 +659,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n:knife: Peau de chien : " + Peau + "\n:eye: Oeil de chien : " + Oeil + "\n:cupid: Coeur de chien : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
+                                               ":knife: Peau de chien : " + Peau + "\n" +
+                                               ":eye: Oeil de chien : " + Oeil + "\n" +
+                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -609,7 +675,13 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n:knife: Peau de chien : " + Peau + "\n:eye: Oeil de chien : " + Oeil + "\n:cupid: Coeur de chien : " + Coeur + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
+                                               ":knife: Peau de chien : " + Peau + "\n" +
+                                               ":eye: Oeil de chien : " + Oeil + "\n" +
+                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -637,7 +709,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
+                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
+                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
+                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
+                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -647,7 +727,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
+                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
+                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
+                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
+                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
+                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
