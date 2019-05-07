@@ -561,7 +561,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + T + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -571,7 +571,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + T + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -599,7 +599,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + T + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -609,7 +609,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + T + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n:scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n:syringe: Potion faible de soin : " + potionFaibleSoin + "\n:meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n:meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n:meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n:meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22333,8 +22333,8 @@ bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 10 KM") {
     const X = (Math.floor((100)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+1))
-                                                                
-                                                                 
+
+
                                                                         if(X < 10){
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -22402,8 +22402,8 @@ bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 11 KM") {
     const X = (Math.floor((100)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+1))
-                                                                
-                                                                 
+
+
                                                                         if(X < 10){
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
@@ -23267,7 +23267,7 @@ if(X >= 22 & X <= 39){
                                         .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
                                         .setTimestamp()
                                         message.channel.send({embed})}
-                      
+
   }
 });
 
@@ -23282,7 +23282,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tréteau`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 13 & X <= 24){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -23290,7 +23290,7 @@ if(X >= 13 & X <= 24){
   .setColor(0xff0000)
   .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Grosse chaîne rouillée`")
   .setTimestamp()
-  message.channel.send({embed})}   
+  message.channel.send({embed})}
   if(X >= 25 & X <= 34){
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -23298,7 +23298,7 @@ if(X >= 13 & X <= 24){
     .setColor(0xff0000)
     .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
     .setTimestamp()
-    message.channel.send({embed})}    
+    message.channel.send({embed})}
     if(X >= 35 & X <= 44){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -23306,7 +23306,7 @@ if(X >= 13 & X <= 24){
       .setColor(0xff0000)
       .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
       .setTimestamp()
-      message.channel.send({embed})}         
+      message.channel.send({embed})}
       if(X >= 45 & X <= 53){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -23314,7 +23314,7 @@ if(X >= 13 & X <= 24){
         .setColor(0xff0000)
         .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
         .setTimestamp()
-        message.channel.send({embed})}   
+        message.channel.send({embed})}
         if(X >= 54 & X <= 61){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
@@ -23322,7 +23322,7 @@ if(X >= 13 & X <= 24){
           .setColor(0xff0000)
           .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Vieille porte`")
           .setTimestamp()
-          message.channel.send({embed})} 
+          message.channel.send({embed})}
           if(X >= 62 & X <= 69){
             const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
@@ -23441,7 +23441,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille ambulance :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Médicament sans étiquette`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 13 & X <= 17){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -23496,7 +23496,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 8 & X <= 9){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -23504,7 +23504,7 @@ if(X >= 8 & X <= 9){
   .setColor(0xff0000)
   .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
   .setTimestamp()
-  message.channel.send({embed})} 
+  message.channel.send({embed})}
   if(X >= 10 & X <= 11){
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -23520,7 +23520,7 @@ if(X >= 8 & X <= 9){
       .setColor(0xff0000)
       .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Café brûlant`")
       .setTimestamp()
-      message.channel.send({embed})} 
+      message.channel.send({embed})}
       if(X === 14){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -23528,7 +23528,7 @@ if(X >= 8 & X <= 9){
         .setColor(0xff0000)
         .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Morceau de grillage`")
         .setTimestamp()
-        message.channel.send({embed})} 
+        message.channel.send({embed})}
         if(X === 15){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
@@ -23536,7 +23536,7 @@ if(X >= 8 & X <= 9){
           .setColor(0xff0000)
           .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Revolver`")
           .setTimestamp()
-          message.channel.send({embed})} 
+          message.channel.send({embed})}
           if(X === 16){
             const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
@@ -23544,7 +23544,7 @@ if(X >= 8 & X <= 9){
             .setColor(0xff0000)
             .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Revolver (démonté)`")
             .setTimestamp()
-            message.channel.send({embed})} 
+            message.channel.send({embed})}
             if(X === 17){
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
@@ -23552,7 +23552,7 @@ if(X >= 8 & X <= 9){
               .setColor(0xff0000)
               .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Twinoïde 500MG`")
               .setTimestamp()
-              message.channel.send({embed})} 
+              message.channel.send({embed})}
               if(X >= 18){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -23576,7 +23576,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Kit de bricolage`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 19 & X <= 35){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -23584,7 +23584,7 @@ if(X >= 19 & X <= 35){
   .setColor(0xff0000)
   .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Devastator (démonté)`")
   .setTimestamp()
-  message.channel.send({embed})} 
+  message.channel.send({embed})}
   if(X >= 36 & X <= 50){
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -23600,7 +23600,7 @@ if(X >= 19 & X <= 35){
       .setColor(0xff0000)
       .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG`")
       .setTimestamp()
-      message.channel.send({embed})}  
+      message.channel.send({embed})}
       if(X >= 63 & X <= 74){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -23608,7 +23608,7 @@ if(X >= 19 & X <= 35){
         .setColor(0xff0000)
         .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Balise radius`")
         .setTimestamp()
-        message.channel.send({embed})} 
+        message.channel.send({embed})}
         if(X >= 75 & X <= 84){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
@@ -23783,7 +23783,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille ancien velib :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Ceinture à poches`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 10 & X <= 17){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -23854,7 +23854,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille armurerie :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Couteau à dents`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 9 & X <= 13){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -23998,7 +23998,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille café :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Ailerons de poulet entamés`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 22 & X <= 35){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -24061,7 +24061,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille avant-poste militaire :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Café brûlant`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 27 & X <= 40){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -24140,7 +24140,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille bar miteux :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 'Debout-les-morts'`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 14 & X <= 23){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -24235,7 +24235,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille bibliothèque de quartier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Meuble en kit`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 27 & X <= 31){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -24292,7 +24292,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .addField(":flashlight: Fouille magasin de bricolage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Kit de bricolage`")
 .setTimestamp()
-message.channel.send({embed})}  
+message.channel.send({embed})}
 if(X >= 12 & X <= 18){
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -24300,7 +24300,7 @@ if(X >= 12 & X <= 18){
   .setColor(0xff0000)
   .addField(":flashlight: Fouille magasin de bricolage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
   .setTimestamp()
-  message.channel.send({embed})} 
+  message.channel.send({embed})}
   if(X >= 19 & X <= 25){
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -24316,7 +24316,7 @@ if(X >= 12 & X <= 18){
       .setColor(0xff0000)
       .addField(":flashlight: Fouille magasin de bricolage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
       .setTimestamp()
-      message.channel.send({embed})}  
+      message.channel.send({embed})}
       if(X >= 30 & X <= 32){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -24324,7 +24324,7 @@ if(X >= 12 & X <= 18){
         .setColor(0xff0000)
         .addField(":flashlight: Fouille magasin de bricolage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte en métal`")
         .setTimestamp()
-        message.channel.send({embed})} 
+        message.channel.send({embed})}
         if(X >= 33 & X <= 35){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
