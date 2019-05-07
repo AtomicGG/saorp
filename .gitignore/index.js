@@ -116,15 +116,30 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":shield: Pour effectuer une parade :" , ":shield: `=Parade simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade améliorée : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Parade supérieure: [Dégâts de l'attaque de l'ennemis]`\n`=Parade suprême : [Dégâts de l'attaque de l'ennemis]`")
+    .addField(":shield: Pour effectuer une parade :" , ":shield: `=Parade simple : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                       ":shield: `=Parade améliorée : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                       ":shield: `=Parade supérieure: [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                       ":shield: `=Parade suprême : [Dégâts de l'attaque de l'ennemis]`")
     .addBlankField(true)
-    .addField(":shield: Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , ":shield: `=Interception simple : [Dégâts de l'attaque de l'ennemis]`\n:shield: `=Interception améliorée : [Dégâts de l'attaque de l'ennemis]`")
+    .addField(":shield: Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , ":shield: `=Interception simple : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                                                                                                            ":shield: `=Interception améliorée : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                                                                                                            ":shield: `=Interception supérieure : [Dégâts de l'attaque de l'ennemis]`\n" +
+                                                                                                                                            ":shield: `=Interception suprême : [Dégâts de l'attaque de l'ennemis]`")
     .addBlankField(true)
-    .addField(":shield: Pour effectuer une fuite [Utilisable que pendant votre tour] :" , ":shield: `=Fuite simple`\n:shield: `=Fuite améliorée`\n:shield: `=Fuite supérieure`\n:shield: `=Fuite suprême`")
+    .addField(":shield: Pour effectuer une fuite [Utilisable que pendant votre tour] :" , ":shield: `=Fuite simple`\n" +
+                                                                                          ":shield: `=Fuite améliorée`\n" +
+                                                                                          ":shield: `=Fuite supérieure`\n" +
+                                                                                          ":shield: `=Fuite suprême`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup sauté :" , ":shield: `=Coup sauté simple : [Vos dégâts]`\n:shield: `=Coup sauté amélioré : [Vos dégâts]`\n:shield: `=Coup sauté supérieur : [Vos dégâts]`\n:shield: `=Coup sauté suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un coup sauté :" , ":shield: `=Coup sauté simple : [Vos dégâts]`\n" +
+                                                                  ":shield: `=Coup sauté amélioré : [Vos dégâts]`\n" +
+                                                                  ":shield: `=Coup sauté supérieur : [Vos dégâts]`\n" +
+                                                                  ":shield: `=Coup sauté suprême : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n:shield: `=Coup perce armure amélioré : [Vos dégâts]`\n:shield: `=Coup perce armure supérieur : [Vos dégâts]`\n:shield: `=Coup perce armure suprême : [Vos dégâts]`")
+    .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n" +
+                                                                         ":shield: `=Coup perce armure amélioré : [Vos dégâts]`\n" +
+                                                                         ":shield: `=Coup perce armure supérieur : [Vos dégâts]`\n" +
+                                                                         ":shield: `=Coup perce armure suprême : [Vos dégâts]`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
