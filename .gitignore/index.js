@@ -1667,7 +1667,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses solo")) {
-    let lvl = args.slice(6).join(" : ");
+    let lvl = args.slice(5).join(" : ");
     const stuffClan = Math.floor((2 - 0.95) * Math.random())
     const bijouxClan = Math.floor((2 - 0.98) * Math.random())
     const armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
