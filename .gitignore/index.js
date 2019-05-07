@@ -1173,7 +1173,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bandit sombre récompenses solo")) {
-    /*let lvl = args.slice(4).join(" : ");
+    let lvl = args.slice(4).join(" : ");
     const stuffPeauResistante = Math.floor((2 - 0.70) * Math.random())
     const bijouxCroc = Math.floor((2 - 0.92) * Math.random())
     const armeBasiqueUneMain = Math.floor((2 - 0.85) * Math.random())
@@ -1186,9 +1186,9 @@ bot.on('message', message => {
     const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
     const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(35 * Math.random() + 45)
-    */const xp = /*controle - (lvl * 5)*/5/*
+    const xp = controle - (lvl * 5)
     const cols = Math.floor(21 * Math.random() + 20)
-    const Clef = Math.floor((2 - 0.97) * Math.random())*/
+    const Clef = Math.floor((2 - 0.97) * Math.random())
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
