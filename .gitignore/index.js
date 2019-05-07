@@ -5993,39 +5993,39 @@ bot.on('message', message => {
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 75){
           test = test + 1 + renard;
-          if (test <= (5.5 * joueurs)){
+          if (test <= (5 + 6 * (joueurs - 1))) {
             renard = renard + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 60){
           test = test + 2 + sanglier;
-          if (test <= (5.5 * joueurs)){
+          if (test <= (5 + 6 * (joueurs - 1))){
             sanglier = sanglier + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 40){
           test = test + 3 + bandit;
-          if (test <= (5.5 * joueurs)){
+          if (test <= (5 + 6 * (joueurs - 1))){
             bandit = bandit + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 3 + (2 * lapin);
-          if (test <= (5.5 * joueurs)){
+          if (test <= (5 + 6 * (joueurs - 1))){
             lapin = lapin + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 75){
           test = test + 2 + chien;
-          if (test <= (5.5 * joueurs)){
+          if (test <= (5 + 6 * (joueurs - 1))){
             chien = chien + 1;
           } else break;
         }
-      } while (test <= (5.5 * joueurs));
+      } while (test <= (5 + 6 * (joueurs - 1)));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
