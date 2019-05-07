@@ -1988,7 +1988,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt ouvrier récompenses solo")) {
     let X = args.slice(4).join(" : ");
-    const A = Math.floor(2 * Math.random() + 1))
+    const A = Math.floor(2 * Math.random() + 1)
     const B = Math.floor((2 - 0.75) * Math.random())
     const C = Math.floor((2 - 0.85) * Math.random())
     const D = Math.floor((2 - 0.95) * Math.random())
