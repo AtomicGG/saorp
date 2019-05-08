@@ -2193,7 +2193,7 @@ bot.on('message', message => {
     const armeClanDeuxMains = Math.floor((2 - 0.70) * Math.random())
     const Oeufs = Math.floor((2 - 0.85) * Math.random())
     const controle = Math.floor(101 * Math.random() + 100)
-    const xp = Exp - (lvl * 5)
+    const xp = controle - (lvl * 5)
     const cols = Math.floor(101 * Math.random() + 100)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
@@ -2229,7 +2229,7 @@ bot.on('message', message => {
     const armeClanDeuxMains = Math.floor((2 - 0.80) * Math.random())
     const Oeufs = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(81 * Math.random() + 80)
-    const xp = Exp - (lvl * 4)
+    const xp = controle - (lvl * 4)
     const cols = Math.floor(81 * Math.random() + 80)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
@@ -20992,7 +20992,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, mais c'est un échec...") 
+      .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, mais c'est un échec...")
       .setTimestamp()
       message.channel.send({embed})}
       if(X > 71-A){
@@ -21000,7 +21000,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, et c'est une réussite !") 
+        .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, et c'est une réussite !")
         .setTimestamp()
         message.channel.send({embed})}
                 }
@@ -25617,7 +25617,7 @@ if(X >= 30 & X <= 35){
           .setColor(0xff0000)
           .addField(":flashlight: Fouille caverne anciennement habitée :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Table järpen`")
           .setTimestamp()
-          message.channel.send({embed})} 
+          message.channel.send({embed})}
           if(X >= 50 & X <= 52){
             const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
