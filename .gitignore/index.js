@@ -8775,7 +8775,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +0")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor((degats * 0.1 * Math.random()) + degats)
+    const degatEchecCrit = Math.floor((degats * 0.10 * Math.random()) + degats)
     const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
@@ -8794,7 +8794,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degats + "` points de dégâts")
+      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
       .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
       .setTimestamp()
       message.channel.send({embed})
