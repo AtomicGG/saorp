@@ -563,8 +563,7 @@ bot.on('message', message => {
 // Plaine | Monstres | Attaques | MAJ
 
 bot.on('message', message => {
-  if (message.content.startsWith(
-     attaque")) {
+  if (message.content.startsWith(prefix + "Fox attaque")) {
     const roll = Math.floor(100 * Math.random() + 1)
     const degat = Math.floor(2 * Math.random() + 3)
     if (roll <= 25){
@@ -657,8 +656,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(
-     débutant attaque")) {
+  if (message.content.startsWith(prefix + "Bangit débutant attaque")) {
     const degats = Math.floor(4 * Math.random() + 5)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 50){
@@ -861,7 +859,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Fox défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + (Dégâts * 1))
+    const degatSubis = Math.floor(Dégâts * 0.6 * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 65){
       const embed = new Discord.RichEmbed()
@@ -888,7 +886,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Boar défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.8 * Math.random() + (Dégâts * 0.5))
+    const degatSubis = Math.floor(Dégâts * 0.9 * Math.random() + (Dégâts * 0.5))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -903,7 +901,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Dog défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 1))
+    const degatSubis = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1))
     const parade = Math.floor(2 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 75){
@@ -931,7 +929,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit débutant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + (Dégâts * 1))
+    const degatSubis = Math.floor(Dégâts * 0.6 * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
       const embed = new Discord.RichEmbed()
@@ -958,8 +956,8 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Giant bunny défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.8 * Math.random() + (Dégâts * 0.5))
-    const degatSubisReduit = Math.floor(Dégâts * 0.2 * Math.random() + (Dégâts * 0.1))
+    const degatSubis = Math.floor(Dégâts * 0.9 * Math.random() + (Dégâts * 0.5))
+    const degatSubisReduit = Math.floor(Dégâts * 0.3 * Math.random() + (Dégâts * 0.1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
       const embed = new Discord.RichEmbed()
@@ -6947,9 +6945,69 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup normal +0")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((11)*Math.random()+1*(degats)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (26 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire d'esquive !"*/)
+      .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup normal amélioré")) {
     let degats = args.slice(3).join(" : ");
     const A = (Math.floor((degats)*Math.random()+1*(degats)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (21 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire d'esquive !"*/)
+      .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup normal +5")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((16)*Math.random()+1*(degats)))
     const B = (Math.floor((100)*Math.random()+1))
     if (B <= 20){
       const embed = new Discord.RichEmbed()
@@ -7027,36 +7085,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire d'esquive !"*/)
-      .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup normal +0")) {
-    let degats = args.slice(3).join(" : ");
-    const degatInfligé = Math.floor((degats * 1) * Math.random() + (1 * degats))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (26 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInfligé + "` points de dégâts.")
       .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -8898,7 +8926,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +0")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + (degats * 1))
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
