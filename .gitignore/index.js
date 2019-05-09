@@ -563,7 +563,8 @@ bot.on('message', message => {
 // Plaine | Monstres | Attaques | MAJ
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fox attaque")) {
+  if (message.content.startsWith(
+     attaque")) {
     const roll = Math.floor(100 * Math.random() + 1)
     const degat = Math.floor(2 * Math.random() + 3)
     if (roll <= 25){
@@ -901,7 +902,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Dog défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 1) * Math.random() + (Dégâts * 1))
+    const degatSubis = Math.floor(Dégâts * 1 * Math.random() + (Dégâts * 1))
     const parade = Math.floor(2 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 75){
