@@ -8499,7 +8499,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
       .setTimestamp()
       message.channel.send({embed})
    }
@@ -8530,7 +8530,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -8540,7 +8540,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
       .setTimestamp()
       message.channel.send({embed})
    }
