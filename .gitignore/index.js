@@ -8322,7 +8322,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge")) {
+  if (message.content === (prefix + "Dodge")) {
     let Dégâts = args.slice(2).join(" : ");
     const degatSubis = Math.floor(Dégâts * 0.2 * Math.random() + (Dégâts * 0.8))
     const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
