@@ -8322,8 +8322,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === (prefix + "Dodge")) {
-    let Dégâts = args.slice(1).join(" : ");
+  if (message.content.startsWith(prefix + "Dodge +0")) {
+    let Dégâts = args.slice(2).join(" : ");
     const degatSubis = Math.floor(Dégâts * 0.2 * Math.random() + (Dégâts * 0.8))
     const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
     const roll = Math.floor(100 * Math.random() + 1)
@@ -8772,8 +8772,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content === (prefix + "Blocking")) {
-    let degats = args.slice(1).join(" : ");
+  if (message.content.startsWith(prefix + "Blocking +0")) {
+    let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
     const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
     const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
