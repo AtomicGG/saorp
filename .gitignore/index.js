@@ -2219,6 +2219,135 @@ bot.on('message', message => {
 
 // Forêt | Monstres | Défenses | MAJ
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Wolf défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup :" , ":shield: Le loup tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup :" , ":shield: Le loup saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Slyme défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts*0.7))*Math.random()+(Dégâts*0.8)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Slime :" , ":shield: Le corps du slime ralenti votre coup et réduit les dêgats, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+      }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bangit expérimenté défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = (Math.floor(((Dégâts*1))*Math.random()+(Dégâts*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((6)*Math.random()+10))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit expérimenté :" , ":shield: Le bandit expérimenté tente de parer votre coup à l'aide de ses deux dagues, mais votre attaque est assez puissante et il se la prend, vous infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit expérimenté :" , ":shield: Le bandit expérimenté arrive à parer votre coup en bloquant votre coup entre ses deux dagues, il vous met un coup de pied avant de profiter de cette occasion pour planter ses deux dagues, il inflige " +C+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bangit sombre défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const A = (Math.floor(((Dégâts*1))*Math.random()+(Dégâts*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((6)*Math.random()+10))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre souris avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre sors légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Wolf de sang défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang saute en arrière et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Forêt | Monstres | Récompenses
 
 bot.on('message', message => {
