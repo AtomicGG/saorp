@@ -398,6 +398,413 @@ bot.on('message', message => {
   }
 })
 
+// Plaine | Monstres | Attaques
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Renard attaque")) {
+    const A = Math.floor(3 * Math.random() + 4)
+    const B = Math.floor(100 * Math.random() + 1)
+    const Z = Math.floor(3 * Math.random() + 1)
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Sanglier attaque")) {
+    const A = (Math.floor((2)*Math.random()+3))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre ni attaquer pendant 1 tour")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Chien attaque")) {
+    const A = (Math.floor((3)*Math.random()+5))
+    const Z = (Math.floor((5)*Math.random()+8))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait le beau, mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
+    const Dégâts = 6
+    const A = (Math.floor((4)*Math.random()+5))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " +A+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Plaine | Monstres | Attaques | MAJ
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Fox attaque")) {
+    const roll = Math.floor(100 * Math.random() + 1)
+    const degat = Math.floor(2 * Math.random() + 3)
+    const saignement = Math.floor(2 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll & roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " + degat + " points de dégâts " +
+                                           "ainsi que " + saignement + " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Boar attaque")) {
+    const degat = Math.floor(3 * Math.random() + 3)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= roll & roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (95 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " + degat + " points de dégâts " +
+                                                "et vous ne pourrez pas vous défendre lors de la prochaine attaque reçue. ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Dog attaque")) {
+    const degat = (Math.floor((2)*Math.random()+4))
+    const roll = (Math.floor((100)*Math.random()+1))
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (roll <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bangit débutant attaque")) {
+    const Dégâts = 6
+    const degats = (Math.floor((5)*Math.random()+4))
+    const roll = (Math.floor((100)*Math.random()+1))
+    if (roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (roll <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " + degats + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Plaine | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Renard défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard :" , ":shield: Le renard court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Sanglier défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Sanglier :" , ":shield: Le sanglier recule assez pour que vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Chien défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((3)*Math.random()+3))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Plaine | Monstres | Défenses | MAJ
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Fox défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + Dégâts)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard :" , ":shield: Le renard court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Boar défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degatSubis = Math.floor(Dégâts * 0.8 * Math.random() + (Dégâts * 0.5))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Dog défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degatSubis = Math.floor(Dégâts * Math.random() + Dégâts)
+    const parade = Math.floor(2 * Math.random() + 2)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (76 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien :" , ":shield: Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " + parade + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Plaine | Monstres | Récompenses
 
 bot.on('message', message => {
@@ -1166,6 +1573,14 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
+
+// Forêt | Monstres | Attaques
+
+// Forêt | Monstres | Attaques | MAJ
+
+// Forêt | Monstres | Défenses
+
+// Forêt | Monstres | Défenses | MAJ
 
 // Forêt | Monstres | Récompenses
 
@@ -1940,6 +2355,14 @@ bot.on('message', message => {
   }
 })
 
+// Donjon Sauvage | Monstres | Attaques
+
+// Donjon Sauvage | Monstres | Attaques | MAJ
+
+// Donjon Sauvage | Monstres | Défenses
+
+// Donjon Sauvage | Monstres | Défenses | MAJ
+
 // Donjon Sauvage | Monstres | Récompenses
 
 bot.on('message', message => {
@@ -2340,6 +2763,14 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
+
+// Montagne | Monstres | Attaques
+
+// Montagne | Monstres | Attaques | MAJ
+
+// Montagne | Monstres | Défenses
+
+// Montagne | Monstres | Défenses | MAJ
 
 // Montagne | Monstres | Récompenses
 
@@ -2912,7 +3343,423 @@ bot.on('message', message => {
   }
 })
 
+// Grotte | Monstres | Attaques
+
+// Grotte | Monstres | Attaques | MAJ
+
+// Grotte | Monstres | Défenses
+
+// Grotte | Monstres | Défenses | MAJ
+
 // Grotte | Monstres | Récompenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt garde récompenses solo")) {
+    let lvl = args.slice(4).join(" : ");
+    const oreille = Math.floor(2 * Math.random() + 1)
+    const echantillon = Math.floor((2 - 0.55) * Math.random())
+    const dent = Math.floor((2 - 0.65) * Math.random())
+    const stuffKob = Math.floor((2 - 0.95) * Math.random())
+    const bouclier = Math.floor((2 - 0.993) * Math.random())
+    const controle = Math.floor(65 * Math.random() + 140)
+    const xp = controle - (lvl * 7)
+    const cols = Math.floor(40 * Math.random() + 40)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                               ":scales: Bouclier du roi déchu à une main : " + bouclier + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                               ":scales: Bouclier du roi déchu à une main : " + bouclier + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt garde récompenses groupe")) {
+    let lvl = args.slice(4).join(" : ");
+    const oreille = Math.floor(2 * Math.random() + 1)
+    const echantillon = Math.floor((2 - 0.70) * Math.random())
+    const dent = Math.floor((2 - 0.80) * Math.random())
+    const stuffKob = Math.floor((2 - 0.98) * Math.random())
+    const bouclier = Math.floor((2 - 0.996) * Math.random())
+    const controle = Math.floor(55 * Math.random() + 110)
+    const xp = controle - (lvl * 7)
+    const cols = Math.floor(35 * Math.random() + 35)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                               ":scales: Bouclier du roi déchu à une main : " + bouclier + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                               ":scales: Bouclier du roi déchu à une main : " + bouclier + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt combattant récompenses solo")) {
+    let lvl = args.slice(4).join(" : ");
+    const oreille = Math.floor(2 * Math.random() + 1)
+    const echantillon = Math.floor((2 - 0.55) * Math.random())
+    const dent = Math.floor((2 - 0.65) * Math.random())
+    const armeKobUneMain = Math.floor((2 - 0.96) * Math.random())
+    const armeKobDeuxMains = Math.floor((2 - 0.98) * Math.random())
+    const controle = Math.floor(65 * Math.random() + 140)
+    const xp = controle - (lvl * 7)
+    const cols = Math.floor(40 * Math.random() + 40)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n" +
+                                               ":scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains +"\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n" +
+                                               ":scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains +"\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt combattant récompenses groupe")) {
+    let lvl = args.slice(4).join(" : ");
+    const oreille = Math.floor(2 * Math.random() + 1)
+    const echantillon = Math.floor((2 - 0.70) * Math.random())
+    const dent = Math.floor((2 - 0.80) * Math.random())
+    const armeKobUneMain = Math.floor((2 - 0.98) * Math.random())
+    const armeKobDeuxMains = Math.floor((2 - 0.99) * Math.random())
+    const controle = Math.floor(55 * Math.random() + 110)
+    const xp = controle - (lvl * 7)
+    const cols = Math.floor(35 * Math.random() + 35)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n" +
+                                               ":scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains +"\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n" +
+                                               ":scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains +"\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt espion récompenses solo")) {
+    let lvl = args.slice(4).join(" : ");
+    const oreille = Math.floor(2 * Math.random() + 1)
+    const echantillon = Math.floor((2 - 0.55) * Math.random())
+    const dent = Math.floor((2 - 0.65) * Math.random())
+    const bijouxKob = Math.floor((2 - 0.98) * Math.random())
+    const kunai = Math.floor((2 - 0.90) * Math.random())
+    const bolas = Math.floor((2 - 0.90) * Math.random())
+    const controle = Math.floor(65 * Math.random() + 140)
+    const xp = controle - (lvl * 7)
+    const cols = Math.floor(40 * Math.random() + 40)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
+                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
+                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
+                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
+                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt espion récompenses groupe")) {
+    let lvl = args.slice(4).join(" : ");
+    const oreille = Math.floor(2 * Math.random() + 1)
+    const echantillon = Math.floor((2 - 0.70) * Math.random())
+    const dent = Math.floor((2 - 0.80) * Math.random())
+    const bijouxKob = Math.floor((2 - 0.99) * Math.random())
+    const kunai = Math.floor((2 - 0.95) * Math.random())
+    const bolas = Math.floor((2 - 0.95) * Math.random())
+    const controle = Math.floor(55 * Math.random() + 110)
+    const xp = controle - (lvl * 7)
+    const cols = Math.floor(35 * Math.random() + 35)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
+                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
+                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt : "+ dent + "\n" +
+                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
+                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
+                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt géant rouge récompenses solo")) {
+    let lvl = args.slice(5).join(" : ");
+    const oreille = Math.floor(3 * Math.random() + 2)
+    const echantillon = Math.floor((2 - 0.35) * Math.random())
+    const dent = Math.floor((2 - 0.55) * Math.random())
+    const armeKobSupUneMain = Math.floor((2 - 0.88) * Math.random())
+    const stuffKobSup = Math.floor((2 - 0.92) * Math.random())
+    const stuffKobSup = Math.floor((2 - 0.85) * Math.random())
+    const bijouxKobSup = Math.floor((2 - 0.92) * Math.random())
+    const parchemin = Math.floor((2 - 0.95) * Math.random())
+    const controle = Math.floor(121 * Math.random() + 160)
+    const xp = controle - (lvl * 8)
+    const cols = Math.floor(151 * Math.random() + 150)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt géant rouge : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt géant rouge: "+ dent + "\n" +
+                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
+                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
+                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt géant rouge : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt géant rouge: "+ dent + "\n" +
+                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
+                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
+                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt géant rouge récompenses groupe")) {
+    let lvl = args.slice(5).join(" : ");
+    const oreille = Math.floor(3 * Math.random() + 2)
+    const echantillon = Math.floor((2 - 0.35) * Math.random())
+    const dent = Math.floor((2 - 0.55) * Math.random())
+    const armeKobSupUneMain = Math.floor((2 - 0.94) * Math.random())
+    const stuffKobSup = Math.floor((2 - 0.96) * Math.random())
+    const stuffKobSup = Math.floor((2 - 0.93) * Math.random())
+    const bijouxKobSup = Math.floor((2 - 0.96) * Math.random())
+    const parchemin = Math.floor((2 - 0.98) * Math.random())
+    const controle = Math.floor(101 * Math.random() + 130)
+    const xp = controle - (lvl * 8)
+    const cols = Math.floor(125 * Math.random() + 125)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt géant rouge : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt géant rouge: "+ dent + "\n" +
+                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
+                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
+                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " + oreille + "\n" +
+                                               ":syringe: Echantillon de kobolt géant rouge : " + echantillon + "\n" +
+                                               ":gem: Dent de kobolt géant rouge: "+ dent + "\n" +
+                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
+                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
+                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
 
 // Grotte | Métiers
 
@@ -3041,889 +3888,6 @@ bot.on('message', message => {/*
     message.channel.send({embed})
   }
 */}) ;
-
-//////////////////////////////////////////////////////////Monstres récompenses////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt garde récompenses solo")) {
-    let X = args.slice(4).join(" : ");
-    const A = (Math.floor((2)*Math.random()+1))
-    const B = (Math.floor((2-(0.55))*Math.random()))
-    const C = (Math.floor((2-(0.65))*Math.random()))
-    const D = (Math.floor((2-(0.95))*Math.random()))
-    const E = (Math.floor((2-(0.993))*Math.random()))
-    const F = (Math.floor((65*1)*Math.random()+140*1))
-    const FF = F-(X*7)
-    const G = (Math.floor((40*1)*Math.random()+40*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt garde récompenses groupe")) {
-    let X = args.slice(4).join(" : ");
-    const A = (Math.floor((2)*Math.random()+1))
-    const B = (Math.floor((2-(0.70))*Math.random()))
-    const C = (Math.floor((2-(0.80))*Math.random()))
-    const D = (Math.floor((2-(0.98))*Math.random()))
-    const E = (Math.floor((2-(0.996))*Math.random()))
-    const F = (Math.floor((55*1)*Math.random()+110*1))
-    const FF = F-(X*7)
-    const G = (Math.floor((35*1)*Math.random()+35*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Equipement de kobolt au choix : " +D+ "\n:scales: Bouclier du roi déchu à une main : " +E+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt combattant récompenses solo")) {
-    let X = args.slice(4).join(" : ");
-    const A = (Math.floor((2)*Math.random()+1))
-    const B = (Math.floor((2-(0.55))*Math.random()))
-    const C = (Math.floor((2-(0.65))*Math.random()))
-    const D = (Math.floor((2-(0.96))*Math.random()))
-    const E = (Math.floor((2-(0.98))*Math.random()))
-    const F = (Math.floor((65*1)*Math.random()+140*1))
-    const FF = F-(X*7)
-    const G = (Math.floor((40*1)*Math.random()+40*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+"\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+"\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt combattant récompenses groupe")) {
-    let X = args.slice(4).join(" : ");
-    const A = (Math.floor((2)*Math.random()+1))
-    const B = (Math.floor((2-(0.70))*Math.random()))
-    const C = (Math.floor((2-(0.80))*Math.random()))
-    const D = (Math.floor((2-(0.98))*Math.random()))
-    const E = (Math.floor((2-(0.99))*Math.random()))
-    const F = (Math.floor((55*1)*Math.random()+110*1))
-    const FF = F-(X*7)
-    const G = (Math.floor((35*1)*Math.random()+35*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+"\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Arme de kobolt à une main au choix : " +D+ "\n:scales: Arme de kobolt à deux mains au choix : " +E+"\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt espion récompenses solo")) {
-    let X = args.slice(4).join(" : ");
-    const A = (Math.floor((2)*Math.random()+1))
-    const B = (Math.floor((2-(0.55))*Math.random()))
-    const C = (Math.floor((2-(0.65))*Math.random()))
-    const D = (Math.floor((2-(0.98))*Math.random()))
-    const E = (Math.floor((2-(0.90))*Math.random()))
-    const H = (Math.floor((2-(0.90))*Math.random()))
-    const F = (Math.floor((65*1)*Math.random()+140*1))
-    const FF = F-(X*7)
-    const G = (Math.floor((40*1)*Math.random()+40*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Bijoux kobolt au choix : " +D+ "\n:scales: Kunai de kobolt : " +E+ "\n:scales: Bolas de kobolt : " +H+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Bijoux kobolt au choix : " +D+ "\n:scales: Kunai de kobolt : " +E+ "\n:scales: Bolas de kobolt : " +H+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt espion récompenses groupe")) {
-    let X = args.slice(4).join(" : ");
-    const A = (Math.floor((2)*Math.random()+1))
-    const B = (Math.floor((2-(0.70))*Math.random()))
-    const C = (Math.floor((2-(0.80))*Math.random()))
-    const D = (Math.floor((2-(0.99))*Math.random()))
-    const E = (Math.floor((2-(0.95))*Math.random()))
-    const H = (Math.floor((2-(0.95))*Math.random()))
-    const F = (Math.floor((55*1)*Math.random()+110*1))
-    const FF = F-(X*7)
-    const G = (Math.floor((35*1)*Math.random()+35*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Bijoux kobolt au choix : " +D+ "\n:scales: Kunai de kobolt : " +E+ "\n:scales: Bolas de kobolt : " +H+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " +A+ "\n:syringe: Echantillon de kobolt : " +B+ "\n:gem: Dent de kobolt : "+C+ "\n:scales: Bijoux kobolt au choix : " +D+ "\n:scales: Kunai de kobolt : " +E+ "\n:scales: Bolas de kobolt : " +H+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt géant rouge récompenses solo")) {
-    let X = args.slice(5).join(" : ");
-    const A = (Math.floor((3)*Math.random()+2))
-    const B = (Math.floor((2-(0.35))*Math.random()))
-    const C = (Math.floor((2-(0.55))*Math.random()))
-    const D = (Math.floor((2-(0.88))*Math.random()))
-    const E = (Math.floor((2-(0.92))*Math.random()))
-    const H = (Math.floor((2-(0.85))*Math.random()))
-    const I = (Math.floor((2-(0.92))*Math.random()))
-    const J = (Math.floor((2-(0.95))*Math.random()))
-    const F = (Math.floor((121*1)*Math.random()+160*1))
-    const FF = F-(X*8)
-    const G = (Math.floor((151*1)*Math.random()+150*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " +A+ "\n:syringe: Echantillon de kobolt géant rouge : " +B+ "\n:gem: Dent de kobolt géant rouge: "+C+ "\n:scales: Arme de kobolt supérieure à une main au choix : " +D+ "\n:scales: Arme de kobolt supérieure à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt supérieur au choix : " +H+ "\n:scales: Bijoux de kobolt supérieur au choix : " +I+ "\n:scales: Parchemin de feu rouge faible : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " +A+ "\n:syringe: Echantillon de kobolt géant rouge : " +B+ "\n:gem: Dent de kobolt géant rouge: "+C+ "\n:scales: Arme de kobolt supérieure à une main au choix : " +D+ "\n:scales: Arme de kobolt supérieure à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt supérieur au choix : " +H+ "\n:scales: Bijoux de kobolt supérieur au choix : " +I+ "\n:scales: Parchemin de feu rouge faible : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Kobolt géant rouge récompenses groupe")) {
-    let X = args.slice(5).join(" : ");
-    const A = (Math.floor((3)*Math.random()+2))
-    const B = (Math.floor((2-(0.35))*Math.random()))
-    const C = (Math.floor((2-(0.55))*Math.random()))
-    const D = (Math.floor((2-(0.94))*Math.random()))
-    const E = (Math.floor((2-(0.96))*Math.random()))
-    const H = (Math.floor((2-(0.93))*Math.random()))
-    const I = (Math.floor((2-(0.96))*Math.random()))
-    const J = (Math.floor((2-(0.98))*Math.random()))
-    const F = (Math.floor((101*1)*Math.random()+130*1))
-    const FF = F-(X*8)
-    const G = (Math.floor((125*1)*Math.random()+125*1))
-    if(FF > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " +A+ "\n:syringe: Echantillon de kobolt géant rouge : " +B+ "\n:gem: Dent de kobolt géant rouge: "+C+ "\n:scales: Arme de kobolt supérieure à une main au choix : " +D+ "\n:scales: Arme de kobolt supérieure à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt supérieur au choix : " +H+ "\n:scales: Bijoux de kobolt supérieur au choix : " +I+ "\n:scales: Parchemin de feu rouge faible : " +J+ "\n:sparkles: Points d'expérience : " +FF+ "\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(FF <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt géant rouge : " +A+ "\n:syringe: Echantillon de kobolt géant rouge : " +B+ "\n:gem: Dent de kobolt géant rouge: "+C+ "\n:scales: Arme de kobolt supérieure à une main au choix : " +D+ "\n:scales: Arme de kobolt amélsupérieureioré à deux mains au choix : " +E+ "\n:scales: Equipement de kobolt supérieur au choix : " +H+ "\n:scales: Bijoux de kobolt supérieur au choix : " +I+ "\n:scales: Parchemin de feu rouge faible : " +J+ "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " +G)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-//////////////////////////////////////////////////////////Monstres attaques////////////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////Plaines monstres////////////////////////////////////////////////////////////////////////////////////
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Renard attaque")) {
-    const A = (Math.floor((3)*Math.random()+4))
-    const B = (Math.floor((100)*Math.random()+1))
-    const Z = (Math.floor((3)*Math.random()+1))
-    if (B <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (26 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fox attaque")) {
-    const A = (Math.floor((2)*Math.random()+3))
-    const B = (Math.floor((100)*Math.random()+1))
-    const Z = (Math.floor((2)*Math.random()+1))
-    if (B <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (26 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Renard défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fox défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Sanglier attaque")) {
-    const A = (Math.floor((2)*Math.random()+3))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre ni attaquer pendant 1 tour")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Boar attaque")) {
-    const A = (Math.floor((3)*Math.random()+3))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (95 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre lors de la prochaine attaque reçue. ")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Sanglier défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Sanglier :" , ":shield: Le sanglier recule assez pour que vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Boar défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*0.8))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 100){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Chien attaque")) {
-    const A = (Math.floor((3)*Math.random()+5))
-    const Z = (Math.floor((5)*Math.random()+8))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (26 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait le beau, mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Dog attaque")) {
-    const A = (Math.floor((2)*Math.random()+4))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (26 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Chien défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((3)*Math.random()+3))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dog défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor((Dégâts*1)*Math.random()+(Dégâts*1)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((2)*Math.random()+2))
-    if (B <= 75){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (76 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
-    const Dégâts = 6
-    const A = (Math.floor((4)*Math.random()+5))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bangit débutant attaque")) {
-    const Dégâts = 6
-    const A = (Math.floor((5)*Math.random()+4))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bandit débutant défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant court rapidement en voyant votre coup, ne sachant pas vraiment faire d'esquives, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bangit débutant défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant court rapidement en voyant votre coup, ne sachant pas vraiment faire d'esquives, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Lapin géant attaque")) {
-    const A = (Math.floor((5)*Math.random()+10))
-    const Z = (Math.floor((6)*Math.random()+15))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B & B <= 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit d'un coup sec sur vous et griffe tout votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " +Z+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Giant bunny attaque")) {
-    const A = (Math.floor((4)*Math.random()+8))
-    const Z = (Math.floor((5)*Math.random()+10))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B & B <= 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit d'un coup sec sur vous et griffe tout votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " +Z+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Lapin géant défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((Dégâts/5)*Math.random()+1))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgré ceci, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes d'une manière étrange au dessus de sa tête ce qui réduit énormément les dégâts qu'il subit, vous lui infligez " +C+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Giant bunny défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = Math.floor((Dégâts*0.8)*Math.random()+(Dégâts*0.5))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = Math.floor((Dégâts*0.2)*Math.random()+(Dégâts*0.1))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgré ceci, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes d'une manière étrange au dessus de sa tête ce qui réduit énormément les dégâts qu'il subit, vous lui infligez " +C+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
 
 //////////////////////////////////////////////////////////Forêt monstres////////////////////////////////////////////////////////////////////////////////////
 
