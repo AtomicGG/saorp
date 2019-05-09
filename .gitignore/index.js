@@ -8465,6 +8465,89 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Dodge +1")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor((Dégâts*0.2)*Math.random()+(Dégâts*0.8)))
+    const B =  (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((Dégâts*0.1)*Math.random()+(Dégâts*1.1)))
+    if (B <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (11 <= B & B <= 55){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (56 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+   }
+    }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Dodge +2")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const A = (Math.floor((Dégâts*0.2)*Math.random()+(Dégâts*0.8)))
+    const B =  (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((Dégâts*0.1)*Math.random()+(Dégâts*1.1)))
+    if (B <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (11 <= B & B <= 55){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (56 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+   }
+    }
+});
+
+
 ///////////////////////////////////////////////////////////////Blocage//////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
