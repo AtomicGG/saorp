@@ -657,7 +657,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bangit débutant attaque")) {
+  if (message.content.startsWith(
+     débutant attaque")) {
     const degats = Math.floor(4 * Math.random() + 5)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 50){
@@ -937,7 +938,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " + parseInt(Dégâts) + " points de dégâts")
+      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " + degatSubis + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
