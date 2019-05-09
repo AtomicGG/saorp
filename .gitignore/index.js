@@ -859,7 +859,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Fox défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + Dégâts)
+    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 65){
       const embed = new Discord.RichEmbed()
@@ -904,7 +904,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Dog défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * Math.random() + Dégâts)
+    const degatSubis = Math.floor(Dégâts * Math.random() + (Dégâts * 1))
     const parade = Math.floor(2 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 75){
@@ -932,7 +932,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit débutant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + Dégâts)
+    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 65){
       const embed = new Discord.RichEmbed()
@@ -2129,16 +2129,16 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup récompenses groupe")) {
     let lvl = args.slice(3).join(" : ");
-    const Viande = (Math.floor((2*1)*Math.random()))
-    const Peau = (Math.floor((2*1)*Math.random()))
-    const Oeil = (Math.floor((2-(0.90))*Math.random()))
-    const Coeur = (Math.floor((2-(0.95))*Math.random()))
-    const Croc = (Math.floor((2-(0.90))*Math.random()))
-    const Oeufs = (Math.floor((2-(0.98))*Math.random()))
-    const controle = (Math.floor((25*1)*Math.random()+25*1))
-    const xp = controle-(lvl*4)
-    const cols = (Math.floor((8*1)*Math.random()+7*1))
-    const Clef = (Math.floor((2-(0.99))*Math.random()))
+    const Viande = Math.floor(2 * Math.random())
+    const Peau = Math.floor(2 * Math.random())
+    const Oeil = Math.floor((2 - 0.90) * Math.random())
+    const Coeur = Math.floor((2 - 0.95) * Math.random())
+    const Croc = Math.floor((2 - 0.90) * Math.random())
+    const Oeufs = Math.floor((2 - 0.98) * Math.random())
+    const controle = Math.floor(25 * Math.random() + 25)
+    const xp = controle - (lvl * 4)
+    const cols = Math.floor(8 * Math.random() + 7)
+    const Clef = Math.floor((2 - 0.99) * Math.random())
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -8828,7 +8828,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +1")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
@@ -8881,7 +8881,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +2")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
@@ -8934,7 +8934,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +3")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
@@ -8987,7 +8987,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +4")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
@@ -9040,7 +9040,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +5")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
@@ -9093,7 +9093,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +6")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
@@ -9146,7 +9146,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +7")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
     const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
