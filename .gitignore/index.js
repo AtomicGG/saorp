@@ -8775,7 +8775,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +0")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor((degats * 0.10 * Math.random()) + degats)
+    const degatEchecCrit = Math.floor(degats * 0.10 * (Math.random() + degats))
     const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
     const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
     const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
