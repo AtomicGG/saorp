@@ -929,14 +929,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit débutant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + parseInt(Dégâts))
+    const degatSubis = Math.floor(Dégâts * 0.5 * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " + degatSubis + " points de dégâts")
+      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " + parseInt(Dégâts) + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
