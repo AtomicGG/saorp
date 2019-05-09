@@ -8775,10 +8775,10 @@ bot.on('message', message => {
   if (message.content === (prefix + "Blocking")) {
     let degats = args.slice(1).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -8828,10 +8828,10 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +1")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -8881,10 +8881,10 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +2")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -8934,10 +8934,10 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +3")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -8987,10 +8987,10 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +4")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -9040,10 +9040,10 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +5")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -9093,10 +9093,10 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +6")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -9146,10 +9146,10 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Blocking +7")) {
     let degats = args.slice(2).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degat)
-    const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degat * 0.75))
-    const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degat * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degat * 0.25))
+    const degatEchecCrit = Math.floor(degats * 0.1 * Math.random() + degats)
+    const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degats * 0.75))
+    const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degats * 0.45))
+    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
     if (roll <= 5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
