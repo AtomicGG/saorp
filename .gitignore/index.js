@@ -402,7 +402,7 @@ bot.on('message', message => {
     let amelioration = args.slice(13,position);
     let degat = args.slice(position + 3);
     if (amelioration == ""){
-      const degatInflige = Math.floor((degat + 1) * Math.random() + (degat * 1))
+      const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1))
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 25){
         const embed = new Discord.RichEmbed()
