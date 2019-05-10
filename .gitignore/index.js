@@ -3480,47 +3480,19 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Loup d'élite défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 75){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Loup :" , ":shield: Le loup d'élite tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (76 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Loup :" , ":shield: Le loup d'élite saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Wolf de sang d'élite défense")) {
     let Dégâts = args.slice(5).join(" : ");
-    const A = (Math.floor(((Dégâts/2))*Math.random()+(Dégâts*1)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
-    if (66 <= B){
+    if (66 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -3535,25 +3507,55 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bangit sombre d'élite défense")) {
-    let Dégâts = args.slice(4).join(" : ");
-    const A = (Math.floor(((Dégâts*1))*Math.random()+(Dégâts*1)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((11)*Math.random()+15))
-    if (B <= 70){
+  if (message.content.startsWith(prefix + "Loup d'élite défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sourit avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme, vous infligez " +A+ " points de dégâts")
+      .addField(":shield: Loup :" , ":shield: Le loup d'élite tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      .setTimestamp()
       message.channel.send({embed})
     }
-    if (11 <= B){
+    if (76 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sort légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " +C+ " points de dégâts")
+      .addField(":shield: Loup :" , ":shield: Le loup d'élite saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bangit sombre d'élite défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts + 1) * Math.random() + (Dégâts * 1))
+    const parade = Math.floor(11 * Math.random() + 15)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sourit avant d'essayer de parer votre coup d'un coup sec et rapide, mais ses dagues ne touchent même pas votre arme," +
+                                                     " vous infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bandit sombre d'élite :" , ":shield: Le bandit sombre d'élite sort légèrement sa langue avant de foncer sur votre arme et de la bloquer entre ses dagues, " +
+                                                     "il retourne votre propre arme contre vous avant de vous l'enfoncer sur vous-même, il inflige " + parade + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -3565,17 +3567,17 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Wolf gigantesque défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*0.6))*Math.random()+(Dégâts*0.8)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 85){
+    const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 85){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup gigantesque :" , ":shield: Le loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Loup gigantesque :" , ":shield: Le loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
-    if (86 <= B){
+    if (86 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
