@@ -6702,7 +6702,7 @@ bot.on('message', message => {
   }
 })
 
-bot.off('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Test Forêt combat")) {
@@ -6720,9 +6720,9 @@ bot.off('message', message => {
       let test = 0;
       let loup = 0;
       let slime = 0;
-      let banditex = 0;
-      let banditso = 0;
-      let loupdesang = 0;
+      let banditExp = 0;
+      let banditSombre = 0;
+      let loupDeSang = 0;
       let roll = 0;
       do {
         roll = Math.floor(100*Math.random()+1)
@@ -6741,23 +6741,23 @@ bot.off('message', message => {
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 40){
-          test = test + 3 + banditso;
+          test = test + 3 + banditSombre;
           if (test <= (5 + 6 * (joueurs - 1))){
-            banditso = banditex + 1;
+            banditSombre = banditSombre + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
-          test = test + 3 + (2 * loupdesang);
+          test = test + 3 + (2 * loupDeSang);
           if (test <= (5 + 6 * (joueurs - 1))){
-            loupdesang = loupdesang + 1;
+            loupDeSang = loupDeSang + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 75){
-          test = test + 2 + banditex;
+          test = test + 2 + banditExp;
           if (test <= (5 + 6 * (joueurs - 1))){
-          banditex = banditex + 1;
+          banditExp = banditExp + 1;
           } else break;
         }
       } while (test <= (5 + 6 * (joueurs - 1)));
@@ -6765,7 +6765,7 @@ bot.off('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +renard+ "\n:crossed_swords: Sanglier(s) " +sanglier+ "\n:crossed_swords: Chien(s) : " +chien+ "\n:crossed_swords: Bandit(s) débutant(s) : " +bandit+ "\n:crossed_swords: Lapin(s) géant(s) : " +lapin)
+      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n:crossed_swords: Loup(s) : " + loup + "\n:crossed_swords: Slime(s) " + slime + "\n:crossed_swords: Bandit(s) expérimenté(s) : " + banditExp + "\n:crossed_swords: Bandit(s) sombre(s) : " + banditSombre + "\n:crossed_swords: Loup(s) de sang(s) : " + loupDeSang)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
