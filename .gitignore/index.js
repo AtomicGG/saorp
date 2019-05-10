@@ -404,7 +404,7 @@ bot.on('message', message => {
     if (amelioration == ""){
       const degatInflige = Math.floor((degat + 1) * Math.random() + (degat * 1))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 25){
+      if (roll <= 25){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -414,7 +414,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (26 <= B){
+      if (26 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -428,7 +428,7 @@ bot.on('message', message => {
     if (amelioration == "1"){
       const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.1))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 25){
+      if (roll <= 25){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -438,7 +438,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (26 <= B){
+      if (26 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -452,7 +452,7 @@ bot.on('message', message => {
     if (amelioration == "2"){
       const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.1))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 20){
+      if (roll <= 20){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -462,7 +462,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (21 <= B){
+      if (21 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -476,7 +476,7 @@ bot.on('message', message => {
     if (amelioration == "3"){
       const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.2))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 20){
+      if (roll <= 20){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -486,7 +486,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (21 <= B){
+      if (21 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -500,7 +500,7 @@ bot.on('message', message => {
     if (amelioration == "4"){
       const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.2))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 15){
+      if (roll <= 15){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -510,7 +510,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (16 <= B){
+      if (16 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -524,7 +524,7 @@ bot.on('message', message => {
     if (amelioration == "5"){
       const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.3))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 15){
+      if (roll <= 15){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -534,7 +534,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (16 <= B){
+      if (16 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -548,7 +548,7 @@ bot.on('message', message => {
     if (amelioration == "6"){
       const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.3))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 10){
+      if (roll <= 10){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -558,7 +558,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (11 <= B){
+      if (11 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -572,7 +572,7 @@ bot.on('message', message => {
     if (amelioration == "7"){
       const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 1.4))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (B <= 10){
+      if (roll <= 10){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -582,7 +582,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (11 <= B){
+      if (11 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
