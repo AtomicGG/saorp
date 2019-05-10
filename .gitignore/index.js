@@ -53,7 +53,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Roll")) {
     let modificateur = args.slice(1).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1) + modificateur
+    const roll = Math.floor(100 * Math.random() + 1) + (modificateur * 1)
     if (roll <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
