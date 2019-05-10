@@ -46,6 +46,40 @@ bot.on("message", (message) => {
   }
 });
 
+// Régénération
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Régénération")) {
+    if (talkedRecently.has(message.author.id+100)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let hpMax = args.slice(1).join(" : ");
+      const hp = Math.floor(hpMax * Math.random() + 1)
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":gift_heart: Régénération :" , ":gift_heart: En restant en ville, vous reprenez `" + hp + "` HP !")
+      .setImage("https://img00.deviantart.net/62ab/i/2013/118/2/6/sao____kirito_health_bar_by_xxexternalhopexx-d63diy6.png")
+      .setTimestamp()
+      message.channel.send({embed})
+      talkedRecently.add(message.author.id+100);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+100);
+      }, 3600000);
+    }
+  }
+})
+
 // Coups & Défenses | Menus
 
 bot.on('message', message => {
@@ -6631,131 +6665,7 @@ bot.on('message', message => {
   }
 })
 
-///////////////////////////////////////////////////////////Réglement//////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
-  if (message.content === (prefix) + "Règlement"){
-    const embed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTitle("『SAO Community [RP]』©")
-    .setDescription("Bienvenue à toi sur le Discord de『SAO Community [RP]』© !")
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://pre00.deviantart.net/c70a/th/pre/f/2013/211/c/b/sao_soft_background_by_animefanart_toh-d6fxzux.jpg")
-    .setThumbnail("https://vignette.wikia.nocookie.net/sword-art-online-chronicles/images/5/50/Wiki-background/revision/latest?cb=20150626221644")
-    .addField("Règle [1]" ,"Pas de propos racistes, antisémites, homophobes etc")
-    .addField("Règle [2]" , "Pas de photos ou de divulgations d'informations publiquement")
-    .addField("Règle [3]" , "Pas de harcèlement de mention ou d'insultes sur un membre")
-    .addField("Règle [4]" , "Pas de troll vocal ainsi qu'écrit pour foutre le bordel")
-    .addField("Règle [5]" , "Pas de spam écrit dans les salons textuels")
-    .addField("Règle [6]" , "Pas de menaces de toutes sortes comme du DDOS")
-    .addField("Règle [7]" , "Pas de pub en message privés sous différentes formes")
-    .addField("Valider le règlement pour voir les salons :" , "Il suffit d'appuyer sur :white_check_mark: juste au dessus de ce message !\n\nUne fois validé, tu verras de nouveaux salons apparaîtrent dont 'Vos informations' 'Vos jeux' 'Vos tags' 'Vos tags RP' 'Vos salons' qui permettent de choisir vos rôles et de choisir quels parties du discord voir !")
-    .addField("Comprendre le principe du discord et du RP :" , "Ecrivez tous simplement dans un salon de commande ceci, puis lisez : `=Menu SAO`")
-    .addField("Besoin d'aide ?" , "Vous pourrez écrire `=Aide` pour que le staff vous aide !")
-    .addField("Invitation vers le discord :" , "https://discord.gg/QEYaNfQ")
-    .addField("Invitation vers notre discord pub :" , "https://discord.gg/NYH43Ks")
-    .setTimestamp()
-    message.channel.send({embed});
-  }
-})
-
-///////////////////////////////////////////////////////////Echange/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Echange cols")) {
-    let Cols = args.slice(2).join(" : ");
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Vous donnez le nombre de cols suivant :" , +Cols)
-    .addField("Pour confirmer :" , "=Echange confirmer")
-    .addField("Pour refuser :" , "=Echange refuser")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Echange objet")) {
-    let Objet = args.slice(2).join(" : ");
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Vous donnez l'objet suivant :" , +Objet)
-    .addField("Pour confirmer :" , "=Echange confirmer")
-    .addField("Pour refuser :" , "=Echange refuser")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Echange confirmer")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Echange :" , "Vous avez confirmer l'échange")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Echange refuser")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Echange :" , "Vous avez refuser l'échange")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-////////////////////////////////////////////////////////////////////Regénération/////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Régénération")) {
-    if (talkedRecently.has(message.author.id+100)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let X = args.slice(1).join(" : ");
-      const A = (Math.floor((X)*Math.random()+1))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":gift_heart: Régénération :" , ":gift_heart: En restant en ville, vous reprenez `" +A+ "` HP !")
-      .setImage("https://img00.deviantart.net/62ab/i/2013/118/2/6/sao____kirito_health_bar_by_xxexternalhopexx-d63diy6.png")
-      .setTimestamp()
-      message.channel.send({embed})
-      talkedRecently.add(message.author.id+100);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+100);
-      }, 3600000);
-    }
-  }
-})
 
 //////////////////////////////////////////////////////////////Calcul de caractéristiques///////////////////////////////////////////////////////////////////////////////////
 
