@@ -14255,7 +14255,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Faux du roi déchu à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal supérieur'\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchu à deux mains`")
+    .addField(":scales: Faux du roi déchu à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage ou dans les coffres de Montagne et de Grotte !\n\n:crossed_swords: Améliore le 'Coup normal' en : 'Coup normal supérieur'\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire supérieur'\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis supérieur'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchu à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
