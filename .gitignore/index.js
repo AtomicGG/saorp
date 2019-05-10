@@ -331,6 +331,124 @@ bot.on('message', message => {
 
 // Plaine | Combat
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Plaine combat")) {
+    let Z = args.slice(2).join(" : ");
+    if (talkedRecently.has(message.author.id+1000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
+      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
+      const D = (Math.floor(((Z*1)+1)*Math.random()+0))
+      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
+      const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
+// Plaine | Combat | MAJ
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Test Plaine combat")) {
+    let joueurs = args.slice(3).join(" : ");
+    if (/*talkedRecently.has(message.author.id+1000)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let test = 0;
+      let renard = 0;
+      let sanglier = 0;
+      let chien = 0;
+      let bandit = 0;
+      let lapin = 0;
+      let roll = 0;
+      do {
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 75){
+          test = test + 1 + renard;
+          if (test <= (5 + 6 * (joueurs - 1))) {
+            renard = renard + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 60){
+          test = test + 2 + sanglier;
+          if (test <= (5 + 6 * (joueurs - 1))){
+            sanglier = sanglier + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 40){
+          test = test + 3 + bandit;
+          if (test <= (5 + 6 * (joueurs - 1))){
+            bandit = bandit + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 30){
+          test = test + 3 + (2 * lapin);
+          if (test <= (5 + 6 * (joueurs - 1))){
+            lapin = lapin + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 75){
+          test = test + 2 + chien;
+          if (test <= (5 + 6 * (joueurs - 1))){
+            chien = chien + 1;
+          } else break;
+        }
+      } while (test <= (5 + 6 * (joueurs - 1)));
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
+                                                       ":crossed_swords: Renard(s) : " +renard+ "\n" +
+                                                       ":crossed_swords: Sanglier(s) " +sanglier+ "\n" +
+                                                       ":crossed_swords: Chien(s) : " +chien+ "\n" +
+                                                       ":crossed_swords: Bandit(s) débutant(s) : " +bandit+ "\n" +
+                                                       ":crossed_swords: Lapin(s) géant(s) : " +lapin)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
 // Plaine | Monstres | Descriptions
 
 bot.on('message', message => {
@@ -1568,6 +1686,26 @@ bot.on('message', message => {
   }
 })
 
+// Forêt | Descriptions
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Forêt"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .addField(":park: Forêt :" , ":park: Bienvenue dans ce lieu habité par des loups dangereux et bien plus !\n\n" +
+                                 ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Forêt combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                                 ":wilted_rose: Pour cueillir, niveau 2 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt cueillir`\n\n" +
+                                 ":knife: Pour chasser, niveau 2 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n" +
+                                 ":pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Forêt miner`\n\n" +
+                                 ":deciduous_tree: Pour bûcheronner, niveau 1 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt bûcheronner`\n\n" +
+                                 ":book: Pour avoir une quête :\n:book: `=Forêt quêtes`")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
 // Forêt | Quêtes
 
 bot.on('message', message => {
@@ -1680,6 +1818,126 @@ bot.on('message', message => {
     }
   }
 });
+
+// Forêt | Combat
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Forêt combat")) {
+    let Z = args.slice(2).join(" : ");
+    if (talkedRecently.has(message.author.id+1000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
+      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
+      const D = (Math.floor(((Z*1)+1)*Math.random()+0))
+      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
+      const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n:crossed_swords: Loup(s) : " +B+ "\n:crossed_swords: Slime(s) " +C+ "\n:crossed_swords: Bandit(s) expérimenté(s) : " +D+ "\n:crossed_swords: Bandit(s) sombre(s) : " +E+ "\n:crossed_swords: Loup(s) de sang(s) : " +F)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000 );
+  }
+})
+
+// Forêt | Combat | MAJ
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Test Forêt combat")) {
+    let joueurs = args.slice(3).join(" : ");
+    if (/*talkedRecently.has(message.author.id+1000)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let test = 0;
+      let loup = 0;
+      let slime = 0;
+      let banditExp = 0;
+      let banditSombre = 0;
+      let loupDeSang = 0;
+      let roll = 0;
+      do {
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 60){
+          test = test + 2 + loup;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            loup = loup + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 50){
+          test = test + 2 + slime;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            slime = slime + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 30){
+          test = test + 4 + banditSombre;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            banditSombre = banditSombre + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 30){
+          test = test + 4 + (2 * loupDeSang);
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            loupDeSang = loupDeSang + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 60){
+          test = test + 2 + banditExp;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+          banditExp = banditExp + 1;
+          } else break;
+        }
+      } while (test <= (6 + 7 * (joueurs - 1)));
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
+                                   ":crossed_swords: Loup(s) : " + loup + "\n" +
+                                   ":crossed_swords: Slime(s) " + slime + "\n" +
+                                   ":crossed_swords: Bandit(s) expérimenté(s) : " + banditExp + "\n" +
+                                   ":crossed_swords: Bandit(s) sombre(s) : " + banditSombre + "\n" +
+                                   ":crossed_swords: Loup(s) de sang(s) : " + loupDeSang)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
 
 // Forêt | Monstres | Descriptions
 
@@ -3923,6 +4181,64 @@ bot.on('message', message => {
   }
 }) ;
 
+// Montagne | Description
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Montagne"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .addField(":mountain_snow: Montagne :" , ":mountain_snow: Bienvenue dans ce lieu habité principalement par des kobolts !\n\n" +
+                                             ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Montagne combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                                             ":wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n" +
+                                             ":knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n" +
+                                             ":pick: Pour miner, niveau 2 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n" +
+                                             ":deciduous_tree: Pour bûcheronner, niveau 2 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n" +
+                                             ":book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
+    .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Montagne | Combat
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Montagne combat")) {
+    let Z = args.slice(2).join(" : ");
+    if (talkedRecently.has(message.author.id+1000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
+      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
+      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
+      const F = (Math.floor((((Z*1)+1)*(0.75))*Math.random()+0))
+      const G = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) : " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000 );
+  }
+})
+
 // Montagne | Monstres | Descriptions
 
 bot.on('message', message => {
@@ -5164,6 +5480,61 @@ bot.on('message', message => {
   }
 })
 
+// Grotte | Description
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Grotte"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .addField(":mount_fuji: Grotte :" , ":mount_fuji: Bienvenue dans ce lieu habité principalement par des kobolts qui est aussi le lieu menant au boss du palier 1 !\n\n" +
+                                        ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Grotte combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                                        ":wilted_rose: Pour cueillir, niveau 4 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n" +
+                                        ":pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n" +
+                                        ":book: Pour avoir une quête :\n:book: `=Grotte quêtes`")
+    .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Grotte | Combat
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Grotte combat")) {
+    let Z = args.slice(2).join(" : ");
+    if (talkedRecently.has(message.author.id+1000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
+      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
+      const E = (Math.floor((((Z*1)+1)*(0.70))*Math.random()+0))
+      const F = (Math.floor((((Z*1)+1)*(0.95))*Math.random()+0))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n:crossed_swords: Kobolt(s) garde(s) : " +B+ "\n:crossed_swords: Kobolt(s) combattant(s) " +C+ "\n:crossed_swords: Kobolt(s) espion(s) : " +E+ "\n:crossed_swords: Kobolt(s) géant(s) rouge(s) : " +F)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000 );
+  }
+})
+
 // Grotte | Monstres | Descriptions
 
 bot.on('message', message => {
@@ -6257,345 +6628,6 @@ bot.on('message', message => {
     setTimeout(() => {
       talkedRecently.delete(message.author.id+19);
     }, 3600000);
-  }
-})
-
-//////////////////////////////////////////////////////////Plaines Combat/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Plaine combat")) {
-    let Z = args.slice(2).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
-      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const D = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
-      const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000);
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Plaine combat")) {
-    let joueurs = args.slice(3).join(" : ");
-    if (/*talkedRecently.has(message.author.id+1000)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let test = 0;
-      let renard = 0;
-      let sanglier = 0;
-      let chien = 0;
-      let bandit = 0;
-      let lapin = 0;
-      let roll = 0;
-      do {
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 75){
-          test = test + 1 + renard;
-          if (test <= (5 + 6 * (joueurs - 1))) {
-            renard = renard + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 60){
-          test = test + 2 + sanglier;
-          if (test <= (5 + 6 * (joueurs - 1))){
-            sanglier = sanglier + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 40){
-          test = test + 3 + bandit;
-          if (test <= (5 + 6 * (joueurs - 1))){
-            bandit = bandit + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 30){
-          test = test + 3 + (2 * lapin);
-          if (test <= (5 + 6 * (joueurs - 1))){
-            lapin = lapin + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 75){
-          test = test + 2 + chien;
-          if (test <= (5 + 6 * (joueurs - 1))){
-            chien = chien + 1;
-          } else break;
-        }
-      } while (test <= (5 + 6 * (joueurs - 1)));
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +renard+ "\n:crossed_swords: Sanglier(s) " +sanglier+ "\n:crossed_swords: Chien(s) : " +chien+ "\n:crossed_swords: Bandit(s) débutant(s) : " +bandit+ "\n:crossed_swords: Lapin(s) géant(s) : " +lapin)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000);
-  }
-})
-
-//////////////////////////////////////////////////////////Forêt/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Forêt"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setColor(1447003)
-    .addField(":park: Forêt :" , ":park: Bienvenue dans ce lieu habité par des loups dangereux et bien plus !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Forêt combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 2 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt cueillir`\n\n:knife: Pour chasser, niveau 2 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n:pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Forêt miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 1 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Forêt quêtes`")
-    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-//////////////////////////////////////////////////////////Forêt Combat/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Forêt combat")) {
-    let Z = args.slice(2).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
-      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const D = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
-      const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n:crossed_swords: Loup(s) : " +B+ "\n:crossed_swords: Slime(s) " +C+ "\n:crossed_swords: Bandit(s) expérimenté(s) : " +D+ "\n:crossed_swords: Bandit(s) sombre(s) : " +E+ "\n:crossed_swords: Loup(s) de sang(s) : " +F)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000 );
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Forêt combat")) {
-    let joueurs = args.slice(3).join(" : ");
-    if (/*talkedRecently.has(message.author.id+1000)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let test = 0;
-      let loup = 0;
-      let slime = 0;
-      let banditExp = 0;
-      let banditSombre = 0;
-      let loupDeSang = 0;
-      let roll = 0;
-      do {
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 60){
-          test = test + 2 + loup;
-          if (test <= (6 + 7 * (joueurs - 1))) {
-            loup = loup + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 50){
-          test = test + 2 + slime;
-          if (test <= (6 + 7 * (joueurs - 1))) {
-            slime = slime + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 30){
-          test = test + 4 + banditSombre;
-          if (test <= (6 + 7 * (joueurs - 1))) {
-            banditSombre = banditSombre + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 30){
-          test = test + 4 + (2 * loupDeSang);
-          if (test <= (6 + 7 * (joueurs - 1))) {
-            loupDeSang = loupDeSang + 1;
-          } else break;
-        }
-        roll = Math.floor(100*Math.random()+1)
-        if (roll <= 60){
-          test = test + 2 + banditExp;
-          if (test <= (6 + 7 * (joueurs - 1))) {
-          banditExp = banditExp + 1;
-          } else break;
-        }
-      } while (test <= (6 + 7 * (joueurs - 1)));
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n:crossed_swords: Loup(s) : " + loup + "\n:crossed_swords: Slime(s) " + slime + "\n:crossed_swords: Bandit(s) expérimenté(s) : " + banditExp + "\n:crossed_swords: Bandit(s) sombre(s) : " + banditSombre + "\n:crossed_swords: Loup(s) de sang(s) : " + loupDeSang)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000);
-  }
-})
-
-//////////////////////////////////////////////////////////Montagnes/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Montagne"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setColor(1447003)
-    .addField(":mountain_snow: Montagne :" , ":mountain_snow: Bienvenue dans ce lieu habité principalement par des kobolts !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Montagne combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n:knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n:pick: Pour miner, niveau 2 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n:deciduous_tree: Pour bûcheronner, niveau 2 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n:book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
-    .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Montagne combat")) {
-    let Z = args.slice(2).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
-      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
-      const F = (Math.floor((((Z*1)+1)*(0.75))*Math.random()+0))
-      const G = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n:crossed_swords: Jeune(s) kobolt(s) : " +B+ "\n:crossed_swords: Kobolt(s) explorateur(s) : " +C+ "\n:crossed_swords: Kobolt(s) ouvrier(s) : " +E+ "\n:crossed_swords: Kobolt(s) mineur(s) : " +F+ "\n:crossed_swords: Kobolt(s) enragé(s) : "+G)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000 );
-  }
-})
-
-//////////////////////////////////////////////////////////Grotte/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Grotte"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setColor(1447003)
-    .addField(":mount_fuji: Grotte :" , ":mount_fuji: Bienvenue dans ce lieu habité principalement par des kobolts qui est aussi le lieu menant au boss du palier 1 !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Grotte combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 4 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n:pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n:book: Pour avoir une quête :\n:book: `=Grotte quêtes`")
-    .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Grotte combat")) {
-    let Z = args.slice(2).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
-      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor((((Z*1)+1)*(0.70))*Math.random()+0))
-      const F = (Math.floor((((Z*1)+1)*(0.95))*Math.random()+0))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n:crossed_swords: Kobolt(s) garde(s) : " +B+ "\n:crossed_swords: Kobolt(s) combattant(s) " +C+ "\n:crossed_swords: Kobolt(s) espion(s) : " +E+ "\n:crossed_swords: Kobolt(s) géant(s) rouge(s) : " +F)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000 );
   }
 })
 
