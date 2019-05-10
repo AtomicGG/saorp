@@ -399,7 +399,7 @@ bot.on('message', message => {
   //const args = cont.slice(1);
   const args = message.content;
   if (message.content.startsWith(prefix + "Coup normal")) {
-    //let position = args.indexOf(":");
+    let position = args.indexOf(":");
     //let amelioration = args.slice(13,position - 1);
     let amelioration = "";
     let degat = 0;
@@ -422,7 +422,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + args + "` points de dégâts.")
+        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + position + "` points de dégâts.")
         .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
         .setTimestamp()
         message.channel.send({embed})
