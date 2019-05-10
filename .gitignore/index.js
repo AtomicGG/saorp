@@ -46,6 +46,37 @@ bot.on("message", (message) => {
   }
 });
 
+// Roll
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Roll")) {
+    let modificateur = args.slice(1).join(" : ");
+    const roll = Math.floor(100 * Math.random() + 1) + modificateur
+    if (roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Votre action est un échec avec un score de :" , + roll)
+      .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Votre action est une réussite avec un score de :" , + roll)
+      .setImage("https://media.giphy.com/media/Cb8ql90aZJYqs/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Régénération
 
 bot.on('message', message => {
@@ -6664,93 +6695,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-
-
-//////////////////////////////////////////////////////////////Calcul de caractéristiques///////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Points de vitalité")) {
-    let X = args.slice(3).join(" : ");
-    const A = X*5
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("│ " +X+ " Points de vitalité vous donne :" , "│► " +A+ " HP max supplémentaire !")
-    .setImage("http://www.lebonvisuel.com/669-thickbox_default/stickers-logo-pharmacie.jpg")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Points de puissance")) {
-    let X = args.slice(3).join(" : ");
-    const A = X*1
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("│ " +X+ " Points de puissance vous donne :" , "│► " +A+ " Points de dégâts supplémentaire !")
-    .setImage("https://cdn.pixabay.com/photo/2017/05/03/15/26/sword-2281334_960_720.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Points de défense")) {
-    let X = args.slice(3).join(" : ");
-    const A = X*0.5
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("│ " +X+ " Points de défense vous donne :" , "│► " +A+ " Points d'armures supplémentaire !")
-    .setImage("https://cdn.pixabay.com/photo/2014/04/02/10/53/shield-304844_960_720.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-///////////////////////////////////////////////////////////Roll//////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Roll")) {
-    let X = args.slice(1).join(" : ");
-    const B = (Math.floor((100)*Math.random()+1))
-    const Roll = (B*1)+(X*1)
-    if (Roll <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre action est un échec avec un score de :" , +Roll)
-      .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (51 <= Roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre action est une réussite avec un score de :" , +Roll)
-      .setImage("https://media.giphy.com/media/Cb8ql90aZJYqs/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ////////////////////////////////////////////////////////Coup normal/////////////////////////////////////////////////////////////////////////////////////////
 
