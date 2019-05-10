@@ -395,8 +395,9 @@ bot.on('message', message => {
 // Coups & Défenses | Coup normal | MAJ
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+  //let cont = message.content.slice(prefix.length).split(" ");
+  //const args = cont.slice(1);
+  const args = message.content;
   if (message.content.startsWith(prefix + "Coup normal")) {
     //let position = args.indexOf(":");
     //let amelioration = args.slice(13,position - 1);
