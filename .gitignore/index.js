@@ -6748,7 +6748,7 @@ bot.on('message', message => {
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 310){
+        if (roll <= 30){
           test = test + 4 + banditSombre;
           if (test <= (6 + 7 * (joueurs - 1))) {
             banditSombre = banditSombre + 1;
