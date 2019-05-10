@@ -205,6 +205,24 @@ bot.on('message', message => {
   }
 })
 
+// Plaine | Description
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Plaine"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .addField(":sunrise_over_mountains: Plaine :" , ":sunrise_over_mountains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n" +
+                                                    ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaine combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                                                    ":wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaine cueillir`\n\n" +
+                                                    ":knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaine chasser`\n\n" +
+                                                    ":book: Pour avoir une quête :\n:book: `=Plaine quêtes`")
+    .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
 // Plaine | Quêtes
 
 bot.on('message', message => {
@@ -310,6 +328,8 @@ bot.on('message', message => {
     }
   }
 });
+
+// Plaine | Combat
 
 // Plaine | Monstres | Descriptions
 
@@ -6237,273 +6257,6 @@ bot.on('message', message => {
     setTimeout(() => {
       talkedRecently.delete(message.author.id+19);
     }, 3600000);
-  }
-})
-
-// Commandes désactivées
-
-bot.on('message', message => {/*
-  if (message.content.startsWith(prefix + "Urguf le chef récompenses")) {
-    const B = (Math.floor((3)*Math.random()))
-    const C = (Math.floor((3)*Math.random()))
-    const D = (Math.floor((2*(0.75))*Math.random()))
-    const E = (Math.floor((2*(0.85))*Math.random()))
-    const F = (Math.floor((201)*Math.random()+200))
-    const G = (Math.floor((101)*Math.random()+100))
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField("Récompenses :" , "Suite à votre combat contre Urguf le chef, vous obtenez :")
-    .addField("Points d'expérience :" , +F)
-    .addField("Si vous êtes du niveau de 25 ou plus :" , "Vous ne gagnez plus d'expérience sur ce monstre")
-    .addField("Cols :" , +G)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-*/}) ;
-
-bot.on('message', message => {/*
-  if (message.content === prefix + "Citrouille vivante récompenses") {
-    const B = (Math.floor((0)*Math.random()+1))
-    const C = (Math.floor((2-(0.95))*Math.random()))
-    const D = (Math.floor((2-(0.95))*Math.random()))
-    const E = (Math.floor((2-(0.95))*Math.random()))
-    const F = (Math.floor((51)*Math.random()+50))
-    const G = (Math.floor((101)*Math.random()+100))
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
-    .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-*/}) ;
-
-bot.on('message', message => {/*
-  if (message.content === prefix + "Citrouille vivante géante récompenses") {
-    const B = (Math.floor((2*1)*Math.random()+3))
-    const C = (Math.floor((2-(0.80))*Math.random()))
-    const D = (Math.floor((2-(0.80))*Math.random()))
-    const E = (Math.floor((2-(0.80))*Math.random()))
-    const F = (Math.floor((201)*Math.random()+200))
-    const G = (Math.floor((401)*Math.random()+400))
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("http://1.bp.blogspot.com/-RCLXqEBAq9U/TnKztk9artI/AAAAAAAA0_k/O3qQtgWEk5Y/s1600/intercambiosvirtuales-00009.png")
-    .addField("Récompenses :" , "\n:scales: Bonbon étrange : " +B+ "\n:scales: Masque de clown tueur : " +C+ "\n:scales: Masque de zombie : " +D+ "\n:cupid: Masque de citrouille : " +E+ "\n:sparkles: Points d'expérience : " +F+ "\n:large_orange_diamond: Cols : " +G)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-*/}) ;
-
-//////////////////////////////////////////////////////////MMonstres évent////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Citrouille vivante attaque")) {
-    const Dégâts = 20
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const Z = (Math.floor((2)*Math.random()+2))
-    if (B <= 30){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante :" , "La citrouille vivante se met à faire tournoyer ses genre de racines mais elle ne touche personne, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (31 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante :" , "La citrouille vivante s'avance rapidement grâce à ses racines et met un violent coup rapide, elle inflige " +A+ " point de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante :" , "La citrouille vivante réussis à tounoyer sur elle-même rapidement du bout de ses lianes, elle inflige " +A+ " points de dégâts à " +Z+ " alliés")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Citrouille vivante géante attaque")) {
-    const Dégâts = 200
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const Z = (Math.floor((2)*Math.random()+2))
-    if (B <= 20){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante géante :" , "La citrouille vivante géante se met à faire tournoyer ses genre de racines mais elle ne touche personne, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (21 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante géante :" , "La citrouille vivante géante s'avance rapidement grâce à ses racines et met un violent coup rapide, elle inflige " +A+ " point de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante géante :" , "La citrouille vivante géante réussis à tounoyer sur elle-même rapidement du bout de ses lianes, elle inflige " +A+ " points de dégâts à " +Z+ " alliés")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-
-
-//////////////////////////////////////////////////////////Monstres défense////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Citrouille vivante défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((8)*Math.random()+4))
-    if (B <= 60){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante :" , "La citrouille vivante n'est pas assez réactive et se prend votre coup de plein fouet qui inflige " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (61 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante :" , "La citrouille vivante bouge rapidement à l'aide de ses racines sur le côté en voyant votre coup")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante :" , "La citrouille vivante saute avant votre coup et retombe violemment sur le sol, faisant tomber le joueur l'ayant attaquer, l'empêchant d'attaquer à son prochain tour")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Citrouille vivante géante défense")) {
-    let Dégâts = args.slice(4).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/3)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((8)*Math.random()+4))
-    if (B <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante géante :" , "La citrouille vivante géante n'est pas assez réactive et se prend votre coup de plein fouet qui inflige " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (41 <= B & B <= 86){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante géante :" , "La citrouille vivante géante vivante bouge rapidement à l'aide de ses racines sur le côté en voyant votre coup")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (85 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Citrouille vivante géante :" , "La citrouille vivante géante saute avant votre coup et retombe violemment sur le sol, faisant tomber tous le monde et lui offrant une attaque")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-
-///////////////////////////////////////////////////////////Personnages//////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Yato"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(1447003)
-    .addField("Pseudo :" , "Yato")
-    .addField("Description physique :" , "Il est blond aux yeux bleus, il est souvent habillé d'un sweat noir en jeu histoire de passé inaperçus. Plutôt mince, assez grand, pas très musclé, il est très agile et rapide. Son accessoire favoris c'est sa chaîne autour du cou")
-    .setImage("https://img00.deviantart.net/400e/i/2017/044/3/5/yato__noragami__by_rinco_xv-d8dz2wk.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-///////////////////////////////////////////////////////////Info serveur//////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "serveur"){
-    const embed = new Discord.RichEmbed()
-    .setTitle("『SAO Community [RP]』©")
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setColor(0x00AE86)
-    .setDescription("Bienvenue à toi **" + message.author.username + "** sur le Discord !")
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://pre00.deviantart.net/c70a/th/pre/f/2013/211/c/b/sao_soft_background_by_animefanart_toh-d6fxzux.jpg")
-    .setThumbnail("https://vignette.wikia.nocookie.net/sword-art-online-chronicles/images/5/50/Wiki-background/revision/latest?cb=20150626221644")
-    .setTimestamp()
-    .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-    .addField("Le site est à votre disposition :","http://fr.sao-rp.wikia.com/")
-    .addField("Invitation vers le discord :", "https://discord.gg/QEYaNfQ")
-    .addField("Nombre de citoyens :", message.guild.memberCount)
-    message.channel.send({embed});
-  }
-})
-
-//////////////////////////////////////////////////////////Plaines/////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Plaine"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setColor(1447003)
-    .addField(":sunrise_over_mountains: Plaine :" , ":sunrise_over_mountains: Bienvenue dans ce lieu aussi calme qu'hostile pour les débutants !\n\n:crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaine combat : [Nombre de joueurs dans votre groupe]`\n\n:wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaine cueillir`\n\n:knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaine chasser`\n\n:book: Pour avoir une quête :\n:book: `=Plaine quêtes`")
-    .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
-    .setTimestamp()
-    message.channel.send({embed})
   }
 })
 
