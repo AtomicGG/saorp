@@ -6734,41 +6734,41 @@ bot.on('message', message => {
       let roll = 0;
       do {
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 75){
-          test = test + 1 + loup;
-          if (test <= (5 + 6 * (joueurs - 1))) {
+        if (roll <= 60){
+          test = test + 2 + loup;
+          if (test <= (6 + 7 * (joueurs - 1))) {
             loup = loup + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 60){
+        if (roll <= 50){
           test = test + 2 + slime;
-          if (test <= (5 + 6 * (joueurs - 1))){
+          if (test <= (6 + 7 * (joueurs - 1))) {
             slime = slime + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 40){
-          test = test + 3 + banditSombre;
-          if (test <= (5 + 6 * (joueurs - 1))){
+        if (roll <= 310){
+          test = test + 4 + banditSombre;
+          if (test <= (6 + 7 * (joueurs - 1))) {
             banditSombre = banditSombre + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
-          test = test + 3 + (2 * loupDeSang);
-          if (test <= (5 + 6 * (joueurs - 1))){
+          test = test + 4 + (2 * loupDeSang);
+          if (test <= (6 + 7 * (joueurs - 1))) {
             loupDeSang = loupDeSang + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
-        if (roll <= 75){
+        if (roll <= 60){
           test = test + 2 + banditExp;
-          if (test <= (5 + 6 * (joueurs - 1))){
+          if (test <= (6 + 7 * (joueurs - 1))) {
           banditExp = banditExp + 1;
           } else break;
         }
-      } while (test <= (5 + 6 * (joueurs - 1)));
+      } while (test <= (6 + 7 * (joueurs - 1)));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
