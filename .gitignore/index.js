@@ -398,9 +398,9 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup normal")) {
-    let position = args.indexOf(" : ");
-    let amelioration = args.slice(13,position);
-    let degat = args.slice(position + 3);
+    let position = args.indexOf(":");
+    let amelioration = args.slice(13,position - 1);
+    let degat = args.slice(position + 2);
     if (amelioration == ""){
       const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1))
       const roll = Math.floor(100 * Math.random() + 1)
