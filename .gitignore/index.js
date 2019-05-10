@@ -398,11 +398,13 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Coup normal")) {
-    let position = args.indexOf(":");
-    let amelioration = args.slice(13,position - 1);
-    let degat = args.slice(position + 2);
+    //let position = args.indexOf(":");
+    //let amelioration = args.slice(13,position - 1);
+    let amelioration = "";
+    let degat = 0;
+    //let degat = args.slice(position + 2);
     if (amelioration == ""){
-      const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1))
+      //const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1))
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 25){
         const embed = new Discord.RichEmbed()
@@ -419,7 +421,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts. | " + position + " | " + amelioration)
+        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + args + "` points de dégâts.")
         .setImage("http://2.bp.blogspot.com/-AbOgw0hfqU8/UHRbq3TmvYI/AAAAAAAAEDU/Y95ofu76KIE/s1600/Sword+Art+Online+-+14+(2).jpg")
         .setTimestamp()
         message.channel.send({embed})
