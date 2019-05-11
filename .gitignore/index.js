@@ -757,7 +757,7 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Coup sauté | MAJ args.slice(13
+// Coups & Défenses | Coup sauté | MAJ
 
 bot.on('message', message => {
   const args = message.content;
@@ -1395,7 +1395,328 @@ bot.on('message', message => {
 
 // Coups & Défenses | Coup perce armure
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup perce armure simple")) {
+    let degats = args.slice(4).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (46 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup perce armure amélioré")) {
+    let degats = args.slice(4).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (41 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup perce armure supérieur")) {
+    let degats = args.slice(4).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (36 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup perce armure suprême")) {
+    let degats = args.slice(4).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (31 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Coups & Défenses | Coup perce armure | MAJ args.slice(20
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Coup perce armure")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(20,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 0.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 45){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (46 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 0.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 0.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 0.7))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 0.7))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (31 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (31 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatInflige = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.9))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts et ignore l'armure adverse.")
+        .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Blocage
 
@@ -7842,128 +8163,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-///////////////////////////////////////////////////////////////Coup perce armure//////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup perce armure simple")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup perce armure amélioré")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup perce armure supérieur")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup perce armure suprême")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 30){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (31 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup perce armure :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts et ignore l'armure adverse."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://media.giphy.com/media/iqkCNZIzSSXSM/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ///////////////////////////////////////////////////////////////Coup d'estoc//////////////////////////////////////////////////////////////////////////////////
 
