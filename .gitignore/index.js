@@ -1062,7 +1062,460 @@ bot.on('message', message => {
 
 // Coups & Défenses | Coup d'estoc
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const C = Math.floor(A*1.10)
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (6 <= B & B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (B > 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup d'estoc amélioré")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = Math.floor(A*1.10)
+    if (B <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (6 <= B & B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (B >= 71){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup d'estoc supérieur")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = Math.floor(A*1.10)
+    if (B <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (6 <= B & B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (B >= 66){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup d'estoc suprême")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = Math.floor(A*1.10)
+    if (B <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (6 <= B & B <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (B >= 61){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Coups & Défenses | Coup d'estoc | MAJ args.slice(15
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Coup d'estoc")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(15,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatSans = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.3))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 75){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (76 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatSans = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.3))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 70){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (71 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatSans = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.4))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 65){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (66 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.4))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 60){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (61 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 1.5))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 55){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (56 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatSans = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 1.5))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (51 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatSans = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 45){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (46 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatSans = Math.floor((degat + 1) * Math.random() + (degat * 0.7))
+      const degatAvec = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez critiquement votre coup qui inflige `" + degatAvec + "` points de dégâts.")
+        .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Parade
 
@@ -1515,7 +1968,7 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Coup perce armure | MAJ args.slice(20
+// Coups & Défenses | Coup perce armure | MAJ
 
 bot.on('message', message => {
   const args = message.content;
@@ -8163,172 +8616,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-///////////////////////////////////////////////////////////////Coup d'estoc//////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup d'estoc simple")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const C = Math.floor(A*1.10)
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= B & B <= 75){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (B > 75){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup d'estoc amélioré")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = Math.floor(A*1.10)
-    if (B <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= B & B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (B >= 71){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup d'estoc supérieur")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = Math.floor(A*1.10)
-    if (B <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= B & B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (B >= 66){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup d'estoc suprême")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.6)*Math.random()+1*(degats*0.6)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = Math.floor(A*1.10)
-    if (B <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= B & B <= 60){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (B >= 61){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup d'estoc :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +C+ "` points de dégâts."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 /////////////////////////////////////////////////////Combo////////////////////////////////////////////////////////////////////////////////////////////
 
