@@ -1226,7 +1226,7 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Coup d'estoc | MAJ args.slice(15
+// Coups & Défenses | Coup d'estoc | MAJ
 
 bot.on('message', message => {
   const args = message.content;
@@ -1480,7 +1480,7 @@ bot.on('message', message => {
       }
     }
     if (amelioration == "7"){
-      const degatSans = Math.floor((degat + 1) * Math.random() + (degat * 0.7))
+      const degatSans = Math.floor((degat * 1 + 1) * Math.random() + (degat * 0.7))
       const degatAvec = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1.6))
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 5){
