@@ -2189,7 +2189,1396 @@ bot.on('message', message => {
 
 // Coups & Défenses | Combo
 
-// Coups & Défenses | Combo | MAJ args.slice(10
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Combo simple")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const H = A+C+D+E+F+G
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning:  L'ennemis ne pourra pas faire de blocage et de parade !"*/)
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Combo amélioré")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const H = A+C+D+E+F+G
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage et de parade !"*/)
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Combo supérieur")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const H = A+C+D+E+F+G
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage et de parade !"*/)
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Combo suprême")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
+    const H = A+C+D+E+F+G
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (61 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage et de parade !"*/)
+      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Coups & Défenses | Combo | MAJ
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Combo 1")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(10,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 0.9))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 0.9))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 13){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (14 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Combo 2")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(10,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.3))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.3))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.4))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.4))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.4))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.4))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.5))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.5))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 13){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (14 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Combo 3")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(10,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.7))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.7))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.9))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.9))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 13){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (14 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Combo 4")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(10,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.3))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.3))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 13){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (14 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Combo 5")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(10,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.5))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.5))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatInflige = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.7))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (17 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatInflige = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 2.7))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 13){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (14 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" + degatInflige + "` points de dégâts !\n\n" +
+                                                 "Si l'attaquant change de cible sans l'avoir tué précédement, le coup est reset.\n" +
+                                                 "Si l'attaquant change de cible après l'avoir tué, le coup reste au même point.\n" +
+                                                 "Si l'ennemi réussit une parade, le coup est reset.\n" +
+                                                 "Si l'ennemi réussit une esquive, le coup perd un point.\n" +
+                                                 "Si l'ennemi réussit un blocage, le coup gagne un point.\n" +
+                                                 "Si l'ennemi rate un blocage, une parade ou une esquive, le coup gagne un point.")
+        .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Plaine | Description
 
@@ -8616,302 +10005,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-/////////////////////////////////////////////////////Combo////////////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Combo simple 1 ")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*0.9)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 20){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (21 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 1 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 2 !")
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Combo simple 2 ")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.3)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 20){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (21 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 2 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 3 !")
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Combo simple 3 ")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*1.7)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 20){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (21 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 3 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 4 !")
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Combo simple 4 ")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.1)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 20){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (21 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 4 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous passez à Combo 5 !")
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Combo simple 5 ")) {
-    let degats = args.slice(4).join(" : ");
-    const A = (Math.floor((degats*0.5)*Math.random()+1*(degats*2.5)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 20){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous ratez votre coup et recommencez à Combo 1, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (21 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo 5 :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +A+ "` points de dégâts et vous restez à Combo 5 !")
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Combo simple")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const H = A+C+D+E+F+G
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 75){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (76 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning:  L'ennemis ne pourra pas faire de blocage et de parade !"*/)
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Combo amélioré")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const H = A+C+D+E+F+G
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage et de parade !"*/)
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Combo supérieur")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const H = A+C+D+E+F+G
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage et de parade !"*/)
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Combo suprême")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const C = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const D = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const E = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const F = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const G = (Math.floor((degats*0.3)*Math.random()+1*(degats*0.35)))
-    const H = A+C+D+E+F+G
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 60){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (61 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Combo :" , ":crossed_swords: Vous réussissez votre combo qui inflige `" +H+ "` points de dégâts au total !\n\n:crossed_swords: Votre premier coup inflige `" +A+ "` points de dégâts, le deuxième coup inflige `" +C+ "` points de dégâts, le troisième coup inflige `" +D+ "` points de dégâts, le quatrième coup inflige `" +E+ "` points de dégâts, le cinquième coup inflige `" +F+ "` point de dégâts et le sixième coup inflige `" +G+ "` points de dégâts !"/*\n\n:warning: L'ennemis ne pourra pas faire de blocage et de parade !"*/)
-      .setImage("https://yukizuri.files.wordpress.com/2013/11/sword_art_online09-55-kirito-fighting.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ////////////////////////////////////////////////////////////Coup provocateur/////////////////////////////////////////////////////////////////////////////////////
 bot.on('message', message => {
