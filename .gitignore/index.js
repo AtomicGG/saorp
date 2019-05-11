@@ -750,192 +750,192 @@ bot.on('message', message => {
     let amelioration = args.slice(14,position - 1);
     let degat = args.slice(position + 2);
     if (amelioration == ""){
-      const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1))
+      const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 25){
+      if (roll <= 48){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup précis :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (26 <= roll){
+      if (49 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
       }
     }
     if (amelioration == "1"){
-      const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.1))
+      const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 25){
+      if (roll <= 44){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (26 <= roll){
+      if (45 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
       }
     }
     if (amelioration == "2"){
-      const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.1))
+      const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 20){
+      if (roll <= 40){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (21 <= roll){
+      if (41 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
       }
     }
     if (amelioration == "3"){
-      const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.2))
+      const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.6))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 20){
+      if (roll <= 40){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (21 <= roll){
+      if (41 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
       }
     }
     if (amelioration == "4"){
-      const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.2))
+      const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.6))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 15){
+      if (roll <= 36){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (16 <= roll){
+      if (37 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
       }
     }
     if (amelioration == "5"){
-      const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.3))
+      const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.7))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 15){
+      if (roll <= 36){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (16 <= roll){
+      if (37 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
       }
     }
     if (amelioration == "6"){
-      const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.3))
+      const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.7))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 10){
+      if (roll <= 32){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (11 <= roll){
+      if (33 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
       }
     }
     if (amelioration == "7"){
-      const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 1.4))
+      const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.8))
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 10){
+      if (roll <= 32){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (11 <= roll){
+      if (33 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup normal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup léthal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
