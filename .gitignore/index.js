@@ -4240,7 +4240,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " +A+ " points de dégâts")
+      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais se le prend malgré sa vitesse, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})
     }
     if (66 <= B){
