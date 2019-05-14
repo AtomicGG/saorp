@@ -1892,7 +1892,320 @@ bot.on('message', message => {
 
 // Coups & Défenses | Fuite
 
-// Coups & Défenses | Fuite | MAJ args.slice(8
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Fuite simple")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (61 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Fuite améliorée")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (46 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Fuite supérieure")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (41 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Fuite suprême")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (36 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Coups & Défenses | Fuite | MAJ
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Fuite")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(8,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 60){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (61 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 55){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (56 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (51 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 45){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (46 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (31 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
+        .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
+        .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Coup d'estoc
 
@@ -13007,128 +13320,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-////////////////////////////////////////////////////////////////////Fuite////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fuite simple")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 60){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
-      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (61 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
-      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fuite améliorée")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
-      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
-      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fuite supérieure")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
-      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
-      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fuite suprême")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats)*Math.random()+1*(degats*1.5)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous ratez votre fuite")
-      .setImage("https://media.giphy.com/media/JpKkAZBpzEukw/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":walking: Fuite :" , ":walking: Vous réussissez votre fuite")
-      .setImage("https://pa1.narvii.com/5599/b82de568ca1433c33ba940d45664caddf98fe07c_hq.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ///////////////////////////////////////////////////////////////////////Offre et annonces//////////////////////////////////////////////////////////////////////////
 
