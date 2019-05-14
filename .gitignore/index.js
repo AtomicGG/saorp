@@ -1170,7 +1170,7 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Esquive | MAJ args.slice(10
+// Coups & Défenses | Esquive | MAJ
 
 bot.on('message', message => {
   const args = message.content;
@@ -2582,7 +2582,512 @@ bot.on('message', message => {
 
 // Coups & Défenses | Blocage
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Blocage simple")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Blocage amélioré")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (46 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Blocage supérieur")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (41 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Blocage suprême")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (36 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
+      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Coups & Défenses | Blocage | MAJ args.slice(10
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Blocage")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(10,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (51 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 45){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (46 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.12 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.12 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 45){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (46 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.12 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.12 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.09 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.09 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.09 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.09 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.06 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.06 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (35 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+      const degatEchec = Math.floor((degat * 0.06 + 1) * Math.random() + (degat * 0.75))
+      const degatReussite = Math.floor((degat * 0.06 + 1) * Math.random() + (degat * 0.45))
+      const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 5){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (6 <= roll && roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (31 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
+        .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Coup circulaire
 
@@ -11642,552 +12147,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-///////////////////////////////////////////////////////////////Blocage//////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocage simple")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (51 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocage amélioré")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocage supérieur")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocage suprême")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats/4)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A*2.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" +A*1.25+ "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +0")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (51 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +1")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.15 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.15 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +2")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +3")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.12 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.12 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +4")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +5")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.09 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.09 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +6")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Blocking +7")) {
-    let degats = args.slice(2).join(" : ");
-    const roll = Math.floor(100 * Math.random() + 1)
-    const degatEchecCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 1))
-    const degatEchec = Math.floor(degats * 0.06 * Math.random() + (degats * 0.75))
-    const degatReussite = Math.floor(degats * 0.06 * Math.random() + (degats * 0.45))
-    const degatReussiteCrit = Math.floor(degats * 0.10 * Math.random() + (degats * 0.25))
-    if (roll <= 5){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez critiquement votre blocage et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (6 <= roll && roll < 30){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous ratez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatEchec + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (31 <= roll && roll < 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Blocage :" , ":shield: Vous réussissez critiquement votre blocage et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts")
-      .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ////////////////////////////////////////////////////////////////////Parade/////////////////////////////////////////////////////////////////////////////
 
