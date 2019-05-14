@@ -3116,7 +3116,7 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Cri de provocation | MAJ args.slice(21
+// Coups & Défenses | Cri de provocation | MAJ
 
 bot.on('message', message => {
   const args = message.content;
@@ -3153,7 +3153,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
@@ -3189,7 +3189,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
@@ -3225,7 +3225,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
@@ -3261,7 +3261,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
@@ -3297,7 +3297,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
@@ -3333,7 +3333,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
@@ -3369,7 +3369,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
@@ -3405,7 +3405,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour.\n" +
                                                             "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
         .setImage("https://i.stack.imgur.com/baOUT.png")
         .setTimestamp()
