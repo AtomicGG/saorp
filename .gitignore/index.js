@@ -2344,6 +2344,251 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
     }
+    if (amelioration == "1"){
+      const degatInflige = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.36))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 39){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (40 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 33){
+          nbrEnnemis = 2;
+        }
+        if (34 <= roll && roll <= 66){
+          nbrEnnemis = 3;
+        }
+        if (67 <= roll){
+          nbrEnnemis = 4;
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts à `" + nbrEnnemis + "` ennemis.")
+        .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatInflige = Math.floor((degat * 0.29 + 1) * Math.random() + (degat * 0.37))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 38){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (39 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 30){
+          nbrEnnemis = 2;
+        }
+        if (31 <= roll && roll <= 63){
+          nbrEnnemis = 3;
+        }
+        if (64 <= roll){
+          nbrEnnemis = 4;
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts à `" + nbrEnnemis + "` ennemis.")
+        .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatInflige = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.37))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 37){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (38 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 27){
+          nbrEnnemis = 2;
+        }
+        if (28 <= roll && roll <= 60){
+          nbrEnnemis = 3;
+        }
+        if (61 <= roll){
+          nbrEnnemis = 4;
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts à `" + nbrEnnemis + "` ennemis.")
+        .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatInflige = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.38))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 36){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (37 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 27){
+          nbrEnnemis = 2;
+        }
+        if (28 <= roll && roll <= 60){
+          nbrEnnemis = 3;
+        }
+        if (61 <= roll){
+          nbrEnnemis = 4;
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts à `" + nbrEnnemis + "` ennemis.")
+        .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatInflige = Math.floor((degat * 0.29 + 1) * Math.random() + (degat * 0.39))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 23){
+          nbrEnnemis = 2;
+        }
+        if (24 <= roll && roll <= 56){
+          nbrEnnemis = 3;
+        }
+        if (57 <= roll){
+          nbrEnnemis = 4;
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts à `" + nbrEnnemis + "` ennemis.")
+        .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatInflige = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.39))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 34){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (35 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 20){
+          nbrEnnemis = 2;
+        }
+        if (21 <= roll && roll <= 53){
+          nbrEnnemis = 3;
+        }
+        if (54 <= roll){
+          nbrEnnemis = 4;
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts à `" + nbrEnnemis + "` ennemis.")
+        .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatInflige = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.4))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 33){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (34 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 20){
+          nbrEnnemis = 2;
+        }
+        if (21 <= roll && roll <= 53){
+          nbrEnnemis = 3;
+        }
+        if (54 <= roll){
+          nbrEnnemis = 4;
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup circulaire :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts à `" + nbrEnnemis + "` ennemis.")
+        .setImage("http://2.bp.blogspot.com/-KSGOpS5ftCo/UJ4Vh45_37I/AAAAAAAAkdE/hLrQLvPDpIk/s1600/Sword+Art+Online+-+14.mkv_snapshot_10.54_%5B2012.11.10_00.28.25%5D.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
   }
 });
 
