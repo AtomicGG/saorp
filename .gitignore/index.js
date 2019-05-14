@@ -1463,7 +1463,432 @@ bot.on('message', message => {
 
 // Coups & Défenses | Interception
 
-// Coups & Défenses | Interception | MAJ args.slice(15
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Interception simple")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (71 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
+      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Interception améliorée")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (66 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
+      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Interception supérieure")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (61 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
+      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Interception suprême")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 55){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (56 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
+      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Coups & Défenses | Interception | MAJ
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Interception")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(15,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const inter = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 0.3))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 67){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (68 <= roll && roll <= 97){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (98 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const inter = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 0.3))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.1))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 62){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (63 <= roll && roll <= 97){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (98 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const inter = Math.floor((degat * 0.45 + 1) * Math.random() + (degat * 0.35))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.12))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 61){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (62 <= roll && roll <= 96){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (97 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const inter = Math.floor((degat * 0.45 + 1) * Math.random() + (degat * 0.35))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.12))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 56){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (57 <= roll && roll <= 96){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (97 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const inter = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 0.4))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.14))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 55){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (56 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const inter = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 0.4))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.14))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (51 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const inter = Math.floor((degat * 0.35 + 1) * Math.random() + (degat * 0.45))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.16))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 49){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (50 <= roll && roll <= 94){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (95 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const inter = Math.floor((degat * 0.35 + 1) * Math.random() + (degat * 0.45))
+      const degatAllie = Math.floor((degat * 1) - inter)
+      const interCrit = Math.floor((degat * 1) - (degat * 0.16))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 44){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
+        .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (45 <= roll && roll <= 94){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" + inter + "` points de dégâts à sa place. Votre allié subit donc `" + degatAllie + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (95 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+                                              "prenant `" + interCrit + "` points de dégâts.")
+        .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Fuite
 
@@ -12582,128 +13007,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-////////////////////////////////////////////////////////////////////Interception/////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Interception simple")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
-      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
-      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Interception améliorée")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
-      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
-      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Interception supérieure")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 60){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
-      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (61 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
-      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Interception suprême")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats/4)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 55){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous ratez votre interception sur votre allié")
-      .setImage("https://media1.tenor.com/images/adc0701a4fd21f8643354d662113d372/tenor.gif?itemid=3531985")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (56 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Interception :" , ":shield: Vous réussissez votre interception sur votre allié et vous prenez `" +A+ "` points de dégâts à sa place, le reste lui revient")
-      .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ////////////////////////////////////////////////////////////////////Fuite////////////////////////////////////////////////////////////////////////////
 
