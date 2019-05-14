@@ -2181,7 +2181,416 @@ bot.on('message', message => {
 
 // Coups & Défenses | Coup provocateur
 
-// Coups & Défenses | Coup provocateur | MAJ args.slice(19
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup provocateur simple")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup provocateur amélioré")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (46 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup provocateur supérieur")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (41 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Coup provocateur suprême")) {
+    let degats = args.slice(3).join(" : ");
+    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (36 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Coups & Défenses | Coup provocateur | MAJ
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Coup provocateur")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(19,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll && roll <= 75){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (76 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll && roll <= 70){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (71 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll && roll <= 70){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (71 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll && roll <= 65){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (66 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (31 <= roll && roll <= 65){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (66 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (31 <= roll && roll <= 60){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (61 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll && roll <= 60){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (61 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatSans = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 0.8))
+      const degatAvec = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.2))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll && roll <= 55){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatSans + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (56 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour.")
+        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Cri de provocation
 
@@ -10006,126 +10415,7 @@ bot.on('message', message => {
   }
 })
 
-////////////////////////////////////////////////////////////Coup provocateur/////////////////////////////////////////////////////////////////////////////////////
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup provocateur simple")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (51 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup provocateur amélioré")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup provocateur supérieur")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Coup provocateur suprême")) {
-    let degats = args.slice(3).join(" : ");
-    const A = (Math.floor((degats*0.75)*Math.random()+1*(degats*0.75)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-      .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Coup provocateur :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" +A+ "` points de dégâts qui force votre ennemis de vous attaquer à son prochain tour."/*\n\n:warning: L'ennemis ne pourra pas faire de blocage !"*/)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/89/Kirito_vs_Xrphan.png/revision/latest?cb=20140307025834")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ////////////////////////////////////////////////////////////////Coup circulaire/////////////////////////////////////////////////////////////////////////////////
 
