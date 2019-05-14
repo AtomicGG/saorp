@@ -2272,7 +2272,7 @@ bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Paarade réussie")) {
     let position = args.indexOf(":");
-    let amelioration = args.slice(17,position - 1);
+    let amelioration = args.slice(18/*17*/,position - 1);
     let degat = args.slice(position + 2);
     if (amelioration == ""){
       const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 0.9))
