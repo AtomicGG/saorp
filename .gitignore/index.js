@@ -2017,9 +2017,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Fuite")) {
-    let position = args.indexOf(":");
-    let amelioration = args.slice(8,position - 1);
-    let degat = args.slice(position + 2);
+    let amelioration = args.slice(8);
     if (amelioration == ""){
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 60){
@@ -5208,9 +5206,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Cri de provocation")) {
-    let position = args.indexOf(":");
-    let amelioration = args.slice(21,position - 1);
-    let degat = args.slice(position + 2);
+    let amelioration = args.slice(21);
     if (amelioration == ""){
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 25){
