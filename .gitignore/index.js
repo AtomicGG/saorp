@@ -1050,7 +1050,416 @@ bot.on('message', message => {
 
 // Coups & Défenses | Esquive
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Esquive simple")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
+    const B =  (Math.floor((100)*Math.random()+1))
+    if (B <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Esquive améliorée")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (46 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Esquive supérieure")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (41 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Esquive suprême")) {
+    let degats = args.slice(2).join(" : ");
+    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
+    const B = (Math.floor((100)*Math.random()+1))
+    if (B <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
+      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (36 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+      .setImage("http://i.imgur.com/LjoYHp7.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Coups & Défenses | Esquive | MAJ args.slice(10
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Esquive")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(10,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 55){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (56 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (51 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.17 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (51 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.17 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 45){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (46 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.14 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 45){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (46 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.14 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.11 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 40){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (41 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+      const degatSubis = Math.floor((degat * 0.11 + 1) * Math.random() + (degat * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 10){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez critiquement votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (11 <= roll && roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
+        .setImage("http://i.imgur.com/Hyzf5A2.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (36 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
+        .setImage("http://i.imgur.com/LjoYHp7.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Interception
 
@@ -11233,456 +11642,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-///////////////////////////////////////////////////////////////////Esquive//////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive simple")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
-    const B =  (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (51 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive améliorée")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive supérieure")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Esquive suprême")) {
-    let degats = args.slice(2).join(" : ");
-    const A = (Math.floor((degats*0.70)*Math.random()+1*(degats*0.70)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" +A+ "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +0")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.2 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 55){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (56 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +1")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.2 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (51 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +2")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.17 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (51 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +3")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.17 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +4")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.14 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 45){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (46 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +5")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.14 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +6")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.11 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (41 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dodge +7")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor(Dégâts * 0.11 * Math.random() + (Dégâts * 0.8))
-    const degatSubisCrit = Math.floor(Dégâts * 0.1 * Math.random() + (Dégâts * 1.1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubisCrit + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= roll & roll <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous ratez votre esquive et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatSubis + "` points de dégâts")
-      .setImage("http://i.imgur.com/Hyzf5A2.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (36 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Esquive :" , ":shield: Vous réussissez à esquiver le coup")
-      .setImage("http://i.imgur.com/LjoYHp7.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-   }
-    }
-});
 
 ///////////////////////////////////////////////////////////////Blocage//////////////////////////////////////////////////////////////////////////////////
 
