@@ -2301,7 +2301,7 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Coup circulaire | MAJ args.slice(18
+// Coups & Défenses | Coup circulaire | MAJ
 
 bot.on('message', message => {
   const args = message.content;
@@ -3007,7 +3007,413 @@ bot.on('message', message => {
 
 // Coups & Défenses | Cri de provocation
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cri de provocation simple")) {
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((3)*Math.random()+2))
+    if (B <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (26 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
+      .setImage("https://i.stack.imgur.com/baOUT.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cri de provocation amélioré")) {
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((3)*Math.random()+2))
+    if (B <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (21 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
+      .setImage("https://i.stack.imgur.com/baOUT.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cri de provocation supérieur")) {
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((3)*Math.random()+2))
+    if (B <= 15){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (16 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
+      .setImage("https://i.stack.imgur.com/baOUT.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cri de provocation suprême")) {
+    const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((3)*Math.random()+2))
+    if (B <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (11 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
+      .setImage("https://i.stack.imgur.com/baOUT.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Coups & Défenses | Cri de provocation | MAJ args.slice(21
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Cri de provocation")) {
+    let position = args.indexOf(":");
+    let amelioration = args.slice(21,position - 1);
+    let degat = args.slice(position + 2);
+    if (amelioration == ""){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (26 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 33){
+          nbrEnnemis = 2;
+        }
+        if (34 <= roll && roll <= 66){
+          nbrEnnemis = 3;
+        }
+        if (67 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 60;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "1"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 24){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (25 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 33){
+          nbrEnnemis = 2;
+        }
+        if (34 <= roll && roll <= 66){
+          nbrEnnemis = 3;
+        }
+        if (67 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 65;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "2"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 23){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (24 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 30){
+          nbrEnnemis = 2;
+        }
+        if (31 <= roll && roll <= 63){
+          nbrEnnemis = 3;
+        }
+        if (64 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 65;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "3"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 22){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (23 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 27){
+          nbrEnnemis = 2;
+        }
+        if (28 <= roll && roll <= 60){
+          nbrEnnemis = 3;
+        }
+        if (61 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 70;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "4"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 21){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (22 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 27){
+          nbrEnnemis = 2;
+        }
+        if (28 <= roll && roll <= 60){
+          nbrEnnemis = 3;
+        }
+        if (61 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 70;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "5"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 20){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (21 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 23){
+          nbrEnnemis = 2;
+        }
+        if (24 <= roll && roll <= 56){
+          nbrEnnemis = 3;
+        }
+        if (57 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 75;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "6"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 19){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (20 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 20){
+          nbrEnnemis = 2;
+        }
+        if (21 <= roll && roll <= 53){
+          nbrEnnemis = 3;
+        }
+        if (54 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 75;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    if (amelioration == "7"){
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 18){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
+        .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (19 <= roll){
+        let nbrEnnemis;
+        const chanceEnnemis = Math.floor(100 * Math.random() + 1);
+        if (roll <= 20){
+          nbrEnnemis = 2;
+        }
+        if (21 <= roll && roll <= 53){
+          nbrEnnemis = 3;
+        }
+        if (54 <= roll){
+          nbrEnnemis = 4;
+        }
+        const esquiveCri = 80;
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" + nbrEnnemis + "` ennemis à vous attaquer à leur prochain tour. " +
+                                                            "Chaque ennemi peut faire un Roll pour échapper au cri. Il devra faire un score supérieur ou égal à : `" + esquiveCri + "`")
+        .setImage("https://i.stack.imgur.com/baOUT.png")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+  }
+});
 
 // Coups & Défenses | Combo
 
@@ -10827,117 +11233,6 @@ bot.on('message', message => {
     }, 3600000);
   }
 })
-
-/////////////////////////////////////////////////////Cri de provocation////////////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cri de provocation simple")) {
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((3)*Math.random()+2))
-    if (B <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (26 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
-      .setImage("https://i.stack.imgur.com/baOUT.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cri de provocation amélioré")) {
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((3)*Math.random()+2))
-    if (B <= 20){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (21 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
-      .setImage("https://i.stack.imgur.com/baOUT.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cri de provocation supérieur")) {
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((3)*Math.random()+2))
-    if (B <= 15){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (16 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
-      .setImage("https://i.stack.imgur.com/baOUT.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cri de provocation suprême")) {
-    const A = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((3)*Math.random()+2))
-    if (B <= 10){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous ratez votre cri de provocation, dommage pour vous...")
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (11 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Cri de provocation :" , ":crossed_swords: Vous réussissez votre cri de provocation obligeant `" +C+ "` ennemis à vous attaquer à leur prochain tour")
-      .setImage("https://i.stack.imgur.com/baOUT.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
 
 ///////////////////////////////////////////////////////////////////Esquive//////////////////////////////////////////////////////////////////////////////
 
