@@ -12292,6 +12292,42 @@ bot.on('message', message => {
   }
 })
 
+// Grotte | Monstres | Descriptions MAJ
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Chien errant"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Chien errant :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la grotte du palier 1 !")
+    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ???")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien errant attaque`")
+    .addField(":shield: Lorsque le chien errant reçoit un coup :" , ":shield: `=Chien errant défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Chien errant récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Chien errant récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt pilion"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt pilion :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
+    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ???")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt pilion attaque`")
+    .addField(":shield: Lorsque le kobolt pilion reçoit un coup :" , ":shield: `=Kobolt pilion défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt pilion récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt pilion récompenses groupe : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
 // Grotte | Monstres | Attaques
 
 bot.on('message', message => {
@@ -12529,7 +12565,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Chien adulte attaque")) {
+  if (message.content.startsWith(prefix + "Chien errant attaque")) {
     const degat = Math.floor(36 * Math.random() + 55)
     const saignement = Math.floor(6 * Math.random() + 10)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -12538,7 +12574,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Chien adulte :" , ":crossed_swords: Le chien adulte se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
+      .addField(":crossed_swords: Chien errant :" , ":crossed_swords: Le chien errant se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
       message.channel.send({embed})
     }
     if (26 <= roll && roll <= 90){
@@ -12546,7 +12582,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Chien adulte :" , ":crossed_swords: Le chien adulte tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts")
+      .addField(":crossed_swords: Chien errant :" , ":crossed_swords: Le chien errant tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -12555,7 +12591,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Chien adulte:" , ":crossed_swords: Le chien adulte fonce sur votre bras et le mord sauvagement et inflige " + degat + " et vous fait saignez et " +
+      .addField(":crossed_swords: Chien errant:" , ":crossed_swords: Le chien errant fonce sur votre bras et le mord sauvagement et inflige " + degat + " et vous fait saignez et " +
                                                    "vous inflige " + saignement + " points de dégâts de saignement suplémentaire pendant 3 tours")
       .setTimestamp()
       message.channel.send({embed})
@@ -12802,7 +12838,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Chien adulte défense")) {
+  if (message.content.startsWith(prefix + "Chien errant défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
@@ -12811,7 +12847,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Chien adulte :" , ":shield: Le chien adulte tente d'esquiver votre coup en partant rapidement en arrière, mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Chien errant :" , ":shield: Le chien errant tente d'esquiver votre coup en partant rapidement en arrière, mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -12819,7 +12855,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Chien adulte :" , ":shield: Le chien adulte se faufile dans un coin étroit de la grotte. Vous ne pouvez pas l'atteindre.")
+      .addField(":shield: Chien errant :" , ":shield: Le chien errant se faufile dans un coin étroit de la grotte. Vous ne pouvez pas l'atteindre.")
       .setTimestamp()
       message.channel.send({embed})
     }
