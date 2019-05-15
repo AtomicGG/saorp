@@ -12781,7 +12781,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt minor défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor(Dégâts * Math.random() + (Dégâts * 0.5))
+    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -12796,7 +12796,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt combat défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const paradeRatee = Math.floor((Dégâts + 1) * Math.random() + (Dégâts * 1))
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const paradeReussie = Math.floor(21 * Math.random() + 45)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
