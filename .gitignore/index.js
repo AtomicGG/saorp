@@ -121,7 +121,7 @@ bot.on('message', message => {
 "Soyez prêtes!\n\n" +
 "__Les Hyènes :__\n" +
 "Notre roi nous invite à la fête\n" +
-"Soyez prêtes!\n\n" +
+"Soyez prêtes!\n\n")
     .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
     .setTimestamp()
     message.channel.send({embed})
