@@ -79,8 +79,16 @@ bot.on('message', message => {
     "Votre récompense vous l'aurez\n" +
     "Quand viendra ce beau jour\n" +
     "Quand la gloire couronnera ma tête\n" +
-    "Soyez prêtes!")
-    const blabla = new Discord.RichEmbed()
+    "Soyez prêtes\n\n!" +
+    "Suite avec `=Fenibax 2`")
+    .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
+    .setTimestamp()
+    message.channel.send({blabla})
+  }
+})
+bot.on('message', message => {
+  if (message.content === (prefix) + "Fenibax 2"){
+    const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(1447003)
@@ -128,7 +136,7 @@ bot.on('message', message => {
     "Soyez prêtes!\n\n")
     .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
     .setTimestamp()
-    message.channel.send({blabla})
+    message.channel.send({embed})
   }
 })
 
