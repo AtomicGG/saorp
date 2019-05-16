@@ -85,7 +85,14 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(1447003)
-    .addField(    "__Les Hyènes :__\n" +
+    .addField(      "__Fenibax :__\n" +
+    "M'écouter et vous taire\n" +
+    "Faites-moi confiance\n" +
+    "Votre récompense vous l'aurez\n" +
+    "Quand viendra ce beau jour\n" +
+    "Quand la gloire couronnera ma tête\n" +
+    "Soyez prêtes\n\n!" +
+      "__Les Hyènes :__\n" +
     "Ouais! Soyons prêtes. Nous sommes toutes prêtes! Pour quoi?\n\n" +
     "__Fenibax :__\n" +
     "Pour la mort du roi\n\n" +
@@ -106,7 +113,19 @@ bot.on('message', message => {
     "Ouais, youpi! Longue vie au roi! Longue vie au roi! Longue vie au roi!\n" +
     "Quelle joie d'être bientôt pour les sujets\n" +
     "De notre nouveau roi adoré\n\n" +
-    "__Fenibax :__\n" +
+    "Suite avec `=Fenibax 3`")
+    .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+bot.on('message', message => {
+  if (message.content === (prefix) + "Fenibax 3"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(1447003)
+    .addField(       "__Fenibax :__\n" +
     "Bien sûr, en revanche, j'ose espérer\n" +
     "Que vous exécuterez mes ordres\n" +
     "J'assure un futur plein de captures\n" +
