@@ -80,9 +80,55 @@ bot.on('message', message => {
     "Quand viendra ce beau jour\n" +
     "Quand la gloire couronnera ma tête\n" +
     "Soyez prêtes!")
+    const blabla = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(1447003)
+    .addField(    "__Les Hyènes :__\n" +
+    "Ouais! Soyons prêtes. Nous sommes toutes prêtes! Pour quoi?\n\n" +
+    "__Fenibax :__\n" +
+    "Pour la mort du roi\n\n" +
+    "__Les Hyènes :__\n" +
+    "Il est malade?\n\n" +
+    "__Fenibax :__\n" +
+    "Non, imbécile! Nous allons le tuer. Et Simba aussi\n\n" +
+    "__Les Hyènes :__\n" +
+    "Bonne idée! On vivra sans roi!\n" +
+    "Sans roi! Sans roi! La la la la la!\n\n" +
+    "__Fenibax :__\n" +
+    "Idiotes! Il y aura un roi!\n\n" +
+    "__Les Hyènes :__\n" +
+    "Hé, mais t'avais dit que...\n\n" +
+    "__Fenibax :__\n" +
+    "Je serai le roi! Suivez-moi, et vous n'aurez plus jamais faim!\n\n" +
+    "__Les Hyènes :__\n" +
+    "Ouais, youpi! Longue vie au roi! Longue vie au roi! Longue vie au roi!\n" +
+    "Quelle joie d'être bientôt pour les sujets\n" +
+    "De notre nouveau roi adoré\n\n" +
+    "__Fenibax :__\n" +
+    "Bien sûr, en revanche, j'ose espérer\n" +
+    "Que vous exécuterez mes ordres\n" +
+    "J'assure un futur plein de captures\n" +
+    "Puisque je suis roi des chasseurs\n" +
+    "Par contre, sans moi, je vous l'assure\n" +
+    "Vous mourrez de faim pour la vie!\n" +
+    "Soyez prêtes pour le coup le plus génial\n" +
+    "Soyez prêtes pour le plus beau scandale\n" +
+    "Je dis compromission\n" +
+    "Je dis conspiration\n" +
+    "Je crie humiliation\n" +
+    "Trois mots qui me feront\n" +
+    "Un roi incontesté\n" +
+    "Respecté, salué \n" +
+    "Le seul dieu vivant qu'on acclame\n" +
+    "Votre roi vous invite à la fête\n" +
+    "Soyez prêtes!\n\n" +
+    "__Les Hyènes :__\n" +
+    "Notre roi nous invite à la fête\n" +
+    "Soyez prêtes!\n\n")
     .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
     .setTimestamp()
-    message.channel.send({embed})
+    message.channel.send({blabla})
   }
 })
 
