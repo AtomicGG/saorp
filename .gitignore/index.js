@@ -9336,7 +9336,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit expérimenté défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts + 1) * Math.random() + (Dégâts * 1))
+    const degat = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const parade = Math.floor(6 * Math.random() + 10)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
