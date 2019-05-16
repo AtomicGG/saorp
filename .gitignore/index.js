@@ -73,13 +73,6 @@ bot.on('message', message => {
     "Nous sortons de la nuit\n\n" +
     "__Les Hyènes :__ (c'est-à-dire Fuka, Lyn, Red, Kumi et pleins d'autres que je dis pas parce que flemme)\n" +
     "Et qu'est-ce qu'on doit faire?\n\n" +
-    "__Fenibax :__\n" +
-    "M'écouter et vous taire\n" +
-    "Faites-moi confiance\n" +
-    "Votre récompense vous l'aurez\n" +
-    "Quand viendra ce beau jour\n" +
-    "Quand la gloire couronnera ma tête\n" +
-    "Soyez prêtes\n\n!" +
     "Suite avec `=Fenibax 2`")
     .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
     .setTimestamp()
