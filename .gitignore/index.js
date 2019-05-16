@@ -85,7 +85,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(1447003)
-    .addField(      "__Fenibax :__\n" +
+    .addField( "Joyeux anniversaire :" ,     "__Fenibax :__\n" +
     "M'écouter et vous taire\n" +
     "Faites-moi confiance\n" +
     "Votre récompense vous l'aurez\n" +
@@ -125,7 +125,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(1447003)
-    .addField(       "__Fenibax :__\n" +
+    .addField( "Joyeux anniversaire :" ,      "__Fenibax :__\n" +
     "Bien sûr, en revanche, j'ose espérer\n" +
     "Que vous exécuterez mes ordres\n" +
     "J'assure un futur plein de captures\n" +
