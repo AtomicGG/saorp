@@ -83,7 +83,7 @@ bot.on('message', message => {
     "Suite avec `=Fenibax 2`")
     .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
     .setTimestamp()
-    message.channel.send({blabla})
+    message.channel.send({embed})
   }
 })
 bot.on('message', message => {
