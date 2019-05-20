@@ -46,112 +46,6 @@ bot.on("message", (message) => {
   }
 });
 
-bot.on('message', message => {
-  if (message.content === (prefix) + "Fenibax"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(1447003)
-    .addField("Pseudo :" , "Fenibax")
-    .addField("Joyeux anniversaire :" , "Joyeux anniversaire Fenibax ! On t'adore, t'es notre Roi, c'est pourquoi on va chanter pour toi !\n\n" +
-    "__Fenibax :__\n" +
-    "Je n'ai jamais cru les hyènes essentielles\n" +
-    "Elles sont frustres, ignobles et infectes\n" +
-    "Mais, elles représentent un suprême potentiel\n" +
-    "Conjugué à mon puissant intellect\n" +
-    "D'accord, vos pouvoirs de réflexion\n" +
-    "Volent plus bas qu'un derrière de cochon\n" +
-    "Mais bêtes comme vous êtes, faites attention\n" +
-    "Rebelle et lion font rébellion\n" +
-    "Je vois à vos yeux sans expression\n" +
-    "Qu'il faut que j'éclaire vos lanternes\n" +
-    "Nous parlons de roi, de succession\n" +
-    "Vous êtes toutes impliquées dans l'affaire\n" +
-    "Soyez prêtes pour la chance de votre vie\n" +
-    "Car enfin va venir le grand jour\n" +
-    "Nos ennuis sont finis\n" +
-    "Nous sortons de la nuit\n\n" +
-    "__Les Hyènes :__ (c'est-à-dire Fuka, Lyn, Red, Kumi et pleins d'autres que je dis pas parce que flemme)\n" +
-    "Et qu'est-ce qu'on doit faire?\n\n" +
-    "Suite avec `=Fenibax 2`")
-    .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-bot.on('message', message => {
-  if (message.content === (prefix) + "Fenibax 2"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(1447003)
-    .addField( "Joyeux anniversaire :" ,     "__Fenibax :__\n" +
-    "M'écouter et vous taire\n" +
-    "Faites-moi confiance\n" +
-    "Votre récompense vous l'aurez\n" +
-    "Quand viendra ce beau jour\n" +
-    "Quand la gloire couronnera ma tête\n" +
-    "Soyez prêtes\n\n!" +
-      "__Les Hyènes :__\n" +
-    "Ouais! Soyons prêtes. Nous sommes toutes prêtes! Pour quoi?\n\n" +
-    "__Fenibax :__\n" +
-    "Pour la mort du roi\n\n" +
-    "__Les Hyènes :__\n" +
-    "Il est malade?\n\n" +
-    "__Fenibax :__\n" +
-    "Non, imbécile! Nous allons le tuer. Et Simba aussi\n\n" +
-    "__Les Hyènes :__\n" +
-    "Bonne idée! On vivra sans roi!\n" +
-    "Sans roi! Sans roi! La la la la la!\n\n" +
-    "__Fenibax :__\n" +
-    "Idiotes! Il y aura un roi!\n\n" +
-    "__Les Hyènes :__\n" +
-    "Hé, mais t'avais dit que...\n\n" +
-    "__Fenibax :__\n" +
-    "Je serai le roi! Suivez-moi, et vous n'aurez plus jamais faim!\n\n" +
-    "__Les Hyènes :__\n" +
-    "Ouais, youpi! Longue vie au roi! Longue vie au roi! Longue vie au roi!\n" +
-    "Quelle joie d'être bientôt pour les sujets\n" +
-    "De notre nouveau roi adoré\n\n" +
-    "Suite avec `=Fenibax 3`")
-    .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-bot.on('message', message => {
-  if (message.content === (prefix) + "Fenibax 3"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(1447003)
-    .addField( "Joyeux anniversaire :" ,      "__Fenibax :__\n" +
-    "Bien sûr, en revanche, j'ose espérer\n" +
-    "Que vous exécuterez mes ordres\n" +
-    "J'assure un futur plein de captures\n" +
-    "Puisque je suis roi des chasseurs\n" +
-    "Par contre, sans moi, je vous l'assure\n" +
-    "Vous mourrez de faim pour la vie!\n" +
-    "Soyez prêtes pour le coup le plus génial\n" +
-    "Soyez prêtes pour le plus beau scandale\n" +
-    "Je dis compromission\n" +
-    "Je dis conspiration\n" +
-    "Je crie humiliation\n" +
-    "Trois mots qui me feront\n" +
-    "Un roi incontesté\n" +
-    "Respecté, salué \n" +
-    "Le seul dieu vivant qu'on acclame\n" +
-    "Votre roi vous invite à la fête\n" +
-    "Soyez prêtes!\n\n" +
-    "__Les Hyènes :__\n" +
-    "Notre roi nous invite à la fête\n" +
-    "Soyez prêtes!\n\n")
-    .setImage("http://personnages-disney.com/Images/Vignettes%20perso%20V3/Scar.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
 // Roll
 
 bot.on('message', message => {
@@ -7831,7 +7725,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Dog défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degatSubis = Math.floor((Dégâts + 1) * Math.random() + (Dégâts * 1))
+    const degatSubis = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const parade = Math.floor(2 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 75){
@@ -9366,7 +9260,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit sombre défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts + 1) * Math.random() + (Dégâts * 1))
+    const degat = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const parade = Math.floor(6 * Math.random() + 10)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
@@ -10607,7 +10501,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bangit sombre d'élite défense")) {
     let Dégâts = args.slice(4).join(" : ");
-    const degat = Math.floor((Dégâts + 1) * Math.random() + (Dégâts * 1))
+    const degat = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const parade = Math.floor(11 * Math.random() + 15)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
@@ -11739,7 +11633,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt angry défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const paradeRatee = Math.floor((Dégâts + 1) * Math.random() + (Dégâts * 1.5))
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.5))
     const blocage = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.7))
     const paradeReussie = Math.floor(16 * Math.random() + 25)
     const roll = Math.floor(100 * Math.random() + 1)
