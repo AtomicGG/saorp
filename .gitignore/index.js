@@ -55,7 +55,7 @@ bot.on('message', message => {
     .setImage("https://i.pinimg.com/originals/b6/39/a2/b639a2bcc730ca65842eaa5976060a65.gif")
     .setTimestamp()
     message.channel.send({embed})
-    message.channel.send("https://www.youtube.com/watch?v=XdJRXPrG0CE")
+    setTimeout(function() {message.channel.send("https://www.youtube.com/watch?v=XdJRXPrG0CE")},3000);
   }
 })
 
