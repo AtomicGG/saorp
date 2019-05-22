@@ -52,7 +52,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
     .addField("Snif, au revoir Lyn !" , "vdsrgg")
-    .setImage("https://i.pinimg.com/originals/b6/39/a2/b639a2bcc730ca65842eaa5976060a65.gif")
+    .setImage("https://66.media.tumblr.com/876fce47860dc14b95e096ae6f537fc6/tumblr_ow8r59XuTA1r4l7oro1_500.gif")
     .setTimestamp()
     message.channel.send({embed})
   }
