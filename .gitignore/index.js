@@ -46,6 +46,18 @@ bot.on("message", (message) => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Lyn"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .addField("Snif, au revoir Lyn !" , "vdsrgg")
+    .setImage("https://i.pinimg.com/originals/b6/39/a2/b639a2bcc730ca65842eaa5976060a65.gif")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
 // Roll
 
 bot.on('message', message => {
