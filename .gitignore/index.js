@@ -10869,7 +10869,6 @@ bot.on('message', message => {
 
 // Donjon Sauvage | Monstres | Récompenses | MAJ
 
-
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -11182,9 +11181,6 @@ bot.on('message', message => {
   }
 }) ;
 
-
-
-
 // Montagne | Description
 
 bot.on('message', message => {
@@ -11271,39 +11267,39 @@ bot.on('message', message => {
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 60){
           test = test + 2 + jeuneKobold;
-          if (test <= (6 + 7 * (joueurs - 1))) {
+          if (test <= (7 + 8 * (joueurs - 1))) {
             jeuneKobold = jeuneKobold + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 50){
           test = test + 2 + koboldExplo;
-          if (test <= (6 + 7 * (joueurs - 1))) {
+          if (test <= (7 + 8 * (joueurs - 1))) {
             koboldExplo = koboldExplo + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 4 + koboldEspion;
-          if (test <= (6 + 7 * (joueurs - 1))) {
+          if (test <= (7 + 8 * (joueurs - 1))) {
             koboldEspion = koboldEspion + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 4 + (2 * koboltEnrager);
-          if (test <= (6 + 7 * (joueurs - 1))) {
+          if (test <= (7 + 8 * (joueurs - 1))) {
             koboltEnrager = koboltEnrager + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 60){
           test = test + 2 + koboldOuvrier;
-          if (test <= (6 + 7 * (joueurs - 1))) {
+          if (test <= (7 + 8 * (joueurs - 1))) {
           koboldOuvrier = koboldOuvrier + 1;
           } else break;
         }
-      } while (test <= (6 + 7 * (joueurs - 1)));
+      } while (test <= (7 + 8 * (joueurs - 1)));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
