@@ -8372,7 +8372,7 @@ bot.on('message', message => {
         cols = cols + Math.floor(4 * Math.random() + 3)
       }
       roll = Math.floor(borneSup * Math.random() + 5);
-      xp = xp + (((Math.round(((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
+      xp = xp + Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     }
     if(xp <= 0) {
       xp = 0;
