@@ -11304,7 +11304,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
+      .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n" +
                                    ":crossed_swords: Jeune(s) kobolt(s) : " + jeuneKobolt + "\n" +
                                    ":crossed_swords: Kobolt(s) explorateur(s) : " + koboltExplo + "\n" +
                                    ":crossed_swords: Kobolt(s) ouvrier(s) : " + koboltOuvrier + "\n" +
@@ -12993,7 +12993,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Montagne combat")) {
+  if (message.content.startsWith(prefix + "Test Grotte combat")) {
     let joueurs = args.slice(3).join(" : ");
     if (/*talkedRecently.has(message.author.id+1000)*/false) {
       const embed = new Discord.RichEmbed()
@@ -13053,7 +13053,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
+      .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n" +
                                    ":crossed_swords: Kobolt(s) mineur(s) : " + koboltMineur + "\n" +
                                    ":crossed_swords: Kobolt(s) combattant(s) : " + koboltCombattant + "\n" +
                                    ":crossed_swords: Kobolt(s) garde(s) : " + koboltGarde + "\n" +
