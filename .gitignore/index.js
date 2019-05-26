@@ -8296,6 +8296,47 @@ bot.on('message', message => {
   }
 }) ;
 
+// Plaine | Monstres | Récompenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Foxy récompenses solo")) {
+    let lvl = args.slice(3).join(" : ");
+    const Viande = Math.floor(3 * Math.random())
+    const Peau = Math.floor(3 * Math.random())
+    const Oeil = Math.floor((2 - 0.75)*Math.random())
+    const Coeur = Math.floor((2 - 0.85)*Math.random())
+    const Oeufs = Math.floor((2 - 0.99) * Math.random())
+    const bonus = 0;
+    const nivMob = 1;
+    const controle = lvl - nivMob
+    const borneSup = 11 - controle
+    const roll = Math.floor(borneSup * Math.random() + 5);
+    let xp = (Math.round(((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll
+    //const controle = Math.floor(15 * Math.random() + 15)
+    //const xp = controle - (lvl * 3)
+    const cols = Math.floor(6 * Math.random() + 5)
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
+                                             ":knife: Peau de renard : " + Peau + "\n" +
+                                             ":eye: Oeil de renard : " + Oeil + "\n" +
+                                             ":cupid: Coeur de renard : " + Coeur + "\n" +
+                                             ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                             ":sparkles: Points d'expérience : " + xp + "\n" +
+                                             ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
 // Plaine | Métiers
 
 bot.on('message', message => {
