@@ -8311,12 +8311,13 @@ bot.on('message', message => {
     const bonus = 0;
     const nivMob = 1;
     const controle = lvl - nivMob
-    let xp = (((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)
+    const roll = Math.floor(11 * Math.random() + 5);
+    let xp = (Math.round(((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll
     //const controle = Math.floor(15 * Math.random() + 15)
     //const xp = controle - (lvl * 3)
     const cols = Math.floor(6 * Math.random() + 5)
     if(xp <= 0) {
-      x = 0;
+      xp = 0;
     }
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
