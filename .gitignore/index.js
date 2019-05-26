@@ -12463,7 +12463,7 @@ bot.on('message', message => {
     const oreille = Math.floor(2 * Math.random() + 1)
     const echantillon = Math.floor((2 - 0.75) * Math.random())
     const dent = Math.floor((2 - 0.85) * Math.random())
-    const controle = Math.floor(46 * Math.random() + 65)
+    const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 5)
     const cols = Math.floor(31 * Math.random() + 30)
     if(xp > 0) {
@@ -12497,7 +12497,7 @@ bot.on('message', message => {
     const oreille = Math.floor(2 * Math.random() + 1)
     const echantillon = Math.floor((2 - 0.85) * Math.random())
     const dent = Math.floor((2 - 0.95) * Math.random())
-    const controle = Math.floor(41 * Math.random() + 50)
+    const controle = Math.floor(31 * Math.random() + 40)
     const xp = controle - (lvl * 6)
     const cols = Math.floor(25 * Math.random() + 25)
     if(xp > 0) {
@@ -12533,7 +12533,7 @@ bot.on('message', message => {
     const dent = Math.floor((2 - 0.85) * Math.random())
     const carte = Math.floor((2 - 0.98) * Math.random())
     const bottes = Math.floor((2 - 0.97) * Math.random())
-    const controle = Math.floor(46 * Math.random() + 65)
+    const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 5)
     const cols = Math.floor(31 * Math.random() + 30)
     if(xp > 0) {
@@ -12569,7 +12569,7 @@ bot.on('message', message => {
     const dent = Math.floor((2 - 0.95) * Math.random())
     const carte = Math.floor((2 - 0.99) * Math.random())
     const bottes = Math.floor((2 - 0.98) * Math.random())
-    const controle = Math.floor(41 * Math.random() + 50)
+    const controle = Math.floor(31 * Math.random() + 40)
     const xp = controle - (lvl * 5)
     const cols = Math.floor(25 * Math.random() + 25)
     if(xp > 0) {
@@ -12606,7 +12606,7 @@ bot.on('message', message => {
     const planArmure = Math.floor((2 - 0.95) * Math.random())
     const planArme = Math.floor((2 - 0.90) * Math.random())
     const planBijoux = Math.floor((2 - 0.97) * Math.random())
-    const controle = Math.floor(46 * Math.random() + 65)
+    const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 5)
     const cols = Math.floor(31 * Math.random() + 30)
     if(xp > 0) {
@@ -12643,7 +12643,7 @@ bot.on('message', message => {
     const planArmure = Math.floor((2 - 0.98) * Math.random())
     const planArme = Math.floor((2 - 0.97) * Math.random())
     const planBijoux = Math.floor((2 - 0.99) * Math.random())
-    const controle = Math.floor(41 * Math.random() + 50)
+    const controle = Math.floor(31 * Math.random() + 40)
     const xp = controle - (lvl * 6)
     const cols = Math.floor(25 * Math.random() + 25)
     if(xp > 0) {
@@ -12682,7 +12682,7 @@ bot.on('message', message => {
     const couteau = Math.floor((2 - 0.95) * Math.random())
     const faucille = Math.floor((2 - 0.95) * Math.random())
     const casque = Math.floor((2 - 0.97) * Math.random())
-    const controle = Math.floor(56 * Math.random() + 75)
+    const controle = Math.floor(46 * Math.random() + 65)
     const xp = controle - (lvl * 5)
     const cols = Math.floor(31 * Math.random() + 30)
     if(xp > 0) {
@@ -12721,7 +12721,7 @@ bot.on('message', message => {
     const couteau = Math.floor((2 - 0.98) * Math.random())
     const faucille = Math.floor((2 - 0.98) * Math.random())
     const casque = Math.floor((2 - 0.98) * Math.random())
-    const controle = Math.floor(46 * Math.random() + 65)
+    const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 6)
     const cols = Math.floor(25 * Math.random() + 25)
     if(xp > 0) {
@@ -12760,7 +12760,7 @@ bot.on('message', message => {
     const armeKobDeuxMains = Math.floor((2 - 0.92) * Math.random())
     const stuffKob = Math.floor((2 - 0.85) * Math.random())
     const bijouxKob = Math.floor((2 - 0.92) * Math.random())
-    const controle = Math.floor(61 * Math.random() + 80)
+    const controle = Math.floor(51 * Math.random() + 70)
     const xp = controle - (lvl * 6)
     const cols = Math.floor(21 * Math.random() + 50)
     if(xp > 0) {
@@ -12798,7 +12798,7 @@ bot.on('message', message => {
     const armeKobDeuxMains = Math.floor((2 - 0.96) * Math.random())
     const stuffKob = Math.floor((2 - 0.93) * Math.random())
     const bijouxKob = Math.floor((2 - 0.96) * Math.random())
-    const controle = Math.floor(51 * Math.random() + 70)
+    const controle = Math.floor(41 * Math.random() + 60)
     const xp = controle - (lvl * 6)
     const cols = Math.floor(16 * Math.random() + 45)
     if(xp > 0) {
