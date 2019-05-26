@@ -11267,39 +11267,39 @@ bot.on('message', message => {
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 60){
           test = test + 2 + jeuneKobold;
-          if (test <= (7 + 8 * (joueurs - 1))) {
+          if (test <= (6 + 7 * (joueurs - 1))) {
             jeuneKobold = jeuneKobold + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 50){
           test = test + 2 + koboldExplo;
-          if (test <= (7 + 8 * (joueurs - 1))) {
+          if (test <= (6 + 7 * (joueurs - 1))) {
             koboldExplo = koboldExplo + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 4 + koboldEspion;
-          if (test <= (7 + 8 * (joueurs - 1))) {
+          if (test <= (6 + 7 * (joueurs - 1))) {
             koboldEspion = koboldEspion + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 30){
           test = test + 4 + (2 * koboltEnrager);
-          if (test <= (7 + 8 * (joueurs - 1))) {
+          if (test <= (6 + 7 * (joueurs - 1))) {
             koboltEnrager = koboltEnrager + 1;
           } else break;
         }
         roll = Math.floor(100*Math.random()+1)
         if (roll <= 60){
           test = test + 2 + koboldOuvrier;
-          if (test <= (7 + 8 * (joueurs - 1))) {
+          if (test <= (6 + 7 * (joueurs - 1))) {
           koboldOuvrier = koboldOuvrier + 1;
           } else break;
         }
-      } while (test <= (7 + 8 * (joueurs - 1)));
+      } while (test <= (6 + 7 * (joueurs - 1)));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
