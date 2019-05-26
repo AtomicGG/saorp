@@ -11259,6 +11259,88 @@ bot.on('message', message => {
   }
 })
 
+// Montagne | Combat | MAJ
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Test Montagne combat")) {
+    let joueurs = args.slice(3).join(" : ");
+    if (/*talkedRecently.has(message.author.id+1000)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let test = 0;
+      let jeuneKobold = 0;
+      let koboldExplo = 0;
+      let koboldOuvrier = 0;
+      let koboldMineur = 0;
+      let koboltEnrager = 0;
+      let roll = 0;
+      do {
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 60){
+          test = test + 2 + jeuneKobold;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            jeuneKobold = jeuneKobold + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 50){
+          test = test + 2 + koboldExplo;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            koboldExplo = koboldExplo + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 30){
+          test = test + 4 + koboldMineur;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            koboldMineur = koboldMineur + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 30){
+          test = test + 4 + (2 * koboltEnrager);
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            koboltEnrager = koboltEnrager + 1;
+          } else break;
+        }
+        roll = Math.floor(100*Math.random()+1)
+        if (roll <= 60){
+          test = test + 2 + koboldOuvrier;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+          koboldOuvrier = koboldOuvrier + 1;
+          } else break;
+        }
+      } while (test <= (6 + 7 * (joueurs - 1)));
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
+                                   ":crossed_swords: Jeune(s) kobolt(s) : " + jeuneKobold + "\n" +
+                                   ":crossed_swords: Kobolt(s) explorateur(s) : " + koboldExplo + "\n" +
+                                   ":crossed_swords: Kobolt(s) ouvrier(s)) : " + koboldOuvrier + "\n" +
+                                   ":crossed_swords: Kobolt(s) mineur(s) : " + koboldMineur + "\n" +
+                                   ":crossed_swords: Kobolt(s) enragé(s) : " + koboltEnrager)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
 // Montagne | Monstres | Descriptions
 
 bot.on('message', message => {
