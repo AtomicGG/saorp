@@ -8383,12 +8383,12 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
-    ":knife: Peau de renard : " + Peau + "\n" +
-    ":eye: Oeil de renard : " + Oeil + "\n" +
-    ":cupid: Coeur de renard : " + Coeur + "\n" +
-    ":gem: Oeuf déformé : " + Oeufs + "\n" +
-    ":sparkles: Points d'expérience : " + xp + "\n" +
-    ":large_orange_diamond: Cols : " + cols)
+                                           ":knife: Peau de renard : " + Peau + "\n" +
+                                           ":eye: Oeil de renard : " + Oeil + "\n" +
+                                           ":cupid: Coeur de renard : " + Coeur + "\n" +
+                                           ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
     message.channel.send({embed})
   }
