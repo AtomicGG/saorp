@@ -10880,6 +10880,77 @@ bot.on('message', message => {
   }
 }) ;
 
+// Donjon Sauvage | Monstres | Récompenses | MAJ
+
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Wolf de sang d'élite récompenses solo")) {
+    let lvl = args.slice(6).join(" : ");
+    const stuffClan = Math.floor((2 - 0.95) * Math.random())
+    const bijouxClan = Math.floor((2 - 0.98) * Math.random())
+    const armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
+    const armeClanDeuxMains = Math.floor((2 - 0.98) * Math.random())
+    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+    const controle = Math.floor(40 * Math.random() + 55)
+    const xp = controle - (lvl * 5)
+    const cols = Math.floor(28 * Math.random() + 28)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+
+
 // Montagne | Description
 
 bot.on('message', message => {
