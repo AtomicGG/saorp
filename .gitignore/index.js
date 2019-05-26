@@ -11257,46 +11257,46 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let test = 0;
-      let jeuneKobold = 0;
-      let koboldExplo = 0;
-      let koboldOuvrier = 0;
-      let koboldEspion = 0;
-      let koboltEnrager = 0;
+      let jeuneKobolt = 0;
+      let koboltExplo = 0;
+      let koboltOuvrier = 0;
+      let koboltEspion = 0;
+      let koboltEnrage = 0;
       let roll = 0;
       do {
-        roll = Math.floor(100*Math.random()+1)
+        roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
-          test = test + 2 + jeuneKobold;
+          test = test + 2 + jeuneKobolt;
           if (test <= (6 + 7 * (joueurs - 1))) {
-            jeuneKobold = jeuneKobold + 1;
+            jeuneKobolt = jeuneKobolt + 1;
           } else break;
         }
-        roll = Math.floor(100*Math.random()+1)
+        roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 50){
-          test = test + 2 + koboldExplo;
+          test = test + 2 + koboltExplo;
           if (test <= (6 + 7 * (joueurs - 1))) {
-            koboldExplo = koboldExplo + 1;
+            koboltExplo = koboltExplo + 1;
           } else break;
         }
-        roll = Math.floor(100*Math.random()+1)
+        roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 4 + koboldEspion;
+          test = test + 4 + koboltEspion;
           if (test <= (6 + 7 * (joueurs - 1))) {
-            koboldEspion = koboldEspion + 1;
+            koboltEspion = koboltEspion + 1;
           } else break;
         }
-        roll = Math.floor(100*Math.random()+1)
+        roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 4 + (2 * koboltEnrager);
+          test = test + 4 + (2 * koboltEnrage);
           if (test <= (6 + 7 * (joueurs - 1))) {
-            koboltEnrager = koboltEnrager + 1;
+            koboltEnrage = koboltEnrage + 1;
           } else break;
         }
-        roll = Math.floor(100*Math.random()+1)
+        roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
-          test = test + 2 + koboldOuvrier;
+          test = test + 2 + koboltOuvrier;
           if (test <= (6 + 7 * (joueurs - 1))) {
-          koboldOuvrier = koboldOuvrier + 1;
+          koboltOuvrier = koboltOuvrier + 1;
           } else break;
         }
       } while (test <= (6 + 7 * (joueurs - 1)));
@@ -11305,11 +11305,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Jeune(s) kobolt(s) : " + jeuneKobold + "\n" +
-                                   ":crossed_swords: Kobolt(s) explorateur(s) : " + koboldExplo + "\n" +
-                                   ":crossed_swords: Kobolt(s) ouvrier(s) : " + koboldOuvrier + "\n" +
-                                   ":crossed_swords: Kobolt(s) espion(s) : " + koboldEspion + "\n" +
-                                   ":crossed_swords: Kobolt(s) enragé(s) : " + koboltEnrager)
+                                   ":crossed_swords: Jeune(s) kobolt(s) : " + jeuneKobolt + "\n" +
+                                   ":crossed_swords: Kobolt(s) explorateur(s) : " + koboltExplo + "\n" +
+                                   ":crossed_swords: Kobolt(s) ouvrier(s) : " + koboltOuvrier + "\n" +
+                                   ":crossed_swords: Kobolt(s) espion(s) : " + koboltEspion + "\n" +
+                                   ":crossed_swords: Kobolt(s) enragé(s) : " + koboltEnrage)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -12804,7 +12804,6 @@ bot.on('message', message => {
   }
 }) ;
 
-
 // Montagne | Métiers
 
 bot.on('message', message => {
@@ -12986,6 +12985,88 @@ bot.on('message', message => {
     setTimeout(() => {
       talkedRecently.delete(message.author.id+1000);
     }, 600000 );
+  }
+})
+
+// Grotte | Combat | MAJ
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Test Montagne combat")) {
+    let joueurs = args.slice(3).join(" : ");
+    if (/*talkedRecently.has(message.author.id+1000)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let test = 0;
+      let koboltMineur = 0;
+      let koboltCombattant = 0;
+      let koboltGarde = 0;
+      let chienErrant = 0;
+      let koboltPilion = 0;
+      let roll = 0;
+      do {
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60){
+          test = test + 2 + koboltMineur;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            koboltMineur = koboltMineur + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50){
+          test = test + 2 + koboltCombattant;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            koboltCombattant = koboltCombattant + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30){
+          test = test + 4 + chienErrant;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            chienErrant = chienErrant + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30){
+          test = test + 4 + (2 * koboltPilion);
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            koboltPilion = koboltPilion + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60){
+          test = test + 2 + koboltGarde;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+          koboltGarde = koboltGarde + 1;
+          } else break;
+        }
+      } while (test <= (6 + 7 * (joueurs - 1)));
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
+                                   ":crossed_swords: Kobolt(s) mineur(s) : " + koboltMineur + "\n" +
+                                   ":crossed_swords: Kobolt(s) combattant(s) : " + koboltCombattant + "\n" +
+                                   ":crossed_swords: Kobolt(s) garde(s) : " + koboltGarde + "\n" +
+                                   ":crossed_swords: Chien(s) errant(s) : " + chienErrant + "\n" +
+                                   ":crossed_swords: Kobolt(s) pilion(s) : " + koboltPilion)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
   }
 })
 
