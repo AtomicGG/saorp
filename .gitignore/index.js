@@ -16959,6 +16959,23 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bo combattant")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les bonus des niveaux pour Combattant de 2 à 10 :" , "Niveau 2 : Vous gagnez 5 HP !\n\nNiveau 3 : Vous gagnez 10 HP !\n\nNiveau 4 : Vous gagnez 10 HP et 1 point de dégât !\n\nNiveau 5 : Vous gagnez 15 HP et 2 point de dégât et 0.5 point d'armure!\n\nNiveau 6 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure! \n\nNiveau 7 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure ! \n\nNiveau 8 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure ! \n\nNiveau 9 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure !\n\nNiveau 10 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Combattant de 11 à 20 :" , "Niveau 11 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 12 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 13 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 14 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 15 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 16 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 17 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 18 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 19 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 points d'armure ! \n\nNiveau 20 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Combattant de 21 à 30 :" , "Niveau 21 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure ! \n\nNiveau 22 : Niveau 22 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure ! \n\nNiveau 23 : Vous gagnez 55 HP et 6 points de dégâts et 1,5 points d'armure !\n\nNiveau 24 : Niveau 24 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure !\n\nNiveau 25 : Vous gagnez 60 HP et 6 points de dégâts et 1,5 points d'armure !\n\nNiveau 26 : Vous gagnez 60 HP et 7 points de dégâts et 1,5 points d'armure !\n\nNiveau 27 : Vous gagnez 60 HP et 7 points de dégâts et 1,5 points d'armure !\n\nNiveau 28 : Vous gagnez 60 HP et 8 points de dégâts et 1,5 points d'armure !\n\nNiveau 29 : Vous gagnez 60 HP et 8 points de dégâts et 1,5 points d'armure !\n\nNiveau 30 : Vous gagnez 60 HP et 8 points de dégâts et 2 points d'armure !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bonus assassin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16976,6 +16993,24 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bo assassin")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les bonus des niveaux pour Assassin de 2 à 10 :" , "Niveau 2 : Vous gagnez 1 point de dégâts !\n\nNiveau 3 : Vous gagnez 2 points de dégât !\n\nNiveau 4 : Vous gagnez 2 point de dégât et 0.5 point d'armure ! \n\nNiveau 5 : Vous gagnez 3 point de dégât et 1 point d'armure et 5 HP! \n\nNiveau 6 : Vous gagnez 3 point de dégât et 1 point d'armure et 5 HP! \n\nNiveau 7 : Vous gagnez 3 point de dégât et 1 point d'armure et 5 HP ! \n\nNiveau 8 : Vous gagnez 3 point de dégât et 1 point d'armure et 5 HP ! \n\nNiveau 9 : Vous gagnez 3 point de dégât et 1 point d'armure et 5 HP ! \n\nNiveau 10 : Vous gagnez 5 point de dégât et 1.5 point d'armure et 5 HP !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Assassin de 11 à 20 :" , "Niveau 11 : Vous gagnez 5 point de dégât et 1.5 point d'armure et 5 HP ! \n\nNiveau 12 : Vous gagnez 5 point de dégât et 1.5 point d'armure et 5 HP ! \n\nNiveau 13 : Vous gagnez 5 point de dégât et 1.5 point d'armure et 5 HP ! \n\nNiveau 14 : Vous gagnez 5 point de dégât et 1.5 point d'armure et 5 HP ! \n\nNiveau 15 : Vous gagnez 5 point de dégât et 2 point d'armure et 15 HP ! \n\nNiveau 16 : Vous gagnez 5 point de dégât et 2 point d'armure et 15 HP ! \n\nNiveau 17 : Vous gagnez 5 point de dégât et 2 point d'armure et 15 HP ! \n\nNiveau 18 : Vous gagnez 5 point de dégât et 2 point d'armure et 15 HP ! \n\nNiveau 19 : Vous gagnez 5 point de dégât et 2 point d'armure et 15 HP ! \n\nNiveau 20 : Vous gagnez 7 point de dégât et 2.5 point d'armure et 15 HP !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Assassin de 21 à 30 :" , "Niveau 21 : Vous gagnez 7 point de dégât et 2.5 point d'armure et 15 HP !\n\nNiveau 22 : Vous gagnez 7 point de dégât et 2.5 point d'armure et 15 HP !\n\nNiveau 23 : Vous gagnez 7 point de dégât et 2.5 point d'armure et 15 HP !\n\nNiveau 24 : Vous gagnez 7 point de dégât et 2.5 point d'armure et 15 HP !\n\nNiveau 25 : Vous gagnez 12 points de dégâts et 3 points d'armure et 15 HP !\n\nNiveau 26 : Vous gagnez 12 points de dégâts et 3,5 points d'armure et 15 HP !\n\nNiveau 27 : Vous gagnez 12 points de dégâts et 3,5 points d'armure et 15 HP !\n\nNiveau 28 : Vous gagnez 12 points de dégâts et 4 points d'armure et 15 HP !\n\nNiveau 29 : Vous gagnez 12 points de dégâts et 4 points d'armure et 15 HP !\n\nNiveau 30 : Vous gagnez 12 points de dégâts et 4 points d'armure et 20 HP !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bonus berserker")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16986,6 +17021,24 @@ bot.on('message', message => {
     .addField("Les bonus des niveaux pour Berserker de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 6 points de dégâts et 15 HP et 0,5 point d'armure !\n\nNiveau 12 : Vous gagnez 6 points de dégâts et 20 HP et 0,5 point d'armure !\n\nNiveau 13 : Vous gagnez 6 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 14 : Vous gagnez 7 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 15 : Vous gagnez 8 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 16 : Vous gagnez 9 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 17 : Vous gagnez 9 points de dégâts et 25 HP et 1 point d'armure !\n\nNiveau 18 : Vous gagnez 9 points de dégâts et 30 HP et 1 point d'armure !\n\nNiveau 19 : Vous gagnez 9 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 20 : Vous gagnez 10 points de dégâts et 30 HP et 1,5 points d'armure !")
     .addBlankField(true)
     .addField("Les bonus des niveaux pour Berserker de 21 à 30 :" , "Niveau 21 : Vous gagnez 10 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 22 : Vous gagnez 11 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 23 : Vous gagnez 11 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 24 : Vous gagnez 12 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 25 : Vous gagnez 12 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 26 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\nNiveau 27 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\nNiveau 28 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\nNiveau 29 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\nNiveau 30 : Vous gagnez 12 points de dégâts et 40 HP et 2 points d'armure !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bo berserker")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les bonus des niveaux pour Berserker de 2 à 10 :" , "Niveau 2 : Vous gagnez 1 point de dégât !\n\n Niveau 3 : Vous gagnez 2 point de dégât!\n\n Niveau 4 : Vous gagnez 2 point de dégât et 5 HP !\n\n Niveau 5 : Vous gagnez 3 point de dégât et 10 HP et 0.5 point d'armure!\n\n Niveau 6 : Vous gagnez 3 point de dégât et 10 HP et 0.5 point d'armure!\n\n Niveau 7 : Vous gagnez 3 point de dégât et 10 HP et 0.5 point d'armure !\n\n Niveau 8 : Vous gagnez 3 point de dégât et 10 HP et 0.5 point d'armure !\n\n Niveau 9 : Vous gagnez 3 point de dégât et 10 HP et 0.5 point d'armure !\n\n Niveau 10 : Vous gagnez 5 point de dégât et 15 HP et 0.5 point d'armure !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Berserker de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 5 point de dégât et 15 HP et 0.5 point d'armure !\n\n Niveau 12 : Vous gagnez 5 point de dégât et 15 HP et 0.5 point d'armure !\n\n Niveau 13 : Vous gagnez 5 point de dégât et 15 HP et 0.5 point d'armure !\n\n Niveau 14 : Vous gagnez 5 point de dégât et 15 HP et 0.5 point d'armure !\n\n Niveau 15 : Vous gagnez 5 point de dégât et 20 HP et 1.5 point d'armure !\n\n Niveau 16 : Vous gagnez 5 point de dégât et 20 HP et 1.5 point d'armure !\n\n Niveau 17 : Vous gagnez 5 point de dégât et 20 HP et 1.5 point d'armure !\n\n Niveau 18 : Vous gagnez 5 point de dégât et 20 HP et 1.5 point d'armure !\n\n Niveau 19 : Vous gagnez 5 point de dégât et 20 HP et 1.5 points d'armure !\n\n Niveau 20 : Vous gagnez 7 point de dégât et 25 HP et 1.5 points d'armure !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Berserker de 21 à 30 :" , "Niveau 21 : Vous gagnez 7 point de dégât et 25 HP et 1.5 points d'armure !\n\n Niveau 22 : Vous gagnez 7 point de dégât et 25 HP et 1.5 points d'armure !\n\n Niveau 23 : Vous gagnez 7 point de dégât et 25 HP et 1.5 points d'armure !\n\n Niveau 24 : Vous gagnez 7 point de dégât et 25 HP et 1.5 points d'armure !\n\n
+\n\nNiveau 25 : Vous gagnez 12 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 26 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\nNiveau 27 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\nNiveau 28 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\nNiveau 29 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\nNiveau 30 : Vous gagnez 12 points de dégâts et 40 HP et 2 points d'armure !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17010,6 +17063,40 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bo chevalier")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les bonus des niveaux pour Chevalier de 2 à 10 :" , "Niveau 2 : Vous gagnez 0.5 point d’armure ! \n\nNiveau 3 : Vous gagnez 1 point d’armure! \n\nNiveau 4 : Vous gagnez 1 point d’armure et 5 HP! \n\nNiveau 5 : Vous gagnez 1.5 point d’armure et 10 HP et 1 point de dégâts!\n\n Niveau 6 : Vous gagnez 1.5 point d’armure et 10 HP et 1 point de dégâts! \n\nNiveau 7 : Vous gagnez 1.5 point d’armure et 10 HP et 1 point de dégâts!\n\n Niveau 8 : Vous gagnez 1.5 point d’armure et 10 HP et 1 point de dégâts! \n\nNiveau 9 : Vous gagnez 1.5 point d’armure et 10 HP et 1 point de dégâts!\n\n Niveau 10 : Vous gagnez 2.5 point d’armure et 15 HP et 1 point de dégâts!")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Chevalier de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 2.5 point d’armure et 15 HP et 1 point de dégâts! \n\nNiveau 12 : Vous gagnez 2.5 point d’armure et 15 HP et 1 point de dégâts! \n\nNiveau 13 : Vous gagnez 2.5 point d’armure et 15 HP et 1 point de dégâts! \n\nNiveau 14 : Vous gagnez 2.5 point d’armure et 15 HP et 1 point de dégâts! \n\nNiveau 15 : Vous gagnez 2.5 point d’armure et 20 HP et 3 point de dégâts! \n\nNiveau 16 : Vous gagnez 2.5 point d’armure et 20 HP et 3 point de dégâts! \n\nNiveau 17 : Vous gagnez 2.5 point d’armure et 20 HP et 3 point de dégâts! \n\nNiveau 18 : Vous gagnez 2.5 point d’armure et 20 HP et 3 point de dégâts! \n\nNiveau 19 : Vous gagnez 2.5 point d’armure et 20 HP et 3 point de dégâts! \n\nNiveau 20 : Vous gagnez 3.5 point d’armure et 25 HP et 3 point de dégâts!")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Chevalier de 21 à 30 :" , "Niveau 21 : Vous gagnez 3.5 point d’armure et 25 HP et 3 point de dégâts! \n\nNiveau 22 : Vous gagnez 3.5 point d’armure et 25 HP et 3 point de dégâts! \n\nNiveau 23 : Vous gagnez 3.5 point d’armure et 25 HP et 3 point de dégâts! \n\nNiveau 24 : Vous gagnez 3.5 point d’armure et 25 HP et 3 point de dégâts!\n\nNiveau 25 : Vous gagnez 6 points d'armure et 30 HP et 3 points de dégâts !\n\nNiveau 26 : Vous gagnez 6 points d'armure et 35 HP et 3 points de dégâts !\n\nNiveau 27 : Vous gagnez 6 points d'armure et 35 HP et 3 points de dégâts !\n\nNiveau 28 : Vous gagnez 6 points d'armure et 40 HP et 3 points de dégâts !\n\nNiveau 29 : Vous gagnez 6 points d'armure et 40 HP et 3 points de dégâts !\n\nNiveau 30 : Vous gagnez 6 points d'armure et 30 HP et 4 points de dégâts !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bo paladin")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les bonus des niveaux pour Paladin de 2 à 10 :" , "Niveau 2 : Vous gagnez 0.5 point d’armure ! \n\nNiveau 3 : Vous gagnez 1 point d’armure! \n\nNiveau 4 : Vous gagnez 1 point d’armure et 1 point de dégâts ! \n\nNiveau 5 : Vous gagnez 1.5 point d’armure et 2 point de dégâts et 5 HP! \n\nNiveau 6 : Vous gagnez 1.5 point d’armure et 2 point de dégâts et 5 HP! \n\nNiveau 7 : Vous gagnez 1.5 point d’armure et 2 point de dégâts et 5 HP ! \n\nNiveau 8 : Vous gagnez 1.5 point d’armure et 2 point de dégâts et 5 HP ! \n\nNiveau 9 : Vous gagnez 1.5 point d’armure et 2 point de dégâts et 5 HP ! \n\nNiveau 10 : Vous gagnez 2.5 point d’armure et 3 point de dégâts et 5 HP !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Paladin de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 2.5 point d’armure et 3 point de dégâts et 5 HP !\n\n Niveau 12 : Vous gagnez 2.5 point d’armure et 3 point de dégâts et 5 HP ! \n\nNiveau 13 : Vous gagnez 2.5 point d’armure et 3 point de dégâts et 5 HP !\n\n Niveau 14 : Vous gagnez 2.5 point d’armure et 3 point de dégâts et 5 HP ! \n\nNiveau 15 : Vous gagnez 2.5 point d’armure et 4 point de dégâts et 15 HP ! \n\nNiveau 16 : Vous gagnez 2.5 point d’armure et 4 point de dégâts et 15 HP ! \n\nNiveau 17 : Vous gagnez 2.5 point d’armure et 4 point de dégâts et 15 HP ! \n\nNiveau 18 : Vous gagnez 2.5 point d’armure et 4 point de dégâts et 15 HP ! \n\nNiveau 19 : Vous gagnez 2.5 point d’armure et 4 point de dégâts et 15 HP ! \n\nNiveau 20 : Vous gagnez 3.5 point d’armure et 5 point de dégâts et 15 HP !")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour Paladin de 21 à 30 :" , "Niveau 21 : Vous gagnez 3.5 point d’armure et 5 point de dégâts et 15 HP ! \n\nNiveau 22 : Vous gagnez 3.5 point d’armure et 5 point de dégâts et 15 HP ! \n\nNiveau 23 : Vous gagnez 3.5 point d’armure et 5 point de dégâts et 15 HP ! \n\nNiveau 24 : Vous gagnez 3.5 point d’armure et 5 point de dégâts et 15 HP !\n\nNiveau 25 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 26 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 27 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 28 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 29 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 30 : Vous gagnez 6 points d'armure et 8 points de dégâts et 20 HP !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bonus paladin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17020,6 +17107,23 @@ bot.on('message', message => {
     .addField("Les bonus des niveaux pour Paladin de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 3 points d'armure et 3 points de dégâts et 5 HP !\n\nNiveau 12 : Vous gagnez 3 points d'armure et 4 points de dégâts et 5 HP !\n\nNiveau 13 : Vous gagnez 3 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 14 : Vous gagnez 3,5 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 15 : Vous gagnez 4 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 16 : Vous gagnez 4,5 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 17 : Vous gagnez 4,5 points d'armure et 5 points de dégâts et 10 HP !\n\nNiveau 18 : Vous gagnez 4,5 points d'armure et 6 points de dégâts et 10 HP !\n\nNiveau 19 : Vous gagnez 4,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 20 : Vous gagnez 5 points d'armure et 6 points de dégâts et 15 HP !")
     .addBlankField(true)
     .addField("Les bonus des niveaux pour Paladin de 21 à 30 :" , "Niveau 21 : Vous gagnez 5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 22 : Vous gagnez 5,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 23 : Vous gagnez 5,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 24 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 25 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 26 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 27 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 28 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 29 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 30 : Vous gagnez 6 points d'armure et 8 points de dégâts et 20 HP !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bo vindicateur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les bonus des niveaux pour Vindicateur de 2 à 10 :" , "Niveau 2 : Vous gagnez 5 HP ! \n\nNiveau 3 : Vous gagnez 10 HP ! \n\nNiveau 4 : Vous gagnez 10 HP et 0.5 point d’armure! \n\nNiveau 5 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\nNiveau 6 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\nNiveau 7 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\nNiveau 8 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\nNiveau 9 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\nNiveau 10 : Vous gagnez 25 HP et 1.5 point d’armure et 1 point de dégâts!")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour vindicateur de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 25 HP et 1.5 point d’armure et 1 point de dégâts! \n\nNiveau 12 : Vous gagnez 25 HP et 1.5 point d’armure et 1 point de dégâts!\n\n Niveau 13 : Vous gagnez 25 HP et 1.5 point d’armure et 1 point de dégâts! \n\nNiveau 14 : Vous gagnez 25 HP et 1.5 point d’armure et 1 point de dégâts! \n\nNiveau 15 : Vous gagnez 25 HP et 2 point d’armure et 3 point de dégâts! \n\nNiveau 16 : Vous gagnez 25 HP et 2 point d’armure et 3 point de dégâts!\n\n Niveau 17 : Vous gagnez 25 HP et 2 point d’armure et 3 point de dégâts! \n\nNiveau 18 : Vous gagnez 25 HP et 2 point d’armure et 3 point de dégâts! \n\nNiveau 19 : Vous gagnez 25 HP et 2 point d’armure et 3 point de dégâts! \n\nNiveau 20 : Vous gagnez 35 HP et 2.5 point d’armure et 3 point de dégâts!")
+    .addBlankField(true)
+    .addField("Les bonus des niveaux pour vindicateur de 21 à 30 :" , "Niveau 21 : Vous gagnez 35 HP et 2.5 point d’armure et 3 point de dégâts! \n\nNiveau 22 : Vous gagnez 35 HP et 2.5 point d’armure et 3 point de dégâts! \n\nNiveau 23 : Vous gagnez 35 HP et 2.5 point d’armure et 3 point de dégâts! \n\nNiveau 24 : Vous gagnez 35 HP et 2.5 point d’armure et 3 point de dégâts!\n\nNiveau 25 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 26 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 27 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 28 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 29 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 30 : Vous gagnez 6 points d'armure et 8 points de dégâts et 20 HP !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
