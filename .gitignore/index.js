@@ -10032,6 +10032,217 @@ bot.on('message', message => {
   }
 })
 
+// Donjon Sauvage | Description
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content === prefix + "Donjon sauvage") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":bank: Le donjon sauvage:" , ":bank: Pour entrer dans ce donjon, il vous faudra une clef du donjon sauvage par personne, seulement 5 personnes sont autorisés à rentrer en même temps, " +
+                                            " une fois à l'intérieur, la clef disparaîtra...\n\n" +
+                                            "Niveau conseillé : 10\n\n" +
+                                            "Pour commencer et se déplacer dans le donjon :\n`=Donjon sauvage déplacement`")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Donjon Sauvage | Combat
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Donjon sauvage déplacement")) {
+    const A = (Math.floor((100)*Math.random()+1))
+    const B = (Math.floor((3)*Math.random()+2))
+    const C = (Math.floor((3)*Math.random()+2))
+    const D = (Math.floor((2)*Math.random()+1))
+    const E = (Math.floor((3)*Math.random()+2))
+    const DD = (Math.floor((2)*Math.random()+2))
+    const FF = (Math.floor((2)*Math.random()+2))
+    const F = (Math.floor((2)*Math.random()+1))
+    const G = (Math.floor((251)*Math.random()+250))
+    const H = (Math.floor((5*0.50)*Math.random()))
+    const I = (Math.floor((5*0.50)*Math.random()))
+    const J = (Math.floor((5*0.50)*Math.random()))
+    const K = (Math.floor((4*0.80)*Math.random()))
+    const L = (Math.floor((2-(0.75))*Math.random()))
+    const M = (Math.floor((2-(0.90))*Math.random()))
+    const N = (Math.floor((2-(0.95))*Math.random()))
+    const Bijou = (Math.floor((2-(0.95))*Math.random()))
+    const Piège1 = (Math.floor((51)*Math.random()+50))
+    const Piège2 = (Math.floor((76)*Math.random()+75))
+    if(A <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, mais vous tombez nez à nez face à un groupe de monstre qui se baladait dans les longs couloirs...\n\n:crossed_swords: Loup de sang d'élite : " +D+ "\n:crossed_swords: Bandit sombre d'élite : " +F+ "\n\nUne fois le combat finis, vous pouvez continuer à vous déplacer dans le donjon")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 61 & A <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...\n\n[Votre armure ne réduit rien]\n\nVous pouvez continuer à vous déplacer dans le donjon")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 66 & A <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...\n\n[Votre armure ne réduit rien]\n\nVous pouvez continuer à vous déplacer dans le donjon")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 76 & A <= 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous finissez par tomber sur un coffre contenant des biens précieux, n'oubliez pas de le partager entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:syringe: Potion légère de soin : " +H+ "\n:syringe: Potion légère de force : " +I+ "\n:syringe: Potion légère de défense : " +J+ "\n:scales: Equipement du clan des loups au choix : " +L+ "\n:scales: Bijoux du clan des loups au choix : " +Bijou+ "\n:scales: Arme du clan des loups à une main au choix : " +M+ "\n:scales: Arme du clan des loup à deux mains : " +N)
+      .setColor(3447003)
+      .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 86 & A <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, un loup gigantesque  apparaît au milieu de la salle et hurle ce qui rassemble un paquet de monstres...\n\n:crossed_swords: Loup de sang d'élite : " +DD+ "\n:crossed_swords: Bandit sombre d'élite : " +FF+ "\n:crossed_swords: Loup gigantesque : 1\n\nUne fois que vous avez finis le combat :\n`=Donjon sauvage récompenses`")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Donjon Sauvage | Combat | MAJ
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Donjon sauvage salle")) {
+    let salle = args.slice(3).join(" : ");
+    const roll = Math.floor(100 * Math.random() + 1);
+    let cstMonstres = 100 - ((salle - 1) * 8);
+    if(roll <= 10) {
+      const poison = Math.floor(26 * Math.random() + 50);
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous entrez dans une nouvelle salle du donjon, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique remplit subitment la pièce " +
+      "qui vous inflige " + piege + " dégâts à chacun...\n\n[Votre armure ne réduit rien]\n\Vous pouvez accéder à la salle suivante : `=Donjon sauvage salle : " + (salle + 1) + "`")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(roll >= 11 && roll <= 20) {
+    const cols = Math.floor(251 * Math.random() + 250)
+    const potionLegereSoin = Math.floor(5 * 0.5 * Math.random())
+    const potionLegereForce = Math.floor(5 * 0.5 * Math.random())
+    const potionLegereDefense = Math.floor(5 * 0.5 * Math.random())
+    const stuffClan = Math.floor((2 - 0.75) * Math.random())
+    const bijouxClan = Math.floor((2 - 0.95) * Math.random())
+    const armeClanUneMain = Math.floor((2 - 0.90) * Math.random())
+    const armeClanDeuxMains = Math.floor((2 - 0.95) * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous finissez par tomber sur un coffre contenant des biens précieux, n'oubliez pas de le partager entre vous !\n\n" +
+                                              ":large_orange_diamond: Cols : " + cols + "\n" +
+                                              ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                              ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                              ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                              ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                              ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                              ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                              ":scales: Arme du clan des loup à deux mains : " + armeClanDeuxMains)
+        .setColor(3447003)
+        .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
+        .setTimestamp()
+        message.channel.send({embed})
+    }
+    if(roll >= 21 && roll <= cstMonstres) {
+      const loupDeSangElite = Math.floor(2 * Math.random() + 1)
+      const banditSombreElite = Math.floor(2 * Math.random() + 1)
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous entrez dans une nouvelle salle du donjon, mais vous tombez nez à nez face à un groupe de monstre...\n\n" +
+                                            ":crossed_swords: Loup de sang d'élite : " + loupDeSangElite + "\n" +
+                                            ":crossed_swords: Bandit sombre d'élite : " + banditSombreElite + "\n\n" +
+                                            "Une fois le combat finis, vous pouvez accéder à la salle suivante : `=Donjon sauvage salle : " + (salle + 1) + "`")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(roll >= cstMonstres) {
+      const loupDeSangEliteBoss = Math.floor(2 * Math.random() + 2)
+      const banditSombreEliteBoss = Math.floor(2 * Math.random() + 2)
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .addField(":bank: Donjon sauvage :" , ":bank: Vous entrez dans une nouvelle salle du donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, " +
+                                            "un loup gigantesque  apparaît au milieu de la salle et hurle ce qui rassemble un paquet de monstres...\n\n" +
+                                            ":crossed_swords: Loup de sang d'élite : " + loupDeSangEliteBoss + "\n" +
+                                            ":crossed_swords: Bandit sombre d'élite : " + banditSombreEliteBoss + "\n" +
+                                            ":crossed_swords: Loup gigantesque : 1\n\n" +
+                                            "Une fois que vous avez finis le combat :\n`=Donjon sauvage récompenses`")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Donjon Sauvage | Récompenses du donjon
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Donjon sauvage récompenses")) {
+    const G = (Math.floor((1001)*Math.random()+1000))
+    const H = (Math.floor((2)*Math.random()+1))
+    const I = (Math.floor((3)*Math.random()+1))
+    const J = (Math.floor((2)*Math.random()))
+    const K = (Math.floor((2)*Math.random()+1))
+    const L = (Math.floor((2)*Math.random()))
+    const Faux = (Math.floor((2-(0.97))*Math.random()))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField(":moneybag: Coffre de fin du donjon sauvage :" , ":moneybag: Vous finissez à peine le combat final que vous trouvez finalement le coffre suivant, partagez le entre vous !\n\n" +
+                                                               ":large_orange_diamond: Cols : " +G+ "\n" +
+                                                               ":scales: Parchemin de poison faible : " +H+ "\n" +
+                                                               ":scales: Equipement du clan des loups au choix : " +I+ "\n" +
+                                                               ":scales: Bijoux du clan des loups au choix : " +J+ "\n" +
+                                                               ":scales:Arme du clan des loups à une main : " +K+ "\n" +
+                                                               ":scales:Arme du clan des loups à deux mains : " +L+ "\n" +
+                                                               ":scales: Faux du roi déchu à deux mains : " +Faux)
+    .setColor(3447003)
+    .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Donjon Sauvage | Monstres | Descriptions
 
 bot.on('message', message => {
@@ -22906,120 +23117,7 @@ bot.on('message', message => {
   }
 });
 
-//////////////////////////////////////////////////////////////////DONJON///////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content === prefix + "Donjon sauvage") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":bank: Le donjon sauvage:" , ":bank: Pour entrer dans ce donjon, il vous faudra une clef du donjon sauvage par personne, seulement 5 personnes sont autorisés à rentrer en même temps, une fois à l'intérieur, la clef disparaîtra...\n\nNiveau conseillé : 10\n\nPour commencer et se déplacer dans le donjon :\n`=Donjon sauvage déplacement`")
-    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Donjon sauvage déplacement")) {
-    const A = (Math.floor((100)*Math.random()+1))
-    const B = (Math.floor((3)*Math.random()+2))
-    const C = (Math.floor((3)*Math.random()+2))
-    const D = (Math.floor((2)*Math.random()+1))
-    const E = (Math.floor((3)*Math.random()+2))
-    const DD = (Math.floor((2)*Math.random()+2))
-    const FF = (Math.floor((2)*Math.random()+2))
-    const F = (Math.floor((2)*Math.random()+1))
-    const G = (Math.floor((251)*Math.random()+250))
-    const H = (Math.floor((5*0.50)*Math.random()))
-    const I = (Math.floor((5*0.50)*Math.random()))
-    const J = (Math.floor((5*0.50)*Math.random()))
-    const K = (Math.floor((4*0.80)*Math.random()))
-    const L = (Math.floor((2-(0.75))*Math.random()))
-    const M = (Math.floor((2-(0.90))*Math.random()))
-    const N = (Math.floor((2-(0.95))*Math.random()))
-    const Bijou = (Math.floor((2-(0.95))*Math.random()))
-    const Piège1 = (Math.floor((51)*Math.random()+50))
-    const Piège2 = (Math.floor((76)*Math.random()+75))
-    if(A <= 60){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, mais vous tombez nez à nez face à un groupe de monstre qui se baladait dans les longs couloirs...\n\n:crossed_swords: Loup de sang d'élite : " +D+ "\n:crossed_swords: Bandit sombre d'élite : " +F+ "\n\nUne fois le combat finis, vous pouvez continuer à vous déplacer dans le donjon")
-      .setColor(3447003)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(A >= 61 & A <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous sentez que les murs ne sont vraiment pas normaux, des flèchettes apparaîssent des deux côtés qui inflige " +Piège1+ " dégâts à chacun...\n\n[Votre armure ne réduit rien]\n\nVous pouvez continuer à vous déplacer dans le donjon")
-      .setColor(3447003)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(A >= 66 & A <= 75){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique arrive subitement dans le couloir qui vous inflige " +Piège2+ " dégâts à chacun...\n\n[Votre armure ne réduit rien]\n\nVous pouvez continuer à vous déplacer dans le donjon")
-      .setColor(3447003)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(A >= 76 & A <= 85){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous finissez par tomber sur un coffre contenant des biens précieux, n'oubliez pas de le partager entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:syringe: Potion légère de soin : " +H+ "\n:syringe: Potion légère de force : " +I+ "\n:syringe: Potion légère de défense : " +J+ "\n:scales: Equipement du clan des loups au choix : " +L+ "\n:scales: Bijoux du clan des loups au choix : " +Bijou+ "\n:scales: Arme du clan des loups à une main au choix : " +M+ "\n:scales: Arme du clan des loup à deux mains : " +N)
-      .setColor(3447003)
-      .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(A >= 86 & A <= 100){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":bank: Donjon sauvage :" , ":bank: Vous vous déplacez à travers le donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, un loup gigantesque  apparaît au milieu de la salle et hurle ce qui rassemble un paquet de monstres...\n\n:crossed_swords: Loup de sang d'élite : " +DD+ "\n:crossed_swords: Bandit sombre d'élite : " +FF+ "\n:crossed_swords: Loup gigantesque : 1\n\nUne fois que vous avez finis le combat :\n`=Donjon sauvage récompenses`")
-      .setColor(3447003)
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Donjon sauvage récompenses")) {
-    const G = (Math.floor((1001)*Math.random()+1000))
-    const H = (Math.floor((2)*Math.random()+1))
-    const I = (Math.floor((3)*Math.random()+1))
-    const J = (Math.floor((2)*Math.random()))
-    const K = (Math.floor((2)*Math.random()+1))
-    const L = (Math.floor((2)*Math.random()))
-    const Faux = (Math.floor((2-(0.97))*Math.random()))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":moneybag: Coffre de fin du donjon sauvage :" , ":moneybag: Vous finissez à peine le combat final que vous trouvez finalement le coffre suivant, partagez le entre vous !\n\n:large_orange_diamond: Cols : " +G+ "\n:scales: Parchemin de poison faible : " +H+ "\n:scales: Equipement du clan des loups au choix : " +I+ "\n:scales: Bijoux du clan des loups au choix : " +J+ "\n:scales:Arme du clan des loups à une main : " +K+ "\n:scales:Arme du clan des loups à deux mains : " +L+ "\n:scales: Faux du roi déchu à deux mains : " +Faux)
-    .setColor(3447003)
-    .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
 //////////////////////////////////////////////////////////////////MATERIAUX ET OBJETS SUR LES MONSTRES///////////////////////////////////////////////////////////////////////
 
