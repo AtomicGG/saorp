@@ -9890,9 +9890,6 @@ bot.on('message', message => {
   }
 }) ;
 
-
-
-
 // Forêt | Métiers
 
 bot.on('message', message => {
