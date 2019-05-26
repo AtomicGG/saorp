@@ -46,19 +46,6 @@ bot.on("message", (message) => {
   }
 });
 
-bot.on('message', message => {
-  if (message.content === (prefix) + "Lyn"){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setColor(1447003)
-    .addField("Snif, au revoir Lyn !" , "Des au revoir, c'est triste, et j'aime bien coder, du coup je te fais cette petite commande pour te dire ce que je me rappelle de toi.\n Tout d'abord, quand on s'est rencontré inRP, en prison, pendant les meilleurs moments du RP que j'ai vécu, avec Kurumi, Dark, Rosida, Fuka et Feni bien sûr, tout les frissons que j'ai vécu. Mais aussi les powers rangers. Tu seras toujours force Rose pour moi, même si j'aurai préféré être force Rouge, mais Rouge doit etre le perso principal. Puis bien entendu tout les autres moments inRP qui étaient sympa mais dont je ne m'en souviens pas trop tellement cette période m'a marqué. Malgré les quelques différents qu'on a eu, je t'apprécie beaucoup Lyn, et tu m'as donné de précieux conseils que je tâcherai de ne pas oublier.\n Je te souhaite un bon courage pour tes nouvelles résolutions, et rien n'empêche de nous donner quelques nouvelles de temps en temps, ce n'est qu'un au revoir je l'espère et non un adieu. Tu me manqueras énormément Lyn, sache le.\n\n Biz, Redi.")
-    .setImage("https://i.pinimg.com/originals/b6/39/a2/b639a2bcc730ca65842eaa5976060a65.gif")
-    .setTimestamp()
-    message.channel.send({embed})
-    setTimeout(function() {message.channel.send("https://www.youtube.com/watch?v=XdJRXPrG0CE")},1000);
-  }
-})
-
 // Roll
 
 bot.on('message', message => {
@@ -11905,7 +11892,7 @@ bot.on('message', message => {
     const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
     const B = (Math.floor((100)*Math.random()+1))
     const C = (Math.floor((Dégâts/5)*Math.random()+1))
-    if (B <= 71){
+    if (B <= 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
