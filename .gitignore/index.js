@@ -8297,7 +8297,7 @@ bot.on('message', message => {
 }) ;
 
 // Plaine | Monstres | Récompenses
-
+/*
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -8334,7 +8334,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 }) ;
-
+*/
 bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Foxy récompenses")) {
