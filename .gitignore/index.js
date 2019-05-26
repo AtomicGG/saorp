@@ -10193,7 +10193,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(roll >= cstMonstres) {
+    if(roll >= (cstMonstres + 1)) {
       const loupDeSangEliteBoss = Math.floor(2 * Math.random() + 2)
       const banditSombreEliteBoss = Math.floor(2 * Math.random() + 2)
       const embed = new Discord.RichEmbed()
