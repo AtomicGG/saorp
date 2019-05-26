@@ -12465,7 +12465,7 @@ bot.on('message', message => {
     const dent = Math.floor((2 - 0.85) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 5)
-    const cols = Math.floor(31 * Math.random() + 30)
+    const cols = Math.floor(11 * Math.random() + 25)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12499,7 +12499,7 @@ bot.on('message', message => {
     const dent = Math.floor((2 - 0.95) * Math.random())
     const controle = Math.floor(31 * Math.random() + 40)
     const xp = controle - (lvl * 6)
-    const cols = Math.floor(25 * Math.random() + 25)
+    const cols = Math.floor(6 * Math.random() + 20)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12535,7 +12535,7 @@ bot.on('message', message => {
     const bottes = Math.floor((2 - 0.97) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 5)
-    const cols = Math.floor(31 * Math.random() + 30)
+    const cols = Math.floor(11 * Math.random() + 30)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12571,7 +12571,7 @@ bot.on('message', message => {
     const bottes = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(31 * Math.random() + 40)
     const xp = controle - (lvl * 5)
-    const cols = Math.floor(25 * Math.random() + 25)
+    const cols = Math.floor(6 * Math.random() + 25)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12608,7 +12608,7 @@ bot.on('message', message => {
     const planBijoux = Math.floor((2 - 0.97) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 5)
-    const cols = Math.floor(31 * Math.random() + 30)
+    const cols = Math.floor(11 * Math.random() + 30)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12645,7 +12645,7 @@ bot.on('message', message => {
     const planBijoux = Math.floor((2 - 0.99) * Math.random())
     const controle = Math.floor(31 * Math.random() + 40)
     const xp = controle - (lvl * 6)
-    const cols = Math.floor(25 * Math.random() + 25)
+    const cols = Math.floor(6 * Math.random() + 25)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12684,7 +12684,7 @@ bot.on('message', message => {
     const casque = Math.floor((2 - 0.97) * Math.random())
     const controle = Math.floor(46 * Math.random() + 65)
     const xp = controle - (lvl * 5)
-    const cols = Math.floor(31 * Math.random() + 30)
+    const cols = Math.floor(11 * Math.random() + 45)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12723,7 +12723,7 @@ bot.on('message', message => {
     const casque = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
     const xp = controle - (lvl * 6)
-    const cols = Math.floor(25 * Math.random() + 25)
+    const cols = Math.floor(6 * Math.random() + 40)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12762,7 +12762,7 @@ bot.on('message', message => {
     const bijouxKob = Math.floor((2 - 0.92) * Math.random())
     const controle = Math.floor(51 * Math.random() + 70)
     const xp = controle - (lvl * 6)
-    const cols = Math.floor(21 * Math.random() + 50)
+    const cols = Math.floor(11 * Math.random() + 50)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -12800,7 +12800,7 @@ bot.on('message', message => {
     const bijouxKob = Math.floor((2 - 0.96) * Math.random())
     const controle = Math.floor(41 * Math.random() + 60)
     const xp = controle - (lvl * 6)
-    const cols = Math.floor(16 * Math.random() + 45)
+    const cols = Math.floor(6 * Math.random() + 45)
     if(xp > 0) {
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
