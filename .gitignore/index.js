@@ -18610,6 +18610,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte du casque du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18625,6 +18627,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte des épaulières du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18640,6 +18644,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte de la cape du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18655,6 +18661,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte du plastron du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18670,6 +18678,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte des gantelets du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18685,6 +18695,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte de la ceinture du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18700,6 +18712,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte des jambières du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18715,6 +18729,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((2)*Math.random()+1))
   const HP = (Math.floor((11)*Math.random()+10))
+  /*const Défense = (Math.floor((1)*Math.random()+1))
+  const HP = (Math.floor((13)*Math.random()+13))*/
   if (message.content.startsWith(prefix + "Découverte des bottes du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18731,6 +18747,8 @@ bot.on('message', message => {
   const Défense = (Math.floor((3)*Math.random()+3))
   const HP = (Math.floor((6)*Math.random()+5))
   const Dégâts = (Math.floor((6)*Math.random()+5))
+  /*const HP = (Math.floor((4)*Math.random()+7))
+  const Dégâts = (Math.floor((6)*Math.random()+5))*/
   if (message.content.startsWith(prefix + "Découverte de l'amulette du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -18747,6 +18765,8 @@ bot.on('message', message => {
   const Défense = (Math.floor((3)*Math.random()+3))
   const HP = (Math.floor((6)*Math.random()+5))
   const Dégâts = (Math.floor((6)*Math.random()+5))
+  /*const HP = (Math.floor((4)*Math.random()+7))
+  const Dégâts = (Math.floor((6)*Math.random()+5))*/
   if (message.content.startsWith(prefix + "Découverte de l'anneau du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -20652,6 +20672,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieur")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+      /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20662,7 +20683,9 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
       const HP = (Math.floor((13)*Math.random()+12))
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20680,6 +20703,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieures")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+        /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20690,7 +20714,10 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const HP = (Math.floor((13)*Math.random()+12))
+
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20708,6 +20735,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieure")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+      /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20719,6 +20747,8 @@ bot.on('message', message => {
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
       const HP = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20736,6 +20766,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieur")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+      /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20747,6 +20778,8 @@ bot.on('message', message => {
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
       const HP = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20764,6 +20797,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieure")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+      /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20775,6 +20809,8 @@ bot.on('message', message => {
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
       const HP = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20792,6 +20828,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieurs")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+      /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20803,6 +20840,8 @@ bot.on('message', message => {
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
       const HP = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20820,6 +20859,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieures")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+      /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20831,6 +20871,8 @@ bot.on('message', message => {
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
       const HP = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20848,6 +20890,7 @@ bot.on('message', message => {
     if (message.content.includes("supérieures")) {
       const Défense = (Math.floor((2)*Math.random()+2))
       const HP = (Math.floor((21)*Math.random()+20))
+      /*const HP = (Math.floor((6)*Math.random()+15))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20859,6 +20902,8 @@ bot.on('message', message => {
     } else {
       const Défense = (Math.floor((3)*Math.random()+1))
       const HP = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((1)*Math.random()+2))*/
+      /*const HP = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20877,6 +20922,8 @@ bot.on('message', message => {
       const Défense = (Math.floor((7)*Math.random()+6))
       const HP = (Math.floor((16)*Math.random()+15))
       const Dégâts = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((5)*Math.random()+7))
+        const Dégâts = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20889,6 +20936,8 @@ bot.on('message', message => {
       const Défense = (Math.floor((5)*Math.random()+4))
       const HP = (Math.floor((9)*Math.random()+8))
       const Dégâts = (Math.floor((7)*Math.random()+6))
+      /*const Défense = (Math.floor((5)*Math.random()+4))
+        const Dégâts = (Math.floor((3)*Math.random()+4))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20907,6 +20956,8 @@ bot.on('message', message => {
       const Défense = (Math.floor((7)*Math.random()+6))
       const HP = (Math.floor((16)*Math.random()+15))
       const Dégâts = (Math.floor((13)*Math.random()+12))
+      /*const Défense = (Math.floor((5)*Math.random()+7))
+        const Dégâts = (Math.floor((5)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20919,6 +20970,8 @@ bot.on('message', message => {
       const Défense = (Math.floor((5)*Math.random()+4))
       const HP = (Math.floor((9)*Math.random()+8))
       const Dégâts = (Math.floor((7)*Math.random()+6))
+      /*const Défense = (Math.floor((5)*Math.random()+4))
+        const Dégâts = (Math.floor((3)*Math.random()+4))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21312,6 +21365,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((7)*Math.random()+3))
   const HP = (Math.floor((26)*Math.random()+25))
+  /*(Math.floor((5)*Math.random()+3))*/
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier de kobolt à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21536,6 +21590,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
+    /*const Dégâts = (Math.floor((16*Math.random()+25))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21550,6 +21605,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
+    /*const Dégâts = (Math.floor((16*Math.random()+25))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21564,6 +21620,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
+    /*const Dégâts = (Math.floor((16*Math.random()+25))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21578,6 +21635,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
+    /*const Dégâts = (Math.floor((16*Math.random()+25))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21592,6 +21650,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
+    /*const Dégâts = (Math.floor((16*Math.random()+25))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21606,6 +21665,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
+    /*const Dégâts = (Math.floor((16*Math.random()+25))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21620,6 +21680,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive de kobolt supérieur à deux mains")) {
     const Dégâts = (Math.floor((23)*Math.random()+18))
+    /*const Dégâts = (Math.floor((16*Math.random()+25))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21634,6 +21695,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
+    /*const Dégâts = (Math.floor((11*Math.random()+15))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21648,6 +21710,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
+    /*const Dégâts = (Math.floor((11*Math.random()+15))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21662,6 +21725,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
+    /*const Dégâts = (Math.floor((11*Math.random()+15))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21676,6 +21740,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
+    /*const Dégâts = (Math.floor((11*Math.random()+15))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21690,6 +21755,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt supérieure à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
+    /*const Dégâts = (Math.floor((11*Math.random()+15))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21704,6 +21770,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
+    /*const Dégâts = (Math.floor((11*Math.random()+15))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21718,6 +21785,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague de kobolt supérieure à une main")) {
     const Dégâts = (Math.floor((12)*Math.random()+9))
+    /*const Dégâts = (Math.floor((11*Math.random()+15))*/
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21732,6 +21800,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((11)*Math.random()+5))
   const HP = (Math.floor((41)*Math.random()+40))
+/*  const Défense = (Math.floor((6)*Math.random()+5))
+  const HP = (Math.floor((21)*Math.random()+20)) */
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier de kobolt supérieur à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
