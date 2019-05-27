@@ -8297,7 +8297,7 @@ bot.on('message', message => {
 }) ;
 
 // Plaine | Monstres | Récompenses
-
+/*
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -8314,8 +8314,6 @@ bot.on('message', message => {
     const borneSup = 11 - controle
     const roll = Math.floor(borneSup * Math.random() + 5);
     let xp = (Math.round(((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll
-    //const controle = Math.floor(15 * Math.random() + 15)
-    //const xp = controle - (lvl * 3)
     const cols = Math.floor(6 * Math.random() + 5)
     if(xp <= 0) {
       xp = 0;
@@ -8336,6 +8334,65 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 }) ;
+*/
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Foxy récompenses")) {
+    let pos = args.indexOf(":");
+    let nbrPersonne = args.slice(pos - 2, pos - 1);
+    let posX = args.indexOf(" x");
+    let lvl = args.slice(pos + 2, posX)
+    let nbrMob = args.slice(posX + 2)
+    let Viande = 0
+    let Peau = 0
+    let Oeil = 0
+    let Coeur = 0
+    let Oeufs = 0
+    let cols = 0
+    const bonus = 0;
+    const nivMob = 1;
+    const controle = lvl - nivMob
+    const borneSup = 11 - controle
+    let roll = 0
+    let xp = 0
+    for(var i = 0; i < nbrMob; i++) {
+      if(nbrPersonne == 1) {
+        Viande = Viande + Math.floor(3 * Math.random())
+        Peau = Peau + Math.floor(3 * Math.random())
+        Oeil = Oeil + Math.floor((2 - 0.75)*Math.random())
+        Coeur = Coeur + Math.floor((2 - 0.85)*Math.random())
+        Oeufs = Oeufs + Math.floor((2 - 0.99) * Math.random())
+        cols = cols + Math.floor(6 * Math.random() + 5)
+      } else {
+        Viande = Viande + Math.floor(2 * Math.random())
+        Peau = Peau + Math.floor(2 * Math.random())
+        Oeil = Oeil + Math.floor((2 - 0.90) * Math.random())
+        Coeur = Coeur + Math.floor((2 - 0.95) * Math.random())
+        Oeufs = Oeufs + Math.floor((2 - 0.99) * Math.random())
+        cols = cols + Math.floor(4 * Math.random() + 3)
+      }
+      roll = Math.floor(borneSup * Math.random() + 5);
+      xp = xp + Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
+    }
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
+                                           ":knife: Peau de renard : " + Peau + "\n" +
+                                           ":eye: Oeil de renard : " + Oeil + "\n" +
+                                           ":cupid: Coeur de renard : " + Coeur + "\n" +
+                                           ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
 // Plaine | Métiers
 
