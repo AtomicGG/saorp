@@ -21614,7 +21614,7 @@ bot.on('message', message => {
       const HP = (Math.floor((16)*Math.random()+15))
       const Dégâts = (Math.floor((13)*Math.random()+12))
       /*const Défense = (Math.floor((5)*Math.random()+7))
-        const Dégâts = (Math.floor((5)*Math.random()+8))*/
+        const Dégâts = (Math.floor((6)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21628,7 +21628,7 @@ bot.on('message', message => {
       const HP = (Math.floor((9)*Math.random()+8))
       const Dégâts = (Math.floor((7)*Math.random()+6))
       /*const Défense = (Math.floor((5)*Math.random()+4))
-        const Dégâts = (Math.floor((3)*Math.random()+4))*/
+        const Dégâts = (Math.floor((5)*Math.random()+4))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21648,7 +21648,7 @@ bot.on('message', message => {
       const HP = (Math.floor((16)*Math.random()+15))
       const Dégâts = (Math.floor((13)*Math.random()+12))
       /*const Défense = (Math.floor((5)*Math.random()+7))
-        const Dégâts = (Math.floor((5)*Math.random()+8))*/
+        const Dégâts = (Math.floor((6)*Math.random()+8))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21662,7 +21662,7 @@ bot.on('message', message => {
       const HP = (Math.floor((9)*Math.random()+8))
       const Dégâts = (Math.floor((7)*Math.random()+6))
       /*const Défense = (Math.floor((5)*Math.random()+4))
-        const Dégâts = (Math.floor((3)*Math.random()+4))*/
+        const Dégâts = (Math.floor((5)*Math.random()+4))*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
