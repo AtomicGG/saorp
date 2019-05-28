@@ -14866,8 +14866,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Chien érrant récompenses solo")) {
-    let lvl = args.slice(3).join(" : ");
+  if (message.content.startsWith(prefix + "Chien errant récompenses solo")) {
+    let lvl = args.slice(4).join(" : ");
     const Viande = Math.floor(3 * Math.random())
     const Peau = Math.floor(3 * Math.random())
     const Oeil = Math.floor((2 - 0.75)*Math.random())
