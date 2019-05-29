@@ -14597,7 +14597,7 @@ bot.on('message', message => {
 
 // Grotte | Monstres | Récompenses | MAJ
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt keep récompenses solo")) {
@@ -15058,7 +15058,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-}) ;
+}) ;*/
 
 // Grotte | Métiers
 
