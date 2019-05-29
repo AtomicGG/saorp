@@ -1,7 +1,7 @@
 // Connexion
 
-const Discord = require('discord.js')
-const bot = new Discord.Client()
+const Discord = require('discord.js');
+const bot = new Discord.Client();
 const talkedRecently = new Set();
 const prefix = "=";
 
@@ -34,7 +34,7 @@ bot.on('message', message => {
   }
 });
 
-bot.login(process.env.TOKEN)
+bot.login(process.env.TOKEN);
 
 bot.on("message", (message) => {
   if (!message.content.startsWith(prefix)) return;
