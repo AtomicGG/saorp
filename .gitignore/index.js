@@ -33035,15 +33035,15 @@ if(X >= 24 & X <= 29){
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Fouille bar des illusions perdues") {
-    const X = (Math.floor((37)*Math.random()+1))
+  if (message.content === prefix + "Fouille maison d'un citoyen") {
+    const X = (Math.floor((64)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+1))
 if(X <= 34){
 const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(0xff0000)
-.addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte de conserve`")
+.addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte de conserve`")
 .setTimestamp()
 message.channel.send({embed})}
 if(X >= 35 & X <= 43){
@@ -33051,7 +33051,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(0xff0000)
-.addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Affaire d'un citoyen`")
+.addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Affaire d'un citoyen`")
 .setTimestamp()
 message.channel.send({embed})}
 if(X >= 44 & X <= 46){
@@ -33059,7 +33059,7 @@ if(X >= 44 & X <= 46){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(0xff0000)
-  .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaise EKTÖRP-GLUTEN`")
+  .addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaise EKTÖRP-GLUTEN`")
   .setTimestamp()
   message.channel.send({embed})}
   if(X >= 47 & X <= 49){
@@ -33067,7 +33067,7 @@ if(X >= 44 & X <= 46){
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaîne de porte & cadenas`")
+    .addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaîne de porte & cadenas`")
     .setTimestamp()
     message.channel.send({embed})}
     if(X >= 50 & X <= 51){
@@ -33075,7 +33075,7 @@ if(X >= 44 & X <= 46){
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
+      .addField(":flashlight: Fouill maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X === 52){
@@ -33083,7 +33083,7 @@ if(X >= 44 & X <= 46){
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Réserves d'un citoyen avisé`")
+        .addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Réserves d'un citoyen avisé`")
         .setTimestamp()
         message.channel.send({embed})}
         if(X === 53){
@@ -33091,7 +33091,7 @@ if(X >= 44 & X <= 46){
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
+          .addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
           .setTimestamp()
           message.channel.send({embed})}
                 if(X === 54){
@@ -33099,15 +33099,15 @@ if(X >= 44 & X <= 46){
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Ration d'eau`")
+        .addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Ration d'eau`")
         .setTimestamp()
         message.channel.send({embed})}
-                  if(X >= 30){
+                  if(X >= 55){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+        .addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
         .setTimestamp()
         message.channel.send({embed})}
   }
