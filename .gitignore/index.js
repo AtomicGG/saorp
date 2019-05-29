@@ -14885,7 +14885,7 @@ bot.on('message', message => {
                                                ":knife: Peau de chien érrant : " + Peau + "\n" +
                                                ":eye: Oeil de chien érrant : " + Oeil + "\n" +
                                                ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: Oeuf diforme : " + Oeufs + "\n" +
+                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
                                                ":sparkles: Points d'expérience : " + xp + "\n" +
                                                ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
@@ -14901,7 +14901,7 @@ bot.on('message', message => {
                                                ":knife: Peau de chien érrant : " + Peau + "\n" +
                                                ":eye: Oeil de chien érrant : " + Oeil + "\n" +
                                                ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: Oeuf diforme : " + Oeufs + "\n" +
+                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
                                                ":sparkles: Points d'expérience : " + xp + "\n" +
                                                ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
@@ -14933,7 +14933,7 @@ bot.on('message', message => {
                                                ":knife: Peau de chien érrant : " + Peau + "\n" +
                                                ":eye: Oeil de chien érrant : " + Oeil + "\n" +
                                                ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: Oeuf diforme : " + Oeufs + "\n" +
+                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
                                                ":sparkles: Points d'expérience : " + xp + "\n" +
                                                ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
@@ -14949,7 +14949,7 @@ bot.on('message', message => {
                                                ":knife: Peau de chien érrant : " + Peau + "\n" +
                                                ":eye: Oeil de chien érrant : " + Oeil + "\n" +
                                                ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: Oeuf diforme : " + Oeufs + "\n" +
+                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
                                                ":sparkles: Points d'expérience : " + xp + "\n" +
                                                ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
@@ -24024,31 +24024,31 @@ bot.on('message', message => {
 
 /* OEUFS ET FAMILIERS | MAJ */
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Oeuf diforme")) {
+/*bot.on('message', message => {
+  if (message.content.startsWith(prefix + "oeuf difforme")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":egg: Oeuf diforme :" , ":egg: C'est un oeuf plutôt étrange, diforme qui renferme parfois un bébé animal trouvable dans le palier 1 !")
+    .addField(":egg: oeuf difforme :" , ":egg: C'est un oeuf plutôt étrange, diforme qui renferme parfois un bébé animal trouvable dans le palier 1 !")
     .addField(":large_orange_diamond: Prix d'achat : 3000 cols")
     .addField(":large_orange_diamond: Prix de revente : 750 cols")
-    .addField(":keyboard: Si vous trouvez ou acheter cette oeuf : `=Achat/découverte d'un oeuf diforme`")
+    .addField(":keyboard: Si vous trouvez ou acheter cette oeuf : `=Achat/découverte d'un oeuf difforme`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
-});
+});*/
 
-bot.on('message', message => {
+/*bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
-  if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf diforme")) {
+  if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf difforme")) {
     if(A <= 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf diforme" , ":egg: En ouvrant l'oeuf diforme, vous ne découvrez aucun bébé animal malheureusement...")
+      .addField(":egg: oeuf difforme" , ":egg: En ouvrant l'oeuf difforme, vous ne découvrez aucun bébé animal malheureusement...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -24058,14 +24058,14 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf diforme" , ":egg: En ouvrant l'oeuf diforme, vous découvrez un bébé chiot!")
+      .addField(":egg: oeuf difforme" , ":egg: En ouvrant l'oeuf difforme, vous découvrez un bébé chiot!")
       .addField(":egg: Bébé chiot:" ,":egg: C'est un bébé chiot qui ne peut rien faire étant chiot. Vous devez aller voir un éleveur pour le faire grandir. Cela va prendre 3h et il deviendra un bébé chien adulte qui vous confère 10 points d'attaque et 35HP supplémentaire")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 
 //////////////////////////////////////////////////////////////////MATERIAUX ET OBJETS SUR LES MONSTRES///////////////////////////////////////////////////////////////////////
