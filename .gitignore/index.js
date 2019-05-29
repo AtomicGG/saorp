@@ -235,7 +235,7 @@ bot.on('message', message => {
   }
 })
 
-// Coups & Défenses | Menus |MAJ
+// Coups & Défenses | Menus  |MAJ
 
 /*bot.on('message', message => {
   if (message.content === (prefix) + "Coups et défenses"){
@@ -14844,8 +14844,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: " +
-                "Pioche de kobolt : " + pioche + "\n:scales: Hache de kobolt : " + hache + "\n:scales: Couteau de kobolt : " + couteau + "\n:scales: Faucille de kobolt : " + faucille + "\n:scales: Casque de mineur kobolt : " + casque + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Pioche de kobolt : " + pioche + "\n:scales: Hache de kobolt : " + hache + "\n:scales: Couteau de kobolt : " + couteau + "\n:scales: Faucille de kobolt : " + faucille + "\n:scales: Casque de mineur kobolt : " + casque + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -14914,7 +14913,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Chien érrant récompenses groupe")) {
+  if (message.content.startsWith(prefix + "Chien errant récompenses groupe")) {
     let lvl = args.slice(3).join(" : ");
     const Viande = Math.floor(2 * Math.random())
     const Peau = Math.floor(2 * Math.random())
@@ -14989,7 +14988,6 @@ bot.on('message', message => {
                                                ":sparkles: Points d'expérience : " + xp + "\n" +
                                                ":large_orange_diamond: Cols : " + cols)
       .setTimestamp()
-      .setTimestamp()
       message.channel.send({embed})
     }
     if(xp <= 0) {
@@ -15005,7 +15003,6 @@ bot.on('message', message => {
                                                ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
                                                ":sparkles: Points d'expérience : " + xp + "\n" +
                                                ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -15041,7 +15038,6 @@ bot.on('message', message => {
                                                ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
                                                ":sparkles: Points d'expérience : " + xp + "\n" +
                                                ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -24057,7 +24053,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(A >= 60){
+    if(A >= 61){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25657,7 +25653,7 @@ bot.on('message', message => {
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Liste" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des plans 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")    
+    .addField("Liste" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des plans 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")
     .setTimestamp()
     message.channel.send({embed})
   }
