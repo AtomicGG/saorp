@@ -3355,7 +3355,7 @@ bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Coup Létal")) {
     let position = args.indexOf(":");
-    let amelioration = args.slice(14,position - 1);
+    let amelioration = args.slice(13,position - 1);
     let degat = args.slice(position + 2);
     if (amelioration == ""){
       const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
