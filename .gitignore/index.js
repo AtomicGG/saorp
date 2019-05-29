@@ -3353,9 +3353,9 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Coup létal")) {
+  if (message.content.startsWith(prefix + "Coup Létal")) {
     let position = args.indexOf(":");
-    let amelioration = args.slice(13,position - 1);
+    let amelioration = args.slice(14,position - 1);
     let degat = args.slice(position + 2);
     if (amelioration == ""){
       const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
@@ -25657,8 +25657,7 @@ bot.on('message', message => {
     .setColor(6447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Liste" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des plans 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")    
-    .setTimestamp()
+    .addField("Liste" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des plans 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")    .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
@@ -32256,62 +32255,6 @@ if(X >= 29 & X <= 32){
 
 
 bot.on('message', message => {
-  if (message.content === prefix + "Fouille cimetière indien") {
-    const X = (Math.floor((43)*Math.random()+1))
-      const Zombie = (Math.floor((4)*Math.random()+2))
-if(X <= 24){
-const embed = new Discord.RichEmbed()
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setColor(0xff0000)
-.addField(":flashlight: Fouille cimetière indien :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Os humain fêlé`")
-.setTimestamp()
-message.channel.send({embed})}
-if(X >= 25 & X <= 28){
-const embed = new Discord.RichEmbed()
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setColor(0xff0000)
-.addField(":flashlight: Fouille cimetière indien :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Viande humaine`")
-.setTimestamp()
-message.channel.send({embed})}
-if(X >= 29 & X <= 32){
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(0xff0000)
-  .addField(":flashlight: Fouille cimetière indien :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Os charnu`")
-  .setTimestamp()
-  message.channel.send({embed})}
-  if(X >= 33 & X <= 34){
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField(":flashlight: Fouille cimetière indien :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Gros coffre en métal`")
-    .setTimestamp()
-    message.channel.send({embed})}
-    if(X >= 35 & X <= 36){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(0xff0000)
-      .addField(":flashlight: Fouille cimetière indien :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Sac supplémentaire`")
-      .setTimestamp()
-      message.channel.send({embed})}
-      if(X >= 37){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(0xff0000)
-        .addField(":flashlight: Fouille cimetière indien :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
-        .setTimestamp()
-        message.channel.send({embed})}
-  }
-});
-
-
-bot.on('message', message => {
   if (message.content === prefix + "Fouille école maternelle brûlée") {
     const X = (Math.floor((33)*Math.random()+1))
       const Zombie = (Math.floor((4)*Math.random()+2))
@@ -32672,7 +32615,7 @@ if(X >= 21 & X <= 28){
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":flashlight: Fouille gare de triage désertée:" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poutre rafistolée`")
+          .addField(":flashlight: Fouille gare de triage désertée :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poutre rafistolée`")
           .setTimestamp()
           message.channel.send({embed})}
       if(X >= 47){
@@ -32681,6 +32624,493 @@ if(X >= 21 & X <= 28){
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
         .addField(":flashlight: Fouille gare de triage désertée :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+        .setTimestamp()
+        message.channel.send({embed})}
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille hangars de stockage") {
+    const X = (Math.floor((58)*Math.random()+1))
+      const Zombie = (Math.floor((5)*Math.random()+4))
+if(X <= 17){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de nourriture`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 18 & X <= 30){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 31 & X <= 45){
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(0xff0000)
+  .addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Carton de matériaux`")
+  .setTimestamp()
+  message.channel.send({embed})}
+  if(X >= 46 & X <= 49){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Morceau de caisse`")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(X >= 50 & X <= 52){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Cartons`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X === 53){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Colis postal`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X === 54){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
+          .setTimestamp()
+          message.channel.send({embed})}
+      if(X >= 55){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+        .setTimestamp()
+        message.channel.send({embed})}
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille immeuble délabré") {
+    const X = (Math.floor((58)*Math.random()+1))
+      const Zombie = (Math.floor((5)*Math.random()+3))
+if(X <= 16){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 17 & X <= 24){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Liasse de billets`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 25 & X <= 32){
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(0xff0000)
+  .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaise EKTÖRP-GLUTEN`")
+  .setTimestamp()
+  message.channel.send({embed})}
+  if(X >= 33 & X <= 39){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Mécanisme`")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(X >= 40 & X <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Vieille porte`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41 & X <= 43){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Réfrigérateur d'étudiant`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X >= 44 & X <= 46){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Bonbonne d'eau`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X === 47){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Téléphone portable`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X === 48){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Paquet de cigarettes entamé`")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X === 49){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Clé à molette`")
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(X === 50){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tournevis`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(X === 51){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Cutter`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                    if(X === 52){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Coffre-fort`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                      if(X === 53){
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(0xff0000)
+                        .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Four cancérigène`")
+                        .setTimestamp()
+                        message.channel.send({embed})}
+                        if(X === 54){
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                          .setColor(0xff0000)
+                          .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Vieille machine à laver`")
+                          .setTimestamp()
+                          message.channel.send({embed})}
+                  if(X >= 55){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+        .setTimestamp()
+        message.channel.send({embed})}
+  }
+});
+
+
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille kebab") {
+    const X = (Math.floor((18)*Math.random()+1))
+      const Zombie = (Math.floor((2)*Math.random()+2))
+if(X <= 7){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille kebab :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Steak appétissant`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 8 & X <= 9){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille kebab :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de nourriture`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 10 & X <= 11){
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(0xff0000)
+  .addField(":flashlight: Fouille kebab :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
+  .setTimestamp()
+  message.channel.send({embed})}
+  if(X >= 12 & X <= 13){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Fouille kebab :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Légume suspect`")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(X === 14){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille kebab :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Tronçonneuse (démonté)`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X === 15){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille kebab :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Couteau à dents`")
+        .setTimestamp()
+        message.channel.send({embed})}
+                  if(X >= 16){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille kebab :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+        .setTimestamp()
+        message.channel.send({embed})}
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille laboratoire cosmétique") {
+    const X = (Math.floor((31)*Math.random()+1))
+      const Zombie = (Math.floor((2)*Math.random()+2))
+if(X <= 9){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 10 & X <= 15){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Steak appétissant`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 16 & X <= 17){
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(0xff0000)
+  .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Cochon malodorant`")
+  .setTimestamp()
+  message.channel.send({embed})}
+  if(X >= 18 & X <= 19){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Twinoïde 500MG`")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(X === 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chien hargneux`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X === 21){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Poudre-comète brute`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X === 22){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Sport-elec`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X === 23){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Serpent de 2 mètres`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X === 24){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Paracétoïde 7MG`")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X === 25){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Piqûre de calmant`")
+                .setTimestamp()
+                message.channel.send({embed})}
+                  if(X >= 26){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+        .setTimestamp()
+        message.channel.send({embed})}
+  }
+});
+
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille bar des illusions perdues") {
+    const X = (Math.floor((40)*Math.random()+1))
+      const Zombie = (Math.floor((6)*Math.random()+5))
+if(X <= 15){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chien hargneux`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 16 & X <= 23){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 'Debout-les-morts'`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 24 & X <= 29){
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(0xff0000)
+  .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Paquet de cigarettes entamé`")
+  .setTimestamp()
+  message.channel.send({embed})}
+                  if(X >= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
+        .setTimestamp()
+        message.channel.send({embed})}
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Fouille bar des illusions perdues") {
+    const X = (Math.floor((37)*Math.random()+1))
+      const Zombie = (Math.floor((2)*Math.random()+1))
+if(X <= 34){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte de conserve`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 35 & X <= 43){
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(0xff0000)
+.addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Affaire d'un citoyen`")
+.setTimestamp()
+message.channel.send({embed})}
+if(X >= 44 & X <= 46){
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(0xff0000)
+  .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaise EKTÖRP-GLUTEN`")
+  .setTimestamp()
+  message.channel.send({embed})}
+  if(X >= 47 & X <= 49){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaîne de porte & cadenas`")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(X >= 50 & X <= 51){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X === 52){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Réserves d'un citoyen avisé`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X === 53){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
+          .setTimestamp()
+          message.channel.send({embed})}
+                if(X === 54){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Ration d'eau`")
+        .setTimestamp()
+        message.channel.send({embed})}
+                  if(X >= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField(":flashlight: Fouille bar des illusions perdues :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
         .setTimestamp()
         message.channel.send({embed})}
   }
