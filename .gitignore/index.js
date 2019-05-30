@@ -18090,6 +18090,19 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content === prefix + "New Constructions prix") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Prix des constructions :" , "Petite : 10 000  [4 salons discord maximum]\nMoyenne : 35 000  [12 salons discord maximum]\nGrande : 120 000 cols [36 salons discord maximum]\nBoutique / atelier (pouvant être un bar, un casino, un restaurant, une forge et pouvant posséder une petite partie d'habitation pour le possesseur mais surtout, un channel d'atelier)\nPetite : 10 000 cols [3 prédéfinis]\nMoyenne : 30 000 cols [10 prédéfinis]\nGrande : 100 000 cols [30 prédéfinis]\nUne planque : 35 000 cols [10 salons discord maximum, Une maison bien cacher]\nUn repaire de guilde : 200 000 cols [50 salons discord maximum]")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Ciblage")) {
