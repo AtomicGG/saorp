@@ -7693,6 +7693,107 @@ bot.on('message', message => {
   }
 });
 
+// Compétences | Cyclone
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cyclone")) {
+    if (talkedRecently.has(message.author.id+1)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(100)*Math.random()+1)
+      const tours = (Math.floor((3)*Math.random()+1))
+      const tourss = (Math.floor((3)*Math.random()+1))
+      const cibles = (Math.floor((5)*Math.random()+1))
+      const cibless = (Math.floor((3)*Math.random()+1))
+      if(B <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `" +cibless+ "` ennemis pendant `" +tourss+ "` tours, empêchant de faire leur action défensive !")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 26){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `" +cibles+ "` ennemis pendant `" +tours+ "` tours, empêchant de faire leur action défensive !")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+1);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+1);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cyyclone")) {
+    if (/*talkedRecently.has(message.author.id+1)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const roll = Math.floor(100 * Math.random() + 1)
+      if(roll <= 90){
+      const tours = Math.floor(2 * Math.random() + 2)
+      const cibles = Math.floor(4 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `" + cibles + "` ennemis pendant `" + tours + "` tours, empêchant de faire leur action défensive ! Cette compétence n'est pas parable.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 91 && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `1` ennemi pendant `2` tours, empêchant de faire leur action défensive ! " +
+                                          "Elle paralyse également une autre cible pendant un tour ! Cette compétence n'est pas parable.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 96){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `2` ennemis pendant `2` tours, empêchant de faire leur action défensive ! Elle paralyse également deux autres cibles pendant un tour ! Cette compétence n'est pas parable.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+1);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+1);
+      }, 3600000);
+    }
+  }
+});
+
 // Plaine | Description
 
 bot.on('message', message => {
