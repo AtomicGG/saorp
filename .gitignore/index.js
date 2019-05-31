@@ -10517,6 +10517,57 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Lapin géant récompenses solo")) {
+    let lvl = args.slice(4).join(" : ");
+    const Viande = Math.floor(3 * Math.random())
+    const Peau = Math.floor(3 * Math.random())
+    const Oeil = Math.floor((2 - 0.75) * Math.random())
+    const Coeur = Math.floor((2 - 0.85) * Math.random())
+    const Oreille = Math.floor((2 - 0.90) * Math.random())
+    const Oeufs = Math.floor((2 - 0.98) * Math.random())
+    const controle = Math.floor(20 * Math.random() + 20)
+    const xp = controle - (lvl * 4)
+    const cols = Math.floor(25 * Math.random() + 25)
+    if(xp > 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
+                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
+                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
+                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
+                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : " + xp + "\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(xp <= 0) {
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
+                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
+                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
+                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
+                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
+                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                               ":sparkles: Points d'expérience : 0\n" +
+                                               ":large_orange_diamond: Cols : " + cols)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+}) ;
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Lapin géant récompenses groupe")) {
     let lvl = args.slice(4).join(" : ");
     const Viande = Math.floor(2 * Math.random())
