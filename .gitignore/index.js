@@ -7794,6 +7794,136 @@ bot.on('message', message => {
   }
 });
 
+// Compétences | Tourbillon
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Tourbillon")) {
+    if (talkedRecently.has(message.author.id+12)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(1).join(" : ");
+      const B = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+      const C = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+      const D = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+      const E = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+      const F = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
+      const I = (Math.floor((3)*Math.random()+1))
+      const A = B+C+D+E+F
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +I+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
+      .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+12);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+12);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Toourbillon")) {
+    if (/*talkedRecently.has(message.author.id+12)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(1).join(" : ");
+      const roll = Math.floor(100 * Math.random() + 1)
+      let premier = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+      let deuxieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+      let troisieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+      let quatrieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+      let cinquieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+      let total
+      if (roll <= 90){
+        premier = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        deuxieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        troisieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        quatrieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        cinquieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        total = premier + deuxieme + troisieme + quatrieme + cinquieme
+        const nbrEnnemis = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" + total + "` points de dégâts au total à `" + nbrEnnemis + "` ennemis !\n\n" +
+                                             "Votre premier coup circulaire inflige `" + premier + "` points de dégâts, le deuxième coup circulaire inflige `" + deuxieme + "` points de dégâts, " +
+                                             "le troisième coup circulaire inflige `" + troisieme + "` points de dégâts, le quatrième coup circulaire inflige `" + quatrieme + "` points de dégâts et le cinquième coup circulaire " +
+                                             "inflige `" + cinquieme + "` points de dégâts !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 91 && roll <= 95){
+        premier = Math.floor(degats * 0.1 * Math.random() + (degats * 0.2))
+        deuxieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.2))
+        troisieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.2))
+        quatrieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.2))
+        cinquieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.2))
+        total = premier + deuxieme + troisieme + quatrieme + cinquieme
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" + total + "` points de dégâts au total à `3` ennemis !\n\n" +
+                                             "Votre premier coup circulaire inflige `" + premier + "` points de dégâts, le deuxième coup circulaire inflige `" + deuxieme + "` points de dégâts, " +
+                                             "le troisième coup circulaire inflige `" + troisieme + "` points de dégâts, le quatrième coup circulaire inflige `" + quatrieme + "` points de dégâts et le cinquième coup circulaire " +
+                                             "inflige `" + cinquieme + "` points de dégâts !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 96){
+        premier = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        deuxieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        troisieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        quatrieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        cinquieme = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        total = premier + deuxieme + troisieme + quatrieme + cinquieme
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" + total + "` points de dégâts au total à `5` ennemis !\n\n" +
+                                             "Votre premier coup circulaire inflige `" + premier + "` points de dégâts, le deuxième coup circulaire inflige `" + deuxieme + "` points de dégâts, " +
+                                             "le troisième coup circulaire inflige `" + troisieme + "` points de dégâts, le quatrième coup circulaire inflige `" + quatrieme + "` points de dégâts et " +
+                                             "le cinquième coup circulaire inflige `" + cinquieme + "` points de dégâts !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+    }
+    talkedRecently.add(message.author.id+12);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+12);
+    }, 3600000);
+  }
+});
+
+
+
 // Plaine | Description
 
 bot.on('message', message => {
