@@ -8228,6 +8228,72 @@ bot.on('message', message => {
   }
 });
 
+// Compétences | Vertical arc
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Vertical arc")) {
+    if (talkedRecently.has(message.author.id+14)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats*2.5)*Math.random()+1*(degats*1.5)))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Vertical arc :" , ":cyclone: Votre compétence 'Vertical arc' inflige `" +A+ "` points de dégâts !\n\nCette compétence empêche une tentative de blocage !")
+      .setImage("https://media.giphy.com/media/108rdBZBYAc7bq/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+14);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+14);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Veertical arc")) {
+    if (/*talkedRecently.has(message.author.id+14)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const degat = Math.floor(degats * 1.6 * Math.random() + (degats * 1.6))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Vertical arc :" , ":cyclone: Votre compétence 'Vertical arc' inflige `" + degat + "` points de dégâts !\n\nCette compétence empêche une tentative de blocage !")
+      .setImage("https://media.giphy.com/media/108rdBZBYAc7bq/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+14);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+14);
+    }, 3600000);
+  }
+});
+
 // Plaine | Description
 
 bot.on('message', message => {
