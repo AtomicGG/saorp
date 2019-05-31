@@ -8116,6 +8116,297 @@ bot.on('message', message => {
   }
 });
 
+// Compétences | Deadly sins
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Deadly sins")) {
+    if (talkedRecently.has(message.author.id+8)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const C = (Math.floor((2)*Math.random()+1))
+      const D = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
+      if(B <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, mais n'empoisonne pas l'ennemis !")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 51){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+8);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+8);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Deeadly sins")) {
+    if (/*talkedRecently.has(message.author.id+8)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const degat = Math.floor(degats * 0.2 * Math.random() + (degats * 0.8))
+      const roll = Math.floor(100 * Math.random() + 1)
+      let poison
+      if(roll <= 80){
+        poison = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" + degat + "` points de dégâts de perce armure, et empoisonne l'ennemis pendant `5` tours, " +
+                                              "infligeant `" + poison + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 81 && roll <= 90){
+        poison = Math.floor(degats * 0.1 * Math.random() + (degats * 0.1))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" + degat + "` points de dégâts de perce armure, et empoisonne l'ennemis pendant `10` tours, " +
+                                              "infligeant `" + poison + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 91){
+        poison = Math.floor(degats * 0.1 * Math.random() + (degats * 0.15))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" + degat + "` points de dégâts, et empoisonne l'ennemis pendant `5` tours, " +
+                                              "infligeant `" + poison + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !\n\n" +
+                                              "De plus, votre arme reste imprégnée de poison pendant 5 tours, permettant de rajouter un tour de poison à chaque fois que vous touchez votre cible.")
+        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+8);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+8);
+      }, 3600000);
+    }
+  }
+});
+
+// Compétences | Vertical arc
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Vertical arc")) {
+    if (talkedRecently.has(message.author.id+14)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats*2.5)*Math.random()+1*(degats*1.5)))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Vertical arc :" , ":cyclone: Votre compétence 'Vertical arc' inflige `" +A+ "` points de dégâts !\n\nCette compétence empêche une tentative de blocage !")
+      .setImage("https://media.giphy.com/media/108rdBZBYAc7bq/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+14);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+14);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Veertical arc")) {
+    if (/*talkedRecently.has(message.author.id+14)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const degat = Math.floor(degats * 1.6 * Math.random() + (degats * 1.6))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Vertical arc :" , ":cyclone: Votre compétence 'Vertical arc' inflige `" + degat + "` points de dégâts !\n\nCette compétence empêche une tentative de blocage !")
+      .setImage("https://media.giphy.com/media/108rdBZBYAc7bq/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+14);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+14);
+    }, 3600000);
+  }
+});
+
+// Compétences | Burning slash
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Burning slash")) {
+    if (talkedRecently.has(message.author.id+9)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const C = (Math.floor((3)*Math.random()+1))
+      const D = (Math.floor((degats/2.5)*Math.random()+1*(degats/2.5)))
+      if(B <= 50){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, mais n'enflamme pas l'ennemis !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 51){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !")                                   .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+9);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+9);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Buurning slash")) {
+    if (/*talkedRecently.has(message.author.id+9)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const degat = Math.floor(degats * 0.5 * Math.random() + (degats * 1.3))
+      const roll = Math.floor(100 * Math.random() + 1)
+      let feu
+      if(roll <= 80){
+        feu = Math.floor(degats * 0.1 * Math.random() + (degats * 0.35))
+        const tours = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" + degat + "` points de dégâts, et enflamme l'ennemis pendant `" + tours + "` tours, " +
+                                                "infligeant `" + feu + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 81 && roll <= 90){
+        feu = Math.floor(degats * 0.1 * Math.random() + (degats * 0.5))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" + degat + "` points de dégâts, et enflamme l'ennemis pendant `2` tours, " +
+                                                "infligeant `" + feu + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 91){
+        feu = Math.floor(degats * 0.1 * Math.random() + (degats * 0.45)))
+        const degatBoost = Math.floor(degats * 1.1)
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" + degat + "` points de dégâts, et enflamme l'ennemis pendant `2` tours, " +
+                                                "infligeant `" + feu + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !\n\n" +
+                                                "De plus, votre épée reste enflammée et augmente vos dégâts à la valeur `" + degatBoost + "` pendant ces 3 tours")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+9);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+9);
+      }, 3600000);
+    }
+  }
+});
+
 // Plaine | Description
 
 bot.on('message', message => {
