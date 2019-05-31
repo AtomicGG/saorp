@@ -7555,7 +7555,77 @@ bot.on('message', message => {
 
 // Compétences | Vorpal strike
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Vorpal strike")) {
+    if (talkedRecently.has(message.author.id+11)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const B = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
+      const C = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
+      const D = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
+      const A = B+C+D
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Vorpal strike :" , ":cyclone: Votre compétence 'Vorpal strike' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup horizontal rapide inflige `" +B+ "` points de dégâts, le deuxième coup horizontal rapide inflige `" +C+ "` points de dégâts et le troisième coup horizontal rapide inflige `" +D+ "` points de dégâts !")
+      .setImage("https://gifer.com/i/8Z1S.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+11);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+11);
+    }, 3600000);
+  }
+});
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Voorpal strike")) {
+    if (/*talkedRecently.has(message.author.id+11)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const premier = Math.floor(degats * 0.5 * Math.random() + (degats * 0.5))
+      const deuxieme = Math.floor(degats * 0.6 * Math.random() + (degats * 0.6))
+      const troisieme = Math.floor(degats * 0.7 * Math.random() + (degats * 0.7))
+      const total = premier + deuxieme + troisieme
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Vorpal strike :" , ":cyclone: Votre compétence 'Vorpal strike' inflige `" + total + "` points de dégâts au total !\n\n" +
+                                              "Votre premier coup horizontal rapide inflige `" + premier + "` points de dégâts, le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts " +
+                                              "et le troisième coup horizontal rapide inflige `" + troisieme + "` points de dégâts !")
+      .setImage("https://gifer.com/i/8Z1S.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+11);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+11);
+    }, 3600000);
+  }
+});
 
 // Plaine | Description
 
