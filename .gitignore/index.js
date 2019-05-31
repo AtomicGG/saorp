@@ -9138,6 +9138,87 @@ bot.on('message', message => {
   }
 });
 
+// Compétences | Cri rabaissant | En test
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cri rabaissant")) {
+    if (/*talkedRecently.has(message.author.id+2)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const B = (Math.floor(100)*Math.random()+1)
+      const tours = (Math.floor((3)*Math.random()+2))
+      const tourss = (Math.floor((3)*Math.random()+1))
+      if(B <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cri rabaissant :" , ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible de moitié pendant `" +tourss+ "` tours, l'obligeant aussi à vous visez!")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 26){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Cri rabaissant :" , ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible de moitié pendant `" +tourss+ "` tours, l'obligeant aussi à vous visez!")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+2);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+2);
+      }, 3600000);
+    }
+  }
+});
+
+// Compétences | Armure sainte | En test
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Armure sainte")) {
+    if (/*talkedRecently.has(message.author.id+5)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats)*Math.random()+1*(degats)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const C = (Math.floor((3)*Math.random()+1))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Armure sainte :" , ":cyclone: Votre compétence 'Armure sainte' vous inflige `" +A+ "` points de dégâts, mais votre armures seront doublés pendant `" +C+ "` tours !")
+      .setImage("https://s2.gifyu.com/images/1b2fd7e3773064806f354e60760852c02083997b_hq.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+5);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+5);
+    }, 3600000);
+  }
+});
+
 // Plaine | Description
 
 bot.on('message', message => {
