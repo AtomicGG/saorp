@@ -196,7 +196,33 @@ bot.on('message', message => {
                                         "Le menu cimetière sert à décrire les circonstances de la mort de votre personnage, ainsi qu'à laisser un message qui sera envoyé en mp aux personnes que vous souhaitez. \n\n" +
                                         "Le menu annonce permet de partager des annonces de tout types, un métier, une offre, une demande d'aide etc...\n\n" +
                                         "Le menu d'infos sur les guildes permet de présenter les infos de chaque guilde, chaque membres, chaques rôles et autres infos !\n\n" +
-                                        "Le menu des métiers "/*professions*/" permet de donner une meilleur visibilité aux personnes possédant un métier"/*profession*/" en les regroupant en un seul message.\n\n" +
+                                        "Le menu des métiers permet de donner une meilleur visibilité aux personnes possédant un métier en les regroupant en un seul message.\n\n" +
+                                        "Le menu des échanges sert à... échanger des objets, fonds et autres marchandises diverses et variées.")
+    .addField("Les menus, partie 2 :" , "Le menu de régénération permet de taper votre commande de regénération naturelle en ville. \n\n" +
+                                        "Le menu des objets permet d'écrire les commandes de récompenses lorsque vous gagnez des objets sur des monstres ou dans diverses activités, ainsi que vos crafts !\n\n" +
+                                        "Le menu des MP permet d'envoyer des demandes d'ami et des messages addressés à ces derniers et aux personnes possédant un métier !\n\n" +
+                                        "Le menu des clefs de l'auberge sert à savoir qui possède quel chambre pour combien de temps.\n\n" +
+                                        "Le menu commerce permet de présenter une offre, que ce soit pour acheter ou vendre quelque chose !\n\n" +
+                                        "Le menu météo présente quotidiennement la météo du jour ainsi que ses effets !")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Menus | MAJ
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Menus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les menus, partie 1 :" , "Il existe plusieurs menus [salon sur le discord] permettant d'écrire des choses à l'intérieur :\n\n" +
+                                        "Le menu cimetière sert à décrire les circonstances de la mort de votre personnage, ainsi qu'à laisser un message qui sera envoyé en mp aux personnes que vous souhaitez. \n\n" +
+                                        "Le menu annonce permet de partager des annonces de tout types, un métier, une offre, une demande d'aide etc...\n\n" +
+                                        "Le menu d'infos sur les guildes permet de présenter les infos de chaque guilde, chaque membres, chaques rôles et autres infos !\n\n" +
+                                        "Le menu des professions permet de donner une meilleur visibilité aux personnes possédant une profession en les regroupant en un seul message.\n\n" +
                                         "Le menu des échanges sert à... échanger des objets, fonds et autres marchandises diverses et variées.")
     .addField("Les menus, partie 2 :" , "Le menu de régénération permet de taper votre commande de regénération naturelle en ville. \n\n" +
                                         "Le menu des objets permet d'écrire les commandes de récompenses lorsque vous gagnez des objets sur des monstres ou dans diverses activités, ainsi que vos crafts !\n\n" +
