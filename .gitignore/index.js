@@ -9120,7 +9120,7 @@ bot.on('message', message => {
     } else {
       let degats = args.slice(2).join(" : ");
       const degat = Math.floor(degats * 0.5 * Math.random() + (degats * 1.3))
-      const boost = Math.floor(0.2 * Math.random())+ 0.6)
+      const boost = Math.floor(0.2 * Math.random()+ 0.6)
       const degatBoost = ((boost + 1) * degats)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
