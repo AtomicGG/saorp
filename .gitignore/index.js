@@ -18327,7 +18327,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Prix des constructions :" , " **Maisons normaux** :\n\n Petite : 10 000  [4 salons discord maximum]\nMoyenne : 35 000  [12 salons discord maximum]\nGrande : 120 000 cols [36 salons discord maximum]\n\n**Boutique / atelier** (pouvant être un bar, un casino, un restaurant, une forge et pouvant posséder une petite partie d'habitation pour le possesseur mais surtout, un channel d'atelier)\n\nPetite : 10 000 cols [3 prédéfinis]\nMoyenne : 30 000 cols [10 prédéfinis]\nGrande : 100 000 cols [30 prédéfinis]\nUne planque : 35 000 cols [10 salons discord maximum, Une maison bien cacher]\nUn repaire de guilde : 200 000 cols [50 salons discord maximum]")
+    .addField("Prix des constructions :" , " **__Maisons normaux__** :\n\n Petite : 10 000  [4 salons discord maximum]\nMoyenne : 35 000  [12 salons discord maximum]\nGrande : 120 000 cols [36 salons discord maximum]\n\n**__Boutique / atelier__** \n\n(pouvant être un bar, un casino, un restaurant, une forge et pouvant posséder une petite partie d'habitation pour le possesseur mais surtout, un channel d'atelier)\n\nPetite : 10 000 cols [3 prédéfinis]\nMoyenne : 30 000 cols [10 prédéfinis]\nGrande : 100 000 cols [30 prédéfinis]\nUne planque : 35 000 cols [10 salons discord maximum, Une maison bien cacher]\nUn repaire de guilde : 200 000 cols [50 salons discord maximum]")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21741,7 +21741,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque de kobold supérieur :" , ":scales: C'est un casque très résistant que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du casque de kobold supérieur`")
+    .addField(":scales: Casque de kobold supérieur :" , ":scales: C'est un casque très résistant que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du casque de kobold supérieur`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21754,7 +21754,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières de kobold supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobold supérieures`")
+    .addField(":scales: Épaulières de kobold supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobold supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21767,7 +21767,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape de kobold supérieure :" , ":scales: C'est une cape très résistante que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape de kobold supérieure`")
+    .addField(":scales: Cape de kobold supérieure :" , ":scales: C'est une cape très résistante que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape de kobold supérieure`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21780,7 +21780,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron de kobold supérieur :" , ":scales: C'est un plastron très résistant que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du plastron de kobold supérieur`")
+    .addField(":scales: Plastron de kobold supérieur :" , ":scales: C'est un plastron très résistant que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du plastron de kobold supérieur`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21793,7 +21793,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets de kobold supérieurs :" , ":scales: Ce sont des gantelets très résistants que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des gantelets de kobold supérieurs`")
+    .addField(":scales: Gantelets de kobold supérieurs :" , ":scales: Ce sont des gantelets très résistants que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des gantelets de kobold supérieurs`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21806,7 +21806,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture de kobold supérieure :" , ":scales: C'est une ceinture très résistante que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la ceinture de kobold supérieure`")
+    .addField(":scales: Ceinture de kobold supérieure :" , ":scales: C'est une ceinture très résistante que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la ceinture de kobold supérieure`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21819,7 +21819,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières de kobold supérieures :" , ":scales: Ce sont des jambières très résistantes que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des jambières de kobold supérieures`")
+    .addField(":scales: Jambières de kobold supérieures :" , ":scales: Ce sont des jambières très résistantes que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des jambières de kobold supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21832,7 +21832,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes de kobold supérieures :" , ":scales: Ce sont des bottes très résistantes que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'armure kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des bottes de kobold supérieures`")
+    .addField(":scales: Bottes de kobold supérieures :" , ":scales: Ce sont des bottes très résistantes que portent les kobolds les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobold, 1 cuivre parfait, 2 cuivre rare, 3 cuivre commun, 4 cuivre médiocre, 4 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des bottes de kobold supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21845,7 +21845,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette de kobold supérieure :" , ":scales: C'est une amulette très imposante et très lourde à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan de bijoux kobold, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : 3020 cols\n\n:large_orange_diamond: Prix de revente : 1510 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'amulette de kobold supérieure`")
+    .addField(":scales: Amulette de kobold supérieure :" , ":scales: C'est une amulette très imposante et très lourde à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan de bijoux kobold, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : 3020 cols\n\n:large_orange_diamond: Prix de revente : 755 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'amulette de kobold supérieure`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21858,7 +21858,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau de kobold supérieur :" , ":scales: C'est un anneau très imposant et très lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan de bijoux kobold, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : 3020 cols\n\n:large_orange_diamond: Prix de revente : 1510 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'anneau de kobold supérieur`")
+    .addField(":scales: Anneau de kobold supérieur :" , ":scales: C'est un anneau très imposant et très lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan de bijoux kobold, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : 3020 cols\n\n:large_orange_diamond: Prix de revente : 755 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'anneau de kobold supérieur`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22377,6 +22377,204 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
+
+  //MAJ Arme kobold//
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epée de kobold à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Epée de kobold à deux mains :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo +2'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobold, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobold à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Hache de kobold à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Hache de kobold à deux mains :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire +2'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobold, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobold à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Masse de kobold à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Masse de kobold à deux mains :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur +2'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobold, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de  kobold à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rapière de kobold à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Rapière de kobold à deux mains :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc +2'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobold, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobold à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Glaive de kobold à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Glaive de kobold à deux mains :" , ":scales: C'est un glaive assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc +2'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobold, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobold à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cimeterre de kobold à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Cimeterre de kobold à deux mains :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive +2'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobold, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobold à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Katana de kobold à deux mains")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Katana de kobold à deux mains :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade +2'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobold, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobold à deux mains`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epée de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Epée de kobold à un main :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Combo' en : 'Combo +1'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Dague de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Dague de kobold à un main :" , ":scales: C'est une dague assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup précis' en : 'Coup précis +1'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Masse de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Masse de kobold à un main :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' en : 'Coup provocateur +1'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Hache de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Hache de kobold à un main :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' en : 'Coup circulaire +1'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cimeterre de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Cimeterre de kobold à un main :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive +1e'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Katana de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Katana de kobold à un main :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore la 'Parade' en : 'Parade +1e'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rapière de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Rapière de kobold à un main :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc en : 'Coup d'estoc +1'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bouclier de kobold à une main")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Bouclier de kobold à un main :" , ":scales: C'est un bouclier assez résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolds peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage +1'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Maître d'armes' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobold, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobold, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Maître d'armes' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobold à une main`")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt à deux mains")) {
