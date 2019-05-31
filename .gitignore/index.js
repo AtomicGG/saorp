@@ -46,6 +46,110 @@ bot.on("message", (message) => {
   }
 });
 
+// Menus | Menu SAO
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Menu SAO")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Bienvenue sur le menu d'aide !" , "Vous aurez des informations à propos du RP sur chacunes de ces commandes. Elles sont classées par importance, prenez le temps de les lire !\n\n" +
+                                                 ":closed_book:=SAO\n" +
+                                                 ":bust_in_silhouette:=Personnage\n" +
+                                                 ":diamond_shape_with_a_dot_inside:=Classes\n" +
+                                                 ":cyclone:=Compétences\n" +
+                                                 ":trident:=Particularités\n" +
+                                                 ":hammer:=Amélioration\n" +
+                                                 ":dagger:=Armes\n" +
+                                                 ":walking:=Trajets\n" +
+                                                 ":game_die:=Rolls\n" +
+                                                 ":crossed_swords:=Combat\n" +
+                                                 ":white_flower:=Etats\n" +
+                                                 ":book:=Quêtes\n" +
+                                                 ":skull:=Mort\n" +
+                                                 ":heartbeat:=Rétablissement\n" +
+                                                 ":sparkles:=Niveaux\n" +
+                                                 ":100:=Caractéristiques\n" +
+                                                 ":globe_with_meridians:=Zones\n" +
+                                                 ":japanese_ogre:=Monstres\n" +
+                                                 ":scroll:=Liste\n" +
+                                                 ":tools:=Crafts\n" +
+                                                 ":hammer_pick:=Spécialisations\n" +
+                                                 ":large_orange_diamond:=Cristal\n" +
+                                                 ":cityscape:=Ville\n" +
+                                                 ":sunrise_over_mountains:=Extérieur\n" +
+                                                 ":classical_building:=Souterrains\n" +
+                                                 ":homes:=Constructions\n" +
+                                                 ":loud_sound:=Menus\n" +
+                                                 ":bank:=Donjons\n" +
+                                                 ":fox:=Familiers\n" +
+                                                 ":busts_in_silhouette:=Guilde\n" +
+                                                 ":alembic:=Métiers\n" +
+                                                 ":microphone2:=Dirigeant\n" +
+                                                 ":shield:=Garde\n" +
+                                                 ":bow_and_arrow:=Mercenaire\n" +
+                                                 ":chains:=Prison\n" +
+                                                 ":notes:=Musiques")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Trajets
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Trajets")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\n" +
+                                "Pour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\n" +
+                                //"Pour consulter la durée des trajets en dehors de la ville du palier 2 :\n\n`=Trajet palier 2`\n\n" +
+                                "Quand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y en a que dans les zones extérieures !\n\n" +
+                                "Pour vous rendre à l'extérieur depuis la ville, il vous faudra passer par l'entrée de la ville !\n\n" +
+                                "Pour mieux comprendre ce système, imaginez que vous êtes à un magasin de 15 min de chez vous, pour revenir vous mettrez 15 minutes !\n\n" +
+                                "Les chemins entre les zones permettent de pouvoir continuer à RP avant d'arriver à la zone souhaitée !")
+    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Trajet palier 1")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Plaine\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Forêt\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Donjon sauvage\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Colline\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Montagne\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Grotte\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n")
+    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Trajet palier 2")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Trajet en ville :" , " ")
+    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Roll
 
 bot.on('message', message => {
@@ -15021,93 +15125,7 @@ bot.on('message', message => {
   }
 })
 
-///////////////////////////////////////////////////////////////////////Offre et annonces//////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Annonce")) {
-    let Annonce = args.slice(1).join(" : ");
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Annonce :" , +Annonce)
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Offre")) {
-    let Offre = args.slice(1).join(" : ");
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Offre :" , +Offre)
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Menu SAO")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Bienvenue sur le menu d'aide !" , "Vous aurez des informations à propos du RP sur chacunes de ces commandes. Elles sont classées par importance, prenez le temps de les lire !\n\n:closed_book:=SAO\n:bust_in_silhouette:=Personnage\n:diamond_shape_with_a_dot_inside:=Classes\n:cyclone:=Compétences\n:trident: =Particularités\n:hammer:=Amélioration\n:dagger:=Armes\n:walking:=Trajets\n:game_die:=Rolls\n:crossed_swords:=Combat\n:white_flower:=Etats\n:book:=Quêtes\n:skull:=Mort\n:heartbeat:=Rétablissement\n:sparkles:=Niveaux\n:100:=Caractéristiques\n:globe_with_meridians:=Zones\n:japanese_ogre:=Monstres\n:scroll:=Liste\n:tools:=Crafts\n:hammer_pick:=Spécialisations\n:large_orange_diamond:=Cristal\n:cityscape:=Ville\n:sunrise_over_mountains:=Extérieur\n:classical_building:=Souterrains\n:homes:=Constructions\n:loud_sound:=Menus\n:bank:=Donjons\n:fox:=Familiers\n:busts_in_silhouette:=Guilde\n:alembic:=Métiers\n:microphone2:=Dirigeant\n:shield:=Garde\n:bow_and_arrow:=Mercenaire\n:chains:=Prison\n:notes:=Musiques")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Trajets")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\nPour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\nQuand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y en a que dans les zones extérieures !\n\nPour vous rendre à l'extérieur depuis la ville, il vous faudra passer par l'entrée de la ville !\n\nPour mieux comprendre ce système, imaginez que vous êtes à un magasin de 15 min de chez vous, pour revenir vous mettrez 15 minutes !\n\nLes chemins entre les zones permettent de pouvoir continuer à RP avant d'arriver à la zone souhaitée !")
-    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Trajet palier 1")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nPlaines\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nForêt\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nDonjon sauvage\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nColline\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nMontagne\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nGrotte\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\nLabyrinthe")
-    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Trajet ville")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
-    .addField("Trajet en ville :" , "Auberge\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nArène\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEcole\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nBanque\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nJardin\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nExecution publique\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPlace principal\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nParc\\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nPrison\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSombre ruelle\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nCommerce\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nHall de guilde\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nTemple\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nSouterrains\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nConstructions joueurs\n‖\n‖\n‖ [2 minutes]\n‖\n‖\nEntrée de la ville")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Amélioration")) {
