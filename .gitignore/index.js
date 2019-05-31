@@ -7922,7 +7922,199 @@ bot.on('message', message => {
   }
 });
 
+// Compétences | Quadruple pain
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Quadruple pain")) {
+    if (talkedRecently.has(message.author.id+16)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const B = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
+      const C = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
+      const D = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
+      const E = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
+      const A = B+C+D+E
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Quadruple pain :" , ":cyclone: Votre compétence 'Quadruple pain' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup d'estoc inflige `" +B+ "` points de dégâts, le deuxième coup d'estoc inflige `" +C+ "` points de dégâts, le troisième coup d'estoc inflige `" +D+ "` points de dégâts et le quatrième coup d'estoc inflige `" +E+ "` points de dégâts !")
+
+      .addField("Vous réussissez votre compétence 'Quadruple pain' qui inflige :" , A+ " points de dégâts")
+      .addField("Votre premier coup d'estoc inflige :" , B+ " points de dégâts")
+      .addField("Votre deuxième coup d'estoc inflige :" , C+ " points de dégâts")
+      .addField("Votre troisième coup d'estoc inflige :" , D+ " points de dégâts")
+      .addField("Votre quatrième coup d'estoc inflige :" , E+ " points de dégâts")
+      .setImage("https://pa1.narvii.com/6615/6cc6c062803a1bb71b4ee2e6838bf948a980ee1e_hq.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+16);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+16);
+    }, 3600000);
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Quuadruple pain")) {
+    if (/*talkedRecently.has(message.author.id+16)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const premier = Math.floor(degats * 0.3 * Math.random() + (degats * 0.3))
+      const deuxieme = Math.floor(degats * 0.4 * Math.random() + (degats * 0.4))
+      const troisieme = Math.floor(degats * 0.5 * Math.random() + (degats * 0.5))
+      const quatrieme = Math.floor(degats * 0.6 * Math.random() + (degats * 0.6))
+      const total = premier + deuxieme + troisieme + quatrieme
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":cyclone: Quadruple pain :" , ":cyclone: Votre compétence 'Quadruple pain' inflige `" + total + "` points de dégâts au total !\n\n" +
+                                               "Votre premier coup d'estoc inflige `" + premier + "` points de dégâts, " +
+                                               "le deuxième coup d'estoc inflige `" + deuxieme + "` points de dégâts, " +
+                                               "le troisième coup d'estoc inflige `" + troisieme + "` points de dégâts " +
+                                               "et le quatrième coup d'estoc inflige `" + quatrieme + "` points de dégâts !")
+      .addField("Vous réussissez votre compétence 'Quadruple pain' qui inflige :" , total + " points de dégâts")
+      .addField("Votre premier coup d'estoc inflige :" , premier + " points de dégâts")
+      .addField("Votre deuxième coup d'estoc inflige :" , deuxieme + " points de dégâts")
+      .addField("Votre troisième coup d'estoc inflige :" , troisieme + " points de dégâts")
+      .addField("Votre quatrième coup d'estoc inflige :" , quatrieme + " points de dégâts")
+      .setImage("https://pa1.narvii.com/6615/6cc6c062803a1bb71b4ee2e6838bf948a980ee1e_hq.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+16);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+16);
+    }, 3600000);
+  }
+});
+
+// Compétences | Lightning fall
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Lightning fall")) {
+    if (talkedRecently.has(message.author.id+7)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const C = (Math.floor((2)*Math.random()+1))
+      if(B <= 65){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" +A+ "` points de dégâts, mais ne paralyse pas l'ennemis !")
+        .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 66){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" +A+ "` points de dégâts, et paralyse l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque ou son action défensive !")
+        .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+7);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+7);
+      }, 3600000);
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Liightning fall")) {
+    if (/*talkedRecently.has(message.author.id+7)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const degat = Math.floor(degats * 0.6 * Math.random() + (degats * 0.6))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if(roll <= 80){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" + degat + "` points de dégâts de perce armure et paralyse la cible pendant `1` tour !")
+        .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 81 && roll <= 90){
+        const foudre = Math.floor(degats * 0.1 * Math.random() + (degats * 0.25))
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" + degat + "` points de dégâts de perce armure et paralyse la cible pendant `1` tour ! " +
+                                                 "De plus, au prochain tour, la cible subit `"+ foudre +"` de dégâts de foudre (non bloqués par l'armure) !")
+        .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 91){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" + degat + "` points de dégâts et paralyse la cible pendant `2` tour !")
+        .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+7);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+7);
+      }, 3600000);
+    }
+  }
+});
 
 // Plaine | Description
 
