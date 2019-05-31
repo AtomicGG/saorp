@@ -24931,7 +24931,7 @@ bot.on('message', message => {
 
 /* OEUFS ET FAMILIERS | MAJ */
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "oeuf difforme")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -24945,9 +24945,9 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-});*/
+});
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
   if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf difforme")) {
     if(A <= 60){
@@ -24972,7 +24972,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});*/
+});
 
 
 //////////////////////////////////////////////////////////////////MATERIAUX ET OBJETS SUR LES MONSTRES///////////////////////////////////////////////////////////////////////
@@ -25988,7 +25988,7 @@ bot.on('message', message => {
     .addField("Plan d'armure kobolt :" , "C'est un plan servant à la création des armures des Kobolts du palier 1 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "X cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Equipements de kobolt supérieurs")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26004,7 +26004,7 @@ bot.on('message', message => {
     .addField("Plan de bijoux kobolt :" , "C'est un plan servant à la création des bijoux des Kobolts du palier 1 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "X cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt\n=Bijoux de kobolt supérieurs")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26012,7 +26012,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plan d'arme kobolt")) {
+  if (message.content.startsWith(prefix + "Plan d'arme  kobolt")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26020,7 +26020,55 @@ bot.on('message', message => {
     .addField("Plan d'arme kobolt :" , "C'est un plan servant à la création des armes des Kobolts du palier 1 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "X cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt\n=Armes de kobolt supérieurs")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt")
+    .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plan d'armure supérieure kobolt")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plan d'armure kobolt :" , "C'est un plan servant à la création des armures des Kobolts supérieure du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs")
+    .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plan de bijoux supérieur kobolt")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plan de bijoux kobolt :" , "C'est un plan servant à la création des bijoux des Kobolts supérieur du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt supérieurs")
+    .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plan d'arme supérieure kobolt")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Plan d'arme kobolt :" , "C'est un plan servant à la création des armes des Kobolts supérieur du palier 1 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "X cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt supérieurs")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
     message.channel.send({embed})
