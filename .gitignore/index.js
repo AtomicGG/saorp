@@ -10521,8 +10521,8 @@ bot.on('message', message => {
     let lvl = args.slice(4).join(" : ");
     const Viande = Math.floor(3 * Math.random())
     const Peau = Math.floor(3 * Math.random())
-    const Oeil = Math.floor((2 - 0.75) * Math.random())
-    const Coeur = Math.floor((2 - 0.85) * Math.random())
+    const Coeur = Math.floor((2 - 0.75) * Math.random())
+    const Oeil = Math.floor((2 - 0.85) * Math.random())
     const Oreille = Math.floor((2 - 0.90) * Math.random())
     const Oeufs = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(20 * Math.random() + 20)
@@ -10572,8 +10572,8 @@ bot.on('message', message => {
     let lvl = args.slice(4).join(" : ");
     const Viande = Math.floor(2 * Math.random())
     const Peau = Math.floor(2 * Math.random())
-    const Oeil = Math.floor((2 - 0.90) * Math.random())
-    const Coeur = Math.floor((2 - 0.95) * Math.random())
+    const Coeur = Math.floor((2 - 0.90) * Math.random())
+    const Oeil = Math.floor((2 - 0.95) * Math.random())
     const Oreille = Math.floor((2 - 0.97) * Math.random())
     const Oeufs = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(15 * Math.random() + 15)
@@ -12822,7 +12822,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Wolf de sang d'élite attaque")) {
-    const degat = Math.floor(21 * Math.random() + 40)
+    const degat = Math.floor(21 * Math.random() + 50)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
       const embed = new Discord.RichEmbed()
@@ -12858,7 +12858,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup d'élite attaque")) {
-    const degat = Math.floor(9 * Math.random() + 24)
+    const degat = Math.floor(9 * Math.random() + 34)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
       const embed = new Discord.RichEmbed()
@@ -12882,8 +12882,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bangit sombre d'élite attaque")) {
-    const degat = Math.floor(16 * Math.random() + 30)
-    const degatCrit = Math.floor(7 * Math.random() + 10)
+    const degat = Math.floor(16 * Math.random() + 40)
+    const degatCrit = Math.floor(7 * Math.random() + 20)
     const poison = Math.floor(5 * Math.random() + 4)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
@@ -12920,9 +12920,9 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Wolf gigantesque attaque")) {
-    const degat = Math.floor(31 * Math.random() + 50)
-    const degatZone = Math.floor(21 * Math.random() + 40)
-    const degatCrit = Math.floor(31 * Math.random() + 100)
+    const degat = Math.floor(31 * Math.random() + 60)
+    const degatZone = Math.floor(21 * Math.random() + 50)
+    const degatCrit = Math.floor(31 * Math.random() + 110)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
       const embed = new Discord.RichEmbed()
@@ -16042,8 +16042,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt minor attaque")) {
-    const degat = Math.floor(26 * Math.random() + 55)
-    const degatCrit = Math.floor(26 * Math.random() + 25)
+    const degat = Math.floor(26 * Math.random() + 65)
+    const degatCrit = Math.floor(26 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 50){
       const embed = new Discord.RichEmbed()
@@ -16076,7 +16076,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt combat attaque")) {
-    const degat = Math.floor(36 * Math.random() + 65)
+    const degat = Math.floor(36 * Math.random() + 75)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
       const embed = new Discord.RichEmbed()
@@ -16100,7 +16100,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt keep attaque")) {
-    const degat = Math.floor(36 * Math.random() + 55)
+    const degat = Math.floor(36 * Math.random() + 65)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
       const embed = new Discord.RichEmbed()
@@ -16134,8 +16134,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chien errant attaque")) {
-    const degat = Math.floor(41 * Math.random() + 60)
-    const saignement = Math.floor(6 * Math.random() + 10)
+    const degat = Math.floor(41 * Math.random() + 70)
+    const saignement = Math.floor(6 * Math.random() + 20)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
       const embed = new Discord.RichEmbed()
@@ -16169,7 +16169,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt pilion attaque")) {
-    const degat = Math.floor(51 * Math.random() + 80)
+    const degat = Math.floor(51 * Math.random() + 90)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 65){
       const embed = new Discord.RichEmbed()
@@ -26616,13 +26616,71 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 1")) {
-    message.channel.send("```Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\nViande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nViande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nViande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nViande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPeau de lapin :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de renard :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nPeau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPeau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nPeau de loup :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nPeau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\nCoeur de lapin :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 4 cols]\n\nCoeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\nCoeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\nCoeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\nCoeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\nOeil de lapin :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\nSuite en écrivant :\n=Liste des matériaux 2```")
+    message.channel.send("```Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Viande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Viande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Viande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Viande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Viande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Viande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Peau de lapin :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de renard :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Peau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Peau de loup :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
+                            "Coeur de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Coeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Coeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Coeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Coeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
+                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
+                            "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 24 cols]\n\n" +
+                            "Oeil de lapin :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Oeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Oeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Oeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Oeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
+                            "Suite en écrivant :\n=Liste des matériaux 2```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 2")) {
-    message.channel.send("```Oeil de taupe :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nOeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\nGelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nOreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nCroc de loup :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\nPierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 12 cols]\n\nCuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nCuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nBois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\nPersil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nEstragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nHerbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nHerbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\nBaie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\nBasilic : \nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlantrus médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlantrus commun :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nPlantrus rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nPlantrus parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nCuivre rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nCuivre parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nBois de frêne rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nViande de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nPeau de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nCoeur de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nOeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nOreille de kobolt :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\nSuite en écrivant :\n=Liste des matériaux 3```")
+    message.channel.send("```Oeil de taupe :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Oeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 32 cols]\n\n" +
+                            "Gelatine :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Oreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Croc de loup :\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Pierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 10 cols]\n\n" +
+                            "Cuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Cuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Bois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Bois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Persil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Herbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Baie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Basilic : \nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Plantrus médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Plantrus commun :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Plantrus rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Plantrus parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Cuivre rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Cuivre parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Bois de frêne rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Viande de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Peau de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Coeur de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Oeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Oreille de kobolt :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Suite en écrivant :\n=Liste des matériaux 3```")
   }
 }) ;
 
