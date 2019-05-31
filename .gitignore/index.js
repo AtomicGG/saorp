@@ -24932,7 +24932,7 @@ bot.on('message', message => {
 /* OEUFS ET FAMILIERS | MAJ */
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "oeuf difforme")) {
+  if (message.content.startsWith(prefix + "Oeuf difforme")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24966,7 +24966,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":egg: oeuf difforme" , ":egg: En ouvrant l'oeuf difforme, vous découvrez un bébé chiot!")
-      .addField(":egg: Bébé chiot:" ,":egg: C'est un bébé chiot qui ne peut rien faire étant chiot. Vous devez aller voir un éleveur pour le faire grandir. Cela va prendre 3h et il deviendra un bébé chien adulte qui vous confère 10 points d'attaque et 35HP supplémentaire")
+      .addField(":egg: Bébé chiot:" ,":egg: C'est un bébé chiot qui ne peut rien faire étant chiot. Vous devez aller voir un éleveur pour le faire grandir. Cela va prendre 3h et il deviendra un chien adulte qui vous confère 10 points d'attaque et 35HP supplémentaire")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
