@@ -249,9 +249,9 @@ bot.on('message', message => {
                                                                    ":crossed_swords: `=Coup normal +3 : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":crossed_swords: Pour effectuer un coup Létal :" , ":crossed_swords: `=Coup létal : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup Létal +1 : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup Létal +2 : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup Létal +3 : [Vos dégâts]`")
+                                                                   ":crossed_swords: `=Coup létal +1 : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup létal +2 : [Vos dégâts]`\n" +
+                                                                   ":crossed_swords: `=Coup létal +3 : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":crossed_swords: Pour effectuer un coup d'estoc :" , ":crossed_swords: `=Coup d'estoc : [Vos dégâts]`\n" +
                                                                     ":crossed_swords: `=Coup d'estoc +1 : [Vos dégâts]`\n" +
@@ -378,6 +378,7 @@ bot.on('message', message => {
     .addField(":sparkles: Niveau requis pour effectuer une parade :" , ":sparkles: Niveau 3")
     .addBlankField(true)
     .addField(":sparkles: Niveau requis pour effectuer un coup précis, un coup perce armure :" , ":sparkles: Niveau 4")
+    //.addField(":sparkles: Niveau requis pour effectuer un coup létal, un coup perce armure :" , ":sparkles: Niveau 4")
     .addBlankField(true)
     .addField(":sparkles: Niveau requis pour effectuer un blocage :" , ":sparkles: Niveau 5")
     .addBlankField(true)
@@ -393,8 +394,6 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
-
-/*Rajouter létal dans la commande du haut */
 
 // Coups & Défenses | Coup normal
 
@@ -3349,11 +3348,11 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Coup Létal | MAJ
+// Coups & Défenses | Coup létal | MAJ
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Coup Létal")) {
+  if (message.content.startsWith(prefix + "Coup létal")) {
     let position = args.indexOf(":");
     let amelioration = args.slice(14,position - 1);
     let degat = args.slice(position + 2);
@@ -3365,7 +3364,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3375,7 +3374,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -3389,7 +3388,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3399,7 +3398,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -3413,7 +3412,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3423,7 +3422,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -3437,7 +3436,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3447,7 +3446,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -3461,7 +3460,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3471,7 +3470,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -3485,7 +3484,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3495,7 +3494,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -3509,7 +3508,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3519,7 +3518,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -3533,7 +3532,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
         .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -3543,7 +3542,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup Létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
@@ -7106,38 +7105,25 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Plaine quêtes accomplies")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(30 * Math.random() + 30)
-    const xp = control - (lvl * 3)
+    let xp = control - (lvl * 3)
     const cols = Math.floor(30 * Math.random() + 30)
     const potionFaibleSoin = Math.floor(2 * 0.25 * Math.random())
     const stuffPeauArrache = Math.floor(2 * 0.80 * Math.random())
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
-                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                   ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                                   ":scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                   ":sparkles: Points d'expérience : 0\n" +
-                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                   ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                                   ":scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+    .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                 ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                 ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                 ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
+                                                 ":scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 });
 
@@ -8294,59 +8280,6 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
-                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
-                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
-                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
-                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
-                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
-                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
-                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
-                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Lapin géant récompenses solo")) {
-    let lvl = args.slice(4).join(" : ");
-    const Viande = Math.floor(3 * Math.random())
-    const Peau = Math.floor(3 * Math.random())
-    const Oeil = Math.floor((2 - 0.75) * Math.random())
-    const Coeur = Math.floor((2 - 0.85) * Math.random())
-    const Oreille = Math.floor((2 - 0.90) * Math.random())
-    const Oeufs = Math.floor((2 - 0.98) * Math.random())
-    const controle = Math.floor(20 * Math.random() + 20)
-    const xp = controle - (lvl * 4)
-    const cols = Math.floor(25 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
       .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
                                                ":knife: Peau de lapin géant : " + Peau + "\n" +
                                                ":eye: Oeil de lapin géant : " + Oeil + "\n" +
@@ -8422,9 +8355,9 @@ bot.on('message', message => {
   }
 }) ;
 
-// Plaine | Monstres | Récompenses
-/*
-bot.on('message', message => {
+// Plaine | Monstres | Récompenses | MAJ
+
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Foxy récompenses solo")) {
@@ -8692,40 +8625,26 @@ bot.on('message', message => {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(50 * Math.random() + 50)
     const cols = Math.floor(50 * Math.random() + 50)
-    const xp = control - (lvl * 4)
+    let xp = control - (lvl * 4)
     const potionLegereSoin = Math.floor(2 * 0.25 * Math.random())
     const stuffPeauResistante = Math.floor(2 * 0.80 * Math.random())
     const clefDonjonSauvage = Math.floor((2 - (0.90)) * Math.random())
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
-                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                   ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                                   ":scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
-                                                   ":scales: Clef du donjon sauvage : " + clefDonjonSauvage)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if (xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                   ":sparkles: Points d'expérience : 0\n" +
-                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                   ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                                   ":scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
-                                                   ":scales: Clef du donjon sauvage : " + clefDonjonSauvage)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+    .addField(":bookmark: Quête de la forêt :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                 ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                 ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                 ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                                 ":scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                                 ":scales: Clef du donjon sauvage : " + clefDonjonSauvage)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 });
 
@@ -11322,52 +11241,31 @@ bot.on('message', message => {
     const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
     const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(40 * Math.random() + 55)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(11 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                           ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                           ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                           ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                           ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                           ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                           ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                           ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -11388,52 +11286,31 @@ bot.on('message', message => {
     const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
     const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(30 * Math.random() + 40)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(11 * Math.random() + 15)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                           ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                           ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                           ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                           ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                           ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                           ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                           ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -11454,52 +11331,31 @@ bot.on('message', message => {
     const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
     const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(40 * Math.random() + 55)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(11 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                               ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                               ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                               ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                               ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                               ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                               ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                               ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                               ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                               ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                           ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                           ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                           ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                           ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                           ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                           ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                           ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -11520,28 +11376,31 @@ bot.on('message', message => {
     const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
     const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(30 * Math.random() + 40)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(11 * Math.random() + 15)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n:syringe: Potion légère de soin : " + potionLegereSoin + "\n:syringe: Potion légère de défense : " + potionLegereDefense + "\n:syringe: Potion légère de force : " + potionLegereForce + "\n:meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n:meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n:meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n:meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                           ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                           ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                           ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                           ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                           ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                           ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                           ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -11556,28 +11415,25 @@ bot.on('message', message => {
     const armeClanDeuxMains = Math.floor((2 - 0.70) * Math.random())
     const Oeufs = Math.floor((2 - 0.85) * Math.random())
     const controle = Math.floor(40 * Math.random() + 70)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(101 * Math.random() + 100)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                           ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -11592,28 +11448,25 @@ bot.on('message', message => {
     const armeClanDeuxMains = Math.floor((2 - 0.80) * Math.random())
     const Oeufs = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(31 * Math.random() + 50)
-    const xp = controle - (lvl * 4)
+    let xp = controle - (lvl * 4)
     const cols = Math.floor(81 * Math.random() + 80)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n:scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n:scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n:scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n :gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
+                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
+                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
+                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
+                                           ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -11636,6 +11489,103 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
+
+// Montagne | Quêtes
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Montagne quêtes"){
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 50) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const jeuneKobolt = Math.floor(3 * Math.random() + 2)
+        const koboltExplo = Math.floor(3 * Math.random() + 2)
+        const koboltOuvrier = Math.floor(3 * Math.random() + 2)
+        const koboltEspion = Math.floor(2 * Math.random() + 1)
+        const koboltEnrage = Math.floor(2 * 0.75 * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://aws-cf.ados.fr/prod/photos/6/7/3/6840673/281186/img-281186571.jpg?v=6")
+        .addField(":bookmark: Quête de la montagne :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                        ":crossed_swords: Jeunes kobolts : " + jeuneKobolt + "\n" +
+                                                        ":crossed_swords: Kobolts explorateurs : " + koboltExplo + "\n" +
+                                                        ":crossed_swords: Kobolts ouvriers : " + koboltOuvrier + "\n" +
+                                                        ":crossed_swords: Kobolts espions : " + koboltEspion + "\n" +
+                                                        ":crossed_swords: Kobolts enragés : " + koboltEnrage)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 51) {
+        const Minerai = Math.floor(2 * Math.random() + 1)
+        const Bois = Math.floor(2 * Math.random() + 1)
+        const Basilic = Math.floor(2 * Math.random() + 1)
+        const ViandeRagondin = Math.floor(2 * Math.random())
+        const PeauRagondin = Math.floor(2 * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://aws-cf.ados.fr/prod/photos/6/7/3/6840673/281186/img-281186571.jpg?v=6")
+        .addField(":bookmark: Quête de la montagne :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n" +
+                                                        ":pick: Cuivres médiocres : " + Minerai + "\n" +
+                                                        ":pick: Bois de frêne médiocres : " + Bois + "\n" +
+                                                        ":pick: Basilics : " + Basilic + "\n" +
+                                                        ":pick: Viandes de ragondin : " + ViandeRagondin + "\n" +
+                                                        ":pick: Peaux de ragondin : " + PeauRagondin)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+18000);
+      }, 86400000);
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Montagne quêtes accomplies")) {
+    let lvl = args.slice(3).join(" : ");
+    const control = Math.floor(70 * Math.random() + 70)
+    let xp = control - (lvl * 5)
+    const cols = Math.floor(70 * Math.random() + 70)
+    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
+    const stuffKobolt = Math.floor(2 * 0.80 * Math.random())
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("http://aws-cf.ados.fr/prod/photos/6/7/3/6840673/281186/img-281186571.jpg?v=6")
+    .addField(":bookmark: Quête de la montagne :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                    ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                    ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                    ":syringe: Potion moyenne de soin : " + potionMoyenneSoin + "\n" +
+                                                    ":scales: Equipement de kobolt au choix : " + stuffKobolt)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
 
 // Montagne | Combat
 
@@ -12880,28 +12830,23 @@ bot.on('message', message => {
     const echantillon = Math.floor((2 - 0.75) * Math.random())
     const dent = Math.floor((2 - 0.85) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(11 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -12914,28 +12859,23 @@ bot.on('message', message => {
     const echantillon = Math.floor((2 - 0.85) * Math.random())
     const dent = Math.floor((2 - 0.95) * Math.random())
     const controle = Math.floor(31 * Math.random() + 40)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(6 * Math.random() + 20)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -12950,28 +12890,25 @@ bot.on('message', message => {
     const carte = Math.floor((2 - 0.98) * Math.random())
     const bottes = Math.floor((2 - 0.97) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(11 * Math.random() + 30)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:map: Carte au trésor : " + carte + "\n:scales: Bottes d'exploration kobolt : " + bottes + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:map: Carte au trésor : " + carte + "\n:scales: Bottes d'exploration kobolt : " + bottes + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":map: Carte au trésor : " + carte + "\n" +
+                                           ":scales: Bottes d'exploration kobolt : " + bottes + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -12986,28 +12923,25 @@ bot.on('message', message => {
     const carte = Math.floor((2 - 0.99) * Math.random())
     const bottes = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(31 * Math.random() + 40)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(6 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:map: Carte au trésor : " + carte + "\n:scales: Bottes d'exploration kobolt : " + bottes + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:map: Carte au trésor : " + carte + "\n:scales: Bottes d'exploration kobolt : " + bottes + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":map: Carte au trésor : " + carte + "\n" +
+                                           ":scales: Bottes d'exploration kobolt : " + bottes + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -13023,28 +12957,26 @@ bot.on('message', message => {
     const planArme = Math.floor((2 - 0.90) * Math.random())
     const planBijoux = Math.floor((2 - 0.97) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
-    const xp = controle - (lvl * 5)
+    let xp = controle - (lvl * 5)
     const cols = Math.floor(11 * Math.random() + 30)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:ticket: Plan d'armure kobolt : " + planArmure + "\n:ticket: Plan d'arme kobolt : " + planArme + "\n:ticket: Plan de bijoux kobolt : " + planBijoux + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:ticket: Plan d'armure kobolt : " + planArmure + "\n:ticket: Plan d'arme kobolt : " + planArme + "\n:ticket: Plan de bijoux kobolt : " + planBijoux + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":ticket: Plan d'armure kobolt : " + planArmure + "\n" +
+                                           ":ticket: Plan d'arme kobolt : " + planArme + "\n" +
+                                           ":ticket: Plan de bijoux kobolt : " + planBijoux + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -13060,28 +12992,26 @@ bot.on('message', message => {
     const planArme = Math.floor((2 - 0.97) * Math.random())
     const planBijoux = Math.floor((2 - 0.99) * Math.random())
     const controle = Math.floor(31 * Math.random() + 40)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(6 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:ticket: Plan d'armure kobolt : " + planArmure + "\n:ticket: Plan d'arme kobolt : " + planArme + "\n:ticket: Plan de bijoux kobolt : " + planBijoux + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:ticket: Plan d'armure kobolt : " + planArmure + "\n:ticket: Plan d'arme kobolt : " + planArme + "\n:ticket: Plan de bijoux kobolt : " + planBijoux + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":ticket: Plan d'armure kobolt : " + planArmure + "\n" +
+                                           ":ticket: Plan d'arme kobolt : " + planArme + "\n" +
+                                           ":ticket: Plan de bijoux kobolt : " + planBijoux + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -13097,42 +13027,26 @@ bot.on('message', message => {
     const kunai = Math.floor((2 - 0.90) * Math.random())
     const bolas = Math.floor((2 - 0.90) * Math.random())
     const controle = Math.floor(46 * Math.random() + 65)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(40 * Math.random() + 40)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
-                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
-                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
-                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
-                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
+                                           ":scales: Kunai de kobolt : " + kunai + "\n" +
+                                           ":scales: Bolas de kobolt : " + bolas + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -13148,42 +13062,26 @@ bot.on('message', message => {
     const kunai = Math.floor((2 - 0.95) * Math.random())
     const bolas = Math.floor((2 - 0.95) * Math.random())
     const controle = Math.floor(36 * Math.random() + 55)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(35 * Math.random() + 35)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
-                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
-                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
-                                               ":scales: Kunai de kobolt : " + kunai + "\n" +
-                                               ":scales: Bolas de kobolt : " + bolas + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Bijoux kobolt au choix : " + bijouxKob + "\n" +
+                                           ":scales: Kunai de kobolt : " + kunai + "\n" +
+                                           ":scales: Bolas de kobolt : " + bolas + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -13200,28 +13098,27 @@ bot.on('message', message => {
     const stuffKob = Math.floor((2 - 0.85) * Math.random())
     const bijouxKob = Math.floor((2 - 0.92) * Math.random())
     const controle = Math.floor(51 * Math.random() + 70)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(11 * Math.random() + 50)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n:scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains + "\n:scales: Equipement de kobolt au choix : " + stuffKob + "\n:scales: Bijoux de kobolt au choix : " + bijouxKob + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n:scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains + "\n:scales: Equipement de kobolt au choix : " + stuffKob + "\n:scales: Bijoux de kobolt au choix : " + bijouxKob + "\n:sparkles: Points d'expérience : 0 \n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n" +
+                                           ":scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains + "\n" +
+                                           ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                           ":scales: Bijoux de kobolt au choix : " + bijouxKob + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -13238,28 +13135,27 @@ bot.on('message', message => {
     const stuffKob = Math.floor((2 - 0.93) * Math.random())
     const bijouxKob = Math.floor((2 - 0.96) * Math.random())
     const controle = Math.floor(41 * Math.random() + 60)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(6 * Math.random() + 45)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n:scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains + "\n:scales: Equipement de kobolt au choix : " + stuffKob + "\n:scales: Bijoux de kobolt au choix : " + bijouxKob + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
     if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n:scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains + "\n:scales: Equipement de kobolt au choix : " + stuffKob + "\n:scales: Bijoux de kobolt au choix : " + bijouxKob + "\n:sparkles: Points d'expérience : 0 \n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+      xp = 0;
     }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Arme de kobolt à une main au choix : " + armeKobUneMain + "\n" +
+                                           ":scales: Arme de kobolt à deux mains au choix : " + armeKobDeuxMains + "\n" +
+                                           ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                           ":scales: Bijoux de kobolt au choix : " + bijouxKob + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -13286,7 +13182,11 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Basilic : " + Basilic + "\n:wilted_rose: Plantrus médiocre : " + PlantrusMediocre + "\n:wilted_rose: Plantrus commun : " + PlantrusCommun + "\n:sparkles: Points d'expérience dans la spécialisation 'Cueilleur' : " + Exp)
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                               ":wilted_rose: Basilic : " + Basilic + "\n" +
+                                               ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre + "\n" +
+                                               ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
+                                               ":sparkles: Points d'expérience dans la spécialisation 'Cueilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -13317,7 +13217,10 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre commun : " + CuivreCommun + "\n:pick: Cuivre rare : " + CuivreRare + "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                    ":pick: Cuivre commun : " + CuivreCommun + "\n" +
+                                    ":pick: Cuivre rare : " + CuivreRare + "\n" +
+                                    ":pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -13348,7 +13251,10 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
-      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n:deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n:deciduous_tree: Bois de frêne rare : " + BoisRare + "\n:deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " + Exp)
+      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                                ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
+                                                ":deciduous_tree: Bois de frêne rare : " + BoisRare + "\n" +
+                                                ":deciduous_tree: Points d'expérience dans la spécialisation 'Bûcheron' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -13381,7 +13287,12 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
-      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n:knife: Viande de ragondin : " + Viande + "\n:knife: Peau de ragondin : " + Peau + "\n:cupid: Coeur de ragondin : " + Coeur + "\n:eye: Oeil de ragondin : " + Oeil + "\n:sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " + Exp)
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                     ":knife: Viande de ragondin : " + Viande + "\n" +
+                                     ":knife: Peau de ragondin : " + Peau + "\n" +
+                                     ":cupid: Coeur de ragondin : " + Coeur + "\n" +
+                                     ":eye: Oeil de ragondin : " + Oeil + "\n" +
+                                     ":sparkles: Points d'expérience dans la spécialisation 'Chasseur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -13409,6 +13320,101 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
+
+// Grotte | Quêtes
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Grotte quêtes"){
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 50) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const koboltMineur = Math.floor(3 * Math.random() + 2)
+        const koboltCombattant = Math.floor(3 * Math.random() + 2)
+        const koboltGarde = Math.floor(3 * Math.random() + 2)
+        const chienErrant = Math.floor(2 * Math.random() + 1)
+        const koboltPilion = Math.floor(2 * 0.75 * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+        .addField(":bookmark: Quête de la grotte :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                        ":crossed_swords: Kobolts mineurs : " + koboltMineur + "\n" +
+                                                        ":crossed_swords: Kobolts combattans : " + koboltCombattant + "\n" +
+                                                        ":crossed_swords: Kobolts gardes : " + koboltGarde + "\n" +
+                                                        ":crossed_swords: Chiens errants : " + chienErrant + "\n" +
+                                                        ":crossed_swords: Kobolts pilions : " + koboltPilion)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 51) {
+        const cuivreRare = Math.floor(2 * Math.random() + 1)
+        const cuivreParfait = Math.floor(2 * Math.random())
+        const plantrusCommun = Math.floor(2 * Math.random() + 1)
+        const plantrusRare = Math.floor(2 * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+        .addField(":bookmark: Quête de la grotte :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n" +
+                                                        ":pick: Cuivres rares : " + cuivreRare + "\n" +
+                                                        ":pick: Cuivres parfaits : " + cuivreParfait + "\n" +
+                                                        ":pick: Plantrus communs : " + plantrusCommun + "\n" +
+                                                        ":pick: Plantrus rares : " + plantrusRare)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quêtes accomplies : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+18000);
+      }, 86400000);
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Grotte quêtes accomplies")) {
+    let lvl = args.slice(3).join(" : ");
+    const control = Math.floor(90 * Math.random() + 90)
+    let xp = control - (lvl * 6)
+    const cols = Math.floor(90 * Math.random() + 90)
+    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
+    const stuffKoboltSup = Math.floor(2 * 0.80 * Math.random())
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+    .addField(":bookmark: Quête de la montagne :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                    ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                    ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                    ":syringe: Potion moyenne de soin : " + potionMoyenneSoin + "\n" +
+                                                    ":scales: Equipement de kobolt supérieur au choix : " + stuffKoboltSup)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
 
 // Grotte | Combat
 
@@ -14607,38 +14613,24 @@ bot.on('message', message => {
     const dent = Math.floor((2 - 0.65) * Math.random())
     const stuffKob = Math.floor((2 - 0.95) * Math.random())
     const controle = Math.floor(41 * Math.random() + 60)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(40 * Math.random() + 40)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -14652,38 +14644,24 @@ bot.on('message', message => {
     const dent = Math.floor((2 - 0.80) * Math.random())
     const stuffKob = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(31 * Math.random() + 50)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(35 * Math.random() + 35)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -14698,40 +14676,25 @@ bot.on('message', message => {
     const armeKobSupUneMain = Math.floor((2 - 0.96) * Math.random())
     const armeKobSupDeuxMains = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(56 * Math.random() + 80)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(40 * Math.random() + 40)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                           ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -14746,40 +14709,25 @@ bot.on('message', message => {
     const armeKobSupUneMain = Math.floor((2 - 0.98) * Math.random())
     const armeKobSupDeuxMains = Math.floor((2 - 0.99) * Math.random())
     const controle = Math.floor(46 * Math.random() + 70)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(35 * Math.random() + 35)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                               ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                               ":gem: Dent de kobolt : "+ dent + "\n" +
-                                               ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                           ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -14797,28 +14745,28 @@ bot.on('message', message => {
     const faucille = Math.floor((2 - 0.95) * Math.random())
     const casque = Math.floor((2 - 0.97) * Math.random())
     const controle = Math.floor(41 * Math.random() + 65)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(31 * Math.random() + 30)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Pioche de kobolt : " + pioche + "\n:scales: Hache de kobolt : " + hache + "\n:scales: Couteau de kobolt : " + couteau + "\n:scales: Faucille de kobolt : " + faucille + "\n:scales: Casque de mineur kobolt : " + casque + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Pioche de kobolt : " + pioche + "\n:scales: Hache de kobolt : " + hache + "\n:scales: Couteau de kobolt : " + couteau + "\n:scales: Faucille de kobolt : " + faucille + "\n:scales: Casque de mineur kobolt : " + casque + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Pioche de kobolt : " + pioche + "\n" +
+                                           ":scales: Hache de kobolt : " + hache + "\n" +
+                                           ":scales: Couteau de kobolt : " + couteau + "\n" +
+                                           ":scales: Faucille de kobolt : " + faucille + "\n" +
+                                           ":scales: Casque de mineur kobolt : " + casque + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -14836,31 +14784,30 @@ bot.on('message', message => {
     const faucille = Math.floor((2 - 0.98) * Math.random())
     const casque = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(31 * Math.random() + 55)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(25 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Pioche de kobolt : " + pioche + "\n:scales: Hache de kobolt : " + hache + "\n:scales: Couteau de kobolt : " + couteau + "\n:scales: Faucille de kobolt : " + faucille + "\n:scales: Casque de mineur kobolt : " + casque + "\n:sparkles: Points d'expérience : " + xp + "\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Oreille de kobolt : " + oreille + "\n:syringe: Echantillon de kobolt : " + echantillon + "\n:gem: Dent de kobolt : "+ dent + "\n:scales: Pioche de kobolt : " + pioche + "\n:scales: Hache de kobolt : " + hache + "\n:scales: Couteau de kobolt : " + couteau + "\n:scales: Faucille de kobolt : " + faucille + "\n:scales: Casque de mineur kobolt : " + casque + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":scales: Pioche de kobolt : " + pioche + "\n" +
+                                           ":scales: Hache de kobolt : " + hache + "\n" +
+                                           ":scales: Couteau de kobolt : " + couteau + "\n" +
+                                           ":scales: Faucille de kobolt : " + faucille + "\n" +
+                                           ":scales: Casque de mineur kobolt : " + casque + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
-
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
@@ -14873,40 +14820,25 @@ bot.on('message', message => {
     const Coeur = Math.floor((2 - 0.85)*Math.random())
     const Oeufs = Math.floor((2 - 0.99) * Math.random())
     const controle = Math.floor(46 * Math.random() + 70)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(6 * Math.random() + 5)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien érrant : " + Viande + "\n" +
-                                               ":knife: Peau de chien érrant : " + Peau + "\n" +
-                                               ":eye: Oeil de chien érrant : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien érrant : " + Viande + "\n" +
-                                               ":knife: Peau de chien érrant : " + Peau + "\n" +
-                                               ":eye: Oeil de chien érrant : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Viande de chien érrant : " + Viande + "\n" +
+                                           ":knife: Peau de chien érrant : " + Peau + "\n" +
+                                           ":eye: Oeil de chien érrant : " + Oeil + "\n" +
+                                           ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
+                                           ":gem: oeuf difforme : " + Oeufs + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -14921,40 +14853,25 @@ bot.on('message', message => {
     const Coeur = Math.floor((2 - 0.95) * Math.random())
     const Oeufs = Math.floor((2 - 0.99) * Math.random())
     const controle = Math.floor(36 * Math.random() + 60)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(4 * Math.random() + 3)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien érrant : " + Viande + "\n" +
-                                               ":knife: Peau de chien érrant : " + Peau + "\n" +
-                                               ":eye: Oeil de chien érrant : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien érrant : " + Viande + "\n" +
-                                               ":knife: Peau de chien érrant : " + Peau + "\n" +
-                                               ":eye: Oeil de chien érrant : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                               ":gem: oeuf difforme : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Viande de chien érrant : " + Viande + "\n" +
+                                           ":knife: Peau de chien érrant : " + Peau + "\n" +
+                                           ":eye: Oeil de chien érrant : " + Oeil + "\n" +
+                                           ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
+                                           ":gem: oeuf difforme : " + Oeufs + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -14972,40 +14889,25 @@ bot.on('message', message => {
     const bijouxKobSup = Math.floor((2 - 0.92) * Math.random())
     const parchemin = Math.floor((2 - 0.95) * Math.random())
     const controle = Math.floor(61 * Math.random() + 85)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(151 * Math.random() + 150)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
-                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
-                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
-                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
-                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                           ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
+                                           ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
+                                           ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -15023,40 +14925,25 @@ bot.on('message', message => {
     const bijouxKobSup = Math.floor((2 - 0.96) * Math.random())
     const parchemin = Math.floor((2 - 0.98) * Math.random())
     const controle = Math.floor(51 * Math.random() + 75)
-    const xp = controle - (lvl * 6)
+    let xp = controle - (lvl * 6)
     const cols = Math.floor(125 * Math.random() + 125)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
-                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
-                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
+    if (xp <= 0) {
+      xp = 0
     }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
-                                               ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                               ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
-                                               ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
-                                               ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+                                           ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
+                                           ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
+                                           ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
   }
 }) ;
 
@@ -15083,7 +14970,11 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n:wilted_rose: Plantrus commun : " + PlantrusCommun + "\n:wilted_rose: Plantrus rare : " + PlantrusRare + "\n:wilted_rose: Plantrus parfait : " + PlantrusParfait + "\n:sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                               ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
+                                               ":wilted_rose: Plantrus rare : " + PlantrusRare + "\n" +
+                                               ":wilted_rose: Plantrus parfait : " + PlantrusParfait + "\n" +
+                                               ":sparkles: Points d'expérience dans la spécialisation 'Ceuilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -15115,7 +15006,11 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n:pick: Cuivre rare : " + CuivreRare + "\n:pick: Cuivre parfait : " + CuivreParfait + "\n:pick: Pierre de feu faible : " + Feu + "\n:pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                    ":pick: Cuivre rare : " + CuivreRare + "\n" +
+                                    ":pick: Cuivre parfait : " + CuivreParfait + "\n" +
+                                    ":pick: Pierre de feu faible : " + Feu + "\n" +
+                                    ":pick: Points d'expérience dans la spécialisation 'Mineur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
     }
