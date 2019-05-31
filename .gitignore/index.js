@@ -60,7 +60,7 @@ bot.on('message', message => {
                                                  ":diamond_shape_with_a_dot_inside:=Classes\n" +
                                                  ":cyclone:=Compétences\n" +
                                                  ":trident:=Particularités\n" +
-                                                 ":hammer:=Amélioration\n" +
+                                                 ":hammer:=Améliorations\n" +
                                                  ":dagger:=Armes\n" +
                                                  ":walking:=Trajets\n" +
                                                  ":game_die:=Rolls\n" +
@@ -91,6 +91,40 @@ bot.on('message', message => {
                                                  ":bow_and_arrow:=Mercenaire\n" +
                                                  ":chains:=Prison\n" +
                                                  ":notes:=Musiques")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Améliorations
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Améliorations")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera soit un coup, soit une action défensive\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e) [+5]**\n**Supérieur(e) [+10]**\n**Suprême [+15]**\n**Divin(e) [+20]**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si j'ai une épée à deux mains qui améliore le combo en combo supérieur et que je possède en plus une particularité qui améliore le combo, le combo supérieur devient un combo suprême, et que si quelque chose encore améliore le combo, il devient un combo divin !\n\nPour comprendre ce système encore plus facilement, comme marqué à côté des améliorations [+5/10/15/20] les améliorations se cumulent de cette manière !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Améliorations | MAJ
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Aaméliorations")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera soit un coup, soit une action défensive\n\n" +
+                                      "Les améliorations sont les suivantes :\n\n" +
+                                      "** [+1]**\n** [+2]**\n** [+3]**\n** [+4]**\n\n" +
+                                      "Ces améliorations s'effectuent dans l'ordre, c'est à dire que si j'ai une épée à deux mains qui améliore le combo en combo +2 et que je possède en plus une particularité qui améliore le combo" +
+                                      ", le combo +2 devient un combo +3, et que si quelque chose encore améliore le combo, il devient un combo +4 !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -339,10 +373,10 @@ bot.on('message', message => {
   }
 })
 
-// Coups & Défenses | Menus  |MAJ
+// Coups & Défenses | Menus  | MAJ
 
-/*bot.on('message', message => {
-  if (message.content === (prefix) + "Coups et défenses"){
+bot.on('message', message => {
+  if (message.content === (prefix) + "Ccoups et défenses"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -404,7 +438,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Coups et défenses 2"){
+  if (message.content === (prefix) + "Ccoups et défenses 2"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -440,15 +474,15 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Coups et défenses descriptions"){
+  if (message.content === (prefix) + "Ccoups et défenses descriptions"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\n" +
                                                       "Le coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\n" +
-                                                      "Le coup Létal est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\n" +
-                                                      "Le combo est un enchaînement de coups qui inflige énormément de dégâts mais ayant une chance de toucher très faible\n\n" +
+                                                      "Le coup létal est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\n" +
+                                                      "Le combo est un un coup qui, à force de le répéter, augmente de puissance\n\n" +
                                                       "Le coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\n" +
                                                       "Le coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\n" +
                                                       "Le coup sauté est un coup ayant une chance de faire tomber la cible\n\n" +
@@ -461,7 +495,7 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-}) */
+})
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Coups et défenses apprentissage"){
@@ -15127,35 +15161,6 @@ bot.on('message', message => {
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Amélioration")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera soit un coup, soit une action défensive\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e) [+5]**\n**Supérieur(e) [+10]**\n**Suprême [+15]**\n**Divin(e) [+20]**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si j'ai une épée à deux mains qui améliore le combo en combo supérieur et que je possède en plus une particularité qui améliore le combo, le combo supérieur devient un combo suprême, et que si quelque chose encore améliore le combo, il devient un combo divin !\n\nPour comprendre ce système encore plus facilement, comme marqué à côté des améliorations [+5/10/15/20] les améliorations se cumulent de cette manière !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-/*MAJ
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Amélioration")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera soit un coup, soit une action défensive\n\nLes améliorations sont les suivantes :\n\n** [+1]**\n** [+2]**\n** [+3]**\n** [+4]**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si j'ai une épée à deux mains qui améliore le combo en combo +2 et que je possède en plus une particularité qui améliore le combo, le combo +2 devient un combo +3, et que si quelque chose encore améliore le combo, il devient un combo +4 !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-*/
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Menus")) {
     const embed = new Discord.RichEmbed()
