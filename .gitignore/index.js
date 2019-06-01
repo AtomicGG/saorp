@@ -14003,7 +14003,7 @@ bot.on('message', message => {
 // Donjon Sauvage | Monstres | Récompenses | MAJ
 
 bot.on('message', message => {
-  const args = message.content
+  const args = message.content;
   if (message.content.startsWith(prefix + "Wolf de sang d'élite récompenses")) {
     const pos = args.indexOf(":");
     const nbrPeSrsonne = args.slice(pos - 2, pos - 1);
