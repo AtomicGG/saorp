@@ -14005,22 +14005,56 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Wolf de sang d'élite récompenses solo")) {
-    let lvl = args.slice(6).join(" : ");
-    const stuffClan = Math.floor((2 - 0.95) * Math.random())
-    const bijouxClan = Math.floor((2 - 0.98) * Math.random())
-    const armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
-    const armeClanDeuxMains = Math.floor((2 - 0.98) * Math.random())
-    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
-    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
-    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
-    const controle = Math.floor(40 * Math.random() + 55)
-    let xp = controle - (lvl * 5)
-    const cols = Math.floor(11 * Math.random() + 25)
+  if (message.content.startsWith(prefix + "Wolf de sang d'élite récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let stuffClan = 0
+    let bijouxClan = 0
+    let armeClanUneMain = 0
+    let armeClanDeuxMains = 0
+    let potionLegereSoin = 0
+    let potionLegereDefense = 0
+    let potionLegereForce = 0
+    let ragoutLoup = 0
+    let ragoutTaupe = 0
+    let ragoutLapinGeant = 0
+    let ragoutLoupDeSang = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 3
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 15) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      stuffClan = Math.floor((2 - 0.95) * Math.random())
+      bijouxClan = Math.floor((2 - 0.98) * Math.random())
+      armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
+      armeClanDeuxMains = Math.floor((2 - 0.98) * Math.random())
+      potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+      potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+      potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(11 * Math.random() + 25)
+    } else {
+      stuffClan = Math.floor((2 - 0.97) * Math.random())
+      bijouxClan = Math.floor((2 - 0.99) * Math.random())
+      armeClanUneMain = Math.floor((2 - 0.97) * Math.random())
+      armeClanDeuxMains = Math.floor((2 - 0.99) * Math.random())
+      potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+      potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+      potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(11 * Math.random() + 15)
+    }
     if(xp <= 0) {
       xp = 0;
     }
@@ -14050,22 +14084,56 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Wolf de sang d'élite récompenses groupe")) {
-    let lvl = args.slice(6).join(" : ");
-    const stuffClan = Math.floor((2 - 0.97) * Math.random())
-    const bijouxClan = Math.floor((2 - 0.99) * Math.random())
-    const armeClanUneMain = Math.floor((2 - 0.97) * Math.random())
-    const armeClanDeuxMains = Math.floor((2 - 0.99) * Math.random())
-    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
-    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
-    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
-    const controle = Math.floor(30 * Math.random() + 40)
-    let xp = controle - (lvl * 5)
-    const cols = Math.floor(11 * Math.random() + 15)
+  if (message.content.startsWith(prefix + "Bangit sombre d'élite récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let stuffClan = Math.floor((2 - 0.95) * Math.random())
+    let bijouxClan = Math.floor((2 - 0.98) * Math.random())
+    let armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
+    let armeClanDeuxMains = Math.floor((2 - 0.98) * Math.random())
+    let potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+    let potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+    let potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+    let ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+    let ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+    let ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+    let ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+    let cols = Math.floor(11 * Math.random() + 25)
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 3
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 15) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      stuffClan = Math.floor((2 - 0.95) * Math.random())
+      bijouxClan = Math.floor((2 - 0.98) * Math.random())
+      armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
+      armeClanDeuxMains = Math.floor((2 - 0.98) * Math.random())
+      potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+      potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+      potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(11 * Math.random() + 25)
+    } else {
+      stuffClan = Math.floor((2 - 0.97) * Math.random())
+      bijouxClan = Math.floor((2 - 0.99) * Math.random())
+      armeClanUneMain = Math.floor((2 - 0.97) * Math.random())
+      armeClanDeuxMains = Math.floor((2 - 0.99) * Math.random())
+      potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+      potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+      potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(11 * Math.random() + 15)
+    }
     if(xp <= 0) {
       xp = 0;
     }
@@ -14095,139 +14163,38 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Ban sombre d'élite récompenses solo")) {
-    let lvl = args.slice(5).join(" : ");
-    const stuffClan = Math.floor((2 - 0.95) * Math.random())
-    const bijouxClan = Math.floor((2 - 0.98) * Math.random())
-    const armeClanUneMain = Math.floor((2 - 0.95) * Math.random())
-    const armeClanDeuxMains = Math.floor((2 - 0.98) * Math.random())
-    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
-    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
-    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
-    const controle = Math.floor(40 * Math.random() + 55)
-    let xp = controle - (lvl * 5)
-    const cols = Math.floor(11 * Math.random() + 25)
-    if(xp <= 0) {
-      xp = 0;
+  if (message.content.startsWith(prefix + "Wolf gigantesque récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let stuffClan = 0
+    let bijouxClan = 0
+    let armeClanUneMain = 0
+    let armeClanDeuxMains = 0
+    let Oeufs = 0
+    let cols = Math.floor(101 * Math.random() + 100)
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 3
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      stuffClan = Math.floor((2 - 0.75) * Math.random())
+      bijouxClan = Math.floor((2 - 0.85) * Math.random())
+      armeClanUneMain = Math.floor((2 - 0.70) * Math.random())
+      armeClanDeuxMains = Math.floor((2 - 0.70) * Math.random())
+      Oeufs = Math.floor((2 - 0.85) * Math.random())
+      cols = Math.floor(11 * Math.random() + 25)
+    } else {
+      stuffClan = Math.floor((2 - 0.75) * Math.random())
+      bijouxClan = Math.floor((2 - 0.90) * Math.random())
+      armeClanUneMain = Math.floor((2 - 0.80) * Math.random())
+      armeClanDeuxMains = Math.floor((2 - 0.80) * Math.random())
+      Oeufs = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(81 * Math.random() + 80)
     }
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                           ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                           ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                           ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                           ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                           ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                           ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                           ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                           ":sparkles: Points d'expérience : " + xp + "\n" +
-                                           ":large_orange_diamond: Cols : " + cols)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Ban sombre d'élite récompenses groupe")) {
-    let lvl = args.slice(5).join(" : ");
-    const stuffClan = Math.floor((2 - 0.97) * Math.random())
-    const bijouxClan = Math.floor((2 - 0.99) * Math.random())
-    const armeClanUneMain = Math.floor((2 - 0.97) * Math.random())
-    const armeClanDeuxMains = Math.floor((2 - 0.99) * Math.random())
-    const potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
-    const potionLegereForce = Math.floor((2 - 0.95) * Math.random())
-    const ragoutLoup = Math.floor((2 - 0.90) * Math.random())
-    const ragoutTaupe = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLapinGeant = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
-    const controle = Math.floor(30 * Math.random() + 40)
-    let xp = controle - (lvl * 5)
-    const cols = Math.floor(11 * Math.random() + 15)
-    if(xp <= 0) {
-      xp = 0;
-    }
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                           ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
-                                           ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
-                                           ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
-                                           ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
-                                           ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
-                                           ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
-                                           ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
-                                           ":sparkles: Points d'expérience : " + xp + "\n" +
-                                           ":large_orange_diamond: Cols : " + cols)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Wolf gigantesque récompenses solo")) {
-    let lvl = args.slice(4).join(" : ");
-    const stuffClan = Math.floor((2 - 0.75) * Math.random())
-    const bijouxClan = Math.floor((2 - 0.85) * Math.random())
-    const armeClanUneMain = Math.floor((2 - 0.70) * Math.random())
-    const armeClanDeuxMains = Math.floor((2 - 0.70) * Math.random())
-    const Oeufs = Math.floor((2 - 0.85) * Math.random())
-    const controle = Math.floor(40 * Math.random() + 70)
-    let xp = controle - (lvl * 5)
-    const cols = Math.floor(101 * Math.random() + 100)
-    if(xp <= 0) {
-      xp = 0;
-    }
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":scales: Equipement du clan des loups au choix : " + stuffClan + "\n" +
-                                           ":scales: Bijoux du clan des loups au choix : " + bijouxClan + "\n" +
-                                           ":scales: Arme du clan des loups à une main au choix : " + armeClanUneMain + "\n" +
-                                           ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
-                                           ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                           ":sparkles: Points d'expérience : " + xp + "\n" +
-                                           ":large_orange_diamond: Cols : " + cols)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Wolf gigantesque récompenses groupe")) {
-    let lvl = args.slice(4).join(" : ");
-    const stuffClan = Math.floor((2 - 0.75) * Math.random())
-    const bijouxClan = Math.floor((2 - 0.90) * Math.random())
-    const armeClanUneMain = Math.floor((2 - 0.80) * Math.random())
-    const armeClanDeuxMains = Math.floor((2 - 0.80) * Math.random())
-    const Oeufs = Math.floor((2 - 0.90) * Math.random())
-    const controle = Math.floor(31 * Math.random() + 50)
-    let xp = controle - (lvl * 4)
-    const cols = Math.floor(81 * Math.random() + 80)
     if(xp <= 0) {
       xp = 0;
     }
