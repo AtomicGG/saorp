@@ -16025,6 +16025,7 @@ bot.on('message', message => {
   }
 })
 
+
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt géant rouge"){
     const embed = new Discord.RichEmbed()
@@ -16068,7 +16069,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt pilion :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
-    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+    .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ???")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt pilion attaque`")
     .addField(":shield: Lorsque le kobolt pilion reçoit un coup :" , ":shield: `=Kobolt pilion défense : [Points de dégâts de votre coup]`")
@@ -25423,7 +25424,7 @@ bot.on('message', message => {
       .addField("Peau de chien errant :" , "C'est une peau basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "60 cols")
       .addField("Prix de revente :" , "12 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold supérieurs")
       .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -25532,7 +25533,7 @@ bot.on('message', message => {
     .addField("Peau de ragondin :" , "C'est une peau basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
     .addField("Prix de revente :" , "8 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Equipements de kobolt supérieurs")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25690,7 +25691,7 @@ bot.on('message', message => {
     .addField("Coeur de ragondin :" , "C'est un coeur basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
     .addField("Prix de revente :" , "12 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt\n=Bijoux de kobolt supérieurs\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt\n=Potion moyenne de soin\n=Parchemin de feu rouge faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25832,7 +25833,7 @@ bot.on('message', message => {
     .addField("Oeil de ragondin :" , "C'est un oeil basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
     .addField("Prix de revente :" , "12 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de force\n=Potion moyenne de défense\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de force\n=Potion moyenne de défense\n=Parchemin de feu rouge faible")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25941,7 +25942,7 @@ bot.on('message', message => {
       .addField("Dent de kobolt pilion :" , "C'est une dent rare que vous trouvez sur les kobolts pilion dans la grotte du palier 1 !")
       .addField("Prix d'achat :" , "140 cols")
       .addField("Prix de revente :" , "28 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold\n=Armes de kobold\n=Armes de kobolt supérieures\n=Equipements de kobolt supérieurs")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -25966,7 +25967,7 @@ bot.on('message', message => {
         .addField("Dent de kobolt :" , "C'est une dent rare que vous trouvez sur les kobolts dans la montagne et la grotte du palier 1 !")
         .addField("Prix d'achat :" , "60 cols")
         .addField("Prix de revente :" , "12 cols")
-        .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt")
+        .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold\n=Armes de kobold\n=Armes de kobolt supérieures\n=Equipements de kobolt supérieurs")
         .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -26080,7 +26081,7 @@ bot.on('message', message => {
     .addField("Cuivre médiocre :" , "C'est un minerai basique que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
     .addField("Prix de revente :" , "4 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements rouillés\n=Bijoux rouillés\n=Cape endommagée\n=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes basiques\n=Armes de kobolt\n=Armes de kobolt supérieures")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements rouillés\n=Bijoux rouillés\n=Cape endommagée\n=Equipements de kobolt\n=Bijoux de kobolt\n=Armes basiques\n=Armes de kobolt)
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26096,7 +26097,7 @@ bot.on('message', message => {
     .addField("Cuivre commun :" , "C'est un minerai commun que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
     .addField("Prix de revente :" , "8 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Armes de kobolt")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26328,7 +26329,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plan d'arme  kobolt")) {
+  if (message.content.startsWith(prefix + "Plan d'arme kobolt")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
