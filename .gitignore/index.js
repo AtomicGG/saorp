@@ -14003,11 +14003,10 @@ bot.on('message', message => {
 // Donjon Sauvage | Monstres | Récompenses | MAJ
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+  const args = message.content
   if (message.content.startsWith(prefix + "Wolf de sang d'élite récompenses")) {
     const pos = args.indexOf(":");
-    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const nbrPeSrsonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
     let stuffClan = 0
     let bijouxClan = 0
@@ -14082,8 +14081,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+  const args = message.content;
   if (message.content.startsWith(prefix + "Bangit sombre d'élite récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
@@ -14161,8 +14159,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
+  const args = message.content;
   if (message.content.startsWith(prefix + "Wolf gigantesque récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
