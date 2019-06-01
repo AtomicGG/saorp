@@ -10660,11 +10660,11 @@ bot.on('message', message => {
     let Coeur = 0
     let Oeufs = 0
     let cols = 0
-    const bonus = 0;
-    const nivMob = 1;
-    const controle = lvl - nivMob
-    const borneSup = 11 - controle
-    const roll = Math.floor(borneSup * Math.random() + 5);
+    let bonus = 0;
+    let nivMob = 1;
+    let controle = lvl - nivMob
+    let borneSup = 11 - controle
+    let roll = Math.floor(borneSup * Math.random() + 5);
     let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
