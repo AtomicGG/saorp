@@ -10636,7 +10636,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 125 + 75 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(21 * Math.random() + 5) / 10
+    const roll = Math.floor(11 * Math.random() + 5) / 10
     let xp = controle * (1 + dif) / (5 * lvl) * roll * groupe
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
@@ -10696,7 +10696,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 125 + 75 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(21 * Math.random() + 5) / 10
+    const roll = Math.floor(11 * Math.random() + 5) / 10
     let xp = controle * (1 + dif) / (5 * lvl) * roll * groupe
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
@@ -10756,7 +10756,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 125 + 75 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(21 * Math.random() + 5) / 10
+    const roll = Math.floor(11 * Math.random() + 5) / 10
     let xp = controle * (1 + dif) / (5 * lvl) * roll * groupe
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
@@ -10818,7 +10818,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 125 + 75 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(21 * Math.random() + 10) / 10
+    const roll = Math.floor(11 * Math.random() + 10) / 10
     let xp = controle * (1 + dif) / (5 * lvl) * roll * groupe
     if(nbrPersonne == 1) {
       stuffPeauArrache = Math.floor((2 - 0.90) * Math.random())
@@ -10885,7 +10885,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 125 + 75 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(21 * Math.random() + 15) / 10
+    const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = controle * (1 + dif) / (5 * lvl) * roll * groupe
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
