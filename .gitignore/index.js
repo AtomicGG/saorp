@@ -10651,41 +10651,35 @@ bot.on('message', message => {
 bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Foxy récompenses")) {
-    let pos = args.indexOf(":");
-    let nbrPersonne = args.slice(pos - 2, pos - 1);
-    let posX = args.indexOf(" x");
-    let lvl = args.slice(pos + 2, posX)
-    let nbrMob = args.slice(posX + 2)
-    let Viande = 0
-    let Peau = 0
-    let Oeil = 0
-    let Coeur = 0
-    let Oeufs = 0
-    let cols = 0
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const nbrMob = args.slice(pos + 2)
+    const Viande = 0
+    const Peau = 0
+    const Oeil = 0
+    const Coeur = 0
+    const Oeufs = 0
+    const cols = 0
     const bonus = 0;
     const nivMob = 1;
     const controle = lvl - nivMob
     const borneSup = 11 - controle
-    let roll = 0
-    let xp = 0
-    for(var i = 0; i < nbrMob; i++) {
-      if(nbrPersonne == 1) {
-        Viande = Viande + Math.floor(3 * Math.random())
-        Peau = Peau + Math.floor(3 * Math.random())
-        Oeil = Oeil + Math.floor((2 - 0.75)*Math.random())
-        Coeur = Coeur + Math.floor((2 - 0.85)*Math.random())
-        Oeufs = Oeufs + Math.floor((2 - 0.99) * Math.random())
-        cols = cols + Math.floor(6 * Math.random() + 5)
-      } else {
-        Viande = Viande + Math.floor(2 * Math.random())
-        Peau = Peau + Math.floor(2 * Math.random())
-        Oeil = Oeil + Math.floor((2 - 0.90) * Math.random())
-        Coeur = Coeur + Math.floor((2 - 0.95) * Math.random())
-        Oeufs = Oeufs + Math.floor((2 - 0.99) * Math.random())
-        cols = cols + Math.floor(4 * Math.random() + 3)
-      }
-      roll = Math.floor(borneSup * Math.random() + 5);
-      xp = xp + Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
+    const roll = Math.floor(borneSup * Math.random() + 5);
+    const xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
+    if(nbrPersonne == 1) {
+      Viande = Math.floor(3 * Math.random())
+      Peau = Math.floor(3 * Math.random())
+      Oeil = Math.floor((2 - 0.75)*Math.random())
+      Coeur = Math.floor((2 - 0.85)*Math.random())
+      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      cols = Math.floor(6 * Math.random() + 5)
+    } else {
+      Viande = Math.floor(2 * Math.random())
+      Peau = Math.floor(2 * Math.random())
+      Oeil = Math.floor((2 - 0.90) * Math.random())
+      Coeur = Math.floor((2 - 0.95) * Math.random())
+      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      cols = Math.floor(4 * Math.random() + 3)
     }
     if(xp <= 0) {
       xp = 0;
