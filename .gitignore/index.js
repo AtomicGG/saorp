@@ -16068,7 +16068,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt pilion :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
-    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+    .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ???")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt pilion attaque`")
     .addField(":shield: Lorsque le kobolt pilion reçoit un coup :" , ":shield: `=Kobolt pilion défense : [Points de dégâts de votre coup]`")
