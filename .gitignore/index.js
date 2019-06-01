@@ -6408,7 +6408,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" + degat + "` points de dégâts au total, et fait saigner l'ennemis pendant `3` tours, " +
                                               "infligeant `" + saignement + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\n" +
-                                              "Votre premier coup horizontal rapide inflige `" + premier + "` points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxième + "` points de dégâts !")
+                                              "Votre premier coup horizontal rapide inflige `" + premier + "` points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts !")
         .setImage("https://data.whicdn.com/images/132920508/original.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -6421,7 +6421,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" + degat + "` points de dégâts au total, et fait saigner l'ennemis pendant `2` tours, " +
                                               "infligeant `" + saignement + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\n" +
-                                              "Votre premier coup horizontal rapide inflige `" +premier+ " points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
+                                              "Votre premier coup horizontal rapide inflige `" + premier + " points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts !")
         .setImage("https://data.whicdn.com/images/132920508/original.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -6434,7 +6434,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" + degat + "` points de dégâts au total, et fait saigner l'ennemis pendant `3` tours, " +
                                               "infligeant `" + saignement + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\n" +
-                                              "Votre premier coup horizontal rapide inflige `" +premier+ " points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !\n\n" +
+                                              "Votre premier coup horizontal rapide inflige `" + premier + " points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts !\n\n" +
                                               "De plus, l'ennemi blessé est vulnérable. Pendant les 3 prochaines attaques réussies contre lui, ces dites attaques feront 0.2 dégâts supplémentaires.")
         .setImage("https://data.whicdn.com/images/132920508/original.gif")
         .setTimestamp()
