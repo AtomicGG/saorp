@@ -26738,7 +26738,7 @@ bot.on('message', message => {
                             "Viande de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
                             "Peau de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
                             "Coeur de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Oeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +```")
+                            "Oeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n```")
   }
 }) ;
 
