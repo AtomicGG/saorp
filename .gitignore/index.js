@@ -20319,6 +20319,53 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Cooup du roi déchu")) {
+    if (talkedRecently.has(message.author.id+12311)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(4).join(" : ");
+      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
+      const B = (Math.floor(100)*Math.random()+1)
+      const C = (Math.floor((3)*Math.random()+1))
+      const D = (Math.floor((26)*Math.random()+25))
+      if(B <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Vous ratez votre coup..." , ":crossed_swords: Dommage pour vous")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(B >= 26){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, une aura vous entoure au contact de l'ennemis et vous rend " +D+ " HP !")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+12311);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+12311);
+      }, 1800000);
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Casque rouillé")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -25049,7 +25096,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Viande de lapin géant :" , "C'est une viande assez étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lapin géant")
     .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
     .setTimestamp()
@@ -25081,7 +25128,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Viande de loup de sang :" , "C'est une viande étrange que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "10 cols")
+    .addField("Prix de revente :" , "8 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de loup de sang")
     .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
     .setTimestamp()
@@ -25177,7 +25224,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de lapin géant :" , "C'est une peau étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "10 cols")
+    .addField("Prix de revente :" , "8 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -25209,7 +25256,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de loup :" , "C'est une peau basique que vous trouvez sur les loups dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -25225,7 +25272,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de loup de sang :" , "C'est une peau étrange que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "80 cols")
-    .addField("Prix de revente :" , "20 cols")
+    .addField("Prix de revente :" , "16 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -25241,7 +25288,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de taupe :" , "C'est une peau basique que vous trouvez sur les taupes en chassant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -25273,7 +25320,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de renard :" , "C'est un coeur basique que vous trouvez sur les renards dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "15 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "3 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion faible de soin")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25289,7 +25336,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de sanglier :" , "C'est un coeur basique que vous trouvez sur les sangliers dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "15 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "3 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion faible de soin")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25305,7 +25352,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de chien :" , "C'est un coeur basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "15 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "3 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion faible de soin")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25321,7 +25368,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de lapin :" , "C'est un coeur basique que vous trouvez sur les lapins en chassant dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "15 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "3 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion faible de soin")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25337,7 +25384,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de lapin géant :" , "C'est un coeur étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
-    .addField("Prix de revente :" , "15 cols")
+    .addField("Prix de revente :" , "12 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion légère de soin\n=Parchemin de poison faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25353,7 +25400,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de loup :" , "C'est un coeur basique que vous trouvez sur les loups dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "30 cols")
-    .addField("Prix de revente :" , "7 cols")
+    .addField("Prix de revente :" , "6 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc\n=Bijoux rouillés\n=Potion légère de soin\n=Parchemin de poison faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25369,7 +25416,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de loup de sang :" , "C'est un coeur étrange que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "120 cols")
-    .addField("Prix de revente :" , "30 cols")
+    .addField("Prix de revente :" , "24 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc\n=Potion légère de soin\n=Parchemin de poison faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25385,7 +25432,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de taupe :" , "C'est un coeur basique que vous trouvez sur les taupes en chassant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "30 cols")
-    .addField("Prix de revente :" , "7 cols")
+    .addField("Prix de revente :" , "6 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc\n=Bijoux rouillés\n=Potion légère de soin")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25417,7 +25464,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de renard :" , "C'est un oeil basique que vous trouvez sur les renards dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de force\n=Potion faible de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25433,7 +25480,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de sanglier :" , "C'est un oeil basique que vous trouvez sur les sangliers dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de force\n=Potion faible de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25464,8 +25511,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oeil de lapin :" , "C'est un oeil basique que vous trouvez sur les lapins en chassant dans les plaines du palier 1 !")
-    .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix d'achat :" , "15 cols")
+    .addField("Prix de revente :" , "3 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de force\n=Potion faible de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25481,7 +25528,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de lapin géant :" , "C'est un oeil étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "80 cols")
-    .addField("Prix de revente :" , "20 cols")
+    .addField("Prix de revente :" , "16 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25497,7 +25544,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de loup :" , "C'est un oeil basique que vous trouvez sur les loups dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "10 cols")
+    .addField("Prix de revente :" , "8 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25512,8 +25559,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oeil de taupe :" , "C'est un oeil basique que vous trouvez sur les taupes en chassant dans la forêt du palier 1 !")
-    .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "10 cols")
+    .addField("Prix d'achat :" , "30 cols")
+    .addField("Prix de revente :" , "6 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25545,7 +25592,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de loup de sang :" , "C'est un oeil basique que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "160 cols")
-    .addField("Prix de revente :" , "40 cols")
+    .addField("Prix de revente :" , "32 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25560,8 +25607,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oreille de lapin géant :" , "C'est une oreille rare que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "150 cols")
+    .addField("Prix d'achat :" , "100 cols")
+    .addField("Prix de revente :" , "20 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
     .setImage("https://i.pinimg.com/736x/d2/61/db/d261db083d29d647989bc5ff1c7f8ea3--baby-ballet-evan.jpg")
     .setTimestamp()
@@ -25589,8 +25636,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oreille de kobolt :" , "C'est une oreille rare que vous trouvez sur les kobolts du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "20 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt\n=Ragoût de kobolt supérieur")
     .setImage("http://wiki-dofus.eu/_images/4/44/OreilleKanigrou.png")
     .setTimestamp()
@@ -25607,8 +25654,8 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Croc de loup de sang :" , "C'est un croc rare que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
-      .addField("Prix d'achat :" , "100 cols")
-      .addField("Prix de revente :" , "25 cols")
+      .addField("Prix d'achat :" , "200 cols")
+      .addField("Prix de revente :" , "40 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun crafts.")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
@@ -25620,7 +25667,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Croc de loup :" , "C'est un croc rare que vous trouvez sur les loups dans la forêt du palier 1 !")
       .addField("Prix d'achat :" , "100 cols")
-      .addField("Prix de revente :" , "25 cols")
+      .addField("Prix de revente :" , "20 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
@@ -25649,8 +25696,8 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Dent de kobolt :" , "C'est une dent rare que vous trouvez sur les kobolts dans la montagne et la grotte du palier 1 !")
-      .addField("Prix d'achat :" , "X cols")
-      .addField("Prix de revente :" , "X cols")
+      .addField("Prix d'achat :" , "60 cols")
+      .addField("Prix de revente :" , "12 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
@@ -25667,7 +25714,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Gelatine :" , "C'est une gelatine basique que vous trouvez sur les slimes dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
     .setImage("https://png.icons8.com/color/1600/jelly.png")
     .setTimestamp()
@@ -25683,7 +25730,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Pierre de poison faible :" , "C'est une pierre étrange que vous trouvez sur les slimes dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "50 cols")
-    .addField("Prix de revente :" , "12 cols")
+    .addField("Prix de revente :" , "10 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de poison faible")
     .setImage("https://thumbs.dreamstime.com/b/ic-ne-naturelle-verte-de-minerais-dans-le-style-de-bande-dessin%C3%A9e-d-isolement-sur-le-fond-blanc-minerais-et-actions-pr%C3%A9cieux-de-85611087.jpg")
     .setTimestamp()
@@ -25715,7 +25762,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Bois de frêne médiocre :" , "C'est un bois basique que vous trouvez dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes basiques")
     .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
     .setTimestamp()
@@ -25763,7 +25810,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Cuivre médiocre :" , "C'est un minerai basique que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements rouillés\n=Bijoux rouillés\n=Cape endommagée\n=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes basiques\n=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -25779,7 +25826,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Cuivre commun :" , "C'est un minerai commun que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "10 cols")
+    .addField("Prix de revente :" , "8 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -25827,7 +25874,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Estragon :" , "C'est une herbe basique que vous trouvez en cueillant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de taupe\n=Ragoût de loup\n=Ragoût de loup de sang")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -25891,7 +25938,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Herbe médicinale :" , "C'est une herbe basique que vous trouvez en cueillant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de soin\n=Potion légère de force\n=Potion légère de défense")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -26095,8 +26142,8 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Echantillon de kobolt :" , "C'est un prélèvement d'échantillon de Kobolt du palier 1 !")
-      .addField("Prix d'achat :" , "X cols")
-      .addField("Prix de revente :" , "X cols")
+      .addField("Prix d'achat :" , "40 cols")
+      .addField("Prix de revente :" , "8 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense")
       .setImage("https://img.freepik.com/icone-gratis/campione-di-sangue_318-137349.jpg?size=338&ext=jpg")
       .setTimestamp()
@@ -26616,57 +26663,70 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 1")) {
-    message.channel.send("```Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Viande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Viande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Viande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Viande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Viande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Viande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Peau de lapin :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+    message.channel.send("```Viande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
                             "Peau de renard :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Peau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Peau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Peau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Peau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Peau de loup :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
-                            "Coeur de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
                             "Coeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Coeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Coeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Coeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
-                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
-                            "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 24 cols]\n\n" +
-                            "Oeil de lapin :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
                             "Oeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Oeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Viande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Peau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
                             "Oeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Viande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Peau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Coeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Oeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Viande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Peau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Coeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
                             "Oeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
+                            "Oreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Persil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Herbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Baie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Peau de lapin :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Coeur de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Oeil de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 2```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 2")) {
-    message.channel.send("```Oeil de taupe :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+    message.channel.send("```Viande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de loup :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
                             "Oeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 32 cols]\n\n" +
+                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
+                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
                             "Gelatine :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Oreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
-                            "Croc de loup :\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
                             "Pierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 10 cols]\n\n" +
+                            "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
+                            "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 24 cols]\n\n" +
+                            "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 32 cols]\n\n" +
+                            "Croc de loup de sang:\nCoûts : [Achat : 200 cols] [Revente : 40 cols]\n\n" +
+                            "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Viande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Coeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
+                            "Oeil de taupe :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
                             "Cuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
                             "Cuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
                             "Bois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
                             "Bois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Persil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Herbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Baie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Suite en écrivant :\n=Liste des matériaux 3```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux 3")) {
+    message.channel.send("```Oreille de kobolt :\nCoûts :  [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Echantillon de kobolt :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Dent de kobolt :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Oreille de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Echantillon de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+                            "Dent de kobolt géant rouge:\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
                             "Basilic : \nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
                             "Plantrus médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
                             "Plantrus commun :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
@@ -26678,15 +26738,7 @@ bot.on('message', message => {
                             "Viande de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
                             "Peau de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
                             "Coeur de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Oeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Oreille de kobolt :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Suite en écrivant :\n=Liste des matériaux 3```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 3")) {
-    message.channel.send("```Echantillon de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nDent de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nOreille de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nEchantillon de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nDent de kobolt géant rouge:\nCoûts : [Achat : X cols] [Revente : X cols]```")
+                            "Oeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +```")
   }
 }) ;
 
