@@ -5578,41 +5578,6 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(2).join(" : ");
-      const B = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
-      const C = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
-      const D = (Math.floor((degats*0.82)*Math.random()+1*(degats*0.5)))
-      const A = B+C+D
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Vorpal strike :" , ":cyclone: Votre compétence 'Vorpal strike' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup horizontal rapide inflige `" +B+ "` points de dégâts, le deuxième coup horizontal rapide inflige `" +C+ "` points de dégâts et le troisième coup horizontal rapide inflige `" +D+ "` points de dégâts !")
-      .setImage("https://gifer.com/i/8Z1S.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+11);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+11);
-    }, 3600000);
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Voorpal strike")) {
-    if (/*talkedRecently.has(message.author.id+11)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
       const premier = Math.floor(degats * 0.5 * Math.random() + (degats * 0.5))
       const deuxieme = Math.floor(degats * 0.6 * Math.random() + (degats * 0.6))
       const troisieme = Math.floor(degats * 0.7 * Math.random() + (degats * 0.7))
@@ -5652,38 +5617,6 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*2.5)*Math.random()+1*(degats*1.5)))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Rage spike :" , ":cyclone: Votre compétence 'Rage spike' inflige `" +A+ "` points de dégâts !\n\nCette compétence empêche une tentative de parade !")
-      .setImage("https://i.pinimg.com/originals/ea/38/ec/ea38ec9fc2bf709adeed3624c9d08be3.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+15);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+15);
-    }, 3600000);
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Raage spike")) {
-    if (/*talkedRecently.has(message.author.id+15)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
       const degat = Math.floor(degats * 1.6 * Math.random() + (degats * 1.6))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -5706,51 +5639,6 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Cyclone")) {
     if (talkedRecently.has(message.author.id+1)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const B = (Math.floor(100)*Math.random()+1)
-      const tours = (Math.floor((3)*Math.random()+1))
-      const tourss = (Math.floor((3)*Math.random()+1))
-      const cibles = (Math.floor((5)*Math.random()+1))
-      const cibless = (Math.floor((3)*Math.random()+1))
-      if(B <= 25){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `" +cibless+ "` ennemis pendant `" +tourss+ "` tours, empêchant de faire leur action défensive !")
-        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 26){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Cyclone :" , ":cyclone: Votre compétence 'Cyclone' étourdis `" +cibles+ "` ennemis pendant `" +tours+ "` tours, empêchant de faire leur action défensive !")
-        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+1);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+1);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cyyclone")) {
-    if (/*talkedRecently.has(message.author.id+1)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5809,44 +5697,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Tourbillon")) {
     if (talkedRecently.has(message.author.id+12)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(1).join(" : ");
-      const B = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
-      const C = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
-      const D = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
-      const E = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
-      const F = (Math.floor((degats*0.25)*Math.random()+1*(degats*0.17)))
-      const I = (Math.floor((3)*Math.random()+1))
-      const A = B+C+D+E+F
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Tourbillon :" , ":cyclone: Votre compétence 'Tourbillon' inflige `" +A+ "` points de dégâts au total à `" +I+ "` ennemis !\n\nVotre premier coup circulaire inflige `" +B+ "` points de dégâts, le deuxième coup circulaire inflige `" +C+ "` points de dégâts, le troisième coup circulaire inflige `" +D+ "` points de dégâts, le quatrième coup circulaire inflige `" +E+ "` points de dégâts et le cinquième coup circulaire inflige `" +F+ "` points de dégâts !")
-      .setImage("https://steamusercontent-a.akamaihd.net/ugc/267218898430870822/1D778F3A420230BAEEDBC727AAEED63C177F2701/")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+12);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+12);
-    }, 3600000);
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Toourbillon")) {
-    if (/*talkedRecently.has(message.author.id+12)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -5947,48 +5797,6 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(2).join(" : ");
-      const B = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
-      const C = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
-      const D = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
-      const E = (Math.floor((degats*0.62)*Math.random()+1*(degats*0.36)))
-      const A = B+C+D+E
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Quadruple pain :" , ":cyclone: Votre compétence 'Quadruple pain' inflige `" +A+ "` points de dégâts au total !\n\nVotre premier coup d'estoc inflige `" +B+ "` points de dégâts, le deuxième coup d'estoc inflige `" +C+ "` points de dégâts, le troisième coup d'estoc inflige `" +D+ "` points de dégâts et le quatrième coup d'estoc inflige `" +E+ "` points de dégâts !")
-
-      .addField("Vous réussissez votre compétence 'Quadruple pain' qui inflige :" , A+ " points de dégâts")
-      .addField("Votre premier coup d'estoc inflige :" , B+ " points de dégâts")
-      .addField("Votre deuxième coup d'estoc inflige :" , C+ " points de dégâts")
-      .addField("Votre troisième coup d'estoc inflige :" , D+ " points de dégâts")
-      .addField("Votre quatrième coup d'estoc inflige :" , E+ " points de dégâts")
-      .setImage("https://pa1.narvii.com/6615/6cc6c062803a1bb71b4ee2e6838bf948a980ee1e_hq.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+16);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+16);
-    }, 3600000);
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Quuadruple pain")) {
-    if (/*talkedRecently.has(message.author.id+16)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
       const premier = Math.floor(degats * 0.3 * Math.random() + (degats * 0.3))
       const deuxieme = Math.floor(degats * 0.4 * Math.random() + (degats * 0.4))
       const troisieme = Math.floor(degats * 0.5 * Math.random() + (degats * 0.5))
@@ -6026,52 +5834,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Lightning fall")) {
     if (talkedRecently.has(message.author.id+7)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((2)*Math.random()+1))
-      if(B <= 65){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" +A+ "` points de dégâts, mais ne paralyse pas l'ennemis !")
-        .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 66){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Lightning fall :" , ":cyclone: Votre compétence 'Lightning fall' inflige `" +A+ "` points de dégâts, et paralyse l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque ou son action défensive !")
-        .setImage("https://media.rbl.ms/image?u=%2Ffiles%2F2015%2F10%2F02%2F6357942553093091981514644889_Kirito.gif&ho=http%3A%2F%2Fcdn1.theodysseyonline.com&s=715&h=d56085b666d9a41f809b524c9bf67201b2a5dde3b2d398969885e397009f65f0&size=980x&c=3843292609")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+7);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+7);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Liightning fall")) {
-    if (/*talkedRecently.has(message.author.id+7)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6131,53 +5893,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Deadly sins")) {
     if (talkedRecently.has(message.author.id+8)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((2)*Math.random()+1))
-      const D = (Math.floor((degats/2)*Math.random()+1*(degats/2)))
-      if(B <= 50){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, mais n'empoisonne pas l'ennemis !")
-        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 51){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Deadly sins :" , ":cyclone: Votre compétence 'Deadly sins' inflige `" +A+ "` points de dégâts, et empoisonne l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du poison !")
-        .setImage("https://lh3.googleusercontent.com/-H3A7mzkXabA/VUZgiS6iVJI/AAAAAAAABZ8/TOKkKzfOuhE/w500-h281-n/02.05.15%2B-%2B1")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+8);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+8);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Deeadly sins")) {
-    if (/*talkedRecently.has(message.author.id+8)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6253,38 +5968,6 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats*2.5)*Math.random()+1*(degats*1.5)))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Vertical arc :" , ":cyclone: Votre compétence 'Vertical arc' inflige `" +A+ "` points de dégâts !\n\nCette compétence empêche une tentative de blocage !")
-      .setImage("https://media.giphy.com/media/108rdBZBYAc7bq/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+14);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+14);
-    }, 3600000);
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Veertical arc")) {
-    if (/*talkedRecently.has(message.author.id+14)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
       const degat = Math.floor(degats * 1.6 * Math.random() + (degats * 1.6))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -6309,52 +5992,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Burning slash")) {
     if (talkedRecently.has(message.author.id+9)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/1.5)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((3)*Math.random()+1))
-      const D = (Math.floor((degats/2.5)*Math.random()+1*(degats/2.5)))
-      if(B <= 50){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, mais n'enflamme pas l'ennemis !")
-        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 51){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Burning slash :" , ":cyclone: Votre compétence 'Burning slash' inflige `" +A+ "` points de dégâts, et enflamme l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du feu !")                                   .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+9);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+9);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Buurning slash")) {
-    if (/*talkedRecently.has(message.author.id+9)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6429,49 +6066,6 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const B = (Math.floor(100)*Math.random()+1)
-      const tours = (Math.floor((3)*Math.random()+2))
-      const tourss = (Math.floor((2)*Math.random()+1))
-      if(B <= 25){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `" +tourss+ "` tours, l'obligeant à vous obéir !")
-        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 26){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `" +tours+ "` tours, l'obligeant à vous obéir !")
-        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+2);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+2);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Soonic leap")) {
-    if (/*talkedRecently.has(message.author.id+2)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
       const roll = (Math.floor(100)*Math.random()+1)
       if (roll <= 80){
         const embed = new Discord.RichEmbed()
@@ -6518,41 +6112,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Treble scythe")) {
     if (talkedRecently.has(message.author.id+13)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
-      const B = (Math.floor((degats*0.67)*Math.random()+1*(degats*0.33)))
-      const C = (Math.floor((degats*0.67)*Math.random()+1*(degats*0.33)))
-      const D = (Math.floor((3)*Math.random()+1))
-      const A = B+C
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Treble scythe :" , ":cyclone: Votre compétence 'Treble scythe' inflige `" +A+ "` points de dégâts au total à `" +D+ "` ennemis !\n\nVotre premier coup en avant inflige `" +B+ "` points de dégâts et le deuxième coup en avant inflige `" +C+ "` points de dégâts !")
-      .setImage("https://steamusercontent-a.akamaihd.net/ugc/263835706284885987/3BF2E037D252C1B99F2C1116FDCDBABE8BBDAF2E/")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+13);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+13);
-    }, 3600000);
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Trreble scythe")) {
-    if (/*talkedRecently.has(message.author.id+13)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6632,52 +6191,6 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((3)*Math.random()+1))
-      if(B <= 50){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Frost strike :" , ":cyclone: Votre compétence 'Frost strike' inflige `" +A+ "` points de dégâts, mais ne gèle pas l'ennemis !")
-        .setImage("https://i.gifer.com/BHNt.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 51){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Frost strike :" , ":cyclone: Votre compétence 'Frost strike' inflige `" +A+ "` points de dégâts, et gèle l'ennemis pendant `" +C+ "` tours, empêchant de faire son attaque !")
-        .setImage("https://i.gifer.com/BHNt.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+4);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+4);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Frrost strike")) {
-    if (/*talkedRecently.has(message.author.id+4)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
       const degat = Math.floor(degats * 0.5 * Math.random() + (degats * 1.3))
       const roll = Math.floor(100 * Math.random() + 1)
       const tours = Math.floor(2 * Math.random() + 1)
@@ -6729,52 +6242,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Sleeping silence")) {
     if (talkedRecently.has(message.author.id+6)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((3)*Math.random()+1))
-      if(B <= 50){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, mais n'endort pas l'ennemis !")
-        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 51){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" +A+ "` points de dégâts, et endors l'ennemis pendant `" +C+ "` tours, empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup !")
-        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+6);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+6);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Slleeping silence")) {
-    if (/*talkedRecently.has(message.author.id+6)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6866,52 +6333,6 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats/1.25)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((3)*Math.random()+1))
-      if(B <= 50){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, mais n'étourdis pas l'ennemis !")
-        .setImage("https://orig00.deviantart.net/beec/f/2014/360/3/3/sao_kirito_vs_heathcliff_gif_by_mooeybear2001-d8bdqhf.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 51){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Furious rush :" , ":cyclone: Votre compétence 'Furious rush' inflige `" +A+ "` points de dégâts, et étourdis l'ennemis pendant `" +C+ "` tours, empêchant de faire son action défensive !")
-        .setImage("https://orig00.deviantart.net/beec/f/2014/360/3/3/sao_kirito_vs_heathcliff_gif_by_mooeybear2001-d8bdqhf.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+3);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+3);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fuurious rush")) {
-    if (/*talkedRecently.has(message.author.id+3)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
       const degat = Math.floor(degats * Math.random() + (degats * 1.5))
       const roll = Math.floor(100 * Math.random() + 1)
       if(roll <= 80){
@@ -6964,55 +6385,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Crucifixion")) {
     if (talkedRecently.has(message.author.id+10)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(1).join(" : ");
-      const premier = (Math.floor((degats/3)*Math.random()+1*(degats/2)))
-      const deuxième = (Math.floor((degats/3)*Math.random()+1*(degats/2)))
-      const A = premier+deuxième
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((5)*Math.random()+1))
-      const D = (Math.floor((degats/3)*Math.random()+1*(degats/3)))
-      if(B <= 50){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, mais ne saigne pas l'ennemis !\n\nVotre premier coup horizontal rapide inflige `" +premier+ "` points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
-        .setImage("https://data.whicdn.com/images/132920508/original.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      if(B >= 51){
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" +A+ "` points de dégâts au total, et fait saigner l'ennemis pendant `" +C+ "` tours, infligeant `" +D+ "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\nVotre premier coup horizontal rapide inflige `" +premier+ "` points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
-        .setImage("https://data.whicdn.com/images/132920508/original.gif")
-        .setTimestamp()
-        message.channel.send({embed})
-      }
-      talkedRecently.add(message.author.id+10);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+10);
-      }, 3600000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Crrucifixion")) {
-    if (/*talkedRecently.has(message.author.id+10)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -7083,40 +6455,6 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Blood insanity")) {
     if (talkedRecently.has(message.author.id+5)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let degats = args.slice(2).join(" : ");
-      const A = (Math.floor((degats)*Math.random()+1*(degats)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((3)*Math.random()+1))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" +A+ "` points de dégâts, mais vos dégâts seront doublés pendant `" +C+ "` tours !")
-      .setImage("https://media.giphy.com/media/6noApitdXGOtO/giphy.gif")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+5);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+5);
-    }, 3600000);
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bllood insanity")) {
-    if (/*talkedRecently.has(message.author.id+5)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
