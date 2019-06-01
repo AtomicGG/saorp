@@ -26793,10 +26793,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 4")) {
-    message.channel.send("```Viande de chiant errant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Peau de chiant errant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Oeil de chiant errant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
-                            "Coeur de chiant errant :\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+    message.channel.send("```Viande de chien errant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
+                            "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
                             "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
                             "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 24 cols]\n\n" +
                             "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
