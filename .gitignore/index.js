@@ -10625,13 +10625,12 @@ bot.on('message', message => {
     let Coeur = 0
     let Oeufs = 0
     let cols = 0
-    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 1
-    const dif = tMob - tJoueur
-    const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 5) / 10
-    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    const bonus = 0;
+    const nivMob = 1;
+    const controle = lvl - nivMob
+    const borneSup = 11 - controle
+    const roll = Math.floor(borneSup * Math.random() + 5);
+    let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
@@ -10679,13 +10678,12 @@ bot.on('message', message => {
     let Coeur = 0
     let Oeufs = 0
     let cols = 0
-    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 1
-    const dif = tMob - tJoueur
-    const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 5) / 10
-    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    const bonus = 0;
+    const nivMob = 1;
+    const controle = lvl - nivMob
+    const borneSup = 11 - controle
+    const roll = Math.floor(borneSup * Math.random() + 5);
+    let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
@@ -10733,13 +10731,12 @@ bot.on('message', message => {
     let Coeur = 0
     let Oeufs = 0
     let cols = 0
-    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 1
-    const dif = tMob - tJoueur
-    const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 5) / 10
-    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    const bonus = 0;
+    const nivMob = 1;
+    const controle = lvl - nivMob
+    const borneSup = 11 - controle
+    const roll = Math.floor(borneSup * Math.random() + 5);
+    let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
@@ -10789,13 +10786,12 @@ bot.on('message', message => {
     let ragoutRenard = 0
     let ragoutLapin = 0
     let cols = 0
-    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 1
-    const dif = tMob - tJoueur
-    const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 10) / 10
-    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    const bonus = 0;
+    const nivMob = 2;
+    const controle = lvl - nivMob
+    const borneSup = 11 - controle
+    const roll = Math.floor(borneSup * Math.random() + 5);
+    let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     if(nbrPersonne == 1) {
       stuffPeauArrache = Math.floor((2 - 0.90) * Math.random())
       bijouxAnimal = Math.floor((2 - 0.98) * Math.random())
@@ -10850,13 +10846,12 @@ bot.on('message', message => {
     let Oreille = 0
     let Oeufs = 0
     let cols = 0
-    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 1
-    const dif = tMob - tJoueur
-    const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 15) / 10
-    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    const bonus = 0;
+    const nivMob = 3;
+    const controle = lvl - nivMob
+    const borneSup = 11 - controle
+    const roll = Math.floor(borneSup * Math.random() + 5);
+    let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
@@ -12474,10 +12469,6 @@ bot.on('message', message => {
     }
   }
 }) ;
-
-// Forêt | Monstres | Récompenses | MAJ
-
-
 
 // Forêt | Métiers
 
@@ -16034,7 +16025,6 @@ bot.on('message', message => {
   }
 })
 
-
 bot.on('message', message => {
   if (message.content === (prefix) + "Kobolt géant rouge"){
     const embed = new Discord.RichEmbed()
@@ -16078,7 +16068,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt pilion :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
-    .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
+    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ???")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt pilion attaque`")
     .addField(":shield: Lorsque le kobolt pilion reçoit un coup :" , ":shield: `=Kobolt pilion défense : [Points de dégâts de votre coup]`")
@@ -25951,7 +25941,7 @@ bot.on('message', message => {
       .addField("Dent de kobolt pilion :" , "C'est une dent rare que vous trouvez sur les kobolts pilion dans la grotte du palier 1 !")
       .addField("Prix d'achat :" , "140 cols")
       .addField("Prix de revente :" , "28 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold\n=Armes de kobold\n=Armes de kobolt supérieures\n=Equipements de kobolt supérieurs")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold\n=Armes de kobold\n=Armes de kobolt supérieures\n=Equipement de kobolt supérieures")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -25976,7 +25966,7 @@ bot.on('message', message => {
         .addField("Dent de kobolt :" , "C'est une dent rare que vous trouvez sur les kobolts dans la montagne et la grotte du palier 1 !")
         .addField("Prix d'achat :" , "60 cols")
         .addField("Prix de revente :" , "12 cols")
-        .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold\n=Armes de kobold\n=Armes de kobolt supérieures\n=Equipements de kobolt supérieurs")
+        .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt")
         .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -26090,7 +26080,7 @@ bot.on('message', message => {
     .addField("Cuivre médiocre :" , "C'est un minerai basique que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
     .addField("Prix de revente :" , "4 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements rouillés\n=Bijoux rouillés\n=Cape endommagée\n=Equipements de kobolt\n=Bijoux de kobolt\n=Armes basiques\n=Armes de kobolt)
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements rouillés\n=Bijoux rouillés\n=Cape endommagée\n=Equipements de kobolt\n=Bijoux de kobolt\n=Armes basiques\n=Armes de kobolt")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26106,7 +26096,7 @@ bot.on('message', message => {
     .addField("Cuivre commun :" , "C'est un minerai commun que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
     .addField("Prix de revente :" , "8 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Armes de kobolt")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26338,7 +26328,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plan d'arme kobolt")) {
+  if (message.content.startsWith(prefix + "Plan d'arme  kobolt")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
