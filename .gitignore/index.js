@@ -615,130 +615,6 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":crossed_swords: Pour effectuer un coup normal :" , ":crossed_swords: `=Coup normal simple : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup normal amélioré : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup normal supérieur : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup normal suprême : [Vos dégâts]`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup précis :" , ":crossed_swords: `=Coup précis simple : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup précis amélioré : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup précis supérieur : [Vos dégâts]`\n" +
-                                                                   ":crossed_swords: `=Coup précis suprême : [Vos dégâts]`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup d'estoc :" , ":crossed_swords: `=Coup d'estoc simple : [Vos dégâts]`\n" +
-                                                                    ":crossed_swords: `=Coup d'estoc amélioré : [Vos dégâts]`\n" +
-                                                                    ":crossed_swords: `=Coup d'estoc supérieur : [Vos dégâts]`\n" +
-                                                                    ":crossed_swords: `=Coup d'estoc suprême : [Vos dégâts]`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup provocateur :" , ":crossed_swords: `=Coup provocateur simple : [Vos dégâts]`\n" +
-                                                                        ":crossed_swords: `=Coup provocateur amélioré : [Vos dégâts]`\n" +
-                                                                        ":crossed_swords: `=Coup provocateur supérieur : [Vos dégâts]`\n" +
-                                                                        ":crossed_swords: `=Coup provocateur suprême : [Vos dégâts]`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup circulaire :" , ":crossed_swords: `=Coup circulaire simple : [Vos dégâts]`\n" +
-                                                                       ":crossed_swords: `=Coup circulaire amélioré : [Vos dégâts]`\n" +
-                                                                       ":crossed_swords: `=Coup circulaire supérieur : [Vos dégâts]`\n" +
-                                                                       ":crossed_swords: `=Coup circulaire suprême : [Vos dégâts]`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un cri de provocation :" , ":crossed_swords: `=Cri de provocation simple`\n" +
-                                                                          ":crossed_swords: `=Cri de provocation amélioré`\n" +
-                                                                          ":crossed_swords: `=Cri de provocation supérieur`\n" +
-                                                                          ":crossed_swords: `=Cri de provocation suprême`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un combo :" , ":crossed_swords: `=Combo simple : [Vos dégâts]`\n" +
-                                                             ":crossed_swords: `=Combo amélioré : [Vos dégâts]`\n" +
-                                                             ":crossed_swords: `=Combo supérieur : [Vos dégâts]`\n" +
-                                                             ":crossed_swords: `=Combo suprême : [Vos dégâts]`")
-    .addBlankField(true)
-    .addField(":shield: Pour effectuer une esquive :" , ":shield: `=Esquive simple : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                        ":shield: `=Esquive améliorée : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                        ":shield: `=Esquive supérieure: [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                        ":shield: `=Esquive suprême : [Dégâts de l'attaque de l'ennemis]`")
-    .addBlankField(true)
-    .addField(":shield: Pour effectuer un blocage :" , ":shield: `=Blocage simple : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                       ":shield: `=Blocage amélioré : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                       ":shield: `=Blocage supérieur : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                       ":shield: `=Blocage suprême : [Dégâts de l'attaque de l'ennemis]`")
-    .addBlankField(true)
-    .addField(":book: Pour savoir ce que vous débloquez selon le niveau :" , ":book: `=Coups et défenses apprentissage`")
-    .addBlankField(true)
-    .addField(":book: Pour comprendre à quoi sert chaques coups et défenses :" , ":book: `=Coups et défenses descriptions`")
-    .addBlankField(true)
-    .addField(":crossed_swords:Pour la suite des coups et défenses possibles :" , "`=Coups et défenses 2`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Coups et défenses 2"){
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":shield: Pour effectuer une parade :" , ":shield: `=Parade simple : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                       ":shield: `=Parade améliorée : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                       ":shield: `=Parade supérieure: [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                       ":shield: `=Parade suprême : [Dégâts de l'attaque de l'ennemis]`")
-    .addBlankField(true)
-    .addField(":shield: Pour effectuer une interception [Une seul interception peux se faire sur la même personne pendant une attaque] :" , ":shield: `=Interception simple : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                                                                                                            ":shield: `=Interception améliorée : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                                                                                                            ":shield: `=Interception supérieure : [Dégâts de l'attaque de l'ennemis]`\n" +
-                                                                                                                                            ":shield: `=Interception suprême : [Dégâts de l'attaque de l'ennemis]`")
-    .addBlankField(true)
-    .addField(":shield: Pour effectuer une fuite [Utilisable que pendant votre tour] :" , ":shield: `=Fuite simple`\n" +
-                                                                                          ":shield: `=Fuite améliorée`\n" +
-                                                                                          ":shield: `=Fuite supérieure`\n" +
-                                                                                          ":shield: `=Fuite suprême`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup sauté :" , ":shield: `=Coup sauté simple : [Vos dégâts]`\n" +
-                                                                  ":shield: `=Coup sauté amélioré : [Vos dégâts]`\n" +
-                                                                  ":shield: `=Coup sauté supérieur : [Vos dégâts]`\n" +
-                                                                  ":shield: `=Coup sauté suprême : [Vos dégâts]`")
-    .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup perce armure :" , ":shield: `=Coup perce armure simple : [Vos dégâts]`\n" +
-                                                                         ":shield: `=Coup perce armure amélioré : [Vos dégâts]`\n" +
-                                                                         ":shield: `=Coup perce armure supérieur : [Vos dégâts]`\n" +
-                                                                         ":shield: `=Coup perce armure suprême : [Vos dégâts]`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Coups et défenses descriptions"){
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\n" +
-                                                      "Le coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\n" +
-                                                      "Le coup précis est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\n" +
-                                                      "Le combo est un enchaînement de coups qui inflige énormément de dégâts mais ayant une chance de toucher très faible\n\n" +
-                                                      "Le coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\n" +
-                                                      "Le coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\n" +
-                                                      "Le coup sauté est un coup ayant une chance de faire tomber la cible\n\n" +
-                                                      "Le cri de provocation sert à provoquer les ennemis\n\n" +
-                                                      "L'esquive permet d'esquiver un coup ou de le prendre\n\n" +
-                                                      "Le blocage sert à réduire les dégâts\n\n" +
-                                                      "La parade permet de sois prendre plus de dégâts, sois de pouvoir lui en infliger\n\n" +
-                                                      "L'interception permet de prendre une partie des dégâts d'une attaque à la place d'un allié")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-// Coups & Défenses | Menus  | MAJ
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Ccoups et défenses"){
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .addField(":crossed_swords: Pour effectuer un coup normal :" , ":crossed_swords: `=Coup normal : [Vos dégâts]`\n" +
                                                                    ":crossed_swords: `=Coup normal +1 : [Vos dégâts]`\n" +
                                                                    ":crossed_swords: `=Coup normal +2 : [Vos dégâts]`\n" +
@@ -796,7 +672,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Ccoups et défenses 2"){
+  if (message.content === (prefix) + "Coups et défenses 2"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -832,7 +708,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Ccoups et défenses descriptions"){
+  if (message.content === (prefix) + "Coups et défenses descriptions"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -873,8 +749,7 @@ bot.on('message', message => {
     .addBlankField(true)
     .addField(":sparkles: Niveau requis pour effectuer une parade :" , ":sparkles: Niveau 3")
     .addBlankField(true)
-    .addField(":sparkles: Niveau requis pour effectuer un coup précis, un coup perce armure :" , ":sparkles: Niveau 4")
-    //.addField(":sparkles: Niveau requis pour effectuer un coup létal, un coup perce armure :" , ":sparkles: Niveau 4")
+    .addField(":sparkles: Niveau requis pour effectuer un coup létal, un coup perce armure :" , ":sparkles: Niveau 4")
     .addBlankField(true)
     .addField(":sparkles: Niveau requis pour effectuer un blocage :" , ":sparkles: Niveau 5")
     .addBlankField(true)
