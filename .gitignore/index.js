@@ -6421,7 +6421,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" + degat + "` points de dégâts au total, et fait saigner l'ennemis pendant `2` tours, " +
                                               "infligeant `" + saignement + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\n" +
-                                              "Votre premier coup horizontal rapide inflige `" + premier + " points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts !")
+                                              "Votre premier coup horizontal rapide inflige `" + premier + "` points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts !")
         .setImage("https://data.whicdn.com/images/132920508/original.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -6434,7 +6434,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" + degat + "` points de dégâts au total, et fait saigner l'ennemis pendant `3` tours, " +
                                               "infligeant `" + saignement + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\n" +
-                                              "Votre premier coup horizontal rapide inflige `" + premier + " points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts !\n\n" +
+                                              "Votre premier coup horizontal rapide inflige `" + premier + "` points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxieme + "` points de dégâts !\n\n" +
                                               "De plus, l'ennemi blessé est vulnérable. Pendant les 3 prochaines attaques réussies contre lui, ces dites attaques feront 0.2 dégâts supplémentaires.")
         .setImage("https://data.whicdn.com/images/132920508/original.gif")
         .setTimestamp()
@@ -6998,7 +6998,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fox défense")) {
+  if (message.content.startsWith(prefix + "Renard défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const degatSubis = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
@@ -7025,7 +7025,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Boar défense")) {
+  if (message.content.startsWith(prefix + "Sanglier défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const degatSubis = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
     const embed = new Discord.RichEmbed()
@@ -7040,7 +7040,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Dog défense")) {
+  if (message.content.startsWith(prefix + "Chien défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const degatSubis = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const parade = Math.floor(2 * Math.random() + 2)
@@ -7068,7 +7068,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bangit débutant défense")) {
+  if (message.content.startsWith(prefix + "Bandit débutant défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const degatSubis = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
@@ -7095,7 +7095,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Giant bunny défense")) {
+  if (message.content.startsWith(prefix + "Lapin géant défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const degatSubis = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
     const degatSubisReduit = Math.floor((Dégâts * 0.2 + 1) * Math.random() + (Dégâts * 0.1))
@@ -7123,501 +7123,8 @@ bot.on('message', message => {
 // Plaine | Monstres | Récompenses
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Renard récompenses solo")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = Math.floor(3 * Math.random())
-    const Peau = Math.floor(3 * Math.random())
-    const Oeil = Math.floor((2 - 0.75)*Math.random())
-    const Coeur = Math.floor((2 - 0.85)*Math.random())
-    const Oeufs = Math.floor((2 - 0.99) * Math.random())
-    const controle = Math.floor(15 * Math.random() + 15)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(6 * Math.random() + 5)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
-                                               ":knife: Peau de renard : " + Peau + "\n" +
-                                               ":eye: Oeil de renard : " + Oeil + "\n" +
-                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
-                                               ":knife: Peau de renard : " + Peau + "\n" +
-                                               ":eye: Oeil de renard : " + Oeil + "\n" +
-                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Renard récompenses groupe")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = Math.floor(2 * Math.random())
-    const Peau = Math.floor(2 * Math.random())
-    const Oeil = Math.floor((2 - 0.90) * Math.random())
-    const Coeur = Math.floor((2 - 0.95) * Math.random())
-    const Oeufs = Math.floor((2 - 0.99) * Math.random())
-    const controle = Math.floor(10 * Math.random() + 10)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(4 * Math.random() + 3)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
-                                               ":knife: Peau de renard : " + Peau + "\n" +
-                                               ":eye: Oeil de renard : " + Oeil + "\n" +
-                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de renard : " + Viande + "\n" +
-                                               ":knife: Peau de renard : " + Peau + "\n" +
-                                               ":eye: Oeil de renard : " + Oeil + "\n" +
-                                               ":cupid: Coeur de renard : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Sanglier récompenses solo")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = Math.floor(3 * Math.random())
-    const Peau = Math.floor(3 * Math.random())
-    const Oeil = Math.floor((2 - 0.75)*Math.random())
-    const Coeur = Math.floor((2 - 0.85)*Math.random())
-    const Oeufs = Math.floor((2 - 0.99) * Math.random())
-    const controle = Math.floor(15 * Math.random() + 15)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(6 * Math.random() + 5)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
-                                               ":knife: Peau de sanglier : " + Peau + "\n" +
-                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
-                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
-                                               ":knife: Peau de sanglier : " + Peau + "\n" +
-                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
-                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Sanglier récompenses groupe")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = Math.floor(2 * Math.random())
-    const Peau = Math.floor(2 * Math.random())
-    const Oeil = Math.floor((2 - 0.90) * Math.random())
-    const Coeur = Math.floor((2 - 0.95) * Math.random())
-    const Oeufs = Math.floor((2 - 0.99) * Math.random())
-    const controle = Math.floor(10 * Math.random() + 10)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(4 * Math.random() + 3)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
-                                               ":knife: Peau de sanglier : " + Peau + "\n" +
-                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
-                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de sanglier : " + Viande + "\n" +
-                                               ":knife: Peau de sanglier : " + Peau + "\n" +
-                                               ":eye: Oeil de sanglier : " + Oeil + "\n" +
-                                               ":cupid: Coeur de sanglier : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Chien récompenses solo")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = Math.floor(3 * Math.random())
-    const Peau = Math.floor(3 * Math.random())
-    const Oeil = Math.floor((2 - 0.75)*Math.random())
-    const Coeur = Math.floor((2 - 0.85)*Math.random())
-    const Oeufs = Math.floor((2 - 0.99) * Math.random())
-    const controle = Math.floor(15 * Math.random() + 15)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(6 * Math.random() + 5)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
-                                               ":knife: Peau de chien : " + Peau + "\n" +
-                                               ":eye: Oeil de chien : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
-                                               ":knife: Peau de chien : " + Peau + "\n" +
-                                               ":eye: Oeil de chien : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Chien récompenses groupe")) {
-    let lvl = args.slice(3).join(" : ");
-    const Viande = Math.floor(2 * Math.random())
-    const Peau = Math.floor(2 * Math.random())
-    const Oeil = Math.floor((2 - 0.90) * Math.random())
-    const Coeur = Math.floor((2 - 0.95) * Math.random())
-    const Oeufs = Math.floor((2 - 0.99) * Math.random())
-    const controle = Math.floor(10 * Math.random() + 10)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(4 * Math.random() + 3)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
-                                               ":knife: Peau de chien : " + Peau + "\n" +
-                                               ":eye: Oeil de chien : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de chien : " + Viande + "\n" +
-                                               ":knife: Peau de chien : " + Peau + "\n" +
-                                               ":eye: Oeil de chien : " + Oeil + "\n" +
-                                               ":cupid: Coeur de chien : " + Coeur + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bandit débutant récompenses solo")) {
-    let lvl = args.slice(4).join(" : ");
-    const stuffPeauArrache = Math.floor((2 - 0.80) * Math.random())
-    const bijouxAnimal = Math.floor((2 - 0.95) * Math.random())
-    const potionFaibleSoin = Math.floor((2 - 0.97) * Math.random())
-    const ragoutSanglier = Math.floor((2 - 0.97) * Math.random())
-    const ragoutChien = Math.floor((2 - 0.90) * Math.random())
-    const ragoutRenard = Math.floor((2 - 0.90) * Math.random())
-    const ragoutLapin = Math.floor((2 - 0.90) * Math.random())
-    const controle = Math.floor(18 * Math.random() + 18)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(6 * Math.random() + 5)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
-                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
-                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
-                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
-                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
-                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
-                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
-                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
-                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bandit débutant récompenses groupe")) {
-    let lvl = args.slice(4).join(" : ");
-    const stuffPeauArrache = Math.floor((2 - 0.90) * Math.random())
-    const bijouxAnimal = Math.floor((2 - 0.98) * Math.random())
-    const potionFaibleSoin = Math.floor((2 - 0.99) * Math.random())
-    const ragoutSanglier = Math.floor((2 - 0.99) * Math.random())
-    const ragoutChien = Math.floor((2 - 0.95) * Math.random())
-    const ragoutRenard = Math.floor((2 - 0.95) * Math.random())
-    const ragoutLapin = Math.floor((2 - 0.95) * Math.random())
-    const controle = Math.floor(13 * Math.random() + 13)
-    const xp = controle - (lvl * 3)
-    const cols = Math.floor(4 * Math.random() + 3)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
-                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
-                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
-                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
-                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau arraché au choix : " + stuffPeauArrache + "\n" +
-                                               ":scales: Bijoux en coeur d'animal faible au choix : " + bijouxAnimal + "\n" +
-                                               ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
-                                               ":meat_on_bone: Ragoût de sanglier : " + ragoutSanglier + "\n" +
-                                               ":meat_on_bone:  Ragoût de chien : " + ragoutChien + "\n" +
-                                               ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
-                                               ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Lapin géant récompenses solo")) {
-    let lvl = args.slice(4).join(" : ");
-    const Viande = Math.floor(3 * Math.random())
-    const Peau = Math.floor(3 * Math.random())
-    const Coeur = Math.floor((2 - 0.75) * Math.random())
-    const Oeil = Math.floor((2 - 0.85) * Math.random())
-    const Oreille = Math.floor((2 - 0.90) * Math.random())
-    const Oeufs = Math.floor((2 - 0.98) * Math.random())
-    const controle = Math.floor(20 * Math.random() + 20)
-    const xp = controle - (lvl * 4)
-    const cols = Math.floor(25 * Math.random() + 25)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
-                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
-                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
-                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
-                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
-                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
-                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
-                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
-                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : 0\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Lapin géant récompenses groupe")) {
-    let lvl = args.slice(4).join(" : ");
-    const Viande = Math.floor(2 * Math.random())
-    const Peau = Math.floor(2 * Math.random())
-    const Coeur = Math.floor((2 - 0.90) * Math.random())
-    const Oeil = Math.floor((2 - 0.95) * Math.random())
-    const Oreille = Math.floor((2 - 0.97) * Math.random())
-    const Oeufs = Math.floor((2 - 0.98) * Math.random())
-    const controle = Math.floor(15 * Math.random() + 15)
-    const xp = controle - (lvl * 4)
-    const cols = Math.floor(15 * Math.random() + 15)
-    if(xp > 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n" +
-                                               ":knife: Peau de lapin géant : " + Peau + "\n" +
-                                               ":eye: Oeil de lapin géant : " + Oeil + "\n" +
-                                               ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
-                                               ":gem: Oreille de lapin : " + Oreille + "\n" +
-                                               ":gem: Oeuf déformé : " + Oeufs + "\n" +
-                                               ":sparkles: Points d'expérience : " + xp + "\n" +
-                                               ":large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if(xp <= 0) {
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-      .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de lapin géant : " + Viande + "\n:knife: Peau de lapin géant : " + Peau + "\n:eye: Oeil de lapin géant : " + Oeil + "\n:cupid: Coeur de lapin géant : " + Coeur + "\n:gem: Oreille de lapin : " + Oreille + "\n:gem: Oeuf déformé : " + Oeufs + "\n:sparkles: Points d'expérience : 0\n:large_orange_diamond: Cols : " + cols)
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-}) ;
-
-// Plaine | Monstres | Récompenses | MAJ
-
-bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Foxy récompenses")) {
+  if (message.content.startsWith(prefix + "Renard récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -7671,7 +7178,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Boar récompenses")) {
+  if (message.content.startsWith(prefix + "Sanglier récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -7725,7 +7232,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Dog récompenses")) {
+  if (message.content.startsWith(prefix + "Chien récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -7779,7 +7286,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Bangit débutant récompenses")) {
+  if (message.content.startsWith(prefix + "Bandit débutant récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -7841,7 +7348,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Giant bunny récompenses")) {
+  if (message.content.startsWith(prefix + "Lapin géant récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
