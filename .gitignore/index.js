@@ -323,21 +323,6 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera soit un coup, soit une action défensive\n\nLes améliorations sont les suivantes :\n\n**Amélioré(e) [+5]**\n**Supérieur(e) [+10]**\n**Suprême [+15]**\n**Divin(e) [+20]**\n\nCes améliorations s'effectuent dans l'ordre, c'est à dire que si j'ai une épée à deux mains qui améliore le combo en combo supérieur et que je possède en plus une particularité qui améliore le combo, le combo supérieur devient un combo suprême, et que si quelque chose encore améliore le combo, il devient un combo divin !\n\nPour comprendre ce système encore plus facilement, comme marqué à côté des améliorations [+5/10/15/20] les améliorations se cumulent de cette manière !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-// Menus | Améliorations | MAJ
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Aaméliorations")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
     .addField("Les améliorations :" , "Lorsque vous possédez une arme que ce soit à une main ou à deux mains, elle améliorera soit un coup, soit une action défensive\n\n" +
                                       "Les améliorations sont les suivantes :\n\n" +
                                       "** [+1]**\n** [+2]**\n** [+3]**\n** [+4]**\n\n" +
