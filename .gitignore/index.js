@@ -10625,12 +10625,6 @@ bot.on('message', message => {
     let Coeur = 0
     let Oeufs = 0
     let cols = 0
-    //const bonus = 0;
-    //const nivMob = 1;
-    //const controle = lvl - nivMob
-    //const borneSup = 11 - controle
-    //const roll = Math.floor(borneSup * Math.random() + 5);
-    //let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 1
     const dif = tMob - tJoueur
@@ -10685,12 +10679,6 @@ bot.on('message', message => {
     let Coeur = 0
     let Oeufs = 0
     let cols = 0
-    //const bonus = 0;
-    //const nivMob = 1;
-    //const controle = lvl - nivMob
-    //const borneSup = 11 - controle
-    //const roll = Math.floor(borneSup * Math.random() + 5);
-    //let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 1
     const dif = tMob - tJoueur
@@ -10745,12 +10733,6 @@ bot.on('message', message => {
     let Coeur = 0
     let Oeufs = 0
     let cols = 0
-    //const bonus = 0;
-    //const nivMob = 1;
-    //const controle = lvl - nivMob
-    //const borneSup = 11 - controle
-    //const roll = Math.floor(borneSup * Math.random() + 5);
-    //let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 1
     const dif = tMob - tJoueur
@@ -10807,12 +10789,6 @@ bot.on('message', message => {
     let ragoutRenard = 0
     let ragoutLapin = 0
     let cols = 0
-    //const bonus = 0;
-    //const nivMob = 2;
-    //const controle = lvl - nivMob
-    //const borneSup = 11 - controle
-    //const roll = Math.floor(borneSup * Math.random() + 5);
-    //let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 1
     const dif = tMob - tJoueur
@@ -10874,12 +10850,6 @@ bot.on('message', message => {
     let Oreille = 0
     let Oeufs = 0
     let cols = 0
-    //const bonus = 0;
-    //const nivMob = 3;
-    //const controle = lvl - nivMob
-    //const borneSup = 11 - controle
-    //const roll = Math.floor(borneSup * Math.random() + 5);
-    //let xp = Math.round((((((-1) * Math.pow(controle, 3) / 30) - controle + 10 + bonus) * Math.sqrt(nivMob)) + roll) * (1 - Math.log(nbrPersonne) * 0.4))
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 1
     const dif = tMob - tJoueur
@@ -12504,6 +12474,10 @@ bot.on('message', message => {
     }
   }
 }) ;
+
+// Forêt | Monstres | Récompenses | MAJ
+
+
 
 // Forêt | Métiers
 
