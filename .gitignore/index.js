@@ -163,7 +163,7 @@ bot.on('message', message => {
                                            "`=Lightning fall : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":cyclone: Deadly sins" , ":cyclone: Compétence d'un coup qui inflige des dégâts pouvant empoisonner la cible, vous tenez en retrait votre arme devenant légèrement verte avant d'effectuer un coup d'estoc rapide !\n\n" +
-                                        "`=Deadly sins: [Vos dégâts]`")
+                                        "`=Deadly sins : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":cyclone: Vertical arc" , ":cyclone: Compétence d'un coup qui inflige des dégâts, vous effectuez un puissant coup vertical de bas en haut !\n\n" +
                                          "`=Vertical arc : [Vos dégâts]`")
@@ -194,7 +194,7 @@ bot.on('message', message => {
                                          "`=Frost strike : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":cyclone: Sleeping silence" , ":cyclone: Compétence d'un coup qui inflige des dégâts pouvant endormir la cible, vous effectuez un coup précis et puissant au niveau de la tête de votre cible !\n\n" +
-                                             "`=Sleeping silence: [Vos dégâts]`")
+                                             "`=Sleeping silence : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":cyclone: Furious rush" , ":cyclone: Compétence d'un coup qui inflige des dégâts pouvant étourdir la cible, vous foncez rapidement avec l'arme en avant, avant de réaliser un coup horizontal puissant !\n\n" +
                                          "`=Furious rush : [Vos dégâts]`")
@@ -5622,7 +5622,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":cyclone: Rage spike :" , ":cyclone: Votre compétence 'Rage spike' inflige `" + degat + "` points de dégâts !\n\nCette compétence empêche une tentative de parade !")
+      .addField(":cyclone: Rage spike :" , ":cyclone: Votre compétence 'Rage spike' inflige `" + degat + "` points de dégâts !\n\nCette compétence empêche une tentative d'esquive !")
       .setImage("https://i.pinimg.com/originals/ea/38/ec/ea38ec9fc2bf709adeed3624c9d08be3.gif")
       .setTimestamp()
       message.channel.send({embed})
@@ -6408,7 +6408,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField(":cyclone: Crucifixion :" , ":cyclone: Votre compétence 'Crucifixion' inflige `" + degat + "` points de dégâts au total, et fait saigner l'ennemis pendant `3` tours, " +
                                               "infligeant `" + saignement + "` points de dégâts par tour sans que l'armure puisse réduire les dégâts du saignement !\n\n" +
-                                              "Votre premier coup horizontal rapide inflige `" +premier+ "` points de dégâts et le deuxième coup horizontal rapide inflige `" +deuxième+ "` points de dégâts !")
+                                              "Votre premier coup horizontal rapide inflige `" + premier + "` points de dégâts et le deuxième coup horizontal rapide inflige `" + deuxième + "` points de dégâts !")
         .setImage("https://data.whicdn.com/images/132920508/original.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -6682,46 +6682,8 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Plaine combat")) {
-    let Z = args.slice(2).join(" : ");
+    let joueurs = args.slice(2).join(" : ");
     if (talkedRecently.has(message.author.id+1000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
-      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const D = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor((((Z*1)+1)*(0.90))*Math.random()+0))
-      const F = (Math.floor((((Z*1)+1)*(0.60))*Math.random()+0))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n:crossed_swords: Renard(s) : " +B+ "\n:crossed_swords: Sanglier(s) " +C+ "\n:crossed_swords: Chien(s) : " +D+ "\n:crossed_swords: Bandit(s) débutant(s) : " +F+ "\n:crossed_swords: Lapin(s) géant(s) : " +E)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000);
-  }
-})
-
-// Plaine | Combat | MAJ
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Plaine combat")) {
-    let joueurs = args.slice(3).join(" : ");
-    if (/*talkedRecently.has(message.author.id+1000)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6805,11 +6767,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Renard :" , ":japanese_ogre: Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
     .setImage("https://www.lpo.fr/images/actualites/2018/en_moselle_nuits_nouveau_tranquilles_renard/renard_fabrice_cahez_650_.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 25")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 20")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Renard attaque`")
     .addField(":shield: Lorsque le renard reçoit un coup :" , ":shield: `=Renard défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Renard récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Renard récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Renard récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -6825,8 +6786,7 @@ bot.on('message', message => {
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 30")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Sanglier attaque`")
     .addField(":shield: Lorsque le sanglier reçoit un coup :" , ":shield: `=Sanglier défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Sanglier récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Sanglier récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Sanglier récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -6842,8 +6802,7 @@ bot.on('message', message => {
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 15")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien attaque")
     .addField(":shield: Lorsque le chien reçoit un coup :" , ":shield: `=Chien défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Chien récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Chien récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Chien récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -6856,11 +6815,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bandit débutant :" , ":japanese_ogre: Un simple bandit n'étant pas très dangereux, il se situe dans les plaines du palier 1 !")
     .setImage("https://i.pinimg.com/originals/37/cb/69/37cb69474ab104f8ec40ca993101a042.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 60")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 40")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bandit débutant attaque`")
     .addField(":shield: Lorsque le bandit débutant reçoit un coup :" , ":shield: `=Bandit débutant défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Bandit débutant récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Bandit débutant récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois :" , ":moneybag: `=Bandit débutant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -6876,8 +6834,7 @@ bot.on('message', message => {
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 70")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lapin géant attaque`")
     .addField(":shield: Lorsque le lapin géant reçoit un coup :" , ":shield: `=Lapin géant défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Lapin géant récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Lapin géant récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Lapin géant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -6887,168 +6844,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Renard attaque")) {
-    const A = Math.floor(3 * Math.random() + 4)
-    const B = Math.floor(100 * Math.random() + 1)
-    const Z = Math.floor(3 * Math.random() + 1)
-    if (B <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (26 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le renard court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " +A+ " points de dégâts ainsi que " +Z+ " points de dégâts supplémentaires à chaques tours pendant 2 tours [L'armure ne réduit pas les dégâts de saignement]")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Sanglier attaque")) {
-    const A = (Math.floor((2)*Math.random()+3))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Sanglier :" , ":crossed_swords: Le sanglier vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " +A+ " points de dégâts et vous ne pourrez pas vous défendre ni attaquer pendant 1 tour")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Chien attaque")) {
-    const A = (Math.floor((3)*Math.random()+5))
-    const Z = (Math.floor((5)*Math.random()+8))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (26 <= B & B <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien saute et mord votre bras en serrant fort ses machoîres, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Chien :" , ":crossed_swords: Le chien s'approche de vous doucement et fait le beau, mais une fois proche de vous, il bondit et mord un point vital, il inflige " +Z+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
-    const Dégâts = 6
-    const A = (Math.floor((4)*Math.random()+5))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors sa dague et tente de foncer sur vous mais il tombe, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bandit débutant :" , ":crossed_swords: Le bandit débutant sors et serre fermement sa dague en la plantant sur vous, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Lapin géant attaque")) {
-    const A = (Math.floor((5)*Math.random()+10))
-    const Z = (Math.floor((6)*Math.random()+15))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (51 <= B & B <= 95){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bondit d'un coup sec sur vous et griffe tout votre corps en alternant entre sa patte gauche et droite, il inflige " +A+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (96 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lapin géant :" , ":crossed_swords: Le lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " +Z+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-// Plaine | Monstres | Attaques | MAJ
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fox attaque")) {
     const roll = Math.floor(100 * Math.random() + 1)
     const degat = Math.floor(2 * Math.random() + 3)
     if (roll <= 25){
@@ -7082,7 +6877,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Boar attaque")) {
+  if (message.content.startsWith(prefix + "Sanglier attaque")) {
     const degat = Math.floor(3 * Math.random() + 3)
     const degatCrit = Math.floor(3 * Math.random() + 4)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -7117,7 +6912,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Dog attaque")) {
+  if (message.content.startsWith(prefix + "Chien attaque")) {
     const degat = Math.floor(2 * Math.random() + 4)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
@@ -7141,7 +6936,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bangit débutant attaque")) {
+  if (message.content.startsWith(prefix + "Bandit débutant attaque")) {
     const degats = Math.floor(4 * Math.random() + 5)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 50){
@@ -7165,7 +6960,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Giant bunny attaque")) {
+  if (message.content.startsWith(prefix + "Lapin géant attaque")) {
     const degat = Math.floor(5 * Math.random() + 8)
     const degatCrit = Math.floor(3 * Math.random() + 13)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -7199,145 +6994,6 @@ bot.on('message', message => {
 });
 
 // Plaine | Monstres | Défenses
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Renard défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais se le prend malgré sa vitesse, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Sanglier défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Sanglier :" , ":shield: Le sanglier tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Sanglier :" , ":shield: Le sanglier recule assez pour que vous n'arrivez pas à le toucher, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Chien défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const A = (Math.floor(((Dégâts*2))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((3)*Math.random()+3))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Chien :" , ":shield: Le chien hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " +C+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bandit débutant défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*1.5))*Math.random()+(Dégâts/2)))
-    const B = (Math.floor((100)*Math.random()+1))
-    if (B <= 65){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (66 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant court rapidement en voyant votre coup, ne sachant pas vraiment faire d'esquives, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Lapin géant défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const A = (Math.floor(((Dégâts*1.25))*Math.random()+(Dégâts/3)))
-    const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((Dégâts/5)*Math.random()+1))
-    if (B <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgré ceci, vous lui infligez " +A+ " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= B){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Lapin géant :" , ":shield: Le lapin géant met ses pattes d'une manière étrange au dessus de sa tête ce qui réduit énormément les dégâts qu'il subit, vous lui infligez " +C+ " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-// Plaine | Monstres | Défenses | MAJ
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
