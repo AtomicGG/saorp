@@ -17134,8 +17134,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt pilion récompenses solo")) {
     let lvl = args.slice(4).join(" : ");
-    const oreille = Math.floor(3 * Math.random() + 2)
-    const echantillon = Math.floor((2 - 0.35) * Math.random())
+    const peau = Math.floor((2 - 0.35) * Math.random())
     const dent = Math.floor((2 - 0.55) * Math.random())
     const armeKobSupUneMain = Math.floor((2 - 0.88) * Math.random())
     const armeKobSupDeuxMains = Math.floor((2 - 0.92) * Math.random())
@@ -17153,7 +17152,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+    .addField(":moneybag: Récompenses :" , ":scales: Peau écailleuse de kobolt pilion : " + peau + "\n" +
+                                           ":scales: Dent de kobolt pilion : " + dent + "\n" +
+                                           ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
                                            ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
                                            ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
                                            ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
@@ -17170,8 +17171,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt pilion récompenses groupe")) {
     let lvl = args.slice(4).join(" : ");
-    const oreille = Math.floor(3 * Math.random() + 2)
-    const echantillon = Math.floor((2 - 0.35) * Math.random())
+    const peau = Math.floor((2 - 0.35) * Math.random())
     const dent = Math.floor((2 - 0.55) * Math.random())
     const armeKobSupUneMain = Math.floor((2 - 0.94) * Math.random())
     const armeKobSupDeuxMains = Math.floor((2 - 0.96) * Math.random())
@@ -17189,7 +17189,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
+    .addField(":moneybag: Récompenses :" , ":scales: Peau écailleuse de kobolt pilion : " + peau + "\n" +
+                                           ":scales: Dent de kobolt pilion : " + dent + "\n" +
+                                           ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
                                            ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
                                            ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
                                            ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
@@ -25197,6 +25199,22 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Peau écailleuse de kobolt pilion")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Peau écailleuse de kobolt pilion :" , "C'est une peau rare que vous trouvez sur les kobolts pilions dans les plaines du palier 1 !")
+    .addField("Prix d'achat :" , "120 cols")
+    .addField("Prix de revente :" , "24 cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+    .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Peau de renard")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -25732,6 +25750,19 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Dent de kobolt")) {
+    if (message.content.includes("pilion")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Dent de kobolt pilion :" , "C'est une dent rare que vous trouvez sur les kobolts pilion dans la grotte du palier 1 !")
+      .addField("Prix d'achat :" , "140 cols")
+      .addField("Prix de revente :" , "28 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
     if (message.content.includes("géant rouge")) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -26797,6 +26828,8 @@ bot.on('message', message => {
                             "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
                             "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
                             "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Peau écailleuse de kobolt pilion :\nCoûts : [Achat : 120 cols] [Revente : 24 cols]\n\n" +
+                            "Dent de kobolt pilion :\nCoûts : [Achat : 140 cols] [Revente : 28 cols]\n\n" +
                             "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
                             "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 24 cols]\n\n" +
                             "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
