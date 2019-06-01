@@ -10635,8 +10635,8 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
-      Oeil = Math.floor((2 - 0.75)*Math.random())
-      Coeur = Math.floor((2 - 0.85)*Math.random())
+      Oeil = Math.floor((2 - 0.75) * Math.random())
+      Coeur = Math.floor((2 - 0.85) * Math.random())
       Oeufs = Math.floor((2 - 0.99) * Math.random())
       cols = Math.floor(6 * Math.random() + 5)
     } else {
@@ -10689,8 +10689,8 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
-      Oeil = Math.floor((2 - 0.75)*Math.random())
-      Coeur = Math.floor((2 - 0.85)*Math.random())
+      Oeil = Math.floor((2 - 0.75) * Math.random())
+      Coeur = Math.floor((2 - 0.85) * Math.random())
       Oeufs = Math.floor((2 - 0.99) * Math.random())
       cols = Math.floor(6 * Math.random() + 5)
     } else {
@@ -10743,8 +10743,8 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
-      Oeil = Math.floor((2 - 0.75)*Math.random())
-      Coeur = Math.floor((2 - 0.85)*Math.random())
+      Oeil = Math.floor((2 - 0.75) * Math.random())
+      Coeur = Math.floor((2 - 0.85) * Math.random())
       Oeufs = Math.floor((2 - 0.99) * Math.random())
       cols = Math.floor(6 * Math.random() + 5)
     } else {
@@ -10860,8 +10860,8 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
       Peau = Math.floor(3 * Math.random())
-      Oeil = Math.floor((2 - 0.75)*Math.random())
-      Coeur = Math.floor((2 - 0.85)*Math.random())
+      Oeil = Math.floor((2 - 0.75) * Math.random())
+      Coeur = Math.floor((2 - 0.85) * Math.random())
       Oreille = Math.floor((2 - 0.90) * Math.random())
       Oeufs = Math.floor((2 - 0.98) * Math.random())
       cols = Math.floor(25 * Math.random() + 25)
@@ -12474,6 +12474,342 @@ bot.on('message', message => {
     }
   }
 }) ;
+
+// Forêt | Monstres | Récompenses | MAJ
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Wolf récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let Viande = 0
+    let Peau = 0
+    let Oeil = 0
+    let Coeur = 0
+    let Croc = 0
+    let Oeufs = 0
+    let cols = 0
+    let Clef = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 2
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 5) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      Viande = Math.floor(3 * Math.random())
+      Peau = Math.floor(3 * Math.random())
+      Oeil = Math.floor((2 - 0.75) * Math.random())
+      Coeur = Math.floor((2 - 0.85) * Math.random())
+      Croc = Math.floor((2 - 0.90) * Math.random())
+      Oeufs = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(11 * Math.random() + 10)
+      Clef = Math.floor((2 - 0.98) * Math.random())
+    } else {
+      Viande = Math.floor(2 * Math.random())
+      Peau = Math.floor(2 * Math.random())
+      Oeil = Math.floor((2 - 0.80) * Math.random())
+      Coeur = Math.floor((2 - 0.90) * Math.random())
+      Croc = Math.floor((2 - 0.95) * Math.random())
+      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      cols = Math.floor(8 * Math.random() + 7)
+      Clef = Math.floor((2 - 0.99) * Math.random())
+    }
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup : " + Viande + "\n" +
+                                             ":knife: Peau de loup : " + Peau + "\n" +
+                                             ":eye: Oeil de loup : " + Oeil + "\n" +
+                                             ":cupid: Coeur de loup : " + Coeur + "\n" +
+                                             ":gem: Croc de loup : " + Croc + "\n" +
+                                             ":gem: Oeuf déformé : " +Oeufs+ "\n" +
+                                             ":sparkles: Points d'expérience : " + xp + "\n" +
+                                             ":large_orange_diamond: Cols : " + cols + "\n" +
+                                             ":scales: Clef du donjon sauvage : " + Clef)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Slyme récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let gelatine = 0
+    let poison = 0
+    let stuffRouille = 0
+    let bijouxRouille = 0
+    let cols = 0
+    let Clef = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 2
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 5) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      gelatine = Math.floor(3 * Math.random())
+      poison = Math.floor((2 - 0.75) * Math.random())
+      stuffRouille = Math.floor((2 - 0.80)*Math.random())
+      bijouxRouille = Math.floor((2 - 0.95)*Math.random())
+      cols = Math.floor(11 * Math.random() + 10)
+      Clef = Math.floor((2 - 0.98) * Math.random())
+    } else {
+      gelatine = Math.floor(2 * Math.random())
+      poison = Math.floor((2 - 0.90) * Math.random())
+      stuffRouille = Math.floor((2 - 0.90) * Math.random())
+      bijouxRouille = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(7 * Math.random() + 8)
+      Clef = Math.floor((2 - 0.99) * Math.random())
+    }
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , "\n:tea: Gelatine : " + gelatine + "\n" +
+                                             ":gem: Pierre de poison faible : " + poison + "\n" +
+                                             ":scales: Equipement rouillé au choix : " + stuffRouille + "\n" +
+                                             ":scales: Bijoux rouillé au choix : " + bijouxRouille + "\n" +
+                                             ":sparkles: Points d'expérience : " + xp + "\n" +
+                                             ":large_orange_diamond: Cols : " + cols + "\n" +
+                                             ":scales: Clef du donjon sauvage : " + Clef)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Bangit expérimenté récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let stuffPeauResistante = 0
+    let bijouxCroc = 0
+    let armeBasiqueUneMain = 0
+    let armeBasiqueDeuxMains = 0
+    let potionLegereSoin = 0
+    let ragoutLoup = 0
+    let ragoutTaupe = 0
+    let ragoutLapinGeant = 0
+    let ragoutLoupDeSang = 0
+    let cols = 0
+    let Clef = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 2
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 5) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      stuffPeauResistante = Math.floor((2 - 0.80) * Math.random())
+      bijouxCroc = Math.floor((2 - 0.95) * Math.random())
+      armeBasiqueUneMain = Math.floor((2 - 0.90)*Math.random())
+      armeBasiqueDeuxMains = Math.floor((2 - 0.95)*Math.random())
+      potionLegereSoin = Math.floor((2 - 0.97) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.90)*Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.95)*Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.95) * Math.random())
+      cols = Math.floor(11 * Math.random() + 10)
+      Clef = Math.floor((2 - 0.98) * Math.random())
+    } else {
+      stuffPeauResistante = Math.floor((2 - 0.90) * Math.random())
+      bijouxCroc = Math.floor((2 - 0.98) * Math.random())
+      armeBasiqueUneMain = Math.floor((2 - 0.95)*Math.random())
+      armeBasiqueDeuxMains = Math.floor((2 - 0.98)*Math.random())
+      potionLegereSoin = Math.floor((2 - 0.99) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.95) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.95)*Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.98)*Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(7 * Math.random() + 8)
+      Clef = Math.floor((2 - 0.99) * Math.random())
+    }
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                             ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                             ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                             ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                             ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                             ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                             ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                             ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                             ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                             ":sparkles: Points d'expérience : " + xp + "\n" +
+                                             ":large_orange_diamond: Cols : " + cols + "\n" +
+                                             ":scales: Clef du donjon sauvage : " + Clef)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Bangit sombre récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let stuffPeauResistante = 0
+    let bijouxCroc = 0
+    let armeBasiqueUneMain = 0
+    let armeBasiqueDeuxMains = 0
+    let potionLegereSoin = 0
+    let potionLegereDefense = 0
+    let potionLegereForce = 0
+    let ragoutLoup = 0
+    let ragoutTaupe = 0
+    let ragoutLapinGeant = 0
+    let ragoutLoupDeSang = 0
+    let cols = 0
+    let Clef = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 2
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 10) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      stuffPeauResistante = Math.floor((2 - 0.70) * Math.random())
+      bijouxCroc = Math.floor((2 - 0.92) * Math.random())
+      armeBasiqueUneMain = Math.floor((2 - 0.85)*Math.random())
+      armeBasiqueDeuxMains = Math.floor((2 - 0.90)*Math.random())
+      potionLegereSoin = Math.floor((2 - 0.95) * Math.random())
+      potionLegereDefense = Math.floor((2 - 0.95) * Math.random())
+      potionLegereForce = Math.floor((2 - 0.95) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.90) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.90)*Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.90)*Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(21 * Math.random() + 20)
+      Clef = Math.floor((2 - 0.97) * Math.random())
+    } else {
+      stuffPeauResistante = Math.floor((2 - 0.85) * Math.random())
+      bijouxCroc = Math.floor((2 - 0.96) * Math.random())
+      armeBasiqueUneMain = Math.floor((2 - 0.90)*Math.random())
+      armeBasiqueDeuxMains = Math.floor((2 - 0.95)*Math.random())
+      potionLegereSoin = Math.floor((2 - 0.98) * Math.random())
+      potionLegereDefense = Math.floor((2 - 0.98) * Math.random())
+      potionLegereForce = Math.floor((2 - 0.98) * Math.random())
+      ragoutLoup = Math.floor((2 - 0.95) * Math.random())
+      ragoutTaupe = Math.floor((2 - 0.95)*Math.random())
+      ragoutLapinGeant = Math.floor((2 - 0.95)*Math.random())
+      ragoutLoupDeSang = Math.floor((2 - 0.95) * Math.random())
+      cols = Math.floor(14 * Math.random() + 15)
+      Clef = Math.floor((2 - 0.98) * Math.random())
+    }
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , "\n:scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
+                                             ":scales: Bijoux du croc au choix : " + bijouxCroc + "\n" +
+                                             ":scales: Arme basique à une main au choix : " + armeBasiqueUneMain + "\n" +
+                                             ":scales: Arme basique à deux mains au choix : " + armeBasiqueDeuxMains + "\n" +
+                                             ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
+                                             ":syringe: Potion légère de défense : " + potionLegereDefense + "\n" +
+                                             ":syringe: Potion légère de force : " + potionLegereForce + "\n" +
+                                             ":meat_on_bone: Ragoût de loup : " + ragoutLoup + "\n" +
+                                             ":meat_on_bone: Ragoût de taupe : " + ragoutTaupe + "\n" +
+                                             ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
+                                             ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
+                                             ":sparkles: Points d'expérience : " + xp + "\n" +
+                                             ":large_orange_diamond: Cols : " + cols + "\n" +
+                                             ":scales: Clef du donjon sauvage : " + Clef)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Wolf de sang récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let Viande = 0
+    let Peau = 0
+    let Oeil = 0
+    let Coeur = 0
+    let Croc = 0
+    let Oeufs = 0
+    let cols = 0
+    let Clef = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 2
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const roll = Math.floor(11 * Math.random() + 15) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      Viande = Math.floor(3 * Math.random())
+      Peau = Math.floor(3 * Math.random())
+      Oeil = Math.floor((2 - 0.80)*Math.random())
+      Coeur = Math.floor((2 - 0.90)*Math.random())
+      Croc = Math.floor((2 - 0.95)*Math.random())
+      Oeufs = Math.floor((2 - 0.97) * Math.random())
+      cols = Math.floor(21 * Math.random() + 20)
+      Clef = Math.floor((2 - 0.97)*Math.random())
+    } else {
+      Viande = Math.floor(2 * Math.random())
+      Peau = Math.floor(2 * Math.random())
+      Oeil = Math.floor((2 - 0.90)*Math.random())
+      Coeur = Math.floor((2 - 0.95)*Math.random())
+      Croc = Math.floor((2 - 0.98)*Math.random())
+      Oeufs = Math.floor((2 - 0.97) * Math.random())
+      cols = Math.floor(15 * Math.random() + 15)
+      Clef = Math.floor((2 - 0.98)*Math.random())
+    }
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , "\n:poultry_leg: Viande de loup de sang : " + Viande + "\n" +
+                                             ":knife: Peau de loup de sang : " + Peau + "\n" +
+                                             ":eye: Oeil de loup de sang : " + Oeil + "\n" +
+                                             ":cupid: Coeur de loup de sang : " + Coeur + "\n" +
+                                             ":gem: Croc de loup de sang : " + Croc + "\n" +
+                                             ":gem: Oeuf déformé : " + Oeufs + "\n" +
+                                             ":sparkles: Points d'expérience : " + xp + "\n" +
+                                             ":large_orange_diamond: Cols : " + cols + "\n" +
+                                             ":scales: Clef du donjon sauvage : " + Clef)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
 // Forêt | Métiers
 
