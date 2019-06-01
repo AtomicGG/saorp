@@ -17084,11 +17084,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Viande de chien érrant : " + Viande + "\n" +
-                                           ":knife: Peau de chien érrant : " + Peau + "\n" +
-                                           ":eye: Oeil de chien érrant : " + Oeil + "\n" +
-                                           ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                           ":gem: oeuf difforme : " + Oeufs + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Viande de chien errant : " + Viande + "\n" +
+                                           ":knife: Peau de chien errant : " + Peau + "\n" +
+                                           ":eye: Oeil de chien errant : " + Oeil + "\n" +
+                                           ":cupid: Coeur de chien errant : " + Coeur + "\n" +
+                                           ":gem: Oeuf difforme : " + Oeufs + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -17117,11 +17117,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Viande de chien érrant : " + Viande + "\n" +
-                                           ":knife: Peau de chien érrant : " + Peau + "\n" +
-                                           ":eye: Oeil de chien érrant : " + Oeil + "\n" +
-                                           ":cupid: Coeur de chien érrant : " + Coeur + "\n" +
-                                           ":gem: oeuf difforme : " + Oeufs + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Viande de chien errant : " + Viande + "\n" +
+                                           ":knife: Peau de chien errant : " + Peau + "\n" +
+                                           ":eye: Oeil de chien errant : " + Oeil + "\n" +
+                                           ":cupid: Coeur de chien errant : " + Coeur + "\n" +
+                                           ":gem: Oeuf difforme : " + Oeufs + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20333,11 +20333,9 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(4).join(" : ");
-      const A = (Math.floor((degats*1.25)*Math.random()+1*(degats*1.25)))
-      const B = (Math.floor(100)*Math.random()+1)
-      const C = (Math.floor((3)*Math.random()+1))
-      const D = (Math.floor((26)*Math.random()+25))
-      if(B <= 25){
+      const degat = Math.floor((degats * 1.25 + 1) * Math.random() + (degats * 1.25))
+      const roll = Math.floor(100 * Math.random() + 1)
+      if(roll <= 25){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20347,12 +20345,12 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if(B >= 26){
+      if(roll >= 26){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Vous réussissez votre coup qui inflige :" , A+ " points de dégâts, une aura vous entoure au contact de l'ennemis et vous rend " +D+ " HP !")
+        .addField(":crossed_swords: Vous réussissez votre coup qui inflige :" , degat + " points de dégâts, une aura vous entoure au contact de l'ennemi et vous rend `20`% de vos HP max !")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
         .setTimestamp()
         message.channel.send({embed})
@@ -20938,8 +20936,8 @@ bot.on('message', message => {
     const I = (Math.floor((2-(0.75))*Math.random()))
     const J = (Math.floor((2-(0.50))*Math.random()))
     const K = (Math.floor((2)*Math.random()+1))
-    const L = (Math.floor((2-(0.95))*Math.random()))
-    const M = (Math.floor((2-(0.90))*Math.random()))
+    const L = (Math.floor((2-(0.98))*Math.random()))
+    const M = (Math.floor((2-(0.97))*Math.random()))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20960,8 +20958,8 @@ bot.on('message', message => {
     const I = (Math.floor((2-(0.75))*Math.random()))
     const J = (Math.floor((2-(0.50))*Math.random()))
     const K = (Math.floor((2)*Math.random()+1))
-    const L = (Math.floor((2-(0.95))*Math.random()))
-    const M = (Math.floor((2-(0.90))*Math.random()))
+    const L = (Math.floor((2-(0.98))*Math.random()))
+    const M = (Math.floor((2-(0.97))*Math.random()))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25058,17 +25056,31 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Viande de chien")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Viande de chien :" , "C'est une viande basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
-    .addField("Prix d'achat :" , "5 cols")
-    .addField("Prix de revente :" , "1 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien")
-    .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
-    .setTimestamp()
-    message.channel.send({embed})
+    if (message.content.includes("errant")){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Viande de chien errant :" , "C'est une viande basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
+      .addField("Prix d'achat :" , "40 cols")
+      .addField("Prix de revente :" , "8 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien errant")
+      .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Viande de chien :" , "C'est une viande basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
+      .addField("Prix d'achat :" , "5 cols")
+      .addField("Prix de revente :" , "1 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien")
+      .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
+      .setTimestamp()
+      message.channel.send({embed})
+  }
   }
 });
 
@@ -25159,8 +25171,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Viande de ragondin :" , "C'est une viande basique vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "20 cols")
+    .addField("Prix de revente :" , "4 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt\n=Ragoût de kobolt supérieur\n=Ragoût de kobolt géant rouge")
     .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
     .setTimestamp()
@@ -25202,17 +25214,31 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Peau de chien")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Peau de chien :" , "C'est une peau basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
-    .addField("Prix d'achat :" , "10 cols")
-    .addField("Prix de revente :" , "2 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau arrachée")
-    .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
-    .setTimestamp()
-    message.channel.send({embed})
+    if (message.content.includes("errant")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Peau de chien errant :" , "C'est une peau basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
+      .addField("Prix d'achat :" , "60 cols")
+      .addField("Prix de revente :" , "12 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Peau de chien :" , "C'est une peau basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
+      .addField("Prix d'achat :" , "10 cols")
+      .addField("Prix de revente :" , "2 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau arrachée")
+      .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -25303,8 +25329,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Peau de ragondin :" , "C'est une peau basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "40 cols")
+    .addField("Prix de revente :" , "8 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Equipements de kobolt supérieurs")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -25346,17 +25372,31 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Coeur de chien")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Coeur de chien :" , "C'est un coeur basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
-    .addField("Prix d'achat :" , "15 cols")
-    .addField("Prix de revente :" , "3 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion faible de soin")
-    .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
-    .setTimestamp()
-    message.channel.send({embed})
+    if(message.content.includes("errant")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Coeur de chien errant :" , "C'est un coeur basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
+      .addField("Prix d'achat :" , "100 cols")
+      .addField("Prix de revente :" , "20 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Coeur de chien :" , "C'est un coeur basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
+      .addField("Prix d'achat :" , "15 cols")
+      .addField("Prix de revente :" , "3 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion faible de soin")
+      .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -25447,8 +25487,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Coeur de ragondin :" , "C'est un coeur basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "60 cols")
+    .addField("Prix de revente :" , "12 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt\n=Bijoux de kobolt supérieurs\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -25490,17 +25530,31 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Oeil de chien")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Oeil de chien :" , "C'est un oeil basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
-    .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "5 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de force\n=Potion faible de défense")
-    .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
-    .setTimestamp()
-    message.channel.send({embed})
+    if(message.content.includes("errant")) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Oeil de chien errant :" , "C'est un oeil basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
+      .addField("Prix d'achat :" , "80 cols")
+      .addField("Prix de revente :" , "16 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Oeil de chien :" , "C'est un oeil basique que vous trouvez sur les chiens dans les plaines du palier 1 !")
+      .addField("Prix d'achat :" , "20 cols")
+      .addField("Prix de revente :" , "5 cols")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de force\n=Potion faible de défense")
+      .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -25575,8 +25629,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oeil de ragondin :" , "C'est un oeil basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "60 cols")
+    .addField("Prix de revente :" , "12 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de force\n=Potion moyenne de défense\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -25745,8 +25799,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Pierre de feu faible :" , "C'est une pierre étrange que vous trouvez en minant dans la grotte du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "120 cols")
+    .addField("Prix de revente :" , "24 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de feu rouge faible")
     .setImage("https://fargin.files.wordpress.com/2011/04/rubis-brut.jpg?w=590")
     .setTimestamp()
@@ -25793,8 +25847,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Bois de frêne rare :" , "C'est un bois rare que vous trouvez dans la montagne du palier 1 !")
-    .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "10 cols")
+    .addField("Prix d'achat :" , "60 cols")
+    .addField("Prix de revente :" , "12 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
     .setTimestamp()
@@ -25841,8 +25895,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Cuivre rare :" , "C'est un minerai rare que vous trouvez en minant dans la montagne et la grotte du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "60 cols")
+    .addField("Prix de revente :" , "12 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -25857,8 +25911,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Cuivre parfait :" , "C'est un minerai très rare que vous trouvez en minant dans la grotte du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "100 cols")
+    .addField("Prix de revente :" , "20 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures\n=Parchemin de feu rouge faible")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -25905,8 +25959,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Basilic :" , "C'est une herbe basique que vous trouvez en cueillant dans les montagnes du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "40 cols")
+    .addField("Prix de revente :" , "8 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt\n=Ragoût de kobolt supérieur\n=Ragoût de kobolt géant rouge")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -25953,8 +26007,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Plantrus médiocre :" , "C'est une herbe basique que vous trouvez en cueillant dans la montagne du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "60 cols")
+    .addField("Prix de revente :" , "12 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -25969,8 +26023,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Plantrus commun :" , "C'est une herbe commune que vous trouvez en cueillant dans la montagne et la grotte du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "80 cols")
+    .addField("Prix de revente :" , "16 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -25985,8 +26039,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Plantrus rare :" , "C'est une herbe rare que vous trouvez en cueillant dans la grotte du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "100 cols")
+    .addField("Prix de revente :" , "20 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -26001,8 +26055,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Plantrus parfait :" , "C'est une herbe très rare que vous trouvez en cueillant dans la grotte du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix d'achat :" , "120 cols")
+    .addField("Prix de revente :" , "24 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -26724,21 +26778,29 @@ bot.on('message', message => {
     message.channel.send("```Oreille de kobolt :\nCoûts :  [Achat : 20 cols] [Revente : 4 cols]\n\n" +
                             "Echantillon de kobolt :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
                             "Dent de kobolt :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Oreille de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Echantillon de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Dent de kobolt géant rouge:\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Basilic : \nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Plantrus médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Plantrus commun :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Plantrus rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Plantrus parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Cuivre rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Cuivre parfait :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Bois de frêne rare :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Viande de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Peau de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Coeur de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n" +
-                            "Oeil de ragondin :\nCoûts :  [Achat : X cols] [Revente : X cols]\n\n```")
+                            "Basilic : \nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Plantrus médiocre :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Plantrus commun :\nCoûts :  [Achat : 80 cols] [Revente : 16 cols]\n\n" +
+                            "Viande de ragondin :\nCoûts :  [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Peau de ragondin :\nCoûts :  [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Coeur de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Oeil de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Cuivre rare :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Bois de frêne rare :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Suite en écrivant :\n=Liste des matériaux 4```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux 4")) {
+    message.channel.send("```Viande de chiant errant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Peau de chiant errant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+                            "Oeil de chiant errant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
+                            "Coeur de chiant errant :\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 24 cols]\n\n" +
+                            "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 24 cols]\n\n```")
   }
 }) ;
 
