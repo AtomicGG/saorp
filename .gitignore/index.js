@@ -554,6 +554,59 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Caractéristiques
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Caractéristiques")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les caractéristiques :" , "Durant votre avancée dans le RP, vous gagnerez de l'expérience en tuant des monstres, en finissant des quêtes et même en complétant des donjons !\n\n" +
+                                         "L'expérience vous permettra d'avoir des niveaux qui vous rendront plus fort, qui débloqueront l'accès à bien des choses.\n\n" +
+                                         "Cependant, lorsque vous gagnerez un niveau, vous gagnerez aussi un ou plusieurs points de caractéristiques, et vous pourrez les mettre dans l'un des 'attributs' suivants :\n\n" +
+                                         "[La puissance]\n[La vitalité]\n[La défense]\n\nChaque attribut signifie quelque chose :\n\n" +
+                                         "Un point de puissance augmente vos points de dégâts de 1 point supplémentaire !\n" +
+                                         "Un point de vitalité augmente vos HP max de 5 points supplémentaires !\n" +
+                                         "Un point de défense augmente votre armure de 0.5 point supplémentaire !\n\n" +
+                                         "Vous l'aurez compris, selon ce que vous voulez devenir, vous aurez le choix parmi ces trois attributs.\n\n" +
+                                         "Pour voir combien de points de caractéristiques vous gagnez selon votre niveau, écrivez :\n" +
+                                         "`=Tableau des caractéristiques`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tableau des caractéristiques")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Tableau des caractéristiques du niveau 1 à 15 :" , "Niveau 1 : Aucun\n" +
+                                                                  "Niveau 2 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 3 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 4 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 5 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 6 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 7 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 8 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 9 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 10 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 11 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 12 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 13 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 14 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 15 : 3 points de caractéristiques suppplémentaires !")
+    .addBlankField(true)
+    .addField("Tableau des caractéristiques du niveau 16 à 30 :" , "Niveau 16 : 4 points de caractéristiques supplémentaires !\nNiveau 17 : 4 points de caractéristiques supplémentaires !\nNiveau 18 : 4 points de caractéristiques supplémentaires !\nNiveau 19 : 4 points de caractéristiques supplémentaires !\nNiveau 20 : 4 points de caractéristiques supplémentaires !\nNiveau 21 : 5 points de caractéristiques supplémentaires !\nNiveau 22 : 5 points de caractéristiques supplémentaires !\nNiveau 23 : 5 points de caractéristiques supplémentaires !\nNiveau 24 : 5 points de caractéristiques supplémentaires !\nNiveau 25 : 5 points de caractéristiques supplémentaires !\nNiveau 26 : 6 points de caractéristiques supplémentaires !\nNiveau 27 : 6 points de caractéristiques supplémentaires !\nNiveau 28 : 6 points de caractéristiques supplémentaires !\nNiveau 29 : 6 points de caractéristiques supplémentaires !\nNiveau 30 : 6 points de caractéristiques supplémentaires !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Zones
 
 bot.on('message', message => {
@@ -587,6 +640,35 @@ bot.on('message', message => {
                                    "Quand vous équipez un objet qui vous donne 4 HP supplémentaire max par exemple, cela ne vous redonne pas de la vie !\n\n" +
                                    "Exemple : Je possède 24/40 HP actuellement et je m'équipe une cape me donnant +4 HP max, je ne me retrouve pas à 28/44 HP mais à 24/44 HP !")
     .setImage("https://vignette.wikia.nocookie.net/powerlisting/images/3/39/Elucidator.png/revision/latest?cb=20150111073313")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Métiers
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Métiers")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les métiers, partie 1 :" , "Lorsque vous partez cueillir des plantes, ou chasser, miner, ou même si vous créez des équipements en cuir, en métal, en tissu, vous gagnerez parfois de l'expérience pour un métier !\n\n" +
+                                                  "Cette expérience permet d'augmenter de niveaux dans justement vos métiers qui sont les suivantes :\n\n" +
+                                                  "[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n" +
+                                                  "[Maître d'arme]\n[Bijoutier]\n[Forgeron]\n[Couturier]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n[Ebeniste]\n\n" +
+                                                  "Tout ces métiers possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\n" +
+                                                  "Pour voir justement les niveaux de métiers :\n\n`=Tableau des métiers`\n\n" +
+                                                  "Pour calculer votre niveau de métier selon vos points d'expérience :\n\n`=Calculateur d'expérience de métier : [Vos points d'expérience]`")
+    .addBlankField(true)
+    .addField("Les métiers, partie 2 :" , "Votre niveau dans un métier vous permettra de débloquer l'accès à certaines activités dans une zone, ou l'accès à un craft mais aussi à des bonus !\n\n" +
+                                          "Prenons l'exemple de la forêt, si vous voulez cueillir là-bas, il faudra que vous soyez niveau 2 dans le métier 'Cueilleur' pour le faire, si vous êtes niveau 1, vous ne pourrez pas, " +
+                                          "si vous êtes de niveau 2 ou plus dans le métier, vous pourrez !\n\n" +
+                                          "Maintenant, il faut comprendre que, si vous êtes niveau 2 dans le métier 'Cueilleur' et que la forêt nécessite d'être niveau 2, " +
+                                          "vous pourrez cueillir là-bas, mais il faudra écrire ceci :\n\n`=Forêt cueillir`")
+    .addBlankField(true)
+    .addField("Les métiers, partie 3 :" , "Maintenant pour revenir aux bonus que donne un certain niveau dans un métier, vous pouvez les voir en écrivant :\n=Chasseur\n=Mineur\n=Bûcheron\n=Pêcheur\n=Cueilleur")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -11462,87 +11544,6 @@ bot.on('message', message => {
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Caractéristiques")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les caractéristiques :" , "Durant votre avancée dans le RP, vous gagnerez de l'expérience en tuant des monstres, en finissant des quêtes et même en complétant des donjons !\n\n" +
-                                         "L'expérience vous permettra d'avoir des niveaux qui vous rendront plus fort, qui débloqueront l'accès à bien des choses.\n\n" +
-                                         "Cependant, lorsque vous gagnerez un niveau, vous gagnerez aussi un ou plusieurs points de caractéristiques, et vous pourrez les mettre dans l'un des 'attributs' suivants :\n\n" +
-                                         "[La puissance]\n[La vitalité]\n[La défense]\n\nChaque attribut signifie quelque chose :\n\n" +
-                                         "Un point de puissance augmente vos points de dégâts de 1 point supplémentaire !\n" +
-                                         "Un point de vitalité augmente vos HP max de 5 points supplémentaires !\n" +
-                                         "Un point de défense augmente votre armure de 0.5 point supplémentaire !\n\n" +
-                                         "Vous l'aurez compris, selon ce que vous voulez devenir, vous aurez le choix parmi ces trois attributs.\n\n" +
-                                         "Pour voir combien de points de caractéristiques vous gagnez selon votre niveau, écrivez :\n" +
-                                         "`=Tableau des caractéristiques`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Tableau des caractéristiques")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Tableau des caractéristiques du niveau 1 à 15 :" , "Niveau 1 : Aucun\n" +
-                                                                  "Niveau 2 : 1 point de caractéristique suppplémentaire !\n" +
-                                                                  "Niveau 3 : 1 point de caractéristique suppplémentaire !\n" +
-                                                                  "Niveau 4 : 1 point de caractéristique suppplémentaire !\n" +
-                                                                  "Niveau 5 : 1 point de caractéristique suppplémentaire !\n" +
-                                                                  "Niveau 6 : 2 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 7 : 2 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 8 : 2 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 9 : 2 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 10 : 2 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 11 : 3 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 12 : 3 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 13 : 3 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 14 : 3 points de caractéristiques suppplémentaires !\n" +
-                                                                  "Niveau 15 : 3 points de caractéristiques suppplémentaires !")
-    .addBlankField(true)
-    .addField("Tableau des caractéristiques du niveau 16 à 30 :" , "Niveau 16 : 4 points de caractéristiques supplémentaires !\nNiveau 17 : 4 points de caractéristiques supplémentaires !\nNiveau 18 : 4 points de caractéristiques supplémentaires !\nNiveau 19 : 4 points de caractéristiques supplémentaires !\nNiveau 20 : 4 points de caractéristiques supplémentaires !\nNiveau 21 : 5 points de caractéristiques supplémentaires !\nNiveau 22 : 5 points de caractéristiques supplémentaires !\nNiveau 23 : 5 points de caractéristiques supplémentaires !\nNiveau 24 : 5 points de caractéristiques supplémentaires !\nNiveau 25 : 5 points de caractéristiques supplémentaires !\nNiveau 26 : 6 points de caractéristiques supplémentaires !\nNiveau 27 : 6 points de caractéristiques supplémentaires !\nNiveau 28 : 6 points de caractéristiques supplémentaires !\nNiveau 29 : 6 points de caractéristiques supplémentaires !\nNiveau 30 : 6 points de caractéristiques supplémentaires !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Métiers")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les métiers, partie 1 :" , "Lorsque vous partez cueillir des plantes, ou chasser, miner, ou même si vous créez des équipements en cuir, en métal, en tissu, vous gagnerez parfois de l'expérience pour un métier !\n\n" +
-                                                  "Cette expérience permet d'augmenter de niveaux dans justement vos métiers qui sont les suivantes :\n\n" +
-                                                  "[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n" +
-                                                  "[Maître d'arme]\n[Bijoutier]\n[Forgeron]\n[Couturier]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n[Ebeniste]\n\n" +
-                                                  "Tout ces métiers possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\n" +
-                                                  "Pour voir justement les niveaux de métiers :\n\n`=Tableau des métiers`\n\n" +
-                                                  "Pour calculer votre niveau de métier selon vos points d'expérience :\n\n`=Calculateur d'expérience de métier : [Vos points d'expérience]`")
-    .addBlankField(true)
-    .addField("Les métiers, partie 2 :" , "Votre niveau dans un métier vous permettra de débloquer l'accès à certaines activité dans une zone, ou l'accès à un craft mais aussi à des bonus !\n\n" +
-                                          "Prenons l'exemple de la forêt, si vous voulez cueillir là-bas, il faudra que vous soyez niveau 2 dans le métier 'Cueilleur' pour le faire, si vous êtes niveau 1, vous ne pourrez pas, " +
-                                          "si vous êtes de niveau 2 ou plus dans le métier, vous pourrez !\n\n" +
-                                          "Maintenant, il faut comprendre que, si vous êtes niveau 2 dans le métier 'Cueilleur' et que la forêt nécessite d'être niveau 2, " +
-                                          "vous pourrez cueillir là-bas, mais il faudra écrire ceci :\n\n`=Forêt cueillir`")
-    .addBlankField(true)
-    .addField("Les métiers, partie 3 :" , "Maintenant pour revenir aux bonus que donne un certain niveau dans un métier, vous pouvez les voir en écrivant :\n=Chasseur\n=Mineur\n=Bûcheron\n=Pêcheur\n=Cueilleur")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chasseur")) {
