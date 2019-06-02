@@ -610,9 +610,9 @@ bot.on('message', message => {
                                                                           ":crossed_swords: `=Cri de provocation +3`")
     .addBlankField(true)
     .addField(":crossed_swords: Pour effectuer un combo :" , ":crossed_swords: `=Combo 1 : [Vos dégâts]`\n" +
-                                                             ":crossed_swords: `=Combo +1 : [Vos dégâts]`\n" +
-                                                             ":crossed_swords: `=Combo +2 : [Vos dégâts]`\n" +
-                                                             ":crossed_swords: `=Combo +3 : [Vos dégâts]`")
+                                                             ":crossed_swords: `=Combo 1 +1 : [Vos dégâts]`\n" +
+                                                             ":crossed_swords: `=Combo 1 +2 : [Vos dégâts]`\n" +
+                                                             ":crossed_swords: `=Combo 1 +3 : [Vos dégâts]`")
     .addBlankField(true)
     .addField(":shield: Pour effectuer une esquive :" , ":shield: `=Esquive : [Dégâts de l'attaque de l'ennemi]`\n" +
                                                         ":shield: `=Esquive +1 : [Dégâts de l'attaque de l'ennemi]`\n" +
