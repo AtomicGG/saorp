@@ -11678,23 +11678,6 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les bonus des niveaux pour Combattant de 2 à 10 :" , "Niveau 2 : Vous gagnez 5 HP !\n\nNiveau 3 : Vous gagnez 10 HP !\n\nNiveau 4 : Vous gagnez 15 HP !\n\nNiveau 5 : Vous gagnez 15 HP et 1 point de dégât !\n\nNiveau 6 : Vous gagnez 15 HP et 2 points de dégâts !\n\nNiveau 7 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure !\n\nNiveau 8 : Vous gagnez 20 HP et 2 points de dégâts et 0.5 point d'armure !\n\nNiveau 9 : Vous gagnez 25 HP et 2 points de dégâts et 0.5 point d'armure !\n\nNiveau 10 : Vous gagnez 30 HP et 2 points de dégâts et 0.5 point d'armure !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Combattant de 11 à 20 :" , "Niveau 11 : Vous gagnez 30 HP et 3 points de dégâts et 0.5 point d'armure !\n\nNiveau 12 : Vous gagnez 30 HP et 4 points de dégâts et 0.5 point d'armure !\n\nNiveau 13 : Vous gagnez 30 HP et 4 points de dégâts et 1 point d'armure !\n\nNiveau 14 : Vous gagnez 35 HP et 4 points de dégâts et 1 point d'armure !\n\nNiveau 15 : Vous gagnez 40 HP et 4 points de dégâts et 1 point d'armure !\n\nNiveau 16 : Vous gagnez 45 HP et 4 points de dégâts et 1 point d'armure !\n\nNiveau 17 : Vous gagnez 45 HP et 5 points de dégâts et 1 point d'armure !\n\nNiveau 18 : Vous gagnez 45 HP et 6 points de dégâts et 1 point d'armure !\n\nNiveau 19 : Vous gagnez 45 HP et 6 points de dégâts et 1,5 points d'armure !\n\nNiveau 20 : Vous gagnez 50 HP et 6 points de dégâts et 1,5 points d'armure !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Combattant de 21 à 30 :" , "Niveau 21 : Vous gagnez 50 HP et 6 points de dégâts et 1,5 points d'armure !\n\nNiveau 22 : Vous gagnez 55 HP et 6 points de dégâts et 1,5 points d'armure !\n\nNiveau 23 : Vous gagnez 55 HP et 6 points de dégâts et 1,5 points d'armure !\n\nNiveau 24 : Vous gagnez 60 HP et 6 points de dégâts et 1,5 points d'armure\n\nNiveau 25 : Vous gagnez 60 HP et 6 points de dégâts et 1,5 points d'armure !\n\nNiveau 26 : Vous gagnez 60 HP et 7 points de dégâts et 1,5 points d'armure !\n\nNiveau 27 : Vous gagnez 60 HP et 7 points de dégâts et 1,5 points d'armure !\n\nNiveau 28 : Vous gagnez 60 HP et 8 points de dégâts et 1,5 points d'armure !\n\nNiveau 29 : Vous gagnez 60 HP et 8 points de dégâts et 1,5 points d'armure !\n\nNiveau 30 : Vous gagnez 60 HP et 8 points de dégâts et 2 points d'armure !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bonus combattant")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
     .addField("Les bonus des niveaux pour Combattant de 2 à 10 :" , "Niveau 2 : Vous gagnez 5 HP !\n\nNiveau 3 : Vous gagnez 10 HP !\n\nNiveau 4 : Vous gagnez 10 HP et 1 point de dégât !\n\nNiveau 5 : Vous gagnez 15 HP et 2 point de dégât et 0.5 point d'armure!\n\nNiveau 6 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure! \n\nNiveau 7 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure ! \n\nNiveau 8 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure ! \n\nNiveau 9 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure !\n\nNiveau 10 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure !")
     .addBlankField(true)
     .addField("Les bonus des niveaux pour Combattant de 11 à 20 :" , "Niveau 11 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 12 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 13 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 14 : Vous gagnez 25 HP et 3 points de dégâts et 0.5 point d'armure ! \n\nNiveau 15 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 16 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 17 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 18 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 point d'armure ! \n\nNiveau 19 : Vous gagnez 25 HP et 4 points de dégâts et 1.5 points d'armure ! \n\nNiveau 20 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure !")
@@ -11971,6 +11954,7 @@ bot.on('message', message => {
                                                "- Cueilleur\n" +
                                                "- Chasseur\n" +
                                                "- Pêcheur")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -11988,6 +11972,7 @@ bot.on('message', message => {
                                                    "- Bijoutier\n" +
                                                    "- Enchanteur\n" +
                                                    "- Cuisinier")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -12009,6 +11994,7 @@ bot.on('message', message => {
                                                          "- Maitre de l'Arènes\n" +
                                                          "- Dirigeant\n" +
                                                          "- Gérant des Guildes")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -12020,22 +12006,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les professions (Partie 1) :" , "Vous avez le droit d'avoir une profession en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n" +
-                                    "Les niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\n" +
-                                    "Niveau 15 : 2 professions max !\nNiveau 30 : 3 professions max !")
+    .addField("Les bonus des professions de récolte :" , "En construction")
     .addBlankField(true)
-    .addField("Les professions (Partie 2) :" , "Il y a 3 catégories de professions, et vous ne pourrez avoir qu'une seule profession dans chaque catégorie ! Voici les différentes professions dans chaque catégorie : \n\n" +
-                                              "=Professions de récolte\n" +
-                                              "=Professions de fabrication\n" +
-                                              "=Professions de fonction publique")
+    .addField("Les bonus des professions de fabrication :" , "En construction")
     .addBlankField(true)
-    .addField("Les professions (Partie 3) :" , "Une profession permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n\n" +
-                                               "Une profession donne quelques bonus, permettant de plus facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n\n" +
-                                               "Pour connaitre les bonus que donne les professions, voici la liste :\n\n" +
-                                               "=Bonus des professions")
-    .addBlankField(true)
-    .addField("Les professions (Partie 4) :" , "Pour obtenir une profession, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voter pour :white_check_mark: ou contre :x: et selon le résultat, " +
-                                               "vous aurez ou non la profession !")
+    .addField("Les bonus des professions de fonction publique :" , "En construction")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
