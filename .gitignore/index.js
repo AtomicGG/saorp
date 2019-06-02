@@ -14635,8 +14635,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14650,8 +14650,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14665,8 +14665,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14680,8 +14680,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14695,8 +14695,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14710,8 +14710,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14725,8 +14725,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14740,8 +14740,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((6)*Math.random()+6))
-  const Défense = (Math.floor((2-(0.50))*Math.random()))
+  const HP = Math.floor(6 * Math.random() + 5)
+  const Défense = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
