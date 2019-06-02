@@ -14523,14 +14523,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Casque en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14538,14 +14537,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des épaulières en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Épaulières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14553,14 +14551,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du plastron en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Plastron en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14568,14 +14565,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la cape en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Cape en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14583,14 +14579,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des gantelets en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Gantelets en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14598,14 +14593,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la ceinture en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Ceinture en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14613,14 +14607,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des jambières en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Jambières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14628,14 +14621,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+3))
-  const Défense = (Math.floor((2-(0.80))*Math.random()))
+  const HP = Math.floor(4 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte des bottes en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bottes en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
