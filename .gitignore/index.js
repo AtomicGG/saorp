@@ -364,7 +364,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Trajet en ville :" , " ")
+    .addField("Trajet en ville :" , "sgsrvbdrbvdrb")
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
     .setTimestamp()
     message.channel.send({embed})
