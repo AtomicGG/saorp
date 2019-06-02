@@ -13920,7 +13920,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape endommagée :" , ":scales: C'est une cape déchirée au fil du temps constitué de cuivre médiocre et de peau!\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape endommagée")
+    .addField(":scales: Cape endommagée :" , ":scales: C'est une cape déchirée au fil du temps constitué de cuivre médiocre et de peau!\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape endommagée`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14785,8 +14785,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+2))
-  const Dégâts = (Math.floor((4)*Math.random()+2))
+  const HP = Math.floor(4 * Math.random() + 7)
+  const Dégâts = Math.floor(3 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette du croc")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14800,8 +14800,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((3)*Math.random()+2))
-  const Dégâts = (Math.floor((4)*Math.random()+2))
+  const HP = Math.floor(4 * Math.random() + 7)
+  const Dégâts = Math.floor(3 * Math.random() + 2)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau du croc")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
