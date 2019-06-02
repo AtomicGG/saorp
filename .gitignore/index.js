@@ -14944,143 +14944,8 @@ bot.on('message', message => {
   }
 });
 
-//MAJ équipement Kobold//
-
 
 bot.on('message', message => {
-   if (message.content === prefix + "Casque de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Casque de kobold :" , ":scales: C'est un casque résistant que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du casque de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Épaulières de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Épaulières de kobold :" , ":scales: Ce sont des épaulières résistantes que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Cape de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Cape de kobold :" , ":scales: C'est une cape résistante que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Plastron de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Plastron de kobold :" , ":scales: C'est un plastron résistant que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du plastron de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Gantelets de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Gantelets de kobold :" , ":scales: Ce sont des gantelets que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des gantelets de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Ceinture de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Ceinture de kobold :" , ":scales: C'est une ceinture résistante que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la ceinture de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Jambières de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Jambières de kobold :" , ":scales: Ce sont des jambières résisantes que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des jambières de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Bottes de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Bottes de kobold :" , ":scales: Ce sont des bottes résisantes que portent les kobolds constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobold, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des bottes de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Amulette de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Amulette de kobold :" , ":scales: C'est une amulette assez imposante et lourde à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobold, 2 cuivre rare, 4 cuivre commun, 8 cuivre médiocre, 1 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1260 cols\n\n:large_orange_diamond: Prix de revente : 315 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'amulette de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
- bot.on('message', message => {
-   if (message.content === prefix + "Anneau de kobold") {
-     const embed = new Discord.RichEmbed()
-     .setAuthor(message.author.username , message.author.avatarURL)
-     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-     .setColor(3447003)
-     .addField(":scales: Anneau de kobold :" , ":scales: C'est un anneau assez imposant et lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobold, 2 cuivre rare, 4 cuivre commun, 8 cuivre médiocre, 1 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1260 cols\n\n:large_orange_diamond: Prix de revente : 315 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'anneau de kobold`")
-     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-     .setTimestamp()
-     message.channel.send({embed})
-   }
- });
-
-
-bot.on('message', message => {
-  const Défense = (Math.floor((3)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+12))
   if (message.content.startsWith(prefix + "Kunai de kobolt")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15094,8 +14959,6 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((3)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+12))
   if (message.content.startsWith(prefix + "Bolas de kobolt")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -15109,11 +14972,11 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const A = (Math.floor((51)*Math.random()+50))
-  const B = (Math.floor((100)*Math.random()+1))
-  const C = (Math.floor((2)*Math.random()+1))
   if (message.content.startsWith(prefix + "Lancer un bolas de kobolt")) {
-    if (B <= 80){
+    const A = (Math.floor(26*Math.random()+50))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((2)*Math.random()+1))
+    if (B <= 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15123,7 +14986,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (B >= 80){
+    if (B >= 76){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15137,12 +15000,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const A = (Math.floor((51)*Math.random()+50))
-  const B = (Math.floor((100)*Math.random()+1))
-  const C = (Math.floor((2)*Math.random()+1))
-  const D = (Math.floor((21)*Math.random()+20))
   if (message.content.startsWith(prefix + "Lancer un kunai de kobolt")) {
-    if (B <= 70){
+    const A = (Math.floor((26)*Math.random()+50))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((2)*Math.random()+1))
+    const D = (Math.floor((21)*Math.random()+20))
+    if (B <= 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15152,7 +15015,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (B >= 71){
+    if (B >= 76){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
