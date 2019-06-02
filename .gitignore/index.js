@@ -10880,7 +10880,7 @@ bot.on('message', message => {
       couteau = Math.floor((2 - 0.95) * Math.random())
       faucille = Math.floor((2 - 0.95) * Math.random())
       casque = Math.floor((2 - 0.97) * Math.random())
-      cols = Math.floor(31 * Math.random() + 30)
+      cols = Math.floor(41 * Math.random() + 40)
     } else {
       oreille = Math.floor(2 * Math.random() + 1)
       echantillon = Math.floor((2 - 0.85) * Math.random())
@@ -10890,7 +10890,7 @@ bot.on('message', message => {
       couteau = Math.floor((2 - 0.98) * Math.random())
       faucille = Math.floor((2 - 0.98) * Math.random())
       casque = Math.floor((2 - 0.98) * Math.random())
-      cols = Math.floor(25 * Math.random() + 25)
+      cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
       xp = 0
@@ -10940,14 +10940,14 @@ bot.on('message', message => {
       Oeil = Math.floor((2 - 0.75)*Math.random())
       Coeur = Math.floor((2 - 0.85)*Math.random())
       Oeufs = Math.floor((2 - 0.99) * Math.random())
-      cols = Math.floor(6 * Math.random() + 5)
+      cols = Math.floor(51 * Math.random() + 50)
     } else {
       Viande = Math.floor(2 * Math.random())
       Peau = Math.floor(2 * Math.random())
       Oeil = Math.floor((2 - 0.90) * Math.random())
       Coeur = Math.floor((2 - 0.95) * Math.random())
       Oeufs = Math.floor((2 - 0.99) * Math.random())
-      cols = Math.floor(4 * Math.random() + 3)
+      cols = Math.floor(41 * Math.random() + 40)
     }
     if (xp <= 0) {
       xp = 0
@@ -10998,7 +10998,7 @@ bot.on('message', message => {
       stuffKobSup = Math.floor((2 - 0.85) * Math.random())
       bijouxKobSup = Math.floor((2 - 0.92) * Math.random())
       parchemin = Math.floor((2 - 0.95) * Math.random())
-      cols = Math.floor(151 * Math.random() + 150)
+      cols = Math.floor(61 * Math.random() + 60)
     } else {
       peau = Math.floor((2 - 0.35) * Math.random())
       dent = Math.floor((2 - 0.55) * Math.random())
@@ -11007,7 +11007,7 @@ bot.on('message', message => {
       stuffKobSup = Math.floor((2 - 0.93) * Math.random())
       bijouxKobSup = Math.floor((2 - 0.96) * Math.random())
       parchemin = Math.floor((2 - 0.98) * Math.random())
-      cols = Math.floor(125 * Math.random() + 125)
+      cols = Math.floor(51 * Math.random() + 50)
     }
     if (xp <= 0) {
       xp = 0
