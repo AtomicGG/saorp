@@ -15386,30 +15386,24 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau de kobolt")) {
     if (message.content.includes("supérieur")) {
-      const Défense = (Math.floor((7)*Math.random()+6))
-      const HP = (Math.floor((16)*Math.random()+15))
-      const Dégâts = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((5)*Math.random()+7))
-        const Dégâts = (Math.floor((6)*Math.random()+8))*/
+      const Défense = Math.floor(4 * Math.random() + 5)
+      const HP = Math.floor(6 * Math.random() + 20)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Anneau de kobolt supérieur :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+      .addField(":scales: Anneau de kobolt supérieur :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((5)*Math.random()+4))
-      const HP = (Math.floor((9)*Math.random()+8))
-      const Dégâts = (Math.floor((7)*Math.random()+6))
-      /*const Défense = (Math.floor((5)*Math.random()+4))
-        const Dégâts = (Math.floor((5)*Math.random()+4))*/
+      const Défense = Math.floor(3 * Math.random() + 4)
+      const HP = Math.floor(6 * Math.random() + 10)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Anneau de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+      .addField(":scales: Anneau de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -15420,30 +15414,24 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette de kobolt")) {
     if (message.content.includes("supérieure")) {
-      const Défense = (Math.floor((7)*Math.random()+6))
-      const HP = (Math.floor((16)*Math.random()+15))
-      const Dégâts = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((5)*Math.random()+7))
-        const Dégâts = (Math.floor((6)*Math.random()+8))*/
+      const Défense = Math.floor(4 * Math.random() + 5)
+      const HP = Math.floor(6 * Math.random() + 20)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Amulette de kobolt supérieure :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+      .addField(":scales: Amulette de kobolt supérieure :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((5)*Math.random()+4))
-      const HP = (Math.floor((9)*Math.random()+8))
-      const Dégâts = (Math.floor((7)*Math.random()+6))
-      /*const Défense = (Math.floor((5)*Math.random()+4))
-        const Dégâts = (Math.floor((5)*Math.random()+4))*/
+      const Défense = Math.floor(3 * Math.random() + 4)
+      const HP = Math.floor(6 * Math.random() + 10)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Amulette de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+      .addField(":scales: Amulette de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
