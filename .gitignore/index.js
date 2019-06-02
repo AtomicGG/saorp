@@ -11939,16 +11939,16 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les métiers :" , "Vous avez le droit d'avoir une profession en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n\n" +
-                                "Les niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\n" +
-                                "Niveau 15 : 2 professions max !\nNiveau 30 : 3 professions max !\n\n" +
-                                "Il y a 3 catégories de professions, et vous ne pourrez avoir qu'une seule profession dans chaque catégorie ! Voici les différentes profession dans chaque catégorie :\n" +
-                                "=Professions de récolte\n" +
-                                "=Professions de fabrication\n" +
-                                "=Professions de fonction publique\n" +
-                                "Une profession permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n\n" +
-                                "Une profession donne quelques bonus, permettant de plus facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n\n" +
-                                "Pour obtenir une profession, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voté pour :white_check_mark: ou contre :x: et selon le résultat, vous aurez ou non la profession !")
+    .addField("Les professions :" , "Vous avez le droit d'avoir une profession en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n\n" +
+                                  "Les niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\n" +
+                                  "Niveau 15 : 2 professions max !\nNiveau 30 : 3 professions max !\n\n" +
+                                  "Il y a 3 catégories de professions, et vous ne pourrez avoir qu'une seule profession dans chaque catégorie ! Voici les différentes profession dans chaque catégorie :\n" +
+                                  "=Professions de récolte\n" +
+                                  "=Professions de fabrication\n" +
+                                  "=Professions de fonction publique\n" +
+                                  "Une profession permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n\n" +
+                                  "Une profession donne quelques bonus, permettant de plus facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n\n" +
+                                  "Pour obtenir une profession, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voté pour :white_check_mark: ou contre :x: et selon le résultat, vous aurez ou non la profession !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
