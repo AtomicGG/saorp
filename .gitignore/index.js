@@ -16436,7 +16436,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = (Math.floor((5)*Math.random()+2))
+  const Dégâts = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16450,7 +16450,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = (Math.floor((5)*Math.random()+2))
+  const Dégâts = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16464,7 +16464,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = (Math.floor((5)*Math.random()+2))
+  const Dégâts = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16478,7 +16478,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = (Math.floor((5)*Math.random()+2))
+  const Dégâts = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16492,7 +16492,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = (Math.floor((5)*Math.random()+2))
+  const Dégâts = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16506,7 +16506,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = (Math.floor((5)*Math.random()+2))
+  const Dégâts = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du glaive basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16520,7 +16520,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = (Math.floor((5)*Math.random()+2))
+  const Dégâts = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16632,13 +16632,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((7)*Math.random()+3))
+  const HP = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(3 * Math.random() + 0)
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier basique à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
