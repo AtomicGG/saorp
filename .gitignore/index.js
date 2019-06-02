@@ -11122,7 +11122,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Objets")) {
     const embed = new Discord.RichEmbed()
@@ -11204,13 +11204,12 @@ bot.on('message', message => {
                                                     "`=[Nom du monstre]`\n\Selon la zone où vous voulez faire un combat, il y aura une commande à faire  étant :\n\n`=Plaines combat : [Nombre de participants]`\n\n" +
                                                     "Si vous rejoignez un combat, vous devez faire cette commande, par exemple si je rejoins le combat déjà lancé avec moi et un amis, je fait :\n\n`=Plaines combat : 2`")
     .addField("Déroulement de combat, partie 3 :" , "La taille des groupes sont de 5 joueurs max à l'extérieur dans les combats contre des monstres, cependant si les combats sont joueurs contre joueurs, il n'y a plus de limite !")
-
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
-
+*/
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Classes")) {
     const embed = new Discord.RichEmbed()
