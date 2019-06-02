@@ -16687,10 +16687,10 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Poison = (Math.floor((100)*Math.random()+1))
-  const Dégâts = (Math.floor((11)*Math.random()+5))
+  const roll = (Math.floor((100)*Math.random()+1))
+  const poison = (Math.floor((11)*Math.random()+5))
   if (message.content.startsWith(prefix + "Poison faible")) {
-    if(Poison <= 50){
+    if(roll <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -16699,12 +16699,12 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(Poison >= 51){
+    if(roll >= 51){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Poison faible :" , ":crossed_swords: Vous arrivez à empoisonner votre cible ce qui lui inflige " +Dégâts+ " points de dégâts, l'armure ne réduit pas les dégâts !")
+      .addField(":crossed_swords: Poison faible :" , ":crossed_swords: Vous arrivez à empoisonner votre cible ce qui lui inflige " + poison + " points de dégâts, l'armure ne réduit pas les dégâts !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -16712,10 +16712,10 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Poison = (Math.floor((100)*Math.random()+1))
-  const Dégâts = (Math.floor((26)*Math.random()+25))
+  const roll = (Math.floor((100)*Math.random()+1))
+  const feu = (Math.floor((16)*Math.random()+20))
   if (message.content.startsWith(prefix + "Feu faible")) {
-    if(Poison <= 25){
+    if(roll <= 35){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -16724,12 +16724,12 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(Poison >= 26){
+    if(roll >= 36){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Feu faible :" , ":crossed_swords: Vous arrivez à enflammer votre cible ce qui lui inflige " +Dégâts+ " points de dégâts, l'armure réduit les dégâts !")
+      .addField(":crossed_swords: Feu faible :" , ":crossed_swords: Vous arrivez à enflammer votre cible ce qui lui inflige " + feu + " points de dégâts, l'armure ne réduit pas les dégâts !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -16816,7 +16816,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lapin")) {
     if (message.content.includes("géant")) {
-      const HP = (Math.floor((31)*Math.random()+30))
+      const HP = (Math.floor((21)*Math.random()+20))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -16868,7 +16868,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((21)*Math.random()+20))
+  const HP = (Math.floor((21)*Math.random()+30))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de taupe")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -16884,7 +16884,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
     if (message.content.includes("de sang")) {
-      const HP = (Math.floor((41)*Math.random()+40))
+      const HP = (Math.floor((21)*Math.random()+40))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -16894,7 +16894,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const HP = (Math.floor((21)*Math.random()+20))
+      const HP = (Math.floor((21)*Math.random()+50))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
