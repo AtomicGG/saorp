@@ -19337,20 +19337,20 @@ bot.on('message', message => {
     message.channel.send("```Viande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
                             "Peau de renard :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
                             "Coeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Oeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Oeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Viande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
                             "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
                             "Peau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Oeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Oeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Viande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
                             "Peau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
                             "Coeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Oeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Viande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Peau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Coeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Oeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
-                            "Oreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
+                            "Oeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Viande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Peau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Coeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Oeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Oreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
                             "Persil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
                             "Herbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
                             "Baie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
@@ -19365,61 +19365,61 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 2")) {
     message.channel.send("```Viande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Peau de loup :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Oeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
-                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
-                            "Gelatine :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Pierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 10 cols]\n\n" +
-                            "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
-                            "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 24 cols]\n\n" +
-                            "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 32 cols]\n\n" +
-                            "Croc de loup de sang:\nCoûts : [Achat : 200 cols] [Revente : 40 cols]\n\n" +
-                            "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
+                            "Peau de loup :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Oeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Gelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Pierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 13 cols]\n\n" +
+                            "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\n" +
+                            "Croc de loup de sang:\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\n\n" +
+                            "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Viande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Peau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Coeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
-                            "Oeil de taupe :\nCoûts : [Achat : 30 cols] [Revente : 6 cols]\n\n" +
-                            "Cuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Cuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Bois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Bois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
+                            "Peau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Coeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Oeil de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Cuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Cuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Bois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Bois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 3```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 3")) {
-    message.channel.send("```Oreille de kobolt :\nCoûts :  [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Echantillon de kobolt :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Dent de kobolt :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Basilic : \nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Plantrus médiocre :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Plantrus commun :\nCoûts :  [Achat : 80 cols] [Revente : 16 cols]\n\n" +
-                            "Viande de ragondin :\nCoûts :  [Achat : 20 cols] [Revente : 4 cols]\n\n" +
-                            "Peau de ragondin :\nCoûts :  [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Coeur de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Oeil de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Cuivre rare :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Bois de frêne rare :\nCoûts :  [Achat : 60 cols] [Revente : 12 cols]\n\n" +
+    message.channel.send("```Oreille de kobolt :\nCoûts :  [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Echantillon de kobolt :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Dent de kobolt :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Basilic : \nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Plantrus médiocre :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Plantrus commun :\nCoûts :  [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Viande de ragondin :\nCoûts :  [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Peau de ragondin :\nCoûts :  [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Coeur de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Oeil de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Cuivre rare :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Bois de frêne rare :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 4```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 4")) {
-    message.channel.send("```Viande de chien errant :\nCoûts : [Achat : 40 cols] [Revente : 8 cols]\n\n" +
-                            "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 12 cols]\n\n" +
-                            "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 16 cols]\n\n" +
-                            "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 20 cols]\n\n" +
-                            "Peau écailleuse de kobolt pilion :\nCoûts : [Achat : 120 cols] [Revente : 24 cols]\n\n" +
-                            "Dent de kobolt pilion :\nCoûts : [Achat : 140 cols] [Revente : 28 cols]\n\n" +
-                            "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
-                            "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 24 cols]\n\n" +
-                            "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 20 cols]\n\n" +
-                            "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 24 cols]\n\n```")
+    message.channel.send("```Viande de chien errant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Peau écailleuse de kobolt pilion :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Dent de kobolt pilion :\nCoûts : [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+                            "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
   }
 }) ;
 
