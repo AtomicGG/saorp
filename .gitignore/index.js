@@ -11940,7 +11940,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Les professions (Partie 1) :" , "Vous avez le droit d'avoir une profession en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n" +
-                                    "Les niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n" +
+                                    "Les niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\n" +
                                     "Niveau 15 : 2 professions max !\nNiveau 30 : 3 professions max !")
     .addBlankField(true)
     .addField("Les professions (Partie 2) :" , "Il y a 3 catégories de professions, et vous ne pourrez avoir qu'une seule profession dans chaque catégorie ! Voici les différentes profession dans chaque catégorie : \n\n" +
@@ -11948,9 +11948,9 @@ bot.on('message', message => {
                                               "=Professions de fabrication\n" +
                                               "=Professions de fonction publique")
     .addBlankField(true)
-    .addField("Les professions (Partie 3) :" , "Une profession permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n" +
-                                               "Une profession donne quelques bonus, permettant de plus facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n" +
-                                               "Pour connaitre les bonus que donne les professions, voici la liste :\n" +
+    .addField("Les professions (Partie 3) :" , "Une profession permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n\n" +
+                                               "Une profession donne quelques bonus, permettant de plus facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n\n" +
+                                               "Pour connaitre les bonus que donne les professions, voici la liste :\n\n" +
                                                "=Bonus des professions")
     .addBlankField(true)
     .addField("Les professions (Partie 4) :" , "Pour obtenir une profession, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voté pour :white_check_mark: ou contre :x: et selon le résultat, " +
