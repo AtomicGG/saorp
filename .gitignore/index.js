@@ -14755,8 +14755,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((2)*Math.random()+1))
-  const Dégâts = (Math.floor((3)*Math.random()+1))
+  const HP = Math.floor(3 * Math.random() + 3)
+  const Dégâts = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'amulette en coeur d'animal faible")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -14770,8 +14770,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((2)*Math.random()+1))
-  const Dégâts = (Math.floor((3)*Math.random()+1))
+  const HP = Math.floor(3 * Math.random() + 3)
+  const Dégâts = Math.floor(2 * Math.random())
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'anneau en coeur d'animal faible")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
