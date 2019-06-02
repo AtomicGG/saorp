@@ -17024,77 +17024,38 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Potion imposante de soin")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de soin`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Potion vitale de kobolt")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion vitale de kobolt :" , ":syringe: C'est une potion permettant de reprendre des HP ainsi que de gagner de la force et de la défense constitué de coeur et d'oeil d'animal et la meilleur de toute les potions du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 oeil de ragondin, 1 plantrus parfait, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt géant rouge\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion vitale de kobolt`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Potion imposante de défense")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de défense`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Potion imposante de force")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de force`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Potion imposante de régénération")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de régénération`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
   if (message.content.startsWith(prefix + "Potion moyenne de soin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 2 plantrus médiocre, 1 plantrus commun, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de soin`")
+    .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de soin`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Potion moyenne de défense")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":syringe: Potion moyenne de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de défense`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Potion moyenne de force")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":syringe: Potion moyenne de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de force`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17107,7 +17068,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 4 plantrus médiocre, 2 plantrus commun, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
+    .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de régénération`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17193,13 +17154,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((51)*Math.random()+50))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion guérissante minuscule de poison")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Poison' est supprimé !")
+    .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, l'état 'Poison' est supprimé !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17207,7 +17167,7 @@ bot.on('message', message => {
 });
 
 bot.off('message', message => {
-  const HP = (Math.floor((76)*Math.random()+75))
+  const HP = (Math.floor((11)*Math.random()+25))
   const X = (Math.floor((3)*Math.random()+2))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de régénération")) {
     const embed = new Discord.RichEmbed()
@@ -17221,29 +17181,13 @@ bot.off('message', message => {
   }
 });
 
-bot.off('message', message => {
-  const HP = (Math.floor((151)*Math.random()+150))
-  const X = (Math.floor((3)*Math.random()+2))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de régénération")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de régénération :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP par tour pendant `" +X+ "` tours !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
 bot.on('message', message => {
-  const HP = (Math.floor((51)*Math.random()+50))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion guérissante minuscule de saignement")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Saignement' est supprimé !")
+    .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, l'état 'Saignement' est supprimé !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17251,13 +17195,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((51)*Math.random()+50))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion guérissante minuscule de brûlure")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP et l'état 'Enflammer' est supprimé !")
+    .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, l'état 'Enflammer' est supprimé !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17321,7 +17264,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((21)*Math.random()+30))
+  const HP = (Math.floor((11)*Math.random()+25))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion faible de soin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17335,7 +17278,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((41)*Math.random()+60))
+  const HP = (Math.floor((21)*Math.random()+55))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion légère de soin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17349,43 +17292,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = (Math.floor((81)*Math.random()+120))
+  const HP = (Math.floor((21)*Math.random()+75))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de soin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField(":syringe: Potion moyenne de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.off('message', message => {
-  const HP = (Math.floor((161)*Math.random()+240))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de soin")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de soin :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.off('message', message => {
-  const A = (Math.floor((201)*Math.random()+300))
-  const B = (Math.floor((13)*Math.random()+18))
-  const C = (Math.floor((21)*Math.random()+40))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion vitale de kobolt")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion vitale de kobolt :" , ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +A+ "` HP !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +B+ "` points d'armure supplémentaires !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +C+ "` points de dégâts supplémentaires !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17419,32 +17332,6 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Potion moyenne de force")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion moyenne de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 2 plantrus médiocre, 1 plantrus commun, 3 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de force`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Potion moyenne de défense")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion moyenne de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal  et d'échantillon de kobolt ainsi que de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 2 plantrus médiocre, 1 plantrus commun, 3 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de défense`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
   if (message.content.startsWith(prefix + "Potion légère de défense")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17471,20 +17358,6 @@ bot.on('message', message => {
   }
 });
 
-bot.off('message', message => {
-  const HP = (Math.floor((27)*Math.random()+24))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de force")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de force :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous infligez, vous gagnez `" +HP+ "` points de dégâts supplémentaires !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
 bot.on('message', message => {
   const HP = (Math.floor((7)*Math.random()+7))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion moyenne de défense")) {
@@ -17499,22 +17372,7 @@ bot.on('message', message => {
   }
 });
 
-bot.off('message', message => {
-  const HP = (Math.floor((13)*Math.random()+12))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion imposante de défense")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":syringe: Potion imposante de défense :" , ":syringe: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:shield: Lorsque vous utilisez cet objet, pour les 10 prochains coups que vous recevez, vous gagnez `" +HP+ "` points d'armure supplémentaires !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
 bot.on('message', message => {
-  const HP = (Math.floor((13)*Math.random()+12))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -17720,7 +17578,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
-  const B = (Math.floor((25)*Math.random()+12))
+  const B = (Math.floor((20)*Math.random()+12))
   if (message.content.startsWith(prefix + "Bébé loup de sang attaque")) {
     if(A <= 50){
       const embed = new Discord.RichEmbed()
@@ -17976,7 +17834,7 @@ bot.on('message', message => {
     .addField("Peau écailleuse de kobolt pilion :" , "C'est une peau rare que vous trouvez sur les kobolts pilions dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "120 cols")
     .addField("Prix de revente :" , "24 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -18167,7 +18025,7 @@ bot.on('message', message => {
       .addField("Coeur de chien errant :" , "C'est un coeur basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "100 cols")
       .addField("Prix de revente :" , "20 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt supérieurs")
       .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -18325,7 +18183,7 @@ bot.on('message', message => {
       .addField("Oeil de chien errant :" , "C'est un oeil basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "80 cols")
       .addField("Prix de revente :" , "16 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "???")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
       .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -18459,19 +18317,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Oreille de kobolt")) {
-    if (message.content.includes("géant rouge")){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Oreille de kobolt géant rouge:" , "C'est une oreille rare que vous trouvez sur les kobolts géants rouges du palier 1 !")
-      .addField("Prix d'achat :" , "X cols")
-      .addField("Prix de revente :" , "X cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt géant rouge")
-      .setImage("http://wiki-dofus.eu/_images/4/44/OreilleKanigrou.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -18479,11 +18324,10 @@ bot.on('message', message => {
     .addField("Oreille de kobolt :" , "C'est une oreille rare que vous trouvez sur les kobolts du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
     .addField("Prix de revente :" , "4 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt\n=Ragoût de kobolt supérieur")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt\n=Ragoût de chien errant")
     .setImage("http://wiki-dofus.eu/_images/4/44/OreilleKanigrou.png")
     .setTimestamp()
     message.channel.send({embed})
-  }
   }
 });
 
@@ -18527,24 +18371,11 @@ bot.on('message', message => {
       .addField("Dent de kobolt pilion :" , "C'est une dent rare que vous trouvez sur les kobolts pilion dans la grotte du palier 1 !")
       .addField("Prix d'achat :" , "140 cols")
       .addField("Prix de revente :" , "28 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold\n=Armes de kobold\n=Armes de kobolt supérieures\n=Equipement de kobolt supérieures")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt supérieures\n=Equipement de kobolt supérieures")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      if (message.content.includes("géant rouge")) {
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(3447003)
-        .addField("Dent de kobolt géant rouge :" , "C'est une dent rare que vous trouvez sur les kobolts géants rouge dans la grotte du palier 1 !")
-        .addField("Prix d'achat :" , "X cols")
-        .addField("Prix de revente :" , "X cols")
-        .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt supérieures")
-        .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
-        .setTimestamp()
-        message.channel.send({embed})
-      } else {
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -18762,7 +18593,7 @@ bot.on('message', message => {
     .addField("Basilic :" , "C'est une herbe basique que vous trouvez en cueillant dans les montagnes du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
     .addField("Prix de revente :" , "8 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt\n=Ragoût de kobolt supérieur\n=Ragoût de kobolt géant rouge")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -18810,7 +18641,7 @@ bot.on('message', message => {
     .addField("Plantrus médiocre :" , "C'est une herbe basique que vous trouvez en cueillant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
     .addField("Prix de revente :" , "12 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -18826,7 +18657,7 @@ bot.on('message', message => {
     .addField("Plantrus commun :" , "C'est une herbe commune que vous trouvez en cueillant dans la montagne et la grotte du palier 1 !")
     .addField("Prix d'achat :" , "80 cols")
     .addField("Prix de revente :" , "16 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien errant\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -18842,7 +18673,7 @@ bot.on('message', message => {
     .addField("Plantrus rare :" , "C'est une herbe rare que vous trouvez en cueillant dans la grotte du palier 1 !")
     .addField("Prix d'achat :" , "100 cols")
     .addField("Prix de revente :" , "20 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense\n=Potion vitale de kobolt")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien errant\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -18858,7 +18689,7 @@ bot.on('message', message => {
     .addField("Plantrus parfait :" , "C'est une herbe très rare que vous trouvez en cueillant dans la grotte du palier 1 !")
     .addField("Prix d'achat :" , "120 cols")
     .addField("Prix de revente :" , "24 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion vitale de kobolt\n=Parchemin de feu rouge faible")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de feu rouge faible")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -18979,19 +18810,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Echantillon de kobolt")) {
-    if (message.content.includes("géant rouge")) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Echantillon de kobolt géant rouge :" , "C'est un prélèvement d'échantillon de Kobolt Géant Rouge du palier 1 !")
-      .addField("Prix d'achat :" , "X cols")
-      .addField("Prix de revente :" , "X cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion vitale de kobolt")
-      .setImage("https://img.freepik.com/icone-gratis/campione-di-sangue_318-137349.jpg?size=338&ext=jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -18999,11 +18817,10 @@ bot.on('message', message => {
       .addField("Echantillon de kobolt :" , "C'est un prélèvement d'échantillon de Kobolt du palier 1 !")
       .addField("Prix d'achat :" , "40 cols")
       .addField("Prix de revente :" , "8 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion imposante de soin\n=Potion imposante de régénération\n=Potion imposante de force\n=Potion imposante de défense")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure")
       .setImage("https://img.freepik.com/icone-gratis/campione-di-sangue_318-137349.jpg?size=338&ext=jpg")
       .setTimestamp()
       message.channel.send({embed})
-    }
   }
 });
 
