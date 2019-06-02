@@ -11129,7 +11129,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les objets :\n\n" , "Il existe un tas d'objets dans ce monde, que ce soit des équipements, des armes, des potions, des parchemins et bien d'autres choses.\n\nCes objets ont tous une signification particulières et leur fonction !\n\nPour avoir plus d'informations concernant un objet :\n`=[Nom de l'objet]`\n\nLorsque vous gagnez ou fabriquer un objet, je vous conseille de l'écrire sous la forme `[HP / Défense / Dégâts]`\n\nPar exemple : Casque en peau arraché [HP : 2 / Défense : 0 / Dégâts : 0] ou même directement : Casque en peau arraché [2/0/0]\n\nQuand vous équipez un objet qui vous donne 4 HP supplémentaire max par exemple, cela ne vous redonne pas de la vie !\n\nExemple : Je possède 24/40 HP actuellement et je m'équipe une cape me donnant +4 HP max, je ne me retrouve pas à 28/44 HP mais à 24/44 HP !")
+    .addField("Les objets :\n\n" , "Il existe un tas d'objets dans ce monde, que ce soit des équipements, des armes, des potions, des parchemins et bien d'autres choses.\n\n" +
+                                   "Ces objets ont tous une signification particulières et leur fonction !\n\n" +
+                                   "Pour avoir plus d'informations concernant un objet :\n`=[Nom de l'objet]`\n\n" +
+                                   "Lorsque vous gagnez ou fabriquer un objet, je vous conseille de l'écrire sous la forme `[HP / Défense / Dégâts]`\n\n" +
+                                   "Par exemple : Casque en peau arraché [HP : 2 / Défense : 0 / Dégâts : 0] ou même directement : Casque en peau arraché [2/0/0]\n\n" +
+                                   "Quand vous équipez un objet qui vous donne 4 HP supplémentaire max par exemple, cela ne vous redonne pas de la vie !\n\n" +
+                                   "Exemple : Je possède 24/40 HP actuellement et je m'équipe une cape me donnant +4 HP max, je ne me retrouve pas à 28/44 HP mais à 24/44 HP !")
     .setImage("https://vignette.wikia.nocookie.net/powerlisting/images/3/39/Elucidator.png/revision/latest?cb=20150111073313")
     .setTimestamp()
     message.channel.send({embed})
@@ -11142,7 +11148,15 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":bust_in_silhouette: Création de votre personnage :" , ":bust_in_silhouette: Pour créer votre personnage, écrivez :\n\n`=Fiche de personnage`\n\nIl faudra remplir la fiche de votre personnage et une fois que vous avez fini, copiez la et collez la dans le salon 'Fiche à valider' en attendant qu'un membre du staff vous valide et vous aide !\n\n:bust_in_silhouette: Une fois votre personnage créé, un membre du staff vous créera un salon classé par ordre alphabétique sur ce discord : https://discord.gg/ByaFWzc\n\nCe salon permettra de noter toutes les informations concernant votre personnage durant votre aventure !\n\nUne fois tout ça fini, vous devrez vous renommer sur le RP de la manière suivante : [Pseudo] [Niveau] [HP] [Dégâts] [Défense] !\n\n:bust_in_silhouette: Par exemple : [Yato][1][40/40][6][0]\n\nQuand vous perdrez des HP ou que vos stats changeront, il suffira de modifier votre pseudo et de bien sûr le noter sur la fiche de votre personnage sur l'autre serveur discord !")
+    .addField(":bust_in_silhouette: Création de votre personnage :" , ":bust_in_silhouette: Pour créer votre personnage, écrivez :\n\n" +
+                                                                      "`=Fiche de personnage`\n\nIl faudra remplir la fiche de votre personnage et une fois que vous avez fini, copiez la et collez la dans le salon 'Fiche à valider' " +
+                                                                      "en attendant qu'un membre du staff vous valide et vous aide !\n\n:bust_in_silhouette: Une fois votre personnage créé, un membre du staff vous créera un salon " +
+                                                                      "classé par ordre alphabétique sur ce discord : https://discord.gg/ByaFWzc\n\n" +
+                                                                      "Ce salon permettra de noter toutes les informations concernant votre personnage durant votre aventure !\n\n" +
+                                                                      "Une fois tout ça fini, vous devrez vous renommer sur le RP de la manière suivante : [Pseudo] [Niveau] [HP] [Dégâts] [Défense] !\n\n" +
+                                                                      ":bust_in_silhouette: Par exemple : [Yato][1][40/40][6][0]\n\n" +
+                                                                      "Quand vous perdrez des HP ou que vos stats changeront, il suffira de modifier votre pseudo et de bien sûr le " +
+                                                                      "noter sur la fiche de votre personnage sur l'autre serveur discord !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -11151,7 +11165,21 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fiche de personnage")) {
-    message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE PERSONNAGE`』▬▬▬▬▬▬▬▬۝\n\nNom :【A remplir】\n\nPrénom :【A remplir】\n\nPseudo :【A remplir】\n\nÂge : 【A remplir】\n\nSexe : 【A remplir】\n\nPhysique :【A remplir avec image si vous voulez, c'est conseillé】\n\nPersonnalité :【A remplir】\n\nPourquoi être venu dans SAO, votre histoire :【A remplir et c'est la raison RP】\n\nArme de base :【A remplir en écrivant =Armes】\n\nClasse :【A remplir en écrivant =Classes】\n\nCompétence :【A remplir en écrivant =Compétences】\n\nParticularité :【A remplir en écrivant =Particularités】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nNiveau : 1\n\nExp : 0/200\n\nGuilde : aucune\n\nDéfense totale : 0 points\n\nAttaque totale : 6 points \n\nHP : 40/40\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nArme :【Votre arme de base】\n\nCasque : aucun\n\nEpaulières : aucunes\n\nPlastron : aucun\n\nCape : aucune\n\nCeinture : aucune\n\nGantelets : aucun\n\nJambières : aucunes\n\nBottes : aucunes\n\nAnneau : aucun\n\nAmulette : aucune\n\nFamilier : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nCaractéristiques :\n\n0 points de puissance\n\n0 points de défense\n\n0 points de vitalité\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nJoueurs tués : aucun\n\nMonstres tués : aucun\n\nSanglier : aucun\n\nRenard : aucun\n\nLoup : aucun\n\nSlime : aucun\n\nLoup de sang : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nChasseur niveau 1 : 0/50\n\nCueilleur niveau 1 : 0/50\n\nMineur niveau 1 : 0/50\n\nBûcheron niveau 1 : 0/50\n\nPêcheur niveau 1 : 0/50\n\nMaître d'armes niveau 1 : 0/50\n\nMaître du cuir niveau 1 : 0/50\n\nForgeron niveau 1 : 0/50\n\nCouturier niveau 1 : 0/50\n\nCuisinier niveau 1 : 0/50\n\nAlchimiste niveau 1 : 0/50\n\nEnchanteur niveau 1 : 0/50\n\nEbéniste niveau 1 : 0/50\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nListe d'amis : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nInventaire :\n\n100 Cols\n\n1 Potion faible de soin [+40 HP]\n\n1 Ragoût de lapin [+20 HP]\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
+    message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE PERSONNAGE`』▬▬▬▬▬▬▬▬۝\n\n" +
+                         "Nom :【A remplir】\n\nPrénom :【A remplir】\n\nPseudo :【A remplir】\n\nÂge : 【A remplir】\n\nSexe : 【A remplir】\n\n" +
+                         "Physique :【A remplir avec image si vous voulez, c'est conseillé】\n\nPersonnalité :【A remplir】\n\n" +
+                         "Pourquoi être venu dans SAO, votre histoire :【A remplir et c'est la raison RP】\n\n" +
+                         "Arme de base :【A remplir en écrivant =Armes】\n\nClasse :【A remplir en écrivant =Classes】\n\n" +
+                         "Compétence :【A remplir en écrivant =Compétences】\n\nParticularité :【A remplir en écrivant =Particularités】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
+                         "Niveau : 1\n\nExp : 0/200\n\nGuilde : aucune\n\nDéfense totale : 0 points\n\nAttaque totale : 6 points \n\nHP : 40/40\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
+                         "Arme :【Votre arme de base】\n\nCasque : aucun\n\nEpaulières : aucunes\n\nPlastron : aucun\n\nCape : aucune\n\nCeinture : aucune\n\nGantelets : aucun\n\n" +
+                         "Jambières : aucunes\n\nBottes : aucunes\n\nAnneau : aucun\n\nAmulette : aucune\n\nFamilier : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nCaractéristiques :\n\n" +
+                         "0 points de puissance\n\n0 points de défense\n\n0 points de vitalité\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nJoueurs tués : aucun\n\nMonstres tués : aucun\n\nSanglier : aucun\n\n" +
+                         "Renard : aucun\n\nLoup : aucun\n\nSlime : aucun\n\nLoup de sang : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nChasseur niveau 1 : 0/50\n\nCueilleur niveau 1 : 0/50\n\n" +
+                         "Mineur niveau 1 : 0/50\n\nBûcheron niveau 1 : 0/50\n\nPêcheur niveau 1 : 0/50\n\nMaître d'armes niveau 1 : 0/50\n\nMaître du cuir niveau 1 : 0/50\n\n" +
+                         "Forgeron niveau 1 : 0/50\n\nCouturier niveau 1 : 0/50\n\nCuisinier niveau 1 : 0/50\n\nAlchimiste niveau 1 : 0/50\n\nEnchanteur niveau 1 : 0/50\n\n" +
+                         "Ebéniste niveau 1 : 0/50\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nListe d'amis : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nInventaire :\n\n100 Cols\n\n1 Potion faible de soin [+40 HP]\n\n" +
+                         "1 Ragoût de lapin [+20 HP]\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
   }
 });
 
@@ -11161,8 +11189,20 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Déroulement de combat, partie 1 :" , "Le système de combat est avant tout un système par tour, c'est à dire que chaque personne et monstre pourra agir que pendant son tour de jeu !\n\nIl faut savoir que, dans un combat lorsque c'est votre tour, vous aurez droit à une attaque ou une action, mais si un joueur ou un monstre vous attaque, vous aurez droit de faire une action défensive !\n\nPour voir la liste des différents coups et actions défensives possibles ainsi que pour comprendre comment sa marche :\n`=Coups et défenses`\n\nVous disposez de 'HP' qui sont dans votre pseudo, une fois que vous êtes à 0 HP, vous mourrez...\n\nVous disposez aussi de 'points de dégâts' qui vous permettent d'infliger des coups plus puissants à vos adversaires, plus vous en aurez, plus vous ferez mal !\n\nVous disposez aussi de 'points d'armure' qui permette de réduire les dégâts finaux reçus que vous subissez, si un ennemis inflige 10 points de dégâts après votre action défensive et que vous avez 4 points de défense, vous perdrez que 6 HP avec l'armure !")
-    .addField("Déroulement de combat, partie 2 :" , "Dans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !\n\nQuand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\nPour savoir quel joueur attaquera un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\nLors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez !\n\nExemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n`=[Nom du monstre]`\n\Selon la zone où vous voulez faire un combat, il y aura une commande à faire  étant :\n\n`=Plaines combat : [Nombre de participants]`\n\nSi vous rejoignez un combat, vous devez faire cette commande, par exemple si je rejoins le combat déjà lancé avec moi et un amis, je fait :\n\n`=Plaines combat : 2`")
+    .addField("Déroulement de combat, partie 1 :" , "Le système de combat est avant tout un système par tour, c'est à dire que chaque personne et monstre pourra agir que pendant son tour de jeu !\n\n" +
+                                                    "Il faut savoir que, dans un combat lorsque c'est votre tour, vous aurez droit à une attaque ou une action, mais si un joueur ou un monstre vous attaque, " +
+                                                    "vous aurez droit de faire une action défensive !\n\nPour voir la liste des différents coups et actions défensives possibles ainsi que pour comprendre comment sa marche :\n" +
+                                                    "`=Coups et défenses`\n\nVous disposez de 'HP' qui sont dans votre pseudo, une fois que vous êtes à 0 HP, vous mourrez...\n\n" +
+                                                    "Vous disposez aussi de 'points de dégâts' qui vous permettent d'infliger des coups plus puissants à vos adversaires, plus vous en aurez, plus vous ferez mal !\n\n" +
+                                                    "Vous disposez aussi de 'points d'armure' qui permette de réduire les dégâts finaux reçus que vous subissez, si un ennemis inflige 10 points de dégâts après " +
+                                                    "votre action défensive et que vous avez 4 points de défense, vous perdrez que 6 HP avec l'armure !")
+    .addField("Déroulement de combat, partie 2 :" , "Dans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !\n\n" +
+                                                    "Quand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\n" +
+                                                    "Pour savoir quel joueur attaquera un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\n" +
+                                                    "Lors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez !\n\n" +
+                                                    "Exemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n" +
+                                                    "`=[Nom du monstre]`\n\Selon la zone où vous voulez faire un combat, il y aura une commande à faire  étant :\n\n`=Plaines combat : [Nombre de participants]`\n\n" +
+                                                    "Si vous rejoignez un combat, vous devez faire cette commande, par exemple si je rejoins le combat déjà lancé avec moi et un amis, je fait :\n\n`=Plaines combat : 2`")
     .addField("Déroulement de combat, partie 3 :" , "La taille des groupes sont de 5 joueurs max à l'extérieur dans les combats contre des monstres, cependant si les combats sont joueurs contre joueurs, il n'y a plus de limite !")
 
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -11177,7 +11217,23 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":diamond_shape_with_a_dot_inside: Les classes :" , "Lorsque vous créez votre personnage, vous devez choisir une des classes suivantes :\n\n[Combattant] : Possède beaucoup de HP, pas mal de dégâts mais peu d'armure !\n[Assassin] : Possède beaucoup de dégâts, pas mal d'armure mais peu de HP !\n[Paladin] : Possède beaucoup d'armure, pas mal de dégâts mais peu de HP !\n[Vindicateur] : Possède beaucoup d'HP, pas mal d'armure mais peu de dégâts !\n[Chevalier] : Possède beaucoup d'armure, pas mal d'HP mais peu de dégâts !\n[Berserker] : Possède beaucoup de dégâts, pas mal d'HP mais peu d'armure !\n\nCes classes vous permettent de déclencher, une fois par jour, une compétence unique et très puissante !\n\nPour déclencher la compétence selon votre classe :\n\n`=Combattant : [Vos dégâts]`\n`=Assassin : [Vos dégâts]`\n`=Chevalier`\n`=Paladin : [Vos HP max]`\n`=Vindicateur`\n`=Berserker : [Vos dégâts]`\n\nUne classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n`=Niveaux`")
+    .addField(":diamond_shape_with_a_dot_inside: Les classes :" , "Lorsque vous créez votre personnage, vous devez choisir une des classes suivantes :\n\n" +
+                                                                  "[Combattant] : Possède beaucoup de HP, pas mal de dégâts mais peu d'armure !\n" +
+                                                                  "[Assassin] : Possède beaucoup de dégâts, pas mal d'armure mais peu de HP !\n" +
+                                                                  "[Paladin] : Possède beaucoup d'armure, pas mal de dégâts mais peu de HP !\n" +
+                                                                  "[Vindicateur] : Possède beaucoup d'HP, pas mal d'armure mais peu de dégâts !\n" +
+                                                                  "[Chevalier] : Possède beaucoup d'armure, pas mal d'HP mais peu de dégâts !\n" +
+                                                                  "[Berserker] : Possède beaucoup de dégâts, pas mal d'HP mais peu d'armure !\n\n" +
+                                                                  "Ces classes vous permettent de déclencher, une fois par jour, une compétence unique et très puissante !\n\n" +
+                                                                  "Pour déclencher la compétence selon votre classe :\n\n" +
+                                                                  "`=Combattant : [Vos dégâts]`\n" +
+                                                                  "`=Assassin : [Vos dégâts]`\n" +
+                                                                  "`=Chevalier : [Votre armure]`\n" +
+                                                                  "`=Paladin : [Votre armure]`\n" +
+                                                                  "`=Vindicateur : [Votre armure]`\n" +
+                                                                  "`=Berserker : [Vos dégâts]`\n\n" +
+                                                                  "Une classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n" +
+                                                                  "`=Niveaux`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -11198,39 +11254,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let X = args.slice(1).join(" : ");
-      const A = (Math.floor((X*1.5)*Math.random()+1*(X*1)))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants, vous produisez un coup déstabilisant sur votre adversaire qui inflige " +A+ " dégâts. Il ne pourra faire aucune esquive ni parade pendant trois tours !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-      talkedRecently.add(message.author.id+101);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+101);
-      }, 86400000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Combattant")) {
-    if (/*talkedRecently.has(message.author.id+101)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let atk = args.slice(2).join(" : ");
+      let atk = args.slice(1).join(" : ");
       const degat = Math.floor(atk*1.5)
       const degat2 = Math.floor(atk*2)
       const desarmement = Math.floor(atk*0.4)
@@ -11265,39 +11289,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let X = args.slice(1).join(" : ");
-      const A = (Math.floor((X*2)*Math.random()+1*(X*2)))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Compétence de l'assassin :" , "Vous déclenchez votre compétence appartenant à tous les assassins, vous produisez un coup rapide mais précis sur un point vital de votre adversaire qui inflige " +A+ " dégâts !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-      talkedRecently.add(message.author.id+102);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+102);
-      }, 86400000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Assassin")) {
-    if (/*talkedRecently.has(message.author.id+102)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let atk = args.slice(2).join(" : ");
+      let atk = args.slice(1).join(" : ");
       const atkFinale = Math.floor(atk*1.1)
       const degat = Math.floor(atkFinale*2.5)
       const embed = new Discord.RichEmbed()
@@ -11330,40 +11322,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let X = args.slice(1).join(" : ");
-      const A = (Math.floor((X*1)*Math.random()+1*(X*0.5)))
-      const B = A*2
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Compétence du berserker :" , "Vous déclenchez votre compétence appartenant à tous les berserkers, vous produisez un coup très puissant qui inflige " +A+ " dégâts et qui vous redonne " +B+ " HP !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-      talkedRecently.add(message.author.id+103);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+103);
-      }, 86400000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Berserker")) {
-    if (/*talkedRecently.has(message.author.id+103)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let atk = args.slice(2).join(" : ");
+      let atk = args.slice(1).join(" : ");
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11381,6 +11340,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Vindicateur")) {
     if (talkedRecently.has(message.author.id+104)) {
       const embed = new Discord.RichEmbed()
@@ -11392,37 +11353,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Compétence du vindicateur :" , "Vous déclenchez votre compétence appartenant à tous les vindicateurs, vous doublez vos dégâts pendant trois tours !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-      talkedRecently.add(message.author.id+104);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+104);
-      }, 86400000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Vindicateur")) {
-    if (/*talkedRecently.has(message.author.id+104)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let def = args.slice(2).join(" : ");
+      let def = args.slice(1).join(" : ");
       const defFinale = Math.floor(def*(2/3))
       const degat = Math.floor(def*7/6)
       const embed = new Discord.RichEmbed()
@@ -11455,39 +11386,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let X = args.slice(1).join(" : ");
-      const A = X*(3/4)
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Compétence du paladin :" , "Vous déclenchez votre compétence appartenant à tous les paladins, vous reprenez " +A+ " HP !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-      talkedRecently.add(message.author.id+105);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+105);
-      }, 86400000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "New Paladin")) {
-    if (/*talkedRecently.has(message.author.id+105)*/false) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      let def = args.slice(2).join(" : ");
+      let def = args.slice(1).join(" : ");
       const soin = Math.floor(def*1.5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -11507,37 +11406,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chevalier")) {
-    if (talkedRecently.has(message.author.id+106)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Compétence du chevalier :" , "Vous déclenchez votre compétence appartenant à tout les chevaliers, vous doublez vos points d'armure pendant trois tours !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-      talkedRecently.add(message.author.id+106);
-      setTimeout(() => {
-        talkedRecently.delete(message.author.id+106);
-      }, 86400000);
-    }
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "New Chevalier")) {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (/*talkedRecently.has(message.author.id+106)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11547,7 +11417,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let def = args.slice(2).join(" : ");
+      let def = args.slice(1).join(" : ");
       const armureVie = Math.floor(def*4.5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
