@@ -17022,7 +17022,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Potion moyenne de soin")) {
     const embed = new Discord.RichEmbed()
@@ -17371,7 +17371,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+*/
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
     const embed = new Discord.RichEmbed()
@@ -17867,7 +17867,7 @@ bot.on('message', message => {
       .addField("Peau de chien errant :" , "C'est une peau basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "60 cols")
       .addField("Prix de revente :" , "12 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobold supérieurs")
+      .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs")
       .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
       .setTimestamp()
       message.channel.send({embed})
