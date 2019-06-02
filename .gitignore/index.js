@@ -11902,7 +11902,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Métiers")) {
+  if (message.content.startsWith(prefix + "Professions")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11972,19 +11972,6 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Prix des constructions :" , "Cabane : 2 500 cols [2 salons discord maximum]\nUn bar : 5 000 cols [3 salons discord maximum]\nUne maison : 10 000 cols [5 salons discord maximum]\nUne demeure : 15 000 cols [8 salons discord maximum]\nUne planque : 20 000 cols [10 salons discord maximum]\nUne boutique : 25 000 cols [13 salons discord maximum]\nUne écurie : 30 000 cols [16 salons discord maximum]\nUne ferme : 40 000 cols [20 salons discord maximum]\nUn repaire de guilde : 75 000 cols [30 salons discord maximum]\nUne prison : 125 000  [50 salons discord maximum]\nUn manoir : 175 000 [75 salons discord maximum]\nUn temple : 250 000 cols [100 salons discord maximum]\nUn fort : 500 000 cols [125 salons discord maximum]\nUne arène : 1 000 000 cols [200 salons discord maximum]\nUn fief : 2 500 000 cols [300 salons discord maximum]\nUne partie de la ville : 10 000 000 cols\nLa ville entière : 100 000 000 cols")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "New Constructions prix") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
     .addField("Prix des constructions :" , " **__Maisons normales__** :\n\n Petite : 10 000  [4 salons discord maximum]\nMoyenne : 35 000  [12 salons discord maximum]\nGrande : 120 000 cols [36 salons discord maximum]\n\n**__Boutique / Atelier__** : \n(pouvant être un bar, un casino, un restaurant, une forge et pouvant posséder une petite partie d'habitation pour le possesseur mais surtout, un channel d'atelier)\n\nPetite : 10 000 cols [3 prédéfinis]\nMoyenne : 30 000 cols [10 prédéfinis]\nGrande : 100 000 cols [30 prédéfinis]\nUne planque : 35 000 cols [10 salons discord maximum, Une maison bien cacher]\nUn repaire de guilde : 200 000 cols [50 salons discord maximum]")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
@@ -12014,7 +12001,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (A < 50){
@@ -12022,7 +12009,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 1 avec :" , "│►" +A+ "/50 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 1 avec :" , "│►" +A+ "/50 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12033,7 +12020,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (50 <= A & A < 125){
@@ -12041,7 +12028,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 2 avec :" , "│►" +A+ "/125 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 2 avec :" , "│►" +A+ "/125 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12052,7 +12039,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (125 <= A & A < 225){
@@ -12060,7 +12047,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 3 avec :" , "│►" +A+ "/225 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 3 avec :" , "│►" +A+ "/225 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12071,7 +12058,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (225 <= A & A < 400){
@@ -12079,7 +12066,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 4 avec :" , "│►" +A+ "/400 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 4 avec :" , "│►" +A+ "/400 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12090,7 +12077,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (400 <= A & A < 700){
@@ -12098,7 +12085,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 5 avec :" , "│►" +A+ "/700 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 5 avec :" , "│►" +A+ "/700 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12109,7 +12096,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (700 <= A & A < 1200){
@@ -12117,7 +12104,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 6 avec :" , "│►" +A+ "/1200 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 6 avec :" , "│►" +A+ "/1200 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12128,7 +12115,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (1200 <= A & A < 2000){
@@ -12136,7 +12123,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 7 avec :" , "│►" +A+ "/2000 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 7 avec :" , "│►" +A+ "/2000 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12147,7 +12134,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (2000 <= A & A < 3500){
@@ -12155,7 +12142,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 8 avec :" , "│►" +A+ "/3500 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 8 avec :" , "│►" +A+ "/3500 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -12166,7 +12153,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de spécialisation")) {
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
     let X = args.slice(4).join(" : ");
     const A = X*1
     if (3500 <= A & A < 6000){
@@ -12174,7 +12161,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("│ Votre niveau de spécialisation est de 9 avec :" , "│►" +A+ "/6000 points d'expérience !")
+      .addField("│ Votre niveau de métier est de 9 avec :" , "│►" +A+ "/6000 points d'expérience !")
       .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
       .setTimestamp()
       message.channel.send({embed})
@@ -13030,7 +13017,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des armes du roi déchu :" , "=Faux du roi déchu à deux mains\n=Bouclier du roi déchu à une main")
+    .addField(":scales: Liste des armes du roi déchu :" , "=Faux du roi déchu à deux mains\n=Ecu du roi déchu à une main")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
