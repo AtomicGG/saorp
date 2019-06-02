@@ -13305,17 +13305,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((3)*Math.random()+3))
-  const HP = (Math.floor((6)*Math.random()+5))
-  const Dégâts = (Math.floor((6)*Math.random()+5))
-  /*const HP = (Math.floor((4)*Math.random()+7))
-  const Dégâts = (Math.floor((6)*Math.random()+5))*/
+  const HP = Math.floor(6 * Math.random() + 20)
+  const Dégâts = Math.floor(3 * Math.random() + 7)
   if (message.content.startsWith(prefix + "Découverte de l'amulette du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Amulette du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -13323,11 +13320,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((3)*Math.random()+3))
-  const HP = (Math.floor((6)*Math.random()+5))
-  const Dégâts = (Math.floor((6)*Math.random()+5))
-  /*const HP = (Math.floor((4)*Math.random()+7))
-  const Dégâts = (Math.floor((6)*Math.random()+5))*/
+  const HP = Math.floor(6 * Math.random() + 20)
+  const Dégâts = Math.floor(3 * Math.random() + 7)
   if (message.content.startsWith(prefix + "Découverte de l'anneau du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
