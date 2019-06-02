@@ -13327,7 +13327,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Anneau du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -13543,12 +13543,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bouclier du roi déchu à une main")) {
+  if (message.content.startsWith(prefix + "Ecu du roi déchu à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier du roi déchu à une main :" , ":scales: C'est un bouclier extrêmement rare uniquement possible à sur les kobolts gardes qui parfois ne se rendent pas compte du bouclier qu'ils ont !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:crossed_swords: Améliore 'Interception' en : 'Interception améliorée'\n\n:crossed_swords: Améliore le 'cri de provocation' en : 'Cri de provocation amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du roi déchu à une main`")
+    .addField(":scales: Bouclier du roi déchu à une main :" , ":scales: C'est un bouclier extrêmement rare uniquement possible à trouver dans les coffres de Montagne et de Grotte !\n\n:crossed_swords: Améliore le 'Blocage' en : 'Blocage amélioré'\n\n:crossed_swords: Améliore 'Interception' en : 'Interception améliorée'\n\n:crossed_swords: Améliore le 'cri de provocation' en : 'Cri de provocation amélioré'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'écu du roi déchu à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -13558,7 +13558,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = (Math.floor((7)*Math.random()+12))
   const HP = (Math.floor((31)*Math.random()+60))
-  if (message.content.startsWith(prefix + "Découverte du bouclier du roi déchu à une main")) {
+  if (message.content.startsWith(prefix + "Découverte de l'écu du roi déchu à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
