@@ -11061,7 +11061,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords: Le kobolt pilion fait tourner son marteau aux dessus de lui et essaye de vous frappez mais vous rater et frappe le sol ce qui fait un trambler le sol")
+      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords: Le kobolt pilion fait tourner son marteau aux dessus de lui et essaye de vous frappez mais vous rate et provoque un tremblement de terre en touchant le sol")
       message.channel.send({embed})
     }
     if (66 <= roll){
@@ -13792,7 +13792,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:Shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16313,7 +16313,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shields: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:Shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -19635,7 +19635,7 @@ bot.on('message', message => {
                             "Potion moyenne de défense :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de défense]\n\n" +
                             "Potion guérissante minuscule de poison :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de poison]\n\n" +
                             "Potion guérissante minuscule de saignement :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\n" +
-                            "Potion guérissante minuscule de brûlure :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\n")
+                            "Potion guérissante minuscule de brûlure :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\n```")
   }
 }) ;
 
