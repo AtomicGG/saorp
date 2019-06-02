@@ -9436,7 +9436,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt ouvrier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
-    .setImage("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5e/KoboldMG.png/300px-KoboldMG.png?version=b6cc120769e6300e7b5eb863ef828278")
+    .setImage("https://cdn.discordapp.com/attachments/572791993420349442/574252054466527232/kobold.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 275")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt ouvrier attaque`")
     .addField(":shield: Lorsque le kobolt ouvrier reçoit un coup :" , ":shield: `=Kobolt ouvrier défense : [Points de dégâts de votre coup]`")
