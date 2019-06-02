@@ -849,7 +849,7 @@ bot.on('message', message => {
                                                                    ":crossed_swords: `=Coup normal +2 : [Vos dégâts]`\n" +
                                                                    ":crossed_swords: `=Coup normal +3 : [Vos dégâts]`")
     .addBlankField(true)
-    .addField(":crossed_swords: Pour effectuer un coup Létal :" , ":crossed_swords: `=Coup létal : [Vos dégâts]`\n" +
+    .addField(":crossed_swords: Pour effectuer un coup létal :" , ":crossed_swords: `=Coup létal : [Vos dégâts]`\n" +
                                                                    ":crossed_swords: `=Coup létal +1 : [Vos dégâts]`\n" +
                                                                    ":crossed_swords: `=Coup létal +2 : [Vos dégâts]`\n" +
                                                                    ":crossed_swords: `=Coup létal +3 : [Vos dégâts]`")
@@ -945,7 +945,7 @@ bot.on('message', message => {
     .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\n" +
                                                       "Le coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\n" +
                                                       "Le coup létal est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\n" +
-                                                      "Le combo est un un coup qui, à force de le répéter, augmente de puissance\n\n" +
+                                                      "Le combo est un coup qui, à force de le répéter, augmente de puissance\n\n" +
                                                       "Le coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\n" +
                                                       "Le coup circulaire est un coup de zone permettant de toucher plusieurs ennemis\n\n" +
                                                       "Le coup sauté est un coup ayant une chance de faire tomber la cible\n\n" +
@@ -20634,7 +20634,7 @@ bot.on('message', message => {
 
 
           bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Mine")) {
+            if (message.content === prefix + "Mine") {
             const embed = new Discord.RichEmbed()
             .setColor(0xff0000)
             .setAuthor(message.author.username , message.author.avatarURL)
