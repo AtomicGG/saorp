@@ -16952,7 +16952,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
+    .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 1 plantrus médiocre, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16960,12 +16960,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Ragoût de kobolt supérieur") {
+  if (message.content === prefix + "Ragoût de chien errant") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de kobolt supérieur :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de ragondin et de d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de ragondin, 3 basilic, 5 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de kobolt supérieur`")
+    .addField(":meat_on_bone: Ragoût de chien errant :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de chien et de d'oreille de kobolt mais aussi de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de chien errant, 2 plantrus commun, 1 plantrus rare, 6 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de kobolt supérieur`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
