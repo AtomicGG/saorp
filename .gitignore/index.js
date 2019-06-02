@@ -13185,10 +13185,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte du casque du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -13202,10 +13200,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte des épaulières du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -13219,10 +13215,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte de la cape du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -13236,10 +13230,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte du plastron du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -13253,10 +13245,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte des gantelets du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -13270,10 +13260,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte de la ceinture du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -13287,10 +13275,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte des jambières du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -13304,10 +13290,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((2)*Math.random()+1))
-  const HP = (Math.floor((11)*Math.random()+10))
-  /*const Défense = (Math.floor((1)*Math.random()+1))
-  const HP = (Math.floor((13)*Math.random()+13))*/
+  const Défense = 1
+  const HP = Math.floor(6 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte des bottes du clan des loups")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
