@@ -75,7 +75,7 @@ bot.on('message', message => {
                                                  ":japanese_ogre:=Monstres\n" +
                                                  ":scroll:=Liste\n" +
                                                  ":tools:=Crafts\n" +
-                                                 ":hammer_pick:=Spécialisations\n" +
+                                                 ":hammer_pick:=Métiers\n" +
                                                  ":large_orange_diamond:=Cristal\n" +
                                                  ":cityscape:=Ville\n" +
                                                  ":sunrise_over_mountains:=Extérieur\n" +
@@ -85,7 +85,7 @@ bot.on('message', message => {
                                                  ":bank:=Donjons\n" +
                                                  ":fox:=Familiers\n" +
                                                  ":busts_in_silhouette:=Guilde\n" +
-                                                 ":alembic:=Métiers\n" +
+                                                 ":alembic:=Professions\n" +
                                                  ":microphone2:=Dirigeant\n" +
                                                  ":shield:=Garde\n" +
                                                  ":bow_and_arrow:=Mercenaire\n" +
@@ -11262,7 +11262,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants. Vous assennez deux coups à votre cible. Le premier coup vise à désarmer, infligeant `" +degat+ "` dégâts et faisant perdre `" +desarmement+ "` points d'attaque pendant trois tours. Le deuxième coup vise à briser l'armure, infligeant `" +degat+ "` et faisant perdre `" +briseArmure+ "` points d'armure pendant trois tours. (Vous devez faire deux défenses séparées, seul l'esquive ou la parade réussie vous protégera des effets)\n\nSi la cible est un monstre, le premier coup inflige `" +degat+ "` et baisse les dégats du monstre de `" +desarmement+ "`et le deuxième coup inflige `" +degat2+ "`")
+      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants. Vous assennez deux coups à votre cible. Le premier coup vise à désarmer, infligeant `" +degat+ "` dégâts et faisant perdre `" +desarmement+ "` points d'attaque pendant trois tours. Le deuxième coup vise à briser l'armure, infligeant `" +degat+ "` et faisant perdre `" +briseArmure+ "` points d'armure pendant trois tours. (Vous devez faire deux défenses séparées, seul l'esquive ou la parade réussie vous protégera des effets)\n\nSi la cible est un monstre, le premier coup inflige `" +degat+ "` et baisse les dégats du monstre de `" +desarmement+ "` et le deuxième coup inflige `" +degat2+ "`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -11441,7 +11441,16 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les caractéristiques :" , "Durant votre avancée dans le RP, vous gagnerez de l'expérience en tuant des monstres, en finissant des quêtes et même en complétant des donjons !\n\nL'expérience vous permettra d'avoir des niveaux qui vous rendront plus fort, qui débloqueront l'accès à bien des choses.\n\nCependant, lorsque vous gagnerez un niveau, vous gagnerez aussi un ou plusieurs points de caractéristiques, et vous pourrez les mettre dans l'un des 'attributs' suivants :\n\n[La puissance]\n[La vitalité]\n[La défense]\n\nChaque attribut signifie quelque chose :\n\nUn point de puissance augmente vos points de dégâts de 1 point supplémentaire !\nUn point de vitalité augmente vos HP max de 5 points supplémentaires !\nUn point de défense augmente votre armure de 0.5 point supplémentaire !\n\nVous l'aurez compris, selon ce que vous voulez devenir, vous aurez le choix parmi ces trois attributs.\n\nPour voir combien de points de caractéristiques vous gagnez selon votre niveau, écrivez :\n`=Tableau des caractéristiques`")
+    .addField("Les caractéristiques :" , "Durant votre avancée dans le RP, vous gagnerez de l'expérience en tuant des monstres, en finissant des quêtes et même en complétant des donjons !\n\n" +
+                                         "L'expérience vous permettra d'avoir des niveaux qui vous rendront plus fort, qui débloqueront l'accès à bien des choses.\n\n" +
+                                         "Cependant, lorsque vous gagnerez un niveau, vous gagnerez aussi un ou plusieurs points de caractéristiques, et vous pourrez les mettre dans l'un des 'attributs' suivants :\n\n" +
+                                         "[La puissance]\n[La vitalité]\n[La défense]\n\nChaque attribut signifie quelque chose :\n\n" +
+                                         "Un point de puissance augmente vos points de dégâts de 1 point supplémentaire !\n" +
+                                         "Un point de vitalité augmente vos HP max de 5 points supplémentaires !\n" +
+                                         "Un point de défense augmente votre armure de 0.5 point supplémentaire !\n\n" +
+                                         "Vous l'aurez compris, selon ce que vous voulez devenir, vous aurez le choix parmi ces trois attributs.\n\n" +
+                                         "Pour voir combien de points de caractéristiques vous gagnez selon votre niveau, écrivez :\n" +
+                                         "`=Tableau des caractéristiques`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -11454,7 +11463,21 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Tableau des caractéristiques du niveau 1 à 15 :" , "Niveau 1 : Aucun\nNiveau 2 : 1 point de caractéristique suppplémentaire !\nNiveau 3 : 1 point de caractéristique suppplémentaire !\nNiveau 4 : 1 point de caractéristique suppplémentaire !\nNiveau 5 : 1 point de caractéristique suppplémentaire !\nNiveau 6 : 2 points de caractéristiques suppplémentaires !\nNiveau 7 : 2 points de caractéristiques suppplémentaires !\nNiveau 8 : 2 points de caractéristiques suppplémentaires !\nNiveau 9 : 2 points de caractéristiques suppplémentaires !\nNiveau 10 : 2 points de caractéristiques suppplémentaires !\nNiveau 11 : 3 points de caractéristiques suppplémentaires !\nNiveau 12 : 3 points de caractéristiques suppplémentaires !\nNiveau 13 : 3 points de caractéristiques suppplémentaires !\nNiveau 14 : 3 points de caractéristiques suppplémentaires !\nNiveau 15 : 3 points de caractéristiques suppplémentaires !")
+    .addField("Tableau des caractéristiques du niveau 1 à 15 :" , "Niveau 1 : Aucun\n" +
+                                                                  "Niveau 2 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 3 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 4 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 5 : 1 point de caractéristique suppplémentaire !\n" +
+                                                                  "Niveau 6 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 7 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 8 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 9 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 10 : 2 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 11 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 12 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 13 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 14 : 3 points de caractéristiques suppplémentaires !\n" +
+                                                                  "Niveau 15 : 3 points de caractéristiques suppplémentaires !")
     .addBlankField(true)
     .addField("Tableau des caractéristiques du niveau 16 à 30 :" , "Niveau 16 : 4 points de caractéristiques supplémentaires !\nNiveau 17 : 4 points de caractéristiques supplémentaires !\nNiveau 18 : 4 points de caractéristiques supplémentaires !\nNiveau 19 : 4 points de caractéristiques supplémentaires !\nNiveau 20 : 4 points de caractéristiques supplémentaires !\nNiveau 21 : 5 points de caractéristiques supplémentaires !\nNiveau 22 : 5 points de caractéristiques supplémentaires !\nNiveau 23 : 5 points de caractéristiques supplémentaires !\nNiveau 24 : 5 points de caractéristiques supplémentaires !\nNiveau 25 : 5 points de caractéristiques supplémentaires !\nNiveau 26 : 6 points de caractéristiques supplémentaires !\nNiveau 27 : 6 points de caractéristiques supplémentaires !\nNiveau 28 : 6 points de caractéristiques supplémentaires !\nNiveau 29 : 6 points de caractéristiques supplémentaires !\nNiveau 30 : 6 points de caractéristiques supplémentaires !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -11464,16 +11487,26 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Spécialisations")) {
+  if (message.content.startsWith(prefix + "Métiers")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les spécialisations, partie 1 :" , "Lorsque vous partez cueillir des plantes, ou chasser, miner, ou même si vous créez des équipements en cuir, en métal, en tissu, vous gagnerez parfois de l'expérience pour une spécialisation !\n\nCette expérience permet d'augmenter de niveaux dans justement vos spécialisations qui sont les suivantes :\n\n[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n[Maître d'arme]\n[Maître du cuir]\n[Forgeron]\n[Couturier]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n[Ebeniste]\n\nToutes ces spécialisations possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\nPour voir justement les niveaux de spécialisations :\n\n`=Tableau des spécialisations`\n\nPour calculer votre niveau de spécialisation selon vos points d'expérience :\n\n`=Calculateur d'expérience de spécialisation : [Vos points d'expérience]`")
+    .addField("Les métiers, partie 1 :" , "Lorsque vous partez cueillir des plantes, ou chasser, miner, ou même si vous créez des équipements en cuir, en métal, en tissu, vous gagnerez parfois de l'expérience pour un métier !\n\n" +
+                                                  "Cette expérience permet d'augmenter de niveaux dans justement vos spécialisations qui sont les suivantes :\n\n" +
+                                                  "[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n" +
+                                                  "[Maître d'arme]\n[Maître du cuir]\n[Forgeron]\n[Couturier]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n[Ebeniste]\n\n" +
+                                                  "Tout ces métiers possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\n" +
+                                                  "Pour voir justement les niveaux de métiers :\n\n`=Tableau des métiers`\n\n" +
+                                                  "Pour calculer votre niveau de métier selon vos points d'expérience :\n\n`=Calculateur d'expérience de métier : [Vos points d'expérience]`")
     .addBlankField(true)
-    .addField("Les spécialisations, partie 2 :" , "Votre niveau dans une spécialisation vous permettra de débloquer l'accès à certaines activité dans une zone, ou l'accès à un craft mais aussi à des bonus !\n\nPrenons l'exemple de la forêt, si vous voulez cueillir là-bas, il faudra que vous soyez niveau 2 dans la spécialisation 'Cueilleur' pour le faire, si vous êtes niveau 1, vous ne pourrez pas, si vous êtes de niveau 2 ou plus dans la spécialisation, vous pourrez !\n\nMaintenant, il faut comprendre que, si vous êtes niveau 2 dans la spécialisation 'Cueilleur' et que la forêt nécessite d'être niveau 2, vous pourrez cueillir là-bas, mais il faudra écrire ceci :\n\n`=Forêt cueillir`")
+    .addField("Les métiers, partie 2 :" , "Votre niveau dans un métier vous permettra de débloquer l'accès à certaines activité dans une zone, ou l'accès à un craft mais aussi à des bonus !\n\n" +
+                                          "Prenons l'exemple de la forêt, si vous voulez cueillir là-bas, il faudra que vous soyez niveau 2 dans le métier 'Cueilleur' pour le faire, si vous êtes niveau 1, vous ne pourrez pas, " +
+                                          "si vous êtes de niveau 2 ou plus dans le métier, vous pourrez !\n\n" +
+                                          "Maintenant, il faut comprendre que, si vous êtes niveau 2 dans le métier 'Cueilleur' et que la forêt nécessite d'être niveau 2, " +
+                                          "vous pourrez cueillir là-bas, mais il faudra écrire ceci :\n\n`=Forêt cueillir`")
     .addBlankField(true)
-    .addField("Les spécialisations, partie 3 :" , "Maintenant pour revenir aux bonus que donne un certain niveau dans une spécialisation, vous pouvez les voir en écrivant :\n=Chasseur\n=Mineur\n=Bûcheron\n=Pêcheur\n=Cueilleur")
+    .addField("Les métiers, partie 3 :" , "Maintenant pour revenir aux bonus que donne un certain niveau dans un métier, vous pouvez les voir en écrivant :\n=Chasseur\n=Mineur\n=Bûcheron\n=Pêcheur\n=Cueilleur")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -11486,7 +11519,15 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Chasseur :" , "Niveau 1 : Aucun\nNiveau 2 : 1 point de dégât supplémentaire !\nNiveau 3 : 2 points de dégâts supplémentaire !\nNiveau 4 : 3 points de dégâts supplémentaire\nNiveau 5 : 4 points de dégâts supplémentaire !\nNiveau 6 : 5 points de dégâts supplémentaire !\nNiveau 7 : 6 points de dégâts supplémentaire !\nNiveau 8 : 7 points de dégâts supplémentaire !\nNiveau 9 : 8 points de dégâts supplémentaire !\nNiveau 10 : 9 points de dégâts supplémentaire")
+    .addField("Chasseur :" , "Niveau 1 : Aucun\nNiveau 2 : 1 point de dégât supplémentaire !\n" +
+                                               "Niveau 3 : 2 points de dégâts supplémentaire !\n" +
+                                               "Niveau 4 : 3 points de dégâts supplémentaire\n" +
+                                               "Niveau 5 : 4 points de dégâts supplémentaire !\n" +
+                                               "Niveau 6 : 5 points de dégâts supplémentaire !\n" +
+                                               "Niveau 7 : 6 points de dégâts supplémentaire !\n" +
+                                               "Niveau 8 : 7 points de dégâts supplémentaire !\n" +
+                                               "Niveau 9 : 8 points de dégâts supplémentaire !\n" +
+                                               "Niveau 10 : 9 points de dégâts supplémentaire")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -11546,12 +11587,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Tableau des spécialisations")) {
+  if (message.content.startsWith(prefix + "Tableau des métiers")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Tableau des spécialisations du niveau 1 à 10" , "Niveau 2 : 50 points d'expérience nécessaire !\nNiveau 3 : 125 points d'expérience nécessaire !\nNiveau 4 : 225 points d'expérience nécessaire !\nNiveau 5 : 400 points d'expérience nécessaire !\nNiveau 6 : 700 points d'expérience nécessaire !\nNiveau 7 : 1200 points d'expérience nécessaire !\nNiveau 8 : 2000 points d'expérience nécessaire !\nNiveau 9 : 3500 points d'expérience nécessaire !\nNiveau 10 : 6000 points d'expérience nécessaire !")
+    .addField("Tableau des métiers du niveau 1 à 10" , "Niveau 2 : 50 points d'expérience nécessaire !\nNiveau 3 : 125 points d'expérience nécessaire !\nNiveau 4 : 225 points d'expérience nécessaire !\nNiveau 5 : 400 points d'expérience nécessaire !\nNiveau 6 : 700 points d'expérience nécessaire !\nNiveau 7 : 1200 points d'expérience nécessaire !\nNiveau 8 : 2000 points d'expérience nécessaire !\nNiveau 9 : 3500 points d'expérience nécessaire !\nNiveau 10 : 6000 points d'expérience nécessaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -11618,94 +11659,8 @@ bot.on('message', message => {
   }
 });
 
-
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bonus assassin")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les bonus des niveaux pour Assassin de 2 à 10 :" , "Niveau 2 : Vous gagnez 1 point de dégâts !\n\nNiveau 3 : Vous gagnez 2 points de dégât !\n\nNiveau 4 : Vous gagnez 3 points de dégâts !\n\nNiveau 5 : Vous gagnez 3 points de dégâts et 0,5 point d'armure !\n\nNiveau 6 : Vous gagnez 3 points de dégâts et 1 point d'armure !\n\nNiveau 7 : Vous gagnez 3 points de dégâts et 1 point d'armure et 5 HP !\n\nNiveau 8 : Vous gagnez 4 points de dégâts et 1 point d'armure et 5 HP !\n\nNiveau 9 : Vous gagnez 5 points de dégâts et 1 point d'armure et 5 HP !\n\nNiveau 10 : Vous gagnez 6 points de dégâts et 1 point d'armure et 5 HP !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Assassin de 11 à 20 :" , "Niveau 11 : Vous gagnez 6 points de dégâts et 1,5 points d'armure et 5 HP !\n\nNiveau 12 : Vous gagnez 6 points de dégâts et 2 points d'armure et 5 HP !\n\nNiveau 13 : Vous gagnez 6 points de dégâts et 2 points d'armure et 10 HP !\n\nNiveau 14 : Vous gagnez 7 points de dégâts et 2 points d'armure et 10 HP !\n\nNiveau 15 : Vous gagnez 8 points de dégâts et 2 points d'armure et 10 HP !\n\nNiveau 16 : Vous gagnez 9 points de dégâts et 2 points d'armure et 10 HP !\n\nNiveau 17 : Vous gagnez 9 points de dégâts et 2,5 points d'armure et 10 HP !\n\nNiveau 18 : Vous gagnez 9 points de dégâts et 3 points d'armure et 10 HP !\n\nNiveau 19 : Vous gagnez 9 points de dégâts et 3 points d'armure et 15 HP !\n\nNiveau 20 : Vous gagnez 10 points de dégâts et 3 points d'armure et 15 HP !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Assassin de 21 à 30 :" , "Niveau 21 : Vous gagnez 10 points de dégâts et 3 points d'armure et 15 HP !\n\nNiveau 22 : Vous gagnez 11 points de dégâts et 3 points d'armure et 15 HP !\n\nNiveau 23 : Vous gagnez 11 points de dégâts et 3 points d'armure et 15 HP !\n\nNiveau 24 : Vous gagnez 12 points de dégâts et 3 points d'armure et 15 HP !\n\nNiveau 25 : Vous gagnez 12 points de dégâts et 3 points d'armure et 15 HP !\n\nNiveau 26 : Vous gagnez 12 points de dégâts et 3,5 points d'armure et 15 HP !\n\nNiveau 27 : Vous gagnez 12 points de dégâts et 3,5 points d'armure et 15 HP !\n\nNiveau 28 : Vous gagnez 12 points de dégâts et 4 points d'armure et 15 HP !\n\nNiveau 29 : Vous gagnez 12 points de dégâts et 4 points d'armure et 15 HP !\n\nNiveau 30 : Vous gagnez 12 points de dégâts et 4 points d'armure et 20 HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bonus berserker")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les bonus des niveaux pour Berserker de 2 à 10 :" , "Niveau 2 : Vous gagnez 1 point de dégâts !\n\nNiveau 3 : Vous gagnez 2 points de dégâts !\n\nNiveau 4 : Vous gagnez 3 points de dégâts !\n\nNiveau 5 : Vous gagnez 3 points de dégâts et 5 HP !\n\nNiveau 6 : Vous gagnez 3 points de dégâts et 10 HP !\n\nNiveau 7 : Vous gagnez 3 points de dégâts et 10 HP et 0,5 point d'armure !\n\nNiveau 8 : Vous gagnez 4 points de dégâts et 10 HP et 0,5 point d'armure !\n\nNiveau 9 : Vous gagnez 5 points de dégâts et 10 HP et 0,5 point d'armure !\n\nNiveau 10 :  Vous gagnez 6 points de dégâts et 10 HP et 0,5 point d'armure !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Berserker de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 6 points de dégâts et 15 HP et 0,5 point d'armure !\n\nNiveau 12 : Vous gagnez 6 points de dégâts et 20 HP et 0,5 point d'armure !\n\nNiveau 13 : Vous gagnez 6 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 14 : Vous gagnez 7 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 15 : Vous gagnez 8 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 16 : Vous gagnez 9 points de dégâts et 20 HP et 1 point d'armure !\n\nNiveau 17 : Vous gagnez 9 points de dégâts et 25 HP et 1 point d'armure !\n\nNiveau 18 : Vous gagnez 9 points de dégâts et 30 HP et 1 point d'armure !\n\nNiveau 19 : Vous gagnez 9 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 20 : Vous gagnez 10 points de dégâts et 30 HP et 1,5 points d'armure !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Berserker de 21 à 30 :" , "Niveau 21 : Vous gagnez 10 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 22 : Vous gagnez 11 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 23 : Vous gagnez 11 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 24 : Vous gagnez 12 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 25 : Vous gagnez 12 points de dégâts et 30 HP et 1,5 points d'armure !\n\nNiveau 26 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\nNiveau 27 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\nNiveau 28 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\nNiveau 29 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\nNiveau 30 : Vous gagnez 12 points de dégâts et 40 HP et 2 points d'armure !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bonus chevalier")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les bonus des niveaux pour Chevalier de 2 à 10 :" , "Niveau 2 : Vous gagnez 0,5 point d'armure !\n\nNiveau 3 : Vous gagnez 1 point d'armure !\n\nNiveau 4 : Vous gagnez 1,5 points d'armure !\n\nNiveau 5 : Vous gagnez 1,5 points d'armure et 5 HP !\n\nNiveau 6 : Vous gagnez 1,5 points d'armure et 10 HP !\n\nNiveau 7 : Vous gagnez 1,5 points d'armure et 10 HP et 1 point de dégât !\n\nNiveau 8 : Vous gagnez 2 points d'armure et 10 HP et 1 point de dégât !\n\nNiveau 9 : Vous gagnez 2,5 points d'armure et 10 HP et 1 point de dégât !\n\nNiveau 10 : Vous gagnez 3 points d'armure et 10 HP et 1 point de dégât !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Chevalier de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 3 points d'armure et 15 HP et 1 point de dégât !\n\nNiveau 12 : Vous gagnez 3 points d'armure et 20 HP et 1 point de dégât !\n\nNiveau 13 : Vous gagnez 3 points d'armure et 20 HP et 2 points de dégâts !\n\nNiveau 14 : Vous gagnez 3,5 points d'armure et 20 HP et 2 points de dégâts !\n\nNiveau 15 : Vous gagnez 4 points d'armure et 20 HP et 2 points de dégâts !\n\nNiveau 16 : Vous gagnez 4,5 points d'armure et 20 HP et 2 points de dégâts !\n\nNiveau 17 : Vous gagnez 4,5 points d'armure et 25 HP et 2 points de dégâts !\n\nNiveau 18 : Vous gagnez 4,5 points d'armure et 30 HP et 2 points de dégâts !\n\nNiveau 19 : Vous gagnez 4,5 points d'armure et 30 HP et 3 points de dégâts !\n\nNiveau 20 : Vous gagnez 5 points d'armure et 30 HP et 3 points de dégâts !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Chevalier de 21 à 30 :" , "Niveau 21 : Vous gagnez 5 points d'armure et 30 HP et 3 points de dégâts !\n\nNiveau 22 : Vous gagnez 5,5 points d'armure et 30 HP et 3 points de dégâts !\n\nNiveau 23 : Vous gagnez 5,5 points d'armure et 30 HP et 3 points de dégâts !\n\nNiveau 24 : Vous gagnez 6 points d'armure et 30 HP et 3 points de dégâts !\n\nNiveau 25 : Vous gagnez 6 points d'armure et 30 HP et 3 points de dégâts !\n\nNiveau 26 : Vous gagnez 6 points d'armure et 35 HP et 3 points de dégâts !\n\nNiveau 27 : Vous gagnez 6 points d'armure et 35 HP et 3 points de dégâts !\n\nNiveau 28 : Vous gagnez 6 points d'armure et 40 HP et 3 points de dégâts !\n\nNiveau 29 : Vous gagnez 6 points d'armure et 40 HP et 3 points de dégâts !\n\nNiveau 30 : Vous gagnez 6 points d'armure et 30 HP et 4 points de dégâts !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bonus paladin")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les bonus des niveaux pour Paladin de 2 à 10 :" , "Niveau 2 : Vous gagnez 0,5 point d'armure !\n\nNiveau 3 : Vous gagnez 1 point d'armure !\n\nNiveau 4 : Vous gagnez 1,5 points d'armure !\n\nNiveau 5 : Vous gagnez 1,5 points d'armure et 1 point de dégât !\n\nNiveau 6 : Vous gagnez 1,5 points d'armure et 2 points de dégâts !\n\nNiveau 7 : Vous gagnez 1,5 points d'armure et 2 points de dégâts et 5 HP !\n\nNiveau 8 : Vous gagnez 2 points d'armure et 2 points de dégâts et 5 HP !\n\nNiveau 9 : Vous gagnez 2,5 points d'armure et 2 points de dégâts et 5 HP !\n\nNiveau 10 : Vous gagnez 3 points d'armure et 2 points de dégâts et 5 HP !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Paladin de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 3 points d'armure et 3 points de dégâts et 5 HP !\n\nNiveau 12 : Vous gagnez 3 points d'armure et 4 points de dégâts et 5 HP !\n\nNiveau 13 : Vous gagnez 3 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 14 : Vous gagnez 3,5 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 15 : Vous gagnez 4 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 16 : Vous gagnez 4,5 points d'armure et 4 points de dégâts et 10 HP !\n\nNiveau 17 : Vous gagnez 4,5 points d'armure et 5 points de dégâts et 10 HP !\n\nNiveau 18 : Vous gagnez 4,5 points d'armure et 6 points de dégâts et 10 HP !\n\nNiveau 19 : Vous gagnez 4,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 20 : Vous gagnez 5 points d'armure et 6 points de dégâts et 15 HP !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour Paladin de 21 à 30 :" , "Niveau 21 : Vous gagnez 5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 22 : Vous gagnez 5,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 23 : Vous gagnez 5,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 24 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 25 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 26 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 27 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 28 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 29 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 30 : Vous gagnez 6 points d'armure et 8 points de dégâts et 20 HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bonus vindicateur")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les bonus des niveaux pour Vindicateur de 2 à 10 :" , "Niveau 2 : Vous gagnez 5 HP !\n\nNiveau 3 : Vous gagnez 10 HP !\n\nNiveau 4 : Vous gagnez 15 HP !\n\nNiveau 5 : Vous gagnez 15 HP et 0,5 point d'armure !\n\nNiveau 6 : Vous gagnez 15 HP et 1 point d'armure !\n\nNiveau 7 : Vous gagnez 15 HP et 1 point d'armure et 1 point de dégât !\n\nNiveau 8 : Vous gagnez 20 HP et 1 point d'armure et 1 point de dégât !\n\nNiveau 9 : Vous gagnez 25 HP et 1 point d'armure et 1 point de dégât !\n\nNiveau 10 : Vous gagnez 30 HP et 1 point d'armure et 1 point de dégât !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour vindicateur de 11 à 20 :" , "\n\nNiveau 11 : Vous gagnez 30 HP et 1,5 points d'armure et 1 point de dégât !\n\nNiveau 12 : Vous gagnez 30 HP et 2 points d'armure et 1 point de dégât !\n\nNiveau 13 : Vous gagnez 30 HP et 2 points d'armure et 2 points de dégâts !\n\nNiveau 14 : Vous gagnez 35 HP et 2 points d'armure et 2 points de dégâts !\n\nNiveau 15 : Vous gagnez 40 HP et 2 points d'armure et 2 points de dégâts !\n\nNiveau 16 : Vous gagnez 45 HP et 2 points d'armure et 2 points de dégâts !\n\nNiveau 17 : Vous gagnez 45 HP et 2,5 points d'armure et 2 points de dégâts !\n\nNiveau 18 : Vous gagnez 45 HP et 3 points d'armure et 2 points de dégâts !\n\nNiveau 19 : Vous gagnez 45 HP et 3 points d'armure et 3 points de dégâts !\n\nNiveau 20 : Vous gagnez 50 HP et 3 points d'armure et 3 points de dégâts !")
-    .addBlankField(true)
-    .addField("Les bonus des niveaux pour vindicateur de 21 à 30 :" , "Niveau 21 : Vous gagnez 5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 22 : Vous gagnez 5,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 23 : Vous gagnez 5,5 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 24 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 25 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\nNiveau 26 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 27 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\nNiveau 28 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 29 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\nNiveau 30 : Vous gagnez 6 points d'armure et 8 points de dégâts et 20 HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bo combattant")) {
+  if (message.content.startsWith(prefix + "Bonus combattant")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11722,7 +11677,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bo assassin")) {
+  if (message.content.startsWith(prefix + "Bonus assassin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11739,7 +11694,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bo berserker")) {
+  if (message.content.startsWith(prefix + "Bonus berserker")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11756,7 +11711,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bo paladin")) {
+  if (message.content.startsWith(prefix + "Bonus paladin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11772,9 +11727,8 @@ bot.on('message', message => {
   }
 });
 
-
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bo vindicateur")) {
+  if (message.content.startsWith(prefix + "Bonus vindicateur")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11791,7 +11745,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bo chevalier")) {
+  if (message.content.startsWith(prefix + "Bonus chevalier")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -11806,8 +11760,6 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
-
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Tableau des niveaux")) {
