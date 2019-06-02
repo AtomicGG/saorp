@@ -15173,10 +15173,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      const HP = (Math.floor((13)*Math.random()+12))
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15203,11 +15201,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
-      const HP = (Math.floor((13)*Math.random()+12))
-
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15234,10 +15229,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      const HP = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15264,10 +15257,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      const HP = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15294,10 +15285,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      const HP = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15324,10 +15313,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      const HP = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15354,10 +15341,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      const HP = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -15384,10 +15369,8 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Défense = (Math.floor((3)*Math.random()+1))
-      const HP = (Math.floor((13)*Math.random()+12))
-      /*const Défense = (Math.floor((1)*Math.random()+2))*/
-      /*const HP = (Math.floor((9)*Math.random()+8))*/
+      const Défense = 2
+      const HP = Math.floor(11 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
