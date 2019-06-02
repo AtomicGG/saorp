@@ -19437,13 +19437,40 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 3")) {
-    message.channel.send("```Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\nCeinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\nJambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\nBottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\nAnneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\nAmulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\nCasque de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de kobolt]\n\nEpaulières de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epaulières de kobolt]\n\nCape de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt]\n\nPlastron de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt]\n\nGantelets de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt]\n\nCeinture de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt]\n\nJambières de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt]\n\nBottes de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt]\n\nAmulette de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt]\n\nAnneau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt]\n\nCasque de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de kobolt supérieur]\n\nSuite en écrivant :\n=Liste d'équipements 4```")
+    message.channel.send("```Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
+                            "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
+                            "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
+                            "Bottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\n" +
+                            "Anneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\n" +
+                            "Amulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\n" +
+                            "Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
+                            "Epaulières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Epaulières de kobolt]\n\n" +
+                            "Cape de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Cape de kobolt]\n\n" +
+                            "Plastron de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Plastron de kobolt]\n\n" +
+                            "Gantelets de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Gantelets de kobolt]\n\n" +
+                            "Ceinture de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Ceinture de kobolt]\n\n" +
+                            "Jambières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Jambières de kobolt]\n\n" +
+                            "Bottes de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes de kobolt]\n\n" +
+                            "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
+                            "Anneau de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Anneau de kobolt]\n\n" +
+                            "Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 4```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
-    message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Épaulières de kobolt supérieures]\n\nCape de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cape de kobolt supérieure]\n\nPlastron de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Plastron de kobolt supérieur]\n\nGantelets de kobolt supérieurs :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\nCeinture de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ceinture de kobolt supérieure]\n\nJambières de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Jambières de kobolt supérieures]\n\nBottes de kobolt supérieures :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes de kobolt supérieures]\n\nAmulette de kobolt supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette de kobolt supérieure]\n\nAnneau de kobolt supérieur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau de kobolt supérieur]\n\nCasque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Casque de mineur kobolt]\n\nBottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bottes d'exploration kobolt]```")
+    message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Épaulières de kobolt supérieures]\n\n" +
+                                "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
+                                "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
+                                "Gantelets de kobolt supérieurs :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\n" +
+                                "Ceinture de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Ceinture de kobolt supérieure]\n\n" +
+                                "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
+                                "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
+                                "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]\n\n" +
+                                "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
+                                "Casque de mineur kobolt :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
+                                "Bottes d'exploration kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes d'exploration kobolt]```")
   }
 }) ;
 
@@ -19461,19 +19488,52 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 3")) {
-    message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\nGlaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\nFaux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\nBouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier du roi déchu à une main]\n\nEpée de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à une main]\n\nEpée de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt à deux mains]\n\nHache de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à une main]\n\nHache de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt à deux mains]\n\nMasse de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à une main]\n\nMasse de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt à deux mains]\n\nRapière de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à une main]\n\nRapière de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt à deux mains]\n\nCimeterre de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à une main]\n\nCimeterre de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 4```")
+    message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
+                            "Glaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\n" +
+                            "Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
+                            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]\n\n" +
+                            "Epée de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt à une main]\n\n" +
+                            "Epée de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Epée de kobolt à deux mains]\n\n" +
+                            "Hache de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Hache de kobolt à une main]\n\n" +
+                            "Hache de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hache de kobolt à deux mains]\n\n" +
+                            "Masse de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Masse de kobolt à une main]\n\n" +
+                            "Masse de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Masse de kobolt à deux mains]\n\n" +
+                            "Rapière de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Rapière de kobolt à une main]\n\n" +
+                            "Rapière de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Rapière de kobolt à deux mains]\n\n" +
+                            "Cimeterre de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Cimeterre de kobolt à une main]\n\n" +
+                            "Cimeterre de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 4```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 4")) {
-    message.channel.send("```\n\nKatana de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt à une main]\n\nKatana de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt à deux mains]\n\nDague de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Dague de kobolt à une main]\n\nBouclier de kobolt à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier de kobolt à une main]\n\nGlaive de kobolt à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Glaive de kobolt à deux mains]\n\nEpée de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\nEpée de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\nHache de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\nHache de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\nMasse de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\nMasse de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\nRapière de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\nRapière de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 5```")
+    message.channel.send("```\n\nKatana de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Katana de kobolt à une main]\n\n" +
+                                "Katana de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Katana de kobolt à deux mains]\n\n" +
+                                "Dague de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt à une main]\n\n" +
+                                "Bouclier de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Bouclier de kobolt à une main]\n\n" +
+                                "Glaive de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Glaive de kobolt à deux mains]\n\n" +
+                                "Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
+                                "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
+                                "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
+                                "Hache de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\n" +
+                                "Masse de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\n" +
+                                "Masse de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\n" +
+                                "Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
+                                "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
+                                "Suite en écrivant :\n=Liste d'armes 5```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 5")) {
-    message.channel.send("```Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\nCimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\nKatana de kobolt supérieur à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\nKatana de kobolt supérieur à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\nDague de kobolt supérieure à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\nBouclier de kobolt supérieur à une main :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\nGlaive de kobolt supérieur à deux mains :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]```")
+    message.channel.send("```Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
+                            "Cimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\n" +
+                            "Katana de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\n" +
+                            "Katana de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\n" +
+                            "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
+                            "Bouclier de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\n" +
+                            "Glaive de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]```")
   }
 }) ;
 
