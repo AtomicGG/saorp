@@ -7453,8 +7453,8 @@ bot.on('message', message => {
     .setColor(1447003)
     .addField(":park: Forêt :" , ":park: Bienvenue dans ce lieu habité par des loups dangereux et bien plus !\n\n" +
                                  ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Forêt combat : [Nombre de joueurs dans votre groupe]`\n\n" +
-                                 ":wilted_rose: Pour cueillir, niveau 2 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt cueillir`\n\n" +
-                                 ":knife: Pour chasser, niveau 2 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n" +
+                                 ":wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt cueillir`\n\n" +
+                                 ":knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n" +
                                  ":pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Forêt miner`\n\n" +
                                  ":deciduous_tree: Pour bûcheronner, niveau 1 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt bûcheronner`\n\n" +
                                  ":book: Pour avoir une quête :\n:book: `=Forêt quêtes`")
@@ -9170,10 +9170,10 @@ bot.on('message', message => {
     .setColor(1447003)
     .addField(":mountain_snow: Montagne :" , ":mountain_snow: Bienvenue dans ce lieu habité principalement par des kobolts !\n\n" +
                                              ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Montagne combat : [Nombre de joueurs dans votre groupe]`\n\n" +
-                                             ":wilted_rose: Pour cueillir, niveau 3 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n" +
-                                             ":knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n" +
-                                             ":pick: Pour miner, niveau 2 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n" +
-                                             ":deciduous_tree: Pour bûcheronner, niveau 2 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n" +
+                                             ":wilted_rose: Pour cueillir, niveau 5 requis dans 'Cueilleur' :\n :wilted_rose: `=Montagne cueillir`\n\n" +
+                                             ":knife: Pour chasser, niveau 5 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n" +
+                                             ":pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n" +
+                                             ":deciduous_tree: Pour bûcheronner, niveau 3 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n" +
                                              ":book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
     .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
     .setTimestamp()
@@ -10182,8 +10182,8 @@ bot.on('message', message => {
     .setColor(1447003)
     .addField(":mount_fuji: Grotte :" , ":mount_fuji: Bienvenue dans ce lieu habité principalement par des kobolts qui est aussi le lieu menant au boss du palier 1 !\n\n" +
                                         ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Grotte combat : [Nombre de joueurs dans votre groupe]`\n\n" +
-                                        ":wilted_rose: Pour cueillir, niveau 4 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n" +
-                                        ":pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n" +
+                                        ":wilted_rose: Pour cueillir, niveau 7 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n" +
+                                        ":pick: Pour miner, niveau 5 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n" +
                                         ":book: Pour avoir une quête :\n:book: `=Grotte quêtes`")
     .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
     .setTimestamp()
