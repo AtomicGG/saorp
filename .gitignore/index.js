@@ -13556,29 +13556,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = (Math.floor((7)*Math.random()+12))
-  const HP = (Math.floor((31)*Math.random()+60))
-  if (message.content.startsWith(prefix + "Découverte de l'écu du roi déchu à une main")) {
+  const Défense = Math.floor(4 * Math.random() + 9)
+  const HP = Math.floor(6 * Math.random() + 50)
+  if (message.content.startsWith(prefix + "Découverte de l'écu du roi déchu à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Découverte du bouclier du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: En portant ce bouclier, vous êtes immunisé des effets de saignement !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  const Défense = (Math.floor((7)*Math.random()+8))
-  const HP = (Math.floor((21)*Math.random()+40))
-  if (message.content.startsWith(prefix + "Découverte du bouclier du roi déchu à deux mains")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":scales: Découverte du bouclier du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Résistance au saignement : 40 et Il est impossible d'avoir un autre bouclier en le portant!")
+    .addField(":scales: Découverte de l'écu du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Résistance au saignement : 40 et Il est impossible d'avoir un autre bouclier en le portant!")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
