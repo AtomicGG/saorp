@@ -14502,7 +14502,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque de mineur kobolt :" , ":scales: C'est un casque que portent les kobolts mineurs afin d'éclairer et de miner plus facilement et rapidement !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Découverte du casque de mineur kobolt`")
+    .addField(":scales: Casque de mineur kobolt :" , ":scales: C'est un casque que portent les kobolts mineurs afin d'éclairer et de miner plus facilement et rapidement !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Découverte du casque de mineur kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -19469,8 +19469,8 @@ bot.on('message', message => {
                                 "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
                                 "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]\n\n" +
                                 "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
-                                "Casque de mineur kobolt :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
-                                "Bottes d'exploration kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes d'exploration kobolt]```")
+                                "Casque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
+                                "Bottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Bottes d'exploration kobolt]```")
   }
 }) ;
 
@@ -19539,37 +19539,60 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {
-    message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\nRagoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\nRagoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\nRagoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\nRagoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\nRagoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\nRagoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\nRagoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\nRagoûts de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt]\n\nRagoûts de kobolt supérieurs :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt supérieur]\n\nRagoûts de ragondin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de ragondin]\n\nRagoûts de kobolt géant rouge :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût de kobolt géant rouge]```")
+    message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\n" +
+                            "Ragoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\n" +
+                            "Ragoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\n" +
+                            "Ragoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\n" +
+                            "Ragoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\n" +
+                            "Ragoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\n" +
+                            "Ragoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\n" +
+                            "Ragoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\n" +
+                            "Ragoûts de kobolt :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de kobolt]\n\n" +
+                            "Ragoûts de ragondin :\nCoûts : [Achat : 440 cols] [Revente : 110 cols]\nInfos : [=Ragoût de ragondin]\n\n" +
+                            "Ragoûts de chien errant :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Ragoût de chien errant]```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des potions 1")) {
-    message.channel.send("```Potion faible de soin :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\nInfos : [=Potion faible de soin]\n\nPotion faible de force :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de force]\n\nPotion faible de défense :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de défense]\n\nPotion légère de soin :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Potion légère de soin]\n\nPotion légère de force :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de force]\n\nPotion légère de défense :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de défense]\n\nPotion moyenne de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de soin]\n\nPotion moyenne de régénération :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de régénération]\n\nPotion moyenne de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de force]\n\nPotion moyenne de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion moyenne de défense]\n\nPotion guérissante minuscule de poison :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de poison]\n\nPotion guérissante minuscule de saignement :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\nPotion guérissante minuscule de brûlure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\nPotion imposante de soin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de soin]\n\nPotion imposante de régénération :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de régénération]\n\nPotion imposante de force :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de force]\n\nSuite en écrivant :\n=Liste des potions 2```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des potions 2")) {
-    message.channel.send("```Potion imposante de défense :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion imposante de défense]\n\nPotion vitale de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion vitale de kobolt]```")
+    message.channel.send("```Potion faible de soin :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\nInfos : [=Potion faible de soin]\n\n" +
+                            "Potion faible de force :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de force]\n\n" +
+                            "Potion faible de défense :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de défense]\n\n" +
+                            "Potion légère de soin :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Potion légère de soin]\n\n" +
+                            "Potion légère de force :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de force]\n\n" +
+                            "Potion légère de défense :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de défense]\n\n" +
+                            "Potion moyenne de soin :\nCoûts : [Achat : 740 cols] [Revente : 185 cols]\nInfos : [=Potion moyenne de soin]\n\n" +
+                            "Potion moyenne de régénération :\nCoûts : [Achat : 840 cols] [Revente : 210 cols]\nInfos : [=Potion moyenne de régénération]\n\n" +
+                            "Potion moyenne de force :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de force]\n\n" +
+                            "Potion moyenne de défense :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de défense]\n\n" +
+                            "Potion guérissante minuscule de poison :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de poison]\n\n" +
+                            "Potion guérissante minuscule de saignement :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\n" +
+                            "Potion guérissante minuscule de brûlure :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\n")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des parchemins 1")) {
-    message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\nParchemin de feu rouge faible :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Parchemin de feu rouge faible]```")
+    message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\n" +
+                            "Parchemin de feu rouge faible :\nCoûts : [Achat : 1380 cols] [Revente : 345 cols]\nInfos : [=Parchemin de feu rouge faible]```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des oeufs 1")) {
-    message.channel.send("```Oeuf déformé :\nCoûts : [Achat : X cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]```")
+    message.channel.send("```Oeuf déformé :\nCoûts : [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]\n\n" +
+                            "Oeuf difforme :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Oeuf difforme]```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des plans 1")) {
-    message.channel.send("```Plan d'arme kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlan d'armure kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\n\nPlan de bijoux kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]```")
+    message.channel.send("```Plan d'arme kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
+                            "Plan d'armure kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
+                            "Plan de bijoux kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
+                            "Plan d'arme supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]\n\n" +
+                            "Plan d'armure supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]\n\n" +
+                            "Plan de bijoux supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]```")
   }
 }) ;
 
