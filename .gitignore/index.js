@@ -16769,7 +16769,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":meat_on_bone: Ragoût de chien errant :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de chien et de d'oreille de kobolt mais aussi de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de chien errant, 2 plantrus commun, 1 plantrus rare, 6 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de kobolt supérieur`")
+      .addField(":meat_on_bone: Ragoût de chien errant :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de chien et de d'oreille de kobolt mais aussi de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans la spécialisation 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de chien errant, 2 plantrus commun, 1 plantrus rare, 6 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans la spécialisation 'Cuisinier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de chien errant`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -16997,7 +16997,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt")) {
-    const HP = (Math.floor((51)*Math.random()+50))
+    const HP = (Math.floor((21)*Math.random()+60))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -17009,22 +17009,8 @@ bot.on('message', message => {
   }
 });
 
-bot.off('message', message => {
-  const HP = (Math.floor((151)*Math.random()+150))
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de kobolt géant rouge")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de kobolt géant rouge :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
 bot.on('message', message => {
-  const HP = (Math.floor((51)*Math.random()+50))
+  const HP = (Math.floor((21)*Math.random()+50))
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de ragondin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
