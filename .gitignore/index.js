@@ -656,7 +656,7 @@ bot.on('message', message => {
     .addField("Les métiers, partie 1 :" , "Lorsque vous partez cueillir des plantes, ou chasser, miner, ou même si vous créez des équipements en cuir, en métal, en tissu, vous gagnerez parfois de l'expérience pour un métier !\n\n" +
                                                   "Cette expérience permet d'augmenter de niveaux dans justement vos métiers qui sont les suivantes :\n\n" +
                                                   "[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n" +
-                                                  "[Maître d'arme]\n[Bijoutier]\n[Forgeron]\n[Couturier]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n[Ebeniste]\n\n" +
+                                                  "[Bijoutier]\n[Forgeron]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n\n" +
                                                   "Tout ces métiers possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\n" +
                                                   "Pour voir justement les niveaux de métiers :\n\n`=Tableau des métiers`\n\n" +
                                                   "Pour calculer votre niveau de métier selon vos points d'expérience :\n\n`=Calculateur d'expérience de métier : [Vos points d'expérience]`")
