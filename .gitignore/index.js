@@ -9802,7 +9802,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 5) / 10
+    const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -9850,7 +9850,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 5) / 10
+    const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -9905,7 +9905,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 5) / 10
+    const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -9963,7 +9963,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 15) / 10
+    const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -10022,7 +10022,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 35) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -10328,45 +10328,8 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Grotte combat")) {
-    let Z = args.slice(2).join(" : ");
+    let joueurs = args.slice(2).join(" : ");
     if (talkedRecently.has(message.author.id+1000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      const B = (Math.floor(((Z*1)+1)*Math.random()+1))
-      const C = (Math.floor(((Z*1)+1)*Math.random()+0))
-      const E = (Math.floor((((Z*1)+1)*(0.70))*Math.random()+0))
-      const F = (Math.floor((((Z*1)+1)*(0.95))*Math.random()+0))
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n:crossed_swords: Kobolt(s) garde(s) : " +B+ "\n:crossed_swords: Kobolt(s) combattant(s) " +C+ "\n:crossed_swords: Kobolt(s) espion(s) : " +E+ "\n:crossed_swords: Kobolt(s) géant(s) rouge(s) : " +F)
-      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    talkedRecently.add(message.author.id+1000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+1000);
-    }, 600000 );
-  }
-})
-
-// Grotte | Combat | MAJ
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Test Grotte combat")) {
-    let joueurs = args.slice(3).join(" : ");
-    if (/*talkedRecently.has(message.author.id+1000)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -10450,11 +10413,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt garde :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 520")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt garde attaque`")
     .addField(":shield: Lorsque le kobolt garde reçoit un coup :" , ":shield: `=Kobolt garde défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt garde récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt garde récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Kobolt garde récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -10467,11 +10429,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt combattant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la grotte du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 900")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 600")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt combattant attaque`")
     .addField(":shield: Lorsque le kobolt combattant reçoit un coup :" , ":shield: `=Kobolt combattant défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt combattant récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt combattant récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Kobolt combattant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -10484,35 +10445,14 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt mineur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
     .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 330")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 350")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt mineur attaque`")
     .addField(":shield: Lorsque le kobolt mineur reçoit un coup :" , ":shield: `=Kobolt mineur défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt mineur récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt mineur récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Kobolt mineur récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 })
-
-bot.on('message', message => {
-  if (message.content === (prefix) + "Kobolt géant rouge"){
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Kobolt géant rouge :" , ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans la grotte du palier 1 !")
-    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 3500")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt géant rouge attaque`")
-    .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :" , ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt géant rouge récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt géant rouge récompenses groupe : [Votre niveau]`")
-    .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :" , ":warning: Provocation, étourdissement")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-})
-
-// Grotte | Monstres | Descriptions MAJ
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Chien errant"){
@@ -10524,8 +10464,7 @@ bot.on('message', message => {
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien errant attaque`")
     .addField(":shield: Lorsque le chien errant reçoit un coup :" , ":shield: `=Chien errant défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Chien errant récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Chien errant récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Chien errant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -10541,8 +10480,7 @@ bot.on('message', message => {
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt pilion attaque`")
     .addField(":shield: Lorsque le kobolt pilion reçoit un coup :" , ":shield: `=Kobolt pilion défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt pilion récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt pilion récompenses groupe : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Kobolt pilion récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
