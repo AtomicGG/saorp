@@ -17022,7 +17022,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-/*
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Potion moyenne de soin")) {
     const embed = new Discord.RichEmbed()
@@ -17371,7 +17371,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-*/
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
     const embed = new Discord.RichEmbed()
@@ -18389,7 +18389,6 @@ bot.on('message', message => {
         message.channel.send({embed})
       }
     }
-  }
 });
 
 bot.on('message', message => {
