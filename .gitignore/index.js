@@ -11452,8 +11452,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":scales: Peau écailleuse de kobolt pilion : " + peau + "\n" +
-                                           ":scales: Dent de kobolt pilion : " + dent + "\n" +
+    .addField(":moneybag: Récompenses :" , ":knife: Peau écailleuse de kobolt pilion : " + peau + "\n" +
+                                           ":gem: Dent de kobolt pilion : " + dent + "\n" +
                                            ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
                                            ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
                                            ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
