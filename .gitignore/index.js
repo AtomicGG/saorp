@@ -10694,7 +10694,7 @@ bot.on('message', message => {
         .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
         .addField(":bookmark: Quête de la grotte :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
                                                         ":crossed_swords: Kobolts mineurs : " + koboltMineur + "\n" +
-                                                        ":crossed_swords: Kobolts combattans : " + koboltCombattant + "\n" +
+                                                        ":crossed_swords: Kobolts combattants : " + koboltCombattant + "\n" +
                                                         ":crossed_swords: Kobolts gardes : " + koboltGarde + "\n" +
                                                         ":crossed_swords: Chiens errants : " + chienErrant + "\n" +
                                                         ":crossed_swords: Kobolts pilions : " + koboltPilion)
@@ -11222,7 +11222,7 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
                                            ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
                                            ":gem: Dent de kobolt : "+ dent + "\n" +
-                                           ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                           ":scales: Equipement de kobolt supérieur au choix : " + stuffKob + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
