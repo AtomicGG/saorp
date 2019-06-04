@@ -941,7 +941,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\n" +
-                                                      "Le coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\n" +
+                                                      "Le coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normale\n\n" +
                                                       "Le coup létal est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\n" +
                                                       "Le combo est un coup qui, à force de le répéter, augmente de puissance\n\n" +
                                                       "Le coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\n" +
@@ -7011,7 +7011,7 @@ bot.on('message', message => {
                                                     ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaine combat : [Nombre de joueurs dans votre groupe]`\n\n" +
                                                     ":wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaine cueillir`\n\n" +
                                                     ":knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaine chasser`\n\n" +
-                                                    ":book: Pour avoir une quête :\n:book: `=Plaine quêtes`")
+                                                    ":book: Pour avoir une quête :\n:book: `=Plaine quête`")
     .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -7021,7 +7021,7 @@ bot.on('message', message => {
 // Plaine | Quêtes
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Plaine quêtes"){
+  if (message.content === (prefix) + "Plaine quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -7048,12 +7048,12 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " + Sanglier +
+        .addField(":bookmark: Quête de la plaine :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " + Sanglier +
                                                                                                                  "\n:crossed_swords: Renards : " + Renard +
                                                                                                                  "\n:crossed_swords: Chiens : " + Chien +
                                                                                                                  "\n:crossed_swords: Bandits débutants : " + Bandit +
                                                                                                                  "\n:crossed_swords: Lapins géants : " + Lapin)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -7067,11 +7067,11 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " + Percil + "\n" +
+        .addField(":bookmark: Quête de la plaine :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " + Percil + "\n" +
                                                                                                                         ":pick: Baies : " + Baie + "\n" +
                                                                                                                         ":pick: Viandes de lapin : " + ViandeLapin + "\n" +
                                                                                                                         ":pick: Peaux de lapin : " + PeauLapin)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -7086,7 +7086,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Plaine quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Plaine quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(30 * Math.random() + 30)
     let xp = control - (lvl * 3)
@@ -7101,7 +7101,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-    .addField(":bookmark: Quête des plaines :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+    .addField(":bookmark: Quête de la plaine :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                  ":sparkles: Points d'expérience : " + xp + "\n" +
                                                  ":large_orange_diamond: Cols : " + cols + "\n" +
                                                  ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
@@ -7928,7 +7928,7 @@ bot.on('message', message => {
                                  ":knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n" +
                                  ":pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Forêt miner`\n\n" +
                                  ":deciduous_tree: Pour bûcheronner, niveau 1 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt bûcheronner`\n\n" +
-                                 ":book: Pour avoir une quête :\n:book: `=Forêt quêtes`")
+                                 ":book: Pour avoir une quête :\n:book: `=Forêt quête`")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
     .setTimestamp()
     message.channel.send({embed})
@@ -7938,7 +7938,7 @@ bot.on('message', message => {
 // Forêt | Quêtes
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Forêt quêtes"){
+  if (message.content === (prefix) + "Forêt quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -7971,7 +7971,7 @@ bot.on('message', message => {
                                                      ":crossed_swords: Bandits expérimentés : " + BanditExp + "\n" +
                                                      ":crossed_swords: Bandits sombres : " + BanditSombre + "\n" +
                                                      ":crossed_swords: Loups de sang : " + LoupDeSang)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -7992,7 +7992,7 @@ bot.on('message', message => {
                                                      ":pick: Estragons : " + Estragon + "\n" +
                                                      ":pick: Viandes de taupe : " + ViandeTaupe + "\n" +
                                                      ":pick: Peaux de taupe : " + PeauTaupe)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -8007,7 +8007,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Forêt quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Forêt quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(50 * Math.random() + 50)
     const cols = Math.floor(50 * Math.random() + 50)
@@ -9645,7 +9645,7 @@ bot.on('message', message => {
                                              ":knife: Pour chasser, niveau 5 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n" +
                                              ":pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n" +
                                              ":deciduous_tree: Pour bûcheronner, niveau 3 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n" +
-                                             ":book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
+                                             ":book: Pour avoir une quête :\n:book: `=Montagne quête`")
     .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -9655,7 +9655,7 @@ bot.on('message', message => {
 // Montagne | Quêtes
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Montagne quêtes"){
+  if (message.content === (prefix) + "Montagne quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -9688,7 +9688,7 @@ bot.on('message', message => {
                                                         ":crossed_swords: Kobolts ouvriers : " + koboltOuvrier + "\n" +
                                                         ":crossed_swords: Kobolts espions : " + koboltEspion + "\n" +
                                                         ":crossed_swords: Kobolts enragés : " + koboltEnrage)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -9704,12 +9704,12 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("http://aws-cf.ados.fr/prod/photos/6/7/3/6840673/281186/img-281186571.jpg?v=6")
         .addField(":bookmark: Quête de la montagne :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n" +
-                                                        ":pick: Cuivres médiocres : " + Minerai + "\n" +
-                                                        ":pick: Bois de frêne médiocres : " + Bois + "\n" +
+                                                        ":pick: Cuivres communs : " + Minerai + "\n" +
+                                                        ":pick: Bois de frêne communs : " + Bois + "\n" +
                                                         ":pick: Basilics : " + Basilic + "\n" +
                                                         ":pick: Viandes de ragondin : " + ViandeRagondin + "\n" +
                                                         ":pick: Peaux de ragondin : " + PeauRagondin)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -9724,7 +9724,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Montagne quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Montagne quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(70 * Math.random() + 70)
     let xp = control - (lvl * 5)
@@ -10167,7 +10167,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion tente de sortir quelque chance de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion tente de sortir quelque chose de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (66 <= roll){
@@ -10655,14 +10655,14 @@ bot.on('message', message => {
                                         ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Grotte combat : [Nombre de joueurs dans votre groupe]`\n\n" +
                                         ":wilted_rose: Pour cueillir, niveau 7 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n" +
                                         ":pick: Pour miner, niveau 5 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n" +
-                                        ":book: Pour avoir une quête :\n:book: `=Grotte quêtes`")
+                                        ":book: Pour avoir une quête :\n:book: `=Grotte quête`")
     .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
     .setTimestamp()
     message.channel.send({embed})
   }
 })
 
-// Grotte | Quêtes
+// Grotte | Quête
 
 bot.on('message', message => {
   if (message.content === (prefix) + "Grotte quêtes"){
@@ -10698,7 +10698,7 @@ bot.on('message', message => {
                                                         ":crossed_swords: Kobolts gardes : " + koboltGarde + "\n" +
                                                         ":crossed_swords: Chiens errants : " + chienErrant + "\n" +
                                                         ":crossed_swords: Kobolts pilions : " + koboltPilion)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -10717,7 +10717,7 @@ bot.on('message', message => {
                                                         ":pick: Cuivres parfaits : " + cuivreParfait + "\n" +
                                                         ":pick: Plantrus communs : " + plantrusCommun + "\n" +
                                                         ":pick: Plantrus rares : " + plantrusRare)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -10732,7 +10732,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Grotte quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Grotte quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(90 * Math.random() + 90)
     let xp = control - (lvl * 6)
@@ -10747,7 +10747,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
-    .addField(":bookmark: Quête de la montagne :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+    .addField(":bookmark: Quête de la grotte :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                     ":sparkles: Points d'expérience : " + xp + "\n" +
                                                     ":large_orange_diamond: Cols : " + cols + "\n" +
                                                     ":syringe: Potion moyenne de soin : " + potionMoyenneSoin + "\n" +
@@ -11583,7 +11583,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Mineur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\nNiveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\nNiveau 5 : 10 HP et 1 point d'armure supplémentaire supplémentaire !\nNiveau 6 : 15 HP et 1 point d'armure supplémentaire !\nNiveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\nNiveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\nNiveau 9 : 20 HP et 2 points d'armure supplémentaire !\nNiveau 10 : 25 HP et 2 points d'armure supplémentaire !")
+    .addField("Mineur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\nNiveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\nNiveau 5 : 10 HP et 1 point d'armure supplémentaire !\nNiveau 6 : 15 HP et 1 point d'armure supplémentaire !\nNiveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\nNiveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\nNiveau 9 : 20 HP et 2 points d'armure supplémentaire !\nNiveau 10 : 25 HP et 2 points d'armure supplémentaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -13863,7 +13863,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:Shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16043,7 +16043,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt supérieure à deux mains :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains`")
+    .addField(":scales: Cimeterre de kobolt supérieure à deux mains :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16384,7 +16384,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:Shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17046,7 +17046,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
     if (message.content.includes("de sang")) {
-      const HP = (Math.floor((21)*Math.random()+40))
+      const HP = (Math.floor((21)*Math.random()+50))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -17056,7 +17056,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const HP = (Math.floor((21)*Math.random()+50))
+      const HP = (Math.floor((21)*Math.random()+40))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
