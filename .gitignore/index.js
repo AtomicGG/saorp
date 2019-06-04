@@ -27590,8 +27590,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 17 KM") {
-    const X = (Math.floor((100)*Math.random()+1))
-      const Zombie = (Math.floor((3)*Math.random()+1))
+    const X = (Math.floor((180)*Math.random()+1))
+      const Zombie = (Math.floor((8)*Math.random()+6))
       if(X <= 6){
                                                                                                   const embed = new Discord.RichEmbed()
                                                                                                   .setAuthor(message.author.username , message.author.avatarURL)
@@ -27632,6 +27632,7 @@ bot.on('message', message => {
                                                                                                           .addField(":flashlight: Fouille zone 17 KM :" , ":flashlight: En fouillant les environs, vous découvrez un puits abandonné\n\nEn voilà, une sacré aubaine ! Un puits encore en état de marche, complètement perdu au milieu de nulle part\n\nEt personne avec son Registre à la main pour vous dire « fais pas ci, fais pas ça, prends pas trop d'eau, gnagnagna... »\n\nAllez, une petite rasade, ça sera notre petit secret\n\nPour fouiller : `=Fouille puits abandonné`")
                                                                                                           .setTimestamp()
                                                                                                           message.channel.send({embed})}
+                                                                                                          
   }
 });
 
