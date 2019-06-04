@@ -21693,7 +21693,7 @@ bot.on('message', message => {
       .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous découvrez la maison d'un citoyen\n\nIci vivait un citoyen qui avait décidé de s'installer hors de la ville, pensant survivre plus longtemps, loin des querelles et des trahisons\n\nLa moitié de son corps est toujours dans le salon\n\nPour fouiller : `=Fouille maison d'un citoyen`")
       .setTimestamp()
       message.channel.send({embed})}
-      if(X >= 5 & X <= 8){
+      if(X >= 31 & X <= 40){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21701,7 +21701,7 @@ bot.on('message', message => {
         .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Ferraille`")
         .setTimestamp()
         message.channel.send({embed})}
-        if(X >= 5 & X <= 8){
+        if(X >= 41 & X <= 42){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21709,7 +21709,7 @@ bot.on('message', message => {
           .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Affaires d'un citoyen`")
           .setTimestamp()
           message.channel.send({embed})}
-          if(X >= 5 & X <= 8){
+          if(X >= 43 & X <= 44){
             const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21717,7 +21717,7 @@ bot.on('message', message => {
             .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Boîte de conserve`")
             .setTimestamp()
             message.channel.send({embed})}
-            if(X >= 5 & X <= 8){
+            if(X >= 45 & X <= 46){
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21725,14 +21725,230 @@ bot.on('message', message => {
               .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Boîte d'allumettes`")
               .setTimestamp()
               message.channel.send({embed})}
-              if(X >= 5 & X <= 8){
-                const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username , message.author.avatarURL)
-                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(0xff0000)
-                .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Boîte d'allumettes`")
-                .setTimestamp()
-                message.channel.send({embed})}
+                if(X >= 47 & X <= 50){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Buche en bon état`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(X >= 51 & X <= 52){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Caisse de nourriture`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                    if(X >= 53 & X <= 55){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                      if(X >= 56 & X <= 58){
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(0xff0000)
+                        .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Doggy-bag`")
+                        .setTimestamp()
+                        message.channel.send({embed})}
+                        if(X >= 59 & X <= 70){
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                          .setColor(0xff0000)
+                          .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Débris métalliques`")
+                          .setTimestamp()
+                          message.channel.send({embed})}
+                          if(X >= 71 & X <= 75){
+                            const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username , message.author.avatarURL)
+                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(0xff0000)
+                            .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Ration d'eau`")
+                            .setTimestamp()
+                            message.channel.send({embed})}
+                              if(X === 76){
+                                const embed = new Discord.RichEmbed()
+                                .setAuthor(message.author.username , message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setColor(0xff0000)
+                                .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
+                                .setTimestamp()
+                                message.channel.send({embed})}
+                                if(X === 77){
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                  .setColor(0xff0000)
+                                  .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Sac plastique`")
+                                  .setTimestamp()
+                                  message.channel.send({embed})}
+                                  if(X >= 78 & X <= 85){
+                                    const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Souche de bois pourrie`")
+                                    .setTimestamp()
+                                    message.channel.send({embed})}
+                                    if(X === 86){
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                      .setColor(0xff0000)
+                                      .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Ailerons de poulet entamés`")
+                                      .setTimestamp()
+                                      message.channel.send({embed})}
+                                      if(X === 87){
+                                        const embed = new Discord.RichEmbed()
+                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                        .setColor(0xff0000)
+                                        .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Napolitains moisis`")
+                                        .setTimestamp()
+                                        message.channel.send({embed})}
+                                        if(X === 88){
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                          .setColor(0xff0000)
+                                          .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Paquet de chips molles`")
+                                          .setTimestamp()
+                                          message.channel.send({embed})}
+                                          if(X === 89){
+                                            const embed = new Discord.RichEmbed()
+                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                            .setColor(0xff0000)
+                                            .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
+                                            .setTimestamp()
+                                            message.channel.send({embed})}
+                                            if(X === 90){
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                              .setColor(0xff0000)
+                                              .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
+                                              .setTimestamp()
+                                              message.channel.send({embed})}
+                                              if(X === 91){
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                .setColor(0xff0000)
+                                                .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Boîte en métal`")
+                                                .setTimestamp()
+                                                message.channel.send({embed})}
+                                                    if(X === 92){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                      .setColor(0xff0000)
+                                                      .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Moteur`")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})}
+                                                      if(X === 93){
+                                                        const embed = new Discord.RichEmbed()
+                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                        .setColor(0xff0000)
+                                                        .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Mécanisme`")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed})}
+                                                        if(X === 94){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                          .setColor(0xff0000)
+                                                          .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Morceau de contreplaqué`")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})}
+                                                          if(X >= 95 & X <= 96){
+                                                            const embed = new Discord.RichEmbed()
+                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                            .setColor(0xff0000)
+                                                            .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Eau croupie`")
+                                                            .setTimestamp()
+                                                            message.channel.send({embed})}
+                                                            if(X >= 97 & X <= 98){
+                                                              const embed = new Discord.RichEmbed()
+                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                              .setColor(0xff0000)
+                                                              .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed})}
+                                                              if(X === 99){
+                                                                const embed = new Discord.RichEmbed()
+                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                .setColor(0xff0000)
+                                                                .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Pavés de béton informes`")
+                                                                .setTimestamp()
+                                                                message.channel.send({embed})}
+                                                                if(X === 100){
+                                                                  const embed = new Discord.RichEmbed()
+                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                  .setColor(0xff0000)
+                                                                  .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Toile de tente`")
+                                                                  .setTimestamp()
+                                                                  message.channel.send({embed})}
+                                                                  if(X >= 101 & X <= 102){
+                                                                    const embed = new Discord.RichEmbed()
+                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                    .setColor(0xff0000)
+                                                                    .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Bandage rudimentaire`")
+                                                                    .setTimestamp()
+                                                                    message.channel.send({embed})}
+                                                                    if(X === 103){
+                                                                      const embed = new Discord.RichEmbed()
+                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                      .setColor(0xff0000)
+                                                                      .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Réserves d'un citoyen avisé`")
+                                                                      .setTimestamp()
+                                                                      message.channel.send({embed})}
+                                                                      if(X === 104){
+                                                                        const embed = new Discord.RichEmbed()
+                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                        .setColor(0xff0000)
+                                                                        .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Sac de ciment`")
+                                                                        .setTimestamp()
+                                                                        message.channel.send({embed})}
+                                                                        if(X === 105){
+                                                                          const embed = new Discord.RichEmbed()
+                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                          .setColor(0xff0000)
+                                                                          .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Rustine`")
+                                                                          .setTimestamp()
+                                                                          message.channel.send({embed})}
+                                                                          if(X === 106){
+                                                                            const embed = new Discord.RichEmbed()
+                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                            .setColor(0xff0000)
+                                                                            .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Planche tordue`")
+                                                                            .setTimestamp()
+                                                                            message.channel.send({embed})}
+                                                                            if(X === 107){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Bobine de fil de fer`")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
   }
 });
 
@@ -21808,6 +22024,262 @@ bot.on('message', message => {
                     .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous découvrez une petite maison\n\nUne vieille bicoque laissée à l'abandon depuis des années\n\nPresque entièrement ensevelie sous le sable\n\nParfois, vous pouvez entendre des grattements inquiétants venant de ce qui doit être la cave\n\nPour fouiller : `=Fouille petite maison`")
                     .setTimestamp()
                     message.channel.send({embed})}
+                    if(X >= 34 & X <= 44){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Ferraille`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                      if(X >= 45 & X <= 46){
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(0xff0000)
+                        .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Affaires d'un citoyen`")
+                        .setTimestamp()
+                        message.channel.send({embed})}
+                        if(X >= 47 & X <= 48){
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                          .setColor(0xff0000)
+                          .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Boîte de conserve`")
+                          .setTimestamp()
+                          message.channel.send({embed})}
+                          if(X >= 49 & X <= 50){
+                            const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username , message.author.avatarURL)
+                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(0xff0000)
+                            .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Boîte d'allumettes`")
+                            .setTimestamp()
+                            message.channel.send({embed})}
+                              if(X >= 51 & X <= 55){
+                                const embed = new Discord.RichEmbed()
+                                .setAuthor(message.author.username , message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setColor(0xff0000)
+                                .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Buche en bon état`")
+                                .setTimestamp()
+                                message.channel.send({embed})}
+                                if(X >= 56 & X <= 60){
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                  .setColor(0xff0000)
+                                  .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Caisse de nourriture`")
+                                  .setTimestamp()
+                                  message.channel.send({embed})}
+                                  if(X >= 61 & X <= 62){
+                                    const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
+                                    .setTimestamp()
+                                    message.channel.send({embed})}
+                                    if(X >= 63 & X <= 64){
+                                      const embed = new Discord.RichEmbed()
+                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                      .setColor(0xff0000)
+                                      .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Doggy-bag`")
+                                      .setTimestamp()
+                                      message.channel.send({embed})}
+                                      if(X >= 65 & X <= 80){
+                                        const embed = new Discord.RichEmbed()
+                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                        .setColor(0xff0000)
+                                        .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Débris métalliques`")
+                                        .setTimestamp()
+                                        message.channel.send({embed})}
+                                        if(X >= 81 & X <= 83){
+                                          const embed = new Discord.RichEmbed()
+                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                          .setColor(0xff0000)
+                                          .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Ration d'eau`")
+                                          .setTimestamp()
+                                          message.channel.send({embed})}
+                                            if(X === 84){
+                                              const embed = new Discord.RichEmbed()
+                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                              .setColor(0xff0000)
+                                              .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Poignée de vis et écrous`")
+                                              .setTimestamp()
+                                              message.channel.send({embed})}
+                                              if(X === 85){
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                .setColor(0xff0000)
+                                                .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Sac plastique`")
+                                                .setTimestamp()
+                                                message.channel.send({embed})}
+                                                if(X >= 86 & X <= 90){
+                                                  const embed = new Discord.RichEmbed()
+                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                  .setColor(0xff0000)
+                                                  .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Souche de bois pourrie`")
+                                                  .setTimestamp()
+                                                  message.channel.send({embed})}
+                                                  if(X === 91){
+                                                    const embed = new Discord.RichEmbed()
+                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                    .setColor(0xff0000)
+                                                    .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Ailerons de poulet entamés`")
+                                                    .setTimestamp()
+                                                    message.channel.send({embed})}
+                                                    if(X === 92){
+                                                      const embed = new Discord.RichEmbed()
+                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                      .setColor(0xff0000)
+                                                      .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Napolitains moisis`")
+                                                      .setTimestamp()
+                                                      message.channel.send({embed})}
+                                                      if(X === 93){
+                                                        const embed = new Discord.RichEmbed()
+                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                        .setColor(0xff0000)
+                                                        .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Paquet de chips molles`")
+                                                        .setTimestamp()
+                                                        message.channel.send({embed})}
+                                                        if(X === 94){
+                                                          const embed = new Discord.RichEmbed()
+                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                          .setColor(0xff0000)
+                                                          .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Structures métalliques`")
+                                                          .setTimestamp()
+                                                          message.channel.send({embed})}
+                                                          if(X === 95){
+                                                            const embed = new Discord.RichEmbed()
+                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                            .setColor(0xff0000)
+                                                            .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
+                                                            .setTimestamp()
+                                                            message.channel.send({embed})}
+                                                            if(X === 96){
+                                                              const embed = new Discord.RichEmbed()
+                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                              .setColor(0xff0000)
+                                                              .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Boîte en métal`")
+                                                              .setTimestamp()
+                                                              message.channel.send({embed})}
+                                                                  if(X === 97){
+                                                                    const embed = new Discord.RichEmbed()
+                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                    .setColor(0xff0000)
+                                                                    .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Moteur`")
+                                                                    .setTimestamp()
+                                                                    message.channel.send({embed})}
+                                                                    if(X === 98){
+                                                                      const embed = new Discord.RichEmbed()
+                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                      .setColor(0xff0000)
+                                                                      .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Mécanisme`")
+                                                                      .setTimestamp()
+                                                                      message.channel.send({embed})}
+                                                                      if(X === 99){
+                                                                        const embed = new Discord.RichEmbed()
+                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                        .setColor(0xff0000)
+                                                                        .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Morceau de contreplaqué`")
+                                                                        .setTimestamp()
+                                                                        message.channel.send({embed})}
+                                                                        if(X >= 100 & X <= 101){
+                                                                          const embed = new Discord.RichEmbed()
+                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                          .setColor(0xff0000)
+                                                                          .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Eau croupie`")
+                                                                          .setTimestamp()
+                                                                          message.channel.send({embed})}
+                                                                          if(X >= 102 & X <= 103){
+                                                                            const embed = new Discord.RichEmbed()
+                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                            .setColor(0xff0000)
+                                                                            .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Jerrycan plein`")
+                                                                            .setTimestamp()
+                                                                            message.channel.send({embed})}
+                                                                            if(X === 104){
+                                                                              const embed = new Discord.RichEmbed()
+                                                                              .setAuthor(message.author.username , message.author.avatarURL)
+                                                                              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                              .setColor(0xff0000)
+                                                                              .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Pavés de béton informes`")
+                                                                              .setTimestamp()
+                                                                              message.channel.send({embed})}
+                                                                              if(X === 105){
+                                                                                const embed = new Discord.RichEmbed()
+                                                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                .setColor(0xff0000)
+                                                                                .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Toile de tente`")
+                                                                                .setTimestamp()
+                                                                                message.channel.send({embed})}
+                                                                                if(X === 106){
+                                                                                  const embed = new Discord.RichEmbed()
+                                                                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                  .setColor(0xff0000)
+                                                                                  .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Bandage rudimentaire`")
+                                                                                  .setTimestamp()
+                                                                                  message.channel.send({embed})}
+                                                                                  if(X === 107){
+                                                                                    const embed = new Discord.RichEmbed()
+                                                                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                    .setColor(0xff0000)
+                                                                                    .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Réserves d'un citoyen avisé`")
+                                                                                    .setTimestamp()
+                                                                                    message.channel.send({embed})}
+                                                                                    if(X === 108){
+                                                                                      const embed = new Discord.RichEmbed()
+                                                                                      .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                      .setColor(0xff0000)
+                                                                                      .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Sac de ciment`")
+                                                                                      .setTimestamp()
+                                                                                      message.channel.send({embed})}
+                                                                                      if(X === 109){
+                                                                                        const embed = new Discord.RichEmbed()
+                                                                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                        .setColor(0xff0000)
+                                                                                        .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Rustine`")
+                                                                                        .setTimestamp()
+                                                                                        message.channel.send({embed})}
+                                                                                        if(X >= 110 & X <= 112){
+                                                                                          const embed = new Discord.RichEmbed()
+                                                                                          .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                          .setColor(0xff0000)
+                                                                                          .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Planche tordue`")
+                                                                                          .setTimestamp()
+                                                                                          message.channel.send({embed})}
+                                                                                          if(X === 113){
+                                                                                            const embed = new Discord.RichEmbed()
+                                                                                            .setAuthor(message.author.username , message.author.avatarURL)
+                                                                                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                                                            .setColor(0xff0000)
+                                                                                            .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous trouvez :\n\n:moneybag: `1 Bobine de fil de fer`")
+                                                                                            .setTimestamp()
+                                                                                            message.channel.send({embed})}
   }
 });
 
