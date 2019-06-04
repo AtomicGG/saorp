@@ -13674,7 +13674,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = Math.floor(4 * Math.random() + 2)
+  const Défense = Math.floor(2 * Math.random() + 2)
   const HP = Math.floor(6 * Math.random() + 15)
   if (message.content.startsWith(prefix + "Découverte du casque de mineur kobolt")) {
     const embed = new Discord.RichEmbed()
