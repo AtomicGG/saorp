@@ -12942,7 +12942,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements en peau arrachée :" , "=Casque en peau arrachée\n=Épaulières en peau arrachée\n=Plastron en peau arrachée\n=Cape en peau arrachée\n=Ceinture en peau arrachée\n=Gantelets en peau arrachée\n=Jambières en peau arrachée\n=Bottes en peau arrachée")
+    .addField(":scales: Liste des équipements en peau arrachée :" , "=Casque en peau arrachée\n=Epaulières en peau arrachée\n=Plastron en peau arrachée\n=Cape en peau arrachée\n=Ceinture en peau arrachée\n=Gantelets en peau arrachée\n=Jambières en peau arrachée\n=Bottes en peau arrachée")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12955,7 +12955,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements en peau résistante :" , "=Casque en peau résistante\n=Épaulières en peau résistante\n=Plastron en peau résistante\n=Cape en peau résistante\n=Ceinture en peau résistante\n=Gantelets en peau résistante\n=Jambières en peau résistante\n=Bottes en peau résistante")
+    .addField(":scales: Liste des équipements en peau résistante :" , "=Casque en peau résistante\n=Epaulières en peau résistante\n=Plastron en peau résistante\n=Cape en peau résistante\n=Ceinture en peau résistante\n=Gantelets en peau résistante\n=Jambières en peau résistante\n=Bottes en peau résistante")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12968,7 +12968,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements rouillés :" , "=Casque rouillé\n=Épaulières rouillées\n=Plastron rouillé\n=Ceinture rouillée\n=Gantelets rouillés\n=Jambières rouillées\n=Bottes rouillées")
+    .addField(":scales: Liste des équipements rouillés :" , "=Casque rouillé\n=Epaulières rouillées\n=Plastron rouillé\n=Ceinture rouillée\n=Gantelets rouillés\n=Jambières rouillées\n=Bottes rouillées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12981,7 +12981,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements du clan des loups :\n\n:warning: Ces équipements sont non échangeable !" , "=Casque du clan des loups\n=Épaulières du clan des loups\n=Plastron du clan des loups\n=Cape du clan des loups\n=Ceinture du clan des loups\n=Gantelets du clan des loups\n=Jambières du clan des loups\n=Bottes du clan des loups")
+    .addField(":scales: Liste des équipements du clan des loups :\n\n:warning: Ces équipements sont non échangeable !" , "=Casque du clan des loups\n=Epaulières du clan des loups\n=Plastron du clan des loups\n=Cape du clan des loups\n=Ceinture du clan des loups\n=Gantelets du clan des loups\n=Jambières du clan des loups\n=Bottes du clan des loups")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12995,7 +12995,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Liste des équipements de kobolt supérieurs:" , "=Casque de kobolt supérieur\n=Épaulières de kobolt supérieures\n=Plastron de kobolt supérieur\n=Cape de kobolt supérieure\n=Ceinture de kobolt supérieure\n=Gantelets de kobolt supérieurs\n=Jambières de kobolt supérieures\n=Bottes de kobolt supérieures")
+      .addField(":scales: Liste des équipements de kobolt supérieurs:" , "=Casque de kobolt supérieur\n=Epaulières de kobolt supérieures\n=Plastron de kobolt supérieur\n=Cape de kobolt supérieure\n=Ceinture de kobolt supérieure\n=Gantelets de kobolt supérieurs\n=Jambières de kobolt supérieures\n=Bottes de kobolt supérieures")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -13004,7 +13004,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt\n=Épaulières de kobolt\n=Plastron de kobolt\n=Cape de kobolt\n=Ceinture de kobolt\n=Gantelets de kobolt\n=Jambières de kobolt\n=Bottes de kobolt")
+      .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt\n=Epaulières de kobolt\n=Plastron de kobolt\n=Cape de kobolt\n=Ceinture de kobolt\n=Gantelets de kobolt\n=Jambières de kobolt\n=Bottes de kobolt")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -13310,7 +13310,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Epaulières du clan des loups :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14041,7 +14041,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières rouillées")) {
+  if (message.content.startsWith(prefix + "Epaulières rouillées")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -14208,7 +14208,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières rouillées :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Epaulières rouillées :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14319,12 +14319,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières en peau arrachée")) {
+  if (message.content.startsWith(prefix + "Epaulières en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en peau arrachée :" , ":scales: Ce sont des épaulières très fragiles constitué de peaux animals mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau arrachée`")
+    .addField(":scales: Epaulières en peau arrachée :" , ":scales: Ce sont des épaulières très fragiles constitué de peaux animals mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau arrachée`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14423,12 +14423,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières en peau résistante")) {
+  if (message.content.startsWith(prefix + "Epaulières en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en peau résistante :" , ":scales: Ce sont des épaulières assez résistantes constitué de peaux animales mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau résistante`")
+    .addField(":scales: Epaulières en peau résistante :" , ":scales: Ce sont des épaulières assez résistantes constitué de peaux animales mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau résistante`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14682,7 +14682,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
+    .addField(":scales: Epaulières en peau arrachée :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14796,7 +14796,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Epaulières en peau résistante :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14967,12 +14967,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Épaulières de kobolt") {
+  if (message.content === prefix + "Epaulières de kobolt") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières de kobolt :" , ":scales: Ce sont des épaulières résistantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt`")
+    .addField(":scales: Epaulières de kobolt :" , ":scales: Ce sont des épaulières résistantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15181,12 +15181,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Épaulières de kobolt supérieures") {
+  if (message.content === prefix + "Epaulières de kobolt supérieures") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières de kobolt supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt supérieures`")
+    .addField(":scales: Epaulières de kobolt supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15335,7 +15335,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Épaulières de kobolt supérieures :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+      .addField(":scales: Epaulières de kobolt supérieures :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -15346,7 +15346,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Épaulières de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+      .addField(":scales: Epaulières de kobolt :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -19566,7 +19566,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 1")) {
     message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\n" +
-                            "Épaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peau arrachée]\n\n" +
+                            "Epaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peau arrachée]\n\n" +
                             "Plastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\n" +
                             "Cape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\n" +
                             "Ceinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\n" +
@@ -19613,46 +19613,52 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
-    message.channel.send("```Casque du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Casque du clan des loups]\n\n" +
-                            "Epaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\n" +
-                            "Cape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\n" +
-                            "Plastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\n" +
-                            "Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
-                            "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
-                            "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
-                            "Bottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\n" +
-                            "Anneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\n" +
-                            "Amulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\n" +
-                            "Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
+    message.channel.send("```Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
                             "Epaulières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Epaulières de kobolt]\n\n" +
-                            "Cape de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Cape de kobolt]\n\n" +
                             "Plastron de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Plastron de kobolt]\n\n" +
-                            "Gantelets de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Gantelets de kobolt]\n\n" +
+                            "Cape de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Cape de kobolt]\n\n" +
                             "Ceinture de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Ceinture de kobolt]\n\n" +
+                            "Gantelets de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Gantelets de kobolt]\n\n" +
                             "Jambières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Jambières de kobolt]\n\n" +
                             "Bottes de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes de kobolt]\n\n" +
-                            "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
+                            "Bottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Bottes d'exploration kobolt]\n\n" +
                             "Anneau de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Anneau de kobolt]\n\n" +
-                            "Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
+                            "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
                             "Suite en écrivant :\n=Liste d'équipements 5```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 5")) {
-    message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Épaulières de kobolt supérieures]\n\n" +
-                                "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
-                                "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
-                                "Gantelets de kobolt supérieurs :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\n" +
-                                "Ceinture de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Ceinture de kobolt supérieure]\n\n" +
-                                "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
-                                "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
-                                "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]\n\n" +
-                                "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
-                                "Casque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
-                                "Bottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Bottes d'exploration kobolt]```")
+    message.channel.send("```Casque du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Casque du clan des loups]\n\n" +
+                            "Epaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\n" +
+                            "Plastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\n" +
+                            "Cape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\n" +
+                            "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
+                            "Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
+                            "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
+                            "Bottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\n" +
+                            "Anneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\n" +
+                            "Amulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 6```")
   }
-}) ;
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 6")) {
+    message.channel.send("```Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
+                            "Casque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
+                            "Epaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Epaulières de kobolt supérieures]\n\n" +
+                            "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
+                            "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
+                            "Ceinture de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Ceinture de kobolt supérieure]\n\n" +
+                            "Gantelets de kobolt supérieurs :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\n" +
+                            "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
+                            "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
+                            "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
+                            "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]```")
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 1")) {
