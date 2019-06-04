@@ -19712,19 +19712,25 @@ bot.on('message', message => {
                             "Masse du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Masse du clan des loups à deux mains]\n\n" +
                             "Hache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\n" +
                             "Hache du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hache du clan des loups à deux mains]\n\n" +
-                            "Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
-                            "Rapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\n" +
-                            "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
-                            "Cimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\n" +
-                            "Katana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\n" +
-                            "Katana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\n" +
-                            "Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
                             "Suite en écrivant :\n=Liste d'armes 4```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 4")) {
+    message.channel.send("```Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
+                            "Rapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\n" +
+                            "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
+                            "Cimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\n" +
+                            "Katana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\n" +
+                            "Katana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\n" +
+                            "Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 5```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 5")) {
     message.channel.send("```Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
                             "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
                             "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
@@ -19733,19 +19739,25 @@ bot.on('message', message => {
                             "Masse de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\n" +
                             "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
                             "Hache de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\n" +
-                            "Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 6```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 6")) {
+    message.channel.send("```Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
                             "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
                             "Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
                             "Cimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\n" +
                             "Katana de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\n" +
                             "Katana de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\n" +
                             "Bouclier de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\n" +
-                            "Suite en écrivant :\n=Liste d'armes 5```")
+                            "Suite en écrivant :\n=Liste d'armes 7```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 5")) {
+  if (message.content.startsWith(prefix + "Liste d'armes 7")) {
     message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
                             "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]```")
   }
