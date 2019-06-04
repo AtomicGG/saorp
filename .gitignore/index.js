@@ -19575,7 +19575,13 @@ bot.on('message', message => {
                             "Bottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\n" +
                             "Anneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\n" +
                             "Amulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\n" +
-                            "Casque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 2")) {
+    message.channel.send("```Casque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\n" +
                             "Epaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\n" +
                             "Plastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\n" +
                             "Cape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\n" +
@@ -19585,12 +19591,12 @@ bot.on('message', message => {
                             "Bottes en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Bottes en peau résistante]\n\n" +
                             "Anneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Anneau du croc]\n\n" +
                             "Amulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Amulette du croc]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 2```")
+                            "Suite en écrivant :\n=Liste d'équipements 3```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 2")) {
+  if (message.content.startsWith(prefix + "Liste d'équipements 3")) {
     message.channel.send("```Casque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Casque rouillé]\n\n" +
                             "Epaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epaulières rouillées]\n\n" +
                             "Cape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cape endommagée]\n\n" +
@@ -19605,12 +19611,12 @@ bot.on('message', message => {
                             "Epaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\n" +
                             "Cape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\n" +
                             "Plastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 3```")
+                            "Suite en écrivant :\n=Liste d'équipements 4```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 3")) {
+  if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
     message.channel.send("```Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
                             "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
                             "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
@@ -19628,12 +19634,12 @@ bot.on('message', message => {
                             "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
                             "Anneau de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Anneau de kobolt]\n\n" +
                             "Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 4```")
+                            "Suite en écrivant :\n=Liste d'équipements 5```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
+  if (message.content.startsWith(prefix + "Liste d'équipements 5")) {
     message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Épaulières de kobolt supérieures]\n\n" +
                                 "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
                                 "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
