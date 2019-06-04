@@ -8395,7 +8395,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":shield: Slime :" , ":shield: Le corps du slime ralenti votre coup et réduit les dêgats, vous lui infligez " + degat + " points de dégâts")
+    .addField(":shield: Slime :" , ":shield: Le corps du slime ralentit votre coup et réduit les dégâts, vous lui infligez " + degat + " points de dégâts")
     message.channel.send({embed})
   }
 });
@@ -10010,8 +10010,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt espion :" , ":crossed_swords: Le kobolt espion sort discrètement plusieurs kunais de son manteau noir et le lance dans votre direction mais ils tombent avant de vous atteindre, " +
-                                                     "vous avez de la chances !")
+      .addField(":crossed_swords: Kobolt espion :" , ":crossed_swords: Le kobolt espion sort discrètement plusieurs kunais de son manteau noir et les lance dans votre direction, mais ils tombent avant de vous atteindre, " +
+                                                     "vous avez de la chance !")
       message.channel.send({embed})
     }
     if (36 <= roll && roll <= 95){
@@ -11061,7 +11061,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords: Le kobolt pilion fait tourner son marteau aux dessus de lui et essaye de vous frappez mais vous rate et provoque un tremblement de terre en touchant le sol")
+      .addField(":crossed_swords: Kobolt pilion :" , ":crossed_swords: Le kobolt pilion fait tourner son marteau au dessus de lui et essaye de vous frapper, mais vous rate et provoque un tremblement de terre en touchant le sol")
       message.channel.send({embed})
     }
     if (66 <= roll){
