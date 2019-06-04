@@ -19780,7 +19780,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Liste des objets, partie 1 :" , "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5mg périmée`\n`=Bidon d'huile vide`\n`=Bidon d'huile remplis`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boules de sable`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`")    .setTimestamp()
+  .addField("Liste des objets, partie 1 :" , "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5mg périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boules de sable`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -21683,6 +21683,16 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 1 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 1 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((115)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+1))
       if(X <= 30){
@@ -21957,8 +21967,13 @@ bot.on('message', message => {
                                                                                 .addField(":flashlight: Fouille zone 1 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                 .setTimestamp()
                                                                                 message.channel.send({embed})}
-  }
-});
+                                                                              }
+                                                                              talkedRecently.add(message.author.id+9999);
+                                                                              setTimeout(() => {
+                                                                                talkedRecently.delete(message.author.id+9999);
+                                                                              }, 900000);
+                                                                            }
+                                                                          })
 
 
 ////////////////////////////////////////////////////////////////////Fouille 2 KM//////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21966,6 +21981,16 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 2 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 2 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((124)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+1))
       if(X <= 4){
@@ -22296,13 +22321,28 @@ bot.on('message', message => {
                                                                                               .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                               .setTimestamp()
                                                                                               message.channel.send({embed})}
-  }
-});
+                                                                                            }
+                                                                                            talkedRecently.add(message.author.id+9999);
+                                                                                            setTimeout(() => {
+                                                                                              talkedRecently.delete(message.author.id+9999);
+                                                                                            }, 900000);
+                                                                                          }
+                                                                                        })
 
 ////////////////////////////////////////////////////////////////////Fouille 3 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 3 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 3 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((143)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
       if(X <= 2){
@@ -22713,14 +22753,28 @@ bot.on('message', message => {
                                                                                                                   .addField(":flashlight: Fouille zone 2 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                   .setTimestamp()
                                                                                                                   message.channel.send({embed})}
-  }
-});
-
+                                                                                                                }
+                                                                                                                talkedRecently.add(message.author.id+9999);
+                                                                                                                setTimeout(() => {
+                                                                                                                  talkedRecently.delete(message.author.id+9999);
+                                                                                                                }, 900000);
+                                                                                                              }
+                                                                                                            })
 ////////////////////////////////////////////////////////////////////Fouille 4 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 4 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 4 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((170)*Math.random()+1))
       const Zombie = (Math.floor((4)*Math.random()+2))     
 if(X <= 1.5){
@@ -23195,9 +23249,13 @@ if(X <= 1.5){
                                                                                                                                   .addField(":flashlight: Fouille zone 4 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                   .setTimestamp()
                                                                                                                                   message.channel.send({embed})}
-
-  }
-});
+                                                                                                                                }
+                                                                                                                                talkedRecently.add(message.author.id+9999);
+                                                                                                                                setTimeout(() => {
+                                                                                                                                  talkedRecently.delete(message.author.id+9999);
+                                                                                                                                }, 900000);
+                                                                                                                              }
+                                                                                                                            })
 
 
 
@@ -23206,6 +23264,16 @@ if(X <= 1.5){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 5 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 5 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((166)*Math.random()+1))
       const Zombie = (Math.floor((5)*Math.random()+2))
       if(X === 1){
@@ -23720,14 +23788,29 @@ bot.on('message', message => {
                                                                                                                                             .addField(":flashlight: Fouille zone 5 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                             .setTimestamp()
                                                                                                                                             message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 6 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 6 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 6 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((100)*Math.random()+1))
       const Zombie = (Math.floor((6)*Math.random()+2))
       if(X === 1){
@@ -24242,14 +24325,29 @@ bot.on('message', message => {
                                                                                                                                                   .addField(":flashlight: Fouille zone 6 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                   .setTimestamp()
                                                                                                                                                   message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 7 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 7 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 7 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((172)*Math.random()+1))
       const Zombie = (Math.floor((6)*Math.random()+3))
       if(X <= 1.5){
@@ -24676,14 +24774,29 @@ bot.on('message', message => {
                                                                                                                                                   .addField(":flashlight: Fouille zone 7 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                   .setTimestamp()
                                                                                                                                                   message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 8 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 8 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 8 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((176)*Math.random()+1))
       const Zombie = (Math.floor((7)*Math.random()+3))
       if(X <= 2){
@@ -25078,14 +25191,29 @@ bot.on('message', message => {
                                                                                                                                                           .addField(":flashlight: Fouille zone 8 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                           .setTimestamp()
                                                                                                                                                           message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 9 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 9 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 9 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((178)*Math.random()+1))
       const Zombie = (Math.floor((6)*Math.random()+4))
       if(X <= 3){
@@ -25432,14 +25560,28 @@ bot.on('message', message => {
                                                                                                                                                           .addField(":flashlight: Fouille zone 9 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                           .setTimestamp()
                                                                                                                                                           message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ////////////////////////////////////////////////////////////////////Fouille 10 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 10 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 10 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((179)*Math.random()+1))
       const Zombie = (Math.floor((7)*Math.random()+4))
 
@@ -25757,15 +25899,29 @@ if(X <= 4){
                                                                                                                                                                 .addField(":flashlight: Fouille zone 10 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                 .setTimestamp()
                                                                                                                                                                 message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 11 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 11 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 11 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((178)*Math.random()+1))
       const Zombie = (Math.floor((7)*Math.random()+4))
 
@@ -26074,14 +26230,29 @@ bot.on('message', message => {
                                                                                                                                                                 .addField(":flashlight: Fouille zone 11 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                 .setTimestamp()
                                                                                                                                                                 message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 12 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 12 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 12 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((179)*Math.random()+1))
       const Zombie = (Math.floor((8)*Math.random()+4))
       if(X <= 4){
@@ -26396,14 +26567,29 @@ bot.on('message', message => {
                                                                                                                                                                           .addField(":flashlight: Fouille zone 12 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                           .setTimestamp()
                                                                                                                                                                           message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 13 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 13 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 13 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((180)*Math.random()+1))
       const Zombie = (Math.floor((7)*Math.random()+4))
       if(X <= 4){
@@ -26718,14 +26904,29 @@ bot.on('message', message => {
                                                                                                                                                                           .addField(":flashlight: Fouille zone 13 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                           .setTimestamp()
                                                                                                                                                                           message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Fouille 14 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 14 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 14 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((180)*Math.random()+1))
       const Zombie = (Math.floor((8)*Math.random()+4))
                                                                                       if(X <= 6){
@@ -27015,16 +27216,30 @@ bot.on('message', message => {
                                                                                                                                                                           .setColor(0xff0000)
                                                                                                                                                                           .addField(":flashlight: Fouille zone 14 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                           .setTimestamp()
-                                                                                                                                                                          message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                         message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ///////////////////////////////////////////////////////////////////Fouille 15 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 15 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 15 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((178)*Math.random()+1))
       const Zombie = (Math.floor((8)*Math.random()+5))
       if(X <= 5){
@@ -27323,8 +27538,13 @@ bot.on('message', message => {
                                                                                                                                                                             .addField(":flashlight: Fouille zone 15 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                             .setTimestamp()
                                                                                                                                                                             message.channel.send({embed})}
-  }
-});
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 
 ///////////////////////////////////////////////////////////////////Fouille 16 KM//////////////////////////////////////////////////////////////////////////////////////////////////
@@ -27332,6 +27552,16 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 16 KM") {
+  if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 16 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((179)*Math.random()+1))
       const Zombie = (Math.floor((8)*Math.random()+5))
       if(X <= 6){
@@ -27581,15 +27811,29 @@ bot.on('message', message => {
                                                                                                                                                                                     .setColor(0xff0000)
                                                                                                                                                                                     .addField(":flashlight: Fouille zone 16 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                     .setTimestamp()
-                                                                                                                                                                                    message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                          message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 17 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 17 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 17 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((180)*Math.random()+1))
       const Zombie = (Math.floor((8)*Math.random()+6))
       if(X <= 6){
@@ -27839,16 +28083,30 @@ bot.on('message', message => {
                                                                                                                                                                                     .setColor(0xff0000)
                                                                                                                                                                                     .addField(":flashlight: Fouille zone 17 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                     .setTimestamp()
-                                                                                                                                                                                    message.channel.send({embed})}
-                                                                                                          
-  }
-});
+                                                                                                                                                                             message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ///////////////////////////////////////////////////////////////////Fouille 18 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 18 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 18 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((180)*Math.random()+1))
       const Zombie = (Math.floor((9)*Math.random()+5))
       if(X <= 8){
@@ -28090,15 +28348,29 @@ bot.on('message', message => {
                                                                                                                                                                                     .setColor(0xff0000)
                                                                                                                                                                                     .addField(":flashlight: Fouille zone 18 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                     .setTimestamp()
-                                                                                                                                                                                    message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                                   message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 19 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 19 KM") {
+  if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 19 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((180)*Math.random()+1))
       const Zombie = (Math.floor((9)*Math.random()+6))
       if(X <= 8){
@@ -28340,16 +28612,29 @@ bot.on('message', message => {
                                                                                                                                                                                     .setColor(0xff0000)
                                                                                                                                                                                     .addField(":flashlight: Fouille zone 19 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                     .setTimestamp()
-                                                                                                                                                                                    message.channel.send({embed})}
-
-  }
-});
-
+                                                                                                                                                                                   message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 20 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 20 KM") {
+  if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 20 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((195)*Math.random()+1))
       const Zombie = (Math.floor((10)*Math.random()+6))
       if(X <= 25){
@@ -28543,15 +28828,29 @@ bot.on('message', message => {
                                                                                                                                                                                     .setColor(0xff0000)
                                                                                                                                                                                     .addField(":flashlight: Fouille zone 20 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                     .setTimestamp()
-                                                                                                                                                                                    message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                               message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 21 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 21 KM") {
+  if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 21 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((195)*Math.random()+1))
       const Zombie = (Math.floor((11)*Math.random()+6))
       if(X <= 7){
@@ -28761,15 +29060,29 @@ bot.on('message', message => {
                                                                                                                                                                                   .setColor(0xff0000)
                                                                                                                                                                                   .addField(":flashlight: Fouille zone 21 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                   .setTimestamp()
-                                                                                                                                                                                  message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                            message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 22 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 22 KM") {
+  if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 22 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((195)*Math.random()+1))
       const Zombie = (Math.floor((11)*Math.random()+7))
       if(X <= 8){
@@ -28979,15 +29292,29 @@ bot.on('message', message => {
                                                                                                                                                                                   .setColor(0xff0000)
                                                                                                                                                                                   .addField(":flashlight: Fouille zone 22 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                   .setTimestamp()
-                                                                                                                                                                                  message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                            message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 23 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 23 KM") {
+  if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 23 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((195)*Math.random()+1))
       const Zombie = (Math.floor((12)*Math.random()+7))
       if(X <= 9){
@@ -29197,15 +29524,29 @@ bot.on('message', message => {
                                                                                                                                                                                   .setColor(0xff0000)
                                                                                                                                                                                   .addField(":flashlight: Fouille zone 23 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                   .setTimestamp()
-                                                                                                                                                                                  message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                               message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 24 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 24 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 24 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((195)*Math.random()+1))
       const Zombie = (Math.floor((13)*Math.random()+7))
       if(X <= 10){
@@ -29415,15 +29756,29 @@ bot.on('message', message => {
                                                                                                                                                                                   .setColor(0xff0000)
                                                                                                                                                                                   .addField(":flashlight: Fouille zone 24 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                   .setTimestamp()
-                                                                                                                                                                                  message.channel.send({embed})}
-  }
-});
-
+                                                                                                                                                                               message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 ///////////////////////////////////////////////////////////////////Fouille 25 KM//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille zone 25 KM") {
+    if (talkedRecently.has(message.author.id+9999)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":timer: Fouille zone 25 KM :" , ":timer: Vous avez déjà fouiller les environs...\n:timer: `[Cooldown : 15 min]`")
+      .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
     const X = (Math.floor((100)*Math.random()+1))
       const Zombie = (Math.floor((13)*Math.random()+8))
       if(X <= 11){
@@ -29633,16 +29988,22 @@ bot.on('message', message => {
                                                                                                                                                                                   .setColor(0xff0000)
                                                                                                                                                                                   .addField(":flashlight: Fouille zone 25 KM :" , ":flashlight: En fouillant les environs, vous tombez sur des zombies... :\n\n:imp: `" +Zombie+ " zombies`")
                                                                                                                                                                                   .setTimestamp()
-                                                                                                                                                                                  message.channel.send({embed})}
-  }
-});
+                                                                                                                                                                           message.channel.send({embed})}
+                                                                                                                                          }
+                                                                                                                                          talkedRecently.add(message.author.id+9999);
+                                                                                                                                          setTimeout(() => {
+                                                                                                                                            talkedRecently.delete(message.author.id+9999);
+                                                                                                                                          }, 900000);
+                                                                                                                                        }
+                                                                                                                                      })
 
 ////////////////////////////////////////////////////////////////////Les lieux de fouille spéciaux//////////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille abris anti-atomique") {
-    const X = (Math.floor((159)*Math.random()+1))
+    const X = (Math.floor((165)*Math.random()+1))
       const Zombie = (Math.floor((7)*Math.random()+4))
+      const Balle = (Math.floor((5)*Math.random()+1))
 if(X <= 21){
 const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
@@ -29803,7 +30164,15 @@ if(X >= 22 & X <= 39){
                                       .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Gros coffre en métal`")
                                       .setTimestamp()
                                       message.channel.send({embed})}
-                                      if(X >= 133){
+                                      if(X >= 133 & X <= 136){
+                                        const embed = new Discord.RichEmbed()
+                                        .setAuthor(message.author.username , message.author.avatarURL)
+                                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                        .setColor(0xff0000)
+                                        .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                                        .setTimestamp()
+                                        message.channel.send({embed})}
+                                      if(X >= 137){
                                         const embed = new Discord.RichEmbed()
                                         .setAuthor(message.author.username , message.author.avatarURL)
                                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29817,6 +30186,7 @@ if(X >= 22 & X <= 39){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille abris de chantier") {
+    const Balle = (Math.floor((3)*Math.random()+1))
     const X = (Math.floor((124)*Math.random()+1))
       const Zombie = (Math.floor((6)*Math.random()+3))
 if(X <= 12){
@@ -29963,7 +30333,15 @@ if(X >= 13 & X <= 24){
                                   .addField(":flashlight: Fouille abris de chantier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG (démonté)`")
                                   .setTimestamp()
                                   message.channel.send({embed})}
-                                  if(X >= 110){
+                                  if(X >= 110 & X <= 113){
+                                    const embed = new Discord.RichEmbed()
+                                    .setAuthor(message.author.username , message.author.avatarURL)
+                                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                    .setColor(0xff0000)
+                                    .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                                    .setTimestamp()
+                                    message.channel.send({embed})}
+                                  if(X >= 114){
                                     const embed = new Discord.RichEmbed()
                                     .setAuthor(message.author.username , message.author.avatarURL)
                                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -30031,8 +30409,9 @@ if(X >= 13 & X <= 17){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille ancien aérodrome") {
-    const X = (Math.floor((21)*Math.random()+1))
+    const X = (Math.floor((22)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+1))
+      const Balle = (Math.floor((2)*Math.random()+1))
 if(X <= 7){
 const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
@@ -30097,7 +30476,15 @@ if(X >= 8 & X <= 9){
               .addField(":flashlight: Fouille ancien aérodrome :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Twinoïde 500MG`")
               .setTimestamp()
               message.channel.send({embed})}
-              if(X >= 18){
+              if(X === 18){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille ancien aérodrome:" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                .setTimestamp()
+                message.channel.send({embed})}
+              if(X >= 19){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -30111,6 +30498,7 @@ if(X >= 8 & X <= 9){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille ancien commissariat") {
+    const Balle = (Math.floor((3)*Math.random()+1))
     const X = (Math.floor((224)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
 if(X <= 18){
@@ -30305,6 +30693,14 @@ if(X >= 19 & X <= 35){
                                               .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Aqua-splash`")
                                               .setTimestamp()
                                               message.channel.send({embed})}
+                                              if(X >= 198 & X <= 205){
+                                                const embed = new Discord.RichEmbed()
+                                                .setAuthor(message.author.username , message.author.avatarURL)
+                                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                                .setColor(0xff0000)
+                                                .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                                                .setTimestamp()
+                                                message.channel.send({embed})}
                                               if(X >= 197){
                                                 const embed = new Discord.RichEmbed()
                                                 .setAuthor(message.author.username , message.author.avatarURL)
@@ -30389,7 +30785,8 @@ if(X >= 10 & X <= 17){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille armurerie") {
-    const X = (Math.floor((50)*Math.random()+1))
+    const Balle = (Math.floor((4)*Math.random()+1))
+    const X = (Math.floor((59)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
 if(X <= 8){
 const embed = new Discord.RichEmbed()
@@ -30519,7 +30916,15 @@ if(X >= 9 & X <= 13){
                               .addField(":flashlight: Fouille armurerie :" , ":flashlight: Sur les lieux, après quelques recherches vous tombez sur des zombies... :\n\n:moneybag: `" +Zombie+ " zombies`")
                               .setTimestamp()
                               message.channel.send({embed})}
-                              if(X >= 45){
+                              if(X >= 46 & X <= 48){
+                                const embed = new Discord.RichEmbed()
+                                .setAuthor(message.author.username , message.author.avatarURL)
+                                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                .setColor(0xff0000)
+                                .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                                .setTimestamp()
+                                message.channel.send({embed})}
+                              if(X >= 49){
                               const embed = new Discord.RichEmbed()
                               .setAuthor(message.author.username , message.author.avatarURL)
                               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -30596,7 +31001,8 @@ if(X >= 22 & X <= 35){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille avant-poste militaire") {
-    const X = (Math.floor((115)*Math.random()+1))
+    const Balle = (Math.floor((8)*Math.random()+3))
+    const X = (Math.floor((125)*Math.random()+1))
       const Zombie = (Math.floor((6)*Math.random()+5))
 if(X <= 26){
 const embed = new Discord.RichEmbed()
@@ -30662,7 +31068,15 @@ if(X >= 27 & X <= 40){
               .addField(":flashlight: Fouille avant-poste militaire :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de matériaux`")
               .setTimestamp()
               message.channel.send({embed})}
-              if(X >= 101){
+              if(X >= 101 & X <= 108){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                .setTimestamp()
+                message.channel.send({embed})}
+              if(X >= 109){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31025,7 +31439,8 @@ if(X >= 10 & X <= 12){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille cabane de jardin") {
-    const X = (Math.floor((60)*Math.random()+1))
+    const Balle = (Math.floor((3)*Math.random()+1))
+    const X = (Math.floor((72)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
 if(X <= 16){
 const embed = new Discord.RichEmbed()
@@ -31115,7 +31530,15 @@ if(X >= 17 & X <= 30){
                     .addField(":flashlight: Fouille cabane de jardin:" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG`")
                     .setTimestamp()
                     message.channel.send({embed})}
-                                              if(X >= 58){
+                    if(X === 58){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                                              if(X >= 59){
                                                 const embed = new Discord.RichEmbed()
                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31129,7 +31552,8 @@ if(X >= 17 & X <= 30){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille cache de contrebandiers") {
-    const X = (Math.floor((34)*Math.random()+1))
+    const Balle = (Math.floor((4)*Math.random()+2))
+    const X = (Math.floor((38)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+1))
 if(X <= 10){
 const embed = new Discord.RichEmbed()
@@ -31179,7 +31603,15 @@ if(X >= 11 & X <= 18){
           .addField(":flashlight: Fouille cache de contrebandiers :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Liasse de billets`")
           .setTimestamp()
           message.channel.send({embed})}
-          if(X >= 29){
+          if(X >= 29 & X <= 30){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+            .setTimestamp()
+            message.channel.send({embed})}
+          if(X >= 31){
             const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31193,7 +31625,8 @@ if(X >= 11 & X <= 18){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille camion en panne") {
-    const X = (Math.floor((36)*Math.random()+1))
+    const Balle = (Math.floor((2)*Math.random()+1))
+    const X = (Math.floor((37)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+1))
 if(X <= 16){
 const embed = new Discord.RichEmbed()
@@ -31259,7 +31692,15 @@ if(X >= 17 & X <= 20){
               .addField(":flashlight: Fouille camion en panne :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
               .setTimestamp()
               message.channel.send({embed})}
-              if(X >= 31){
+              if(X === 31){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                .setTimestamp()
+                message.channel.send({embed})}
+              if(X >= 32){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31273,7 +31714,8 @@ if(X >= 17 & X <= 20){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille carcasses de voitures") {
-    const X = (Math.floor((26)*Math.random()+1))
+    const Balle = (Math.floor((2)*Math.random()+1))
+    const X = (Math.floor((30)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+1))
 if(X <= 12){
 const embed = new Discord.RichEmbed()
@@ -31331,7 +31773,15 @@ if(X >= 13 & X <= 15){
             .addField(":flashlight: Fouille carcasses de voitures :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Appareil électronique en panne`")
             .setTimestamp()
             message.channel.send({embed})}
-            if(X >= 29){
+            if(X === 23){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+              .setTimestamp()
+              message.channel.send({embed})}
+            if(X >= 24){
               const embed = new Discord.RichEmbed()
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31345,7 +31795,8 @@ if(X >= 13 & X <= 15){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille carlingue d'avion") {
-    const X = (Math.floor((20)*Math.random()+1))
+    const Balle = (Math.floor((3)*Math.random()+1))
+    const X = (Math.floor((23)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
 if(X <= 5){
 const embed = new Discord.RichEmbed()
@@ -31419,7 +31870,15 @@ if(X >= 6 & X <= 8){
                 .addField(":flashlight: Fouille carlingue d'avion :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Boîte de métal`")
                 .setTimestamp()
                 message.channel.send({embed})}
-                if(X >= 17){
+                if(X === 17){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                if(X >= 18){
                   const embed = new Discord.RichEmbed()
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31481,6 +31940,7 @@ if(X === 14){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille caveau familial") {
+    const Balle = (Math.floor((2)*Math.random()+1))
     const X = (Math.floor((35)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
 if(X <= 20){
@@ -31515,7 +31975,15 @@ if(X >= 25 & X <= 26){
     .addField(":flashlight: Fouille caveau familial :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Fusil d'assaut`")
     .setTimestamp()
     message.channel.send({embed})}
-    if(X >= 28){
+    if(X === 28){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+      .setTimestamp()
+      message.channel.send({embed})}
+    if(X >= 29){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31594,7 +32062,8 @@ if(X >= 8 & X <= 9){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille caverne anciennement habitée") {
-    const X = (Math.floor((67)*Math.random()+1))
+    const Balle = (Math.floor((4)*Math.random()+1))
+    const X = (Math.floor((69)*Math.random()+1))
       const Zombie = (Math.floor((7)*Math.random()+4))
 if(X <= 22){
 const embed = new Discord.RichEmbed()
@@ -31668,7 +32137,15 @@ if(X >= 30 & X <= 35){
               .addField(":flashlight: Fouille caverne anciennement habitée :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de nourriture`")
               .setTimestamp()
               message.channel.send({embed})}
-              if(X >= 56){
+              if(X >= 56 & X <= 57){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                .setTimestamp()
+                message.channel.send({embed})}
+              if(X >= 58){
                 const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -31869,6 +32346,7 @@ if(X >= 65 & X <= 69){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille char d'assaut en panne") {
+    const Balle = (Math.floor((6)*Math.random()+5))
     const X = (Math.floor((57)*Math.random()+1))
       const Zombie = (Math.floor((6)*Math.random()+5))
 if(X <= 10){
@@ -31951,7 +32429,15 @@ if(X >= 20 & X <= 27){
                 .addField(":flashlight: Fouille char d'assaut en panne :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Outils en vrac`")
                 .setTimestamp()
                 message.channel.send({embed})}
-      if(X >= 47){
+                if(X >= 47 & X <= 48){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+      if(X >= 49){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -32087,7 +32573,8 @@ if(X >= 20 & X <= 21){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille entrepôt désaffecté") {
-    const X = (Math.floor((19)*Math.random()+1))
+    const Balle = (Math.floor((3)*Math.random()+1))
+    const X = (Math.floor((21)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+1))
 if(X <= 6){
 const embed = new Discord.RichEmbed()
@@ -32113,7 +32600,15 @@ if(X >= 13 & X <= 15){
   .addField(":flashlight: Fouille entrepôt désaffecté :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de nourriture`")
   .setTimestamp()
   message.channel.send({embed})}
-      if(X >= 16){
+  if(X === 16){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+    .setTimestamp()
+    message.channel.send({embed})}
+      if(X >= 17){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -32398,7 +32893,8 @@ if(X >= 21 & X <= 28){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille hangars de stockage") {
-    const X = (Math.floor((58)*Math.random()+1))
+    const Balle = (Math.floor((3)*Math.random()+3))
+    const X = (Math.floor((69)*Math.random()+1))
       const Zombie = (Math.floor((5)*Math.random()+4))
 if(X <= 17){
 const embed = new Discord.RichEmbed()
@@ -32456,7 +32952,15 @@ if(X >= 31 & X <= 45){
           .addField(":flashlight: Fouille hangars de stockage :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
           .setTimestamp()
           message.channel.send({embed})}
-      if(X >= 55){
+          if(X >= 55 & X <= 56){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+            .setTimestamp()
+            message.channel.send({embed})}
+      if(X >= 57){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -32469,7 +32973,8 @@ if(X >= 31 & X <= 45){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille immeuble délabré") {
-    const X = (Math.floor((58)*Math.random()+1))
+    const Balle = (Math.floor((4)*Math.random()+1))
+    const X = (Math.floor((69)*Math.random()+1))
       const Zombie = (Math.floor((5)*Math.random()+3))
 if(X <= 16){
 const embed = new Discord.RichEmbed()
@@ -32591,7 +33096,15 @@ if(X >= 25 & X <= 32){
                           .addField(":flashlight: Fouille immeuble délabré :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Vieille machine à laver`")
                           .setTimestamp()
                           message.channel.send({embed})}
-                  if(X >= 55){
+                          if(X >= 55 & X <= 56){
+                            const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username , message.author.avatarURL)
+                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(0xff0000)
+                            .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                            .setTimestamp()
+                            message.channel.send({embed})}
+                  if(X >= 57){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -32806,6 +33319,7 @@ if(X >= 24 & X <= 29){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille maison d'un citoyen") {
+    const Balle = (Math.floor((2)*Math.random()+1))
     const X = (Math.floor((64)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+1))
 if(X <= 34){
@@ -32872,7 +33386,15 @@ if(X >= 44 & X <= 46){
         .addField(":flashlight: Fouille maison d'un citoyen :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Ration d'eau`")
         .setTimestamp()
         message.channel.send({embed})}
-                  if(X >= 55){
+        if(X === 55){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+          .setTimestamp()
+          message.channel.send({embed})}
+                  if(X >= 56){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33425,7 +33947,8 @@ message.channel.send({embed})}
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille parking désaffecté") {
-    const X = (Math.floor((54)*Math.random()+1))
+    const Balle = (Math.floor((3)*Math.random()+1))
+    const X = (Math.floor((56)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+2))
 if(X <= 19){
 const embed = new Discord.RichEmbed()
@@ -33515,7 +34038,15 @@ if(X >= 24 & X <= 27){
                   .addField(":flashlight: Fouille parking désaffecté :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Caisse de matériel`")
                   .setTimestamp()
                   message.channel.send({embed})}
-                  if(X >= 46){
+                  if(X === 46){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                  if(X >= 47){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33530,7 +34061,8 @@ if(X >= 24 & X <= 27){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille petite maison") {
-    const X = (Math.floor((38)*Math.random()+1))
+    const Balle = (Math.floor((2)*Math.random()+1))
+    const X = (Math.floor((40)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+1))
 if(X <= 8){
 const embed = new Discord.RichEmbed()
@@ -33628,7 +34160,15 @@ if(X >= 14 & X <= 16){
                     .addField(":flashlight: Fouille petite maison :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Produits pharmaceutiques`")
                     .setTimestamp()
                     message.channel.send({embed})}
-                  if(X >= 33){
+                    if(X === 33){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                  if(X >= 34){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33768,6 +34308,7 @@ if(X >= 76 & X <= 80){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille relais autoroutier") {
+    const Balle = (Math.floor((4)*Math.random()+1))
     const X = (Math.floor((60)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
 if(X <= 9){
@@ -33858,7 +34399,15 @@ if(X >= 19 & X <= 25){
                   .addField(":flashlight: Fouille relais autoroutier :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Table Järpen`")
                   .setTimestamp()
                   message.channel.send({embed})}
-                  if(X >= 49){
+                  if(X === 49){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                  if(X >= 50){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33965,6 +34514,7 @@ if(X === 59){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille stand de fête foraine") {
+    const Balle = (Math.floor((3)*Math.random()+1))
     const X = (Math.floor((50)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+2))
 if(X <= 12){
@@ -34079,7 +34629,15 @@ if(X >= 17 & X <= 18){
                         .addField(":flashlight: Fouille stand de fête foraine :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chamallows séchés`")
                         .setTimestamp()
                         message.channel.send({embed})}
-                  if(X >= 41){
+                        if(X === 41){
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                          .setColor(0xff0000)
+                          .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                          .setTimestamp()
+                          message.channel.send({embed})}
+                  if(X >= 42){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34453,7 +35011,8 @@ if(X >= 17 & X <= 21){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille tranchée aménagée") {
-    const X = (Math.floor((46)*Math.random()+1))
+    const Balle = (Math.floor((4)*Math.random()+2))
+    const X = (Math.floor((48)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+2))
 if(X <= 24){
 const embed = new Discord.RichEmbed()
@@ -34511,7 +35070,15 @@ if(X >= 25 & X <= 30){
           .addField(":flashlight: Fouille tranchée aménagée :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Bobine de fil de fer`")
           .setTimestamp()
           message.channel.send({embed})}
-                  if(X >= 37){
+          if(X >= 37 & X <= 39){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+            .setTimestamp()
+            message.channel.send({embed})}
+                  if(X >= 40){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34755,6 +35322,7 @@ if(X >= 75 & X <= 78){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille villa de duke") {
+    const Balle = (Math.floor((4)*Math.random()+3))
     const X = (Math.floor((50)*Math.random()+1))
       const Zombie = (Math.floor((3)*Math.random()+4))
 if(X <= 10){
@@ -34861,7 +35429,15 @@ if(X >= 18 & X <= 21){
                       .addField(":flashlight: Fouille villa de duke :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Lance-pile 1-PDTG`")
                       .setTimestamp()
                       message.channel.send({embed})}
-                  if(X >= 39){
+                      if(X >= 39 & X <= 40){
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(0xff0000)
+                        .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                        .setTimestamp()
+                        message.channel.send({embed})}
+                  if(X >= 41){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34876,7 +35452,8 @@ if(X >= 18 & X <= 21){
 
 bot.on('message', message => {
   if (message.content === prefix + "Fouille villa délabrée") {
-    const X = (Math.floor((35)*Math.random()+1))
+    const Balle = (Math.floor((4)*Math.random()+2))
+    const X = (Math.floor((37)*Math.random()+1))
       const Zombie = (Math.floor((2)*Math.random()+2))
 if(X <= 6){
 const embed = new Discord.RichEmbed()
@@ -35022,7 +35599,15 @@ if(X >= 10 & X <= 11){
                                 .addField(":flashlight: Fouille villa délabrée :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Chaise EKTÖRP-GLUTEN`")
                                 .setTimestamp()
                                 message.channel.send({embed})}
-                  if(X >= 29){
+                                if(X >= 29 & X <= 30){
+                                  const embed = new Discord.RichEmbed()
+                                  .setAuthor(message.author.username , message.author.avatarURL)
+                                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                                  .setColor(0xff0000)
+                                  .addField(":flashlight: Fouille abri anti-atomique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" +Balle+ " balle(s)`")
+                                  .setTimestamp()
+                                  message.channel.send({embed})}
+                  if(X >= 31){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -35469,6 +36054,44 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ouverture affaires d'un citoyen")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture d'affaires d'un citoyen :" , "Vous obtenez l'objet :\n\n`1 Pile`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 31 & X <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture d'affaires d'un citoyen :" , "Vous obtenez l'objet :\n\n`1 Boîte d'allumettes`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 61 & X <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Ouverture d'affaires d'un citoyen :" , "Vous obtenez l'objet :\n\n`1 Produits pharmaceutiques`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X >= 91){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Ouverture d'affaires d'un citoyen :" , "Vous obtenez l'objet :\n\n`1 Radio K7`")
+          .setTimestamp()
+          message.channel.send({embed})}
+                }
+            }) ;
+
+bot.on('message', message => {
   if (message.content === prefix + "Ailerons de poulet entamés") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -35498,11 +36121,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Aqua-Splash :" , "L'Aqua-Splash est un fusil à eau surpuissant pour toute personne en balade dans l'Outre-Monde ! Ne convient pas à un enfant de moins 8 ans")
+    .addField("Aqua-Splash :" , "L'Aqua-Splash est un fusil à eau surpuissant pour toute personne en balade dans l'Outre-Monde ! Ne convient pas à un enfant de moins 8 ans\n\nCet objet nécessite `Ration d'eau` pour fonctionner, chaque `Ration d'eau` permettra d'utiliser cet objet 3 fois\n\nPour utiliser cet objet : `=Tir [Aqua-Splash]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tir [Aqua-Splash]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((3)*Math.random()+1))
+    if(X <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Aqua-Splash] :" , "Vous ratez malheureusement votre tir...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Aqua-Splash] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Aqua-Splash (démonté)") {
@@ -35510,7 +36157,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Aqua-Splash (démonté) :" , "L'Aqua-Splash est un fusil à eau surpuissant pour toute personne en balade dans l'Outre-Monde ! Ne convient pas à un enfant de moins 8 ans")
+    .addField("Aqua-Splash (démonté) :" , "L'Aqua-Splash est un fusil à eau surpuissant pour toute personne en balade dans l'Outre-Monde ! Ne convient pas à un enfant de moins 8 ans\n\nPour monter cet objet et obtenir `Aqua-Splash` vous devrez utiliser :\n\n`Aqua-Splash (démonté)`\n`1 Sac plastique`\n`1 Rustine`\n`1 Tube de cuivre`\n`Détonateur compact`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -35522,7 +36169,19 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Badge de shérif :" , "Vous fouillant dans le désert de l'Outre-Monde vous tombez face à une petite lumière étincelante étrangement rassurante\n\nEn regardant de plus près il se trouve que cela ressemble à une étoile de shérif\n\nA sa vue, vous ressentez immédiatement le pouvoir d'un guérrier d'antant\n\nL'utilisation de cet objet du passé pourrait bien vous donner plus de courage lors des veilles.")
+    .addField("Badge de shérif :" , "Vous fouillant dans le désert de l'Outre-Monde vous tombez face à une petite lumière étincelante étrangement rassurante\n\nEn regardant de plus près il se trouve que cela ressemble à une étoile de shérif\n\nA sa vue, vous ressentez immédiatement le pouvoir d'un guérrier d'antant\n\nL'utilisation de cet objet du passé pourrait bien vous donner plus de courage lors des veilles\n\nCet objet une fois sur vous permet à chaque fois de vous donner une seconde chance lors de votre : `=Dernier espoir`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Balle") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Balle :" , "Les balles sont assez rares depuis l'apocalypse, les économiser pour les situations délicates est la meilleur solution...")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -35534,7 +36193,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Balise radius :" , "La balise « Radius » permet de dévoiler sur la carte toutes les zones environnant la zone dans laquelle vous vous trouvez")
+    .addField("Balise radius :" , "La balise « Radius » permet de dévoiler sur la carte toutes les zones environnant la zone dans laquelle vous vous trouvez\n\nL'utilisation de cet objet permet de repérer la position exacte de tous les joueurs à 5 KM autour de vous")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -35547,7 +36206,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bandage rudimentaire :" , "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure")
+    .addField("Bandage rudimentaire :" , "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états : `Blessure` & `Hémorragie`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -35559,7 +36218,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Barricades à clouer :" , "Cet assemblage de bois et de tôle devait autrefois servir de barricade chez un autre citoyen . A en juger par les déformations, le sang et les rafistolages, ça ne devait pas être suffisant...")
+    .addField("Barricades à clouer :" , "Cet assemblage de bois et de tôle devait autrefois servir de barricade chez un autre citoyen . A en juger par les déformations, le sang et les rafistolages, ça ne devait pas être suffisant...\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 5 points de défenses cette nuit seulement !\n\nLa mise en place de cet défense est de 30 minutes")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -35571,7 +36230,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Batteur électrique (démonté) :" , "Ca pourrait faire une bonne arme, si seulement vous aviez les pièces manquantes pour réparer ce gadget...")
+    .addField("Batteur électrique (démonté) :" , "Ca pourrait faire une bonne arme, si seulement vous aviez les pièces manquantes pour réparer ce gadget...\n\nPour monter cet objet et obtenir `Batteur électrique` vous devrez utiliser :\n\n`Batteur électrique (démonté)`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 Composant électronique`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -35583,11 +36242,36 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Batteur électrique :" , "Il bat (très fort) et il est électrique, que dire de plus ? Le bon point c'est qu'il ne nécessite qu'une pile et a 40% de chances de l'épuiser")
+    .addField("Batteur électrique :" , "Il bat (très fort) et il est électrique, que dire de plus ? Le bon point c'est qu'il ne nécessite qu'une pile et a 40% de chances de l'épuiser\n\nCet objet nécessite `Pile` pour fonctionner, chaque `Pile` permettra d'utiliser cet objet 5 fois\n\nPour utiliser cet objet : `=Coup [Batteur électrique]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coup [Batteur électrique]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Batteur électrique] :" , "Vous ratez malheureusement votre coup...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 26){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Batteur électrique] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Betapropine 5mg périmée") {
@@ -35595,11 +36279,42 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Betapropine 5mg périmée :" , "Ce petit cachet a un effet pour le moins mystérieux... Sur la boîte, il est écrit : 'ne pas donner à un testeur de moins de 18 ans'")
+    .addField("Betapropine 5mg périmée :" , "Ce petit cachet a un effet pour le moins mystérieux... Sur la boîte, il est écrit : 'ne pas donner à un testeur de moins de 18 ans'\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=Betapropine 5mg périmée [Effets]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Betapropine 5mg périmée [Effets]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Betapropine 5mg périmée [Effets] :" , "Rien ne se passe de plus en utilisant `Betapropine 5mg périmée`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 66 & X <= 85){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Betapropine 5mg périmée [Effets] :" , "Vous gagnez l'état : `Dépendance`")
+        .setTimestamp()
+        message.channel.send({embed})}
+      if(X >= 86){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Betapropine 5mg périmée [Effets] :" , "Vous gagnez l'état : `Terreur`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Bidon d'huile vide") {
@@ -35613,17 +36328,7 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Bidon d'huile remplis") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Bidon d'huile remplis :" , "C'est un bidon remplis d'essence qui pourra être utiliser pour différentes utilisations possibles")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Biscuit fade") {
@@ -36694,6 +37399,8 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 }) ;
+
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Jus de mirabelle suspect") {
