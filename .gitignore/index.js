@@ -36047,7 +36047,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Affaires d'un citoyen :" , "C'est le petit container standard donné à tout citoyen qui arrive en ville. Un peu comme une pochette surprise, blague un peu dérisoire dans un monde sans perspective d'avenir\n\nPour ouvrir : `=Ouverture affaires d'un citoyen`")
+    .addField("Affaires d'un citoyen :" , "C'est le petit container standard donné à tout citoyen qui arrive en ville. Un peu comme une pochette surprise, blague un peu dérisoire dans un monde sans perspective d'avenir\n\nCet objet est `Encombrant`\n\nPour ouvrir : `=Ouverture affaires d'un citoyen`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36097,7 +36097,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Ailerons de poulet entamés :" , "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Ailerons de poulet entamés :" , "Deux ailerons de poulet que quelqu'un a déja commencé à manger avant de les jeter ... Hmmm ...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36109,11 +36109,75 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Appareil électronique en panne :" , "Un vieil appareil électro-ménager impossible à identifier. Peut-être qu'en le démontant vous pourriez obtenir quelque chose ?")
+    .addField("Appareil électronique en panne :" , "Un vieil appareil électro-ménager impossible à identifier. Peut-être qu'en le démontant vous pourriez obtenir quelque chose ?\n\nCet objet peux être démonter à l'atelier pour obtenir un objet différent : `=Appareil électronique en panne [Transformation]`\n\nLe démontage prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+
+
+
+
+
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Appareil électronique en panne [Transformation]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Appareil électronique en panne [Transformation] :" , "Vous obtenez l'objet :\n\n`1 Pile`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 26 & X <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Appareil électronique en panne [Transformation] :" , "Vous obtenez l'objet :\n\n`1 Poignée de vis et écrous`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 51 & X <= 75){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Appareil électronique en panne [Transformation] :" , "Vous obtenez l'objet :\n\n`1 Balise radius`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X >= 76 & X <= 85){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Appareil électronique en panne [Transformation] :" , "Vous obtenez l'objet :\n\n`1 Composant électronique`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X >= 86 & X <= 95){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Appareil électronique en panne [Transformation] :" , "Vous obtenez l'objet :\n\n`1 Détonateur compact`")
+            .setTimestamp()
+            message.channel.send({embed})}
+        if(X >= 96){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Appareil électronique en panne [Transformation] :" , "Vous obtenez l'objet :\n\n`1 Lance-pile 1-PDTG`")
+          .setTimestamp()
+          message.channel.send({embed})}
+                }
+            }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Aqua-Splash") {
@@ -36157,7 +36221,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Aqua-Splash (démonté) :" , "L'Aqua-Splash est un fusil à eau surpuissant pour toute personne en balade dans l'Outre-Monde ! Ne convient pas à un enfant de moins 8 ans\n\nPour monter cet objet et obtenir `Aqua-Splash` vous devrez utiliser :\n\n`Aqua-Splash (démonté)`\n`1 Sac plastique`\n`1 Rustine`\n`1 Tube de cuivre`\n`Détonateur compact`")
+    .addField("Aqua-Splash (démonté) :" , "L'Aqua-Splash est un fusil à eau surpuissant pour toute personne en balade dans l'Outre-Monde ! Ne convient pas à un enfant de moins 8 ans\n\nPour assembler cet objet et obtenir `Aqua-Splash` vous devrez être à l'atelier et utiliser :\n\n`Aqua-Splash (démonté)`\n`1 Sac plastique`\n`1 Rustine`\n`1 Tube de cuivre`\n`Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36218,7 +36282,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Barricades à clouer :" , "Cet assemblage de bois et de tôle devait autrefois servir de barricade chez un autre citoyen . A en juger par les déformations, le sang et les rafistolages, ça ne devait pas être suffisant...\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 5 points de défenses cette nuit seulement !\n\nLa mise en place de cet défense est de 30 minutes")
+    .addField("Barricades à clouer :" , "Cet assemblage de bois et de tôle devait autrefois servir de barricade chez un autre citoyen . A en juger par les déformations, le sang et les rafistolages, ça ne devait pas être suffisant...\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 5 points de défenses cette nuit seulement !\n\nLa mise en place de cet défense est de 30 minutes sur le chantier de la ville ainsi que 1 point d'action\n\nCet objet est `Encombrant`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36230,7 +36294,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Batteur électrique (démonté) :" , "Ca pourrait faire une bonne arme, si seulement vous aviez les pièces manquantes pour réparer ce gadget...\n\nPour monter cet objet et obtenir `Batteur électrique` vous devrez utiliser :\n\n`Batteur électrique (démonté)`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 Composant électronique`")
+    .addField("Batteur électrique (démonté) :" , "Ca pourrait faire une bonne arme, si seulement vous aviez les pièces manquantes pour réparer ce gadget...\n\nPour assembler cet objet et obtenir `Batteur électrique` vous devrez être à l'atelier et utiliser :\n\n`Batteur électrique (démonté)`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 Composant électronique`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36242,7 +36306,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Batteur électrique :" , "Il bat (très fort) et il est électrique, que dire de plus ? Le bon point c'est qu'il ne nécessite qu'une pile et a 40% de chances de l'épuiser\n\nCet objet nécessite `Pile` pour fonctionner, chaque `Pile` permettra d'utiliser cet objet 5 fois\n\nPour utiliser cet objet : `=Coup [Batteur électrique]`")
+    .addField("Batteur électrique :" , "Il bat (très fort) et il est électrique, que dire de plus ? Le bon point c'est qu'il ne nécessite qu'une pile et a 40% de chances de l'épuiser\n\nCet objet nécessite `Pile` pour fonctionner, chaque `Pile` permettra d'utiliser cet objet 5 fois\n\nPour utiliser cet objet : `=Coup [Batteur électrique]`\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36322,7 +36386,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bidon d'huile vide :" , "On trouve de temps en temps des bidons d'huile vides dans le désert, souvent accompagné d'un cadavre. Quand est ce que les citoyens comprendront que l'huile, ça ne se boit pas...")
+    .addField("Bidon d'huile vide :" , "On trouve de temps en temps des bidons d'huile vides dans le désert, souvent accompagné d'un cadavre. Quand est ce que les citoyens comprendront que l'huile, ça ne se boit pas...\n\nPour assembler cet objet et obtenir `Cidre claviceps artisanal` vous devrez être à l'atelier et utiliser :\n\n`1 Bidon d'huile vide`\n`1 Vodka marinostov`\n`1 Claviceps purpurea`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Guitare artisanale` vous devrez être à l'atelier et utiliser :\n\n`1 Bâton cassé`\n`1 Bobine de fil de fer`\n`1 Bidon d'huile vide`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
