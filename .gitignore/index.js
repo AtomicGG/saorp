@@ -36424,7 +36424,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bombe pulvérine :" , "Cette grenade artisanale permet d'attirer l'attention des zombies dans le secteur sur autre chose que votre belle chair appétissante... Vous avez alors quelques instants pour profiter de cette distraction")
+    .addField("Bombe pulvérine :" , "Cette grenade artisanale permet d'attirer l'attention des zombies dans le secteur sur autre chose que votre belle chair appétissante... Vous avez alors quelques instants pour profiter de cette distraction\n\nL'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher les zombies d'attaquer pendant 2 tours")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36436,7 +36436,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bombe macabre :" , "L'avantage de cette boule de chair difforme, c'est qu'elle sent la charogne à 10 mètres à la ronde. Pratique pour occuper les zombies quelques instants")
+    .addField("Bombe macabre :" , "L'avantage de cette boule de chair difforme, c'est qu'elle sent la charogne à 10 mètres à la ronde. Pratique pour occuper les zombies quelques instants\n\nL'utilisation de cet objet vous permet de fuir un combat ou alors d'empêcher les zombies d'attaquer pendant 3 tours")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36448,11 +36448,37 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bombe à eau :" , "Jetez-la sur un zombie et priez pour que ça éclate. Puis attendez que ça éclate à nouveau")
+    .addField("Bombe à eau :" , "Jetez-la sur un zombie et priez pour que ça éclate. Puis attendez que ça éclate à nouveau\n\nPour utiliser cet objet : `=Lancer [Bombe à eau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Lancer [Bombe à eau]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((4)*Math.random()+2))
+    if(X <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Lancer [Bombe à eau] :" , "Vous ratez malheureusement votre lancer et votre bombe à eau explose sur le sol...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 26){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Lancer [Bombe à eau] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Bombe à eau explosive") {
