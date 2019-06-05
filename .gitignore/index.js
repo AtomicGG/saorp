@@ -19780,7 +19780,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Liste des objets, partie 1 :" , "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5mg périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boules de sable`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`")    .setTimestamp()
+  .addField("Liste des objets, partie 1 :" , "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5mg périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -36464,7 +36464,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Lancer [Bombe à eau] :" , "Vous ratez malheureusement votre lancer et votre bombe à eau explose sur le sol...")
+      .addField("Lancer [Bombe à eau] :" , "Vous ratez malheureusement votre lancer...")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 26){
@@ -36486,11 +36486,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bombe à eau explosive :" , "Un sac plastique, de l'explosif et de l'eau. C'est artisanal, mais c'est surtout une arme de destruction massive d'une extrême puissance à jeter dans les hordes de zombies... Carnage assuré")
+    .addField("Bombe à eau explosive :" , "Un sac plastique, de l'explosif et de l'eau. C'est artisanal, mais c'est surtout une arme de destruction massive d'une extrême puissance à jeter dans les hordes de zombies... Carnage assuré\n\nPour utiliser cet objet : `=Lancer [Bombe à eau explosive]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Lancer [Bombe à eau explosive]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((7)*Math.random()+4))
+    if(X <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Lancer [Bombe à eau explosive] :" , "Vous ratez malheureusement votre lancer...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 26){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Lancer [Bombe à eau explosive] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure sévère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Bon plat fait-maison") {
@@ -36510,7 +36534,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bonbonne d'eau :" , "Cette bonbonne en plastique devait se trouver dans un quelconque bureau d'entreprise\n\nElle a échoué entre vos mains par on-ne-sait quel miracle et elle pourrait bien s'avérer très utile de nos jours...\nSi vous disposez d'une ration d'eau sur vous, elle sera placée dans la bonbonne\n\nSinon, l'action par défaut sera de boire le contenu de la bonbonne")
+    .addField("Bonbonne d'eau :" , "Cette bonbonne en plastique devait se trouver dans un quelconque bureau d'entreprise\n\nElle a échoué entre vos mains par on-ne-sait quel miracle et elle pourrait bien s'avérer très utile de nos jours...\nSi vous disposez d'une ration d'eau sur vous, elle sera placée dans la bonbonne\n\nSinon, l'action par défaut sera de boire le contenu de la bonbonne\n\nCet objet est `Encombrant`\n\nVous pouvez mettre à l'intérieur jusqu'à 5 rations d'eau, utile pour un voyage en groupe important")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36522,7 +36546,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boule de pâte visqueuse :" , "Un agrégat de 'Charognardes', une baie qui pousse essentiellement sur des cadavres...")
+    .addField("Boule de pâte visqueuse :" , "Un agrégat de 'Charognardes', une baie qui pousse essentiellement sur des cadavres...\n\nPour assembler cet objet et obtenir `Purée de charognardes` vous devrez être à l'atelier et utiliser :\n\n`1 Boule de pâte visqueuse`\n`1 Charognardes`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36534,23 +36558,12 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boules quiès :" , "Vous ne supportez plus les commérages à vos portes, les insultes à votre porte, les citoyens hurlant à la mort ? Les boules quiès seront vos meilleures amies !")
+    .addField("Boules quiès :" , "Vous ne supportez plus les commérages à vos portes, les insultes à votre porte, les citoyens hurlant à la mort ? Les boules quiès seront vos meilleures amies !\n\nCet objet permet de calmer légèrement l'état de `Terreur` mais pas de le guérir")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Boules de sable") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Boules de sable :" , "Une banale boule de sable (avec quelques graviers en prime) qu'il vous démange de jeter au visage d'un autre citoyen. Vous ignorez d'où vous vient cette envie bizarre")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Boîte d'allumettes") {
@@ -36558,7 +36571,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boîte d'allumettes :" , "Comme dit le dicton : on ne peut pas faire feu de tout bois. Faites le mentir...")
+    .addField("Boîte d'allumettes :" , "Comme dit le dicton : on ne peut pas faire feu de tout bois. Faites le mentir...\n\nPour assembler cet objet et obtenir `Torche` vous devrez être à l'atelier et utiliser :\n\n`1 Boîte d'allumettes`\n`1 Souche de bois pourrie`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36570,7 +36583,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boîte de conserve :" , "L'image imprimée sur la boite montre un plat de haricots très appétissants ! Mais il faudrait d'abord trouver un outil pour l'ouvrir...")
+    .addField("Boîte de conserve :" , "L'image imprimée sur la boite montre un plat de haricots très appétissants ! Mais il faudrait d'abord trouver un outil pour l'ouvrir...\n\nCet objet est possible à ouvrir grâce à l'un des objets suivants :\n\n`Tournevis`\n`Couteau suisse`\n`Ouvre-boîte`\n`Scie à métaux`\n\nUne fois ouvert, vous recevez l'objet `Boîte de conserve ouverte`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36582,7 +36595,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boîte de conserve ouverte :" , "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Boîte de conserve ouverte :" , "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet s'empoisonne avec `Fiole de poison`")
     .setTimestamp()
     message.channel.send({embed})
   }
