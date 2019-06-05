@@ -36412,7 +36412,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bobine de fil de fer :" , "Attention à ne pas s'emmeler avec, on ne voudrait pas avoir à vous couper les doigts pour vous en libérer")
+    .addField("Bobine de fil de fer :" , "Attention à ne pas s'emmeler avec, on ne voudrait pas avoir à vous couper les doigts pour vous en libérer\n\nPour assembler cet objet et obtenir `Mine antipersonnel` vous devrez être à l'atelier et utiliser :\n\n`1 Bobine de fil de fer`\n`1 Poignée de vis et écrous`\n`1 Explosifs bruts`\n`1 Rustine`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Guitare artisanale` vous devrez être à l'atelier et utiliser :\n\n`1 Bâton cassé`\n`1 Bobine de fil de fer`\n`1 Bidon d'huile vide`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Pointeur laser brûlant` vous devrez être à l'atelier et utiliser :\n\n`1 Diode lazer`\n`1 Maglite Pif'gadget`\n`1 Bobine de fil de fer`\n`1 Tube de cuivre`\n`1 Poignée de vis et écrous`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -37670,17 +37670,6 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Maglite Pif'gadget") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Maglite Pif'gadget :" , "Cette grosse lampe de poche au design douteux pourrait bien vous être utile pour vos fouilles dans le désert\n\nPour l'allumer, il suffit d'appuyer sur le nez du gros chien jaune, sur la poignée\n\nVous notez que la lampe fait maintenant 'ouh ouh ouh' quand vous la secouez")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Maglite Pif'gadget (démonté)") {
