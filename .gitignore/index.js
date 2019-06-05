@@ -36306,7 +36306,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Batteur électrique :" , "Il bat (très fort) et il est électrique, que dire de plus ? Le bon point c'est qu'il ne nécessite qu'une pile et a 40% de chances de l'épuiser\n\nCet objet nécessite `Pile` pour fonctionner, chaque `Pile` permettra d'utiliser cet objet 5 fois\n\nPour utiliser cet objet : `=Coup [Batteur électrique]`\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation")
+    .addField("Batteur électrique :" , "Il bat (très fort) et il est électrique, que dire de plus ? Le bon point c'est qu'il ne nécessite qu'une pile et a 40% de chances de l'épuiser\n\nCet objet nécessite `Pile` pour fonctionner, chaque `Pile` permettra d'utiliser cet objet 5 fois\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation\n\nPour utiliser cet objet : `=Coup [Batteur électrique]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36546,7 +36546,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boule de pâte visqueuse :" , "Un agrégat de 'Charognardes', une baie qui pousse essentiellement sur des cadavres...\n\nPour assembler cet objet et obtenir `Purée de charognardes` vous devrez être à l'atelier et utiliser :\n\n`1 Boule de pâte visqueuse`\n`1 Charognardes`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
+    .addField("Boule de pâte visqueuse :" , "Un agrégat de 'Charognardes', une baie qui pousse essentiellement sur des cadavres...\n\nPour cuisiner cet objet et obtenir `Purée de charognardes` vous devrez être à la cuisine et utiliser :\n\n`1 Boule de pâte visqueuse`\n`1 Charognardes`\n\nLa préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36595,7 +36595,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boîte de conserve ouverte :" , "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet s'empoisonne avec `Fiole de poison`")
+    .addField("Boîte de conserve ouverte :" , "Allez, on ferme les yeux, on ouvre bien grand la bouche et on avale tout. On se sent toujours mieux après\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet s'empoisonne avec `Fiole de poison`\n\nCet objet est `cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36727,7 +36727,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Boîte en métal :" , "Une vieille boîte métallique couverte de rouille et complètement cabossée. Qui sait ce qu'elle peut bien contenir ?\n\nCet objet est `Encombrant`\n\nCet objet est possible à ouvrir grâce à l'un des objets suivants :\n\n`Tournevis`\n`Couteau suisse`\nOuvre-boîte`\n`Scie à métaux`\n\nPour ouvrir : `=Ouverture [Boîte en métal]`")
+    .addField("Boîte en métal :" , "Une vieille boîte métallique couverte de rouille et complètement cabossée. Qui sait ce qu'elle peut bien contenir ?\n\nCet objet est `Encombrant`\n\nCet objet est possible à ouvrir grâce à l'un des objets suivants :\n\n`Tournevis`\n`Couteau suisse`\n`Ouvre-boîte`\n`Scie à métaux`\n\nPour ouvrir : `=Ouverture [Boîte en métal]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36801,7 +36801,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Brico'facile :" , "Un petit kit à usage unique pour réparer tout et n'importe quoi. Il contient quelques outils basiques, des pièces plastique de rechange et un guide du Petit Bricoleur imprimé en 7 langues\n\nCet objet permet de pouvoir réparer d'autres objets ou même des défenses endommagés lors d'une attaque la nuit")
+    .addField("Brico'facile :" , "Un petit kit à usage unique pour réparer tout et n'importe quoi. Il contient quelques outils basiques, des pièces plastique de rechange et un guide du Petit Bricoleur imprimé en 7 langues\n\nCet objet permet de pouvoir réparer d'autres objets ou même des défenses endommagés lors d'une attaque la nuit\n\nLa réparation d'un objet prendra 15 minutes et détruira le `Brico'facile`\n\nLa réparation d'une défense prendra 30 minutes et détrauire le `Brico'facile`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36915,7 +36915,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Cafetière :" , "L'arme absolue pour l'aventurier en vous. Son système de filtrage unique permet de fabriquer le meilleur café à partir d'ingrédients pour le moins... inattendus\n\nCet objet est `Encombrant`\n\nPour faire fonctionner cet objet et obtenir `Cidre claviceps artisanal` vous devrez être à l'atelier ou chez vous et utiliser :\n\n`1 Pile`\n`1 Produits pharmaceutiques`\n`1 Souche de bois pourrie`\n\nLa production de café prendra 5 minutes à sa réalisation")
+    .addField("Cafetière :" , "L'arme absolue pour l'aventurier en vous. Son système de filtrage unique permet de fabriquer le meilleur café à partir d'ingrédients pour le moins... inattendus\n\nCet objet est `Encombrant`\n\nPour faire fonctionner cet objet et obtenir `Café brûlant` vous devrez être à l'atelier ou chez vous et utiliser :\n\n`1 Pile`\n`1 Produits pharmaceutiques`\n`1 Souche de bois pourrie`\n\nLa production de café prendra 5 minutes à sa réalisation")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36963,11 +36963,67 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Caisse de matériel :" , "Cette vieille caisse en bois doit contenir des babioles utiles...\n\nCet objet est `Encombrant`")
+    .addField("Caisse de matériel :" , "Cette vieille caisse en bois doit contenir des babioles utiles...\n\nCet objet est `Encombrant`\n\nCet objet est possible à ouvrir grâce à l'un des objets suivants :\n\n`Batteur électrique`\n`Clé à molette`\n`Tournevis`\n`Grand bâton sec`\n`Couteau à dents`\n`Coupe-coupe`\n`Canif dérisoire`\n`Couteau suisse`\n`Cutter`\n`Ouvre-boîte`\n`Chaise EKTÖRP-GLUTEN`\n`Os humain fêlé`\n`Grosse chaîne rouillée`\n`Unité centrale`\n\nPour ouvrir : `=Ouverture [Caisse de matériel]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ouverture [Caisse de matériel]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture [Caisse de matériel] :" , "Vous obtenez l'objet :\n\n`1 Pile`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41 & X <= 60){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Ouverture [Caisse de matériel] :" , "Vous obtenez l'objet :\n\n`1 Poignée de vis et écrous`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X >= 61 & X <= 70){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Ouverture [Caisse de matériel] :" , "Vous obtenez l'objet :\n\n`1 Rustine de cuivre`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X >= 71 & X <= 80){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Ouverture [Caisse de matériel] :" , "Vous obtenez l'objet :\n\n`1 Tube de cuivre`")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X >= 81 & X <= 90){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField("Ouverture [Caisse de matériel] :" , "Vous obtenez l'objet :\n\n`1 Explosifs bruts`")
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(X >= 91){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Ouverture [Caisse de matériel] :" , "Vous obtenez l'objet :\n\n`1 Produits pharmaceutiques`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                }
+            }) ;
+
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Caisse de nourriture") {
@@ -36975,11 +37031,65 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Caisse de nourriture :" , "Une odeur abominable de moisi et de charogne émane de cette caisse... Mais vous êtes presque sûr(e) qu'elle contient un petit quelque chose de comestible\n\nCet objet est `Encombrant`\n\nPour ouvrir : `=Ouverture caisse de nourriture`")
+    .addField("Caisse de nourriture :" , "Une odeur abominable de moisi et de charogne émane de cette caisse... Mais vous êtes presque sûr(e) qu'elle contient un petit quelque chose de comestible\n\nCet objet est `Encombrant`\n\nCet objet est possible à ouvrir grâce à l'un des objets suivants :\n\n`Batteur électrique`\n`Clé à molette`\n`Tournevis`\n`Grand bâton sec`\n`Couteau à dents`\n`Coupe-coupe`\n`Couteau suisse`\n`Cutter`\n`Ouvre-boîte`\n`Os humain fêlé`\n`Grosse chaîne rouillée`\n\nPour ouvrir : `=Ouverture [Caisse de nourriture]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ouverture [Caisse de nourriture]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture [Caisse de nourriture] :" , "Vous obtenez l'objet :\n\n`1 Boîte de conserve`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 21 & X <= 50){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Ouverture [Caisse de nourriture] :" , "Vous obtenez l'objet :\n\n`1 Steak appétissant`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X >= 51 & X <= 70){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Ouverture [Caisse de nourriture] :" , "Vous obtenez l'objet :\n\n`1 Viande humaine`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X >= 71 & X <= 80){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Ouverture [Caisse de nourriture] :" , "Vous obtenez l'objet :\n\n`1 Légume suspect`")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X >= 81 & X <= 90){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField("Ouverture [Caisse de nourriture] :" , "Vous obtenez l'objet :\n\n`1 Doggy-bag`")
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(X >= 91){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Ouverture [Caisse de nourriture] :" , "Vous obtenez l'objet :\n\n`1 Melon d'intestin`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Calibrateur PDTT MARK II") {
@@ -36987,7 +37097,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Calibrateur PDTT MARK II :" , "Cet antique calibrateur est exclusivement prévu pour être monté sur un Lance-pile 1-PDTG. Il permet d'ajuster précisément la pression dans la chambre de tir de l'arme")
+    .addField("Calibrateur PDTT MARK II :" , "Cet antique calibrateur est exclusivement prévu pour être monté sur un Lance-pile 1-PDTG. Il permet d'ajuster précisément la pression dans la chambre de tir de l'arme\n\nPour assembler cet objet et obtenir `Lance-pile MARK II` vous devrez être à l'atelier et utiliser :\n\n`1 Calibrateur PDTT MARK II`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 Composant électronique`\n`1 Lance-pile 1-PDTG`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -36999,7 +37109,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Cantine en fer :" , "Lourde mais pratique, cette grosse malle en ferraille ferait parfaitement office de rangement chez soi\n\nCet objet est `Encombrant`")
+    .addField("Cantine en fer :" , "Lourde mais pratique, cette grosse malle en ferraille ferait parfaitement office de rangement chez soi\n\nCet objet est `Encombrant`\n\nCet objet vous permet de porter 5 objets supplémentaires !\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 7 points de défenses cette nuit seulement !\n\nLa mise en place de cet défense est de 1 H sur le chantier de la ville ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -37011,11 +37121,33 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Caisse de matériaux :" , "Ce gros carton est couvert d'étiquettes imprimées et emballé dans du cellophane transparent. Il doit contenir des matériaux de construction\n\nCet objet est `Encombrant`")
+    .addField("Caisse de matériaux :" , "Ce gros carton est couvert d'étiquettes imprimées et emballé dans du cellophane transparent. Il doit contenir des matériaux de construction\n\nCet objet est `Encombrant`\n\nPour ouvrir : `=Ouverture [Caisse de matériaux]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ouverture [Carton de matériaux]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture [Carton de matériaux] :" , "Vous obtenez l'objet :\n\n`1 Ferraille`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                if(X >= 61){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Ouverture [Carton de matériaux] :" , "Vous obtenez l'objet :\n\n`1 Planche tordue`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Cartons") {
@@ -37023,7 +37155,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Cartons :" , "Quelques cartons qui devaient autrefois être des boîtes de rangement pour des appareils électroménagers. Même s'ils sont à moitié pourris et sentent le moisi à plein nez, ils pourront toujours servir chez vous... comme meuble")
+    .addField("Cartons :" , "Quelques cartons qui devaient autrefois être des boîtes de rangement pour des appareils électroménagers. Même s'ils sont à moitié pourris et sentent le moisi à plein nez, ils pourront toujours servir chez vous... comme meuble\n\nMettre cette objet chez soi permet le stockage de 3 objet supplémentaires")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -37047,7 +37179,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Ceinture à poches :" , "Combiné à un CD de musique, cette chaîne devient potentiellement une arme de destruction massive !")
+    .addField("Ceinture à poches :" , "Combiné à un CD de musique, cette chaîne devient potentiellement une arme de destruction massive !\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 5 points de défenses à chaques nuits !\n\nLa mise en place de cet défense est de 2 H sur le chantier de la ville ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -37059,11 +37191,39 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Chaise EKTÖRP-GLUTEN :" , "Une banale chaise de fabrication suédoise. On peut taper des gens avec, mais ca fonctionnera mieux si c'est simplement rangé en sécurité chez soi...\n\nCet objet est `Encombrant`")
+    .addField("Chaise EKTÖRP-GLUTEN :" , "Une banale chaise de fabrication suédoise. On peut taper des gens avec, mais ca fonctionnera mieux si c'est simplement rangé en sécurité chez soi...\n\nCet objet est `Encombrant`\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation\n\nCet objet possède 10 utilisations avant qu'il ne se casse, il faudra ensuite le réparer\n\n\n\nPour utiliser cet objet : `=Coup [Chaise]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coup [Chaise]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Chaise] :" , "Vous ratez malheureusement votre coup...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Chaise] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
+
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Chamallows calcinés") {
@@ -37083,7 +37243,19 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Chamallows séchés :" , "Quelques chamallows tout durcis et qui sentent le rat mort. C'est complètement immangeable tel quel...")
+    .addField("Chamallows séchés :" , "Quelques chamallows tout durcis et qui sentent le rat mort. C'est complètement immangeable tel quel...\n\nCet objet est `cuisinable`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Charognardes") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Charognardes :" , "Les Charognardes sont des baies qui poussent généralement sur les corps en décomposition : il n'est pas rare d'en apercevoir sur des zombies ou sur les cadavres d'animaux divers... Vous êtes sûr(e) que ça se mange ?\n\nPour cuisiner cet objet et obtenir `Boule de pâte visqueuse` vous devrez être à la cuisine et utiliser :\n\n`1 Charognardes`\n`1 Charognardes`\n\nLa préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nPour cuisiner cet objet et obtenir `Purée de charognardes` vous devrez être à la cuisine et utiliser :\n\n`1 Boule de pâte visqueuse`\n`1 Charognardes`\n\nLa préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -37095,7 +37267,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Chaîne de porte & cadenas :" , "Avec une bonne grosse chaîne et un cadenas on se sent rassuré pour la porte. Pas pour les murs...")
+    .addField("Chaîne de porte & cadenas :" , "Avec une bonne grosse chaîne et un cadenas on se sent rassuré pour la porte. Pas pour les murs...\n\nPermet d'éviter les vols de votre maison pendant votre absence")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -37107,7 +37279,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Chewing-gums séchés :" , "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Chewing-gums séchés :" , "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
