@@ -7286,7 +7286,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
+      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le Renard attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (26 <= roll & roll <= 90){
@@ -7294,7 +7294,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " + degat + " points de dégâts")
+      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le Renard sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " + degat + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -7303,7 +7303,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fox :" , ":crossed_swords: Le Fox court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " + degat + " points de dégâts " +
+      .addField(":crossed_swords: Renard :" , ":crossed_swords: Le Renard court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " + degat + " points de dégâts " +
                                            "ainsi que 1 point de dégâts de saignement supplémentaires à chaques tours pendant 3 tours [L'armure ne réduit pas les dégâts de saignement]")
       .setTimestamp()
       message.channel.send({embed})
@@ -22776,7 +22776,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
     const X = (Math.floor((170)*Math.random()+1))
-      const Zombie = (Math.floor((4)*Math.random()+2))     
+      const Zombie = (Math.floor((4)*Math.random()+2))
 if(X <= 1.5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -25586,7 +25586,7 @@ bot.on('message', message => {
       const Zombie = (Math.floor((7)*Math.random()+4))
 
 
-                                                                        
+
 if(X <= 4){
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
