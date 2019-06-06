@@ -6693,7 +6693,7 @@ bot.on('message', message => {
     } else {
       let degats = args.slice(2).join(" : ");
       const degat = Math.floor((degats * 0.5 + 1) * Math.random() + (degats * 1.3))
-      const boost = Math.floor((degats * 0.2 + 1) * Math.random()+ (0.6 * degats))
+      const boost = Math.floor((degats * 0.2 + 1) * Math.random()+ (1.6 * degats))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
