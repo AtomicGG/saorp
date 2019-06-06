@@ -6681,7 +6681,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Blood insanity")) {
-    if (talkedRecently.has(message.author.id+5)) {
+    if (/*talkedRecently.has(message.author.id+5)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -6692,14 +6692,13 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
       let degats = args.slice(2).join(" : ");
-      const degat = Math.floor(degats * 0.5 * Math.random() + (degats * 1.3))
-      const boost = Math.floor(0.2 * Math.random()+ 0.6)
-      const degatBoost = ((boost + 1) * degats)
+      const degat = Math.floor((degats * 0.5 + 1) * Math.random() + (degats * 1.3))
+      const boost = Math.floor((degats * 0.2 + 1) * Math.random()+ (0.6 * degats))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" + degat + "` points de dégâts, mais vos dégâts valent désormais `" + degatBoost + "` pendant 3 tours !")
+      .addField(":cyclone: Blood insanity :" , ":cyclone: Votre compétence 'Blood insanity' vous inflige `" + degat + "` points de dégâts, mais vos dégâts valent désormais `" + boost + "` pendant 3 tours !")
       .setImage("https://media.giphy.com/media/6noApitdXGOtO/giphy.gif")
       .setTimestamp()
       message.channel.send({embed})
@@ -22776,7 +22775,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     } else {
     const X = (Math.floor((170)*Math.random()+1))
-      const Zombie = (Math.floor((4)*Math.random()+2))     
+      const Zombie = (Math.floor((4)*Math.random()+2))
 if(X <= 1.5){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -25586,7 +25585,7 @@ bot.on('message', message => {
       const Zombie = (Math.floor((7)*Math.random()+4))
 
 
-                                                                        
+
 if(X <= 4){
                                                                           const embed = new Discord.RichEmbed()
                                                                           .setAuthor(message.author.username , message.author.avatarURL)
