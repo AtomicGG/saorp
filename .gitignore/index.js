@@ -1233,7 +1233,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts et votre cible tombe ne lui permettant pas de pouvoir se défendre")
+        .addField(":crossed_swords: Coup sauté :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatAvec + "` points de dégâts et votre cible tombe ne lui permettant pas de pouvoir se défendre au prochain tour.")
         .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
         .setTimestamp()
         message.channel.send({embed})
@@ -6493,7 +6493,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts et endors l'ennemis pendant `" + tours + "` tours, " +
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts et endort l'ennemi pendant `" + tours + "` tours, " +
                                                    "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
@@ -6510,7 +6510,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endors l'ennemis pendant `" + tours + "` tours, " +
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" + tours + "` tours, " +
                                                    "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
@@ -6528,7 +6528,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endors l'ennemis pendant `" +tours+ "` tours, " +
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" +tours+ "` tours, " +
                                                    "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! De plus, la cible est dans un sommeil profond, ce qui, s'il se réveille prématurément, " +
                                                    "la cible prendra `" + degatSup + "` de dégats en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
@@ -8299,7 +8299,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sors deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, " +
+      .addField(":crossed_swords: Bandit sombre :" , ":crossed_swords: Le bandit sombre sort deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, " +
                                                      "il inflige " + degat + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
@@ -8440,7 +8440,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit sombre :" , ":shield: Le bandit expérimenté tente de parer votre coup à l'aide de ses deux dagues, mais votre attaque est assez puissante et il se la prend, " +
+      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre tente de parer votre coup à l'aide de ses deux dagues, mais votre attaque est assez puissante et il se la prend, " +
                                                   "vous infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
@@ -8449,7 +8449,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit sombre :" , ":shield: Le bandit expérimenté arrive à parer votre coup en bloquant votre coup entre ses deux dagues, " +
+      .addField(":shield: Bandit sombre :" , ":shield: Le bandit sombre arrive à parer votre coup en bloquant votre coup entre ses deux dagues, " +
                                                   "il vous met un coup de pied avant de profiter de cette occasion pour planter ses deux dagues, il inflige " + parade + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
@@ -14040,12 +14040,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières rouillées")) {
+  if (message.content.startsWith(prefix + "Epaulières rouillées")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque rouillé :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières rouillées")
+    .addField(":scales: Epaulières rouillé :" , ":scales: Ce sont des épaulières toucher par l'érosion constitué de cuivre médiocre !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 8 cuivre médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières rouillées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14318,12 +14318,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières en peau arrachée")) {
+  if (message.content.startsWith(prefix + "Epaulières en peau arrachée")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en peau arrachée :" , ":scales: Ce sont des épaulières très fragiles constitué de peaux animals mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau arrachée`")
+    .addField(":scales: Epaulières en peau arrachée :" , ":scales: Ce sont des épaulières très fragiles constitué de peaux animals mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de sanglier, 2 peaux de renard, 2 peaux de chien, 2 peaux de lapin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau arrachée`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14422,12 +14422,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Épaulières en peau résistante")) {
+  if (message.content.startsWith(prefix + "Epaulières en peau résistante")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en peau résistante :" , ":scales: Ce sont des épaulières assez résistantes constitué de peaux animales mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau résistante`")
+    .addField(":scales: Epaulières en peau résistante :" , ":scales: Ce sont des épaulières assez résistantes constitué de peaux animales mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour le porter : 6\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peaux de loup, 2 peaux de taupe, 1 peau de loup de sang, 1 Peau de lapin géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 200 cols\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières en peau résistante`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14966,12 +14966,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Épaulières de kobolt") {
+  if (message.content === prefix + "Epaulières de kobolt") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières de kobolt :" , ":scales: Ce sont des épaulières résistantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt`")
+    .addField(":scales: Epaulières de kobolt :" , ":scales: Ce sont des épaulières résistantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15180,12 +15180,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Épaulières de kobolt supérieures") {
+  if (message.content === prefix + "Epaulières de kobolt supérieures") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières de kobolt supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt supérieures`")
+    .addField(":scales: Epaulières de kobolt supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17167,7 +17167,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de soin`")
+    .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de soin`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17180,7 +17180,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de défense`")
+    .addField(":syringe: Potion moyenne de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de défense`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17193,7 +17193,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de force`")
+    .addField(":syringe: Potion moyenne de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de force`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17206,7 +17206,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion imposante de régénération`")
+    .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
