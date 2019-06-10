@@ -6572,7 +6572,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts et endort l'ennemi pendant `" + tours + "` tours, " +
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: 1Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts et endort l'ennemi pendant `" + tours + "` tours, " +
                                                    "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
@@ -6589,7 +6589,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" + tours + "` tours, " +
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: 2Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" + tours + "` tours, " +
                                                    "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
@@ -6607,7 +6607,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" +tours+ "` tours, " +
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: 3Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" +tours+ "` tours, " +
                                                    "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! De plus, la cible est dans un sommeil profond, ce qui, s'il se réveille prématurément, " +
                                                    "la cible prendra `" + degatSup + "` de dégats en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
