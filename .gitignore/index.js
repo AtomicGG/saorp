@@ -6543,6 +6543,85 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Slleeping silence")) {
+    if (/*talkedRecently.has(message.author.id+6)*/false) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let degats = args.slice(2).join(" : ");
+      const degat = Math.floor(degats * 0.5 * Math.random() + (degats * 1.3))
+      let roll = Math.floor(100 * Math.random() + 1)
+      let tours
+      if(roll <= 80){
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50){
+          tours = 4
+        } else {
+          tours = 6
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts et endort l'ennemi pendant `" + tours + "` tours, " +
+                                                   "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 81 && roll <= 90){
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50){
+          tours = 6
+        } else {
+          tours = 8
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" + tours + "` tours, " +
+                                                   "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 91){
+        roll = Math.floor(100 * Math.random() + 1)
+        const degatSup = degats/2
+        if (roll <= 50){
+          tours = 4
+        } else {
+          tours = 6
+        }
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" +tours+ "` tours, " +
+                                                   "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! De plus, la cible est dans un sommeil profond, ce qui, s'il se réveille prématurément, " +
+                                                   "la cible prendra `" + degatSup + "` de dégats en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+        .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+6);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+6);
+      }, 3600000);
+    }
+  }
+});
+
 // Compétences | Furious rush
 
 bot.on('message', message => {
