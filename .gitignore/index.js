@@ -8505,7 +8505,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 5) / 10
+    const roll = Math.floor(11 * Math.random() + 10) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
@@ -8565,7 +8565,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 10) / 10
+    const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       gelatine = Math.floor(3 * Math.random())
@@ -8624,7 +8624,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 10) / 10
+    const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       stuffPeauResistante = Math.floor((2 - 0.80) * Math.random())
@@ -8700,7 +8700,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 15) / 10
+    const roll = Math.floor(11 * Math.random() + 20) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       stuffPeauResistante = Math.floor((2 - 0.70) * Math.random())
@@ -8777,7 +8777,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 30) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       Viande = Math.floor(3 * Math.random())
