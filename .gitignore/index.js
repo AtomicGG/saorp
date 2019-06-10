@@ -941,7 +941,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .addField("Descriptions des coups et défenses :" ,"Le coup d'estoc est une attaque rapide qui inflige peu de dégâts mais ayant une forte chance de toucher\n\n" +
-                                                      "Le coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normal\n\n" +
+                                                      "Le coup normal est un coup simple qui inflige des dégâts normaux et ayant une chance de toucher normale\n\n" +
                                                       "Le coup létal est un coup qui inflige beaucoup de dégâts mais ayant une chance de toucher faible\n\n" +
                                                       "Le combo est un coup qui, à force de le répéter, augmente de puissance\n\n" +
                                                       "Le coup provocateur est un coup qui inflige des dégâts normaux provoquant la cible\n\n" +
@@ -7010,17 +7010,17 @@ bot.on('message', message => {
                                                     ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Plaine combat : [Nombre de joueurs dans votre groupe]`\n\n" +
                                                     ":wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Plaine cueillir`\n\n" +
                                                     ":knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Plaine chasser`\n\n" +
-                                                    ":book: Pour avoir une quête :\n:book: `=Plaine quêtes`")
+                                                    ":book: Pour avoir une quête :\n:book: `=Plaine quête`")
     .setImage("https://img00.deviantart.net/afd6/i/2015/006/0/7/sao_background_by_cavallovapore-d8cxg02.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 })
 
-// Plaine | Quêtes
+// Plaine | quête
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Plaine quêtes"){
+  if (message.content === (prefix) + "Plaine quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -7047,12 +7047,12 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " + Sanglier +
+        .addField(":bookmark: Quête de la plaine :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n:crossed_swords: Sangliers : " + Sanglier +
                                                                                                                  "\n:crossed_swords: Renards : " + Renard +
                                                                                                                  "\n:crossed_swords: Chiens : " + Chien +
                                                                                                                  "\n:crossed_swords: Bandits débutants : " + Bandit +
                                                                                                                  "\n:crossed_swords: Lapins géants : " + Lapin)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -7066,11 +7066,11 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
-        .addField(":bookmark: Quête des plaines :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " + Percil + "\n" +
+        .addField(":bookmark: Quête de la plaine :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n:pick: Persils : " + Percil + "\n" +
                                                                                                                         ":pick: Baies : " + Baie + "\n" +
                                                                                                                         ":pick: Viandes de lapin : " + ViandeLapin + "\n" +
                                                                                                                         ":pick: Peaux de lapin : " + PeauLapin)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Plaine quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -7085,7 +7085,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Plaine quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Plaine quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(30 * Math.random() + 30)
     let xp = control - (lvl * 3)
@@ -7927,17 +7927,17 @@ bot.on('message', message => {
                                  ":knife: Pour chasser, niveau 3 minimum requis dans 'Chasseur' :\n:knife: `=Forêt chasser`\n\n" +
                                  ":pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Forêt miner`\n\n" +
                                  ":deciduous_tree: Pour bûcheronner, niveau 1 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt bûcheronner`\n\n" +
-                                 ":book: Pour avoir une quête :\n:book: `=Forêt quêtes`")
+                                 ":book: Pour avoir une quête :\n:book: `=Forêt quête`")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
     .setTimestamp()
     message.channel.send({embed})
   }
 })
 
-// Forêt | Quêtes
+// Forêt | quête
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Forêt quêtes"){
+  if (message.content === (prefix) + "Forêt quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -7970,7 +7970,7 @@ bot.on('message', message => {
                                                      ":crossed_swords: Bandits expérimentés : " + BanditExp + "\n" +
                                                      ":crossed_swords: Bandits sombres : " + BanditSombre + "\n" +
                                                      ":crossed_swords: Loups de sang : " + LoupDeSang)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -7991,7 +7991,7 @@ bot.on('message', message => {
                                                      ":pick: Estragons : " + Estragon + "\n" +
                                                      ":pick: Viandes de taupe : " + ViandeTaupe + "\n" +
                                                      ":pick: Peaux de taupe : " + PeauTaupe)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -8006,7 +8006,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Forêt quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Forêt quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(50 * Math.random() + 50)
     const cols = Math.floor(50 * Math.random() + 50)
@@ -9644,17 +9644,17 @@ bot.on('message', message => {
                                              ":knife: Pour chasser, niveau 5 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n" +
                                              ":pick: Pour miner, niveau 3 minimum requis dans 'Mineur' :\n:pick: `=Montagne miner`\n\n" +
                                              ":deciduous_tree: Pour bûcheronner, niveau 3 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n" +
-                                             ":book: Pour avoir une quête :\n:book: `=Montagne quêtes`")
+                                             ":book: Pour avoir une quête :\n:book: `=Montagne quête`")
     .setImage("https://desolate-citadel-35923.herokuapp.com/client/img/bg.jpg")
     .setTimestamp()
     message.channel.send({embed})
   }
 })
 
-// Montagne | Quêtes
+// Montagne | quête
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Montagne quêtes"){
+  if (message.content === (prefix) + "Montagne quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -9687,7 +9687,7 @@ bot.on('message', message => {
                                                         ":crossed_swords: Kobolts ouvriers : " + koboltOuvrier + "\n" +
                                                         ":crossed_swords: Kobolts espions : " + koboltEspion + "\n" +
                                                         ":crossed_swords: Kobolts enragés : " + koboltEnrage)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -9703,12 +9703,12 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("http://aws-cf.ados.fr/prod/photos/6/7/3/6840673/281186/img-281186571.jpg?v=6")
         .addField(":bookmark: Quête de la montagne :" , ":bookmark: Votre quête sera récolter les ressources suivantes :\n\n" +
-                                                        ":pick: Cuivres médiocres : " + Minerai + "\n" +
-                                                        ":pick: Bois de frêne médiocres : " + Bois + "\n" +
+                                                        ":pick: Cuivres communs : " + Minerai + "\n" +
+                                                        ":pick: Bois de frêne communs : " + Bois + "\n" +
                                                         ":pick: Basilics : " + Basilic + "\n" +
                                                         ":pick: Viandes de ragondin : " + ViandeRagondin + "\n" +
                                                         ":pick: Peaux de ragondin : " + PeauRagondin)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -9723,7 +9723,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Montagne quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Montagne quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(70 * Math.random() + 70)
     let xp = control - (lvl * 5)
@@ -10166,7 +10166,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion tente de sortir quelque chance de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Kobolt espion :" , ":shield: Le kobolt espion tente de sortir quelque chose de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (66 <= roll){
@@ -10654,17 +10654,17 @@ bot.on('message', message => {
                                         ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Grotte combat : [Nombre de joueurs dans votre groupe]`\n\n" +
                                         ":wilted_rose: Pour cueillir, niveau 7 requis dans 'Cueilleur' :\n :wilted_rose: `=Grotte cueillir`\n\n" +
                                         ":pick: Pour miner, niveau 5 minimum requis dans 'Mineur' :\n:pick: `=Grotte miner`\n\n" +
-                                        ":book: Pour avoir une quête :\n:book: `=Grotte quêtes`")
+                                        ":book: Pour avoir une quête :\n:book: `=Grotte quête`")
     .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
     .setTimestamp()
     message.channel.send({embed})
   }
 })
 
-// Grotte | Quêtes
+// Grotte | quête
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Grotte quêtes"){
+  if (message.content === (prefix) + "Grotte quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
       const embed = new Discord.RichEmbed()
@@ -10693,11 +10693,11 @@ bot.on('message', message => {
         .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
         .addField(":bookmark: Quête de la grotte :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
                                                         ":crossed_swords: Kobolts mineurs : " + koboltMineur + "\n" +
-                                                        ":crossed_swords: Kobolts combattans : " + koboltCombattant + "\n" +
+                                                        ":crossed_swords: Kobolts combattants : " + koboltCombattant + "\n" +
                                                         ":crossed_swords: Kobolts gardes : " + koboltGarde + "\n" +
                                                         ":crossed_swords: Chiens errants : " + chienErrant + "\n" +
                                                         ":crossed_swords: Kobolts pilions : " + koboltPilion)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -10716,7 +10716,7 @@ bot.on('message', message => {
                                                         ":pick: Cuivres parfaits : " + cuivreParfait + "\n" +
                                                         ":pick: Plantrus communs : " + plantrusCommun + "\n" +
                                                         ":pick: Plantrus rares : " + plantrusRare)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quêtes accomplies : [Votre niveau]`" )
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Grotte quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -10731,7 +10731,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Grotte quêtes accomplies")) {
+  if (message.content.startsWith(prefix + "Grotte quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
     const control = Math.floor(90 * Math.random() + 90)
     let xp = control - (lvl * 6)
@@ -10746,7 +10746,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
-    .addField(":bookmark: Quête de la montagne :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+    .addField(":bookmark: Quête de la grotte :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                     ":sparkles: Points d'expérience : " + xp + "\n" +
                                                     ":large_orange_diamond: Cols : " + cols + "\n" +
                                                     ":syringe: Potion moyenne de soin : " + potionMoyenneSoin + "\n" +
@@ -11451,8 +11451,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":scales: Peau écailleuse de kobolt pilion : " + peau + "\n" +
-                                           ":scales: Dent de kobolt pilion : " + dent + "\n" +
+    .addField(":moneybag: Récompenses :" , ":knife: Peau écailleuse de kobolt pilion : " + peau + "\n" +
+                                           ":gem: Dent de kobolt pilion : " + dent + "\n" +
                                            ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
                                            ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
                                            ":scales: Equipement de kobolt supérieur au choix : " + stuffKobSup + "\n" +
@@ -11582,7 +11582,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Mineur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\nNiveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\nNiveau 5 : 10 HP et 1 point d'armure supplémentaire supplémentaire !\nNiveau 6 : 15 HP et 1 point d'armure supplémentaire !\nNiveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\nNiveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\nNiveau 9 : 20 HP et 2 points d'armure supplémentaire !\nNiveau 10 : 25 HP et 2 points d'armure supplémentaire !")
+    .addField("Mineur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\nNiveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\nNiveau 5 : 10 HP et 1 point d'armure supplémentaire !\nNiveau 6 : 15 HP et 1 point d'armure supplémentaire !\nNiveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\nNiveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\nNiveau 9 : 20 HP et 2 points d'armure supplémentaire !\nNiveau 10 : 25 HP et 2 points d'armure supplémentaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12941,7 +12941,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements en peau arrachée :" , "=Casque en peau arrachée\n=Épaulières en peau arrachée\n=Plastron en peau arrachée\n=Cape en peau arrachée\n=Ceinture en peau arrachée\n=Gantelets en peau arrachée\n=Jambières en peau arrachée\n=Bottes en peau arrachée")
+    .addField(":scales: Liste des équipements en peau arrachée :" , "=Casque en peau arrachée\n=Epaulières en peau arrachée\n=Plastron en peau arrachée\n=Cape en peau arrachée\n=Ceinture en peau arrachée\n=Gantelets en peau arrachée\n=Jambières en peau arrachée\n=Bottes en peau arrachée")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12954,7 +12954,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements en peau résistante :" , "=Casque en peau résistante\n=Épaulières en peau résistante\n=Plastron en peau résistante\n=Cape en peau résistante\n=Ceinture en peau résistante\n=Gantelets en peau résistante\n=Jambières en peau résistante\n=Bottes en peau résistante")
+    .addField(":scales: Liste des équipements en peau résistante :" , "=Casque en peau résistante\n=Epaulières en peau résistante\n=Plastron en peau résistante\n=Cape en peau résistante\n=Ceinture en peau résistante\n=Gantelets en peau résistante\n=Jambières en peau résistante\n=Bottes en peau résistante")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12967,7 +12967,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements rouillés :" , "=Casque rouillé\n=Épaulières rouillées\n=Plastron rouillé\n=Ceinture rouillée\n=Gantelets rouillés\n=Jambières rouillées\n=Bottes rouillées")
+    .addField(":scales: Liste des équipements rouillés :" , "=Casque rouillé\n=Epaulières rouillées\n=Plastron rouillé\n=Ceinture rouillée\n=Gantelets rouillés\n=Jambières rouillées\n=Bottes rouillées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12980,7 +12980,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements du clan des loups :\n\n:warning: Ces équipements sont non échangeable !" , "=Casque du clan des loups\n=Épaulières du clan des loups\n=Plastron du clan des loups\n=Cape du clan des loups\n=Ceinture du clan des loups\n=Gantelets du clan des loups\n=Jambières du clan des loups\n=Bottes du clan des loups")
+    .addField(":scales: Liste des équipements du clan des loups :\n\n:warning: Ces équipements sont non échangeable !" , "=Casque du clan des loups\n=Epaulières du clan des loups\n=Plastron du clan des loups\n=Cape du clan des loups\n=Ceinture du clan des loups\n=Gantelets du clan des loups\n=Jambières du clan des loups\n=Bottes du clan des loups")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12994,7 +12994,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Liste des équipements de kobolt supérieurs:" , "=Casque de kobolt supérieur\n=Épaulières de kobolt supérieures\n=Plastron de kobolt supérieur\n=Cape de kobolt supérieure\n=Ceinture de kobolt supérieure\n=Gantelets de kobolt supérieurs\n=Jambières de kobolt supérieures\n=Bottes de kobolt supérieures")
+      .addField(":scales: Liste des équipements de kobolt supérieurs:" , "=Casque de kobolt supérieur\n=Epaulières de kobolt supérieures\n=Plastron de kobolt supérieur\n=Cape de kobolt supérieure\n=Ceinture de kobolt supérieure\n=Gantelets de kobolt supérieurs\n=Jambières de kobolt supérieures\n=Bottes de kobolt supérieures")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -13003,7 +13003,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt\n=Épaulières de kobolt\n=Plastron de kobolt\n=Cape de kobolt\n=Ceinture de kobolt\n=Gantelets de kobolt\n=Jambières de kobolt\n=Bottes de kobolt")
+      .addField(":scales: Liste des équipements de kobolt :" , "=Casque de kobolt\n=Epaulières de kobolt\n=Plastron de kobolt\n=Cape de kobolt\n=Ceinture de kobolt\n=Gantelets de kobolt\n=Jambières de kobolt\n=Bottes de kobolt")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -13673,7 +13673,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = Math.floor(4 * Math.random() + 2)
+  const Défense = Math.floor(2 * Math.random() + 2)
   const HP = Math.floor(6 * Math.random() + 15)
   if (message.content.startsWith(prefix + "Découverte du casque de mineur kobolt")) {
     const embed = new Discord.RichEmbed()
@@ -13862,7 +13862,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:Shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier du clan des loups à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14640,7 +14640,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque de mineur kobolt :" , ":scales: C'est un casque que portent les kobolts mineurs afin d'éclairer et de miner plus facilement et rapidement !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Découverte du casque de mineur kobolt`")
+    .addField(":scales: Casque de mineur kobolt :" , ":scales: C'est un casque que portent les kobolts mineurs afin d'éclairer et de miner plus facilement et rapidement !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Découverte du casque de mineur kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14653,7 +14653,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes d'exploration kobolt :" , ":scales: Ce sont des bottes que portent les kobolts explorateurs afin d'aller plus vite et de pouvoir explorer les alentours de leur territoires plus facilement !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Découverte des bottes d'exploration kobolt`")
+    .addField(":scales: Bottes d'exploration kobolt :" , ":scales: Ce sont des bottes que portent les kobolts explorateurs afin d'aller plus vite et de pouvoir explorer les alentours de leur territoires plus facilement !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Découverte des bottes d'exploration kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14958,7 +14958,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque de kobolt :" , ":scales: C'est un casque résistant que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du casque de kobolt`")
+    .addField(":scales: Casque de kobolt :" , ":scales: C'est un casque résistant que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du casque de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14971,7 +14971,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epaulières de kobolt :" , ":scales: Ce sont des épaulières résistantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt`")
+    .addField(":scales: Epaulières de kobolt :" , ":scales: Ce sont des épaulières résistantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14984,7 +14984,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape de kobolt :" , ":scales: C'est une cape résistante que portent les kobolts constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape de kobolt`")
+    .addField(":scales: Cape de kobolt :" , ":scales: C'est une cape résistante que portent les kobolts constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14997,7 +14997,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron de kobolt :" , ":scales: C'est un plastron résistant que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du plastron de kobolt`")
+    .addField(":scales: Plastron de kobolt :" , ":scales: C'est un plastron résistant que portent les kobolts constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du plastron de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15010,7 +15010,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets de kobolt :" , ":scales: Ce sont des gantelets que portent les kobolts constitués de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des gantelets de kobolt`")
+    .addField(":scales: Gantelets de kobolt :" , ":scales: Ce sont des gantelets que portent les kobolts constitués de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des gantelets de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15023,7 +15023,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture de kobolt :" , ":scales: C'est une ceinture résistante que portent les kobolts constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la ceinture de kobolt`")
+    .addField(":scales: Ceinture de kobolt :" , ":scales: C'est une ceinture résistante que portent les kobolts constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la ceinture de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15036,7 +15036,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières de kobolt :" , ":scales: Ce sont des jambières résisantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des jambières de kobolt`")
+    .addField(":scales: Jambières de kobolt :" , ":scales: Ce sont des jambières résisantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des jambières de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15049,7 +15049,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes de kobolt :" , ":scales: Ce sont des bottes résisantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des bottes de kobolt`")
+    .addField(":scales: Bottes de kobolt :" , ":scales: Ce sont des bottes résisantes que portent les kobolts constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure kobolt, 1 cuivre rare, 2 cuivre commun, 4 cuivre médiocre, 2 peau de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 420 cols\n\n:large_orange_diamond: Prix de revente : 105 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des bottes de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15062,7 +15062,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette de kobolt :" , ":scales: C'est une amulette assez imposante et lourde à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobolt, 2 cuivre rare, 4 cuivre commun, 8 cuivre médiocre, 1 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'amulette de kobolt`")
+    .addField(":scales: Amulette de kobolt :" , ":scales: C'est une amulette assez imposante et lourde à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobolt, 2 cuivre rare, 4 cuivre commun, 8 cuivre médiocre, 1 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1260 cols\n\n:large_orange_diamond: Prix de revente : 315 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'amulette de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15075,7 +15075,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau de kobolt :" , ":scales: C'est un anneau assez imposant et lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobolt, 2 cuivre rare, 4 cuivre commun, 8 cuivre médiocre, 1 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'anneau de kobolt`")
+    .addField(":scales: Anneau de kobolt :" , ":scales: C'est un anneau assez imposant et lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux kobolt, 2 cuivre rare, 4 cuivre commun, 8 cuivre médiocre, 1 coeur de ragondin\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1260 cols\n\n:large_orange_diamond: Prix de revente : 315 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'anneau de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15089,7 +15089,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":crossed_swords: Kunai de kobolt :" , ":crossed_swords: Le kunai de kobolt est une petite lame qui se lance sur une cible, infligeant des dégâts et pouvant faire même saigner, la cible ne peux pas se défendre !\n\n:crossed_swords: Pour lancer un kunai : `=Lancer un kunai de kobolt`")
+    .addField(":crossed_swords: Kunai de kobolt :" , ":crossed_swords: Le kunai de kobolt est une petite lame qui se lance sur une cible, infligeant des dégâts et pouvant faire même saigner, la cible ne peux pas se défendre !\n\n:crossed_swords: Pour lancer un kunai : `=Lancer un kunai de kobolt`\n\n:warning: Vous devez être de niveau 15 pour utiliser cet objet.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15102,7 +15102,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":crossed_swords: Bolas de kobolt :" , ":crossed_swords: Le bolas de kobolt est une corde reliant deux pierres assez imposantes et tranchantes, infligeant des dégâts et pouvant immobiliser une cible, la cible ne peux pas se défendre !\n\n:crossed_swords: Pour lancer un bolas : `=Lancer un bolas de kobolt`")
+    .addField(":crossed_swords: Bolas de kobolt :" , ":crossed_swords: Le bolas de kobolt est une corde reliant deux pierres assez imposantes et tranchantes, infligeant des dégâts et pouvant immobiliser une cible, la cible ne peux pas se défendre !\n\n:crossed_swords: Pour lancer un bolas : `=Lancer un bolas de kobolt`\n\n:warning: Vous devez être de niveau 15 pour utiliser cet objet.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15172,7 +15172,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque de kobolt supérieur :" , ":scales: C'est un casque très résistant que portent les kobolts les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du casque de kobolt supérieur`")
+    .addField(":scales: Casque de kobolt supérieur :" , ":scales: C'est un casque très résistant que portent les kobolts les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du casque de kobolt supérieur`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15185,7 +15185,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epaulières de kobolt supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt supérieures`")
+    .addField(":scales: Epaulières de kobolt supérieures :" , ":scales: Ce sont des épaulières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des épaulières de kobolt supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15198,7 +15198,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape de kobolt supérieure :" , ":scales: C'est une cape très résistante que portent les kobolts les plus forts du palier 1 constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape de kobolt supérieure`")
+    .addField(":scales: Cape de kobolt supérieure :" , ":scales: C'est une cape très résistante que portent les kobolts les plus forts du palier 1 constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la cape de kobolt supérieure`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15211,7 +15211,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron de kobolt supérieur :" , ":scales: C'est un plastron très résistant que portent les kobolts les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du plastron de kobolt supérieur`")
+    .addField(":scales: Plastron de kobolt supérieur :" , ":scales: C'est un plastron très résistant que portent les kobolts les plus forts du palier 1 constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du plastron de kobolt supérieur`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15224,7 +15224,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets de kobolt supérieurs :" , ":scales: Ce sont des gantelets très résistants que portent les kobolts les plus forts du palier 1 constitués de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des gantelets de kobolt supérieurs`")
+    .addField(":scales: Gantelets de kobolt supérieurs :" , ":scales: Ce sont des gantelets très résistants que portent les kobolts les plus forts du palier 1 constitués de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des gantelets de kobolt supérieurs`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15237,7 +15237,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture de kobolt supérieure :" , ":scales: C'est une ceinture très résistante que portent les kobolts les plus forts du palier 1 constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la ceinture de kobolt supérieure`")
+    .addField(":scales: Ceinture de kobolt supérieure :" , ":scales: C'est une ceinture très résistante que portent les kobolts les plus forts du palier 1 constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la ceinture de kobolt supérieure`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15250,7 +15250,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières de kobolt supérieures :" , ":scales: Ce sont des jambières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des jambières de kobolt supérieures`")
+    .addField(":scales: Jambières de kobolt supérieures :" , ":scales: Ce sont des jambières très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des jambières de kobolt supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15263,7 +15263,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes de kobolt supérieures :" , ":scales: Ce sont des bottes très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des bottes de kobolt supérieures`")
+    .addField(":scales: Bottes de kobolt supérieures :" , ":scales: Ce sont des bottes très résistantes que portent les kobolts les plus forts du palier 1 constituées de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'armure supérieur kobolt, 1 cuivre parfait, 2 cuivre rare, 3 peau de chien errant, 2 dent de kobolt pilion, 1 Peau écailleuse de kobolt pilion\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1040 cols\n\n:large_orange_diamond: Prix de revente : 260 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte des bottes de kobolt supérieures`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15276,7 +15276,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette de kobolt supérieure :" , ":scales: C'est une amulette très imposante et très lourde à porter constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux supérieur kobolt, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de chien errant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'amulette de kobolt supérieure`")
+    .addField(":scales: Amulette de kobolt supérieure :" , ":scales: C'est une amulette très imposante et très lourde à porter constituée de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux supérieur kobolt, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de chien errant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : 3020 cols\n\n:large_orange_diamond: Prix de revente : 755 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'amulette de kobolt supérieure`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15289,7 +15289,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau de kobolt supérieur :" , ":scales: C'est un anneau très imposant et très lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux supérieur kobolt, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de chien errant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'anneau de kobolt supérieur`")
+    .addField(":scales: Anneau de kobolt supérieur :" , ":scales: C'est un anneau très imposant et très lourd à porter constitué de cuivre de plusieurs raretés différentes, le tout réalisé grâce à un plan !\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan de bijoux supérieur kobolt, 2 cuivres parfait, 4 cuivre rare, 6 cuivre commun, 8 cuivre médiocre, 2 coeur de chien errant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 18\n\n:large_orange_diamond: Prix d'achat : 3020 cols\n\n:large_orange_diamond: Prix de revente : 755 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'anneau de kobolt supérieur`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15583,7 +15583,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de kobolt à deux mains :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt à deux mains`")
+    .addField(":scales: Epée de kobolt à deux mains :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15596,7 +15596,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de kobolt à deux mains :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt à deux mains`")
+    .addField(":scales: Hache de kobolt à deux mains :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15609,7 +15609,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de kobolt à deux mains :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de  kobolt à deux mains`")
+    .addField(":scales: Masse de kobolt à deux mains :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de  kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15622,7 +15622,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de kobolt à deux mains :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt à deux mains`")
+    .addField(":scales: Rapière de kobolt à deux mains :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15635,7 +15635,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive de kobolt à deux mains :" , ":scales: C'est un glaive assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt à deux mains`")
+    .addField(":scales: Glaive de kobolt à deux mains :" , ":scales: C'est un glaive assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15648,7 +15648,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt à deux mains :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt à deux mains`")
+    .addField(":scales: Cimeterre de kobolt à deux mains :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15661,7 +15661,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de kobolt à deux mains :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt à deux mains`")
+    .addField(":scales: Katana de kobolt à deux mains :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15674,7 +15674,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de kobolt à un main :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt à une main`")
+    .addField(":scales: Epée de kobolt à un main :" , ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15687,7 +15687,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de kobolt à un main :" , ":scales: C'est une dague assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt à une main`")
+    .addField(":scales: Dague de kobolt à un main :" , ":scales: C'est une dague assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15700,7 +15700,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de kobolt à un main :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt à une main`")
+    .addField(":scales: Masse de kobolt à un main :" , ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15713,7 +15713,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de kobolt à un main :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt à une main`")
+    .addField(":scales: Hache de kobolt à un main :" , ":scales: C'est une hache assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15726,7 +15726,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt à un main :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt à une main`")
+    .addField(":scales: Cimeterre de kobolt à un main :" , ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15739,7 +15739,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de kobolt à un main :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt à une main`")
+    .addField(":scales: Katana de kobolt à un main :" , ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15752,7 +15752,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de kobolt à un main :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt à une main`")
+    .addField(":scales: Rapière de kobolt à un main :" , ":scales: C'est une rapière assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15765,7 +15765,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de kobolt à un main :" , ":scales: C'est un bouclier assez résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobolt à une main`")
+    .addField(":scales: Bouclier de kobolt à un main :" , ":scales: C'est un bouclier assez résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobolt à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -15990,7 +15990,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de kobolt supérieure à deux mains :" , ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à deux mains`")
+    .addField(":scales: Epée de kobolt supérieure à deux mains :" , ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16003,7 +16003,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de kobolt supérieure à deux mains :" , ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt supérieure à deux mains`")
+    .addField(":scales: Hache de kobolt supérieure à deux mains :" , ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt supérieure à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16016,7 +16016,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de kobolt supérieure à deux mains :" , ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt supérieure à deux mains`")
+    .addField(":scales: Masse de kobolt supérieure à deux mains :" , ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt supérieure à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16029,7 +16029,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de kobolt supérieure à deux mains :" , ":scales: C'est une rapière très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt supérieure à deux mains`")
+    .addField(":scales: Rapière de kobolt supérieure à deux mains :" , ":scales: C'est une rapière très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt supérieure à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16042,7 +16042,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt supérieure à deux mains :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains`")
+    .addField(":scales: Cimeterre de kobolt supérieure à deux mains :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16055,7 +16055,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de kobolt supérieur à deux mains :" , ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt supérieur à deux mains`")
+    .addField(":scales: Katana de kobolt supérieur à deux mains :" , ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt supérieur à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16068,7 +16068,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive de kobolt supérieur à deux mains :" , ":scales: C'est un glaive très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du glaive de kobolt supérieur à deux mains`")
+    .addField(":scales: Glaive de kobolt supérieur à deux mains :" , ":scales: C'est un glaive très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du glaive de kobolt supérieur à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16081,7 +16081,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de kobolt supérieure à une main :" , ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à une main`")
+    .addField(":scales: Epée de kobolt supérieure à une main :" , ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16094,7 +16094,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de kobolt supérieure à une main :" , ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt supérieure à une main`")
+    .addField(":scales: Hache de kobolt supérieure à une main :" , ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16107,7 +16107,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de kobolt supérieure à une main :" , ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt supérieure à une main`")
+    .addField(":scales: Masse de kobolt supérieure à une main :" , ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16120,7 +16120,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de kobolt supérieure à une main :" , ":scales: C'est une rapière très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt supérieure à une main`")
+    .addField(":scales: Rapière de kobolt supérieure à une main :" , ":scales: C'est une rapière très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16133,7 +16133,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de kobolt supérieure à une main :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à une main`")
+    .addField(":scales: Cimeterre de kobolt supérieure à une main :" , ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16146,7 +16146,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de kobolt supérieure à une main :" , ":scales: C'est une dague très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt supérieure à une main`")
+    .addField(":scales: Dague de kobolt supérieure à une main :" , ":scales: C'est une dague très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16159,7 +16159,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de kobolt supérieur à une main :" , ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt supérieure à une main`")
+    .addField(":scales: Katana de kobolt supérieur à une main :" , ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt supérieure à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16172,7 +16172,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: C'est un bouclier très résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobolt supérieur à une main`")
+    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: C'est un bouclier très résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobolt supérieur à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16383,7 +16383,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:Shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier de kobolt supérieur à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16907,7 +16907,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":meat_on_bone: Ragoût de chien errant :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de chien et de d'oreille de kobolt mais aussi de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de chien errant, 2 plantrus commun, 1 plantrus rare, 6 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de chien errant`")
+      .addField(":meat_on_bone: Ragoût de chien errant :" , ":meat_on_bone: C'est un ragoût d'une très bonne qualité constitué de viande de chien et de d'oreille de kobolt mais aussi de plantrus mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de chien errant, 2 plantrus commun, 1 plantrus rare, 6 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 600 cols\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de chien errant`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -17045,7 +17045,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de loup")) {
     if (message.content.includes("de sang")) {
-      const HP = (Math.floor((21)*Math.random()+40))
+      const HP = (Math.floor((21)*Math.random()+50))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -17055,7 +17055,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const HP = (Math.floor((21)*Math.random()+50))
+      const HP = (Math.floor((21)*Math.random()+40))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -17113,7 +17113,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 1 plantrus médiocre, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
+    .addField(":meat_on_bone: Ragoût de kobolt :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin et d'oreille de kobolt mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 viande de ragondin, 1 plantrus médiocre, 2 basilic, 2 oreille de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : 320 cols\n\n:large_orange_diamond: Prix de revente : 80 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de kobolt`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17126,7 +17126,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":meat_on_bone: Ragoût de loup de sang :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de ragondin, 3 basilic\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de ragondin`")
+    .addField(":meat_on_bone: Ragoût de ragondin :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de ragondin mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de ragondin, 3 basilic\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de ragondin`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17167,7 +17167,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de soin`")
+    .addField(":syringe: Potion moyenne de soin :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 740 cols\n\n:large_orange_diamond: Prix de revente : 185 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de soin`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17180,7 +17180,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de défense`")
+    .addField(":syringe: Potion moyenne de défense :" , ":syringe: C'est une potion permettant de gagner de la défense constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de défense`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17193,7 +17193,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de force`")
+    .addField(":syringe: Potion moyenne de force :" , ":syringe: C'est une potion permettant de gagner de la force constitué d'oeil d'animal et d'échantillon de kobolt ainsi que de plantrus et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 oeil de ragondin, 1 plantrus rare, 2 plantrus commun, 3 plantrus médiocre, 2 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de force`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17206,7 +17206,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
+    .addField(":syringe: Potion moyenne de régénération :" , ":syringe: C'est une potion permettant de reprendre des HP au cours du temps constitué de coeur d'animal et la meilleur du palier 1 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 coeur de ragondin, 2 plantrus rare, 3 plantrus commun, 4 plantrus médiocre, 4 echantillon de kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 840 cols\n\n:large_orange_diamond: Prix de revente : 210 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion moyenne de régénération`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17258,7 +17258,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: C'est une potion permettant de supprimer l'état 'Poison' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion guérit l'état 'Poison' pour les niveaux de 6 à 22.\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de poison`")
+    .addField(":syringe: Potion guérissante minuscule de poison :" , ":syringe: C'est une potion permettant de supprimer l'état 'Poison' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 600 cols\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:book: La potion guérit l'état 'Poison' pour les niveaux de 6 à 22.\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de poison`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17271,7 +17271,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: C'est une potion permettant de supprimer l'état 'Saignement' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion guérit l'état 'Saignement' que pour les niveaux de 6 à 22.\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de saignement`")
+    .addField(":syringe: Potion guérissante minuscule de saignement :" , ":syringe: C'est une potion permettant de supprimer l'état 'Saignement' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 600 cols\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:book: La potion guérit l'état 'Saignement' que pour les niveaux de 6 à 22.\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de saignement`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17284,7 +17284,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: C'est une potion permettant de supprimer l'état 'Enflammer' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:book: La potion guérit l'état 'Enflammer' que pour les niveaux de 6 à 22.\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de brûlure`")
+    .addField(":syringe: Potion guérissante minuscule de brûlure :" , ":syringe: C'est une potion permettant de supprimer l'état 'Enflammer' et redonnant quelques HP mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 6\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 baie, 2 herbe médicinale faible, 2 plantrus médiocre, 2 échantillon kobolt\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 600 cols\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:book: La potion guérit l'état 'Enflammer' que pour les niveaux de 6 à 22.\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion guérissante minuscule de brûlure`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17529,7 +17529,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scroll: Parchemin de feu rouge faible :" , ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : x cols\n\n:large_orange_diamond: Prix de revente : x cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
+    .addField(":scroll: Parchemin de feu rouge faible :" , ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : 1380 cols\n\n:large_orange_diamond: Prix de revente : 345 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17830,7 +17830,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Viande de chien errant :" , "C'est une viande basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "40 cols")
-      .addField("Prix de revente :" , "8 cols")
+      .addField("Prix de revente :" , "10 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien errant")
       .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
       .setTimestamp()
@@ -17875,7 +17875,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Viande de lapin géant :" , "C'est une viande assez étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lapin géant")
     .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
     .setTimestamp()
@@ -17907,7 +17907,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Viande de loup de sang :" , "C'est une viande étrange que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "8 cols")
+    .addField("Prix de revente :" , "10 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de loup de sang")
     .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
     .setTimestamp()
@@ -17939,7 +17939,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Viande de ragondin :" , "C'est une viande basique vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt\n=Ragoût de kobolt supérieur\n=Ragoût de kobolt géant rouge")
     .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
     .setTimestamp()
@@ -17971,7 +17971,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau écailleuse de kobolt pilion :" , "C'est une peau rare que vous trouvez sur les kobolts pilions dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "120 cols")
-    .addField("Prix de revente :" , "24 cols")
+    .addField("Prix de revente :" , "30 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -18004,7 +18004,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Peau de chien errant :" , "C'est une peau basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "60 cols")
-      .addField("Prix de revente :" , "12 cols")
+      .addField("Prix de revente :" , "15 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs")
       .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
       .setTimestamp()
@@ -18033,7 +18033,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de lapin géant :" , "C'est une peau étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "8 cols")
+    .addField("Prix de revente :" , "10 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -18065,7 +18065,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de loup :" , "C'est une peau basique que vous trouvez sur les loups dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -18081,7 +18081,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de loup de sang :" , "C'est une peau étrange que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "80 cols")
-    .addField("Prix de revente :" , "16 cols")
+    .addField("Prix de revente :" , "20 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -18097,7 +18097,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Peau de taupe :" , "C'est une peau basique que vous trouvez sur les taupes en chassant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -18162,7 +18162,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Coeur de chien errant :" , "C'est un coeur basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "100 cols")
-      .addField("Prix de revente :" , "20 cols")
+      .addField("Prix de revente :" , "25 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt supérieurs")
       .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
       .setTimestamp()
@@ -18207,7 +18207,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de lapin géant :" , "C'est un coeur étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
-    .addField("Prix de revente :" , "12 cols")
+    .addField("Prix de revente :" , "15 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en coeur d'animal faible\n=Potion légère de soin\n=Parchemin de poison faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -18223,7 +18223,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de loup :" , "C'est un coeur basique que vous trouvez sur les loups dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "30 cols")
-    .addField("Prix de revente :" , "6 cols")
+    .addField("Prix de revente :" , "7 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc\n=Bijoux rouillés\n=Potion légère de soin\n=Parchemin de poison faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -18239,7 +18239,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de loup de sang :" , "C'est un coeur étrange que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "120 cols")
-    .addField("Prix de revente :" , "24 cols")
+    .addField("Prix de revente :" , "30 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc\n=Potion légère de soin\n=Parchemin de poison faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -18255,7 +18255,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de taupe :" , "C'est un coeur basique que vous trouvez sur les taupes en chassant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "30 cols")
-    .addField("Prix de revente :" , "6 cols")
+    .addField("Prix de revente :" , "7 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc\n=Bijoux rouillés\n=Potion légère de soin")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -18271,7 +18271,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Coeur de ragondin :" , "C'est un coeur basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
-    .addField("Prix de revente :" , "12 cols")
+    .addField("Prix de revente :" , "15 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt\n=Potion moyenne de soin\n=Parchemin de feu rouge faible")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -18287,7 +18287,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de renard :" , "C'est un oeil basique que vous trouvez sur les renards dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de force\n=Potion faible de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -18303,7 +18303,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de sanglier :" , "C'est un oeil basique que vous trouvez sur les sangliers dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion faible de force\n=Potion faible de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -18320,7 +18320,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Oeil de chien errant :" , "C'est un oeil basique que vous trouvez sur les chiens errants dans les grottes du palier 1 !")
       .addField("Prix d'achat :" , "80 cols")
-      .addField("Prix de revente :" , "16 cols")
+      .addField("Prix de revente :" , "20 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
       .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
       .setTimestamp()
@@ -18365,7 +18365,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de lapin géant :" , "C'est un oeil étrange que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "80 cols")
-    .addField("Prix de revente :" , "16 cols")
+    .addField("Prix de revente :" , "20 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -18381,7 +18381,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de loup :" , "C'est un oeil basique que vous trouvez sur les loups dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "8 cols")
+    .addField("Prix de revente :" , "10 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -18397,7 +18397,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de taupe :" , "C'est un oeil basique que vous trouvez sur les taupes en chassant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "30 cols")
-    .addField("Prix de revente :" , "6 cols")
+    .addField("Prix de revente :" , "7 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -18413,7 +18413,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de ragondin :" , "C'est un oeil basique que vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
-    .addField("Prix de revente :" , "12 cols")
+    .addField("Prix de revente :" , "15 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de force\n=Potion moyenne de défense\n=Parchemin de feu rouge faible")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -18429,7 +18429,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oeil de loup de sang :" , "C'est un oeil basique que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "160 cols")
-    .addField("Prix de revente :" , "32 cols")
+    .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de force\n=Potion légère de défense")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
@@ -18445,7 +18445,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oreille de lapin géant :" , "C'est une oreille rare que vous trouvez sur les lapins géants dans les plaines du palier 1 !")
     .addField("Prix d'achat :" , "100 cols")
-    .addField("Prix de revente :" , "20 cols")
+    .addField("Prix de revente :" , "25 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
     .setImage("https://i.pinimg.com/736x/d2/61/db/d261db083d29d647989bc5ff1c7f8ea3--baby-ballet-evan.jpg")
     .setTimestamp()
@@ -18461,7 +18461,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Oreille de kobolt :" , "C'est une oreille rare que vous trouvez sur les kobolts du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt\n=Ragoût de chien errant")
     .setImage("http://wiki-dofus.eu/_images/4/44/OreilleKanigrou.png")
     .setTimestamp()
@@ -18478,7 +18478,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Croc de loup de sang :" , "C'est un croc rare que vous trouvez sur les loups de sang dans la forêt du palier 1 !")
       .addField("Prix d'achat :" , "200 cols")
-      .addField("Prix de revente :" , "40 cols")
+      .addField("Prix de revente :" , "50 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun crafts.")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
@@ -18490,7 +18490,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Croc de loup :" , "C'est un croc rare que vous trouvez sur les loups dans la forêt du palier 1 !")
       .addField("Prix d'achat :" , "100 cols")
-      .addField("Prix de revente :" , "20 cols")
+      .addField("Prix de revente :" , "25 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux du croc")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
@@ -18508,7 +18508,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Dent de kobolt pilion :" , "C'est une dent rare que vous trouvez sur les kobolts pilion dans la grotte du palier 1 !")
       .addField("Prix d'achat :" , "140 cols")
-      .addField("Prix de revente :" , "28 cols")
+      .addField("Prix de revente :" , "35 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt supérieures\n=Equipement de kobolt supérieures")
       .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
       .setTimestamp()
@@ -18520,7 +18520,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField("Dent de kobolt :" , "C'est une dent rare que vous trouvez sur les kobolts dans la montagne et la grotte du palier 1 !")
         .addField("Prix d'achat :" , "60 cols")
-        .addField("Prix de revente :" , "12 cols")
+        .addField("Prix de revente :" , "15 cols")
         .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt")
         .setImage("https://i.pinimg.com/236x/8f/2d/e0/8f2de0397c0818fc4291231a4d82dc40--vampire-fangs-flyer-design.jpg")
         .setTimestamp()
@@ -18537,7 +18537,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Gelatine :" , "C'est une gelatine basique que vous trouvez sur les slimes dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "Aucun pour le moment")
     .setImage("https://png.icons8.com/color/1600/jelly.png")
     .setTimestamp()
@@ -18553,7 +18553,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Pierre de poison faible :" , "C'est une pierre étrange que vous trouvez sur les slimes dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "50 cols")
-    .addField("Prix de revente :" , "10 cols")
+    .addField("Prix de revente :" , "13 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de poison faible")
     .setImage("https://thumbs.dreamstime.com/b/ic-ne-naturelle-verte-de-minerais-dans-le-style-de-bande-dessin%C3%A9e-d-isolement-sur-le-fond-blanc-minerais-et-actions-pr%C3%A9cieux-de-85611087.jpg")
     .setTimestamp()
@@ -18569,7 +18569,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Pierre de feu faible :" , "C'est une pierre étrange que vous trouvez en minant dans la grotte du palier 1 !")
     .addField("Prix d'achat :" , "120 cols")
-    .addField("Prix de revente :" , "24 cols")
+    .addField("Prix de revente :" , "30 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de feu rouge faible")
     .setImage("https://fargin.files.wordpress.com/2011/04/rubis-brut.jpg?w=590")
     .setTimestamp()
@@ -18585,7 +18585,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Bois de frêne médiocre :" , "C'est un bois basique que vous trouvez dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes basiques")
     .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
     .setTimestamp()
@@ -18617,7 +18617,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Bois de frêne rare :" , "C'est un bois rare que vous trouvez dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
-    .addField("Prix de revente :" , "12 cols")
+    .addField("Prix de revente :" , "15 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
     .setTimestamp()
@@ -18633,7 +18633,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Cuivre médiocre :" , "C'est un minerai basique que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements rouillés\n=Bijoux rouillés\n=Cape endommagée\n=Equipements de kobolt\n=Bijoux de kobolt\n=Armes basiques\n=Armes de kobolt")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -18649,7 +18649,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Cuivre commun :" , "C'est un minerai commun que vous trouvez en minant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "8 cols")
+    .addField("Prix de revente :" , "10 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -18665,7 +18665,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Cuivre rare :" , "C'est un minerai rare que vous trouvez en minant dans la montagne et la grotte du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
-    .addField("Prix de revente :" , "12 cols")
+    .addField("Prix de revente :" , "15 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt\n=Bijoux de kobolt\n=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -18681,7 +18681,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Cuivre parfait :" , "C'est un minerai très rare que vous trouvez en minant dans la grotte du palier 1 !")
     .addField("Prix d'achat :" , "100 cols")
-    .addField("Prix de revente :" , "20 cols")
+    .addField("Prix de revente :" , "25 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs\n=Bijoux de kobolt supérieurs\n=Armes de kobolt\n=Armes de kobolt supérieures\n=Parchemin de feu rouge faible")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -18697,7 +18697,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Estragon :" , "C'est une herbe basique que vous trouvez en cueillant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de taupe\n=Ragoût de loup\n=Ragoût de loup de sang")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -18729,7 +18729,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Basilic :" , "C'est une herbe basique que vous trouvez en cueillant dans les montagnes du palier 1 !")
     .addField("Prix d'achat :" , "40 cols")
-    .addField("Prix de revente :" , "8 cols")
+    .addField("Prix de revente :" , "10 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de ragondin\n=Ragoût de kobolt")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -18761,7 +18761,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Herbe médicinale :" , "C'est une herbe basique que vous trouvez en cueillant dans la forêt du palier 1 !")
     .addField("Prix d'achat :" , "20 cols")
-    .addField("Prix de revente :" , "4 cols")
+    .addField("Prix de revente :" , "5 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion légère de soin\n=Potion légère de force\n=Potion légère de défense")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -18777,7 +18777,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Plantrus médiocre :" , "C'est une herbe basique que vous trouvez en cueillant dans la montagne du palier 1 !")
     .addField("Prix d'achat :" , "60 cols")
-    .addField("Prix de revente :" , "12 cols")
+    .addField("Prix de revente :" , "15 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de kobolt\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -18793,7 +18793,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Plantrus commun :" , "C'est une herbe commune que vous trouvez en cueillant dans la montagne et la grotte du palier 1 !")
     .addField("Prix d'achat :" , "80 cols")
-    .addField("Prix de revente :" , "16 cols")
+    .addField("Prix de revente :" , "20 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien errant\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -18809,7 +18809,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Plantrus rare :" , "C'est une herbe rare que vous trouvez en cueillant dans la grotte du palier 1 !")
     .addField("Prix d'achat :" , "100 cols")
-    .addField("Prix de revente :" , "20 cols")
+    .addField("Prix de revente :" , "25 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de chien errant\n=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -18825,7 +18825,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Plantrus parfait :" , "C'est une herbe très rare que vous trouvez en cueillant dans la grotte du palier 1 !")
     .addField("Prix d'achat :" , "120 cols")
-    .addField("Prix de revente :" , "24 cols")
+    .addField("Prix de revente :" , "30 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de feu rouge faible")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -18856,8 +18856,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Plan d'armure kobolt :" , "C'est un plan servant à la création des armures des Kobolts du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix de revente :" , "300 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
@@ -18872,8 +18871,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Plan de bijoux kobolt :" , "C'est un plan servant à la création des bijoux des Kobolts du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix de revente :" , "300 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
@@ -18888,8 +18886,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Plan d'arme kobolt :" , "C'est un plan servant à la création des armes des Kobolts du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Prix de revente :" , "300 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
@@ -18903,9 +18900,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Plan d'armure kobolt :" , "C'est un plan servant à la création des armures des Kobolts supérieure du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Plan d'armure supérieure kobolt :" , "C'est un plan servant à la création des armures supérieures des Kobolts supérieure du palier 1 !")
+    .addField("Prix de revente :" , "400 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de kobolt supérieurs")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
@@ -18919,9 +18915,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Plan de bijoux kobolt :" , "C'est un plan servant à la création des bijoux des Kobolts supérieur du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Plan de bijoux supérieur kobolt :" , "C'est un plan servant à la création des bijoux supérieurs des Kobolts supérieur du palier 1 !")
+    .addField("Prix de revente :" , "400 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux de kobolt supérieurs")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
@@ -18935,9 +18930,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Plan d'arme kobolt :" , "C'est un plan servant à la création des armes des Kobolts supérieur du palier 1 !")
-    .addField("Prix d'achat :" , "X cols")
-    .addField("Prix de revente :" , "X cols")
+    .addField("Plan d'arme supérieure kobolt :" , "C'est un plan servant à la création des armes supérieures des Kobolts supérieur du palier 1 !")
+    .addField("Prix de revente :" , "400 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes de kobolt supérieurs")
     .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
     .setTimestamp()
@@ -18953,7 +18947,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Echantillon de kobolt :" , "C'est un prélèvement d'échantillon de Kobolt du palier 1 !")
       .addField("Prix d'achat :" , "40 cols")
-      .addField("Prix de revente :" , "8 cols")
+      .addField("Prix de revente :" , "10 cols")
       .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion moyenne de soin\n=Potion moyenne de régénération\n=Potion moyenne de force\n=Potion moyenne de défense\n=Potion guérissante minuscule de poison\n=Potion guérissante minuscule de saignement\n=Potion guérissante minuscule de brûlure")
       .setImage("https://img.freepik.com/icone-gratis/campione-di-sangue_318-137349.jpg?size=338&ext=jpg")
       .setTimestamp()
@@ -19477,8 +19471,8 @@ bot.on('message', message => {
                             "Coeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
                             "Oeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Viande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
                             "Peau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
                             "Oeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Viande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
                             "Peau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
@@ -19507,13 +19501,14 @@ bot.on('message', message => {
                             "Oeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
                             "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
                             "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Croc de loup :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
                             "Gelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Pierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 13 cols]\n\n" +
                             "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
                             "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
                             "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\n" +
-                            "Croc de loup de sang:\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\n\n" +
+                            "Croc de loup de sang :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\n\n" +
                             "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
                             "Viande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
@@ -19563,115 +19558,202 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 1")) {
-    message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\nÉpaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peau arrachée]\n\nCape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\nPlastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\nGantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Gantelets en peau arrachée]\n\nCeinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\nJambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Jambières en peau arrachée]\n\nBottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\nAnneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\nAmulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\nCasque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\nEpaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\nCape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\nPlastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\nGantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Gantelets en peau résistante]\n\nCeinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Ceinture en peau résistante]\n\nSuite en écrivant :\n=Liste d'équipements 2```")
+    message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\n" +
+                            "Epaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peau arrachée]\n\n" +
+                            "Plastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\n" +
+                            "Cape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\n" +
+                            "Ceinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\n" +
+                            "Gantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Gantelets en peau arrachée]\n\n" +
+                            "Jambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Jambières en peau arrachée]\n\n" +
+                            "Bottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\n" +
+                            "Anneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\n" +
+                            "Amulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 2```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 2")) {
-    message.channel.send("```Jambières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Jambières en peau résistante]\n\nBottes en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Bottes en peau résistante]\n\nAnneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Anneau du croc]\n\nAmulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Amulette du croc]\n\nCasque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Casque rouillé]\n\nEpaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epaulières rouillées]\n\nCape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cape endommagée]\n\nPlastron rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Plastron rouillé]\n\nGantelets rouillés :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Gantelets rouillés]\n\nCeinture rouillée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ceinture rouillée]\n\nJambières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Jambières rouillées]\n\nBottes rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Bottes rouillées]\n\nAnneau rouillé :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Anneau rouillé]\n\nAmulette rouillée :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Amulette rouillée]\n\nCasque du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Casque du clan des loups]\n\nEpaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\nCape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\nPlastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\nSuite en écrivant :\n=Liste d'équipements 3```")
+    message.channel.send("```Casque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\n" +
+                            "Epaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\n" +
+                            "Plastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\n" +
+                            "Cape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\n" +
+                            "Ceinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Ceinture en peau résistante]\n\n" +
+                            "Gantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Gantelets en peau résistante]\n\n" +
+                            "Jambières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Jambières en peau résistante]\n\n" +
+                            "Bottes en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Bottes en peau résistante]\n\n" +
+                            "Anneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Anneau du croc]\n\n" +
+                            "Amulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Amulette du croc]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 3```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 3")) {
-    message.channel.send("```Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
-                            "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
-                            "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
-                            "Bottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\n" +
-                            "Anneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\n" +
-                            "Amulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\n" +
-                            "Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
-                            "Epaulières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Epaulières de kobolt]\n\n" +
-                            "Cape de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Cape de kobolt]\n\n" +
-                            "Plastron de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Plastron de kobolt]\n\n" +
-                            "Gantelets de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Gantelets de kobolt]\n\n" +
-                            "Ceinture de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Ceinture de kobolt]\n\n" +
-                            "Jambières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Jambières de kobolt]\n\n" +
-                            "Bottes de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes de kobolt]\n\n" +
-                            "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
-                            "Anneau de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Anneau de kobolt]\n\n" +
-                            "Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
+    message.channel.send("```Casque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Casque rouillé]\n\n" +
+                            "Epaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epaulières rouillées]\n\n" +
+                            "Plastron rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Plastron rouillé]\n\n" +
+                            "Cape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cape endommagée]\n\n" +
+                            "Ceinture rouillée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ceinture rouillée]\n\n" +
+                            "Gantelets rouillés :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Gantelets rouillés]\n\n" +
+                            "Jambières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Jambières rouillées]\n\n" +
+                            "Bottes rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Bottes rouillées]\n\n" +
+                            "Anneau rouillé :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Anneau rouillé]\n\n" +
+                            "Amulette rouillée :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Amulette rouillée]\n\n" +
                             "Suite en écrivant :\n=Liste d'équipements 4```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
-    message.channel.send("```\n\nÉpaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Épaulières de kobolt supérieures]\n\n" +
-                                "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
-                                "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
-                                "Gantelets de kobolt supérieurs :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\n" +
-                                "Ceinture de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Ceinture de kobolt supérieure]\n\n" +
-                                "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
-                                "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
-                                "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]\n\n" +
-                                "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
-                                "Casque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
-                                "Bottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : 50 cols]\nInfos : [=Bottes d'exploration kobolt]```")
+    message.channel.send("```Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
+                            "Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
+                            "Epaulières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Epaulières de kobolt]\n\n" +
+                            "Plastron de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Plastron de kobolt]\n\n" +
+                            "Cape de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Cape de kobolt]\n\n" +
+                            "Ceinture de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Ceinture de kobolt]\n\n" +
+                            "Gantelets de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Gantelets de kobolt]\n\n" +
+                            "Jambières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Jambières de kobolt]\n\n" +
+                            "Bottes de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes de kobolt]\n\n" +
+                            "Bottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : 105 cols]\nInfos : [=Bottes d'exploration kobolt]\n\n" +
+                            "Anneau de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Anneau de kobolt]\n\n" +
+                            "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 5```")
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 5")) {
+    message.channel.send("```Casque du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Casque du clan des loups]\n\n" +
+                            "Epaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\n" +
+                            "Plastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\n" +
+                            "Cape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\n" +
+                            "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
+                            "Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
+                            "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
+                            "Bottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\n" +
+                            "Anneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\n" +
+                            "Amulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 6```")
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 6")) {
+    message.channel.send("```Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
+                            "Casque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : 260 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
+                            "Epaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Epaulières de kobolt supérieures]\n\n" +
+                            "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
+                            "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
+                            "Ceinture de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Ceinture de kobolt supérieure]\n\n" +
+                            "Gantelets de kobolt supérieurs :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\n" +
+                            "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
+                            "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
+                            "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
+                            "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]```")
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 1")) {
-    message.channel.send("```Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\nEpée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\nMasse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\nMasse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\nHache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\nHache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\nRapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\nRapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\nCimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\nCimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\nKatana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\nKatana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\nGlaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\nDague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\nBouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]\n\nEpée du clan des loups à deux mains :\nCoûts : [Revente : 100 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\nSuite en écrivant :\n=Liste d'armes 2```")
+    message.channel.send("```Epée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\n" +
+                            "Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\n" +
+                            "Dague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\n" +
+                            "Glaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\n" +
+                            "Masse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\n" +
+                            "Masse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\n" +
+                            "Hache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\n" +
+                            "Hache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\n" +
+                            "Rapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\n" +
+                            "Rapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\n" +
+                            "Cimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\n" +
+                            "Cimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\n" +
+                            "Katana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\n" +
+                            "Katana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\n" +
+                            "Bouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 2```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 2")) {
-    message.channel.send("```Epée du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\nEpée du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups à une main]\n\nRapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\nRapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\nHache du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hache du clan des loups à deux mains]\n\nHache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\nMasse du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Masse du clan des loups à deux mains]\n\nMasse du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups à une main]\n\nKatana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\nKatana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\nCimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\nCimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\nDague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\nSuite en écrivant :\n=Liste d'armes 3```")
-  }
+ if (message.content.startsWith(prefix + "Liste d'armes 2")) {
+   message.channel.send("```Epée de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt à une main]\n\n" +
+                           "Epée de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Epée de kobolt à deux mains]\n\n" +
+                           "Dague de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt à une main]\n\n" +
+                           "Glaive de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Glaive de kobolt à deux mains]\n\n" +
+                           "Masse de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Masse de kobolt à une main]\n\n" +
+                           "Masse de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Masse de kobolt à deux mains]\n\n" +
+                           "Hache de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Hache de kobolt à une main]\n\n" +
+                           "Hache de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hache de kobolt à deux mains]\n\n" +
+                           "Rapière de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Rapière de kobolt à une main]\n\n" +
+                           "Rapière de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Rapière de kobolt à deux mains]\n\n" +
+                           "Cimeterre de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Cimeterre de kobolt à une main]\n\n" +
+                           "Cimeterre de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\n" +
+                           "Katana de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Katana de kobolt à une main]\n\n" +
+                           "Katana de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Katana de kobolt à deux mains]\n\n" +
+                           "Bouclier de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Bouclier de kobolt à une main]\n\n" +
+                           "Suite en écrivant :\n=Liste d'armes 3```")
+ }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 3")) {
-    message.channel.send("```Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
+    message.channel.send("```Epée du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups à une main]\n\n" +
+                            "Epée du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\n" +
+                            "Dague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\n" +
                             "Glaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\n" +
-                            "Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
-                            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]\n\n" +
-                            "Epée de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt à une main]\n\n" +
-                            "Epée de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Epée de kobolt à deux mains]\n\n" +
-                            "Hache de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Hache de kobolt à une main]\n\n" +
-                            "Hache de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hache de kobolt à deux mains]\n\n" +
-                            "Masse de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Masse de kobolt à une main]\n\n" +
-                            "Masse de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Masse de kobolt à deux mains]\n\n" +
-                            "Rapière de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Rapière de kobolt à une main]\n\n" +
-                            "Rapière de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Rapière de kobolt à deux mains]\n\n" +
-                            "Cimeterre de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Cimeterre de kobolt à une main]\n\n" +
-                            "Cimeterre de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\n" +
+                            "Masse du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups à une main]\n\n" +
+                            "Masse du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Masse du clan des loups à deux mains]\n\n" +
+                            "Hache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\n" +
+                            "Hache du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hache du clan des loups à deux mains]\n\n" +
                             "Suite en écrivant :\n=Liste d'armes 4```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 4")) {
-    message.channel.send("```\n\nKatana de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Katana de kobolt à une main]\n\n" +
-                                "Katana de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Katana de kobolt à deux mains]\n\n" +
-                                "Dague de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt à une main]\n\n" +
-                                "Bouclier de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Bouclier de kobolt à une main]\n\n" +
-                                "Glaive de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Glaive de kobolt à deux mains]\n\n" +
-                                "Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
-                                "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
-                                "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
-                                "Hache de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\n" +
-                                "Masse de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\n" +
-                                "Masse de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\n" +
-                                "Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
-                                "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
-                                "Suite en écrivant :\n=Liste d'armes 5```")
+    message.channel.send("```Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
+                            "Rapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\n" +
+                            "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
+                            "Cimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\n" +
+                            "Katana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\n" +
+                            "Katana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\n" +
+                            "Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 5```")
   }
 }) ;
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'armes 5")) {
-    message.channel.send("```Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
+    message.channel.send("```Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
+                            "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
+                            "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
+                            "Glaive de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]\n\n" +
+                            "Masse de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\n" +
+                            "Masse de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\n" +
+                            "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
+                            "Hache de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 6```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 6")) {
+    message.channel.send("```Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
+                            "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
+                            "Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
                             "Cimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\n" +
                             "Katana de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\n" +
                             "Katana de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\n" +
-                            "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
                             "Bouclier de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\n" +
-                            "Glaive de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]```")
+                            "Suite en écrivant :\n=Liste d'armes 7```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 7")) {
+    message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
+                            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]```")
   }
 }) ;
 
@@ -19742,7 +19824,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'objets utiles 1")) {
-    message.channel.send("```Bolas de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bolas de kobolt]\n\nKunai de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Kunai de kobolt]```")
+    message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt]\n\n" +
+                            "Pioche de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pioche de kobolt]\n\n" +
+                            "Faucille de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Faucille de kobolt]\n\n" +
+                            "Couteau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Couteau de kobolt]```")
   }
 }) ;
 
