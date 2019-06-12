@@ -10283,8 +10283,8 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 15) / 10
-    let xp = Math.floor(controle * (1 + dif) / (55 * tJoueur) * roll * groupe)
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
       echantillon = Math.floor((2 - 0.75) * Math.random())
