@@ -7573,7 +7573,7 @@ bot.on('message', message => {
     const tMob = 1
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 5) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -7627,7 +7627,7 @@ bot.on('message', message => {
     const tMob = 1
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 5) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -7681,7 +7681,7 @@ bot.on('message', message => {
     const tMob = 1
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 5) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -7737,7 +7737,7 @@ bot.on('message', message => {
     const tMob = 1
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -7798,7 +7798,7 @@ bot.on('message', message => {
     const tMob = 1
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -8505,7 +8505,7 @@ bot.on('message', message => {
     const tMob = 2
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 10) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -8565,7 +8565,7 @@ bot.on('message', message => {
     const tMob = 2
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -8624,7 +8624,7 @@ bot.on('message', message => {
     const tMob = 2
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 15) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -8700,7 +8700,7 @@ bot.on('message', message => {
     const tMob = 2
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 20) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -8777,7 +8777,7 @@ bot.on('message', message => {
     const tMob = 2
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 30) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -9444,7 +9444,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 35) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -9522,7 +9522,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 35) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -9594,7 +9594,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 45) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -10236,7 +10236,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -10285,7 +10285,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -10340,7 +10340,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -10398,7 +10398,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 30) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -10457,7 +10457,7 @@ bot.on('message', message => {
     const tMob = 3
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 40) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -11198,7 +11198,7 @@ bot.on('message', message => {
     const tMob = 4
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -11255,7 +11255,7 @@ bot.on('message', message => {
     const tMob = 4
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -11312,7 +11312,7 @@ bot.on('message', message => {
     const tMob = 4
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -11375,7 +11375,7 @@ bot.on('message', message => {
     const tMob = 4
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 35) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -11431,7 +11431,7 @@ bot.on('message', message => {
     const tMob = 4
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 45) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
