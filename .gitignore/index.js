@@ -11222,7 +11222,7 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
                                            ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
                                            ":gem: Dent de kobolt : "+ dent + "\n" +
-                                           ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
+                                           ":scales: Equipement de kobolt supérieur au choix : " + stuffKob + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
