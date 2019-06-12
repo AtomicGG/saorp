@@ -10237,52 +10237,6 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 15) / 10
-    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
-    if(nbrPersonne == 1) {
-      oreille = Math.floor(2 * Math.random() + 1)
-      echantillon = Math.floor((2 - 0.75) * Math.random())
-      dent = Math.floor((2 - 0.85) * Math.random())
-      cols = Math.floor(11 * Math.random() + 25)
-    } else {
-      oreille = Math.floor(2 * Math.random() + 1)
-      echantillon = Math.floor((2 - 0.85) * Math.random())
-      dent = Math.floor((2 - 0.95) * Math.random())
-      cols = Math.floor(6 * Math.random() + 20)
-    }
-    if(xp <= 0) {
-      xp = 0;
-    }
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                           ":gem: Dent de kobolt : "+ dent + "\n" +
-                                           ":sparkles: Points d'expérience : " + xp + "\n" +
-                                           ":large_orange_diamond: Cols : " + cols)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
-
-bot.on('message', message => {
-  const args = message.content;
-  if (message.content.startsWith(prefix + "Young kobolt récompenses")) {
-    const pos = args.indexOf(":");
-    const nbrPersonne = args.slice(pos - 2, pos - 1);
-    const lvl = args.slice(pos + 2)
-    let oreille = 0
-    let echantillon = 0
-    let dent = 0
-    let cols = 0
-    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 3
-    const dif = tMob - tJoueur
-    const controle = 110 + 90 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.4
     const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
@@ -10314,6 +10268,7 @@ bot.on('message', message => {
   }
 }) ;
 
+
 bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Kobolt explorateur récompenses")) {
@@ -10331,7 +10286,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 15) / 10
+    const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -10386,7 +10341,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 15) / 10
+    const roll = Math.floor(11 * Math.random() + 25) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -10444,7 +10399,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 30) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
@@ -10503,7 +10458,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.4
-    const roll = Math.floor(11 * Math.random() + 35) / 10
+    const roll = Math.floor(11 * Math.random() + 40) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       oreille = Math.floor(2 * Math.random() + 1)
