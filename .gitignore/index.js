@@ -11189,7 +11189,9 @@ bot.on('message', message => {
     let oreille = 0
     let echantillon = 0
     let dent = 0
-    let stuffKob = 0
+    let planArmure = 0
+    let planArme = 0
+    let planBijoux = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 4
@@ -11202,13 +11204,17 @@ bot.on('message', message => {
       oreille = Math.floor(2 * Math.random() + 1)
       echantillon = Math.floor((2 - 0.55) * Math.random())
       dent = Math.floor((2 - 0.65) * Math.random())
-      stuffKob = Math.floor((2 - 0.95) * Math.random())
+      planArmure = Math.floor((2 - 0.95) * Math.random())
+      planArme = Math.floor((2 - 0.90) * Math.random())
+      planBijoux = Math.floor((2 - 0.97) * Math.random())
       cols = Math.floor(40 * Math.random() + 40)
     } else {
       oreille = Math.floor(2 * Math.random() + 1)
       echantillon = Math.floor((2 - 0.70) * Math.random())
       dent = Math.floor((2 - 0.80) * Math.random())
-      stuffKob = Math.floor((2 - 0.98) * Math.random())
+      planArmure = Math.floor((2 - 0.98) * Math.random())
+      planArme = Math.floor((2 - 0.97) * Math.random())
+      planBijoux = Math.floor((2 - 0.99) * Math.random())
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -11222,7 +11228,9 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
                                            ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
                                            ":gem: Dent de kobolt : "+ dent + "\n" +
-                                           ":scales: Equipement de kobolt supérieur au choix : " + stuffKob + "\n" +
+                                           ":ticket: Plan d'armure supérieure kobolt : " + planArmure + "\n" +
+                                           ":ticket: Plan d'arme supérieure kobolt : " + planArme + "\n" +
+                                           ":ticket: Plan de bijou supérieur kobolt : " + planBijoux + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
