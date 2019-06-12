@@ -37616,7 +37616,7 @@ bot.on('message', message => {
     if(X <= 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
       .addField("Coup [Coupe-coupe] :" , "Vous ratez malheureusement votre coup...")
       .setTimestamp()
@@ -37624,7 +37624,7 @@ bot.on('message', message => {
       if(X >= 31){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
       .addField("Coup [Coupe-coupe] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure sévère`")
       .setTimestamp()
@@ -37650,11 +37650,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Couteau suisse :" , "Le Couteau Suisse pourra sans soucis vous dépanner pour tous les petits travaux manuels, sauf peut-être découper une horde de morts-vivants")
+    .addField("Couteau suisse :" , "Le Couteau Suisse pourra sans soucis vous dépanner pour tous les petits travaux manuels, sauf peut-être découper une horde de morts-vivants\n\nCet objet permet d'ouvrir `Boîte de conserve` | `Boîte en métal` | `Gros coffre en métal` | `Caisse de matériel` | `Caisse de nourriture` coûtant une utilisation\n\nCet objet possède 10 utilisations avant qu'il ne se casse, il faudra ensuite le réparer\n\nPour utiliser cet objet : `=Coup [Couteau suisse]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coup [Couteau suisse]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Couteau suisse] :" , "Vous ratez malheureusement votre coup...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Couteau suisse] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure sévère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Couteau à dents") {
@@ -37662,11 +37686,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Couteau à dents :" , "Skinner, Buck, Bowie... Dans tous les cas ça coupe")
+    .addField("Couteau à dents :" , "Skinner, Buck, Bowie... Dans tous les cas ça coupe\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation\n\nCet objet possède 12 utilisations avant qu'il ne se casse, il faudra ensuite le réparer\n\nPour utiliser cet objet : `=Coup [Couteau à dents]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coup [Couteau à dents]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Couteau à dents] :" , "Vous ratez malheureusement votre coup...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 36){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Couteau à dents] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure sévère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Cutter") {
@@ -37674,11 +37722,34 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Cutter :" , "Ce petit couteau à lame rétractable disponible en coloris mauve ou fushia s'accordera très bien avec la couleur des viscères de vos ennemis. Pour peu qu'il traverse")
+    .addField("Cutter :" , "Ce petit couteau à lame rétractable disponible en coloris mauve ou fushia s'accordera très bien avec la couleur des viscères de vos ennemis. Pour peu qu'il traverse\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation\n\nCet objet possède 12 utilisations avant qu'il ne se casse, il faudra ensuite le réparer\n\nPour utiliser cet objet : `=Coup [Cutter]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coup [Cutter]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Cutter] :" , "Vous ratez malheureusement votre coup...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 31){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Cutter] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure sévère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Cyanure") {
@@ -37686,7 +37757,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Cyanure :" , "Quand rien ne va plus, une petite capsule de cyanure, un grand verre d'eau et on attend que ça passe avec un sourire apaisé")
+    .addField("Cyanure :" , "Quand rien ne va plus, une petite capsule de cyanure, un grand verre d'eau et on attend que ça passe avec un sourire apaisé\n\nPour assembler cet objet et obtenir `Cafetière` vous devrez être à l'atelier et utiliser :\n\n`1 Cafetière incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Tube de cuivre`\n`Composant électronique`\n`1 Cyanure`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
