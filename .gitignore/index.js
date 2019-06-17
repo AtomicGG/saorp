@@ -7442,7 +7442,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre coup en courant vers vous mais il se prend votre coup malgrè sa vitesse, vous lui infligez " + degatSubis + " points de dégâts")
+      .addField(":shield: Renard :" , ":shield: Le renard tente d'esquiver votre attaque en courant vers vous mais se prend votre coup malgré sa vitesse, vous lui infligez " + degatSubis + " points de dégâts")
       message.channel.send({embed})
     }
     if (66 <= roll){
@@ -7512,7 +7512,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quel direction pour esquiver votre coup, mais il se le prend, vous infligez " + degatSubis + " points de dégâts")
+      .addField(":shield: Bandit débutant :" , ":shield: Le bandit débutant tente sous la peur de courir dans n'importe quelle direction pour esquiver votre coup, mais se le prend tout de même, vous infligez " + degatSubis + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -11043,8 +11043,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Chien errant:" , ":crossed_swords: Le chien errant fonce sur votre bras et le mord sauvagement et inflige " + degat + " et vous fait saignez et " +
-                                                   "vous inflige " + saignement + " points de dégâts de saignement suplémentaire pendant 3 tours")
+      .addField(":crossed_swords: Chien errant:" , ":crossed_swords: Le chien errant fonce sur votre bras et le mord sauvagement, infligant " + degat + " points de dégâts en ouvrant par la même occasion une plaie sanguinolente qui " +
+                                                   "vous infligera " + saignement + " points de dégâts de saignement supplémentaires pendant 3 tours")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -16550,7 +16550,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague basique à une main :" , ":scales: C'est une dague peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup de 1 point' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague basique à une main`")
+    .addField(":scales: Dague basique à une main :" , ":scales: C'est une dague peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague basique à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -16772,7 +16772,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière basique à un main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Rapière basique à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
