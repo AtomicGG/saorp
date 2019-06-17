@@ -742,7 +742,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Les mercenaires :" , "Les mercenaires sont différents des gardes, ils ne sont pas obligés d'aider d'autres joueurs, mais ce ne sont pas des PK pour autant !\n\n" +
-                                    "Leur but est d'effectuer les différents missions qui leur sont confiées et d'offrir leurs services contre de l'argent !")
+                                    "Leur but est d'effectuer les différentes missions qui leur sont confiées et d'offrir leurs services contre de l'argent !")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
