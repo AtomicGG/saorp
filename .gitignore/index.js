@@ -20399,7 +20399,7 @@ bot.on('message', message => {
     let bave = 0
     let peauelastic = 0
     let langue = 0
-    let liquideMonstre = 0
+    let hemolyphe = 0
     let oeufB = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
@@ -20413,14 +20413,14 @@ bot.on('message', message => {
       bave = Math.floor(2 * Math.random() + 1)
       peauelastic = Math.floor((2 - 0.55) * Math.random())
       langue = Math.floor((2 - 0.65) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      hemolyphe = Math.floor((2 - 0.95) * Math.random())
       oeufB = Math.floor((2 - 0.90) * Math.random())
       cols = Math.floor(40 * Math.random() + 40)
     } else {
       bave = Math.floor(2 * Math.random() + 1)
       peauelastic = Math.floor((2 - 0.70) * Math.random())
       langue = Math.floor((2 - 0.80) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.98) * Math.random())
+      hemolyphe = Math.floor((2 - 0.98) * Math.random())
       oeufB = Math.floor((2 - 0.97) * Math.random())
       cols = Math.floor(35 * Math.random() + 35)
     }
@@ -20435,7 +20435,7 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Bave de lombric irrégulier  : " + bave + "\n" +
                                            ":syringe: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
                                            ":gem: Langue de lombric irrégulier : "+ langue + "\n" +
-                                           ":ticket: Liquide de monstre : " + liquideMonstre + "\n" +
+                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
                                            ":ticket: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20453,7 +20453,7 @@ bot.on('message', message => {
     let poudrePoison = 0
     let ailes = 0
     let peau = 0
-    let liquideMonstre = 0
+    let hemolyphe = 0
     let oeufB = 0
     let armureBug = 0
     let bijouxBug = 0
@@ -20469,7 +20469,7 @@ bot.on('message', message => {
       poudrePoison = Math.floor(2 * Math.random() + 1)
       peau = Math.floor((2 - 0.55) * Math.random())
       ailes = Math.floor((2 - 0.55) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      hemolyphe = Math.floor((2 - 0.95) * Math.random())
       oeufB = Math.floor((2 - 0.90) * Math.random())
       armureBug = Math.floor((2 - 0.96) * Math.random())
       bijouxBug = Math.floor((2 - 0.98) * Math.random())
@@ -20478,7 +20478,7 @@ bot.on('message', message => {
       poudrePoison = Math.floor(2 * Math.random() + 1)
       alies = Math.floor((2 - 0.70) * Math.random())
       peau = Math.floor((2 - 0.70) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.98) * Math.random())
+      hemolyphe = Math.floor((2 - 0.98) * Math.random())
       oeufB = Math.floor((2 - 0.97) * Math.random())
       armureBug = Math.floor((2 - 0.98) * Math.random())
       bijouxBug = Math.floor((2 - 0.99) * Math.random())
@@ -20495,7 +20495,7 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + poudrePoison + "\n" +
                                            ":syringe: Ailles de Palliassit  : " + ailes+ "\n" +
                                            ":syringe: Peau Palliassit: " + peau + "\n" +
-                                           ":ticket: Liquide de monstre : " + liquideMonstre + "\n" +
+                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
                                            ":ticket: Oeuf bavant : " + oeufB + "\n" +
                                            ":scales: Armure bug au choix : " + armureBug + "\n" +
                                            ":scales: Bijoux bug au choix : " + bijouxBug + "\n" +
@@ -20515,7 +20515,7 @@ bot.on('message', message => {
     let patte = 0
     let carapace = 0
     let corne = 0
-    let liquideMonstre = 0
+    let hemolyphe = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 4
@@ -20528,13 +20528,13 @@ bot.on('message', message => {
       patte = Math.floor(2 * Math.random() + 1)
       carapace = Math.floor((2 - 0.75) * Math.random())
       corne = Math.floor((2 - 0.85) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      hemolyphe = Math.floor((2 - 0.95) * Math.random())
       cols = Math.floor(41 * Math.random() + 40)
     } else {
       patte = Math.floor(2 * Math.random() + 1)
       carapace = Math.floor((2 - 0.85) * Math.random())
       corne = Math.floor((2 - 0.95) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      hemolyphe = Math.floor((2 - 0.95) * Math.random())
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -20548,7 +20548,7 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Pattes de Boussier colosal: " + patte + "\n" +
                                            ":syringe: Carapace de Boussier colosal : " + carapace + "\n" +
                                            ":gem: Corne de Boussier colosal : "+ corne + "\n" +
-                                           ":ticket: Liquide de monstre : " + liquideMonstre + "\n" +
+                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20621,7 +20621,7 @@ bot.on('message', message => {
     let patte = 0
     let armeBugUneMain = 0
     let armeKobSupDeuxMains = 0
-    let liquideMonstre = 0
+    let hemolyphe = 0
     let oeufB = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
@@ -20637,7 +20637,7 @@ bot.on('message', message => {
       patte = Math.floor((2 - 0.55) * Math.random())
       armeBugUneMain = Math.floor((2 - 0.88) * Math.random())
       armeKobSupDeuxMains = Math.floor((2 - 0.92) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      hemolyphe = Math.floor((2 - 0.95) * Math.random())
       oeufB = Math.floor((2 - 0.90) * Math.random())
       cols = Math.floor(61 * Math.random() + 60)
     } else {
@@ -20646,7 +20646,7 @@ bot.on('message', message => {
       patte = Math.floor((2 - 0.55) * Math.random())
       armeBugUneMain = Math.floor((2 - 0.94) * Math.random())
       armeKobSupDeuxMains = Math.floor((2 - 0.96) * Math.random())
-      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      hemolyphe = Math.floor((2 - 0.95) * Math.random())
       oeufB = Math.floor((2 - 0.90) * Math.random())
       cols = Math.floor(51 * Math.random() + 50)
     }
@@ -20663,7 +20663,7 @@ bot.on('message', message => {
                                            ":scales: Patte Doryphore géant : " + patte + "\n" +
                                            ":scales: Arme de bug à une main au choix : " + armeBugUneMain + "\n" +
                                            ":scales: Arme de bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                           ":scales: Liquide de monstre : " + liquideMonstre+ "\n" +
+                                           ":scales: Hémolymphe : " + hemolyphe+ "\n" +
                                            ":scales: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20790,7 +20790,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque bug :" , ":scales: C'est un casque fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Corne de boussier x2, Carapace de boussier x4, Carapace Doryphore géant x2, Liquide de monstre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque bug` \n\n ou fabriquez cet objet `=Fabrication du casque bug`")
+    .addField(":scales: Casque bug :" , ":scales: C'est un casque fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Corne de boussier x2, Carapace de boussier x4, Carapace Doryphore géant x2, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque bug` \n\n ou fabriquez cet objet `=Fabrication du casque bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20816,7 +20816,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Palliassit x2, Liquide de monstre x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` ou fabriquez cet objet `=Fabrication de la cape bug`")
+    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Palliassit x2, Hémolymphe x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` ou fabriquez cet objet `=Fabrication de la cape bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20829,7 +20829,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Palliassit x3, Liquide de monstre x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  ou fabriquez cet objet `=Fabrication du plastron bug`")
+    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Palliassit x3, Hémolymphe x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  ou fabriquez cet objet `=Fabrication du plastron bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20842,7 +20842,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Palliassit x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Liquide de monstre x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets bug` ou fabriquez cet objet `=Fabrication des gantelets bug`")
+    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Palliassit x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Hémolymphe x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets bug` ou fabriquez cet objet `=Fabrication des gantelets bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20868,7 +20868,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières bug :" , ":scales: Ce sont des jambières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace Doryphore géant x3, Patte Doryphore géant x 2, Pattes de Boussier colosal, Liquide de monstre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières bug` ou fabriquez cet objet `=Fabrication des jambières bug`")
+    .addField(":scales: Jambières bug :" , ":scales: Ce sont des jambières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace Doryphore géant x3, Patte Doryphore géant x 2, Pattes de Boussier colosal, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières bug` ou fabriquez cet objet `=Fabrication des jambières bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20881,7 +20881,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes bug :" , ":scales: Ce sont des bottes fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Pattes de Boussier colosal x4, Carapace de Boussier colosal x2, Peau élastic de lombric irrégulier x2, Liquide de monstre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes bug` ou fabriquez cet objet `=Fabrication des bottes bug`")
+    .addField(":scales: Bottes bug :" , ":scales: Ce sont des bottes fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Pattes de Boussier colosal x4, Carapace de Boussier colosal x2, Peau élastic de lombric irrégulier x2, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes bug` ou fabriquez cet objet `=Fabrication des bottes bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
