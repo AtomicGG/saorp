@@ -19962,7 +19962,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt dense combat")) {
     let joueurs = args.slice(3).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
+    if (/*talkedRecently.has(message.author.id+1000)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -19978,7 +19978,7 @@ bot.on('message', message => {
       let bousierColossal = 0;
       let snakeSneaky = 0;
       let doryphoreGeant = 0;
-      let roll = 0;/*
+      let roll = 0;
       do {
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
@@ -19987,7 +19987,7 @@ bot.on('message', message => {
             lombricIrregulier = lombricIrregulier + 1;
           } else break;
         }
-        roll = Math.floor(100 * Math.random() + 1)
+        /*roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 50){
           test = test + 2 + paplliAssit;
           if (test <= (6 + 7 * (joueurs - 1))) {
@@ -20014,8 +20014,8 @@ bot.on('message', message => {
           if (test <= (6 + 7 * (joueurs - 1))) {
           bousierColossal = bousierColossal + 1;
           } else break;
-        }
-      } while (test <= (6 + 7 * (joueurs - 1)));*/
+        }*/
+      } while (test <= (6 + 7 * (joueurs - 1)));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
