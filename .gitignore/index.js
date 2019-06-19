@@ -11885,7 +11885,7 @@ bot.on('message', message => {
     .addField("Les monstres :" , "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n" +
                                  "`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :\n\n" +
                                  "**__La Plaine :__**\n" +
-                                 "`=Renard` : 20 :heart:\n`=Sanglier`\n`=Chien`\n`=Bandit débutant`\n`=Lapin géant`\n" +
+                                 "`=Renard` : 20 :hearts:\n`=Sanglier` : 20 :black_heart:\n`=Chien`\n`=Bandit débutant`\n`=Lapin géant`\n" +
                                  "`=Loup`\n`=Slime`\n`=Bandit expérimenté`\n`=Bandit sombre`\n`=Loup de sang`\n" +
                                  "`=Loup d'élite`\n`=Loup de sang d'élite`\n`=Bandit sombre d'élite`\n`=Loup gigantesque`\n" +
                                  "`=Jeune kobolt`\n`=Kobolt explorateur`\n`=Kobolt ouvrier`\n`=Kobolt espion`\n`=Kobolt enragé`\n" +
