@@ -20001,14 +20001,14 @@ bot.on('message', message => {
             snakeSneaky = snakeSneaky + 1;
           } else break;
         }
-        /*roll = Math.floor(100 * Math.random() + 1)
+        roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
           test = test + 4 + (2 * doryphoreGeant);
           if (test <= (6 + 7 * (joueurs - 1))) {
             doryphoreGeant = doryphoreGeant + 1;
           } else break;
         }
-        roll = Math.floor(100 * Math.random() + 1)
+        /*roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
           test = test + 2 + bousierColossal;
           if (test <= (6 + 7 * (joueurs - 1))) {
