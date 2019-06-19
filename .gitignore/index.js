@@ -19957,7 +19957,7 @@ bot.on('message', message => {
 
 // Forêt dense | Combat
 
-bot.on('message', message => {
+bot.off('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt dense combat")) {
