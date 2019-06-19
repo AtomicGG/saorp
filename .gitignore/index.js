@@ -20008,13 +20008,13 @@ bot.on('message', message => {
             doryphoreGeant = doryphoreGeant + 1;
           } else break;
         }
-        /*roll = Math.floor(100 * Math.random() + 1)
+        roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
           test = test + 2 + bousierColossal;
           if (test <= (6 + 7 * (joueurs - 1))) {
           bousierColossal = bousierColossal + 1;
           } else break;
-        }*/
+        }
       } while (test <= (6 + 7 * (joueurs - 1)));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
