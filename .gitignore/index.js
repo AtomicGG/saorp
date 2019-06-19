@@ -20674,7 +20674,7 @@ bot.on('message', message => {
 
 // Forêt dense | Métiers
 
-bot.off('message', message => {
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt dense cueillir")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
@@ -20711,7 +20711,7 @@ bot.off('message', message => {
 })
 
 
-bot.off('message', message => {
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt dense bûcheronner")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
@@ -20745,7 +20745,7 @@ bot.off('message', message => {
   }
 })
 
-bot.off('message', message => {
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Forêt dense chasser")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
