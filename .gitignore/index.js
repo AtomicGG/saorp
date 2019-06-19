@@ -11890,9 +11890,9 @@ bot.on('message', message => {
                                  "`=Loup` : 80 :hearts:\n`=Slime` : 150 :hearts:\n`=Bandit expérimenté` : 140 :hearts:\n`=Bandit sombre` : 240 :hearts:\n`=Loup de sang` : 300 :hearts:\n\n" +
                                  "**__Le Donjon Sauvage :__**\n" +
                                  "`=Loup d'élite` : 180 :hearts:\n`=Loup de sang d'élite` : 400 :hearts:\n`=Bandit sombre d'élite` : 350 :hearts:\n`=Loup gigantesque` : 2000 :hearts:\n\n" +
-                                 "**__La Montagne :__**\n" +
+                                 "**__La Montagne :__**\n" +/*
                                  "`=Jeune kobolt` : 200 :hearts:\n`=Kobolt explorateur` : 325 :hearts:\n`=Kobolt ouvrier` : 275 :hearts:\n`=Kobolt espion` : 250 :hearts:\n`=Kobolt enragé` : 650 :hearts:\n\n" +
-                                 "**__La Grotte :__**\n" +
+                                 "**__La Grotte :__**\n" +*/
                                  "`=Kobolt mineur` : 350 :hearts:\n`=Kobolt combattant` : 600 :hearts:\n`=Kobolt garde` : 520 :hearts:\n`=Chien errant` : 400 :hearts:\n`=Kobolt pilion` : 1000 :hearts:")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
