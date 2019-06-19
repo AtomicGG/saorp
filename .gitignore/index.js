@@ -19978,7 +19978,7 @@ bot.off('message', message => {
       let bousierColossal = 0;
       let snakeSneaky = 0;
       let doryphoreGeant = 0;
-      let roll = 0;
+      let roll = 0;/*
       do {
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
@@ -20015,7 +20015,7 @@ bot.off('message', message => {
           bousierColossal = bousierColossal + 1;
           } else break;
         }
-      } while (test <= (6 + 7 * (joueurs - 1)));
+      } while (test <= (6 + 7 * (joueurs - 1)));*/
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
