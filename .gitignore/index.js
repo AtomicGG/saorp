@@ -11883,19 +11883,17 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Les monstres :" , "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n" +
-                                 "`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :\n\n" +
-                                 "**__La Plaine :__**\n" +
-                                 "`=Renard` : 20 :hearts:\n`=Sanglier` : 30 :hearts:\n`=Chien` : 15 :hearts:\n`=Bandit débutant` : 40 :hearts:\n`=Lapin géant` : 70 :hearts:\n\n" +
-                                 "**__La Forêt :__**\n" +/*
-                                 "`=Loup` : 80 :hearts:\n`=Slime` : 150 :hearts:\n`=Bandit expérimenté` : 140 :hearts:\n`=Bandit sombre` : 240 :hearts:\n`=Loup de sang` : 300 :hearts:\n\n" +
-                                 "**__Le Donjon Sauvage :__**\n" +*/
-                                 "`=Loup d'élite` : 180 :hearts:\n`=Loup de sang d'élite` : 400 :hearts:\n`=Bandit sombre d'élite` : 350 :hearts:\n`=Loup gigantesque` : 2000 :hearts:\n\n" +
-                                 "**__La Montagne :__**\n" +
-                                 "`=Jeune kobolt` : 200 :hearts:\n`=Kobolt explorateur` : 325 :hearts:\n`=Kobolt ouvrier` : 275 :hearts:\n`=Kobolt espion` : 250 :hearts:\n`=Kobolt enragé` : 650 :hearts:\n\n" +
-                                 "**__La Grotte :__**\n" +
-                                 "`=Kobolt mineur` : 350 :hearts:\n`=Kobolt combattant` : 600 :hearts:\n`=Kobolt garde` : 520 :hearts:\n`=Chien errant` : 400 :hearts:\n`=Kobolt pilion` : 1000 :hearts:")
+                                 "`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :")
     .addBlankField(true)
     .addField("**__La Plaine :__**" , "`=Renard` : 20 :hearts:\n`=Sanglier` : 30 :hearts:\n`=Chien` : 15 :hearts:\n`=Bandit débutant` : 40 :hearts:\n`=Lapin géant` : 70 :hearts:")
+    .addBlankField(true)
+    .addField("**__La Forêt :__**" , "`=Loup` : 80 :hearts:\n`=Slime` : 150 :hearts:\n`=Bandit expérimenté` : 140 :hearts:\n`=Bandit sombre` : 240 :hearts:\n`=Loup de sang` : 300 :hearts:")
+    .addBlankField(true)
+    .addField("**__Le Donjon Sauvage :__**" , "`=Loup d'élite` : 180 :hearts:\n`=Loup de sang d'élite` : 400 :hearts:\n`=Bandit sombre d'élite` : 350 :hearts:\n`=Loup gigantesque` : 2000 :hearts:")
+    .addBlankField(true)
+    .addField("**__La Montagne :__**" , "`=Jeune kobolt` : 200 :hearts:\n`=Kobolt explorateur` : 325 :hearts:\n`=Kobolt ouvrier` : 275 :hearts:\n`=Kobolt espion` : 250 :hearts:\n`=Kobolt enragé` : 650 :hearts:")
+    .addBlankField(true)
+    .addField("**__La Grotte :__**" , "`=Kobolt mineur` : 350 :hearts:\n`=Kobolt combattant` : 600 :hearts:\n`=Kobolt garde` : 520 :hearts:\n`=Chien errant` : 400 :hearts:\n`=Kobolt pilion` : 1000 :hearts:")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
