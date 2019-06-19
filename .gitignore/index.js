@@ -19858,6 +19858,1522 @@ bot.on('message', message => {
   }
 }) ;
 
+
+
+// Forêt dense | Description
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Forêt dense"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: Bienvenue dans cette forêt dense ou vous pouvez rencontrez tout de sorte de monstres inscecte!\n\n" +
+                                        ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Forêt dense combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                                        ":wilted_rose: Pour cueillir, niveau 9 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt dense cueillir`\n\n" +
+                                        ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Montagne chasser`\n\n" +
+                                        ":deciduous_tree: Pour bûcheronner, niveau 5 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Montagne bûcheronner`\n\n" +
+                                        ":book: Pour avoir une quête :\n:book: `=Forêt dense quête`")
+    .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Forêt dense | quête
+
+bot.off('message', message => {
+  if (message.content === (prefix) + "Forêt dense quête"){
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 100) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const lombricIrregulier = Math.floor(3 * Math.random() + 2)
+        const paplliAssit = Math.floor(3 * Math.random() + 2)
+        const bousierColossal = Math.floor(3 * Math.random() + 2)
+        const snakeSneaky = Math.floor(2 * Math.random() + 1)
+        const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+        .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                        ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
+                                                        ":crossed_swords: Palliassit : " + paplliAssit + "\n" +
+                                                        ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
+                                                        ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
+                                                        ":crossed_swords: Doryphore géant : " + doryphoreGeant)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+18000);
+      }, 86400000);
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
+    let lvl = args.slice(3).join(" : ");
+    const control = Math.floor(90 * Math.random() + 90)
+    let xp = control - (lvl * 6)
+    const cols = Math.floor(90 * Math.random() + 90)
+    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
+    const stuffbug = Math.floor(2 * 0.80 * Math.random())
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+    .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                    ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                    ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                    ":syringe: Potion + de soin : " + potionMoyenneSoin + "\n" +
+                                                    ":scales: Equipement de bug au choix : " + stuffbug)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Forêt dense | Combat
+
+bot.off('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Forêt dense combat")) {
+    let joueurs = args.slice(3).join(" : ");
+    if (talkedRecently.has(message.author.id+1000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let test = 0;
+      let lombricIrregulier = 0;
+      let paplliAssit = 0;
+      let bousierColossal = 0;
+      let snakeSneaky = 0;
+      let doryphoreGeant = 0;
+      let roll = 0;
+      do {
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60){
+          test = test + 2 + lombricIrregulier;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            lombricIrregulier = lombricIrregulier + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50){
+          test = test + 2 + paplliAssit;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            paplliAssit = paplliAssit + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30){
+          test = test + 4 + snakeSneaky;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            snakeSneaky = snakeSneaky + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30){
+          test = test + 4 + (2 * doryphoreGeant);
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            doryphoreGeant = doryphoreGeant + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60){
+          test = test + 2 + bousierColossal;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+          bousierColossal = bousierColossal + 1;
+          } else break;
+        }
+      } while (test <= (6 + 7 * (joueurs - 1)));
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: En marchant dans la Forêt dense, vous rencontrez les ennemis suivants\n\n" +
+                                               ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
+                                               ":crossed_swords: Palliassit : " + paplliAssit + "\n" +
+                                               ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
+                                               ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
+                                               ":crossed_swords: Doryphore géant : " + doryphoreGeant)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
+// Forêt dense | Monstres | Descriptions
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Lombric irrégulier"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Lombric irrégulier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 680")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lombric irrégulier attaque`")
+    .addField(":shield: Lorsque le Lombric irrégulier reçoit un coup :" , ":shield: `=Lombric irrégulier défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Lombric irrégulier récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Palliassit"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Palliassit :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Palliassit attaque`")
+    .addField(":shield: Lorsque le Palliassit reçoit un coup :" , ":shield: `=Palliassit défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Palliassit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Bousier colossal"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Bousier colossal :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 950")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bousier colossal attaque`")
+    .addField(":shield: Lorsque le Bousier colossal reçoit un coup :" , ":shield: `=Bousier colossal défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Bousier colossal récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Serpentard"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Serpentard :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 650")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Serpentard attaque`")
+    .addField(":shield: Lorsque le Serpentard reçoit un coup :" , ":shield: `=Serpentard défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Serpentard récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Doryphore géant"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Doryphore géant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1550 :shield: 50")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Doryphore géant attaque`")
+    .addField(":shield: Lorsque le Doryphore géant reçoit un coup :" , ":shield: `=Doryphore géant défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Doryphore géant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Forêt dense | Monstres | Attaques
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bousier colossal attaque")) {
+    const degat = Math.floor(46 * Math.random() + 115)
+    const degatCrit = Math.floor(46 * Math.random() + 135)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal hésite a attaqué. Vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (31 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal saute en avant et vous lance férocement le rocher qu'il tient, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal prend dans la vitesse, et explose la roche qu'il tient sur vous puis en récupère un autre, il inflige " + degatCrit + " ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Palliassit attaque")) {
+    const degat = Math.floor(36 * Math.random() + 75)
+    const degatCrit = Math.floor(76 * Math.random() + 150)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Palliassit :" , ":crossed_swords: Le Palliassit bat des ailes et observe juste la situation, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Palliassit bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Palliassit bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
+    const degat = Math.floor(46 * Math.random() + 85)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sors un peu plus loin vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sort brusquement de la terre et vous attaque, il inflige " + degat + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Serpentard attaque")) {
+    const degat = Math.floor(41 * Math.random() + 70)
+    const poison = Math.floor(11 * Math.random() + 30)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+      message.channel.send({embed})
+    }
+    if (26 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Serpentard:" , ":crossed_swords: Le Serpentard fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
+                                                   "vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
+    const degat = Math.floor(71 * Math.random() + 120)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vola de gauche a droite et attend le moment d'attaquer.")
+      message.channel.send({embed})
+    }
+    if (36 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant vole vers vous rapidement et vous percute, " +
+                                                     "il inflige " + degat + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Forêt dense | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bousier colossal défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Bousier colossal :" , ":shield: Le Bousier colossal essaye d'utiliser sa roche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Palliassit défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const paradeReussie = Math.floor(21 * Math.random() + 35)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Palliassit :" , ":shield: Le Palliassit vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (41 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Palliassit :" , ":shield: Le Palliassit vole rapidement et evite votre coup, " +
+                                                 "et lache une poudre rouge clair qui vous faire perdre " + paradeReussie + " points d'attaque")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Serpentard défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Serpentard :" , ":shield: Le Serpentard tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Serpentard :" , ":shield: Le Serpentard se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Lombric irrégulier défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric irrégulier tente d'esquiver votre coup en entrant dans le sol mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric irrégulier se faufile dans le sol. Vous ne pouvez pas l'atteindre.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Doryphore géant défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+// Forêt dense | Monstres | Récompenses
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Lombric irrégulier récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let bave = 0
+    let peauelastic = 0
+    let langue = 0
+    let liquideMonstre = 0
+    let oeufB = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      bave = Math.floor(2 * Math.random() + 1)
+      peauelastic = Math.floor((2 - 0.55) * Math.random())
+      langue = Math.floor((2 - 0.65) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(40 * Math.random() + 40)
+    } else {
+      bave = Math.floor(2 * Math.random() + 1)
+      peauelastic = Math.floor((2 - 0.70) * Math.random())
+      langue = Math.floor((2 - 0.80) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.98) * Math.random())
+      oeufB = Math.floor((2 - 0.97) * Math.random())
+      cols = Math.floor(35 * Math.random() + 35)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Bave de lombric irrégulier  : " + bave + "\n" +
+                                           ":syringe: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
+                                           ":gem: Langue de lombric irrégulier : "+ langue + "\n" +
+                                           ":ticket: Liquide de monstre : " + liquideMonstre + "\n" +
+                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Palliassit récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let poudrePoison = 0
+    let ailes = 0
+    let peau = 0
+    let liquideMonstre = 0
+    let oeufB = 0
+    let armureBug = 0
+    let bijouxBug = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      poudrePoison = Math.floor(2 * Math.random() + 1)
+      peau = Math.floor((2 - 0.55) * Math.random())
+      ailes = Math.floor((2 - 0.55) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      armureBug = Math.floor((2 - 0.96) * Math.random())
+      bijouxBug = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(40 * Math.random() + 40)
+    } else {
+      poudrePoison = Math.floor(2 * Math.random() + 1)
+      alies = Math.floor((2 - 0.70) * Math.random())
+      peau = Math.floor((2 - 0.70) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.98) * Math.random())
+      oeufB = Math.floor((2 - 0.97) * Math.random())
+      armureBug = Math.floor((2 - 0.98) * Math.random())
+      bijouxBug = Math.floor((2 - 0.99) * Math.random())
+      cols = Math.floor(35 * Math.random() + 35)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + poudrePoison + "\n" +
+                                           ":syringe: Ailles de Palliassit  : " + ailes+ "\n" +
+                                           ":syringe: Peau Palliassit: " + peau + "\n" +
+                                           ":ticket: Liquide de monstre : " + liquideMonstre + "\n" +
+                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
+                                           ":scales: Armure bug au choix : " + armureBug + "\n" +
+                                           ":scales: Bijoux bug au choix : " + bijouxBug + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Bousier colossal récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let patte = 0
+    let carapace = 0
+    let corne = 0
+    let liquideMonstre = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      patte = Math.floor(2 * Math.random() + 1)
+      carapace = Math.floor((2 - 0.75) * Math.random())
+      corne = Math.floor((2 - 0.85) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      cols = Math.floor(41 * Math.random() + 40)
+    } else {
+      patte = Math.floor(2 * Math.random() + 1)
+      carapace = Math.floor((2 - 0.85) * Math.random())
+      corne = Math.floor((2 - 0.95) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      cols = Math.floor(35 * Math.random() + 35)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Pattes de Boussier colosal: " + patte + "\n" +
+                                           ":syringe: Carapace de Boussier colosal : " + carapace + "\n" +
+                                           ":gem: Corne de Boussier colosal : "+ corne + "\n" +
+                                           ":ticket: Liquide de monstre : " + liquideMonstre + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Serpentard récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let crochetPoison = 0
+    let Peau = 0
+    let queueSerpent = 0
+    let Venin = 0
+    let Oeufs = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 35) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      crochetPoison = Math.floor(3 * Math.random())
+      Peau = Math.floor(3 * Math.random())
+      queueSerpent = Math.floor((2 - 0.75)*Math.random())
+      Venin = Math.floor((2 - 0.85)*Math.random())
+      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      cols = Math.floor(51 * Math.random() + 50)
+    } else {
+      crochetPoison = Math.floor(2 * Math.random())
+      Peau = Math.floor(2 * Math.random())
+      queueSerpent = Math.floor((2 - 0.90) * Math.random())
+      Venin = Math.floor((2 - 0.95) * Math.random())
+      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      cols = Math.floor(41 * Math.random() + 40)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: crochetPoison de Serpentard : " + crochetPoison + "\n" +
+                                           ":knife: Peau de Serpentard : " + Peau + "\n" +
+                                           ":eye: Queue de Serpentard : " + queueSerpent + "\n" +
+                                           ":cupid: Venin de Serpentard : " + Venin + "\n" +
+                                           ":gem: Oeuf bavant : " + Oeufs + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Doryphore géant récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let carapace = 0
+    let aile = 0
+    let patte = 0
+    let armeBugUneMain = 0
+    let armeKobSupDeuxMains = 0
+    let liquideMonstre = 0
+    let oeufB = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 45) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      carapace = Math.floor((2 - 0.35) * Math.random())
+      aile = Math.floor((2 - 0.55) * Math.random())
+      patte = Math.floor((2 - 0.55) * Math.random())
+      armeBugUneMain = Math.floor((2 - 0.88) * Math.random())
+      armeKobSupDeuxMains = Math.floor((2 - 0.92) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(61 * Math.random() + 60)
+    } else {
+      carapace = Math.floor((2 - 0.35) * Math.random())
+      aile = Math.floor((2 - 0.55) * Math.random())
+      patte = Math.floor((2 - 0.55) * Math.random())
+      armeBugUneMain = Math.floor((2 - 0.94) * Math.random())
+      armeKobSupDeuxMains = Math.floor((2 - 0.96) * Math.random())
+      liquideMonstre = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      cols = Math.floor(51 * Math.random() + 50)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":knife: Carapace de Doryphore géant : " + carapace + "\n" +
+                                           ":gem: Aile de Doryphore géant : " + aile + "\n" +
+                                           ":scales: Patte Doryphore géant : " + patte + "\n" +
+                                           ":scales: Arme de bug à une main au choix : " + armeBugUneMain + "\n" +
+                                           ":scales: Arme de bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":scales: Liquide de monstre : " + liquideMonstre+ "\n" +
+                                           ":scales: Oeuf bavant : " + oeufB + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+// Forêt dense | Métiers
+
+bot.off('message', message => {
+  if (message.content.startsWith(prefix + "Forêt dense cueillir")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const LierreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
+      const LierreRare = Math.floor(2 * 0.75 * Math.random())
+      const Exp = Math.floor(5 * Math.random() + 11)
+      const LierreParfait = Math.floor(2 * 0.95 * Math.random())
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                               ":wilted_rose: Lierre commun : " + LierreCommun + "\n" +
+                                               ":wilted_rose: Lierre rare : " + LierreRare + "\n" +
+                                               ":wilted_rose: Lierre parfait : " + LierreParfait + "\n" +
+                                               ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+
+bot.off('message', message => {
+  if (message.content.startsWith(prefix + "Forêt dense bûcheronner")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const BoisMediocre = Math.floor(3 * Math.random() + 1)
+      const BoisCommun = Math.floor((2 - 0.75) * Math.random())
+      const Exp = Math.floor(3 * Math.random() + 2)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
+      .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                                ":deciduous_tree: Bois de séco médiocre : " + BoisMediocre + "\n" +
+                                                ":deciduous_tree: Bois de séco commun : " + BoisCommun + "\n" +
+                                                ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+bot.off('message', message => {
+  if (message.content.startsWith(prefix + "Forêt dense chasser")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
+      const Peau = Math.floor((2 - 0.50) * Math.random())
+      const Coeur = Math.floor((2 - 0.75) * Math.random())
+      const Oeil = Math.floor((2 - 0.75) * Math.random())
+      const Exp = Math.floor(4 * Math.random() + 4)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                     ":knife: Viande de lièvre : " + Viande + "\n" +
+                                     ":knife: Peau de lièvre : " + Peau + "\n" +
+                                     ":cupid: Coeur de lièvre : " + Coeur + "\n" +
+                                     ":eye: Oeil de lièvre : " + Oeil + "\n" +
+                                     ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Casque bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque bug :" , ":scales: C'est un casque fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Corne de boussier x2, Carapace de boussier x4, Carapace Doryphore géant x2, Liquide de monstre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque bug` \n\n ou fabriquez cet objet `=Fabrication du casque bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Epaulières bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Epaulières bug :" , ":scales: Ce sont des épaulières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de boussier x2, Carapace Doryphore géant x4, Corne de boussierx2, Carapace de boussier x4, Carapace Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières bug` ou fabriquez cet objet `=Fabrication des épaulières bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cape bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Palliassit x2, Liquide de monstre x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` ou fabriquez cet objet `=Fabrication de la cape bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plastron bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Palliassit x3, Liquide de monstre x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  ou fabriquez cet objet `=Fabrication du plastron bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Gantelets bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Palliassit x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Liquide de monstre x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets bug` ou fabriquez cet objet `=Fabrication des gantelets bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ceinture bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture bug :" , ":scales: C'est une ceinture fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Queue de serpent x2, Peau de serpent x3, Peau élastic de lombric irrégulier x3, Langue de lombric irrégulier x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture bug` ou fabriquez cet objet `=Fabrication de la ceinture bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Jambières bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières bug :" , ":scales: Ce sont des jambières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace Doryphore géant x3, Patte Doryphore géant x 2, Pattes de Boussier colosal, Liquide de monstre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières bug` ou fabriquez cet objet `=Fabrication des jambières bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bottes bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes bug :" , ":scales: Ce sont des bottes fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Pattes de Boussier colosal x4, Carapace de Boussier colosal x2, Peau élastic de lombric irrégulier x2, Liquide de monstre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes bug` ou fabriquez cet objet `=Fabrication des bottes bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Anneau bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Anneau bug :" , ":scales: C'est un anneau fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Doryphore géant, 2 Aile Doryphore géant, 2 coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau bug` ou fabriquez cet objet `=Fabrication de l'anneau bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Amulette bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette bug :" , ":scales: C'est une amulette fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Doryphore géant, 2 Aile Doryphore géant, 2 coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette bug` ou fabriquez cet objet `=Fabrication de l'amulette bug`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = (Math.floor((4)*Math.random()+7))
+  if (message.content.startsWith(prefix + "Fabrication de l'anneau bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Anneau bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = (Math.floor((4)*Math.random()+7))
+  if (message.content.startsWith(prefix + "Fabrication de l'amulette bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication du casque bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des épaulières bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Épaulières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication de la cape bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication du plastron bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des gantelets bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication de la ceinture bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des jambières bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des bottes bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = (Math.floor((3)*Math.random()+6))
+  if (message.content.startsWith(prefix + "Découverte de l'anneau bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Anneau bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = (Math.floor((3)*Math.random()+6))
+  if (message.content.startsWith(prefix + "Découverte de l'amulette bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte du casque bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des épaulières bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Épaulières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte de la cape bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte du plastron bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des gantelets bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte de la ceinture bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des jambières bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des bottes bug")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Oeuf bavant")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":egg: Oeuf bavant :" , ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
+    .addField("Prix d'achat :" , "1000 cols")
+    .addField("Prix de revente :" , "250 cols")
+    .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :" , "=Achat/découverte d'un oeuf bavant")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()+1))
+  if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf bavant")) {
+    if(A <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous ne découvrez aucun bébé animal malheureusement...")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 51 & A <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un bébé lièvre!")
+      .addField(":egg: Bébé lièvre :" ,":egg: Confère 100 HP max supplémentaires !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 61 & A <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Boa!")
+      .addField(":egg: Boa :" ,":egg: Après chacunes de vos attaques, le Boa : =Boa attaque")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 71 & A <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un papiliassit !")
+      .addField(":egg: Papiliassit :" ,":egg: Confère 40 HP et 15 points de dégâts supplémentaires !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 81 & A <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un petit bousier")
+      .addField(":egg: Petit bousier :" ,":egg: Confère 8 points d'armure et 20 points d'HP supplémentaires !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 91 & A <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un jeune doryphore !")
+      .addField(":egg: Jeune doryphore :" ,":egg: Confère 12 points d'armure et 20 point de dégats supplémentaires !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 96){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark serpentard !")
+      .addField(":egg: Ark serpentard :" ,":egg: Après chacunes de vos attaques, le Ark serpentard attaque : =Ark serpentard attaque")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()+1))
+  const B = (Math.floor((20)*Math.random()+25))
+  if (message.content.startsWith(prefix + "Boa attaque")) {
+    if(A <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Boa :" , ":crossed_swords: Le Boa tente de mordre sa cible mais il est pas assez rapide et n'arrive pas à le toucher...")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 51){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Boa :" ,":crossed_swords: Le Boa fonce rapidement sur sa cible en poussant un petit crie avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()+1))
+  const B = (Math.floor((16)*Math.random()+46))
+  if (message.content.startsWith(prefix + "Ark serpentard attaque")) {
+    if(A <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard essaye de mordre sa cible mais préfère passer a coté...")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 51){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
+
+
+
+
+
+
+
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
