@@ -19881,7 +19881,7 @@ bot.on('message', message => {
 
 // Forêt dense | quête
 
-bot.off('message', message => {
+bot.on('message', message => {
   if (message.content === (prefix) + "Forêt dense quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
@@ -19931,7 +19931,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
-    let lvl = args.slice(3).join(" : ");
+    let lvl = args.slice(4).join(" : ");
     const control = Math.floor(90 * Math.random() + 90)
     let xp = control - (lvl * 6)
     const cols = Math.floor(90 * Math.random() + 90)
@@ -21678,7 +21678,7 @@ bot.on('message', message => {
 
 
             bot.on('message', message => {
-              if (message.content.startsWith(prefix + "Fabrication")) {
+              if (message.content === prefix + "Fabrication") {
                 const embed = new Discord.RichEmbed()
                 .setColor(0xff0000)
                 .setAuthor(message.author.username , message.author.avatarURL)
