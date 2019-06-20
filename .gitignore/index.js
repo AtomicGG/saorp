@@ -21366,6 +21366,1388 @@ bot.on('message', message => {
   }
 });
 
+// Clairière | Description
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Clairière"){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setColor(1447003)
+    .addField(":mount_fuji: Clairière :" , ":mount_fuji: Bienvenue dans cette Clairière ou vous pouvez rencontrez tout de sorte de monstres inscecte!\n\n" +
+                                        ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Clairière combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                                        ":wilted_rose: Pour cueillir, niveau 9 requis dans 'Cueilleur' :\n :wilted_rose: `=Clairière cueillir`\n\n" +
+                                        ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Clairière chasser`\n\n" +
+                                        ":pick: Pour miner, niveau 7 minimum requis dans 'Mineur' :\n:pick: `=Clairière miner`\n\n" +
+                                        ":book: Pour avoir une quête :\n:book: `=Clairière quête`")
+    .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Clairière | quête
+
+bot.off('message', message => {
+  if (message.content === (prefix) + "Clairière quête"){
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 100) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const bourdonFlaneur = Math.floor(3 * Math.random() + 2)
+        const taurusChargeur= Math.floor(3 * Math.random() + 2)
+        const fortTaurus = Math.floor(2 * Math.random() + 1)
+        const taurusLourd = Math.floor(2 * 0.75 * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+        .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                        ":crossed_swords: Bourdon flâneur : " + bourdonFlaneur + "\n" +
+                                                        ":crossed_swords: Taurus chargeur : " + taurusChargeur+ "\n" +
+                                                        ":crossed_swords: Fort Taurus adroit : " + fortTaurus + "\n" +
+                                                        ":crossed_swords: Taurus lourd : " + taurusLourd)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Clairière quête accomplie : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+18000);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+18000);
+      }, 86400000);
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
+    let lvl = args.slice(3).join(" : ");
+    const control = Math.floor(90 * Math.random() + 90)
+    let xp = control - (lvl * 6)
+    const cols = Math.floor(90 * Math.random() + 90)
+    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
+    const stuffTaurus = Math.floor(2 * 0.80 * Math.random())
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+    .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                    ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                    ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                    ":syringe: Potion + de soin : " + potionMoyenneSoin + "\n" +
+                                                    ":scales: Equipement de taurus au choix : " + stuffTaurus)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Clairière | Combat
+
+bot.off('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Clairière combat")) {
+    let joueurs = args.slice(3).join(" : ");
+    if (talkedRecently.has(message.author.id+1000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      let test = 0;
+      let bourdonFlaneur = 0;
+      let taurusChargeur= 0;
+      let fortTaurus = 0;
+      let taurusLourd = 0;
+      let roll = 0;
+      do {
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50){
+          test = test + 2 + bourdonFlaneur;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            bourdonFlaneur = bourdonFlaneur + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30){
+          test = test + 4 + fortTaurus;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            fortTaurus = fortTaurus + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30){
+          test = test + 4 + (2 * taurusLourd);
+          if (test <= (6 + 7 * (joueurs - 1))) {
+            taurusLourd = taurusLourd + 1;
+          } else break;
+        }
+        roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60){
+          test = test + 2 + bousierColossal;
+          if (test <= (6 + 7 * (joueurs - 1))) {
+          taurusChargeur= taurusChargeur+ 1;
+          } else break;
+        }
+      } while (test <= (6 + 7 * (joueurs - 1)));
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":mount_fuji: Clairière :" , ":mount_fuji: En marchant dans la Clairière, vous rencontrez les ennemis suivants\n\n" +
+                                               ":crossed_swords: Bourdon flâneur : " + bourdonFlaneur + "\n" +
+                                               ":crossed_swords: Taurus chargeur  : " + taurusChargeur+ "\n" +
+                                               ":crossed_swords: Fort Taurus adroit : " + fortTaurus + "\n" +
+                                               ":crossed_swords: Taurus lourd : " + taurusLourd)
+      .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+1000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+1000);
+    }, 600000);
+  }
+})
+
+// Clairière | Monstres | Descriptions
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Bourdon flâneur"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Bourdon flâneur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Clairière du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bourdon flâneur attaque`")
+    .addField(":shield: Lorsque le Bourdon flâneur reçoit un coup :" , ":shield: `=Bourdon flâneur défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Bourdon flâneur récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Taurus chargeur "){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Taurus chargeur  :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus chargeur  attaque`")
+    .addField(":shield: Lorsque le Taurus chargeur  reçoit un coup :" , ":shield: `=Taurus chargeur  défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Taurus chargeur  récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Fort Taurus adroit"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Fort Taurus adroit :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Clairière du palier 1 !")
+    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Fort Taurus adroit attaque`")
+    .addField(":shield: Lorsque le Fort Taurus adroit reçoit un coup :" , ":shield: `=Fort Taurus adroit défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Fort Taurus adroit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Taurus lourd"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Taurus lourd :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Clairière du palier 1 !")
+    .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2550 :shield: 80")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus lourd attaque`")
+    .addField(":shield: Lorsque le Taurus lourd reçoit un coup :" , ":shield: `=Taurus lourd défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Taurus lourd récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Clairière | Monstres | Attaques
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Taurus chargeur  attaque")) {
+    const degat = Math.floor(46 * Math.random() + 135)
+    const degatCrit = Math.floor(46 * Math.random() + 155)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  hésite a attaqué. Vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (31 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  saute en avant et vous lance férocement le rocher qu'il tient, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  prend dans la vitesse, et explose la roche qu'il tient sur vous puis en récupère un autre, il inflige " + degatCrit + " ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bourdon flâneur attaque")) {
+    const degat = Math.floor(36 * Math.random() + 75)
+    const degatCrit = Math.floor(76 * Math.random() + 150)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et observe juste la situation, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
+    const degat = Math.floor(46 * Math.random() + 85)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sors un peu plus loin vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sort brusquement de la terre et vous attaque, il inflige " + degat + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Fort Taurus adroit attaque")) {
+    const degat = Math.floor(41 * Math.random() + 70)
+    const poison = Math.floor(4 * Math.random() + 7)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+      message.channel.send({embed})
+    }
+    if (26 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
+                                                   "vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Taurus lourd attaque")) {
+    const degat = Math.floor(71 * Math.random() + 120)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vola de gauche a droite et attend le moment d'attaquer.")
+      message.channel.send({embed})
+    }
+    if (36 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd vole vers vous rapidement et vous percute, " +
+                                                     "il inflige " + degat + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Clairière | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Taurus chargeur  défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Taurus chargeur  :" , ":shield: Le Taurus chargeur  essaye d'utiliser sa roche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bourdon flâneur défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const paradeReussie = Math.floor(21 * Math.random() + 35)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (41 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vole rapidement et evite votre coup, " +
+                                                 "et lache une poudre rouge clair qui vous faire perdre " + paradeReussie + " points d'attaque")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Fort Taurus adroit défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit se faufile dans un coin étroit de la Clairière. Vous ne pouvez pas l'atteindre.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Taurus lourd défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+// Clairière | Monstres | Récompenses
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Bourdon flâneur récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let carapace = 0
+    let ailes = 0
+    let antenne  = 0
+    let hemolymphe = 0
+    let oeufB = 0
+    let oeil = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      carapace = Math.floor(2 * Math.random() + 1)
+      antenne  = Math.floor((2 - 0.55) * Math.random())
+      ailes = Math.floor((2 - 0.55) * Math.random())
+      hemolymphe = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      oeil = Math.floor((2 - 0.96) * Math.random())
+      cols = Math.floor(40 * Math.random() + 40)
+    } else {
+      carapace = Math.floor(2 * Math.random() + 1)
+      alies = Math.floor((2 - 0.70) * Math.random())
+      antenne  = Math.floor((2 - 0.70) * Math.random())
+      hemolymphe = Math.floor((2 - 0.98) * Math.random())
+      oeufB = Math.floor((2 - 0.97) * Math.random())
+      oeil = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(35 * Math.random() + 35)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + carapace + "\n" +
+                                           ":syringe: Ailles de Bourdon flâneur  : " + ailes+ "\n" +
+                                           ":syringe: Peau Bourdon flâneur: " + antenne  + "\n" +
+                                           ":ticket: Liquide de monstre : " + hemolymphe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":scales: Armure taurus au choix : " + oeil + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Taurus chargeur  récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let peau = 0
+    let poil = 0
+    let corne = 0
+    let viande = 0
+    let oeufB = 0
+    let scalpe = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      peau = Math.floor(2 * Math.random() + 1)
+      poil = Math.floor((2 - 0.75) * Math.random())
+      corne = Math.floor((2 - 0.85) * Math.random())
+      viande = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      scalpe = Math.floor((2 - 0.96) * Math.random())
+      cols = Math.floor(41 * Math.random() + 40)
+    } else {
+      peau = Math.floor(2 * Math.random() + 1)
+      poil = Math.floor((2 - 0.85) * Math.random())
+      corne = Math.floor((2 - 0.95) * Math.random())
+      viande = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.97) * Math.random())
+      scalpe = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(35 * Math.random() + 35)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus : " + peau + "\n" +
+                                           ":syringe: Poile de Taurus : " + poil + "\n" +
+                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
+                                           ":ticket: Viande de taurus : " + viande + "\n" +
+                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Taurus lourd récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let peau = 0
+    let poil = 0
+    let corne = 0
+    let viande = 0
+    let oeufB = 0
+    let scalpe = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      peau = Math.floor(2 * Math.random() + 1)
+      poil = Math.floor((2 - 0.75) * Math.random())
+      corne = Math.floor((2 - 0.85) * Math.random())
+      viande = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      scalpe = Math.floor((2 - 0.96) * Math.random())
+      cols = Math.floor(41 * Math.random() + 40)
+    } else {
+      peau = Math.floor(2 * Math.random() + 1)
+      poil = Math.floor((2 - 0.85) * Math.random())
+      corne = Math.floor((2 - 0.95) * Math.random())
+      viande = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.97) * Math.random())
+      scalpe = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(35 * Math.random() + 35)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus lourd : " + peau + "\n" +
+                                           ":syringe: Poile de Taurus lourd : " + poil + "\n" +
+                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
+                                           ":ticket: Viande de taurus : " + viande + "\n" +
+                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Fort taurus adroit récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let peau = 0
+    let poil = 0
+    let corne = 0
+    let viande = 0
+    let oeufB = 0
+    let scalpe = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 4
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      peau = Math.floor(2 * Math.random() + 1)
+      poil = Math.floor((2 - 0.75) * Math.random())
+      corne = Math.floor((2 - 0.85) * Math.random())
+      viande = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.90) * Math.random())
+      scalpe = Math.floor((2 - 0.96) * Math.random())
+      cols = Math.floor(41 * Math.random() + 40)
+    } else {
+      peau = Math.floor(2 * Math.random() + 1)
+      poil = Math.floor((2 - 0.85) * Math.random())
+      corne = Math.floor((2 - 0.95) * Math.random())
+      viande = Math.floor((2 - 0.95) * Math.random())
+      oeufB = Math.floor((2 - 0.97) * Math.random())
+      scalpe = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(35 * Math.random() + 35)
+    }
+    if (xp <= 0) {
+      xp = 0
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus adroit : " + peau + "\n" +
+                                           ":syringe: Poile de Taurus adroit : " + poil + "\n" +
+                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
+                                           ":ticket: Viande de taurus : " + viande + "\n" +
+                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+
+// Clairière | Métiers
+
+bot.off('message', message => {
+  if (message.content.startsWith(prefix + "Clairière cueillir")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const LierreAntidote= Math.floor(2 * 0.5 * Math.random() + 1)
+      const LierreSoin = Math.floor(2 * 0.75 * Math.random())
+      const Exp = Math.floor(5 * Math.random() + 11)
+      const LierreParfait = Math.floor(2 * 0.95 * Math.random())
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+      .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                               ":wilted_rose: Lierre antidote : " + LierreAntidote+ "\n" +
+                                               ":wilted_rose: Lierre soin : " + LierreSoin + "\n" +
+                                               ":wilted_rose: Lierre d'air : " + LierreParfait + "\n" +
+                                               ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Clairière miner")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const FerMediocre = Math.floor(2 * 0.5 * Math.random() + 1)
+      const FerCommun = Math.floor(2 * 0.80 * Math.random())
+      const FerRare = Math.floor(2 * 0.95 * Math.random())
+      const Exp = Math.floor(5 * Math.random() + 7)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
+      .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                    ":pick: Fer médiocre : " + FerMediocre + "\n" +
+                                    ":pick: Fer commun : " + FerCommun + "\n" +
+                                    ":pick: Fer rare : " + FerRare + "\n" +
+                                    ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+bot.off('message', message => {
+  if (message.content.startsWith(prefix + "Clairière chasser")) {
+    if (talkedRecently.has(message.author.id+19)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , "Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
+      const Peau = Math.floor((2 - 0.50) * Math.random())
+      const Coeur = Math.floor((2 - 0.75) * Math.random())
+      const Oeil = Math.floor((2 - 0.75) * Math.random())
+      const Exp = Math.floor(4 * Math.random() + 4)
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
+      .addField(":knife: Chasse :" , ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                     ":knife: Viande de desman : " + Viande + "\n" +
+                                     ":knife: Peau de desman : " + Peau + "\n" +
+                                     ":cupid: Coeur de desman : " + Coeur + "\n" +
+                                     ":eye: Oeil de desman : " + Oeil + "\n" +
+                                     ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    talkedRecently.add(message.author.id+19);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+19);
+    }, 3600000);
+  }
+})
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Casque taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque taurus :" , ":scales: C'est un casque fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Corne de Taurus x4, Carapace de bourdon flâneur x2, Scalpe de Taurus x2, Poile de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque taurus` \n\n ou fabriquez cet objet `=Fabrication du casque taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Epaulières taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Epaulières taurus :" , ":scales: Ce sont des épaulières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Bourdon flâneur x2, Cuirasse taurus adroit x4, Corne de Taurus x2, Peau de Taurus lourd x4\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières taurus` ou fabriquez cet objet `=Fabrication des épaulières taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cape taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape taurus :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet :Peau de Taurus adroit  x3, Aile de Bourdon flâneur x2, Poile de Taurus x2, Scalpe de Taurus x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape taurus` ou fabriquez cet objet `=Fabrication de la cape taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Plastron taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron taurus :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de Taurus lourd x2, Scalpe de Taurus x3, Poile de Taurus lourd x2, Anttenne de Bourdon flâneur x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron taurus`  ou fabriquez cet objet `=Fabrication du plastron taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Gantelets taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets taurus :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Bourdon flâneur x3, Cuirasse taurus adroit x2, Peau de Taurus lourd x1, Poile de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets taurus` ou fabriquez cet objet `=Fabrication des gantelets taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ceinture taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture taurus :" , ":scales: C'est une ceinture fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Poile de Taurus lourd x2, Peau de Taurus lourd x3, Peau de Taurus x3, Corne de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture taurus` ou fabriquez cet objet `=Fabrication de la ceinture taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Jambières taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières taurus :" , ":scales: Ce sont des jambières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Cuirasse taurus adroit x3, Anttenne de Bourdon flâneur x 2, Carapace de Bourdon flâneur x1 , Scalpe de Taurusre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières taurus` ou fabriquez cet objet `=Fabrication des jambières taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bottes taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes taurus :" , ":scales: Ce sont des bottes fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de Taurus x4, Corne de Taurus x2, Cuirasse taurus adroit x2, Scalpe de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes taurus` ou fabriquez cet objet `=Fabrication des bottes taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Anneau taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Anneau taurus :" , ":scales: C'est un anneau fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Taurus lourd, 3 Cuirasse taurus adroit, 2 Scalpe de Taurus, 2 coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau taurus` ou fabriquez cet objet `=Fabrication de l'anneau taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Amulette taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette taurus :" , ":scales: C'est une amulette fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Taurus lourd, 3 Cuirasse taurus adroit, 2 Scalpe de Taurus, 2 coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette taurus` ou fabriquez cet objet `=Fabrication de l'amulette taurus`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = (Math.floor((4)*Math.random()+7))
+  if (message.content.startsWith(prefix + "Fabrication de l'anneau taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Anneau taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = (Math.floor((4)*Math.random()+7))
+  if (message.content.startsWith(prefix + "Fabrication de l'amulette taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication du casque taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des épaulières taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Épaulières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication de la cape taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication du plastron taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des gantelets taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication de la ceinture taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des jambières taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(5 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Fabrication des bottes taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = (Math.floor((2)*Math.random()+2))
+  if (message.content.startsWith(prefix + "Découverte de l'anneau taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Anneau taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = (Math.floor((2)*Math.random()+2))
+  if (message.content.startsWith(prefix + "Découverte de l'amulette taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte du casque taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des épaulières taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Épaulières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte de la cape taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte du plastron taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des gantelets taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte de la ceinture taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des jambières taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Dégâts = Math.floor(4 * Math.random() + 7)
+  const Défense = Math.floor(1 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des bottes taurus")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: Dégâts : " +Dégâts+ "\n\n:warning: Bonus Dégâts +30 si aux moins 4 partie de l'armure sont équipé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Oeuf brisé")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":egg: Oeuf brisé :" , ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
+    .addField("Prix d'achat :" , "1000 cols")
+    .addField("Prix de revente :" , "250 cols")
+    .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :" , "=Achat/découverte d'un Oeuf brisé")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()+1))
+  if (message.content.startsWith(prefix + "Achat/découverte d'un Oeuf brisé")) {
+    if(A <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous ne découvrez aucun bébé animal malheureusement...")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 51 & A <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez une vachette!")
+      .addField(":egg: vachette :" ,":egg: Confère 150 HP max supplémentaires !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 61 & A <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez un bébé boeuf!")
+      .addField(":egg: Bébé boeuf :" ,":egg: Confère 20 Dégâts max supplémentaires !")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 71 & A <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez un gros bébé taurus !")
+      .addField(":egg: Gros bébé taurus :" ,":egg: Après chacunes de vos attaques, le bébé taurus provoque, ne fonctionne que sur les monstres : =Gros bébé taurus provoque!")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 81 & A <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez un petit taurus malin")
+      .addField(":egg: Taurus malin :" ,":egg: Après chacunes de vos attaques, le petit taurus malin attaquera : =Petit taurus malin attaque!")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+  }
+}
+});
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()+1))
+  if (message.content.startsWith(prefix + "Gros bébé taurus provoque")) {
+    if(A <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Gros bébé taurus :" , ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoque...")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 51){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Gros bébé taurus :" ,":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour, il pourra supporter que 3 attaque!")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  const A = (Math.floor((100)*Math.random()+1))
+  if (message.content.startsWith(prefix + "Petit taurus malin attaque")) {
+    if(A <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Petit taurus malin :" ,":crossed_swords: Petit taurus malin tente de briser la défense du monstre mais il préfère faire le beau...")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(A >= 91){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Petit taurus malin :" ,":crossed_swords: Petit taurus malin attaque et brise la défense du monstre en l'immobilisant pour une attaque!")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
 
 
 
