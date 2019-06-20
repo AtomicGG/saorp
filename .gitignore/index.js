@@ -21387,7 +21387,7 @@ bot.on('message', message => {
 
 // Clairière | quête
 
-bot.off('message', message => {
+bot.on('message', message => {
   if (message.content === (prefix) + "Clairière quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
@@ -21461,7 +21461,7 @@ bot.on('message', message => {
 
 // Clairière | Combat
 
-bot.off('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Clairière combat")) {
@@ -21551,7 +21551,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Taurus chargeur "){
+  if (message.content === (prefix) + "Taurus chargeur"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21669,30 +21669,6 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
-    const degat = Math.floor(46 * Math.random() + 85)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sors un peu plus loin vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (36 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sort brusquement de la terre et vous attaque, il inflige " + degat + " points de dégâts.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fort Taurus adroit attaque")) {
     const degat = Math.floor(41 * Math.random() + 70)
     const poison = Math.floor(4 * Math.random() + 7)
@@ -21757,7 +21733,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Taurus chargeur  défense")) {
+  if (message.content.startsWith(prefix + "Taurus chargeur défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
     const embed = new Discord.RichEmbed()
@@ -21890,7 +21866,7 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + carapace + "\n" +
                                            ":syringe: Ailles de Bourdon flâneur  : " + ailes+ "\n" +
                                            ":syringe: Peau Bourdon flâneur: " + antenne  + "\n" +
-                                           ":ticket: Liquide de monstre : " + hemolymphe + "\n" +
+                                           ":ticket: Hemolymphe : " + hemolymphe + "\n" +
                                            ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":scales: Armure taurus au choix : " + oeil + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
@@ -21902,7 +21878,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Taurus chargeur  récompenses")) {
+  if (message.content.startsWith(prefix + "Taurus chargeur récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
