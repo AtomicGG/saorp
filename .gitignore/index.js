@@ -22818,7 +22818,7 @@ bot.on('message', message => {
 
 // Vallée | Combat
 
-bot.on('message', message => {
+bot.off('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Vallée combat")) {
