@@ -22863,7 +22863,7 @@ bot.on('message', message => {
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
-          test = test + 2 + bousierColossal;
+          test = test + 2 + vacheVrombissante;
           if (test <= (6 + 7 * (joueurs - 1))) {
           vacheVrombissante= vacheVrombissante+ 1;
           } else break;
