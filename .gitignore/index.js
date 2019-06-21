@@ -22053,7 +22053,7 @@ bot.on('message', message => {
 
 // Clairière | Métiers
 
-bot.off('message', message => {
+Bot.on('message', message => {
   if (message.content.startsWith(prefix + "Clairière cueillir")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
@@ -22126,7 +22126,7 @@ bot.on('message', message => {
   }
 })
 
-bot.off('message', message => {
+Bot.on('message', message => {
   if (message.content.startsWith(prefix + "Clairière chasser")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
@@ -22744,7 +22744,7 @@ bot.on('message', message => {
 
 // Vallée | quête
 
-bot.off('message', message => {
+bot.on('message', message => {
   if (message.content === (prefix) + "Vallée quête"){
     const roll = Math.floor(100 * Math.random() + 1)
     if (talkedRecently.has(message.author.id+18000)) {
@@ -22818,7 +22818,7 @@ bot.on('message', message => {
 
 // Vallée | Combat
 
-bot.off('message', message => {
+bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Vallée combat")) {
@@ -23404,7 +23404,7 @@ bot.on('message', message => {
 
 // Vallée | Métiers
 
-bot.off('message', message => {
+Bot.on('message', message => {
   if (message.content.startsWith(prefix + "Vallée cueillir")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
@@ -23477,7 +23477,7 @@ bot.on('message', message => {
   }
 })
 
-bot.off('message', message => {
+Bot.on('message', message => {
   if (message.content.startsWith(prefix + "Vallée chasser")) {
     if (talkedRecently.has(message.author.id+19)) {
       const embed = new Discord.RichEmbed()
