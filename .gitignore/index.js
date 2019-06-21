@@ -21465,7 +21465,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Clairière combat")) {
-    let joueurs = args.slice(3).join(" : ");
+    let joueurs = args.slice(2).join(" : ");
     if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -21506,7 +21506,7 @@ bot.on('message', message => {
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
-          test = test + 2 + bousierColossal;
+          test = test + 2 + taurusChargeur;
           if (test <= (6 + 7 * (joueurs - 1))) {
           taurusChargeur= taurusChargeur+ 1;
           } else break;
