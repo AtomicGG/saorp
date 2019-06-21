@@ -22822,7 +22822,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Vallée combat")) {
-    let joueurs = args.slice(3).join(" : ");
+    let joueurs = args.slice(2).join(" : ");
     if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -22865,7 +22865,7 @@ bot.on('message', message => {
         if (roll <= 60){
           test = test + 2 + vacheVrombissante;
           if (test <= (6 + 7 * (joueurs - 1))) {
-          vacheVrombissante= vacheVrombissante+ 1;
+          vacheVrombissante = vacheVrombissante+ 1;
           } else break;
         }
       } while (test <= (6 + 7 * (joueurs - 1)));
