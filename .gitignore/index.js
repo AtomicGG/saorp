@@ -20122,156 +20122,193 @@ bot.on('message', message => {
 // Forêt dense | Monstres | Attaques
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bousier colossal attaque")) {
-    const degat = Math.floor(46 * Math.random() + 115)
-    const degatCrit = Math.floor(46 * Math.random() + 135)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 30){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal hésite a attaqué. Vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (31 <= roll && roll <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal saute en avant et vous lance férocement le rocher qu'il tient, il inflige " + degat + " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal prend dans la vitesse, et explose la roche qu'il tient sur vous puis en récupère un autre, il inflige " + degatCrit + " ")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+    if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
+      const degat = Math.floor(46 * Math.random() + 85)
+      const degatcrit = Math.floor(46 * Math.random() + 105)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric rampe vers vous et tente alors de vous attraper ce qui s'avère plutôt compliqué sans bras, il panique alors durant sa course et ne parvient pas à se diriger ce qui n'est pas simple quand on ne possède pas de globes oculaires. Il rate donc son attaque en passant à côté de vous.")
+        message.channel.send({embed})
+      }
+      if (36 <= roll & roll <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante sur le sol, une fois à portée il vient s'enrouler autour de vous avant de vous resserrer de plus en plus à la manière d'un serpent, vous perdez " + degat + " points de dégâts.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (91 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il resortira a la fin du Tour Jouer et infligera " + degatcrit + " points de dégâts.")
+        .setTimestamp()
+        message.channel.send({embed})
+    }}
+  });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Palliassit attaque")) {
-    const degat = Math.floor(36 * Math.random() + 75)
-    const degatCrit = Math.floor(76 * Math.random() + 150)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Palliassit :" , ":crossed_swords: Le Palliassit bat des ailes et observe juste la situation, vous avez de la chance !")
-      message.channel.send({embed})
+    if (message.content.startsWith(prefix + "Neoridas attaque")) {
+      const degat = Math.floor(26 * Math.random() + 55)
+      const soin = Math.floor(36 * Math.random() + 115)
+      const degatCrit = Math.floor(76 * Math.random() + 150)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et virevolte joyeusement, vous avez de la chance !")
+        message.channel.send({embed})
+      }
+      if (26 <= roll && roll <= 60){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (61 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + soin + " ")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas prend de l'élan et soulève un grand nuages de poudre d'or les monstres sont soigné de " + soin + " et gagne " + degat + " points de dégâts pour 1 tour puis s'enfuit.\n [Le Neoridas ne peut pas s'enfuir si il est provoqué/Charmé] ")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
-    if (26 <= roll && roll <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Palliassit bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Palliassit bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+  });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
-    const degat = Math.floor(46 * Math.random() + 85)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sors un peu plus loin vous avez de la chance !")
-      message.channel.send({embed})
+    if (message.content.startsWith(prefix + "Venom attaque")) {
+      const degat = Math.floor(41 * Math.random() + 70)
+      const poison = Math.floor(11 * Math.random() + 30)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+        message.channel.send({embed})
+      }
+      if (31 <= roll && roll <= 65){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (66 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
-    if (36 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sort brusquement de la terre et vous attaque, il inflige " + degat + " points de dégâts.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+  });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Serpentard attaque")) {
-    const degat = Math.floor(41 * Math.random() + 70)
-    const poison = Math.floor(11 * Math.random() + 30)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
-      message.channel.send({embed})
+    if (message.content.startsWith(prefix + "Bousier colossal attaque")) {
+      const degat = Math.floor(46 * Math.random() + 115)
+      const degatCrit = Math.floor(46 * Math.random() + 135)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser pour 1 tour. Vous avez de la chance !")
+        message.channel.send({embed})
+      }
+      if (31 <= roll && roll <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immense pierre vers vous et tente de vous écraser, il inflige " + degat + " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (91 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toute se forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. ")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
-    if (26 <= roll && roll <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Serpentard:" , ":crossed_swords: Le Serpentard fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
-                                                   "vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+  });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
-    const degat = Math.floor(71 * Math.random() + 120)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vola de gauche a droite et attend le moment d'attaquer.")
-      message.channel.send({embed})
+    if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
+      const degat = Math.floor(71 * Math.random() + 120)
+      const armure = Math.floor(21 * Math.random() + 20)
+      const cible = Math.floor(3 * Math.random() + 1)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vola de gauche a droite et attend le moment d'attaquer.")
+        message.channel.send({embed})
+      }
+      if (36 <= roll && roll <= 75){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vous charge et vous percuttent de plein fouet, infligeant " + degat + " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (76 <= roll && roll <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueur(s). Il(s) sont provoqué pendant 2 tours et le Doryphore double son armure pendant cette durée.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (91 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant vole vers vous s'envole et atterit sur vous en vous écrasant avec ses pattes avant. il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
-    if (36 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant vole vers vous rapidement et vous percute, " +
-                                                     "il inflige " + degat + " points de dégâts.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+  });
 
 // Forêt dense | Monstres | Défenses
 
