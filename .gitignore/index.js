@@ -21975,12 +21975,12 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + carapace + "\n" +
-                                           ":syringe: Ailles de Bourdon flâneur  : " + ailes+ "\n" +
-                                           ":syringe: Peau Bourdon flâneur: " + antenne  + "\n" +
-                                           ":ticket: Hemolymphe : " + hemolymphe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
-                                           ":scales: Armure taurus au choix : " + oeil + "\n" +
+    .addField(":moneybag: Récompenses :" , ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
+                                           ":butterfly: Ailles de bourdon flâneur  : " + ailes+ "\n" +
+                                           ":syringe: Antenne de bourdon flâneur: " + antenne  + "\n" +
+                                           ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
+                                           ":alembic: Hemolymphe : " + hemolymphe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -22033,12 +22033,12 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus : " + peau + "\n" +
-                                           ":syringe: Poile de Taurus : " + poil + "\n" +
-                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
-                                           ":ticket: Viande de taurus : " + viande + "\n" +
-                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":knife: Peau de Taurus : " + peau + "\n" +
+                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                                           ":ox: Poile de Taurus : " + poil + "\n" +
+                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
+                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -22092,11 +22092,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus lourd : " + peau + "\n" +
-                                           ":syringe: Poile de Taurus lourd : " + poil + "\n" +
-                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
-                                           ":ticket: Viande de taurus : " + viande + "\n" +
-                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                          ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                                           ":ox: Poile de Taurus lourd : " + poil + "\n" +
+                                           ":dagger: Corne de Taurus : " + corne + "\n" +
+                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -22150,11 +22150,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus adroit : " + peau + "\n" +
-                                           ":syringe: Poile de Taurus adroit : " + poil + "\n" +
-                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
-                                           ":ticket: Viande de taurus : " + viande + "\n" +
-                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                                           ":ox: Poile de Taurus adroit : " + poil + "\n" +
+                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
+                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
