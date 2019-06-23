@@ -19900,9 +19900,9 @@ bot.on('message', message => {
           talkedRecently.delete(message.author.id+18000);
         }, 86400000);
         const lombricIrregulier = Math.floor(3 * Math.random() + 2)
-        const neoridas = Math.floor(3 * Math.random() + 2)
+        const paplliAssit = Math.floor(3 * Math.random() + 2)
         const bousierColossal = Math.floor(3 * Math.random() + 2)
-        const venom = Math.floor(2 * Math.random() + 1)
+        const snakeSneaky = Math.floor(2 * Math.random() + 1)
         const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
@@ -19911,9 +19911,9 @@ bot.on('message', message => {
         .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
         .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
                                                         ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                                        ":crossed_swords: Neoridas : " + neoridas + "\n" +
+                                                        ":crossed_swords: Palliassit : " + paplliAssit + "\n" +
                                                         ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                                        ":crossed_swords: Venom : " + venom + "\n" +
+                                                        ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
                                                         ":crossed_swords: Doryphore géant : " + doryphoreGeant)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
         .setTimestamp()
@@ -19974,9 +19974,9 @@ bot.on('message', message => {
     } else {
       let test = 0;
       let lombricIrregulier = 0;
-      let neoridas = 0;
+      let paplliAssit = 0;
       let bousierColossal = 0;
-      let venom = 0;
+      let snakeSneaky = 0;
       let doryphoreGeant = 0;
       let roll = 0;
       do {
@@ -19989,16 +19989,16 @@ bot.on('message', message => {
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 50){
-          test = test + 2 + neoridas;
+          test = test + 2 + paplliAssit;
           if (test <= (6 + 7 * (joueurs - 1))) {
-            neoridas = neoridas + 1;
+            paplliAssit = paplliAssit + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 4 + venom;
+          test = test + 4 + snakeSneaky;
           if (test <= (6 + 7 * (joueurs - 1))) {
-            venom = venom + 1;
+            snakeSneaky = snakeSneaky + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
@@ -20022,9 +20022,9 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: En marchant dans la Forêt dense, vous rencontrez les ennemis suivants\n\n" +
                                                ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                               ":crossed_swords: Neoridas : " + neoridas + "\n" +
+                                               ":crossed_swords: Palliassit : " + paplliAssit + "\n" +
                                                ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                               ":crossed_swords: Venom : " + venom + "\n" +
+                                               ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
                                                ":crossed_swords: Doryphore géant : " + doryphoreGeant)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
@@ -20056,17 +20056,16 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Neoridas"){
+  if (message.content === (prefix) + "Palliassit"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setTitle(":japanese_ogre: Palliassit :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
-    .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
-    .addField(":warning: [Le Neoridas tente de s'enfuir si aucun autre monstre n'est présent dans le combat avec lui : =Fuite+3]")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Palliassit attaque`")
+    .addField(":shield: Lorsque le Palliassit reçoit un coup :" , ":shield: `=Palliassit défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Palliassit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20089,16 +20088,16 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Venom"){
+  if (message.content === (prefix) + "Serpentard"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
-    .setImage("https://i.pinimg.com/originals/7c/0c/e9/7c0ce98ffb8ce67f5e687304f3a1cef7.jpg")
+    .setTitle(":japanese_ogre: Serpentard :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 650")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
-    .addField(":shield: Lorsque le Venom reçoit un coup :" , ":shield: `=Venom défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Venom récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Serpentard attaque`")
+    .addField(":shield: Lorsque le Serpentard reçoit un coup :" , ":shield: `=Serpentard défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Serpentard récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20157,7 +20156,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Neoridas attaque")) {
+  if (message.content.startsWith(prefix + "Palliassit attaque")) {
     const degat = Math.floor(36 * Math.random() + 75)
     const degatCrit = Math.floor(76 * Math.random() + 150)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -20166,7 +20165,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et observe juste la situation, vous avez de la chance !")
+      .addField(":crossed_swords: Palliassit :" , ":crossed_swords: Le Palliassit bat des ailes et observe juste la situation, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (26 <= roll && roll <= 90){
@@ -20174,7 +20173,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
+      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Palliassit bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20183,7 +20182,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
+      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Palliassit bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20215,7 +20214,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Venom attaque")) {
+  if (message.content.startsWith(prefix + "Serpentard attaque")) {
     const degat = Math.floor(41 * Math.random() + 70)
     const poison = Math.floor(11 * Math.random() + 30)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -20224,7 +20223,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
       message.channel.send({embed})
     }
     if (26 <= roll && roll <= 90){
@@ -20232,7 +20231,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20241,7 +20240,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
+      .addField(":crossed_swords: Serpentard:" , ":crossed_swords: Le Serpentard fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
                                                    "vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
       .setTimestamp()
       message.channel.send({embed})
@@ -20294,7 +20293,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Neoridas défense")) {
+  if (message.content.startsWith(prefix + "Palliassit défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const paradeReussie = Math.floor(21 * Math.random() + 35)
@@ -20304,7 +20303,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
+      .addField(":shield: Palliassit :" , ":shield: Le Palliassit vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
     if (41 <= roll){
@@ -20312,7 +20311,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et evite votre coup, " +
+      .addField(":shield: Palliassit :" , ":shield: Le Palliassit vole rapidement et evite votre coup, " +
                                                  "et lache une poudre rouge clair qui vous faire perdre " + paradeReussie + " points d'attaque")
       .setTimestamp()
       message.channel.send({embed})
@@ -20323,7 +20322,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Venom défense")) {
+  if (message.content.startsWith(prefix + "Serpentard défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
@@ -20332,7 +20331,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Venom :" , ":shield: Le Venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Serpentard :" , ":shield: Le Serpentard tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -20340,7 +20339,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Venom :" , ":shield: Le Venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
+      .addField(":shield: Serpentard :" , ":shield: Le Serpentard se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20433,11 +20432,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":alembic: Bave de lombric irrégulier  : " + bave + "\n" +
-                                           ":knife: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
-                                           ":tongue: Langue de lombric irrégulier : "+ langue + "\n" +
-                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
-                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Bave de lombric irrégulier  : " + bave + "\n" +
+                                           ":syringe: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
+                                           ":gem: Langue de lombric irrégulier : "+ langue + "\n" +
+                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
+                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20447,7 +20446,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Neoridas récompenses")) {
+  if (message.content.startsWith(prefix + "Palliassit récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -20493,13 +20492,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
-                                           ":butterfly: Ailles de Neoridas  : " + ailes+ "\n" +
-                                           ":knife: Peau Neoridas : " + peau + "\n" +
-                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + poudrePoison + "\n" +
+                                           ":syringe: Ailles de Palliassit  : " + ailes+ "\n" +
+                                           ":syringe: Peau Palliassit : " + peau + "\n" +
+                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
+                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
                                            ":scales: Armure bug au choix : " + armureBug + "\n" +
                                            ":scales: Bijoux bug au choix : " + bijouxBug + "\n" +
-                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20547,9 +20546,9 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Pattes de Boussier colosal: " + patte + "\n" +
-                                           ":shell: Carapace de Boussier colosal : " + carapace + "\n" +
-                                           ":dagger: Corne de Boussier colosal : "+ corne + "\n" +
-                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                                           ":syringe: Carapace de Boussier colosal : " + carapace + "\n" +
+                                           ":gem: Corne de Boussier colosal : "+ corne + "\n" +
+                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20559,7 +20558,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Venom récompenses")) {
+  if (message.content.startsWith(prefix + "Serpentard récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -20599,10 +20598,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":skull: Crochet de Venom : " + crochetPoison + "\n" +
-                                           ":knife: Peau de Venom : " + Peau + "\n" +
-                                           ":snake: Queue de Venom : " + queueSerpent + "\n" +
-                                           ":alembic: Venin de Venom : " + Venin + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: crochetPoison de Serpentard : " + crochetPoison + "\n" +
+                                           ":knife: Peau de Serpentard : " + Peau + "\n" +
+                                           ":eye: Queue de Serpentard : " + queueSerpent + "\n" +
+                                           ":cupid: Venin de Serpentard : " + Venin + "\n" +
                                            ":gem: Oeuf bavant : " + Oeufs + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20659,13 +20658,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":shell: Carapace de Doryphore géant : " + carapace + "\n" +
-                                           ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
-                                           ":poultry_leg:  Patte Doryphore géant : " + patte + "\n" +
+    .addField(":moneybag: Récompenses :" , ":knife: Carapace de Doryphore géant : " + carapace + "\n" +
+                                           ":gem: Aile de Doryphore géant : " + aile + "\n" +
+                                           ":scales: Patte Doryphore géant : " + patte + "\n" +
                                            ":scales: Arme de bug à une main au choix : " + armeBugUneMain + "\n" +
                                            ":scales: Arme de bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                           ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
-                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
+                                           ":scales: Hémolymphe : " + hemolyphe+ "\n" +
+                                           ":scales: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20817,7 +20816,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Neoridas x2, Hémolymphe x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` ou fabriquez cet objet `=Fabrication de la cape bug`")
+    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Palliassit x2, Hémolymphe x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` ou fabriquez cet objet `=Fabrication de la cape bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20830,7 +20829,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Neoridas x3, Hémolymphe x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  ou fabriquez cet objet `=Fabrication du plastron bug`")
+    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Palliassit x3, Hémolymphe x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  ou fabriquez cet objet `=Fabrication du plastron bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20843,7 +20842,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Neoridas x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Hémolymphe x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets bug` ou fabriquez cet objet `=Fabrication des gantelets bug`")
+    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Palliassit x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Hémolymphe x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets bug` ou fabriquez cet objet `=Fabrication des gantelets bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21304,8 +21303,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark Venom !")
-      .addField(":egg: Ark Venom :" ,":egg: Après chacunes de vos attaques, le Ark Venom attaque : =Ark Venom attaque")
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark serpentard !")
+      .addField(":egg: Ark serpentard :" ,":egg: Après chacunes de vos attaques, le Ark serpentard attaque : =Ark serpentard attaque")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21343,13 +21342,13 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
   const B = (Math.floor((16)*Math.random()+46))
-  if (message.content.startsWith(prefix + "Ark Venom attaque")) {
+  if (message.content.startsWith(prefix + "Ark serpentard attaque")) {
     if(A <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom essaye de mordre sa cible mais préfère passer a coté...")
+      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard essaye de mordre sa cible mais préfère passer a coté...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21359,7 +21358,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21602,7 +21601,7 @@ bot.on('message', message => {
 // Clairière | Monstres | Attaques
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Taurus chargeur attaque")) {
+  if (message.content.startsWith(prefix + "Taurus chargeur  attaque")) {
     const degat = Math.floor(46 * Math.random() + 135)
     const degatCrit = Math.floor(46 * Math.random() + 155)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -21864,12 +21863,12 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
-                                           ":butterfly: Ailles de bourdon flâneur  : " + ailes+ "\n" +
-                                           ":syringe: Antenne flâneur: " + antenne  + "\n" +
-                                           ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
-                                           ":alembic: Hemolymphe : " + hemolymphe + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + carapace + "\n" +
+                                           ":syringe: Ailles de Bourdon flâneur  : " + ailes+ "\n" +
+                                           ":syringe: Peau Bourdon flâneur: " + antenne  + "\n" +
+                                           ":ticket: Hemolymphe : " + hemolymphe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":scales: Armure taurus au choix : " + oeil + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -21922,12 +21921,12 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":knife: Peau de Taurus : " + peau + "\n" +
-                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poile de Taurus : " + poil + "\n" +
-                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
-                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus : " + peau + "\n" +
+                                           ":syringe: Poile de Taurus : " + poil + "\n" +
+                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
+                                           ":ticket: Viande de taurus : " + viande + "\n" +
+                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -21981,11 +21980,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus lourd : " + peau + "\n" +
-                                          ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poile de Taurus lourd : " + poil + "\n" +
-                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
-                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+                                           ":syringe: Poile de Taurus lourd : " + poil + "\n" +
+                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
+                                           ":ticket: Viande de taurus : " + viande + "\n" +
+                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -22039,11 +22038,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus adroit : " + peau + "\n" +
-                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poile de Taurus adroit : " + poil + "\n" +
-                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
-                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+                                           ":syringe: Poile de Taurus adroit : " + poil + "\n" +
+                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
+                                           ":ticket: Viande de taurus : " + viande + "\n" +
+                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23218,11 +23217,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":shell: Carapace de guêpe vicace : " + carapace + "\n" +
-                                           ":butterfly: Ailles de guêpe Vivace  : " + ailes+ "\n" +
-                                           ":bee: Dard guêpe Vivace: " + dard  + "\n" +
-                                           ":eyes: Oeil de guêpe vicace : " + oeil + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Carapace de guêpe vicace : " + carapace + "\n" +
+                                           ":syringe: Ailles de guêpe Vivace  : " + ailes+ "\n" +
+                                           ":syringe: Dard guêpe Vivace: " + dard  + "\n" +
+                                           ":scales: Oeil de guêpe vicace : " + oeil + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23273,11 +23272,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":shell: Carapace du frelon foudroyant : " + carapace + "\n" +
-                                           ":butterfly: Ailles du frelon foudroyant  : " + ailes+ "\n" +
-                                           ":bee: Dard du frelon foudroyant: " + dard  + "\n" +
-                                           ":eyes: Oeil du frelon foudroyant : " + oeil + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Carapace du frelon foudroyant : " + carapace + "\n" +
+                                           ":syringe: Ailles du frelon foudroyant  : " + ailes+ "\n" +
+                                           ":syringe: Dard du frelon foudroyant: " + dard  + "\n" +
+                                           ":scales: Oeil du frelon foudroyant : " + oeil + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23331,11 +23330,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de vache vrombissante : " + peau + "\n" +
-                                           ":poultry_leg: Oreille de vache vrombissante : " + oreille + "\n" +
-                                           ":poultry_leg: Viande de vache vrombissante : " + viande + "\n" +
-                                           ":ox: Sabot de vache vrombissante  : "+ sabot + "\n" +
-                                           ":milk: Lait de vache vrombissante : " + lait + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+                                           ":syringe: Oreille de vache vrombissante : " + oreille + "\n" +
+                                           ":gem: Sabot de vache vrombissante  : "+ sabot + "\n" +
+                                           ":ticket: Viande de vache vrombissante : " + viande + "\n" +
+                                           ":scales: Lait de vache vrombissante : " + lait + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23389,11 +23388,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de boeuf vrombissant : " + peau + "\n" +
-                                           ":poultry_leg: Viande de boeuf vrombissant : " + viande + "\n" +
-                                           ":dagger: Corne de boeuf vrombissant : " + corne + "\n" +
-                                           ":ox: Sabot de boeuf vrombissant  : "+ sabot + "\n"
-                                           ":bacon: Instestin de boeuf vrombissant : " + instestin + "\n" +
-                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
+                                           ":syringe: Corne de boeuf vrombissant : " + corne + "\n" +
+                                           ":gem: Sabot de boeuf vrombissant  : "+ sabot + "\n" +
+                                           ":ticket: Viande de boeuf vrombissant : " + viande + "\n" +
+                                           ":scales: Instestin de boeuf vrombissant : " + instestin + "\n" +
+                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -25725,12 +25724,12 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Ailles de Neoridas")) {
+if (message.content.startsWith(prefix + "Ailles de Palliassit")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Ailles :" , "C'est des ailles que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
+  .addField("Ailles :" , "C'est des ailles que vous trouvez sur les palliassit dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "10 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron bug\n=Gantelets bug")
@@ -25741,12 +25740,12 @@ if (message.content.startsWith(prefix + "Ailles de Neoridas")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Peau Neoridas")) {
+if (message.content.startsWith(prefix + "Peau Palliassit")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Peau :" , "C'est une peau que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
+  .addField("Peau :" , "C'est une peau que vous trouvez sur les palliassit dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "10 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape bug")
