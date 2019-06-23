@@ -20408,7 +20408,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bousier colossal défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
+    const degat = Math.floor((Dégâts * 0.6) * Math.random() + (Dégâts * 0.5))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
