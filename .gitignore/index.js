@@ -20093,7 +20093,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
-    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
+    .setImage("https://i.pinimg.com/originals/7c/0c/e9/7c0ce98ffb8ce67f5e687304f3a1cef7.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 650")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
     .addField(":shield: Lorsque le Venom reçoit un coup :" , ":shield: `=Venom défense : [Points de dégâts de votre coup]`")
