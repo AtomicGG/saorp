@@ -20728,9 +20728,9 @@ bot.on('message', message => {
     .addField(":moneybag: Récompenses :" , ":shell: Carapace de Doryphore géant : " + carapace + "\n" +
                                            ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
                                            ":poultry_leg:  Patte Doryphore géant : " + patte + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
                                            ":scales: Arme de bug à une main au choix : " + armeBugUneMain + "\n" +
                                            ":scales: Arme de bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                           ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
                                            ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -21668,33 +21668,33 @@ bot.on('message', message => {
 // Clairière | Monstres | Attaques
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Taurus chargeur  attaque")) {
-    const degat = Math.floor(46 * Math.random() + 135)
-    const degatCrit = Math.floor(46 * Math.random() + 155)
+  if (message.content.startsWith(prefix + "Bourdon flâneur attaque")) {
+    const degat = Math.floor(46 * Math.random() + 95)
+    const degatCrit = Math.floor(76 * Math.random() + 250)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 30){
+    if (roll <= 35){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  hésite a attaqué. Vous avez de la chance !")
+      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance ?!")
       message.channel.send({embed})
     }
-    if (31 <= roll && roll <= 90){
+    if (36 <= roll && roll <= 97){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  saute en avant et vous lance férocement le rocher qu'il tient, il inflige " + degat + " points de dégâts")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute viollemment vous perdez " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (91 <= roll){
+    if (98 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  prend dans la vitesse, et explose la roche qu'il tient sur vous puis en récupère un autre, il inflige " + degatCrit + " ")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache a son propre dard, mourrant dans le procédée. Il vous inflige  " + degatCrit + " de dégat de poison perce armure. ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21702,24 +21702,25 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bourdon flâneur attaque")) {
-    const degat = Math.floor(36 * Math.random() + 75)
-    const degatCrit = Math.floor(76 * Math.random() + 150)
+  if (message.content.startsWith(prefix + "Taurus chargeur attaque")) {
+    const degat = Math.floor(46 * Math.random() + 155)
+    const degatCrit = Math.floor(46 * Math.random() + 175)
+    const tours = Math.floor(2 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
+    if (roll <= 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et observe juste la situation, vous avez de la chance !")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur piétine a plusieur reprise mais n'attaque pas. Vous avez de la chance !")
       message.channel.send({embed})
     }
-    if (26 <= roll && roll <= 90){
+    if (31 <= roll && roll <= 90){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec son épaule en avant. Il vous percutte violemment vous faisant perdre " + degat + " points de dégâts et vous étourdit pendant " + tours + " tour(s).")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21728,7 +21729,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauté dans les airs et d'écraser ses pieds contre vous violemment, vous etes projeté au sol et perdez " + degatCrit + " ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21745,7 +21746,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit bombe le torse et ... c'est tout, vous avez de la chance")
       message.channel.send({embed})
     }
     if (26 <= roll && roll <= 90){
@@ -21753,7 +21754,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit vous lance des roche il inflige " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21762,8 +21763,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
-                                                   "vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit vous prend le pied et vous frappe sur un autre joueur " + degat + " points de dégâts sur deur joueur. Si vous êtes seul vous prenez les double dégâts... Oui c'est provisoire.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21772,23 +21772,43 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus lourd attaque")) {
-    const degat = Math.floor(71 * Math.random() + 120)
+    const degat = Math.floor(51 * Math.random() + 120)
+    const degatraté = Math.floor(31 * Math.random() + 40)
+    const degatcrit = Math.floor(61 * Math.random() + 130)
+    const cible = Math.floor(5 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 35){
+    if (roll <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vola de gauche a droite et attend le moment d'attaquer.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégats.")
       message.channel.send({embed})
     }
-    if (36 <= roll){
+    if (21 <= roll & roll <= 55){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd vole vers vous rapidement et vous percute, " +
-                                                     "il inflige " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (56 <= roll & roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueur(s) et vous inflige " + degat + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd prend de l'élan et se jette dans les airs en se cambrant en arrière avant d'écraser sa hache imposante contre vous de toute sa puissance. Vous perdez " + degatcrit + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
