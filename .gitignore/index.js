@@ -20148,7 +20148,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour Jouer et infligera " + degatcrit + " points de dégâts.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour joueur et infligera " + degatcrit + " points de dégâts.")
         .setTimestamp()
         message.channel.send({embed})
     }}
@@ -20423,7 +20423,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Doryphore géant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const degat = Math.floor((Dégâts * 0.2 + 1) * Math.random() + (Dégâts * 0.8))
     const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 5){
@@ -20434,7 +20434,7 @@ bot.on('message', message => {
       .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure mais expose dans le même temps une ouverture dans l'une des jointure de sa carapace. Vous profitez de cette faibesse et lui infligé  " + degatcrit + " points de dégâts perce armure")
       message.channel.send({embed})
     }
-    if (6 <= roll){
+    if (6 <= roll & roll <= 94){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
