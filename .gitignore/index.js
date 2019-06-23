@@ -20066,7 +20066,7 @@ bot.on('message', message => {
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
     .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
-    .addField("```fix\n=>>[Le Neoridas tente de s'enfuir si aucun autre monstre n'est présent dans le combat avec lui : =Fuite+3]<<=\n```")
+    .addField("`=>>[Le Neoridas tente de s'enfuir si aucun autre monstre n'est présent dans le combat avec lui : =Fuite+3]<<=`")
     .setTimestamp()
     message.channel.send({embed})
   }
