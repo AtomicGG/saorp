@@ -19911,9 +19911,9 @@ bot.on('message', message => {
         .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
         .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
                                                         ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                                        ":crossed_swords: Palliassit : " + paplliAssit + "\n" +
+                                                        ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
                                                         ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                                        ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
+                                                        ":crossed_swords: Venom : " + snakeSneaky + "\n" +
                                                         ":crossed_swords: Doryphore géant : " + doryphoreGeant)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
         .setTimestamp()
@@ -20022,9 +20022,9 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: En marchant dans la Forêt dense, vous rencontrez les ennemis suivants\n\n" +
                                                ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                               ":crossed_swords: Palliassit : " + paplliAssit + "\n" +
+                                               ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
                                                ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                               ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
+                                               ":crossed_swords: Venom : " + snakeSneaky + "\n" +
                                                ":crossed_swords: Doryphore géant : " + doryphoreGeant)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
@@ -20056,16 +20056,16 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Palliassit"){
+  if (message.content === (prefix) + "Neoridas"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Palliassit :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Palliassit attaque`")
-    .addField(":shield: Lorsque le Palliassit reçoit un coup :" , ":shield: `=Palliassit défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Palliassit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
+    .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20088,16 +20088,16 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Serpentard"){
+  if (message.content === (prefix) + "Venom"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Serpentard :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 650")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Serpentard attaque`")
-    .addField(":shield: Lorsque le Serpentard reçoit un coup :" , ":shield: `=Serpentard défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Serpentard récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
+    .addField(":shield: Lorsque le Venom reçoit un coup :" , ":shield: `=Venom défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Venom récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20513,7 +20513,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Palliassit récompenses")) {
+  if (message.content.startsWith(prefix + "Neoridas récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -20625,7 +20625,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Serpentard récompenses")) {
+  if (message.content.startsWith(prefix + "Venom récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -20883,7 +20883,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Palliassit x2, Hémolymphe x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` ou fabriquez cet objet `=Fabrication de la cape bug`")
+    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Neoridas x2, Hémolymphe x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` ou fabriquez cet objet `=Fabrication de la cape bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20896,7 +20896,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Palliassit x3, Hémolymphe x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  ou fabriquez cet objet `=Fabrication du plastron bug`")
+    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Neoridas x3, Hémolymphe x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  ou fabriquez cet objet `=Fabrication du plastron bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20909,7 +20909,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Palliassit x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Hémolymphe x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets bug` ou fabriquez cet objet `=Fabrication des gantelets bug`")
+    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Neoridas x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Hémolymphe x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez cet objet: `=Découverte gantelets bug` ou fabriquez cet objet `=Fabrication des gantelets bug`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21370,8 +21370,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark serpentard !")
-      .addField(":egg: Ark serpentard :" ,":egg: Après chacunes de vos attaques, le Ark serpentard attaque : =Ark serpentard attaque")
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark Venom !")
+      .addField(":egg: Ark Venom :" ,":egg: Après chacunes de vos attaques, le Ark Venom attaque : =Ark Venom attaque")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21409,13 +21409,13 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
   const B = (Math.floor((16)*Math.random()+46))
-  if (message.content.startsWith(prefix + "Ark serpentard attaque")) {
+  if (message.content.startsWith(prefix + "Ark Venom attaque")) {
     if(A <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard essaye de mordre sa cible mais préfère passer a coté...")
+      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom essaye de mordre sa cible mais préfère passer a coté...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21425,7 +21425,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -25836,12 +25836,12 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Ailles de Palliassit")) {
+if (message.content.startsWith(prefix + "Ailles de Neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Ailles :" , "C'est des ailles que vous trouvez sur les palliassit dans la forêt du palier 2 !")
+  .addField("Ailles :" , "C'est des ailles que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "10 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron bug\n=Gantelets bug")
@@ -25852,12 +25852,12 @@ if (message.content.startsWith(prefix + "Ailles de Palliassit")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Peau Palliassit")) {
+if (message.content.startsWith(prefix + "Peau Neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Peau :" , "C'est une peau que vous trouvez sur les palliassit dans la forêt du palier 2 !")
+  .addField("Peau :" , "C'est une peau que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "10 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape bug")
