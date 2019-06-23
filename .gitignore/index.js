@@ -21820,32 +21820,17 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Taurus chargeur défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":shield: Taurus chargeur  :" , ":shield: Le Taurus chargeur  essaye d'utiliser sa roche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bourdon flâneur défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-    const paradeReussie = Math.floor(21 * Math.random() + 35)
+    const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const Esquive = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
+      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vrombit bruyamment et feinte de vous percuter, votre attaque est interrompue.")
       message.channel.send({embed})
     }
     if (41 <= roll){
@@ -21853,8 +21838,35 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vole rapidement et evite votre coup, " +
-                                                 "et lache une poudre rouge clair qui vous faire perdre " + paradeReussie + " points d'attaque")
+      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vrombit bruyamment et feinte de vous percuter mais vous voyez à travers son bluff et le touchez sans problème. Vous lui infligez " + Esquiveraté + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Taurus chargeur défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const Esquive = Math.floor(21 * Math.random() + 35)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinté sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + "")
+      message.channel.send({embed})
+    }
+    if (41 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur feinte votre attaque et se retrouve dans votre dos, il vous attrape par la taille et vous envoie valser vers l'arrière. Vous percutez le sol et perdez " + Parade + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21892,14 +21904,27 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Taurus lourd défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
-    message.channel.send({embed})
+    let Dégâts = args.slice(2).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const paradeReussie = Math.floor(21 * Math.random() + 35)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attauqe vous lui infigez " + paradeRatee + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous etes sonnez et ne pouvez pas vous défendre ou attaquer pour un tour.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
