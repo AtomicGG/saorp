@@ -19902,7 +19902,7 @@ bot.on('message', message => {
         const lombricIrregulier = Math.floor(3 * Math.random() + 2)
         const neoridas = Math.floor(3 * Math.random() + 2)
         const bousierColossal = Math.floor(3 * Math.random() + 2)
-        const snakeSneaky = Math.floor(2 * Math.random() + 1)
+        const venom = Math.floor(2 * Math.random() + 1)
         const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
@@ -19913,7 +19913,7 @@ bot.on('message', message => {
                                                         ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
                                                         ":crossed_swords: Neoridas : " + neoridas + "\n" +
                                                         ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                                        ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
+                                                        ":crossed_swords: Venom : " + venom + "\n" +
                                                         ":crossed_swords: Doryphore géant : " + doryphoreGeant)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
         .setTimestamp()
@@ -19976,7 +19976,7 @@ bot.on('message', message => {
       let lombricIrregulier = 0;
       let neoridas = 0;
       let bousierColossal = 0;
-      let snakeSneaky = 0;
+      let venom = 0;
       let doryphoreGeant = 0;
       let roll = 0;
       do {
@@ -19996,9 +19996,9 @@ bot.on('message', message => {
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 4 + snakeSneaky;
+          test = test + 4 + venom;
           if (test <= (6 + 7 * (joueurs - 1))) {
-            snakeSneaky = snakeSneaky + 1;
+            venom = venom + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
@@ -20024,7 +20024,7 @@ bot.on('message', message => {
                                                ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
                                                ":crossed_swords: Neoridas : " + neoridas + "\n" +
                                                ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                               ":crossed_swords: Serpentard : " + snakeSneaky + "\n" +
+                                               ":crossed_swords: Venom : " + venom + "\n" +
                                                ":crossed_swords: Doryphore géant : " + doryphoreGeant)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
@@ -20089,16 +20089,16 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Serpentard"){
+  if (message.content === (prefix) + "Venom"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Serpentard :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
-    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
+    .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setImage("https://i.pinimg.com/originals/7c/0c/e9/7c0ce98ffb8ce67f5e687304f3a1cef7.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 650")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Serpentard attaque`")
-    .addField(":shield: Lorsque le Serpentard reçoit un coup :" , ":shield: `=Serpentard défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Serpentard récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
+    .addField(":shield: Lorsque le Venom reçoit un coup :" , ":shield: `=Venom défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Venom récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20123,156 +20123,193 @@ bot.on('message', message => {
 // Forêt dense | Monstres | Attaques
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bousier colossal attaque")) {
-    const degat = Math.floor(46 * Math.random() + 115)
-    const degatCrit = Math.floor(46 * Math.random() + 135)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 30){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal hésite a attaqué. Vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (31 <= roll && roll <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal saute en avant et vous lance férocement le rocher qu'il tient, il inflige " + degat + " points de dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal prend dans la vitesse, et explose la roche qu'il tient sur vous puis en récupère un autre, il inflige " + degatCrit + " ")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+   if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
+     const degat = Math.floor(71 * Math.random() + 120)
+     const armure = Math.floor(21 * Math.random() + 20)
+     const cible = Math.floor(3 * Math.random() + 1)
+     const roll = Math.floor(100 * Math.random() + 1)
+     if (roll <= 35){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vola de gauche a droite et attend le moment d'attaquer.")
+       message.channel.send({embed})
+     }
+     if (36 <= roll && roll <= 75){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vous charge et vous percuttent de plein fouet, infligeant " + degat + " points de dégâts")
+       .setTimestamp()
+       message.channel.send({embed})
+     }
+     if (76 <= roll && roll <= 90){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueur(s). Il(s) sont provoqué pendant 2 tours et le Doryphore double son armure pendant cette durée.")
+       .setTimestamp()
+       message.channel.send({embed})
+     }
+     if (91 <= roll){
+       const embed = new Discord.RichEmbed()
+       .setAuthor(message.author.username , message.author.avatarURL)
+       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+       .setColor(3447003)
+       .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant vole vers vous s'envole et atterit sur vous en vous écrasant avec ses pattes avant. il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
+       .setTimestamp()
+       message.channel.send({embed})
+     }
+   }
+ });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Neoridas attaque")) {
-    const degat = Math.floor(36 * Math.random() + 75)
-    const degatCrit = Math.floor(76 * Math.random() + 150)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et observe juste la situation, vous avez de la chance !")
-      message.channel.send({embed})
+    if (message.content.startsWith(prefix + "Neoridas attaque")) {
+      const degat = Math.floor(26 * Math.random() + 55)
+      const soin = Math.floor(36 * Math.random() + 115)
+      const degatCrit = Math.floor(76 * Math.random() + 150)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et virevolte joyeusement, vous avez de la chance !")
+        message.channel.send({embed})
+      }
+      if (26 <= roll && roll <= 60){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (61 <= roll && roll <= 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + soin + " ")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (96 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas prend de l'élan et soulève un grand nuages de poudre d'or les monstres sont soigné de " + soin + " et gagne " + degat + " points de dégâts pour 1 tour puis s'enfuit.\n [Le Neoridas ne peut pas s'enfuir si il est provoqué/Charmé] ")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
-    if (26 <= roll && roll <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+  });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
-    const degat = Math.floor(46 * Math.random() + 85)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sors un peu plus loin vous avez de la chance !")
-      message.channel.send({embed})
-    }
-    if (36 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le Lombric irrégulier s'enfouit dans la terre et sort brusquement de la terre et vous attaque, il inflige " + degat + " points de dégâts.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+    if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
+      const degat = Math.floor(46 * Math.random() + 85)
+      const degatcrit = Math.floor(46 * Math.random() + 105)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 35){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric rampe vers vous et tente alors de vous attraper ce qui s'avère plutôt compliqué sans bras, il panique alors durant sa course et ne parvient pas à se diriger ce qui n'est pas simple quand on ne possède pas de globes oculaires. Il rate donc son attaque en passant à côté de vous.")
+        message.channel.send({embed})
+      }
+      if (36 <= roll & roll <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante sur le sol, une fois à portée il vient s'enrouler autour de vous avant de vous resserrer de plus en plus à la manière d'un serpent, vous perdez " + degat + " points de dégâts.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (91 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il resortira a la fin du Tour Jouer et infligera " + degatcrit + " points de dégâts.")
+        .setTimestamp()
+        message.channel.send({embed})
+    }}
+  });
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Serpentard attaque")) {
-    const degat = Math.floor(41 * Math.random() + 70)
-    const poison = Math.floor(11 * Math.random() + 30)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
-      message.channel.send({embed})
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Venom attaque")) {
+      const degat = Math.floor(41 * Math.random() + 70)
+      const poison = Math.floor(11 * Math.random() + 30)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+        message.channel.send({embed})
+      }
+      if (31 <= roll && roll <= 65){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (66 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
-    if (26 <= roll && roll <= 90){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Serpentard :" , ":crossed_swords: Le Serpentard tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Serpentard:" , ":crossed_swords: Le Serpentard fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
-                                                   "vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+  });
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
-    const degat = Math.floor(71 * Math.random() + 120)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 35){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vola de gauche a droite et attend le moment d'attaquer.")
-      message.channel.send({embed})
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bousier colossal attaque")) {
+      const degat = Math.floor(46 * Math.random() + 115)
+      const degatCrit = Math.floor(46 * Math.random() + 135)
+      const roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser pour 1 tour. Vous avez de la chance !")
+        message.channel.send({embed})
+      }
+      if (31 <= roll && roll <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immense pierre vers vous et tente de vous écraser, il inflige " + degat + " points de dégâts")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (91 <= roll){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toute se forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. ")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
-    if (36 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant vole vers vous rapidement et vous percute, " +
-                                                     "il inflige " + degat + " points de dégâts.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
+  });
 
 // Forêt dense | Monstres | Défenses
 
@@ -20286,7 +20323,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":shield: Bousier colossal :" , ":shield: Le Bousier colossal essaye d'utiliser sa roche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
+    .addField(":shield: Bousier colossal :" , ":shield: Le Bousier colossal utilise l'énorme pierre qu'il tient pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
     message.channel.send({embed})
   }
 });
@@ -20296,24 +20333,32 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Neoridas défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-    const paradeReussie = Math.floor(21 * Math.random() + 35)
+    const Esquiverate = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+    const Esquivecrit = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 40){
+    if (roll <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + Esquiverate + " points de dégâts")
       message.channel.send({embed})
     }
-    if (41 <= roll){
+    if (21 <= roll & roll <= 90){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et evite votre coup, " +
-                                                 "et lache une poudre rouge clair qui vous faire perdre " + paradeReussie + " points d'attaque")
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vous fonce dessus et esquive votre coup de justesse avant de tourner autour de votre tête pour se moquer de vous.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et evite votre coup puis lache une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20323,24 +20368,24 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Serpentard défense")) {
+  if (message.content.startsWith(prefix + "Venom défense")) {
     let Dégâts = args.slice(2).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 70){
+    if (roll <= 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Serpentard :" , ":shield: Le Serpentard tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Venom :" , ":shield: Le Venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
-    if (71 <= roll){
+    if (66 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Serpentard :" , ":shield: Le Serpentard se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
+      .addField(":shield: Venom :" , ":shield: Le Venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20359,7 +20404,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric irrégulier tente d'esquiver votre coup en entrant dans le sol mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle matérialisé ici par chance pour vous, il perd " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -20367,7 +20412,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric irrégulier se faufile dans le sol. Vous ne pouvez pas l'atteindre.")
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric sent votre coup arriver, essayez d'être plus discret la prochaine fois ! Il plonge alors dans le sol pour l'éviter sans se soucier de l'environnement et disparaît de votre champ de vision pour réapparaître quelques mètres plus loin en gesticulant.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20379,13 +20424,35 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Doryphore géant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
-    message.channel.send({embed})
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure mais expose dans le même temps une ouverture dans l'une des jointure de sa carapace. Vous profitez de cette faibesse et lui infligé  " + degatcrit + " points de dégâts perce armure")
+      message.channel.send({embed})
+    }
+    if (6 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (95 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -20433,11 +20500,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Bave de lombric irrégulier  : " + bave + "\n" +
-                                           ":syringe: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
-                                           ":gem: Langue de lombric irrégulier : "+ langue + "\n" +
-                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
-                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":alembic: Bave de lombric irrégulier  : " + bave + "\n" +
+                                           ":knife: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
+                                           ":tongue: Langue de lombric irrégulier : "+ langue + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20493,13 +20560,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + poudrePoison + "\n" +
-                                           ":syringe: Ailles de Neoridas  : " + ailes+ "\n" +
-                                           ":syringe: Peau Neoridas : " + peau + "\n" +
-                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
-                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
+                                           ":butterfly: Ailles de Neoridas  : " + ailes+ "\n" +
+                                           ":knife: Peau Neoridas : " + peau + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":scales: Armure bug au choix : " + armureBug + "\n" +
                                            ":scales: Bijoux bug au choix : " + bijouxBug + "\n" +
+                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20547,9 +20614,9 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Pattes de Boussier colosal: " + patte + "\n" +
-                                           ":syringe: Carapace de Boussier colosal : " + carapace + "\n" +
-                                           ":gem: Corne de Boussier colosal : "+ corne + "\n" +
-                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
+                                           ":shell: Carapace de Boussier colosal : " + carapace + "\n" +
+                                           ":dagger: Corne de Boussier colosal : "+ corne + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20559,7 +20626,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const args = message.content;
-  if (message.content.startsWith(prefix + "Serpentard récompenses")) {
+  if (message.content.startsWith(prefix + "Venom récompenses")) {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
@@ -20599,10 +20666,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: crochetPoison de Serpentard : " + crochetPoison + "\n" +
-                                           ":knife: Peau de Serpentard : " + Peau + "\n" +
-                                           ":eye: Queue de Serpentard : " + queueSerpent + "\n" +
-                                           ":cupid: Venin de Serpentard : " + Venin + "\n" +
+    .addField(":moneybag: Récompenses :" , ":skull: Crochet de Venom : " + crochetPoison + "\n" +
+                                           ":knife: Peau de Venom : " + Peau + "\n" +
+                                           ":snake: Queue de Venom : " + queueSerpent + "\n" +
+                                           ":alembic: Venin de Venom : " + Venin + "\n" +
                                            ":gem: Oeuf bavant : " + Oeufs + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20659,13 +20726,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":knife: Carapace de Doryphore géant : " + carapace + "\n" +
-                                           ":gem: Aile de Doryphore géant : " + aile + "\n" +
-                                           ":scales: Patte Doryphore géant : " + patte + "\n" +
+    .addField(":moneybag: Récompenses :" , ":shell: Carapace de Doryphore géant : " + carapace + "\n" +
+                                           ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
+                                           ":poultry_leg:  Patte Doryphore géant : " + patte + "\n" +
                                            ":scales: Arme de bug à une main au choix : " + armeBugUneMain + "\n" +
                                            ":scales: Arme de bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                           ":scales: Hémolymphe : " + hemolyphe+ "\n" +
-                                           ":scales: Oeuf bavant : " + oeufB + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
+                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -21304,8 +21371,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark serpentard !")
-      .addField(":egg: Ark serpentard :" ,":egg: Après chacunes de vos attaques, le Ark serpentard attaque : =Ark serpentard attaque")
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark Venom !")
+      .addField(":egg: Ark Venom :" ,":egg: Après chacunes de vos attaques, le Ark Venom attaque : =Ark Venom attaque")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21343,13 +21410,13 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
   const B = (Math.floor((16)*Math.random()+46))
-  if (message.content.startsWith(prefix + "Ark serpentard attaque")) {
+  if (message.content.startsWith(prefix + "Ark Venom attaque")) {
     if(A <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard essaye de mordre sa cible mais préfère passer a coté...")
+      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom essaye de mordre sa cible mais préfère passer a coté...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21359,7 +21426,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark serpentard :" ,":crossed_swords: Le Ark serpentard bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21602,16 +21669,17 @@ bot.on('message', message => {
 // Clairière | Monstres | Attaques
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Taurus chargeur  attaque")) {
-    const degat = Math.floor(46 * Math.random() + 135)
-    const degatCrit = Math.floor(46 * Math.random() + 155)
+  if (message.content.startsWith(prefix + "Taurus chargeur attaque")) {
+    const degat = Math.floor(46 * Math.random() + 155)
+    const degatCrit = Math.floor(46 * Math.random() + 175)
+    const tours = Math.floor(2 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  hésite a attaqué. Vous avez de la chance !")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur piétine a plusieur reprise mais n'attaque pas. Vous avez de la chance !")
       message.channel.send({embed})
     }
     if (31 <= roll && roll <= 90){
@@ -21619,7 +21687,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  saute en avant et vous lance férocement le rocher qu'il tient, il inflige " + degat + " points de dégâts")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec son épaule en avant. Il vous percutte violemment vous faisant perdre " + degat + " points de dégâts et vous étourdit pendant " + tours + " tour(s).")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21628,7 +21696,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur  prend dans la vitesse, et explose la roche qu'il tient sur vous puis en récupère un autre, il inflige " + degatCrit + " ")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauté dans les airs et d'écraser ses pieds contre vous violemment, vous etes projeté au sol et perdez " + degatCrit + " ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21637,32 +21705,32 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bourdon flâneur attaque")) {
-    const degat = Math.floor(36 * Math.random() + 75)
-    const degatCrit = Math.floor(76 * Math.random() + 150)
+    const degat = Math.floor(46 * Math.random() + 95)
+    const degatCrit = Math.floor(76 * Math.random() + 250)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
+    if (roll <= 35){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et observe juste la situation, vous avez de la chance !")
+      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance ?!")
       message.channel.send({embed})
     }
-    if (26 <= roll && roll <= 90){
+    if (36 <= roll && roll <= 97){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute viollemment vous perdez " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (91 <= roll){
+    if (98 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Bourdon flâneur bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + degatCrit + " ")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache a son propre dard, mourrant dans le procédée. Il vous inflige  " + degatCrit + " de dégat de poison perce armure. ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21679,25 +21747,15 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit bombe le torse c'est tout, vous avez de la chance")
       message.channel.send({embed})
     }
-    if (26 <= roll && roll <= 90){
+    if (26 <= roll && roll <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-    if (91 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous fait saignez et " +
-                                                   "vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit vous attrape et vous jette a terre, il inflige " + degat)
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21706,23 +21764,43 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus lourd attaque")) {
-    const degat = Math.floor(71 * Math.random() + 120)
+    const degat = Math.floor(51 * Math.random() + 120)
+    const degatraté = Math.floor(31 * Math.random() + 40)
+    const degatcrit = Math.floor(61 * Math.random() + 130)
+    const cible = Math.floor(5 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 35){
+    if (roll <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vola de gauche a droite et attend le moment d'attaquer.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégats.")
       message.channel.send({embed})
     }
-    if (36 <= roll){
+    if (21 <= roll & roll <= 55){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd vole vers vous rapidement et vous percute, " +
-                                                     "il inflige " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (56 <= roll & roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueur(s) et vous inflige " + degat + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd prend de l'élan et se jette dans les airs en se cambrant en arrière avant d'écraser sa hache imposante contre vous de toute sa puissance. Vous perdez " + degatcrit + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21735,14 +21813,27 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Taurus chargeur défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":shield: Taurus chargeur  :" , ":shield: Le Taurus chargeur  essaye d'utiliser sa roche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
-    message.channel.send({embed})
+    let Dégâts = args.slice(2).join(" : ");
+    const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const Esquive = Math.floor(21 * Math.random() + 35)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinté sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + "")
+      message.channel.send({embed})
+    }
+    if (41 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur feinte votre attaque et se retrouve dans votre dos, il vous attrape par la taille et vous envoie valser vers l'arrière. Vous percutez le sol et perdez " + Parade + " points de dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -21751,15 +21842,15 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bourdon flâneur défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-    const paradeReussie = Math.floor(21 * Math.random() + 35)
+    const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const Esquive = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
+      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vrombit bruyamment et feinte de vous percuter, votre attaque est interrompue.")
       message.channel.send({embed})
     }
     if (41 <= roll){
@@ -21767,8 +21858,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vole rapidement et evite votre coup, " +
-                                                 "et lache une poudre rouge clair qui vous faire perdre " + paradeReussie + " points d'attaque")
+      .addField(":shield: Bourdon flâneur :" , ":shield: Le Bourdon flâneur vrombit bruyamment et feinte de vous percuter mais vous voyez à travers son bluff et le touchez sans problème. Vous lui infligez " + Esquiveraté + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21806,14 +21896,27 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Taurus lourd défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
-    message.channel.send({embed})
+    let Dégâts = args.slice(2).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const paradeReussie = Math.floor(21 * Math.random() + 35)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attauqe vous lui infigez " + paradeRatee + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous etes sonnez et ne pouvez pas vous défendre ou attaquer pour un tour.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
@@ -21864,12 +21967,12 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + carapace + "\n" +
-                                           ":syringe: Ailles de Bourdon flâneur  : " + ailes+ "\n" +
-                                           ":syringe: Peau Bourdon flâneur: " + antenne  + "\n" +
-                                           ":ticket: Hemolymphe : " + hemolymphe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
-                                           ":scales: Armure taurus au choix : " + oeil + "\n" +
+    .addField(":moneybag: Récompenses :" , ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
+                                           ":butterfly: Ailles de bourdon flâneur  : " + ailes+ "\n" +
+                                           ":syringe: Antenne flâneur: " + antenne  + "\n" +
+                                           ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
+                                           ":alembic: Hemolymphe : " + hemolymphe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -21922,12 +22025,12 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus : " + peau + "\n" +
-                                           ":syringe: Poile de Taurus : " + poil + "\n" +
-                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
-                                           ":ticket: Viande de taurus : " + viande + "\n" +
-                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":knife: Peau de Taurus : " + peau + "\n" +
+                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                                           ":ox: Poile de Taurus : " + poil + "\n" +
+                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
+                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -21981,11 +22084,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus lourd : " + peau + "\n" +
-                                           ":syringe: Poile de Taurus lourd : " + poil + "\n" +
-                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
-                                           ":ticket: Viande de taurus : " + viande + "\n" +
-                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                          ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                                           ":ox: Poile de Taurus lourd : " + poil + "\n" +
+                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
+                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -22039,11 +22142,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus adroit : " + peau + "\n" +
-                                           ":syringe: Poile de Taurus adroit : " + poil + "\n" +
-                                           ":gem: Corne de Taurus  : "+ corne + "\n" +
-                                           ":ticket: Viande de taurus : " + viande + "\n" +
-                                           ":scales: Scalpe de Taurus : " + scalpe + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                                           ":ox: Poile de Taurus adroit : " + poil + "\n" +
+                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
+                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23218,11 +23321,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Carapace de guêpe vicace : " + carapace + "\n" +
-                                           ":syringe: Ailles de guêpe Vivace  : " + ailes+ "\n" +
-                                           ":syringe: Dard guêpe Vivace: " + dard  + "\n" +
-                                           ":scales: Oeil de guêpe vicace : " + oeil + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":shell: Carapace de guêpe vicace : " + carapace + "\n" +
+                                           ":butterfly: Ailles de guêpe Vivace  : " + ailes+ "\n" +
+                                           ":bee: Dard guêpe Vivace: " + dard  + "\n" +
+                                           ":eyes: Oeil de guêpe vicace : " + oeil + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23273,11 +23376,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Carapace du frelon foudroyant : " + carapace + "\n" +
-                                           ":syringe: Ailles du frelon foudroyant  : " + ailes+ "\n" +
-                                           ":syringe: Dard du frelon foudroyant: " + dard  + "\n" +
-                                           ":scales: Oeil du frelon foudroyant : " + oeil + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":shell: Carapace du frelon foudroyant : " + carapace + "\n" +
+                                           ":butterfly: Ailles du frelon foudroyant  : " + ailes+ "\n" +
+                                           ":bee: Dard du frelon foudroyant: " + dard  + "\n" +
+                                           ":eyes: Oeil du frelon foudroyant : " + oeil + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23331,11 +23434,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de vache vrombissante : " + peau + "\n" +
-                                           ":syringe: Oreille de vache vrombissante : " + oreille + "\n" +
-                                           ":gem: Sabot de vache vrombissante  : "+ sabot + "\n" +
-                                           ":ticket: Viande de vache vrombissante : " + viande + "\n" +
-                                           ":scales: Lait de vache vrombissante : " + lait + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":poultry_leg: Oreille de vache vrombissante : " + oreille + "\n" +
+                                           ":poultry_leg: Viande de vache vrombissante : " + viande + "\n" +
+                                           ":ox: Sabot de vache vrombissante  : "+ sabot + "\n" +
+                                           ":milk: Lait de vache vrombissante : " + lait + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -23389,11 +23492,11 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de boeuf vrombissant : " + peau + "\n" +
-                                           ":syringe: Corne de boeuf vrombissant : " + corne + "\n" +
-                                           ":gem: Sabot de boeuf vrombissant  : "+ sabot + "\n" +
-                                           ":ticket: Viande de boeuf vrombissant : " + viande + "\n" +
-                                           ":scales: Instestin de boeuf vrombissant : " + instestin + "\n" +
-                                           ":ticket: Oeuf brisé : " + oeufB + "\n" +
+                                           ":poultry_leg: Viande de boeuf vrombissant : " + viande + "\n" +
+                                           ":dagger: Corne de boeuf vrombissant : " + corne + "\n" +
+                                           ":ox: Sabot de boeuf vrombissant  : "+ sabot + "\n"
+                                           ":bacon: Instestin de boeuf vrombissant : " + instestin + "\n" +
+                                           ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
