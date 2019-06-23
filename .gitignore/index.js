@@ -20045,7 +20045,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Lombric irrégulier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
-    .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
+    .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590538708814528514/Giant_centipede.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 680")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lombric irrégulier attaque`")
     .addField(":shield: Lorsque le Lombric irrégulier reçoit un coup :" , ":shield: `=Lombric irrégulier défense : [Points de dégâts de votre coup]`")
@@ -20061,7 +20061,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
-    .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
+    .setImage("https://i.ytimg.com/vi/F3lintstLuQ/hqdefault.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
     .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
@@ -20077,7 +20077,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bousier colossal :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
-    .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
+    .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590533577486106650/Bousier.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 950")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bousier colossal attaque`")
     .addField(":shield: Lorsque le Bousier colossal reçoit un coup :" , ":shield: `=Bousier colossal défense : [Points de dégâts de votre coup]`")
@@ -20156,7 +20156,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Neoridas attaque")) {
-      const degat = Math.floor(26 * Math.random() + 55)
+      const degat = Math.floor(26 * Math.random() + 25)
       const soin = Math.floor(36 * Math.random() + 115)
       const degatCrit = Math.floor(76 * Math.random() + 150)
       const roll = Math.floor(100 * Math.random() + 1)
@@ -20268,7 +20268,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
-      const degat = Math.floor(71 * Math.random() + 120)
+      const degat = Math.floor(31 * Math.random() + 90)
       const armure = Math.floor(21 * Math.random() + 20)
       const cible = Math.floor(3 * Math.random() + 1)
       const roll = Math.floor(100 * Math.random() + 1)
