@@ -20148,7 +20148,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il resortira a la fin du Tour Jouer et infligera " + degatcrit + " points de dégâts.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour Jouer et infligera " + degatcrit + " points de dégâts.")
         .setTimestamp()
         message.channel.send({embed})
     }}
@@ -20315,77 +20315,6 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Bousier colossal défense")) {
-    let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":shield: Bousier colossal :" , ":shield: Le Bousier colossal essaye d'utiliser sa roche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Palliassit défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-    const paradeReussie = Math.floor(21 * Math.random() + 35)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 40){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Palliassit :" , ":shield: Le Palliassit vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + paradeRatee + " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (41 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Palliassit :" , ":shield: Le Palliassit vole rapidement et evite votre coup, " +
-                                                 "et lache une poudre rouge clair qui vous faire perdre " + paradeReussie + " points d'attaque")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Serpentard défense")) {
-    let Dégâts = args.slice(2).join(" : ");
-    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Serpentard :" , ":shield: Le Serpentard tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Serpentard :" , ":shield: Le Serpentard se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-});
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Lombric irrégulier défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
@@ -20395,7 +20324,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric irrégulier tente d'esquiver votre coup en entrant dans le sol mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle matérialisé ici par chance pour vous, il perd " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -20403,7 +20332,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric irrégulier se faufile dans le sol. Vous ne pouvez pas l'atteindre.")
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric sent votre coup arriver, essayez d'être plus discret la prochaine fois ! Il plonge alors dans le sol pour l'éviter sans se soucier de l'environnement et disparaît de votre champ de vision pour réapparaître quelques mètres plus loin en gesticulant.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20413,15 +20342,116 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Doryphore géant défense")) {
+  if (message.content.startsWith(prefix + "Neoridas défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const Esquiverate = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+    const Esquivecrit = Math.floor(21 * Math.random() + 35)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + Esquiverate + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (21 <= roll & roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vous fonce dessus et esquive votre coup de justesse avant de tourner autour de votre tête pour se moquer de vous.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et evite votre coup puis lache une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Venom défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Venom :" , ":shield: Le Venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Venom :" , ":shield: Le Venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Bousier colossal défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
+    .addField(":shield: Bousier colossal :" , ":shield: Le Bousier colossal utilise l'énorme pierre qu'il tient pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
     message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Doryphore géant défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure mais expose dans le même temps une ouverture dans l'une des jointure de sa carapace. Vous profitez de cette faibesse et lui infligé  " + degatcrit + " points de dégâts perce armure")
+      message.channel.send({embed})
+    }
+    if (6 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (95 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
