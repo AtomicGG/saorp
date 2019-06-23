@@ -20499,11 +20499,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Bave de lombric irrégulier  : " + bave + "\n" +
-                                           ":syringe: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
-                                           ":gem: Langue de lombric irrégulier : "+ langue + "\n" +
-                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
-                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
+    .addField(":moneybag: Récompenses :" , ":alembic: Bave de lombric irrégulier  : " + bave + "\n" +
+                                           ":knife: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
+                                           ":tongue: Langue de lombric irrégulier : "+ langue + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20555,19 +20555,19 @@ bot.on('message', message => {
       xp = 0
     }
     const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Poudre de poison : " + poudrePoison + "\n" +
-                                           ":syringe: Ailles de Palliassit  : " + ailes+ "\n" +
-                                           ":syringe: Peau Palliassit : " + peau + "\n" +
-                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
-                                           ":ticket: Oeuf bavant : " + oeufB + "\n" +
-                                           ":scales: Armure bug au choix : " + armureBug + "\n" +
-                                           ":scales: Bijoux bug au choix : " + bijouxBug + "\n" +
-                                           ":sparkles: Points d'expérience : " + xp + "\n" +
-                                           ":large_orange_diamond: Cols : " + cols)
+     .setColor(3447003)
+     .setAuthor(message.author.username , message.author.avatarURL)
+     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+     .addField(":moneybag: Récompenses :" , ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
+                                            ":butterfly: Ailles de Neoridas  : " + ailes+ "\n" +
+                                            ":knife: Peau Neoridas : " + peau + "\n" +
+                                            ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                                            ":scales: Armure bug au choix : " + armureBug + "\n" +
+                                            ":scales: Bijoux bug au choix : " + bijouxBug + "\n" +
+                                            ":gem: Oeuf bavant : " + oeufB + "\n" +
+                                            ":sparkles: Points d'expérience : " + xp + "\n" +
+                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -20613,9 +20613,9 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Pattes de Boussier colosal: " + patte + "\n" +
-                                           ":syringe: Carapace de Boussier colosal : " + carapace + "\n" +
-                                           ":gem: Corne de Boussier colosal : "+ corne + "\n" +
-                                           ":ticket: Hémolymphe : " + hemolyphe + "\n" +
+                                           ":shell: Carapace de Boussier colosal : " + carapace + "\n" +
+                                           ":dagger: Corne de Boussier colosal : "+ corne + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
@@ -20665,10 +20665,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: crochetPoison de Serpentard : " + crochetPoison + "\n" +
-                                           ":knife: Peau de Serpentard : " + Peau + "\n" +
-                                           ":eye: Queue de Serpentard : " + queueSerpent + "\n" +
-                                           ":cupid: Venin de Serpentard : " + Venin + "\n" +
+    .addField(":moneybag: Récompenses :" , ":skull: Crochet de Venom : " + crochetPoison + "\n" +
+                                           ":knife: Peau de Venom : " + Peau + "\n" +
+                                           ":snake: Queue de Venom : " + queueSerpent + "\n" +
+                                           ":alembic: Venin de Venom : " + Venin + "\n" +
                                            ":gem: Oeuf bavant : " + Oeufs + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20725,13 +20725,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":knife: Carapace de Doryphore géant : " + carapace + "\n" +
-                                           ":gem: Aile de Doryphore géant : " + aile + "\n" +
-                                           ":scales: Patte Doryphore géant : " + patte + "\n" +
+    .addField(":moneybag: Récompenses :" , ":shell: Carapace de Doryphore géant : " + carapace + "\n" +
+                                           ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
+                                           ":poultry_leg:  Patte Doryphore géant : " + patte + "\n" +
                                            ":scales: Arme de bug à une main au choix : " + armeBugUneMain + "\n" +
                                            ":scales: Arme de bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
-                                           ":scales: Hémolymphe : " + hemolyphe+ "\n" +
-                                           ":scales: Oeuf bavant : " + oeufB + "\n" +
+                                           ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
+                                           ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
