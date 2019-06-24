@@ -20982,8 +20982,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
-  const Défense = (Math.floor((4)*Math.random()+7))
+  const Défense = Math.floor(5 * Math.random() + 9)
+  const HP = Math.floor(11 * Math.random() + 30)
   if (message.content.startsWith(prefix + "Fabrication de l'anneau bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -20997,8 +20997,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
-  const Défense = (Math.floor((4)*Math.random()+7))
+  const Défense = Math.floor(5 * Math.random() + 9)
+  const HP = Math.floor(11 * Math.random() + 30)
   if (message.content.startsWith(prefix + "Fabrication de l'amulette bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21012,8 +21012,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 30)
+  const Défense = Math.floor(2 * Math.random() + 4)
   if (message.content.startsWith(prefix + "Fabrication du casque bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21027,7 +21027,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
+  const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(3 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des épaulières bug")) {
     const embed = new Discord.RichEmbed()
@@ -21042,7 +21042,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
+  const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(3 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication de la cape bug")) {
     const embed = new Discord.RichEmbed()
@@ -21057,7 +21057,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
+  const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(3 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication du plastron bug")) {
     const embed = new Discord.RichEmbed()
@@ -21072,7 +21072,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
+  const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(3 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des gantelets bug")) {
     const embed = new Discord.RichEmbed()
@@ -21087,7 +21087,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
+  const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(3 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication de la ceinture bug")) {
     const embed = new Discord.RichEmbed()
@@ -21102,7 +21102,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
+  const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(3 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des jambières bug")) {
     const embed = new Discord.RichEmbed()
@@ -21117,7 +21117,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(16 * Math.random() + 35)
+  const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(3 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des bottes bug")) {
     const embed = new Discord.RichEmbed()
@@ -21132,8 +21132,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = (Math.floor((3)*Math.random()+6))
+  const Défense = Math.floor(5 * Math.random() + 8)
+  const HP = Math.floor(11 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte de l'anneau bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21147,8 +21147,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = (Math.floor((3)*Math.random()+6))
+  const Défense = Math.floor(5 * Math.random() + 8)
+  const HP = Math.floor(11 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte de l'amulette bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21162,8 +21162,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte du casque bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21177,8 +21177,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte des épaulières bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21192,8 +21192,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte de la cape bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21207,8 +21207,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte du plastron bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21222,8 +21222,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte des gantelets bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21237,8 +21237,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte de la ceinture bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21252,8 +21252,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte des jambières bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21267,8 +21267,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(1 * Math.random() + 3)
+  const HP = Math.floor(11 * Math.random() + 20)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte des bottes bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -24809,7 +24809,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée de bug à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 30)
+    const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24823,7 +24823,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache de bug à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 30)
+    const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24837,7 +24837,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse de bug à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 30)
+    const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24851,7 +24851,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du glaive de bug à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 30)
+    const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24865,7 +24865,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana de bug à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 30)
+    const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24879,7 +24879,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière de bug à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 30)
+    const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24893,7 +24893,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre de bug à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 30)
+    const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24907,7 +24907,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée de bug à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 15)
+    const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24921,7 +24921,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse de bug à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 15)
+    const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24935,7 +24935,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache de bug à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 15)
+    const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24949,7 +24949,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière de bug à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 15)
+    const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24963,7 +24963,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre de bug à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 15)
+    const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24977,7 +24977,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la dague de bug à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 15)
+    const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24991,8 +24991,8 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  const Défense = Math.floor(3 * Math.random() + 4)
-  const HP = Math.floor(6 * Math.random() + 10)
+  const Défense = Math.floor(3 * Math.random() + 8)
+  const HP = Math.floor(11 * Math.random() + 25)
   if (message.content.startsWith(prefix + "Fabrication du bouclier de bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -25007,7 +25007,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana de bug à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 15)
+    const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
