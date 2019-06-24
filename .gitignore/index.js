@@ -13652,7 +13652,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Faux du roi déchu à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage ou dans les coffres de Montagne et de Grotte !\n\n:crossed_swords: Améliore le 'Coup normal' de 2 points\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:crossed_swords: Améliore le 'Coup létal' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchu à deux mains`")
+    .addField(":scales: Faux du roi déchu à deux mains :" , ":scales: C'est une faux extrêmement rare uniquement possible à trouver dans le donjon sauvage ou dans les coffres de Montagne et de Grotte !\n\n:crossed_swords: Améliore le 'Coup normal' de 2 points\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:crossed_swords: Améliore le 'Coup létal' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la faux du roi déchu à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -13665,7 +13665,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ecu du roi déchu à une main :" , ":scales: C'est un écu extrêmement rare uniquement possible à trouver dans les coffres de Montagne et de Grotte !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:crossed_swords: Améliore 'Interception' de 1 point\n\n:crossed_swords: Améliore le 'cri de provocation' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Si vous le portez, vous ne pouvez pas porter un autre bouclier en même temps !\n \n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'écu du roi déchu à une main`")
+    .addField(":scales: Ecu du roi déchu à une main :" , ":scales: C'est un écu extrêmement rare uniquement possible à trouver dans les coffres de Montagne et de Grotte !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:crossed_swords: Améliore 'Interception' de 1 point\n\n:crossed_swords: Améliore le 'cri de provocation' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:warning: Si vous le portez, vous ne pouvez pas porter un autre bouclier en même temps !\n \n:large_orange_diamond: Prix de revente : 500 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'écu du roi déchu à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20156,7 +20156,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Neoridas attaque")) {
-      const degat = Math.floor(26 * Math.random() + 25)
+      const degat = Math.floor(16 * Math.random() + 25)
       const soin = Math.floor(36 * Math.random() + 115)
       const degatCrit = Math.floor(76 * Math.random() + 150)
       const roll = Math.floor(100 * Math.random() + 1)
