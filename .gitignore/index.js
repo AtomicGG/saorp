@@ -20729,8 +20729,8 @@ bot.on('message', message => {
                                            ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
                                            ":poultry_leg:  Patte Doryphore géant : " + patte + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
-                                           ":scales: Arme de bug à une main au choix : " + armeBugUneMain + "\n" +
-                                           ":scales: Arme de bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":scales: Arme bug à une main au choix : " + armeBugUneMain + "\n" +
+                                           ":scales: Arme bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
                                            ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -24615,12 +24615,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epée de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Epée bug à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de bug à deux mains :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée de bug à deux mains`")
+    .addField(":scales: Epée bug à deux mains :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée bug à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24628,12 +24628,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Hache de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Hache bug à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de bug à deux mains :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache de bug à deux mains`")
+    .addField(":scales: Hache bug à deux mains :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache bug à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24641,12 +24641,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Masse de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Masse bug à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de bug à deux mains :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  bug à deux mains`")
+    .addField(":scales: Masse bug à deux mains :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  bug à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24654,12 +24654,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Rapière de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Rapière bug à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de bug à deux mains :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de bug à deux mains`")
+    .addField(":scales: Rapière bug à deux mains :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière bug à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24667,12 +24667,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Glaive de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Glaive bug à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive de bug à deux mains :" , ":scales: C'est un glaive faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de bug à deux mains`")
+    .addField(":scales: Glaive bug à deux mains :" , ":scales: C'est un glaive faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière bug à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24680,12 +24680,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cimeterre de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Cimeterre bug à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de bug à deux mains :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre de bug à deux mains`")
+    .addField(":scales: Cimeterre bug à deux mains :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre bug à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24693,12 +24693,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Katana de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Katana bug à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de bug à deux mains :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana de bug à deux mains`")
+    .addField(":scales: Katana bug à deux mains :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana bug à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24706,12 +24706,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epée de bug à une main")) {
+  if (message.content.startsWith(prefix + "Epée bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de bug à un main :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée de bug à une main`")
+    .addField(":scales: Epée de bug à un main :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24719,12 +24719,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Dague de bug à une main")) {
+  if (message.content.startsWith(prefix + "Dague bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de bug à un main :" , ":scales: C'est une dague faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague de bug à une main`")
+    .addField(":scales: Dague de bug à un main :" , ":scales: C'est une dague faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24732,12 +24732,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Masse de bug à une main")) {
+  if (message.content.startsWith(prefix + "Masse bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de bug à un main :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de bug à une main`")
+    .addField(":scales: Masse de bug à un main :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24745,12 +24745,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Hache de bug à une main")) {
+  if (message.content.startsWith(prefix + "Hache bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de bug à un main :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache de bug à une main`")
+    .addField(":scales: Hache de bug à un main :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24758,12 +24758,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cimeterre de bug à une main")) {
+  if (message.content.startsWith(prefix + "Cimeterre bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de bug à un main :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre de bug à une main`")
+    .addField(":scales: Cimeterre de bug à un main :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24771,12 +24771,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Katana de bug à une main")) {
+  if (message.content.startsWith(prefix + "Katana bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de bug à un main :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana de bug à une main`")
+    .addField(":scales: Katana de bug à un main :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24784,12 +24784,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Rapière de bug à une main")) {
+  if (message.content.startsWith(prefix + "Rapière bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de bug à un main :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de bug à une main`")
+    .addField(":scales: Rapière de bug à un main :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24797,12 +24797,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bouclier de bug à une main")) {
+  if (message.content.startsWith(prefix + "Bouclier bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de bug à un main :" , ":scales: C'est un bouclier faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier de bug à une main`")
+    .addField(":scales: Bouclier de bug à un main :" , ":scales: C'est un bouclier faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier bug à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24812,13 +24812,13 @@ bot.on('message', message => {
 // Arme bug fabrication
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de l'épée de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'épée bug à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Epée bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24826,13 +24826,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la hache de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la hache bug à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Hache bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24840,13 +24840,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la masse de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la masse bug à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Masse bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24854,13 +24854,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du glaive de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du glaive bug à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive de bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Glaive bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24868,13 +24868,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du katana de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du katana bug à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Katana bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24882,13 +24882,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la rapière de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la rapière bug à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Rapière bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24896,13 +24896,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du cimeterre de bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du cimeterre bug à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Cimeterre bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24910,13 +24910,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de l'épée de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'épée bug à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Epée bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24924,13 +24924,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la masse de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la masse bug à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Masse bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24938,13 +24938,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la hache de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la hache bug à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Hache bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24952,13 +24952,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la rapière de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la rapière bug à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Rapière bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24966,13 +24966,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du cimeterre de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du cimeterre bug à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Cimeterre bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24980,13 +24980,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la dague de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la dague bug à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Dague bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24997,12 +24997,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = Math.floor(3 * Math.random() + 8)
   const HP = Math.floor(11 * Math.random() + 25)
-  if (message.content.startsWith(prefix + "Fabrication du bouclier de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du bouclier bug à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25010,13 +25010,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du katana de bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du katana bug à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Katana bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
