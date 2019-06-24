@@ -20423,7 +20423,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Doryphore géant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 0.2 + 1) * Math.random() + (Dégâts * 0.3))
+    const degat = Math.floor((Dégâts * 0.2 + 1) * Math.random() + (Dégâts * 0.4))
     const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 5){
@@ -25746,7 +25746,7 @@ if (message.content === prefix + "Ragoût de taurus") {
 
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de taurus")) {
-  const HP = (Math.floor((21)*Math.random()+60))
+  const HP = (Math.floor((21)*Math.random()+80))
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
