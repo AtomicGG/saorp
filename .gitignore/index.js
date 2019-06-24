@@ -20123,8 +20123,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
-      const degat = Math.floor(46 * Math.random() + 85)
-      const degatcrit = Math.floor(46 * Math.random() + 105)
+      const degat = Math.floor(26 * Math.random() + 95)
+      const degatcrit = Math.floor(26 * Math.random() + 105)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 35){
         const embed = new Discord.RichEmbed()
@@ -20157,7 +20157,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Neoridas attaque")) {
       const degat = Math.floor(16 * Math.random() + 25)
-      const soin = Math.floor(36 * Math.random() + 115)
+      const soin = Math.floor(31 * Math.random() + 70)
       const degatCrit = Math.floor(76 * Math.random() + 150)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 25){
