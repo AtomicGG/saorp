@@ -21904,7 +21904,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Taurus lourd défense")) {
-    let Dégâts = args.slice(2).join(" : ");
+    let Dégâts = args.slice(3).join(" : ");
     const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const paradeReussie = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -21913,7 +21913,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attauqe vous lui infigez " + paradeRatee + " points de dégâts")
+      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attaque vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
     if (96 <= roll){
