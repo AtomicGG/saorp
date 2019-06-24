@@ -20423,7 +20423,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Doryphore géant défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const degat = Math.floor((Dégâts * 0.2 + 1) * Math.random() + (Dégâts * 0.4))
+    const degat = Math.floor((Dégâts * 0.3 + 1) * Math.random() + (Dégâts * 0.4))
     const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 5){
