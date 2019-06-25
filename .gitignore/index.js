@@ -22440,8 +22440,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte du casque taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -22455,8 +22455,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte des épaulières taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -22470,8 +22470,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte de la cape taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -22485,8 +22485,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte du plastron taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -22500,8 +22500,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte des gantelets taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -22515,8 +22515,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte de la ceinture taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -22530,8 +22530,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte des jambières taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -22545,8 +22545,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(2 * Math.random() + 2)
-  const HP = Math.floor(6 * Math.random() + 50)
+  const Dégâts = Math.floor(2 * Math.random() + 1)
+  const HP = Math.floor(6 * Math.random() + 45)
   if (message.content.startsWith(prefix + "Découverte des bottes taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
