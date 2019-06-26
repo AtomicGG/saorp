@@ -20062,7 +20062,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("https://i.ytimg.com/vi/F3lintstLuQ/hqdefault.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 __Il fuit si il y a aucun monstre ou seulement des Neoridas avec lui__")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
     .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -21821,7 +21821,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Bourdon flâneur défense")) {
-    let Dégâts = args.slice(2).join(" : ");
+    let Dégâts = args.slice(3).join(" : ");
     const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const Esquive = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -21849,7 +21849,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Taurus chargeur défense")) {
-    let Dégâts = args.slice(2).join(" : ");
+    let Dégâts = args.slice(3).join(" : ");
     const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const Esquive = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -21877,7 +21877,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Fort Taurus adroit défense")) {
-    let Dégâts = args.slice(2).join(" : ");
+    let Dégâts = args.slice(4).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 70){
