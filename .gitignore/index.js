@@ -20046,7 +20046,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Lombric irrégulier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590538708814528514/Giant_centipede.png")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 680")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 880")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lombric irrégulier attaque`")
     .addField(":shield: Lorsque le Lombric irrégulier reçoit un coup :" , ":shield: `=Lombric irrégulier défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Lombric irrégulier récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20062,7 +20062,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("https://i.ytimg.com/vi/F3lintstLuQ/hqdefault.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
     .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20094,7 +20094,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("https://i.pinimg.com/originals/7c/0c/e9/7c0ce98ffb8ce67f5e687304f3a1cef7.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 650")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1050")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
     .addField(":shield: Lorsque le Venom reçoit un coup :" , ":shield: `=Venom défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Venom récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20110,7 +20110,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Doryphore géant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
     .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1550 :shield: 50")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250 :shield: 50")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Doryphore géant attaque`")
     .addField(":shield: Lorsque le Doryphore géant reçoit un coup :" , ":shield: `=Doryphore géant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Doryphore géant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20123,8 +20123,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
-      const degat = Math.floor(26 * Math.random() + 95)
-      const degatcrit = Math.floor(26 * Math.random() + 105)
+      const degat = Math.floor(26 * Math.random() + 120)
+      const degatcrit = Math.floor(36 * Math.random() + 135)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 35){
         const embed = new Discord.RichEmbed()
@@ -20200,10 +20200,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Venom attaque")) {
-      const degat = Math.floor(41 * Math.random() + 70)
+      const degat = Math.floor(31 * Math.random() + 90)
       const poison = Math.floor(11 * Math.random() + 30)
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 30){
+      if (roll <= 15){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20211,7 +20211,7 @@ bot.on('message', message => {
         .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
         message.channel.send({embed})
       }
-      if (31 <= roll && roll <= 65){
+      if (16 <= roll && roll <= 65){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20234,8 +20234,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bousier colossal attaque")) {
-      const degat = Math.floor(46 * Math.random() + 115)
-      const degatCrit = Math.floor(46 * Math.random() + 135)
+      const degat = Math.floor(36 * Math.random() + 135)
+      const degatCrit = Math.floor(36 * Math.random() + 145)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 30){
         const embed = new Discord.RichEmbed()
@@ -20268,7 +20268,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
-      const degat = Math.floor(31 * Math.random() + 90)
+      const degat = Math.floor(31 * Math.random() + 120)
       const armure = Math.floor(21 * Math.random() + 20)
       const cible = Math.floor(3 * Math.random() + 1)
       const roll = Math.floor(100 * Math.random() + 1)
@@ -20381,7 +20381,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Venom défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const degat = Math.floor((Dégâts * 0.3 + 1) * Math.random() + (Dégâts * 0.8))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 65){
       const embed = new Discord.RichEmbed()
