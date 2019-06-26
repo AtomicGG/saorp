@@ -21850,8 +21850,8 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Taurus chargeur défense")) {
     let Dégâts = args.slice(3).join(" : ");
-    const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-    const Esquive = Math.floor(21 * Math.random() + 35)
+    const Paraderaté  = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const Parade = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 40){
       const embed = new Discord.RichEmbed()
