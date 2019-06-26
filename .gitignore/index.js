@@ -21703,8 +21703,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus chargeur attaque")) {
-    const degat = Math.floor(46 * Math.random() + 155)
-    const degatCrit = Math.floor(46 * Math.random() + 175)
+    const degat = Math.floor(36 * Math.random() + 125)
+    const degatCrit = Math.floor(36 * Math.random() + 145)
     const tours = Math.floor(2 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 30){
@@ -21772,9 +21772,9 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus lourd attaque")) {
-    const degat = Math.floor(51 * Math.random() + 120)
-    const degatraté = Math.floor(31 * Math.random() + 40)
-    const degatcrit = Math.floor(61 * Math.random() + 130)
+    const degat = Math.floor(31 * Math.random() + 130)
+    const degatraté = Math.floor(21 * Math.random() + 40)
+    const degatcrit = Math.floor(31 * Math.random() + 150)
     const cible = Math.floor(5 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
