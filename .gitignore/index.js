@@ -2869,13 +2869,13 @@ bot.on('message', message => {
   }
 });
 
-// Coups & Défenses | Coup de 1 point
+// Coups & Défenses | Coup létal
 
 bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Coup létal")) {
     let position = args.indexOf(":");
-    let amelioration = args.slice(14,position - 1);
+    let amelioration = args.slice(13,position - 1);
     let degat = args.slice(position + 2);
     if (amelioration == ""){
       const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
@@ -2895,7 +2895,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Coup létalll :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+        .addField(":crossed_swords: Coup létal :" , ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
         .setTimestamp()
         message.channel.send({embed})
