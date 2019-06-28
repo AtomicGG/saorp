@@ -20139,7 +20139,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante sur le sol, une fois à portée il vient s'enrouler autour de vous avant de vous resserrer de plus en plus à la manière d'un serpent, vous perdez " + degat + " points de dégâts.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante sur le sol, une fois à portée il vient s'enrouler autour de vous avant de vous resserrer de plus en plus à la manière d'un serpent, il vous inflige " + degat + " points de dégâts.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20324,7 +20324,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle matérialisé ici par chance pour vous, il perd " + degat + " points de dégâts")
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle matérialisé ici par chance pour vous, il se prend " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -21703,8 +21703,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus chargeur attaque")) {
-    const degat = Math.floor(36 * Math.random() + 125)
-    const degatCrit = Math.floor(36 * Math.random() + 145)
+    const degat = Math.floor(36 * Math.random() + 105)
+    const degatCrit = Math.floor(36 * Math.random() + 115)
     const tours = Math.floor(2 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 30){
@@ -21720,7 +21720,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec son épaule en avant. Il vous percutte violemment vous faisant perdre " + degat + " points de dégâts et vous étourdit pendant " + tours + " tour(s).")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec son épaule en avant. Il vous percutte violemment vous faisant perdre " + degat + " points de dégâts et vous étourdit pendant 1 tour.")
       .setTimestamp()
       message.channel.send({embed})
     }
