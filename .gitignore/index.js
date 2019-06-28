@@ -769,6 +769,24 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Mariage
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Mariage")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les mariage :" , "Le mariage est l'union sacré de deux personne, pour se marié il faut qu'un dirigeant fasse l'union aux temple.\n\n" +
+                                    "Un couple marié se partage leur inventaire. Il vous faudra bien faire attention. \n\n" +
+                                    "Si un des conjoint meurt. L'inventaire reviens donc aux conjoint encore en vie.")
+    .setImage("https://i0.wp.com/s-media-cache-ak0.pinimg.com/736x/f0/43/68/f0436863981bbbae5fc257e2490bd39f--sword-art-online-asuna-kirito-asuna.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+
 // Roll
 
 bot.on('message', message => {
