@@ -25871,7 +25871,46 @@ if (message.content.startsWith(prefix + "Peau Neoridas")) {
 }
 });
 
-
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Protection du roi déchu")) {
+    if (talkedRecently.has(message.author.id+12311)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 30 minutes avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      const roll = Math.floor(100 * Math.random() + 1)
+      if(roll <= 25){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Vous ratez votre coup..." , ":crossed_swords: Dommage pour vous")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if(roll >= 26){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":crossed_swords: Vous encaissez les dégâts à la place d'un allié pendant 3 tour, vous ne pouvez pas vous défendre lorsque vous protégez votre allié. Vous pouvez vous défendre si vous êtes visé. Les dégâts sont réduit de 20% quand vous protégez votre allié.")
+        .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      talkedRecently.add(message.author.id+12311);
+      setTimeout(() => {
+        talkedRecently.delete(message.author.id+12311);
+      }, 1800000);
+    }
+  }
+});
 
 
 
