@@ -26279,6 +26279,72 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/b/b0/Ukifune.gif/revision/latest/scale-to-width-down/310?cb=20170616203924&path-prefix=fr")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang jette sa hache qui se désintègre et sort un katana. Il s'élance vers 'Daniel' et lui fait un grand coup oblique plein de rage. Il inflige '999 999 999 999 999' dégâts !")
+      message.channel.send({embed})
+    }
+    if (21 <= roll && roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , "toto")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (41 <= roll && roll <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , "totos")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (61 <= roll && roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , "totoss")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (81 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , "totosss")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.8))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Illfang :" , ":shield: L'épaisse peau d'Illfang réduit légèrement les dégâts ou non, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Illfang récompenses")) {
     const pos = args.indexOf(":");
