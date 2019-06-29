@@ -19951,7 +19951,7 @@ const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
   let lvl = args.slice(4).join(" : ");
   const control = Math.floor(120 * Math.random() + 120)
-  let xp = control - (lvl * 7)
+  let xp = control - (lvl * 6)
   const cols = Math.floor(140 * Math.random() + 140)
   const potionAmelio = Math.floor(2 * 0.25 * Math.random())
   const stuffbug = Math.floor(2 * 0.80 * Math.random())
@@ -20062,7 +20062,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Lombric irrégulier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setTitle(":japanese_ogre: Lombric irrégulier :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590538708814528514/Giant_centipede.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 880")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lombric irrégulier attaque`")
@@ -20078,7 +20078,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.ytimg.com/vi/F3lintstLuQ/hqdefault.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 __Il fuit si il y a aucun monstre ou seulement des Neoridas avec lui__")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
@@ -20094,7 +20094,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Bousier colossal :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setTitle(":japanese_ogre: Bousier colossal :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590533577486106650/Bousier.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 950")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bousier colossal attaque`")
@@ -20110,7 +20110,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 1 !")
+    .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.pinimg.com/originals/7c/0c/e9/7c0ce98ffb8ce67f5e687304f3a1cef7.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1050")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
@@ -20126,8 +20126,8 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Doryphore géant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 1 !")
-    .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
+    .setTitle(":japanese_ogre: Doryphore géant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
+    .setImage("https://i.pinimg.com/564x/b3/58/95/b3589536e2b57214261cf084caf363e1.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250 :shield: 50")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Doryphore géant attaque`")
     .addField(":shield: Lorsque le Doryphore géant reçoit un coup :" , ":shield: `=Doryphore géant défense : [Points de dégâts de votre coup]`")
@@ -20141,8 +20141,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Lombric irrégulier attaque")) {
-      const degat = Math.floor(26 * Math.random() + 120)
-      const degatcrit = Math.floor(36 * Math.random() + 135)
+      const degat = Math.floor(26 * Math.random() + 115)
+      const degatcrit = Math.floor(26 * Math.random() + 125)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 35){
         const embed = new Discord.RichEmbed()
@@ -20221,7 +20221,7 @@ bot.on('message', message => {
       const degat = Math.floor(31 * Math.random() + 90)
       const poison = Math.floor(11 * Math.random() + 30)
       const roll = Math.floor(100 * Math.random() + 1)
-      if (roll <= 15){
+      if (roll <= 35){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20229,7 +20229,7 @@ bot.on('message', message => {
         .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
         message.channel.send({embed})
       }
-      if (16 <= roll && roll <= 65){
+      if (36 <= roll && roll <= 85){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20238,7 +20238,7 @@ bot.on('message', message => {
         .setTimestamp()
         message.channel.send({embed})
       }
-      if (66 <= roll){
+      if (86 <= roll){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -20492,7 +20492,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 35) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       bave = Math.floor(2 * Math.random() + 1)
@@ -20500,7 +20500,7 @@ bot.on('message', message => {
       langue = Math.floor((2 - 0.65) * Math.random())
       hemolyphe = Math.floor((2 - 0.95) * Math.random())
       oeufB = Math.floor((2 - 0.90) * Math.random())
-      cols = Math.floor(40 * Math.random() + 40)
+      cols = Math.floor(60 * Math.random() + 60)
     } else {
       bave = Math.floor(2 * Math.random() + 1)
       peauelastic = Math.floor((2 - 0.70) * Math.random())
