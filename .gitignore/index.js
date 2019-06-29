@@ -26231,10 +26231,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594600636020949002/tumblr_mbr5n4TMrp1rsxn5po1_400.gif")
     .addField(":japanese_ogre: Illfang le seigneur kobolt :" , "\n**Illfang vous hurle dessus et rentre dans sa deuxième phase !\nIl jette sa hache à deux mains derrière lui qui commence à se désintégrer.**")
-    .addBlankField(true)
     .addField(":crossed_swords: Lorsqu'Illfang attaque dans sa phase 2 :" , ":crossed_swords: `=Illfang phase 2 attaque`")
     .addField(":shield: Lorsqu'Illfang reçoit un coup dans sa phase 2 :" , ":shield: `=Illfang phase 2  défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Illfang récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -26395,44 +26393,6 @@ bot.on('message', message => {
     }
   }
 });
-
-bot.on('message', message => {
-  const args = message.content;
-  if (message.content.startsWith(prefix + "Illfang récompenses")) {
-    const pos = args.indexOf(":");
-    const nbrPersonne = args.slice(pos - 2, pos - 1);
-    const lvl = args.slice(pos + 2)
-    let iceTea = 0
-    let cols = 0
-    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 4
-    const dif = tMob - tJoueur
-    const controle = 10 + 190 * tMob
-    const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(501 * Math.random() + 500) / 10
-    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
-    if(nbrPersonne == 1) {
-      iceTea = Math.floor(10 * Math.random() + 1)
-      cols = Math.floor(2001 * Math.random() + 3000)
-    } else {
-      iceTea = Math.floor(5 * Math.random() + 1)
-      cols = Math.floor(1001 * Math.random() + 1500)
-    }
-    if(xp <= 0) {
-      xp = 0;
-    }
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":tea: Ice Tea : " + iceTea + "L\n" +
-                                           ":sparkles: Points d'expérience : " + xp + "\n" +
-                                           ":large_orange_diamond: Cols : " + cols)
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
 
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
