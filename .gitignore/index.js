@@ -26364,8 +26364,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté et Illfang rentre dans une colère noire !" +
-                                                 "vous lui infligez " + paradeRatee + " points de dégâts et sa prochaine attaque fait 10% de dégâts supplémentaires !")
+      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté et Illfang rentre dans une colère noire !\n" +
+                                                 "Vous lui infligez " + paradeRatee + " points de dégâts et sa prochaine attaque fait 10% de dégâts supplémentaires !")
       .setTimestamp()
       message.channel.send({embed})
     }
