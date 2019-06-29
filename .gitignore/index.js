@@ -26284,33 +26284,21 @@ bot.on('message', message => {
     const pos = args.indexOf(":");
     const nbrPersonne = args.slice(pos - 2, pos - 1);
     const lvl = args.slice(pos + 2)
-    let oreille = 0
-    let echantillon = 0
-    let dent = 0
-    let carte = 0
-    let bottes = 0
+    let iceTea = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 3
+    const tMob = 4
     const dif = tMob - tJoueur
-    const controle = 110 + 90 * tMob
+    const controle = 10 + 190 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 100) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
-      oreille = Math.floor(2 * Math.random() + 1)
-      echantillon = Math.floor((2 - 0.75) * Math.random())
-      dent = Math.floor((2 - 0.85) * Math.random())
-      carte = Math.floor((2 - 0.98) * Math.random())
-      bottes = Math.floor((2 - 0.97) * Math.random())
-      cols = Math.floor(11 * Math.random() + 30)
+      iceTea = Math.floor(10 * Math.random() + 1)
+      cols = Math.floor(2001 * Math.random() + 3000)
     } else {
-      oreille = Math.floor(2 * Math.random() + 1)
-      echantillon = Math.floor((2 - 0.85) * Math.random())
-      dent = Math.floor((2 - 0.95) * Math.random())
-      carte = Math.floor((2 - 0.99) * Math.random())
-      bottes = Math.floor((2 - 0.98) * Math.random())
-      cols = Math.floor(6 * Math.random() + 25)
+      iceTea = Math.floor(5 * Math.random() + 1)
+      cols = Math.floor(1001 * Math.random() + 1500)
     }
     if(xp <= 0) {
       xp = 0;
@@ -26320,11 +26308,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
-                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
-                                           ":gem: Dent de kobolt : "+ dent + "\n" +
-                                           ":map: Carte au trésor : " + carte + "\n" +
-                                           ":scales: Bottes d'exploration kobolt : " + bottes + "\n" +
+    .addField(":moneybag: Récompenses :" , ":tea: Ice Tea : " + iceTea + "L\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
     .setTimestamp()
