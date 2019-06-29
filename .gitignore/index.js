@@ -26268,25 +26268,13 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 70){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Illfang :" , ":shield: Le kobolt explorateur tente avec sa dague de contrer votre coup mais elle est trop minuscule, vous lui infligez " + degat + " points de dégâts")
-      message.channel.send({embed})
-    }
-    if (71 <= roll){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":shield: Illfang :" , ":shield: Le kobolt explorateur effectue un coup rapide vers votre arme une fois que votre coup arrive afin de vous déstabiliser, il ne prend aucun dégâts")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.8))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Illfang :" , ":shield: L'épaisse peau d'Illfang réduit légèrement les dégâts ou non, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
   }
 });
 
