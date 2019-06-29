@@ -19891,7 +19891,7 @@ bot.on('message', message => {
                                         ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Forêt dense chasser`\n\n" +
                                         ":deciduous_tree: Pour bûcheronner, niveau 5 minimum requis dans 'Bûcheron' :\n:deciduous_tree: `=Forêt dense bûcheronner`\n\n" +
                                         ":book: Pour avoir une quête :\n:book: `=Forêt dense quête`")
-    .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
+    .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -19900,77 +19900,77 @@ bot.on('message', message => {
 // Forêt dense | quête
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Forêt dense quête"){
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (talkedRecently.has(message.author.id+18000)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
-      .setColor(3447003)
-      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-      .setTimestamp()
-      message.channel.send({embed})
-    } else {
-      if (roll <= 100) {
-        talkedRecently.add(message.author.id+18000);
-        setTimeout(() => {
-          talkedRecently.delete(message.author.id+18000);
-        }, 86400000);
-        const lombricIrregulier = Math.floor(3 * Math.random() + 2)
-        const paplliAssit = Math.floor(3 * Math.random() + 2)
-        const bousierColossal = Math.floor(3 * Math.random() + 2)
-        const snakeSneaky = Math.floor(2 * Math.random() + 1)
-        const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
-        const embed = new Discord.RichEmbed()
-        .setColor(3447003)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
-        .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
-                                                        ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                                        ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
-                                                        ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                                        ":crossed_swords: Venom : " + snakeSneaky + "\n" +
-                                                        ":crossed_swords: Doryphore géant : " + doryphoreGeant)
-        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
-        .setTimestamp()
-        message.channel.send({embed})
-      }
+if (message.content === (prefix) + "Forêt dense quête"){
+  const roll = Math.floor(100 * Math.random() + 1)
+  if (talkedRecently.has(message.author.id+18000)) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+    .setColor(3447003)
+    .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+    .setTimestamp()
+    message.channel.send({embed})
+  } else {
+    if (roll <= 100) {
       talkedRecently.add(message.author.id+18000);
       setTimeout(() => {
         talkedRecently.delete(message.author.id+18000);
       }, 86400000);
+      const lombricIrregulier = Math.floor(3 * Math.random() + 2)
+      const paplliAssit = Math.floor(3 * Math.random() + 2)
+      const bousierColossal = Math.floor(3 * Math.random() + 2)
+      const snakeSneaky = Math.floor(2 * Math.random() + 1)
+      const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
+      const embed = new Discord.RichEmbed()
+      .setColor(3447003)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
+      .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                      ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
+                                                      ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
+                                                      ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
+                                                      ":crossed_swords: Venom : " + snakeSneaky + "\n" +
+                                                      ":crossed_swords: Doryphore géant : " + doryphoreGeant)
+      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
+      .setTimestamp()
+      message.channel.send({embed})
     }
+    talkedRecently.add(message.author.id+18000);
+    setTimeout(() => {
+      talkedRecently.delete(message.author.id+18000);
+    }, 86400000);
   }
+}
 })
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
-    let lvl = args.slice(4).join(" : ");
-    const control = Math.floor(90 * Math.random() + 90)
-    let xp = control - (lvl * 6)
-    const cols = Math.floor(90 * Math.random() + 90)
-    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffbug = Math.floor(2 * 0.80 * Math.random())
-    if (xp <= 0) {
-      xp = 0
-    }
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
-    .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                    ":sparkles: Points d'expérience : " + xp + "\n" +
-                                                    ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                    ":syringe: Potion + de soin : " + potionMoyenneSoin + "\n" +
-                                                    ":scales: Equipement de bug au choix : " + stuffbug)
-    .setTimestamp()
-    message.channel.send({embed})
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
+  let lvl = args.slice(4).join(" : ");
+  const control = Math.floor(120 * Math.random() + 120)
+  let xp = control - (lvl * 7)
+  const cols = Math.floor(140 * Math.random() + 140)
+  const potionAmelio = Math.floor(2 * 0.25 * Math.random())
+  const stuffbug = Math.floor(2 * 0.80 * Math.random())
+  if (xp <= 0) {
+    xp = 0
   }
+  const embed = new Discord.RichEmbed()
+  .setColor(3447003)
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
+  .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                  ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                  ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                  ":syringe: Potion améliorée : " + potionAmelio + "\n" +
+                                                  ":scales: Equipement de bug au choix : " + stuffbug)
+  .setTimestamp()
+  message.channel.send({embed})
+}
 });
 
 // Forêt dense | Combat
