@@ -26206,11 +26206,143 @@ bot.on('message', message => {
   }
 });
 
+// Boss palier 1
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Illfang le seigneur kobolt"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Illfang le seigneur kobolt :" , ":japanese_ogre: C'est le seigneur kobolt gardant la porte vers le palier 2 !")
+    .setImage("https://cdn.myanimelist.net/s/common/uploaded_files/1444463879-27a3b94bfb547baaf570cb84ab77763f.jpeg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ??? ??? ??? ??? ???")
+    .addField(":crossed_swords: Lorsqu'Illfang attaque :" , ":crossed_swords: `=Illfang attaque`")
+    .addField(":shield: Lorsqu'Illfang reçoit un coup :" , ":shield: `=Illfang défense : [Points de dégâts de votre coup]`")
+    .addField(":japanese_ogre: Lorsqu'Illfang rentre dans sa deuxième phase, c'est à dire quand il lui reste ??? ??? ??? ??? HP, les commandes changent." , " ")
+    .addField(":crossed_swords: Lorsqu'Illfang attaque dans sa phase 2 :" , ":crossed_swords: `=Illfang phase 2 attaque`")
+    .addField(":shield: Lorsqu'Illfang reçoit un coup dans sa phase 2 :" , ":shield: `=Illfang phase 2  défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Illfang récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Illfang attaque")) {
+    const degat = Math.floor(51 * Math.random() + 150)
+    const degatCirculaire = Math.floor(31 * Math.random() + 120)
+    const cible = Math.floor(2 * Math.random() + 2)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang essaye de faire un grand coup horizontal sur votre gauche mais il est trop lent et vous rate, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (41 <= roll && roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang vous donne un grand coup vertical avec sa hache à deux mains, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang court vers vous et donne un grand coup horizontal de droite à gauche. " +
+                                               "Il inflige " + degatCirculaire + " points de dégâts à " + cible + "personnes.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Illfang défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Le kobolt explorateur tente avec sa dague de contrer votre coup mais elle est trop minuscule, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Le kobolt explorateur effectue un coup rapide vers votre arme une fois que votre coup arrive afin de vous déstabiliser, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
 
-
+bot.on('message', message => {
+  const args = message.content;
+  if (message.content.startsWith(prefix + "Illfang récompenses")) {
+    const pos = args.indexOf(":");
+    const nbrPersonne = args.slice(pos - 2, pos - 1);
+    const lvl = args.slice(pos + 2)
+    let oreille = 0
+    let echantillon = 0
+    let dent = 0
+    let carte = 0
+    let bottes = 0
+    let cols = 0
+    const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+    const tMob = 3
+    const dif = tMob - tJoueur
+    const controle = 110 + 90 * tMob
+    const groupe = 1 - Math.log(nbrPersonne) * 0.3
+    const roll = Math.floor(11 * Math.random() + 25) / 10
+    let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
+    if(nbrPersonne == 1) {
+      oreille = Math.floor(2 * Math.random() + 1)
+      echantillon = Math.floor((2 - 0.75) * Math.random())
+      dent = Math.floor((2 - 0.85) * Math.random())
+      carte = Math.floor((2 - 0.98) * Math.random())
+      bottes = Math.floor((2 - 0.97) * Math.random())
+      cols = Math.floor(11 * Math.random() + 30)
+    } else {
+      oreille = Math.floor(2 * Math.random() + 1)
+      echantillon = Math.floor((2 - 0.85) * Math.random())
+      dent = Math.floor((2 - 0.95) * Math.random())
+      carte = Math.floor((2 - 0.99) * Math.random())
+      bottes = Math.floor((2 - 0.98) * Math.random())
+      cols = Math.floor(6 * Math.random() + 25)
+    }
+    if(xp <= 0) {
+      xp = 0;
+    }
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Oreille de kobolt : " + oreille + "\n" +
+                                           ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
+                                           ":gem: Dent de kobolt : "+ dent + "\n" +
+                                           ":map: Carte au trésor : " + carte + "\n" +
+                                           ":scales: Bottes d'exploration kobolt : " + bottes + "\n" +
+                                           ":sparkles: Points d'expérience : " + xp + "\n" +
+                                           ":large_orange_diamond: Cols : " + cols)
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
 
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
