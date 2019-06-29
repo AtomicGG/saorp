@@ -26280,6 +26280,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
+    const degatGroupe = Math.floor(101 * Math.random() + 200)
+    const degatVert = Math.floor(101 * Math.random() + 250)
+    const degatVertGroupe = Math.floor(51 * Math.random() + 150)
+    const cible = Math.floor(4 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
       const embed = new Discord.RichEmbed()
@@ -26295,7 +26299,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Illfang :" , "toto")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang fait un coup circulaire au groupe qui vient de l'attaquer. Il inflige " + degatGroupe + " dégâts à ce groupe !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -26304,7 +26308,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Illfang :" , "totos")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang fait un grand coup vertical. Il inflige " + degatVert + " dégâts à une personne !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -26313,7 +26317,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Illfang :" , "totoss")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang fait un grand coup vertical qui crée une onde de choc dévastatrice. Il inflige " + degatVertGroupe + " dégâts à " + cible + " personnes !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -26322,7 +26326,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Illfang :" , "totosss")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang tente de faire un coup oblique dans votre direction mais rate son coup, vous avez de la chance !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -26334,13 +26338,36 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
     let Dégâts = args.slice(4).join(" : ");
-    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.8))
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":shield: Illfang :" , ":shield: L'épaisse peau d'Illfang réduit légèrement les dégâts ou non, vous lui infligez " + degat + " points de dégâts")
-    message.channel.send({embed})
+    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3))
+    const paradeReussie = Math.floor(51 * Math.random() + 150)
+    if (roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté, vous lui infligez " + paradeRatee + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (41 <= roll && roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade et il vous met un coup oblique de katana, vous faisant reculer et prendre des dégâts, " +
+                                                 "il inflige " + paradeReussie + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté et Illfang rentre dans une colère noire !" +
+                                                 "vous lui infligez " + paradeRatee + " points de dégâts et sa prochaine attaque fait 10% de dégâts supplémentaires !")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
   }
 });
 
