@@ -26286,8 +26286,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/b/b0/Ukifune.gif/revision/latest/scale-to-width-down/310?cb=20170616203924&path-prefix=fr")
-      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang jette sa hache qui se désintègre et sort un katana. Il s'élance vers 'Daniel' et lui fait un grand coup oblique plein de rage. Il inflige '999 999 999 999 999' dégâts !")
+      .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594566342489669662/Ukifune.gif")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang jette sa hache qui se désintègre et sort un katana. Il s'élance vers `Daniel` et lui fait un grand coup oblique plein de rage. Il inflige `999 999 999 999 999` dégâts !")
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 40){
