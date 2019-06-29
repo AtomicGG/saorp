@@ -26230,7 +26230,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594600636020949002/tumblr_mbr5n4TMrp1rsxn5po1_400.gif")
-    .addField(":japanese_ogre: Illfang le seigneur kobolt :" , "Illfang vous hurle dessus et rentre dans sa deuxième phase !\nIl jette sa hache à deux mains derrière lui qui commence à se désintégrer.")
+    .addField(":japanese_ogre: Illfang le seigneur kobolt :" , "\n**Illfang vous hurle dessus et rentre dans sa deuxième phase !\nIl jette sa hache à deux mains derrière lui qui commence à se désintégrer.**")
     .addBlankField(true)
     .addField(":crossed_swords: Lorsqu'Illfang attaque dans sa phase 2 :" , ":crossed_swords: `=Illfang phase 2 attaque`")
     .addField(":shield: Lorsqu'Illfang reçoit un coup dans sa phase 2 :" , ":shield: `=Illfang phase 2  défense : [Points de dégâts de votre coup]`")
