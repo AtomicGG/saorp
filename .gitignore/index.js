@@ -26218,7 +26218,19 @@ bot.on('message', message => {
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ??? ??? ??? ??? ???")
     .addField(":crossed_swords: Lorsqu'Illfang attaque :" , ":crossed_swords: `=Illfang attaque`")
     .addField(":shield: Lorsqu'Illfang reçoit un coup :" , ":shield: `=Illfang défense : [Points de dégâts de votre coup]`")
-    .addField(":japanese_ogre: La deuxième phase d'Illfang" , "A partir de ??? ??? ??? ??? ??? HP.")
+    .addField(":japanese_ogre: Lorsque qu'Illfang entre dans sa deuxième phase, qui commence à partir de ??? ??? ??? ??? ??? HP." , "`=Illfang entrée phase 2`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Illfang entrée phase 2"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Illfang le seigneur kobolt :" , ":japanese_ogre: Illfang vous hurle dessus et rentre dans sa deuxième phase !\n\n Il jette sa hache à deux mains derrière lui qui commence à se désintégrer.")
+    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594600636020949002/tumblr_mbr5n4TMrp1rsxn5po1_400.gif")
     .addField(":crossed_swords: Lorsqu'Illfang attaque dans sa phase 2 :" , ":crossed_swords: `=Illfang phase 2 attaque`")
     .addField(":shield: Lorsqu'Illfang reçoit un coup dans sa phase 2 :" , ":shield: `=Illfang phase 2  défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Illfang récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -26291,7 +26303,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594566342489669662/Ukifune.gif")
-      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang jette sa hache qui se désintègre et sort un katana. Il s'élance vers `Daniel` et lui fait un grand coup oblique plein de rage. " +
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang s'élance vers la personne qu'il a éjecté et lui fait un grand coup oblique plein de rage. " +
                                                "Il inflige `999 999 999 999 999` dégâts !\nCette attaque n'est pas défendable ni interceptable.")
       message.channel.send({embed})
     }
@@ -26342,7 +26354,7 @@ bot.on('message', message => {
     const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3))
     const paradeReussie = Math.floor(51 * Math.random() + 150)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 40){
+    if (roll <= 25){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26350,7 +26362,7 @@ bot.on('message', message => {
       .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté, vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
-    if (41 <= roll && roll <= 70){
+    if (26 <= roll && roll <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26360,7 +26372,17 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (71 <= roll){
+    if (51 <= roll && roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
+                                       "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
