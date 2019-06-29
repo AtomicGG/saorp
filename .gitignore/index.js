@@ -26256,7 +26256,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang court vers vous et donne un grand coup horizontal de droite à gauche. " +
-                                               "Il inflige " + degatCirculaire + " points de dégâts à " + cible + "personnes.")
+                                               "Il inflige " + degatCirculaire + " points de dégâts à " + cible + " personnes.")
       .setTimestamp()
       message.channel.send({embed})
     }
