@@ -21151,6 +21151,9 @@ bot.on('message', message => {
   }
 });
 
+//Fabrication équipements bug
+
+
 bot.on('message', message => {
   const Défense = Math.floor(5 * Math.random() + 9)
   const HP = Math.floor(11 * Math.random() + 30)
@@ -21183,7 +21186,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 4)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication du casque bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21198,7 +21201,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des épaulières bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21213,7 +21216,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication de la cape bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21228,7 +21231,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication du plastron bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21243,7 +21246,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des gantelets bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21258,7 +21261,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication de la ceinture bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21273,7 +21276,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des jambières bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21288,7 +21291,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(3 * Math.random() + 3)
+  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Fabrication des bottes bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -21300,6 +21303,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
+
 
 bot.on('message', message => {
   const Défense = Math.floor(5 * Math.random() + 8)
