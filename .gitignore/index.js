@@ -20492,7 +20492,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 55) / 10
+    const roll = Math.floor(11 * Math.random() + 65) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       bave = Math.floor(2 * Math.random() + 1)
