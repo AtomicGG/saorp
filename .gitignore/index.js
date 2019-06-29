@@ -26218,7 +26218,7 @@ bot.on('message', message => {
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ??? ??? ??? ??? ???")
     .addField(":crossed_swords: Lorsqu'Illfang attaque :" , ":crossed_swords: `=Illfang attaque`")
     .addField(":shield: Lorsqu'Illfang reçoit un coup :" , ":shield: `=Illfang défense : [Points de dégâts de votre coup]`")
-    .addField(":japanese_ogre: Lorsqu'Illfang rentre dans sa deuxième phase, c'est à dire quand il lui reste ??? ??? ??? ??? HP, les commandes changent." , " ")
+    .addField(":japanese_ogre: La deuxième phase d'Illfang" , "A partir de ??? ??? ??? ??? ??? HP.")
     .addField(":crossed_swords: Lorsqu'Illfang attaque dans sa phase 2 :" , ":crossed_swords: `=Illfang phase 2 attaque`")
     .addField(":shield: Lorsqu'Illfang reçoit un coup dans sa phase 2 :" , ":shield: `=Illfang phase 2  défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Illfang récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
