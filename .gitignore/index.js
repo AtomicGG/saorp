@@ -26291,7 +26291,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 10 + 190 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 100) / 10
+    const roll = Math.floor(101 * Math.random() + 100) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       iceTea = Math.floor(10 * Math.random() + 1)
