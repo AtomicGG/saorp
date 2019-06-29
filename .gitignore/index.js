@@ -20614,13 +20614,13 @@ bot.on('message', message => {
       carapace = Math.floor((2 - 0.75) * Math.random())
       corne = Math.floor((2 - 0.85) * Math.random())
       hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      cols = Math.floor(41 * Math.random() + 40)
+        cols = Math.floor(60 * Math.random() + 70)
     } else {
       patte = Math.floor(2 * Math.random() + 1)
       carapace = Math.floor((2 - 0.85) * Math.random())
       corne = Math.floor((2 - 0.95) * Math.random())
       hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      cols = Math.floor(35 * Math.random() + 35)
+      cols = Math.floor(55 * Math.random() + 65)
     }
     if (xp <= 0) {
       xp = 0
@@ -20724,7 +20724,7 @@ bot.on('message', message => {
       armeKobSupDeuxMains = Math.floor((2 - 0.92) * Math.random())
       hemolyphe = Math.floor((2 - 0.95) * Math.random())
       oeufB = Math.floor((2 - 0.90) * Math.random())
-      cols = Math.floor(61 * Math.random() + 60)
+      cols = Math.floor(81 * Math.random() + 80)
     } else {
       carapace = Math.floor((2 - 0.35) * Math.random())
       aile = Math.floor((2 - 0.55) * Math.random())
@@ -20733,7 +20733,7 @@ bot.on('message', message => {
       armeKobSupDeuxMains = Math.floor((2 - 0.96) * Math.random())
       hemolyphe = Math.floor((2 - 0.95) * Math.random())
       oeufB = Math.floor((2 - 0.90) * Math.random())
-      cols = Math.floor(51 * Math.random() + 50)
+      cols = Math.floor(71 * Math.random() + 70)
     }
     if (xp <= 0) {
       xp = 0
@@ -20773,7 +20773,7 @@ bot.on('message', message => {
     } else {
       const LierreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
       const LierreRare = Math.floor(2 * 0.75 * Math.random())
-      const Exp = Math.floor(5 * Math.random() + 11)
+      const Exp = Math.floor(5 * Math.random() + 15)
       const LierreParfait = Math.floor(2 * 0.95 * Math.random())
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -20810,7 +20810,7 @@ bot.on('message', message => {
     } else {
       const BoisMediocre = Math.floor(3 * Math.random() + 1)
       const BoisCommun = Math.floor((2 - 0.75) * Math.random())
-      const Exp = Math.floor(3 * Math.random() + 2)
+      const Exp = Math.floor(3 * Math.random() + 5)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -20846,7 +20846,7 @@ bot.on('message', message => {
       const Peau = Math.floor((2 - 0.50) * Math.random())
       const Coeur = Math.floor((2 - 0.75) * Math.random())
       const Oeil = Math.floor((2 - 0.75) * Math.random())
-      const Exp = Math.floor(4 * Math.random() + 4)
+      const Exp = Math.floor(4 * Math.random() + 8)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -21528,7 +21528,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(A >= 91 & A <= 95){
+    if(A >= 91 & A <= 98){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21539,7 +21539,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(A >= 96){
+    if(A >= 99){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21582,7 +21582,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
-  const B = (Math.floor((16)*Math.random()+46))
+  const B = (Math.floor((26)*Math.random()+46))
   if (message.content.startsWith(prefix + "Ark Venom attaque")) {
     if(A <= 50){
       const embed = new Discord.RichEmbed()
