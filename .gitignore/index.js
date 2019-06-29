@@ -26340,6 +26340,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(4).join(" : ");
     const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3))
     const paradeReussie = Math.floor(51 * Math.random() + 150)
+    const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
