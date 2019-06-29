@@ -20507,7 +20507,7 @@ bot.on('message', message => {
       langue = Math.floor((2 - 0.80) * Math.random())
       hemolyphe = Math.floor((2 - 0.98) * Math.random())
       oeufB = Math.floor((2 - 0.97) * Math.random())
-      cols = Math.floor(35 * Math.random() + 35)
+      cols = Math.floor(55 * Math.random() + 55)
     }
     if (xp <= 0) {
       xp = 0
@@ -20548,7 +20548,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(31 * Math.random() + 115) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       poudrePoison = Math.floor(2 * Math.random() + 1)
@@ -20558,7 +20558,7 @@ bot.on('message', message => {
       oeufB = Math.floor((2 - 0.90) * Math.random())
       armureBug = Math.floor((2 - 0.96) * Math.random())
       bijouxBug = Math.floor((2 - 0.98) * Math.random())
-      cols = Math.floor(40 * Math.random() + 40)
+      cols = Math.floor(60 * Math.random() + 60)
     } else {
       poudrePoison = Math.floor(2 * Math.random() + 1)
       alies = Math.floor((2 - 0.70) * Math.random())
@@ -20567,7 +20567,7 @@ bot.on('message', message => {
       oeufB = Math.floor((2 - 0.97) * Math.random())
       armureBug = Math.floor((2 - 0.98) * Math.random())
       bijouxBug = Math.floor((2 - 0.99) * Math.random())
-      cols = Math.floor(35 * Math.random() + 35)
+      cols = Math.floor(55 * Math.random() + 55)
     }
     if (xp <= 0) {
       xp = 0
