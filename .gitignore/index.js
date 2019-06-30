@@ -27632,6 +27632,92 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Loup gigantesque apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Loup gigantesque apex :" , ":japanese_ogre: Un loup énorme qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://db4sgowjqfwig.cloudfront.net/campaigns/144226/assets/629552/wolves-wargs.jpg?1471440473")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2500")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup gigantesque apex attaque`")
+    .addField(":shield: Lorsque le Loup gigantesque apex reçoit un coup :" , ":shield: `=Loup gigantesque apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Loup gigantesque apex attaque")) {
+    const degat = Math.floor(31 * Math.random() + 110)
+    const degatZone = Math.floor(21 * Math.random() + 70)
+    const degatCrit = Math.floor(31 * Math.random() + 130)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque apex :" , ":crossed_swords: Le Loup gigantesque apex hurle et cours rapidement mais glisse sur le côté par son manque d'attention du sol de la salle assez détruit")
+      message.channel.send({embed})
+    }
+    if (36 <= roll & roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque apex :" , ":crossed_swords: Le Loup gigantesque apex lâche un regard meurtrier les yeux injecté de sang avant d'embrocher sa victime, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= roll & roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque apex :" , ":crossed_swords: Le Loup gigantesque apex arrive à embrocher 3 personnes avec ses immenses griffes, il inflige " + degatZone + " points de dégâts à chacune d'elle")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup gigantesque apex :" , ":crossed_swords: Le Loup gigantesque apex hurle avant de bondir sur une personne, il inflige " + degatCrit + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup gigantesque apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup gigantesque apex :" , ":shield: Le Loup gigantesque apex essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (86 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup gigantesque apex :" , ":shield: Le Loup gigantesque apex voit que vous vous jetez dessus et il vous projette d'un coup de patte très rapide et repousse votre attaque")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 // Boss palier 1
 
 bot.on('message', message => {
@@ -27820,14 +27906,93 @@ bot.on('message', message => {
   }
 });
 
+//kobolt sentinel
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt sentinelle"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt sentinelle :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans... !")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/4d/Kobold_Sentinel.png/revision/latest?cb=20140309042458")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2500")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt sentinelle attaque`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt sentinelle attaque")) {
+    const degat = Math.floor(31 * Math.random() + 90)
+    const degatCrit = Math.floor(31 * Math.random() + 100)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt sentinelle :" , ":crossed_swords: Le Kobolt sentinelle fonce vers vous avec sa masse et l'écrase sur vous mais hésite un peu et il rate de peu. Vous avez de la chance.")
+      message.channel.send({embed})
+    }
+    if (36 <= roll & roll <= 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt sentinelle :" , ":crossed_swords: Le Kobolt sentinelle fonce vers vous avec sa masse et l'écrase sur vous, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (86 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt sentinelle :" , ":crossed_swords: Le Kobolt sentinelle fonce vers vous puis saute vers vous avec sa masse et l'écrase sur vous, il inflige " + degatCrit + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt sentinelle défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt sentinelle :" , ":shield: Le Kobolt sentinelle tente d'esquiver votre coup mais il n'est pas assez rapdie, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (86 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt sentinelle :" , ":shield: Le Kobolt sentinelle décide de bloquer votre coup puis le dévier sur un autre jouer a coté de vous. [Défense possible pour le joueur toucher. Vous ne passez pas orange si vous touchez votre allié]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
 // kobolt géant rouge
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt géant rouge attaque")) {
     const Dégâts = 40
-    const A = (Math.floor((101)*Math.random()+200))
+    const A = (Math.floor((30)*Math.random()+100))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((151)*Math.random()+300))
+    const C = (Math.floor((10)*Math.random()+120))
     if (B <= 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -27864,7 +28029,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(4).join(" : ");
     const A = (Math.floor((Dégâts*1.5)*Math.random()+(Dégâts/1.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((51)*Math.random()+100))
+    const C = (Math.floor((51)*Math.random()+50))
     if (B <= 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -27878,7 +28043,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et étourdis tous les joueurs pendant 1 tour")
+      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et cri a travers le labyrinthe.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -27887,7 +28052,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " +C+ " points de dégâts à tous les joueurs et étourdis de 2 tours [Esquive uniquement possible de la part de tous les joueurs, si l'esquive marche vous ne prenez pas l'étourdissement]")
+      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " +C+ " points de dégâts à tous les joueurs.")
       .setTimestamp()
       message.channel.send({embed})
     }
