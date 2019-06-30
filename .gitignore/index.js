@@ -22118,7 +22118,7 @@ bot.on('message', message => {
     let oeil = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 4
+    const tMob = 5
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
@@ -22176,7 +22176,7 @@ bot.on('message', message => {
     let scalpe = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 4
+    const tMob = 5
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
@@ -22234,7 +22234,7 @@ bot.on('message', message => {
     let scalpe = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 4
+    const tMob = 5
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
@@ -22292,7 +22292,7 @@ bot.on('message', message => {
     let scalpe = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-    const tMob = 4
+    const tMob = 5
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
@@ -23146,7 +23146,7 @@ bot.on('message', message => {
                                         ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Vallée chasser`\n\n" +
                                         ":pick: Pour miner, niveau 7 minimum requis dans 'Mineur' :\n:pick: `=Vallée miner`\n\n" +
                                         ":book: Pour avoir une quête :\n:book: `=Vallée quête`")
-    .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
+    .setImage("https://cdn.discordapp.com/attachments/530057837334757396/594613089538801670/fe5008595f73437e91eaeb974b360f0b.jpg")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -23215,7 +23215,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+    .setImage("https://cdn.discordapp.com/attachments/530057837334757396/594613089538801670/fe5008595f73437e91eaeb974b360f0b.jpg")
     .addField(":bookmark: Quête de la Vallée :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                     ":sparkles: Points d'expérience : " + xp + "\n" +
                                                     ":large_orange_diamond: Cols : " + cols + "\n" +
@@ -25875,7 +25875,7 @@ if (message.content.startsWith(prefix + "Fabrication de l'amulette de maille")) 
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25889,7 +25889,7 @@ if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25903,7 +25903,7 @@ if (message.content.startsWith(prefix + "Fabrication des épaulières de maille"
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25917,7 +25917,7 @@ if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25931,7 +25931,7 @@ if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25945,7 +25945,7 @@ if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) 
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25959,7 +25959,7 @@ if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille"))
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25973,7 +25973,7 @@ if (message.content.startsWith(prefix + "Fabrication des jambières de maille"))
 });
 
 bot.on('message', message => {
-const Défense = Math.floor(6 * Math.random() + 10)
+const Défense = (Math.floor((2)*Math.random()+4))
 if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
