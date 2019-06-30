@@ -25875,7 +25875,7 @@ if (message.content.startsWith(prefix + "Fabrication de l'amulette de maille")) 
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((3)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25889,7 +25889,7 @@ if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25903,7 +25903,7 @@ if (message.content.startsWith(prefix + "Fabrication des épaulières de maille"
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25917,7 +25917,7 @@ if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25931,7 +25931,7 @@ if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25945,7 +25945,7 @@ if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) 
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25959,7 +25959,7 @@ if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille"))
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25973,7 +25973,7 @@ if (message.content.startsWith(prefix + "Fabrication des jambières de maille"))
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+4))
+const Défense = (Math.floor((2)*Math.random()+5))
 if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
