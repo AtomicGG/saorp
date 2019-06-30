@@ -20218,8 +20218,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Venom attaque")) {
-      const degat = Math.floor(31 * Math.random() + 90)
-      const poison = Math.floor(11 * Math.random() + 30)
+      const degat = Math.floor(26 * Math.random() + 90)
+      const poison = Math.floor(11 * Math.random() + 25)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 35){
         const embed = new Discord.RichEmbed()
@@ -20399,7 +20399,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Venom défense")) {
     let Dégâts = args.slice(2).join(" : ");
-    const degat = Math.floor((Dégâts * 0.3 + 1) * Math.random() + (Dégâts * 0.8))
+    const degat = Math.floor((Dégâts * 0.4 + 1) * Math.random() + (Dégâts * 0.9))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 65){
       const embed = new Discord.RichEmbed()
