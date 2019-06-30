@@ -27978,7 +27978,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt sentinelle :" , ":shield: Le Kobolt sentinelle décide de bloquer votre coup puis le dévier sur un autre jouer a coté de vous. [Défense possible pour le joueur toucher. Vous ne passez pas orange si vous touchez votre allié]")
+      .addField(":shield: Kobolt sentinelle :" , ":shield: Le Kobolt sentinelle décide de bloquer votre coup et le dévie sur un autre joueur a côté de vous. [Défense possible pour le joueur toucher. Vous ne passez pas orange si vous touchez votre allié]")
       .setTimestamp()
       message.channel.send({embed})
     }
