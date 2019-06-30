@@ -26214,7 +26214,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":mount_fuji: Labyrinthe :" , ":mount_fuji: Bienvenue dans cette labyrinthe ou vous pouvez rencontrez tout de sorte de monstres... C'est la tour qui faut franchir avant d'arriver a la salle du boss! Pas de limite de joueurs mais attention... Vous pouvez pas prendre de pause entre les combats...\n\n" +
+    .addField(":bank: Labyrinthe :" , ":bank: Bienvenue dans cette labyrinthe ou vous pouvez rencontrez tout de sorte de monstres... C'est la tour qui faut franchir avant d'arriver a la salle du boss! Pas de limite de joueurs mais attention... Vous pouvez pas prendre de pause entre les combats...\n\n" +
                                         ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Labyrinthe partie 1 ` et une fois fini le combat vous lancez directement `=Labyrinthe partie 2 ` ")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
     .setTimestamp()
@@ -26228,7 +26228,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
                                                  ":crossed_swords: Renard apex : 4 \n" +
                                                  ":crossed_swords: Loup apex : 3 \n" +
                                                  ":crossed_swords: Chien apex : 3\n" +
@@ -26246,7 +26246,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
                                                  ":crossed_swords: Sanglier apex : 4 \n" +
                                                  ":crossed_swords: Slime apex : 3 \n" +
                                                  ":crossed_swords: Chien apex : 3\n" +
@@ -26264,7 +26264,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
                                                  ":crossed_swords: Renard apex : 4 \n" +
                                                  ":crossed_swords: Sanglier apex : 3 \n" +
                                                  ":crossed_swords: Chien apex : 3\n" +
@@ -26582,7 +26582,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Slime apex :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
-    .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-Slime apex-5ac1b13e54af51.5535441915226432623469.png")
+    .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-Slime-5ac1b13e54af51.5535441915226432623469.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 850")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime apex attaque`")
     .addField(":shield: Lorsque le Slime apex reçoit un coup :" , ":shield: `=Slime apex défense : [Points de dégâts de votre coup]`")
