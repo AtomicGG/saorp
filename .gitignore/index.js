@@ -11576,15 +11576,16 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Chasseur :" , "Niveau 1 : Aucun\nNiveau 2 : 1 point de dégât supplémentaire !\n" +
-                                               "Niveau 3 : 2 points de dégâts supplémentaire !\n" +
-                                               "Niveau 4 : 3 points de dégâts supplémentaire\n" +
-                                               "Niveau 5 : 4 points de dégâts supplémentaire !\n" +
-                                               "Niveau 6 : 5 points de dégâts supplémentaire !\n" +
-                                               "Niveau 7 : 6 points de dégâts supplémentaire !\n" +
-                                               "Niveau 8 : 7 points de dégâts supplémentaire !\n" +
-                                               "Niveau 9 : 8 points de dégâts supplémentaire !\n" +
-                                               "Niveau 10 : 9 points de dégâts supplémentaire")
+    .addField("Chasseur :" , "Niveau 1 : Aucun\n" +
+                             "Niveau 2 : 1 point de dégât supplémentaire !\n" +
+                             "Niveau 3 : 2 points de dégâts supplémentaire !\n" +
+                             "Niveau 4 : 3 points de dégâts supplémentaire\n" +
+                             "Niveau 5 : 4 points de dégâts supplémentaire !\n" +
+                             "Niveau 6 : 5 points de dégâts supplémentaire !\n" +
+                             "Niveau 7 : 6 points de dégâts supplémentaire !\n" +
+                             "Niveau 8 : 7 points de dégâts supplémentaire !\n" +
+                             "Niveau 9 : 8 points de dégâts supplémentaire !\n" +
+                             "Niveau 10 : 9 points de dégâts supplémentaire")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26393,6 +26394,99 @@ bot.on('message', message => {
     }
   }
 });
+
+// kobolt géant rouge
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt géant rouge attaque")) {
+    const Dégâts = 40
+    const A = (Math.floor((101)*Math.random()+200))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((151)*Math.random()+300))
+    if (B <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt géant rouge :" , ":crossed_swords: Le kobolt géant rouge sort deux épées de son dos et les fait frotter le sol en courant vers vous mais sa course le fait tomber à cause de son immensité, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (31 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt géant rouge :" , ":crossed_swords: Le kobolt géant rouge sort et balance ses deux épées ainsi que ses bras gigantesques vers vous d'une vitesse colossale, il inflige " +A+ " points de dégâts à deux joueurs")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt géant rouge :" , ":crossed_swords: Le kobolt géant rouge commence à avoir des yeux complètement injectés de sang et se déchaîne complètement en balançant ses bras et ses épées dans tous les sens autour de lui, il inflige " + A+ " points de dégâts à tous les joueurs, ou s'il n'y a qu'un joueur " +C+ " points de dégâts à la place [Esquive uniquement possible de la part de tous les joueurs]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt géant rouge défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const A = (Math.floor((Dégâts*1.5)*Math.random()+(Dégâts/1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((51)*Math.random()+100))
+    if (B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (76 <= B & B <= 96){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et étourdis tous les joueurs pendant 1 tour")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (97 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " +C+ " points de dégâts à tous les joueurs et étourdis de 2 tours [Esquive uniquement possible de la part de tous les joueurs, si l'esquive marche vous ne prenez pas l'étourdissement]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt géant rouge"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt géant rouge :" , ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans la grotte du palier 1 !")
+    .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 3500")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt géant rouge attaque`")
+    .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :" , ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt géant rouge récompenses solo : [Votre niveau]`")
+    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt géant rouge récompenses groupe : [Votre niveau]`")
+    .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :" , ":warning: Provocation, étourdissement")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Kobolt mineur récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
 
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
