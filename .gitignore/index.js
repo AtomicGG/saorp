@@ -21654,7 +21654,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+        .setImage("http://i.imgur.com/6Pfztwn.png")
         .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
                                                         ":crossed_swords: Bourdon flâneur : " + bourdonFlaneur + "\n" +
                                                         ":crossed_swords: Taurus chargeur : " + taurusChargeur+ "\n" +
@@ -21677,9 +21677,9 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
     let lvl = args.slice(3).join(" : ");
-    const control = Math.floor(90 * Math.random() + 90)
+    const control = Math.floor(120 * Math.random() + 120)
     let xp = control - (lvl * 6)
-    const cols = Math.floor(90 * Math.random() + 90)
+    const cols = Math.floor(140 * Math.random() + 140)
     const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
     const stuffTaurus = Math.floor(2 * 0.80 * Math.random())
     if (xp <= 0) {
@@ -21689,11 +21689,11 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+    .setImage("http://i.imgur.com/6Pfztwn.png")
     .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                     ":sparkles: Points d'expérience : " + xp + "\n" +
                                                     ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                    ":syringe: Potion + de soin : " + potionMoyenneSoin + "\n" +
+                                                    ":syringe: Potion améliorée : " + potionAmelio + "\n" +
                                                     ":scales: Equipement de taurus au choix : " + stuffTaurus)
     .setTimestamp()
     message.channel.send({embed})
@@ -21781,7 +21781,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bourdon flâneur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Clairière du palier 1 !")
-    .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
+    .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590559361961820190/43111646922_5cd4ecd7f1_k.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bourdon flâneur attaque`")
     .addField(":shield: Lorsque le Bourdon flâneur reçoit un coup :" , ":shield: `=Bourdon flâneur défense : [Points de dégâts de votre coup]`")
@@ -21797,7 +21797,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Taurus chargeur  :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
-    .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
+    .setImage("https://media.discordapp.net/attachments/543345227604164618/584058188953813024/taurus_chargeur.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus chargeur  attaque`")
     .addField(":shield: Lorsque le Taurus chargeur  reçoit un coup :" , ":shield: `=Taurus chargeur  défense : [Points de dégâts de votre coup]`")
@@ -21829,7 +21829,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Taurus lourd :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Clairière du palier 1 !")
-    .setImage("https://media.discordapp.net/attachments/572791993420349442/574254390219636776/handiss_by_yigitkoroglu-db6hiyh.jpg")
+    .setImage("https://cdn.discordapp.com/attachments/543345227604164618/584064279552983073/bfyeusifbk.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2550 :shield: 80")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus lourd attaque`")
     .addField(":shield: Lorsque le Taurus lourd reçoit un coup :" , ":shield: `=Taurus lourd défense : [Points de dégâts de votre coup]`")
