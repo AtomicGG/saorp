@@ -26320,7 +26320,7 @@ bot.on('message', message => {
 .setColor(3447003)
 .addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
                                                  ":crossed_swords: Kobolt géant rouge : 1 \n" +
-                                                 ":crossed_swords: Kobolt sentinel : 2")
+                                                 ":crossed_swords: Kobolt sentinelle : 2")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -27915,8 +27915,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt sentinelle :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans... !")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/4d/Kobold_Sentinel.png/revision/latest?cb=20140309042458")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2500")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt sentinelle attaque`")
+      .addField(":shield: Lorsque le kobolt sentinelle reçoit un coup :" , ":shield: `=Kobolt sentinelle défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -27961,7 +27962,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Kobolt sentinelle défense")) {
-    let Dégâts = args.slice(4).join(" : ");
+    let Dégâts = args.slice(3).join(" : ");
     const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 85){
