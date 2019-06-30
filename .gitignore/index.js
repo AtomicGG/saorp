@@ -26216,7 +26216,7 @@ bot.on('message', message => {
     .setColor(1447003)
     .addField(":mount_fuji: Labyrinthe :" , ":mount_fuji: Bienvenue dans cette labyrinthe ou vous pouvez rencontrez tout de sorte de monstres... C'est la tour qui faut franchir avant d'arriver a la salle du boss! Pas de limite de joueurs mais attention... Vous pouvez pas prendre de pause entre les combats...\n\n" +
                                         ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Labyrinthe partie 1 ` et une fois fini le combat vous lancez directement `=Labyrinthe partie 2 ` ")
-    .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
     .setTimestamp()
     message.channel.send({embed})
   }
