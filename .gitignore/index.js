@@ -8158,7 +8158,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Slime :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
-    .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-slime-5ac1b13e54af51.5535441915226432623469.png")
+    .setImage("https://opengameart.org/sites/default/files/Slime_0.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 150")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime attaque`")
     .addField(":shield: Lorsque le slime reçoit un coup :" , ":shield: `=Slime défense : [Points de dégâts de votre coup]`")
@@ -26214,7 +26214,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":bank: Labyrinthe :" , ":bank: Bienvenue dans cette labyrinthe ou vous pouvez rencontrez tout de sorte de monstres... C'est la tour qui faut franchir avant d'arriver a la salle du boss! Pas de limite de joueurs mais attention... Vous pouvez pas prendre de pause entre les combats...\n\n" +
+    .addField(":bank: Labyrinthe :" , ":bank: Bienvenue dans ce labyrinthe où vous pouvez rencontrer toute sortes de monstres. C'est la tour qu'il faut franchir avant d'arriver à la salle du boss ! Pas de limite joueurs mais attention, vous ne pouvez pas prendre de pause entre les combats.\n\n" +
                                         ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Labyrinthe partie 1 ` et une fois fini le combat vous lancez directement `=Labyrinthe partie 2 ` ")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
     .setTimestamp()
@@ -26265,11 +26265,11 @@ bot.on('message', message => {
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
 .addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
-                                                 ":crossed_swords: Renard apex : 4 \n" +
-                                                 ":crossed_swords: Sanglier apex : 3 \n" +
-                                                 ":crossed_swords: Chien apex : 3\n" +
-                                                 ":crossed_swords: Dark bandit : 2 \n" +
-                                                 ":crossed_swords: Lapin géant apex apex : 2")
+                                                 ":crossed_swords: Jeune kobolt apex : 4 \n" +
+                                                 ":crossed_swords: Kobolt explorateur apex : 3 \n" +
+                                                 ":crossed_swords: Kobolt garde apex : 3\n" +
+                                                 ":crossed_swords: Kobolt espion apex : 2 \n" +
+                                                 ":crossed_swords: Kobolt enragé apex : 2")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26277,12 +26277,66 @@ message.channel.send({embed})
 })
 
 bot.on('message', message => {
+  if (message.content === (prefix) + "Labyrinthe partie 4"){
+    const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+                                                 ":crossed_swords: Kobolt mineur apex : 4 \n" +
+                                                 ":crossed_swords: Kobolt combattant apex : 3 \n" +
+                                                 ":crossed_swords: Kobolt ouvrier apex : 3\n" +
+                                                 ":crossed_swords: Chien errant apex : 2 \n" +
+                                                 ":crossed_swords: Kobolt pilion apex : 2")
+.setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+.setTimestamp()
+message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Labyrinthe partie 5"){
+    const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+                                                 ":crossed_swords: Lapin géant apex : 2 \n" +
+                                                 ":crossed_swords: Loup de sang apex : 2 \n" +
+                                                 ":crossed_swords: Kobolt enragé apex : 2\n" +
+                                                 ":crossed_swords: Kobolt pilion apex : 2 \n" +
+                                                 ":crossed_swords: Loup gigantesque apex : 1")
+.setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+.setTimestamp()
+message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Labyrinthe partie 6"){
+    const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+                                                 ":crossed_swords: Kobolt géant rouge : 1 \n" +
+                                                 ":crossed_swords: Kobolt sentinel : 2")
+.setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+.setTimestamp()
+message.channel.send({embed})
+}
+})
+
+
+
+
+bot.on('message', message => {
 if (message.content === (prefix) + "Renard apex"){
   const embed = new Discord.RichEmbed()
   .setColor(3447003)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Renard apex :" , ":japanese_ogre: Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
-  .setImage("https://www.lpo.fr/images/actualites/2018/en_moselle_nuits_nouveau_tranquilles_Renard/Renard_fabrice_cahez_650_.jpg")
+  .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946477927694346/renard_fabrice_cahez_650_.png")
   .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 620")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Renard apex attaque`")
   .addField(":shield: Lorsque le Renard apex reçoit un coup :" , ":shield: `=Renard apex défense : [Points de dégâts de votre coup]`")
@@ -26297,7 +26351,7 @@ if (message.content === (prefix) + "Sanglier apex"){
   .setColor(3447003)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Sanglier apex :" , ":japanese_ogre: Assez imposant et résistant, il se situe dans les plaines du palier 1 !")
-  .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/4/4a/Frenzy_Boar.png/revision/latest?cb=20170612194328&path-prefix=fr")
+  .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946487620993055/Sanglier.png")
   .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 630")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Sanglier apex attaque`")
   .addField(":shield: Lorsque le Sanglier apex reçoit un coup :" , ":shield: `=Sanglier apex défense : [Points de dégâts de votre coup]`")
@@ -26312,7 +26366,7 @@ if (message.content === (prefix) + "Chien apex"){
   .setColor(3447003)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Chien apex :" , ":japanese_ogre: Solitaire mais très aggressif, il se situe dans les plaines du palier 1 !")
-  .setImage("https://st2.depositphotos.com/2195902/6735/v/950/depositphotos_67358017-stock-illustration-angry-dog.jpg")
+  .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946498026799137/st2.depositphotos.png")
   .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 615")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien apex attaque`")
   .addField(":shield: Lorsque le Chien apex reçoit un coup :" , ":shield: `=Chien apex défense : [Points de dégâts de votre coup]`")
@@ -26327,7 +26381,7 @@ if (message.content === (prefix) + "Lapin géant apex"){
   .setColor(3447003)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Lapin géant apex :" , ":japanese_ogre: Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
-  .setImage("https://gor666.files.wordpress.com/2012/04/lapin-tueur-de-paques-i-gor-2012.jpg")
+  .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946513382146068/lapin-tueur-de-paques-i-gor-2012.jpg")
   .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 870")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lapin géant apex attaque`")
   .addField(":shield: Lorsque le Lapin géant apex reçoit un coup :" , ":shield: `=Lapin géant apex défense : [Points de dégâts de votre coup]`")
@@ -26854,6 +26908,729 @@ bot.on('message', message => {
   }
 });
 
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Jeune kobolt apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Jeune kobolt apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("http://vignette2.wikia.nocookie.net/chroniclesofarn/images/b/b2/Kobold-11.jpg/revision/latest?cb=20130810171342")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Jeune kobolt apex attaque`")
+    .addField(":shield: Lorsque le Jeune kobolt apex reçoit un coup :" , ":shield: `=Jeune kobolt apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt explorateur apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt explorateur apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://i.pinimg.com/originals/73/6a/cf/736acf4e514eed57b8f255aff493f4ea.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1125")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt explorateur apex attaque`")
+    .addField(":shield: Lorsque le Kobolt explorateur apex reçoit un coup :" , ":shield: `=Kobolt explorateur apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt ouvrier apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt ouvrier apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://cdn.discordapp.com/attachments/572791993420349442/574252054466527232/kobold.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1075")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt ouvrier apex attaque`")
+    .addField(":shield: Lorsque le Kobolt ouvrier apex reçoit un coup :" , ":shield: `=Kobolt ouvrier apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt espion apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt espion apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://cdn.discordapp.com/attachments/572791993420349442/574251399597129737/tumblr_pc8m38yNoH1v4fvg9o1_400.png")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt espion apex attaque`")
+    .addField(":shield: Lorsque le Kobolt espion apex reçoit un coup :" , ":shield: `=Kobolt espion apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt enragé apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt enragé apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://cdn.discordapp.com/attachments/543345227604164618/563394870207709184/Kobolt_enrager.jpeg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1650")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt enragé apex attaque`")
+    .addField(":shield: Lorsque le Kobolt enragé apex reçoit un coup :" , ":shield: `=Kobolt enragé apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Montagne | Monstres | Attaques
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Jeune kobolt apex attaque")) {
+    const degat = Math.floor(31 * Math.random() + 105)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Jeune kobolt apex :" , ":crossed_swords: Le Jeune kobolt apex tente de sauter sur vous afin de vous étrangler probablement mais il glisse et tombe sur le côté, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Jeune kobolt apex :" , ":crossed_swords: Le Jeune kobolt apex saute d'un bond en avant très rapide et met un coup de tête puissant, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt explorateur apex attaque")) {
+    const degat = Math.floor(21 * Math.random() + 105)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt explorateur apex :" , ":crossed_swords: Le Kobolt explorateur apex essaye de balancer sa dague vers vous mais elle atterrit sur le côté, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (46 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt explorateur apex :" , ":crossed_swords: Le Kobolt explorateur apex court plus rapidement que les autres kobolts ce qui lui permet de vous faire tomber sur le sol et vous planter, " +
+                                                          "il inflige " + degat + " points de dégâts et réduit vos prochains dégâts de 20")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt ouvrier apex attaque")) {
+    const degat = Math.floor(26 * Math.random() + 105)
+    const degatCrit = Math.floor(16 * Math.random() + 50)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt ouvrier apex :" , ":crossed_swords: Le Kobolt ouvrier apex agrippe un objet autour de lui et essaye de vous frapper mais celui-ci ne fait rien, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (46 <= roll && roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt ouvrier apex :" , ":crossed_swords: Le Kobolt ouvrier apex sort une clé à molette et la prend à deux mains avant de mettre un coup puissant vers vous, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt ouvrier apex :" , ":crossed_swords: Le Kobolt ouvrier apex sous la rage arrive à soulever un rocher avant de le fracasser sur vous d'une puissance immense, il inflige " + degatCrit + " points de dégâts " +
+                                                      "et vous étourdis pendant un tour")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt espion apex attaque")) {
+    const degat = Math.floor(26 * Math.random() + 105)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt espion apex :" , ":crossed_swords: Le Kobolt espion apex sort discrètement plusieurs kunais de son manteau noir et les lance dans votre direction, mais ils tombent avant de vous atteindre, " +
+                                                     "vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll && roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt espion apex :" , ":crossed_swords: Le Kobolt espion apex se déplace de gauche à droite rapidement afin de sauter et de balancer une nuée de kunais sur vous tel un ninja, " +
+                                                     "il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt espion apex:" , ":crossed_swords: Le Kobolt espion apex s'approche de vous et sort subitement une poudre qu'il vous balance en pleine face ce qui vous fait vous endormir pendant deux tour. " +
+                                                    "[Esquivable uniquement]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt enragé apex attaque")) {
+    const degat = Math.floor(31 * Math.random() + 100)
+    const degatCoup1 = Math.floor(21 * Math.random() + 110)
+    const degatCoup2 = Math.floor(21 * Math.random() + 120)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt enragé apex :" , ":crossed_swords: Le Kobolt enragé apex pousse un cri pour vous intimider et vous impressionner mais il oublie d'attaquer. Vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt enragé apex :" , ":crossed_swords: Le Kobolt enragé apex fulmine et donne un gros coup de masses pour écraser un joueur. Il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt enragé apex :" , ":crossed_swords: Le Kobolt enragé apex bondit et atterit devant vous. Il vous assène deux coups violent de masses, l'un venant de la gauche puis l'autre " +
+                                                     "venant de la droite. Il inflige " + degatCoup1 + " points de dégâts avec son coup de gauche et " + degatCoup2 + " points de dégats avec son coup de droite.\n " +
+                                                     "(Un seul joueur est visé et vous devez effectuer deux défenses, une sur chaque coup.)")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Montagne | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Jeune kobolt apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1.1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Jeune kobolt apex :" , ":shield: Le Jeune kobolt apex ne semble même pas réagir et ne pas encore avoir le réflexe d'esquiver les coups, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (61 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Jeune kobolt apex :" , ":shield: Le Jeune kobolt apex ne fait que se déplacer d'un pas sur le côté sans même faire attention à votre coup, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt explorateur apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt explorateur apex :" , ":shield: Le Kobolt explorateur apex tente avec sa dague de contrer votre coup mais elle est trop minuscule, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt explorateur apex :" , ":shield: Le Kobolt explorateur apex effectue un coup rapide vers votre arme une fois que votre coup arrive afin de vous déstabiliser, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt ouvrier apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt ouvrier apex :" , ":shield: Le Kobolt ouvrier apex tente de se cacher derrière un objet autour de lui par réflexe mais il se prend le coup de plein fouet, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt ouvrier apex :" , ":shield: Le Kobolt ouvrier apex court rapidement en arrière en voyant votre arme bouger, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt espion apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1.1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt espion apex :" , ":shield: Le Kobolt espion apex tente de sortir quelque chose de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt espion apex :" , ":shield: Le Kobolt espion apex à travers son manteau arrive à parer votre coup avec deux kunais et à vous faire tomber par terre en levant ses bras, il ne prend aucun dégâts.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt enragé apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.5))
+    const blocage = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.7))
+    const paradeReussie = Math.floor(16 * Math.random() + 85)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégats")
+      message.channel.send({embed})
+    }
+    if (21 <= roll && roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégats")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (81 <= roll && roll <= 94){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégats")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (95 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex fait un cri intimidant et vous prenez peur. Vous ne pouvez pas attaquer au prochain tour !")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt garde apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt garde apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 820")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt garde apex attaque`")
+    .addField(":shield: Lorsque le Kobolt garde apex reçoit un coup :" , ":shield: `=Kobolt garde apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt combattant apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt combattant apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt combattant apex attaque`")
+    .addField(":shield: Lorsque le Kobolt combattant apex reçoit un coup :" , ":shield: `=Kobolt combattant apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt mineur apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt mineur apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 850")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt mineur apex attaque`")
+    .addField(":shield: Lorsque le Kobolt mineur apex reçoit un coup :" , ":shield: `=Kobolt mineur apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Chien errant apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Chien errant apex :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien errant apex attaque`")
+    .addField(":shield: Lorsque le Chien errant apex reçoit un coup :" , ":shield: `=Chien errant apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Kobolt pilion apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Kobolt pilion apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
+    .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594929531652014121/handiss_by_yigitkoroglu-db6hiyh.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt pilion apex attaque`")
+    .addField(":shield: Lorsque le Kobolt pilion apex reçoit un coup :" , ":shield: `=Kobolt pilion apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+// Grotte | Monstres | Attaques
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt mineur apex attaque")) {
+    const degat = Math.floor(26 * Math.random() + 105)
+    const degatCrit = Math.floor(26 * Math.random() + 115)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt mineur apex :" , ":crossed_swords: Le Kobolt mineur apex dégaine sa pioche et tente de vous mettre un coup horizontal mais celle-ci est trop lent, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt mineur apex :" , ":crossed_swords: Le Kobolt mineur apex saute en avant et arrive à vous mettre un coup de pioche bien placé verticalement, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt mineur apex :" , ":crossed_swords: Le Kobolt mineur apex sort deux pioches et gémis de rage avant de les balancer sur vous en même temps, il inflige " + degatCrit + " points de dégâts qui perce votre armure")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt combattant apex attaque")) {
+    const degat = Math.floor(36 * Math.random() + 105)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt combattant apex :" , ":crossed_swords: Le Kobolt combattant apex tente de faire un mouvement circulaire de son épée sur vous mais il perd l'équilibre, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt combattant apex :" , ":crossed_swords: Le kobolt s'élance en avant tel un épéiste expérimenté avant de trouver une occasion de mettre un coup rapide, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt garde apex attaque")) {
+    const degat = Math.floor(36 * Math.random() + 75)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt garde apex :" , ":crossed_swords: Le Kobolt garde apex brandit son bouclier en avant pour pouvoir vous toucher de son épée mais il n'y arrive pas sous le poids, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll && roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt garde apex :" , ":crossed_swords: Le Kobolt garde apex fonce le bouclier en avant et l'épée elle aussi en avant afin de vous empaler, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (81 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt garde apex :" , ":crossed_swords: Le Kobolt garde apex pendant un instant arrive à soulever très haut son bouclier avant de le faire tomber lourdement sur vous, " +
+                                                    "il inflige " + degat + " points de dégâts et vous provoque pendant 1 tour.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Chien errant apex attaque")) {
+    const degat = Math.floor(21 * Math.random() + 90)
+    const saignement = Math.floor(6 * Math.random() + 30)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien errant apex :" , ":crossed_swords: Le Chien errant apex se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
+      message.channel.send({embed})
+    }
+    if (26 <= roll && roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien errant apex :" , ":crossed_swords: Le Chien errant apex tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien errant apex:" , ":crossed_swords: Le Chien errant apex fonce sur votre bras et le mord sauvagement, infligant " + degat + " points de dégâts en ouvrant par la même occasion une plaie sanguinolente qui " +
+                                                   "vous infligera " + saignement + " points de dégâts de saignement supplémentaires pendant 3 tours")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Kobolt pilion apex attaque")) {
+    const degat = Math.floor(51 * Math.random() + 90)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt pilion apex :" , ":crossed_swords: Le Kobolt pilion apex fait tourner son marteau au dessus de lui et essaye de vous frapper, mais vous rate et provoque un tremblement de terre en touchant le sol")
+      message.channel.send({embed})
+    }
+    if (26 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Kobolt pilion apex :" , ":crossed_swords:Le Kobolt pilion apex fait tourner son marteau aux dessus de lui et fait un coup vertical avec son marteau qui vous envoyer contre un mur, " +
+                                                     "il inflige " + degat + " points de dégâts et baisse votre armure de 10 points pendant 1 tour.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Grotte | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt mineur apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Kobolt mineur apex :" , ":shield: Le Kobolt mineur apex essaye d'utiliser sa pioche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt combattant apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const paradeReussie = Math.floor(21 * Math.random() + 75)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt combattant apex :" , ":shield: Le Kobolt combattant apex effectue un duel de force avec vous et votre arme mais il n'est pas assez puissant, vous lui infligez " + paradeRatee + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Kobolt combattant apex :" , ":shield: Le Kobolt combattant apex effectue un duel de force avec vous et votre arme et il vous met un coup de pied pour vous faire reculer, " +
+                                                 "et effectue un coup de manche de son épée en plein dans votre visage ce qui vous fait tomber et il en profite pour vous empaler, il inflige " + paradeReussie + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt garde apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 0.3))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Kobolt garde apex :" , ":shield: Le Kobolt garde apex bloque le coup, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Chien errant apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien errant apex :" , ":shield: Le Chien errant apex tente d'esquiver votre coup en partant rapidement en arrière, mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien errant apex :" , ":shield: Le Chien errant apex se faufile dans un coin étroit de la grotte. Vous ne pouvez pas l'atteindre.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Kobolt pilion apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Kobolt pilion apex :" , ":shield: Le Kobolt pilion apex bloque le coup avec son marteau, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
 
 // Boss palier 1
 
