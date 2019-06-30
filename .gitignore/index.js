@@ -26222,6 +26222,638 @@ bot.on('message', message => {
   }
 })
 
+bot.on('message', message => {
+  if (message.content === (prefix) + "Labyrinthe partie 1"){
+    const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
+                                                 ":crossed_swords: Renard apex : 4 \n" +
+                                                 ":crossed_swords: Loup apex : 3 \n" +
+                                                 ":crossed_swords: Chien apex : 3\n" +
+                                                 ":crossed_swords: Slime apex : 2 \n" +
+                                                 ":crossed_swords: Lapin géant apex : 2")
+.setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+.setTimestamp()
+message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Labyrinthe partie 2"){
+    const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
+                                                 ":crossed_swords: Sanglier apex : 4 \n" +
+                                                 ":crossed_swords: Slime apex : 3 \n" +
+                                                 ":crossed_swords: Chien apex : 3\n" +
+                                                 ":crossed_swords: Dark bandit : 2 \n" +
+                                                 ":crossed_swords: Loup de sang apex : 2")
+.setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+.setTimestamp()
+message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Labyrinthe partie 3"){
+    const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
+                                                 ":crossed_swords: Renard apex : 4 \n" +
+                                                 ":crossed_swords: Sanglier apex : 3 \n" +
+                                                 ":crossed_swords: Chien apex : 3\n" +
+                                                 ":crossed_swords: Dark bandit : 2 \n" +
+                                                 ":crossed_swords: Lapin géant apex apex : 2")
+.setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+.setTimestamp()
+message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+if (message.content === (prefix) + "Renard apex"){
+  const embed = new Discord.RichEmbed()
+  .setColor(3447003)
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setTitle(":japanese_ogre: Renard apex :" , ":japanese_ogre: Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
+  .setImage("https://www.lpo.fr/images/actualites/2018/en_moselle_nuits_nouveau_tranquilles_Renard/Renard_fabrice_cahez_650_.jpg")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 620")
+  .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Renard apex attaque`")
+  .addField(":shield: Lorsque le Renard apex reçoit un coup :" , ":shield: `=Renard apex défense : [Points de dégâts de votre coup]`")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+if (message.content === (prefix) + "Sanglier apex"){
+  const embed = new Discord.RichEmbed()
+  .setColor(3447003)
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setTitle(":japanese_ogre: Sanglier apex :" , ":japanese_ogre: Assez imposant et résistant, il se situe dans les plaines du palier 1 !")
+  .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/4/4a/Frenzy_Boar.png/revision/latest?cb=20170612194328&path-prefix=fr")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 630")
+  .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Sanglier apex attaque`")
+  .addField(":shield: Lorsque le Sanglier apex reçoit un coup :" , ":shield: `=Sanglier apex défense : [Points de dégâts de votre coup]`")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+if (message.content === (prefix) + "Chien apex"){
+  const embed = new Discord.RichEmbed()
+  .setColor(3447003)
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setTitle(":japanese_ogre: Chien apex :" , ":japanese_ogre: Solitaire mais très aggressif, il se situe dans les plaines du palier 1 !")
+  .setImage("https://st2.depositphotos.com/2195902/6735/v/950/depositphotos_67358017-stock-illustration-angry-dog.jpg")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 615")
+  .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien apex attaque`")
+  .addField(":shield: Lorsque le Chien apex reçoit un coup :" , ":shield: `=Chien apex défense : [Points de dégâts de votre coup]`")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+if (message.content === (prefix) + "Lapin géant apex"){
+  const embed = new Discord.RichEmbed()
+  .setColor(3447003)
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setTitle(":japanese_ogre: Lapin géant apex :" , ":japanese_ogre: Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
+  .setImage("https://gor666.files.wordpress.com/2012/04/lapin-tueur-de-paques-i-gor-2012.jpg")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 870")
+  .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lapin géant apex attaque`")
+  .addField(":shield: Lorsque le Lapin géant apex reçoit un coup :" , ":shield: `=Lapin géant apex défense : [Points de dégâts de votre coup]`")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+})
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Renard apex attaque")) {
+    const roll = Math.floor(100 * Math.random() + 1)
+    const degat = Math.floor(11 * Math.random() + 90)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renard apex :" , ":crossed_swords: Le Renard apex attaque avec un coup rapide de griffe, mais n'arrive pas à vous toucher, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll & roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renard apex :" , ":crossed_swords: Le Renard apex sors ses griffes et arrive à rapidement toucher votre jambe en y laissant des entailles, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Renard apex :" , ":crossed_swords: Le Renard apex court et arrive rapidement devant vous avant de mordre sauvagement, il inflige " + degat + " points de dégâts " +
+                                           "ainsi que 10 point de dégâts de saignement supplémentaires à chaques tours pendant 3 tours [L'armure ne réduit pas les dégâts de saignement]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Sanglier apex attaque")) {
+    const degat = Math.floor(11 * Math.random() + 95)
+    const degatCrit = Math.floor(11 * Math.random() + 99)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier apex :" , ":crossed_swords: Le Sanglier apex fonçant à toute vitesse glisse et tombe sur le sol, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= roll & roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier apex :" , ":crossed_swords: Le Sanglier apex vous charge dessus et le choc est assez puissant ce qui vous fait tomber, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Sanglier apex :" , ":crossed_swords: Le Sanglier apex vous charge dessus et vous fait tomber sur le sol avant de vous bloquer dessus en se mettant sur vous, il inflige " + degatCrit + " points de dégâts " +
+                                                "et vous ne pourrez pas vous défendre lors de la prochaine attaque reçue. ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Chien apex attaque")) {
+    const degat = Math.floor(11 * Math.random() + 95)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien apex :" , ":crossed_swords: Le Chien apex essaye de vous mordre la jambe mais il ne fait que mordre le vent, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Chien apex :" , ":crossed_swords: Le Chien apex saute et mord votre bras en serrant fort ses machoîres, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Lapin géant apex attaque")) {
+    const degat = Math.floor(5 * Math.random() + 100)
+    const degatCrit = Math.floor(8 * Math.random() + 113)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lapin géant apex :" , ":crossed_swords: Le Lapin géant apex bondit plusieurs fois vers votre direction, mais il s'épuise et n'arrive pas à vous griffer, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= roll & roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lapin géant apex :" , ":crossed_swords: Le Lapin géant apex bondit d'un coup sec sur vous et griffe tout votre corps en alternant entre sa patte gauche et droite, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Lapin géant apex :" , ":crossed_swords: Le Lapin géant apex bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, ils infligent " + degatCrit + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Renard apex défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degatSubis = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard apex :" , ":shield: Le Renard apex tente d'esquiver votre attaque en courant vers vous mais se prend votre coup malgré sa vitesse, vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Renard apex :" , ":shield: Le Renard apex court rapidement vers vous lors de votre attaque et vous n'arrivez pas à le toucher à cause de cette rapidité, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Sanglier apex défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degatSubis = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Sanglier apex :" , ":shield: Le Sanglier apex tente de reculer face à votre attaque mais il ne recule pas assez et se prend votre coup, vous lui infligez " + degatSubis + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Chien apex défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degatSubis = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const parade = Math.floor(11 * Math.random() + 65)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien apex :" , ":shield: Le Chien apex tente de hurler et d'aboyer assez fort pour vous faire rater, mais vous continuez votre coup qui le touche, vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (76 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Chien apex :" , ":shield: Le Chien apex hurle ce qui vous arrête dans votre attaque et il se met à foncer vers vous avant de mordre votre jambe, il inflige " + parade + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Lapin géant apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degatSubis = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const degatSubisReduit = Math.floor((Dégâts * 0.2 + 1) * Math.random() + (Dégâts * 0.1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Lapin géant apex :" , ":shield: Le Lapin géant apex met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgré ceci, vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Lapin géant apex :" , ":shield: Le Lapin géant apex met ses pattes d'une manière étrange au dessus de sa tête ce qui réduit énormément les dégâts qu'il subit, vous lui infligez " + degatSubisReduit + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Loup apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Loup apex :" , ":japanese_ogre: Aussi rapide que dangereux, il se situe dans la forêt du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c8/Wolf.png/revision/latest?cb=20140308115118")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup apex attaque`")
+    .addField(":shield: Lorsque le Loup apex reçoit un coup :" , ":shield: `=Loup apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Slime apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Slime apex :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
+    .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-Slime apex-5ac1b13e54af51.5535441915226432623469.png")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 850")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime apex attaque`")
+    .addField(":shield: Lorsque le Slime apex reçoit un coup :" , ":shield: `=Slime apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Dark bandit"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Dark bandit :" , ":japanese_ogre: Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
+    .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 940")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Dark bandit attaque`")
+    .addField(":shield: Lorsque le Dark bandit reçoit un coup :" , ":shield: `=Dark bandit défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === (prefix) + "Loup de sang apex"){
+    const embed = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setTitle(":japanese_ogre: Loup de sang apex :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang apex attaque`")
+    .addField(":shield: Lorsque le Loup de sang apex reçoit un coup :" , ":shield: `=Loup de sang apex défense : [Points de dégâts de votre coup]`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+})
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Loup apex attaque")) {
+    const degat = Math.floor(7 * Math.random() + 112)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup apex :" , ":crossed_swords: Le Loup apex sautant sur vous, il n'arrive pas à vous toucher et retombe lourdement au sol, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup apex :" , ":crossed_swords: Le Loup apex bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Slime apex attaque")) {
+    const degat = Math.floor(6 * Math.random() + 45)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Slime apex :" , ":crossed_swords: Le Slime apex essaye de se rapprocher de vous pour s'accrocher à vous, mais il est trop lent, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (51 <= roll & roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Slime apex :" , ":crossed_swords: Le Slime apex se rapproche de vous et arrive à s'accrocher à vous en tentant de vous étouffer, il inflige " + degat + " points de dégâts perce armure")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (81 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Slime apex :" , ":crossed_swords: Le Slime apex tente de se coller à un joueur. , il inflige " + degat + " points de dégâts perce armure et il attaquera le joueur touché jusqu'à sa mort, sans possibilité de défense. ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Dark bandit attaque")) {
+    const degat = Math.floor(11 * Math.random() + 115)
+    const degatCrit = Math.floor(6 * Math.random() + 55)
+    const poison = Math.floor(3 * Math.random() + 19)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Dark bandit :" , ":crossed_swords: Le Dark bandit tente de planter deux dagues étranges sur votre torse, mais il ne fait que abîmer votre armure, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll & roll <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Dark bandit :" , ":crossed_swords: Le Dark bandit sort deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, " +
+                                                     "il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Dark bandit :" , ":crossed_swords: Le Dark bandit sort un genre de liquide qu'il verse sur sa lame avant de foncer sur vous. S'il vous touche et vous empoisonne en perçant votre armure, " +
+                                                     "il inflige " + degatCrit + " points de dégâts et infligera " + poison + " points de dégâts de poison par tour pendant trois tours [L'armure ne réduit pas les dégâts du poison]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Loup de sang apex attaque")) {
+    const degat = Math.floor(11 * Math.random() + 120)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang apex :" , ":crossed_swords: Le Loup de sang apex hurle et essaye de bondir sur vous et mordre votre cou, mais il perd l'équilibre et retombe, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll & roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang apex :" , ":crossed_swords: Le Loup de sang apex hurle ce qui détruit vos oreilles, il se met à bondir sur vous avec les crocs d'une couleur rouge, et vous mord le cou, " +
+                                                    "il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Loup de sang apex :" , ":crossed_swords: Le Loup de sang apex hurle mais son hurlement n'est pas celui habituel mais bien plus long, il se met à bondir sur vous avec les crocs d'une couleur rouge, " +
+                                                    "et vous mord le cou, il inflige " + degat + " points de dégâts et 2 Loup apexs apparaîssent [Les Loup apexs qui apparaîssent meurent si le Loup de sang apex meurt.]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Forêt | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup apex défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup apex :" , ":shield: Le Loup apex tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup apex :" , ":shield: Le Loup apex saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Slime apex défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.8))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Slime apex :" , ":shield: Le corps du Slime apex ralentit votre coup et réduit les dégâts, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Dark bandit défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const parade = Math.floor(6 * Math.random() + 90)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Dark bandit :" , ":shield: Le Dark bandit tente de parer votre coup à l'aide de ses deux dagues, mais votre attaque est assez puissante et il se la prend, " +
+                                                  "vous infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Dark bandit :" , ":shield: Le Dark bandit arrive à parer votre coup en bloquant votre coup entre ses deux dagues, " +
+                                                  "il vous met un coup de pied avant de profiter de cette occasion pour planter ses deux dagues, il inflige " + parade + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Loup de sang apex défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup de sang apex :" , ":shield: Le Loup de sang apex essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Loup de sang apex :" , ":shield: Le Loup de sang apex saute en arrière et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 
 // Boss palier 1
 
