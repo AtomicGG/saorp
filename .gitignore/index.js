@@ -26228,7 +26228,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants qui sont mutiplié par le nombre de joeurs.\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous. \n\n" +
                                                  ":crossed_swords: Renard apex : 2 a 4 \n" +
                                                  ":crossed_swords: Loup apex : 2 a 4 \n" +
                                                  ":crossed_swords: Chien apex : 2 a 4\n" +
@@ -26246,7 +26246,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
                                                  ":crossed_swords: Sanglier apex : 2 a 4 \n" +
                                                  ":crossed_swords: Slime apex : 2 a 4  \n" +
                                                  ":crossed_swords: Chien apex : 2 a 4 \n" +
@@ -26264,7 +26264,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
                                                  ":crossed_swords: Jeune kobolt apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt explorateur apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt garde apex : 2 a 4 \n" +
@@ -26282,7 +26282,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
                                                  ":crossed_swords: Kobolt mineur apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt combattant apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt ouvrier apex : 2 a 4 \n" +
@@ -26300,7 +26300,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
                                                  ":crossed_swords: Lapin géant apex : 2 \n" +
                                                  ":crossed_swords: Loup de sang apex : 2 \n" +
                                                  ":crossed_swords: Kobolt enragé apex : 2\n" +
@@ -26318,7 +26318,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
                                                  ":crossed_swords: Kobolt géant rouge : 1 \n" +
                                                  ":crossed_swords: Kobolt sentinelle : 2")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
