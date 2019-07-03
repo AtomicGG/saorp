@@ -26214,8 +26214,8 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":bank: Labyrinthe :" , ":bank: Bienvenue dans ce labyrinthe où vous pouvez rencontrer toute sortes de monstres. C'est la tour qu'il faut franchir avant d'arriver à la salle du boss ! Pas de limite joueurs mais attention, vous ne pouvez pas prendre de pause entre les combats.\n\n" +
-                                        ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Labyrinthe partie 1 ` et une fois fini le combat vous lancez directement `=Labyrinthe partie 2 ` ")
+    .addField(":bank: Labyrinthe :" , ":bank: Bienvenue dans ce labyrinthe où vous pouvez rencontrer toute sortes de monstres. C'est la tour qu'il faut franchir avant d'arriver à la salle du boss ! 7 joueurs max peuvent venir dans le labyrinthe, vous ne pouvez pas prendre de pause entre les combats.\n\n" +
+                                        ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Labyrinthe partie 1 ` et une fois fini le combat vous lancez directement `=Labyrinthe partie 2 ` ainsi de suite. ")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
     .setTimestamp()
     message.channel.send({embed})
@@ -26228,12 +26228,12 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
-                                                 ":crossed_swords: Renard apex : 4 \n" +
-                                                 ":crossed_swords: Loup apex : 3 \n" +
-                                                 ":crossed_swords: Chien apex : 3\n" +
-                                                 ":crossed_swords: Slime apex : 2 \n" +
-                                                 ":crossed_swords: Lapin géant apex : 2")
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants qui sont mutiplié par le nombre de joeurs.\n\n" +
+                                                 ":crossed_swords: Renard apex : 2 a 4 \n" +
+                                                 ":crossed_swords: Loup apex : 2 a 4 \n" +
+                                                 ":crossed_swords: Chien apex : 2 a 4\n" +
+                                                 ":crossed_swords: Slime apex : 2 a 4 \n" +
+                                                 ":crossed_swords: Lapin géant apex : 2 a 4 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26247,11 +26247,11 @@ bot.on('message', message => {
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
 .addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
-                                                 ":crossed_swords: Sanglier apex : 4 \n" +
-                                                 ":crossed_swords: Slime apex : 3 \n" +
-                                                 ":crossed_swords: Chien apex : 3\n" +
-                                                 ":crossed_swords: Dark bandit : 2 \n" +
-                                                 ":crossed_swords: Loup de sang apex : 2")
+                                                 ":crossed_swords: Sanglier apex : 2 a 4 \n" +
+                                                 ":crossed_swords: Slime apex : 2 a 4  \n" +
+                                                 ":crossed_swords: Chien apex : 2 a 4 \n" +
+                                                 ":crossed_swords: Dark bandit : 2 a 4  \n" +
+                                                 ":crossed_swords: Loup de sang apex : 2 a 4 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26265,11 +26265,11 @@ bot.on('message', message => {
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
 .addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
-                                                 ":crossed_swords: Jeune kobolt apex : 4 \n" +
-                                                 ":crossed_swords: Kobolt explorateur apex : 3 \n" +
-                                                 ":crossed_swords: Kobolt garde apex : 3\n" +
-                                                 ":crossed_swords: Kobolt espion apex : 2 \n" +
-                                                 ":crossed_swords: Kobolt enragé apex : 2")
+                                                 ":crossed_swords: Jeune kobolt apex : 2 a 4  \n" +
+                                                 ":crossed_swords: Kobolt explorateur apex : 2 a 4  \n" +
+                                                 ":crossed_swords: Kobolt garde apex : 2 a 4 \n" +
+                                                 ":crossed_swords: Kobolt espion apex : 2 a 4  \n" +
+                                                 ":crossed_swords: Kobolt enragé apex : 2 a 4 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26283,11 +26283,11 @@ bot.on('message', message => {
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
 .addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants\n\n" +
-                                                 ":crossed_swords: Kobolt mineur apex : 4 \n" +
-                                                 ":crossed_swords: Kobolt combattant apex : 3 \n" +
-                                                 ":crossed_swords: Kobolt ouvrier apex : 3\n" +
-                                                 ":crossed_swords: Chien errant apex : 2 \n" +
-                                                 ":crossed_swords: Kobolt pilion apex : 2")
+                                                 ":crossed_swords: Kobolt mineur apex : 2 a 4  \n" +
+                                                 ":crossed_swords: Kobolt combattant apex : 2 a 4  \n" +
+                                                 ":crossed_swords: Kobolt ouvrier apex : 2 a 4 \n" +
+                                                 ":crossed_swords: Chien errant apex : 2 a 4  \n" +
+                                                 ":crossed_swords: Kobolt pilion apex : 2 a 4 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26304,8 +26304,8 @@ bot.on('message', message => {
                                                  ":crossed_swords: Lapin géant apex : 2 \n" +
                                                  ":crossed_swords: Loup de sang apex : 2 \n" +
                                                  ":crossed_swords: Kobolt enragé apex : 2\n" +
-                                                 ":crossed_swords: Kobolt pilion apex : 2 \n" +
-                                                 ":crossed_swords: Loup gigantesque apex : 1")
+                                                 ":crossed_swords: Kobolt pilion apex : 3 \n" +
+                                                 ":crossed_swords: Loup gigantesque apex : 2")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
