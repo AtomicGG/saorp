@@ -19981,7 +19981,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt dense combat")) {
     let joueurs = args.slice(3).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
+  //  if (talkedRecently.has(message.author.id+1000)) {//
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -19993,7 +19993,7 @@ bot.on('message', message => {
     } else {
       let test = 0;
       let lombricIrregulier = 0;
-      let paplliAssit = 0;
+      let paplliAssit = 257;
       let bousierColossal = 0;
       let snakeSneaky = 0;
       let doryphoreGeant = 0;
@@ -20219,7 +20219,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Venom attaque")) {
-      const degat = Math.floor(26 * Math.random() + 90)
+      const degat = Math.floor(26 * Math.random() + 85)
       const poison = Math.floor(11 * Math.random() + 25)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 35){
@@ -20774,7 +20774,7 @@ bot.on('message', message => {
     } else {
       const LierreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
       const LierreRare = Math.floor(2 * 0.75 * Math.random())
-      const Exp = Math.floor(5 * Math.random() + 15)
+      const Exp = Math.floor(6 * Math.random() + 15)
       const LierreParfait = Math.floor(2 * 0.95 * Math.random())
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -20811,7 +20811,7 @@ bot.on('message', message => {
     } else {
       const BoisMediocre = Math.floor(3 * Math.random() + 1)
       const BoisCommun = Math.floor((2 - 0.75) * Math.random())
-      const Exp = Math.floor(3 * Math.random() + 5)
+      const Exp = Math.floor(5 * Math.random() + 7)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -20847,7 +20847,7 @@ bot.on('message', message => {
       const Peau = Math.floor((2 - 0.50) * Math.random())
       const Coeur = Math.floor((2 - 0.75) * Math.random())
       const Oeil = Math.floor((2 - 0.75) * Math.random())
-      const Exp = Math.floor(4 * Math.random() + 8)
+      const Exp = Math.floor(5 * Math.random() + 11)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -26228,7 +26228,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous. \n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher. \n\n" +
                                                  ":crossed_swords: Renard apex : 2 a 4 \n" +
                                                  ":crossed_swords: Loup apex : 2 a 4 \n" +
                                                  ":crossed_swords: Chien apex : 2 a 4\n" +
@@ -26246,7 +26246,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher.\n\n" +
                                                  ":crossed_swords: Sanglier apex : 2 a 4 \n" +
                                                  ":crossed_swords: Slime apex : 2 a 4  \n" +
                                                  ":crossed_swords: Chien apex : 2 a 4 \n" +
@@ -26264,7 +26264,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher. \n\n" +
                                                  ":crossed_swords: Jeune kobolt apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt explorateur apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt garde apex : 2 a 4 \n" +
@@ -26282,7 +26282,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher. \n\n" +
                                                  ":crossed_swords: Kobolt mineur apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt combattant apex : 2 a 4  \n" +
                                                  ":crossed_swords: Kobolt ouvrier apex : 2 a 4 \n" +
@@ -26300,7 +26300,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants.\n\n" +
                                                  ":crossed_swords: Lapin géant apex : 2 \n" +
                                                  ":crossed_swords: Loup de sang apex : 2 \n" +
                                                  ":crossed_swords: Kobolt enragé apex : 2\n" +
@@ -26318,7 +26318,7 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ils seront a 3 de chaque,si vous êtes a 4 ou plus ils seront aux maximum affiché tous.\n\n" +
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Vous voyez la salle du boss derrière ces monstres.\n\n" +
                                                  ":crossed_swords: Kobolt géant rouge : 1 \n" +
                                                  ":crossed_swords: Kobolt sentinelle : 2")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
@@ -26337,7 +26337,7 @@ if (message.content === (prefix) + "Renard apex"){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Renard apex :" , ":japanese_ogre: Mignon mais dangereux, il se situe dans les plaines du palier 1 !")
   .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946477927694346/renard_fabrice_cahez_650_.png")
-  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 620")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 420")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Renard apex attaque`")
   .addField(":shield: Lorsque le Renard apex reçoit un coup :" , ":shield: `=Renard apex défense : [Points de dégâts de votre coup]`")
   .setTimestamp()
@@ -26352,7 +26352,7 @@ if (message.content === (prefix) + "Sanglier apex"){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Sanglier apex :" , ":japanese_ogre: Assez imposant et résistant, il se situe dans les plaines du palier 1 !")
   .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946487620993055/Sanglier.png")
-  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 630")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 530")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Sanglier apex attaque`")
   .addField(":shield: Lorsque le Sanglier apex reçoit un coup :" , ":shield: `=Sanglier apex défense : [Points de dégâts de votre coup]`")
   .setTimestamp()
@@ -26367,7 +26367,7 @@ if (message.content === (prefix) + "Chien apex"){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Chien apex :" , ":japanese_ogre: Solitaire mais très aggressif, il se situe dans les plaines du palier 1 !")
   .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946498026799137/st2.depositphotos.png")
-  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 615")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 415")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien apex attaque`")
   .addField(":shield: Lorsque le Chien apex reçoit un coup :" , ":shield: `=Chien apex défense : [Points de dégâts de votre coup]`")
   .setTimestamp()
@@ -26382,7 +26382,7 @@ if (message.content === (prefix) + "Lapin géant apex"){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setTitle(":japanese_ogre: Lapin géant apex :" , ":japanese_ogre: Pacifique mais très protecteur, il se situe dans la forêt du palier 1 !")
   .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594946513382146068/lapin-tueur-de-paques-i-gor-2012.jpg")
-  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 870")
+  .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 770")
   .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Lapin géant apex attaque`")
   .addField(":shield: Lorsque le Lapin géant apex reçoit un coup :" , ":shield: `=Lapin géant apex défense : [Points de dégâts de votre coup]`")
   .setTimestamp()
@@ -26622,7 +26622,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Loup apex :" , ":japanese_ogre: Aussi rapide que dangereux, il se situe dans la forêt du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c8/Wolf.png/revision/latest?cb=20140308115118")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 600")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup apex attaque`")
     .addField(":shield: Lorsque le Loup apex reçoit un coup :" , ":shield: `=Loup apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26637,7 +26637,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Slime apex :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
     .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-Slime-5ac1b13e54af51.5535441915226432623469.png")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 850")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 750")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime apex attaque`")
     .addField(":shield: Lorsque le Slime apex reçoit un coup :" , ":shield: `=Slime apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26652,7 +26652,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Dark bandit :" , ":japanese_ogre: Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
     .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 940")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 840")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Dark bandit attaque`")
     .addField(":shield: Lorsque le Dark bandit reçoit un coup :" , ":shield: `=Dark bandit défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26667,7 +26667,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Loup de sang apex :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 300")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 900")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang apex attaque`")
     .addField(":shield: Lorsque le Loup de sang apex reçoit un coup :" , ":shield: `=Loup de sang apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26916,7 +26916,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Jeune kobolt apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
     .setImage("http://vignette2.wikia.nocookie.net/chroniclesofarn/images/b/b2/Kobold-11.jpg/revision/latest?cb=20130810171342")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Jeune kobolt apex attaque`")
     .addField(":shield: Lorsque le Jeune kobolt apex reçoit un coup :" , ":shield: `=Jeune kobolt apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26931,7 +26931,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt explorateur apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
     .setImage("https://i.pinimg.com/originals/73/6a/cf/736acf4e514eed57b8f255aff493f4ea.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1125")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 725")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt explorateur apex attaque`")
     .addField(":shield: Lorsque le Kobolt explorateur apex reçoit un coup :" , ":shield: `=Kobolt explorateur apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26946,7 +26946,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt ouvrier apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
     .setImage("https://cdn.discordapp.com/attachments/572791993420349442/574252054466527232/kobold.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1075")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 775")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt ouvrier apex attaque`")
     .addField(":shield: Lorsque le Kobolt ouvrier apex reçoit un coup :" , ":shield: `=Kobolt ouvrier apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26961,7 +26961,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt espion apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
     .setImage("https://cdn.discordapp.com/attachments/572791993420349442/574251399597129737/tumblr_pc8m38yNoH1v4fvg9o1_400.png")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 750")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt espion apex attaque`")
     .addField(":shield: Lorsque le Kobolt espion apex reçoit un coup :" , ":shield: `=Kobolt espion apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -26976,7 +26976,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt enragé apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
     .setImage("https://cdn.discordapp.com/attachments/543345227604164618/563394870207709184/Kobolt_enrager.jpeg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1650")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 850")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt enragé apex attaque`")
     .addField(":shield: Lorsque le Kobolt enragé apex reçoit un coup :" , ":shield: `=Kobolt enragé apex défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -27964,6 +27964,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt sentinelle défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
+    const devia = Math.floor(61 * Math.random() + 110)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 85){
       const embed = new Discord.RichEmbed()
@@ -27978,7 +27979,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt sentinelle :" , ":shield: Le Kobolt sentinelle décide de bloquer votre coup et le dévie sur un autre joueur a côté de vous. [Défense possible pour le joueur toucher. Vous ne passez pas orange si vous touchez votre allié]")
+      .addField(":shield: Kobolt sentinelle :" , ":shield: Le Kobolt sentinelle décide de bloquer votre coup et le dévie sur un autre joueur a côté de vous et inflige " + devia + " . [Défense possible pour le joueur toucher. Vous ne passez pas orange si vous touchez votre allié]")
       .setTimestamp()
       message.channel.send({embed})
     }
