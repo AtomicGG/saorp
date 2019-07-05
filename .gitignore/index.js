@@ -20010,7 +20010,9 @@ bot.on('message', message => {
         if (roll <= 50){
           test = test + 2 + paplliAssit;
           if (test <= (6 + 7 * (joueurs - 1))) {
-            paplliAssit = paplliAssit + 1;
+            if (joueurs != 1) {
+              paplliAssit = paplliAssit + 1;
+            }
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
