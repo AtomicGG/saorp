@@ -21786,7 +21786,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Bourdon flâneur :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Clairière du palier 1 !")
+    .setTitle(":japanese_ogre: Bourdon flâneur :" , ":japanese_ogre: Un insecte qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590559361961820190/43111646922_5cd4ecd7f1_k.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bourdon flâneur attaque`")
@@ -21802,7 +21802,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Taurus chargeur  :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 1 !")
+    .setTitle(":japanese_ogre: Taurus chargeur  :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://media.discordapp.net/attachments/543345227604164618/584058188953813024/taurus_chargeur.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus chargeur  attaque`")
@@ -21818,8 +21818,8 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Fort Taurus adroit :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Clairière du palier 1 !")
-    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
+    .setTitle(":japanese_ogre: Fort Taurus adroit :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
+    .setImage("https://cdn.discordapp.com/attachments/543345227604164618/596810463107350528/89246df4b0c6ce758ad30798dc650384.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Fort Taurus adroit attaque`")
     .addField(":shield: Lorsque le Fort Taurus adroit reçoit un coup :" , ":shield: `=Fort Taurus adroit défense : [Points de dégâts de votre coup]`")
@@ -21834,7 +21834,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Taurus lourd :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Clairière du palier 1 !")
+    .setTitle(":japanese_ogre: Taurus lourd :" , ":japanese_ogre: Un tarus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/543345227604164618/580401229063258132/taureau_lourd.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2550")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus lourd attaque`")
@@ -21892,7 +21892,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur piétine a plusieur reprise mais n'attaque pas. Vous avez de la chance !")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur piétine le sol a plusieur reprise mais n'attaque pas. Vous avez de la chance !")
       message.channel.send({embed})
     }
     if (31 <= roll && roll <= 90){
@@ -21918,15 +21918,15 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fort Taurus adroit attaque")) {
-    const degat = Math.floor(41 * Math.random() + 70)
-    const poison = Math.floor(4 * Math.random() + 7)
+    const degat = Math.floor(21 * Math.random() + 110)
+    const saignement = Math.floor(11 * Math.random() + 15)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit bombe le torse et ... c'est tout, vous avez de la chance")
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit envoie des hachettes mais vous rate, vous avez de la chance!")
       message.channel.send({embed})
     }
     if (26 <= roll && roll <= 90){
@@ -21934,7 +21934,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit vous lance des roche il inflige " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit vous lance des hachettes, il inflige " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21943,7 +21943,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit vous prend le pied et vous frappe sur un autre joueur " + degat + " points de dégâts sur deur joueur. Si vous êtes seul vous prenez les double dégâts... Oui c'est provisoire.")
+      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit vous lance des une hachettes très tranchante, il inflige " + degat + " points de dégâts et vous fait saigner " + saignement + " pendant 3 tours.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22033,7 +22033,7 @@ bot.on('message', message => {
     const Paraderaté  = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const Parade = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 40){
+    if (roll <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22041,7 +22041,7 @@ bot.on('message', message => {
       .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinté sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + "")
       message.channel.send({embed})
     }
-    if (41 <= roll){
+    if (81 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22065,7 +22065,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit tente d'esquiver votre coup en essayant de d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -22073,7 +22073,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit se faufile dans un coin étroit de la Clairière. Vous ne pouvez pas l'atteindre.")
+      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Et pendant ce temps il recule pour être hors de porté. ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -26233,12 +26233,12 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher. \n\n" +
-                                                 ":crossed_swords: Renard apex : 2 a 4 \n" +
-                                                 ":crossed_swords: Loup apex : 2 a 4 \n" +
-                                                 ":crossed_swords: Chien apex : 2 a 4\n" +
-                                                 ":crossed_swords: Slime apex : 2 a 4 \n" +
-                                                 ":crossed_swords: Lapin géant apex : 2 a 4 ")
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes de 1 a 4 vous avez deux monstres de chaque, si vous êtes plus de 5 vous avez le maximum de monstre afficher. \n\n" +
+                                                 ":crossed_swords: Renard apex : 2 a 3 \n" +
+                                                 ":crossed_swords: Loup apex : 2 a 3 \n" +
+                                                 ":crossed_swords: Chien apex : 2 a 3\n" +
+                                                 ":crossed_swords: Slime apex : 2 a 3 \n" +
+                                                 ":crossed_swords: Lapin géant apex : 2 a 3 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26251,12 +26251,12 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher.\n\n" +
-                                                 ":crossed_swords: Sanglier apex : 2 a 4 \n" +
-                                                 ":crossed_swords: Slime apex : 2 a 4  \n" +
-                                                 ":crossed_swords: Chien apex : 2 a 4 \n" +
-                                                 ":crossed_swords: Dark bandit : 2 a 4  \n" +
-                                                 ":crossed_swords: Loup de sang apex : 2 a 4 ")
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes de 1 a 4 vous avez deux monstres de chaque, si vous êtes plus de 5 vous avez le maximum de monstre afficher.\n\n" +
+                                                 ":crossed_swords: Sanglier apex : 2 a 3 \n" +
+                                                 ":crossed_swords: Slime apex : 2 a 3  \n" +
+                                                 ":crossed_swords: Chien apex : 2 a 3 \n" +
+                                                 ":crossed_swords: Dark bandit : 2 a 3 \n" +
+                                                 ":crossed_swords: Loup de sang apex : 2 a 3 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26269,12 +26269,12 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher. \n\n" +
-                                                 ":crossed_swords: Jeune kobolt apex : 2 a 4  \n" +
-                                                 ":crossed_swords: Kobolt explorateur apex : 2 a 4  \n" +
-                                                 ":crossed_swords: Kobolt garde apex : 2 a 4 \n" +
-                                                 ":crossed_swords: Kobolt espion apex : 2 a 4  \n" +
-                                                 ":crossed_swords: Kobolt enragé apex : 2 a 4 ")
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes de 1 a 4 vous avez deux monstres de chaque, si vous êtes plus de 5 vous avez le maximum de monstre afficher. \n\n" +
+                                                 ":crossed_swords: Jeune kobolt apex : 2 a 3  \n" +
+                                                 ":crossed_swords: Kobolt explorateur apex : 2 a 3  \n" +
+                                                 ":crossed_swords: Kobolt garde apex : 2 a 3 \n" +
+                                                 ":crossed_swords: Kobolt espion apex : 2 a 3  \n" +
+                                                 ":crossed_swords: Kobolt enragé apex : 2 a 3 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26287,12 +26287,12 @@ bot.on('message', message => {
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(3447003)
-.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes seul ou a deux, les monstres sont a 2 de chaque, si vous êtes 3 ou 4 ils seront a 3 de chaque,si vous êtes a 5 ou plus ils seront aux maximum afficher. \n\n" +
-                                                 ":crossed_swords: Kobolt mineur apex : 2 a 4  \n" +
-                                                 ":crossed_swords: Kobolt combattant apex : 2 a 4  \n" +
-                                                 ":crossed_swords: Kobolt ouvrier apex : 2 a 4 \n" +
-                                                 ":crossed_swords: Chien errant apex : 2 a 4  \n" +
-                                                 ":crossed_swords: Kobolt pilion apex : 2 a 4 ")
+.addField(":bank: Labyrinthe :" , ":bank: En marchant dans le labyrinthe, vous rencontrez les ennemis suivants. Si vous êtes de 1 a 4 vous avez deux monstres de chaque, si vous êtes plus de 5 vous avez le maximum de monstre afficher. \n\n" +
+                                                 ":crossed_swords: Kobolt mineur apex : 2 a 3  \n" +
+                                                 ":crossed_swords: Kobolt combattant apex : 2 a 3  \n" +
+                                                 ":crossed_swords: Kobolt ouvrier apex : 2 a 3 \n" +
+                                                 ":crossed_swords: Chien errant apex : 2 a 3  \n" +
+                                                 ":crossed_swords: Kobolt pilion apex : 2 a 3 ")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
