@@ -21836,7 +21836,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Taurus lourd :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Clairière du palier 1 !")
     .setImage("https://cdn.discordapp.com/attachments/543345227604164618/584064279552983073/bfyeusifbk.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2550 :shield: 80")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 2550")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus lourd attaque`")
     .addField(":shield: Lorsque le Taurus lourd reçoit un coup :" , ":shield: `=Taurus lourd défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Taurus lourd récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -22128,7 +22128,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 35) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       carapace = Math.floor(2 * Math.random() + 1)
@@ -22186,7 +22186,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 45) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
@@ -22244,7 +22244,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 55) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
@@ -22302,7 +22302,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 25) / 10
+    const roll = Math.floor(11 * Math.random() + 40) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
@@ -23019,7 +23019,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField(":egg: Oeuf brisé :" , ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
     .addField("Prix d'achat :" , "8000 cols")
-    .addField("Prix de revente :" , "250 cols")
+    .addField("Prix de revente :" , "2000 cols")
     .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :" , "=Achat/découverte d'un Oeuf brisé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
@@ -23030,7 +23030,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
   if (message.content.startsWith(prefix + "Achat/découverte d'un Oeuf brisé")) {
-    if(A <= 50){
+    if(A <= 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -23040,7 +23040,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(A >= 51 & A <= 60){
+    if(A >= 61 & A <= 70){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -23051,7 +23051,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(A >= 61 & A <= 70){
+    if(A >= 71 & A <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -23062,7 +23062,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(A >= 71 & A <= 80){
+    if(A >= 81 & A <= 90){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -23073,7 +23073,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if(A >= 81 & A <= 100){
+    if(A >= 91 & A <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
