@@ -21679,31 +21679,31 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
-    let lvl = args.slice(3).join(" : ");
-    const control = Math.floor(120 * Math.random() + 120)
-    let xp = control - (lvl * 6)
-    const cols = Math.floor(140 * Math.random() + 140)
-    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffTaurus = Math.floor(2 * 0.80 * Math.random())
-    if (xp <= 0) {
-      xp = 0
-    }
-    const embed = new Discord.RichEmbed()
-    .setColor(3447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setImage("http://i.imgur.com/6Pfztwn.png")
-    .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                    ":sparkles: Points d'expérience : " + xp + "\n" +
-                                                    ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                    ":syringe: Potion améliorée : " + potionAmelio + "\n" +
-                                                    ":scales: Equipement de taurus au choix : " + stuffTaurus)
-    .setTimestamp()
-    message.channel.send({embed})
+let cont = message.content.slice(prefix.length).split(" ");
+const args = cont.slice(1);
+if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
+  let lvl = args.slice(3).join(" : ");
+  const control = Math.floor(120 * Math.random() + 120)
+  let xp = control - (lvl * 6)
+  const cols = Math.floor(140 * Math.random() + 140)
+  const potionAmelio = Math.floor(2 * 0.25 * Math.random())
+  const stuffTaurus = Math.floor(2 * 0.80 * Math.random())
+  if (xp <= 0) {
+    xp = 0
   }
+  const embed = new Discord.RichEmbed()
+  .setColor(3447003)
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
+  .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                                                  ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                  ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                  ":syringe: Potion améliorée : " + potionAmelio + "\n" +
+                                                  ":scales: Equipement de bug au choix : " + stuffTaurus)
+  .setTimestamp()
+  message.channel.send({embed})
+}
 });
 
 // Clairière | Combat
