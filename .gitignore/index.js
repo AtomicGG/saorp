@@ -20008,6 +20008,9 @@ bot.on('message', message => {
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
+        if (passageSolo) {
+          roll = 1;
+        }
         if (roll <= 50){
           test = test + 2 + paplliAssit;
           if (test <= (6 + 7 * (joueurs - 1)) || passageSolo) {
