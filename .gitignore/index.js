@@ -19993,7 +19993,7 @@ bot.on('message', message => {
     } else {
       let test = 0;
       let lombricIrregulier = 0;
-      let paplliAssit = 257;
+      let paplliAssit = 1;
       let bousierColossal = 0;
       let snakeSneaky = 0;
       let doryphoreGeant = 0;
