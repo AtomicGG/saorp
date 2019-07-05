@@ -21626,7 +21626,7 @@ bot.on('message', message => {
                                         ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Clairière chasser`\n\n" +
                                         ":pick: Pour miner, niveau 7 minimum requis dans 'Mineur' :\n:pick: `=Clairière miner`\n\n" +
                                         ":book: Pour avoir une quête :\n:book: `=Clairière quête`")
-    .setImage("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/237430/00a3992c06a9599091bad79a8a01e585a975ea2e.jpg")
+    .setImage("https://cdn.discordapp.com/attachments/545062628272373770/596799566599291030/7mDgwOG5iCvWH9VRjHQtzxcMOI4372x249.png")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21695,7 +21695,7 @@ if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
   .setColor(3447003)
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
+  .setImage("https://cdn.discordapp.com/attachments/545062628272373770/596799566599291030/7mDgwOG5iCvWH9VRjHQtzxcMOI4372x249.png")
   .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
@@ -22359,7 +22359,7 @@ bot.off('message', message => {
     } else {
       const LierreAntidote= Math.floor(2 * 0.5 * Math.random() + 1)
       const LierreSoin = Math.floor(2 * 0.75 * Math.random())
-      const Exp = Math.floor(5 * Math.random() + 11)
+      const Exp = Math.floor(6 * Math.random() + 15)
       const LierreParfait = Math.floor(2 * 0.95 * Math.random())
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
@@ -22397,7 +22397,7 @@ bot.on('message', message => {
       const FerMediocre = Math.floor(2 * 0.5 * Math.random() + 1)
       const FerCommun = Math.floor(2 * 0.80 * Math.random())
       const FerRare = Math.floor(2 * 0.95 * Math.random())
-      const Exp = Math.floor(5 * Math.random() + 7)
+      const Exp = Math.floor(5 * Math.random() + 11)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -22434,7 +22434,7 @@ bot.off('message', message => {
       const Peau = Math.floor((2 - 0.50) * Math.random())
       const Coeur = Math.floor((2 - 0.75) * Math.random())
       const Oeil = Math.floor((2 - 0.75) * Math.random())
-      const Exp = Math.floor(4 * Math.random() + 4)
+      const Exp = Math.floor(5 * Math.random() + 11)
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -23018,7 +23018,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField(":egg: Oeuf brisé :" , ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
-    .addField("Prix d'achat :" , "1000 cols")
+    .addField("Prix d'achat :" , "8000 cols")
     .addField("Prix de revente :" , "250 cols")
     .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :" , "=Achat/découverte d'un Oeuf brisé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
