@@ -26214,7 +26214,7 @@ bot.on('message', message => {
 
 // Labyrinthes palier 1
 
-bot.on('message', message => {
+bot.off('message', message => {
   if (message.content === (prefix) + "Labyrinthe"){
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -27724,7 +27724,7 @@ bot.on('message', message => {
 });
 
 // Boss palier 1
-
+/*
 bot.on('message', message => {
   if (message.content === (prefix) + "Illfang le seigneur kobolt"){
     const embed = new Discord.RichEmbed()
@@ -27910,7 +27910,7 @@ bot.on('message', message => {
     }
   }
 });
-
+*/
 //kobolt sentinel
 
 bot.on('message', message => {
