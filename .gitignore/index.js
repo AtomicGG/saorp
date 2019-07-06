@@ -21805,8 +21805,8 @@ bot.on('message', message => {
     .setTitle(":japanese_ogre: Taurus chargeur  :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://media.discordapp.net/attachments/543345227604164618/584058188953813024/taurus_chargeur.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus chargeur  attaque`")
-    .addField(":shield: Lorsque le Taurus chargeur  reçoit un coup :" , ":shield: `=Taurus chargeur  défense : [Points de dégâts de votre coup]`")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus chargeur attaque`")
+    .addField(":shield: Lorsque le Taurus chargeur  reçoit un coup :" , ":shield: `=Taurus chargeur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Taurus chargeur  récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
@@ -21900,7 +21900,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec son épaule en avant. Il vous percutte violemment vous faisant perdre " + degat + " points de dégâts et vous étourdit pendant 1 tour.")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec ses cornes en avant. Il vous percutte violemment vous faisant perdre " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21909,7 +21909,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauté dans les airs et d'écraser ses pieds contre vous violemment, vous etes projeté au sol et perdez " + degatCrit + " ")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauté dans les airs et d'écraser ses pieds contre vous violemment, vous etes projeté au sol et perdez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. ")
       .setTimestamp()
       message.channel.send({embed})
     }
