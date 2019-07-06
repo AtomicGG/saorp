@@ -21849,8 +21849,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bourdon flâneur attaque")) {
-    const degat = Math.floor(46 * Math.random() + 95)
-    const degatCrit = Math.floor(76 * Math.random() + 250)
+    const degat = Math.floor(36 * Math.random() + 105)
+    const degatCrit = Math.floor(76 * Math.random() + 200)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
       const embed = new Discord.RichEmbed()
@@ -21883,8 +21883,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus chargeur attaque")) {
-    const degat = Math.floor(36 * Math.random() + 105)
-    const degatCrit = Math.floor(36 * Math.random() + 115)
+    const degat = Math.floor(36 * Math.random() + 115)
+    const degatCrit = Math.floor(36 * Math.random() + 125)
     const tours = Math.floor(2 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 30){
@@ -21895,7 +21895,7 @@ bot.on('message', message => {
       .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur piétine le sol a plusieur reprise mais n'attaque pas. Vous avez de la chance !")
       message.channel.send({embed})
     }
-    if (31 <= roll && roll <= 90){
+    if (31 <= roll && roll <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21904,7 +21904,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (91 <= roll){
+    if (81 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21918,8 +21918,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fort Taurus adroit attaque")) {
-    const degat = Math.floor(21 * Math.random() + 110)
-    const saignement = Math.floor(11 * Math.random() + 15)
+    const degat = Math.floor(21 * Math.random() + 120)
+    const saignement = Math.floor(11 * Math.random() + 25)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
       const embed = new Discord.RichEmbed()
