@@ -26199,7 +26199,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Vous protégez un de vos alliés pendant 3 tour. Vous subissez les dégâts de celui-ci à sa place, vous ne pouvez pas vous défendre lorsque vous vous subissez ces dégâts. Vous pouvez toujours vous défendre si vous êtes visé directement. Les dégâts sont réduit de 20% pendant la durée de cette technique.La réduction de dégâts s'applique après votre armure")
+        .addField(":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tour, Les dégâts sont réduit de 20% quand vous protégez votre allié.")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
         .setTimestamp()
         message.channel.send({embed})
