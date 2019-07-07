@@ -13699,7 +13699,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Découverte de l'écu du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Résistance au saignement : 40 et Il est impossible d'avoir un autre bouclier en le portant!")
+    .addField(":scales: Découverte de l'écu du roi déchu à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:crossed_swords: Ce bouclier offre l'attaque suivante :\n\n:crossed_swords: =Protection du roi déchu\n\n:warning: Il est impossible d'avoir un autre bouclier en le portant!")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21918,7 +21918,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fort Taurus adroit attaque")) {
-    const degat = Math.floor(21 * Math.random() + 120)
+    const degat = Math.floor(21 * Math.random() + 125)
     const saignement = Math.floor(11 * Math.random() + 25)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
@@ -26199,7 +26199,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tour, Les dégâts sont réduit de 20% quand vous protégez votre allié.")
+        .addField(":crossed_swords: :crossed_swords: Vous protégez un de vos alliés pendant 3 tour. Vous subissez les dégâts de celui-ci à sa place, vous ne pouvez pas vous défendre lorsque vous vous subissez ces dégâts. Vous pouvez toujours vous défendre si vous êtes visé directement. Les dégâts sont réduit de 20% pendant la durée de cette technique. (La réduction de dégâts s'applique après votre armure)")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
         .setTimestamp()
         message.channel.send({embed})
@@ -26214,7 +26214,7 @@ bot.on('message', message => {
 
 // Labyrinthes palier 1
 
-bot.off('message', message => {
+bot.on('message', message => {
   if (message.content === (prefix) + "Labyrinthe"){
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -26309,8 +26309,8 @@ bot.on('message', message => {
                                                  ":crossed_swords: Lapin géant apex : 2 \n" +
                                                  ":crossed_swords: Loup de sang apex : 2 \n" +
                                                  ":crossed_swords: Kobolt enragé apex : 2\n" +
-                                                 ":crossed_swords: Kobolt pilion apex : 3 \n" +
-                                                 ":crossed_swords: Loup gigantesque apex : 2")
+                                                 ":crossed_swords: Kobolt pilion apex : 2 \n" +
+                                                 ":crossed_swords: Loup gigantesque apex : 1")
 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
 .setTimestamp()
 message.channel.send({embed})
@@ -26625,8 +26625,8 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Loup apex :" , ":japanese_ogre: Aussi rapide que dangereux, il se situe dans la forêt du palier 1 !")
-    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/c8/Wolf.png/revision/latest?cb=20140308115118")
+    .setTitle(":japanese_ogre: Loup apex :" , ":japanese_ogre: Aussi rapide que dangereux, il se situe dans le labyrinthe du palier 1 !")
+    .setImage("https://i.imgur.com/roUAAKP.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 600")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup apex attaque`")
     .addField(":shield: Lorsque le Loup apex reçoit un coup :" , ":shield: `=Loup apex défense : [Points de dégâts de votre coup]`")
@@ -26640,8 +26640,8 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Slime apex :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans la forêt du palier 1 !")
-    .setImage("https://png2.kisspng.com/20180402/gee/kisspng-ooze-monster-clip-art-Slime-5ac1b13e54af51.5535441915226432623469.png")
+    .setTitle(":japanese_ogre: Slime apex :" , ":japanese_ogre: Gelatineux mais aussi collant, il se situe dans le labyrinthe du palier 1 !")
+    .setImage("https://i.imgur.com/nwAOUjx.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 750")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Slime apex attaque`")
     .addField(":shield: Lorsque le Slime apex reçoit un coup :" , ":shield: `=Slime apex défense : [Points de dégâts de votre coup]`")
@@ -26655,8 +26655,8 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Dark bandit :" , ":japanese_ogre: Un bandit encapuchonné et vêtue de noir, il se situe dans la forêt du palier 1 !")
-    .setImage("https://i.pinimg.com/originals/89/4b/e4/894be4b076a2543a4ed08bd495fc11a5.jpg")
+    .setTitle(":japanese_ogre: Dark bandit :" , ":japanese_ogre: Un bandit encapuchonné et vêtue de noir, il se situe dans le labyrinthe du palier 1 !")
+    .setImage("https://i.imgur.com/hty372m.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 840")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Dark bandit attaque`")
     .addField(":shield: Lorsque le Dark bandit reçoit un coup :" , ":shield: `=Dark bandit défense : [Points de dégâts de votre coup]`")
@@ -26670,8 +26670,8 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Loup de sang apex :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans la forêt du palier 1 !")
-    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/6/61/Pup.png/revision/latest?cb=20121220052808")
+    .setTitle(":japanese_ogre: Loup de sang apex :" , ":japanese_ogre: Très dangereux mais aussi mortel, il se situe dans le labyrinthe du palier 1 !")
+    .setImage("https://i.imgur.com/Hx4jVt6.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 900")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Loup de sang apex attaque`")
     .addField(":shield: Lorsque le Loup de sang apex reçoit un coup :" , ":shield: `=Loup de sang apex défense : [Points de dégâts de votre coup]`")
@@ -26950,7 +26950,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt ouvrier apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
-    .setImage("https://cdn.discordapp.com/attachments/572791993420349442/574252054466527232/kobold.jpg")
+    .setImage("https://i.imgur.com/gKlrjLZ.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 775")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt ouvrier apex attaque`")
     .addField(":shield: Lorsque le Kobolt ouvrier apex reçoit un coup :" , ":shield: `=Kobolt ouvrier apex défense : [Points de dégâts de votre coup]`")
@@ -27311,7 +27311,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt garde apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
-    .setImage("https://i0.wp.com/nerdarchy.com/wp-content/uploads/2018/01/kobold-dragonshield.jpeg?fit=1000%2C945&ssl=1")
+    .setImage("https://i.imgur.com/pk7ooul.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 820")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt garde apex attaque`")
     .addField(":shield: Lorsque le Kobolt garde apex reçoit un coup :" , ":shield: `=Kobolt garde apex défense : [Points de dégâts de votre coup]`")
@@ -27326,7 +27326,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt combattant apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
-    .setImage("https://vignette.wikia.nocookie.net/rpg/images/5/56/Wallpaper_Kobold.jpg/revision/latest?cb=20160519131410&path-prefix=ru")
+    .setImage("https://i.imgur.com/hiazRoT.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 800")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt combattant apex attaque`")
     .addField(":shield: Lorsque le Kobolt combattant apex reçoit un coup :" , ":shield: `=Kobolt combattant apex défense : [Points de dégâts de votre coup]`")
@@ -27341,7 +27341,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt mineur apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
-    .setImage("https://cdnb.artstation.com/p/assets/images/images/008/352/349/large/eric-gould-kobold-colored.jpg?1512192898")
+    .setImage("https://i.imgur.com/17ud6tI.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 850")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt mineur apex attaque`")
     .addField(":shield: Lorsque le Kobolt mineur apex reçoit un coup :" , ":shield: `=Kobolt mineur apex défense : [Points de dégâts de votre coup]`")
@@ -27356,7 +27356,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Chien errant apex :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans le labyrinthe du palier 1 !")
-    .setImage("http://pathfinder-rpg.golarion.royaumesoublies.fr/Images/chiengob.png")
+    .setImage("https://i.imgur.com/dnqiTpy.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Chien errant apex attaque`")
     .addField(":shield: Lorsque le Chien errant apex reçoit un coup :" , ":shield: `=Chien errant apex défense : [Points de dégâts de votre coup]`")
@@ -27371,7 +27371,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt pilion apex :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans le labyrinthe du palier 1 !")
-    .setImage("https://cdn.discordapp.com/attachments/493849233519149056/594929531652014121/handiss_by_yigitkoroglu-db6hiyh.jpg")
+    .setImage("https://i.imgur.com/tG5UrCo.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt pilion apex attaque`")
     .addField(":shield: Lorsque le Kobolt pilion apex reçoit un coup :" , ":shield: `=Kobolt pilion apex défense : [Points de dégâts de votre coup]`")
@@ -27385,7 +27385,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt mineur apex attaque")) {
     const degat = Math.floor(26 * Math.random() + 105)
-    const degatCrit = Math.floor(26 * Math.random() + 115)
+    const degatCrit = Math.floor(26 * Math.random() + 75)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 50){
       const embed = new Discord.RichEmbed()
@@ -27442,7 +27442,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt garde apex attaque")) {
-    const degat = Math.floor(36 * Math.random() + 75)
+    const degat = Math.floor(16 * Math.random() + 105)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
       const embed = new Discord.RichEmbed()
@@ -27655,7 +27655,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Loup gigantesque apex attaque")) {
     const degat = Math.floor(31 * Math.random() + 110)
-    const degatZone = Math.floor(21 * Math.random() + 70)
+    const degatZone = Math.floor(21 * Math.random() + 90)
     const degatCrit = Math.floor(31 * Math.random() + 130)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
@@ -28071,15 +28071,12 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Kobolt géant rouge :" , ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans la grotte du palier 1 !")
+    .setTitle(":japanese_ogre: Kobolt géant rouge :" , ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans le labyrinthe")
     .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 3500")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt géant rouge attaque`")
     .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :" , ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort en solo :" , ":moneybag: `=Kobolt géant rouge récompenses solo : [Votre niveau]`")
-    .addField(":moneybag: Les récompenses une fois mort en groupe :" , ":moneybag: `=Kobolt géant rouge récompenses groupe : [Votre niveau]`")
     .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :" , ":warning: Provocation, étourdissement")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Kobolt mineur récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
