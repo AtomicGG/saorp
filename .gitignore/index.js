@@ -26891,7 +26891,7 @@ bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Loup de sang apex défense")) {
-    let Dégâts = args.slice(4).join(" : ");
+    let Dégâts = args.slice(5).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 65){
