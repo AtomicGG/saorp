@@ -26199,7 +26199,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_sword: Protection du roi déchu :", ":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tour, Les dégâts sont réduit de 20% pendant la durée de cette technique. Vous pouvez arrêté la technique quand vous voulez.")
+        .addField(":crossed_swords: Protection du roi déchu :", ":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tour, Les dégâts sont réduit de 20% pendant la durée de cette technique. Vous pouvez arrêté la technique quand vous voulez.")
         .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
         .setTimestamp()
         message.channel.send({embed})
