@@ -28037,7 +28037,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(4).join(" : ");
     const A = (Math.floor((Dégâts*1.5)*Math.random()+(Dégâts/1.5)))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((51)*Math.random()+50))
+    const C = (Math.floor((21)*Math.random()+100))
     if (B <= 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -28046,7 +28046,7 @@ bot.on('message', message => {
       .addField(":shield: Kobolt géant rouge :" , ":shield: Le kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " +A+ " points de dégâts")
       message.channel.send({embed})
     }
-    if (76 <= B & B <= 96){
+    if (76 <= B & B <= 89){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -28055,7 +28055,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (97 <= B){
+    if (90 <= B){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
