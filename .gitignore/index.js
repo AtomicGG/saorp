@@ -14056,7 +14056,7 @@ bot.on('message', message => {
       talkedRecently.add(message.author.id+12311);
       setTimeout(() => {
         talkedRecently.delete(message.author.id+12311);
-      }, 1800000);
+      }, 3600000);
     }
   }
 });
@@ -27998,9 +27998,9 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Kobolt géant rouge attaque")) {
     const Dégâts = 40
-    const A = (Math.floor((30)*Math.random()+100))
+    const A = (Math.floor((30)*Math.random()+130))
     const B = (Math.floor((100)*Math.random()+1))
-    const C = (Math.floor((10)*Math.random()+120))
+    const C = (Math.floor((10)*Math.random()+150))
     if (B <= 30){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
