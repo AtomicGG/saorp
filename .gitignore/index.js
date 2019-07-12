@@ -44519,7 +44519,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Tir [Aqua-Splash]")) {
     const X = (Math.floor((100)*Math.random()))
-    const Cible = (Math.floor((3)*Math.random()+1))
+    const Cible = (Math.floor((2)*Math.random()+1))
     if(X <= 40){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -46094,11 +46094,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Devastator :" , "La version militaire du Lance-Pile 1-PDTG. Son piston surpuissant peut projeter une pile à une vitesse phénoménale et percer à peu près n'importe quelle matière. Cette version peut faire un trou gros comme un poing dans 2 zombies, s'ils sont alignés")
+    .addField("Devastator :" , "La version militaire du Lance-Pile 1-PDTG. Son piston surpuissant peut projeter une pile à une vitesse phénoménale et percer à peu près n'importe quelle matière. Cette version peut faire un trou gros comme un poing dans 2 zombies, s'ils sont alignés\n\nCet objet nécessite `Pile` pour fonctionner, chaque `Pile` permettra d'utiliser cet objet 1 fois\n\nPour utiliser cet objet : `=Tir [Devastator]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tir [Devastator]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((3)*Math.random()+1))
+    if(X <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Devastator] :" , "Vous ratez malheureusement votre tir...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 26){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Devastator] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure sévère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Devastator (démonté)") {
@@ -46106,7 +46130,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Devastator (démonté) :" , "La version militaire du Lance-Pile 1-PDTG. Son piston surpuissant peut projeter une pile à une vitesse phénoménale et percer à peu près n'importe quelle matière. Cette version peut faire un trou gros comme un poing dans 2 zombies, s'ils sont alignés\n\nCependant, il faudra le monter avant de pouvoir l'utiliser")
+    .addField("Devastator (démonté) :" , "La version militaire du Lance-Pile 1-PDTG. Son piston surpuissant peut projeter une pile à une vitesse phénoménale et percer à peu près n'importe quelle matière. Cette version peut faire un trou gros comme un poing dans 2 zombies, s'ils sont alignés\n\nPour assembler cet objet et obtenir `Devastator` vous devrez être à l'atelier et utiliser :\n\n`1 Devastator (démonté)`\n`1 Courroie`\n`1 Poignée de vis et écrous`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46118,7 +46142,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Diode lazer :" , "Un composant électronique d'une époque révolue, dans l'état on peut s'en servir de juda, même si on ne voit pas à travers")
+    .addField("Diode lazer :" , "Un composant électronique d'une époque révolue, dans l'état on peut s'en servir de juda, même si on ne voit pas à travers\n\nPour assembler cet objet et obtenir `Pointeur laser brûlant` vous devrez être à l'atelier et utiliser :\n\n`1 Diode lazer`\n`1 Maglite Pif'gadget`\n`1 Bobine de fil de fer`\n`1 Tube de cuivre`\n`1 Poignée de vis et écrous`\n\nL'assemblage prendra 20 minutes à sa réalisation ainsi que 1 point d'action\n\nSi votre `Maglite Pif'gadget` était chargé pendant la fabrication, alors votre `Pointeur laser brûlant` sera aussi chargé")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46130,7 +46154,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Distributeur vide :" , "Ce distributeur n'a plus aucune utilité depuis la fin des pillages, il peut faire cependant des ravages une fois balancé du haut d'un rempart")
+    .addField("Distributeur vide :" , "Ce distributeur n'a plus aucune utilité depuis la fin des pillages, il peut faire cependant des ravages une fois balancé du haut d'un rempart\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 7 points de défenses à chaques nuits !\n\nLa mise en place de cet défense est de 3 H sur le chantier de la ville ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46142,11 +46166,92 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Doggy-bag :" , "Un vieux sac tout graisseux en papier qui doit bien contenir quelque chose à manger... Notez qu'il sent mauvais\n\nPour ouvrir : `Ouverture doggy-bag`")
+    .addField("Doggy-bag :" , "Un vieux sac tout graisseux en papier qui doit bien contenir quelque chose à manger... Notez qu'il sent mauvais\n\nPour ouvrir : `=Ouverture [Doggy-bag]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ouverture [Doggy-bag]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Napolitains moisis`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 11 & X <= 30){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Paquet de chips molles`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X >= 31 & X <= 40){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Chewing-gums séchés`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X >= 41 & X <= 50){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Petits beurres rances`")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X >= 51 & X <= 60){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Nouilles chinoises`")
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(X >= 61 & X <= 70){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Ailerons de poulet entamés`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(X >= 71 & X <= 80){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Pim's périmé`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                    if(X >= 81 & X <= 90){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Biscuit fade`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                if(X >= 91){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Ouverture [Doggy-bag] :" , "Vous obtenez l'objet :\n\n`1 Jambon-beurre moisi`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                }
+            }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Débris métalliques") {
@@ -46154,7 +46259,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Débris métalliques :" , "Des bouts de ferrailles rouillées, du grillage, des vis... Rien d'utilisable tel quel, il faudrait d'abord retaper ça en ville")
+    .addField("Débris métalliques :" , "Des bouts de ferrailles rouillées, du grillage, des vis... Rien d'utilisable tel quel, il faudrait d'abord retaper ça en ville\n\nPour raffiner cet objet et obtenir `Ferraille` vous devrez être à l'atelier et cela prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46166,7 +46271,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Décapsuleur :" , "Certaines pièces sont de vrais boîtes de conserve, rien de mieux qu'un outil approprié pour aller à la pêche aux objets utiles ! Malheureusement, étant en piteux état, ce décapsuleur ne pourra ouvrir qu'une seule porte")
+    .addField("Décapsuleur :" , "Certaines pièces sont de vrais boîtes de conserve, rien de mieux qu'un outil approprié pour aller à la pêche aux objets utiles ! Malheureusement, étant en piteux état, ce décapsuleur ne pourra ouvrir qu'une seule porte\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46179,7 +46284,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Dés :" , "Jouez aux dés avec d'autres perdants")
+    .addField("Dés :" , "Jouez aux dés avec d'autres perdants\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46191,7 +46296,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Détonateur compact :" , "Un dispositif compact qui peut faire exploser une petite charge d'explosif...")
+    .addField("Détonateur compact :" , "Un dispositif compact qui peut faire exploser une petite charge d'explosif...\n\nPour assembler cet objet et obtenir `Sac plastique + explosif` vous devrez être à l'atelier et utiliser :\n\n`1 Détonateur compact`\n`1 Explosifs bruts`\n`1 Sac plastique`\n`1 Rustine`\n\nL'assemblage prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Aqua-Splash` vous devrez être à l'atelier et utiliser :\n\n`1 Aqua-Splash (démonté)`\n`1 Sac plastique`\n`1 Rustine`\n`1 Tube de cuivre`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Moteur` vous devrez être à l'atelier et utiliser :\n\n`1 Moteur incomplet`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46203,7 +46308,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Eau croupie :" , "Ce bout de ferraille tordue a permis de capter de l'eau, en petite quantité\n\nLe problème, c'est qu'elle n'est pas potable, en l'état")
+    .addField("Eau croupie :" , "Ce bout de ferraille tordue a permis de capter de l'eau, en petite quantité\n\nLe problème, c'est qu'elle n'est pas potable, en l'état\n\nPour purifier cet objet et obtenir `Eau croupie purifiée` vous devrez utiliser :\n\n`1 Eau croupie`\n`1 Micropur effervescent`\n\nLa purification prendra 2 minutes à sa réalisation")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46228,7 +46333,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Epice fortes :" , "Un petit sachet d'épices...")
+    .addField("Epice fortes :" , "Un petit sachet d'épices...\n\nPour assembler cet objet et obtenir `Nouilles chinoises épices` vous devrez être à la cuisine et utiliser :\n\n`1 Epices fortes`\n`1 Ration d'eay`\n`1 Nouilles chinoises`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46240,7 +46345,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Explosifs bruts :" , "Boum !")
+    .addField("Explosifs bruts :" , "Boum !\n\nPour assembler cet objet et obtenir `Sac plastique + explosif` vous devrez être à l'atelier et utiliser :\n\n`1 Détonateur compact`\n`1 Explosifs bruts`\n`1 Sac plastique`\n`1 Rustine`\n\nL'assemblage prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Aqua-Splash` vous devrez être à l'atelier et utiliser :\n\n`1 Aqua-Splash (démonté)`\n`1 Sac plastique`\n`1 Rustine`\n`1 Tube de cuivre`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Mine antipersonnel` vous devrez être à l'atelier et utiliser :\n\n`1 Bobine de fil de fer`\n`1 Poignée de vis et écrous`\n`1 Explosifs bruts`\n`1 Rustine`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46252,7 +46357,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Ferraille :" , "Du métal... Un peu lourd, mais ça sert toujours !\n\nLe métal est utilisé pour la construction de bâtiments en ville")
+    .addField("Ferraille :" , "Du métal... Un peu lourd, mais ça sert toujours !\n\nLe métal est utilisé pour la construction de bâtiments en ville\n\nPour raffiner cet objet et obtenir `Structures métalliques` vous devrez être à l'atelier et cela prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Caddie` vous devrez être à l'atelier et utiliser :\n\n`1 Caddie bancal`\n`1 Ferraille`\n`1 Rustine`\n`1 Tube de cuivre`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Cafetière` vous devrez être à l'atelier et utiliser :\n\n`1 Cafetière incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Tube de cuivre`\n`Composant électronique`\n`1 Cyanure`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Moteur` vous devrez être à l'atelier et utiliser :\n\n`1 Moteur incomplet`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Tondeuse à gazon` vous devrez être à l'atelier et utiliser :\n\n`1 Tondeuse à gazon (démonté)`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Portière de voiture` vous devrez être à l'atelier et utiliser :\n\n`1 Portière de voiture incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46276,7 +46381,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Four cancérigène :" , "Les légendes racontent que la technologie à Micro-Ondes serait l'une des raisons du déclin de la civilisation\n\nCertains disent même que l'existence même des morts-vivants n'y serait pas étrangère\n\nCet objet est `Encombrant`")
+    .addField("Four cancérigène :" , "Les légendes racontent que la technologie à Micro-Ondes serait l'une des raisons du déclin de la civilisation\n\nCertains disent même que l'existence même des morts-vivants n'y serait pas étrangère\n\nCet objet est `Encombrant`\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 10 points de défenses cette nuit seulement !\n\nLa mise en place de cet défense est de 2 H sur le chantier de la ville ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46288,7 +46393,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Fragment de tôle :" , "Des morceaux de tôle qui ne demandent qu'à servir de protection dans votre maison... Pour peu que vous les assembliez correctement\n\nCet objet est `Encombrant`")
+    .addField("Fragment de tôle :" , "Des morceaux de tôle qui ne demandent qu'à servir de protection dans votre maison... Pour peu que vous les assembliez correctement\n\nCet objet est `Encombrant`\n\nPour raffiner cet objet et obtenir `Plaque de tôle` vous devrez être à l'atelier et cela prendra 1 H à sa réalisation ainsi que 2 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46300,7 +46405,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Fumigène 'Senteur sapin' :" , "Un modèle très courant de fumigènes, celui-ci ayant la particularité de sentir le conifère\n\nIl dissimule aussi votre prochain mouvement s'il est effectué au plus tard 1 minute après l'utilisation du fumigène\n\nATTENTION : utilisez cet objet APRÈS avoir réalisé les actions que vous souhaitez masquer...")
+    .addField("Fumigène 'Senteur sapin' :" , "Un modèle très courant de fumigènes, celui-ci ayant la particularité de sentir le conifère\n\nIl dissimule aussi votre prochain mouvement s'il est effectué au plus tard 1 minute après l'utilisation du fumigène\n\nATTENTION : utilisez cet objet APRÈS avoir réalisé les actions que vous souhaitez masquer..\n\nCette objet permet de s'enfuir d'un combat ou d'une situation automatiquement, personne ne peux reconnaître quelqu'un qui est à l'intérieur")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46312,9 +46417,34 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Fusil d'assaut :" , "Une version peu courante du M16. Plus compacte, probablement destiné à un usage 'civil'...\n\nLa chasse à la Galinette Cendrée diront certains")
+    .addField("Fusil d'assaut :" , "Une version peu courante du M16. Plus compacte, probablement destiné à un usage 'civil'...\n\nLa chasse à la Galinette Cendrée diront certains\n\nCet objet nécessite `Balle` pour fonctionner, chaque `Balle` permettra d'utiliser cet objet 1 fois\n\nPour utiliser cet objet : `=Tir [Fusil d'assaut]`")
     .setTimestamp()
     message.channel.send({embed})
+
+    
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tir [Fusil d'assaut]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((4)*Math.random()+1))
+    if(X <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Fusil d'assaut] :" , "Vous ratez malheureusement votre tir...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 21){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Fusil d'assaut] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure mortelle`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
   }
 }) ;
 
@@ -46324,7 +46454,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Fusée éclairante :" , "La Fusée Éclairante vous permet de réveler les informations d'une zone éloignée de la ville. Une fois retombée elle libère un petit emetteur qui transmet de suite les informations")
+    .addField("Fusée éclairante :" , "La Fusée Éclairante vous permet de réveler les informations d'une zone éloignée de la ville. Une fois retombée elle libère un petit emetteur qui transmet de suite les informations\n\nLa lumière pourra être vus par tous les survivants présents")
     .setTimestamp()
     message.channel.send({embed})
   }
