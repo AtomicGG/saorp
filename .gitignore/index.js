@@ -44626,7 +44626,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Batteur électrique (démonté) :" , "Ca pourrait faire une bonne arme, si seulement vous aviez les pièces manquantes pour réparer ce gadget...\n\nPour assembler cet objet et obtenir `Batteur électrique` vous devrez être à l'atelier et utiliser :\n\n`Batteur électrique (démonté)`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 Composant électronique`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+    .addField("Batteur électrique (démonté) :" , "Ca pourrait faire une bonne arme, si seulement vous aviez les pièces manquantes pour réparer ce gadget...\n\nPour assembler cet objet et obtenir `Batteur électrique` vous devrez être à l'atelier et utiliser :\n\n`1 Batteur électrique (démonté)`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 Composant électronique`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47111,7 +47111,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Matelas :" , "ZZzzzz... Grincement... ZZzzzz... Grincement...\n\nCet objet est `Encombrant`")
+    .addField("Matelas :" , "ZZzzzz... Grincement... ZZzzzz... Grincement...\n\nCet objet est `Encombrant`\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 5 points de défenses à chaques nuits !\n\nLa mise en place de cet défense est de 2 H sur le chantier de la ville ainsi que 1 point d'action\n\nL'utilisation de ce matelas chez sois permet de mieux dormir, vous n'aurez plus besoin de dormir 4 H pour éviter l'état `Fatigué` mais seulement 2 H")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47135,7 +47135,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Meuble en kit :" , "Un meuble en pièces détachées, difficile à identifier...\n\nCet objet est `Encombrant`")
+    .addField("Meuble en kit :" , "Un meuble en pièces détachées, difficile à identifier...\n\nCet objet est `Encombrant`\n\nPour monter cet objet et obtenir un meuble au choix, vous devrez être à l'atelier et le montage prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nIl vous faudra cependant avoir un `Tournevis` et une `Scie à métaux` sur vous pour y parvenir\n\nVous pourrez choisir de monter l'un des meubles suivants :\n\n`1 Rocking chair`\n`Vieille porte`\n`Chaise EKTÖRP-GLUTEN`\n`Tréteau`\n`Table Järpen`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47147,7 +47147,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Micropur effervescent :" , "Une capsule de produit désinfectant à mettre dans de l'eau pour la nettoyer\n\nAvant, c'était utilisé pour récurer les toilettes\n\nVous imaginez aisément le goût de l'eau après... (ATTENTION: le rendement de ce produit est faible en comparaison d'un Purificateur industriel)")
+    .addField("Micropur effervescent :" , "Une capsule de produit désinfectant à mettre dans de l'eau pour la nettoyer\n\nAvant, c'était utilisé pour récurer les toilettes\n\nVous imaginez aisément le goût de l'eau après... (ATTENTION: le rendement de ce produit est faible en comparaison d'un Purificateur industriel)\n\nCet objet est utilisé pour purifié `Eau croupie` ainsi que `Jerrycan plein`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47159,11 +47159,26 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Mine antipersonnel :" , "On trouve encore des mines dans le désert, en général, ce sont plus les citoyens imprudents que les zombies qui marchent dessus")
+    .addField("Mine antipersonnel :" , "On trouve encore des mines dans le désert, en général, ce sont plus les citoyens imprudents que les zombies qui marchent dessus\n\nPour assembler cet objet et obtenir `Paillasson piégé` vous devrez être à l'atelier et utiliser :\n\n`1 Mine antipersonnel`\n`1 Paillasson`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nLa `Mine antipersonnel` est utilisable où vous voulez, la mise en place est de 2 minutes et lorsqu'un zombie ou un humain s'approchera, cela créer une explosion : `=Explosion [Mine antipersonnel]")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Explosion [Mine antipersonnel]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((26)*Math.random()+10))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Explosion [Mine antipersonnel] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il meurt")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }) ;
+          
 
 bot.on('message', message => {
   if (message.content === prefix + "Morceau de caisse") {
@@ -47171,7 +47186,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Morceau de caisse :" , "Un vieil assemblage de planches qui était utilisé pour fermer une grosse caisse, autrefois. Ca pourrait bien servir de défense, si seulement vous trouviez de quoi le consolider\n\nCet objet est `Encombrant`")
+    .addField("Morceau de caisse :" , "Un vieil assemblage de planches qui était utilisé pour fermer une grosse caisse, autrefois. Ca pourrait bien servir de défense, si seulement vous trouviez de quoi le consolider\n\nCet objet est `Encombrant`\n\nPour assembler cet objet et obtenir `Plaque de bois solide` vous devrez être à l'atelier et utiliser :\n\n`1 Morceau de caisse`\n`1 Planche tordue`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47183,7 +47198,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Morceau de contreplaqué :" , "Ce vieux morceau de contreplaqué vient d'un quelconque bâtiment. Au prix de quelques efforts, il devrait pouvoir servir à aménager une planque dehors")
+    .addField("Morceau de contreplaqué :" , "Ce vieux morceau de contreplaqué vient d'un quelconque bâtiment. Au prix de quelques efforts, il devrait pouvoir servir à aménager une planque dehors\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47195,7 +47210,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Morceau de grillage :" , "Une petite partie d'une cloture grillagée, rouillée et abimée")
+    .addField("Morceau de grillage :" , "Une petite partie d'une cloture grillagée, rouillée et abimée\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
