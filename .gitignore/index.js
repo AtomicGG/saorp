@@ -20267,7 +20267,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser pour 1 tour. Vous avez de la chance !")
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pour 1 tour. Vous avez de la chance !")
         message.channel.send({embed})
       }
       if (31 <= roll && roll <= 90){
@@ -21920,6 +21920,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fort Taurus adroit attaque")) {
     const degat = Math.floor(21 * Math.random() + 125)
+    const degatCrit = Math.floor(26 * Math.random() + 75)
     const saignement = Math.floor(11 * Math.random() + 25)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
@@ -21930,7 +21931,7 @@ bot.on('message', message => {
       .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit envoie des hachettes mais vous rate, vous avez de la chance!")
       message.channel.send({embed})
     }
-    if (26 <= roll && roll <= 90){
+    if (26 <= roll && roll <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21939,12 +21940,12 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (91 <= roll){
+    if (81 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit vous lance des une hachettes très tranchante, il inflige " + degat + " points de dégâts et vous fait saigner " + saignement + " pendant 3 tours.")
+      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit vous lance des une hachettes très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous fait saigner " + saignement + " pendant 3 tours.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21971,7 +21972,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense possible pour vous. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22129,7 +22130,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 35) / 10
+    const roll = Math.floor(11 * Math.random() + 30) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       carapace = Math.floor(2 * Math.random() + 1)
@@ -22187,7 +22188,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 45) / 10
+    const roll = Math.floor(11 * Math.random() + 40) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
@@ -22245,7 +22246,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 55) / 10
+    const roll = Math.floor(11 * Math.random() + 40) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
@@ -22303,7 +22304,7 @@ bot.on('message', message => {
     const dif = tMob - tJoueur
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
-    const roll = Math.floor(11 * Math.random() + 40) / 10
+    const roll = Math.floor(11 * Math.random() + 35) / 10
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
@@ -46429,7 +46430,7 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
 
-    
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Tir [Fusil d'assaut]")) {
     const X = (Math.floor((100)*Math.random()))
