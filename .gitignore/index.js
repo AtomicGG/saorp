@@ -21972,7 +21972,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense possible pour vous. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense ou interception possible pour vous. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22048,7 +22048,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur feinte votre attaque et se retrouve dans votre dos, il vous attrape par la taille et vous envoie valser vers l'arrière. Vous percutez le sol et perdez " + Parade + " points de dégâts.")
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur feinte votre attaque et se retrouve dans votre dos, il vous attrape par la taille et vous envoie valser vers l'arrière. Vous percutez le sol et vous vous prenez " + Parade + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
