@@ -21714,7 +21714,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Clairière combat")) {
     let joueurs = args.slice(2).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
+if (/*talkedRecently.has(message.author.id+1000)*/false) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
