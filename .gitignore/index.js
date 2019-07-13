@@ -21919,11 +21919,11 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fort taurus adroit attaque")) {
-    const degat = Math.floor(21 * Math.random() + 125)
+    const degat = Math.floor(26 * Math.random() + 125)
     const degatCrit = Math.floor(26 * Math.random() + 75)
     const saignement = Math.floor(11 * Math.random() + 25)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 25){
+    if (roll <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21931,7 +21931,7 @@ bot.on('message', message => {
       .addField(":crossed_swords: Fort taurus adroit :" , ":crossed_swords: Le Fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance!")
       message.channel.send({embed})
     }
-    if (26 <= roll && roll <= 80){
+    if (21 <= roll && roll <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22062,7 +22062,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(4).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 70){
+    if (roll <= 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22070,7 +22070,7 @@ bot.on('message', message => {
       .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en essayant de d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
-    if (71 <= roll){
+    if (61 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
