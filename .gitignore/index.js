@@ -27964,6 +27964,32 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Illfand phase 2 parade")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté, vous lui infligez " + Dégâts + " points de dégâts fois le nombre de fois que vous l'avez paré durant cette action. ")
+      message.channel.send({embed})
+    }
+    if (61 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade et le réussir en déviant votre lame et vous donne le double des dégats que vous aurez du recevoir, sauf si vous tentez de parade de nouveau !")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 
 //kobolt sentinel
 
