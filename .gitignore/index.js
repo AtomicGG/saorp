@@ -21822,8 +21822,8 @@ bot.on('message', message => {
     .setTitle(":japanese_ogre: Fort Taurus adroit :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/543345227604164618/596810463107350528/89246df4b0c6ce758ad30798dc650384.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350")
-    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Fort Taurus adroit attaque`")
-    .addField(":shield: Lorsque le Fort Taurus adroit reçoit un coup :" , ":shield: `=Fort Taurus adroit défense : [Points de dégâts de votre coup]`")
+    .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Fort taurus adroit attaque`")
+    .addField(":shield: Lorsque le Fort Taurus adroit reçoit un coup :" , ":shield: `=Fort taurus adroit défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Fort Taurus adroit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
@@ -22058,7 +22058,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Fort Taurus adroit défense")) {
+  if (message.content.startsWith(prefix + "Fort taurus adroit défense")) {
     let Dégâts = args.slice(4).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
