@@ -29543,6 +29543,14 @@ bot.on('message', message => {
     let XX = args.slice(1).join(" : ");
     const A = XX*5
     const X = (Math.floor((100)*Math.random()))
+    if(X < 25-A){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, mais vous vous faites aussi aggriper par les multiples zombies...")
+      .setTimestamp()
+      message.channel.send({embed})}
     if(X < 70-A){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
