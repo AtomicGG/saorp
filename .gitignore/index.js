@@ -29548,7 +29548,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, mais vous vous faites aussi aggriper par les multiples zombies...")
+      .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, mais vous vous faites aussi aggriper par les multiples zombies...\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à votre tour aussi : `=Aide : [Nombre de survivants aidant]`\n\n:skull: En cas d'échec des survivants à vous aider... : `=Dernier espoir`")
       .setTimestamp()
       message.channel.send({embed})}
     if(X < 70-A){
