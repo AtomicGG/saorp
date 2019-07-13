@@ -28104,7 +28104,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Liste des objets, partie 1 :" , "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5mg périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`")    .setTimestamp()
+  .addField("Liste des objets, partie 1 :" , "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -44662,12 +44662,12 @@ bot.on('message', message => {
             }) ;
 
 bot.on('message', message => {
-  if (message.content === prefix + "Betapropine 5mg périmée") {
+  if (message.content === prefix + "Betapropine 5MG périmée") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Betapropine 5mg périmée :" , "Ce petit cachet a un effet pour le moins mystérieux... Sur la boîte, il est écrit : 'ne pas donner à un testeur de moins de 18 ans'\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=Betapropine 5mg périmée [Effets]`")
+    .addField("Betapropine 5mg périmée :" , "Ce petit cachet a un effet pour le moins mystérieux... Sur la boîte, il est écrit : 'ne pas donner à un testeur de moins de 18 ans'\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=Betapropine 5MG périmée [Effets]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -44675,14 +44675,14 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Betapropine 5mg périmée [Effets]")) {
+  if (message.content.startsWith(prefix + "Betapropine 5MG périmée [Effets]")) {
     const X = (Math.floor((100)*Math.random()))
     if(X <= 65){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Betapropine 5mg périmée [Effets] :" , "Rien ne se passe de plus en utilisant `Betapropine 5mg périmée`")
+      .addField("Betapropine 5MG périmée [Effets] :" , "Rien ne se passe de plus en utilisant `Betapropine 5MG périmée`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 66 & X <= 85){
@@ -44690,7 +44690,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField("Betapropine 5mg périmée [Effets] :" , "Vous gagnez l'état : `Dépendance`")
+        .addField("Betapropine 5MG périmée [Effets] :" , "Vous gagnez l'état : `Dépendance`")
         .setTimestamp()
         message.channel.send({embed})}
       if(X >= 86){
@@ -44698,7 +44698,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Betapropine 5mg périmée [Effets] :" , "Vous gagnez l'état : `Terreur`")
+      .addField("Betapropine 5MG périmée [Effets] :" , "Vous gagnez l'état : `Terreur`")
       .setTimestamp()
       message.channel.send({embed})}
                 }
@@ -46753,7 +46753,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Jerrycan plein :" , "Le Jerrycan contient plusieurs rations d'eau non-potable (non-purifiée)\n\nToutefois, il faut que la ville dispose du bâtiment de filtrage adapté pour en faire de l'eau potable")
+    .addField("Jerrycan plein :" , "Le Jerrycan contient plusieurs rations d'eau non-potable (non-purifiée)\n\nToutefois, il faut que la ville dispose du bâtiment de filtrage adapté pour en faire de l'eau potable\n\nPour purifier cet objet et obtenir `Ration d'eau` vous devrez utiliser :\n\n`1 Jerrycan plein`\n`1 Micropur effervescent`\n\nLa purification prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46767,7 +46767,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Jus de mirabelle suspect :" , "Cette fiole soigneusement scellée contient du jus de mirabelle, c'est vraiment suspect\n\nD'autant qu'elle porte une étiquette : 'en cas d'ingestion, contacter le centre anti-poison le plus proche de chez vous'\n\nVous n'allez quand même pas boire ça ? Si ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Jus de mirabelle suspect :" , "Cette fiole soigneusement scellée contient du jus de mirabelle, c'est vraiment suspect\n\nD'autant qu'elle porte une étiquette : 'en cas d'ingestion, contacter le centre anti-poison le plus proche de chez vous'\n\nVous n'allez quand même pas boire ça ? Si ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !n\nCet objet est `cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46779,11 +46779,38 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Kalachnik'eau :" , "Une puissante sulfateuse à eau, son mécanisme grippé ne résistera pas à plus d'un assaut\n\nCet objet est `Encombrant`")
+    .addField("Kalachnik'eau :" , "Une puissante sulfateuse à eau, son mécanisme grippé ne résistera pas à plus d'un assaut\n\nCet objet est `Encombrant`\n\nCet objet nécessite `Ration d'eau` ou `Jerrycan plein` pour fonctionner, chaque `Ration d'eau` ou `Jerrycan plein` permettra d'utiliser cet objet 5 fois\n\nPour utiliser cet objet : `=Tir [Kalachnik'eau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tir [Kalachnik'eau]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((4)*Math.random()+1))
+    if(X <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Kalachnik'eau] :" , "Vous ratez malheureusement votre tir...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 31){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Kalachnik'eau] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Kit de bricolage") {
@@ -46791,7 +46818,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Kit de bricolage :" , "Cette boîte en ferraille contient tout le nécessaire de base pour remettre en état à peu près n'importe quoi, sauf vos voisins morts")
+    .addField("Kit de bricolage :" , "Cette boîte en ferraille contient tout le nécessaire de base pour remettre en état à peu près n'importe quoi, sauf vos voisins morts\n\nPermet de pouvoir réparé un objet qui est devenus inutilisable\n\nUne fois le kit utilisé, il deviendra un `Kit de bricolage abîmé`\n\nLa réparation prend 30 minutes")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46803,7 +46830,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Kit de bricolage abimé :" , "Cette boîte en ferraille contient tout le nécessaire de base pour remettre en état à peu près n'importe quoi, sauf vos voisins morts\n\nLe kit cependant n'est utilisable plus qu'une seul fois")
+    .addField("Kit de bricolage abimé :" , "Cette boîte en ferraille contient tout le nécessaire de base pour remettre en état à peu près n'importe quoi, sauf vos voisins morts\n\nLe kit n'est plus utilisable s'il n'est pas réparé à l'aide d'un `Tournevis` et d'une `Clé à molette`\n\nUne fois réparé, le kit redeviendra un `Kit de bricolage`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46815,11 +46842,41 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("LSD :" , "On ne sait pas d'où vient ce petit papier rose, mais quand on le met dans la bouche, il fait des bulles dans le cerveau\n\nEn utilisant cet objet, vous obtenez 6 points d'actions !")
+    .addField("LSD :" , "On ne sait pas d'où vient ce petit papier rose, mais quand on le met dans la bouche, il fait des bulles dans le cerveau\n\nEn utilisant cet objet, vous obtenez l'état `Drogué` ainsi que 6 points d'actions !\n\nEn utilisant cet objet : `=LSD [Effets]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "LSD [Effets]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("LSD [Effets] :" , "Rien ne se passe de plus en utilisant `LSD`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 51 & X <= 90){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("LSD [Effets] :" , "Vous gagnez l'état : `Dépendance`")
+        .setTimestamp()
+        message.channel.send({embed})}
+      if(X >= 91){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("LSD [Effets] :" , "Vous gagnez l'état : `Terreur`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Lambeau de chair") {
@@ -46827,7 +46884,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Lambeau de chair :" , "Un vieux bout de peau, ou de quoi que ce soit d'autre qui appartenait à un être vivant. Mais qu'est-ce que vous faites avec ça ?\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Lambeau de chair :" , "Un vieux bout de peau, ou de quoi que ce soit d'autre qui appartenait à un être vivant. Mais qu'est-ce que vous faites avec ça ?\n\nPour assembler cet objet et obtenir `Bombe macabre` vous devrez être à l'atelier et utiliser :\n\n`1 Lambeau de chair`\n`1 Lambeau de chair`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46839,7 +46896,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Lampe de chevet allumée :" , "Avec une lampe de chevet, vous aurez moins peur la nuit et vous dormirez peut-être mieux ainsi")
+    .addField("Lampe de chevet allumée :" , "Avec une lampe de chevet, vous aurez moins peur la nuit et vous dormirez peut-être mieux ainsi\n\nUne fois à l'intérieur de votre maison, vous pourrez calmer l'état `Terreur` en restant près de celle-ci pendant 2 H\n\nElle permet aussi d'automatiquement repérer les zombies qui sont aux alentours de votre maison")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46851,7 +46908,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Lampe de chevet éteinte :" , "C'est une jolie lampe de chevet, mais elle ne fonctionnera pas sans une pile neuve...")
+    .addField("Lampe de chevet éteinte :" , "C'est une jolie lampe de chevet, mais elle ne fonctionnera pas sans une pile neuve...\n\nPour recharger la lampe, une `Pile` sera nécessaire et elle permettra à la lampe d'être allumé pour une durée de 24 H au total")
     .setTimestamp()
     message.channel.send({embed})
   }
