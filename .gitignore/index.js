@@ -46466,11 +46466,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Grand bâton sec :" , "Il est suffisamment pointu pour empaler quelque chose, mais pas vraiment très résistant... Priez simplement pour qu'il tienne le choc")
+    .addField("Grand bâton sec :" , "Il est suffisamment pointu pour empaler quelque chose, mais pas vraiment très résistant... Priez simplement pour qu'il tienne le choc\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation\n\nCet objet possède 5 utilisations avant qu'il ne se casse, il faudra ensuite le réparer\n\nPour utiliser cet objet : `=Coup [Grand bâton sec]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coup [Grand bâton sec]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Grand bâton sec] :" , "Vous ratez malheureusement votre coup...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 46){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Grand bâton sec] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Gros chat mignon") {
@@ -46478,7 +46502,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Gros chat mignon :" , "C'est mignon, ça fait joli chez soi et ça sait à peu près se battre contre un zombie\n\nEt puis, si vous avez faim...")
+    .addField("Gros chat mignon :" , "C'est mignon, ça fait joli chez soi et ça sait à peu près se battre contre un zombie\n\nEt puis, si vous avez faim...\n\nVous pouvez tuer cet animal afin d'obtenir `2 Steak appétissant'")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46490,11 +46514,84 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Gros coffre en métal :" , "C'est particulièrement lourd et ça contient sûrement quelque chose de précieux...\n\nReste à trouver un outil plus adapté que vos dents pour l'ouvrir\n\nCet objet est `Encombrant`")
+    .addField("Gros coffre en métal :" , "C'est particulièrement lourd et ça contient sûrement quelque chose de précieux...\n\nReste à trouver un outil plus adapté que vos dents pour l'ouvrir\n\nCet objet est `Encombrant`\n\nCet objet est possible à ouvrir grâce à l'un des objets suivants :\n\n`Tournevis`\n`Couteau suisse`\n`Ouvre-boîte`\n`Scie à métaux`\n\nPour ouvrir : `=Ouverture [Gros coffre en métal]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ouverture [Gros coffre en métal]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Coupe-coupe`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 25 & X <= 35){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Tronçonneuse (démonté)`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X >= 36 & X <= 50){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Batteur électrique (démonté)`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X >= 51 & X <= 70){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Tondeuse à gazon (démonté)`")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X >= 71 & X <= 80){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Ceinture à poches`")
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(X >= 81 & X <= 85){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Devastator (démonté)`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(X >= 86 & X <= 90){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Aqua-Splash (démonté)`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                    if(X >= 91){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField("Ouverture [Gros coffre en métal] :" , "Vous obtenez l'objet :\n\n`1 Calibrateur PDTT Mark II`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                    }
+                }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Gros colis postal") {
@@ -46502,11 +46599,81 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Gros colis postal :" , "Un colis dont l'adresse est aujourd'hui illisible. Et on dirait bien qu'il y a quelque chose à l'intérieur... C'est Noël\n\nCet objet est `Encombrant`")
+    .addField("Gros colis postal :" , "Un colis dont l'adresse est aujourd'hui illisible. Et on dirait bien qu'il y a quelque chose à l'intérieur... C'est Noël\n\nCet objet est `Encombrant`\n\nPour ouvrir : `=Ouverture [Gros colis postal]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ouverture [Gros colis postal]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 Vodka marinostov`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 31 & X <= 40){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 'Debout-les-morts'`")
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X >= 41 & X <= 45){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 Fusil d'assaut`")
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X >= 46 & X <= 60){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 Petit manche vibrant`")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X >= 61 & X <= 75){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 Appareil électronique en panne`")
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(X >= 76 & X <= 80){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 Teddy n'ours`")
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(X >= 81 & X <= 90){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 Carton de matériaux`")
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                    if(X >= 91){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField("Ouverture [Gros colis postal] :" , "Vous obtenez l'objet :\n\n`1 Réserves d'un citoyen avisé`")
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                    }
+                }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Grosse chaîne rouillée") {
@@ -46514,11 +46681,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Grosse chaîne rouillée :" , "Cette vieille chaîne en fer est complètement distordue et n'a plus grande utilité... Mais on doit bien pouvoir étrangler quelqu'un avec")
+    .addField("Grosse chaîne rouillée :" , "Cette vieille chaîne en fer est complètement distordue et n'a plus grande utilité... Mais on doit bien pouvoir étrangler quelqu'un avec\n\nCet objet permet d'ouvrir `Caisse de nourriture` ainsi que `Caisse de matériel` coûtant une utilisation\n\nCet objet possède 10 utilisations avant qu'il ne se casse, il faudra ensuite le réparer\n\nPour utiliser cet objet : `=Coup [Grosse chaîne rouillée]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Coup [Grosse chaîne rouillée]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Grosse chaîne rouillée] :" , "Vous ratez malheureusement votre coup...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("?Hordes [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Coup [Grosse chaîne rouillée] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+      .setTimestamp()
+                  message.channel.send({embed})}
+                }
+            }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Guitare artisanale") {
@@ -46526,7 +46717,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Guitare artisanale :" , "Idéale pour draguer lors de nuit de feu de camp, elle reste très appréciée même depuis l'asexualisation des citoyens\n\nElle saura rendre joie et gaïté dans la ville")
+    .addField("Guitare artisanale :" , "Idéale pour draguer lors de nuit de feu de camp, elle reste très appréciée même depuis l'asexualisation des citoyens\n\nElle saura rendre joie et gaïté dans la ville\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46538,7 +46729,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Hydratone 100MG :" , "Pratique, l'Hydratone tient dans la poche et peut étancher votre soif quelques minutes après l'ingestion\n\nToutefois, elle ne retire PAS les effets de la fatigue et ne régénère PAS les points d'actions")
+    .addField("Hydratone 100MG :" , "Pratique, l'Hydratone tient dans la poche et peut étancher votre soif quelques minutes après l'ingestion\n\nToutefois, elle ne retire PAS les effets de la fatigue et ne régénère PAS les points d'actions\n\nUne fois cet objet utilisé, tous les états de soifs seront supprimés")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46550,7 +46741,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Jambon-beurre moisi :" , "Un reste de casse-croute qui n'a d'appétissant que son souvenir...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Jambon-beurre moisi :" , "Un reste de casse-croute qui n'a d'appétissant que son souvenir...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
