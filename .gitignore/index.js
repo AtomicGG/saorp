@@ -21972,7 +21972,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense possible pour vous. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense possible pour vous. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22033,17 +22033,17 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus chargeur défense")) {
     let Dégâts = args.slice(3).join(" : ");
     const Paraderaté  = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-    const Parade = Math.floor(21 * Math.random() + 35)
+    const Parade = Math.floor(26 * Math.random() + 125)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 80){
+    if (roll <= 75){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinté sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + "")
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinté sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + " points de dégâts.")
       message.channel.send({embed})
     }
-    if (81 <= roll){
+    if (76 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22090,7 +22090,7 @@ bot.on('message', message => {
     const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
     const paradeReussie = Math.floor(21 * Math.random() + 35)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 95){
+    if (roll <= 90){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22098,7 +22098,7 @@ bot.on('message', message => {
       .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attaque vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
-    if (96 <= roll){
+    if (91 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27837,7 +27837,28 @@ bot.on('message', message => {
       }
   }
 });
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3)))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
+                                       "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
 */
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
     const degatGroupe = Math.floor(31 * Math.random() + 155)
@@ -27894,6 +27915,7 @@ bot.on('message', message => {
   }
 });
 
+
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
@@ -27925,8 +27947,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
-                                       "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
+      .addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Le prochain joueur qui attaque appartenant au même groupe peut tenter un coups d'éstoc pour le surprendre. Le Illfang ne pourra pas se défendre de ce coup et le joueur aura fait son attaque.")
       .setTimestamp()
       message.channel.send({embed})
     }
