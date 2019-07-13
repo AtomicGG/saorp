@@ -28140,7 +28140,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Liste des objets, partie 4 :" , "`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Maglite Pif'gadget (démonté)`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`")    .setTimestamp()
+        .addField("Liste des objets, partie 4 :" , "`=Gros coffre en métal`\n`=Gros colis postal`\n`=Grosse chaîne rouillée`\n`=Guitare artisanale`\n`=Hydratone 100MG`\n`Jambon-beurre moisi`\n`=Jerrycan plein`\n`=Jus de mirabelle suspect`\n`=Kalachnik'eau`\n`=Kit de bricolage`\n`=Kit de bricolage abîmé`\n`=LSD`\n`=Lambeau de chair`\n`=Lampe de chevet éteinte`\n`=Lampe de chevet allumée`\n`=Lance-pile 1-PDTG`\n`=Lance-pile 1-PDTG (démonté)`\n`=Lance-pieu`\n`=Lance-pile MARK II`\n`=Lentille convexe`\n`=Liasse de billets`\n`=Légume suspect`\n`=Maglite Pif'gadget`\n`=Matelas`\n`=Melon d'intestin`\n`=Meuble en kit`\n`=Micropur effervescent`\n\nLa suite : `=Horde liste d'objets 5`")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
@@ -47089,24 +47089,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Maglite Pif'gadget :" , "Cette grosse lampe de poche au design douteux pourrait bien vous être utile pour vos fouilles dans le désert\n\nPour l'allumer, il suffit d'appuyer sur le nez du gros chien jaune, sur la poignée\n\nVous notez que la lampe fait maintenant 'ouh ouh ouh' quand vous la secouez")
+    .addField("Maglite Pif'gadget :" , "Cette grosse lampe de poche au design douteux pourrait bien vous être utile pour vos fouilles dans le désert\n\nPour l'allumer, il suffit d'appuyer sur le nez du gros chien jaune, sur la poignée\n\nVous notez que la lampe fait maintenant 'ouh ouh ouh' quand vous la secouez\n\nLa lampe une fois chargé à l'aide d'une `Pile` permettra d'être utiliser pour 4 H permettant de repérer facilement les zombies la nuit comme le jour, caché dans des lieux")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
 
 
-bot.on('message', message => {
-  if (message.content === prefix + "Maglite Pif'gadget (démonté)") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Maglite Pif'gadget (démonté) :" , "Cette grosse lampe de poche au design douteux pourrait bien vous être utile pour vos fouilles dans le désert\n\nPour l'allumer, il suffit d'appuyer sur le nez du gros chien jaune, sur la poignée\n\nVous notez que la lampe fait maintenant 'ouh ouh ouh' quand vous la secouez\n\nCependant, il faut monter cet objet avec d'autres matériaux pour pouvoir l'utiliser")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Matelas") {
