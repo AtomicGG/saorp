@@ -21918,7 +21918,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fort Taurus adroit attaque")) {
+  if (message.content.startsWith(prefix + "Fort taurus adroit attaque")) {
     const degat = Math.floor(21 * Math.random() + 125)
     const degatCrit = Math.floor(26 * Math.random() + 75)
     const saignement = Math.floor(11 * Math.random() + 25)
@@ -27817,10 +27817,31 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
     const degatGroupe = Math.floor(31 * Math.random() + 155)
+    const degatVert = Math.floor(21 * Math.random() + 200)
+    const degatVertGroupe = Math.floor(51 * Math.random() + 150)
+    const cible = Math.floor(4 * Math.random() + 2)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594566342489669662/Ukifune.gif")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang s'élance vers la personne qu'il a éjecté et lui fait un grand coup oblique plein de rage. " +
+                                               "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
+      message.channel.send({embed})
+      }
+  }
+});
+*/
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
+    const degatGroupe = Math.floor(31 * Math.random() + 155)
+    const degatGroupeArmure = Math.floor(21 * Math.random() + 100)
     const degatVert = Math.floor(21 * Math.random() + 200)
     const degatVertGroupe = Math.floor(51 * Math.random() + 150)
     const cible = Math.floor(4 * Math.random() + 2)
@@ -27830,9 +27851,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594566342489669662/Ukifune.gif")
-      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang s'élance vers la personne qu'il a éjecté et lui fait un grand coup oblique plein de rage. " +
-                                               "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang fait un coup circulaire au groupe qui vient de l'attaquer. Il inflige " + degatGroupeArmure + " dégâts de perce armure à ce groupe !")
+      .setTimestamp()
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 40){
