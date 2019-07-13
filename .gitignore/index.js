@@ -21665,7 +21665,7 @@ bot.on('message', message => {
         .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
                                                         ":crossed_swords: Bourdon flâneur : " + bourdonFlaneur + "\n" +
                                                         ":crossed_swords: Taurus chargeur : " + taurusChargeur+ "\n" +
-                                                        ":crossed_swords: Fort Taurus adroit : " + fortTaurus + "\n" +
+                                                        ":crossed_swords: Fort taurus adroit : " + fortTaurus + "\n" +
                                                         ":crossed_swords: Taurus lourd : " + taurusLourd)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Clairière quête accomplie : [Votre niveau]`" )
         .setTimestamp()
@@ -21767,7 +21767,7 @@ if (/*talkedRecently.has(message.author.id+1000)*/false) {
       .addField(":mount_fuji: Clairière :" , ":mount_fuji: En marchant dans la Clairière, vous rencontrez les ennemis suivants\n\n" +
                                                ":crossed_swords: Bourdon flâneur : " + bourdonFlaneur + "\n" +
                                                ":crossed_swords: Taurus chargeur  : " + taurusChargeur+ "\n" +
-                                               ":crossed_swords: Fort Taurus adroit : " + fortTaurus + "\n" +
+                                               ":crossed_swords: Fort taurus adroit : " + fortTaurus + "\n" +
                                                ":crossed_swords: Taurus lourd : " + taurusLourd)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
@@ -21815,16 +21815,16 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === (prefix) + "Fort Taurus adroit"){
+  if (message.content === (prefix) + "Fort taurus adroit"){
     const embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setAuthor(message.author.username , message.author.avatarURL)
-    .setTitle(":japanese_ogre: Fort Taurus adroit :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
+    .setTitle(":japanese_ogre: Fort taurus adroit :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/543345227604164618/596810463107350528/89246df4b0c6ce758ad30798dc650384.png")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Fort taurus adroit attaque`")
-    .addField(":shield: Lorsque le Fort Taurus adroit reçoit un coup :" , ":shield: `=Fort taurus adroit défense : [Points de dégâts de votre coup]`")
-    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Fort Taurus adroit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
+    .addField(":shield: Lorsque le Fort taurus adroit reçoit un coup :" , ":shield: `=Fort taurus adroit défense : [Points de dégâts de votre coup]`")
+    .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Fort taurus adroit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -21928,7 +21928,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit envoie des hachettes mais vous rate, vous avez de la chance!")
+      .addField(":crossed_swords: Fort taurus adroit :" , ":crossed_swords: Le Fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance!")
       message.channel.send({embed})
     }
     if (26 <= roll && roll <= 80){
@@ -21936,7 +21936,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit :" , ":crossed_swords: Le Fort Taurus adroit vous lance des hachettes, il inflige " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Fort taurus adroit :" , ":crossed_swords: Le Fort taurus adroit vous lance des hachettes, il inflige " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21945,7 +21945,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort Taurus adroit:" , ":crossed_swords: Le Fort Taurus adroit vous lance des une hachettes très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous fait saigner " + saignement + " pendant 3 tours.")
+      .addField(":crossed_swords: Fort taurus adroit:" , ":crossed_swords: Le Fort taurus adroit vous lance des une hachettes très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous fait saigner " + saignement + " pendant 3 tours.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22067,7 +22067,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit tente d'esquiver votre coup en essayant de d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en essayant de d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -22075,7 +22075,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort Taurus adroit :" , ":shield: Le Fort Taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Et pendant ce temps il recule pour être hors de porté. ")
+      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Et pendant ce temps il recule pour être hors de porté. ")
       .setTimestamp()
       message.channel.send({embed})
     }
