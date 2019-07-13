@@ -11876,7 +11876,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les familiers :" , "Parfois durant votre aventure, vous gagnerez sur des monstres, dans des coffres ou même pendant des évènements ce que l'on appelle un 'Familier' !\n\nCe sont des petits animaux qui vous permettent de non seulement vous offrir des bonus, mais aussi qui vous suivent partout où vous irez !")
+    .addField("Les familiers :" , "Parfois durant votre aventure, vous gagnerez sur des monstres, dans des coffres ou même pendant des évènements ce que l'on appelle un 'Familier' !\n\nCe sont des petits animaux qui vous permettent de non seulement vous offrir des bonus, mais aussi qui vous suivent partout où vous irez !\n\nPour les familiers qui attaquent, faites la commande de l'attaque si votre coup réussis, mais pas obligatoirement toucher l'ennemi.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -47179,7 +47179,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }) ;
-          
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Morceau de caisse") {
