@@ -21714,7 +21714,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Clairière combat")) {
     let joueurs = args.slice(2).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
+if (/*talkedRecently.has(message.author.id+1000)*/false)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27726,7 +27726,7 @@ bot.on('message', message => {
 });
 
 // Boss palier 1
-/*
+
 bot.on('message', message => {
   if (message.content === (prefix) + "Illfang le seigneur kobolt"){
     const embed = new Discord.RichEmbed()
@@ -27734,10 +27734,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Illfang le seigneur kobolt :" , ":japanese_ogre: C'est le seigneur kobolt gardant la porte vers le palier 2 !")
     .setImage("https://cdn.myanimelist.net/s/common/uploaded_files/1444463879-27a3b94bfb547baaf570cb84ab77763f.jpeg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: ??? ??? ??? ??? ???")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 25 000")
     .addField(":crossed_swords: Lorsqu'Illfang attaque :" , ":crossed_swords: `=Illfang attaque`")
     .addField(":shield: Lorsqu'Illfang reçoit un coup :" , ":shield: `=Illfang défense : [Points de dégâts de votre coup]`")
-    .addField(":japanese_ogre: Lorsque qu'Illfang entre dans sa deuxième phase, qui commence à partir de ??? ??? ??? ??? ??? HP." , "`=Illfang entrée phase 2`")
+    .addField(":japanese_ogre: Lorsque qu'Illfang entre dans sa deuxième phase, qui commence à partir de 5000 HP." , "`=Illfang entrée phase 2`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -27760,15 +27760,25 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang attaque")) {
     const degat = Math.floor(51 * Math.random() + 150)
-    const degatCirculaire = Math.floor(31 * Math.random() + 120)
+    const degatArmure = Math.floor(21 * Math.random() + 100)
+    const degatCirculaire = Math.floor(31 * Math.random() + 130)
     const cible = Math.floor(2 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 40){
+    if (roll <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang essaye de faire un grand coup horizontal sur votre gauche mais il est trop lent et vous rate, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (21 <= roll && roll <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang vous donne un grand coup vertical avec sa hache à deux mains qui vous envoie en l'air, il inflige " + degatArmure + " points de dégâts qui perce votre armure")
+      .setTimestamp()
       message.channel.send({embed})
     }
     if (41 <= roll && roll <= 70){
@@ -27810,8 +27820,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
-    const degatGroupe = Math.floor(101 * Math.random() + 200)
-    const degatVert = Math.floor(101 * Math.random() + 250)
+    const degatGroupe = Math.floor(31 * Math.random() + 155)
+    const degatVert = Math.floor(21 * Math.random() + 200)
     const degatVertGroupe = Math.floor(51 * Math.random() + 150)
     const cible = Math.floor(4 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -27822,7 +27832,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594566342489669662/Ukifune.gif")
       .addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang s'élance vers la personne qu'il a éjecté et lui fait un grand coup oblique plein de rage. " +
-                                               "Il inflige `999 999 999 999 999` dégâts !\nCette attaque n'est pas défendable ni interceptable.")
+                                               "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 40){
@@ -27870,7 +27880,7 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
     let Dégâts = args.slice(4).join(" : ");
     const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3))
-    const paradeReussie = Math.floor(51 * Math.random() + 150)
+    const paradeReussie = Math.floor(16 * Math.random() + 135)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
       const embed = new Discord.RichEmbed()
@@ -27886,7 +27896,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade et il vous met un coup oblique de katana, vous faisant reculer et prendre des dégâts, " +
-                                                 "il inflige " + paradeReussie + " points de dégâts")
+                                                 "il inflige " + paradeReussie + " points de dégâts sauf si vous tentez de parade sa parade.Si vous réussissez le Illfang tantera de parade votre parade de la parade. Faite `=Illfand phase 2 parade`")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -27912,7 +27922,8 @@ bot.on('message', message => {
     }
   }
 });
-*/
+
+
 //kobolt sentinel
 
 bot.on('message', message => {
@@ -47179,7 +47190,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }) ;
-          
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Morceau de caisse") {
