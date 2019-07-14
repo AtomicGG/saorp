@@ -553,6 +553,25 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Mort
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Mort")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("La mort :" , "Lorsque vous êtes en position de faiblesse, la mort pourrait vite arriver, et la mort est punitive dans SAO puisque votre personnage ne respawn pas, il meurt définitivement...\n\n" +
+                            "C'est pour cela qu'il ne faut pas prendre la difficulté de ce monde à la légère surtout en extérieur et dans les donjons ainsi que contre des boss !\n\n" +
+                            "Si vous venez à mourir, vous devrez refaire un nouveau personnage, qui reprendra tous à zéro, vous n'aurez plus vos objets, plus vos niveaux, " +
+                            "plus vos niveaux de métier, plus rien pas même vos souvenirs vus que vous êtes quelqu'un de nouveau !\n\n" +
+                            "Le HRP du type 'Je suis de retour, je suis mort' ou 'J'ai l'impression de te connaître' est complètement interdit, si vous mourrez, vous êtes quelqu'un de totalement nouveau !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Caractéristiques
 
 bot.on('message', message => {
@@ -11728,23 +11747,6 @@ bot.on('message', message => {
 })
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Mort")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("La mort :" , "Lorsque vous êtes en position de faiblesse, la mort pourrait vite arriver, et la mort est punitive dans SAO puisque votre personnage ne respawn pas, il meurt définitivement...\n\nC'est pour cela qu'il ne faut pas prendre la difficulté de ce monde à la légère surtout en extérieur et dans les donjons ainsi que contre des boss !\n\nSi vous venez à mourir, vous devrez refaire un nouveau personnage, qui reprendra tous à zéro, vous n'aurez plus vos objets, plus vos niveaux, plus vos niveaux de métier, plus rien pas même vos souvenirs vus que vous êtes quelqu'un de nouveau !\n\nLe HRP du type 'Je suis de retour, je suis mort' ou 'J'ai l'impression de te connaître' est complètement interdit, si vous mourrez, vous êtes quelqu'un de totalement nouveau !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Niveaux")) {
