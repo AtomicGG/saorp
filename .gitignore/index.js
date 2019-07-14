@@ -47827,7 +47827,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Paillasson :" , "Ca vous changera d'essuyer vos chaussures sur quelque chose de propre pour une fois")
+    .addField("Paillasson :" , "Ca vous changera d'essuyer vos chaussures sur quelque chose de propre pour une fois\n\nPour assembler cet objet et obtenir `Paillasson piégé` vous devrez être à l'atelier et utiliser :\n\n`1 Mine antipersonnel`\n`1 Paillasson`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47839,7 +47839,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Paillasson piégé :" , "Une bien belle manière d'inviter les invités comme les non-invités chez soi, une bombe sous le paillasson, pourquoi n'y avons nous pas pensé plus tôt !")
+    .addField("Paillasson piégé :" , "Une bien belle manière d'inviter les invités comme les non-invités chez soi, une bombe sous le paillasson, pourquoi n'y avons nous pas pensé plus tôt !\n\nSi un zombie ou un humain passe sur votre paillaisson à l'entrée, il le fera explosé : `=Explosion [Mine antipersonnel]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47851,7 +47851,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pamplemousse explosif :" , "Il est très gros, juteux et il fait 'tic tac'")
+    .addField("Pamplemousse explosif :" , "Il est très gros, juteux et il fait 'tic tac'\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47863,7 +47863,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Paquet de chips molles :" , "Les chips de ce paquet sont molles et ont un goût de papier séché, mais on ne va pas faire le difficile... Un repas est un repas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Paquet de chips molles :" , "Les chips de ce paquet sont molles et ont un goût de papier séché, mais on ne va pas faire le difficile... Un repas est un repas\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47875,7 +47875,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Paquet de cigarettes entamé :" , "Un vieux paquet de cigarettes qui sent la charogne et la moisissure\n\nMais c'est tellement rare d'en trouver de nos jours...\n\nIl porte une mention en rouge ainsi qu'une demi-douzaine de têtes de morts : 'Fumer tue'")
+    .addField("Paquet de cigarettes entamé :" , "Un vieux paquet de cigarettes qui sent la charogne et la moisissure\n\nMais c'est tellement rare d'en trouver de nos jours...\n\nIl porte une mention en rouge ainsi qu'une demi-douzaine de têtes de morts : 'Fumer tue'\n\nVous disposez de 5 cigarettes à l'intérieur, permettant de soigner l'état `Terreur` en vous calmant")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47887,11 +47887,33 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Paracétoïde 7G :" , "Un antibiotique puissant capable d'enrayer n'importe quelle infection\n\nLa notice précise : 'ce médicament peut parfois provoquer quelques effets secondaires gênants (acné, vomissements, convulsions et mort violente)'")
+    .addField("Paracétoïde 7G :" , "Un antibiotique puissant capable d'enrayer n'importe quelle infection\n\nLa notice précise : 'ce médicament peut parfois provoquer quelques effets secondaires gênants (acné, vomissements, convulsions et mort violente)\n\nEn utilisant cet objet : `=Paracétoïde 7G [Effets]`'")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Paracétoïde 7G [Effets]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Paracétoïde 7G [Effets] :" , "Rien ne se passe de plus en utilisant `Paracétoïde 7G`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 26){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Paracétoïde 7G [Effets] :" , "Vous soignez l'état : `Infection`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Pavés de béton informes") {
@@ -47899,7 +47921,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pavés de béton informes :" , "Ça ne ressemble pas le moins du monde à des briques, mais c'est en béton armé et ça doit pouvoir servir de défenses chez soi...\n\nAu pire, jetez-les sur des zombies, ça sera un peu comme une manifestation\n\nCet objet est `Encombrant`")
+    .addField("Pavés de béton informes :" , "Ça ne ressemble pas le moins du monde à des briques, mais c'est en béton armé et ça doit pouvoir servir de défenses chez soi...\n\nAu pire, jetez-les sur des zombies, ça sera un peu comme une manifestation\n\nCet objet est `Encombrant`\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 3 points de défenses à chaques nuits !\n\nLa mise en place de cet défense est de 1 H sur le chantier de la ville ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47911,7 +47933,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pelures de peau :" , "Cet horrible lambeau de chair a dû être arraché à un autre citoyen, avant d'être abandonné aux vers pendant quelques temps\n\nSon odeur atroce devrait pouvoir couvrir votre propre odeur corporelle : cet objet augmente sensiblement vos chances de survie en cas de camping (vous devez le garder sur vous pour profiter de cet avantage)")
+    .addField("Pelures de peau :" , "Cet horrible lambeau de chair a dû être arraché à un autre citoyen, avant d'être abandonné aux vers pendant quelques temps\n\nSon odeur atroce devrait pouvoir couvrir votre propre odeur corporelle : cet objet augmente sensiblement vos chances de survie en cas de camping (vous devez le garder sur vous pour profiter de cet avantage)\n\nUtiliser cet objet sur vos habits permet de pouvoir vous faire passer pour un zombie pendant 10 minutes, ils ne vous attaqueront pas")
     .setTimestamp()
     message.channel.send({embed})
   }
