@@ -661,6 +661,212 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
+    let xp = args.slice(4).join(" : ");
+    let XP = xp * 1;
+    let niveau = 0;
+    let xpMax = 0;
+    let caractéristique = 0;
+    let passage = false;
+    if (XP < 200){
+      niveau = 1;
+      xpMax = 200;
+      caractéristique = 0;
+      passage = true;
+    }
+    if (200 <= XP & XP < 400){
+      niveau = 2;
+      xpMax = 400;
+      caractéristique = 1;
+      passage = true;
+    }
+    if (400 <= XP & XP < 600){
+      niveau = 3;
+      xpMax = 600;
+      caractéristique = 2;
+      passage = true;
+    }
+    if (600 <= XP & XP < 800){
+      niveau = 4;
+      xpMax = 800;
+      caractéristique = 3;
+      passage = true;
+    }
+    if (800 <= XP & XP < 1100){
+      niveau = 5;
+      xpMax = 1100;
+      caractéristique = 4;
+      passage = true;
+    }
+    if (1100 <= XP & XP < 1400){
+      niveau = 6;
+      xpMax = 1400;
+      caractéristique = 6;
+      passage = true;
+    }
+    if (1400 <= XP & XP < 1700){
+      niveau = 7;
+      xpMax = 1700;
+      caractéristique = 8;
+      passage = true;
+    }
+    if (1700 <= XP & XP < 2000){
+      niveau = 8;
+      xpMax = 2000;
+      caractéristique = 10;
+      passage = true;
+    }
+    if (2000 <= XP & XP < 2300){
+      niveau = 9;
+      xpMax = 2300;
+      caractéristique = 12;
+      passage = true;
+    }
+    if (2300 <= XP & XP < 2700){
+      niveau = 10;
+      xpMax = 2700;
+      caractéristique = 14;
+      passage = true;
+    }
+    if (2700 <= XP & XP < 3100){
+      niveau = 11;
+      xpMax = 3100;
+      caractéristique = 17;
+      passage = true;
+    }
+    if (3100 <= XP & XP < 3500){
+      niveau = 12;
+      xpMax = 3500;
+      caractéristique = 20;
+      passage = true;
+    }
+    if (3500 <= XP & XP < 3900){
+      niveau = 13;
+      xpMax = 3900;
+      caractéristique = 23;
+      passage = true;
+    }
+    if (3900 <= XP & XP < 4300){
+      niveau = 14;
+      xpMax = 4300;
+      caractéristique = 26;
+      passage = true;
+    }
+    if (4300 <= XP & XP < 4800){
+      niveau = 15;
+      xpMax = 4800;
+      caractéristique = 29;
+      passage = true;
+    }
+    if (4800 <= XP & XP < 5300){
+      niveau = 16;
+      xpMax = 5300;
+      caractéristique = 33;
+      passage = true;
+    }
+    if (5300 <= XP & XP < 5800){
+      niveau = 17;
+      xpMax = 5800;
+      caractéristique = 37;
+      passage = true;
+    }
+    if (5800 <= XP & XP < 6300){
+      niveau = 18;
+      xpMax = 6300;
+      caractéristique = 41;
+      passage = true;
+    }
+    if (6300 <= XP & XP < 6800){
+      niveau = 19;
+      xpMax = 6800;
+      caractéristique = 45;
+      passage = true;
+    }
+    if (6800 <= XP & XP < 7600){
+      niveau = 20;
+      xpMax = 7600;
+      caractéristique = 49;
+      passage = true;
+    }
+    if (7600 <= XP & XP < 8400){
+      niveau = 21;
+      xpMax = 8400;
+      caractéristique = 54;
+      passage = true;
+    }
+    if (8400 <= XP & XP < 9200){
+      niveau = 22;
+      xpMax = 9200;
+      caractéristique = 59;
+      passage = true;
+    }
+    if (9200 <= XP & XP < 10000){
+      niveau = 23;
+      xpMax = 10000;
+      caractéristique = 64;
+      passage = true;
+    }
+    if (10000 <= XP & XP < 10800){
+      niveau = 24;
+      xpMax = 10800;
+      caractéristique = 69;
+      passage = true;
+    }
+    if (10800 <= XP & XP < 12000){
+      niveau = 25;
+      xpMax = 12000;
+      caractéristique = 74;
+      passage = true;
+    }
+    if (12000 <= XP & XP < 13200){
+      niveau = 26;
+      xpMax = 13200;
+      caractéristique = 80;
+      passage = true;
+    }
+    if (13200 <= XP & XP < 14400){
+      niveau = 27;
+      xpMax = 14400;
+      caractéristique = 86;
+      passage = true;
+    }
+    if (14400 <= XP & XP < 15600){
+      niveau = 28;
+      xpMax = 15600;
+      caractéristique = 92;
+      passage = true;
+    }
+    if (15600 <= XP & XP < 16800){
+      niveau = 29;
+      xpMax = 16800;
+      caractéristique = 98;
+      passage = true;
+    }
+    if (16800 <= XP){
+      niveau = 30;
+      xpMax = 999999999999;
+      caractéristique = 104;
+      passage = true;
+    }
+    if (passage == true) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Votre niveau est de " + niveau + " avec :" , XP + "/" + xpMax + " points d'expérience !")
+      .addBlankField(true)
+      .addField("Vous possèdez au total :" , caractéristique + " points de caractéristiques")
+      .addBlankField(true)
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bonus combattant")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -12983,668 +13189,6 @@ bot.on('message', message => {
     setTimeout(() => {
       talkedRecently.delete(message.author.id+19);
     }, 3600000);
-  }
-})
-
-//////////////////////////////////////////////////////////////////Calcul d'exp niveaux///////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (A < 200){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 1 avec :" , A+ "/200 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "0 point de caractéristique")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (200 <= A & A < 400){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 2 avec :" , A+ "/400 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "1 point de caractéristique")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (400 <= A & A < 600){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 3 avec :" , A+ "/600 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "2 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (600 <= A & A < 800){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 4 avec :" , A+ "/800 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "3 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (800 <= A & A < 1100){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 5 avec :" , A+ "/1100 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total:" , "4 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (1100 <= A & A < 1400){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 6 avec :" , A+ "/1400 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "6 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (1400 <= A & A < 1700){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 7 avec :" , A+ "/1700 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "8 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (1700 <= A & A < 2000){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 8 avec :" , A+ "/2000 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "10 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (2000 <= A & A < 2300){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 9 avec :" , A+ "/2300 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "12 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (2300 <= A & A < 2700){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 10 avec :" , A+ "/2700 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "14 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (2700 <= A & A < 3100){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 11 avec :" , A+ "/3100 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "17 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (3100 <= A & A < 3500){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 12 avec :" , A+ "/3500 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "20 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (3500 <= A & A < 3900){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 13 avec :" , A+ "/3900 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "23 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (3900 <= A & A < 4300){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 14 avec :" , A+ "/4300 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "26 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (4300 <= A & A < 4800){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 15 avec :" , A+ "/4800 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "29 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (4800 <= A & A < 5300){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 16 avec :" , A+ "/5300 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total:" , "33 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (5300 <= A & A < 5800){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 17 avec :" , A+ "/5800 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "37 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (5800 <= A & A < 6300){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 18 avec :" , A+ "/6300 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "41 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (6300 <= A & A < 6800){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 19 avec :" , A+ "/6800 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "45 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (6800 <= A & A < 7600){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 20 avec :" , A+ "/7600 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "49 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (7600 <= A & A < 8400){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 21 avec :" , A+ "/8400 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "54 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (8400 <= A & A < 9200){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 22 avec :" , A+ "/9200 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "59 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (9200 <= A & A < 10000){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 23 avec :" , A+ "/10000 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "64 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (10000 <= A & A < 10800){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 24 avec :" , A+ "/10800 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "69 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (10800 <= A & A < 12000){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 25 avec :" , A+ "/12000 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "74 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (12000 <= A & A < 13200){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 26 avec :" , A+ "/13200 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "80 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (13200 <= A & A < 14400){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 27 avec :" , A+ "/14400 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "86 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (14400 <= A & A < 15600){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 28 avec :" , A+ "/15600 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "92 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (15600 <= A & A < 16800){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 29 avec :" , A+ "/16800 points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "98 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de niveaux")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (16800 <= A){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("Votre niveau est de 30 avec :" , A+ "/[Pas encore définis] points d'expérience !")
-      .addBlankField(true)
-      .addField("Vous possèdez au total :" , "104 points de caractéristiques")
-      .addBlankField(true)
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
   }
 })
 
