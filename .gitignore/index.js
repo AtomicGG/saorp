@@ -21733,21 +21733,21 @@ if (/*talkedRecently.has(message.author.id+1000)*/false) {
       do {
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70){
-          test = test + 2 + bourdonFlaneur;
+          test = test + 1 + bourdonFlaneur;
           if (test <= (5 + 6 * (joueurs - 1))) {
             bourdonFlaneur = bourdonFlaneur + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 40){
-          test = test + 3 + fortTaurus;
+          test = test + 2 + fortTaurus;
           if (test <= (5 + 6 * (joueurs - 1))) {
             fortTaurus = fortTaurus + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 3 + (2 * taurusLourd);
+          test = test + 2 + (2 * taurusLourd);
           if (test <= (5 + 6 * (joueurs - 1))) {
             taurusLourd = taurusLourd + 1;
           } else break;
