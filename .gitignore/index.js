@@ -1534,16 +1534,18 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Les métiers, partie 1 :" , "Lorsque vous partez cueillir des plantes, ou chasser, miner, ou même si vous créez des équipements en cuir, en métal, en tissu, vous gagnerez parfois de l'expérience pour un métier !\n\n" +
-                                                  "Cette expérience permet d'augmenter de niveaux dans justement vos métiers qui sont les suivantes :\n\n" +
-                                                  "[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n" +
-                                                  "[Bijoutier]\n[Forgeron]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n\n" +
-                                                  "Tout ces métiers possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\n" +
-                                                  "Pour voir justement les niveaux de métiers :\n\n`=Tableau des métiers`\n\n" +
-                                                  "Pour calculer votre niveau de métier selon vos points d'expérience :\n\n`=Calculateur d'expérience de métier : [Vos points d'expérience]`")
+    .addField("Les métiers, partie 1 :" , "Lorsque vous partez cueillir des plantes, ou chasser, miner, ou même si vous créez des équipements en cuir, en métal, en tissu, " +
+                                          "vous gagnerez parfois de l'expérience pour un métier !\n\n" +
+                                          "Cette expérience permet d'augmenter de niveaux dans justement vos métiers qui sont les suivantes :\n\n" +
+                                          "[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n" +
+                                          "[Bijoutier]\n[Forgeron]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n\n" +
+                                          "Tout ces métiers possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\n" +
+                                          "Pour voir justement les niveaux de métiers :\n\n`=Tableau des métiers`\n\n" +
+                                          "Pour calculer votre niveau de métier selon vos points d'expérience :\n\n`=Calculateur d'expérience de métier : [Vos points d'expérience]`")
     .addBlankField(true)
     .addField("Les métiers, partie 2 :" , "Votre niveau dans un métier vous permettra de débloquer l'accès à certaines activités dans une zone, ou l'accès à un craft mais aussi à des bonus !\n\n" +
-                                          "Prenons l'exemple de la forêt, si vous voulez cueillir là-bas, il faudra que vous soyez niveau 2 dans le métier 'Cueilleur' pour le faire, si vous êtes niveau 1, vous ne pourrez pas, " +
+                                          "Prenons l'exemple de la forêt, si vous voulez cueillir là-bas, il faudra que vous soyez niveau 2 dans le métier 'Cueilleur' pour le faire, si vous êtes niveau 1, " +
+                                          "vous ne pourrez pas, " +
                                           "si vous êtes de niveau 2 ou plus dans le métier, vous pourrez !\n\n" +
                                           "Maintenant, il faut comprendre que, si vous êtes niveau 2 dans le métier 'Cueilleur' et que la forêt nécessite d'être niveau 2, " +
                                           "vous pourrez cueillir là-bas, mais il faudra écrire ceci :\n\n`=Forêt cueillir`")
@@ -1577,6 +1579,73 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let xp = args.slice(4).join(" : ");
+    let XP = xp * 1;
+    let niveau = 0;
+    let xpMax = 0;
+    let passage = false;
+    if (XP < 50){
+      niveau = 1;
+      xpMax = 50;
+      passage = true;
+    }
+    if (50 <= XP & XP < 125){
+      niveau = 2;
+      xpMax = 125;
+      passage = true;
+    }
+    if (125 <= XP & XP < 225){
+      niveau = 3;
+      xpMax = 225;
+      passage = true;
+    }
+    if (225 <= XP & XP < 400){
+      niveau = 4;
+      xpMax = 400;
+      passage = true;
+    }
+    if (400 <= XP & XP < 700){
+      niveau = 5;
+      xpMax = 700;
+      passage = true;
+    }
+    if (700 <= XP & XP < 1200){
+      niveau = 6;
+      xpMax = 1200;
+      passage = true;
+    }
+    if (1200 <= XP & XP < 2000){
+      niveau = 7;
+      xpMax = 2000;
+      passage = true;
+    }
+    if (2000 <= XP & XP < 3500){
+      niveau = 8;
+      xpMax = 3500;
+      passage = true;
+    }
+    if (3500 <= XP & XP < 6000){
+      niveau = 9;
+      xpMax = 6000;
+      passage = true;
+    }
+    if (passage == true) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de " + niveau + " avec :" , "│►" + XP + "/¨" + xpMax + " points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+/*bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
@@ -1745,7 +1814,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-})
+})*/
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chasseur")) {
