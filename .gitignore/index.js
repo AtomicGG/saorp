@@ -21754,7 +21754,7 @@ if (/*talkedRecently.has(message.author.id+1000)*/false) {
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70){
-          test = test + 2 + taurusChargeur;
+          test = test + 3 + taurusChargeur;
           if (test <= (5 + 6 * (joueurs - 1))) {
           taurusChargeur= taurusChargeur+ 1;
           } else break;
