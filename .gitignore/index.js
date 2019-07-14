@@ -1055,6 +1055,437 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Liste
+
+bot.on('message', message => {
+  if (message.content === prefix + "Liste") {
+    const embed = new Discord.RichEmbed()
+    .setColor(6447003)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField("Liste" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\n" +
+                        "Voici les différentes listes :\n\n" +
+                        "`=Liste des matériaux 1`\n" +
+                        "`=Liste d'équipements 1`\n" +
+                        "`=Liste d'armes 1`\n" +
+                        "`=Liste des potions 1`\n" +
+                        "`=Liste des plats 1`\n" +
+                        "`=Liste des parchemins 1`\n" +
+                        "`=Liste des outils 1`\n" +
+                        "`=Liste d'objets utiles 1`\n" +
+                        "`=Liste des plans 1`\n" +
+                        "`=Liste des cartes au trésor 1`\n" +
+                        "`=Liste des oeufs 1`\n" +
+                        "`=Liste des clefs 1`")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
+// Menus | Liste | Matériaux
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux 1")) {
+    message.channel.send("```Viande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Peau de renard :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Coeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Oeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Viande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Peau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Oeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Viande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Peau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Coeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Oeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Viande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Peau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Coeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Oeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Oreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Persil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Herbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Baie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
+                            "Peau de lapin :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Coeur de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Oeil de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
+                            "Suite en écrivant :\n=Liste des matériaux 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux 2")) {
+    message.channel.send("```Viande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de loup :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Oeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Croc de loup :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Gelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Pierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 13 cols]\n\n" +
+                            "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\n" +
+                            "Croc de loup de sang :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\n\n" +
+                            "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Viande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
+                            "Peau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Coeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Oeil de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
+                            "Cuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Cuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Bois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Bois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Suite en écrivant :\n=Liste des matériaux 3```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux 3")) {
+    message.channel.send("```Oreille de kobolt :\nCoûts :  [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Echantillon de kobolt :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Dent de kobolt :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Basilic : \nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Plantrus médiocre :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Plantrus commun :\nCoûts :  [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Viande de ragondin :\nCoûts :  [Achat : 20 cols] [Revente : 5 cols]\n\n" +
+                            "Peau de ragondin :\nCoûts :  [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Coeur de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Oeil de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Cuivre rare :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Bois de frêne rare :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Suite en écrivant :\n=Liste des matériaux 4```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des matériaux 4")) {
+    message.channel.send("```Viande de chien errant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
+                            "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
+                            "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Peau écailleuse de kobolt pilion :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Dent de kobolt pilion :\nCoûts : [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+                            "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
+  }
+}) ;
+
+// Menus | Liste | Equipements
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 1")) {
+    message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\n" +
+                            "Epaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peau arrachée]\n\n" +
+                            "Plastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\n" +
+                            "Cape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\n" +
+                            "Ceinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\n" +
+                            "Gantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Gantelets en peau arrachée]\n\n" +
+                            "Jambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Jambières en peau arrachée]\n\n" +
+                            "Bottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\n" +
+                            "Anneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\n" +
+                            "Amulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 2")) {
+    message.channel.send("```Casque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\n" +
+                            "Epaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\n" +
+                            "Plastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\n" +
+                            "Cape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\n" +
+                            "Ceinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Ceinture en peau résistante]\n\n" +
+                            "Gantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Gantelets en peau résistante]\n\n" +
+                            "Jambières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Jambières en peau résistante]\n\n" +
+                            "Bottes en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Bottes en peau résistante]\n\n" +
+                            "Anneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Anneau du croc]\n\n" +
+                            "Amulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Amulette du croc]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 3```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 3")) {
+    message.channel.send("```Casque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Casque rouillé]\n\n" +
+                            "Epaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epaulières rouillées]\n\n" +
+                            "Plastron rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Plastron rouillé]\n\n" +
+                            "Cape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cape endommagée]\n\n" +
+                            "Ceinture rouillée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ceinture rouillée]\n\n" +
+                            "Gantelets rouillés :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Gantelets rouillés]\n\n" +
+                            "Jambières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Jambières rouillées]\n\n" +
+                            "Bottes rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Bottes rouillées]\n\n" +
+                            "Anneau rouillé :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Anneau rouillé]\n\n" +
+                            "Amulette rouillée :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Amulette rouillée]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 4```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
+    message.channel.send("```Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
+                            "Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
+                            "Epaulières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Epaulières de kobolt]\n\n" +
+                            "Plastron de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Plastron de kobolt]\n\n" +
+                            "Cape de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Cape de kobolt]\n\n" +
+                            "Ceinture de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Ceinture de kobolt]\n\n" +
+                            "Gantelets de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Gantelets de kobolt]\n\n" +
+                            "Jambières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Jambières de kobolt]\n\n" +
+                            "Bottes de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes de kobolt]\n\n" +
+                            "Bottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : 105 cols]\nInfos : [=Bottes d'exploration kobolt]\n\n" +
+                            "Anneau de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Anneau de kobolt]\n\n" +
+                            "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 5```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 5")) {
+    message.channel.send("```Casque du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Casque du clan des loups]\n\n" +
+                            "Epaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\n" +
+                            "Plastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\n" +
+                            "Cape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\n" +
+                            "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
+                            "Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
+                            "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
+                            "Bottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\n" +
+                            "Anneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\n" +
+                            "Amulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 6```")
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 6")) {
+    message.channel.send("```Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
+                            "Casque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : 260 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
+                            "Epaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Epaulières de kobolt supérieures]\n\n" +
+                            "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
+                            "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
+                            "Ceinture de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Ceinture de kobolt supérieure]\n\n" +
+                            "Gantelets de kobolt supérieurs :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\n" +
+                            "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
+                            "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
+                            "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
+                            "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]```")
+  }
+});
+
+// Menus | Liste | Armes
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 1")) {
+    message.channel.send("```Epée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\n" +
+                            "Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\n" +
+                            "Dague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\n" +
+                            "Glaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\n" +
+                            "Masse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\n" +
+                            "Masse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\n" +
+                            "Hache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\n" +
+                            "Hache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\n" +
+                            "Rapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\n" +
+                            "Rapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\n" +
+                            "Cimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\n" +
+                            "Cimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\n" +
+                            "Katana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\n" +
+                            "Katana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\n" +
+                            "Bouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+ if (message.content.startsWith(prefix + "Liste d'armes 2")) {
+   message.channel.send("```Epée de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt à une main]\n\n" +
+                           "Epée de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Epée de kobolt à deux mains]\n\n" +
+                           "Dague de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt à une main]\n\n" +
+                           "Glaive de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Glaive de kobolt à deux mains]\n\n" +
+                           "Masse de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Masse de kobolt à une main]\n\n" +
+                           "Masse de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Masse de kobolt à deux mains]\n\n" +
+                           "Hache de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Hache de kobolt à une main]\n\n" +
+                           "Hache de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hache de kobolt à deux mains]\n\n" +
+                           "Rapière de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Rapière de kobolt à une main]\n\n" +
+                           "Rapière de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Rapière de kobolt à deux mains]\n\n" +
+                           "Cimeterre de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Cimeterre de kobolt à une main]\n\n" +
+                           "Cimeterre de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\n" +
+                           "Katana de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Katana de kobolt à une main]\n\n" +
+                           "Katana de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Katana de kobolt à deux mains]\n\n" +
+                           "Bouclier de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Bouclier de kobolt à une main]\n\n" +
+                           "Suite en écrivant :\n=Liste d'armes 3```")
+ }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 3")) {
+    message.channel.send("```Epée du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups à une main]\n\n" +
+                            "Epée du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\n" +
+                            "Dague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\n" +
+                            "Glaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\n" +
+                            "Masse du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups à une main]\n\n" +
+                            "Masse du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Masse du clan des loups à deux mains]\n\n" +
+                            "Hache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\n" +
+                            "Hache du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hache du clan des loups à deux mains]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 4```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 4")) {
+    message.channel.send("```Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
+                            "Rapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\n" +
+                            "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
+                            "Cimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\n" +
+                            "Katana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\n" +
+                            "Katana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\n" +
+                            "Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 5```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 5")) {
+    message.channel.send("```Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
+                            "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
+                            "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
+                            "Glaive de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]\n\n" +
+                            "Masse de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\n" +
+                            "Masse de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\n" +
+                            "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
+                            "Hache de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 6```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 6")) {
+    message.channel.send("```Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
+                            "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
+                            "Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
+                            "Cimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\n" +
+                            "Katana de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\n" +
+                            "Katana de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\n" +
+                            "Bouclier de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 7```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 7")) {
+    message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
+                            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]```")
+  }
+}) ;
+
+// Menus | Liste | Potions
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des potions 1")) {
+    message.channel.send("```Potion faible de soin :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\nInfos : [=Potion faible de soin]\n\n" +
+                            "Potion faible de force :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de force]\n\n" +
+                            "Potion faible de défense :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de défense]\n\n" +
+                            "Potion légère de soin :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Potion légère de soin]\n\n" +
+                            "Potion légère de force :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de force]\n\n" +
+                            "Potion légère de défense :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de défense]\n\n" +
+                            "Potion moyenne de soin :\nCoûts : [Achat : 740 cols] [Revente : 185 cols]\nInfos : [=Potion moyenne de soin]\n\n" +
+                            "Potion moyenne de régénération :\nCoûts : [Achat : 840 cols] [Revente : 210 cols]\nInfos : [=Potion moyenne de régénération]\n\n" +
+                            "Potion moyenne de force :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de force]\n\n" +
+                            "Potion moyenne de défense :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de défense]\n\n" +
+                            "Potion guérissante minuscule de poison :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de poison]\n\n" +
+                            "Potion guérissante minuscule de saignement :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\n" +
+                            "Potion guérissante minuscule de brûlure :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\n```")
+  }
+}) ;
+
+// Menus | Liste | Plats
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des plats 1")) {
+    message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\n" +
+                            "Ragoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\n" +
+                            "Ragoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\n" +
+                            "Ragoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\n" +
+                            "Ragoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\n" +
+                            "Ragoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\n" +
+                            "Ragoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\n" +
+                            "Ragoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\n" +
+                            "Ragoûts de kobolt :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de kobolt]\n\n" +
+                            "Ragoûts de ragondin :\nCoûts : [Achat : 440 cols] [Revente : 110 cols]\nInfos : [=Ragoût de ragondin]\n\n" +
+                            "Ragoûts de chien errant :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Ragoût de chien errant]```")
+  }
+}) ;
+
+// Menus | Liste | Parchemins
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des parchemins 1")) {
+    message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\n" +
+                            "Parchemin de feu rouge faible :\nCoûts : [Achat : 1380 cols] [Revente : 345 cols]\nInfos : [=Parchemin de feu rouge faible]```")
+  }
+}) ;
+
+// Menus | Liste | Outils
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des outils 1")) {
+    message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt]\n\n" +
+                         "Pioche de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pioche de kobolt]\n\n" +
+                         "Faucille de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Faucille de kobolt]\n\n" +
+                         "Couteau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Couteau de kobolt]```")
+  }
+}) ;
+
+// Menus | Liste | Objets utiles
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'objets utiles 1")) {
+    message.channel.send("```Kunai de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Kunai de kobolt]\n\n" +
+                            "Bolas de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Bolas de kobolt]```")
+  }
+}) ;
+
+// Menus | Liste | Plans
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des plans 1")) {
+    message.channel.send("```Plan d'arme kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
+                            "Plan d'armure kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
+                            "Plan de bijoux kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
+                            "Plan d'arme supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]\n\n" +
+                            "Plan d'armure supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]\n\n" +
+                            "Plan de bijoux supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]```")
+  }
+}) ;
+
+// Menus | Liste | Cartes au trésor
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des cartes au trésor 1")) {
+    message.channel.send("```Carte au trésor :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Carte au trésor]```")
+  }
+}) ;
+
+// Menus | Liste | Oeufs
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des oeufs 1")) {
+    message.channel.send("```Oeuf déformé :\nCoûts : [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]\n\n" +
+                            "Oeuf difforme :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Oeuf difforme]```")
+  }
+}) ;
+
+// Menus | Liste | Clefs
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des clefs 1")) {
+    message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
+  }
+}) ;
+
 // Menus | Crafts
 
 bot.on('message', message => {
@@ -19821,401 +20252,6 @@ bot.on('message', message => {
     message.channel.send("Tu souhaites RP avec l'ambiance qui va avec ?\n\nIl suffit tout simplement d'écrire `!play [URL Youtube]` dans un salon vocal !\n\nMusique de combat SAO : `https://www.youtube.com/watch?v=n0AY4ebPy4w&t`\n\nMusique calme SAO : `https://www.youtube.com/watch?v=z5jf1jornm8`\n\nMusique d'ambiance taverne : `https://www.youtube.com/watch?v=dd10InDdvJE` ou `https://www.youtube.com/watch?v=tNZXDUZu2To`\n\nMusique d'ambiance ville/village : `https://www.youtube.com/watch?v=xu2pESvXcmM`\n\nMusique d'ambiance extérieur [Forêt surtout] : `https://www.youtube.com/watch?v=xHP2GgxYddY`\n\nMusique d'ambiance extérieur [Grotte surtout] : `https://www.youtube.com/watch?v=U4tbEJsi7ps` ou `https://www.youtube.com/watch?v=_2AAR9jRc7I`\n\nMusique d'ambiance de feu de camp / orage / pluie : `https://www.youtube.com/watch?v=3sL0omwElxw`\n\nMusique d'ambiance de port : `https://www.youtube.com/watch?v=frEJTGfLOhM`")
   }
 }) ;
-
-/////////////////////////////////////////////////////////////////////LISTE D'OBJETS [PRIX + CRAFT]//////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  if (message.content === prefix + "Liste") {
-    const embed = new Discord.RichEmbed()
-    .setColor(6447003)
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Liste" , "Lors de votre aventure, vous gagnez des objets qui possèdent un prix de d'achat, de revente et permettant de pouvoir parfois être utiliser pour fabriquer des choses !\n\nVoici les différentes listes :\n\n`=Liste des matériaux 1`\n`=Liste d'équipements 1`\n`=Liste d'armes 1`\n`=Liste des potions 1`\n`=Liste des ragoûts 1`\n`=Liste des parchemins 1`\n`=Liste des outils 1`\n`=Liste d'objets utiles 1`\n`=Liste des plans 1`\n`=Liste des cartes au trésor 1`\n`=Liste des oeufs 1`\n`=Liste des clefs 1`")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 1")) {
-    message.channel.send("```Viande de renard :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Peau de renard :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Coeur de renard :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Oeil de renard :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Viande de sanglier :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Peau de sanglier :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Coeur de sanglier :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Oeil de sanglier :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Viande de chien :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Peau de chien :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Coeur de chien :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Oeil de chien :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Viande de lapin géant :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Peau de lapin géant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Coeur de lapin géant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Oeil de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
-                            "Oreille de lapin géant\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Persil :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Herbe médicinale faible :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Baie :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Viande de lapin :\nCoûts : [Achat : 5 cols] [Revente : 1 cols]\n\n" +
-                            "Peau de lapin :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Coeur de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Oeil de lapin :\nCoûts : [Achat : 15 cols] [Revente : 3 cols]\n\n" +
-                            "Suite en écrivant :\n=Liste des matériaux 2```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 2")) {
-    message.channel.send("```Viande de loup :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Peau de loup :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Oeil de loup :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
-                            "Coeur de loup :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
-                            "Croc de loup :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Gelatine :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Pierre de poison faible :\nCoûts : [Achat : 50 cols] [Revente : 13 cols]\n\n" +
-                            "Viande de loup de sang :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Peau de loup de sang :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
-                            "Coeur de loup de sang :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
-                            "Oeil de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\n\n" +
-                            "Croc de loup de sang :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\n\n" +
-                            "Estragon :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Herbe médicinale :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Viande de taupe :\nCoûts : [Achat : 10 cols] [Revente : 2 cols]\n\n" +
-                            "Peau de taupe :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Coeur de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
-                            "Oeil de taupe :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\n\n" +
-                            "Cuivre médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Cuivre commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Bois de frêne médiocre :\nCoûts : [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Bois de frêne commun :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Suite en écrivant :\n=Liste des matériaux 3```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 3")) {
-    message.channel.send("```Oreille de kobolt :\nCoûts :  [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Echantillon de kobolt :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Dent de kobolt :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Basilic : \nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Plantrus médiocre :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Plantrus commun :\nCoûts :  [Achat : 80 cols] [Revente : 20 cols]\n\n" +
-                            "Viande de ragondin :\nCoûts :  [Achat : 20 cols] [Revente : 5 cols]\n\n" +
-                            "Peau de ragondin :\nCoûts :  [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Coeur de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Oeil de ragondin :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Cuivre rare :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Bois de frêne rare :\nCoûts :  [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Suite en écrivant :\n=Liste des matériaux 4```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des matériaux 4")) {
-    message.channel.send("```Viande de chien errant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
-                            "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Peau écailleuse de kobolt pilion :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
-                            "Dent de kobolt pilion :\nCoûts : [Achat : 140 cols] [Revente : 35 cols]\n\n" +
-                            "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
-                            "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 1")) {
-    message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\n" +
-                            "Epaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peau arrachée]\n\n" +
-                            "Plastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\n" +
-                            "Cape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\n" +
-                            "Ceinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\n" +
-                            "Gantelets en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Gantelets en peau arrachée]\n\n" +
-                            "Jambières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Jambières en peau arrachée]\n\n" +
-                            "Bottes en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bottes en peau arrachée]\n\n" +
-                            "Anneau en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Anneau en coeur d'animal faible]\n\n" +
-                            "Amulette en coeur d'animal faible :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Amulette en coeur d'animal faible]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 2```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 2")) {
-    message.channel.send("```Casque en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Casque en peau résistante]\n\n" +
-                            "Epaulières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Epaulières en peau résistante]\n\n" +
-                            "Plastron en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Plastron en peau résistante]\n\n" +
-                            "Cape en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Cape en peau résistante]\n\n" +
-                            "Ceinture en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Ceinture en peau résistante]\n\n" +
-                            "Gantelets en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Gantelets en peau résistante]\n\n" +
-                            "Jambières en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Jambières en peau résistante]\n\n" +
-                            "Bottes en peau résistante :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Bottes en peau résistante]\n\n" +
-                            "Anneau du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Anneau du croc]\n\n" +
-                            "Amulette du croc :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Amulette du croc]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 3```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 3")) {
-    message.channel.send("```Casque rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Casque rouillé]\n\n" +
-                            "Epaulières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epaulières rouillées]\n\n" +
-                            "Plastron rouillé :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Plastron rouillé]\n\n" +
-                            "Cape endommagée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cape endommagée]\n\n" +
-                            "Ceinture rouillée :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ceinture rouillée]\n\n" +
-                            "Gantelets rouillés :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Gantelets rouillés]\n\n" +
-                            "Jambières rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Jambières rouillées]\n\n" +
-                            "Bottes rouillées :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Bottes rouillées]\n\n" +
-                            "Anneau rouillé :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Anneau rouillé]\n\n" +
-                            "Amulette rouillée :\nCoûts : [Achat : 200 cols] [Revente : 50 cols]\nInfos : [=Amulette rouillée]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 4```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 4")) {
-    message.channel.send("```Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
-                            "Casque de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Casque de kobolt]\n\n" +
-                            "Epaulières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Epaulières de kobolt]\n\n" +
-                            "Plastron de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Plastron de kobolt]\n\n" +
-                            "Cape de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Cape de kobolt]\n\n" +
-                            "Ceinture de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Ceinture de kobolt]\n\n" +
-                            "Gantelets de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Gantelets de kobolt]\n\n" +
-                            "Jambières de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Jambières de kobolt]\n\n" +
-                            "Bottes de kobolt :\nCoûts : [Achat : 420 cols] [Revente : 105 cols]\nInfos : [=Bottes de kobolt]\n\n" +
-                            "Bottes d'exploration kobolt :\nCoûts : [Achat : X cols] [Revente : 105 cols]\nInfos : [=Bottes d'exploration kobolt]\n\n" +
-                            "Anneau de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Anneau de kobolt]\n\n" +
-                            "Amulette de kobolt :\nCoûts : [Achat : 1260 cols] [Revente : 315 cols]\nInfos : [=Amulette de kobolt]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 5```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 5")) {
-    message.channel.send("```Casque du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Casque du clan des loups]\n\n" +
-                            "Epaulières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Epaulières du clan des loups]\n\n" +
-                            "Plastron du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Plastron du clan des loups]\n\n" +
-                            "Cape du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Cape du clan des loups]\n\n" +
-                            "Ceinture du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Ceinture du clan des loups]\n\n" +
-                            "Gantelets du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Gantelets du clan des loups]\n\n" +
-                            "Jambières du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Jambières du clan des loups]\n\n" +
-                            "Bottes du clan des loups :\nCoûts : [Achat : X cols] [Revente : 100 cols]\nInfos : [=Bottes du clan des loups]\n\n" +
-                            "Anneau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Anneau du clan des loups]\n\n" +
-                            "Amulette du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Amulette du clan des loups]\n\n" +
-                            "Suite en écrivant :\n=Liste d'équipements 6```")
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'équipements 6")) {
-    message.channel.send("```Casque de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Casque de kobolt supérieur]\n\n" +
-                            "Casque de mineur kobolt :\nCoûts : [Achat : X cols] [Revente : 260 cols]\nInfos : [=Casque de mineur kobolt]\n\n" +
-                            "Epaulières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Epaulières de kobolt supérieures]\n\n" +
-                            "Plastron de kobolt supérieur :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Plastron de kobolt supérieur]\n\n" +
-                            "Cape de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Cape de kobolt supérieure]\n\n" +
-                            "Ceinture de kobolt supérieure :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Ceinture de kobolt supérieure]\n\n" +
-                            "Gantelets de kobolt supérieurs :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Gantelets de kobolt supérieurs]\n\n" +
-                            "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
-                            "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
-                            "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
-                            "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]```")
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 1")) {
-    message.channel.send("```Epée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\n" +
-                            "Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\n" +
-                            "Dague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\n" +
-                            "Glaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\n" +
-                            "Masse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\n" +
-                            "Masse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\n" +
-                            "Hache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\n" +
-                            "Hache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\n" +
-                            "Rapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\n" +
-                            "Rapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\n" +
-                            "Cimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\n" +
-                            "Cimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\n" +
-                            "Katana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\n" +
-                            "Katana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\n" +
-                            "Bouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]\n\n" +
-                            "Suite en écrivant :\n=Liste d'armes 2```")
-  }
-}) ;
-
-bot.on('message', message => {
- if (message.content.startsWith(prefix + "Liste d'armes 2")) {
-   message.channel.send("```Epée de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt à une main]\n\n" +
-                           "Epée de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Epée de kobolt à deux mains]\n\n" +
-                           "Dague de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt à une main]\n\n" +
-                           "Glaive de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Glaive de kobolt à deux mains]\n\n" +
-                           "Masse de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Masse de kobolt à une main]\n\n" +
-                           "Masse de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Masse de kobolt à deux mains]\n\n" +
-                           "Hache de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Hache de kobolt à une main]\n\n" +
-                           "Hache de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hache de kobolt à deux mains]\n\n" +
-                           "Rapière de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Rapière de kobolt à une main]\n\n" +
-                           "Rapière de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Rapière de kobolt à deux mains]\n\n" +
-                           "Cimeterre de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Cimeterre de kobolt à une main]\n\n" +
-                           "Cimeterre de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\n" +
-                           "Katana de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Katana de kobolt à une main]\n\n" +
-                           "Katana de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Katana de kobolt à deux mains]\n\n" +
-                           "Bouclier de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Bouclier de kobolt à une main]\n\n" +
-                           "Suite en écrivant :\n=Liste d'armes 3```")
- }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 3")) {
-    message.channel.send("```Epée du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups à une main]\n\n" +
-                            "Epée du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\n" +
-                            "Dague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\n" +
-                            "Glaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\n" +
-                            "Masse du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups à une main]\n\n" +
-                            "Masse du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Masse du clan des loups à deux mains]\n\n" +
-                            "Hache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\n" +
-                            "Hache du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hache du clan des loups à deux mains]\n\n" +
-                            "Suite en écrivant :\n=Liste d'armes 4```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 4")) {
-    message.channel.send("```Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
-                            "Rapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\n" +
-                            "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
-                            "Cimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\n" +
-                            "Katana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\n" +
-                            "Katana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\n" +
-                            "Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
-                            "Suite en écrivant :\n=Liste d'armes 5```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 5")) {
-    message.channel.send("```Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
-                            "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
-                            "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
-                            "Glaive de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]\n\n" +
-                            "Masse de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\n" +
-                            "Masse de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\n" +
-                            "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
-                            "Hache de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\n" +
-                            "Suite en écrivant :\n=Liste d'armes 6```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 6")) {
-    message.channel.send("```Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
-                            "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
-                            "Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
-                            "Cimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\n" +
-                            "Katana de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\n" +
-                            "Katana de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\n" +
-                            "Bouclier de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\n" +
-                            "Suite en écrivant :\n=Liste d'armes 7```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 7")) {
-    message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
-                            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des ragoûts 1")) {
-    message.channel.send("```Ragoûts de lapin :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de lapin]\n\n" +
-                            "Ragoûts de renard :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de renard]\n\n" +
-                            "Ragoûts de chien :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de chien]\n\n" +
-                            "Ragoûts de sanglier :\nCoûts : [Achat : 30 cols] [Revente : 7 cols]\nInfos : [=Ragoût de sanglier]\n\n" +
-                            "Ragoûts de lapin géant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ragoût de lapin géant]\n\n" +
-                            "Ragoûts de taupe :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de taupe]\n\n" +
-                            "Ragoûts de loup :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\nInfos : [=Ragoût de loup]\n\n" +
-                            "Ragoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\n" +
-                            "Ragoûts de kobolt :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de kobolt]\n\n" +
-                            "Ragoûts de ragondin :\nCoûts : [Achat : 440 cols] [Revente : 110 cols]\nInfos : [=Ragoût de ragondin]\n\n" +
-                            "Ragoûts de chien errant :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Ragoût de chien errant]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des potions 1")) {
-    message.channel.send("```Potion faible de soin :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\nInfos : [=Potion faible de soin]\n\n" +
-                            "Potion faible de force :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de force]\n\n" +
-                            "Potion faible de défense :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\nInfos : [=Potion faible de défense]\n\n" +
-                            "Potion légère de soin :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Potion légère de soin]\n\n" +
-                            "Potion légère de force :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de force]\n\n" +
-                            "Potion légère de défense :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Potion légère de défense]\n\n" +
-                            "Potion moyenne de soin :\nCoûts : [Achat : 740 cols] [Revente : 185 cols]\nInfos : [=Potion moyenne de soin]\n\n" +
-                            "Potion moyenne de régénération :\nCoûts : [Achat : 840 cols] [Revente : 210 cols]\nInfos : [=Potion moyenne de régénération]\n\n" +
-                            "Potion moyenne de force :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de force]\n\n" +
-                            "Potion moyenne de défense :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de défense]\n\n" +
-                            "Potion guérissante minuscule de poison :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de poison]\n\n" +
-                            "Potion guérissante minuscule de saignement :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\n" +
-                            "Potion guérissante minuscule de brûlure :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\n```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des parchemins 1")) {
-    message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\n" +
-                            "Parchemin de feu rouge faible :\nCoûts : [Achat : 1380 cols] [Revente : 345 cols]\nInfos : [=Parchemin de feu rouge faible]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des oeufs 1")) {
-    message.channel.send("```Oeuf déformé :\nCoûts : [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]\n\n" +
-                            "Oeuf difforme :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Oeuf difforme]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des plans 1")) {
-    message.channel.send("```Plan d'arme kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
-                            "Plan d'armure kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
-                            "Plan de bijoux kobolt :\nCoûts : [Achat : X cols] [Revente : 300 cols]\n\n" +
-                            "Plan d'arme supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]\n\n" +
-                            "Plan d'armure supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]\n\n" +
-                            "Plan de bijoux supérieur kobolt :\nCoûts : [Achat : X cols] [Revente : 400 cols]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des clefs 1")) {
-    message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'objets utiles 1")) {
-    message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt]\n\n" +
-                            "Pioche de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pioche de kobolt]\n\n" +
-                            "Faucille de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Faucille de kobolt]\n\n" +
-                            "Couteau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Couteau de kobolt]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des cartes au trésor 1")) {
-    message.channel.send("```Carte au trésor :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Carte au trésor]```")
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des outils 1")) {
-    message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt]\n\nPioche de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pioche de kobolt]\n\nFaucille de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Faucille de kobolt]\n\nCouteau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Couteau de kobolt]```")
-  }
-}) ;
-
-
 
 // Forêt dense | Description
 
