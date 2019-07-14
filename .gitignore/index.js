@@ -553,6 +553,23 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Quêtes
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Quêtes")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les quêtes :" , "Ce sont des objectifs à accomplir pour avoir accès à des récompenses comme des cols, des points d'expériences ainsi que des objets !\n\n" +
+                               "Vous aurez le droit à avoir une quête aléatoire selon la zone, par exemples les quêtes aux plaines sont différentes des quêtes en forêt !\n\n" +
+                               "Vous n'aurez droit que d'accomplir une seul quêtes par jour, vous aurez droit d'en refaire une seulement 24 H plus tard minimum !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Mort
 
 bot.on('message', message => {
@@ -12155,21 +12172,6 @@ bot.on('message', message => {
 })
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
-
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Quêtes")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les quêtes :" , "Ce sont des objectifs à accomplir pour avoir accès à des récompenses comme des cols, des points d'expériences ainsi que des objets !\n\nVous aurez le droit à avoir une quête aléatoire selon la zone, par exemples les quêtes aux plaines sont différentes des quêtes en forêt !\n\nVous n'aurez droit que d'accomplir une seul quêtes par jour, vous aurez droit d'en refaire une seulement 24 H plus tard minimum !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Monstres")) {
