@@ -91,6 +91,7 @@ bot.on('message', message => {
                                                  ":shield:=Garde\n" +
                                                  ":bow_and_arrow:=Mercenaire\n" +
                                                  ":chains:=Prison\n" +
+                                                 ":ring:=Mariage\n" +
                                                  ":notes:=Musiques")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
@@ -2099,6 +2100,22 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Musiques
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Musiques")) {
+    message.channel.send("Tu souhaites RP avec l'ambiance qui va avec ?\n\n" +
+                         "Il suffit tout simplement d'écrire `!play [URL Youtube]` dans un salon vocal !\n\n" +
+                         "Musique de combat SAO : `https://www.youtube.com/watch?v=n0AY4ebPy4w&t`\n\n" +
+                         "Musique calme SAO : `https://www.youtube.com/watch?v=z5jf1jornm8`\n\n" +
+                         "Musique d'ambiance taverne : `https://www.youtube.com/watch?v=dd10InDdvJE` ou `https://www.youtube.com/watch?v=tNZXDUZu2To`\n\n" +
+                         "Musique d'ambiance ville/village : `https://www.youtube.com/watch?v=xu2pESvXcmM`\n\n" +
+                         "Musique d'ambiance extérieur [Forêt surtout] : `https://www.youtube.com/watch?v=xHP2GgxYddY`\n\n" +
+                         "Musique d'ambiance extérieur [Grotte surtout] : `https://www.youtube.com/watch?v=U4tbEJsi7ps` ou `https://www.youtube.com/watch?v=_2AAR9jRc7I`\n\n" +
+                         "Musique d'ambiance de feu de camp / orage / pluie : `https://www.youtube.com/watch?v=3sL0omwElxw`\n\n" +
+                         "Musique d'ambiance de port : `https://www.youtube.com/watch?v=frEJTGfLOhM`")
+  }
+}) ;
 
 // Roll
 
@@ -20244,12 +20261,6 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .addField("Les thèmes et éléments d'un RP :" , "@MÉDIEVAL\n@VIOLENCE\n@PSYCHOLOGIQUE\n@HÉROS\n@MULTIVERS\n@SEXUEL\n@COMTEMPORAIN\n@MÉDIÉVAL FANTASY\n@GUERRE\n@APOCALYPTIQUE\n@HORREUR\n@PRIMITIF\n@AVENTURE\n@HISTORIQUE\n@RÉALITÉ ALTERNATIVE\n@DARK FANTASY\n@THRILLER\n@ÉCOLE\n@CYBERPUNK\n@FUTURISTE\n@STEAMPUNK\n@OBSCURE\n@MORT-VIVANT\n@MAGIQUE\n@POLITIQUE\n@VOCAL\n@POST-APOCALYPTIQUE\n@TERRORISME\n@TECHNOLOGIE\n@UTOPIE\n@DYSTOPIE\n@MAFIA\n@ESPACE\n@RÉALISME\n@PARANORMAL\n@STRATÉGIE\n@FANTASTIQUE\n@UNIVERS EMPRUNTÉ\n\nConcernant le niveau conseillé à avoir pour votre RP :\n@DÉBUTANT\n@EXPERT\n\nConcernant la durée de votre RP :\n@DURÉE LIMITÉE\n@DURÉE ILLIMITÉE\n\nNe mettez que le thème et les éléments qui correspondent à votre RP, et non pas au pif !")    .setTimestamp()
     message.channel.send({embed})
-  }
-}) ;
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Musiques")) {
-    message.channel.send("Tu souhaites RP avec l'ambiance qui va avec ?\n\nIl suffit tout simplement d'écrire `!play [URL Youtube]` dans un salon vocal !\n\nMusique de combat SAO : `https://www.youtube.com/watch?v=n0AY4ebPy4w&t`\n\nMusique calme SAO : `https://www.youtube.com/watch?v=z5jf1jornm8`\n\nMusique d'ambiance taverne : `https://www.youtube.com/watch?v=dd10InDdvJE` ou `https://www.youtube.com/watch?v=tNZXDUZu2To`\n\nMusique d'ambiance ville/village : `https://www.youtube.com/watch?v=xu2pESvXcmM`\n\nMusique d'ambiance extérieur [Forêt surtout] : `https://www.youtube.com/watch?v=xHP2GgxYddY`\n\nMusique d'ambiance extérieur [Grotte surtout] : `https://www.youtube.com/watch?v=U4tbEJsi7ps` ou `https://www.youtube.com/watch?v=_2AAR9jRc7I`\n\nMusique d'ambiance de feu de camp / orage / pluie : `https://www.youtube.com/watch?v=3sL0omwElxw`\n\nMusique d'ambiance de port : `https://www.youtube.com/watch?v=frEJTGfLOhM`")
   }
 }) ;
 
