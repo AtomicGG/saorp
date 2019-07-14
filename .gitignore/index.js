@@ -1577,6 +1577,177 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (A < 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 1 avec :" , "│►" +A+ "/50 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (50 <= A & A < 125){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 2 avec :" , "│►" +A+ "/125 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (125 <= A & A < 225){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 3 avec :" , "│►" +A+ "/225 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (225 <= A & A < 400){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 4 avec :" , "│►" +A+ "/400 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (400 <= A & A < 700){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 5 avec :" , "│►" +A+ "/700 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (700 <= A & A < 1200){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 6 avec :" , "│►" +A+ "/1200 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (1200 <= A & A < 2000){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 7 avec :" , "│►" +A+ "/2000 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (2000 <= A & A < 3500){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 8 avec :" , "│►" +A+ "/3500 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
+    let X = args.slice(4).join(" : ");
+    const A = X*1
+    if (3500 <= A & A < 6000){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("│ Votre niveau de métier est de 9 avec :" , "│►" +A+ "/6000 points d'expérience !")
+      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+})
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chasseur")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -1685,6 +1856,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
+
 
 // Menus | Cristal
 
@@ -12913,181 +13085,6 @@ bot.on('message', message => {
     setTimeout(() => {
       talkedRecently.delete(message.author.id+19);
     }, 3600000);
-  }
-})
-
-
-
-//////////////////////////////////////////////////////////////////Calcul d'exp niveaux de métiers///////////////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (A < 50){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 1 avec :" , "│►" +A+ "/50 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (50 <= A & A < 125){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 2 avec :" , "│►" +A+ "/125 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (125 <= A & A < 225){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 3 avec :" , "│►" +A+ "/225 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (225 <= A & A < 400){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 4 avec :" , "│►" +A+ "/400 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (400 <= A & A < 700){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 5 avec :" , "│►" +A+ "/700 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (700 <= A & A < 1200){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 6 avec :" , "│►" +A+ "/1200 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (1200 <= A & A < 2000){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 7 avec :" , "│►" +A+ "/2000 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (2000 <= A & A < 3500){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 8 avec :" , "│►" +A+ "/3500 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  }
-})
-
-bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Calculateur d'expérience de métier")) {
-    let X = args.slice(4).join(" : ");
-    const A = X*1
-    if (3500 <= A & A < 6000){
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField("│ Votre niveau de métier est de 9 avec :" , "│►" +A+ "/6000 points d'expérience !")
-      .setImage("https://vignette.wikia.nocookie.net/sao-rp/images/8/8e/Hv9es9n.png/revision/latest/scale-to-width-down/800?cb=20180630183511&path-prefix=fr")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
   }
 })
 
