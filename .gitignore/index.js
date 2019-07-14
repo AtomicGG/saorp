@@ -27921,7 +27921,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
     let Dégâts = args.slice(4).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3))
+    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.2))
     const paradeReussie = Math.floor(16 * Math.random() + 135)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
