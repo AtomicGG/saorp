@@ -985,6 +985,24 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Crafts
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Crafts")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Le craft :" , "Pour continuer votre aventure, et surtout survivre contre les monstres ainsi que les joueurs, il vous faudra fabriquer toutes sortes de choses, on appelle aussi cela du 'Craft' !\n\n" +
+                             "Pour craft un objet, il vous faudra les matériaux nécessaires pour le faire, ainsi que le niveau minimum pour l'utiliser et le niveau de métier minimum requise !\n\n" +
+                             "Craft un objet prendra un certain temps, et il vous rapportera de l'expérience dans une métier, et si vous avez de la chance l'objet sera d'une bonne qualité !\n\n" +
+                             "Pour voir les informations sur un objet, s'il se craft ou non ainsi que les informations, écrivez :\n\n`=[Nom de l'objet]`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Objets
 
 bot.on('message', message => {
@@ -1215,6 +1233,24 @@ bot.on('message', message => {
                                         "Le menu commerce permet de présenter une offre, que ce soit pour acheter ou vendre quelque chose !\n\n" +
                                         "Le menu météo présente quotidiennement la météo du jour ainsi que ses effets !")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Donjons
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Donjons")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField("Les donjons :" , "Il arrivera un moment où votre personnage sera puissant et il pourra faire ce que l'on appelle des 'Donjons' !\n\n" +
+                                "Attention, les donjons sont des lieux où plusieurs salles comportent des monstres nombreux et puissants, il est donc très conseillé d'y aller en groupe !\n\n" +
+                                "A savoir qu'une fois un donjon accomplis, vous gagnez un coffre vous donnant des objets, selon votre chances, les objets seront plus ou moins rare !\n\n" +
+                                "Pour voir la liste des donjons disponibles, écrivez :\n\n`=Liste de donjons`")
+    .setColor(3447003)
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -12093,31 +12129,8 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Crafts")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Le craft :" , "Pour continuer votre aventure, et surtout survivre contre les monstres ainsi que les joueurs, il vous faudra fabriquer toutes sortes de choses, on appelle aussi cela du 'Craft' !\n\nPour craft un objet, il vous faudra les matériaux nécessaires pour le faire, ainsi que le niveau minimum pour l'utiliser et le niveau de métier minimum requise !\n\nCraft un objet prendra un certain temps, et il vous rapportera de l'expérience dans une métier, et si vous avez de la chance l'objet sera d'une bonne qualité !\n\nPour voir les informations sur un objet, s'il se craft ou non ainsi que les informations, écrivez :\n\n`=[Nom de l'objet]`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Donjons")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField("Les donjons :" , "Il arrivera un moment où votre personnage sera puissant et il pourra faire ce que l'on appelle des 'Donjons' !\n\nAttention, les donjons sont des lieux où plusieurs salles comportent des monstres nombreux et puissants, il est donc très conseillé d'y aller en groupe !\n\nA savoir qu'une fois un donjon accomplis, vous gagnez un coffre vous donnant des objets, selon votre chances, les objets seront plus ou moins rare !\n\nPour voir la liste des donjons disponibles, écrivez :\n\n`=Liste de donjons`")
-    .setColor(3447003)
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste de donjons")) {
