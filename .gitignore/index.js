@@ -804,6 +804,34 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Cristal
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cristal")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .addField("Le cristal, partie 1 :" , "Dans le monde de SAO, vous possèdez au dessus de votre personne, un cristal avec une couleur qui signifie quelque chose\n\n" +
+                                         "Le cristal vert : vous êtes un honnête joueur, n'ayant pas commis quelque chose d'illégal !\n\n" +
+                                         "Le cristal orange : vous êtes un joueur dont les gens se méfient, car vous pouvez très bien avoir de mauvaises intentions !\n\n" +
+                                         "Le cristal rouge : vous êtes ce que l'on nomme un 'PK' signifiant Player Killer, vous êtes un meurtrier qui n'hésite pas à tuer, à menacer, " +
+                                         "à tout faire pour votre intêret sans aucune pitié !")
+    .addBlankField(true)
+    .addField("Le cristal, partie 2 :" , "Pour acquérir le cristal orange, vous devez avoir frappé un joueur que ce soit avec une arme ou à mains nues, l'avoir menacé oralement de mort, l'avoir volé ou même l'avoir " +
+                                         "emmené de force quelque part comme une séquestration, mais aussi si vous rentrez par effraction chez quelqu'un et que vous n'y êtes pas autorisé.\n\n" +
+                                         "Pour acquérir le cristal rouge, vous devez avoir tué un joueur ou du moins, que ce soit votre coup final qui l'achève. " +
+                                         "Si vous faites trop de meurtres, votre cristal deviendra noir...\n\n" +
+                                         "Peu importe la couleur de votre cristal, vous pouvez aller en prison si vous méritez une sanction. Cependant, il existe une règle :\n\n" +
+                                         "Un joueur cristal vert qui attaque un joueur cristal orange, deviendra lui même cristal orange !\n\n" +
+                                         "Un joueur cristal vert qui attaque un joueur cristal rouge, ne deviendra pas orange, et tous les joueurs ont le droit de tuer un " +
+                                         "joueur cristal rouge à vue sans que leur cristal ne change !")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Menus
 
 bot.on('message', message => {
@@ -11703,20 +11731,7 @@ bot.on('message', message => {
 
 
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cristal")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .addField("Le cristal, partie 1 :" , "Dans le monde de SAO, vous possèdez au dessus de votre personne, un cristal avec une couleur qui signifie quelque chose\n\nLe cristal vert : vous êtes un honnête joueur, n'ayant pas commis quelque chose d'illégal !\n\nLe cristal orange : vous êtes un joueur dont les gens se méfient, car vous pouvez très bien avoir de mauvaises intentions !\n\nLe cristal rouge : vous êtes ce que l'on nomme un 'PK' signifiant Player Killer, vous êtes un meurtrier qui n'hésite pas à tuer, à menacer, à tout faire pour votre intêret sans aucune pitié !")
-    .addBlankField(true)
-    .addField("Le cristal, partie 2 :" , "Pour acquérir le cristal orange, vous devez avoir frappé un joueur que ce soit avec une arme ou à mains nues, l'avoir menacé oralement de mort, l'avoir volé ou même l'avoir emmené de force quelque part comme une séquestration, mais aussi si vous rentrez par effraction chez quelqu'un et que vous n'y êtes pas autorisé.\n\nPour acquérir le cristal rouge, vous devez avoir tué un joueur ou du moins, que ce soit votre coup final qui l'achève. Si vous faites trop de meurtres, votre cristal deviendra noir...\n\nPeu importe la couleur de votre cristal, vous pouvez aller en prison si vous méritez une sanction. Cependant, il existe une règle :\n\nUn joueur cristal vert qui attaque un joueur cristal orange, deviendra lui même cristal orange !\n\nUn joueur cristal vert qui attaque un joueur cristal rouge, ne deviendra pas orange, et tous les joueurs ont le droit de tuer un joueur cristal rouge à vue sans que leur cristal ne change !")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Mort")) {
