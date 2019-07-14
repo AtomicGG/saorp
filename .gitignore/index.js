@@ -673,6 +673,116 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Chasseur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Chasseur :" , "Niveau 1 : Aucun\n" +
+                             "Niveau 2 : 1 point de dégât supplémentaire !\n" +
+                             "Niveau 3 : 2 points de dégâts supplémentaire !\n" +
+                             "Niveau 4 : 3 points de dégâts supplémentaire\n" +
+                             "Niveau 5 : 4 points de dégâts supplémentaire !\n" +
+                             "Niveau 6 : 5 points de dégâts supplémentaire !\n" +
+                             "Niveau 7 : 6 points de dégâts supplémentaire !\n" +
+                             "Niveau 8 : 7 points de dégâts supplémentaire !\n" +
+                             "Niveau 9 : 8 points de dégâts supplémentaire !\n" +
+                             "Niveau 10 : 9 points de dégâts supplémentaire")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cueilleur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Cueilleur :" , "Niveau 1 : Aucun\n" +
+                              "Niveau 2 : 5 HP supplémentaire !\n" +
+                              "Niveau 3 : 10 HP supplémentaire !\n" +
+                              "Niveau 4 : 15 HP supplémentaire !\n" +
+                              "Niveau 5 : 20 HP supplémentaire !\n" +
+                              "Niveau 6 : 25 HP supplémentaire !\n" +
+                              "Niveau 7 : 30 HP supplémentaire !\n" +
+                              "Niveau 8 : 35 HP supplémentaire !\n" +
+                              "Niveau 9 : 40 HP supplémentaire !\n" +
+                              "Niveau 10 : 45 HP supplémentaire !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Mineur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Mineur :" , "Niveau 1 : Aucun\n" +
+                           "Niveau 2 : 5 HP supplémentaire !\n" +
+                           "Niveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\n" +
+                           "Niveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\n" +
+                           "Niveau 5 : 10 HP et 1 point d'armure supplémentaire !\n" +
+                           "Niveau 6 : 15 HP et 1 point d'armure supplémentaire !\n" +
+                           "Niveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\n" +
+                           "Niveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\n" +
+                           "Niveau 9 : 20 HP et 2 points d'armure supplémentaire !\n" +
+                           "Niveau 10 : 25 HP et 2 points d'armure supplémentaire !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bûcheron")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Bûcheron :" , "Niveau 1 : Aucun\n" +
+                             "Niveau 2 : 0.5 point d'armure supplémentaire !\n" +
+                             "Niveau 3 : 1 point d'armure supplémentaire !\n" +
+                             "Niveau 4 : 1.5 points d'armure supplémentaire !\n" +
+                             "Niveau 5 : 2 points d'armure supplémentaire !\n" +
+                             "Niveau 6 : 2.5 points d'armure supplémentaire !\n" +
+                             "Niveau 7 : 3 points d'armure supplémentaire !\n" +
+                             "Niveau 8 : 3,5 points d'armure supplémentaire !\n" +
+                             "Niveau 9 : 4 points d'armure supplémentaire !\n" +
+                             "Niveau 10 : 4.5 points d'armure supplémentaire !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pêcheur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pêcheur :" , "Niveau 1 : Aucun\n" +
+                            "Niveau 2 : 5 HP supplémentaire !\n" +
+                            "Niveau 3 : 5 HP et 1 point de dégât supplémentaire !\n" +
+                            "Niveau 4 : 10 HP et 1 point de dégât supplémentaire !\n" +
+                            "Niveau 5 : 10 HP et 2 points de dégâts supplémentaire !\n" +
+                            "Niveau 6 : 15 HP et 2 points de dégâts supplémentaire !\n" +
+                            "Niveau 7 : 15 HP et 3 points de dégâts supplémentaire !\n" +
+                            "Niveau 8 : 20 HP et 3 points de dégâts supplémentaire !\n" +
+                            "Niveau 9 : 20 HP et 4 points de dégâts supplémentaire !\n" +
+                            "Niveau 10 : 25 HP et 4 points de dégâts supplémentaire !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Menus
 
 bot.on('message', message => {
@@ -11569,81 +11679,6 @@ bot.on('message', message => {
 })
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
-
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Chasseur")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Chasseur :" , "Niveau 1 : Aucun\n" +
-                             "Niveau 2 : 1 point de dégât supplémentaire !\n" +
-                             "Niveau 3 : 2 points de dégâts supplémentaire !\n" +
-                             "Niveau 4 : 3 points de dégâts supplémentaire\n" +
-                             "Niveau 5 : 4 points de dégâts supplémentaire !\n" +
-                             "Niveau 6 : 5 points de dégâts supplémentaire !\n" +
-                             "Niveau 7 : 6 points de dégâts supplémentaire !\n" +
-                             "Niveau 8 : 7 points de dégâts supplémentaire !\n" +
-                             "Niveau 9 : 8 points de dégâts supplémentaire !\n" +
-                             "Niveau 10 : 9 points de dégâts supplémentaire")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cueilleur")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Cueilleur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 10 HP supplémentaire !\nNiveau 4 : 15 HP supplémentaire !\nNiveau 5 : 20 HP supplémentaire !\nNiveau 6 : 25 HP supplémentaire !\nNiveau 7 : 30 HP supplémentaire !\nNiveau 8 : 35 HP supplémentaire !\nNiveau 9 : 40 HP supplémentaire !\nNiveau 10 : 45 HP supplémentaire !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Mineur")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Mineur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\nNiveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\nNiveau 5 : 10 HP et 1 point d'armure supplémentaire !\nNiveau 6 : 15 HP et 1 point d'armure supplémentaire !\nNiveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\nNiveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\nNiveau 9 : 20 HP et 2 points d'armure supplémentaire !\nNiveau 10 : 25 HP et 2 points d'armure supplémentaire !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bûcheron")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Bûcheron :" , "Niveau 1 : Aucun\nNiveau 2 : 0.5 point d'armure supplémentaire !\nNiveau 3 : 1 point d'armure supplémentaire !\nNiveau 4 : 1.5 points d'armure supplémentaire !\nNiveau 5 : 2 points d'armure supplémentaire !\nNiveau 6 : 2.5 points d'armure supplémentaire !\nNiveau 7 : 3 points d'armure supplémentaire !\nNiveau 8 : 3,5 points d'armure supplémentaire !\nNiveau 9 : 4 points d'armure supplémentaire !\nNiveau 10 : 4.5 points d'armure supplémentaire !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pêcheur")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Pêcheur :" , "Niveau 1 : Aucun\nNiveau 2 : 5 HP supplémentaire !\nNiveau 3 : 5 HP et 1 point de dégât supplémentaire !\nNiveau 4 : 10 HP et 1 point de dégât supplémentaire !\nNiveau 5 : 10 HP et 2 points de dégâts supplémentaire !\nNiveau 6 : 15 HP et 2 points de dégâts supplémentaire !\nNiveau 7 : 15 HP et 3 points de dégâts supplémentaire !\nNiveau 8 : 20 HP et 3 points de dégâts supplémentaire !\nNiveau 9 : 20 HP et 4 points de dégâts supplémentaire !\nNiveau 10 : 25 HP et 4 points de dégâts supplémentaire !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Tableau des métiers")) {
