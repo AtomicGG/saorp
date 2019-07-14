@@ -674,6 +674,27 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tableau des métiers")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Tableau des métiers du niveau 1 à 10" , "Niveau 2 : 50 points d'expérience nécessaire !\n" +
+                                                       "Niveau 3 : 125 points d'expérience nécessaire !\n" +
+                                                       "Niveau 4 : 225 points d'expérience nécessaire !\n" +
+                                                       "Niveau 5 : 400 points d'expérience nécessaire !\n" +
+                                                       "Niveau 6 : 700 points d'expérience nécessaire !\n" +
+                                                       "Niveau 7 : 1200 points d'expérience nécessaire !\n" +
+                                                       "Niveau 8 : 2000 points d'expérience nécessaire !\n" +
+                                                       "Niveau 9 : 3500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 10 : 6000 points d'expérience nécessaire !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Chasseur")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
@@ -11680,18 +11701,7 @@ bot.on('message', message => {
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Tableau des métiers")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Tableau des métiers du niveau 1 à 10" , "Niveau 2 : 50 points d'expérience nécessaire !\nNiveau 3 : 125 points d'expérience nécessaire !\nNiveau 4 : 225 points d'expérience nécessaire !\nNiveau 5 : 400 points d'expérience nécessaire !\nNiveau 6 : 700 points d'expérience nécessaire !\nNiveau 7 : 1200 points d'expérience nécessaire !\nNiveau 8 : 2000 points d'expérience nécessaire !\nNiveau 9 : 3500 points d'expérience nécessaire !\nNiveau 10 : 6000 points d'expérience nécessaire !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Cristal")) {
