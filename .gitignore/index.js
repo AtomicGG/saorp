@@ -553,6 +553,33 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Etats
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Etats")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les états :" , "Lors d'un combat, il existe ce que l'on apelle des 'Etats' !\n\n" +
+                              "Ce sont des effets négatives que vous infligez sur un ou plusieurs ennemis, voici la liste des états qui existent :\n\n" +
+                              "[Empoisonnement] : Inflige des dégâts supplémentaire !\n" +
+                              "[Saignement] : Inflige des dégâts supplémentaire !\n" +
+                              "[Enflammé] : Inflige des dégâts supplémentaire !\n" +
+                              "[Charme] : Oblige l'ennemis à vous obéir !\n" +
+                              "[Gèle] : Empêche de faire une attaque !\n" +
+                              "[Paralysie] : Empêche de faire une attaque ainsi qu'une action défensive !\n" +
+                              "[Sommeil] : Empêche la cible de faire une action, elle se réveille uniquement si elle reçoit des dégâts !\n" +
+                              "[Etourdissement] : Empêche de faire une action défensive !\n\n" +
+                              "Certains compétences provoqueront des états, il sera expliqué comment s'en servir !\n\n" +
+                              "A savoir, les états ignorent l'armure de l'ennemis, c'est à dire que si votre cible est enflammé, empoisonné ou même sous l'effet de saignement, " +
+                              "les dégâts qu'il reçoit ne sont pas réduits par son armure !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Quêtes
 
 bot.on('message', message => {
@@ -1002,6 +1029,32 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Monstres
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Monstres")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les monstres :" , "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n" +
+                                 "`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :")
+    .addBlankField(true)
+    .addField("**__La Plaine :__**" , "`=Renard` : 20 :hearts:\n`=Sanglier` : 30 :hearts:\n`=Chien` : 15 :hearts:\n`=Bandit débutant` : 40 :hearts:\n`=Lapin géant` : 70 :hearts:")
+    .addBlankField(true)
+    .addField("**__La Forêt :__**" , "`=Loup` : 80 :hearts:\n`=Slime` : 150 :hearts:\n`=Bandit expérimenté` : 140 :hearts:\n`=Bandit sombre` : 240 :hearts:\n`=Loup de sang` : 300 :hearts:")
+    .addBlankField(true)
+    .addField("**__Le Donjon Sauvage :__**" , "`=Loup d'élite` : 180 :hearts:\n`=Loup de sang d'élite` : 400 :hearts:\n`=Bandit sombre d'élite` : 350 :hearts:\n`=Loup gigantesque` : 2000 :hearts:")
+    .addBlankField(true)
+    .addField("**__La Montagne :__**" , "`=Jeune kobolt` : 200 :hearts:\n`=Kobolt explorateur` : 325 :hearts:\n`=Kobolt ouvrier` : 275 :hearts:\n`=Kobolt espion` : 250 :hearts:\n`=Kobolt enragé` : 650 :hearts:")
+    .addBlankField(true)
+    .addField("**__La Grotte :__**" , "`=Kobolt mineur` : 350 :hearts:\n`=Kobolt combattant` : 600 :hearts:\n`=Kobolt garde` : 520 :hearts:\n`=Chien errant` : 400 :hearts:\n`=Kobolt pilion` : 1000 :hearts:")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Crafts
 
 bot.on('message', message => {
@@ -1229,6 +1282,101 @@ bot.on('message', message => {
   }
 });
 
+// Menus | Ville
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Ville")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("La ville :" , "La ville est un endroit très calme, il est impossible de tuer quelqu'un, il est possible de sortir son arme mais vous ne pourrez pas frapper quelqu'un avec, " +
+                             "une barrière apparaîtra pour protégé le joueur !\n\n" +
+                             "Cependant, les duels sont possibles mais il ne sera pas possible de faire de duel à mort !\n\n" +
+                             "Le seul moment possible où les meutres sont possibles en ville, sont lorsque le maître du jeu le décide !\n\n" +
+                             "A partir de la ville dans le salon 'Entrée de la ville', il est possible de vous rendre à l'extérieur, ou dans les souterrains à partir de 'Souterrains' ou " +
+                             "même aux constructions des joueurs à partir de 'Constructions joueurs' !\n\nDans l'auberge en ville, il est possible de vous rendre dans les chambres !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Extérieur
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Extérieur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("L'extérieur :" , "C'est en extérieur que vous rencontrerez des monstres, que vous pourrez accomplir des quêtes et faire des donjons !\n\n" +
+                                "Le meurtre est possible à l'extérieur, alors faite attention si des PK rôdent !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Souterrains
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Souterrains")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les souterrains :" , "C'est dans les souterrains de la ville que se feront très souvent les activités illégales, étant donné que les meutres sont possibles à l'intérieur !\n\n" +
+                                    "Il n'y a qu'un seul accès des souterrains pour revenir en ville, alors faites attention !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Constructions
+
+bot.on('message', message => {
+  if (message.content === prefix + "Constructions") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les constructions :" , "Il existe une grande zone en ville, permettant de pouvoir acheter des constructions existantes tels que des maisons, des demeures, " +
+                                      "des magasins, des bars et pleins d'autres batîments allant même jusqu'à un manoir ou à un château !\n\n" +
+                                      "Les prix d'une construction varie selon son importance, une maison ne coûtera pas aussi cher qu'un manoir !\n\n" +
+                                      "Une fois une construction acheter, vous devrez créer un discord avec des salons en guide d'étages, de salles, de lieux, " +
+                                      "à vous d'aménager et d'imaginer, une fois finis donner le lien de votre discord à un membre du staff qu'il l'affiche dans le salon des constructions !\n\n" +
+                                      "Pour consulter les prix d'une construction, écrivez :\n\n`=Constructions prix`")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Constructions prix") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Prix des constructions :" , "**__Maisons normales__** :\n\n " +
+                                           "Petite : 10 000  [4 salons discord maximum]\n" +
+                                           "Moyenne : 35 000  [12 salons discord maximum]\n" +
+                                           "Grande : 120 000 cols [36 salons discord maximum]\n\n" +
+                                           "**__Boutique / Atelier__** : \n" +
+                                           "(pouvant être un bar, un casino, un restaurant, une forge et pouvant posséder une petite partie d'habitation pour le possesseur mais surtout, un channel d'atelier)\n\n" +
+                                           "Petite : 10 000 cols [3 prédéfinis]\n" +
+                                           "Moyenne : 30 000 cols [10 prédéfinis]\n" +
+                                           "Grande : 100 000 cols [30 prédéfinis]\n" +
+                                           "Une planque : 35 000 cols [10 salons discord maximum, Une maison bien cacher]\n" +
+                                           "Un repaire de guilde : 200 000 cols [50 salons discord maximum]")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Menus
 
 bot.on('message', message => {
@@ -1296,6 +1444,136 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Les familiers :" , "Parfois durant votre aventure, vous gagnerez sur des monstres, dans des coffres ou même pendant des évènements ce que l'on appelle un 'Familier' !\n\n" +
                                   "Ce sont des petits animaux qui vous permettent de non seulement vous offrir des bonus, mais aussi qui vous suivent partout où vous irez !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Guilde
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Guilde")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les guildes, partie 1 :" , "Arrivé à un certain stade, vous aurez probablement envie de jouer en équipe et donc de fonder ou rejoindre ce que l'on appelle une 'Guilde' !\n\n" +
+                                          "Une guilde est comme une alliance, un clan, une famille, où plusieurs gens s'entraident ou du moins, les joueurs ont des objectifs en communs !\n\n" +
+                                          "On distingue trois types de guildes :\n\nLes guildes anti-PK, qui ont pour objectif de progresser mais aussi et surtout de mettre en prison ou tuer les PK qui rôdent !\n\n" +
+                                          "Les guildes neutres, elles progressent et ne sont pas vraiment pour ou contre le crime, ils sont là pour survivre et faire des alliances " +
+                                          "avec des guildes de PK ou d'anti-PK ne les dérangent pas !\n\n" +
+                                          "Les guildes PK, ce sont des guildes ayant pour but de tuer les joueurs, que ce soit des faibles ou des forts, pour des objectifs que " +
+                                          "ce soit par plaisir ou par interêts comme leur équipement et la réputation pour être craint !")
+    .addBlankField(true)
+    .addField("Les guildes, partie 2 :" , "Une fois que vous avez rejoins ou fondé une guilde, vous avez un certain grade qui peux évolué, vous avez aussi le droit d'avoir un coffre " +
+                                          "réservé à votre guilde à la banque de la guilde !\n\n" +
+                                          "Des tournois de guildes peuvent avoir lieu avec des récompenses à la clef, le nombre fait la force !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Professions
+
+bot.on('message', message => {
+  if (message.content === prefix + "Professions") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les professions (Partie 1) :" , "Vous avez le droit d'avoir une profession en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n" +
+                                    "Les niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\n" +
+                                    "Niveau 15 : 2 professions max !\nNiveau 30 : 3 professions max !")
+    .addBlankField(true)
+    .addField("Les professions (Partie 2) :" , "Il y a 3 catégories de professions, et vous ne pourrez avoir qu'une seule profession dans chaque catégorie ! Voici les différentes professions dans chaque catégorie : \n\n" +
+                                              "=Professions de récolte\n" +
+                                              "=Professions de fabrication\n" +
+                                              "=Professions de fonction publique")
+    .addBlankField(true)
+    .addField("Les professions (Partie 3) :" , "Une profession permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n\n" +
+                                               "Une profession donne quelques bonus, permettant de plus facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n\n" +
+                                               "Pour connaitre les bonus que donne les professions, voici la liste :\n\n" +
+                                               "=Bonus des professions")
+    .addBlankField(true)
+    .addField("Les professions (Partie 4) :" , "Pour obtenir une profession, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voter pour :white_check_mark: ou contre :x: et selon le résultat, " +
+                                               "vous aurez ou non la profession !")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Professions de récolte") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les professions de récolte :" , "Voici la liste des professions liées à la récolte :\n\n" +
+                                               "- Mineur\n" +
+                                               "- Bûcheron\n" +
+                                               "- Cueilleur\n" +
+                                               "- Chasseur\n" +
+                                               "- Pêcheur")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Professions de fabrication") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les professions de fabrication :" , "Voici la liste des professions liées à la fabrication :\n\n" +
+                                                   "- Alchimiste\n" +
+                                                   "- Forgeron\n" +
+                                                   "- Bijoutier\n" +
+                                                   "- Enchanteur\n" +
+                                                   "- Cuisinier")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Professions de fonction publique") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les professions de fonction publique :" , "Voici la liste des professions liées à la fonction publique :\n\n" +
+                                                         "- Aubergiste\n" +
+                                                         "- Mercenaire\n" +
+                                                         "- Garde et Chef des Gardes\n" +
+                                                         "- Banquier\n" +
+                                                         "- Eleveur\n" +
+                                                         "- Bourreau\n" +
+                                                         "- Maitre de l'Arènes\n" +
+                                                         "- Dirigeant\n" +
+                                                         "- Gérant des Guildes")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content === prefix + "Bonus des professions") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Les bonus des professions de récolte :" , "En construction")
+    .addBlankField(true)
+    .addField("Les bonus des professions de fabrication :" , "En construction")
+    .addBlankField(true)
+    .addField("Les bonus des professions de fonction publique :" , "En construction")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -12173,225 +12451,7 @@ bot.on('message', message => {
 
 //////////////////////////////////////////////////////////Menu SAO///////////////////////////////////////////////////////////////////////////////////////
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Monstres")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les monstres :" , "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n" +
-                                 "`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :")
-    .addBlankField(true)
-    .addField("**__La Plaine :__**" , "`=Renard` : 20 :hearts:\n`=Sanglier` : 30 :hearts:\n`=Chien` : 15 :hearts:\n`=Bandit débutant` : 40 :hearts:\n`=Lapin géant` : 70 :hearts:")
-    .addBlankField(true)
-    .addField("**__La Forêt :__**" , "`=Loup` : 80 :hearts:\n`=Slime` : 150 :hearts:\n`=Bandit expérimenté` : 140 :hearts:\n`=Bandit sombre` : 240 :hearts:\n`=Loup de sang` : 300 :hearts:")
-    .addBlankField(true)
-    .addField("**__Le Donjon Sauvage :__**" , "`=Loup d'élite` : 180 :hearts:\n`=Loup de sang d'élite` : 400 :hearts:\n`=Bandit sombre d'élite` : 350 :hearts:\n`=Loup gigantesque` : 2000 :hearts:")
-    .addBlankField(true)
-    .addField("**__La Montagne :__**" , "`=Jeune kobolt` : 200 :hearts:\n`=Kobolt explorateur` : 325 :hearts:\n`=Kobolt ouvrier` : 275 :hearts:\n`=Kobolt espion` : 250 :hearts:\n`=Kobolt enragé` : 650 :hearts:")
-    .addBlankField(true)
-    .addField("**__La Grotte :__**" , "`=Kobolt mineur` : 350 :hearts:\n`=Kobolt combattant` : 600 :hearts:\n`=Kobolt garde` : 520 :hearts:\n`=Chien errant` : 400 :hearts:\n`=Kobolt pilion` : 1000 :hearts:")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Guilde")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les guildes, partie 1 :" , "Arrivé à un certain stade, vous aurez probablement envie de jouer en équipe et donc de fonder ou rejoindre ce que l'on appelle une 'Guilde' !\n\nUne guilde est comme une alliance, un clan, une famille, où plusieurs gens s'entraident ou du moins, les joueurs ont des objectifs en communs !\n\nOn distingue trois types de guildes :\n\nLes guildes anti-PK, qui ont pour objectif de progresser mais aussi et surtout de mettre en prison ou tuer les PK qui rôdent !\n\nLes guildes neutres, elles progressent et ne sont pas vraiment pour ou contre le crime, ils sont là pour survivre et faire des alliances avec des guildes de PK ou d'anti-PK ne les dérangent pas !\n\nLes guildes PK, ce sont des guildes ayant pour but de tuer les joueurs, que ce soit des faibles ou des forts, pour des objectifs que ce soit par plaisir ou par interêts comme leur équipement et la réputation pour être craint !")
-    .addBlankField(true)
-    .addField("Les guildes, partie 2 :" , "Une fois que vous avez rejoins ou fondé une guilde, vous avez un certain grade qui peux évolué, vous avez aussi le droit d'avoir un coffre réservé à votre guilde à la banque de la guilde !\n\nDes tournois de guildes peuvent avoir lieu avec des récompenses à la clef, le nombre fait la force !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Etats")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les états :" , "Lors d'un combat, il existe ce que l'on apelle des 'Etats' !\n\nCe sont des effets négatives que vous infligez sur un ou plusieurs ennemis, voici la liste des états qui existent :\n\n[Empoisonnement] : Inflige des dégâts supplémentaire !\n[Saignement] : Inflige des dégâts supplémentaire !\n[Enflammé] : Inflige des dégâts supplémentaire !\n[Charme] : Oblige l'ennemis à vous obéir !\n[Gèle] : Empêche de faire une attaque !\n[Paralysie] : Empêche de faire une attaque ainsi qu'une action défensive !\n[Sommeil] : Empêche la cible de faire une action, elle se réveille uniquement si elle reçoit des dégâts !\n[Etourdissement] : Empêche de faire une action défensive !\n\nCertains compétences provoqueront des états, il sera expliqué comment s'en servir !\n\nA savoir, les états ignorent l'armure de l'ennemis, c'est à dire que si votre cible est enflammé, empoisonné ou même sous l'effet de saignement, les dégâts qu'il reçoit ne sont pas réduits par son armure !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "Professions") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les professions (Partie 1) :" , "Vous avez le droit d'avoir une profession en ville de base, mais vous pourrez en avoir plusieurs autres selon votre 'Niveau d'activité' !\n" +
-                                    "Les niveaux d'activité sont ceux que vous gagnez en parlant et en participant beaucoup, vous verrez votre niveau d'activité sur votre profil [Vos rôles discord] !\n\n" +
-                                    "Niveau 15 : 2 professions max !\nNiveau 30 : 3 professions max !")
-    .addBlankField(true)
-    .addField("Les professions (Partie 2) :" , "Il y a 3 catégories de professions, et vous ne pourrez avoir qu'une seule profession dans chaque catégorie ! Voici les différentes professions dans chaque catégorie : \n\n" +
-                                              "=Professions de récolte\n" +
-                                              "=Professions de fabrication\n" +
-                                              "=Professions de fonction publique")
-    .addBlankField(true)
-    .addField("Les professions (Partie 3) :" , "Une profession permet de montrer que vous êtes spécialisé dans quelque chose, si par exemple vous aimez souvent miner, alors 'Mineur' sera fait pour vous !\n\n" +
-                                               "Une profession donne quelques bonus, permettant de plus facilement s'organiser en ville, en guilde et dans bien d'autres circonstances !\n\n" +
-                                               "Pour connaitre les bonus que donne les professions, voici la liste :\n\n" +
-                                               "=Bonus des professions")
-    .addBlankField(true)
-    .addField("Les professions (Partie 4) :" , "Pour obtenir une profession, il faudra faire une annonce dans le 'Menu des annonces' et les joueurs auront 24 H pour voter pour :white_check_mark: ou contre :x: et selon le résultat, " +
-                                               "vous aurez ou non la profession !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "Professions de récolte") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les professions de récolte :" , "Voici la liste des professions liées à la récolte :\n\n" +
-                                               "- Mineur\n" +
-                                               "- Bûcheron\n" +
-                                               "- Cueilleur\n" +
-                                               "- Chasseur\n" +
-                                               "- Pêcheur")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "Professions de fabrication") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les professions de fabrication :" , "Voici la liste des professions liées à la fabrication :\n\n" +
-                                                   "- Alchimiste\n" +
-                                                   "- Forgeron\n" +
-                                                   "- Bijoutier\n" +
-                                                   "- Enchanteur\n" +
-                                                   "- Cuisinier")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "Professions de fonction publique") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les professions de fonction publique :" , "Voici la liste des professions liées à la fonction publique :\n\n" +
-                                                         "- Aubergiste\n" +
-                                                         "- Mercenaire\n" +
-                                                         "- Garde et Chef des Gardes\n" +
-                                                         "- Banquier\n" +
-                                                         "- Eleveur\n" +
-                                                         "- Bourreau\n" +
-                                                         "- Maitre de l'Arènes\n" +
-                                                         "- Dirigeant\n" +
-                                                         "- Gérant des Guildes")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "Bonus des professions") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les bonus des professions de récolte :" , "En construction")
-    .addBlankField(true)
-    .addField("Les bonus des professions de fabrication :" , "En construction")
-    .addBlankField(true)
-    .addField("Les bonus des professions de fonction publique :" , "En construction")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Ville")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("La ville :" , "La ville est un endroit très calme, il est impossible de tuer quelqu'un, il est possible de sortir son arme mais vous ne pourrez pas frapper quelqu'un avec, une barrière apparaîtra pour protégé le joueur !\n\nCependant, les duels sont possibles mais il ne sera pas possible de faire de duel à mort !\n\nLe seul moment possible où les meutres sont possibles en ville, sont lorsque le maître du jeu le décide !\n\nA partir de la ville dans le salon 'Entrée de la ville', il est possible de vous rendre à l'extérieur, ou dans les souterrains à partir de 'Souterrains' ou même aux constructions des joueurs à partir de 'Constructions joueurs' !\n\nDans l'auberge en ville, il est possible de vous rendre dans les chambres !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Extérieur")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("L'extérieur :" , "C'est en extérieur que vous rencontrerez des monstres, que vous pourrez accomplir des quêtes et faire des donjons !\n\nLe meurtre est possible à l'extérieur, alors faite attention si des PK rôdent !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Souterrains")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les souterrains :" , "C'est dans les souterrains de la ville que se feront très souvent les activités illégales, étant donné que les meutres sont possibles à l'intérieur !\n\nIl n'y a qu'un seul accès des souterrains pour revenir en ville, alors faites attention !")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "Constructions") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Les constructions :" , "Il existe une grande zone en ville, permettant de pouvoir acheter des constructions existantes tels que des maisons, des demeures, des magasins, des bars et pleins d'autres batîments allant même jusqu'à un manoir ou à un château !\n\nLes prix d'une construction varie selon son importance, une maison ne coûtera pas aussi cher qu'un manoir !\n\nUne fois une construction acheter, vous devrez créer un discord avec des salons en guide d'étages, de salles, de lieux, à vous d'aménager et d'imaginer, une fois finis donner le lien de votre discord à un membre du staff qu'il l'affiche dans le salon des constructions !\n\nPour consulter les prix d'une construction, écrivez :\n\n`=Constructions prix`")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  if (message.content === prefix + "Constructions prix") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField("Prix des constructions :" , " **__Maisons normales__** :\n\n Petite : 10 000  [4 salons discord maximum]\nMoyenne : 35 000  [12 salons discord maximum]\nGrande : 120 000 cols [36 salons discord maximum]\n\n**__Boutique / Atelier__** : \n(pouvant être un bar, un casino, un restaurant, une forge et pouvant posséder une petite partie d'habitation pour le possesseur mais surtout, un channel d'atelier)\n\nPetite : 10 000 cols [3 prédéfinis]\nMoyenne : 30 000 cols [10 prédéfinis]\nGrande : 100 000 cols [30 prédéfinis]\nUne planque : 35 000 cols [10 salons discord maximum, Une maison bien cacher]\nUn repaire de guilde : 200 000 cols [50 salons discord maximum]")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
 
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
