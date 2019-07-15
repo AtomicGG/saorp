@@ -46330,6 +46330,8 @@ bot.on('message', message => {
     .addField("Fusil d'assaut :" , "Une version peu courante du M16. Plus compacte, probablement destiné à un usage 'civil'...\n\nLa chasse à la Galinette Cendrée diront certains\n\nCet objet nécessite `Balle` pour fonctionner, chaque `Balle` permettra d'utiliser cet objet 1 fois\n\nPour utiliser cet objet : `=Tir [Fusil d'assaut]`")
     .setTimestamp()
     message.channel.send({embed})
+  }
+}) ;
 
 
 bot.on('message', message => {
@@ -46355,8 +46357,7 @@ bot.on('message', message => {
                 }
             }) ;
 
-  }
-}) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Fusée éclairante") {
@@ -47845,12 +47846,34 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pointeur laser brûlant :" , "Interdit dans le monde après qu'une personne d'âge avancée ait perdu la vue en croisant le faisceau de ce petit objet, il saura être utile pour trancher de la chair putréfiée !")
+    .addField("Pointeur laser brûlant :" , "Interdit dans le monde après qu'une personne d'âge avancée ait perdu la vue en croisant le faisceau de ce petit objet, il saura être utile pour trancher de la chair putréfiée !\n\nCet objet nécessite `Pile` pour fonctionner, chaque `Pile` permettra d'utiliser cet objet 4 fois\n\nPour utiliser cet objet : `=Tir [Pointeur laser brûlant]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tir [Pointeur laser brûlant]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((3)*Math.random()+1))
+    if(X <= 15){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Pointeur laser brûlant] :" , "Vous ratez malheureusement votre tir...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 16){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Pointeur laser brûlant] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure mortelle`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 
 bot.on('message', message => {
@@ -47871,11 +47894,35 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pompe à jerrycan :" , "Avant, ce gadget faisait rire tout le monde au rayon bricolage, summum de l'inutilité\n\nAujourd'hui, c'est une arme redoutable qui utilise de l'eau non-purifiée (l'embout s'adapte sur un jerrycan) pour la projeter sous forme de vapeur d'eau pure !")
+    .addField("Pompe à jerrycan :" , "Avant, ce gadget faisait rire tout le monde au rayon bricolage, summum de l'inutilité\n\nAujourd'hui, c'est une arme redoutable qui utilise de l'eau non-purifiée (l'embout s'adapte sur un jerrycan) pour la projeter sous forme de vapeur d'eau pure !\n\nCet objet nécessite `Jerrycan plein` pour fonctionner, chaque `Jerrycan plein` permettra d'utiliser cet objet 3 fois\n\nPour utiliser cet objet : `=Tir [Pompe à jerrycan]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tir [Pompe à jerrycan]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((3)*Math.random()+1))
+    if(X <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Pompe à jerrycan] :" , "Vous ratez malheureusement votre tir...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Pompe à jerrycan] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Pompe à jerrycan (démonté)") {
@@ -47883,7 +47930,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pompe à jerrycan (démonté) :" , "Avant, ce gadget faisait rire tout le monde au rayon bricolage, summum de l'inutilité\n\nAujourd'hui, c'est une arme redoutable qui utilise de l'eau non-purifiée (l'embout s'adapte sur un jerrycan) pour la projeter sous forme de vapeur d'eau pure !\n\nCependant, il faudra monter cet objet avec d'autres matériaux pour l'utiliser")
+    .addField("Pompe à jerrycan (démonté) :" , "Avant, ce gadget faisait rire tout le monde au rayon bricolage, summum de l'inutilité\n\nAujourd'hui, c'est une arme redoutable qui utilise de l'eau non-purifiée (l'embout s'adapte sur un jerrycan) pour la projeter sous forme de vapeur d'eau pure !\n\nPour assembler cet objet et obtenir `Pompe à jerrycan` vous devrez être à l'atelier et utiliser :\n\n`1 Pompe à jerrycan (démonté)`\n`1 Jerrycan plein`\n`1 Rustine`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47895,11 +47942,34 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Portière de voiture :" , "Cette grosse portière fera parfaitement office de bouclier improvisé dans le désert, quand il s'agira de passer en force dans des hordes de cadavres avides de votre délicieux cerveau\n\nCet objet est `Encombrant`")
+    .addField("Portière de voiture :" , "Cette grosse portière fera parfaitement office de bouclier improvisé dans le désert, quand il s'agira de passer en force dans des hordes de cadavres avides de votre délicieux cerveau\n\nCet objet est `Encombrant`\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 8 points de défenses à chaques nuits !\n\nLa mise en place de cet défense est de 4 H sur le chantier de la ville ainsi que 1 point d'action\n\nPour utiliser cet objet : `=Protection [Portière de voiture]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Protection [Portière de voiture]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((5)*Math.random()+2))
+    if(X <= 40){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Protection [Portière de voiture] :" , "Vous ratez malheureusement votre protection...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 41){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Protection [Portière de voiture] :" , "Vous défendez `" +Cible+ "` survivants au choix\n\nLes survivants qui sont défendus ne pourront pas se faire attaquer par les zombies lorsqu'ils attaqueront durant leur prochaine attaque")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Portière de voiture incomplète") {
@@ -47907,7 +47977,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Portière de voiture incomplète :" , "Une portière de voiture, mais à laquelle il manque certaines parties pour pouvoir la tenir en main...\n\nCet objet est `Encombrant`")
+    .addField("Portière de voiture incomplète :" , "Une portière de voiture, mais à laquelle il manque certaines parties pour pouvoir la tenir en main...\n\nCet objet est `Encombrant`\n\nPour assembler cet objet et obtenir `Portière de voiture` vous devrez être à l'atelier et utiliser :\n\n`1 Portière de voiture incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n\nL'assemblage prendra 45 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47931,7 +48001,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Poudre-comète brute :" , "Cette poudre de feux d'artifice pourrait faire une bonne distraction, si elle était utilisée correctement...")
+    .addField("Poudre-comète brute :" , "Cette poudre de feux d'artifice pourrait faire une bonne distraction, si elle était utilisée correctement...\n\nPour assembler cet objet et obtenir `Bombe pulvérine` vous devrez être à l'atelier et utiliser :\n\n`Poudre-comète brute`\n`1 Sac plastique`\n`1 Rustine`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47943,7 +48013,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Poule :" , "Bon, il n'y a plus qu'à trouver un boucher\n\nAccessoirement, ça peut aussi se lancer sur un zombie...")
+    .addField("Poule :" , "Bon, il n'y a plus qu'à trouver un boucher\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal afin d'obtenir `2 Viande indéfinissable'")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47955,7 +48025,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Poutre rafistolée :" , "Un assemblage de bois qui forme une poutre de soutien relativement solide\n\nCet objet est `Encombrant`")
+    .addField("Poutre rafistolée :" , "Un assemblage de bois qui forme une poutre de soutien relativement solide\n\nCet objet est `Encombrant`\n\nPour transformer cet objet et obtenir `Planche tordue` vous devrez être à l'atelier, la transformation prendra 30 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47967,7 +48037,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Produit corrosif :" , "Avec les bons ingrédients, cet acide pourrait devenir un dangereux poison\n\nEncore faut-il vraiment vouloir tuer quelqu'un...Vous ne le souhaitez pas, n'est-ce pas ?")
+    .addField("Produit corrosif :" , "Avec les bons ingrédients, cet acide pourrait devenir un dangereux poison\n\nEncore faut-il vraiment vouloir tuer quelqu'un...Vous ne le souhaitez pas, n'est-ce pas ?\n\nPour assembler cet objet et obtenir `Fiole de poison` vous devrez être à l'atelier et utiliser :\n\n`Produit corrosif`\n`1 Pile`\n`1 Produits pharmaceutiques`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour cuisiner cet objet et obtenir `LSD` vous devrez être à la cuisine et utiliser :\n\n`1 Claviceps purpurea`\n`1 Produit corrosif`\n\nLa préparation prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
