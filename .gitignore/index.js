@@ -47827,12 +47827,13 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
+
   if (message.content === prefix + "Poignée de vis et écrous") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Poignée de vis et écrous :" , "Certaines pièces sont rouillées, d'autres sont couvertes de mousse verdâtre, mais elles ont toutes au moins le mérite de continuer à remplir leur rôle, plus ou moins\n\nCet objet s'utilise dans une multitude d'objets")
+    .addField("Poignée de vis et écrous :" , "Certaines pièces sont rouillées, d'autres sont couvertes de mousse verdâtre, mais elles ont toutes au moins le mérite de continuer à remplir leur rôle, plus ou moins\n\nCet objet s'utilise dans une multitude d'objets :\n\n`Tronçonneuse (démonté)`\n`Batteur électrique (démonté)`\n`Tondeuse à gazon (démonté)`\n`Cafetière incomplète`\n`Devastator (démonté)`\n`Scie à métaux abîmée`\n`Outils en vrac`\n`Moteur incomplet`\n`Calibrateur PDTT MARK II`\n`Portière de voiture incomplète`\n`Bobine de fil de fer`\n`Diode lazer`")
     .setTimestamp()
     message.channel.send({embed})
   }
