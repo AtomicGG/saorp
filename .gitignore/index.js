@@ -28510,7 +28510,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Liste des objets, partie 5 :" , "`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petit manche vibrant (démonté)`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n`=Pistolet à eau (démonté)`\n\nLa suite : `=Horde liste d'objets 6`")    .setTimestamp()
+          .addField("Liste des objets, partie 5 :" , "`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n`=Pistolet à eau (démonté)`\n\nLa suite : `=Horde liste d'objets 6`")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
@@ -43292,7 +43292,7 @@ if(X >= 17 & X <= 18){
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(0xff0000)
-                  .addField(":flashlight: Fouille stand de fête foraine :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Petit manche vibrant (démonté)`")
+                  .addField(":flashlight: Fouille stand de fête foraine :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Petit manche vibrant`")
                   .setTimestamp()
                   message.channel.send({embed})}
                   if(X === 39){
@@ -44036,7 +44036,7 @@ if(X >= 18 & X <= 21){
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(0xff0000)
-  .addField(":flashlight: Fouille villa de duke :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Petit manche vibrant (démonté)`")
+  .addField(":flashlight: Fouille villa de duke :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Petit manche vibrant`")
   .setTimestamp()
   message.channel.send({embed})}
   if(X >= 22 & X <= 23){
