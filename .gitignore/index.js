@@ -27994,7 +27994,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Matin`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Jardin`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
@@ -28156,23 +28156,12 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`")    .setTimestamp()
+        .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé, à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pus visiter la veille, il faudra de nouveau les retrouver...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusque 1 H du matin [IRL] mais les zombies sortiront à l'extérieur et seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
 
-          bot.on('message', message => {
-            if (message.content.startsWith(prefix + "Matin")) {
-              const embed = new Discord.RichEmbed()
-              .setColor(0xff0000)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                  .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Le matin :" , "Chaque matin durant votre survie, si vous êtes encore en vie surtout, un évènment se passera à un moment précis de la journée ou alors à un moment aléatoire !\n\nLes évènements sont aléatoires et positifs comme négatifs alors faites très attention...\n\nPour déterminer l'évènement aléatoire : `=Evènement aléatoire`")    .setTimestamp()
-              message.channel.send({embed})
-                  }
-            }) ;
-
+  
 
 
   bot.on('message', message => {
@@ -28182,7 +28171,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les armes :" , "Il sera assez fréquent de trouver des armes pour vous défendre en tuant les zombies, que ce soit des armes de corps à corps comme des armes à feu !\n\nLes armes de corps à corps auront un nombre d'utilisations limitées disponible sur les informations de l'arme en écrivant : `=[Nom de l'arme]`\n\nLes armes à feu ont besoin de munitions pour pouvoir être utiliser, les munitions nécessaires sont écrites sur les informations de l'arme en écrivant : `=[Nom de l'arme]'")    .setTimestamp()
+  .addField("Les armes :" , "Il sera assez fréquent de trouver des armes pour vous défendre en tuant les zombies, que ce soit des armes de corps à corps comme des armes à feu !\n\nLes armes de corps à corps auront un nombre d'utilisations limitées disponible sur les informations de l'arme en écrivant : `=[Nom de l'arme]`\n\nLes armes à feu ont besoin de munitions pour pouvoir être utiliser, les munitions nécessaires sont écrites sur les informations de l'arme en écrivant : `=[Nom de l'arme]'\n\nA savoir, toutes les armes que vous trouvez ne seront jamais chargés et que recharger une arme prendra votre tour d'action alors, faites attention à bien recharger votre arme avant un combat !\n\nLes balles ne prennent pas de place dans votre inventaire, mais vous pourrez en porter au maximum 30 sur vous")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -28194,7 +28183,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Les plans :" , "Lorsque vous fouillez à l'extérieur de la ville, il est possible de trouver un plan plus ou moins rare, permettant de pouvoir fabriquer un objet, une arme, une défense, ou d'autres objets possibles !\n\nLes informations des plans sont écrites en écrivant : `=[Nom du plan]'")    .setTimestamp()
+    .addField("Les plans :" , "Lorsque vous fouillez à l'extérieur de la ville, il est possible de trouver un plan plus ou moins rare, permettant de pouvoir fabriquer un objet, une arme, une défense, ou d'autres objets possibles !\n\nLes informations des plans sont écrites en écrivant : `=[Nom du plan]'\n\n[Pour le moment, ce contenus est pas encore fait]")    .setTimestamp()
         message.channel.send({embed})
             }
       }) ;
@@ -28231,7 +28220,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Les lieux, partie 3 :" , "Chantiers : Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes bâtiments et défenses que la ville aura besoin pour continuer de résister aux attaques des zombies\n\nJardin : Lorsque vous possédez des graines, vous pourrez tenter de les faire pousser ici, cependant la pousse prendra quelques jours et il faudra s'occuper des plantations en les arrosant de temps à autre avant qu'elles finissent mortes\n\nLa plupart de ces lieux au départ de la ville, ne sont pas encore présent et c'est pour cela qu'il faudra les créer !")    .setTimestamp()
+            .addField("Les lieux, partie 3 :" , "Chantiers : Une fois la ville ayant les bonnes ressources ainsi que les bons plans et les connaissances, vous pourrez aux chantiers construire justement les différentes bâtiments et défenses que la ville aura besoin pour continuer de résister aux attaques des zombies\n\nLa plupart de ces lieux au départ de la ville, ne sont pas encore présent et c'est pour cela qu'il faudra les créer !")    .setTimestamp()
                 message.channel.send({embed})
                     }
               }) ;
@@ -28321,7 +28310,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                    .addField("Le sommeil :" , "Vous serez obligé de dormir au minimum 4 H dans le RP par jour ou sinon vous aurez l'état 'Fatigue' qui vous empêche de pouvoir réussir à fouiller une zone ou de fabriquer ou raffiner quelque chose...\n\nDe plus, avec cet état vous aurez plus de difficulté à fuir les zombies\n\nL'état disparaît une fois que vous avez justement dormis assez, c'est à dire 4 H !")    .setTimestamp()
+                    .addField("Le sommeil :" , "Vous serez obligé de dormir au minimum 4 H dans le RP par jour ou sinon vous aurez l'état 'Fatigue' qui vous empêche de pouvoir réussir à fouiller une zone ou de fabriquer ou raffiner quelque chose...\n\nDe plus, avec cet état vous aurez plus de difficulté à fuir les zombies\n\nL'état disparaît une fois que vous avez justement dormis assez, c'est à dire 4 H !\n\nPensez à dormir en tant que survivant si vous allez partir et ne pas revenir avant longtemps sur le RP !")    .setTimestamp()
                         message.channel.send({embed})
                             }
                       }) ;
@@ -28845,10 +28834,35 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les transformations :" , "Une fois un stade important atteins lorsque vous êtes affecté par une morsure, vous deviendrez ce qu'on appelle non pas un zombie mais une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour ou alors elle mourra de faim...\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]")    .setTimestamp()
+        .addField("Les transformations :" , "Une fois que votre état d'infection est devenus une `Infection mortelle` si vous gardez cette état encore le lendemain, vous aurez une chance de mourir ou alors de devenir une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour ou alors elle mourra de faim...\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]\n\nPour savoir si vous allez mourir ou devenir une goule : `=Infection total`")    .setTimestamp()
         message.channel.send({embed})
         }
         }) ;
+
+        bot.on('message', message => {
+          if (message.content.startsWith(prefix + "Infection total")) {
+            const X = (Math.floor((100)*Math.random()))
+            const Cible = (Math.floor((4)*Math.random()+1))
+            if(X <= 90){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Infection total :" , "L'infection finis par vous ronger de l'intérieur, vous mourrez lentement...")
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X >= 91){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Infection total :" , "L'infection ralentis votre coeur mais vous restez tous de même vivant malgrè les sensations étranges dans votre corps maintenant, vous avez... faim ?")
+              .setTimestamp()
+              message.channel.send({embed})}
+                        }
+                    }) ;
+        
+        
 
       bot.on('message', message => {
         if (message.content === prefix + "Habitations") {
@@ -28929,30 +28943,7 @@ bot.on('message', message => {
 
 
 
-
-          bot.on('message', message => {
-            if (message.content === prefix + "Mine") {
-            const embed = new Discord.RichEmbed()
-            .setColor(0xff0000)
-            .setAuthor(message.author.username , message.author.avatarURL)
-            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("La mine :" , "En ville, vous aurez la possibilité à l'aide d'une pioche, d'aller tenter de miner des minerais plus ou moins rares pour la ville !\n\nCependant, il y a des risques parfois de rencontrer un zombie ou des risques d'éboulements qui peuvent blessés ou complètement vous écrabouillé...")    .setTimestamp()
-            message.channel.send({embed})
-            }
-            }) ;
-
-            bot.on('message', message => {
-              if (message.content.startsWith(prefix + "Jardin")) {
-              const embed = new Discord.RichEmbed()
-              .setColor(0xff0000)
-              .setAuthor(message.author.username , message.author.avatarURL)
-              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-              .addField("Le jardin :" , "En ville, un jardin est présent afin de pouvoir y cultiver des légumes pour nourrir les survivants !\n\nCependant, il faudra utiliser de l'eau ou qu'il pleuve afin que les plantations poussent et ne pourrissent...")    .setTimestamp()
-              message.channel.send({embed})
-              }
-              }) ;
+ 
 
               bot.on('message', message => {
                 if (message.content.startsWith(prefix + "Alcool")) {
@@ -28985,7 +28976,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                    .addField("Les cargaisons :" , "Parfois pendant votre survie, il y aura un avion qui passe au dessus en larguant une cargaison aux alentours de celle-ci !\n\nDedans se trouvera des ressources, des armes, de la nourriture, de l'eau et bien d'autres choses possible selon votre chance !\n\nCependant, il faudra prendre le risque de sortir le récupérer, cela alerte beaucoup de zombies...")    .setTimestamp()
+                    .addField("Les cargaisons :" , "Parfois pendant votre survie, il y aura un avion qui passe au dessus en larguant une cargaison aux alentours de celle-ci !\n\nDedans se trouvera des ressources, des armes, de la nourriture, de l'eau et bien d'autres choses possible selon votre chance !\n\nCependant, il faudra prendre le risque de sortir le récupérer, cela alerte beaucoup de zombies...\n\nIl est possible d'entendre d'avance si un avion va largué une caisse si vous avez une `Radio K7` allumé !")    .setTimestamp()
                     message.channel.send({embed})
                     }
                     }) ;
@@ -28997,7 +28988,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                      .addField("Les déplacements :" , "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutes pour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', les déplacements en ville comme en extérieur demandera cinq minutes\n\nEn extérieur, lorsque vous passez d'une zone à une autre, vous devrez faire : `=Bruit : [KM]`\n\nPar exemple vous passez de la zone 1 KM à 2 KM, vous devrez faire : `=Bruit : 2`")    .setTimestamp()
+                      .addField("Les déplacements :" , "Vous déplacez en ville ne mettra qu'une minute pour vous déplacer d'une zone à une autre\n\nCependant, en extérieur vous mettrez deux minutes pour vous déplacer d'une zone à une autre\n\nA savoir que pour passer de la zone '1 KM' à '10 KM' par exemple, il faudra passer par la zone '2 KM' puis '3 KM' puis '4 KM' etc, en oubliant pas qu'il faudra deux minutes pour passer d'une zone à une autre\n\nPour les personnes atteintes de l'état 'Fatigue', la durée des déplacements en ville comme en extérieur seront doublé, 2 minutes en ville et 4 minutes en extérieur")    .setTimestamp()
                       message.channel.send({embed})
                       }
                       }) ;
@@ -29060,7 +29051,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Les états, partie 3 :" , "`Fatigue` : Si vous dormez moins de 4 H par jour, votre énergie sera faible et la moindre action sera un effort immense [Double points d'actions pour toutes actions en ville comme en extérieur]\n\n`Drogué` : Vous êtes sous drogue, vous ne pourrez pas reprendre de drogue avant le lendemain\n\n`Dépendance` : L'abus de drogue vous mène à la dépendance, si vous ne prenez pas de drogue pendant un jour vous aurez l'état 'Hallucinations', si vous ne prenez pas de drogue pendant deux jours vous aurez l'état 'Folie' et si vous ne prenez pas de drogue pendant trois jours vous... mourrez...\n\n`Hallucinations` : Des ombres ou même des zombies imaginaires, vous voyez des choses iréelles\n\n`Folie` : Vous dites et faites n'importe quoi en permanence à tel point que vous avez des hallucinations en permanence et que vous êtes presque un danger pour les autres survivants [Impossible de faire une action demandant un point d'action]\n\nLa suite : `=Horde états 4`")    .setTimestamp()
+    .addField("Les états, partie 3 :" , "`Fatigue` : Si vous dormez moins de 4 H par jour, votre énergie sera faible et la moindre action sera un effort immense [Double points d'actions pour toutes actions en ville comme en extérieur]\n\n`Drogué` : Vous êtes sous drogue, vous ne pourrez pas reprendre de drogue avant le lendemain\n\n`Dépendance` : L'abus de drogue vous mène à la dépendance, si vous ne prenez pas de drogue (la même drogue) pendant un jour vous aurez l'état 'Hallucinations', si vous ne prenez pas de drogue pendant deux jours vous aurez l'état 'Folie' et si vous ne prenez pas de drogue pendant trois jours vous... mourrez...\n\n`Hallucinations` : Des ombres ou même des zombies imaginaires, vous voyez des choses iréelles\n\n`Folie` : Vous dites et faites n'importe quoi en permanence à tel point que vous avez des hallucinations en permanence et que vous êtes presque un danger pour les autres survivants [Impossible de faire une action demandant un point d'action]\n\nLa suite : `=Horde états 4`")    .setTimestamp()
         message.channel.send({embed})
             }
       }) ;
@@ -29096,7 +29087,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les états, partie 6 :" , "`Blessure légère` : Vous avez étais blessé par un zombie ou par un autre survivant ou d'autres évènements, il faudra vous soignez rapidement\n\n`Blessure` > `Blessure avancée` > `Blessure mortelle` : Les différentes états de blessures sont croissants, si vous étiez atteint de l'état 'Blessure' et que vous subissez un état de nouveau 'Blessure légère' alors votre nouvelle état sera 'Blessure avancée', si vous ne comprenez pas alors imaginez que vous avez 5/5 HP, qu'une blessure légère retire 1 HP, une blessure 2 HP, une blessure avancée 3 HP et une blessure mortelle 4 HP avant la mort quand vous êtes à 0/5 HP\n\n`Goule` : Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez...\n\n`Ivresse` : Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre\n\nLa suite : `=Horde états 7`")    .setTimestamp()
+        .addField("Les états, partie 6 :" , "`Blessure légère` : Vous avez étais blessé par un zombie ou par un autre survivant ou d'autres évènements, il faudra vous soignez rapidement\n\n`Blessure` > `Blessure avancée` > `Blessure mortelle` : Les différentes états de blessures sont croissants, si vous étiez atteint de l'état 'Blessure' et que vous subissez un état de nouveau 'Blessure légère' alors votre nouvelle état sera 'Blessure avancée', si vous ne comprenez pas alors imaginez que vous avez 5/5 HP, qu'une blessure légère retire 1 HP, une blessure 2 HP, une blessure avancée 3 HP et une blessure mortelle 4 HP avant la mort quand vous êtes à 0/5 HP\n\n`Goule` : Vous avez manger de la viande humaine ou alors pris une substance, la seul nourriture maintenant possible est la viande humaine... vous devrez dévorer un humain une fois chaque jour avant le lendemain, sinon vous ...mourrez... Mais la viande humaine trouvé ailleurs est aussi possible\n\n`Ivresse` : Après avoir pris de l'alcool, vous ne pourrez plus en boire avant le lendemain, vous êtes ivre\n\nLa suite : `=Horde états 7`")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
@@ -44504,7 +44495,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bandage rudimentaire :" , "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états : `Blessure` & `Hémorragie`")
+    .addField("Bandage rudimentaire :" , "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états : `Blessure` & `Hémorragie`\n\nL'utilisation coûte 2 points d'actions, et seulement 1 si un médecin vous le met")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -46413,7 +46404,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Gros chat mignon :" , "C'est mignon, ça fait joli chez soi et ça sait à peu près se battre contre un zombie\n\nEt puis, si vous avez faim...\n\nVous pouvez tuer cet animal afin d'obtenir `2 Steak appétissant'")
+    .addField("Gros chat mignon :" , "C'est mignon, ça fait joli chez soi et ça sait à peu près se battre contre un zombie\n\nEt puis, si vous avez faim...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Steak appétissant'")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -48013,7 +48004,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Poule :" , "Bon, il n'y a plus qu'à trouver un boucher\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal afin d'obtenir `2 Viande indéfinissable'")
+    .addField("Poule :" , "Bon, il n'y a plus qu'à trouver un boucher\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Viande indéfinissable'")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -48110,7 +48101,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Rat :" , "Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal afin d'obtenir `2 Viande indéfinissable`")
+    .addField("Rat :" , "Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Viande indéfinissable`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -48448,7 +48439,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Serpent de 2 mètres :" , "C'est vert, ça mord et ça siffle, il n'y a plus qu'à trouver un boucher pour se tailler un steak de reptile\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nCet objet est `Encombrant`\n\nVous pouvez tuer cet animal afin d'obtenir `4 Steak appétissant'")
+    .addField("Serpent de 2 mètres :" , "C'est vert, ça mord et ça siffle, il n'y a plus qu'à trouver un boucher pour se tailler un steak de reptile\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nCet objet est `Encombrant`\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `4 Steak appétissant'")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -49115,7 +49106,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Manufacture :" , "Réduit le coût des transformations de l'atelier de 1 PA\n\nCette version améliorée de l'atelier permet de réduire de 1 PA le coût de toutes les transformations effectuées dans l'atelier\n\n:hammer_pick: Matériaux nécessaires :\n\n`5 Poutre rafistolée`\n`5 Structures métalliques`\n`3 Poignée de vis et écrous`")
+    .addField("Manufacture :" , "Réduit le coût des transformations de l'atelier de 1 PA\n\nCette version améliorée de l'atelier permet de réduire de 5 minutes toutes les transformations et assemblages effectuées dans l'atelier\n\n:hammer_pick: Matériaux nécessaires :\n\n`5 Poutre rafistolée`\n`5 Structures métalliques`\n`3 Poignée de vis et écrous`")
     .setTimestamp()
     message.channel.send({embed})
   }
