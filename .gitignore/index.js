@@ -28066,7 +28066,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Liste des objets, partie 6 :" , "`=Plan de chantier commun`\n`=Plan de chantier inhabituel`\n`=Plan de chantier rare`\n`=Plan de chantier très rare`\n`=Plan de chantier épique`\n`=Plan de chantier mythique`\n`=Plan de chantier légendaire`\n`=Planche tordue`\n`=Plaque de bois solide`\n`=Plaque de tôle`\n`=Plat fait-maison douteux`\n`=Poignée de bonbons`\n`=Poignée de vis et écrous`\n`=Pointeur laser brûlant`\n`=Pointeur laser brûlant (démonté)`\n`=Pomme`\n`=Pompe à jerrycan`\n`=Portière de voiture`\n`=Portière de voiture incomplète`\n`=Poudre super-fuzz`\n`=Poudre-comète brte`\n`=Poule`\n`=Poutre rafistolée`\n`=Produit corrosif`\n`=Produits pharmaceutiques`\n`=Purée de charognardes`\n\nLa suite : `=Horde liste d'objets 7`")    .setTimestamp()
+            .addField("Liste des objets, partie 6 :" , "`=Plan de chantier commun`\n`=Plan de chantier inhabituel`\n`=Plan de chantier rare`\n`=Plan de chantier très rare`\n`=Plan de chantier épique`\n`=Plan de chantier mythique`\n`=Plan de chantier légendaire`\n`=Planche tordue`\n`=Plaque de bois solide`\n`=Plaque de tôle`\n`=Plat fait-maison douteux`\n`=Poignée de bonbons`\n`=Poignée de vis et écrous`\n`=Pointeur laser brûlant`\n`=Pomme`\n`=Pompe à jerrycan`\n`=Portière de voiture`\n`=Portière de voiture incomplète`\n`=Poudre super-fuzz`\n`=Poudre-comète brte`\n`=Poule`\n`=Poutre rafistolée`\n`=Produit corrosif`\n`=Produits pharmaceutiques`\n`=Purée de charognardes`\n\nLa suite : `=Horde liste d'objets 7`")    .setTimestamp()
                 message.channel.send({embed})
                     }
               }) ;
@@ -47652,13 +47652,34 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pistolet à eau :" , "Le Pistolet à Eau... Finalement, le Désert n'est qu'un grand bac à sable...\n\nNotez que ce jouet n'est efficace qu'avec de l'eau pure (celle d'une gourde par exemple)")
+    .addField("Pistolet à eau :" , "Le Pistolet à Eau... Finalement, le Désert n'est qu'un grand bac à sable...\n\nNotez que ce jouet n'est efficace qu'avec de l'eau pure (celle d'une gourde par exemple)\n\nCet objet nécessite `Ration d'eau` pour fonctionner, chaque `Ration d'eau` permettra d'utiliser cet objet 4 fois\n\nPour utiliser cet objet : `=Tir [Pistolet à eau]`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
 
-
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Tir [Pistolet à eau]")) {
+    const X = (Math.floor((100)*Math.random()))
+    const Cible = (Math.floor((2)*Math.random()+1))
+    if(X <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Pistolet à eau] :" , "Vous ratez malheureusement votre tir...")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 51){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Tir [Pistolet à eau] :" , "Vous touchez `" +Cible+ "` cible(s) !\n\nSi la cible est un zombie, il meurt\n\nSi la cible est un survivant, il subit l'état `Blessure légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 
 bot.on('message', message => {
@@ -47667,7 +47688,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plan de chantier commun :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit")
+    .addField("Plan de chantier commun :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47679,7 +47700,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plan de chantier inhabituel :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit")
+    .addField("Plan de chantier inhabituel :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47691,7 +47712,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plan de chantier rare :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit")
+    .addField("Plan de chantier rare :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47703,7 +47724,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plan de chantier très rare :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit")
+    .addField("Plan de chantier très rare :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47715,7 +47736,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plan de chantier épique :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit")
+    .addField("Plan de chantier épique :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47727,7 +47748,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plan de chantier mythique :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit")
+    .addField("Plan de chantier mythique :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47739,7 +47760,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plan de chantier légendaire :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit")
+    .addField("Plan de chantier légendaire :" , "Vous tenez entre vos mains ce qui ressemble à un projet de chantier !\n\nDifficile de comprendre plus précisément ce dont il s'agit, il vous faudrait l'étudier pour en tirer quoi que ce soit\n\n[Objet non finis]")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47751,7 +47772,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Planche tordue :" , "Une planche de bois complètement moisie mais encore à peu près solide...\n\nLe bois est utilisé pour la construction de bâtiments en ville (ramenez-le dans la Section Banque)")
+    .addField("Planche tordue :" , "Une planche de bois complètement moisie mais encore à peu près solide...\n\nLe bois est utilisé pour la construction de bâtiments en ville (ramenez-le dans la Section Banque)\n\nPour transformer cet objet et obtenir `Poutre rafistolée` vous devrez être à l'atelier et cela prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Plaque de bois solide` vous devrez être à l'atelier et utiliser :\n\n`1 Morceau de caisse`\n`1 Planche tordue`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Kit de bricolage` vous devrez être à l'atelier et utiliser :\n\n`1 Outils en vrac`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 1 Planche tordue`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47763,7 +47784,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plaque de bois solide :" , "Ce gros couvercle de caisse fera bien l'affaire pour bloquer une fenêtre ou une porte chez vous ou en ville...\n\nCet objet est `Encombrant`")
+    .addField("Plaque de bois solide :" , "Ce gros couvercle de caisse fera bien l'affaire pour bloquer une fenêtre ou une porte chez vous ou en ville...\n\nCet objet est `Encombrant`\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 3 points de défenses cette nuit seulement !\n\nLa mise en place de cet défense est de 15 min sur le chantier de la ville ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47775,7 +47796,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Plaque de tôle :" , "Rien ne vaut une plaque de tôle rouillée pour empêcher les zombies de vous atteindre...\n\nles défenses comptent double si elles sont installées en ville plutôt que chez soi\n\nCet objet est `Encombrant`")
+    .addField("Plaque de tôle :" , "Rien ne vaut une plaque de tôle rouillée pour empêcher les zombies de vous atteindre...\n\nles défenses comptent double si elles sont installées en ville plutôt que chez soi\n\nCet objet est `Encombrant`\n\nCet objet peux-être utiliser pour renforcer la défense de la ville en conférant 3 points de défenses à chaques nuits !\n\nLa mise en place de cet défense est de 1 H sur le chantier de la ville ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47811,7 +47832,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Poignée de vis et écrous :" , "Certaines pièces sont rouillées, d'autres sont couvertes de mousse verdâtre, mais elles ont toutes au moins le mérite de continuer à remplir leur rôle, plus ou moins")
+    .addField("Poignée de vis et écrous :" , "Certaines pièces sont rouillées, d'autres sont couvertes de mousse verdâtre, mais elles ont toutes au moins le mérite de continuer à remplir leur rôle, plus ou moins\n\nCet objet s'utilise dans une multitude d'objets")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47829,17 +47850,7 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Pointeur laser brûlant (démonté)") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Pointeur laser brûlant (démonté) :" , "Interdit dans le monde après qu'une personne d'âge avancée ait perdu la vue en croisant le faisceau de ce petit objet, il saura être utile pour trancher de la chair putréfiée !\n\nCependant, il faudra monter cet objet avec d'autres matériaux pour l'utiliser")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Pomme") {
