@@ -48110,7 +48110,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Rat :" , "Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal afin d'obtenir `2 Viande indéfinissable'")
+    .addField("Rat :" , "Bon, il n'y a plus qu'à trouver un boucher. Accessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal afin d'obtenir `2 Viande indéfinissable`")
     .setTimestamp()
     message.channel.send({embed})
   }
