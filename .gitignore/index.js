@@ -28151,23 +28151,38 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les survivants :" , "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de base de 5 objets sur lui !\n\nUne fois votre personne créer et valider par un membre du staff, vous devrez vous renommer de la manière suivante : [Nom] [Prénom] [Points d'action]\n\nPar exemple : [Oshiro][Yato][6/6]\n\nPour comprendre ce qu'est le système de stat : `=Horde stats`")    .setTimestamp()
+  .addField("Les survivants :" , "Avant d'entrer dans cette ville, vous possédez forcément une identité, une histoire, une profession, des connaissances, c'est pour cela que vous devrez nous transmettre toutes ces informations en créant votre survivant à partir du modèle présent en écrivant la commande : `=Fiche de survivant`\n\nA savoir que votre survivant possède un inventaire maximal de base de 5 objets sur lui !\n\nUne fois votre personne créer et valider par un membre du staff, vous devrez vous renommer de la manière suivante : [Nom] [Prénom] [Points d'action]\n\nPar exemple : [Oshiro][Yato][6/6]\n\nPour comprendre ce qu'est le système de stat : `=Horde stats 1`")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
 
     bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Horde stats")) {
+      if (message.content.startsWith(prefix + "Horde stats 1")) {
         const embed = new Discord.RichEmbed()
         .setColor(0xff0000)
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Les stats :" , "Votre survivant est différent des autres selon son histoire, ainsi que sa profession et d'autres facteurs comme le physique, sa personnalité ou même son langage, c'est pourquoi dans ce monde il existe 3 stats :\n\n`Stat physique`\n`Stat mental`\n`Stat social`\n\nPour réussir certaines actions qui demandent des efforts parfois, il faudra faire ce qu'on appelle un `Roll` pour savoir si vous réussissez ou non : `=Horde roll`\n\nCeci vous donne un nombre de 1 à 100, le but pour réussir votre action est de réussir à faire autant que votre stat ou moins, si vous faites plus alors vous échouez votre action...\n\nVous disposez de 150 points de stat à répartir entre `Physique / Mental / Social`\n\nLe maximum est de 75 par stat, et le minimum est de 25\n\nPar exemple, je décide de créer un survivant avec 75 en physique, 50 en mental et 25 en social, si je décide de vouloir convaincre un survivant de me suivre quelque part alors qu'il est méfiant, j'effectue un `Roll` et si à mon `Roll` je fais un score de 17, je réussis à le convaincre car j'ai fais moins que ma stat social, mais si je fait 28 à la place, j'ai échoué car j'ai fait plus que ma stat social\n\nAutre exemple, si j'essaye d'escalader une maison, que je fais 74 à mon roll, je réussis à escalader en ayant fait moins que ma stat, mais si je fait 98 alors je rate\n\nSi vous ne comprenez vraiment pas, n'hésitez pas à contacter un membre du staff\n\nA savoir que faire un score de 1 à 5 est une très bonne réussite à laquelle vous pouvez faire mieux que ce que vous voulez faire de base, mais faire un score de 96 à 100 est un très mauvais échec...")    
+    .addField("Les stats, partie 1 :" , "Votre survivant est différent des autres selon son histoire, ainsi que sa profession et d'autres facteurs comme le physique, sa personnalité ou même son langage, c'est pourquoi dans ce monde il existe 3 stats :\n\n`Stat physique`\n`Stat mental`\n`Stat social`\n\nPour réussir certaines actions qui demandent des efforts parfois, il faudra faire ce qu'on appelle un `Roll` pour savoir si vous réussissez ou non : `=Horde roll`\n\nCeci vous donne un nombre de 1 à 100, le but pour réussir votre action est de réussir à faire autant que votre stat ou moins, si vous faites plus alors vous échouez votre action...\n\nLa suite : `=Horde stats 2`")    
     .setTimestamp()
         message.channel.send({embed})
             }
       }) ;
+
+      bot.on('message', message => {
+        if (message.content.startsWith(prefix + "Horde stats 2")) {
+          const embed = new Discord.RichEmbed()
+          .setColor(0xff0000)
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+      .addField("Les stats :" , " Vous disposez de 150 points de stat à répartir entre `Physique / Mental / Social`\n\nLe maximum est de 75 par stat, et le minimum est de 25\n\nPar exemple, je décide de créer un survivant avec 75 en physique, 50 en mental et 25 en social, si je décide de vouloir convaincre un survivant de me suivre quelque part alors qu'il est méfiant, j'effectue un `Roll` et si à mon `Roll` je fais un score de 17, je réussis à le convaincre car j'ai fais moins que ma stat social, mais si je fait 28 à la place, j'ai échoué car j'ai fait plus que ma stat social\n\nAutre exemple, si j'essaye d'escalader une maison, que je fais 74 à mon roll, je réussis à escalader en ayant fait moins que ma stat, mais si je fait 98 alors je rate\n\nSi vous ne comprenez vraiment pas, n'hésitez pas à contacter un membre du staff")    
+      .setTimestamp()
+          message.channel.send({embed})
+              }
+        }) ;
+
+     
 
     bot.on('message', message => {
       if (message.content.startsWith(prefix + "Fiche de survivant")) {
