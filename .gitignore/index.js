@@ -29210,18 +29210,35 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Atouts")) {
+  if (message.content.startsWith(prefix + "Atouts 1")) {
     const embed = new Discord.RichEmbed()
     .setColor(0xff0000)
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Les atouts:" , "Votre personnage possèdera un atout ou plusieurs, permettant d'avoir des avantages ou de pouvoir faire des choses que les autres ne pourront pas forcément faire !")    .setTimestamp()
- .addField("Liste des atouts 1 :" , "Voici la liste des atouts disponibles :\n\nMédecin : Permet de pouvoir soigner les gens, de les amputer ainsi que de leur donner les bon médicaments !\n\nVeilleur : Il possède le double de HP d'un simple citoyen !\n\nCollecteur : Collecte le double de matières premières à l'extérieur !\n\nOuvrier : Créer et transforme plus vite les ressources !\n\nAlcoolique : Quand il boit de l'alcool, il n'est pas bourré et ne ressent pas les effets négatifs !\n\nProtecteur : Il possède le double de dégâts avec des armes !\n\nCuisinier : Permet de pouvoir cuisiner des plats !\n\nBrigand : Possède beaucoup plus de chance d'intimider quelqu'un !\n\nVoleur : Possède beaucoup moins de chance de se faire voir pendant un vol !\n\nRésistant : Possède beaucoup plus de chances de ne pas se transformer en zombie suite à une infection !\n\nNaturaliste : Possède plus de chance de survivre en extérieur la nuit qu'un citoyen normal !")
- .addField("Liste des atouts 2 :" , "Architecte : Permet d'avoir le double de points de défense dans sa maison !\n\nCannibale : Permet de pouvoir dévorer un humain, ou son cadavre pour reprendre de la vie !\n\nObservateur : Permet d'avoir plus de chance de fuite en extérieur face à des zombies !\n\nErmite : Trouve plus facilement de l'eau et de la nourriture en dehors !\n\nBricoleur : Permet d'ouvrir les portes des bâtiments abandonnés !\n\nJardinier : Permet de s'occuper des plantes et de l'agriculture du jardin en ville !\n\nMineur : double les matières qu'il récupére à la mine")
+        .setTimestamp()
+ .addField("Liste des atouts 1 :" , "`Médecin` : Permet d'utiliser un seul point d'action à la place de deux lors de l'application de bandage sur lui ou d'autres survivants\n\n`Bricoleur` : Permet de fabriquer des meubles à partir de `Meuble en kit`\n\n`Réparateur` : La réparation d'un objet ne coûte plus aucun point d'action et le temps de réparation est réduit de moitié\n\n`Artisant` : Réduit de moitié le temps nécessaire à la transformation et fabrication d'objets à l'atelier ainsi que la mise en place d'objets pour améliorer la défense de la ville\n\n`Chercheur` : Permet de fouiller une fois en plus gratuitement par jour l'extérieur\n\n`Sprinteur` : Permet d'utiliser `=Fuite [Aucune blessure]` même si vous êtes blessé\n\n`Aigle` : Permet d'avoir une tentative supplémentaire sur `=Observation` depuis la tour de la ville\n\n`Militaire` : Trouve toujours une `Balle` supplémentaire lorsqu'il en trouve à l'extérieur\n\nLa suite : `=Atouts 2`")
+
     message.channel.send({embed})
         }
   }) ;
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Atouts 2")) {
+      const embed = new Discord.RichEmbed()
+      .setColor(0xff0000)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+          .setTimestamp()
+   .addField("Liste des atouts 2 :" , "Résistant` : Permet de survivre un dernier jour supplémentaire si vous deviez mourir d'infection, d'hémorragie, de faim, ou de déshydratation, vous laissant encore du temps de vous soigné\n\n`Tireur` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme à distance\n\n`Voleur` : Permet de pouvoir voler plus facilement un survivant selon le `=Vol`\n\n`Racaille` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme de corps à corps\n\n`Boucher` : Permet d'avoir le double deviande lorsque vous tuez un animal dans la boucherie\n\n`Discret` : Permet d'avoir une chance supplémentaire la nuit de vous cacher chez vous, si vous échouez la première tentative\n\n`Courageux` : Empêche d'avoir l'état `Terreur`\n\n`Picoleur` : Empêche d'avoir l'état `Ivresse`\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`")
+  
+      message.channel.send({embed})
+          }
+    }) ;
+
+
+
 ///////////////////////////////////////////////////////////Observation/////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -29650,7 +29667,7 @@ bot.on('message', message => {
 
   bot.on('message', message => {
     if (message.content === prefix + "Jour 1") {
-      const Zombie = (Math.floor((16)*Math.random()+15))
+      const Zombie = (Math.floor((11)*Math.random()+10))
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29664,7 +29681,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 2") {
-    const Zombie = (Math.floor((27)*Math.random()+26))
+    const Zombie = (Math.floor((16)*Math.random()+15))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29678,7 +29695,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 3") {
-    const Zombie = (Math.floor((46)*Math.random()+45))
+    const Zombie = (Math.floor((26)*Math.random()+25))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29693,7 +29710,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 4") {
-    const Zombie = (Math.floor((81)*Math.random()+80))
+    const Zombie = (Math.floor((41)*Math.random()+40))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29708,7 +29725,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 5") {
-    const Zombie = (Math.floor((141)*Math.random()+140))
+    const Zombie = (Math.floor((61)*Math.random()+60))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29723,7 +29740,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 6") {
-    const Zombie = (Math.floor((221)*Math.random()+220))
+    const Zombie = (Math.floor((91)*Math.random()+90))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29738,7 +29755,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 7") {
-    const Zombie = (Math.floor((321)*Math.random()+320))
+    const Zombie = (Math.floor((131)*Math.random()+130))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29753,7 +29770,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 8") {
-    const Zombie = (Math.floor((451)*Math.random()+450))
+    const Zombie = (Math.floor((181)*Math.random()+180))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29768,7 +29785,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 9") {
-    const Zombie = (Math.floor((651)*Math.random()+650))
+    const Zombie = (Math.floor((251)*Math.random()+250))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29783,7 +29800,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 10") {
-    const Zombie = (Math.floor((951)*Math.random()+950))
+    const Zombie = (Math.floor((331)*Math.random()+330))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29798,7 +29815,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 11") {
-    const Zombie = (Math.floor((1351)*Math.random()+1350))
+    const Zombie = (Math.floor((431)*Math.random()+430))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29813,7 +29830,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 12") {
-    const Zombie = (Math.floor((1901)*Math.random()+1900))
+    const Zombie = (Math.floor((901)*Math.random()+900))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29828,7 +29845,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === prefix + "Jour 13") {
-    const Zombie = (Math.floor((2601)*Math.random()+2600))
+    const Zombie = (Math.floor((1400)*Math.random()+1400))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
