@@ -28054,7 +28054,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Liste des objets, partie 5 :" , "`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n`=Pistolet à eau (démonté)`\n\nLa suite : `=Horde liste d'objets 6`")    .setTimestamp()
+          .addField("Liste des objets, partie 5 :" , "`=Mine antipersonnel`\n`=Morceau de caisse`\n`=Morceau de contreplaqué`\n`=Moteur`\n`=Moteur incomplet`\n`=Mécanisme`\n`=Médicament sans étiquette`\n`=Napolitains moisis`\n`=Nouilles chinoises`\n`=Nouilles chinoises épicées`\n`=Oeuf`\n`=Os charnu`\n`=Os humain fêlé`\n`=Outils en vrac`\n`=Ouvre-boîte`\n`=Paillasson`\n`Paillasson piégé`\n`=Pamplemousse explosif`\n`=Paquet de chips molles`\n`=Paquet de cigarettes entamé`\n`=Paracétoïde 7G`\n`=Pavés de béton informes`\n`=Pelures de peau`\n`=Petit manche vibrant`\n`=Petits beurres rances`\n`=Pile`\n`=Pim's périmé`\n`Piqûre de calmant`\n`=Pistolet à eau`\n`=Pistolet à eau`\n\nLa suite : `=Horde liste d'objets 6`")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
@@ -38796,7 +38796,7 @@ if(X >= 19 & X <= 35){
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau (démonté)`")
+              .addField(":flashlight: Fouille ancien commissariat :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau`")
               .setTimestamp()
               message.channel.send({embed})}
               if(X >= 102 & X <= 104){
@@ -39051,7 +39051,7 @@ if(X >= 9 & X <= 13){
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight: Fouille armurerie :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau (démonté)`")
+      .addField(":flashlight: Fouille armurerie :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 22 & X <= 24){
@@ -42051,7 +42051,7 @@ const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username , message.author.avatarURL)
 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
 .setColor(0xff0000)
-.addField(":flashlight: Fouille parc à l'abandon :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau (démonté)`")
+.addField(":flashlight: Fouille parc à l'abandon :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau`")
 .setTimestamp()
 message.channel.send({embed})}
 if(X >= 9 & X <= 10){
@@ -42788,7 +42788,7 @@ if(X >= 17 & X <= 18){
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField(":flashlight: Fouille stand de fête foraine :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau (démonté)`")
+      .addField(":flashlight: Fouille stand de fête foraine :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Pistolet à eau`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 28 & X <= 29){
@@ -47511,7 +47511,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Paracétoïde 7G :" , "Un antibiotique puissant capable d'enrayer n'importe quelle infection\n\nLa notice précise : 'ce médicament peut parfois provoquer quelques effets secondaires gênants (acné, vomissements, convulsions et mort violente)\n\nEn utilisant cet objet : `=Paracétoïde 7G [Effets]`'")
+    .addField("Paracétoïde 7G :" , "Un antibiotique puissant capable d'enrayer n'importe quelle infection\n\nLa notice précise : 'ce médicament peut parfois provoquer quelques effets secondaires gênants (acné, vomissements, convulsions et mort violente)\n\nEn utilisant cet objet : `=Paracétoïde 7G [Effets]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47582,7 +47582,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Petits beurres rances :" , "C'est sec et ça a un aspect rassi, vous donneriez n'importe quoi pour faire passer le gout de ces biscuits...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Petits beurres rances :" , "C'est sec et ça a un aspect rassi, vous donneriez n'importe quoi pour faire passer le gout de ces biscuits...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47594,7 +47594,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pile :" , "La pile sert à plein de trucs, mais ça se décharge des fois trop vite...")
+    .addField("Pile :" , "La pile sert à plein de trucs, mais ça se décharge des fois trop vite...\n\nElle permet d'alimenter une multitude d'objets qui en nécessite pour fonctionner")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47606,11 +47606,33 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Pim's périmé :" , "Une poignée de biscuits fourrés à la confiture de ... en fait vous l'ignorez...\n\nPeut-être un fruit, mais ça a un gout de viande maintenant\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !")
+    .addField("Pim's périmé :" , "Une poignée de biscuits fourrés à la confiture de ... en fait vous l'ignorez...\n\nPeut-être un fruit, mais ça a un gout de viande maintenant\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Piqûre de calmant [Effets]")) {
+    const X = (Math.floor((100)*Math.random()))
+    if(X <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Piqûre de calmant [Effets] :" , "Vous soignez l'état : `Terreur`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 91){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Piqûre de calmant [Effets] :" , "Vous gagnez l'état : `Dépendance`")
+      .setTimestamp()
+      message.channel.send({embed})}
+                }
+            }) ;
 
 bot.on('message', message => {
   if (message.content === prefix + "Piqûre de calmant") {
@@ -47618,7 +47640,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Piqûre de calmant :" , "Allez calmez-vous... Vous en verrez bien d'autres")
+    .addField("Piqûre de calmant :" , "Allez calmez-vous... Vous en verrez bien d'autres\n\nEn utilisant cet objet : `=Piqûre de calmant [Effets]`")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47636,17 +47658,7 @@ bot.on('message', message => {
   }
 }) ;
 
-bot.on('message', message => {
-  if (message.content === prefix + "Pistolet à eau (démonté)") {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(0xff0000)
-    .addField("Pistolet à eau (démonté) :" , "Le Pistolet à Eau... Finalement, le Désert n'est qu'un grand bac à sable...\n\nNotez que ce jouet n'est efficace qu'avec de l'eau pure (celle d'une gourde par exemple)\n\nCependant, il faudra monter cet objet avec d'autres matériaux pour l'utiliser")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-}) ;
+
 
 
 bot.on('message', message => {
