@@ -27994,10 +27994,23 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Informations importantes`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
+
+  bot.on('message', message => {
+    if (message.content === prefix + "Informations importantes") {
+      const embed = new Discord.RichEmbed()
+      .setColor(0xff0000)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+  .addField("Informations importantes :" , "Vous ne pouvez qu'avoir un seul objet `Encombrant` sur vous lorsque vous vous déplacez, alors si vous fouillez et que vous trouvez un autre objet `Encombrant` il faudra choisir lequel emporter\n\nLorsque vous faites un batîment, ou la mise en place d'un objet pour améliorer la défense de la ville, écrivez le dans le salon #『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs\n\nSi vous échouez un coup avec une arme qui n'utilise aucune munition, cela ne coûte pas d'utilisation, mais si vous échouez un coup ou un tir avec une arme qui nécessite des munitions, cela utilise bien une utilisation\n\nTous les crafts et constructions possibles à faire (que le bot affiche) sont connus par vos survivants de manière logique et RP, à l'avenir lorsqu'il y aura les 'Plans' il faudra trouver les plans pour les connaître\n\nVous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP")    
+  .setTimestamp()
+      message.channel.send({embed})
+          }
+    }) ;
 
   bot.on('message', message => {
     if (message.content === prefix + "Horde liste d'objets 1") {
@@ -28171,7 +28184,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Les armes :" , "Il sera assez fréquent de trouver des armes pour vous défendre en tuant les zombies, que ce soit des armes de corps à corps comme des armes à feu !\n\nLes armes de corps à corps auront un nombre d'utilisations limitées disponible sur les informations de l'arme en écrivant : `=[Nom de l'arme]`\n\nLes armes à feu ont besoin de munitions pour pouvoir être utiliser, les munitions nécessaires sont écrites sur les informations de l'arme en écrivant : `=[Nom de l'arme]'\n\nA savoir, toutes les armes que vous trouvez ne seront jamais chargés et que recharger une arme prendra votre tour d'action alors, faites attention à bien recharger votre arme avant un combat !\n\nLes balles ne prennent pas de place dans votre inventaire, mais vous pourrez en porter au maximum 30 sur vous")    .setTimestamp()
+  .addField("Les armes :" , "Il sera assez fréquent de trouver des armes pour vous défendre en tuant les zombies, que ce soit des armes de corps à corps comme des armes à feu !\n\nLes armes de corps à corps auront un nombre d'utilisations limitées disponible sur les informations de l'arme en écrivant : `=[Nom de l'arme]`\n\nLes armes à feu ont besoin de munitions pour pouvoir être utiliser, les munitions nécessaires sont écrites sur les informations de l'arme en écrivant : `=[Nom de l'arme]'\n\nA savoir, toutes les armes qui ont besoin de munitions, vous pouvez les recharger de manière rapide sans avoir besoin d'y passer votre tour d'action pendant un combat, précisez le juste de manière RP\n\nLes balles ne prennent pas de place dans votre inventaire, mais vous pourrez en porter au maximum 30 sur vous")    .setTimestamp()
       message.channel.send({embed})
           }
     }) ;
@@ -28208,7 +28221,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les lieux, partie 2 :" , "Tour : Celle-ci permet de pouvoir observer les environs et la ville, pour tenter de voir s'il y a des zombies à l'intérieur de la ville à découvert, ou si des survivants se font attaqués à l'extérieur\n\nBoucherie : Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nCuisine : Les survivants auront parfois besoin de se nourrire d'un bon repas pour satisfaire leur faim, c'est ici que se feront tous les repas et les rations pour survivre\n\nPrison : Comme le nom l'indique, c'est une prison où pourrons être mis des survivants qui sont devenus trop violents, ou même infectés, ou pour tout autre usage, celle-ci possède 10 cellules\n\nAtelier : Un autre batîment très important pour la survie de la ville qui est l'atelier, vous pourrez à l'intérieur travailler les matériaux, les transformer, les raffiner, les découper, les assembler avec le matériel de base pour le faire\n\nLa suite : `Lieux 3`")    .setTimestamp()
+          .addField("Les lieux, partie 2 :" , "Tour : Celle-ci permet de pouvoir observer les environs et la ville, pour tenter de voir s'il y a des zombies à l'intérieur de la ville à découvert, ou si des survivants se font attaqués à l'extérieur : `=Observation`\n\nBoucherie : Si la ville a besoin de devoir découper un certain type de viande, de la travailler pour la rendre mangeable ou de meilleur qualité, le matériel se trouve dedans\n\nCuisine : Les survivants auront parfois besoin de se nourrire d'un bon repas pour satisfaire leur faim, c'est ici que se feront tous les repas et les rations pour survivre\n\nPrison : Comme le nom l'indique, c'est une prison où pourrons être mis des survivants qui sont devenus trop violents, ou même infectés, ou pour tout autre usage, celle-ci possède 10 cellules\n\nAtelier : Un autre batîment très important pour la survie de la ville qui est l'atelier, vous pourrez à l'intérieur travailler les matériaux, les transformer, les raffiner, les découper, les assembler avec le matériel de base pour le faire\n\nLa suite : `Lieux 3`")    .setTimestamp()
               message.channel.send({embed})
                   }
             }) ;
@@ -29218,7 +29231,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Le vol :" , "Il est possible de voler discrètement un survivant ou sa maison si elle n'est pas fermé à clef ou même la banque, cependant cela est considéré comme un crime et pourra mener à un exile si cela est fréquent et que les joueurs votent !\n\nPour tenter de voler un survivant : `=Voler le survivant`\nPour tenter de voler un survivant avec l'atout 'Voleur' : `=Voler le survivant [Voleur]`\n\nUn survivant peux vous surprendre en train de voler, tous se joue en fonction du roll, celui qui fait le meilleur score !")    .setTimestamp()
+.addField("Le vol :" , "Il est possible de voler discrètement un survivant ou sa maison si elle n'est pas fermé à clef ou même la banque, cependant cela est considéré comme un crime et pourra mener à un exile si cela est fréquent et que les joueurs votent !\n\nPour tenter de voler un survivant : `=Voler le survivant`\nPour tenter de voler un survivant avec l'atout 'Voleur' : `=Voler le survivant [Voleur]`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
