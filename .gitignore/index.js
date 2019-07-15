@@ -28186,7 +28186,7 @@ bot.on('message', message => {
 
     bot.on('message', message => {
       if (message.content.startsWith(prefix + "Fiche de survivant")) {
-        message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\nNom :【A remplir】\n\nPrénom :【A remplir】\n\nÂge : 【A remplir】\n\nSexe : 【A remplir】\n\nPhysique :【A remplir avec image si vous voulez, c'est conseillé】\n\nPersonnalité :【A remplir】\n\nHistoire avant l'apocalypse :【A remplir】\n\nMétier : 【A remplir】\n\nAtout :【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nStat physique : 【A remplir】\n\nStat mental : 【A remplir】\n\nStat social : 【A remplir】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\nInventaire : \n`Affaires d'un citoyen`\n`Ration d'eau`\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
+        message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\n`Nom :`【A remplir】\n\n`Prénom :`【A remplir】\n\n`Âge :`【A remplir】\n\n`Sexe :`【A remplir】\n\n`Physique :`【A remplir avec image si vous voulez, c'est conseillé】\n\n`Personnalité :`【A remplir】\n\n`Histoire avant l'apocalypse :`【A remplir】\n\n`Métier :`【A remplir】\n\n`Atout :`【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Stat physique :`【A remplir】\n\n`Stat mental :`【A remplir】\n\n`Stat social :`【A remplir】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Inventaire :`\n`Affaires d'un citoyen`\n`Ration d'eau`\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
            }
         });
 
