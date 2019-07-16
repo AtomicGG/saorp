@@ -46329,11 +46329,24 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Ferraille :" , "Du métal... Un peu lourd, mais ça sert toujours !\n\nLe métal est utilisé pour la construction de bâtiments en ville\n\nPour raffiner cet objet et obtenir `Structures métalliques` vous devrez être à l'atelier et cela prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Caddie` vous devrez être à l'atelier et utiliser :\n\n`1 Caddie bancal`\n`1 Ferraille`\n`1 Rustine`\n`1 Tube de cuivre`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Cafetière` vous devrez être à l'atelier et utiliser :\n\n`1 Cafetière incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Tube de cuivre`\n`Composant électronique`\n`1 Cyanure`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Moteur` vous devrez être à l'atelier et utiliser :\n\n`1 Moteur incomplet`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Tondeuse à gazon` vous devrez être à l'atelier et utiliser :\n\n`1 Tondeuse à gazon (démonté)`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Portière de voiture` vous devrez être à l'atelier et utiliser :\n\n`1 Portière de voiture incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+    .addField("Ferraille :" , "Du métal... Un peu lourd, mais ça sert toujours !\n\nLe métal est utilisé pour la construction de bâtiments en ville\n\nPour raffiner cet objet et obtenir `Structures métalliques` vous devrez être à l'atelier et cela prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Caddie` vous devrez être à l'atelier et utiliser :\n\n`1 Caddie bancal`\n`1 Ferraille`\n`1 Rustine`\n`1 Tube de cuivre`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Cafetière` vous devrez être à l'atelier et utiliser :\n\n`1 Cafetière incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Tube de cuivre`\n`Composant électronique`\n`1 Cyanure`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nLa suite : `=Ferraille suite`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content === prefix + "Ferraille suite") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Ferraille :" , "\n\nPour assembler cet objet et obtenir `Moteur` vous devrez être à l'atelier et utiliser :\n\n`1 Moteur incomplet`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Tondeuse à gazon` vous devrez être à l'atelier et utiliser :\n\n`1 Tondeuse à gazon (démonté)`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Portière de voiture` vous devrez être à l'atelier et utiliser :\n\n`1 Portière de voiture incomplète`\n`1 Poignée de vis et écrous`\n`1 Ferraille`\n`1 Rustine`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Fiole de poison") {
