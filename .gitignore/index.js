@@ -27994,19 +27994,32 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts 1`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Informations importantes`")    .setTimestamp()
+.addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts 1`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Informations importantes 1`")    .setTimestamp()
     message.channel.send({embed})
         }
   }) ;
 
   bot.on('message', message => {
-    if (message.content === prefix + "Informations importantes") {
+    if (message.content === prefix + "Informations importantes 1") {
       const embed = new Discord.RichEmbed()
       .setColor(0xff0000)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Informations importantes :" , "Vous ne pouvez qu'avoir un seul objet `Encombrant` sur vous lorsque vous vous déplacez, alors si vous fouillez et que vous trouvez un autre objet `Encombrant` il faudra choisir lequel emporter\n\nLorsque vous faites un batîment, ou la mise en place d'un objet pour améliorer la défense de la ville, écrivez le dans le salon #『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs\n\nSi vous échouez un coup avec une arme qui n'utilise aucune munition, cela ne coûte pas d'utilisation, mais si vous échouez un coup ou un tir avec une arme qui nécessite des munitions, cela utilise bien une utilisation\n\nTous les crafts et constructions possibles à faire (que le bot affiche) sont connus par vos survivants de manière logique et RP, à l'avenir lorsqu'il y aura les 'Plans' il faudra trouver les plans pour les connaître\n\nVous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP\n\nLorsque vous devez faire une action physique, social, et mental, il faudra faire ce qu'on appelle un `Roll` grâce à : `=Horde roll`\n\nL'action sera réussite si vous faite autant ou moins que votre stat selon la situation, si elle est plutôt physique, social, ou mental !\n\nVous pouvez écrire dans le salon #『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs de manière RP un message, c'est un tableau uniquement visible à l'auberge par les autres survivants")    
+  .addField("Informations importantes :" , "Vous ne pouvez qu'avoir un seul objet `Encombrant` sur vous lorsque vous vous déplacez, alors si vous fouillez et que vous trouvez un autre objet `Encombrant` il faudra choisir lequel emporter\n\nLorsque vous faites un batîment, ou la mise en place d'un objet pour améliorer la défense de la ville, écrivez le dans le salon #『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs\n\nSi vous échouez un coup avec une arme qui n'utilise aucune munition, cela ne coûte pas d'utilisation, mais si vous échouez un coup ou un tir avec une arme qui nécessite des munitions, cela utilise bien une utilisation\n\nTous les crafts et constructions possibles à faire (que le bot affiche) sont connus par vos survivants de manière logique et RP, à l'avenir lorsqu'il y aura les 'Plans' il faudra trouver les plans pour les connaître\n\nla suite : `=Informations importantes 2`")    
+  .setTimestamp()
+      message.channel.send({embed})
+          }
+    }) ;
+
+      bot.on('message', message => {
+    if (message.content === prefix + "Informations importantes 2") {
+      const embed = new Discord.RichEmbed()
+      .setColor(0xff0000)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+  .addField("Informations importantes :" , "Vous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP\n\nLorsque vous devez faire une action physique, social, et mental, il faudra faire ce qu'on appelle un `Roll` grâce à : `=Horde roll`\n\nL'action sera réussite si vous faite autant ou moins que votre stat selon la situation, si elle est plutôt physique, social, ou mental !\n\nVous pouvez écrire dans le salon #『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs de manière RP un message, c'est un tableau uniquement visible à l'auberge par les autres survivants")    
   .setTimestamp()
       message.channel.send({embed})
           }
