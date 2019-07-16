@@ -28937,7 +28937,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-          .addField("Les habitations, partie 2 :" , " Si vous fuiyez par exemple votre maison, que vous revenez poursuivis encore par des zombies, cette fois-ci votre maison malgrè ses points de défense ne stoppera pas les quelques zombies...\n\nPour consulter la liste des améliorations : `=Habitations améliorations`")    .setTimestamp()
+          .addField("Les habitations, partie 2 :" , " Si vous fuiyez par exemple votre maison, que vous revenez poursuivis encore par des zombies, cette fois-ci votre maison malgrè ses points de défense ne stoppera pas les quelques zombies...\n\nPour consulter la liste des améliorations : `=Habitations améliorations`\n\n[Il n'y a pas encore d'améliorations pour votre habitation]")    .setTimestamp()
           message.channel.send({embed})
           }
           }) ;
