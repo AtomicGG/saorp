@@ -41550,7 +41550,7 @@ if(X >= 16 & X <= 17){
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Paracétoïde 7MG`")
+              .addField(":flashlight: Fouille laboratoire cosmétique :" , ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Paracétoïde 7G`")
               .setTimestamp()
               message.channel.send({embed})}
               if(X === 25){
