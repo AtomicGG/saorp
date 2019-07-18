@@ -27549,7 +27549,7 @@ bot.on('message', message => {
 });
 
 // Boss palier 1
-
+/*
 bot.on('message', message => {
   if (message.content === (prefix) + "Illfang le seigneur kobolt"){
     const embed = new Discord.RichEmbed()
@@ -27579,7 +27579,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
-
+*/
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang attaque")) {
     const degat = Math.floor(51 * Math.random() + 150)
@@ -27744,7 +27744,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
     let Dégâts = args.slice(4).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.2))
+    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1))
     const paradeReussie = Math.floor(16 * Math.random() + 135)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
@@ -28006,7 +28006,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Informations importantes :" , "Vous ne pouvez qu'avoir un seul objet `Encombrant` sur vous lorsque vous vous déplacez, alors si vous fouillez et que vous trouvez un autre objet `Encombrant` il faudra choisir lequel emporter\n\nLorsque vous faites un batîment, ou la mise en place d'un objet pour améliorer la défense de la ville, écrivez le dans le salon #『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs\n\nSi vous échouez un coup avec une arme qui n'utilise aucune munition, cela ne coûte pas d'utilisation, mais si vous échouez un coup ou un tir avec une arme qui nécessite des munitions, cela utilise bien une utilisation\n\nTous les crafts et constructions possibles à faire (que le bot affiche) sont connus par vos survivants de manière logique et RP, à l'avenir lorsqu'il y aura les 'Plans' il faudra trouver les plans pour les connaître\n\nla suite : `=Informations importantes 2`")    
+  .addField("Informations importantes :" , "Vous ne pouvez qu'avoir un seul objet `Encombrant` sur vous lorsque vous vous déplacez, alors si vous fouillez et que vous trouvez un autre objet `Encombrant` il faudra choisir lequel emporter\n\nLorsque vous faites un batîment, ou la mise en place d'un objet pour améliorer la défense de la ville, écrivez le dans le salon #『🔨』ᴄᴏɴsᴛʀᴜᴄᴛɪᴏɴs\n\nSi vous échouez un coup avec une arme qui n'utilise aucune munition, cela ne coûte pas d'utilisation, mais si vous échouez un coup ou un tir avec une arme qui nécessite des munitions, cela utilise bien une utilisation\n\nTous les crafts et constructions possibles à faire (que le bot affiche) sont connus par vos survivants de manière logique et RP, à l'avenir lorsqu'il y aura les 'Plans' il faudra trouver les plans pour les connaître\n\nla suite : `=Informations importantes 2`")
   .setTimestamp()
       message.channel.send({embed})
           }
@@ -28019,7 +28019,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-  .addField("Informations importantes :" , "Vous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP\n\nLorsque vous devez faire une action physique, social, et mental, il faudra faire ce qu'on appelle un `Roll` grâce à : `=Horde roll`\n\nL'action sera réussite si vous faite autant ou moins que votre stat selon la situation, si elle est plutôt physique, social, ou mental !\n\nVous pouvez écrire dans le salon #『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs de manière RP un message, c'est un tableau uniquement visible à l'auberge par les autres survivants")    
+  .addField("Informations importantes :" , "Vous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP\n\nLorsque vous devez faire une action physique, social, et mental, il faudra faire ce qu'on appelle un `Roll` grâce à : `=Horde roll`\n\nL'action sera réussite si vous faite autant ou moins que votre stat selon la situation, si elle est plutôt physique, social, ou mental !\n\nVous pouvez écrire dans le salon #『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs de manière RP un message, c'est un tableau uniquement visible à l'auberge par les autres survivants")
   .setTimestamp()
       message.channel.send({embed})
           }
@@ -28176,7 +28176,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-    .addField("Les stats, partie 1 :" , "Votre survivant est différent des autres selon son histoire, ainsi que sa profession et d'autres facteurs comme le physique, sa personnalité ou même son langage, c'est pourquoi dans ce monde il existe 3 stats :\n\n`Stat physique`\n`Stat mental`\n`Stat social`\n\nPour réussir certaines actions qui demandent des efforts parfois, il faudra faire ce qu'on appelle un `Roll` pour savoir si vous réussissez ou non : `=Horde roll`\n\nCeci vous donne un nombre de 1 à 100, le but pour réussir votre action est de réussir à faire autant que votre stat ou moins, si vous faites plus alors vous échouez votre action...\n\nLa suite : `=Horde stats 2`")    
+    .addField("Les stats, partie 1 :" , "Votre survivant est différent des autres selon son histoire, ainsi que sa profession et d'autres facteurs comme le physique, sa personnalité ou même son langage, c'est pourquoi dans ce monde il existe 3 stats :\n\n`Stat physique`\n`Stat mental`\n`Stat social`\n\nPour réussir certaines actions qui demandent des efforts parfois, il faudra faire ce qu'on appelle un `Roll` pour savoir si vous réussissez ou non : `=Horde roll`\n\nCeci vous donne un nombre de 1 à 100, le but pour réussir votre action est de réussir à faire autant que votre stat ou moins, si vous faites plus alors vous échouez votre action...\n\nLa suite : `=Horde stats 2`")
     .setTimestamp()
         message.channel.send({embed})
             }
@@ -28189,13 +28189,13 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Les stats :" , " Vous disposez de 150 points de stat à répartir entre `Physique / Mental / Social`\n\nLe maximum est de 75 par stat, et le minimum est de 25\n\nPar exemple, je décide de créer un survivant avec 75 en physique, 50 en mental et 25 en social, si je décide de vouloir convaincre un survivant de me suivre quelque part alors qu'il est méfiant, j'effectue un `Roll` et si à mon `Roll` je fais un score de 17, je réussis à le convaincre car j'ai fais moins que ma stat social, mais si je fait 28 à la place, j'ai échoué car j'ai fait plus que ma stat social\n\nAutre exemple, si j'essaye d'escalader une maison, que je fais 74 à mon roll, je réussis à escalader en ayant fait moins que ma stat physique, mais si je fait 98 alors je rate\n\nSi vous ne comprenez vraiment pas, n'hésitez pas à contacter un membre du staff")    
+      .addField("Les stats :" , " Vous disposez de 150 points de stat à répartir entre `Physique / Mental / Social`\n\nLe maximum est de 75 par stat, et le minimum est de 25\n\nPar exemple, je décide de créer un survivant avec 75 en physique, 50 en mental et 25 en social, si je décide de vouloir convaincre un survivant de me suivre quelque part alors qu'il est méfiant, j'effectue un `Roll` et si à mon `Roll` je fais un score de 17, je réussis à le convaincre car j'ai fais moins que ma stat social, mais si je fait 28 à la place, j'ai échoué car j'ai fait plus que ma stat social\n\nAutre exemple, si j'essaye d'escalader une maison, que je fais 74 à mon roll, je réussis à escalader en ayant fait moins que ma stat physique, mais si je fait 98 alors je rate\n\nSi vous ne comprenez vraiment pas, n'hésitez pas à contacter un membre du staff")
       .setTimestamp()
           message.channel.send({embed})
               }
         }) ;
 
-     
+
 
     bot.on('message', message => {
       if (message.content.startsWith(prefix + "Fiche de survivant")) {
@@ -28215,7 +28215,7 @@ bot.on('message', message => {
                 }
           }) ;
 
-  
+
 
 
   bot.on('message', message => {
@@ -28915,8 +28915,8 @@ bot.on('message', message => {
               message.channel.send({embed})}
                         }
                     }) ;
-        
-        
+
+
 
       bot.on('message', message => {
         if (message.content === prefix + "Habitations") {
@@ -28997,7 +28997,7 @@ bot.on('message', message => {
 
 
 
- 
+
 
               bot.on('message', message => {
                 if (message.content.startsWith(prefix + "Alcool")) {
@@ -29245,7 +29245,7 @@ bot.on('message', message => {
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
           .setTimestamp()
    .addField("Liste des atouts 2 :" , "`Résistant` : Permet de survivre un dernier jour supplémentaire si vous deviez mourir d'infection, d'hémorragie, de faim, ou de déshydratation, vous laissant encore du temps de vous soigné\n\n`Tireur` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme à distance\n\n`Voleur` : Permet de pouvoir voler plus facilement un survivant selon le `=Vol`\n\n`Racaille` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme de corps à corps\n\n`Boucher` : Permet d'avoir le double de viande lorsque vous tuez un animal dans la boucherie\n\n`Discret` : Permet d'avoir une chance supplémentaire la nuit de vous cacher chez vous, si vous échouez la première tentative\n\n`Courageux` : Empêche d'avoir l'état `Terreur`\n\n`Picoleur` : Empêche d'avoir l'état `Ivresse`\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`")
-  
+
       message.channel.send({embed})
           }
     }) ;
