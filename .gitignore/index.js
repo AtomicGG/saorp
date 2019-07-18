@@ -28299,7 +28299,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Défense de la ville, partie 2 :" , "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nPour déterminer quel joueur trouvera et attaquera le zombie, il faut écrire : `=Zombie infiltration : [Nombre de survivants restants]`\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, le joueur sera attaquer\n\nA savoir que se défendre en groupe est possible, et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués !\n\nLa suite : `=Défense de la ville 3`")    .setTimestamp()
+            .addField("Défense de la ville, partie 2 :" , "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, les zombies iront vers lui en ville\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`")    .setTimestamp()
                 message.channel.send({embed})
                     }
               }) ;
@@ -28313,22 +28313,12 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-              .addField("Défense de la ville, partie 3 :" , "Si à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, il faudra impérativement mettre dans le salon #『🔨』ᴘᴏɪɴᴛs-ᴅᴇ-ᴅᴇ́ғᴇɴsᴇ si votre maison possède des points de défense, ou si vous souhaitez devenir veilleur\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nSi vous souhaitez devenir veilleur, veuillez l'écrire justement dans le salon #『🔨』ᴘᴏɪɴᴛs-ᴅᴇ-ᴅᴇ́ғᴇɴsᴇ en y mettant les points de défense qu'offre votre arme\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa suite : `=Défense de la ville 4`")    .setTimestamp()
+              .addField("Défense de la ville, partie 3 :" , "Si à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, si vous allez à la porte, vous pouvez défendre la ville en étant un `Veilleur`\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa fuite est la meilleur solution si vous êtes mal, bonne chance !")    .setTimestamp()
                   message.channel.send({embed})
                       }
                 }) ;
 
-                bot.on('message', message => {
-                  if (message.content === prefix + "Défense de la ville 4") {
-                    const embed = new Discord.RichEmbed()
-                    .setColor(0xff0000)
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                .addField("Défense de la ville, partie 4 :" , "Une arme de corps à corps possède une durabilité avant d'être inutilisable/détruite\n\nSi par exemple vous avez un pied de biche utilisable pour 3 attaques, au bout de la troisième nuit en tant que veilleur et si vous êtes encore en vie, le pied de biche sera détruit\n\nSi vous avez une arme à feu ou du moins une arme à distance qui tire, celle-ci sera encore utilisable mais chaque nuit en tant que veilleur déchargera votre arme complètement, vous devrez la recharger avant de pouvoir la réutiliser\n\nA savoir que, pour utiliser une arme à feu ou une arme à distance pour être veilleur, il faudra que celle-ci soit complètement chargé\n\nIl est possible d'avoir plusieurs armes sur sois, en respectant les règles précédentes des armes chargés et de la durabilité")    .setTimestamp()
-                    message.channel.send({embed})
-                        }
-                  }) ;
+
 
 
             bot.on('message', message => {
