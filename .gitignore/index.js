@@ -48957,7 +48957,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Twinoïde 500MG [Effets] :" , "Rien ne se passe de plus en utilisant `Betapropine 5MG périmée`")
+      .addField("Twinoïde 500MG [Effets] :" , "Rien ne se passe de plus en utilisant `Twinoïde 500MG`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 81){
