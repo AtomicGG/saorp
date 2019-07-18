@@ -29370,7 +29370,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  const A = (Math.floor((100)*Math.random()))
+  const A = (Math.floor((100)*Math.random()+1))
   const X = (Math.floor((2)*Math.random()+1))
   if (message.content.startsWith(prefix + "Dernier espoir")) {
     if(A < 80){
