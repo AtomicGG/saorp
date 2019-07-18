@@ -27987,6 +27987,21 @@ bot.on('message', message => {
 
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Horde roll")) {
+    const X = (Math.floor((100)*Math.random()))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Roll :" , "Vous effectuez un score de `" +X+ "` à votre action")
+      .setImage("https://media3.giphy.com/media/3oGRFlpAW4sIHA02NW/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+                }
+            }) ;
+
 bot.on('message', message => {
   if (message.content === prefix + "Horde") {
     const embed = new Discord.RichEmbed()
@@ -47450,6 +47465,8 @@ bot.on('message', message => {
       message.channel.send({embed})}
                 }
             }) ;
+
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Os humain félé") {
