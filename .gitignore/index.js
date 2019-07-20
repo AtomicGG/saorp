@@ -22572,16 +22572,27 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const FerMediocre = Math.floor(2 * 0.5 * Math.random() + 1)
-      const FerCommun = Math.floor(2 * 0.80 * Math.random())
-      const FerRare = Math.floor(2 * 0.95 * Math.random())
+      const Sel = Math.floor(2 * Math.random() + 2)
+      const FerMediocre = Math.floor(2 * Math.random() + 1)
+      let FerCommun = 0
+      let FerRare = 0
       const Exp = Math.floor(5 * Math.random() + 11)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        FerCommun = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        FerRare = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
       .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                    ":pick: Pierre de sel : " + Sel + "\n" +
                                     ":pick: Fer médiocre : " + FerMediocre + "\n" +
                                     ":pick: Fer commun : " + FerCommun + "\n" +
                                     ":pick: Fer rare : " + FerRare + "\n" +
