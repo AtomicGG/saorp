@@ -20262,7 +20262,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et evite votre coup puis lache une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque")
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et évite votre coup puis lâche une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque pendant un tour.")
       .setTimestamp()
       message.channel.send({embed})
     }
