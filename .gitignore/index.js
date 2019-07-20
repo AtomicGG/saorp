@@ -28008,7 +28008,7 @@ bot.on('message', message => {
   }
 });
 
-
+/*
 bot.on('message', message => {
   if (message.content === (prefix) + "Illfang le seigneur kobolt"){
     const embed = new Discord.RichEmbed()
@@ -28138,7 +28138,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   }
-});
+});*/
 
 /*
 bot.on('message', message => {
