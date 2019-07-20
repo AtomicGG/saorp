@@ -28114,22 +28114,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
-    let Dégâts = args.slice(4).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3)))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
-                                       "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
+      //.addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
+                                //       "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
       .setTimestamp()
       message.channel.send({embed})
-    }
   }
 });
 
