@@ -27998,7 +27998,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .addField(":bank: Salle du boss :" , ":bank: Vous ouvrez les portes de la salle du boss du palier 1, vous tombez face à face devant : " +
+    .addField(":bank: Salle du boss :" , ":bank: Vous ouvrez les portes de la salle du boss du palier 1, vous tombez face à face devant : \n" +
     ":crossed_swords: Illfang le seigneur kobolt\n" +
     ":crossed_swords: 3 Kobolt sentinelle")
     .setColor(3447003)
