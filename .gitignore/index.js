@@ -20163,7 +20163,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
       const degat = Math.floor(31 * Math.random() + 120)
       const armure = Math.floor(21 * Math.random() + 20)
-      const cible = Math.floor(3 * Math.random() + 1)
+      const cible = Math.floor(3 * Math.random() + 2)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 35){
         const embed = new Discord.RichEmbed()
@@ -20178,7 +20178,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vous charge et vous percuttent de plein fouet, infligeant " + degat + " points de dégâts")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vous charge et vous percutte de plein fouet, infligeant " + degat + " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20187,7 +20187,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueur(s). Il(s) sont provoqué pendant 2 tours et le Doryphore double son armure pendant cette durée.")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueurs. Ces joueurs sont provoqués pendant 2 tours et le Doryphore double son armure pendant cette durée.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20196,7 +20196,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant vole vers vous s'envole et atterit sur vous en vous écrasant avec ses pattes avant. il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant s'envole et se dirige vers vous. Puis il atterrit sur vous en vous écrasant avec ses pattes avants. Il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
         .setTimestamp()
         message.channel.send({embed})
       }
