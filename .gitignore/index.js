@@ -20217,7 +20217,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle matérialisé ici par chance pour vous, il se prend " + degat + " points de dégâts")
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle, il se prend " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
