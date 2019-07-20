@@ -20066,7 +20066,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif.")
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif. Si le lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20075,7 +20075,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + soin + " ")
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20084,7 +20084,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas prend de l'élan et soulève un grand nuages de poudre d'or les monstres sont soigné de " + soin + " et gagne " + degat + " points de dégâts pour 1 tour puis s'enfuit.\n [Le Neoridas ne peut pas s'enfuir si il est provoqué/Charmé] ")
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas prend de l'élan et soulève un grand nuages de poudre d'or, tout les monstres sont soignés de " + soin + " points de vie et gagnent " + degat + " points de dégâts pour 1 tour puis s'enfuit.\n [Le Neoridas ne peut pas s'enfuir s'il est provoqué/Charmé] ")
         .setTimestamp()
         message.channel.send({embed})
       }
