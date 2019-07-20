@@ -22619,11 +22619,24 @@ bot.off('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
-      const Peau = Math.floor((2 - 0.50) * Math.random())
-      const Coeur = Math.floor((2 - 0.75) * Math.random())
-      const Oeil = Math.floor((2 - 0.75) * Math.random())
+      const Viande = Math.floor(2 * Math.random() + 1)
+      let Peau = 0
+      let Coeur = 0
+      let Oeil = 0
       const Exp = Math.floor(5 * Math.random() + 11)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        Peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Coeur = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Oeil = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
