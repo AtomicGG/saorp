@@ -28102,12 +28102,6 @@ bot.on('message', message => {
 /*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
-    const degatGroupe = Math.floor(31 * Math.random() + 155)
-    const degatVert = Math.floor(21 * Math.random() + 200)
-    const degatVertGroupe = Math.floor(51 * Math.random() + 150)
-    const cible = Math.floor(4 * Math.random() + 2)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -28117,7 +28111,6 @@ bot.on('message', message => {
                                                "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
       message.channel.send({embed})
       }
-  }
 });
 
 bot.on('message', message => {
@@ -28282,7 +28275,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt sentinelle :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans... !")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/4d/Kobold_Sentinel.png/revision/latest?cb=20140309042458")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1500")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt sentinelle attaque`")
       .addField(":shield: Lorsque le kobolt sentinelle reçoit un coup :" , ":shield: `=Kobolt sentinelle défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
