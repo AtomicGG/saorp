@@ -19725,49 +19725,49 @@ bot.on('message', message => {
 // Forêt dense | quête
 
 bot.on('message', message => {
-if (message.content === (prefix) + "Forêt dense quête"){
-  const roll = Math.floor(100 * Math.random() + 1)
-  if (talkedRecently.has(message.author.id+18000)) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
-    .setColor(3447003)
-    .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-    .setTimestamp()
-    message.channel.send({embed})
-  } else {
-    if (roll <= 100) {
+  if (message.content === (prefix) + "Forêt dense quête"){
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 100) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const lombricIrregulier = Math.floor(3 * Math.random() + 2)
+        const paplliAssit = Math.floor(3 * Math.random() + 2)
+        const bousierColossal = Math.floor(3 * Math.random() + 2)
+        const snakeSneaky = Math.floor(2 * Math.random() + 1)
+        const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
+        .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                           ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
+                                                           ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
+                                                           ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
+                                                           ":crossed_swords: Venom : " + snakeSneaky + "\n" +
+                                                           ":crossed_swords: Doryphore géant : " + doryphoreGeant)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
       talkedRecently.add(message.author.id+18000);
       setTimeout(() => {
         talkedRecently.delete(message.author.id+18000);
       }, 86400000);
-      const lombricIrregulier = Math.floor(3 * Math.random() + 2)
-      const paplliAssit = Math.floor(3 * Math.random() + 2)
-      const bousierColossal = Math.floor(3 * Math.random() + 2)
-      const snakeSneaky = Math.floor(2 * Math.random() + 1)
-      const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
-      .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
-                                                      ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                                      ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
-                                                      ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                                      ":crossed_swords: Venom : " + snakeSneaky + "\n" +
-                                                      ":crossed_swords: Doryphore géant : " + doryphoreGeant)
-      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
-      .setTimestamp()
-      message.channel.send({embed})
     }
-    talkedRecently.add(message.author.id+18000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+18000);
-    }, 86400000);
   }
-}
 })
 
 bot.on('message', message => {
@@ -19775,11 +19775,11 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
   let lvl = args.slice(4).join(" : ");
-  const control = Math.floor(120 * Math.random() + 120)
+  const control = Math.floor(150 * Math.random() + 150)
   let xp = control - (lvl * 6)
-  const cols = Math.floor(140 * Math.random() + 140)
+  const cols = Math.floor(150 * Math.random() + 150)
   const potionAmelio = Math.floor(2 * 0.25 * Math.random())
-  const stuffhexapode = Math.floor(2 * 0.80 * Math.random())
+  const stuffChitine = Math.floor(2 * 0.80 * Math.random())
   if (xp <= 0) {
     xp = 0
   }
@@ -19789,10 +19789,10 @@ if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
   .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                  ":sparkles: Points d'expérience : " + xp + "\n" +
-                                                  ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                  ":syringe: Potion améliorée : " + potionAmelio + "\n" +
-                                                  ":scales: Equipement de hexapode au choix : " + stuffhexapode)
+                                                     ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                     ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                     ":syringe: Potion améliorée : " + potionAmelio + "\n" +
+                                                     ":scales: Equipement en chitine au choix : " + stuffChitine)
   .setTimestamp()
   message.channel.send({embed})
 }
@@ -21507,9 +21507,9 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
   let lvl = args.slice(3).join(" : ");
-  const control = Math.floor(120 * Math.random() + 120)
-  let xp = control - (lvl * 6)
-  const cols = Math.floor(140 * Math.random() + 140)
+  const control = Math.floor(150 * Math.random() + 150)
+  let xp = control - (lvl * 7)
+  const cols = Math.floor(150 * Math.random() + 150)
   const potionAmelio = Math.floor(2 * 0.25 * Math.random())
   const stuffTaurus = Math.floor(2 * 0.80 * Math.random())
   if (xp <= 0) {
