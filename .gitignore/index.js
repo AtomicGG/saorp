@@ -22255,7 +22255,7 @@ bot.on('message', message => {
     let corne = 0
     let viande = 0
     let oeufB = 0
-    let scalpe = 0
+    let scalp = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 5
@@ -22263,22 +22263,53 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 40) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.75) * Math.random())
-      corne = Math.floor((2 - 0.85) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      scalpe = Math.floor((2 - 0.96) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(41 * Math.random() + 40)
     } else {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.85) * Math.random())
-      corne = Math.floor((2 - 0.95) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      scalpe = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -22291,9 +22322,9 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":knife: Peau de Taurus : " + peau + "\n" +
                                            ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poile de Taurus : " + poil + "\n" +
+                                           ":ox: Poil de Taurus : " + poil + "\n" +
                                            ":dagger: Corne de Taurus : "+ corne + "\n" +
-                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":bacon: Scalp de Taurus : " + scalp + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
