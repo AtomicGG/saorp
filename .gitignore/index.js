@@ -8734,8 +8734,16 @@ bot.on('message', message => {
     const control = Math.floor(30 * Math.random() + 30)
     let xp = control - (lvl * 3)
     const cols = Math.floor(30 * Math.random() + 30)
-    const potionFaibleSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffPeauArrache = Math.floor(2 * 0.80 * Math.random())
+    let potionFaibleSoin = 0
+    let stuffPeauArrache = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionFaibleSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffPeauArrache = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -9655,9 +9663,21 @@ bot.on('message', message => {
     const control = Math.floor(50 * Math.random() + 50)
     const cols = Math.floor(50 * Math.random() + 50)
     let xp = control - (lvl * 4)
-    const potionLegereSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffPeauResistante = Math.floor(2 * 0.80 * Math.random())
-    const clefDonjonSauvage = Math.floor((2 - (0.90)) * Math.random())
+    let potionLegereSoin = 0
+    let stuffPeauResistante = 0
+    let clefDonjonSauvage = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionLegereSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffPeauResistante = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      clefDonjonSauvage = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -11372,8 +11392,16 @@ bot.on('message', message => {
     const control = Math.floor(70 * Math.random() + 70)
     let xp = control - (lvl * 5)
     const cols = Math.floor(70 * Math.random() + 70)
-    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffKobolt = Math.floor(2 * 0.80 * Math.random())
+    let potionMoyenneSoin = 0
+    let stuffKobolt = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionMoyenneSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffKobolt = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -12381,8 +12409,16 @@ bot.on('message', message => {
     const control = Math.floor(90 * Math.random() + 90)
     let xp = control - (lvl * 6)
     const cols = Math.floor(90 * Math.random() + 90)
-    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffKoboltSup = Math.floor(2 * 0.80 * Math.random())
+    let potionMoyenneSoin = 0
+    let stuffKobolt = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionMoyenneSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffKoboltSup = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -19778,8 +19814,16 @@ if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
   const control = Math.floor(150 * Math.random() + 150)
   let xp = control - (lvl * 6)
   const cols = Math.floor(150 * Math.random() + 150)
-  const potionAmelio = Math.floor(2 * 0.25 * Math.random())
-  const stuffChitine = Math.floor(2 * 0.80 * Math.random())
+  let potionAmelio = 0
+  let stuffChitine = 0
+  let roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 65) {
+    potionAmelio = 1
+  }
+  roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 50) {
+    stuffChitine = 1
+  }
   if (xp <= 0) {
     xp = 0
   }
@@ -21509,9 +21553,17 @@ if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
   let lvl = args.slice(3).join(" : ");
   const control = Math.floor(150 * Math.random() + 150)
   let xp = control - (lvl * 7)
-  const cols = Math.floor(150 * Math.random() + 150)
-  const potionAmelio = Math.floor(2 * 0.25 * Math.random())
-  const stuffTaurus = Math.floor(2 * 0.80 * Math.random())
+  const cols = Math.floor(130 * Math.random() + 130)
+  let potionAmelio = 0
+  let stuffTaurus = 0
+  let roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 50) {
+    potionAmelio = 1
+  }
+  roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 40) {
+    stuffTaurus = 1
+  }
   if (xp <= 0) {
     xp = 0
   }
@@ -21524,7 +21576,7 @@ if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
                                                   ":syringe: Potion améliorée : " + potionAmelio + "\n" +
-                                                  ":scales: Equipement de hexapode au choix : " + stuffTaurus)
+                                                  ":scales: Equipement de taurus au choix : " + stuffTaurus)
   .setTimestamp()
   message.channel.send({embed})
 }
