@@ -22434,6 +22434,7 @@ bot.on('message', message => {
     let viande = 0
     let oeufB = 0
     let scalp = 0
+    let cuirasse = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 5
@@ -22462,6 +22463,10 @@ bot.on('message', message => {
         scalp = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        cuirasse = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
       if (rollRessource <= 10) {
         oeufB = 1
       }
@@ -22485,6 +22490,10 @@ bot.on('message', message => {
         scalp = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        cuirasse = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
       if (rollRessource <= 5) {
         oeufB = 1
       }
@@ -22503,6 +22512,7 @@ bot.on('message', message => {
                                            ":ox: Poil de Taurus adroit : " + poil + "\n" +
                                            ":dagger: Corne de Taurus : "+ corne + "\n" +
                                            ":bacon: Scalp de Taurus : " + scalp + "\n" +
+                                           ":beginner: Cuirasse de Fort taurus adroit : " + cuirasse + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -26299,7 +26309,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scroll: Parchemin de poison moyen :" , ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 375 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
+    .addField(":scroll: Parchemin de poison moyen :" , ":scroll: C'est un parchemin assez efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 375 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26307,9 +26317,9 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const roll = (Math.floor((100)*Math.random()+1))
-  const poison = (Math.floor((20)*Math.random()+35))
   if (message.content.startsWith(prefix + "Poison moyen")) {
+    const roll = (Math.floor((100)*Math.random()+1))
+    const poison = (Math.floor((21)*Math.random()+40))
     if(roll <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -26338,8 +26348,8 @@ if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
   .addField("Bave :" , "C'est de la bave que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
-  .addField("Prix d'achat :" , "40 cols")
-  .addField("Prix de revente :" , "10 cols")
+  .addField("Prix d'achat :" , "60 cols")
+  .addField("Prix de revente :" , "15 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Gantelets en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -26353,9 +26363,9 @@ if (message.content.startsWith(prefix + "Peau élastic de lombric irrégulier"))
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Peau élastic :" , "C'est une peau élastic que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
-  .addField("Prix d'achat :" , "40 cols")
-  .addField("Prix de revente :" , "10 cols")
+  .addField("Peau élastic :" , "C'est une peau élastique que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
+  .addField("Prix d'achat :" , "80 cols")
+  .addField("Prix de revente :" , "20 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine\n=Ceinture en chitine\n=Bottes en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -26370,8 +26380,8 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
   .addField("Langue :" , "C'est une langue que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
-  .addField("Prix d'achat :" , "40 cols")
-  .addField("Prix de revente :" , "10 cols")
+  .addField("Prix d'achat :" , "100 cols")
+  .addField("Prix de revente :" , "25 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -26380,12 +26390,12 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Ailles de Neoridas")) {
+if (message.content.startsWith(prefix + "Ailes de Neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Ailles :" , "C'est des ailles que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
+  .addField("Ailes :" , "C'est des ailes que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "10 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron en chitine\n=Gantelets en chitine")
@@ -26396,7 +26406,7 @@ if (message.content.startsWith(prefix + "Ailles de Neoridas")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Peau Neoridas")) {
+if (message.content.startsWith(prefix + "Peau de Neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
