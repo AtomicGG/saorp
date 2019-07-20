@@ -20515,7 +20515,7 @@ bot.on('message', message => {
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
      .addField(":moneybag: Récompenses :" , ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
-                                            ":butterfly: Ailes de Neoridas  : " + ailes+ "\n" +
+                                            ":butterfly: Aile de Neoridas  : " + ailes+ "\n" +
                                             ":knife: Peau de Neoridas : " + peau + "\n" +
                                             ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                             ":scales: Armure en chitine au choix : " + armureChitine + "\n" +
@@ -20873,11 +20873,24 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
-      const Peau = Math.floor((2 - 0.50) * Math.random())
-      const Coeur = Math.floor((2 - 0.75) * Math.random())
-      const Oeil = Math.floor((2 - 0.75) * Math.random())
+      const Viande = Math.floor(2 Math.random() + 1)
+      let Peau = 0
+      let Coeur = 0
+      let Oeil = 0
       const Exp = Math.floor(5 * Math.random() + 11)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        Peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Coeur = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Oeil = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -20901,12 +20914,12 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Casque hexapode")) {
+  if (message.content.startsWith(prefix + "Casque en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque hexapode :" , ":scales: C'est un casque fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Corne de boussier x2, Carapace de boussier x4, Carapace Doryphore géant x2, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du casque hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication du casque hexapode`")
+    .addField(":scales: Casque en chitine :" , ":scales: C'est un casque fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de bousier colossal, 4 Carapace de bousier colossal, 2 Carapace de Doryphore géant, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du casque en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication du casque en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20914,12 +20927,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epaulières hexapode")) {
+  if (message.content.startsWith(prefix + "Epaulières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epaulières hexapode :" , ":scales: Ce sont des épaulières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de boussier x2, Carapace Doryphore géant x4, Corne de boussierx2, Carapace de boussier x4, Carapace Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des épaulières hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des épaulières hexapode`")
+    .addField(":scales: Epaulières en chitine :" , ":scales: Ce sont des épaulières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de bousier colossal, 4 Carapace de Doryphore géant, 2 Corne de bousier colossal\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des épaulières en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des épaulières en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20927,12 +20940,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cape hexapode")) {
+  if (message.content.startsWith(prefix + "Cape en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape hexapode :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Neoridas x2, Hémolymphe x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la cape hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la cape hexapode`")
+    .addField(":scales: Cape en chitine :" , ":scales: C'est une cape faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de serpent, 2 Peau élastique de lombric irrégulier, 2 Peau de Neoridas, 1 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la cape en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la cape en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20940,12 +20953,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plastron hexapode")) {
+  if (message.content.startsWith(prefix + "Plastron en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron hexapode :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Neoridas x3, Hémolymphe x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron hexapode`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron hexapode`")
+    .addField(":scales: Plastron en chitine :" , ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Aile de Neoridas, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron en chitine`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20953,12 +20966,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Gantelets hexapode")) {
+  if (message.content.startsWith(prefix + "Gantelets en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets hexapode :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Neoridas x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Hémolymphe x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets hexapode`")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Ailes de Neoridas, 2 Carapace de Bousier colossal, 1 Bave de lombric irrégulier, 2 Hémolymphe\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20966,12 +20979,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Ceinture hexapode")) {
+  if (message.content.startsWith(prefix + "Ceinture en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture hexapode :" , ":scales: C'est une ceinture fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Queue de serpent x2, Peau de serpent x3, Peau élastic de lombric irrégulier x3, Langue de lombric irrégulier x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la ceinture hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la ceinture hexapode`")
+    .addField(":scales: Ceinture en chitine :" , ":scales: C'est une ceinture faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Queue de Venom, 3 Peau de Venom, 3 Peau élastique de lombric irrégulier, 2 Langue de lombric irrégulier\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la ceinture en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la ceinture en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20979,12 +20992,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jambières hexapode")) {
+  if (message.content.startsWith(prefix + "Jambières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières hexapode :" , ":scales: Ce sont des jambières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace Doryphore géant x3, Patte Doryphore géant x 2, Pattes de Boussier colosal, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des jambières hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des jambières hexapode`")
+    .addField(":scales: Jambières en chitine :" , ":scales: Ce sont des jambières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de Doryphore géant, 2 Patte de Doryphore géant, 1 Patte de Bousier colossal, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des jambières en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des jambières en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20992,12 +21005,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bottes hexapode")) {
+  if (message.content.startsWith(prefix + "Bottes en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes hexapode :" , ":scales: Ce sont des bottes fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Pattes de Boussier colosal x4, Carapace de Boussier colosal x2, Peau élastic de lombric irrégulier x2, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des bottes hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des bottes hexapode`")
+    .addField(":scales: Bottes en chitine :" , ":scales: Ce sont des bottes faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte de Bousier colossal, 2 Carapace de Bousier colossal, 2 Peau élastique de lombric irrégulier, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des bottes en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des bottes en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21005,12 +21018,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Anneau hexapode")) {
+  if (message.content.startsWith(prefix + "Anneau en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau hexapode :" , ":scales: C'est un anneau fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Doryphore géant, 2 Aile Doryphore géant, 2 coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'anneau hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'anneau hexapode`")
+    .addField(":scales: Anneau en chitine :" , ":scales: C'est un anneau fait avec des composants d'insectes trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'anneau en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'anneau en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21018,44 +21031,44 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Amulette hexapode")) {
+  if (message.content.startsWith(prefix + "Amulette en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette hexapode :" , ":scales: C'est une amulette fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Doryphore géant, 2 Aile Doryphore géant, 2 coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'amulette hexapode`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette hexapode` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'amulette hexapode`")
+    .addField(":scales: Amulette en chitine :" , ":scales: C'est une amulette faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'amulette en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'amulette en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
 
-//Achat équipements hexapode
-
-bot.on('message', message => {
-  const Défense = Math.floor(4 * Math.random() + 6)
-  const HP = Math.floor(6 * Math.random() + 25)
-  if (message.content.startsWith(prefix + "Achat de l'anneau hexapode")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":scales: Anneau hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
+//Achat équipements en chitine
 
 bot.on('message', message => {
   const Défense = Math.floor(4 * Math.random() + 6)
   const HP = Math.floor(6 * Math.random() + 25)
-  if (message.content.startsWith(prefix + "Achat de l'amulette hexapode")) {
+  if (message.content.startsWith(prefix + "Achat de l'anneau en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure en chitine sont équipés")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const Défense = Math.floor(4 * Math.random() + 6)
+  const HP = Math.floor(6 * Math.random() + 25)
+  if (message.content.startsWith(prefix + "Achat de l'amulette en chitine")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipés")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21065,12 +21078,12 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
     const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat du casque hexapode")) {
+  if (message.content.startsWith(prefix + "Achat du casque en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Casque en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21080,12 +21093,12 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
     const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des épaulières hexapode")) {
+  if (message.content.startsWith(prefix + "Achat des épaulières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Épaulières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21095,12 +21108,12 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat de la cape hexapode")) {
+  if (message.content.startsWith(prefix + "Achat de la cape en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Cape en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21110,12 +21123,12 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat du plastron hexapode")) {
+  if (message.content.startsWith(prefix + "Achat du plastron en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21125,12 +21138,12 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des gantelets hexapode")) {
+  if (message.content.startsWith(prefix + "Achat des gantelets en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21140,12 +21153,12 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat de la ceinture hexapode")) {
+  if (message.content.startsWith(prefix + "Achat de la ceinture en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21155,12 +21168,12 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des jambières hexapode")) {
+  if (message.content.startsWith(prefix + "Achat des jambières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21170,30 +21183,30 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des bottes hexapode")) {
+  if (message.content.startsWith(prefix + "Achat des bottes en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
 
-//Fabrication équipements hexapode
+//Fabrication équipements en chitine
 
 
 bot.on('message', message => {
   const Défense = Math.floor(5 * Math.random() + 9)
   const HP = Math.floor(11 * Math.random() + 30)
-  if (message.content.startsWith(prefix + "Fabrication de l'anneau hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'anneau en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21203,12 +21216,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = Math.floor(5 * Math.random() + 9)
   const HP = Math.floor(11 * Math.random() + 30)
-  if (message.content.startsWith(prefix + "Fabrication de l'amulette hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'amulette en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21218,12 +21231,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication du casque hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication du casque en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Casque en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21233,12 +21246,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des épaulières hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication des épaulières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Épaulières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21248,12 +21261,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication de la cape hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication de la cape en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Cape en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21263,12 +21276,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication du plastron hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication du plastron en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21278,12 +21291,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des gantelets hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication des gantelets en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21293,12 +21306,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication de la ceinture hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication de la ceinture en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21308,12 +21321,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des jambières hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication des jambières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21323,12 +21336,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 30)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des bottes hexapode")) {
+  if (message.content.startsWith(prefix + "Fabrication des bottes en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21339,12 +21352,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = Math.floor(5 * Math.random() + 8)
   const HP = Math.floor(11 * Math.random() + 20)
-  if (message.content.startsWith(prefix + "Découverte de l'anneau hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte de l'anneau en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21354,12 +21367,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = Math.floor(5 * Math.random() + 8)
   const HP = Math.floor(11 * Math.random() + 20)
-  if (message.content.startsWith(prefix + "Découverte de l'amulette hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte de l'amulette en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21369,12 +21382,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte du casque hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte du casque en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Casque en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21384,12 +21397,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des épaulières hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte des épaulières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Épaulières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21399,12 +21412,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte de la cape hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte de la cape en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Cape en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21414,12 +21427,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte du plastron hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte du plastron en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21429,12 +21442,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des gantelets hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte des gantelets en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21444,12 +21457,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte de la ceinture hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte de la ceinture en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21459,12 +21472,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des jambières hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte des jambières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21474,12 +21487,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const HP = Math.floor(11 * Math.random() + 20)
   const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des bottes hexapode")) {
+  if (message.content.startsWith(prefix + "Découverte des bottes en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes hexapode :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24830,12 +24843,12 @@ bot.on('message', message => {
 // Equipements
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Equipements hexapode")) {
+  if (message.content.startsWith(prefix + "Equipements en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements hexapode :" , "=Casque hexapode\n=Epaulières hexapode\n=Cape hexapode\n=Plastron hexapode\n=Ceinture hexapode\n=Gantelets hexapode\n=Jambières hexapode\n=Bottes hexapode")
+    .addField(":scales: Liste des équipements en chitine :" , "=Casque en chitine\n=Epaulières en chitine\n=Cape en chitine\n=Plastron en chitine\n=Ceinture en chitine\n=Gantelets en chitine\n=Jambières en chitine\n=Bottes en chitine")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24882,12 +24895,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bijoux hexapode")) {
+  if (message.content.startsWith(prefix + "Bijoux en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des bijoux hexapode :" , "=Anneau hexapode\n=Amulette hexapode")
+    .addField(":scales: Liste des bijoux en chitine :" , "=Anneau en chitine\n=Amulette en chitine")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24933,15 +24946,15 @@ bot.on('message', message => {
   }
 });
 
-// Arme hexapode
+// Arme en chitine
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Armes hexapode")) {
+  if (message.content.startsWith(prefix + "Armes en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des armes hexapode :" , "=Masse hexapode à deux mains\n=Masse hexapode à une main\n=Rapière hexapode à deux mains\n=Rapière hexapode à une main\n=Katana hexapode à deux mains\n=Katana hexapode à une main\n=Epée hexapode à deux mains\n=Epée hexapode à une main\n=Cimeterre hexapode à deux mains\n=Cimeterre hexapode à une main\n=Hache hexapode à deux mains\n=Hache hexapode à une main\n=Glaive hexapode à deux mains\n=Dague hexapode à une main\n=Bouclier hexapode à une main")
+    .addField(":scales: Liste des armes en chitine :" , "=Masse en chitine à deux mains\n=Masse en chitine à une main\n=Rapière en chitine à deux mains\n=Rapière en chitine à une main\n=Katana en chitine à deux mains\n=Katana en chitine à une main\n=Epée en chitine à deux mains\n=Epée en chitine à une main\n=Cimeterre en chitine à deux mains\n=Cimeterre en chitine à une main\n=Hache en chitine à deux mains\n=Hache en chitine à une main\n=Glaive en chitine à deux mains\n=Dague en chitine à une main\n=Bouclier en chitine à une main")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24949,12 +24962,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epée hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Epée en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée hexapode à deux mains :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée hexapode à deux mains`")
+    .addField(":scales: Epée en chitine à deux mains :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24962,12 +24975,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Hache hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Hache en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache hexapode à deux mains :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache hexapode à deux mains`")
+    .addField(":scales: Hache en chitine à deux mains :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24975,12 +24988,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Masse hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Masse en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse hexapode à deux mains :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  hexapode à deux mains`")
+    .addField(":scales: Masse en chitine à deux mains :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24988,12 +25001,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Rapière hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Rapière en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière hexapode à deux mains :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière hexapode à deux mains`")
+    .addField(":scales: Rapière en chitine à deux mains :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25001,12 +25014,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Glaive hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Glaive en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive hexapode à deux mains :" , ":scales: C'est un glaive faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière hexapode à deux mains`")
+    .addField(":scales: Glaive en chitine à deux mains :" , ":scales: C'est un glaive faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25014,12 +25027,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cimeterre hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Cimeterre en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre hexapode à deux mains :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre hexapode à deux mains`")
+    .addField(":scales: Cimeterre en chitine à deux mains :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25027,12 +25040,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Katana hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Katana en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana hexapode à deux mains :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana hexapode à deux mains`")
+    .addField(":scales: Katana en chitine à deux mains :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25040,12 +25053,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epée hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Epée en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de hexapode à un main :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée hexapode à une main`")
+    .addField(":scales: Epée de en chitine à un main :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25053,12 +25066,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Dague hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Dague en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de hexapode à un main :" , ":scales: C'est une dague faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague hexapode à une main`")
+    .addField(":scales: Dague de en chitine à un main :" , ":scales: C'est une dague faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25066,12 +25079,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Masse hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Masse en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de hexapode à un main :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse hexapode à une main`")
+    .addField(":scales: Masse de en chitine à un main :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25079,12 +25092,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Hache hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Hache en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de hexapode à un main :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache hexapode à une main`")
+    .addField(":scales: Hache de en chitine à un main :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25092,12 +25105,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cimeterre hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Cimeterre en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de hexapode à un main :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre hexapode à une main`")
+    .addField(":scales: Cimeterre de en chitine à un main :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25105,12 +25118,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Katana hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Katana en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de hexapode à un main :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana hexapode à une main`")
+    .addField(":scales: Katana de en chitine à un main :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25118,12 +25131,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Rapière hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Rapière en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de hexapode à un main :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière hexapode à une main`")
+    .addField(":scales: Rapière de en chitine à un main :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25131,28 +25144,28 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bouclier hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Bouclier en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de hexapode à un main :" , ":scales: C'est un bouclier faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier hexapode à une main`")
+    .addField(":scales: Bouclier de en chitine à un main :" , ":scales: C'est un bouclier faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
 
-// Arme hexapode fabrication
+// Arme en chitine fabrication
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de l'épée hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée hexapode à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Epée en chitine à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25160,13 +25173,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la hache hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la hache en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache hexapode à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Hache en chitine à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25174,13 +25187,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la masse hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la masse en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse hexapode à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Masse en chitine à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25188,13 +25201,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du glaive hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du glaive en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive hexapode à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Glaive en chitine à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25202,13 +25215,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du katana hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du katana en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana hexapode à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Katana en chitine à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25216,13 +25229,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la rapière hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la rapière en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière hexapode à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Rapière en chitine à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25230,13 +25243,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du cimeterre hexapode à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du cimeterre en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre hexapode à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Cimeterre en chitine à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25244,13 +25257,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de l'épée hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Epée en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25258,13 +25271,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la masse hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la masse en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Masse en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25272,13 +25285,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la hache hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la hache en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Hache en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25286,13 +25299,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la rapière hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la rapière en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Rapière en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25300,13 +25313,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du cimeterre hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du cimeterre en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Cimeterre en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25314,13 +25327,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la dague hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la dague en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Dague en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25331,12 +25344,12 @@ bot.on('message', message => {
 bot.on('message', message => {
   const Défense = Math.floor(3 * Math.random() + 8)
   const HP = Math.floor(11 * Math.random() + 25)
-  if (message.content.startsWith(prefix + "Fabrication du bouclier hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du bouclier en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25344,13 +25357,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du katana hexapode à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du katana en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana hexapode à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Katana en chitine à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26172,7 +26185,7 @@ if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
   .addField("Bave :" , "C'est de la bave que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "40 cols")
   .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Gantelets hexapode")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Gantelets en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -26188,7 +26201,7 @@ if (message.content.startsWith(prefix + "Peau élastic de lombric irrégulier"))
   .addField("Peau élastic :" , "C'est une peau élastic que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "40 cols")
   .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape hexapode\n=Ceinture hexapode\n=Bottes hexapode")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine\n=Ceinture en chitine\n=Bottes en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -26204,7 +26217,7 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
   .addField("Langue :" , "C'est une langue que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "40 cols")
   .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture hexapode")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -26220,7 +26233,7 @@ if (message.content.startsWith(prefix + "Ailles de Neoridas")) {
   .addField("Ailles :" , "C'est des ailles que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron hexapode\n=Gantelets hexapode")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron en chitine\n=Gantelets en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -26236,7 +26249,7 @@ if (message.content.startsWith(prefix + "Peau Neoridas")) {
   .addField("Peau :" , "C'est une peau que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape hexapode")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine")
   .setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
