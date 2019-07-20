@@ -20385,7 +20385,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       cols = Math.floor(60 * Math.random() + 60)
@@ -20404,7 +20404,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(55 * Math.random() + 55)
@@ -20466,7 +20466,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20493,7 +20493,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20629,7 +20629,7 @@ bot.on('message', message => {
         Venin = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         Oeufs = 1
       }
       cols = Math.floor(51 * Math.random() + 50)
@@ -20645,7 +20645,7 @@ bot.on('message', message => {
         Venin = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         Oeufs = 1
       }
       cols = Math.floor(41 * Math.random() + 40)
@@ -20718,7 +20718,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       cols = Math.floor(81 * Math.random() + 80)
@@ -20748,7 +20748,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(71 * Math.random() + 70)
@@ -45224,7 +45224,7 @@ bot.on('message', message => {
                 }
             }) ;
 
-            
+
 bot.on('message', message => {
   if (message.content === prefix + "Bombe à eau explosive") {
     const embed = new Discord.RichEmbed()
