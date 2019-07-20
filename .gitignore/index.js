@@ -27990,6 +27990,24 @@ bot.on('message', message => {
 });
 
 // Boss palier 1
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Salle du boss")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField(":bank: Salle du boss :" , ":bank: Vous ouvrez les portes de la salle du boss du palier 1, vous tombez face à face devant : " +
+    ":crossed_swords: Illfang le seigneur kobolt\n" +
+    ":crossed_swords: 3 Kobolt sentinelle")
+    .setColor(3447003)
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 /*
 bot.on('message', message => {
   if (message.content === (prefix) + "Illfang le seigneur kobolt"){
