@@ -21757,7 +21757,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Clairière combat")) {
     let joueurs = args.slice(2).join(" : ");
-if (/*talkedRecently.has(message.author.id+1000)*/false) {
+if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21901,7 +21901,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance ?!")
+      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance !")
       message.channel.send({embed})
     }
     if (36 <= roll && roll <= 97){
@@ -21909,7 +21909,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute viollemment vous perdez " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute violemment. Vous perdez " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21918,7 +21918,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache a son propre dard, mourrant dans le procédée. Il vous inflige  " + degatCrit + " de dégat de poison perce armure. ")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache à son propre dard, mourrant dans le procédé. Il vous inflige  " + degatCrit + " de dégâts de poison perce armure. ")
       .setTimestamp()
       message.channel.send({embed})
     }
