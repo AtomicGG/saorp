@@ -20350,7 +20350,7 @@ bot.on('message', message => {
 
 // Forêt dense | Monstres | Récompenses
 
-/*bot.on('message', message => {
+bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Lombric irrégulier récompenses")) {
     const pos = args.indexOf(":");
@@ -20373,38 +20373,38 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       bave = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 40) {
+      if (rollRessource <= 40) {
         peauelastic = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 25) {
+      if (rollRessource <= 25) {
         langue = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 15) {
+      if (rollRessource <= 15) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 10) {
+      if (rollRessource <= 10) {
         oeufB = 1
       }
       cols = Math.floor(60 * Math.random() + 60)
     } else {
       bave = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 30) {
+      if (rollRessource <= 30) {
         peauelastic = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 15) {
+      if (rollRessource <= 15) {
         langue = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 10) {
+      if (rollRessource <= 10) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 5) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       cols = Math.floor(55 * Math.random() + 55)
@@ -20454,54 +20454,54 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       poudrePoison = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 30) {
+      if (rollRessource <= 30) {
         peau = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 30) {
+      if (rollRessource <= 30) {
         ailes = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 15) {
+      if (rollRessource <= 15) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 10) {
+      if (rollRessource <= 10) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 5) {
+      if (rollRessource <= 5) {
         armurehexapode = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 5) {
+      if (rollRessource <= 5) {
         bijouxhexapode = 1
       }
       cols = Math.floor(60 * Math.random() + 60)
     } else {
       poudrePoison = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 20) {
+      if (rollRessource <= 20) {
         peau = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 20) {
+      if (rollRessource <= 20) {
         ailes = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 10) {
+      if (rollRessource <= 10) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 5) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 3) {
+      if (rollRessource <= 3) {
         armurehexapode = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if rollRessource <= 3) {
+      if (rollRessource <= 3) {
         bijouxhexapode = 1
       }
       cols = Math.floor(55 * Math.random() + 55)
@@ -20526,7 +20526,7 @@ bot.on('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-}) ;*/
+}) ;
 
 bot.on('message', message => {
   const args = message.content;
