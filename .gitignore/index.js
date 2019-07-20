@@ -28038,7 +28038,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
-/*
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang attaque")) {
     const degat = Math.floor(51 * Math.random() + 150)
@@ -28084,7 +28084,7 @@ bot.on('message', message => {
     }
   }
 });
-
+/*
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
