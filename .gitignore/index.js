@@ -20679,8 +20679,8 @@ bot.on('message', message => {
     let carapace = 0
     let aile = 0
     let patte = 0
-    let armehexapodeUneMain = 0
-    let armeKobSupDeuxMains = 0
+    let armeChitineUneMain = 0
+    let armeChitineDeuxMains = 0
     let hemolyphe = 0
     let oeufB = 0
     let cols = 0
@@ -20690,24 +20690,67 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 40) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
-      carapace = Math.floor((2 - 0.35) * Math.random())
-      aile = Math.floor((2 - 0.55) * Math.random())
-      patte = Math.floor((2 - 0.55) * Math.random())
-      armehexapodeUneMain = Math.floor((2 - 0.88) * Math.random())
-      armeKobSupDeuxMains = Math.floor((2 - 0.92) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 40) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        aile = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        patte = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        armeChitineUneMain = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        armeChitineDeuxMains = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(81 * Math.random() + 80)
     } else {
-      carapace = Math.floor((2 - 0.35) * Math.random())
-      aile = Math.floor((2 - 0.55) * Math.random())
-      patte = Math.floor((2 - 0.55) * Math.random())
-      armehexapodeUneMain = Math.floor((2 - 0.94) * Math.random())
-      armeKobSupDeuxMains = Math.floor((2 - 0.96) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        aile = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        patte = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 3) {
+        armeChitineUneMain = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 3) {
+        armeChitineDeuxMains = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(71 * Math.random() + 70)
     }
     if (xp <= 0) {
@@ -20720,10 +20763,10 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":shell: Carapace de Doryphore géant : " + carapace + "\n" +
                                            ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
-                                           ":poultry_leg:  Patte Doryphore géant : " + patte + "\n" +
+                                           ":poultry_leg: Patte de Doryphore géant : " + patte + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
-                                           ":scales: Arme hexapode à une main au choix : " + armehexapodeUneMain + "\n" +
-                                           ":scales: Arme hexapode à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":scales: Arme en chitine à une main au choix : " + armeChitineUneMain + "\n" +
+                                           ":scales: Arme en chitine à deux mains au choix : " + armeChitineDeuxMains + "\n" +
                                            ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
