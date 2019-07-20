@@ -31251,7 +31251,7 @@ if(X <= 1.5){
                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                 .setColor(0xff0000)
-                                                .addField(":flashlight: Fouille zone 4 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles kiela`")
+                                                .addField(":flashlight: Fouille zone 4 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles`")
                                                 .setTimestamp()
                                                 message.channel.send({embed})}
                                                 if(X >= 33.1 & X <= 34.5){
@@ -31750,7 +31750,7 @@ bot.on('message', message => {
                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                 .setColor(0xff0000)
-                                                .addField(":flashlight: Fouille zone 5 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles kiela`")
+                                                .addField(":flashlight: Fouille zone 5 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles`")
                                                 .setTimestamp()
                                                 message.channel.send({embed})}
                                                 if(X === 23){
@@ -32263,7 +32263,7 @@ bot.on('message', message => {
                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                 .setColor(0xff0000)
-                                                .addField(":flashlight: Fouille zone 6 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles kiela`")
+                                                .addField(":flashlight: Fouille zone 6 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles`")
                                                 .setTimestamp()
                                                 message.channel.send({embed})}
                                                 if(X === 20){
@@ -32720,7 +32720,7 @@ bot.on('message', message => {
                                                 .setAuthor(message.author.username , message.author.avatarURL)
                                                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                                                 .setColor(0xff0000)
-                                                .addField(":flashlight: Fouille zone 7 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles kiela`")
+                                                .addField(":flashlight: Fouille zone 7 KM :" , ":flashlight: En fouillant les environs, vous découvrez un magasin de meubles kiela\n\nLa chaîne de magasins Kiela était autrefois spécialisée dans la fabrication et la vente de meubles bons marchés\n\nOn dit que la piètre qualité de leurs produits serait l'une des raisons qui a poussé le monde à sa perte...\n\nPour fouiller : `=Fouille magasin de meubles`")
                                                 .setTimestamp()
                                                 message.channel.send({embed})}
                                                 if(X >= 13.6 & X <= 15){
