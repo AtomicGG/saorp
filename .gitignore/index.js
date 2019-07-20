@@ -22110,7 +22110,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en essayant de d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en essayant d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (61 <= roll){
@@ -22118,7 +22118,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Et pendant ce temps il recule pour être hors de porté. ")
+      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Pendant ce temps, il recule pour être hors de portée. ")
       .setTimestamp()
       message.channel.send({embed})
     }
