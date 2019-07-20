@@ -2002,7 +2002,7 @@ bot.on('message', message => {
                              "une barrière apparaîtra pour protégé le joueur !\n\n" +
                              "Cependant, les duels sont possibles mais il ne sera pas possible de faire de duel à mort !\n\n" +
                              "Le seul moment possible où les meutres sont possibles en ville, sont lorsque le maître du jeu le décide !\n\n" +
-                             "A partir de la ville dans le salon 'Entrée de la ville', il est possible de vous rendre à l'extérieur, ou dans les souterrains à partir de 'Souterrains' ou " +
+                             "à partir de la ville dans le salon 'Entrée de la ville', il est possible de vous rendre à l'extérieur, ou dans les souterrains à partir de 'Souterrains' ou " +
                              "même aux constructions des joueurs à partir de 'Constructions joueurs' !\n\nDans l'auberge en ville, il est possible de vous rendre dans les chambres !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
@@ -7942,7 +7942,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `4` ordres, l'obligeant à vous obéir !\n\n" +
+        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `4` ordres, l'obligeant à vous obéir !(Divisé par deux pour les joueurs et gros monstres)\n\n" +
                                              "Ordres possibles :\n" +
                                              "- Ordonner un coup normal sur une cible. (a voir si on accepte d'autres coups en dehors des comp)\n" +
                                              "- Ordonner de ne pas se défendre.\n" +
@@ -8734,8 +8734,16 @@ bot.on('message', message => {
     const control = Math.floor(30 * Math.random() + 30)
     let xp = control - (lvl * 3)
     const cols = Math.floor(30 * Math.random() + 30)
-    const potionFaibleSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffPeauArrache = Math.floor(2 * 0.80 * Math.random())
+    let potionFaibleSoin = 0
+    let stuffPeauArrache = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionFaibleSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffPeauArrache = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -8820,11 +8828,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
-                                                       ":crossed_swords: Renard(s) : " +renard+ "\n" +
-                                                       ":crossed_swords: Sanglier(s) " +sanglier+ "\n" +
-                                                       ":crossed_swords: Chien(s) : " +chien+ "\n" +
-                                                       ":crossed_swords: Bandit(s) débutant(s) : " +bandit+ "\n" +
-                                                       ":crossed_swords: Lapin(s) géant(s) : " +lapin)
+                                                       ":crossed_swords: Renard(s) 20HP : " +renard+ "\n" +
+                                                       ":crossed_swords: Sanglier(s) 30HP " +sanglier+ "\n" +
+                                                       ":crossed_swords: Chien(s) 15HP : " +chien+ "\n" +
+                                                       ":crossed_swords: Bandit(s) débutant(s) 40HP : " +bandit+ "\n" +
+                                                       ":crossed_swords: Lapin(s) géant(s) 70HP : " +lapin)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -9655,9 +9663,21 @@ bot.on('message', message => {
     const control = Math.floor(50 * Math.random() + 50)
     const cols = Math.floor(50 * Math.random() + 50)
     let xp = control - (lvl * 4)
-    const potionLegereSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffPeauResistante = Math.floor(2 * 0.80 * Math.random())
-    const clefDonjonSauvage = Math.floor((2 - (0.90)) * Math.random())
+    let potionLegereSoin = 0
+    let stuffPeauResistante = 0
+    let clefDonjonSauvage = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionLegereSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffPeauResistante = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      clefDonjonSauvage = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -9743,11 +9763,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Loup(s) : " + loup + "\n" +
-                                   ":crossed_swords: Slime(s) " + slime + "\n" +
-                                   ":crossed_swords: Bandit(s) expérimenté(s) : " + banditExp + "\n" +
-                                   ":crossed_swords: Bandit(s) sombre(s) : " + banditSombre + "\n" +
-                                   ":crossed_swords: Loup(s) de sang(s) : " + loupDeSang)
+                                   ":crossed_swords: Loup(s) 80HP : " + loup + "\n" +
+                                   ":crossed_swords: Slime(s) 150HP " + slime + "\n" +
+                                   ":crossed_swords: Bandit(s) expérimenté(s) 140HP : " + banditExp + "\n" +
+                                   ":crossed_swords: Bandit(s) sombre(s) 240HP : " + banditSombre + "\n" +
+                                   ":crossed_swords: Loup(s) de sang(s) 300HP : " + loupDeSang)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -10697,9 +10717,9 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .addField(":bank: Donjon sauvage :" , ":bank: Vous entrez dans une nouvelle salle du donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, " +
                                             "un loup gigantesque  apparaît au milieu de la salle et hurle ce qui rassemble un paquet de monstres...\n\n" +
-                                            ":crossed_swords: Loup de sang d'élite : " + loupDeSangEliteBoss + "\n" +
-                                            ":crossed_swords: Bandit sombre d'élite : " + banditSombreEliteBoss + "\n" +
-                                            ":crossed_swords: Loup gigantesque : 1\n\n" +
+                                            ":crossed_swords: Loup de sang d'élite 400HP : " + loupDeSangEliteBoss + "\n" +
+                                            ":crossed_swords: Bandit sombre d'élite 350HP : " + banditSombreEliteBoss + "\n" +
+                                            ":crossed_swords: Loup gigantesque 2000HP : 1\n\n" +
                                             "Une fois que vous avez finis le combat :\n`=Donjon sauvage récompenses`")
       .setColor(3447003)
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
@@ -11326,11 +11346,11 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("http://aws-cf.ados.fr/prod/photos/6/7/3/6840673/281186/img-281186571.jpg?v=6")
         .addField(":bookmark: Quête de la montagne :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
-                                                        ":crossed_swords: Jeunes kobolts : " + jeuneKobolt + "\n" +
-                                                        ":crossed_swords: Kobolts explorateurs : " + koboltExplo + "\n" +
-                                                        ":crossed_swords: Kobolts ouvriers : " + koboltOuvrier + "\n" +
-                                                        ":crossed_swords: Kobolts espions : " + koboltEspion + "\n" +
-                                                        ":crossed_swords: Kobolts enragés : " + koboltEnrage)
+                                                        ":crossed_swords: Jeunes kobolts 200HP : " + jeuneKobolt + "\n" +
+                                                        ":crossed_swords: Kobolts explorateurs 325HP : " + koboltExplo + "\n" +
+                                                        ":crossed_swords: Kobolts ouvriers 275HP : " + koboltOuvrier + "\n" +
+                                                        ":crossed_swords: Kobolts espions 250HP  : " + koboltEspion + "\n" +
+                                                        ":crossed_swords: Kobolts enragés 650HP : " + koboltEnrage)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -11372,8 +11392,16 @@ bot.on('message', message => {
     const control = Math.floor(70 * Math.random() + 70)
     let xp = control - (lvl * 5)
     const cols = Math.floor(70 * Math.random() + 70)
-    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffKobolt = Math.floor(2 * 0.80 * Math.random())
+    let potionMoyenneSoin = 0
+    let stuffKobolt = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionMoyenneSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffKobolt = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -12381,8 +12409,16 @@ bot.on('message', message => {
     const control = Math.floor(90 * Math.random() + 90)
     let xp = control - (lvl * 6)
     const cols = Math.floor(90 * Math.random() + 90)
-    const potionMoyenneSoin = Math.floor(2 * 0.25 * Math.random())
-    const stuffKoboltSup = Math.floor(2 * 0.80 * Math.random())
+    let potionMoyenneSoin = 0
+    let stuffKoboltSup = 0
+    let roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 50) {
+      potionMoyenneSoin = 1
+    }
+    roll = Math.floor(100 * Math.random() + 1);
+    if (roll <= 40) {
+      stuffKoboltSup = 1
+    }
     if (xp <= 0) {
       xp = 0
     }
@@ -12467,11 +12503,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Kobolt(s) mineur(s) : " + koboltMineur + "\n" +
-                                   ":crossed_swords: Kobolt(s) combattant(s) : " + koboltCombattant + "\n" +
-                                   ":crossed_swords: Kobolt(s) garde(s) : " + koboltGarde + "\n" +
-                                   ":crossed_swords: Chien(s) errant(s) : " + chienErrant + "\n" +
-                                   ":crossed_swords: Kobolt(s) pilion(s) : " + koboltPilion)
+                                   ":crossed_swords: Kobolt(s) mineur(s) 350HP : " + koboltMineur + "\n" +
+                                   ":crossed_swords: Kobolt(s) combattant(s) 600HP : " + koboltCombattant + "\n" +
+                                   ":crossed_swords: Kobolt(s) garde(s) 520HP : " + koboltGarde + "\n" +
+                                   ":crossed_swords: Chien(s) errant(s) 400HP : " + chienErrant + "\n" +
+                                   ":crossed_swords: Kobolt(s) pilion(s) 1000HP : " + koboltPilion)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -19725,49 +19761,49 @@ bot.on('message', message => {
 // Forêt dense | quête
 
 bot.on('message', message => {
-if (message.content === (prefix) + "Forêt dense quête"){
-  const roll = Math.floor(100 * Math.random() + 1)
-  if (talkedRecently.has(message.author.id+18000)) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
-    .setColor(3447003)
-    .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-    .setTimestamp()
-    message.channel.send({embed})
-  } else {
-    if (roll <= 100) {
+  if (message.content === (prefix) + "Forêt dense quête"){
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (talkedRecently.has(message.author.id+18000)) {
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+      .setColor(3447003)
+      .addField("Cooldown :" , " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+      .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+      .setTimestamp()
+      message.channel.send({embed})
+    } else {
+      if (roll <= 100) {
+        talkedRecently.add(message.author.id+18000);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id+18000);
+        }, 86400000);
+        const lombricIrregulier = Math.floor(3 * Math.random() + 2)
+        const paplliAssit = Math.floor(3 * Math.random() + 1)
+        const bousierColossal = Math.floor(3 * Math.random() + 2)
+        const snakeSneaky = Math.floor(3 * Math.random() + 1)
+        const doryphoreGeant = Math.floor(3 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+        .setColor(3447003)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
+        .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                                                           ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
+                                                           ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
+                                                           ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
+                                                           ":crossed_swords: Venom : " + snakeSneaky + "\n" +
+                                                           ":crossed_swords: Doryphore géant : " + doryphoreGeant)
+        .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
+        .setTimestamp()
+        message.channel.send({embed})
+      }
       talkedRecently.add(message.author.id+18000);
       setTimeout(() => {
         talkedRecently.delete(message.author.id+18000);
       }, 86400000);
-      const lombricIrregulier = Math.floor(3 * Math.random() + 2)
-      const paplliAssit = Math.floor(3 * Math.random() + 2)
-      const bousierColossal = Math.floor(3 * Math.random() + 2)
-      const snakeSneaky = Math.floor(2 * Math.random() + 1)
-      const doryphoreGeant = Math.floor(2 * 0.75 * Math.random())
-      const embed = new Discord.RichEmbed()
-      .setColor(3447003)
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
-      .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
-                                                      ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                                      ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
-                                                      ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                                      ":crossed_swords: Venom : " + snakeSneaky + "\n" +
-                                                      ":crossed_swords: Doryphore géant : " + doryphoreGeant)
-      .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Forêt dense quête accomplie : [Votre niveau]`" )
-      .setTimestamp()
-      message.channel.send({embed})
     }
-    talkedRecently.add(message.author.id+18000);
-    setTimeout(() => {
-      talkedRecently.delete(message.author.id+18000);
-    }, 86400000);
   }
-}
 })
 
 bot.on('message', message => {
@@ -19775,11 +19811,19 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
   let lvl = args.slice(4).join(" : ");
-  const control = Math.floor(120 * Math.random() + 120)
+  const control = Math.floor(150 * Math.random() + 150)
   let xp = control - (lvl * 6)
-  const cols = Math.floor(140 * Math.random() + 140)
-  const potionAmelio = Math.floor(2 * 0.25 * Math.random())
-  const stuffbug = Math.floor(2 * 0.80 * Math.random())
+  const cols = Math.floor(150 * Math.random() + 150)
+  let potionAmelio = 0
+  let stuffChitine = 0
+  let roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 65) {
+    potionAmelio = 1
+  }
+  roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 50) {
+    stuffChitine = 1
+  }
   if (xp <= 0) {
     xp = 0
   }
@@ -19789,10 +19833,10 @@ if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("http://images.shinobi.fr/images/zones/jour/eau.jpg")
   .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
-                                                  ":sparkles: Points d'expérience : " + xp + "\n" +
-                                                  ":large_orange_diamond: Cols : " + cols + "\n" +
-                                                  ":syringe: Potion améliorée : " + potionAmelio + "\n" +
-                                                  ":scales: Equipement de bug au choix : " + stuffbug)
+                                                     ":sparkles: Points d'expérience : " + xp + "\n" +
+                                                     ":large_orange_diamond: Cols : " + cols + "\n" +
+                                                     ":syringe: Potion améliorée : " + potionAmelio + "\n" +
+                                                     ":scales: Equipement en chitine au choix : " + stuffChitine)
   .setTimestamp()
   message.channel.send({embed})
 }
@@ -19805,7 +19849,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt dense combat")) {
     let joueurs = args.slice(3).join(" : ");
-    if (/*talkedRecently.has(message.author.id+1000)*/false) {
+    if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -19910,7 +19954,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.ytimg.com/vi/F3lintstLuQ/hqdefault.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 __Il fuit si il y a aucun monstre ou seulement des Neoridas avec lui__")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 \n :warning: **__Il fuit s'il n'y a aucun monstre autre que des Neoridas__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
     .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -19958,7 +20002,8 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Doryphore géant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.pinimg.com/564x/b3/58/95/b3589536e2b57214261cf084caf363e1.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250 :shield: 50")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
+    .addField(":shield: Point de défense :", ":shield: 50")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Doryphore géant attaque`")
     .addField(":shield: Lorsque le Doryphore géant reçoit un coup :" , ":shield: `=Doryphore géant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Doryphore géant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -19979,7 +20024,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric rampe vers vous et tente alors de vous attraper ce qui s'avère plutôt compliqué sans bras, il panique alors durant sa course et ne parvient pas à se diriger ce qui n'est pas simple quand on ne possède pas de globes oculaires. Il rate donc son attaque en passant à côté de vous.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric rampe vers vous et tente alors de vous attraper, ce qui s'avère plutôt compliqué sans bras. Il panique alors durant sa course et ne parvient pas à se diriger, ce qui n'est pas simple quand on ne possède pas de globes oculaires. Il rate donc son attaque en passant à côté de vous.")
         message.channel.send({embed})
       }
       if (36 <= roll & roll <= 90){
@@ -19987,7 +20032,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante sur le sol, une fois à portée il vient s'enrouler autour de vous avant de vous resserrer de plus en plus à la manière d'un serpent, il vous inflige " + degat + " points de dégâts.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante. Une fois à portée, il vient s'enrouler autour de vous avant de se resserrer de plus en plus, à la manière d'un serpent, il vous inflige " + degat + " points de dégâts.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -19996,7 +20041,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour joueur et infligera " + degatcrit + " points de dégâts.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour joueur et infligera " + degatcrit + " points de dégâts. Pendant ce délai, il n'est pas ciblable.")
         .setTimestamp()
         message.channel.send({embed})
     }}
@@ -20021,7 +20066,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre rouge, tout les monstres présent ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif.")
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif. Si le lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20030,7 +20075,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lache une poudre verte, tout les monstres présent sont soigné de " + soin + " ")
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20039,7 +20084,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas prend de l'élan et soulève un grand nuages de poudre d'or les monstres sont soigné de " + soin + " et gagne " + degat + " points de dégâts pour 1 tour puis s'enfuit.\n [Le Neoridas ne peut pas s'enfuir si il est provoqué/Charmé] ")
+        .addField(":crossed_swords: Neoridas :" , ":crossed_swords: Le Neoridas prend de l'élan et soulève un grand nuages de poudre d'or, tout les monstres sont soignés de " + soin + " points de vie et gagnent " + degat + " points de dégâts pour 1 tour puis s'enfuit.\n [Le Neoridas ne peut pas s'enfuir s'il est provoqué/Charmé] ")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20056,7 +20101,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
         message.channel.send({embed})
       }
       if (36 <= roll && roll <= 85){
@@ -20073,7 +20118,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20090,7 +20135,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pour 1 tour. Vous avez de la chance !")
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation, il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pendant 1 tour. Vous avez de la chance !")
         message.channel.send({embed})
       }
       if (31 <= roll && roll <= 90){
@@ -20107,7 +20152,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toute se forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. ")
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. ")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20118,14 +20163,14 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Doryphore géant attaque")) {
       const degat = Math.floor(31 * Math.random() + 120)
       const armure = Math.floor(21 * Math.random() + 20)
-      const cible = Math.floor(3 * Math.random() + 1)
+      const cible = Math.floor(3 * Math.random() + 2)
       const roll = Math.floor(100 * Math.random() + 1)
       if (roll <= 35){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vola de gauche a droite et attend le moment d'attaquer.")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vole de gauche à droite et attend le bon moment pour attaquer.")
         message.channel.send({embed})
       }
       if (36 <= roll && roll <= 75){
@@ -20133,7 +20178,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vous charge et vous percuttent de plein fouet, infligeant " + degat + " points de dégâts")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vous charge et vous percutte de plein fouet, infligeant " + degat + " points de dégâts")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20142,7 +20187,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueur(s). Il(s) sont provoqué pendant 2 tours et le Doryphore double son armure pendant cette durée.")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueurs. Ces joueurs sont provoqués pendant 2 tours et le Doryphore double son armure pendant cette durée.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20151,7 +20196,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant vole vers vous s'envole et atterit sur vous en vous écrasant avec ses pattes avant. il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords:Le Doryphore géant s'envole et se dirige vers vous. Puis il atterrit sur vous en vous écrasant avec ses pattes avants. Il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20172,7 +20217,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle matérialisé ici par chance pour vous, il se prend " + degat + " points de dégâts")
+      .addField(":shield: Lombric irrégulier :" , ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle, il se prend " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (71 <= roll){
@@ -20217,7 +20262,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et evite votre coup puis lache une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque")
+      .addField(":shield: Neoridas :" , ":shield: Le Neoridas vole rapidement et évite votre coup puis lâche une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque pendant un tour.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20279,7 +20324,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure mais expose dans le même temps une ouverture dans l'une des jointure de sa carapace. Vous profitez de cette faibesse et lui infligé  " + degatcrit + " points de dégâts perce armure")
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus épaisse partie de sa carapace mais expose dans le même temps une ouverture dans l'une des jointures de sa carapace. Vous profitez de cette faibesse et lui infligez  " + degatcrit + " points de dégâts perce armure.")
       message.channel.send({embed})
     }
     if (6 <= roll & roll <= 94){
@@ -20296,7 +20341,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus épaisse partie de son armure, votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20323,20 +20368,45 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 35) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       bave = Math.floor(2 * Math.random() + 1)
-      peauelastic = Math.floor((2 - 0.55) * Math.random())
-      langue = Math.floor((2 - 0.65) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 40) {
+        peauelastic = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        langue = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(60 * Math.random() + 60)
     } else {
       bave = Math.floor(2 * Math.random() + 1)
-      peauelastic = Math.floor((2 - 0.70) * Math.random())
-      langue = Math.floor((2 - 0.80) * Math.random())
-      hemolyphe = Math.floor((2 - 0.98) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        peauelastic = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        langue = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(55 * Math.random() + 55)
     }
     if (xp <= 0) {
@@ -20348,7 +20418,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":alembic: Bave de lombric irrégulier  : " + bave + "\n" +
-                                           ":knife: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
+                                           ":knife: Peau élastique de lombric irrégulier  : " + peauelastic + "\n" +
                                            ":tongue: Langue de lombric irrégulier : "+ langue + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":gem: Oeuf bavant : " + oeufB + "\n" +
@@ -20370,8 +20440,8 @@ bot.on('message', message => {
     let peau = 0
     let hemolyphe = 0
     let oeufB = 0
-    let armureBug = 0
-    let bijouxBug = 0
+    let armureChitine = 0
+    let bijouChitine = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 5
@@ -20379,24 +20449,61 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(21 * Math.random() + 75) / 10
+    let rollRessource = Math.floor(100 * Math.random() + 1)
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       poudrePoison = Math.floor(2 * Math.random() + 1)
-      peau = Math.floor((2 - 0.55) * Math.random())
-      ailes = Math.floor((2 - 0.55) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      armureBug = Math.floor((2 - 0.96) * Math.random())
-      bijouxBug = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        armureChitine = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        bijouChitine = 1
+      }
       cols = Math.floor(60 * Math.random() + 60)
     } else {
       poudrePoison = Math.floor(2 * Math.random() + 1)
-      alies = Math.floor((2 - 0.70) * Math.random())
-      peau = Math.floor((2 - 0.70) * Math.random())
-      hemolyphe = Math.floor((2 - 0.98) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      armureBug = Math.floor((2 - 0.98) * Math.random())
-      bijouxBug = Math.floor((2 - 0.99) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 3) {
+        armureChitine = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 3) {
+        bijouChitine = 1
+      }
       cols = Math.floor(55 * Math.random() + 55)
     }
     if (xp <= 0) {
@@ -20408,11 +20515,11 @@ bot.on('message', message => {
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
      .addField(":moneybag: Récompenses :" , ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
-                                            ":butterfly: Ailles de Neoridas  : " + ailes+ "\n" +
-                                            ":knife: Peau Neoridas : " + peau + "\n" +
+                                            ":butterfly: Aile de Neoridas  : " + ailes+ "\n" +
+                                            ":knife: Peau de Neoridas : " + peau + "\n" +
                                             ":alembic: Hémolymphe : " + hemolyphe + "\n" +
-                                            ":scales: Armure bug au choix : " + armureBug + "\n" +
-                                            ":scales: Bijoux bug au choix : " + bijouxBug + "\n" +
+                                            ":scales: Armure en chitine au choix : " + armureChitine + "\n" +
+                                            ":scales: Bijou en chitine au choix : " + bijouChitine + "\n" +
                                             ":gem: Oeuf bavant : " + oeufB + "\n" +
                                             ":sparkles: Points d'expérience : " + xp + "\n" +
                                             ":large_orange_diamond: Cols : " + cols)
@@ -20438,18 +20545,37 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 45) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       patte = Math.floor(2 * Math.random() + 1)
-      carapace = Math.floor((2 - 0.75) * Math.random())
-      corne = Math.floor((2 - 0.85) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-        cols = Math.floor(60 * Math.random() + 70)
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      cols = Math.floor(60 * Math.random() + 70)
     } else {
       patte = Math.floor(2 * Math.random() + 1)
-      carapace = Math.floor((2 - 0.85) * Math.random())
-      corne = Math.floor((2 - 0.95) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        hemolyphe = 1
+      }
       cols = Math.floor(55 * Math.random() + 65)
     }
     if (xp <= 0) {
@@ -20460,9 +20586,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Pattes de Boussier colosal: " + patte + "\n" +
-                                           ":shell: Carapace de Boussier colosal : " + carapace + "\n" +
-                                           ":dagger: Corne de Boussier colosal : "+ corne + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Patte de Bousier colosal: " + patte + "\n" +
+                                           ":shell: Carapace de Bousier colosal : " + carapace + "\n" +
+                                           ":dagger: Corne de Bousier colosal : "+ corne + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20489,20 +20615,39 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 55) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
-      crochetPoison = Math.floor(3 * Math.random())
+      crochetPoison = Math.floor(2 * Math.random() + 1)
       Peau = Math.floor(3 * Math.random())
-      queueSerpent = Math.floor((2 - 0.75)*Math.random())
-      Venin = Math.floor((2 - 0.85)*Math.random())
-      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        queueSerpent = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        Venin = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        Oeufs = 1
+      }
       cols = Math.floor(51 * Math.random() + 50)
     } else {
-      crochetPoison = Math.floor(2 * Math.random())
+      crochetPoison = Math.floor(1 * Math.random() + 1)
       Peau = Math.floor(2 * Math.random())
-      queueSerpent = Math.floor((2 - 0.90) * Math.random())
-      Venin = Math.floor((2 - 0.95) * Math.random())
-      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        queueSerpent = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        Venin = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        Oeufs = 1
+      }
       cols = Math.floor(41 * Math.random() + 40)
     }
     if (xp <= 0) {
@@ -20534,8 +20679,8 @@ bot.on('message', message => {
     let carapace = 0
     let aile = 0
     let patte = 0
-    let armeBugUneMain = 0
-    let armeKobSupDeuxMains = 0
+    let armeChitineUneMain = 0
+    let armeChitineDeuxMains = 0
     let hemolyphe = 0
     let oeufB = 0
     let cols = 0
@@ -20545,24 +20690,67 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 40) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
-      carapace = Math.floor((2 - 0.35) * Math.random())
-      aile = Math.floor((2 - 0.55) * Math.random())
-      patte = Math.floor((2 - 0.55) * Math.random())
-      armeBugUneMain = Math.floor((2 - 0.88) * Math.random())
-      armeKobSupDeuxMains = Math.floor((2 - 0.92) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 40) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        aile = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        patte = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        armeChitineUneMain = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        armeChitineDeuxMains = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(81 * Math.random() + 80)
     } else {
-      carapace = Math.floor((2 - 0.35) * Math.random())
-      aile = Math.floor((2 - 0.55) * Math.random())
-      patte = Math.floor((2 - 0.55) * Math.random())
-      armeBugUneMain = Math.floor((2 - 0.94) * Math.random())
-      armeKobSupDeuxMains = Math.floor((2 - 0.96) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        aile = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        patte = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 3) {
+        armeChitineUneMain = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 3) {
+        armeChitineDeuxMains = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(71 * Math.random() + 70)
     }
     if (xp <= 0) {
@@ -20575,10 +20763,10 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":shell: Carapace de Doryphore géant : " + carapace + "\n" +
                                            ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
-                                           ":poultry_leg:  Patte Doryphore géant : " + patte + "\n" +
+                                           ":poultry_leg: Patte de Doryphore géant : " + patte + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
-                                           ":scales: Arme bug à une main au choix : " + armeBugUneMain + "\n" +
-                                           ":scales: Arme bug à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
+                                           ":scales: Arme en chitine à une main au choix : " + armeChitineUneMain + "\n" +
+                                           ":scales: Arme en chitine à deux mains au choix : " + armeChitineDeuxMains + "\n" +
                                            ":gem: Oeuf bavant : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20601,10 +20789,19 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const LierreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
-      const LierreRare = Math.floor(2 * 0.75 * Math.random())
-      const Exp = Math.floor(6 * Math.random() + 15)
-      const LierreParfait = Math.floor(2 * 0.95 * Math.random())
+    const LierreCommun = Math.floor(2 * Math.random() + 1)
+      let LierreRare = 0
+      let LierreParfait = 0
+      const Exp = Math.floor(5 * Math.random() + 15)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        LierreRare = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        LierreParfait = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -20638,17 +20835,21 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const BoisMediocre = Math.floor(3 * Math.random() + 1)
-      const BoisCommun = Math.floor((2 - 0.75) * Math.random())
+      const BoisMediocre = Math.floor(2 * Math.random() + 1)
+      let BoisCommun = 0
       const Exp = Math.floor(5 * Math.random() + 7)
+      let rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        BoisCommun = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
       .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                                                ":deciduous_tree: Bois de séco médiocre : " + BoisMediocre + "\n" +
-                                                ":deciduous_tree: Bois de séco commun : " + BoisCommun + "\n" +
+                                                ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
+                                                ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
                                                 ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
@@ -20672,11 +20873,24 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
-      const Peau = Math.floor((2 - 0.50) * Math.random())
-      const Coeur = Math.floor((2 - 0.75) * Math.random())
-      const Oeil = Math.floor((2 - 0.75) * Math.random())
+      const Viande = Math.floor(2 * Math.random() + 1)
+      let Peau = 0
+      let Coeur = 0
+      let Oeil = 0
       const Exp = Math.floor(5 * Math.random() + 11)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        Peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Coeur = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Oeil = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -20700,12 +20914,12 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Casque bug")) {
+  if (message.content.startsWith(prefix + "Casque en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque bug :" , ":scales: C'est un casque fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Corne de boussier x2, Carapace de boussier x4, Carapace Doryphore géant x2, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du casque bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication du casque bug`")
+    .addField(":scales: Casque en chitine :" , ":scales: C'est un casque fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de bousier colossal, 4 Carapace de bousier colossal, 2 Carapace de Doryphore géant, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du casque en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication du casque en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20713,12 +20927,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epaulières bug")) {
+  if (message.content.startsWith(prefix + "Epaulières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epaulières bug :" , ":scales: Ce sont des épaulières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de boussier x2, Carapace Doryphore géant x4, Corne de boussierx2, Carapace de boussier x4, Carapace Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des épaulières bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des épaulières bug`")
+    .addField(":scales: Epaulières en chitine :" , ":scales: Ce sont des épaulières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de bousier colossal, 4 Carapace de Doryphore géant, 2 Corne de bousier colossal\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des épaulières en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des épaulières en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20726,12 +20940,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cape bug")) {
+  if (message.content.startsWith(prefix + "Cape en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape bug :" , ":scales: C'est une cape fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de serpent x3, Peau élastic de lombric irrégulier x2, Peau Neoridas x2, Hémolymphe x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la cape bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la cape bug`")
+    .addField(":scales: Cape en chitine :" , ":scales: C'est une cape faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de serpent, 2 Peau élastique de lombric irrégulier, 2 Peau de Neoridas, 1 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la cape en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la cape en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20739,12 +20953,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Plastron bug")) {
+  if (message.content.startsWith(prefix + "Plastron en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron bug :" , ":scales: C'est un plastron fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Doryphore x2, Ailles de Neoridas x3, Hémolymphe x2, Aile Doryphore géant x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron bug`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron bug`")
+    .addField(":scales: Plastron en chitine :" , ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Aile de Neoridas, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron en chitine`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20752,12 +20966,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Gantelets bug")) {
+  if (message.content.startsWith(prefix + "Gantelets en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets bug :" , ":scales: Ce sont des gantelets fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Ailles de Neoridas x3, Carapace de Boussier colosal x2, Bave de lombric irrégulier x1, Hémolymphe x2n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets bug`")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Ailes de Neoridas, 2 Carapace de Bousier colossal, 1 Bave de lombric irrégulier, 2 Hémolymphe\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20765,12 +20979,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Ceinture bug")) {
+  if (message.content.startsWith(prefix + "Ceinture en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture bug :" , ":scales: C'est une ceinture fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Queue de serpent x2, Peau de serpent x3, Peau élastic de lombric irrégulier x3, Langue de lombric irrégulier x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la ceinture bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la ceinture bug`")
+    .addField(":scales: Ceinture en chitine :" , ":scales: C'est une ceinture faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Queue de Venom, 3 Peau de Venom, 3 Peau élastique de lombric irrégulier, 2 Langue de lombric irrégulier\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la ceinture en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la ceinture en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20778,12 +20992,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Jambières bug")) {
+  if (message.content.startsWith(prefix + "Jambières en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières bug :" , ":scales: Ce sont des jambières fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace Doryphore géant x3, Patte Doryphore géant x 2, Pattes de Boussier colosal, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des jambières bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des jambières bug`")
+    .addField(":scales: Jambières en chitine :" , ":scales: Ce sont des jambières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de Doryphore géant, 2 Patte de Doryphore géant, 1 Patte de Bousier colossal, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des jambières en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des jambières en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20791,12 +21005,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bottes bug")) {
+  if (message.content.startsWith(prefix + "Bottes en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes bug :" , ":scales: Ce sont des bottes fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Pattes de Boussier colosal x4, Carapace de Boussier colosal x2, Peau élastic de lombric irrégulier x2, Hémolymphe x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des bottes bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des bottes bug`")
+    .addField(":scales: Bottes en chitine :" , ":scales: Ce sont des bottes faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte de Bousier colossal, 2 Carapace de Bousier colossal, 2 Peau élastique de lombric irrégulier, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des bottes en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des bottes en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20804,12 +21018,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Anneau bug")) {
+  if (message.content.startsWith(prefix + "Anneau en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau bug :" , ":scales: C'est un anneau fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Doryphore géant, 2 Aile Doryphore géant, 2 coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'anneau bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'anneau bug`")
+    .addField(":scales: Anneau en chitine :" , ":scales: C'est un anneau fait avec des composants d'insectes trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'anneau en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'anneau en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20817,44 +21031,29 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Amulette bug")) {
+  if (message.content.startsWith(prefix + "Amulette en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette bug :" , ":scales: C'est une amulette fait avec des composant d'insecte trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Doryphore géant, 2 Aile Doryphore géant, 2 coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'amulette bug`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette bug` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'amulette bug`")
+    .addField(":scales: Amulette en chitine :" , ":scales: C'est une amulette faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 4760 cols\n\n:large_orange_diamond: Prix de revente : 1190 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'amulette en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'amulette en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
 
-//Achat équipements bug
+//Achat équipements en chitine
 
 bot.on('message', message => {
-  const Défense = Math.floor(4 * Math.random() + 6)
-  const HP = Math.floor(6 * Math.random() + 25)
-  if (message.content.startsWith(prefix + "Achat de l'anneau bug")) {
+  if (message.content.startsWith(prefix + "Achat de l'anneau en chitine")) {
+    const Défense = Math.floor(4 * Math.random() + 6)
+    const HP = Math.floor(6 * Math.random() + 25)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  const Défense = Math.floor(4 * Math.random() + 6)
-  const HP = Math.floor(6 * Math.random() + 25)
-  if (message.content.startsWith(prefix + "Achat de l'amulette bug")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":scales: Amulette bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure en chitine sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20862,14 +21061,29 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de l'amulette en chitine")) {
+    const Défense = Math.floor(4 * Math.random() + 6)
+    const HP = Math.floor(6 * Math.random() + 25)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat du casque en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
     const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat du casque bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Casque en chitine :" , ":scales: Vous venez d'acheter' cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20877,14 +21091,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat des épaulières en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
     const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des épaulières bug")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Epaulières en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20892,14 +21106,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat du plastron en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat de la cape bug")) {
+    const Défense = Math.floor(2 * Math.random() + 2)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20907,14 +21121,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la cape en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat du plastron bug")) {
+    const Défense = Math.floor(2 * Math.random() + 2)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Cape en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20922,14 +21136,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la ceinture en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des gantelets bug")) {
+    const Défense = Math.floor(2 * Math.random() + 2)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20937,14 +21151,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat des gantelets en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat de la ceinture bug")) {
+    const Défense = Math.floor(2 * Math.random() + 2)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20952,14 +21166,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat des jambières en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des jambières bug")) {
+    const Défense = Math.floor(2 * Math.random() + 2)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -20967,47 +21181,31 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat des bottes en chitine")) {
     const HP = Math.floor(6 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 2)
-  if (message.content.startsWith(prefix + "Achat des bottes bug")) {
+    const Défense = Math.floor(2 * Math.random() + 2)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
 
-//Fabrication équipements bug
-
+//Fabrication équipements en chitine
 
 bot.on('message', message => {
-  const Défense = Math.floor(5 * Math.random() + 9)
-  const HP = Math.floor(11 * Math.random() + 30)
-  if (message.content.startsWith(prefix + "Fabrication de l'anneau bug")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'anneau en chitine")) {
+    const Défense = Math.floor(5 * Math.random() + 9)
+    const HP = Math.floor(11 * Math.random() + 30)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  const Défense = Math.floor(5 * Math.random() + 9)
-  const HP = Math.floor(11 * Math.random() + 30)
-  if (message.content.startsWith(prefix + "Fabrication de l'amulette bug")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":scales: Amulette bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21015,14 +21213,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication du casque bug")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'amulette en chitine")) {
+    const Défense = Math.floor(5 * Math.random() + 9)
+    const HP = Math.floor(11 * Math.random() + 30)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21030,14 +21228,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des épaulières bug")) {
+  if (message.content.startsWith(prefix + "Fabrication du casque en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Casque en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21045,14 +21243,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication de la cape bug")) {
+  if (message.content.startsWith(prefix + "Fabrication des épaulières en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Epaulières en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21060,14 +21258,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication du plastron bug")) {
+  if (message.content.startsWith(prefix + "Fabrication du plastron en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21075,14 +21273,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des gantelets bug")) {
+  if (message.content.startsWith(prefix + "Fabrication de la cape en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Cape en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21090,14 +21288,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication de la ceinture bug")) {
+  if (message.content.startsWith(prefix + "Fabrication de la ceinture en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21105,14 +21303,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des jambières bug")) {
+  if (message.content.startsWith(prefix + "Fabrication des gantelets en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21120,30 +21318,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 30)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Fabrication des bottes bug")) {
+  if (message.content.startsWith(prefix + "Fabrication des jambières en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-
-bot.on('message', message => {
-  const Défense = Math.floor(5 * Math.random() + 8)
-  const HP = Math.floor(11 * Math.random() + 20)
-  if (message.content.startsWith(prefix + "Découverte de l'anneau bug")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":scales: Anneau bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21151,14 +21333,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = Math.floor(5 * Math.random() + 8)
-  const HP = Math.floor(11 * Math.random() + 20)
-  if (message.content.startsWith(prefix + "Découverte de l'amulette bug")) {
+  if (message.content.startsWith(prefix + "Fabrication des bottes en chitine")) {
+    const HP = Math.floor(11 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21166,14 +21348,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte du casque bug")) {
+  if (message.content.startsWith(prefix + "Découverte de l'anneau en chitine")) {
+      const Défense = Math.floor(5 * Math.random() + 8)
+      const HP = Math.floor(11 * Math.random() + 20)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21181,14 +21363,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des épaulières bug")) {
+  if (message.content.startsWith(prefix + "Découverte de l'amulette en chitine")) {
+      const Défense = Math.floor(5 * Math.random() + 8)
+      const HP = Math.floor(11 * Math.random() + 20)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21196,14 +21378,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte de la cape bug")) {
+  if (message.content.startsWith(prefix + "Découverte du casque en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Casque en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21211,14 +21393,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte du plastron bug")) {
+  if (message.content.startsWith(prefix + "Découverte des épaulières en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Epaulières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21226,14 +21408,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des gantelets bug")) {
+  if (message.content.startsWith(prefix + "Découverte du plastron en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21241,14 +21423,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte de la ceinture bug")) {
+  if (message.content.startsWith(prefix + "Découverte de la cape en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Cape en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21256,14 +21438,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des jambières bug")) {
+  if (message.content.startsWith(prefix + "Découverte de la ceinture en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21271,14 +21453,44 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des bottes bug")) {
+  if (message.content.startsWith(prefix + "Découverte des gantelets en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes bug :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Gantlets en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Découverte des jambières en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Découverte des bottes en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21392,7 +21604,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Boa :" , ":crossed_swords: Le Boa tente de mordre sa cible mais il est pas assez rapide et n'arrive pas à le toucher...")
+      .addField(":crossed_swords: Boa :" , ":crossed_swords: Le Boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21402,7 +21614,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Boa :" ,":crossed_swords: Le Boa fonce rapidement sur sa cible en poussant un petit crie avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Boa :" ,":crossed_swords: Le Boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21429,7 +21641,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21478,8 +21690,8 @@ bot.on('message', message => {
         }, 86400000);
         const bourdonFlaneur = Math.floor(3 * Math.random() + 2)
         const taurusChargeur= Math.floor(3 * Math.random() + 2)
-        const fortTaurus = Math.floor(2 * Math.random() + 1)
-        const taurusLourd = Math.floor(2 * 0.75 * Math.random())
+        const fortTaurus = Math.floor(3 * Math.random() + 1)
+        const taurusLourd = Math.floor(2 * Math.random() + 1)
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
@@ -21507,11 +21719,19 @@ let cont = message.content.slice(prefix.length).split(" ");
 const args = cont.slice(1);
 if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
   let lvl = args.slice(3).join(" : ");
-  const control = Math.floor(120 * Math.random() + 120)
-  let xp = control - (lvl * 6)
-  const cols = Math.floor(140 * Math.random() + 140)
-  const potionAmelio = Math.floor(2 * 0.25 * Math.random())
-  const stuffTaurus = Math.floor(2 * 0.80 * Math.random())
+  const control = Math.floor(150 * Math.random() + 150)
+  let xp = control - (lvl * 7)
+  const cols = Math.floor(130 * Math.random() + 130)
+  let potionAmelio = 0
+  let stuffTaurus = 0
+  let roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 50) {
+    potionAmelio = 1
+  }
+  roll = Math.floor(100 * Math.random() + 1);
+  if (roll <= 40) {
+    stuffTaurus = 1
+  }
   if (xp <= 0) {
     xp = 0
   }
@@ -21520,11 +21740,11 @@ if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.discordapp.com/attachments/545062628272373770/596799566599291030/7mDgwOG5iCvWH9VRjHQtzxcMOI4372x249.png")
-  .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+  .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
                                                   ":syringe: Potion améliorée : " + potionAmelio + "\n" +
-                                                  ":scales: Equipement de bug au choix : " + stuffTaurus)
+                                                  ":scales: Equipement de taurus au choix : " + stuffTaurus)
   .setTimestamp()
   message.channel.send({embed})
 }
@@ -21537,7 +21757,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Clairière combat")) {
     let joueurs = args.slice(2).join(" : ");
-if (/*talkedRecently.has(message.author.id+1000)*/false) {
+if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21681,7 +21901,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance ?!")
+      .addField(":crossed_swords: Bourdon flâneur :" , ":crossed_swords: Le Bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance !")
       message.channel.send({embed})
     }
     if (36 <= roll && roll <= 97){
@@ -21689,7 +21909,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute viollemment vous perdez " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute violemment. Vous perdez " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21698,7 +21918,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache a son propre dard, mourrant dans le procédée. Il vous inflige  " + degatCrit + " de dégat de poison perce armure. ")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache à son propre dard, mourrant dans le procédé. Il vous inflige  " + degatCrit + " de dégâts de poison perce armure. ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21716,7 +21936,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur piétine le sol a plusieur reprise mais n'attaque pas. Vous avez de la chance !")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur piétine le sol à plusieurs reprises mais n'attaque pas. Vous avez de la chance !")
       message.channel.send({embed})
     }
     if (31 <= roll && roll <= 80){
@@ -21724,7 +21944,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec ses cornes en avant. Il vous percutte violemment vous faisant perdre " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec ses cornes en avant. Il vous percute violemment vous faisant perdre " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21733,7 +21953,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauté dans les airs et d'écraser ses pieds contre vous violemment, vous etes projeté au sol et perdez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. ")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauter dans les airs et d'écraser ses pieds contre vous violemment. Vous êtes projeté au sol et perdez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21751,7 +21971,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort taurus adroit :" , ":crossed_swords: Le Fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance!")
+      .addField(":crossed_swords: Fort taurus adroit :" , ":crossed_swords: Le Fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 80){
@@ -21768,7 +21988,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort taurus adroit:" , ":crossed_swords: Le Fort taurus adroit vous lance des une hachettes très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous fait saigner " + saignement + " pendant 3 tours.")
+      .addField(":crossed_swords: Fort taurus adroit:" , ":crossed_swords: Le Fort taurus adroit vous lance une hachette très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous inflige " + saignement + " dégâts de saignement pendant 3 tours.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21780,14 +22000,14 @@ bot.on('message', message => {
     const degat = Math.floor(31 * Math.random() + 130)
     const degatraté = Math.floor(21 * Math.random() + 40)
     const degatcrit = Math.floor(31 * Math.random() + 150)
-    const cible = Math.floor(5 * Math.random() + 1)
+    const cible = Math.floor(4 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégats.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégâts.")
       message.channel.send({embed})
     }
     if (21 <= roll & roll <= 55){
@@ -21795,7 +22015,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense ou interception possible pour vous. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense ou interception possible. Vous et le Taurus lourd ne pouvez plus attaquer. \n A chaque tour du joueur capturé il peut tenter un =Roll pour s'échapper, si il réusit le joueur peut profiter de son tour d'attaque.\n A chaque tour du Taurus Lourd, il inflige " + degatraté + " points de dégâts de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible, il peut uniquement tenter d'esquiver. S'il réussit, le joueur est libéré et les effets ainsi que les dégâts de l'attaque sont infligés au Taurus lourd.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21804,7 +22024,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueur(s) et vous inflige " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueurs et leur inflige " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21863,7 +22083,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinté sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + " points de dégâts.")
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinter sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + " points de dégâts.")
       message.channel.send({embed})
     }
     if (76 <= roll){
@@ -21890,7 +22110,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en essayant de d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en essayant d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (61 <= roll){
@@ -21898,7 +22118,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Et pendant ce temps il recule pour être hors de porté. ")
+      .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Pendant ce temps, il recule pour être hors de portée. ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21918,7 +22138,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attaque vous lui infligez " + paradeRatee + " points de dégâts")
+      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attaque. Vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
     if (91 <= roll){
@@ -21926,7 +22146,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous etes sonnez et ne pouvez pas vous défendre ou attaquer pour un tour.")
+      .addField(":shield: Taurus lourd :" , ":shield: Le Taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous êtes sonné et ne pouvez pas vous défendre ou attaquer pendant un tour.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21954,22 +22174,53 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 30) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       carapace = Math.floor(2 * Math.random() + 1)
-      antenne  = Math.floor((2 - 0.55) * Math.random())
-      ailes = Math.floor((2 - 0.55) * Math.random())
-      hemolymphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      oeil = Math.floor((2 - 0.96) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        antenne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        oeil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        hemolymphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(40 * Math.random() + 40)
     } else {
       carapace = Math.floor(2 * Math.random() + 1)
-      alies = Math.floor((2 - 0.70) * Math.random())
-      antenne  = Math.floor((2 - 0.70) * Math.random())
-      hemolymphe = Math.floor((2 - 0.98) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      oeil = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        antenne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        oeil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolymphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -21981,7 +22232,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
-                                           ":butterfly: Ailles de bourdon flâneur  : " + ailes+ "\n" +
+                                           ":butterfly: Ailes de bourdon flâneur  : " + ailes+ "\n" +
                                            ":syringe: Antenne de bourdon flâneur: " + antenne  + "\n" +
                                            ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
                                            ":alembic: Hemolymphe : " + hemolymphe + "\n" +
@@ -22004,7 +22255,7 @@ bot.on('message', message => {
     let corne = 0
     let viande = 0
     let oeufB = 0
-    let scalpe = 0
+    let scalp = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 5
@@ -22012,22 +22263,53 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 40) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.75) * Math.random())
-      corne = Math.floor((2 - 0.85) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      scalpe = Math.floor((2 - 0.96) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(41 * Math.random() + 40)
     } else {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.85) * Math.random())
-      corne = Math.floor((2 - 0.95) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      scalpe = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -22040,9 +22322,9 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":knife: Peau de Taurus : " + peau + "\n" +
                                            ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poile de Taurus : " + poil + "\n" +
+                                           ":ox: Poil de Taurus : " + poil + "\n" +
                                            ":dagger: Corne de Taurus : "+ corne + "\n" +
-                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":bacon: Scalp de Taurus : " + scalp + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -22062,7 +22344,7 @@ bot.on('message', message => {
     let corne = 0
     let viande = 0
     let oeufB = 0
-    let scalpe = 0
+    let scalp = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 5
@@ -22070,22 +22352,53 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 40) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.75) * Math.random())
-      corne = Math.floor((2 - 0.85) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      scalpe = Math.floor((2 - 0.96) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(41 * Math.random() + 40)
     } else {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.85) * Math.random())
-      corne = Math.floor((2 - 0.95) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      scalpe = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -22098,9 +22411,9 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus lourd : " + peau + "\n" +
                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poile de Taurus lourd : " + poil + "\n" +
+                                           ":ox: Poil de Taurus lourd : " + poil + "\n" +
                                            ":dagger: Corne de Taurus : " + corne + "\n" +
-                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":bacon: Scalp de Taurus : " + scalp + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -22120,7 +22433,8 @@ bot.on('message', message => {
     let corne = 0
     let viande = 0
     let oeufB = 0
-    let scalpe = 0
+    let scalp = 0
+    let cuirasse = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 5
@@ -22128,22 +22442,61 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 35) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.75) * Math.random())
-      corne = Math.floor((2 - 0.85) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      scalpe = Math.floor((2 - 0.96) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        cuirasse = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(41 * Math.random() + 40)
     } else {
       peau = Math.floor(2 * Math.random() + 1)
-      poil = Math.floor((2 - 0.85) * Math.random())
-      corne = Math.floor((2 - 0.95) * Math.random())
-      viande = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      scalpe = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 30) {
+        viande = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        poil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        scalp = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        cuirasse = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -22156,9 +22509,10 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus adroit : " + peau + "\n" +
                                            ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poile de Taurus adroit : " + poil + "\n" +
+                                           ":ox: Poil de Taurus adroit : " + poil + "\n" +
                                            ":dagger: Corne de Taurus : "+ corne + "\n" +
-                                           ":bacon: Scalpe de Taurus : " + scalpe + "\n" +
+                                           ":bacon: Scalp de Taurus : " + scalp + "\n" +
+                                           ":beginner: Cuirasse de Fort taurus adroit : " + cuirasse + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -22182,10 +22536,19 @@ bot.off('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const LierreAntidote= Math.floor(2 * 0.5 * Math.random() + 1)
-      const LierreSoin = Math.floor(2 * 0.75 * Math.random())
-      const Exp = Math.floor(6 * Math.random() + 15)
-      const LierreParfait = Math.floor(2 * 0.95 * Math.random())
+      const LierreAntidote= Math.floor(2 * Math.random() + 1)
+      let LierreSoin = 0
+      let LierreAir = 0
+      const Exp = Math.floor(5 * Math.random() + 15)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        LierreSoin = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        LierreAir = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -22194,7 +22557,7 @@ bot.off('message', message => {
       .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                                ":wilted_rose: Lierre antidote : " + LierreAntidote+ "\n" +
                                                ":wilted_rose: Lierre soin : " + LierreSoin + "\n" +
-                                               ":wilted_rose: Lierre d'air : " + LierreParfait + "\n" +
+                                               ":wilted_rose: Lierre d'air : " + LierreAir + "\n" +
                                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
@@ -22219,16 +22582,27 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const FerMediocre = Math.floor(2 * 0.5 * Math.random() + 1)
-      const FerCommun = Math.floor(2 * 0.80 * Math.random())
-      const FerRare = Math.floor(2 * 0.95 * Math.random())
+      const Sel = Math.floor(2 * Math.random() + 2)
+      const FerMediocre = Math.floor(2 * Math.random() + 1)
+      let FerCommun = 0
+      let FerRare = 0
       const Exp = Math.floor(5 * Math.random() + 11)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        FerCommun = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        FerRare = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
       .addField(":pick: Minage :" , ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                    ":pick: Pierre de sel : " + Sel + "\n" +
                                     ":pick: Fer médiocre : " + FerMediocre + "\n" +
                                     ":pick: Fer commun : " + FerCommun + "\n" +
                                     ":pick: Fer rare : " + FerRare + "\n" +
@@ -22255,11 +22629,24 @@ bot.off('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
-      const Peau = Math.floor((2 - 0.50) * Math.random())
-      const Coeur = Math.floor((2 - 0.75) * Math.random())
-      const Oeil = Math.floor((2 - 0.75) * Math.random())
+      const Viande = Math.floor(2 * Math.random() + 1)
+      let Peau = 0
+      let Coeur = 0
+      let Oeil = 0
       const Exp = Math.floor(5 * Math.random() + 11)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        Peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Coeur = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        Oeil = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -22288,7 +22675,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque taurus :" , ":scales: C'est un casque fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Corne de Taurus x4, Carapace de bourdon flâneur x2, Scalpe de Taurus x2, Poile de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du casque taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication du casque taurus`")
+    .addField(":scales: Casque taurus :" , ":scales: C'est un casque fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Corne de Taurus, 2 Carapace de bourdon flâneur, 2 Scalp de Taurus, 2 Poil de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du casque taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du casque taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication du casque taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22301,7 +22688,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epaulières taurus :" , ":scales: Ce sont des épaulières fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Bourdon flâneur x2, Cuirasse taurus adroit x4, Corne de Taurus x2, Peau de Taurus lourd x4\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de épaulières taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des épaulières taurus`")
+    .addField(":scales: Epaulières taurus :" , ":scales: Ce sont des épaulières faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Bourdon flâneur, 4 Cuirasse de taurus adroit, 2 Corne de Taurus, 4 Peau de Taurus lourd\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de épaulières taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des épaulières taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des épaulières taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22314,7 +22701,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape taurus :" , ":scales: C'est une cape fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet :Peau de Taurus adroit  x3, Aile de Bourdon flâneur x2, Poile de Taurus x2, Scalpe de Taurus x1\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la cape taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la cape taurus`")
+    .addField(":scales: Cape taurus :" , ":scales: C'est une cape faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de Taurus adroit, 2 Aile de Bourdon flâneur, 2 Poil de Taurus, 1 Scalp de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la cape taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la cape taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la cape taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22327,7 +22714,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron taurus :" , ":scales: C'est un plastron fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de Taurus lourd x2, Scalpe de Taurus x3, Poile de Taurus lourd x2, Anttenne de Bourdon flâneur x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron taurus`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron taurus`")
+    .addField(":scales: Plastron taurus :" , ":scales: C'est un plastron fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peau de Taurus lourd, 3 Scalp de Taurus, 2 Poil de Taurus lourd, 2 Antenne de Bourdon flâneur\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron taurus`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22340,7 +22727,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets taurus :" , ":scales: Ce sont des gantelets fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Carapace de Bourdon flâneur x3, Cuirasse taurus adroit x2, Peau de Taurus lourd x1, Poile de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets taurus`")
+    .addField(":scales: Gantelets taurus :" , ":scales: Ce sont des gantelets faits avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de Bourdon flâneur, 2 Cuirasse de taurus adroit, 1 Peau de Taurus lourd, 2 Poil de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22353,7 +22740,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture taurus :" , ":scales: C'est une ceinture fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Poile de Taurus lourd x2, Peau de Taurus lourd x3, Peau de Taurus x3, Corne de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la ceinture taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la ceinture taurus`")
+    .addField(":scales: Ceinture taurus :" , ":scales: C'est une ceinture faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Poil de Taurus lourd, 3 Peau de Taurus lourd, 3 Peau de Taurus, 2 Corne de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la ceinture taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la ceinture taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de la ceinture taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22366,7 +22753,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières taurus :" , ":scales: Ce sont des jambières fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Cuirasse taurus adroit x3, Anttenne de Bourdon flâneur x 2, Carapace de Bourdon flâneur x1 , Scalpe de Taurusre x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des jambières taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des jambières taurus`")
+    .addField(":scales: Jambières taurus :" , ":scales: Ce sont des jambières faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Cuirasse de taurus adroit, 2 Antenne de Bourdon flâneur, 1 Carapace de Bourdon flâneur, 2 Scalpe de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des jambières taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des jambières taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des jambières taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22379,7 +22766,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes taurus :" , ":scales: Ce sont des bottes fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Peau de Taurus x4, Corne de Taurus x2, Cuirasse taurus adroit x2, Scalpe de Taurus x2\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des bottes taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des bottes taurus`")
+    .addField(":scales: Bottes taurus :" , ":scales: Ce sont des bottes faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de Taurus, 2 Corne de Taurus, 2 Cuirasse de fort taurus adroit, 2 Scalp de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1880 cols\n\n:large_orange_diamond: Prix de revente : 470 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des bottes taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des bottes taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des bottes taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22392,7 +22779,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau taurus :" , ":scales: C'est un anneau fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Taurus lourd, 3 Cuirasse taurus adroit, 2 Scalpe de Taurus, 2 coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 5060 cols\n\n:large_orange_diamond: Prix de revente : 1265 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'anneau taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'anneau taurus`")
+    .addField(":scales: Anneau taurus :" , ":scales: C'est un anneau fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Taurus lourd, 3 Cuirasse de fort taurus adroit, 2 Scalp de Taurus, 2 Coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 5060 cols\n\n:large_orange_diamond: Prix de revente : 1265 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'anneau taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'anneau taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'anneau taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22405,7 +22792,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette taurus :" , ":scales: C'est une amulette fait avec des composant de taurus trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace Taurus lourd, 3 Cuirasse taurus adroit, 2 Scalpe de Taurus, 2 coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 5060 cols\n\n:large_orange_diamond: Prix de revente : 1265 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'amulette taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'amulette taurus`")
+    .addField(":scales: Amulette taurus :" , ":scales: C'est une amulette faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Taurus lourd, 3 Cuirasse de fort taurus adroit, 2 Scalp de Taurus, 2 Coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 5060 cols\n\n:large_orange_diamond: Prix de revente : 1265 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'amulette taurus`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'amulette taurus` \n\n:keyboard: Si fabriquez cet objet `=Fabrication de l'amulette taurus`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22413,135 +22800,135 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-  const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat du casque taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Casque taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat du casque taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-  const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat des épaulières taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Épaulières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat des épaulières taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Epaulières taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat de la cape taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Cape taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat du plastron taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat du plastron taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Plastron taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat de la cape taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat des gantelets taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Gantelets taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat de la ceinture taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat de la ceinture taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Ceinture taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat des gantelets taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat des jambières taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Jambières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat des jambières taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-  const Dégâts = Math.floor(1 * Math.random() + 0)
-const HP = Math.floor(11 * Math.random() + 40)
-if (message.content.startsWith(prefix + "Achat des bottes taurus")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Bottes taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Achat des bottes taurus")) {
+    const Dégâts = Math.floor(1 * Math.random() + 0)
+    const HP = Math.floor(11 * Math.random() + 40)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 11)
-    const HP = Math.floor(16 * Math.random() + 50)
-    const Def = Math.floor(3 * Math.random() + 0)
     if (message.content.startsWith(prefix + "Découverte de l'anneau taurus")) {
+        const Dégâts = Math.floor(3 * Math.random() + 11)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const Def = Math.floor(3 * Math.random() + 0)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Anneau taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Anneau taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22549,15 +22936,15 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 11)
-    const HP = Math.floor(16 * Math.random() + 50)
-    const Def = Math.floor(3 * Math.random() + 0)
     if (message.content.startsWith(prefix + "Découverte de l'amulette taurus")) {
+        const Dégâts = Math.floor(3 * Math.random() + 11)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const Def = Math.floor(3 * Math.random() + 0)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Amulette taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Amulette taurus :" , ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22565,14 +22952,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
     if (message.content.startsWith(prefix + "Découverte du casque taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Casque taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Casque taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22580,14 +22967,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
     if (message.content.startsWith(prefix + "Découverte des épaulières taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Épaulières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Epaulières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22595,29 +22982,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
-    if (message.content.startsWith(prefix + "Découverte de la cape taurus")) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":scales: Cape taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  });
-
-  bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
     if (message.content.startsWith(prefix + "Découverte du plastron taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Plastron taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Plastron taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22625,14 +22997,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
-    if (message.content.startsWith(prefix + "Découverte des gantelets taurus")) {
+    if (message.content.startsWith(prefix + "Découverte de la cape taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Gantelets taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Cape taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22640,14 +23012,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
     if (message.content.startsWith(prefix + "Découverte de la ceinture taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Ceinture taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Ceinture taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22655,14 +23027,29 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
+    if (message.content.startsWith(prefix + "Découverte des gantelets taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Gantelets taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte des jambières taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Jambières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Jambières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22670,14 +23057,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(3 * Math.random() + 1)
-    const HP = Math.floor(11 * Math.random() + 45)
     if (message.content.startsWith(prefix + "Découverte des bottes taurus")) {
+      const Dégâts = Math.floor(3 * Math.random() + 1)
+      const HP = Math.floor(11 * Math.random() + 45)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Bottes taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Bottes taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22685,15 +23072,15 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(4 * Math.random() + 11)
-    const HP = Math.floor(16 * Math.random() + 55)
-    const Def = Math.floor(3 * Math.random() + 1)
     if (message.content.startsWith(prefix + "Fabrication de l'anneau taurus")) {
+      const Dégâts = Math.floor(4 * Math.random() + 11)
+      const HP = Math.floor(16 * Math.random() + 55)
+      const Def = Math.floor(3 * Math.random() + 1)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Anneau taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Anneau taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22701,15 +23088,15 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(4 * Math.random() + 11)
-    const HP = Math.floor(16 * Math.random() + 55)
-    const Def = Math.floor(3 * Math.random() + 1)
     if (message.content.startsWith(prefix + "Fabrication de l'amulette taurus")) {
+      const Dégâts = Math.floor(4 * Math.random() + 11)
+      const HP = Math.floor(16 * Math.random() + 55)
+      const Def = Math.floor(3 * Math.random() + 1)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Amulette taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Amulette taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Def+ "\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22717,14 +23104,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
     if (message.content.startsWith(prefix + "Fabrication du casque taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Casque taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Casque taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22732,14 +23119,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
     if (message.content.startsWith(prefix + "Fabrication des épaulières taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Épaulières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Epaulières taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22747,29 +23134,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
-    if (message.content.startsWith(prefix + "Fabrication de la cape taurus")) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":scales: Cape taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
-    }
-  });
-
-  bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
     if (message.content.startsWith(prefix + "Fabrication du plastron taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Plastron taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Plastron taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22777,14 +23149,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
-    if (message.content.startsWith(prefix + "Fabrication des gantelets taurus")) {
+    if (message.content.startsWith(prefix + "Fabrication de la cape taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Gantelets taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Cape taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22792,14 +23164,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
     if (message.content.startsWith(prefix + "Fabrication de la ceinture taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Ceinture taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Ceinture taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22807,14 +23179,14 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
-    if (message.content.startsWith(prefix + "Fabrication des jambières taurus")) {
+    if (message.content.startsWith(prefix + "Fabrication des gantelets taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Jambières taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Gantelets taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22822,14 +23194,29 @@ bot.on('message', message => {
   });
 
   bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 2)
-    const HP = Math.floor(16 * Math.random() + 50)
-    if (message.content.startsWith(prefix + "Fabrication des bottes taurus")) {
+    if (message.content.startsWith(prefix + "Fabrication du jambières taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Bottes taurus :" , ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus d'armure +3 si aux moins 4 partie de l'armure sont équipé.")
+      .addField(":scales: Jambières taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  });
+
+  bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du bottes taurus")) {
+      const Dégâts = Math.floor(2 * Math.random() + 2)
+      const HP = Math.floor(16 * Math.random() + 50)
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":scales: Bottes taurus :" , ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " +HP+ "\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Bonus de 3 points d'armure si au moins 4 parties de l'armure sont équipées.")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22842,7 +23229,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":egg: Oeuf brisé :" , ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
+    .addField(":egg: Oeuf brisé :" , ":egg: C'est un oeuf assez étrange, avec une allure qui pourrait faire penser qu'il est sur le point de se briser, qui renferme parfois un bébé animal trouvable dans le palier 2 !")
     .addField("Prix d'achat :" , "8000 cols")
     .addField("Prix de revente :" , "2000 cols")
     .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :" , "=Achat/découverte d'un Oeuf brisé")
@@ -22854,7 +23241,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
-  if (message.content.startsWith(prefix + "Achat/découverte d'un Oeuf brisé")) {
+  if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf brisé")) {
     if(A <= 60){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -22870,7 +23257,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez une vachette!")
+      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez une vachette !")
       .addField(":egg: vachette :" ,":egg: Confère 150 HP max supplémentaires !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
@@ -22881,8 +23268,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez un bébé boeuf!")
-      .addField(":egg: Bébé boeuf :" ,":egg: Confère 20 Dégâts max supplémentaires !")
+      .addField(":egg: Oeuf brisé" , ":egg: En ouvrant l'Oeuf brisé, vous découvrez un bébé boeuf !")
+      .addField(":egg: Bébé boeuf :" ,":egg: Confère 20 points de dégâts supplémentaires !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22920,7 +23307,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Gros bébé taurus :" , ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoque...")
+      .addField(":crossed_swords: Gros bébé taurus :" , ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoc...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22956,7 +23343,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Petit taurus malin :" ,":crossed_swords: Petit taurus malin attaque et brise la défense du monstre en l'immobilisant pour une attaque!")
+      .addField(":crossed_swords: Petit taurus malin :" ,":crossed_swords: Petit taurus malin attaque et brise la défense du monstre, l'immobilisant pour une attaque!")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -22965,7 +23352,7 @@ bot.on('message', message => {
 });
 
 // Vallée | Description
-
+/*
 bot.on('message', message => {
   if (message.content === (prefix) + "Vallée"){
     const embed = new Discord.RichEmbed()
@@ -22976,7 +23363,7 @@ bot.on('message', message => {
                                         ":wilted_rose: Pour cueillir, niveau 9 requis dans 'Cueilleur' :\n :wilted_rose: `=Vallée cueillir`\n\n" +
                                         ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Vallée chasser`\n\n" +
                                         ":pick: Pour miner, niveau 7 minimum requis dans 'Mineur' :\n:pick: `=Vallée miner`\n\n" +
-                                        ":book: Pour avoir une quête :\n:book: `=Vallée quête`")
+                                        ":book: Pour avoir une quête :\n:book: `=Vallée quête`");
     .setImage("https://cdn.discordapp.com/attachments/530057837334757396/594613089538801670/fe5008595f73437e91eaeb974b360f0b.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -24617,16 +25004,16 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+*/
 // Equipements
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Equipements bug")) {
+  if (message.content.startsWith(prefix + "Equipements en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des équipements bug :" , "=Casque bug\n=Epaulières bug\n=Cape bug\n=Plastron bug\n=Ceinture bug\n=Gantelets bug\n=Jambières bug\n=Bottes bug")
+    .addField(":scales: Liste des équipements en chitine :" , "=Casque en chitine\n=Epaulières en chitine\n=Cape en chitine\n=Plastron en chitine\n=Ceinture en chitine\n=Gantelets en chitine\n=Jambières en chitine\n=Bottes en chitine")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24645,7 +25032,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Equipements vachic")) {
     const embed = new Discord.RichEmbed()
@@ -24671,14 +25058,14 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+*/
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bijoux bug")) {
+  if (message.content.startsWith(prefix + "Bijoux en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des bijoux bug :" , "=Anneau bug\n=Amulette bug")
+    .addField(":scales: Liste des bijoux en chitine :" , "=Anneau en chitine\n=Amulette en chitine")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24697,7 +25084,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bijoux vachic")) {
     const embed = new Discord.RichEmbed()
@@ -24723,16 +25110,16 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
-// Arme bug
+*/
+// Arme en chitine
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Armes bug")) {
+  if (message.content.startsWith(prefix + "Armes en chitine")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Liste des armes bug :" , "=Masse bug à deux mains\n=Masse bug à une main\n=Rapière bug à deux mains\n=Rapière bug à une main\n=Katana bug à deux mains\n=Katana bug à une main\n=Epée bug à deux mains\n=Epée bug à une main\n=Cimeterre bug à deux mains\n=Cimeterre bug à une main\n=Hache bug à deux mains\n=Hache bug à une main\n=Glaive bug à deux mains\n=Dague bug à une main\n=Bouclier bug à une main")
+    .addField(":scales: Liste des armes en chitine :" , "=Masse en chitine à deux mains\n=Masse en chitine à une main\n=Rapière en chitine à deux mains\n=Rapière en chitine à une main\n=Katana en chitine à deux mains\n=Katana en chitine à une main\n=Epée en chitine à deux mains\n=Epée en chitine à une main\n=Cimeterre en chitine à deux mains\n=Cimeterre en chitine à une main\n=Hache en chitine à deux mains\n=Hache en chitine à une main\n=Glaive en chitine à deux mains\n=Dague en chitine à une main\n=Bouclier en chitine à une main")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24740,12 +25127,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epée bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Epée en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée bug à deux mains :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée bug à deux mains`")
+    .addField(":scales: Epée en chitine à deux mains :" , ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24753,12 +25140,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Hache bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Hache en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache bug à deux mains :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache bug à deux mains`")
+    .addField(":scales: Hache en chitine à deux mains :" , ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24766,12 +25153,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Masse bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Masse en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse bug à deux mains :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  bug à deux mains`")
+    .addField(":scales: Masse en chitine à deux mains :" , ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24779,12 +25166,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Rapière bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Rapière en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière bug à deux mains :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière bug à deux mains`")
+    .addField(":scales: Rapière en chitine à deux mains :" , ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24792,12 +25179,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Glaive bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Glaive en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive bug à deux mains :" , ":scales: C'est un glaive faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière bug à deux mains`")
+    .addField(":scales: Glaive en chitine à deux mains :" , ":scales: C'est un glaive fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24805,12 +25192,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cimeterre bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Cimeterre en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre bug à deux mains :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre bug à deux mains`")
+    .addField(":scales: Cimeterre en chitine à deux mains :" , ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24818,12 +25205,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Katana bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Katana en chitine à deux mains")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana bug à deux mains :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte Doryphore géant, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana bug à deux mains`")
+    .addField(":scales: Katana en chitine à deux mains :" , ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24831,12 +25218,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Epée bug à une main")) {
+  if (message.content.startsWith(prefix + "Epée en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de bug à un main :" , ":scales: C'est une épée faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée bug à une main`")
+    .addField(":scales: Epée en chitine à un main :" , ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24844,12 +25231,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Dague bug à une main")) {
+  if (message.content.startsWith(prefix + "Dague en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de bug à un main :" , ":scales: C'est une dague faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague bug à une main`")
+    .addField(":scales: Dague en chitine à un main :" , ":scales: C'est une dague faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24857,12 +25244,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Masse bug à une main")) {
+  if (message.content.startsWith(prefix + "Masse en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de bug à un main :" , ":scales: C'est une masse faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse bug à une main`")
+    .addField(":scales: Masse en chitine à un main :" , ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24870,12 +25257,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Hache bug à une main")) {
+  if (message.content.startsWith(prefix + "Hache en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de bug à un main :" , ":scales: C'est une hache faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache bug à une main`")
+    .addField(":scales: Hache en chitine à un main :" , ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24883,12 +25270,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cimeterre bug à une main")) {
+  if (message.content.startsWith(prefix + "Cimeterre en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de bug à un main :" , ":scales: C'est un cimeterre faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre bug à une main`")
+    .addField(":scales: Cimeterre en chitine à un main :" , ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24896,12 +25283,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Katana bug à une main")) {
+  if (message.content.startsWith(prefix + "Katana en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de bug à un main :" , ":scales: C'est un katana faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana bug à une main`")
+    .addField(":scales: Katana en chitine à un main :" , ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24909,12 +25296,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Rapière bug à une main")) {
+  if (message.content.startsWith(prefix + "Rapière en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de bug à un main :" , ":scales: C'est une rapière faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière bug à une main`")
+    .addField(":scales: Rapière en chitine à un main :" , ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24922,28 +25309,28 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Bouclier bug à une main")) {
+  if (message.content.startsWith(prefix + "Bouclier en chitine à une main")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier de bug à un main :" , ":scales: C'est un bouclier faîte a partir des monstre insect du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte Doryphore géant, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier bug à une main`")
+    .addField(":scales: Bouclier en chitine à un main :" , ":scales: C'est un bouclier fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
 
-// Arme bug fabrication
+// Arme en chitine fabrication
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de l'épée bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Epée en chitine à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24951,13 +25338,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la hache bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la hache en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Hache en chitine à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24965,13 +25352,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la masse bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la masse en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Masse en chitine à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24979,13 +25366,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du glaive bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du glaive en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Glaive en chitine à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -24993,13 +25380,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du katana bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du katana en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Katana en chitine à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25007,13 +25394,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la rapière bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication de la rapière en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Rapière en chitine à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25021,13 +25408,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du cimeterre bug à deux mains")) {
+  if (message.content.startsWith(prefix + "Fabrication du cimeterre en chitine à deux mains")) {
     const Dégâts = Math.floor(10 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre bug à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Cimeterre en chitine à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25035,13 +25422,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de l'épée bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Epée en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25049,13 +25436,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la masse bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la masse en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Masse en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25063,13 +25450,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la hache bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la hache en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Hache en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25077,13 +25464,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la rapière bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la rapière en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Rapière en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25091,13 +25478,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du cimeterre bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du cimeterre en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Cimeterre en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25105,13 +25492,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication de la dague bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication de la dague en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Dague en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25120,14 +25507,14 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  const Défense = Math.floor(3 * Math.random() + 8)
-  const HP = Math.floor(11 * Math.random() + 25)
-  if (message.content.startsWith(prefix + "Fabrication du bouclier bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du bouclier en chitine à une main")) {
+    const Défense = Math.floor(3 * Math.random() + 8)
+    const HP = Math.floor(11 * Math.random() + 25)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
+    .addField(":scales: Bouclier en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25135,13 +25522,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Fabrication du katana bug à une main")) {
+  if (message.content.startsWith(prefix + "Fabrication du katana en chitine à une main")) {
     const Dégâts = Math.floor(5 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana bug à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
+    .addField(":scales: Katana en chitine à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts)
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25169,7 +25556,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de taurus à deux mains :" , ":scales: C'est une épée faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée de taurus à deux mains`")
+    .addField(":scales: Epée de taurus à deux mains :" , ":scales: C'est une épée faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse de fort taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée de taurus à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25182,7 +25569,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de taurus à deux mains :" , ":scales: C'est une hache faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache de taurus à deux mains`")
+    .addField(":scales: Hache de taurus à deux mains :" , ":scales: C'est une hache faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse de fort taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache de taurus à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25195,7 +25582,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de taurus à deux mains :" , ":scales: C'est une masse faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  taurus à deux mains`")
+    .addField(":scales: Masse de taurus à deux mains :" , ":scales: C'est une masse faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse de fort taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  taurus à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25208,7 +25595,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de taurus à deux mains :" , ":scales: C'est une rapière faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de taurus à deux mains`")
+    .addField(":scales: Rapière de taurus à deux mains :" , ":scales: C'est une rapière faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse de fort taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de taurus à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25221,7 +25608,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive de taurus à deux mains :" , ":scales: C'est un glaive faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de taurus à deux mains`")
+    .addField(":scales: Glaive de taurus à deux mains :" , ":scales: C'est un glaive fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse de fort taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de taurus à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25234,7 +25621,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de taurus à deux mains :" , ":scales: C'est un cimeterre faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre de taurus à deux mains`")
+    .addField(":scales: Cimeterre de taurus à deux mains :" , ":scales: C'est un cimeterre fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse de fort taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre de taurus à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25247,7 +25634,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de taurus à deux mains :" , ":scales: C'est un katana faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana de taurus à deux mains`")
+    .addField(":scales: Katana de taurus à deux mains :" , ":scales: C'est un katana fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Cuirasse de fort taurus adroit, 3 fer commun, 4 fer médiocre, 4 Corne de taurus, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana de taurus à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25260,7 +25647,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de taurus à un main :" , ":scales: C'est une épée faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée de taurus à une main`")
+    .addField(":scales: Epée de taurus à un main :" , ":scales: C'est une épée faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée de taurus à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25273,7 +25660,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de taurus à un main :" , ":scales: C'est une dague faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague de taurus à une main`")
+    .addField(":scales: Dague de taurus à un main :" , ":scales: C'est une dague faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague de taurus à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25286,7 +25673,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de taurus à un main :" , ":scales: C'est une masse faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de taurus à une main`")
+    .addField(":scales: Masse de taurus à un main :" , ":scales: C'est une masse faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de taurus à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25299,7 +25686,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de taurus à un main :" , ":scales: C'est une hache faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache de taurus à une main`")
+    .addField(":scales: Hache de taurus à un main :" , ":scales: C'est une hache faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache de taurus à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25312,7 +25699,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de taurus à un main :" , ":scales: C'est un cimeterre faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre de taurus à une main`")
+    .addField(":scales: Cimeterre de taurus à un main :" , ":scales: C'est un cimeterre fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre de taurus à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25325,7 +25712,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de taurus à un main :" , ":scales: C'est un katana faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana de taurus à une main`")
+    .addField(":scales: Katana de taurus à un main :" , ":scales: C'est un katana fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana de taurus à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25338,7 +25725,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de taurus à un main :" , ":scales: C'est une rapière faîte a partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séco commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de taurus à une main`")
+    .addField(":scales: Rapière de taurus à un main :" , ":scales: C'est une rapière faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière de taurus à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25354,7 +25741,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de taurus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Epée de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25368,7 +25755,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de taurus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Hache de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25382,7 +25769,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de taurus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Masse de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25396,7 +25783,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive de taurus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Glaive de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25410,7 +25797,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de taurus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Katana de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25424,7 +25811,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de taurus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Rapière de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25438,7 +25825,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de taurus à deux mains :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Cimeterre de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25452,7 +25839,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de taurus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Epée de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25466,7 +25853,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de taurus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Masse de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25480,7 +25867,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de taurus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Hache de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25494,7 +25881,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de taurus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Rapière de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25508,7 +25895,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de taurus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Cimeterre de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25522,7 +25909,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de taurus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Dague de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25536,7 +25923,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de taurus à une main :" , ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Katana de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25551,7 +25938,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque de maille :" , ":scales: C'est un casque fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du casque de maille`")
+    .addField(":scales: Casque de maille :" , ":scales: C'est un casque fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du casque de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25564,7 +25951,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epaulières de maille :" , ":scales: Ce sont des épaulières fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des épaulières de maille`")
+    .addField(":scales: Epaulières de maille :" , ":scales: Ce sont des épaulières faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des épaulières de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25577,7 +25964,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cape de maille :" , ":scales: C'est une cape fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la cape de maille`")
+    .addField(":scales: Cape de maille :" , ":scales: C'est une cape faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la cape de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25590,7 +25977,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron de maille :" , ":scales: C'est un plastron fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du plastron de maille`")
+    .addField(":scales: Plastron de maille :" , ":scales: C'est un plastron fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du plastron de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25603,7 +25990,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets de maille :" , ":scales: Ce sont des gantelets fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des gantelets de maille`")
+    .addField(":scales: Gantelets de maille :" , ":scales: Ce sont des gantelets faits avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des gantelets de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25616,7 +26003,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture de maille :" , ":scales: C'est une ceinture fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la ceinture de maille`")
+    .addField(":scales: Ceinture de maille :" , ":scales: C'est une ceinture faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la ceinture de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25629,7 +26016,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières de maille :" , ":scales: Ce sont des jambières fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des jambières de maille`")
+    .addField(":scales: Jambières de maille :" , ":scales: Ce sont des jambières faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des jambières de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25642,7 +26029,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes de maille :" , ":scales: Ce sont des bottes fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x5\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des bottes de maille`")
+    .addField(":scales: Bottes de maille :" , ":scales: Ce sont des bottes faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des bottes de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25655,7 +26042,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau de maille :" , ":scales: C'est un anneau fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x7\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`")
+    .addField(":scales: Anneau de maille :" , ":scales: C'est un anneau fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25668,7 +26055,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette de maille :" , ":scales: C'est une amulette fait avec des minéraux\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : Fer médiocre x5, Fer commun x5, Fer rare x7\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`")
+    .addField(":scales: Amulette de maille :" , ":scales: C'est une amulette faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25678,27 +26065,27 @@ bot.on('message', message => {
 // Equipements de maille fabrication
 
 bot.on('message', message => {
-const Défense = (Math.floor((4)*Math.random()+12))
 if (message.content.startsWith(prefix + "Fabrication de l'anneau de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Anneau de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
-});
-
-bot.on('message', message => {
 const Défense = (Math.floor((4)*Math.random()+12))
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":scales: Anneau de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+});
+
+bot.on('message', message => {
 if (message.content.startsWith(prefix + "Fabrication de l'amulette de maille")) {
+const Défense = (Math.floor((4)*Math.random()+12))
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":scales: Amulette de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
+  .addField(":scales: Amulette de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -25706,115 +26093,115 @@ if (message.content.startsWith(prefix + "Fabrication de l'amulette de maille")) 
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Casque de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Épaulières de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Epaulières de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Cape de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Plastron de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Gantelets de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Ceinture de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Jambières de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Bottes de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
@@ -25823,7 +26210,7 @@ if (message.content.startsWith(prefix + "Equipements de maille")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":scales: Liste des équipements de maille :" , "=Casque de maille\n=Epaulières de maille\n=Plastron de maille\n=Ceinture de maille\n=Gantelets de maille\n=Jambières de maille\n=Bottes de maille")
+  .addField(":scales: Liste des équipements de maille :" , "=Casque de maille\n=Epaulières de maille\n=Plastron de maille\n=Cape de maille\n=Ceinture de maille\n=Gantelets de maille\n=Jambières de maille\n=Bottes de maille")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -25839,7 +26226,7 @@ if (message.content === prefix + "Ragoût de lièvre") {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":meat_on_bone: Ragoût de lièvre :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lièvre mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
+  .addField(":meat_on_bone: Ragoût de lièvre :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lièvre mais aussi de basilic !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -25847,7 +26234,7 @@ if (message.content === prefix + "Ragoût de lièvre") {
 });
 
 bot.on('message', message => {
-const HP = (Math.floor((21)*Math.random()+70))
+const HP = (Math.floor((21)*Math.random()+80))
 if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de lièvre")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25866,7 +26253,7 @@ if (message.content === prefix + "Ragoût de taurus") {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":meat_on_bone: Ragoût de taurus :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de basilic mais très utile pour les débutants !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 11\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 10\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`")
+  .addField(":meat_on_bone: Ragoût de taurus :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de basilic !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -25875,7 +26262,7 @@ if (message.content === prefix + "Ragoût de taurus") {
 
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de taurus")) {
-  const HP = (Math.floor((21)*Math.random()+80))
+  const HP = (Math.floor((21)*Math.random()+90))
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25893,7 +26280,7 @@ if (message.content.startsWith(prefix + "Potion améliorée")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":syringe: Potion améliorée :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal du palier 2 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de lièvre, 1 lierre rare, 2 lierre commun, 3 lierre médiocre, 2 scalpe de taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 740 cols\n\n:large_orange_diamond: Prix de revente : 185 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion améliorée`")
+  .addField(":syringe: Potion améliorée :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal du palier 2 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de lièvre, 1 lierre rare, 2 lierre commun, 3 lierre médiocre, 2 scalp de taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 740 cols\n\n:large_orange_diamond: Prix de revente : 185 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion améliorée`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -25901,7 +26288,7 @@ if (message.content.startsWith(prefix + "Potion améliorée")) {
 });
 
 bot.on('message', message => {
-const HP = (Math.floor((21)*Math.random()+95))
+const HP = (Math.floor((21)*Math.random()+115))
 if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion améliorée")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -25917,16 +26304,54 @@ if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la pot
 // craft
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Parchemin de poison moyen")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scroll: Parchemin de poison moyen :" , ":scroll: C'est un parchemin assez efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 375 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Poison moyen")) {
+    const roll = (Math.floor((100)*Math.random()+1))
+    const poison = (Math.floor((21)*Math.random()+40))
+    if(roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Poison moyen :" , ":crossed_swords: Vous n'arrivez pas à empoisonner votre cible...")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(roll >= 51){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Poison moyen :" , ":crossed_swords: Vous arrivez à empoisonner votre cible ce qui lui inflige " + poison + " points de dégâts, l'armure ne réduit pas les dégâts !")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
 if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
   .addField("Bave :" , "C'est de la bave que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
-  .addField("Prix d'achat :" , "40 cols")
-  .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Gantelets bug")
-  .setImage("https://png.icons8.com/color/1600/jelly.png")
+  .addField("Prix d'achat :" , "X cols")
+  .addField("Prix de revente :" , "15 cols")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Gantelets en chitine")
+  //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
 }
@@ -25938,11 +26363,11 @@ if (message.content.startsWith(prefix + "Peau élastic de lombric irrégulier"))
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Peau élastic :" , "C'est une peau élastic que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
-  .addField("Prix d'achat :" , "40 cols")
-  .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape bug\n=Ceinture bug\n=Bottes bug")
-  .setImage("https://png.icons8.com/color/1600/jelly.png")
+  .addField("Peau élastic :" , "C'est une peau élastique que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
+  .addField("Prix d'achat :" , "X cols")
+  .addField("Prix de revente :" , "20 cols")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine\n=Ceinture en chitine\n=Bottes en chitine")
+  //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
 }
@@ -25955,42 +26380,58 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
   .addField("Langue :" , "C'est une langue que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
-  .addField("Prix d'achat :" , "40 cols")
-  .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture bug")
-  .setImage("https://png.icons8.com/color/1600/jelly.png")
+  .addField("Prix d'achat :" , "X cols")
+  .addField("Prix de revente :" , "25 cols")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture en chitine")
+  //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
 }
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Ailles de Neoridas")) {
+if (message.content.startsWith(prefix + "Poudre de poison")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Ailles :" , "C'est des ailles que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
+  .addField("Poudre :" , "C'est une poudre que vous trouvez sur les néoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron bug\n=Gantelets bug")
-  .setImage("https://png.icons8.com/color/1600/jelly.png")
+  .addField("Prix de revente :" , "20 cols")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
+  //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
 }
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Peau Neoridas")) {
+if (message.content.startsWith(prefix + "Ailes de Neoridas")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField("Ailes :" , "C'est des ailes que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
+  .addField("Prix d'achat :" , "X cols")
+  .addField("Prix de revente :" , "25 cols")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron en chitine\n=Gantelets en chitine")
+  //.setImage("https://png.icons8.com/color/1600/jelly.png")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+});
+
+bot.on('message', message => {
+if (message.content.startsWith(prefix + "Peau de Neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
   .addField("Peau :" , "C'est une peau que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "10 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape bug")
-  .setImage("https://png.icons8.com/color/1600/jelly.png")
+  .addField("Prix de revente :" , "30 cols")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine")
+  //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
 }
@@ -27549,7 +27990,25 @@ bot.on('message', message => {
 });
 
 // Boss palier 1
-/*
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Salle du boss")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .addField(":bank: Salle du boss :" , ":bank: Vous ouvrez les portes de la salle du boss du palier 1, vous tombez face à face devant : \n" +
+    ":crossed_swords: Illfang le seigneur kobolt\n" +
+    ":crossed_swords: 3 Kobolt sentinelle")
+    .setColor(3447003)
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+
 bot.on('message', message => {
   if (message.content === (prefix) + "Illfang le seigneur kobolt"){
     const embed = new Discord.RichEmbed()
@@ -27579,12 +28038,12 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
-*/
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang attaque")) {
-    const degat = Math.floor(51 * Math.random() + 150)
-    const degatArmure = Math.floor(21 * Math.random() + 100)
-    const degatCirculaire = Math.floor(31 * Math.random() + 130)
+    const degat = Math.floor(51 * Math.random() + 160)
+    const degatArmure = Math.floor(21 * Math.random() + 110)
+    const degatCirculaire = Math.floor(31 * Math.random() + 140)
     const cible = Math.floor(2 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
@@ -27640,15 +28099,9 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-/*
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
-    const degatGroupe = Math.floor(31 * Math.random() + 155)
-    const degatVert = Math.floor(21 * Math.random() + 200)
-    const degatVertGroupe = Math.floor(51 * Math.random() + 150)
-    const cible = Math.floor(4 * Math.random() + 2)
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27658,36 +28111,28 @@ bot.on('message', message => {
                                                "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
       message.channel.send({embed})
       }
-  }
 });
 
 bot.on('message', message => {
-  let cont = message.content.slice(prefix.length).split(" ");
-  const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
-    let Dégâts = args.slice(4).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1.3)))
-    const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 100){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
-                                       "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
+                                               "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
       .setTimestamp()
       message.channel.send({embed})
-    }
   }
 });
-*/
 
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
-    const degatGroupe = Math.floor(31 * Math.random() + 155)
-    const degatGroupeArmure = Math.floor(21 * Math.random() + 100)
-    const degatVert = Math.floor(21 * Math.random() + 200)
-    const degatVertGroupe = Math.floor(51 * Math.random() + 150)
+    const degatGroupe = Math.floor(31 * Math.random() + 165)
+    const degatGroupeArmure = Math.floor(21 * Math.random() + 110)
+    const degatVert = Math.floor(21 * Math.random() + 210)
+    const degatVertGroupe = Math.floor(51 * Math.random() + 160)
     const cible = Math.floor(4 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
@@ -27744,7 +28189,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
     let Dégâts = args.slice(4).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1))
+    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 0.8))
     const paradeReussie = Math.floor(16 * Math.random() + 135)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
@@ -27790,7 +28235,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Illfand phase 2 parade")) {
+  if (message.content.startsWith(prefix + "Illfang phase 2 parade")) {
     let Dégâts = args.slice(4).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 60){
@@ -27812,7 +28257,7 @@ bot.on('message', message => {
     }
   }
 });
-
+*/
 
 //kobolt sentinel
 
@@ -27823,7 +28268,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Kobolt sentinelle :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans... !")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/4d/Kobold_Sentinel.png/revision/latest?cb=20140309042458")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1000")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1500")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Kobolt sentinelle attaque`")
       .addField(":shield: Lorsque le kobolt sentinelle reçoit un coup :" , ":shield: `=Kobolt sentinelle défense : [Points de dégâts de votre coup]`")
     .setTimestamp()
@@ -45629,7 +46074,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Cidre claviceps artisanal :" , "Le mélange des guerriers, le cercueil des rois, le cocktail des dieux ! Si vous doutez de son effet, faîtes le goûter par un de vos voisins\n\nEn utilisant cet objet, vous obtenez l'état `Ivresse` ainsi que 6 points d'actions !")
+    .addField("Cidre claviceps artisanal :" , "Le mélange des guerriers, le cercueil des rois, le cocktail des dieux ! Si vous doutez de son effet, faites le goûter par un de vos voisins\n\nEn utilisant cet objet, vous obtenez l'état `Ivresse` ainsi que 6 points d'actions !")
     .setTimestamp()
     message.channel.send({embed})
   }
