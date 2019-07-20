@@ -22174,22 +22174,53 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 30) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       carapace = Math.floor(2 * Math.random() + 1)
-      antenne  = Math.floor((2 - 0.55) * Math.random())
-      ailes = Math.floor((2 - 0.55) * Math.random())
-      hemolymphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      oeil = Math.floor((2 - 0.96) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        antenne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        oeil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        hemolymphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(40 * Math.random() + 40)
     } else {
       carapace = Math.floor(2 * Math.random() + 1)
-      alies = Math.floor((2 - 0.70) * Math.random())
-      antenne  = Math.floor((2 - 0.70) * Math.random())
-      hemolymphe = Math.floor((2 - 0.98) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      oeil = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 25) {
+        antenne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        oeil = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolymphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(35 * Math.random() + 35)
     }
     if (xp <= 0) {
@@ -22201,7 +22232,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
-                                           ":butterfly: Ailles de bourdon flâneur  : " + ailes+ "\n" +
+                                           ":butterfly: Ailes de bourdon flâneur  : " + ailes+ "\n" +
                                            ":syringe: Antenne de bourdon flâneur: " + antenne  + "\n" +
                                            ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
                                            ":alembic: Hemolymphe : " + hemolymphe + "\n" +
