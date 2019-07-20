@@ -20440,8 +20440,8 @@ bot.on('message', message => {
     let peau = 0
     let hemolyphe = 0
     let oeufB = 0
-    let armurehexapode = 0
-    let bijouxhexapode = 0
+    let armureChitine = 0
+    let bijouChitine = 0
     let cols = 0
     const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
     const tMob = 5
@@ -20471,11 +20471,11 @@ bot.on('message', message => {
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
       if (rollRessource <= 5) {
-        armurehexapode = 1
+        armureChitine = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
       if (rollRessource <= 5) {
-        bijouxhexapode = 1
+        bijouChitine = 1
       }
       cols = Math.floor(60 * Math.random() + 60)
     } else {
@@ -20498,11 +20498,11 @@ bot.on('message', message => {
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
       if (rollRessource <= 3) {
-        armurehexapode = 1
+        armureChitine = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
       if (rollRessource <= 3) {
-        bijouxhexapode = 1
+        bijouChitine = 1
       }
       cols = Math.floor(55 * Math.random() + 55)
     }
@@ -20515,11 +20515,11 @@ bot.on('message', message => {
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
      .addField(":moneybag: Récompenses :" , ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
-                                            ":butterfly: Ailles de Neoridas  : " + ailes+ "\n" +
-                                            ":knife: Peau Neoridas : " + peau + "\n" +
+                                            ":butterfly: Ailes de Neoridas  : " + ailes+ "\n" +
+                                            ":knife: Peau de Neoridas : " + peau + "\n" +
                                             ":alembic: Hémolymphe : " + hemolyphe + "\n" +
-                                            ":scales: Armure hexapode au choix : " + armurehexapode + "\n" +
-                                            ":scales: Bijoux hexapode au choix : " + bijouxhexapode + "\n" +
+                                            ":scales: Armure en chitine au choix : " + armureChitine + "\n" +
+                                            ":scales: Bijou en chitine au choix : " + bijouChitine + "\n" +
                                             ":gem: Oeuf bavant : " + oeufB + "\n" +
                                             ":sparkles: Points d'expérience : " + xp + "\n" +
                                             ":large_orange_diamond: Cols : " + cols)
@@ -20548,15 +20548,33 @@ bot.on('message', message => {
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       patte = Math.floor(2 * Math.random() + 1)
-      carapace = Math.floor((2 - 0.75) * Math.random())
-      corne = Math.floor((2 - 0.85) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-        cols = Math.floor(60 * Math.random() + 70)
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      cols = Math.floor(60 * Math.random() + 70)
     } else {
       patte = Math.floor(2 * Math.random() + 1)
-      carapace = Math.floor((2 - 0.85) * Math.random())
-      corne = Math.floor((2 - 0.95) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        carapace = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        corne = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        hemolyphe = 1
+      }
       cols = Math.floor(55 * Math.random() + 65)
     }
     if (xp <= 0) {
@@ -20567,9 +20585,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Pattes de Boussier colosal: " + patte + "\n" +
-                                           ":shell: Carapace de Boussier colosal : " + carapace + "\n" +
-                                           ":dagger: Corne de Boussier colosal : "+ corne + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Patte de Bousier colosal: " + patte + "\n" +
+                                           ":shell: Carapace de Bousier colosal : " + carapace + "\n" +
+                                           ":dagger: Corne de Bousier colosal : "+ corne + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
