@@ -28099,7 +28099,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
       const embed = new Discord.RichEmbed()
@@ -28125,12 +28125,12 @@ bot.on('message', message => {
       message.channel.send({embed})
   }
 });
+*/
 
-/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
     const degatGroupe = Math.floor(31 * Math.random() + 165)
-    const degatGroupeArmure = Math.floor(21 * Math.random() + 110)
+    const degatGroupeArmure = Math.floor(21 * Math.random() + 130)
     const degatVert = Math.floor(21 * Math.random() + 210)
     const degatVertGroupe = Math.floor(51 * Math.random() + 160)
     const cible = Math.floor(4 * Math.random() + 2)
@@ -28162,7 +28162,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (61 <= roll && roll <= 80){
+    if (61 <= roll && roll <= 99){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -28171,7 +28171,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     }
-    if (81 <= roll){
+    if (100 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -28206,7 +28206,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade et il vous met un coup oblique de katana, vous faisant reculer et prendre des dégâts, " +
-                                                 "il inflige " + paradeReussie + " points de dégâts sauf si vous tentez de parade sa parade.Si vous réussissez le Illfang tantera de parade votre parade de la parade. Faite `=Illfand phase 2 parade`")
+                                                 "il inflige " + paradeReussie + " points de dégâts sauf si vous tentez de parade sa parade.Si vous réussissez le Illfang tantera de parade votre parade de la parade. Faite `=Illfang phase 2 parade`")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -28257,7 +28257,7 @@ bot.on('message', message => {
     }
   }
 });
-*/
+
 
 //kobolt sentinel
 
