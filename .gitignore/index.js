@@ -28129,10 +28129,10 @@ bot.on('message', message => {
 /*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
-    const degatGroupe = Math.floor(31 * Math.random() + 155)
-    const degatGroupeArmure = Math.floor(21 * Math.random() + 100)
-    const degatVert = Math.floor(21 * Math.random() + 200)
-    const degatVertGroupe = Math.floor(51 * Math.random() + 150)
+    const degatGroupe = Math.floor(31 * Math.random() + 165)
+    const degatGroupeArmure = Math.floor(21 * Math.random() + 110)
+    const degatVert = Math.floor(21 * Math.random() + 210)
+    const degatVertGroupe = Math.floor(51 * Math.random() + 160)
     const cible = Math.floor(4 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
@@ -28189,7 +28189,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
     let Dégâts = args.slice(4).join(" : ");
-    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 1))
+    const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 0.8))
     const paradeReussie = Math.floor(16 * Math.random() + 135)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 25){
