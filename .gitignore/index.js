@@ -22000,14 +22000,14 @@ bot.on('message', message => {
     const degat = Math.floor(31 * Math.random() + 130)
     const degatraté = Math.floor(21 * Math.random() + 40)
     const degatcrit = Math.floor(31 * Math.random() + 150)
-    const cible = Math.floor(5 * Math.random() + 1)
+    const cible = Math.floor(4 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégats.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords: Le Taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégâts.")
       message.channel.send({embed})
     }
     if (21 <= roll & roll <= 55){
@@ -22015,7 +22015,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense ou interception possible pour vous. Vous et le Taurus lourd ne pouvez plus attaqué. \n A chaque tour du joueur capturé il peut tenté un =Roll pour s'échapper, si il réusit le joueur peut profité de son tour d'attaque.\n A chaque tour du Taurus Lourd il inflige " + degatraté + " points de dégats de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible il peut uniquement tenté d'esquivé, si il réussit le joueur est libéré et les effets de l'attaque sont infligé au Taurus Lourd.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge sans défense ou interception possible. Vous et le Taurus lourd ne pouvez plus attaquer. \n A chaque tour du joueur capturé il peut tenter un =Roll pour s'échapper, si il réusit le joueur peut profiter de son tour d'attaque.\n A chaque tour du Taurus Lourd, il inflige " + degatraté + " points de dégâts de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible, il peut uniquement tenter d'esquiver. S'il réussit, le joueur est libéré et les effets ainsi que les dégâts de l'attaque sont infligés au Taurus lourd.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22024,7 +22024,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueur(s) et vous inflige " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Taurus lourd :" , ":crossed_swords:Le Taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueurs et leur inflige " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
