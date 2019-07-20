@@ -28130,7 +28130,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
     const degatGroupe = Math.floor(31 * Math.random() + 165)
-    const degatGroupeArmure = Math.floor(21 * Math.random() + 110)
+    const degatGroupeArmure = Math.floor(21 * Math.random() + 130)
     const degatVert = Math.floor(21 * Math.random() + 210)
     const degatVertGroupe = Math.floor(51 * Math.random() + 160)
     const cible = Math.floor(4 * Math.random() + 2)
