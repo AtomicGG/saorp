@@ -28024,7 +28024,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
-/*
+
 bot.on('message', message => {
   if (message.content === (prefix) + "Illfang entrée phase 2"){
     const embed = new Discord.RichEmbed()
@@ -28038,7 +28038,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 })
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang attaque")) {
     const degat = Math.floor(51 * Math.random() + 150)
