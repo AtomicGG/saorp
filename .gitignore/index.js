@@ -22526,10 +22526,19 @@ bot.off('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const LierreAntidote= Math.floor(2 * 0.5 * Math.random() + 1)
-      const LierreSoin = Math.floor(2 * 0.75 * Math.random())
-      const Exp = Math.floor(6 * Math.random() + 15)
-      const LierreParfait = Math.floor(2 * 0.95 * Math.random())
+      const LierreAntidote= Math.floor(2 * Math.random() + 1)
+      let LierreSoin = 0
+      let LierreAir = 0
+      const Exp = Math.floor(5 * Math.random() + 15)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        LierreSoin = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        LierreAir = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -22538,7 +22547,7 @@ bot.off('message', message => {
       .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                                ":wilted_rose: Lierre antidote : " + LierreAntidote+ "\n" +
                                                ":wilted_rose: Lierre soin : " + LierreSoin + "\n" +
-                                               ":wilted_rose: Lierre d'air : " + LierreParfait + "\n" +
+                                               ":wilted_rose: Lierre d'air : " + LierreAir + "\n" +
                                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
