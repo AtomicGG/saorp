@@ -28119,7 +28119,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Illfang :" , ":crossed_swords: Illfang s'élance vers la personne qu'il a éjecté et lui fait un grand coup oblique plein de rage. " +
+      .addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
                                                "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
       //.addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
                                     //   "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
