@@ -26083,115 +26083,115 @@ const Défense = (Math.floor((4)*Math.random()+12))
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
-const Défense = (Math.floor((2)*Math.random()+5))
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Casque de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Casque de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Épaulières de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Epaulières de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Cape de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Plastron de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Plastron de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cape de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Gantelets de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Ceinture de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Ceinture de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantelets de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Jambières de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Jambières de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
-const Défense = (Math.floor((2)*Math.random()+5))
-if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
-  const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username , message.author.avatarURL)
-  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-  .setColor(3447003)
-  .addField(":scales: Bottes de maille :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10HP, si deux partie d'armure est porté.")
-  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-  .setTimestamp()
-  message.channel.send({embed})
-}
+  if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
+    const Défense = (Math.floor((2)*Math.random()+5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Bottes de maille :" , ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n\n:warning: Bonus de 10 points de vie si au moins 2 parties de l'armure sont équipées.")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
 });
 
 bot.on('message', message => {
@@ -26200,7 +26200,7 @@ if (message.content.startsWith(prefix + "Equipements de maille")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":scales: Liste des équipements de maille :" , "=Casque de maille\n=Epaulières de maille\n=Plastron de maille\n=Ceinture de maille\n=Gantelets de maille\n=Jambières de maille\n=Bottes de maille")
+  .addField(":scales: Liste des équipements de maille :" , "=Casque de maille\n=Epaulières de maille\n=Plastron de maille\n=Cape de maille\n=Ceinture de maille\n=Gantelets de maille\n=Jambières de maille\n=Bottes de maille")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
