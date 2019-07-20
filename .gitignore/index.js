@@ -28126,7 +28126,7 @@ bot.on('message', message => {
   }
 });
 
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
     const degatGroupe = Math.floor(31 * Math.random() + 155)
@@ -28235,7 +28235,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   let cont = message.content.slice(prefix.length).split(" ");
   const args = cont.slice(1);
-  if (message.content.startsWith(prefix + "Illfand phase 2 parade")) {
+  if (message.content.startsWith(prefix + "Illfang phase 2 parade")) {
     let Dégâts = args.slice(4).join(" : ");
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 60){
@@ -28257,7 +28257,7 @@ bot.on('message', message => {
     }
   }
 });
-
+*/
 
 //kobolt sentinel
 
