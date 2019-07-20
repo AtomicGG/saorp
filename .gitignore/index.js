@@ -20101,7 +20101,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essayer de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance")
+        .addField(":crossed_swords: Venom :" , ":crossed_swords: Le Venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
         message.channel.send({embed})
       }
       if (36 <= roll && roll <= 85){
@@ -20118,7 +20118,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure et vous inflige " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20135,7 +20135,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pour 1 tour. Vous avez de la chance !")
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation, il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. Le Bousier collosal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pendant 1 tour. Vous avez de la chance !")
         message.channel.send({embed})
       }
       if (31 <= roll && roll <= 90){
@@ -20152,7 +20152,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toute se forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. ")
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. ")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20170,7 +20170,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vola de gauche a droite et attend le moment d'attaquer.")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant vole de gauche à droite et attend le bon moment pour attaquer.")
         message.channel.send({embed})
       }
       if (36 <= roll && roll <= 75){
