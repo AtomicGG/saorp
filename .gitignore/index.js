@@ -28041,9 +28041,9 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang attaque")) {
-    const degat = Math.floor(51 * Math.random() + 150)
-    const degatArmure = Math.floor(21 * Math.random() + 100)
-    const degatCirculaire = Math.floor(31 * Math.random() + 130)
+    const degat = Math.floor(51 * Math.random() + 160)
+    const degatArmure = Math.floor(21 * Math.random() + 110)
+    const degatCirculaire = Math.floor(31 * Math.random() + 140)
     const cible = Math.floor(2 * Math.random() + 2)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 20){
