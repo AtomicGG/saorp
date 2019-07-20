@@ -28126,7 +28126,7 @@ bot.on('message', message => {
   }
 });
 
-/*
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
     const degatGroupe = Math.floor(31 * Math.random() + 155)
@@ -28257,7 +28257,7 @@ bot.on('message', message => {
     }
   }
 });
-*/
+
 
 //kobolt sentinel
 
