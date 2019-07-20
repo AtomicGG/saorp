@@ -48878,7 +48878,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content === prefix + "Sac plastique") {
+  if (message.content === prefix + "Sac plastique 2") {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
