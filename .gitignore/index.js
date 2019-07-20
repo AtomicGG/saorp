@@ -28206,7 +28206,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade et il vous met un coup oblique de katana, vous faisant reculer et prendre des dégâts, " +
-                                                 "il inflige " + paradeReussie + " points de dégâts sauf si vous tentez de parade sa parade.Si vous réussissez le Illfang tantera de parade votre parade de la parade. Faite `=Illfand phase 2 parade`")
+                                                 "il inflige " + paradeReussie + " points de dégâts sauf si vous tentez de parade sa parade.Si vous réussissez le Illfang tantera de parade votre parade de la parade. Faite `=Illfang phase 2 parade`")
       .setTimestamp()
       message.channel.send({embed})
     }
