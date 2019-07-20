@@ -7942,7 +7942,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `4` ordres, l'obligeant à vous obéir !\n\n" +
+        .addField(":cyclone: Sonic leap :" , ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `4` ordres, l'obligeant à vous obéir !(Divisé par deux pour les joueurs et gros monstres)\n\n" +
                                              "Ordres possibles :\n" +
                                              "- Ordonner un coup normal sur une cible. (a voir si on accepte d'autres coups en dehors des comp)\n" +
                                              "- Ordonner de ne pas se défendre.\n" +
@@ -8820,11 +8820,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
-                                                       ":crossed_swords: Renard(s) : " +renard+ "\n" +
-                                                       ":crossed_swords: Sanglier(s) " +sanglier+ "\n" +
-                                                       ":crossed_swords: Chien(s) : " +chien+ "\n" +
-                                                       ":crossed_swords: Bandit(s) débutant(s) : " +bandit+ "\n" +
-                                                       ":crossed_swords: Lapin(s) géant(s) : " +lapin)
+                                                       ":crossed_swords: Renard(s) 20HP : " +renard+ "\n" +
+                                                       ":crossed_swords: Sanglier(s) 30HP " +sanglier+ "\n" +
+                                                       ":crossed_swords: Chien(s) 15HP : " +chien+ "\n" +
+                                                       ":crossed_swords: Bandit(s) débutant(s) 40HP : " +bandit+ "\n" +
+                                                       ":crossed_swords: Lapin(s) géant(s) 70HP : " +lapin)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -9743,11 +9743,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Loup(s) : " + loup + "\n" +
-                                   ":crossed_swords: Slime(s) " + slime + "\n" +
-                                   ":crossed_swords: Bandit(s) expérimenté(s) : " + banditExp + "\n" +
-                                   ":crossed_swords: Bandit(s) sombre(s) : " + banditSombre + "\n" +
-                                   ":crossed_swords: Loup(s) de sang(s) : " + loupDeSang)
+                                   ":crossed_swords: Loup(s) 80HP : " + loup + "\n" +
+                                   ":crossed_swords: Slime(s) 150HP " + slime + "\n" +
+                                   ":crossed_swords: Bandit(s) expérimenté(s) 140HP : " + banditExp + "\n" +
+                                   ":crossed_swords: Bandit(s) sombre(s) 240HP : " + banditSombre + "\n" +
+                                   ":crossed_swords: Loup(s) de sang(s) 300HP : " + loupDeSang)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -10697,9 +10697,9 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .addField(":bank: Donjon sauvage :" , ":bank: Vous entrez dans une nouvelle salle du donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, " +
                                             "un loup gigantesque  apparaît au milieu de la salle et hurle ce qui rassemble un paquet de monstres...\n\n" +
-                                            ":crossed_swords: Loup de sang d'élite : " + loupDeSangEliteBoss + "\n" +
-                                            ":crossed_swords: Bandit sombre d'élite : " + banditSombreEliteBoss + "\n" +
-                                            ":crossed_swords: Loup gigantesque : 1\n\n" +
+                                            ":crossed_swords: Loup de sang d'élite 400HP : " + loupDeSangEliteBoss + "\n" +
+                                            ":crossed_swords: Bandit sombre d'élite 350HP : " + banditSombreEliteBoss + "\n" +
+                                            ":crossed_swords: Loup gigantesque 2000HP : 1\n\n" +
                                             "Une fois que vous avez finis le combat :\n`=Donjon sauvage récompenses`")
       .setColor(3447003)
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
@@ -11326,11 +11326,11 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("http://aws-cf.ados.fr/prod/photos/6/7/3/6840673/281186/img-281186571.jpg?v=6")
         .addField(":bookmark: Quête de la montagne :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
-                                                        ":crossed_swords: Jeunes kobolts : " + jeuneKobolt + "\n" +
-                                                        ":crossed_swords: Kobolts explorateurs : " + koboltExplo + "\n" +
-                                                        ":crossed_swords: Kobolts ouvriers : " + koboltOuvrier + "\n" +
-                                                        ":crossed_swords: Kobolts espions : " + koboltEspion + "\n" +
-                                                        ":crossed_swords: Kobolts enragés : " + koboltEnrage)
+                                                        ":crossed_swords: Jeunes kobolts 200HP : " + jeuneKobolt + "\n" +
+                                                        ":crossed_swords: Kobolts explorateurs 325HP : " + koboltExplo + "\n" +
+                                                        ":crossed_swords: Kobolts ouvriers 275HP : " + koboltOuvrier + "\n" +
+                                                        ":crossed_swords: Kobolts espions 250HP  : " + koboltEspion + "\n" +
+                                                        ":crossed_swords: Kobolts enragés 650HP : " + koboltEnrage)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Montagne quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -12467,11 +12467,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Kobolt(s) mineur(s) : " + koboltMineur + "\n" +
-                                   ":crossed_swords: Kobolt(s) combattant(s) : " + koboltCombattant + "\n" +
-                                   ":crossed_swords: Kobolt(s) garde(s) : " + koboltGarde + "\n" +
-                                   ":crossed_swords: Chien(s) errant(s) : " + chienErrant + "\n" +
-                                   ":crossed_swords: Kobolt(s) pilion(s) : " + koboltPilion)
+                                   ":crossed_swords: Kobolt(s) mineur(s) 350HP : " + koboltMineur + "\n" +
+                                   ":crossed_swords: Kobolt(s) combattant(s) 600HP : " + koboltCombattant + "\n" +
+                                   ":crossed_swords: Kobolt(s) garde(s) 520HP : " + koboltGarde + "\n" +
+                                   ":crossed_swords: Chien(s) errant(s) 400HP : " + chienErrant + "\n" +
+                                   ":crossed_swords: Kobolt(s) pilion(s) 1000HP : " + koboltPilion)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -25915,6 +25915,44 @@ if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la pot
 });
 
 // craft
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Parchemin de poison moyen")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scroll: Parchemin de poison moyen :" , ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 375 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  const roll = (Math.floor((100)*Math.random()+1))
+  const poison = (Math.floor((40)*Math.random()+5))
+  if (message.content.startsWith(prefix + "Poison moyen")) {
+    if(roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Poison moyen :" , ":crossed_swords: Vous n'arrivez pas à empoisonner votre cible...")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if(roll >= 51){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Poison moyen :" , ":crossed_swords: Vous arrivez à empoisonner votre cible ce qui lui inflige " + poison + " points de dégâts, l'armure ne réduit pas les dégâts !")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
 
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
