@@ -28099,7 +28099,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
       const embed = new Discord.RichEmbed()
@@ -28125,8 +28125,8 @@ bot.on('message', message => {
       message.channel.send({embed})
   }
 });
+*/
 
-/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
     const degatGroupe = Math.floor(31 * Math.random() + 165)
@@ -28257,7 +28257,7 @@ bot.on('message', message => {
     }
   }
 });
-*/
+
 
 //kobolt sentinel
 
