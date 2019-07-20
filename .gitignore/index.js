@@ -20350,7 +20350,7 @@ bot.on('message', message => {
 
 // Forêt dense | Monstres | Récompenses
 
-bot.on('message', message => {
+bot.off('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Lombric irrégulier récompenses")) {
     const pos = args.indexOf(":");
