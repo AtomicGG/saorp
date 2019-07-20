@@ -20789,10 +20789,19 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const LierreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
-      const LierreRare = Math.floor(2 * 0.75 * Math.random())
-      const Exp = Math.floor(6 * Math.random() + 15)
-      const LierreParfait = Math.floor(2 * 0.95 * Math.random())
+    const LierreCommun = Math.floor(2 * Math.random() + 1)
+      let LierreRare = 0
+      let LierreParfait = 0
+      const Exp = Math.floor(5 * Math.random() + 15)
+      let rollRessource = 0
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        LierreRare = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        LierreParfait = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
@@ -20826,17 +20835,21 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      const BoisMediocre = Math.floor(3 * Math.random() + 1)
-      const BoisCommun = Math.floor((2 - 0.75) * Math.random())
+      const BoisMediocre = Math.floor(2 * Math.random() + 1)
+      let BoisCommun = 0
       const Exp = Math.floor(5 * Math.random() + 7)
+      let rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 35) {
+        BoisCommun = 1
+      }
       const embed = new Discord.RichEmbed()
       .setColor(3447003)
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
       .addField(":deciduous_tree: Bûcheron :" , ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                                                ":deciduous_tree: Bois de séco médiocre : " + BoisMediocre + "\n" +
-                                                ":deciduous_tree: Bois de séco commun : " + BoisCommun + "\n" +
+                                                ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
+                                                ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
                                                 ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
       .setTimestamp()
       message.channel.send({embed})
