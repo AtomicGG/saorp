@@ -20024,7 +20024,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric rampe vers vous et tente alors de vous attraper ce qui s'avère plutôt compliqué sans bras, il panique alors durant sa course et ne parvient pas à se diriger ce qui n'est pas simple quand on ne possède pas de globes oculaires. Il rate donc son attaque en passant à côté de vous.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric rampe vers vous et tente alors de vous attraper, ce qui s'avère plutôt compliqué sans bras. Il panique alors durant sa course et ne parvient pas à se diriger, ce qui n'est pas simple quand on ne possède pas de globes oculaires. Il rate donc son attaque en passant à côté de vous.")
         message.channel.send({embed})
       }
       if (36 <= roll & roll <= 90){
@@ -20032,7 +20032,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante sur le sol, une fois à portée il vient s'enrouler autour de vous avant de vous resserrer de plus en plus à la manière d'un serpent, il vous inflige " + degat + " points de dégâts.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier fonce vers vous en rampant à une vitesse hallucinante. Une fois à portée, il vient s'enrouler autour de vous avant de se resserrer de plus en plus, à la manière d'un serpent, il vous inflige " + degat + " points de dégâts.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20041,7 +20041,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour joueur et infligera " + degatcrit + " points de dégâts.")
+        .addField(":crossed_swords: Lombric irrégulier :" , ":crossed_swords: Le lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour joueur et infligera " + degatcrit + " points de dégâts. Pendant ce délai, il n'est pas ciblable.")
         .setTimestamp()
         message.channel.send({embed})
     }}
