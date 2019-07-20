@@ -20324,7 +20324,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure mais expose dans le même temps une ouverture dans l'une des jointure de sa carapace. Vous profitez de cette faibesse et lui infligé  " + degatcrit + " points de dégâts perce armure")
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus épaisse partie de sa carapace mais expose dans le même temps une ouverture dans l'une des jointures de sa carapace. Vous profitez de cette faibesse et lui infligez  " + degatcrit + " points de dégâts perce armure.")
       message.channel.send({embed})
     }
     if (6 <= roll & roll <= 94){
@@ -20341,7 +20341,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus forte partie de son armure votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
+      .addField(":shield: Doryphore géant :" , ":shield: Le Doryphore géant tente de se protéger avec la plus épaisse partie de son armure, votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20368,20 +20368,45 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 35) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       bave = Math.floor(2 * Math.random() + 1)
-      peauelastic = Math.floor((2 - 0.55) * Math.random())
-      langue = Math.floor((2 - 0.65) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 40) {
+        peauelastic = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 25) {
+        langue = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 15) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 10) {
+        oeufB = 1
+      }
       cols = Math.floor(60 * Math.random() + 60)
     } else {
       bave = Math.floor(2 * Math.random() + 1)
-      peauelastic = Math.floor((2 - 0.70) * Math.random())
-      langue = Math.floor((2 - 0.80) * Math.random())
-      hemolyphe = Math.floor((2 - 0.98) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 30) {
+        peauelastic = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 15) {
+        langue = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 5) {
+        oeufB = 1
+      }
       cols = Math.floor(55 * Math.random() + 55)
     }
     if (xp <= 0) {
@@ -20393,7 +20418,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":alembic: Bave de lombric irrégulier  : " + bave + "\n" +
-                                           ":knife: Peau élastic de lombric irrégulier  : " + peauelastic + "\n" +
+                                           ":knife: Peau élastique de lombric irrégulier  : " + peauelastic + "\n" +
                                            ":tongue: Langue de lombric irrégulier : "+ langue + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":gem: Oeuf bavant : " + oeufB + "\n" +
@@ -20424,24 +20449,61 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(21 * Math.random() + 75) / 10
+    let rollRessource = Math.floor(100 * Math.random() + 1)
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       poudrePoison = Math.floor(2 * Math.random() + 1)
-      peau = Math.floor((2 - 0.55) * Math.random())
-      ailes = Math.floor((2 - 0.55) * Math.random())
-      hemolyphe = Math.floor((2 - 0.95) * Math.random())
-      oeufB = Math.floor((2 - 0.90) * Math.random())
-      armurehexapode = Math.floor((2 - 0.96) * Math.random())
-      bijouxhexapode = Math.floor((2 - 0.98) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 30) {
+        peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 30) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 15) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 10) {
+        oeufB = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 5) {
+        armurehexapode = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 5) {
+        bijouxhexapode = 1
+      }
       cols = Math.floor(60 * Math.random() + 60)
     } else {
       poudrePoison = Math.floor(2 * Math.random() + 1)
-      alies = Math.floor((2 - 0.70) * Math.random())
-      peau = Math.floor((2 - 0.70) * Math.random())
-      hemolyphe = Math.floor((2 - 0.98) * Math.random())
-      oeufB = Math.floor((2 - 0.97) * Math.random())
-      armurehexapode = Math.floor((2 - 0.98) * Math.random())
-      bijouxhexapode = Math.floor((2 - 0.99) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 20) {
+        peau = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 20) {
+        ailes = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 10) {
+        hemolyphe = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 5) {
+        oeufB = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 3) {
+        armurehexapode = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if rollRessource <= 3) {
+        bijouxhexapode = 1
+      }
       cols = Math.floor(55 * Math.random() + 55)
     }
     if (xp <= 0) {
