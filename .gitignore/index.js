@@ -20545,6 +20545,7 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 45) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
       patte = Math.floor(2 * Math.random() + 1)
@@ -20614,20 +20615,39 @@ bot.on('message', message => {
     const controle = 110 + 90 * tMob
     const groupe = 1 - Math.log(nbrPersonne) * 0.3
     const roll = Math.floor(11 * Math.random() + 55) / 10
+    let rollRessource = 0
     let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll * groupe)
     if(nbrPersonne == 1) {
-      crochetPoison = Math.floor(3 * Math.random())
+      crochetPoison = Math.floor(2 * Math.random() + 1)
       Peau = Math.floor(3 * Math.random())
-      queueSerpent = Math.floor((2 - 0.75)*Math.random())
-      Venin = Math.floor((2 - 0.85)*Math.random())
-      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 20) {
+        queueSerpent = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        Venin = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        Oeufs = 1
+      }
       cols = Math.floor(51 * Math.random() + 50)
     } else {
-      crochetPoison = Math.floor(2 * Math.random())
+      crochetPoison = Math.floor(1 * Math.random() + 1)
       Peau = Math.floor(2 * Math.random())
-      queueSerpent = Math.floor((2 - 0.90) * Math.random())
-      Venin = Math.floor((2 - 0.95) * Math.random())
-      Oeufs = Math.floor((2 - 0.99) * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        queueSerpent = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        Venin = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 5) {
+        Oeufs = 1
+      }
       cols = Math.floor(41 * Math.random() + 40)
     }
     if (xp <= 0) {
