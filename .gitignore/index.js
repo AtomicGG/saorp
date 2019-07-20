@@ -21971,7 +21971,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort taurus adroit :" , ":crossed_swords: Le Fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance!")
+      .addField(":crossed_swords: Fort taurus adroit :" , ":crossed_swords: Le Fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 80){
@@ -21988,7 +21988,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort taurus adroit:" , ":crossed_swords: Le Fort taurus adroit vous lance des une hachettes très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous fait saigner " + saignement + " pendant 3 tours.")
+      .addField(":crossed_swords: Fort taurus adroit:" , ":crossed_swords: Le Fort taurus adroit vous lance une hachette très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous inflige " + saignement + " dégâts de saignement pendant 3 tours.")
       .setTimestamp()
       message.channel.send({embed})
     }
