@@ -20350,7 +20350,7 @@ bot.on('message', message => {
 
 // Forêt dense | Monstres | Récompenses
 
-bot.off('message', message => {
+/*bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Lombric irrégulier récompenses")) {
     const pos = args.indexOf(":");
@@ -20429,7 +20429,7 @@ bot.off('message', message => {
   }
 }) ;
 
-bot.off('message', message => {
+bot.on('message', message => {
   const args = message.content;
   if (message.content.startsWith(prefix + "Neoridas récompenses")) {
     const pos = args.indexOf(":");
@@ -20526,7 +20526,7 @@ bot.off('message', message => {
     .setTimestamp()
     message.channel.send({embed})
   }
-}) ;
+}) ;*/
 
 bot.on('message', message => {
   const args = message.content;
