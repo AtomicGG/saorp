@@ -22083,7 +22083,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinté sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + " points de dégâts.")
+      .addField(":shield: Taurus chargeur :" , ":shield: Le Taurus chargeur tente de vous feinter sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + " points de dégâts.")
       message.channel.send({embed})
     }
     if (76 <= roll){
