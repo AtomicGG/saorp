@@ -21355,7 +21355,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Anneau en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21363,14 +21363,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const Défense = Math.floor(5 * Math.random() + 8)
-  const HP = Math.floor(11 * Math.random() + 20)
   if (message.content.startsWith(prefix + "Découverte de l'amulette en chitine")) {
+      const Défense = Math.floor(5 * Math.random() + 8)
+      const HP = Math.floor(11 * Math.random() + 20)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Amulette en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21378,14 +21378,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte du casque en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Casque en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Casque en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21393,14 +21393,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte des épaulières en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Épaulières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Epaulières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21408,29 +21408,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte de la cape en chitine")) {
-    const embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username , message.author.avatarURL)
-    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-    .setColor(3447003)
-    .addField(":scales: Cape en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
-    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-    .setTimestamp()
-    message.channel.send({embed})
-  }
-});
-
-bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte du plastron en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Plastron en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21438,14 +21423,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
-  if (message.content.startsWith(prefix + "Découverte des gantelets en chitine")) {
+  if (message.content.startsWith(prefix + "Découverte de la cape en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Cape en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21453,14 +21438,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte de la ceinture en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Ceinture en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21468,14 +21453,29 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
+  if (message.content.startsWith(prefix + "Découverte des gantelets en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Gantlets en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte des jambières en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Jambières en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21483,14 +21483,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  const HP = Math.floor(11 * Math.random() + 20)
-  const Défense = Math.floor(2 * Math.random() + 3)
   if (message.content.startsWith(prefix + "Découverte des bottes en chitine")) {
+      const HP = Math.floor(11 * Math.random() + 20)
+      const Défense = Math.floor(2 * Math.random() + 3)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus d'attaque +3 si aux moins 3 partie de l'armure sont équipé")
+    .addField(":scales: Bottes en chitine :" , ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " +Défense+ "\n:gift_heart: HP : " +HP+ "\n\n:warning: Bonus de 3 points d'attaque si au moins 3 parties de l'armure sont équipées")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
