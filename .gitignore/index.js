@@ -28025,6 +28025,21 @@ bot.on('message', message => {
 
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Horde roll")) {
+    const X = (Math.floor((100)*Math.random()))
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Roll :" , "Vous effectuez un score de `" +X+ "` à votre action")
+      .setImage("https://media3.giphy.com/media/3oGRFlpAW4sIHA02NW/giphy.gif")
+      .setTimestamp()
+      message.channel.send({embed})
+                }
+            }) ;
+
 bot.on('message', message => {
   if (message.content === prefix + "Horde") {
     const embed = new Discord.RichEmbed()
@@ -28237,7 +28252,7 @@ bot.on('message', message => {
 
     bot.on('message', message => {
       if (message.content.startsWith(prefix + "Fiche de survivant")) {
-        message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\n`Nom :`【A remplir】\n\n`Prénom :`【A remplir】\n\n`Âge :`【A remplir】\n\n`Sexe :`【A remplir】\n\n`Physique :`【A remplir avec image si vous voulez, c'est conseillé】\n\n`Personnalité :`【A remplir】\n\n`Histoire avant l'apocalypse :`【A remplir】\n\n`Métier :`【A remplir】\n\n`Atout :`【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Stat physique :`【A remplir】\n\n`Stat mental :`【A remplir】\n\n`Stat social :`【A remplir】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Inventaire :`\n`Affaires d'un citoyen`\n`Ration d'eau`\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
+        message.channel.send("\n```۝▬▬▬▬▬▬▬▬『`INFORMATIONS DE VOTRE SURVIVANT`』▬▬▬▬▬▬▬▬۝\n\n`Nom :`【A remplir】\n\n`Prénom :`【A remplir】\n\n`Âge :`【A remplir】\n\n`Sexe :`【A remplir】\n\n`Physique :`【A remplir avec image si vous voulez, c'est conseillé】\n\n`Personnalité :`【A remplir】\n\n`Histoire avant l'apocalypse :`【A remplir】\n\n`Métier :`【A remplir】\n\n`Atout :`【A remplir en écrivant =Atouts】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Stat physique :`【A remplir】\n\n`Stat mental :`【A remplir】\n\n`Stat social :`【A remplir】\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Inventaire :`\n`Affaires d'un citoyen`\n`Ration d'eau`\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n`Zombies tués` : 0\n\n`Jours survécus` : 0```");
            }
         });
 
@@ -28288,7 +28303,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les lieux, partie 1 :" , "Banque : Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre!\n\nPlace principale : C'est une place assez grande qui permet de pouvoir se rassembler si besoin\n\nAuberge : Permet de pouvoir y écrire des annonces ou les objectifs du jour pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !\n\nPuits : Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimité mais le puit possède 50 L d'eau de départ ! [1L = Une bouteille]\n\nCabinet médicale : L'endroit où vous pourrez normalement trouver un médecin capable de vous soigner, si vous avez besoin de médicaments à cause d'une maladie ou infection, si vous avez besoin de bandages et de le mettre à cause d'une hémorragie...\n\nLa suite : `=Lieux 2`")    .setTimestamp()
+        .addField("Les lieux, partie 1 :" , "Banque : Elle permet de pouvoir stock justement tous les objets nécessaires en ville, coopérez pour survivre!\n\nPlace principale : C'est une place assez grande qui permet de pouvoir se rassembler si besoin\n\nAuberge : Permet de pouvoir y écrire des annonces ou les objectifs du jour pour s'organiser entre survivants, vous pourrez aussi y dormir avec quelques chambres et lits à l'intérieur !\n\nPuits : Un des endroits les plus importants, c'est ici que les survivants pourront récupérer de l'eau à mettre dans leur bouteille pour ne pas mourir de soif, cependant l'eau n'est pas illimité mais le puit possède 50 `Ration d'eau` de départ !\n\nCabinet médicale : L'endroit où vous pourrez normalement trouver un médecin capable de vous soigner, si vous avez besoin de médicaments à cause d'une maladie ou infection, si vous avez besoin de bandages et de le mettre à cause d'une hémorragie...\n\nLa suite : `=Lieux 2`")    .setTimestamp()
             message.channel.send({embed})
                 }
           }) ;
@@ -28337,7 +28352,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username , message.author.avatarURL)
                 .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-            .addField("Défense de la ville, partie 2 :" , "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nPour déterminer quel joueur trouvera et attaquera le zombie, il faut écrire : `=Zombie infiltration : [Nombre de survivants restants]`\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, le joueur sera attaquer\n\nA savoir que se défendre en groupe est possible, et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués !\n\nLa suite : `=Défense de la ville 3`")    .setTimestamp()
+            .addField("Défense de la ville, partie 2 :" , "Si les survivants fuient ou qu'il n'y a personne défendant l'entrée de la ville, les zombies iront attaquer les joueurs aléatoirement qui sont dans leur maison, batîments, rues etc... !\n\nChaque survivant en début de partie a un numéro, selon le numéro afficher de la commande, les zombies iront vers lui en ville\n\nA savoir que se défendre en groupe est possible (et mieux), et si le survivant n'est pas connecté, son personnage pourra être jouer par un autre survivant avec son accord [ou un modérateur, d'où l'activité importante dans ce RP surtout le soir]\n\nSi le ou les survivants fuient les zombies, ils iront attaquer d'autres joueurs, jusqu'à que tous les zombies soient tués ou que vous survivez 1 H à l'attaque (mais les zombies encore vivants reviendront la nuit prochaine) !\n\nLa suite : `=Défense de la ville 3`")    .setTimestamp()
                 message.channel.send({embed})
                     }
               }) ;
@@ -28351,22 +28366,12 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-              .addField("Défense de la ville, partie 3 :" , "Si à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, il faudra impérativement mettre dans le salon #『🔨』ᴘᴏɪɴᴛs-ᴅᴇ-ᴅᴇ́ғᴇɴsᴇ si votre maison possède des points de défense, ou si vous souhaitez devenir veilleur\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nSi vous souhaitez devenir veilleur, veuillez l'écrire justement dans le salon #『🔨』ᴘᴏɪɴᴛs-ᴅᴇ-ᴅᴇ́ғᴇɴsᴇ en y mettant les points de défense qu'offre votre arme\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa suite : `=Défense de la ville 4`")    .setTimestamp()
+              .addField("Défense de la ville, partie 3 :" , "Si à 00 H 00 pile la porte de la ville n'est pas fermé par un survivant, tous les zombies pourront rentrer...\n\nAvant chaque attaque, si vous allez à la porte, vous pouvez défendre la ville en étant un `Veilleur`\n\nUn veilleur est un survivant qui ne va pas se cacher pendant l'attaque, mais qui va justement protéger la ville en sortant et en risquant sa vie\n\nA savoir que, les veilleurs seront les premiers à mourir avant les survivants qui ne défendent pas la ville alors faite attention...\n\nLa fuite est la meilleur solution si vous êtes mal, bonne chance !")    .setTimestamp()
                   message.channel.send({embed})
                       }
                 }) ;
 
-                bot.on('message', message => {
-                  if (message.content === prefix + "Défense de la ville 4") {
-                    const embed = new Discord.RichEmbed()
-                    .setColor(0xff0000)
-                    .setAuthor(message.author.username , message.author.avatarURL)
-                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-                .addField("Défense de la ville, partie 4 :" , "Une arme de corps à corps possède une durabilité avant d'être inutilisable/détruite\n\nSi par exemple vous avez un pied de biche utilisable pour 3 attaques, au bout de la troisième nuit en tant que veilleur et si vous êtes encore en vie, le pied de biche sera détruit\n\nSi vous avez une arme à feu ou du moins une arme à distance qui tire, celle-ci sera encore utilisable mais chaque nuit en tant que veilleur déchargera votre arme complètement, vous devrez la recharger avant de pouvoir la réutiliser\n\nA savoir que, pour utiliser une arme à feu ou une arme à distance pour être veilleur, il faudra que celle-ci soit complètement chargé\n\nIl est possible d'avoir plusieurs armes sur sois, en respectant les règles précédentes des armes chargés et de la durabilité")    .setTimestamp()
-                    message.channel.send({embed})
-                        }
-                  }) ;
+
 
 
             bot.on('message', message => {
@@ -29282,7 +29287,7 @@ bot.on('message', message => {
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
           .setTimestamp()
-   .addField("Liste des atouts 2 :" , "`Résistant` : Permet de survivre un dernier jour supplémentaire si vous deviez mourir d'infection, d'hémorragie, de faim, ou de déshydratation, vous laissant encore du temps de vous soigné\n\n`Tireur` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme à distance\n\n`Voleur` : Permet de pouvoir voler plus facilement un survivant selon le `=Vol`\n\n`Racaille` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme de corps à corps\n\n`Boucher` : Permet d'avoir le double de viande lorsque vous tuez un animal dans la boucherie\n\n`Discret` : Permet d'avoir une chance supplémentaire la nuit de vous cacher chez vous, si vous échouez la première tentative\n\n`Courageux` : Empêche d'avoir l'état `Terreur`\n\n`Picoleur` : Empêche d'avoir l'état `Ivresse`\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`")
+   .addField("Liste des atouts 2 :" , "`Résistant` : Permet de survivre un dernier jour supplémentaire si vous deviez mourir d'infection, d'hémorragie, de faim, ou de déshydratation, vous laissant encore du temps de vous soigné\n\n`Tireur` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme à distance\n\n`Voleur` : Permet de pouvoir voler plus facilement un survivant selon le `=Vol`\n\n`Racaille` : Permet d'avoir l'initiative contre les zombies et les survivants si vous avez une arme de corps à corps\n\n`Boucher` : Permet d'avoir le double de viande lorsque vous tuez un animal dans la boucherie\n\n`Discret` : Permet d'avoir une chance supplémentaire la nuit de vous cacher chez vous, si vous échouez la première tentative\n\n`Courageux` : Empêche d'avoir l'état `Terreur`\n\n`Picoleur` : Empêche d'avoir l'état `Ivresse`\n\n`Boxeur` : Permet d'avoir accès à de meilleurs coups selon `=Horde actions`\n\n`Psychopathe` : Une fois seul, vous pouvez avoir deux attaques possibles au-lieu d'une (contre les zombies et humains)")
 
       message.channel.send({embed})
           }
@@ -29408,7 +29413,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  const A = (Math.floor((100)*Math.random()))
+  const A = (Math.floor((100)*Math.random()+1))
   const X = (Math.floor((2)*Math.random()+1))
   if (message.content.startsWith(prefix + "Dernier espoir")) {
     if(A < 80){
@@ -29425,7 +29430,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Dernier espoir :" , "Par chance, vous arrivez malgrè tous les zombies autour de vous à vous débattre, foutre des coups de poings et des coups de pieds partout autour de vous ce qui vous permet de fuir de justesse...\n\nCependant, vous êtes atteint de l'état `Terreur` ainsi que `Blessure mortelle`...")
+      .addField("Dernier espoir :" , "Par chance, vous arrivez malgrè tous les zombies autour de vous à vous débattre, foutre des coups de poings et des coups de pieds partout autour de vous ce qui vous permet de fuir de justesse...\n\nCependant, vous êtes atteint de l'état `Terreur` ainsi que de la blessure que vous ont fait les zombies...")
       .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
       .setTimestamp()
       message.channel.send({embed})}
@@ -29434,7 +29439,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField("Dernier espoir :" , "Dans un élan de rage et de courage, vous arrivez à repousser tous les zombies sur vous malgrè tous le sang qui coule et les blessures, en réussissant par la suite à vous enfuir de toute la horde !\n\nCependant, vous êtes atteint de l'état `Blessure mortelle`...")
+        .addField("Dernier espoir :" , "Dans un élan de rage et de courage, vous arrivez à repousser tous les zombies sur vous malgrè tous le sang qui coule et les blessures, en réussissant par la suite à vous enfuir de toute la horde !\n\nCependant,  vous êtes atteint de la blessure que vous ont fait les zombies...")
         .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
         message.channel.send({embed})}
@@ -29474,7 +29479,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Lorsque les zombies arrivent à votre contact, à l'aide de ses mains et de leur bras en avant, ils aggripent votre bras et serre en y plantant leur ongles pourries...\n\n:heart: Votre état : `Blessure légère`\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`")        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Lorsque les zombies arrivent à votre contact, à l'aide de ses mains et de leur bras en avant, ils aggripent votre bras et serre en y plantant leur ongles pourries...\n\n:heart: Votre état : `Blessure légère`")        .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
         .setTimestamp()
         message.channel.send({embed})}
         if(A > 71-Z & A < 80-Z){
@@ -29482,7 +29487,7 @@ bot.on('message', message => {
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
           .setColor(0xff0000)
-          .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: En arrivant à votre hauteur, les zombies essayent de vous aggriper mais ils tombent légèrement et attrape votre jambe en la serrant avec leur ongles tout en essayant de vous mordre mais ils n'y arrivent pas...\n\n:heart: Votre état : `Blessure légère`\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`")          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+          .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: En arrivant à votre hauteur, les zombies essayent de vous aggriper mais ils tombent légèrement et attrape votre jambe en la serrant avec leur ongles tout en essayant de vous mordre mais ils n'y arrivent pas...\n\n:heart: Votre état : `Blessure légère`")          .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
           .setTimestamp()
           message.channel.send({embed})}
           if(A > 81-Z & A < 90-Z){
@@ -29490,7 +29495,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username , message.author.avatarURL)
             .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(0xff0000)
-            .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: D'une rapidité assez remarquable, les zombies arrivent à vous faire tomber sur le sol en serrant votre cou et les différentes parties du corps, en essayant de le mordre sans réussir...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+            .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: D'une rapidité assez remarquable, les zombies arrivent à vous faire tomber sur le sol en serrant votre cou et les différentes parties du corps, en essayant de le mordre sans réussir...\n\n:heart: Votre état : `Blessure`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:cold_sweat: Aider un survivant est dangereux à vous aussi, mais le nombre fait la force\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")            .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
             .setTimestamp()
             message.channel.send({embed})}
             if(A > 91-Z & A < 95-Z){
@@ -29498,7 +29503,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Les zombies profitent de votre bras assez exposé pour l'aggriper et le mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+              .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Les zombies profitent de votre bras assez exposé pour l'aggriper et le mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:cold_sweat: Aider un survivant est dangereux à vous aussi, mais le nombre fait la force\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")              .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
               .setTimestamp()
               message.channel.send({embed})}
                 if(A > 96-Z & A < 100-Z){
@@ -29506,7 +29511,7 @@ bot.on('message', message => {
                   .setAuthor(message.author.username , message.author.avatarURL)
                   .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                   .setColor(0xff0000)
-                  .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                  .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: En courant vers vous, les zombies profitent de votre jambe qui se trouve en avant pour l'aggriper et la mordre de toutes leur forces avec tous le sang qui gicle d'un coup...\n\n:heart: Votre état : `Blessure`\n\n:nauseated_face: Infection potentielle : `=Infection légère`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:cold_sweat: Aider un survivant est dangereux à vous aussi, mais le nombre fait la force\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                  .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                   .setTimestamp()
                   message.channel.send({embed})}
                   if(A > 101-Z & A < 120-Z){
@@ -29514,7 +29519,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username , message.author.avatarURL)
                     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(0xff0000)
-                    .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\n:heart: Votre état : `Blessure avancée`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémorragie avancée`\n\n:nauseated_face: Infection potentielle : `=Infection avancée`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                    .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Les zombies se mettent à vous courir dessus très rapidement de tous les côtés en se jetant sur vous et arrive à mordre votre cou qui pisse le sang...\n\n:heart: Votre état : `Blessure avancée`\n\n:nauseated_face: Infection potentielle : `=Infection avancée`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:cold_sweat: Aider un survivant est dangereux à vous aussi, mais le nombre fait la force\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                    .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                     .setTimestamp()
                     message.channel.send({embed})}
                     if(A > 121-Z & A < 140-Z){
@@ -29522,7 +29527,7 @@ bot.on('message', message => {
                       .setAuthor(message.author.username , message.author.avatarURL)
                       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                       .setColor(0xff0000)
-                      .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Dès que les zombies se trouvent à votre portée, ils entourent tous l'espace autour de vous et vous force à finir sur le sol entouré de toute part en vous faisant mordre et aggriper toutes les parties de votre corps...\n\n:heart: Votre état : `Blessure mortelle`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémoragie mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+                      .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Dès que les zombies se trouvent à votre portée, ils entourent tous l'espace autour de vous et vous force à finir sur le sol entouré de toute part en vous faisant mordre et aggriper toutes les parties de votre corps...\n\n:heart: Votre état : `Blessure mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:cold_sweat: Aider un survivant est dangereux à vous aussi, mais le nombre fait la force\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")                      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
                       .setTimestamp()
                       message.channel.send({embed})}
                       if(A > 141-Z){
@@ -29530,7 +29535,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username , message.author.avatarURL)
                         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(0xff0000)
-                        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Il y a tellement de zombies tous autour de vous qui vous entoure si rapidement en masse qu'il n'y a presque aucun espoir de vous en sortir ni de fuir, vous vous faites complètement dévoré vivant devant les autres survivants ou seul...\n\n:heart: Votre état : `Blessure mortelle`\n\n:heart_exclamation: Hémorragie potentielle : `=Hémmoragie mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")
+                        .addField(":smiling_imp: Zombies attaque :" , ":smiling_imp: Les zombies attaquent " +Survivants+ " survivants...\n\n:smiling_imp: Il y a tellement de zombies tous autour de vous qui vous entoure si rapidement en masse qu'il n'y a presque aucun espoir de vous en sortir ni de fuir, vous vous faites complètement dévoré vivant devant les autres survivants ou seul...\n\n:heart: Votre état : `Blessure mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à la place de continuer d'attaquer les zombies : `=Aide : [Nombre de survivants vous aidant]`\n\n:cold_sweat: Aider un survivant est dangereux à vous aussi, mais le nombre fait la force\n\n:skull: En cas d'échec des survivants à vous aider, ou si vous êtes seul... : `=Dernier espoir`")
                         .setTimestamp()
                         message.channel.send({embed})}
                 }
@@ -44604,7 +44609,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Bandage rudimentaire :" , "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états : `Blessure` & `Hémorragie`\n\nL'utilisation coûte 2 points d'actions, et seulement 1 si un médecin vous le met")
+    .addField("Bandage rudimentaire :" , "Ça sent mauvais, il y a des traces de moisissure, mais franchement, vous n'êtes pas en position de faire votre difficile. Ce bandage permet de panser une blessure\n\nL'utilisation de cet objet permet de guérir les états : `Blessure`\n\nL'utilisation coûte 2 points d'actions, et seulement 1 si un médecin vous le met")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -45613,7 +45618,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Chewing-gums séchés :" , "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`Chamallows séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+    .addField("Chewing-gums séchés :" , "Une pleine poignée de chewing-gums tout séchés. En théorie, ça se mâche, mais ça ne s'avale pas\n\nSeulement, dans cet enfer, vous n'êtes pas en position de faire le ou la difficile...\n\nEn utilisant cet objet, vous obtenez l'état `Rassasiement` ainsi que 6 points d'actions !\n\nCet objet est `Cuisinable`\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`1 Chamallows séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -47499,6 +47504,8 @@ bot.on('message', message => {
                 }
             }) ;
 
+
+
 bot.on('message', message => {
   if (message.content === prefix + "Os humain félé") {
     const embed = new Discord.RichEmbed()
@@ -48848,7 +48855,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Torche :" , "Elle doit bien pouvoir brûler quelques heures... Ça sera toujours ça de plus pour éloigner les zombies\n\nLa torche dure 4 H lorsqu'elle est allumé à l'aide d'une étincelle, elle permet de fouiller la nuit dans l'obscurité\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`Chamallows séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
+    .addField("Torche :" , "Elle doit bien pouvoir brûler quelques heures... Ça sera toujours ça de plus pour éloigner les zombies\n\nLa torche dure 4 H lorsqu'elle est allumé à l'aide d'une étincelle, elle permet de fouiller la nuit dans l'obscurité de 00 H jusque 6 H [Heure de France]\n\nPour cuisiner cet objet et obtenir `Chamallows calcinés` vous devrez être à la cuisine et utiliser :\n\n`Chamallows séchés`\n`1 Torche`\n\nLa préparation prendra 5 minutes à sa réalisation ainsi que 1 point d'action")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -49005,7 +49012,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Twinoïde 500MG [Effets] :" , "Rien ne se passe de plus en utilisant `Betapropine 5MG périmée`")
+      .addField("Twinoïde 500MG [Effets] :" , "Rien ne se passe de plus en utilisant `Twinoïde 500MG`")
       .setTimestamp()
       message.channel.send({embed})}
       if(X >= 81){
