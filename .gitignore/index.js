@@ -19849,7 +19849,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt dense combat")) {
     let joueurs = args.slice(3).join(" : ");
-    if (/*talkedRecently.has(message.author.id+1000)*/false) {
+    if (talkedRecently.has(message.author.id+1000)) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -19954,7 +19954,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.ytimg.com/vi/F3lintstLuQ/hqdefault.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 __Il fuit si il y a aucun monstre ou seulement des Neoridas avec lui__")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 \n :warning: **__Il fuit s'il n'y a aucun monstre autre que des Neoridas__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
     .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -21572,7 +21572,7 @@ if (message.content.startsWith(prefix + "Clairière quête accomplie")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setImage("https://cdn.discordapp.com/attachments/545062628272373770/596799566599291030/7mDgwOG5iCvWH9VRjHQtzxcMOI4372x249.png")
-  .addField(":bookmark: Quête de la Forêt dense :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+  .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                                                   ":sparkles: Points d'expérience : " + xp + "\n" +
                                                   ":large_orange_diamond: Cols : " + cols + "\n" +
                                                   ":syringe: Potion améliorée : " + potionAmelio + "\n" +
