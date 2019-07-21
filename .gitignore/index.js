@@ -20385,7 +20385,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       cols = Math.floor(60 * Math.random() + 60)
@@ -20404,7 +20404,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(55 * Math.random() + 55)
@@ -20466,7 +20466,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20493,7 +20493,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20629,7 +20629,7 @@ bot.on('message', message => {
         Venin = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         Oeufs = 1
       }
       cols = Math.floor(51 * Math.random() + 50)
@@ -20645,7 +20645,7 @@ bot.on('message', message => {
         Venin = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         Oeufs = 1
       }
       cols = Math.floor(41 * Math.random() + 40)
@@ -20718,7 +20718,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       cols = Math.floor(81 * Math.random() + 80)
@@ -20748,7 +20748,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(71 * Math.random() + 70)
@@ -48870,11 +48870,25 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(0xff0000)
-    .addField("Sac plastique :" , "Un vieux sac plastique de super-marché qui peut se transformer en arme redoutable si vous le remplissez d'eau...\n\nPour assembler cet objet et obtenir `Bombe à eau` vous devrez être à l'atelier et utiliser :\n\n`Sac plastique`\n`1 Ration d'eau`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Sac plastique + explosif` vous devrez être à l'atelier et utiliser :\n\n`1 Détonateur compact`\n`1 Explosifs bruts`\n`1 Sac plastique`\n`1 Rustine`\n\nL'assemblage prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Aqua-Splash` vous devrez être à l'atelier et utiliser :\n\n`1 Aqua-Splash (démonté)`\n`1 Sac plastique`\n`1 Rustine`\n`1 Tube de cuivre`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Bombe pulvérine` vous devrez être à l'atelier et utiliser :\n\n`Poudre-comète brute`\n`1 Sac plastique`\n`1 Rustine`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
+    .addField("Sac plastique :" , "Un vieux sac plastique de super-marché qui peut se transformer en arme redoutable si vous le remplissez d'eau...\n\nPour assembler cet objet et obtenir `Bombe à eau` vous devrez être à l'atelier et utiliser :\n\n`Sac plastique`\n`1 Ration d'eau`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Sac plastique + explosif` vous devrez être à l'atelier et utiliser :\n\n`1 Détonateur compact`\n`1 Explosifs bruts`\n`1 Sac plastique`\n`1 Rustine`\n\nL'assemblage prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nLa suite : `=Sac plastique suite`")
     .setTimestamp()
     message.channel.send({embed})
   }
 }) ;
+
+
+bot.on('message', message => {
+  if (message.content === prefix + "Sac plastique 2") {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Sac plastique :" , "\n\nPour assembler cet objet et obtenir `Aqua-Splash` vous devrez être à l'atelier et utiliser :\n\n`1 Aqua-Splash (démonté)`\n`1 Sac plastique`\n`1 Rustine`\n`1 Tube de cuivre`\n`1 Détonateur compact`\n\nL'assemblage prendra 5 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Bombe pulvérine` vous devrez être à l'atelier et utiliser :\n\n`Poudre-comète brute`\n`1 Sac plastique`\n`1 Rustine`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+}) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Sac plastique + explosif") {
