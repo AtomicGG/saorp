@@ -897,12 +897,12 @@ bot.on('message', message => {
                                                                      "Niveau 22 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure !\n\n" +
                                                                      "Niveau 23 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure !\n\n" +
                                                                      "Niveau 24 : Vous gagnez 35 HP et 5 points de dégâts et 1.5 points d'armure !\n\n" +
-                                                                     "Niveau 25 : Vous gagnez 60 HP et 6 points de dégâts et 1,5 points d'armure !\n\n" +
-                                                                     "Niveau 26 : Vous gagnez 60 HP et 7 points de dégâts et 1,5 points d'armure !\n\n" +
-                                                                     "Niveau 27 : Vous gagnez 60 HP et 7 points de dégâts et 1,5 points d'armure !\n\n" +
-                                                                     "Niveau 28 : Vous gagnez 60 HP et 8 points de dégâts et 1,5 points d'armure !\n\n" +
-                                                                     "Niveau 29 : Vous gagnez 60 HP et 8 points de dégâts et 1,5 points d'armure !\n\n" +
-                                                                     "Niveau 30 : Vous gagnez 60 HP et 8 points de dégâts et 2 points d'armure !")
+                                                                     "Niveau 25 : Vous gagnez 35 HP et 5 points de dégâts et 1,5 points d'armure !\n\n" +
+                                                                     "Niveau 26 : Vous gagnez 45 HP et 6 points de dégâts et 1,5 points d'armure !\n\n" +
+                                                                     "Niveau 27 : Vous gagnez 45 HP et 6 points de dégâts et 1,5 points d'armure !\n\n" +
+                                                                     "Niveau 28 : Vous gagnez 45 HP et 6 points de dégâts et 1,5 points d'armure !\n\n" +
+                                                                     "Niveau 29 : Vous gagnez 45 HP et 6 points de dégâts et 1,5 points d'armure !\n\n" +
+                                                                     "Niveau 30 : Vous gagnez 45 HP et 7 points de dégâts et 3 points d'armure !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -940,12 +940,12 @@ bot.on('message', message => {
                                                                    "Niveau 22 : Vous gagnez 7 points de dégât et 2.5 points d'armure et 15 HP !\n\n" +
                                                                    "Niveau 23 : Vous gagnez 7 points de dégât et 2.5 points d'armure et 15 HP !\n\n" +
                                                                    "Niveau 24 : Vous gagnez 7 points de dégât et 2.5 points d'armure et 15 HP !\n\n" +
-                                                                   "Niveau 25 : Vous gagnez 12 points de dégâts et 3 points d'armure et 15 HP !\n\n" +
-                                                                   "Niveau 26 : Vous gagnez 12 points de dégâts et 3,5 points d'armure et 15 HP !\n\n" +
-                                                                   "Niveau 27 : Vous gagnez 12 points de dégâts et 3,5 points d'armure et 15 HP !\n\n" +
-                                                                   "Niveau 28 : Vous gagnez 12 points de dégâts et 4 points d'armure et 15 HP !\n\n" +
-                                                                   "Niveau 29 : Vous gagnez 12 points de dégâts et 4 points d'armure et 15 HP !\n\n" +
-                                                                   "Niveau 30 : Vous gagnez 12 points de dégâts et 4 points d'armure et 20 HP !")
+                                                                   "Niveau 25 : Vous gagnez 7 points de dégâts et 2.5 points d'armure et 15 HP !\n\n" +
+                                                                   "Niveau 26 : Vous gagnez 9 points de dégâts et 3 points d'armure et 15 HP !\n\n" +
+                                                                   "Niveau 27 : Vous gagnez 9 points de dégâts et 3 points d'armure et 15 HP !\n\n" +
+                                                                   "Niveau 28 : Vous gagnez 9 points de dégâts et 3 points d'armure et 15 HP !\n\n" +
+                                                                   "Niveau 29 : Vous gagnez 9 points de dégâts et 3 points d'armure et 15 HP !\n\n" +
+                                                                   "Niveau 30 : Vous gagnez 9 points de dégâts et 3.5 points d'armure et 30 HP !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -983,12 +983,12 @@ bot.on('message', message => {
                                                                     "Niveau 22 : Vous gagnez 7 points de dégât et 25 HP et 1.5 points d'armure !\n\n " +
                                                                     "Niveau 23 : Vous gagnez 7 points de dégât et 25 HP et 1.5 points d'armure !\n\n " +
                                                                     "Niveau 24 : Vous gagnez 7 points de dégât et 25 HP et 1.5 points d'armure !\n\n" +
-                                                                    "Niveau 25 : Vous gagnez 12 points de dégâts et 30 HP et 1,5 points d'armure !\n\n" +
-                                                                    "Niveau 26 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\n" +
-                                                                    "Niveau 27 : Vous gagnez 12 points de dégâts et 35 HP et 1,5 points d'armure !\n\n" +
-                                                                    "Niveau 28 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\n" +
-                                                                    "Niveau 29 : Vous gagnez 12 points de dégâts et 40 HP et 1,5 points d'armure !\n\n" +
-                                                                    "Niveau 30 : Vous gagnez 12 points de dégâts et 40 HP et 2 points d'armure !")
+                                                                    "Niveau 25 : Vous gagnez 7 points de dégâts et 25 HP et 1,5 points d'armure !\n\n" +
+                                                                    "Niveau 26 : Vous gagnez 9 points de dégâts et 30 HP et 1,5 points d'armure !\n\n" +
+                                                                    "Niveau 27 : Vous gagnez 9 points de dégâts et 30 HP et 1,5 points d'armure !\n\n" +
+                                                                    "Niveau 28 : Vous gagnez 9 points de dégâts et 30 HP et 1,5 points d'armure !\n\n" +
+                                                                    "Niveau 29 : Vous gagnez 9 points de dégâts et 30 HP et 1,5 points d'armure !\n\n" +
+                                                                    "Niveau 30 : Vous gagnez 9 points de dégâts et 35 HP et 3 points d'armure !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -1026,12 +1026,12 @@ bot.on('message', message => {
                                                                   "Niveau 22 : Vous gagnez 3.5 points d’armure et 5 points de dégâts et 15 HP ! \n\n" +
                                                                   "Niveau 23 : Vous gagnez 3.5 points d’armure et 5 points de dégâts et 15 HP ! \n\n" +
                                                                   "Niveau 24 : Vous gagnez 3.5 points d’armure et 5 points de dégâts et 15 HP !\n\n" +
-                                                                  "Niveau 25 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\n" +
-                                                                  "Niveau 26 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\n" +
-                                                                  "Niveau 27 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\n" +
-                                                                  "Niveau 28 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\n" +
-                                                                  "Niveau 29 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\n" +
-                                                                  "Niveau 30 : Vous gagnez 6 points d'armure et 8 points de dégâts et 20 HP !")
+                                                                  "Niveau 25 : Vous gagnez 3.5 points d'armure et 5 points de dégâts et 15 HP !\n\n" +
+                                                                  "Niveau 26 : Vous gagnez 4.5 points d'armure et 6 points de dégâts et 15 HP !\n\n" +
+                                                                  "Niveau 27 : Vous gagnez 4.5 points d'armure et 6 points de dégâts et 15 HP !\n\n" +
+                                                                  "Niveau 28 : Vous gagnez 4.5 points d'armure et 6 points de dégâts et 15 HP !\n\n" +
+                                                                  "Niveau 29 : Vous gagnez 4.5 points d'armure et 6 points de dégâts et 15 HP !\n\n" +
+                                                                  "Niveau 30 : Vous gagnez 4.5 points d'armure et 7 points de dégâts et 30 HP !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -1069,12 +1069,12 @@ bot.on('message', message => {
                                                                       "Niveau 22 : Vous gagnez 35 HP et 2.5 points d’armure et 3 points de dégâts! \n\n" +
                                                                       "Niveau 23 : Vous gagnez 35 HP et 2.5 points d’armure et 3 points de dégâts! \n\n" +
                                                                       "Niveau 24 : Vous gagnez 35 HP et 2.5 points d’armure et 3 points de dégâts!\n\n" +
-                                                                      "Niveau 25 : Vous gagnez 6 points d'armure et 6 points de dégâts et 15 HP !\n\n" +
-                                                                      "Niveau 26 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\n" +
-                                                                      "Niveau 27 : Vous gagnez 6 points d'armure et 7 points de dégâts et 15 HP !\n\n" +
-                                                                      "Niveau 28 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\n" +
-                                                                      "Niveau 29 : Vous gagnez 6 points d'armure et 8 points de dégâts et 15 HP !\n\n" +
-                                                                      "Niveau 30 : Vous gagnez 6 points d'armure et 8 points de dégâts et 20 HP !")
+                                                                      "Niveau 25 : Vous gagnez 35 HP et 2.5 points d’armure et 3 points de dégâts!\n\n" +
+                                                                      "Niveau 26 : Vous gagnez 45 HP et 3 points d’armure et 3 points de dégâts!\n\n" +
+                                                                      "Niveau 27 : Vous gagnez 45 HP et 3 points d’armure et 3 points de dégâts!\n\n" +
+                                                                      "Niveau 28 : Vous gagnez 45 HP et 3 points d’armure et 3 points de dégâts!\n\n" +
+                                                                      "Niveau 29 : Vous gagnez 45 HP et 3 points d’armure et 3 points de dégâts!\n\n" +
+                                                                      "Niveau 30 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégâts!")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -1112,12 +1112,12 @@ bot.on('message', message => {
                                                                     "Niveau 22 : Vous gagnez 3.5 points d’armure et 25 HP et 3 points de dégâts! \n\n" +
                                                                     "Niveau 23 : Vous gagnez 3.5 points d’armure et 25 HP et 3 points de dégâts! \n\n" +
                                                                     "Niveau 24 : Vous gagnez 3.5 points d’armure et 25 HP et 3 points de dégâts!\n\n" +
-                                                                    "Niveau 25 : Vous gagnez 6 points d'armure et 30 HP et 3 points de dégâts !\n\n" +
-                                                                    "Niveau 26 : Vous gagnez 6 points d'armure et 35 HP et 3 points de dégâts !\n\n" +
-                                                                    "Niveau 27 : Vous gagnez 6 points d'armure et 35 HP et 3 points de dégâts !\n\n" +
-                                                                    "Niveau 28 : Vous gagnez 6 points d'armure et 40 HP et 3 points de dégâts !\n\n" +
-                                                                    "Niveau 29 : Vous gagnez 6 points d'armure et 40 HP et 3 points de dégâts !\n\n" +
-                                                                    "Niveau 30 : Vous gagnez 6 points d'armure et 30 HP et 4 pointss de dégâts !")
+                                                                    "Niveau 25 : Vous gagnez 3.5 points d'armure et 25 HP et 3 points de dégâts !\n\n" +
+                                                                    "Niveau 26 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégâts !\n\n" +
+                                                                    "Niveau 27 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégâts !\n\n" +
+                                                                    "Niveau 28 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégâts !\n\n" +
+                                                                    "Niveau 29 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégâts !\n\n" +
+                                                                    "Niveau 30 : Vous gagnez 4.5 points d'armure et 35 HP et 6 pointss de dégâts !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
