@@ -21597,7 +21597,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
-  const B = (Math.floor((20)*Math.random()+25))
+  const B = (Math.floor((20)*Math.random()+35))
   if (message.content.startsWith(prefix + "Boa attaque")) {
     if(A <= 50){
       const embed = new Discord.RichEmbed()
@@ -21893,7 +21893,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bourdon flâneur attaque")) {
-    const degat = Math.floor(36 * Math.random() + 105)
+    const degat = Math.floor(26 * Math.random() + 115)
     const degatCrit = Math.floor(76 * Math.random() + 200)
     const roll = Math.floor(100 * Math.random() + 1)
     if (roll <= 35){
@@ -21927,7 +21927,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Taurus chargeur attaque")) {
-    const degat = Math.floor(36 * Math.random() + 115)
+    const degat = Math.floor(36 * Math.random() + 120)
     const degatCrit = Math.floor(36 * Math.random() + 125)
     const tours = Math.floor(2 * Math.random() + 1)
     const roll = Math.floor(100 * Math.random() + 1)
@@ -23232,7 +23232,7 @@ bot.on('message', message => {
     .addField(":egg: Oeuf brisé :" , ":egg: C'est un oeuf assez étrange, avec une allure qui pourrait faire penser qu'il est sur le point de se briser, qui renferme parfois un bébé animal trouvable dans le palier 2 !")
     .addField("Prix d'achat :" , "8000 cols")
     .addField("Prix de revente :" , "2000 cols")
-    .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :" , "=Achat/découverte d'un Oeuf brisé")
+    .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :" , "=Achat/découverte d'un oeuf brisé")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -45224,7 +45224,7 @@ bot.on('message', message => {
                 }
             }) ;
 
-            
+
 bot.on('message', message => {
   if (message.content === prefix + "Bombe à eau explosive") {
     const embed = new Discord.RichEmbed()
