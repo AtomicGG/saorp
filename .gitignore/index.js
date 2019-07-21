@@ -21909,7 +21909,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute violemment. Vous perdez " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vous fonce dessus et vous percute violemment. Vous vous prenez " + degat + " points de dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
