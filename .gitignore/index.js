@@ -25322,7 +25322,7 @@ bot.on('message', message => {
 });
 
 // Arme en chitine achat
-
+/*
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de l'épée en chitine à deux mains")) {
     const Dégâts = Math.floor(9 * Math.random() + 28)
@@ -25964,7 +25964,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
+*/
 // Arme taurus
 
 bot.on('message', message => {
