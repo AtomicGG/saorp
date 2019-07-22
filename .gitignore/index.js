@@ -25427,10 +25427,10 @@ bot.on('message', message => {
 });
 
 // Arme en chitine achat
-/*
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de l'épée en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 28)
+    const Dégâts = Math.floor(4 * Math.random() + 22)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25444,7 +25444,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de la hache en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 28)
+    const Dégâts = Math.floor(4 * Math.random() + 22)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25458,7 +25458,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de la masse en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 28)
+    const Dégâts = Math.floor(4 * Math.random() + 22)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25472,7 +25472,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat du glaive en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 28)
+    const Dégâts = Math.floor(4 * Math.random() + 22)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25486,7 +25486,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat du katana en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 28)
+    const Dégâts = Math.floor(4 * Math.random() + 22)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25500,7 +25500,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de la rapière en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 28)
+    const Dégâts = Math.floor(4 * Math.random() + 22)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25514,7 +25514,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat du cimeterre en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 28)
+    const Dégâts = Math.floor(4 * Math.random() + 22)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25528,7 +25528,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de l'épée en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(2 * Math.random() + 11)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25542,7 +25542,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de la masse en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(2 * Math.random() + 11)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25556,7 +25556,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de la hache en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(2 * Math.random() + 11)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25570,7 +25570,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de la rapière en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(2 * Math.random() + 11)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25584,7 +25584,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat du cimeterre en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(2 * Math.random() + 11)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25598,7 +25598,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de la dague en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(2 * Math.random() + 11)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25613,8 +25613,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat du bouclier en chitine à une main")) {
-    const Défense = Math.floor(3 * Math.random() + 8)
-    const HP = Math.floor(11 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 6)
+    const HP = Math.floor(6 * Math.random() + 20)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25628,7 +25628,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat du katana en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(2 * Math.random() + 11)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25644,7 +25644,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de l'épée en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 36)
+    const Dégâts = Math.floor(5 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25658,7 +25658,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de la hache en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 36)
+    const Dégâts = Math.floor(5 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25672,7 +25672,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de la masse en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 36)
+    const Dégâts = Math.floor(5 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25686,7 +25686,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte du glaive en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 36)
+    const Dégâts = Math.floor(5 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25700,7 +25700,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte du katana en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 36)
+    const Dégâts = Math.floor(5 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25714,7 +25714,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de la rapière en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 36)
+    const Dégâts = Math.floor(5 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25728,7 +25728,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte du cimeterre en chitine à deux mains")) {
-    const Dégâts = Math.floor(9 * Math.random() + 36)
+    const Dégâts = Math.floor(5 * Math.random() + 28)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25742,7 +25742,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de l'épée en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 18)
+    const Dégâts = Math.floor(3 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25756,7 +25756,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de la masse en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 18)
+    const Dégâts = Math.floor(3 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25770,7 +25770,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de la hache en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 18)
+    const Dégâts = Math.floor(3 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25784,7 +25784,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de la rapière en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 18)
+    const Dégâts = Math.floor(3 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25798,7 +25798,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte du cimeterre en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 18)
+    const Dégâts = Math.floor(3 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25812,7 +25812,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte de la dague en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 18)
+    const Dégâts = Math.floor(3 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25826,9 +25826,9 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Achat du bouclier en chitine à une main")) {
-    const Défense = Math.floor(3 * Math.random() + 8)
-    const HP = Math.floor(11 * Math.random() + 25)
+  if (message.content.startsWith(prefix + "Découverte du bouclier en chitine à une main")) {
+    const Défense = Math.floor(2 * Math.random() + 7)
+    const HP = Math.floor(6 * Math.random() + 35)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25842,7 +25842,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Découverte du katana en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 18)
+    const Dégâts = Math.floor(3 * Math.random() + 14)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25855,12 +25855,11 @@ bot.on('message', message => {
 });
 
 
-
 // Arme en chitine fabrication
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine à deux mains")) {
-    const Dégâts = Math.floor(10 * Math.random() + 28)
+    const Dégâts = Math.floor(6 * Math.random() +33)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25874,7 +25873,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache en chitine à deux mains")) {
-    const Dégâts = Math.floor(10 * Math.random() + 28)
+    const Dégâts = Math.floor(6 * Math.random() +33)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25888,7 +25887,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse en chitine à deux mains")) {
-    const Dégâts = Math.floor(10 * Math.random() + 28)
+    const Dégâts = Math.floor(6 * Math.random() +33)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25902,7 +25901,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du glaive en chitine à deux mains")) {
-    const Dégâts = Math.floor(10 * Math.random() + 28)
+    const Dégâts = Math.floor(6 * Math.random() +33)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25916,7 +25915,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana en chitine à deux mains")) {
-    const Dégâts = Math.floor(10 * Math.random() + 28)
+    const Dégâts = Math.floor(6 * Math.random() +33)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25930,7 +25929,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière en chitine à deux mains")) {
-    const Dégâts = Math.floor(10 * Math.random() + 28)
+    const Dégâts = Math.floor(6 * Math.random() +33)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25944,7 +25943,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre en chitine à deux mains")) {
-    const Dégâts = Math.floor(10 * Math.random() + 28)
+    const Dégâts = Math.floor(6 * Math.random() +33)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25958,7 +25957,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(4 * Math.random() +16)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25972,7 +25971,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(4 * Math.random() +16)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25986,7 +25985,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(4 * Math.random() +16)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26000,7 +25999,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(4 * Math.random() +16)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26014,7 +26013,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(4 * Math.random() +16)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26028,7 +26027,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la dague en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(4 * Math.random() +16)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26043,8 +26042,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du bouclier en chitine à une main")) {
-    const Défense = Math.floor(3 * Math.random() + 8)
-    const HP = Math.floor(11 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 8)
+    const HP = Math.floor(6 * Math.random() + 45)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26058,7 +26057,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana en chitine à une main")) {
-    const Dégâts = Math.floor(5 * Math.random() + 14)
+    const Dégâts = Math.floor(4 * Math.random() +16)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26069,7 +26068,8 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-*/
+
+
 // Arme taurus
 
 bot.on('message', message => {
@@ -26271,7 +26271,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée de taurus à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 40)
+    const Dégâts = Math.floor(4 * Math.random() + 38)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26285,7 +26285,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache de taurus à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 40)
+    const Dégâts = Math.floor(4 * Math.random() + 38)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26299,7 +26299,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse de taurus à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 40)
+    const Dégâts = Math.floor(4 * Math.random() + 38)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26313,7 +26313,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du glaive de taurus à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 40)
+    const Dégâts = Math.floor(4 * Math.random() + 38)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26327,7 +26327,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana de taurus à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 40)
+    const Dégâts = Math.floor(4 * Math.random() + 38)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26341,7 +26341,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière de taurus à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 40)
+    const Dégâts = Math.floor(4 * Math.random() + 38)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26355,7 +26355,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre de taurus à deux mains")) {
-    const Dégâts = Math.floor(11 * Math.random() + 40)
+    const Dégâts = Math.floor(4 * Math.random() + 38)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26367,14 +26367,15 @@ bot.on('message', message => {
   }
 });
 
+
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée de taurus à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 25)
+    const Dégâts = Math.floor(3 * Math.random() + 19)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Epée de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26383,12 +26384,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse de taurus à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 25)
+    const Dégâts = Math.floor(3 * Math.random() + 19)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Masse de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26397,12 +26398,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache de taurus à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 25)
+    const Dégâts = Math.floor(3 * Math.random() + 19)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Hache de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26411,12 +26412,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière de taurus à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 25)
+    const Dégâts = Math.floor(3 * Math.random() + 19)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Rapière de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26425,12 +26426,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre de taurus à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 25)
+    const Dégâts = Math.floor(3 * Math.random() + 19)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Cimeterre de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26439,12 +26440,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la dague de taurus à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 25)
+    const Dégâts = Math.floor(3 * Math.random() + 19)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Dague de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26453,17 +26454,18 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana de taurus à une main")) {
-    const Dégâts = Math.floor(6 * Math.random() + 25)
+    const Dégâts = Math.floor(3 * Math.random() + 19)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Katana de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
   }
 });
+
 
 // Equipements de maille
 
