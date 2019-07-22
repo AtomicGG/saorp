@@ -1536,7 +1536,7 @@ bot.on('message', message => {
 // Menus | Liste | Armes
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 1")) {
+  if (message.content === (prefix + "Liste d'armes 1")) {
     message.channel.send("```Epée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\n" +
                             "Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\n" +
                             "Dague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\n" +
@@ -1557,7 +1557,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
- if (message.content.startsWith(prefix + "Liste d'armes 2")) {
+ if (message.content === (prefix + "Liste d'armes 2")) {
    message.channel.send("```Epée de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt à une main]\n\n" +
                            "Epée de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Epée de kobolt à deux mains]\n\n" +
                            "Dague de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt à une main]\n\n" +
@@ -1578,7 +1578,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 3")) {
+  if (message.content === (prefix + "Liste d'armes 3")) {
     message.channel.send("```Epée du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups à une main]\n\n" +
                             "Epée du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\n" +
                             "Dague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\n" +
@@ -1592,7 +1592,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 4")) {
+  if (message.content === (prefix + "Liste d'armes 4")) {
     message.channel.send("```Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
                             "Rapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\n" +
                             "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
@@ -1605,7 +1605,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 5")) {
+  if (message.content === (prefix + "Liste d'armes 5")) {
     message.channel.send("```Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
                             "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
                             "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
@@ -1619,7 +1619,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 6")) {
+  if (message.content === (prefix + "Liste d'armes 6")) {
     message.channel.send("```Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
                             "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
                             "Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
@@ -1632,14 +1632,14 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 7")) {
+  if (message.content === (prefix + "Liste d'armes 7")) {
     message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
                             "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 8")) {
+  if (message.content === (prefix + "Liste d'armes 8")) {
     message.channel.send("```Epée de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Epée de chitine à une main]\n\n" +
                             "Epée de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Epée de chitine à deux mains]\n\n" +
                             "Dague de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Dague de chitine à une main]\n\n" +
@@ -1654,7 +1654,7 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 9")) {
+  if (message.content === (prefix + "Liste d'armes 9")) {
     message.channel.send("```Rapière de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Rapière de chitine à une main]\n\n" +
                             "Rapière de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Rapière de chitine à deux mains]\n\n" +
                             "Cimeterre de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Cimeterre de chitine à une main]\n\n" +
@@ -1667,7 +1667,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 10")) {
+  if (message.content === (prefix + "Liste d'armes 10")) {
     message.channel.send("```Epée de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Epée de taurus à une main]\n\n" +
                             "Epée de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Epée de taurus à deux mains]\n\n" +
                             "Dague de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Dague de taurus à une main]\n\n" +
@@ -1681,7 +1681,7 @@ bot.on('message', message => {
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste d'armes 11")) {
+  if (message.content === (prefix + "Liste d'armes 11")) {
     message.channel.send("```Rapière de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Rapière de taurus à une main]\n\n" +
                             "Rapière de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Rapière de taurus à deux mains]\n\n" +
                             "Cimeterre de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Cimeterre de taurus à une main]\n\n" +
