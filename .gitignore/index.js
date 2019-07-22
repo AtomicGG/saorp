@@ -21691,8 +21691,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark Venom !")
-      .addField(":egg: Ark Venom :" ,":egg: Après chacunes de vos attaques, le Ark Venom attaque : =Ark Venom attaque")
+      .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark venom !")
+      .addField(":egg: Ark Venom :" ,":egg: Après chacunes de vos attaques, le Ark Venom attaque : =Ark venom attaque")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21709,7 +21709,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Boa :" , ":crossed_swords: Le Boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
+      .addField(":crossed_swords: Boa :" , ":crossed_swords: Le boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21719,7 +21719,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Boa :" ,":crossed_swords: Le Boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Boa :" ,":crossed_swords: Le boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21730,13 +21730,13 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100)*Math.random()+1))
   const B = (Math.floor((26)*Math.random()+46))
-  if (message.content.startsWith(prefix + "Ark Venom attaque")) {
+  if (message.content.startsWith(prefix + "Ark venom attaque")) {
     if(A <= 50){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom essaye de mordre sa cible mais préfère passer a coté...")
+      .addField(":crossed_swords: Ark venom :" ,":crossed_swords: Le Ark venom essaye de mordre sa cible mais préfère passer a coté...")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -21746,7 +21746,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Ark Venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Ark venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -26267,16 +26267,215 @@ bot.on('message', message => {
   }
 });
 
+// Arme de taurus achat
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de l'épée de taurus à deux mains")) {
+    const Dégâts = Math.floor(4 * Math.random() + 32)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Epée de taurus à deux mains :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts +"\n\n:warning: Vous perdez 5 point d'armure")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la hache de taurus à deux mains")) {
+    const Dégâts = Math.floor(4 * Math.random() + 32)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Hache de taurus à deux mains :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 5 point d'armure")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la masse de taurus à deux mains")) {
+    const Dégâts = Math.floor(4 * Math.random() + 32)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Masse de taurus à deux mains :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 5 point d'armure")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat du glaive de taurus à deux mains")) {
+    const Dégâts = Math.floor(4 * Math.random() + 32)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Glaive de taurus à deux mains :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 5 point d'armure")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat du katana de taurus à deux mains")) {
+    const Dégâts = Math.floor(4 * Math.random() + 32)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Katana de taurus à deux mains :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 5 point d'armure")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la rapière de taurus à deux mains")) {
+    const Dégâts = Math.floor(4 * Math.random() + 32)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Rapière de taurus à deux mains :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 5 point d'armure")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat du cimeterre de taurus à deux mains")) {
+    const Dégâts = Math.floor(4 * Math.random() + 32)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cimeterre de taurus à deux mains :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 5 point d'armure")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de l'épée de taurus à une main")) {
+    const Dégâts = Math.floor(2 * Math.random() + 16)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Epée de taurus à une main :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la masse de taurus à une main")) {
+    const Dégâts = Math.floor(2 * Math.random() + 16)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Masse de taurus à une main :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la hache de taurus à une main")) {
+    const Dégâts = Math.floor(2 * Math.random() + 16)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Hache de taurus à une main :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la rapière de taurus à une main")) {
+    const Dégâts = Math.floor(2 * Math.random() + 16)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Rapière de taurus à une main :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat du cimeterre de taurus à une main")) {
+    const Dégâts = Math.floor(2 * Math.random() + 16)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Cimeterre de taurus à une main :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat de la dague de taurus à une main")) {
+    const Dégâts = Math.floor(2 * Math.random() + 16)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Dague de taurus à une main :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Achat du katana de taurus à une main")) {
+    const Dégâts = Math.floor(2 * Math.random() + 16)
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Katana de taurus à une main :" , ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+
 // Arme taurus fabrication
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée de taurus à deux mains")) {
-    const Dégâts = Math.floor(4 * Math.random() + 38)
+    const Dégâts = Math.floor(6 * Math.random() + 43)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Epée de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26285,12 +26484,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache de taurus à deux mains")) {
-    const Dégâts = Math.floor(4 * Math.random() + 38)
+    const Dégâts = Math.floor(6 * Math.random() + 43)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Hache de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26299,12 +26498,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse de taurus à deux mains")) {
-    const Dégâts = Math.floor(4 * Math.random() + 38)
+    const Dégâts = Math.floor(6 * Math.random() + 43)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Masse de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26313,12 +26512,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du glaive de taurus à deux mains")) {
-    const Dégâts = Math.floor(4 * Math.random() + 38)
+    const Dégâts = Math.floor(6 * Math.random() + 43)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Glaive de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26327,12 +26526,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana de taurus à deux mains")) {
-    const Dégâts = Math.floor(4 * Math.random() + 38)
+    const Dégâts = Math.floor(6 * Math.random() + 43)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Katana de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26341,12 +26540,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière de taurus à deux mains")) {
-    const Dégâts = Math.floor(4 * Math.random() + 38)
+    const Dégâts = Math.floor(6 * Math.random() + 43)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Rapière de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26355,12 +26554,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre de taurus à deux mains")) {
-    const Dégâts = Math.floor(4 * Math.random() + 38)
+    const Dégâts = Math.floor(6 * Math.random() + 43)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -10 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Cimeterre de taurus à deux mains :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26370,12 +26569,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'épée de taurus à une main")) {
-    const Dégâts = Math.floor(3 * Math.random() + 19)
+    const Dégâts = Math.floor(4 * Math.random() + 21)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Epée de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26384,12 +26583,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la masse de taurus à une main")) {
-    const Dégâts = Math.floor(3 * Math.random() + 19)
+    const Dégâts = Math.floor(4 * Math.random() + 21)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Masse de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26398,12 +26597,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la hache de taurus à une main")) {
-    const Dégâts = Math.floor(3 * Math.random() + 19)
+    const Dégâts = Math.floor(4 * Math.random() + 21)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Hache de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26412,12 +26611,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la rapière de taurus à une main")) {
-    const Dégâts = Math.floor(3 * Math.random() + 19)
+    const Dégâts = Math.floor(4 * Math.random() + 21)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Rapière de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26426,12 +26625,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du cimeterre de taurus à une main")) {
-    const Dégâts = Math.floor(3 * Math.random() + 19)
+    const Dégâts = Math.floor(4 * Math.random() + 21)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Cimeterre de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26440,12 +26639,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la dague de taurus à une main")) {
-    const Dégâts = Math.floor(3 * Math.random() + 19)
+    const Dégâts = Math.floor(4 * Math.random() + 21)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Dague de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26454,12 +26653,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du katana de taurus à une main")) {
-    const Dégâts = Math.floor(3 * Math.random() + 19)
+    const Dégâts = Math.floor(4 * Math.random() + 21)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " -5 points d'armure si vous avez l'arme équiper.")
+    .addField(":scales: Katana de taurus à une main :" , ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " +Dégâts+ " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
