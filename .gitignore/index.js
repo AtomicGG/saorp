@@ -21153,7 +21153,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de l'anneau en chitine")) {
     const Défense = Math.floor(4 * Math.random() + 6)
-    const HP = Math.floor(6 * Math.random() + 25)
+    const HP = Math.floor(11 * Math.random() + 20)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21168,7 +21168,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Achat de l'amulette en chitine")) {
     const Défense = Math.floor(4 * Math.random() + 6)
-    const HP = Math.floor(6 * Math.random() + 25)
+    const HP = Math.floor(11 * Math.random() + 20)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21305,7 +21305,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'anneau en chitine")) {
     const Défense = Math.floor(5 * Math.random() + 9)
-    const HP = Math.floor(11 * Math.random() + 30)
+    const HP = Math.floor(21 * Math.random() + 30)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -21320,7 +21320,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de l'amulette en chitine")) {
     const Défense = Math.floor(5 * Math.random() + 9)
-    const HP = Math.floor(11 * Math.random() + 30)
+    const HP = Math.floor(21 * Math.random() + 30)
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
