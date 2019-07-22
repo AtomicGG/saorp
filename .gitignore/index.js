@@ -1479,9 +1479,59 @@ bot.on('message', message => {
                             "Jambières de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Jambières de kobolt supérieures]\n\n" +
                             "Bottes de kobolt supérieures :\nCoûts : [Achat : 1040 cols] [Revente : 260 cols]\nInfos : [=Bottes de kobolt supérieures]\n\n" +
                             "Anneau de kobolt supérieur :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Anneau de kobolt supérieur]\n\n" +
-                            "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]```")
+                            "Amulette de kobolt supérieure :\nCoûts : [Achat : 3020 cols] [Revente : 755 cols]\nInfos : [=Amulette de kobolt supérieure]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 7```")
   }
 });
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 7")) {
+    message.channel.send("```Casque en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Casque en chitine]\n\n" +
+                            "Epaulières en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Epaulières en chitine]\n\n" +
+                            "Plastron en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Plastron en chitine]\n\n" +
+                            "Cape en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Cape en chitine]\n\n" +
+                            "Ceinture en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Ceinture en chitine]\n\n" +
+                            "Gantelets en chitines :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Gantelets en chitines]\n\n" +
+                            "Jambières en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Jambières en chitine]\n\n" +
+                            "Bottes en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Bottes en chitine]\n\n" +
+                            "Anneau en chitine :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Anneau en chitine]\n\n" +
+                            "Amulette en chitine :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Amulette en chitine]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 8```")
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 8")) {
+    message.channel.send("```Casque taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Casque taurus]\n\n" +
+                            "Epaulières taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Epaulières taurus]\n\n" +
+                            "Plastron taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Plastron taurus]\n\n" +
+                            "Cape taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Cape taurus]\n\n" +
+                            "Ceinture taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Ceinture taurus]\n\n" +
+                            "Gantelets tauruss :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Gantelets tauruss]\n\n" +
+                            "Jambières taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Jambières taurus]\n\n" +
+                            "Bottes taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Bottes taurus]\n\n" +
+                            "Anneau taurus :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Anneau taurus]\n\n" +
+                            "Amulette taurus :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Amulette taurus]\n\n" +
+                            "Suite en écrivant :\n=Liste d'équipements 9```")
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'équipements 9")) {
+    message.channel.send("```Casque de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Casque de maille]\n\n" +
+                            "Epaulières de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Epaulières de maille]\n\n" +
+                            "Plastron de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Plastron de maille]\n\n" +
+                            "Cape de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Cape de maille]\n\n" +
+                            "Ceinture de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Ceinture de maille]\n\n" +
+                            "Gantelets de mailles :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Gantelets de mailles]\n\n" +
+                            "Jambières de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Jambières de maille]\n\n" +
+                            "Bottes de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Bottes de maille]\n\n" +
+                            "Anneau de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Anneau de maille]\n\n" +
+                            "Amulette de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette de maille]\n\n" +
+                            "Suite en écrivant :\n... Pas encore la.```")
+  }
+});
+
 
 // Menus | Liste | Armes
 
@@ -1587,6 +1637,61 @@ bot.on('message', message => {
                             "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]```")
   }
 }) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 8")) {
+    message.channel.send("```Epée de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Epée de chitine à une main]\n\n" +
+                            "Epée de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Epée de chitine à deux mains]\n\n" +
+                            "Dague de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Dague de chitine à une main]\n\n" +
+                            "Glaive de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Glaive de chitine à deux mains]\n\n" +
+                            "Masse de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Masse de chitine à une main]\n\n" +
+                            "Masse de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Masse de chitine à deux mains]\n\n" +
+                            "Hache de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Hache de chitine à une main]\n\n" +
+                            "Hache de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Hache de chitine à deux mains]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 9```")
+  }
+}) ;
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 9")) {
+    message.channel.send("```Rapière de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Rapière de chitine à une main]\n\n" +
+                            "Rapière de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Rapière de chitine à deux mains]\n\n" +
+                            "Cimeterre de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Cimeterre de chitine à une main]\n\n" +
+                            "Cimeterre de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Cimeterre de chitine à deux mains]\n\n" +
+                            "Katana de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Katana de chitine à une main]\n\n" +
+                            "Katana de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Katana de chitine à deux mains]\n\n" +
+                            "Bouclier de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Bouclier de chitine à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 10```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 10")) {
+    message.channel.send("```Epée de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Epée de taurus à une main]\n\n" +
+                            "Epée de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Epée de taurus à deux mains]\n\n" +
+                            "Dague de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Dague de taurus à une main]\n\n" +
+                            "Glaive de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Glaive de taurus à deux mains]\n\n" +
+                            "Masse de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Masse de taurus à une main]\n\n" +
+                            "Masse de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Masse de taurus à deux mains]\n\n" +
+                            "Hache de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Hache de taurus à une main]\n\n" +
+                            "Hache de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Hache de taurus à deux mains]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 11```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste d'armes 11")) {
+    message.channel.send("```Rapière de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Rapière de taurus à une main]\n\n" +
+                            "Rapière de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Rapière de taurus à deux mains]\n\n" +
+                            "Cimeterre de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Cimeterre de taurus à une main]\n\n" +
+                            "Cimeterre de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Cimeterre de taurus à deux mains]\n\n" +
+                            "Katana de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Katana de taurus à une main]\n\n" +
+                            "Katana de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Katana de taurus à deux mains]\n\n" +
+                            "Suite en écrivant :... Pas encore dispo```")
+  }
+}) ;
+
 
 // Menus | Liste | Potions
 
@@ -25132,7 +25237,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée en chitine à deux mains :" , ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à deux mains`")
+    .addField(":scales: Epée en chitine à deux mains :" , ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'épée en chitine à deux mains`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'épée en chitine à deux mains`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25145,7 +25250,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache en chitine à deux mains :" , ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à deux mains`")
+    .addField(":scales: Hache en chitine à deux mains :" , ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la hache en chitine à deux mains`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la hache en chitine à deux mains`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25158,7 +25263,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse en chitine à deux mains :" , ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse de  en chitine à deux mains`")
+    .addField(":scales: Masse en chitine à deux mains :" , ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la masse en chitine à deux mains`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la masse en chitine à deux mains`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25171,7 +25276,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière en chitine à deux mains :" , ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à deux mains`")
+    .addField(":scales: Rapière en chitine à deux mains :" , ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la rapière en chitine à deux mains`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la rapière en chitine à deux mains`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25184,7 +25289,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive en chitine à deux mains :" , ":scales: C'est un glaive fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à deux mains`")
+    .addField(":scales: Glaive en chitine à deux mains :" , ":scales: C'est un glaive fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du glaive en chitine à deux mains`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du glaive en chitine à deux mains`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du glaive en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25197,7 +25302,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre en chitine à deux mains :" , ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à deux mains`")
+    .addField(":scales: Cimeterre en chitine à deux mains :" , ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du cimeterre en chitine à deux mains`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du cimeterre en chitine à deux mains`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25210,7 +25315,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana en chitine à deux mains :" , ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à deux mains`")
+    .addField(":scales: Katana en chitine à deux mains :" , ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 3 fer commun, 4 fer médiocre, 4 Patte de Doryphore géant, 2 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du katana en chitine à deux mains`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du katana en chitine à deux mains`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25223,7 +25328,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Epée en chitine à un main :" , ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à une main`")
+    .addField(":scales: Epée en chitine à un main :" , ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'épée en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'épée en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25236,7 +25341,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Dague en chitine à un main :" , ":scales: C'est une dague faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague en chitine à une main`")
+    .addField(":scales: Dague en chitine à un main :" , ":scales: C'est une dague faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la dague en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la dague en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25249,7 +25354,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Masse en chitine à un main :" , ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse en chitine à une main`")
+    .addField(":scales: Masse en chitine à un main :" , ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat la hache en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'épée en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25262,7 +25367,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache en chitine à un main :" , ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à une main`")
+    .addField(":scales: Hache en chitine à un main :" , ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat la hache en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la hache en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25275,7 +25380,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre en chitine à un main :" , ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à une main`")
+    .addField(":scales: Cimeterre en chitine à un main :" , ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du cimeterre en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du cimeterre en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25288,7 +25393,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Katana en chitine à un main :" , ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à une main`")
+    .addField(":scales: Katana en chitine à un main :" , ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du katana en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du katana en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25301,7 +25406,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière en chitine à un main :" , ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à une main`")
+    .addField(":scales: Rapière en chitine à un main :" , ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de la rapière en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de la rapière en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -25314,7 +25419,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier en chitine à un main :" , ":scales: C'est un bouclier fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier en chitine à une main`")
+    .addField(":scales: Bouclier en chitine à un main :" , ":scales: C'est un bouclier fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 7\n\n:large_orange_diamond: Prix d'achat : X cols\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous achetez cet objet: `=Achat de l'épée en chitine à une main`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte de l'épée en chitine à une main`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bouclier en chitine à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
