@@ -21803,10 +21803,10 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("http://i.imgur.com/6Pfztwn.png")
         .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
-                                                        ":crossed_swords: Bourdon flâneur 700 : " + bourdonFlaneur + "\n" +
-                                                        ":crossed_swords: Taurus chargeur 1250 : " + taurusChargeur+ "\n" +
-                                                        ":crossed_swords: Fort taurus adroit 1350 : " + fortTaurus + "\n" +
-                                                        ":crossed_swords: Taurus lourd 2550 : " + taurusLourd)
+                                                        ":crossed_swords: Bourdon flâneur  : " + bourdonFlaneur + "\n" +
+                                                        ":crossed_swords: Taurus chargeur : " + taurusChargeur+ "\n" +
+                                                        ":crossed_swords: Fort taurus adroit : " + fortTaurus + "\n" +
+                                                        ":crossed_swords: Taurus lourd : " + taurusLourd)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Clairière quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
@@ -21913,10 +21913,10 @@ if (talkedRecently.has(message.author.id+1000)) {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mount_fuji: Clairière :" , ":mount_fuji: En marchant dans la Clairière, vous rencontrez les ennemis suivants\n\n" +
-                                               ":crossed_swords: Bourdon flâneur : " + bourdonFlaneur + "\n" +
-                                               ":crossed_swords: Taurus chargeur  : " + taurusChargeur+ "\n" +
-                                               ":crossed_swords: Fort taurus adroit : " + fortTaurus + "\n" +
-                                               ":crossed_swords: Taurus lourd : " + taurusLourd)
+                                               ":crossed_swords: Bourdon flâneur 700 : " + bourdonFlaneur + "\n" +
+                                               ":crossed_swords: Taurus chargeur 1250 : " + taurusChargeur+ "\n" +
+                                               ":crossed_swords: Fort taurus adroit 1350 : " + fortTaurus + "\n" +
+                                               ":crossed_swords: Taurus lourd 2550 : " + taurusLourd)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -23023,8 +23023,7 @@ bot.on('message', message => {
     message.channel.send({embed})
   }
 });
-
-bot.on('message', message => {
+/*bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de l'anneau taurus")) {
         const Dégâts = Math.floor(3 * Math.random() + 11)
         const HP = Math.floor(16 * Math.random() + 50)
@@ -23055,7 +23054,7 @@ bot.on('message', message => {
       message.channel.send({embed})
     }
   });
-
+*/
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte du casque taurus")) {
       const Dégâts = Math.floor(3 * Math.random() + 1)
