@@ -1640,14 +1640,14 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === (prefix + "Liste d'armes 8")) {
-    message.channel.send("```Epée de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Epée de chitine à une main]\n\n" +
-                            "Epée de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Epée de chitine à deux mains]\n\n" +
-                            "Dague de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Dague de chitine à une main]\n\n" +
-                            "Glaive de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Glaive de chitine à deux mains]\n\n" +
-                            "Masse de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Masse de chitine à une main]\n\n" +
-                            "Masse de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Masse de chitine à deux mains]\n\n" +
-                            "Hache de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Hache de chitine à une main]\n\n" +
-                            "Hache de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Hache de chitine à deux mains]\n\n" +
+    message.channel.send("```Epée en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Epée en chitine à une main]\n\n" +
+                            "Epée en chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Epée en chitine à deux mains]\n\n" +
+                            "Dague en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Dague en chitine à une main]\n\n" +
+                            "Glaive en chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Glaive en chitine à deux mains]\n\n" +
+                            "Masse en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Masse en chitine à une main]\n\n" +
+                            "Masse en chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Masse en chitine à deux mains]\n\n" +
+                            "Hache en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Hache en chitine à une main]\n\n" +
+                            "Hache en chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Hache en chitine à deux mains]\n\n" +
                             "Suite en écrivant :\n=Liste d'armes 9```")
   }
 }) ;
@@ -1655,13 +1655,13 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === (prefix + "Liste d'armes 9")) {
-    message.channel.send("```Rapière de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Rapière de chitine à une main]\n\n" +
-                            "Rapière de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Rapière de chitine à deux mains]\n\n" +
-                            "Cimeterre de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Cimeterre de chitine à une main]\n\n" +
-                            "Cimeterre de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Cimeterre de chitine à deux mains]\n\n" +
-                            "Katana de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Katana de chitine à une main]\n\n" +
-                            "Katana de chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Katana de chitine à deux mains]\n\n" +
-                            "Bouclier de chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Bouclier de chitine à une main]\n\n" +
+    message.channel.send("```Rapière en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Rapière en chitine à une main]\n\n" +
+                            "Rapière en chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Rapière en chitine à deux mains]\n\n" +
+                            "Cimeterre en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Cimeterre en chitine à une main]\n\n" +
+                            "Cimeterre en chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Cimeterre en chitine à deux mains]\n\n" +
+                            "Katana en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Katana en chitine à une main]\n\n" +
+                            "Katana en chitine à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Katana en chitine à deux mains]\n\n" +
+                            "Bouclier en chitine à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Bouclier en chitine à une main]\n\n" +
                             "Suite en écrivant :\n=Liste d'armes 10```")
   }
 }) ;
