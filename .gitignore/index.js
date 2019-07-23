@@ -11591,11 +11591,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Jeune(s) kobolt(s) : " + jeuneKobolt + "\n" +
-                                   ":crossed_swords: Kobolt(s) explorateur(s) : " + koboltExplo + "\n" +
-                                   ":crossed_swords: Kobolt(s) ouvrier(s) : " + koboltOuvrier + "\n" +
-                                   ":crossed_swords: Kobolt(s) espion(s) : " + koboltEspion + "\n" +
-                                   ":crossed_swords: Kobolt(s) enragé(s) : " + koboltEnrage)
+                                   ":crossed_swords: Jeune(s) kobolt(s) 200 : " + jeuneKobolt + "\n" +
+                                   ":crossed_swords: Kobolt(s) explorateur(s) 325 : " + koboltExplo + "\n" +
+                                   ":crossed_swords: Kobolt(s) ouvrier(s) 275 : " + koboltOuvrier + "\n" +
+                                   ":crossed_swords: Kobolt(s) espion(s) 250 : " + koboltEspion + "\n" +
+                                   ":crossed_swords: Kobolt(s) enragé(s) 650 : " + koboltEnrage)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -20018,11 +20018,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: En marchant dans la Forêt dense, vous rencontrez les ennemis suivants\n\n" +
-                                               ":crossed_swords: Lombric irrégulier : " + lombricIrregulier + "\n" +
-                                               ":crossed_swords: Neoridas : " + paplliAssit + "\n" +
-                                               ":crossed_swords: Bousier colossal : " + bousierColossal + "\n" +
-                                               ":crossed_swords: Venom : " + snakeSneaky + "\n" +
-                                               ":crossed_swords: Doryphore géant : " + doryphoreGeant)
+                                               ":crossed_swords: Lombric irrégulier 880 : " + lombricIrregulier + "\n" +
+                                               ":crossed_swords: Neoridas 400 : " + paplliAssit + "\n" +
+                                               ":crossed_swords: Bousier colossal 950 : " + bousierColossal + "\n" +
+                                               ":crossed_swords: Venom 1050 : " + snakeSneaky + "\n" +
+                                               ":crossed_swords: Doryphore géant 1250 : " + doryphoreGeant)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -21803,10 +21803,10 @@ bot.on('message', message => {
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setImage("http://i.imgur.com/6Pfztwn.png")
         .addField(":bookmark: Quête de la Clairière :" , ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
-                                                        ":crossed_swords: Bourdon flâneur : " + bourdonFlaneur + "\n" +
-                                                        ":crossed_swords: Taurus chargeur : " + taurusChargeur+ "\n" +
-                                                        ":crossed_swords: Fort taurus adroit : " + fortTaurus + "\n" +
-                                                        ":crossed_swords: Taurus lourd : " + taurusLourd)
+                                                        ":crossed_swords: Bourdon flâneur 700 : " + bourdonFlaneur + "\n" +
+                                                        ":crossed_swords: Taurus chargeur 1250 : " + taurusChargeur+ "\n" +
+                                                        ":crossed_swords: Fort taurus adroit 1350 : " + fortTaurus + "\n" +
+                                                        ":crossed_swords: Taurus lourd 2550 : " + taurusLourd)
         .addField(":bookmark: Les récompenses une fois la quête accomplie :" , ":bookmark: `=Clairière quête accomplie : [Votre niveau]`" )
         .setTimestamp()
         message.channel.send({embed})
