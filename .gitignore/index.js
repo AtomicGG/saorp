@@ -19964,7 +19964,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let test = 3;
+      let test = 2;
       let lombricIrregulier = 0;
       let paplliAssit = 1;
       let bousierColossal = 0;
@@ -19991,14 +19991,14 @@ bot.on('message', message => {
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 3 + snakeSneaky;
+          test = test + 4 + snakeSneaky;
           if (test <= (6 + 7 * (joueurs - 1))) {
             snakeSneaky = snakeSneaky + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 3 + (2 * doryphoreGeant);
+          test = test + 4 + (2 * doryphoreGeant);
           if (test <= (6 + 7 * (joueurs - 1))) {
             doryphoreGeant = doryphoreGeant + 1;
           } else break;
