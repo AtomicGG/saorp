@@ -19954,7 +19954,7 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Forêt dense combat")) {
     let joueurs = args.slice(3).join(" : ");
-    if (talkedRecently.has(message.author.id+1000)) {
+    if (/*talkedRecently.has(message.author.id+1000)*/) {
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -19986,7 +19986,7 @@ bot.on('message', message => {
         }
         if (roll <= 50){
           test = test + 2 + paplliAssit;
-          if (test <= (6 + 7 * (joueurs - 1)) || passageSolo) {
+          if (test <= (6 + 7 * (joueurs - 1)) && passageSolo) {
             paplliAssit = paplliAssit + 1;
             passageSolo = false;
           } else break;
