@@ -19964,7 +19964,7 @@ bot.on('message', message => {
       .setTimestamp()
       message.channel.send({embed})
     } else {
-      let test = 0;
+      let test = 3;
       let lombricIrregulier = 0;
       let paplliAssit = 1;
       let bousierColossal = 0;
