@@ -20057,7 +20057,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Neoridas :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.ytimg.com/vi/F3lintstLuQ/hqdefault.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 \n :warning: **__Il fuit s'il n'y a aucun monstre autre que des Neoridas__**")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 400 \n :warning: **__Le Neoridas tente de s'enfuir en faisant un Roll à chaque tour quand il ne reste plus que lui ou d'autres Neoridas uniquement.__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Neoridas attaque`")
     .addField(":shield: Lorsque le Neoridas reçoit un coup :" , ":shield: `=Neoridas défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Neoridas récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20073,7 +20073,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bousier colossal :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la montagne du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590533577486106650/Bousier.png")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 950")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 950 \n :warning: **__Le Bousier colossal vous paralyse même si vous bloquer la totalité des dégat de son coup paralysant..__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bousier colossal attaque`")
     .addField(":shield: Lorsque le Bousier colossal reçoit un coup :" , ":shield: `=Bousier colossal défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Bousier colossal récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20089,7 +20089,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.pinimg.com/originals/7c/0c/e9/7c0ce98ffb8ce67f5e687304f3a1cef7.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1050")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1050 :warning: **__L'empoisonement du Venom n'est pas additif, si vous ètes déja empoisoné le nombre de tours est réinitialiser et les nouveaux dégats s'appliquent.__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
     .addField(":shield: Lorsque le Venom reçoit un coup :" , ":shield: `=Venom défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Venom récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20106,7 +20106,7 @@ bot.on('message', message => {
     .setTitle(":japanese_ogre: Doryphore géant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.pinimg.com/564x/b3/58/95/b3589536e2b57214261cf084caf363e1.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
-    .addField(":shield: Point de défense :", ":shield: 50")
+    .addField(":shield: Point de défense :", ":shield: 50 :warning: **__Si le Doryphore géant est provoqué il ne peut pas provoqué le groupe de joueur et à la place provoque uniquement le joueur qui l'as provoqué initialement.__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Doryphore géant attaque`")
     .addField(":shield: Lorsque le Doryphore géant reçoit un coup :" , ":shield: `=Doryphore géant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Doryphore géant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -21935,7 +21935,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bourdon flâneur :" , ":japanese_ogre: Un insecte qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590559361961820190/43111646922_5cd4ecd7f1_k.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700 :warning: **__Si vous ètes protéger contre le poison l'attaque suicide du Bourdon flâneur perd ses propriétés perce armure et devient un coup normal.__** ")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bourdon flâneur attaque`")
     .addField(":shield: Lorsque le Bourdon flâneur reçoit un coup :" , ":shield: `=Bourdon flâneur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Bourdon flâneur récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -21951,7 +21951,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Taurus chargeur  :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://media.discordapp.net/attachments/543345227604164618/584058188953813024/taurus_chargeur.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250 :warning: **__Le Taurus chargeur vous étourdit même si vous bloquer la totalité des dégat de son coup étourdissant__** ")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus chargeur attaque`")
     .addField(":shield: Lorsque le Taurus chargeur  reçoit un coup :" , ":shield: `=Taurus chargeur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Taurus chargeur  récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -21967,7 +21967,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Fort taurus adroit :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/543345227604164618/596810463107350528/89246df4b0c6ce758ad30798dc650384.png")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350 :warning: **__Le saignement du Fort taurus lourd n'est pas additif, si vous ètes déja en saignement le nombre de tours est réinitialiser et les nouveaux dégats s'appliquent.__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Fort taurus adroit attaque`")
     .addField(":shield: Lorsque le Fort taurus adroit reçoit un coup :" , ":shield: `=Fort taurus adroit défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Fort taurus adroit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -26827,7 +26827,7 @@ const Défense = (Math.floor((4)*Math.random()+12))
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26841,7 +26841,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26855,7 +26855,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26869,7 +26869,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26883,7 +26883,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26897,7 +26897,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26911,7 +26911,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -26925,7 +26925,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
-    const Défense = (Math.floor((2)*Math.random()+5))
+    const Défense = (Math.floor((3)*Math.random()+6))
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
