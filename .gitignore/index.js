@@ -21063,7 +21063,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron en chitine :" , ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Aile de Neoridasa, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron en chitine`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron en chitine`")
+    .addField(":scales: Plastron en chitine :" , ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Aile de Neoridas, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron en chitine`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -21076,7 +21076,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Gantelets en chitine :" , ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Aile de Neoridasa, 2 Carapace de Bousier colossal, 1 Bave de lombric irrégulier, 2 Hémolymphe\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets en chitine`")
+    .addField(":scales: Gantelets en chitine :" , ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Aile de Neoridas, 2 Carapace de Bousier colossal, 1 Bave de lombric irrégulier, 2 Hémolymphe\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat des gantelets en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte des gantelets en chitine` \n\n:keyboard: Si fabriquez cet objet `=Fabrication des gantelets en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -27156,7 +27156,7 @@ if (message.content.startsWith(prefix + "Poudre de poison")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Aile de Neoridasa")) {
+if (message.content.startsWith(prefix + "Aile de Neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
