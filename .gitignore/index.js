@@ -21063,7 +21063,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Plastron en chitine :" , ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Aile de Neoridas, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron en chitine`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron en chitine`")
+    .addField(":scales: Plastron en chitine :" , ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Ailes de Neoridas, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1680 cols\n\n:large_orange_diamond: Prix de revente : 420 cols\n\n:keyboard: Si vous achetez cet objet: `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet: `=Découverte du plastron en chitine`  \n\n:keyboard: Si fabriquez cet objet `=Fabrication du plastron en chitine`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -22338,7 +22338,7 @@ bot.on('message', message => {
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
                                            ":butterfly: Ailes de bourdon flâneur  : " + ailes+ "\n" +
-                                           ":syringe: Antenne de bourdon flâneur: " + antenne  + "\n" +
+                                           ":syringe: Antenne de bourdon flâneur : " + antenne  + "\n" +
                                            ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
                                            ":alembic: Hemolymphe : " + hemolymphe + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
@@ -27077,6 +27077,21 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Hémolymphe")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Hémolymphe :" , "C'est du sang d'insecte du palier 2 !")
+    .addField("Prix d'achat :" , "X cols")
+    .addField("Prix de revente :" , "35 cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque en chitine\n=Cape en chitine\n=Plastron en chitine\n=Gantelets en chitine\n=Jambières en chitine\n=Bottes en chitine\n=Parchemin de poison moyen")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
 if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
@@ -27084,7 +27099,7 @@ if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
   .setColor(3447003)
   .addField("Bave :" , "C'est de la bave que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "15 cols")
+  .addField("Prix de revente :" , "35 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Gantelets en chitine")
   //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -27100,7 +27115,7 @@ if (message.content.startsWith(prefix + "Peau élastic de lombric irrégulier"))
   .setColor(3447003)
   .addField("Peau élastic :" , "C'est une peau élastique que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "20 cols")
+  .addField("Prix de revente :" , "35 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine\n=Ceinture en chitine\n=Bottes en chitine")
   //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -27116,7 +27131,7 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
   .setColor(3447003)
   .addField("Langue :" , "C'est une langue que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "25 cols")
+  .addField("Prix de revente :" , "40 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture en chitine")
   //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -27132,7 +27147,7 @@ if (message.content.startsWith(prefix + "Poudre de poison")) {
   .setColor(3447003)
   .addField("Poudre :" , "C'est une poudre que vous trouvez sur les néoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "20 cols")
+  .addField("Prix de revente :" , "45 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
   //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -27148,7 +27163,7 @@ if (message.content.startsWith(prefix + "Ailes de Neoridas")) {
   .setColor(3447003)
   .addField("Ailes :" , "C'est des ailes que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "25 cols")
+  .addField("Prix de revente :" , "55 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron en chitine\n=Gantelets en chitine")
   //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
@@ -27164,13 +27179,15 @@ if (message.content.startsWith(prefix + "Peau de Neoridas")) {
   .setColor(3447003)
   .addField("Peau :" , "C'est une peau que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
-  .addField("Prix de revente :" , "30 cols")
+  .addField("Prix de revente :" , "55 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine")
   //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
 }
 });
+
+
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Protection du roi déchu")) {
