@@ -19966,12 +19966,11 @@ bot.on('message', message => {
     } else {
       let test = 0;
       let lombricIrregulier = 0;
-      let paplliAssit = 0;
+      let paplliAssit = 1;
       let bousierColossal = 0;
       let snakeSneaky = 0;
       let doryphoreGeant = 0;
       let roll = 0;
-      let passageSolo = true;
       do {
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 60){
@@ -19981,14 +19980,13 @@ bot.on('message', message => {
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
-        if (passageSolo) {
-          roll = 1;
+        if (joueurs == 1) {
+          roll = 51;
         }
         if (roll <= 50){
           test = test + 2 + paplliAssit;
-          if (test <= (6 + 7 * (joueurs - 1)) && passageSolo) {
+          if (test <= (6 + 7 * (joueurs - 1))) {
             paplliAssit = paplliAssit + 1;
-            passageSolo = false;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
