@@ -29860,6 +29860,1196 @@ bot.on('message', message => {
   }
 })
 
+/// Event ///
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta renard attaque")) {
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 1){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta renard :" , ":crossed_swords: Le Méta renard regarde autour de lui, pourquoi fait-il ça ?")
+      message.channel.send({embed})
+    }
+    if (2 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta renard :" , ":crossed_swords: Le Méta renard vous fixe chacun d'entre vous et fait fait une aura de provocation sur tous le monde. Vous êtes obligé de l'attaquer.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta sanglier attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 10)
+    const degatf = Math.floor(11 * Math.random() + 40)
+    const degatM = Math.floor(11 * Math.random() + 75)
+    const degatFort = Math.floor(11 * Math.random() + 95)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta sanglier :" , ":crossed_swords: Le Méta sanglier regarde autour de lui, pourquoi fait-il ça ?")
+      message.channel.send({embed})
+    }
+    if (6 <= roll & roll <= 55){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta sanglier :" , ":crossed_swords: Le Méta sanglier vous charge dessus et cible 3 joueurs sur son passage et le choc est assez puissant ce qui vous fait tomber, il inflige " + degatD + " points de dégâts au level 1 a 5. Il inflige " + degatf + " points de dégâts au level 6 a 11. Il inflige " + degatM + " points de dégâts au level 12 a 16. Il inflige " + degatFort + " points de dégâts au level 17 et + et si il touche les joueurs ne pourront pas se défendre de la prochaine attaque [Cette effet ne conserne que les level 17 et +].")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (56 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta sanglier :" , ":crossed_swords: Le Méta sanglier charge le 1er joueur sauf si provoque il va charger le joueur qui a provoque et si il touche sa cible il va continuer de charger le suivant. Il inflige " + degatD + " points de dégâts au level 1 a 5. Il inflige " + degatf + " points de dégâts au level 6 a 11. Il inflige " + degatM + " points de dégâts au level 12 a 16. Il inflige " + degatFort + " points de dégâts au level 17 et + et si il touche les joueurs ne pourront pas se défendre de la prochaine attaque [Cette effet ne conserne que les level 17 et +].")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta chien attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 12)
+    const degatf = Math.floor(11 * Math.random() + 46)
+    const degatM = Math.floor(11 * Math.random() + 81)
+    const degatFort = Math.floor(11 * Math.random() + 105)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta chien :" , ":crossed_swords: Le Méta chien regarde autour de lui, pourquoi fait-il ça ?")
+      message.channel.send({embed})
+    }
+    if (11 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta chien :" , ":crossed_swords: Le Méta chien saute et mord votre bras en serrant fort ses machoîres. Il inflige " + degatD + " points de dégâts au level 1 a 5. Il inflige " + degatf + " points de dégâts au level 6 a 11. Il inflige " + degatM + " points de dégâts au level 12 a 16. Il inflige " + degatFort + " points de dégâts au level 17 et + et si il touche les joueurs ne pourront pas fait de coup normal et coup sauté. [Cette effet ne conserne que les level 17 et +].")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta lapin géant attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 16)
+    const degatf = Math.floor(11 * Math.random() + 56)
+    const degatM = Math.floor(11 * Math.random() + 91)
+    const degatFort = Math.floor(11 * Math.random() + 125)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 15){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta lapin géant :" , ":crossed_swords: Le Méta lapin géant bondit plusieurs fois vers votre direction et s'arrête en se moquant de vous et prout tous, vous êtes étourdit et provoque. ")
+      message.channel.send({embed})
+    }
+    if (16 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta lapin géant :" , ":crossed_swords: Le Méta lapin géant bouge ses oreilles et des dizaines de lapins apparaîssent tout autour de lui sautant tous sur vous, Ils infligent " + degatD + " points de dégâts au level 1 a 5. Il inflige " + degatf + " points de dégâts au level 6 a 11. Il inflige " + degatM + " points de dégâts au level 12 a 16. Il inflige " + degatFort + " points de dégâts au level 17 et + .")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta renard défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degatSubis = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta renard :" , ":shield: Le Méta renard tente d'esquiver votre attaque avec sa grâce habituelle mais cette fois vous avez assé de dextériter pour le toucher et il changera de forme. Vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (11 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta renard :" , ":shield: Le Méta renard vous regardez foncez vers lui et esquive en se mettant sur un des joueurs, il ne prend aucun dégâts. Si vous voulez le toucher il faudra que soit le joueur qui attaque ou celui ou le méta renard est dessus réussie son roll.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta sanglier défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degatSubis = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Méta sanglier :" , ":shield: Le Méta sanglier ne cherche pas a esquivé votre coup. Il encaisse comme il peut, vous lui infligez " + degatSubis + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta chien défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degatSubis = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const parade = Math.floor(11 * Math.random() + 65)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta chien :" , ":shield: Le Méta chien tente de hurler et d'aboyer assez fort pour vous faire rater, mais aucun son ne sort de bouche.... vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (76 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta chien :" , ":shield: Le Méta chien esquive votre coup en s'éloignant bien et il se met à foncer vers vous avant de mordre votre jambe, vous ne pouvez pas plus esquivez pendant un tour.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta lapin géant défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degatSubis = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const degatSubisReduit = Math.floor((Dégâts * 0.2 + 1) * Math.random() + (Dégâts * 0.1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta lapin géant :" , ":shield: Le Méta lapin géant met ses pattes au dessus de lui comme un blocage, mais votre coup reste efficace malgré ceci, vous lui infligez " + degatSubis + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (21 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta lapin géant :" , ":shield: Le Méta lapin géant met ses pattes d'une manière étrange au dessus de sa tête ce qui réduit énormément les dégâts qu'il subit, vous lui infligez " + degatSubisReduit + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta loup attaque")) {
+    const degatD = Math.floor(21 * Math.random() + 30)
+    const degatf = Math.floor(21 * Math.random() + 65)
+    const degatM = Math.floor(21 * Math.random() + 100)
+    const degatFort = Math.floor(31 * Math.random() + 155)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup :" , ":crossed_swords: Le Méta loup semble attendre quelque chose....")
+      message.channel.send({embed})
+    }
+    if (6 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup :" , ":crossed_swords: Le Méta loup bondit sur vous et vous mord le corps sauvagement les yeux rouges, Il inflige " + degatD + " points de dégâts au level 1 a 10. Il inflige " + degatf + " points de dégâts au level 11 a 15. Il inflige " + degatM + " points de dégâts au level 16 a 20. Il inflige " + degatFort + " points de dégâts au level 20 et + .")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta slime attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 12)
+    const degatf = Math.floor(11 * Math.random() + 36)
+    const degatM = Math.floor(11 * Math.random() + 48)
+    const degatFort = Math.floor(11 * Math.random() + 70)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta slime :" , ":crossed_swords: Le Méta slime se change en flaque et ne peut pas être visé. (Marcher sur lui ne marche pas non plus ou autre...)  !")
+      message.channel.send({embed})
+    }
+    if (31 <= roll & roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta slime :" , ":crossed_swords: Le Méta slime se rapproche de vous et arrive à s'accrocher à vous en tentant de vous étouffer, Il inflige " + degatD + " points de dégâts perce armure au level 1 a 5. Il inflige " + degatf + " points de dégâts perce armure au level 6 a 11. Il inflige " + degatM + " points de dégâts perce armure au level 12 a 16. Il inflige " + degatFort + " points de dégâts perce armure au level 17 et +.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (81 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta slime :" , ":crossed_swords: Le Méta slime se cinde en deux et attaque deux fois le même joueur. Ils inflige " + degatD + " ou " + degatf + " ou " + degatM + " ou " + degatFort + " points de dégâts perce armure en fonction du level deux fois et il va refussioner ensuite. ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Métaloïde attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 60)
+    const degatf = Math.floor(11 * Math.random() + 90)
+    const degatM = Math.floor(21 * Math.random() + 130)
+    const degatFort = Math.floor(31 * Math.random() + 170)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Métaloïde :" , ":crossed_swords: Le Métaloïde regarde sa prochaine cible... une fois trouvé... Il va sortir deux lame pour faire une technique très puissante au prochain tour.")
+      message.channel.send({embed})
+    }
+    if (26 <= roll & roll <= 50){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Métaloïde :" , ":crossed_swords: Le Métaloïde sort deux dagues très fines et aiguisées en se jetant sur vous d'une vitesse fulgurante et vous plante profondément en riant, Il inflige " + degatD + " points de dégâts au level 1 a 10. Il inflige " + degatf + " points de dégâts au level 11 a 20. Il inflige " + degatM + " points de dégâts au level 21 et + et si il touche les joueurs perdre 10 point d'armure (Cette effet est additif et dure deux tours ). [Cette effet ne conserne que les level 17 et +].")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (51 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Métaloïde :" , ":crossed_swords: Le Métaloïde disparaît et réapraît devant et vous surprend, il vous blesse a votre bras et Il inflige " + degatD + " points de dégâts au level 1 a 10. Il inflige " + degatf + " points de dégâts au level 11 a 20. Il inflige " + degatFort + " points de dégâts au level 21 et + et si il touche les joueurs perdre 20 point d'attaque (Cette effet est additif et dure deux tours ). [Cette effet ne conserne que les level 17 et +]. ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Métaloïde assassin")) {
+    const degatD = Math.floor(41 * Math.random() + 100)
+    const degatf = Math.floor(41 * Math.random() + 200)
+    const degatM = Math.floor(41 * Math.random() + 300)
+    const degatFort = Math.floor(41 * Math.random() + 400)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 100){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Métaloïde :" , ":crossed_swords: Le Métaloïde regarde sa prochaine cible... Il disparaît et apparaît dans le ciel et fait tente d'assassiner sa cible ! Il inflige " + degatD + " ou " + degatf + " ou " + degatM + " ou " + degatFort + " points de dégâts perce armure en fonction de votre level.")
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta loup de sang attaque")) {
+    const degat = Math.floor(25 * Math.random() + 15)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup de sang :" , ":crossed_swords: Le Méta loup de sang hurle et bost les dégâts de tous le prochains méta de " + degat + " !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll & roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup de sang :" , ":crossed_swords: Le Méta loup de sang hurle ce qui détruit vos oreilles, 3 Méta loup sort de son corps et se disperce dans tous SAO [Les Méta loups qui apparaîssent meurent si le Méta loup de sang meurt.]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup de sang :" , ":crossed_swords: Le Méta loup de sang hurle mais son hurlement n'est pas celui habituel mais bien plus long et 6 Méta loups sort de son corps et se disperce dans tous SAO [Les Méta loups qui apparaîssent meurent si le Méta loup de sang meurt.]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Forêt | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta loup défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta loup :" , ":shield: Le Méta loup tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta loup :" , ":shield: Le Méta loup saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta slime défense")) {
+    let Dégâts = args.slice(3).join(" : ");
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.8))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Méta slime :" , ":shield: Le corps du Méta slime se prend bien le coup, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Métaloïde défense")) {
+    let Dégâts = args.slice(2).join(" : ");
+    const degat = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 2))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 10){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Métaloïde :" , ":shield: Le Métaloïde tente de parer votre coup à l'aide de ses deux dagues, mais votre attaque est assez puissante et il se la prend, " +
+                                                  "vous infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (11 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Métaloïde :" , ":shield: Le Métaloïde arrive à parer votre coup vous renvoie les dégats directement sur vous en rigolant pendant votre incomprhénsion.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta loup de sang défense")) {
+    let Dégâts = args.slice(5).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta loup de sang :" , ":shield: Le Méta loup de sang essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta loup de sang :" , ":shield: Le Méta loup de sang saute en arrière et arrive à esquiver votre coup, il se met à crier et 3 autre Méta loup apparaît dans SAO.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta jeune kobolt attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 50)
+    const degatM = Math.floor(11 * Math.random() + 75)
+    const degatFort = Math.floor(11 * Math.random() + 135)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta jeune kobolt :" , ":crossed_swords: Le Méta jeune kobolt vous regarder et ne bouge pas du tous !")
+      message.channel.send({embed})
+    }
+    if (6 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta jeune kobolt :" , ":crossed_swords: Le Méta jeune kobolt saute d'un bond en avant très rapide et met un coup de tête puissant. Il inflige " + degatD + " points de dégâts au level 1 a 15. Il inflige " + degatM + " points de dégâts au level 16 a 20. Il inflige " + degatFort + " points de dégâts au level 20 et + .")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt explorateur attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 50)
+    const degatM = Math.floor(11 * Math.random() + 75)
+    const degatFort = Math.floor(11 * Math.random() + 135)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 45){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt explorateur :" , ":crossed_swords: Le Méta kobolt explorateur balance plusieurs objet pointue au sol. Vous perdez 30 PV a chaque attaque contre lui")
+      message.channel.send({embed})
+    }
+    if (46 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt explorateur :" , ":crossed_swords: Le Méta kobolt explorateur court plus rapidement que les autres. Il inflige " + degatD + " points de dégâts au level 1 a 15. Il inflige " + degatM + " points de dégâts au level 16 a 20. Il inflige " + degatFort + " points de dégâts au level 20 et + . Et retire 10 point d'armure au classe Tank, 20 point d'attaque au classe DPS, 5 point d'armure et 5 point d'attaque au classe HP (Désolé XD) ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt ouvrier attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 50)
+    const degatM = Math.floor(11 * Math.random() + 75)
+    const degatFort = Math.floor(11 * Math.random() + 135)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt ouvrier :" , ":crossed_swords: Le Méta kobolt ouvrier agrippe un objet autour de lui et essaye de vous frapper mais celui-ci ne fait rien, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (6 <= roll && roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt ouvrier :" , ":crossed_swords: Le Méta kobolt ouvrier sort une clé à molette et la prend à deux mains avant de mettre un coup puissant vers vous. Il inflige " + degatD + " points de dégâts au level 1 a 15. Il inflige " + degatM + " points de dégâts au level 16 a 20. Il inflige " + degatFort + " points de dégâts au level 20 et + .")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt ouvrier :" , ":crossed_swords: Le Méta kobolt ouvrier sous la rage arrive à soulever un rocher avant de le fracasser sur vous d'une puissance immense. Il inflige " + degatD + " points de dégâts au level 1 a 15. Il inflige " + degatM + " points de dégâts au level 16 a 20. Il inflige " + degatFort + " points de dégâts au level 20 et + et vous étourdis pendant un tour.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt espion attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 55)
+    const degatM = Math.floor(11 * Math.random() + 80)
+    const degatFort = Math.floor(11 * Math.random() + 145)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt espion :" , ":crossed_swords: Le Méta kobolt espion sort discrètement plusieurs kunais de son manteau noir et les lance dans votre direction en visant 5 joueur vous perdez 35HP sons possibliter de vous défendre a cette attaque (L'armure ne réduit pas les dégâts).")
+      message.channel.send({embed})
+    }
+    if (36 <= roll && roll <= 74){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt espion :" , ":crossed_swords: Le Méta kobolt espion se déplace de gauche à droite rapidement afin de sauter et de balancer une nuée de kunais sur vous tel un ninja. Il inflige " + degatD + " points de dégâts au level 1 a 15. Il inflige " + degatM + " points de dégâts au level 16 a 20. Il inflige " + degatFort + " points de dégâts au level 20 et + .")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (75 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt espion:" , ":crossed_swords: Le Méta kobolt espion s'approche de vous et sort subitement une poudre qu'il vous balance en pleine face ce qui vous fait vous endormir pendant deux tour. " +
+                                                    "[Esquivable uniquement] Et vous prenez le double des dégats si vous êtes touchez avant. Seul un dégat de 75 peut vous réveiller en comptant l'armure. ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt enragé attaque")) {
+    const degatD = Math.floor(11 * Math.random() + 75)
+    const degatM = Math.floor(11 * Math.random() + 115)
+    const degatFort = Math.floor(11 * Math.random() + 185)
+    const degatCoup1 = Math.floor(21 * Math.random() + 120)
+    const degatCoup2 = Math.floor(21 * Math.random() + 130)
+    const degatCoup3 = Math.floor(21 * Math.random() + 140)
+    const degatCoup4 = Math.floor(21 * Math.random() + 150)
+    const degatCoup5 = Math.floor(21 * Math.random() + 190)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 1){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt enragé :" , ":crossed_swords: Le Méta kobolt enragé pousse un cri pour vous intimider et vous impressionner mais il oublie d'attaquer. Vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (2 <= roll && roll <= 60){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt enragé :" , ":crossed_swords: Le Méta kobolt enragé fulmine et donne un gros coup de masses pour écraser un joueur. Il inflige " + degatD + " points de dégâts au level 1 a 15. Il inflige " + degatM + " points de dégâts au level 16 a 20. Il inflige " + degatFort + " points de dégâts au level 20 et + .")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (61 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt enragé :" , ":crossed_swords: Le Méta kobolt enragé bondit et atterit devant vous. Il vous assène cinq coups violent de masses, de hauts en bas et vous écrase a plusieurs reprise " +
+                                                     "si jamais vous bloquez il va juste au bout du combo. Il inflige " + degatCoup1 + " points de dégâts puis " + degatCoup2 + " points de dégats puis " + degatCoup3 + " points de dégâts puis " + degatCoup4 + " points de dégats puis un dernier gros coup avec les deux masses " + degatCoup5 + " et crie. Si jamais vous avez parade un coup il va continuer son attaque en criant et augmentant ses dégats de 15.\n " +
+                                                     "(Un seul joueur est visé et vous devez effectuer 5 défenses, une sur chaque coup et les dégâts c'est peu importe votre level ~~Je suis méchant~~.)")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Montagne | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta jeune kobolt défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1.1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta jeune kobolt :" , ":shield: Le Méta jeune kobolt ne semble même pas réagir et ne pas encore avoir le réflexe d'esquiver les coups, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (86 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta jeune kobolt :" , ":shield: Le Méta jeune kobolt ne fait que se déplacer d'un pas sur le côté sans même faire attention à votre coup, il ne prend aucun dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt explorateur défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt explorateur :" , ":shield: Le Méta kobolt explorateur tente avec sa dague de contrer votre coup mais elle est trop minuscule, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (81 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt explorateur :" , ":shield: Le Méta kobolt explorateur effectue un coup rapide vers votre arme une fois que votre coup arrive afin de vous déstabiliser, il ne prend aucun dégâts et baisse votre armure de 10 au passage")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt ouvrier défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt ouvrier :" , ":shield: Le Méta kobolt ouvrier tente de se cacher derrière un objet autour de lui par réflexe mais il se prend le coup de plein fouet, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (81 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt ouvrier :" , ":shield: Le Méta kobolt ouvrier court rapidement en arrière en voyant votre arme bouger, il ne prend aucun dégâts et baisse votre attaque de 10 au passage")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt espion défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1.1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 65){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt espion :" , ":shield: Le Méta kobolt espion tente de sortir quelque chose de son manteau lors de votre coup mais il n'y arrive pas, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (66 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt espion :" , ":shield: Le Méta kobolt espion à travers son manteau arrive à parer votre coup avec deux kunais et à vous faire tomber par terre en levant ses bras, il ne prend aucun dégâts et vous perdez 35 HP a cause des Kunai a terre.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt enragé défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.5))
+    const blocage = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.7))
+    const paradeReussie = Math.floor(16 * Math.random() + 65)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 20){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégats")
+      message.channel.send({embed})
+    }
+    if (21 <= roll && roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégats")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (81 <= roll && roll <= 94){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégats perce armure")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (95 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé fait un cri intimidant et vous prenez peur. Vous ne pouvez pas attaquer au prochain tour !")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt mineur attaque")) {
+    const degat = Math.floor(16 * Math.random() + 105)
+    const degatM = Math.floor(26 * Math.random() + 135)
+    const degatCrit = Math.floor(16 * Math.random() + 55)
+    const degatCritM = Math.floor(26 * Math.random() + 75)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 5){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt mineur :" , ":crossed_swords: Le Méta kobolt mineur dégaine sa pioche et tente de vous mettre un coup horizontal mais celle-ci est trop lent, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (6 <= roll && roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt mineur :" , ":crossed_swords: Le Méta kobolt mineur saute en avant et arrive à vous mettre un coup de pioche bien placé verticalement, il inflige " + degat + " points de dégâts aux level 16 a 20. Il inflige " + degatM + " points de dégâts aux level 20 et + ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt mineur :" , ":crossed_swords: Le Méta kobolt mineur sort deux pioches et gémis de rage avant de les balancer sur vous en même temps, il inflige " + degatCrit + " points de dégâts qui perce votre armure.  Il inflige " + degatCritM + " points de dégâts aux level 20 et + ")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt combattant attaque")) {
+    const degat = Math.floor(16 * Math.random() + 115)
+    const degatM = Math.floor(26 * Math.random() + 155)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt combattant :" , ":crossed_swords: Le Méta kobolt combattant tente de faire un mouvement circulaire de son épée sur vous mais il perd l'équilibre, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (26 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt combattant :" , ":crossed_swords: Le kobolt s'élance en avant tel un épéiste expérimenté avant de trouver une occasion de mettre un coup rapide, il inflige " + degat + " points de dégâts aux level 16 a 20. Il inflige " + degatM + " points de dégâts aux level 20 et +. Si il touche un joueur, il va continuer a frapper le suivant.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt garde attaque")) {
+    const degat = Math.floor(16 * Math.random() + 105)
+    const degatM = Math.floor(26 * Math.random() + 125)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt garde :" , ":crossed_swords: Le Méta kobolt garde brandit son bouclier en avant pour pouvoir vous toucher de son épée mais il n'y arrive pas sous le poids, vous avez de la chance !")
+      message.channel.send({embed})
+    }
+    if (36 <= roll && roll <= 80){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt garde :" , ":crossed_swords: Le Méta kobolt garde fonce le bouclier en avant et l'épée elle aussi en avant afin de vous empaler, il inflige " + degat + " points de dégâts aux level 16 a 20. Il inflige " + degatM + " points de dégâts aux level 20 et +.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (81 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt garde :" , ":crossed_swords: Le Méta kobolt garde pendant un instant arrive à soulever très haut son bouclier avant de le faire tomber lourdement sur vous, " +
+                                                    "il inflige " + degat + " points de dégâts aux level 16 a 20. Il inflige " + degatM + " points de dégâts aux level 20 et +. points de dégâts et vous provoque pendant 1 tour.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta chien errant attaque")) {
+    const degat = Math.floor(16 * Math.random() + 105)
+    const degatM = Math.floor(26 * Math.random() + 155)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta chien errant :" , ":crossed_swords: Le Méta chien errant se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
+      message.channel.send({embed})
+    }
+    if (26 <= roll && roll <= 56){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta chien errant :" , ":crossed_swords: Le Méta chien errant tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts aux level 16 a 20. Il inflige " + degatM + " points de dégâts aux level 20 et +.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (57 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta chien errant:" , ":crossed_swords: Le Méta chien errant fonce sur votre bras et le mord sauvagement, infligant " + degat + " points de dégâts aux level 16 a 20. Il inflige " + degatM + " points de dégâts aux level 20 et +. points de dégâts en ouvrant par la même occasion une plaie sanguinolente qui " +
+                                                   "vous infligera " + saignement + " points de dégâts de saignement supplémentaires pendant 3 tours")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt pilion attaque")) {
+    const degat = Math.floor(16 * Math.random() + 165)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 25){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt pilion :" , ":crossed_swords: Le Méta kobolt pilion fait tourner son marteau au dessus de lui et essaye de vous frapper, mais vous rate et provoque un tremblement de terre en touchant le sol qui vous pertube et baisse vos amélioration d'arme 1 points")
+      message.channel.send({embed})
+    }
+    if (26 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt pilion :" , ":crossed_swords:Le Méta kobolt pilion fait tourner son marteau aux dessus de lui et fait un coup vertical avec son marteau qui vous envoyer contre un mur, " +
+                                                     "il inflige " + degat + " points de dégâts et baisse votre armure de 20 points pendant 1 tour si il vous touche.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+// Grotte | Monstres | Défenses
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt mineur défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Méta kobolt mineur :" , ":shield: Le Méta kobolt mineur essaye d'utiliser sa pioche pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt combattant défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+    const paradeReussie = Math.floor(21 * Math.random() + 100)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt combattant :" , ":shield: Le Méta kobolt combattant effectue un duel de force avec vous et votre arme mais il n'est pas assez puissant, vous lui infligez " + paradeRatee + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt combattant :" , ":shield: Le Méta kobolt combattant effectue un duel de force avec vous et votre arme et il vous met un coup de pied pour vous faire reculer, " +
+                                                 "et effectue un coup de manche de son épée en plein dans votre visage ce qui vous fait tomber et il en profite pour vous empaler, il inflige " + paradeReussie + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt garde défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 0.3))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Méta kobolt garde :" , ":shield: Le Méta kobolt garde bloque le coup, vous lui infligez " + degat + " points de dégâts et vous renvoie le quart des dégats")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta chien errant défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 70){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta chien errant :" , ":shield: Le Méta chien errant tente d'esquiver votre coup en partant rapidement en arrière, mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (71 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta chien errant :" , ":shield: Le Méta chien errant esquive vous emplifie le saignement si vous saignez d'un tour. Vous ne pouvez pas l'atteindre.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt pilion défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.5))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":shield: Méta kobolt pilion :" , ":shield: Le Méta kobolt pilion bloque le coup avec son marteau, vous lui infligez " + degat + " points de dégâts")
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta loup gigantesque attaque")) {
+    const degat = Math.floor(31 * Math.random() + 110)
+    const degatZone = Math.floor(21 * Math.random() + 90)
+    const degatCrit = Math.floor(31 * Math.random() + 130)
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 35){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup gigantesque :" , ":crossed_swords: Le Méta loup gigantesque hurle et appelle certains monstres pour venir l'aider.")
+      message.channel.send({embed})
+    }
+    if (36 <= roll & roll <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup gigantesque :" , ":crossed_swords: Le Méta loup gigantesque lâche un regard meurtrier les yeux injecté de sang avant d'embrocher sa victime, il inflige " + degat + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (76 <= roll & roll <= 95){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup gigantesque :" , ":crossed_swords: Le Méta loup gigantesque arrive à embrocher 3 personnes avec ses immenses griffes, il inflige " + degatZone + " points de dégâts à chacune d'elle")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (96 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta loup gigantesque :" , ":crossed_swords: Le Méta loup gigantesque hurle avant de bondir sur une personne, il inflige " + degatCrit + " points de dégâts")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta loup gigantesque défense")) {
+    let Dégâts = args.slice(4).join(" : ");
+    const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
+    const roll = Math.floor(100 * Math.random() + 1)
+    if (roll <= 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta loup gigantesque :" , ":shield: Le Méta loup gigantesque essaye de vous mettre un coup de patte pendant votre coup mais il rate et se prend le coup avant, vous lui infligez " + degat + " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (86 <= roll){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta loup gigantesque :" , ":shield: Le Méta loup gigantesque voit que vous vous jetez dessus et il vous projette d'un coup de patte très rapide et repousse votre attaque")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Méta kobolt géant rouge attaque")) {
+    const A = (Math.floor((30)*Math.random()+200))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((10)*Math.random()+270))
+    if (B <= 30){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt géant rouge :" , ":crossed_swords: Le Méta kobolt géant rouge sort deux épées de son dos et les fait frotter le sol en courant vers vous et vous empêche de bloquez les prochaine attaques pendant deux tour.")
+      message.channel.send({embed})
+    }
+    if (31 <= B & B <= 90){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt géant rouge :" , ":crossed_swords: Le Méta kobolt géant rouge sort et balance ses deux épées ainsi que ses bras gigantesques vers vous d'une vitesse colossale, il inflige " +A+ " points de dégâts à deux joueurs")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (91 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":crossed_swords: Méta kobolt géant rouge :" , ":crossed_swords: Le Méta kobolt géant rouge commence à avoir des yeux complètement injectés de sang et se déchaîne complètement en balançant ses bras et ses épées dans tous les sens autour de lui, il inflige " + A+ " points de dégâts à tous les joueurs, ou s'il n'y a qu'un joueur " +C+ " points de dégâts à la place [Esquive uniquement possible de la part de tous les joueurs]")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
+bot.on('message', message => {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Méta kobolt géant rouge défense")) {
+    let Dégâts = args.slice(5).join(" : ");
+    const A = (Math.floor((Dégâts*1.5)*Math.random()+(Dégâts/1.5)))
+    const B = (Math.floor((100)*Math.random()+1))
+    const C = (Math.floor((21)*Math.random()+150))
+    if (B <= 75){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt géant rouge :" , ":shield: Le Méta kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " +A+ " points de dégâts")
+      message.channel.send({embed})
+    }
+    if (76 <= B & B <= 89){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt géant rouge :" , ":shield: Le Méta kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et cri a travers tous SAO.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+    if (90 <= B){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField(":shield: Méta kobolt géant rouge :" , ":shield: Le Méta kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " +C+ " points de dégâts à tous les joueurs.")
+      .setTimestamp()
+      message.channel.send({embed})
+    }
+  }
+});
+
 ////////////////////////////////////////////////////////////PARTIE POUR HORDES////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
