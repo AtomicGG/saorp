@@ -29961,7 +29961,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Méta lapin géant :" , ":crossed_swords: Le Méta lapin géant bondit plusieurs fois vers votre direction et s'arrête en se moquant de vous et prout tous, vous êtes étourdit et provoque. ")
+      .addField(":crossed_swords: Méta lapin géant :" , ":crossed_swords: Le Méta lapin géant bondit plusieurs fois vers votre direction et s'arrête en se moquant de vous et vous prout tous, vous êtes étourdit et provoque. ")
       message.channel.send({embed})
     }
     if (16 <= roll){
@@ -30291,7 +30291,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Métaloïde :" , ":shield: Le Métaloïde arrive à parer votre coup vous renvoie les dégats directement sur vous en rigolant pendant votre incomprhénsion.")
+      .addField(":shield: Métaloïde :" , ":shield: Le Métaloïde arrive à parer votre coup vous renvoie les dégâts directement sur vous en rigolant pendant votre incompréhension.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -30758,7 +30758,7 @@ bot.on('message', message => {
       .addField(":crossed_swords: Méta chien errant :" , ":crossed_swords: Le Méta chien errant se méfie de vous, et préfère ne pas attaquer, vous avez de la chance")
       message.channel.send({embed})
     }
-    if (26 <= roll && roll <= 56){
+    if (26 <= roll & roll <= 56){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
