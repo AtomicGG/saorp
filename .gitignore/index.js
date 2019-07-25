@@ -30750,6 +30750,7 @@ bot.on('message', message => {
     const degat = Math.floor(16 * Math.random() + 105)
     const degatM = Math.floor(26 * Math.random() + 155)
     const roll = Math.floor(100 * Math.random() + 1)
+    const saignement = Math.floor(26 * Math.random() + 25) 
     if (roll <= 25){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
