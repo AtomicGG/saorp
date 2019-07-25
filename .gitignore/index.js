@@ -22208,7 +22208,7 @@ bot.on('message', message => {
     let Dégâts = args.slice(4).join(" : ");
     const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
     const roll = Math.floor(100 * Math.random() + 1)
-    if (roll <= 60){
+    if (roll <= 80){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -22216,7 +22216,7 @@ bot.on('message', message => {
       .addField(":shield: Fort taurus adroit :" , ":shield: Le Fort taurus adroit tente d'esquiver votre coup en essayant d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
-    if (61 <= roll){
+    if (81 <= roll){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
