@@ -19887,7 +19887,7 @@ bot.on('message', message => {
         const paplliAssit = Math.floor(3 * Math.random() + 1)
         const bousierColossal = Math.floor(3 * Math.random() + 2)
         const snakeSneaky = Math.floor(3 * Math.random() + 1)
-        const doryphoreGeant = Math.floor(3 * Math.random() + 2)
+        const doryphoreGeant = Math.floor(3 * Math.random() + 1)
         const embed = new Discord.RichEmbed()
         .setColor(3447003)
         .setAuthor(message.author.username , message.author.avatarURL)
