@@ -2411,8 +2411,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
-                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .addField("Le alchimiste :" , "En cours")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2427,8 +2426,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
-                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .addField("Le forgeron :" , "En cours")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2443,8 +2441,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
-                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .addField("Le bijoutier :" , "En cours")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2459,7 +2456,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
+    .addField("Le enchanteur :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
                                  "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
@@ -2475,7 +2472,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
+    .addField("Le cuisinier :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
                                  "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
@@ -18160,7 +18157,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Bébé renard :" , ":crossed_swords: Le bébé renard tente de mordre sa cible mais il est trop petit et n'arrive pas à lui infliger de dégats...")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -18170,7 +18166,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Bébé renard :" ,":crossed_swords: Le bébé renard fonce rapidement sur sa cible en poussant un petit crie avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -18187,7 +18182,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Bébé loup :" ,":crossed_swords: Le bébé loup essaye de bondir sur la cible mais se rate et retombe par terre et n'arrive pas à lui infliger de dégâts...")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -18197,7 +18191,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Bébé loup :" ,":crossed_swords: Le bébé loup bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -18214,7 +18207,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Bébé loup de sang :" ,":crossed_swords: Le bébé loup de sang hurle pour faire peur à l'ennemis avant de foncer dessus, mais il n'est pas assez rapide et n'arrive pas à lui infliger de dégâts...")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -18224,7 +18216,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Bébé loup de sang :" ,":crossed_swords: Le bébé loup de sang hurle de rage avec un bruit glaçant le sang, il bondit sur sa cible les griffes immenses en avant et le plante, il inflige " +B+ " points de dégâts !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21798,7 +21789,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Boa :" , ":crossed_swords: Le boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21808,7 +21798,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Boa :" ,":crossed_swords: Le boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21825,7 +21814,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Ark venom :" ,":crossed_swords: Le Ark venom essaye de mordre sa cible mais préfère passer a coté...")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21835,7 +21823,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Ark venom :" ,":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " +B+ " points de dégâts !")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -23500,7 +23487,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Gros bébé taurus :" , ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoc...")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -23510,7 +23496,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Gros bébé taurus :" ,":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour, il pourra supporter que 3 attaque!")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -23526,7 +23511,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Petit taurus malin :" ,":crossed_swords: Petit taurus malin tente de briser la défense du monstre mais il préfère faire le beau...")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -23536,7 +23520,6 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Petit taurus malin :" ,":crossed_swords: Petit taurus malin attaque et brise la défense du monstre, l'immobilisant pour une attaque!")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
     }
