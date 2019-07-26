@@ -2361,13 +2361,15 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Les professions de fonction publique :" , "Voici la liste des professions liées à la fonction publique :\n\n" +
-                                                         "- Aubergiste\n" +
+                                                         "- Aubergiste et Gérant aubergiste\n" +
                                                          "- Mercenaire\n" +
+                                                         "- Professeur\n" +
+                                                         "- Directeur\n" +
                                                          "- Garde et Chef des Gardes\n" +
                                                          "- Banquier\n" +
                                                          "- Eleveur\n" +
                                                          "- Bourreau\n" +
-                                                         "- Maitre de l'Arènes\n" +
+                                                         "- Organisateur de combat\n" +
                                                          "- Dirigeant\n" +
                                                          "- Gérant des Guildes")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -2384,9 +2386,17 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Les bonus des professions de récolte :" , "En construction")
     .addBlankField(true)
-    .addField("Les bonus des professions de fabrication :" , "En construction")
+    .addField("Les bonus des professions de fabrication :" , "- Alchimiste : Faites `=Alchimiste` pour le savoir\n" +
+                                                             "- Forgeron : Faites `=Forgeron` pour le savoir\n" +
+                                                             "- Bijoutier : Faites `=Bijoutier` pour le savoir\n" +
+                                                             "- Enchanteur : Faites `=Enchanteur` pour le savoir\n" +
+                                                             "- Cuisinier : Faites `=Cuisinier` pour le savoir")
     .addBlankField(true)
-    .addField("Les bonus des professions de fonction publique :" , "En construction")
+    .addField("Les bonus des professions de fonction publique :" , "- Aubergiste : +10 au roll d'attention lorsque vous êtes dans l'auberge.\n" +
+                                                                   "- Mercenaire : +10 au roll de traque lorsque vous êtes sous contrat.\n" +
+                                                                   "- Garde : +10 au roll de capture.\n" +
+                                                                   "- Banquier : Récupère 1% des cols de ses ventes.\n" +
+                                                                   "- Bourreau : Gagne 1000 cols par exécution effectuée.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
