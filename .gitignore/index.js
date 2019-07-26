@@ -2391,7 +2391,7 @@ bot.on('message', message => {
                                                              "- Bijoutier : Faites `=Bijoutier` pour le savoir\n" +
                                                              "- Enchanteur : Faites `=Enchanteur` pour le savoir\n" +
                                                              "- Cuisinier : Faites `=Cuisinier` pour le savoir")
-    .addBlankField(true)
+    //.addBlankField(true)
     .addField("Les bonus des professions de fonction publique :" , "- Aubergiste : +10 au roll d'attention lorsque vous êtes dans l'auberge.\n" +
                                                                    "- Mercenaire : +10 au roll de traque lorsque vous êtes sous contrat.\n" +
                                                                    "- Garde : +10 au roll de capture.\n" +
