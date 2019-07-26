@@ -2411,7 +2411,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le alchimiste :" , "En cours")
+    .addField("L'alchimiste :" , "En cours")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2456,8 +2456,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le enchanteur :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
-                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .addField("L'enchanteur :" , "En cours")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2472,8 +2471,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le cuisinier :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
-                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .addField("Le cuisinier :" , "En cours")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
