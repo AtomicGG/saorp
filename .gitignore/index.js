@@ -2391,13 +2391,93 @@ bot.on('message', message => {
                                                              "- Bijoutier : Faites `=Bijoutier` pour le savoir\n" +
                                                              "- Enchanteur : Faites `=Enchanteur` pour le savoir\n" +
                                                              "- Cuisinier : Faites `=Cuisinier` pour le savoir")
-    //.addBlankField(true)
+    .addBlankField(true)
     .addField("Les bonus des professions de fonction publique :" , "- Aubergiste : +10 au roll d'attention lorsque vous êtes dans l'auberge.\n" +
                                                                    "- Mercenaire : +10 au roll de traque lorsque vous êtes sous contrat.\n" +
                                                                    "- Garde : +10 au roll de capture.\n" +
                                                                    "- Banquier : Récupère 1% des cols de ses ventes.\n" +
                                                                    "- Bourreau : Gagne 1000 cols par exécution effectuée.")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Alchimiste
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Alchimiste")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
+                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Forgeron
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Forgeron")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
+                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Bijoutier
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bijoutier")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
+                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Enchanteur
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Enchanteur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
+                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+// Menus | Cuisinier
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Cuisinier")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Le dirigeant :" , "Un dirigeant est désigné par un vote ou une épreuve. Il a le droit d'ajouter, de supprimer ou même de modifier des règles au sein de la ville !\n\n" +
+                                 "Pour devenir dirigeant, il suffit d'avoir plus de votes que les autres candidats, et si un dirigeant est détesté de tous, les joueurs ont la possibilité de se rebeller !")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
   }
