@@ -19990,14 +19990,14 @@ bot.on('message', message => {
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30){
+        if (roll <= 40){
           test = test + 4 + snakeSneaky;
           if (test <= (6 + 7 * (joueurs - 1))) {
             snakeSneaky = snakeSneaky + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30){
+        if (roll <= 40){
           test = test + 4 + (2 * doryphoreGeant);
           if (test <= (6 + 7 * (joueurs - 1))) {
             doryphoreGeant = doryphoreGeant + 1;
@@ -26775,7 +26775,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau de maille :" , ":scales: C'est un anneau fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`")
+    .addField(":scales: Anneau de maille :" , ":scales: C'est un anneau fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26788,7 +26788,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette de maille :" , ":scales: C'est une amulette faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`")
+    .addField(":scales: Amulette de maille :" , ":scales: C'est une amulette faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
