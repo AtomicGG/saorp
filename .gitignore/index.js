@@ -1399,6 +1399,10 @@ bot.on('message', message => {
                             "Peau de venom :\nCoûts :  [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Queue de venom :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Venin de venom :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Carapace de doryphore géant :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
+                            "Aile de doryphore géant :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Patte de doryphore géant :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Hémolymphe :\nCoûts :  [Achat : X cols] [Revente : 35 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 6```")
   }
