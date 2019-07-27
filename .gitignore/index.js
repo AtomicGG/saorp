@@ -1392,9 +1392,9 @@ bot.on('message', message => {
                             "Poudre de poison :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Aile de neoridas :\nCoûts : [Achat : X cols] [Revente : 55 cols]\n\n" +
                             "Peau de neoridas :\nCoûts : [Achat : X cols] [Revente : 55 cols]\n\n" +
-                            "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
-                            "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Patte de bousier colossal :\nCoûts :  [Achat : X cols] [Revente : 40 cols]\n\n" +
+                            "Carapace de bousier colossal :\nCoûts :  [Achat : X cols] [Revente : 40 cols]\n\n" +
+                            "Corne de bousier colossal :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 6```")
   }
@@ -27249,7 +27249,7 @@ if (message.content.startsWith(prefix + "Poudre de poison")) {
   .addField("Poudre :" , "C'est une poudre que vous trouvez sur les néoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "45 cols")
-  .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
+  .addField("Permet de réaliser le ou les crafts suivants :" , "Aucuns crafts pour le moment")
   //.setImage("https://png.icons8.com/color/1600/jelly.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -27295,10 +27295,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Patte de bousier colosal :" , "C'est une patte trouvable sur les bousier colosal palier 2 !")
+    .addField("Patte de bousier colosal :" , "C'est une patte trouvable sur les bousiers colossaux dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Jambières en chitine\n=Bottes en chitine")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -27310,10 +27310,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Carapace de bousier colosal :" , "C'est une carapace trouvable sur les bousier colosal palier 2 !")
+    .addField("Carapace de bousier colosal :" , "C'est une carapace trouvable sur les bousiers colossaux dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque en chitine\n=Epaulières en chitine\nGantelets en chitine\n=Bottes en chitine")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -27325,10 +27325,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Corne de bousier colosal :" , "C'est une corne trouvable sur les bousier colosal palier 2 !")
+    .addField("Corne de bousier colosal :" , "C'est une corne trouvable sur les bousiers colossaux dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements en peau résistante")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque en chitine\n=Epaulières en chitine")
     .setTimestamp()
     message.channel.send({embed})
   }
@@ -27340,7 +27340,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Crochet de venom :" , "C'est une crochet trouvable sur les venom palier 2 !")
+    .addField("Crochet de venom :" , "C'est une crochet trouvable sur les venoms dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de poison moyen")
@@ -27355,7 +27355,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Peau de venom :" , "C'est une peau trouvable sur les venom palier 2 !")
+    .addField("Peau de venom :" , "C'est une peau trouvable sur les venoms dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture en chitine")
@@ -27370,7 +27370,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Queue de venom :" , "C'est une queue trouvable sur les venom palier 2 !")
+    .addField("Queue de venom :" , "C'est une queue trouvable sur les venoms dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture en chitine")
@@ -27385,7 +27385,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Venin de venom :" , "C'est un venin trouvable sur les venom palier 2 !")
+    .addField("Venin de venom :" , "C'est un venin trouvable sur les venoms dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Parchemin de poison moyen")
@@ -27400,7 +27400,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Carapace de doryphore géant :" , "C'est une carapace trouvable sur les doryphore géant palier 2 !")
+    .addField("Carapace de doryphore géant :" , "C'est une carapace trouvable sur les doryphores géants dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque en chitine\n=Epaulières en chitine\n=Plastron en chitine\n=Jambièresn en chitine\n=Anneau en chitine\n=Amulette en chitine\n=Armes en chitine")
@@ -27415,7 +27415,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Aile de doryphore géant :" , "C'est une aile trouvable sur les doryphore géant palier 2 !")
+    .addField("Aile de doryphore géant :" , "C'est une aile trouvable sur les doryphores géants dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Anneau en chitine\n=Amulette en chitine\n=Plastron en chitine")
@@ -27430,7 +27430,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Patte de doryphore géant :" , "C'est une patte trouvable sur les Doryphore géant palier 2 !")
+    .addField("Patte de doryphore géant :" , "C'est une patte trouvable sur les doryphores géants dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Jambières en chitine\n=Armes en chitine")
