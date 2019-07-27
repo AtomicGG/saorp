@@ -1432,10 +1432,17 @@ bot.on('message', message => {
                             "Cuirasse de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Peau de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Poil de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
-                            "Lierre d'antidote :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
-                            "Lierre de soin :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
-                            "Lierre d'air :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
-                            "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
+                            "Lierre d'antidote :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Lierre de soin :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Lierre d'air :\nCoûts : [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+                            "Viande de desman :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Peau de desman :\nCoûts :  [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+                            "Coeur de desman :\nCoûts :  [Achat : 160 cols] [Revente : 40 cols]\n\n" +
+                            "Oeil de desman :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
+                            "Pierre de sel :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
+                            "Fer médiocre :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
+                            "Fer commun :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
+                            "Fer rare :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
   }
 }) ;
 
@@ -20619,11 +20626,11 @@ bot.on('message', message => {
         langue = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 15) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       cols = Math.floor(60 * Math.random() + 60)
@@ -20638,11 +20645,11 @@ bot.on('message', message => {
         langue = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 10) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 1) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(55 * Math.random() + 55)
@@ -20700,11 +20707,11 @@ bot.on('message', message => {
         ailes = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 15) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20719,19 +20726,19 @@ bot.on('message', message => {
     } else {
       poudrePoison = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 20) {
         peau = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 20) {
         ailes = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 10) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 1) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20788,30 +20795,30 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       patte = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 30) {
+      if (rollRessource <= 20) {
         carapace = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 15) {
         corne = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 10) {
         hemolyphe = 1
       }
       cols = Math.floor(60 * Math.random() + 70)
     } else {
       patte = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 15) {
         carapace = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 10) {
         corne = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 5) {
         hemolyphe = 1
       }
       cols = Math.floor(55 * Math.random() + 65)
@@ -20859,23 +20866,7 @@ bot.on('message', message => {
       crochetPoison = Math.floor(2 * Math.random() + 1)
       Peau = Math.floor(3 * Math.random())
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 30) {
-        queueSerpent = 1
-      }
-      rollRessource = Math.floor(100 * Math.random() + 1);
       if (rollRessource <= 20) {
-        Venin = 1
-      }
-      rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
-        Oeufs = 1
-      }
-      cols = Math.floor(51 * Math.random() + 50)
-    } else {
-      crochetPoison = Math.floor(1 * Math.random() + 1)
-      Peau = Math.floor(2 * Math.random())
-      rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
         queueSerpent = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20883,7 +20874,23 @@ bot.on('message', message => {
         Venin = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 1) {
+      if (rollRessource <= 5) {
+        Oeufs = 1
+      }
+      cols = Math.floor(51 * Math.random() + 50)
+    } else {
+      crochetPoison = Math.floor(1 * Math.random() + 1)
+      Peau = Math.floor(2 * Math.random())
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 15) {
+        queueSerpent = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 10) {
+        Venin = 1
+      }
+      rollRessource = Math.floor(100 * Math.random() + 1);
+      if (rollRessource <= 3) {
         Oeufs = 1
       }
       cols = Math.floor(41 * Math.random() + 40)
@@ -20952,25 +20959,25 @@ bot.on('message', message => {
         armeChitineDeuxMains = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 15) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
+      if (rollRessource <= 5) {
         oeufB = 1
       }
       cols = Math.floor(81 * Math.random() + 80)
     } else {
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 35) {
+      if (rollRessource <= 30) {
         carapace = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 20) {
         aile = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 20) {
         patte = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20982,11 +20989,11 @@ bot.on('message', message => {
         armeChitineDeuxMains = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 10) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 1) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(71 * Math.random() + 70)
@@ -27755,8 +27762,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Lierre d'antidote :" , "C'est une herbe basique que vous trouvez en cueillant dans les clairières du palier 2 !")
-    .addField("Prix d'achat :" , "175 cols")
-    .addField("Prix de revente :" , "35 cols")
+    .addField("Prix d'achat :" , "100 cols")
+    .addField("Prix de revente :" , "25 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -27771,8 +27778,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Lierre de soin :" , "C'est une herbe basique que vous trouvez en cueillant dans les clairières du palier 2 !")
-    .addField("Prix d'achat :" , "90 cols")
-    .addField("Prix de revente :" , "22 cols")
+    .addField("Prix d'achat :" , "120 cols")
+    .addField("Prix de revente :" , "30 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -27787,8 +27794,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Lierre d'air :" , "C'est une herbe basique que vous trouvez en cueillant dans les clairières du palier 2 !")
-    .addField("Prix d'achat :" , "110 cols")
-    .addField("Prix de revente :" , "27 cols")
+    .addField("Prix d'achat :" , "140 cols")
+    .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -27995,8 +28002,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Coeur de desman :" , "C'est un coeur basique que vous trouvez sur les desmans en chassant dans la clairière du palier 2 !")
-    .addField("Prix d'achat :" , "165 cols")
-    .addField("Prix de revente :" , "33 cols")
+    .addField("Prix d'achat :" , "160 cols")
+    .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux taurus")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -28011,8 +28018,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oeil de desman :" , "C'est un oeil basique que vous trouvez sur les desmans en chassant dans la clairière du palier 2 !")
-    .addField("Prix d'achat :" , "175 cols")
-    .addField("Prix de revente :" , "35 cols")
+    .addField("Prix d'achat :" , "180 cols")
+    .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
