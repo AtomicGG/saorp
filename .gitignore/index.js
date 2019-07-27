@@ -1871,7 +1871,15 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des oeufs 1")) {
     message.channel.send("```Oeuf déformé :\nCoûts : [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Oeuf déformé]\n\n" +
-                            "Oeuf difforme :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Oeuf difforme]```")
+                            "Oeuf difforme :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Oeuf difforme]\n\n" +
+                            "Suite en écrivant :\n=Liste des oeufs 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des oeufs 2")) {
+    message.channel.send("```Oeuf bavant :\nCoûts : [Achat : 6000 cols] [Revente : 1500 cols]\nInfos : [=Oeuf bavant]\n\n" +
+                            "Oeuf brisé :\nCoûts : [Achat : 8000 cols] [Revente : 2000 cols]\nInfos : [=Oeuf brisé]```")
   }
 }) ;
 
