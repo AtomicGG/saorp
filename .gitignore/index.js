@@ -1422,16 +1422,16 @@ bot.on('message', message => {
                             "Aile de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Antenne de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Oeil de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
-                            "Peau de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
-                            "Viande de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
-                            "Poil de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Peau de taurus :\nCoûts : [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Viande de taurus :\nCoûts : [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Poil de taurus :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Corne de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Scalp de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
-                            "Peau de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
-                            "Poil de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Peau de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Poil de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Cuirasse de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Peau de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
-                            "Poil de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Poil de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
   }
 }) ;
@@ -27548,7 +27548,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Peau de taurus")) {
+  if (message.content === (prefix + "Peau de taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27578,7 +27578,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Poil de taurus")) {
+  if (message.content === (prefix + "Poil de taurus")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27623,7 +27623,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Peau de taurus lourd")) {
+  if (message.content === (prefix + "Peau de taurus lourd")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27638,7 +27638,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Poil de taurus lourd")) {
+  if (message.content === (prefix + "Poil de taurus lourd")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
