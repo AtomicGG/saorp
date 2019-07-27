@@ -1395,6 +1395,10 @@ bot.on('message', message => {
                             "Patte de bousier colossal :\nCoûts :  [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Carapace de bousier colossal :\nCoûts :  [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Corne de bousier colossal :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Crochet de venom :\nCoûts : [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Peau de venom :\nCoûts :  [Achat : X cols] [Revente : 40 cols]\n\n" +
+                            "Queue de venom :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Venin de venom :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 6```")
   }
