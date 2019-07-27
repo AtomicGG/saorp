@@ -1430,6 +1430,8 @@ bot.on('message', message => {
                             "Peau de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Poil de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Cuirasse de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Peau de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Poil de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
   }
 }) ;
@@ -22638,11 +22640,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de Taurus lourd : " + peau + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Peau de taurus lourd : " + peau + "\n" +
                                           ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poil de Taurus lourd : " + poil + "\n" +
-                                           ":dagger: Corne de Taurus : " + corne + "\n" +
-                                           ":bacon: Scalp de Taurus : " + scalp + "\n" +
+                                           ":ox: Poil de taurus lourd : " + poil + "\n" +
+                                           ":dagger: Corne de taurus : " + corne + "\n" +
+                                           ":bacon: Scalp de taurus : " + scalp + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
