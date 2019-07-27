@@ -461,7 +461,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Les trajets :" , "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\n" +
                                 "Pour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\n" +
-                                //"Pour consulter la durée des trajets en dehors de la ville du palier 2 :\n\n`=Trajet palier 2`\n\n" +
+                                "Pour consulter la durée des trajets en dehors de la ville du palier 2 :\n\n`=Trajet palier 2`\n\n" +
                                 "Quand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y en a que dans les zones extérieures !\n\n" +
                                 "Pour vous rendre à l'extérieur depuis la ville, il vous faudra passer par l'entrée de la ville !\n\n" +
                                 "Pour mieux comprendre ce système, imaginez que vous êtes à un magasin de 15 min de chez vous, pour revenir vous mettrez 15 minutes !\n\n" +
@@ -497,7 +497,13 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Trajet en ville :" , "sgsrvbdrbvdrb")
+    .addField("Trajet en ville :" , "Entrée de la ville\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Forêt ou Clairière\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Vallée\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Grande clairière\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Ravin\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Labyrinthe\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
+                                    "Salle du boss\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n")
     .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -1130,36 +1136,36 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Tableau des niveaux de 2 à 15 :" , "Niveau 2 : 200 points d'expérience nécessaires !\n" +
-                                                  "Niveau 3 : 400 points d'expérience nécessaires !\n" +
-                                                  "Niveau 4 : 600 points d'expérience nécessaires !\n" +
-                                                  "Niveau 5 : 800 points d'expérience nécessaires !\n" +
-                                                  "Niveau 6 : 1100 points d'expérience nécessaires !\n" +
-                                                  "Niveau 7 : 1400 points d'expérience nécessaires !\n" +
-                                                  "Niveau 8 : 1700 points d'expérience nécessaires !\n" +
-                                                  "Niveau 9 : 2000 points d'expérience nécessaires !\n" +
-                                                  "Niveau 10 : 2300 points d'expérience nécessaires !\n" +
-                                                  "Niveau 11 : 2700 points d'expérience nécessaires !\n" +
-                                                  "Niveau 12 : 3100 points d'expérience nécessaires !\n" +
-                                                  "Niveau 13 : 3500 points d'expérience nécessaires !\n" +
-                                                  "Niveau 14 : 3900 points d'expérience nécessaires !\n" +
-                                                  "Niveau 15 : 4300 points d'expérience nécessaires !")
+    .addField("Tableau des niveaux de 2 à 15 :" , "Niveau 2 : 200/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 3 : 400/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 4 : 600/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 5 : 800/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 6 : 1100/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 7 : 1400/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 8 : 1700/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 9 : 2000/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 10 : 2300/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 11 : 2700/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 12 : 3100/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 13 : 3500/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 14 : 3900/16800 points d'expérience nécessaires !\n" +
+                                                  "Niveau 15 : 4300/16800 points d'expérience nécessaires !")
     .addBlankField(true)
-    .addField("Tableau des niveaux de 16 à 30 :" , "Niveau 16 : 4800 points d'expérience nécessaires !\n" +
-                                                   "Niveau 17 : 5300 points d'expérience nécessaires !\n" +
-                                                   "Niveau 18 : 5800 points d'expérience nécessaires !\n" +
-                                                   "Niveau 19 : 6300 points d'expérience nécessaires !\n" +
-                                                   "Niveau 20 : 6800 points d'expérience nécessaires !\n" +
-                                                   "Niveau 21 : 7600 points d'expérience nécessaires !\n" +
-                                                   "Niveau 22 : 8400 points d'expérience nécessaires !\n" +
-                                                   "Niveau 23 : 9200 points d'expérience nécessaires !\n" +
-                                                   "Niveau 24 : 10000 points d'expérience nécessaires !\n" +
-                                                   "Niveau 25 : 10800 points d'expérience nécessaires !\n" +
-                                                   "Niveau 26 : 12000 points d'expérience nécessaires !\n" +
-                                                   "Niveau 27 : 13200 points d'expérience nécessaires !\n" +
-                                                   "Niveau 28 : 14400 points d'expérience nécessaires !\n" +
-                                                   "Niveau 29 : 15600 points d'expérience nécessaires !\n" +
-                                                   "Niveau 30 : 16800 points d'expérience nécessaires !")
+    .addField("Tableau des niveaux de 16 à 30 :" , "Niveau 16 : 4800/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 17 : 5300/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 18 : 5800/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 19 : 6300/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 20 : 6800/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 21 : 7600/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 22 : 8400/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 23 : 9200/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 24 : 10000/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 25 : 10800/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 26 : 12000/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 27 : 13200/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 28 : 14400/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 29 : 15600/16800 points d'expérience nécessaires !\n" +
+                                                   "Niveau 30 : 16800/16800 points d'expérience nécessaires !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -1451,7 +1457,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste d'équipements 1")) {
     message.channel.send("```Casque en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Casque en peau arrachée]\n\n" +
-                            "Epaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Épaulière en peau arrachée]\n\n" +
+                            "Epaulières en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epaulières en peau arrachée]\n\n" +
                             "Plastron en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Plastron en peau arrachée]\n\n" +
                             "Cape en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cape en peau arrachée]\n\n" +
                             "Ceinture en peau arrachée :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Ceinture en peau arrachée]\n\n" +
@@ -3742,7 +3748,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -3779,7 +3785,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -3816,7 +3822,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -3853,7 +3859,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -3890,7 +3896,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -3927,7 +3933,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -3964,7 +3970,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -4001,7 +4007,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégats et vous en réduisez une partie, " +
+        .addField(":shield: Interception :" , ":shield: Vous réussissez critiquement votre interception sur votre allié. Vous interceptez tout les dégâts et vous en réduisez une partie, " +
                                               "prenant `" + interCrit + "` points de dégâts.")
         .setImage("https://media.giphy.com/media/taAfdzUL45lgk/source.gif")
         .setTimestamp()
@@ -8457,7 +8463,7 @@ bot.on('message', message => {
         .setColor(3447003)
         .addField(":cyclone: Sleeping silence :" , ":cyclone: Votre compétence 'Sleeping silence' inflige `" + degat + "` points de dégâts, et endort l'ennemi pendant `" +tours+ "` tours, " +
                                                    "empêchant de faire quoi que ce soit mais la cible se réveillera au moindre coup ! De plus, la cible est dans un sommeil profond, ce qui, s'il se réveille prématurément, " +
-                                                   "la cible prendra `" + degatSup + "` de dégats en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
+                                                   "la cible prendra `" + degatSup + "` de dégâts en supplément. Le nombre de tour est divisé par 2 pour les joueurs et les boss.")
         .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
         .setTimestamp()
         message.channel.send({embed})
@@ -8743,7 +8749,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants. Vous assennez deux coups à votre cible. Le premier coup vise à désarmer, infligeant `" +degat+ "` dégâts et faisant perdre `" +desarmement+ "` points d'attaque pendant trois tours. Le deuxième coup vise à briser l'armure, infligeant `" +degat+ "` et faisant perdre `" +briseArmure+ "` points d'armure pendant trois tours. (Vous devez faire deux défenses séparées, seul l'esquive ou la parade réussie vous protégera des effets)\n\nSi la cible est un monstre, le premier coup inflige `" +degat+ "` et baisse les dégats du monstre de `" +desarmement+ "` et le deuxième coup inflige `" +degat2+ "`")
+      .addField("Compétence du combattant :" , "Vous déclenchez votre compétence appartenant à tous les combattants. Vous assennez deux coups à votre cible. Le premier coup vise à désarmer, infligeant `" +degat+ "` dégâts et faisant perdre `" +desarmement+ "` points d'attaque pendant trois tours. Le deuxième coup vise à briser l'armure, infligeant `" +degat+ "` et faisant perdre `" +briseArmure+ "` points d'armure pendant trois tours. (Vous devez faire deux défenses séparées, seul l'esquive ou la parade réussie vous protégera des effets)\n\nSi la cible est un monstre, le premier coup inflige `" +degat+ "` et baisse les dégâts du monstre de `" +desarmement+ "` et le deuxième coup inflige `" +degat2+ "`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -8812,7 +8818,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Compétence du chevalier :" , "Vous déclenchez votre compétence appartenant à tout les chevaliers. Vous gagnez une barre d'armure de vie de `" +armureVie+ "` points de vie ! Cette barre ne protège pas des dégats de feu, poison, saignement ou perce armure. S'il n'a pas été brisé avant, il disparait à la fin du 3eme tour. Tant que l'effet est actif, vous gagnez une amélioration en interception !")
+      .addField("Compétence du chevalier :" , "Vous déclenchez votre compétence appartenant à tout les chevaliers. Vous gagnez une barre d'armure de vie de `" +armureVie+ "` points de vie ! Cette barre ne protège pas des dégâts de feu, poison, saignement ou perce armure. S'il n'a pas été brisé avant, il disparait à la fin du 3eme tour. Tant que l'effet est actif, vous gagnez une amélioration en interception !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -9764,7 +9770,7 @@ bot.on('message', message => {
                                              ":knife: Peau de lapin géant : " + Peau + "\n" +
                                              ":eye: Oeil de lapin géant : " + Oeil + "\n" +
                                              ":cupid: Coeur de lapin géant : " + Coeur + "\n" +
-                                             ":gem: Oreille de lapin : " + Oreille + "\n" +
+                                             ":gem: Oreille de lapin géant : " + Oreille + "\n" +
                                              ":gem: Oeuf déformé : " + Oeufs + "\n" +
                                              ":sparkles: Points d'expérience : " + xp + "\n" +
                                              ":large_orange_diamond: Cols : " + cols)
@@ -12018,7 +12024,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Kobolt enragé :" , ":crossed_swords: Le kobolt enragé bondit et atterit devant vous. Il vous assène deux coups violent de masses, l'un venant de la gauche puis l'autre " +
-                                                     "venant de la droite. Il inflige " + degatCoup1 + " points de dégâts avec son coup de gauche et " + degatCoup2 + " points de dégats avec son coup de droite.\n " +
+                                                     "venant de la droite. Il inflige " + degatCoup1 + " points de dégâts avec son coup de gauche et " + degatCoup2 + " points de dégâts avec son coup de droite.\n " +
                                                      "(Un seul joueur est visé et vous devez effectuer deux défenses, une sur chaque coup.)")
       .setTimestamp()
       message.channel.send({embed})
@@ -12150,7 +12156,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégats")
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 80){
@@ -12158,7 +12164,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégats")
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -12167,7 +12173,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégats")
+      .addField(":shield: Kobolt enragé :" , ":shield: Le kobolt enragé réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -12896,7 +12902,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Kobolt mineur :" , ":crossed_swords: Le kobolt mineur dégaine sa pioche et tente de vous mettre un coup horizontal mais celle-ci est trop lent, vous avez de la chance !")
+      .addField(":crossed_swords: Kobolt mineur :" , ":crossed_swords: Le kobolt mineur dégaine sa pioche et tente de vous mettre un coup horizontal mais celui-ci est trop lent, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (51 <= roll && roll <= 90){
@@ -14033,7 +14039,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière du clan des loups à une main :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:crossed_swords: Améliore le 'Coup de 1 point' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à une main`")
+    .addField(":scales: Rapière du clan des loups à une main :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14137,7 +14143,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:crossed_swords: Améliore le 'Coup de 1 point' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à deux mains`")
+    .addField(":scales: Rapière du clan des loups à deux mains :" , ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:crossed_swords: Améliore le 'Coup létal' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -14312,7 +14318,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Hache de kobolt :" , ":scales: C'est une hache que possèdent les kobolts devant chercher des ressources, si vous possédez cette pioche vous gagnerez le double de bois de frêne [Médiocre] et [Commun] !")
+    .addField(":scales: Hache de kobolt :" , ":scales: C'est une hache que possèdent les kobolts devant chercher des ressources, si vous possédez cette hache vous gagnerez le double de bois de frêne [Médiocre] et [Commun] !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17039,7 +17045,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre basique à deux mains :" , ":scales: C'est un cimeterre peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive en : 'Esquive supérieure'\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre basique à deux mains`")
+    .addField(":scales: Cimeterre basique à deux mains :" , ":scales: C'est un cimeterre peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre basique à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17052,7 +17058,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Glaive basique à deux mains :" , ":scales: C'est un glaive peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du glaive basique à deux mains`")
+    .addField(":scales: Glaive basique à deux mains :" , ":scales: C'est un glaive peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du glaive basique à deux mains`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17131,7 +17137,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Cimeterre basique à une main :" , ":scales: C'est un cimeterre peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre basique à une main`")
+    .addField(":scales: Cimeterre basique à une main :" , ":scales: C'est un cimeterre peu puissant constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre basique à une main`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -17368,7 +17374,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Bouclier basique à deux mains :" , ":scales: C'est un bouclier peu protecteur constitué de bois et de métal mais très utile pour les débutants !\n\n:shield: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier basique à une main`")
+    .addField(":scales: Bouclier basique à une main :" , ":scales: C'est un bouclier peu protecteur constitué de bois et de métal mais très utile pour les débutants !\n\n:shield: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier basique à une main`")
 
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
@@ -18247,7 +18253,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bébé renard :" , ":crossed_swords: Le bébé renard tente de mordre sa cible mais il est trop petit et n'arrive pas à lui infliger de dégats...")
+      .addField(":crossed_swords: Bébé renard :" , ":crossed_swords: Le bébé renard tente de mordre sa cible mais il est trop petit et n'arrive pas à lui infliger de dégâts...")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -18256,7 +18262,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bébé renard :" ,":crossed_swords: Le bébé renard fonce rapidement sur sa cible en poussant un petit crie avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
+      .addField(":crossed_swords: Bébé renard :" ,":crossed_swords: Le bébé renard fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " +B+ " points de dégâts !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -21889,7 +21895,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":egg: Oeuf bavant" , ":egg: En ouvrant l'oeuf bavant, vous découvrez un jeune doryphore !")
-      .addField(":egg: Jeune doryphore :" ,":egg: Confère 12 points d'armure et 20 point de dégats supplémentaires !")
+      .addField(":egg: Jeune doryphore :" ,":egg: Confère 12 points d'armure et 20 point de dégâts supplémentaires !")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
       message.channel.send({embed})
@@ -29061,7 +29067,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Kobolt enragé apex :" , ":crossed_swords: Le Kobolt enragé apex bondit et atterit devant vous. Il vous assène deux coups violent de masses, l'un venant de la gauche puis l'autre " +
-                                                     "venant de la droite. Il inflige " + degatCoup1 + " points de dégâts avec son coup de gauche et " + degatCoup2 + " points de dégats avec son coup de droite.\n " +
+                                                     "venant de la droite. Il inflige " + degatCoup1 + " points de dégâts avec son coup de gauche et " + degatCoup2 + " points de dégâts avec son coup de droite.\n " +
                                                      "(Un seul joueur est visé et vous devez effectuer deux défenses, une sur chaque coup.)")
       .setTimestamp()
       message.channel.send({embed})
@@ -29193,7 +29199,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégats")
+      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 80){
@@ -29201,7 +29207,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégats")
+      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -29210,7 +29216,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégats")
+      .addField(":shield: Kobolt enragé apex :" , ":shield: Le Kobolt enragé apex réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -29906,7 +29912,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade et le réussir en déviant votre lame et vous donne le double des dégats que vous aurez du recevoir, sauf si vous tentez de parade de nouveau !")
+      .addField(":shield: Illfang :" , ":shield: Illfang tente d'effectuer une parade et le réussir en déviant votre lame et vous donne le double des dégâts que vous aurez du recevoir, sauf si vous tentez de parade de nouveau !")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -30667,7 +30673,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Méta kobolt espion:" , ":crossed_swords: Le Méta kobolt espion s'approche de vous et sort subitement une poudre qu'il vous balance en pleine face ce qui vous fait vous endormir pendant deux tour. " +
-                                                    "[Esquivable uniquement] Et vous prenez le double des dégats si vous êtes touchez avant. Seul un dégat de 75 peut vous réveiller en comptant l'armure. ")
+                                                    "[Esquivable uniquement] Et vous prenez le double des dégâts si vous êtes touchez avant. Seul un dégat de 75 peut vous réveiller en comptant l'armure. ")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -30708,7 +30714,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":crossed_swords: Méta kobolt enragé :" , ":crossed_swords: Le Méta kobolt enragé bondit et atterit devant vous. Il vous assène cinq coups violent de masses, de hauts en bas et vous écrase a plusieurs reprise " +
-                                                     "si jamais vous bloquez il va juste au bout du combo. Il inflige " + degatCoup1 + " points de dégâts puis " + degatCoup2 + " points de dégats puis " + degatCoup3 + " points de dégâts puis " + degatCoup4 + " points de dégats puis un dernier gros coup avec les deux masses " + degatCoup5 + " et crie. Si jamais vous avez parade un coup il va continuer son attaque en criant et augmentant ses dégats de 15.\n " +
+                                                     "si jamais vous bloquez il va juste au bout du combo. Il inflige " + degatCoup1 + " points de dégâts puis " + degatCoup2 + " points de dégâts puis " + degatCoup3 + " points de dégâts puis " + degatCoup4 + " points de dégâts puis un dernier gros coup avec les deux masses " + degatCoup5 + " et crie. Si jamais vous avez parade un coup il va continuer son attaque en criant et augmentant ses dégâts de 15.\n " +
                                                      "(Un seul joueur est visé et vous devez effectuer 5 défenses, une sur chaque coup et les dégâts c'est peu importe votre level ~~Je suis méchant~~.)")
       .setTimestamp()
       message.channel.send({embed})
@@ -30840,7 +30846,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégats")
+      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé tente de parer votre coup à l'aide de ses masses mais il n'est pas assez rapide. Vous lui infligez " + paradeRatee + " points de dégâts")
       message.channel.send({embed})
     }
     if (21 <= roll && roll <= 80){
@@ -30848,7 +30854,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégats")
+      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé bloque votre coup à l'aide de ses masses. Vous lui infligez " + blocage + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -30857,7 +30863,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégats perce armure")
+      .addField(":shield: Méta kobolt enragé :" , ":shield: Le Méta kobolt enragé réussit à parer votre coup à l'aide de ses masses. Il vous inflige " + paradeReussie + " points de dégâts perce armure")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -31087,7 +31093,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":shield: Méta kobolt garde :" , ":shield: Le Méta kobolt garde bloque le coup, vous lui infligez " + degat + " points de dégâts et vous renvoie le quart des dégats")
+    .addField(":shield: Méta kobolt garde :" , ":shield: Le Méta kobolt garde bloque le coup, vous lui infligez " + degat + " points de dégâts et vous renvoie le quart des dégâts")
     message.channel.send({embed})
   }
 });
