@@ -1796,7 +1796,8 @@ bot.on('message', message => {
                             "Ragoûts de loup de sang :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Ragoût de loup de sang]\n\n" +
                             "Ragoûts de kobolt :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de kobolt]\n\n" +
                             "Ragoûts de ragondin :\nCoûts : [Achat : 440 cols] [Revente : 110 cols]\nInfos : [=Ragoût de ragondin]\n\n" +
-                            "Ragoûts de chien errant :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Ragoût de chien errant]```")
+                            "Ragoûts de chien errant :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Ragoût de chien errant]\n\n" +
+                            "Suite en écrivant :\n=Liste des plats 2```")
   }
 }) ;
 
@@ -1813,7 +1814,14 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des parchemins 1")) {
     message.channel.send("```Parchemin de poison faible :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Parchemin de poison faible]\n\n" +
-                            "Parchemin de feu rouge faible :\nCoûts : [Achat : 1380 cols] [Revente : 345 cols]\nInfos : [=Parchemin de feu rouge faible]```")
+                            "Parchemin de feu rouge faible :\nCoûts : [Achat : 1380 cols] [Revente : 345 cols]\nInfos : [=Parchemin de feu rouge faible]\n\n" +
+                            "Suite en écrivant :\n=Liste des parchemins 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des parchemins 2")) {
+    message.channel.send("```Parchemin de poison moyen :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Parchemin de poison moyen]```")
   }
 }) ;
 
