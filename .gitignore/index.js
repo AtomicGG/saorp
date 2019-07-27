@@ -1422,6 +1422,11 @@ bot.on('message', message => {
                             "Aile de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Antenne de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
                             "Oeil de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Peau de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Viande de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Poil de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Corne de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Scalp de taurus :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
   }
 }) ;
@@ -22541,11 +22546,11 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":knife: Peau de Taurus : " + peau + "\n" +
+    .addField(":moneybag: Récompenses :" , ":knife: Peau de taurus : " + peau + "\n" +
                                            ":poultry_leg: Viande de taurus : " + viande + "\n" +
-                                           ":ox: Poil de Taurus : " + poil + "\n" +
-                                           ":dagger: Corne de Taurus : "+ corne + "\n" +
-                                           ":bacon: Scalp de Taurus : " + scalp + "\n" +
+                                           ":ox: Poil de taurus : " + poil + "\n" +
+                                           ":dagger: Corne de taurus : "+ corne + "\n" +
+                                           ":bacon: Scalp de taurus : " + scalp + "\n" +
                                            ":gem: Oeuf brisé : " + oeufB + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -27643,12 +27648,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Peau de taurus adroit")) {
+  if (message.content.startsWith(prefix + "Peau de fort taurus adroit")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Peau de taurus adroit :" , "C'est une peau trouvable sur les taurus adroits dans la clairière du palier 2 !")
+    .addField("Peau de fort taurus adroit :" , "C'est une peau trouvable sur les forts taurus adroits dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape taurus")
@@ -27658,12 +27663,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Poil de taurus adroit")) {
+  if (message.content.startsWith(prefix + "Poil de fort taurus adroit")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Poil de taurus adroit :" , "C'est une poil trouvable sur les taurus adroits dans la clairière du palier 2 !")
+    .addField("Poil de fort taurus adroit :" , "C'est une poil trouvable sur les forts taurus adroits dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "A venir")
@@ -27673,12 +27678,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Cuirasse de taurus adroit")) {
+  if (message.content.startsWith(prefix + "Cuirasse de fort taurus adroit")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Cuirasse de taurus adroit :" , "C'est une cuirasse trouvable sur taurus adroits dans la clairière du les palier 2 !")
+    .addField("Cuirasse de fort taurus adroit :" , "C'est une cuirasse trouvable sur forts taurus adroits dans la clairière du les palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bottes taurus\n=Anneau taurus\n=Amulette taurus\n=Armes taurus")
