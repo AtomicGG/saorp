@@ -21187,6 +21187,18 @@ bot.on('message', message => {
   }
 })
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Bonus de la panoplie en chitine")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField(":scales: Panoplie en chitine :" , "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 2 points d'attaque\n- Pour 6 pièces : Bonus de 7 points d'attaque\n- Pour 10 pièces : Bonus de 12 points d'attaque")
+    .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Casque en chitine")) {
