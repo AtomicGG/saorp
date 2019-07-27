@@ -1406,6 +1406,10 @@ bot.on('message', message => {
                             "Lierre commun :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
                             "Lierre rare :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Lierre parfait :\nCoûts :  [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+                            "Viande de lièvre :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Peau de lièvre :\nCoûts :  [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+                            "Coeur de lièvre :\nCoûts :  [Achat : 160 cols] [Revente : 40 cols]\n\n" +
+                            "Oeil de lièvre :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 6```")
   }
@@ -27822,8 +27826,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Viande de lièvre :" , "C'est une viande basique vous trouvez sur les lièvres en chassant dans les forêts du palier 2 !")
-    .addField("Prix d'achat :" , "125 cols")
-    .addField("Prix de revente :" , "25 cols")
+    .addField("Prix d'achat :" , "120 cols")
+    .addField("Prix de revente :" , "30 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lièvre")
     .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
     .setTimestamp()
@@ -27838,8 +27842,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Peau de lièvre :" , "C'est une peau basique que vous trouvez sur les lièvres en chassant dans les forêts du palier 2 !")
-    .addField("Prix d'achat :" , "145 cols")
-    .addField("Prix de revente :" , "29 cols")
+    .addField("Prix d'achat :" , "140 cols")
+    .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
     .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
     .setTimestamp()
@@ -27854,8 +27858,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Coeur de lièvre :" , "C'est un coeur basique que vous trouvez sur les lièvres en chassant dans la forêt du palier 2 !")
-    .addField("Prix d'achat :" , "165 cols")
-    .addField("Prix de revente :" , "33 cols")
+    .addField("Prix d'achat :" , "160 cols")
+    .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bijoux en chitine\n=Potion améliorée")
     .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
     .setTimestamp()
@@ -27870,8 +27874,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Oeil de lièvre :" , "C'est un oeil basique que vous trouvez sur les lièvres en chassant dans la forêt du palier 2 !")
-    .addField("Prix d'achat :" , "175 cols")
-    .addField("Prix de revente :" , "35 cols")
+    .addField("Prix d'achat :" , "180 cols")
+    .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
     .setImage("https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/view-512.png")
     .setTimestamp()
