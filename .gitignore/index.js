@@ -1570,7 +1570,7 @@ bot.on('message', message => {
                             "Plastron taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Plastron taurus]\n\n" +
                             "Cape taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Cape taurus]\n\n" +
                             "Ceinture taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Ceinture taurus]\n\n" +
-                            "Gantelets tauruss :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Gantelets tauruss]\n\n" +
+                            "Gantelets taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Gantelets tauruss]\n\n" +
                             "Jambières taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Jambières taurus]\n\n" +
                             "Bottes taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Bottes taurus]\n\n" +
                             "Anneau taurus :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Anneau taurus]\n\n" +
@@ -1590,8 +1590,7 @@ bot.on('message', message => {
                             "Jambières de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Jambières de maille]\n\n" +
                             "Bottes de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Bottes de maille]\n\n" +
                             "Anneau de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Anneau de maille]\n\n" +
-                            "Amulette de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette de maille]\n\n" +
-                            "Suite en écrivant :\n... Pas encore la.```")
+                            "Amulette de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette de maille]")
   }
 });
 
@@ -26909,7 +26908,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Anneau de maille :" , ":scales: C'est un anneau fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`")
+    .addField(":scales: Anneau de maille :" , ":scales: C'est un anneau fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 1800 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -26922,7 +26921,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField(":scales: Amulette de maille :" , ":scales: C'est une amulette faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`")
+    .addField(":scales: Amulette de maille :" , ":scales: C'est une amulette faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 1800 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
