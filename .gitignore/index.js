@@ -1439,10 +1439,10 @@ bot.on('message', message => {
                             "Peau de desman :\nCoûts :  [Achat : 140 cols] [Revente : 35 cols]\n\n" +
                             "Coeur de desman :\nCoûts :  [Achat : 160 cols] [Revente : 40 cols]\n\n" +
                             "Oeil de desman :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
-                            "Pierre de sel :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
-                            "Fer médiocre :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
-                            "Fer commun :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
-                            "Fer rare :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
+                            "Pierre de sel :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Fer médiocre :\nCoûts :  [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+                            "Fer commun :\nCoûts :  [Achat : 160 cols] [Revente : 40 cols]\n\n" +
+                            "Fer rare :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n```")
   }
 }) ;
 
@@ -27938,8 +27938,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Fer rare :" , "C'est un minerai basique que vous trouvez en minant dans la clairière du palier 2 !")
-    .addField("Prix d'achat :" , "200 cols")
-    .addField("Prix de revente :" , "50 cols")
+    .addField("Prix d'achat :" , "180 cols")
+    .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de maille \n=Bijoux de maille")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
@@ -27954,9 +27954,9 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Pierre de sel :" , "C'est un minerai basique que vous trouvez en minant dans la clairière du palier 2 !")
-    .addField("Prix d'achat :" , "160 cols")
-    .addField("Prix de revente :" , "40 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Equipements de maille \n=Bijoux de maille")
+    .addField("Prix d'achat :" , "120 cols")
+    .addField("Prix de revente :" , "30 cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
     .setImage("https://png.icons8.com/color/1600/gold-ore.png")
     .setTimestamp()
     message.channel.send({embed})
