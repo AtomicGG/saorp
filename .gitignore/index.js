@@ -1386,12 +1386,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 5")) {
-    message.channel.send("```Viande de chien errant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
-                            "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Peau écailleuse de kobolt pilion :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
-                            "Dent de kobolt pilion :\nCoûts : [Achat : 140 cols] [Revente : 35 cols]\n\n" +
+    message.channel.send("```Bave de lombric irrégulier :\nCoûts : [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Peau élastique de lombric irrégulier :\nCoûts : [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Langue de lombric irrégulier :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
+                            "Poudre de poison :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
+                            "Aile de neoridas :\nCoûts : [Achat : X cols] [Revente : 55 cols]\n\n" +
+                            "Peau de neoridas :\nCoûts : [Achat : X cols] [Revente : 55 cols]\n\n" +
                             "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
                             "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
@@ -20729,8 +20729,8 @@ bot.on('message', message => {
      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
      .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
      .addField(":moneybag: Récompenses :" , ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
-                                            ":butterfly: Aile de Neoridas  : " + ailes+ "\n" +
-                                            ":knife: Peau de Neoridas : " + peau + "\n" +
+                                            ":butterfly: Aile de neoridas  : " + ailes+ "\n" +
+                                            ":knife: Peau de neoridas : " + peau + "\n" +
                                             ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                             ":scales: Armure en chitine au choix : " + armureChitine + "\n" +
                                             ":scales: Bijou en chitine au choix : " + bijouChitine + "\n" +
@@ -20800,9 +20800,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":poultry_leg: Patte de Bousier colosal: " + patte + "\n" +
-                                           ":shell: Carapace de Bousier colosal : " + carapace + "\n" +
-                                           ":dagger: Corne de Bousier colosal : "+ corne + "\n" +
+    .addField(":moneybag: Récompenses :" , ":poultry_leg: Patte de bousier colossal: " + patte + "\n" +
+                                           ":shell: Carapace de bousier colossal : " + carapace + "\n" +
+                                           ":dagger: Corne de bousier colossal : "+ corne + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20872,10 +20872,10 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":skull: Crochet de Venom : " + crochetPoison + "\n" +
-                                           ":knife: Peau de Venom : " + Peau + "\n" +
-                                           ":snake: Queue de Venom : " + queueSerpent + "\n" +
-                                           ":alembic: Venin de Venom : " + Venin + "\n" +
+    .addField(":moneybag: Récompenses :" , ":skull: Crochet de venom : " + crochetPoison + "\n" +
+                                           ":knife: Peau de venom : " + Peau + "\n" +
+                                           ":snake: Queue de venom : " + queueSerpent + "\n" +
+                                           ":alembic: Venin de venom : " + Venin + "\n" +
                                            ":gem: Oeuf bavant : " + Oeufs + "\n" +
                                            ":sparkles: Points d'expérience : " + xp + "\n" +
                                            ":large_orange_diamond: Cols : " + cols)
@@ -20975,9 +20975,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-    .addField(":moneybag: Récompenses :" , ":shell: Carapace de Doryphore géant : " + carapace + "\n" +
-                                           ":butterfly: Aile de Doryphore géant : " + aile + "\n" +
-                                           ":poultry_leg: Patte de Doryphore géant : " + patte + "\n" +
+    .addField(":moneybag: Récompenses :" , ":shell: Carapace de doryphore géant : " + carapace + "\n" +
+                                           ":butterfly: Aile de doryphore géant : " + aile + "\n" +
+                                           ":poultry_leg: Patte de doryphore géant : " + patte + "\n" +
                                            ":alembic: Hémolymphe : " + hemolyphe+ "\n" +
                                            ":scales: Arme en chitine à une main au choix : " + armeChitineUneMain + "\n" +
                                            ":scales: Arme en chitine à deux mains au choix : " + armeChitineDeuxMains + "\n" +
@@ -27198,7 +27198,7 @@ if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Bave :" , "C'est de la bave que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
+  .addField("Bave :" , "C'est de la bave que vous trouvez sur les lombrics irréguliers dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "35 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Gantelets en chitine")
@@ -27209,12 +27209,12 @@ if (message.content.startsWith(prefix + "Bave de lombric irrégulier")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Peau élastic de lombric irrégulier")) {
+if (message.content.startsWith(prefix + "Peau élastique de lombric irrégulier")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Peau élastic :" , "C'est une peau élastique que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
+  .addField("Peau élastic :" , "C'est une peau élastique que vous trouvez sur les lombrics irréguliers dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "35 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine\n=Ceinture en chitine\n=Bottes en chitine")
@@ -27230,7 +27230,7 @@ if (message.content.startsWith(prefix + "Langue de lombric irrégulier")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Langue :" , "C'est une langue que vous trouvez sur les lombrics irrégulier dans la forêt du palier 2 !")
+  .addField("Langue :" , "C'est une langue que vous trouvez sur les lombrics irréguliers dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "40 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture en chitine")
@@ -27257,12 +27257,12 @@ if (message.content.startsWith(prefix + "Poudre de poison")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Aile de Neoridas")) {
+if (message.content.startsWith(prefix + "Aile de neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Ailes :" , "C'est des ailes que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
+  .addField("Aile :" , "C'est une aile que vous trouvez sur les neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "55 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron en chitine\n=Gantelets en chitine")
@@ -27273,12 +27273,12 @@ if (message.content.startsWith(prefix + "Aile de Neoridas")) {
 });
 
 bot.on('message', message => {
-if (message.content.startsWith(prefix + "Peau de Neoridas")) {
+if (message.content.startsWith(prefix + "Peau de neoridas")) {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField("Peau :" , "C'est une peau que vous trouvez sur les Neoridas dans la forêt du palier 2 !")
+  .addField("Peau :" , "C'est une peau que vous trouvez sur les neoridas dans la forêt du palier 2 !")
   .addField("Prix d'achat :" , "X cols")
   .addField("Prix de revente :" , "55 cols")
   .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape en chitine")
@@ -27290,7 +27290,7 @@ if (message.content.startsWith(prefix + "Peau de Neoridas")) {
 
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Patte de bousier colosal")) {
+  if (message.content.startsWith(prefix + "Patte de bousier colossal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27305,7 +27305,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Carapace de bousier colosal")) {
+  if (message.content.startsWith(prefix + "Carapace de bousier colossal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27320,7 +27320,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Corne de bousier colosal")) {
+  if (message.content.startsWith(prefix + "Corne de bousier colossal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
