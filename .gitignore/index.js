@@ -1403,6 +1403,9 @@ bot.on('message', message => {
                             "Aile de doryphore géant :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Patte de doryphore géant :\nCoûts :  [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Hémolymphe :\nCoûts :  [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Lierre commun :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+                            "Lierre rare :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Lierre parfait :\nCoûts :  [Achat : 140 cols] [Revente : 35 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 6```")
   }
@@ -27070,7 +27073,7 @@ if (message.content === prefix + "Ragoût de lièvre") {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":meat_on_bone: Ragoût de lièvre :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lièvre mais aussi de basilic !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
+  .addField(":meat_on_bone: Ragoût de lièvre :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lièvre mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -27092,12 +27095,39 @@ if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoû
 });
 
 bot.on('message', message => {
+if (message.content === prefix + "Ragoût de desman") {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":meat_on_bone: Ragoût de desman :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de desman mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+});
+
+bot.on('message', message => {
+const HP = (Math.floor((21)*Math.random()+80))
+if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût de desman")) {
+  const embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username , message.author.avatarURL)
+  .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+  .setColor(3447003)
+  .addField(":meat_on_bone: Ragoût de desman :" , ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" +HP+ "` HP !")
+  .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+  .setTimestamp()
+  message.channel.send({embed})
+}
+});
+
+bot.on('message', message => {
 if (message.content === prefix + "Ragoût de taurus") {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":meat_on_bone: Ragoût de taurus :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de basilic !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`")
+  .addField(":meat_on_bone: Ragoût de taurus :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -27665,8 +27695,8 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Lierre commun :" , "C'est une herbe basique que vous trouvez en cueillant dans les forêts du palier 2 !")
     .addField("Prix d'achat :" , "100 cols")
-    .addField("Prix de revente :" , "20 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lièvre\n=Ragoût de taurus\n=Ragoût de chien\n=Potion améliorée")
+    .addField("Prix de revente :" , "25 cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de lièvre\n=Ragoût de taurus\n=Ragoût de desman\n=Potion améliorée")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -27680,8 +27710,8 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Lierre rare :" , "C'est une herbe basique que vous trouvez en cueillant dans les forêts du palier 2 !")
-    .addField("Prix d'achat :" , "110 cols")
-    .addField("Prix de revente :" , "22 cols")
+    .addField("Prix d'achat :" , "120 cols")
+    .addField("Prix de revente :" , "30 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion améliorée")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
@@ -27696,9 +27726,9 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
     .addField("Lierre parfait :" , "C'est une herbe basique que vous trouvez en cueillant dans les forêts  du palier 2 !")
-    .addField("Prix d'achat :" , "125 cols")
-    .addField("Prix de revente :" , "25 cols")
-    .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
+    .addField("Prix d'achat :" , "140 cols")
+    .addField("Prix de revente :" , "35 cols")
+    .addField("Permet de réaliser le ou les crafts suivants :" , "=Potion améliorée")
     .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
     .setTimestamp()
     message.channel.send({embed})
