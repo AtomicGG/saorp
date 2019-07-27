@@ -20622,7 +20622,7 @@ bot.on('message', message => {
         peauelastic = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 25) {
+      if (rollRessource <= 15) {
         langue = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20630,7 +20630,7 @@ bot.on('message', message => {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(60 * Math.random() + 60)
@@ -20645,11 +20645,11 @@ bot.on('message', message => {
         langue = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 20) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
+      if (rollRessource <= 1) {
         oeufB = 1
       }
       cols = Math.floor(55 * Math.random() + 55)
@@ -20707,11 +20707,11 @@ bot.on('message', message => {
         ailes = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 15) {
+      if (rollRessource <= 25) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20726,19 +20726,19 @@ bot.on('message', message => {
     } else {
       poudrePoison = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 25) {
         peau = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 25) {
         ailes = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 20) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
+      if (rollRessource <= 1) {
         oeufB = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20795,30 +20795,30 @@ bot.on('message', message => {
     if(nbrPersonne == 1) {
       patte = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 30) {
         carapace = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 15) {
+      if (rollRessource <= 25) {
         corne = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 25) {
         hemolyphe = 1
       }
       cols = Math.floor(60 * Math.random() + 70)
     } else {
       patte = Math.floor(2 * Math.random() + 1)
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 15) {
+      if (rollRessource <= 25) {
         carapace = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 20) {
         corne = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 20) {
         hemolyphe = 1
       }
       cols = Math.floor(55 * Math.random() + 65)
@@ -20866,15 +20866,15 @@ bot.on('message', message => {
       crochetPoison = Math.floor(2 * Math.random() + 1)
       Peau = Math.floor(3 * Math.random())
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 30) {
         queueSerpent = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 15) {
+      if (rollRessource <= 20) {
         Venin = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         Oeufs = 1
       }
       cols = Math.floor(51 * Math.random() + 50)
@@ -20882,15 +20882,15 @@ bot.on('message', message => {
       crochetPoison = Math.floor(1 * Math.random() + 1)
       Peau = Math.floor(2 * Math.random())
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 15) {
+      if (rollRessource <= 25) {
         queueSerpent = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 15) {
         Venin = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
+      if (rollRessource <= 1) {
         Oeufs = 1
       }
       cols = Math.floor(41 * Math.random() + 40)
@@ -20959,17 +20959,17 @@ bot.on('message', message => {
         armeChitineDeuxMains = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 15) {
+      if (rollRessource <= 25) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 5) {
+      if (rollRessource <= 3) {
         oeufB = 1
       }
       cols = Math.floor(81 * Math.random() + 80)
     } else {
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 30) {
+      if (rollRessource <= 35) {
         carapace = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20977,7 +20977,7 @@ bot.on('message', message => {
         aile = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 20) {
+      if (rollRessource <= 25) {
         patte = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
@@ -20989,11 +20989,11 @@ bot.on('message', message => {
         armeChitineDeuxMains = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 10) {
+      if (rollRessource <= 20) {
         hemolyphe = 1
       }
       rollRessource = Math.floor(100 * Math.random() + 1);
-      if (rollRessource <= 3) {
+      if (rollRessource <= 1) {
         oeufB = 1
       }
       cols = Math.floor(71 * Math.random() + 70)
