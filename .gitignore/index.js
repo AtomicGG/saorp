@@ -1410,7 +1410,8 @@ bot.on('message', message => {
                             "Peau de lièvre :\nCoûts :  [Achat : 140 cols] [Revente : 35 cols]\n\n" +
                             "Coeur de lièvre :\nCoûts :  [Achat : 160 cols] [Revente : 40 cols]\n\n" +
                             "Oeil de lièvre :\nCoûts :  [Achat : 180 cols] [Revente : 45 cols]\n\n" +
-                            "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
+                            "Bois de séquoia médiocre :\nCoûts :  [Achat : 80 cols] [Revente : 20 cols]\n\n" +
+                            "Bois de séquoia commun :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
                             "Suite en écrivant :\n=Liste des matériaux 6```")
   }
 }) ;
@@ -27811,7 +27812,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("Bois de séquoia médiocre :" , "C'est un bois basique que vous trouvez dans la forêt du palier 2 !")
     .addField("Prix d'achat :" , "100 cols")
-    .addField("Prix de revente :" , "40 cols")
+    .addField("Prix de revente :" , "25 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Armes en chitine\n=Armes taurus")
     .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
     .setTimestamp()
