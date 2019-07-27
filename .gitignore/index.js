@@ -1432,6 +1432,9 @@ bot.on('message', message => {
                             "Cuirasse de fort taurus adroit :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Peau de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Poil de taurus lourd :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
+                            "Lierre d'antidote :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
+                            "Lierre de soin :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
+                            "Lierre d'air :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
   }
 }) ;
@@ -22786,8 +22789,8 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
       .addField(":wilted_rose: Cueillette :" , ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                                               ":wilted_rose: Lierre antidote : " + LierreAntidote+ "\n" +
-                                               ":wilted_rose: Lierre soin : " + LierreSoin + "\n" +
+                                               ":wilted_rose: Lierre d'antidote : " + LierreAntidote+ "\n" +
+                                               ":wilted_rose: Lierre de soin : " + LierreSoin + "\n" +
                                                ":wilted_rose: Lierre d'air : " + LierreAir + "\n" +
                                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
       .setTimestamp()
@@ -27746,12 +27749,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Lierre antidote")) {
+  if (message.content.startsWith(prefix + "Lierre d'antidote")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Lierre antidote :" , "C'est une herbe basique que vous trouvez en cueillant dans les clairières du palier 2 !")
+    .addField("Lierre d'antidote :" , "C'est une herbe basique que vous trouvez en cueillant dans les clairières du palier 2 !")
     .addField("Prix d'achat :" , "175 cols")
     .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
@@ -27762,12 +27765,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Lierre soin")) {
+  if (message.content.startsWith(prefix + "Lierre de soin")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Lierre soin :" , "C'est une herbe basique que vous trouvez en cueillant dans les clairières du palier 2 !")
+    .addField("Lierre de soin :" , "C'est une herbe basique que vous trouvez en cueillant dans les clairières du palier 2 !")
     .addField("Prix d'achat :" , "90 cols")
     .addField("Prix de revente :" , "22 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
