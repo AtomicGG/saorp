@@ -26997,7 +26997,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Fabrication de l'anneau de maille")) {
-const Défense = (Math.floor((4)*Math.random()+12))
+const Défense = (Math.floor((7)*Math.random()+12))
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -27011,7 +27011,7 @@ const Défense = (Math.floor((4)*Math.random()+12))
 
 bot.on('message', message => {
 if (message.content.startsWith(prefix + "Fabrication de l'amulette de maille")) {
-const Défense = (Math.floor((4)*Math.random()+12))
+const Défense = (Math.floor((7)*Math.random()+12))
   const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
