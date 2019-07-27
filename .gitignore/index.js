@@ -1418,15 +1418,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des matériaux 6")) {
-    message.channel.send("```Viande de chien errant :\nCoûts : [Achat : 40 cols] [Revente : 10 cols]\n\n" +
-                            "Peau de chien errant :\nCoûts : [Achat : 60 cols] [Revente : 15 cols]\n\n" +
-                            "Oeil de chien errant :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\n\n" +
-                            "Coeur de chien errant :\nCoûts : [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Peau écailleuse de kobolt pilion :\nCoûts : [Achat : 120 cols] [Revente : 30 cols]\n\n" +
-                            "Dent de kobolt pilion :\nCoûts : [Achat : 140 cols] [Revente : 35 cols]\n\n" +
-                            "Plantrus rare :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
-                            "Plantrus parfait :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n" +
-                            "Cuivre parfait :\nCoûts :  [Achat : 100 cols] [Revente : 25 cols]\n\n" +
+    message.channel.send("```Carapace de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 35 cols]\n\n" +
+                            "Aile de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
+                            "Antenne de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
+                            "Oeil de bourdon flâneur :\nCoûts : [Achat : X cols] [Revente : 45 cols]\n\n" +
                             "Pierre de feu faible :\nCoûts :  [Achat : 120 cols] [Revente : 30 cols]\n\n```")
   }
 }) ;
@@ -22458,7 +22453,7 @@ bot.on('message', message => {
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
     .addField(":moneybag: Récompenses :" , ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
-                                           ":butterfly: Ailes de bourdon flâneur  : " + ailes+ "\n" +
+                                           ":butterfly: Aile de bourdon flâneur  : " + ailes+ "\n" +
                                            ":syringe: Antenne de bourdon flâneur : " + antenne  + "\n" +
                                            ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
                                            ":alembic: Hemolymphe : " + hemolymphe + "\n" +
@@ -27488,7 +27483,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Carapace de bourdon flâneur :" , "C'est une carapace trouvable sur les bourdon flâneur palier 2 !")
+    .addField("Carapace de bourdon flâneur :" , "C'est une carapace trouvable sur les bourdons flâneurs dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque de taurus\n=Epaulières taurus\n=Gantelets taurus\n=Jambières taurus")
@@ -27498,12 +27493,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Ailes de bourdon flâneur")) {
+  if (message.content.startsWith(prefix + "Aile de bourdon flâneur")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Ailes de bourdon flâneur :" , "C'est une aile trouvable sur les bourdon flâneur palier 2 !")
+    .addField("Ailes de bourdon flâneur :" , "C'est une aile trouvable sur les bourdons flâneurs dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
@@ -27518,7 +27513,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Antenne de bourdon flâneur :" , "C'est une antenne trouvable sur les bourdon flâneur palier 2 !")
+    .addField("Antenne de bourdon flâneur :" , "C'est une antenne trouvable sur les bourdons flâneurs dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron taurus\n=Jambières taurus")
@@ -27533,7 +27528,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Oeil de bourdon flâneur :" , "C'est un oeil trouvable sur les bourdon flâneur palier 2 !")
+    .addField("Oeil de bourdon flâneur :" , "C'est un oeil trouvable sur les bourdons flâneurs dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "En cours")
@@ -27548,7 +27543,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Peau de taurus :" , "C'est une peau trouvable sur les taurus palier 2 !")
+    .addField("Peau de taurus :" , "C'est une peau trouvable sur les taurus dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ceinture taurus\n=Bottes taurus")
@@ -27563,7 +27558,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Viande de taurus :" , "C'est une viande trouvable sur les taurus palier 2 !")
+    .addField("Viande de taurus :" , "C'est une viande trouvable sur les taurus dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Ragoût de taurus")
@@ -27578,7 +27573,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Poil de taurus :" , "C'est un poil trouvable sur les taurus palier 2 !")
+    .addField("Poil de taurus :" , "C'est un poil trouvable sur les taurus dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque de taurus\n=Plastron taurus\n=Cape taurus\n=Gantelets taurus\n=Ceinture taurus")
@@ -27593,7 +27588,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Corne de taurus :" , "C'est une corne trouvable sur les taurus palier 2 !")
+    .addField("Corne de taurus :" , "C'est une corne trouvable sur les taurus dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque de taurus\n=Epaulières taurus\n=Ceinture taurus\n=Bottes taurus\n=Armes taurus")
@@ -27608,7 +27603,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Scalp de taurus :" , "C'est un scalp trouvable sur les taurus palier 2 !")
+    .addField("Scalp de taurus :" , "C'est un scalp trouvable sur les taurus dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Casque de taurus\n=Plastron taurus\n=Cape taurus\n=Bottes taurus\n=Anneau taurus\n=Amulette taurus\n=Potion améliorée")
@@ -27623,7 +27618,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Peau de taurus lourd :" , "C'est une peau trouvable sur les taurus lourd palier 2 !")
+    .addField("Peau de taurus lourd :" , "C'est une peau trouvable sur les taurus lourds dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Epaulières taurus\n=Plastron taurus\n=Gantelets taurus\n=Ceinture taurus")
@@ -27638,7 +27633,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Poil de taurus lourd :" , "C'est un poil trouvable sur les taurus lourd palier 2 !")
+    .addField("Poil de taurus lourd :" , "C'est un poil trouvable sur les taurus lourds dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "50 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Plastron taurus\n=Ceinture taurus")
@@ -27653,7 +27648,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Peau de taurus adroit :" , "C'est une peau trouvable sur les taurus adroit palier 2 !")
+    .addField("Peau de taurus adroit :" , "C'est une peau trouvable sur les taurus adroits dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "35 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Cape taurus")
@@ -27668,7 +27663,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Poil de taurus adroit :" , "C'est une poil trouvable sur les taurus adroit palier 2 !")
+    .addField("Poil de taurus adroit :" , "C'est une poil trouvable sur les taurus adroits dans la clairière du palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "40 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "A venir")
@@ -27683,7 +27678,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Cuirasse de taurus adroit :" , "C'est une cuirasse trouvable sur taurus adroit les palier 2 !")
+    .addField("Cuirasse de taurus adroit :" , "C'est une cuirasse trouvable sur taurus adroits dans la clairière du les palier 2 !")
     .addField("Prix d'achat :" , "X cols")
     .addField("Prix de revente :" , "45 cols")
     .addField("Permet de réaliser le ou les crafts suivants :" , "=Bottes taurus\n=Anneau taurus\n=Amulette taurus\n=Armes taurus")
