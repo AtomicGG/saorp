@@ -9061,11 +9061,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
-                                                       ":crossed_swords: Renard(s) 20HP : " +renard+ "\n" +
-                                                       ":crossed_swords: Sanglier(s) 30HP " +sanglier+ "\n" +
-                                                       ":crossed_swords: Chien(s) 15HP : " +chien+ "\n" +
-                                                       ":crossed_swords: Bandit(s) débutant(s) 40HP : " +bandit+ "\n" +
-                                                       ":crossed_swords: Lapin(s) géant(s) 70HP : " +lapin)
+                                                       ":crossed_swords: Renard(s) | 20HP : " +renard+ "\n" +
+                                                       ":crossed_swords: Sanglier(s) | 30HP " +sanglier+ "\n" +
+                                                       ":crossed_swords: Chien(s) | 15HP : " +chien+ "\n" +
+                                                       ":crossed_swords: Bandit(s) débutant(s) | 40HP : " +bandit+ "\n" +
+                                                       ":crossed_swords: Lapin(s) géant(s) | 70HP : " +lapin)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -9996,11 +9996,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":park: Forêt :" , ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Loup(s) 80HP : " + loup + "\n" +
-                                   ":crossed_swords: Slime(s) 150HP " + slime + "\n" +
-                                   ":crossed_swords: Bandit(s) expérimenté(s) 140HP : " + banditExp + "\n" +
-                                   ":crossed_swords: Bandit(s) sombre(s) 240HP : " + banditSombre + "\n" +
-                                   ":crossed_swords: Loup(s) de sang(s) 300HP : " + loupDeSang)
+                                   ":crossed_swords: Loup(s) | 80HP : " + loup + "\n" +
+                                   ":crossed_swords: Slime(s) | 150HP " + slime + "\n" +
+                                   ":crossed_swords: Bandit(s) expérimenté(s) | 140HP : " + banditExp + "\n" +
+                                   ":crossed_swords: Bandit(s) sombre(s) | 240HP : " + banditSombre + "\n" +
+                                   ":crossed_swords: Loup(s) de sang | 300HP : " + loupDeSang)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -10934,8 +10934,8 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .addField(":bank: Donjon sauvage :" , ":bank: Vous entrez dans une nouvelle salle du donjon, mais vous tombez nez à nez face à un groupe de monstre...\n\n" +
-                                            ":crossed_swords: Loup de sang d'élite : " + loupDeSangElite + "\n" +
-                                            ":crossed_swords: Bandit sombre d'élite : " + banditSombreElite + "\n\n" +
+                                            ":crossed_swords: Loup(s) de sang d'élite | 400HP: " + loupDeSangElite + "\n" +
+                                            ":crossed_swords: Bandit(s) sombre(s) d'élite | 350HP : " + banditSombreElite + "\n\n" +
                                             "Une fois le combat finis, vous pouvez accéder à la salle suivante : `=Donjon sauvage salle : " + ((salle * 1) + 1) + "`")
       .setColor(3447003)
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
@@ -10950,9 +10950,9 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .addField(":bank: Donjon sauvage :" , ":bank: Vous entrez dans une nouvelle salle du donjon, vous finissez par tomber face à la salle du boss, vous entrez doucement à l'intérieur, " +
                                             "un loup gigantesque  apparaît au milieu de la salle et hurle ce qui rassemble un paquet de monstres...\n\n" +
-                                            ":crossed_swords: Loup de sang d'élite 400HP : " + loupDeSangEliteBoss + "\n" +
-                                            ":crossed_swords: Bandit sombre d'élite 350HP : " + banditSombreEliteBoss + "\n" +
-                                            ":crossed_swords: Loup gigantesque 2000HP : 1\n\n" +
+                                            ":crossed_swords: Loup(s) de sang d'élite | 400HP : " + loupDeSangEliteBoss + "\n" +
+                                            ":crossed_swords: Bandit(s) sombre(s) d'élite | 350HP : " + banditSombreEliteBoss + "\n" +
+                                            ":crossed_swords: Loup gigantesque | 2000HP : 1\n\n" +
                                             "Une fois que vous avez finis le combat :\n`=Donjon sauvage récompenses`")
       .setColor(3447003)
       .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
@@ -11719,11 +11719,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mountain_snow: Montagne :" , ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Jeune(s) kobolt(s) 200 : " + jeuneKobolt + "\n" +
-                                   ":crossed_swords: Kobolt(s) explorateur(s) 325 : " + koboltExplo + "\n" +
-                                   ":crossed_swords: Kobolt(s) ouvrier(s) 275 : " + koboltOuvrier + "\n" +
-                                   ":crossed_swords: Kobolt(s) espion(s) 250 : " + koboltEspion + "\n" +
-                                   ":crossed_swords: Kobolt(s) enragé(s) 650 : " + koboltEnrage)
+                                   ":crossed_swords: Jeune(s) kobolt(s) | 200HP : " + jeuneKobolt + "\n" +
+                                   ":crossed_swords: Kobolt(s) explorateur(s) | 325HP : " + koboltExplo + "\n" +
+                                   ":crossed_swords: Kobolt(s) ouvrier(s) | 275HP : " + koboltOuvrier + "\n" +
+                                   ":crossed_swords: Kobolt(s) espion(s) | 250HP : " + koboltEspion + "\n" +
+                                   ":crossed_swords: Kobolt(s) enragé(s) | 650HP : " + koboltEnrage)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -12736,11 +12736,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mount_fuji: Grotte :" , ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n" +
-                                   ":crossed_swords: Kobolt(s) mineur(s) 350HP : " + koboltMineur + "\n" +
-                                   ":crossed_swords: Kobolt(s) combattant(s) 600HP : " + koboltCombattant + "\n" +
-                                   ":crossed_swords: Kobolt(s) garde(s) 520HP : " + koboltGarde + "\n" +
-                                   ":crossed_swords: Chien(s) errant(s) 400HP : " + chienErrant + "\n" +
-                                   ":crossed_swords: Kobolt(s) pilion(s) 1000HP : " + koboltPilion)
+                                   ":crossed_swords: Kobolt(s) mineur(s) | 350HP : " + koboltMineur + "\n" +
+                                   ":crossed_swords: Kobolt(s) combattant(s) | 600HP : " + koboltCombattant + "\n" +
+                                   ":crossed_swords: Kobolt(s) garde(s) | 520HP : " + koboltGarde + "\n" +
+                                   ":crossed_swords: Chien(s) errant(s) | 400HP : " + chienErrant + "\n" +
+                                   ":crossed_swords: Kobolt(s) pilion(s) | 1000HP : " + koboltPilion)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -20138,11 +20138,11 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: En marchant dans la Forêt dense, vous rencontrez les ennemis suivants\n\n" +
-                                               ":crossed_swords: Lombric irrégulier 880 : " + lombricIrregulier + "\n" +
-                                               ":crossed_swords: Neoridas 400 : " + paplliAssit + "\n" +
-                                               ":crossed_swords: Bousier colossal 950 : " + bousierColossal + "\n" +
-                                               ":crossed_swords: Venom 1050 : " + snakeSneaky + "\n" +
-                                               ":crossed_swords: Doryphore géant 1250 : " + doryphoreGeant)
+                                               ":crossed_swords: Lombric irrégulier | 880HP : " + lombricIrregulier + "\n" +
+                                               ":crossed_swords: Neoridas | 400HP : " + paplliAssit + "\n" +
+                                               ":crossed_swords: Bousier colossal | 950HP : " + bousierColossal + "\n" +
+                                               ":crossed_swords: Venom | 1050HP : " + snakeSneaky + "\n" +
+                                               ":crossed_swords: Doryphore géant | 1250HP | 50Def : " + doryphoreGeant)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -20211,7 +20211,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Venom :" , ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.pinimg.com/originals/7c/0c/e9/7c0ce98ffb8ce67f5e687304f3a1cef7.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1050 :warning: **__L'empoisonement du Venom n'est pas additif, si vous ètes déja empoisoné le nombre de tours est réinitialiser et les nouveaux dégats s'appliquent.__**")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1050 \n:warning: **__L'empoisonement du Venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Venom attaque`")
     .addField(":shield: Lorsque le Venom reçoit un coup :" , ":shield: `=Venom défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Venom récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20228,7 +20228,7 @@ bot.on('message', message => {
     .setTitle(":japanese_ogre: Doryphore géant :" , ":japanese_ogre: Un kobolt qui n'est trouvable que dans la Forêt dense du palier 2 !")
     .setImage("https://i.pinimg.com/564x/b3/58/95/b3589536e2b57214261cf084caf363e1.jpg")
     .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250")
-    .addField(":shield: Point de défense :", ":shield: 50 :warning: **__Si le Doryphore géant est provoqué il ne peut pas provoqué le groupe de joueur et à la place provoque uniquement le joueur qui l'as provoqué initialement.__**")
+    .addField(":shield: Point de défense :", ":shield: 50 \n:warning: **__Si le doryphore géant est provoqué, il ne peut pas provoquer le groupe de joueur et provoque uniquement le joueur qui l'a provoqué initialement.__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Doryphore géant attaque`")
     .addField(":shield: Lorsque le Doryphore géant reçoit un coup :" , ":shield: `=Doryphore géant défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Doryphore géant récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -20343,7 +20343,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours")
+        .addField(":crossed_swords: Venom:" , ":crossed_swords: Le Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20377,7 +20377,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. ")
+        .addField(":crossed_swords: Bousier colossal :" , ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. Vous êtes paralysés même si vous ne prenez aucuns dégâts.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -20412,7 +20412,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueurs. Ces joueurs sont provoqués pendant 2 tours et le Doryphore double son armure pendant cette durée.")
+        .addField(":crossed_swords: Doryphore géant :" , ":crossed_swords: Le Doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueurs. Ces joueurs sont provoqués pendant 2 tours et le Doryphore double son armure pendant cette durée. Si le doryphore géant est provoqué, il ne peut pas provoquer le groupe de joueur et provoque uniquement le joueur qui l'a provoqué initialement.")
         .setTimestamp()
         message.channel.send({embed})
       }
@@ -22029,10 +22029,10 @@ if (talkedRecently.has(message.author.id+1000)) {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":mount_fuji: Clairière :" , ":mount_fuji: En marchant dans la Clairière, vous rencontrez les ennemis suivants\n\n" +
-                                               ":crossed_swords: Bourdon flâneur 700 : " + bourdonFlaneur + "\n" +
-                                               ":crossed_swords: Taurus chargeur 1250 : " + taurusChargeur+ "\n" +
-                                               ":crossed_swords: Fort taurus adroit 1350 : " + fortTaurus + "\n" +
-                                               ":crossed_swords: Taurus lourd 2550 : " + taurusLourd)
+                                               ":crossed_swords: Bourdon flâneur | 700HP : " + bourdonFlaneur + "\n" +
+                                               ":crossed_swords: Taurus chargeur | 1250HP : " + taurusChargeur+ "\n" +
+                                               ":crossed_swords: Fort taurus adroit | 1350HP : " + fortTaurus + "\n" +
+                                               ":crossed_swords: Taurus lourd | 2550HP : " + taurusLourd)
       .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
       .setTimestamp()
       message.channel.send({embed})
@@ -22053,7 +22053,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Bourdon flâneur :" , ":japanese_ogre: Un insecte qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590559361961820190/43111646922_5cd4ecd7f1_k.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700 :warning: **__Si vous ètes protéger contre le poison l'attaque suicide du Bourdon flâneur perd ses propriétés perce armure et devient un coup normal.__** ")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 700 \n:warning: **__Si vous êtes protégés contre le poison, l'attaque suicide du bourdon flâneur perd ses propriétés perce armure et devient un coup normal.__** ")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Bourdon flâneur attaque`")
     .addField(":shield: Lorsque le Bourdon flâneur reçoit un coup :" , ":shield: `=Bourdon flâneur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Bourdon flâneur récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -22069,7 +22069,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Taurus chargeur  :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://media.discordapp.net/attachments/543345227604164618/584058188953813024/taurus_chargeur.jpg")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250 :warning: **__Le Taurus chargeur vous étourdit même si vous bloquer la totalité des dégat de son coup étourdissant__** ")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1250 \n:warning: **__Le taurus chargeur vous étourdit même si vous bloqués la totalité des dégâts de son coup étourdissant__** ")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Taurus chargeur attaque`")
     .addField(":shield: Lorsque le Taurus chargeur  reçoit un coup :" , ":shield: `=Taurus chargeur défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Taurus chargeur  récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -22085,7 +22085,7 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setTitle(":japanese_ogre: Fort taurus adroit :" , ":japanese_ogre: Un taurus qui n'est trouvable que dans la clairière du palier 2 !")
     .setImage("https://cdn.discordapp.com/attachments/543345227604164618/596810463107350528/89246df4b0c6ce758ad30798dc650384.png")
-    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350 :warning: **__Le saignement du Fort taurus lourd n'est pas additif, si vous ètes déja en saignement le nombre de tours est réinitialiser et les nouveaux dégats s'appliquent.__**")
+    .addField(":sparkling_heart: Point de vie :" , ":sparkling_heart: 1350 \n:warning: **__Le saignement du fort taurus lourd n'est pas additif, si vous êtes déjà en saignement, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
     .addField(":crossed_swords: Pour engager le combat :" , ":crossed_swords: `=Fort taurus adroit attaque`")
     .addField(":shield: Lorsque le Fort taurus adroit reçoit un coup :" , ":shield: `=Fort taurus adroit défense : [Points de dégâts de votre coup]`")
     .addField(":moneybag: Les récompenses une fois mort :" , ":moneybag: `=Fort taurus adroit récompenses [nombre de joueurs dans votre groupe (entre 1 et 5)] : [Votre niveau]`")
@@ -22139,7 +22139,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache à son propre dard, mourrant dans le procédé. Il vous inflige  " + degatCrit + " de dégâts de poison perce armure. ")
+      .addField(":crossed_swords: Bourdon flâneur  :" , ":crossed_swords: Le Bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache à son propre dard, mourrant dans le procédé. Il vous inflige  " + degatCrit + " de dégâts de poison perce armure. Si vous êtes protégés contre le poison, l'attaque suicide du bourdon flâneur perd ses propriétés perce armure et devient un coup normal.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22174,7 +22174,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauter dans les airs et d'écraser ses pieds contre vous violemment. Vous êtes projeté au sol et vous vous prenez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. ")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauter dans les airs et d'écraser ses pieds contre vous violemment. Vous êtes projeté au sol et vous vous prenez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. Le taurus chargeur vous étourdit même si vous bloqués la totalité des dégâts.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -22209,7 +22209,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Fort taurus adroit:" , ":crossed_swords: Le Fort taurus adroit vous lance une hachette très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous inflige " + saignement + " dégâts de saignement pendant 3 tours.")
+      .addField(":crossed_swords: Fort taurus adroit:" , ":crossed_swords: Le Fort taurus adroit vous lance une hachette très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous inflige " + saignement + " dégâts de saignement pendant 3 tours. Le saignement du fort taurus lourd n'est pas additif, si vous êtes déjà en saignement, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
       .setTimestamp()
       message.channel.send({embed})
     }
