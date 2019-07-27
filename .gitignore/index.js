@@ -9112,7 +9112,7 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField(":sunrise_over_mountains: Plaines :" , ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
                                                        ":crossed_swords: Renard(s) | 20HP : " +renard+ "\n" +
-                                                       ":crossed_swords: Sanglier(s) | 30HP " +sanglier+ "\n" +
+                                                       ":crossed_swords: Sanglier(s) | 30HP : " +sanglier+ "\n" +
                                                        ":crossed_swords: Chien(s) | 15HP : " +chien+ "\n" +
                                                        ":crossed_swords: Bandit(s) débutant(s) | 40HP : " +bandit+ "\n" +
                                                        ":crossed_swords: Lapin(s) géant(s) | 70HP : " +lapin)
