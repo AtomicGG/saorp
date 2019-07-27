@@ -1590,7 +1590,7 @@ bot.on('message', message => {
                             "Jambières de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Jambières de maille]\n\n" +
                             "Bottes de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Bottes de maille]\n\n" +
                             "Anneau de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Anneau de maille]\n\n" +
-                            "Amulette de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette de maille]")
+                            "Amulette de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette de maille]```")
   }
 });
 
@@ -1696,7 +1696,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === (prefix + "Liste d'armes 7")) {
     message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
-                            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]```")
+                            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]\n\n" +
+                            "Suite en écrivant :\n=Liste d'armes 8```")
   }
 }) ;
 
@@ -1749,8 +1750,7 @@ bot.on('message', message => {
                             "Cimeterre de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Cimeterre de taurus à une main]\n\n" +
                             "Cimeterre de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Cimeterre de taurus à deux mains]\n\n" +
                             "Katana de taurus à une main :\nCoûts : [Achat : 1200 cols] [Revente : 400 cols]\nInfos : [=Katana de taurus à une main]\n\n" +
-                            "Katana de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Katana de taurus à deux mains]\n\n" +
-                            "Suite en écrivant :... Pas encore dispo```")
+                            "Katana de taurus à deux mains :\nCoûts : [Achat : 2400 cols] [Revente : 800 cols]\nInfos : [=Katana de taurus à deux mains]```")
   }
 }) ;
 
@@ -1771,7 +1771,14 @@ bot.on('message', message => {
                             "Potion moyenne de défense :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Potion moyenne de défense]\n\n" +
                             "Potion guérissante minuscule de poison :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de poison]\n\n" +
                             "Potion guérissante minuscule de saignement :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de saignement]\n\n" +
-                            "Potion guérissante minuscule de brûlure :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\n```")
+                            "Potion guérissante minuscule de brûlure :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Potion guérissante minuscule de brûlure]\n\n" +
+                            "Suite en écrivant :\n=Liste des potions 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des potions 2")) {
+    message.channel.send("```Potion améliorée :\nCoûts : [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Potion faible de soin]```")
   }
 }) ;
 
@@ -1790,6 +1797,14 @@ bot.on('message', message => {
                             "Ragoûts de kobolt :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de kobolt]\n\n" +
                             "Ragoûts de ragondin :\nCoûts : [Achat : 440 cols] [Revente : 110 cols]\nInfos : [=Ragoût de ragondin]\n\n" +
                             "Ragoûts de chien errant :\nCoûts : [Achat : 600 cols] [Revente : 150 cols]\nInfos : [=Ragoût de chien errant]```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des plats 2")) {
+    message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 700 cols] [Revente : 175 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
+                            "Ragoûts de desman :\nCoûts : [Achat : 700 cols] [Revente : 175 cols]\nInfos : [=Ragoût de desman]\n\n" +
+                            "Ragoûts de taurus :\nCoûts : [Achat : 800 cols] [Revente : 200 cols]\nInfos : [=Ragoût de taurus]```")
   }
 }) ;
 
@@ -27092,7 +27107,7 @@ if (message.content === prefix + "Ragoût de lièvre") {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":meat_on_bone: Ragoût de lièvre :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lièvre mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
+  .addField(":meat_on_bone: Ragoût de lièvre :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de lièvre mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 700 cols\n\n:large_orange_diamond: Prix de revente : 175 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -27119,7 +27134,7 @@ if (message.content === prefix + "Ragoût de desman") {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":meat_on_bone: Ragoût de desman :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de desman mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
+  .addField(":meat_on_bone: Ragoût de desman :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de desman mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de lièvre, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 700 cols\n\n:large_orange_diamond: Prix de revente : 175 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de lièvre`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -27146,7 +27161,7 @@ if (message.content === prefix + "Ragoût de taurus") {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":meat_on_bone: Ragoût de taurus :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 440 cols\n\n:large_orange_diamond: Prix de revente : 110 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`")
+  .addField(":meat_on_bone: Ragoût de taurus :" , ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 3 Lierre commun \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
@@ -27173,7 +27188,7 @@ if (message.content.startsWith(prefix + "Potion améliorée")) {
   .setAuthor(message.author.username , message.author.avatarURL)
   .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
   .setColor(3447003)
-  .addField(":syringe: Potion améliorée :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal du palier 2 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de lièvre, 1 lierre parfait, 2 lierre rare, 3 lierre commun, 2 scalp de taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 740 cols\n\n:large_orange_diamond: Prix de revente : 185 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion améliorée`")
+  .addField(":syringe: Potion améliorée :" , ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal du palier 2 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de lièvre, 1 lierre parfait, 2 lierre rare, 3 lierre commun, 2 scalp de taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1000 cols\n\n:large_orange_diamond: Prix de revente : 250 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion améliorée`")
   .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
   .setTimestamp()
   message.channel.send({embed})
