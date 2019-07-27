@@ -20105,7 +20105,7 @@ bot.on('message', message => {
       let roll = 0;
       do {
         roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 60){
+        if (roll <= 55){
           test = test + 2 + lombricIrregulier;
           if (test <= (6 + 7 * (joueurs - 1))) {
             lombricIrregulier = lombricIrregulier + 1;
@@ -20136,7 +20136,7 @@ bot.on('message', message => {
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 60){
+        if (roll <= 55){
           test = test + 2 + bousierColossal;
           if (test <= (6 + 7 * (joueurs - 1))) {
           bousierColossal = bousierColossal + 1;
