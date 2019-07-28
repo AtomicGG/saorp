@@ -2126,16 +2126,26 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Chasseur :" , "Niveau 1 : Aucun\n" +
-                             "Niveau 2 : 1 point de dégât supplémentaire !\n" +
-                             "Niveau 3 : 2 points de dégâts supplémentaire !\n" +
-                             "Niveau 4 : 3 points de dégâts supplémentaire\n" +
-                             "Niveau 5 : 4 points de dégâts supplémentaire !\n" +
-                             "Niveau 6 : 5 points de dégâts supplémentaire !\n" +
-                             "Niveau 7 : 6 points de dégâts supplémentaire !\n" +
-                             "Niveau 8 : 7 points de dégâts supplémentaire !\n" +
-                             "Niveau 9 : 8 points de dégâts supplémentaire !\n" +
-                             "Niveau 10 : 9 points de dégâts supplémentaire")
+    .addField("Chasseur du niveau 1 à 10 :" , "Niveau 1 : Aucun\n" +
+                                              "Niveau 2 : 1 point de dégât supplémentaire !\n" +
+                                              "Niveau 3 : 2 points de dégâts supplémentaire !\n" +
+                                              "Niveau 4 : 3 points de dégâts supplémentaire\n" +
+                                              "Niveau 5 : 4 points de dégâts supplémentaire !\n" +
+                                              "Niveau 6 : 5 points de dégâts supplémentaire !\n" +
+                                              "Niveau 7 : 6 points de dégâts supplémentaire !\n" +
+                                              "Niveau 8 : 7 points de dégâts supplémentaire !\n" +
+                                              "Niveau 9 : 8 points de dégâts supplémentaire !\n" +
+                                              "Niveau 10 : 9 points de dégâts supplémentaire")
+    .addField("Chasseur du niveau 11 à 20 :" , "Niveau 11 : 10 points de dégâts supplémentaires\n" +
+                                               "Niveau 12 : 12 point de dégât supplémentaire !\n" +
+                                               "Niveau 13 : 14 points de dégâts supplémentaire !\n" +
+                                               "Niveau 14 : 16 points de dégâts supplémentaire\n" +
+                                               "Niveau 15 : 18 points de dégâts supplémentaire !\n" +
+                                               "Niveau 16 : 20 points de dégâts supplémentaire !\n" +
+                                               "Niveau 17 : 22 points de dégâts supplémentaire !\n" +
+                                               "Niveau 18 : 24 points de dégâts supplémentaire !\n" +
+                                               "Niveau 19 : 26 points de dégâts supplémentaire !\n" +
+                                               "Niveau 20 : 28 points de dégâts supplémentaire")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -2148,16 +2158,26 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Cueilleur :" , "Niveau 1 : Aucun\n" +
-                              "Niveau 2 : 5 HP supplémentaire !\n" +
-                              "Niveau 3 : 10 HP supplémentaire !\n" +
-                              "Niveau 4 : 15 HP supplémentaire !\n" +
-                              "Niveau 5 : 20 HP supplémentaire !\n" +
-                              "Niveau 6 : 25 HP supplémentaire !\n" +
-                              "Niveau 7 : 30 HP supplémentaire !\n" +
-                              "Niveau 8 : 35 HP supplémentaire !\n" +
-                              "Niveau 9 : 40 HP supplémentaire !\n" +
-                              "Niveau 10 : 45 HP supplémentaire !")
+    .addField("Cueilleur du niveau 1 à 10 :" , "Niveau 1 : Aucun\n" +
+                                               "Niveau 2 : 5 HP supplémentaire !\n" +
+                                               "Niveau 3 : 10 HP supplémentaire !\n" +
+                                               "Niveau 4 : 15 HP supplémentaire !\n" +
+                                               "Niveau 5 : 20 HP supplémentaire !\n" +
+                                               "Niveau 6 : 25 HP supplémentaire !\n" +
+                                               "Niveau 7 : 30 HP supplémentaire !\n" +
+                                               "Niveau 8 : 35 HP supplémentaire !\n" +
+                                               "Niveau 9 : 40 HP supplémentaire !\n" +
+                                               "Niveau 10 : 45 HP supplémentaire !")
+    .addField("Cueilleur du niveau 11 à 20 :" , "Niveau 11 : 50 HP supplémentaire\n" +
+                                                "Niveau 12 : 60 HP supplémentaire !\n" +
+                                                "Niveau 13 : 70 HP supplémentaire !\n" +
+                                                "Niveau 14 : 80 HP supplémentaire !\n" +
+                                                "Niveau 15 : 90 HP supplémentaire !\n" +
+                                                "Niveau 16 : 100 HP supplémentaire !\n" +
+                                                "Niveau 17 : 110 HP supplémentaire !\n" +
+                                                "Niveau 18 : 120 HP supplémentaire !\n" +
+                                                "Niveau 19 : 130 HP supplémentaire !\n" +
+                                                "Niveau 20 : 140 HP supplémentaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -2170,16 +2190,26 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Mineur :" , "Niveau 1 : Aucun\n" +
-                           "Niveau 2 : 5 HP supplémentaire !\n" +
-                           "Niveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\n" +
-                           "Niveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\n" +
-                           "Niveau 5 : 10 HP et 1 point d'armure supplémentaire !\n" +
-                           "Niveau 6 : 15 HP et 1 point d'armure supplémentaire !\n" +
-                           "Niveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\n" +
-                           "Niveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\n" +
-                           "Niveau 9 : 20 HP et 2 points d'armure supplémentaire !\n" +
-                           "Niveau 10 : 25 HP et 2 points d'armure supplémentaire !")
+    .addField("Mineur du niveau 1 à 10 :" , "Niveau 1 : Aucun\n" +
+                                            "Niveau 2 : 5 HP supplémentaire !\n" +
+                                            "Niveau 3 : 5 HP et 0.5 point d'armure supplémentaire !\n" +
+                                            "Niveau 4 : 10 HP et 0.5 point d'armure supplémentaire !\n" +
+                                            "Niveau 5 : 10 HP et 1 point d'armure supplémentaire !\n" +
+                                            "Niveau 6 : 15 HP et 1 point d'armure supplémentaire !\n" +
+                                            "Niveau 7 : 15 HP et 1.5 points d'armure supplémentaire !\n" +
+                                            "Niveau 8 : 20 HP et 1.5 points d'armure supplémentaire !\n" +
+                                            "Niveau 9 : 20 HP et 2 points d'armure supplémentaire !\n" +
+                                            "Niveau 10 : 25 HP et 2 points d'armure supplémentaire !")
+    .addField("Mineur du niveau 11 à 20 :" , "Niveau 11 : 25 HP et 2.5 points d'armure supplémentaire\n" +
+                                             "Niveau 12 : 30 HP et 3 points d'armure supplémentaire !\n" +
+                                             "Niveau 13 : 35 HP et 3.5 point d'armure supplémentaire !\n" +
+                                             "Niveau 14 : 40 HP et 4 point d'armure supplémentaire !\n" +
+                                             "Niveau 15 : 45 HP et 4.5 point d'armure supplémentaire !\n" +
+                                             "Niveau 16 : 50 HP et 5 point d'armure supplémentaire !\n" +
+                                             "Niveau 17 : 55 HP et 5.5 points d'armure supplémentaire !\n" +
+                                             "Niveau 18 : 60 HP et 6 points d'armure supplémentaire !\n" +
+                                             "Niveau 19 : 65 HP et 6.5 points d'armure supplémentaire !\n" +
+                                             "Niveau 20 : 70 HP et 7 points d'armure supplémentaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -2192,16 +2222,26 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Bûcheron :" , "Niveau 1 : Aucun\n" +
-                             "Niveau 2 : 0.5 point d'armure supplémentaire !\n" +
-                             "Niveau 3 : 1 point d'armure supplémentaire !\n" +
-                             "Niveau 4 : 1.5 points d'armure supplémentaire !\n" +
-                             "Niveau 5 : 2 points d'armure supplémentaire !\n" +
-                             "Niveau 6 : 2.5 points d'armure supplémentaire !\n" +
-                             "Niveau 7 : 3 points d'armure supplémentaire !\n" +
-                             "Niveau 8 : 3,5 points d'armure supplémentaire !\n" +
-                             "Niveau 9 : 4 points d'armure supplémentaire !\n" +
-                             "Niveau 10 : 4.5 points d'armure supplémentaire !")
+    .addField("Bûcheron du niveau 1 à 10 :" , "Niveau 1 : Aucun\n" +
+                                              "Niveau 2 : 0.5 point d'armure supplémentaire !\n" +
+                                              "Niveau 3 : 1 point d'armure supplémentaire !\n" +
+                                              "Niveau 4 : 1.5 points d'armure supplémentaire !\n" +
+                                              "Niveau 5 : 2 points d'armure supplémentaire !\n" +
+                                              "Niveau 6 : 2.5 points d'armure supplémentaire !\n" +
+                                              "Niveau 7 : 3 points d'armure supplémentaire !\n" +
+                                              "Niveau 8 : 3,5 points d'armure supplémentaire !\n" +
+                                              "Niveau 9 : 4 points d'armure supplémentaire !\n" +
+                                              "Niveau 10 : 4.5 points d'armure supplémentaire !")
+    .addField("Bûcheron du niveau 11 à 20 :" , "Niveau 11 : 5 points d'armure supplémentaire !\n" +
+                                               "Niveau 12 : 6 point d'armure supplémentaire !\n" +
+                                               "Niveau 13 : 7 point d'armure supplémentaire !\n" +
+                                               "Niveau 14 : 8 points d'armure supplémentaire !\n" +
+                                               "Niveau 15 : 9 points d'armure supplémentaire !\n" +
+                                               "Niveau 16 : 10 points d'armure supplémentaire !\n" +
+                                               "Niveau 17 : 11 points d'armure supplémentaire !\n" +
+                                               "Niveau 18 : 12 points d'armure supplémentaire !\n" +
+                                               "Niveau 19 : 13 points d'armure supplémentaire !\n" +
+                                               "Niveau 20 : 14 points d'armure supplémentaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -2214,16 +2254,26 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pêcheur :" , "Niveau 1 : Aucun\n" +
-                            "Niveau 2 : 5 HP supplémentaire !\n" +
-                            "Niveau 3 : 5 HP et 1 point de dégât supplémentaire !\n" +
-                            "Niveau 4 : 10 HP et 1 point de dégât supplémentaire !\n" +
-                            "Niveau 5 : 10 HP et 2 points de dégâts supplémentaire !\n" +
-                            "Niveau 6 : 15 HP et 2 points de dégâts supplémentaire !\n" +
-                            "Niveau 7 : 15 HP et 3 points de dégâts supplémentaire !\n" +
-                            "Niveau 8 : 20 HP et 3 points de dégâts supplémentaire !\n" +
-                            "Niveau 9 : 20 HP et 4 points de dégâts supplémentaire !\n" +
-                            "Niveau 10 : 25 HP et 4 points de dégâts supplémentaire !")
+    .addField("Pêcheur du niveau 1 à 10 :" , "Niveau 1 : Aucun\n" +
+                                             "Niveau 2 : 5 HP supplémentaire !\n" +
+                                             "Niveau 3 : 5 HP et 1 point de dégât supplémentaire !\n" +
+                                             "Niveau 4 : 10 HP et 1 point de dégât supplémentaire !\n" +
+                                             "Niveau 5 : 10 HP et 2 points de dégâts supplémentaire !\n" +
+                                             "Niveau 6 : 15 HP et 2 points de dégâts supplémentaire !\n" +
+                                             "Niveau 7 : 15 HP et 3 points de dégâts supplémentaire !\n" +
+                                             "Niveau 8 : 20 HP et 3 points de dégâts supplémentaire !\n" +
+                                             "Niveau 9 : 20 HP et 4 points de dégâts supplémentaire !\n" +
+                                             "Niveau 10 : 25 HP et 4 points de dégâts supplémentaire !")
+    .addField("Pêcheur du niveau 11 à 20 :" , "Niveau 11 : 25 HP et 5 points de dégâts supplémentaire !\n" +
+                                              "Niveau 12 : 30 HP et 6 points de dégâts supplémentaire !\n" +
+                                              "Niveau 13 : 35 HP et 7 point de dégât supplémentaire !\n" +
+                                              "Niveau 14 : 40 HP et 8 point de dégât supplémentaire !\n" +
+                                              "Niveau 15 : 45 HP et 9 points de dégâts supplémentaire !\n" +
+                                              "Niveau 16 : 50 HP et 10 points de dégâts supplémentaire !\n" +
+                                              "Niveau 17 : 55 HP et 11 points de dégâts supplémentaire !\n" +
+                                              "Niveau 18 : 60 HP et 12 points de dégâts supplémentaire !\n" +
+                                              "Niveau 19 : 65 HP et 13 points de dégâts supplémentaire !\n" +
+                                              "Niveau 20 : 70 HP et 14 points de dégâts supplémentaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
