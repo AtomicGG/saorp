@@ -1973,15 +1973,25 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Tableau des métiers du niveau 1 à 10" , "Niveau 2 : 50 points d'expérience nécessaire !\n" +
-                                                       "Niveau 3 : 125 points d'expérience nécessaire !\n" +
-                                                       "Niveau 4 : 225 points d'expérience nécessaire !\n" +
-                                                       "Niveau 5 : 400 points d'expérience nécessaire !\n" +
-                                                       "Niveau 6 : 700 points d'expérience nécessaire !\n" +
-                                                       "Niveau 7 : 1200 points d'expérience nécessaire !\n" +
-                                                       "Niveau 8 : 2000 points d'expérience nécessaire !\n" +
-                                                       "Niveau 9 : 3500 points d'expérience nécessaire !\n" +
-                                                       "Niveau 10 : 6000 points d'expérience nécessaire !")
+    .addField("Tableau des métiers du niveau 1 à 10" , "Niveau 2 : 50/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 3 : 125/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 4 : 225/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 5 : 350/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 6 : 550/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 7 : 850/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 8 : 1350/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 9 : 2000/32500 points d'expérience nécessaire !\n" +
+                                                       "Niveau 10 : 3000/32500 points d'expérience nécessaire !")
+    .addField("Tableau des métiers du niveau 11 à 20" , "Niveau 11 : 4200/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 12 : 5700/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 13 : 7600/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 14 : 9900/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 15 : 12500/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 16 : 15500/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 17 : 19000/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 18 : 23000/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 19 : 27500/32500 points d'expérience nécessaire !\n" +
+                                                        "Niveau 20 : 32500/32500 points d'expérience nécessaire !")
     .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
     .setTimestamp()
     message.channel.send({embed})
@@ -2012,34 +2022,89 @@ bot.on('message', message => {
       xpMax = 225;
       passage = true;
     }
-    if (225 <= XP & XP < 400){
+    if (225 <= XP & XP < 350){
       niveau = 4;
-      xpMax = 400;
+      xpMax = 350;
       passage = true;
     }
-    if (400 <= XP & XP < 700){
+    if (350 <= XP & XP < 550){
       niveau = 5;
-      xpMax = 700;
+      xpMax = 550;
       passage = true;
     }
-    if (700 <= XP & XP < 1200){
+    if (550 <= XP & XP < 850){
       niveau = 6;
-      xpMax = 1200;
+      xpMax = 850;
       passage = true;
     }
-    if (1200 <= XP & XP < 2000){
+    if (850 <= XP & XP < 1350){
       niveau = 7;
+      xpMax = 1350;
+      passage = true;
+    }
+    if (1350 <= XP & XP < 2000){
+      niveau = 8;
       xpMax = 2000;
       passage = true;
     }
-    if (2000 <= XP & XP < 3500){
-      niveau = 8;
-      xpMax = 3500;
+    if (2000 <= XP & XP < 3000){
+      niveau = 9;
+      xpMax = 3000;
       passage = true;
     }
-    if (3500 <= XP & XP < 6000){
-      niveau = 9;
-      xpMax = 6000;
+    if (3000 <= XP & XP < 4200){
+      niveau = 10;
+      xpMax = 4200;
+      passage = true;
+    }
+    if (4200 <= XP & XP < 5700){
+      niveau = 11;
+      xpMax = 5700;
+      passage = true;
+    }
+    if (5700 <= XP & XP < 7600){
+      niveau = 12;
+      xpMax = 7600;
+      passage = true;
+    }
+    if (7600 <= XP & XP < 9900){
+      niveau = 13;
+      xpMax = 9900;
+      passage = true;
+    }
+    if (9900 <= XP & XP < 12500){
+      niveau = 14;
+      xpMax = 12500;
+      passage = true;
+    }
+    if (12500 <= XP & XP < 15500){
+      niveau = 15;
+      xpMax = 15500;
+      passage = true;
+    }
+    if (15500 <= XP & XP < 19000){
+      niveau = 16;
+      xpMax = 19000;
+      passage = true;
+    }
+    if (19000 <= XP & XP < 23000){
+      niveau = 17;
+      xpMax = 23000;
+      passage = true;
+    }
+    if (23000 <= XP & XP < 27500){
+      niveau = 18;
+      xpMax = 27500;
+      passage = true;
+    }
+    if (27500 <= XP & XP < 32500){
+      niveau = 19;
+      xpMax = 32500;
+      passage = true;
+    }
+    if (XP >= 32500){
+      niveau = 20;
+      xpMax = 32500;
       passage = true;
     }
     if (passage == true) {
