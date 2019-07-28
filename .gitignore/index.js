@@ -2687,6 +2687,48 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de cri de provocation")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de cri de provocation :" , "C'est une pierre nécessaire pour améliorer une arme en cri de provocation.\n" +
+                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de cri de provocation")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de cri de provocation :" , "C'est une pierre nécessaire pour améliorer une arme en cri de provocation.\n" +
+                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de cri de provocation")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de cri de provocation :" , "C'est une pierre nécessaire pour améliorer une arme en cri de provocation.\n" +
+                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Cuisinier
 
 bot.on('message', message => {
