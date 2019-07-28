@@ -1284,6 +1284,7 @@ bot.on('message', message => {
                         "`=Liste des potions 1`\n" +
                         "`=Liste des plats 1`\n" +
                         "`=Liste des parchemins 1`\n" +
+                        "`=Liste des pierres d'amélioration 1`\n" +
                         "`=Liste des outils 1`\n" +
                         "`=Liste d'objets utiles 1`\n" +
                         "`=Liste des plans 1`\n" +
@@ -1828,6 +1829,67 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des parchemins 2")) {
     message.channel.send("```Parchemin de poison moyen :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Parchemin de poison moyen]```")
+  }
+}) ;
+
+// Menus | Liste | Pierres d'amélioration
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 1")) {
+    message.channel.send("```Pierre faible de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de cri de provocation]\n\n" +
+                            "Pierre moyenne de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de cri de provocation]\n\n" +
+                            "Pierre parfaite de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de cri de provocation]\n\n" +
+                            "Pierre faible de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de fuite]\n\n" +
+                            "Pierre moyenne de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de fuite]\n\n" +
+                            "Pierre parfaite de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de fuite]\n\n" +
+                            "Pierre faible d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible d'interception]\n\n" +
+                            "Pierre moyenne d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne d'interception]\n\n" +
+                            "Pierre parfaite d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite d'interception]\n\n" +
+                            "Suite en écrivant :\n=Liste des pierres d'amélioration 2```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 2")) {
+    message.channel.send("```Pierre faible de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de combo]\n\n" +
+                            "Pierre moyenne de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de combo]\n\n" +
+                            "Pierre parfaite de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de combo]\n\n" +
+                            "Pierre faible de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup circulaire]\n\n" +
+                            "Pierre moyenne de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup circulaire]\n\n" +
+                            "Pierre parfaite de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup circulaire]\n\n" +
+                            "Pierre faible de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup d'estoc]\n\n" +
+                            "Pierre moyenne de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup d'estoc]\n\n" +
+                            "Pierre parfaite de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup d'estoc]\n\n" +
+                            "Pierre faible de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup normal]\n\n" +
+                            "Pierre moyenne de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup normal]\n\n" +
+                            "Pierre parfaite de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup normal]\n\n" +
+                            "Pierre faible de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup perce armure]\n\n" +
+                            "Pierre moyenne de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup perce armure]\n\n" +
+                            "Pierre parfaite de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup perce armure]\n\n" +
+                            "Pierre faible de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup létal]\n\n" +
+                            "Pierre moyenne de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup létal]\n\n" +
+                            "Pierre parfaite de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup létal]\n\n" +
+                            "Pierre faible de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup provocateur]\n\n" +
+                            "Pierre moyenne de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup provocateur]\n\n" +
+                            "Pierre parfaite de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup provocateur]\n\n" +
+                            "Pierre faible de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup sauté]\n\n" +
+                            "Pierre moyenne de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup sauté]\n\n" +
+                            "Pierre parfaite de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup sauté]\n\n" +
+                            "Suite en écrivant :\n=Liste des pierres d'amélioration 3```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 3")) {
+    message.channel.send("```Pierre faible de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de blocage]\n\n" +
+                            "Pierre moyenne de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de blocage]\n\n" +
+                            "Pierre parfaite de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de blocage]\n\n" +
+                            "Pierre faible d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible d'esquive]\n\n" +
+                            "Pierre moyenne d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne d'esquive]\n\n" +
+                            "Pierre parfaite d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite d'esquive]\n\n" +
+                            "Pierre faible de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de parade]\n\n" +
+                            "Pierre moyenne de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de parade]\n\n" +
+                            "Pierre parfaite de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de parade]```")
   }
 }) ;
 
