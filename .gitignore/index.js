@@ -22206,33 +22206,33 @@ if (talkedRecently.has(message.author.id+1000)) {
       do {
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70){
-          test = test + 1 + bourdonFlaneur;
-          if (test <= (5 + 6 * (joueurs - 1))) {
+          test = test + 2 + bourdonFlaneur;
+          if (test <= (6 + 7 * (joueurs - 1))) {
             bourdonFlaneur = bourdonFlaneur + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 40){
-          test = test + 2 + fortTaurus;
-          if (test <= (5 + 6 * (joueurs - 1))) {
+          test = test + 3 + fortTaurus;
+          if (test <= (6 + 7 * (joueurs - 1))) {
             fortTaurus = fortTaurus + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30){
-          test = test + 2 + (2 * taurusLourd);
-          if (test <= (5 + 6 * (joueurs - 1))) {
+          test = test + 3 + (2 * taurusLourd);
+          if (test <= (6 + 7 * (joueurs - 1))) {
             taurusLourd = taurusLourd + 1;
           } else break;
         }
         roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70){
-          test = test + 3 + taurusChargeur;
-          if (test <= (5 + 6 * (joueurs - 1))) {
+          test = test + 4 + taurusChargeur;
+          if (test <= (6 + 7 * (joueurs - 1))) {
           taurusChargeur= taurusChargeur+ 1;
           } else break;
         }
-      } while (test <= (5 + 6 * (joueurs - 1)));
+      } while (test <= (6 + 7 * (joueurs - 1)));
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
