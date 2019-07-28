@@ -2729,6 +2729,552 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de fuite")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de fuite :" , "C'est une pierre nécessaire pour améliorer une arme en fuite.\n" +
+                                           "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de fuite")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de fuite :" , "C'est une pierre nécessaire pour améliorer une arme en fuite.\n" +
+                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de fuite")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de fuite :" , "C'est une pierre nécessaire pour améliorer une arme en fuite.\n" +
+                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible d'interception")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible d'interception :" , "C'est une pierre nécessaire pour améliorer une arme en interception.\n" +
+                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne d'interception")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne d'interception :" , "C'est une pierre nécessaire pour améliorer une arme en interception.\n" +
+                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite d'interception")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite d'interception :" , "C'est une pierre nécessaire pour améliorer une arme en interception.\n" +
+                                                   "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de combo")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de combo :" , "C'est une pierre nécessaire pour améliorer une arme en combo.\n" +
+                                           "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de combo")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de combo :" , "C'est une pierre nécessaire pour améliorer une arme en combo.\n" +
+                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de combo")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de combo :" , "C'est une pierre nécessaire pour améliorer une arme en combo.\n" +
+                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de coup circulaire")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de coup circulaire :" , "C'est une pierre nécessaire pour améliorer une arme en coup circulaire.\n" +
+                                                     "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de coup circulaire")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de coup circulaire :" , "C'est une pierre nécessaire pour améliorer une arme en coup circulaire.\n" +
+                                                      "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de coup circulaire")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de coup circulaire :" , "C'est une pierre nécessaire pour améliorer une arme en coup circulaire.\n" +
+                                                       "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de coup d'estoc")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de coup d'estoc :" , "C'est une pierre nécessaire pour améliorer une arme en coup d'estoc.\n" +
+                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de coup d'estoc")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de coup d'estoc :" , "C'est une pierre nécessaire pour améliorer une arme en coup d'estoc.\n" +
+                                                   "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de coup d'estoc")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de coup d'estoc :" , "C'est une pierre nécessaire pour améliorer une arme en coup d'estoc.\n" +
+                                                    "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de coup normal")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de coup normal :" , "C'est une pierre nécessaire pour améliorer une arme en coup normal.\n" +
+                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de coup normal")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de coup normal :" , "C'est une pierre nécessaire pour améliorer une arme en coup normal.\n" +
+                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de coup normal")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de coup normal :" , "C'est une pierre nécessaire pour améliorer une arme en coup normal.\n" +
+                                                   "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de coup perce armure")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de coup perce armure :" , "C'est une pierre nécessaire pour améliorer une arme en coup perce armure.\n" +
+                                                       "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de coup perce armure")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de coup perce armure :" , "C'est une pierre nécessaire pour améliorer une arme en coup perce armure.\n" +
+                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de coup perce armure")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de coup perce armure :" , "C'est une pierre nécessaire pour améliorer une arme en coup perce armure.\n" +
+                                                         "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de coup létal")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de coup létal :" , "C'est une pierre nécessaire pour améliorer une arme en coup létal.\n" +
+                                                "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de coup létal")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de coup létal :" , "C'est une pierre nécessaire pour améliorer une arme en coup létal.\n" +
+                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de coup létal")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de coup létal :" , "C'est une pierre nécessaire pour améliorer une arme en coup létal.\n" +
+                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de coup provocateur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de coup provocateur :" , "C'est une pierre nécessaire pour améliorer une arme en coup provocateur.\n" +
+                                                      "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de coup provocateur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de coup provocateur :" , "C'est une pierre nécessaire pour améliorer une arme en coup provocateur.\n" +
+                                                       "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de coup provocateur")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de coup provocateur :" , "C'est une pierre nécessaire pour améliorer une arme en coup provocateur.\n" +
+                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de coup sauté")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de coup sauté :" , "C'est une pierre nécessaire pour améliorer une arme en coup sauté.\n" +
+                                                "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de coup sauté")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de coup sauté :" , "C'est une pierre nécessaire pour améliorer une arme en coup sauté.\n" +
+                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de coup sauté")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de coup sauté :" , "C'est une pierre nécessaire pour améliorer une arme en coup sauté.\n" +
+                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de blocage")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de blocage :" , "C'est une pierre nécessaire pour améliorer une arme en blocage.\n" +
+                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de blocage")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de blocage :" , "C'est une pierre nécessaire pour améliorer une arme en blocage.\n" +
+                                              "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de blocage")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de blocage :" , "C'est une pierre nécessaire pour améliorer une arme en blocage.\n" +
+                                               "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible d'esquive")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible d'esquive :" , "C'est une pierre nécessaire pour améliorer une arme en esquive.\n" +
+                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne d'esquive")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne d'esquive :" , "C'est une pierre nécessaire pour améliorer une arme en esquive.\n" +
+                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite d'esquive")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite d'esquive :" , "C'est une pierre nécessaire pour améliorer une arme en esquive.\n" +
+                                              "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre faible de parade")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre faible de parade :" , "C'est une pierre nécessaire pour améliorer une arme en parade.\n" +
+                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre moyenne de parade")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre moyenne de parade :" , "C'est une pierre nécessaire pour améliorer une arme en parade.\n" +
+                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Pierre parfaite de parade")) {
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(3447003)
+    .addField("Pierre parfaite de parade :" , "C'est une pierre nécessaire pour améliorer une arme en parade.\n" +
+                                              "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
+    .setTimestamp()
+    message.channel.send({embed})
+  }
+});
+
 // Menus | Cuisinier
 
 bot.on('message', message => {
