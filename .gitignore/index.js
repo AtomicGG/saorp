@@ -22374,7 +22374,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec ses cornes en avant. Il vous percute violemment vous faisant perdre " + degat + " points de dégâts.")
+      .addField(":crossed_swords: Taurus chargeur  :" , ":crossed_swords: Le Taurus chargeur charge droit vers vous avec ses cornes en avant. Il vous percute violemment vous faisant perdre " + degat + " points de vie.")
       .setTimestamp()
       message.channel.send({embed})
     }
