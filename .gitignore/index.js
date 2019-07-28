@@ -1863,7 +1863,13 @@ bot.on('message', message => {
                             "Pierre faible de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup normal]\n\n" +
                             "Pierre moyenne de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup normal]\n\n" +
                             "Pierre parfaite de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup normal]\n\n" +
-                            "Pierre faible de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup perce armure]\n\n" +
+                            "Suite en écrivant :\n=Liste des pierres d'amélioration 3```")
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 3")) {
+    message.channel.send("```Pierre faible de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup perce armure]\n\n" +
                             "Pierre moyenne de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup perce armure]\n\n" +
                             "Pierre parfaite de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup perce armure]\n\n" +
                             "Pierre faible de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup létal]\n\n" +
@@ -1875,12 +1881,12 @@ bot.on('message', message => {
                             "Pierre faible de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup sauté]\n\n" +
                             "Pierre moyenne de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup sauté]\n\n" +
                             "Pierre parfaite de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup sauté]\n\n" +
-                            "Suite en écrivant :\n=Liste des pierres d'amélioration 3```")
+                            "Suite en écrivant :\n=Liste des pierres d'amélioration 4```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 3")) {
+  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 4")) {
     message.channel.send("```Pierre faible de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de blocage]\n\n" +
                             "Pierre moyenne de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de blocage]\n\n" +
                             "Pierre parfaite de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de blocage]\n\n" +
