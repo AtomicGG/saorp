@@ -2670,7 +2670,17 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("L'enchanteur :" , "En cours")
+    .addField("L'enchanteur :" , "Il pourra, au moyen de pierres d'amélioration, runer des armes afin que ces dernières donnent des améliorations supplémentaires.\n" +
+                                 "Il ne peut y avoir qu'une amélioration par arme.\n" +
+                                 "Il devra cependant réaliser cela dans un atelier d'enchantement dans une construction (C.F. voir `=Constructions prix`).\n" +
+                                 "Il aura besoin de :\n" +
+                                  "- 4 pierres faibles de la même amélioration\n" +
+                                  "OU\n" +
+                                  "- 2 pierres moyenne de la même amélioration\n" +
+                                  "OU\n" +
+                                  "- 1 pierre moyenne et 2 pierres faibles de la même amélioration\n" +
+                                  "OU\n" +
+                                  "- 1 pierre parfaite de la même amélioration")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
