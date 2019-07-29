@@ -24166,8 +24166,8 @@ bot.on('message', message => {
 
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication de l'anneau taurus")) {
-      const Dégâts = Math.floor(4 * Math.random() + 11)
-      const HP = Math.floor(36 * Math.random() + 65)
+      const Dégâts = Math.floor(5 * Math.random() + 11)
+      const HP = Math.floor(41 * Math.random() + 65)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -24181,8 +24181,8 @@ bot.on('message', message => {
 
   bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication de l'amulette taurus")) {
-      const Dégâts = Math.floor(4 * Math.random() + 11)
-      const HP = Math.floor(36 * Math.random() + 65)
+      const Dégâts = Math.floor(5 * Math.random() + 11)
+      const HP = Math.floor(41 * Math.random() + 65)
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
