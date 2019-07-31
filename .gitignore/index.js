@@ -15361,40 +15361,126 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Epée du clan des loups à deux mains :" , "toto inf")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .addField(":scales: Epée du clan des loups à deux mains :" , "Vous n'obtenez aucunes runes.")
       .setTimestamp()
       message.channel.send({embed})
     }
     if (lvlMetier == lvlArme) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":scales: Epée du clan des loups à deux mains :" , "toto egal")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
+      roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 20) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune mineure de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 21 && roll <= 30) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune commune de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 31 && roll <= 35) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune majeure de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 36) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous n'obtenez aucunes runes.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
     if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":scales: Epée du clan des loups à deux mains :" , "toto un peu sup")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
+      roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 30) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune mineure de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 31 && roll <= 45) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune commune de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 46 && roll <= 50) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune majeure de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 51) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous n'obtenez aucunes runes.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
     if (lvlMetier > (lvlArme + 2)) {
-      const embed = new Discord.RichEmbed()
-      .setAuthor(message.author.username , message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-      .setColor(3447003)
-      .addField(":scales: Epée du clan des loups à deux mains :" , "toto très sup")
-      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-      .setTimestamp()
-      message.channel.send({embed})
+      roll = Math.floor(100 * Math.random() + 1)
+      if (roll <= 50) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune mineure de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 51 && roll <= 75) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune commune de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 76 && roll <= 90) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous obtenez une rune majeure de combo.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
+      if (roll >= 91) {
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(3447003)
+        .addField(":scales: Epée du clan des loups à deux mains :" , "Vous n'obtenez aucunes runes.")
+        .setTimestamp()
+        message.channel.send({embed})
+      }
     }
   }
 });
