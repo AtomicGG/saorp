@@ -1284,7 +1284,7 @@ bot.on('message', message => {
                         "`=Liste des potions 1`\n" +
                         "`=Liste des plats 1`\n" +
                         "`=Liste des parchemins 1`\n" +
-                        "`=Liste des pierres d'amélioration 1`\n" +
+                        "`=Liste des runes 1`\n" +
                         "`=Liste des outils 1`\n" +
                         "`=Liste d'objets utiles 1`\n" +
                         "`=Liste des plans 1`\n" +
@@ -1835,67 +1835,67 @@ bot.on('message', message => {
 // Menus | Liste | Pierres d'amélioration
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 1")) {
-    message.channel.send("```Pierre faible de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de cri de provocation]\n\n" +
-                            "Pierre moyenne de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de cri de provocation]\n\n" +
-                            "Pierre parfaite de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de cri de provocation]\n\n" +
-                            "Pierre faible de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de fuite]\n\n" +
-                            "Pierre moyenne de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de fuite]\n\n" +
-                            "Pierre parfaite de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de fuite]\n\n" +
-                            "Pierre faible d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible d'interception]\n\n" +
-                            "Pierre moyenne d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne d'interception]\n\n" +
-                            "Pierre parfaite d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite d'interception]\n\n" +
-                            "Suite en écrivant :\n=Liste des pierres d'amélioration 2```")
+  if (message.content.startsWith(prefix + "Liste des runes 1")) {
+    message.channel.send("```Rune mineure de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de cri de provocation]\n\n" +
+                            "Rune commune de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de cri de provocation]\n\n" +
+                            "Rune majeure de cri de provocation :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de cri de provocation]\n\n" +
+                            "Rune mineure de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de fuite]\n\n" +
+                            "Rune commune de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de fuite]\n\n" +
+                            "Rune majeure de fuite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de fuite]\n\n" +
+                            "Rune mineure d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure d'interception]\n\n" +
+                            "Rune commune d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune d'interception]\n\n" +
+                            "Rune majeure d'interception :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure d'interception]\n\n" +
+                            "Suite en écrivant :\n=Liste des runes 2```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 2")) {
-    message.channel.send("```Pierre faible de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de combo]\n\n" +
-                            "Pierre moyenne de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de combo]\n\n" +
-                            "Pierre parfaite de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de combo]\n\n" +
-                            "Pierre faible de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup circulaire]\n\n" +
-                            "Pierre moyenne de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup circulaire]\n\n" +
-                            "Pierre parfaite de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup circulaire]\n\n" +
-                            "Pierre faible de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup d'estoc]\n\n" +
-                            "Pierre moyenne de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup d'estoc]\n\n" +
-                            "Pierre parfaite de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup d'estoc]\n\n" +
-                            "Pierre faible de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup normal]\n\n" +
-                            "Pierre moyenne de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup normal]\n\n" +
-                            "Pierre parfaite de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup normal]\n\n" +
-                            "Suite en écrivant :\n=Liste des pierres d'amélioration 3```")
+  if (message.content.startsWith(prefix + "Liste des runes 2")) {
+    message.channel.send("```Rune mineure de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de combo]\n\n" +
+                            "Rune commune de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de combo]\n\n" +
+                            "Rune majeure de combo :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de combo]\n\n" +
+                            "Rune mineure de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de coup circulaire]\n\n" +
+                            "Rune commune de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de coup circulaire]\n\n" +
+                            "Rune majeure de coup circulaire :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de coup circulaire]\n\n" +
+                            "Rune mineure de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de coup d'estoc]\n\n" +
+                            "Rune commune de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de coup d'estoc]\n\n" +
+                            "Rune majeure de coup d'estoc :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de coup d'estoc]\n\n" +
+                            "Rune mineure de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de coup normal]\n\n" +
+                            "Rune commune de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de coup normal]\n\n" +
+                            "Rune majeure de coup normal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de coup normal]\n\n" +
+                            "Suite en écrivant :\n=Liste des runes 3```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 3")) {
-    message.channel.send("```Pierre faible de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup perce armure]\n\n" +
-                            "Pierre moyenne de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup perce armure]\n\n" +
-                            "Pierre parfaite de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup perce armure]\n\n" +
-                            "Pierre faible de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup létal]\n\n" +
-                            "Pierre moyenne de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup létal]\n\n" +
-                            "Pierre parfaite de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup létal]\n\n" +
-                            "Pierre faible de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup provocateur]\n\n" +
-                            "Pierre moyenne de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup provocateur]\n\n" +
-                            "Pierre parfaite de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup provocateur]\n\n" +
-                            "Pierre faible de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de coup sauté]\n\n" +
-                            "Pierre moyenne de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de coup sauté]\n\n" +
-                            "Pierre parfaite de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de coup sauté]\n\n" +
-                            "Suite en écrivant :\n=Liste des pierres d'amélioration 4```")
+  if (message.content.startsWith(prefix + "Liste des runes 3")) {
+    message.channel.send("```Rune mineure de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de coup perce armure]\n\n" +
+                            "Rune commune de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de coup perce armure]\n\n" +
+                            "Rune majeure de coup perce armure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de coup perce armure]\n\n" +
+                            "Rune mineure de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de coup létal]\n\n" +
+                            "Rune commune de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de coup létal]\n\n" +
+                            "Rune majeure de coup létal :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de coup létal]\n\n" +
+                            "Rune mineure de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de coup provocateur]\n\n" +
+                            "Rune commune de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de coup provocateur]\n\n" +
+                            "Rune majeure de coup provocateur :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de coup provocateur]\n\n" +
+                            "Rune mineure de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de coup sauté]\n\n" +
+                            "Rune commune de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de coup sauté]\n\n" +
+                            "Rune majeure de coup sauté :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de coup sauté]\n\n" +
+                            "Suite en écrivant :\n=Liste des runes 4```")
   }
 }) ;
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Liste des pierres d'amélioration 4")) {
-    message.channel.send("```Pierre faible de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de blocage]\n\n" +
-                            "Pierre moyenne de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de blocage]\n\n" +
-                            "Pierre parfaite de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de blocage]\n\n" +
-                            "Pierre faible d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible d'esquive]\n\n" +
-                            "Pierre moyenne d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne d'esquive]\n\n" +
-                            "Pierre parfaite d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite d'esquive]\n\n" +
-                            "Pierre faible de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre faible de parade]\n\n" +
-                            "Pierre moyenne de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre moyenne de parade]\n\n" +
-                            "Pierre parfaite de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pierre parfaite de parade]```")
+  if (message.content.startsWith(prefix + "Liste des runes 4")) {
+    message.channel.send("```Rune mineure de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de blocage]\n\n" +
+                            "Rune commune de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de blocage]\n\n" +
+                            "Rune majeure de blocage :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de blocage]\n\n" +
+                            "Rune mineure d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure d'esquive]\n\n" +
+                            "Rune commune d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune d'esquive]\n\n" +
+                            "Rune majeure d'esquive :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure d'esquive]\n\n" +
+                            "Rune mineure de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune mineure de parade]\n\n" +
+                            "Rune commune de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune commune de parade]\n\n" +
+                            "Rune majeure de parade :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Rune majeure de parade]```")
   }
 }) ;
 
@@ -2738,17 +2738,18 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("L'enchanteur :" , "Il pourra, au moyen de pierres d'amélioration, runer des armes afin que ces dernières donnent des améliorations supplémentaires.\n" +
+    .addField("L'enchanteur :" , "Il pourra, au moyen de runes, améliorer des armes afin que ces dernières donnent des améliorations supplémentaires.\n" +
                                  "Il ne peut y avoir qu'une amélioration par arme.\n\n" +
+                                 "Une rune obtenue sur une armure du palier 1 ne pourra être ajoutée que sur une arme du palier 1.\n\n" +
                                  "Il devra cependant réaliser cela dans un atelier d'enchantement dans une construction (C.F. voir `=Constructions prix`).\n\n" +
                                  "Il aura besoin de :\n" +
-                                  "- 4 pierres faibles de la même amélioration\n" +
+                                  "- 4 runes mineures de la même amélioration\n" +
                                   "OU\n" +
-                                  "- 2 pierres moyenne de la même amélioration\n" +
+                                  "- 2 runes communes de la même amélioration\n" +
                                   "OU\n" +
-                                  "- 1 pierre moyenne et 2 pierres faibles de la même amélioration\n" +
+                                  "- 1 rune commune et 2 runes mineures de la même amélioration\n" +
                                   "OU\n" +
-                                  "- 1 pierre parfaite de la même amélioration")
+                                  "- 1 rune majeure de la même amélioration")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2756,13 +2757,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de cri de provocation")) {
+  if (message.content.startsWith(prefix + "Rune mineure de cri de provocation")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de cri de provocation :" , "C'est une pierre nécessaire pour améliorer une arme en cri de provocation.\n" +
-                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de cri de provocation :" , "C'est une rune nécessaire pour améliorer une arme en cri de provocation.\n" +
+                                                        "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2770,13 +2771,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de cri de provocation")) {
+  if (message.content.startsWith(prefix + "Rune commune de cri de provocation")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de cri de provocation :" , "C'est une pierre nécessaire pour améliorer une arme en cri de provocation.\n" +
-                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de cri de provocation :" , "C'est une rune nécessaire pour améliorer une arme en cri de provocation.\n" +
+                                                        "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2784,13 +2785,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de cri de provocation")) {
+  if (message.content.startsWith(prefix + "Rune majeure de cri de provocation")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de cri de provocation :" , "C'est une pierre nécessaire pour améliorer une arme en cri de provocation.\n" +
-                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de cri de provocation :" , "C'est une rune nécessaire pour améliorer une arme en cri de provocation.\n" +
+                                                        "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2798,13 +2799,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de fuite")) {
+  if (message.content.startsWith(prefix + "Rune mineure de fuite")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de fuite :" , "C'est une pierre nécessaire pour améliorer une arme en fuite.\n" +
-                                           "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de fuite :" , "C'est une rune nécessaire pour améliorer une arme en fuite.\n" +
+                                           "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2812,13 +2813,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de fuite")) {
+  if (message.content.startsWith(prefix + "Rune commune de fuite")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de fuite :" , "C'est une pierre nécessaire pour améliorer une arme en fuite.\n" +
-                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de fuite :" , "C'est une rune nécessaire pour améliorer une arme en fuite.\n" +
+                                            "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2826,13 +2827,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de fuite")) {
+  if (message.content.startsWith(prefix + "Rune majeure de fuite")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de fuite :" , "C'est une pierre nécessaire pour améliorer une arme en fuite.\n" +
-                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de fuite :" , "C'est une rune nécessaire pour améliorer une arme en fuite.\n" +
+                                             "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2840,13 +2841,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible d'interception")) {
+  if (message.content.startsWith(prefix + "Rune mineure d'interception")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible d'interception :" , "C'est une pierre nécessaire pour améliorer une arme en interception.\n" +
-                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure d'interception :" , "C'est une rune nécessaire pour améliorer une arme en interception.\n" +
+                                                 "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2854,13 +2855,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne d'interception")) {
+  if (message.content.startsWith(prefix + "Rune commune d'interception")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne d'interception :" , "C'est une pierre nécessaire pour améliorer une arme en interception.\n" +
-                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune d'interception :" , "C'est une rune nécessaire pour améliorer une arme en interception.\n" +
+                                                  "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2868,13 +2869,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite d'interception")) {
+  if (message.content.startsWith(prefix + "Rune majeure d'interception")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite d'interception :" , "C'est une pierre nécessaire pour améliorer une arme en interception.\n" +
-                                                   "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure d'interception :" , "C'est une rune nécessaire pour améliorer une arme en interception.\n" +
+                                                   "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2882,13 +2883,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de combo")) {
+  if (message.content.startsWith(prefix + "Rune mineure de combo")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de combo :" , "C'est une pierre nécessaire pour améliorer une arme en combo.\n" +
-                                           "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de combo :" , "C'est une rune nécessaire pour améliorer une arme en combo.\n" +
+                                           "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2896,13 +2897,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de combo")) {
+  if (message.content.startsWith(prefix + "Rune commune de combo")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de combo :" , "C'est une pierre nécessaire pour améliorer une arme en combo.\n" +
-                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de combo :" , "C'est une rune nécessaire pour améliorer une arme en combo.\n" +
+                                            "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2910,13 +2911,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de combo")) {
+  if (message.content.startsWith(prefix + "Rune majeure de combo")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de combo :" , "C'est une pierre nécessaire pour améliorer une arme en combo.\n" +
-                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de combo :" , "C'est une rune nécessaire pour améliorer une arme en combo.\n" +
+                                             "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2924,13 +2925,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de coup circulaire")) {
+  if (message.content.startsWith(prefix + "Rune mineure de coup circulaire")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de coup circulaire :" , "C'est une pierre nécessaire pour améliorer une arme en coup circulaire.\n" +
-                                                     "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de coup circulaire :" , "C'est une rune nécessaire pour améliorer une arme en coup circulaire.\n" +
+                                                     "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2938,13 +2939,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de coup circulaire")) {
+  if (message.content.startsWith(prefix + "Rune commune de coup circulaire")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de coup circulaire :" , "C'est une pierre nécessaire pour améliorer une arme en coup circulaire.\n" +
-                                                      "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de coup circulaire :" , "C'est une rune nécessaire pour améliorer une arme en coup circulaire.\n" +
+                                                      "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2952,13 +2953,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de coup circulaire")) {
+  if (message.content.startsWith(prefix + "Rune majeure de coup circulaire")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de coup circulaire :" , "C'est une pierre nécessaire pour améliorer une arme en coup circulaire.\n" +
-                                                       "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de coup circulaire :" , "C'est une rune nécessaire pour améliorer une arme en coup circulaire.\n" +
+                                                       "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2966,13 +2967,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de coup d'estoc")) {
+  if (message.content.startsWith(prefix + "Rune mineure de coup d'estoc")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de coup d'estoc :" , "C'est une pierre nécessaire pour améliorer une arme en coup d'estoc.\n" +
-                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de coup d'estoc :" , "C'est une rune nécessaire pour améliorer une arme en coup d'estoc.\n" +
+                                                  "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2980,13 +2981,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de coup d'estoc")) {
+  if (message.content.startsWith(prefix + "Rune commune de coup d'estoc")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de coup d'estoc :" , "C'est une pierre nécessaire pour améliorer une arme en coup d'estoc.\n" +
-                                                   "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de coup d'estoc :" , "C'est une rune nécessaire pour améliorer une arme en coup d'estoc.\n" +
+                                                   "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2994,13 +2995,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de coup d'estoc")) {
+  if (message.content.startsWith(prefix + "Rune majeure de coup d'estoc")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de coup d'estoc :" , "C'est une pierre nécessaire pour améliorer une arme en coup d'estoc.\n" +
-                                                    "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de coup d'estoc :" , "C'est une rune nécessaire pour améliorer une arme en coup d'estoc.\n" +
+                                                    "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3008,13 +3009,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de coup normal")) {
+  if (message.content.startsWith(prefix + "Rune mineure de coup normal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de coup normal :" , "C'est une pierre nécessaire pour améliorer une arme en coup normal.\n" +
-                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de coup normal :" , "C'est une rune nécessaire pour améliorer une arme en coup normal.\n" +
+                                                 "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3022,13 +3023,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de coup normal")) {
+  if (message.content.startsWith(prefix + "Rune commune de coup normal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de coup normal :" , "C'est une pierre nécessaire pour améliorer une arme en coup normal.\n" +
-                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de coup normal :" , "C'est une rune nécessaire pour améliorer une arme en coup normal.\n" +
+                                                  "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3036,13 +3037,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de coup normal")) {
+  if (message.content.startsWith(prefix + "Rune majeure de coup normal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de coup normal :" , "C'est une pierre nécessaire pour améliorer une arme en coup normal.\n" +
-                                                   "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de coup normal :" , "C'est une rune nécessaire pour améliorer une arme en coup normal.\n" +
+                                                   "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3050,13 +3051,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de coup perce armure")) {
+  if (message.content.startsWith(prefix + "Rune mineure de coup perce armure")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de coup perce armure :" , "C'est une pierre nécessaire pour améliorer une arme en coup perce armure.\n" +
-                                                       "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de coup perce armure :" , "C'est une rune nécessaire pour améliorer une arme en coup perce armure.\n" +
+                                                       "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3064,13 +3065,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de coup perce armure")) {
+  if (message.content.startsWith(prefix + "Rune commune de coup perce armure")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de coup perce armure :" , "C'est une pierre nécessaire pour améliorer une arme en coup perce armure.\n" +
-                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de coup perce armure :" , "C'est une rune nécessaire pour améliorer une arme en coup perce armure.\n" +
+                                                        "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3078,13 +3079,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de coup perce armure")) {
+  if (message.content.startsWith(prefix + "Rune majeure de coup perce armure")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de coup perce armure :" , "C'est une pierre nécessaire pour améliorer une arme en coup perce armure.\n" +
-                                                         "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de coup perce armure :" , "C'est une rune nécessaire pour améliorer une arme en coup perce armure.\n" +
+                                                         "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3092,13 +3093,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de coup létal")) {
+  if (message.content.startsWith(prefix + "Rune mineure de coup létal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de coup létal :" , "C'est une pierre nécessaire pour améliorer une arme en coup létal.\n" +
-                                                "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de coup létal :" , "C'est une rune nécessaire pour améliorer une arme en coup létal.\n" +
+                                                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3106,13 +3107,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de coup létal")) {
+  if (message.content.startsWith(prefix + "Rune commune de coup létal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de coup létal :" , "C'est une pierre nécessaire pour améliorer une arme en coup létal.\n" +
-                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de coup létal :" , "C'est une rune nécessaire pour améliorer une arme en coup létal.\n" +
+                                                 "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3120,13 +3121,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de coup létal")) {
+  if (message.content.startsWith(prefix + "Rune majeure de coup létal")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de coup létal :" , "C'est une pierre nécessaire pour améliorer une arme en coup létal.\n" +
-                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de coup létal :" , "C'est une rune nécessaire pour améliorer une arme en coup létal.\n" +
+                                                  "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3134,13 +3135,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de coup provocateur")) {
+  if (message.content.startsWith(prefix + "Rune mineure de coup provocateur")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de coup provocateur :" , "C'est une pierre nécessaire pour améliorer une arme en coup provocateur.\n" +
-                                                      "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de coup provocateur :" , "C'est une rune nécessaire pour améliorer une arme en coup provocateur.\n" +
+                                                      "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3148,13 +3149,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de coup provocateur")) {
+  if (message.content.startsWith(prefix + "Rune commune de coup provocateur")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de coup provocateur :" , "C'est une pierre nécessaire pour améliorer une arme en coup provocateur.\n" +
-                                                       "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de coup provocateur :" , "C'est une rune nécessaire pour améliorer une arme en coup provocateur.\n" +
+                                                       "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3162,13 +3163,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de coup provocateur")) {
+  if (message.content.startsWith(prefix + "Rune majeure de coup provocateur")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de coup provocateur :" , "C'est une pierre nécessaire pour améliorer une arme en coup provocateur.\n" +
-                                                        "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de coup provocateur :" , "C'est une rune nécessaire pour améliorer une arme en coup provocateur.\n" +
+                                                        "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3176,13 +3177,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de coup sauté")) {
+  if (message.content.startsWith(prefix + "Rune mineure de coup sauté")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de coup sauté :" , "C'est une pierre nécessaire pour améliorer une arme en coup sauté.\n" +
-                                                "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de coup sauté :" , "C'est une rune nécessaire pour améliorer une arme en coup sauté.\n" +
+                                                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3190,13 +3191,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de coup sauté")) {
+  if (message.content.startsWith(prefix + "Rune commune de coup sauté")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de coup sauté :" , "C'est une pierre nécessaire pour améliorer une arme en coup sauté.\n" +
-                                                 "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de coup sauté :" , "C'est une rune nécessaire pour améliorer une arme en coup sauté.\n" +
+                                                 "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3204,13 +3205,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de coup sauté")) {
+  if (message.content.startsWith(prefix + "Rune majeure de coup sauté")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de coup sauté :" , "C'est une pierre nécessaire pour améliorer une arme en coup sauté.\n" +
-                                                  "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de coup sauté :" , "C'est une rune nécessaire pour améliorer une arme en coup sauté.\n" +
+                                                  "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3218,13 +3219,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de blocage")) {
+  if (message.content.startsWith(prefix + "Rune mineure de blocage")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de blocage :" , "C'est une pierre nécessaire pour améliorer une arme en blocage.\n" +
-                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de blocage :" , "C'est une rune nécessaire pour améliorer une arme en blocage.\n" +
+                                             "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3232,13 +3233,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de blocage")) {
+  if (message.content.startsWith(prefix + "Rune commune de blocage")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de blocage :" , "C'est une pierre nécessaire pour améliorer une arme en blocage.\n" +
-                                              "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de blocage :" , "C'est une rune nécessaire pour améliorer une arme en blocage.\n" +
+                                              "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3246,13 +3247,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de blocage")) {
+  if (message.content.startsWith(prefix + "Rune majeure de blocage")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de blocage :" , "C'est une pierre nécessaire pour améliorer une arme en blocage.\n" +
-                                               "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de blocage :" , "C'est une rune nécessaire pour améliorer une arme en blocage.\n" +
+                                               "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3260,13 +3261,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible d'esquive")) {
+  if (message.content.startsWith(prefix + "Rune mineure d'esquive")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible d'esquive :" , "C'est une pierre nécessaire pour améliorer une arme en esquive.\n" +
-                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure d'esquive :" , "C'est une rune nécessaire pour améliorer une arme en esquive.\n" +
+                                            "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3274,13 +3275,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne d'esquive")) {
+  if (message.content.startsWith(prefix + "Rune commune d'esquive")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne d'esquive :" , "C'est une pierre nécessaire pour améliorer une arme en esquive.\n" +
-                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune d'esquive :" , "C'est une rune nécessaire pour améliorer une arme en esquive.\n" +
+                                             "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3288,13 +3289,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite d'esquive")) {
+  if (message.content.startsWith(prefix + "Rune majeure d'esquive")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite d'esquive :" , "C'est une pierre nécessaire pour améliorer une arme en esquive.\n" +
-                                              "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure d'esquive :" , "C'est une rune nécessaire pour améliorer une arme en esquive.\n" +
+                                              "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3302,13 +3303,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre faible de parade")) {
+  if (message.content.startsWith(prefix + "Rune mineure de parade")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre faible de parade :" , "C'est une pierre nécessaire pour améliorer une arme en parade.\n" +
-                                            "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune mineure de parade :" , "C'est une rune nécessaire pour améliorer une arme en parade.\n" +
+                                            "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3316,13 +3317,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre moyenne de parade")) {
+  if (message.content.startsWith(prefix + "Rune commune de parade")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre moyenne de parade :" , "C'est une pierre nécessaire pour améliorer une arme en parade.\n" +
-                                             "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune commune de parade :" , "C'est une rune nécessaire pour améliorer une arme en parade.\n" +
+                                             "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -3330,13 +3331,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Pierre parfaite de parade")) {
+  if (message.content.startsWith(prefix + "Rune majeure de parade")) {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Pierre parfaite de parade :" , "C'est une pierre nécessaire pour améliorer une arme en parade.\n" +
-                                              "Vous avez besoin de 4 pierres faibles, ou de 2 moyennes, ou de 1 moyenne et 2 faibles, ou de une parfaite, pour l'amélioration par l'enchanteur dans son atelier")
+    .addField("Rune majeure de parade :" , "C'est une rune nécessaire pour améliorer une arme en parade.\n" +
+                                              "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
