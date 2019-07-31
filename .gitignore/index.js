@@ -2708,7 +2708,9 @@ bot.on('message', message => {
     .setAuthor(message.author.username , message.author.avatarURL)
     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
     .setColor(3447003)
-    .addField("Le forgeron :" , "En cours")
+    .addField("Le forgeron :" , "Il pourra, au moyen d'une forge (C.F. voir `=Constructions prix`), fondre des armes afin de pouvoir avoir une chance d'obtenir des runes.\n" +
+                                 "Ces runes peuvent servir à améliorer une arme chez l'enchanteur.\n\n" +
+                                 "Une rune obtenue sur une arme du palier 1 ne pourra être ajoutée que sur une arme du palier 1.")
     .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
     .setTimestamp()
     message.channel.send({embed})
@@ -2740,7 +2742,7 @@ bot.on('message', message => {
     .setColor(3447003)
     .addField("L'enchanteur :" , "Il pourra, au moyen de runes, améliorer des armes afin que ces dernières donnent des améliorations supplémentaires.\n" +
                                  "Il ne peut y avoir qu'une amélioration par arme.\n\n" +
-                                 "Une rune obtenue sur une armure du palier 1 ne pourra être ajoutée que sur une arme du palier 1.\n\n" +
+                                 "Une rune obtenue sur une arme du palier 1 ne pourra être ajoutée que sur une arme du palier 1.\n\n" +
                                  "Il devra cependant réaliser cela dans un atelier d'enchantement dans une construction (C.F. voir `=Constructions prix`).\n\n" +
                                  "Il aura besoin de :\n" +
                                   "- 4 runes mineures de la même amélioration\n" +
