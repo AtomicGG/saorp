@@ -1785,7 +1785,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Liste des potions 2")) {
-    message.channel.send("```Potion améliorée :\nCoûts : [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Potion faible de soin]```")
+    message.channel.send("```Potion améliorée :\nCoûts : [Achat : 1000 cols] [Revente : 250 cols]\nInfos : [=Potion améliorée]```")
   }
 }) ;
 
@@ -11203,7 +11203,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang essaye d'attraper votre arme avec sa gueule et ses crocs, mais il n'y arrive pas et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (66 <= roll){
@@ -11942,7 +11942,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Loup :" , ":crossed_swords: Le loup d'élite sautant sur vous, il n'arrive pas à vous toucher et retombe lourdement au sol, vous avez de la chance !")
+      .addField(":crossed_swords: Loup d'élite :" , ":crossed_swords: Le loup d'élite sautant sur vous, il n'arrive pas à vous toucher et retombe lourdement au sol, vous avez de la chance !")
       message.channel.send({embed})
     }
     if (36 <= roll){
@@ -11950,7 +11950,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":crossed_swords: Loup :" , ":crossed_swords: Le loup d'élite bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " + degat + " points de dégâts")
+      .addField(":crossed_swords: Loup d'élite :" , ":crossed_swords: Le loup d'élite bondit sur vous et vous mord le corps sauvagement les yeux rouges, il inflige " + degat + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -12053,7 +12053,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il y arrive pas et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Loup de sang d'élite :" , ":shield: Le loup de sang d'élite essaye d'attraper votre arme avec sa gueule et ses crocs, mais il n'y arrive pas et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
       message.channel.send({embed})
     }
     if (66 <= roll){
@@ -12061,7 +12061,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup de sang :" , ":shield: Le loup de sang d'élite saute en arrière et arrive à esquiver votre coup, il se met à crier.")
+      .addField(":shield: Loup de sang d'élite :" , ":shield: Le loup de sang d'élite saute en arrière et arrive à esquiver votre coup, il se met à crier.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -12080,7 +12080,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup :" , ":shield: Le loup d'élite tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
+      .addField(":shield: Loup d'élite :" , ":shield: Le loup d'élite tente de sauter de côté pour esquiver le coup, mais il n'est pas assez rapide et réactif et se prend votre coup, vous lui infligez " + degat + " points de dégâts")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -12089,7 +12089,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":shield: Loup :" , ":shield: Le loup d'élite saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
+      .addField(":shield: Loup d'élite :" , ":shield: Le loup d'élite saute sur le côté et arrive à esquiver votre coup, il se met à crier.")
       .setTimestamp()
       message.channel.send({embed})
     }
@@ -20810,7 +20810,7 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: Bienvenue dans cette forêt dense ou vous pouvez rencontrez tout de sorte de monstres inscecte!\n\n" +
+    .addField(":mount_fuji: Forêt dense :" , ":mount_fuji: Bienvenue dans cette forêt dense où vous pouvez rencontrer toutes sortes d'insecte !\n\n" +
                                         ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Forêt dense combat : [Nombre de joueurs dans votre groupe]`\n\n" +
                                         ":wilted_rose: Pour cueillir, niveau 9 requis dans 'Cueilleur' :\n :wilted_rose: `=Forêt dense cueillir`\n\n" +
                                         ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Forêt dense chasser`\n\n" +
@@ -22752,12 +22752,12 @@ bot.on('message', message => {
     const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username , message.author.avatarURL)
     .setColor(1447003)
-    .addField(":mount_fuji: Clairière :" , ":mount_fuji: Bienvenue dans cette Clairière ou vous pouvez rencontrez tout de sorte de monstres inscecte!\n\n" +
-                                        ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Clairière combat : [Nombre de joueurs dans votre groupe]`\n\n" +
-                                        ":wilted_rose: Pour cueillir, niveau 9 requis dans 'Cueilleur' :\n :wilted_rose: `=Clairière cueillir`\n\n" +
-                                        ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Clairière chasser`\n\n" +
-                                        ":pick: Pour miner, niveau 7 minimum requis dans 'Mineur' :\n:pick: `=Clairière miner`\n\n" +
-                                        ":book: Pour avoir une quête :\n:book: `=Clairière quête`")
+    .addField(":mount_fuji: Clairière :" , ":mount_fuji: Bienvenue dans cette clairière où vous pouvez rencontrer toutes sortes d'insecte et de taurus !\n\n" +
+                                           ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Clairière combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                                           ":wilted_rose: Pour cueillir, niveau 9 requis dans 'Cueilleur' :\n :wilted_rose: `=Clairière cueillir`\n\n" +
+                                           ":knife: Pour chasser, niveau 7 minimum requis dans 'Chasseur' :\n:knife: `=Clairière chasser`\n\n" +
+                                           ":pick: Pour miner, niveau 7 minimum requis dans 'Mineur' :\n:pick: `=Clairière miner`\n\n" +
+                                           ":book: Pour avoir une quête :\n:book: `=Clairière quête`")
     .setImage("https://cdn.discordapp.com/attachments/545062628272373770/596799566599291030/7mDgwOG5iCvWH9VRjHQtzxcMOI4372x249.png")
     .setTimestamp()
     message.channel.send({embed})
