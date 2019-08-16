@@ -39482,7 +39482,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'antidote léger'")) {
+  if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'antidote léger")) {
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
