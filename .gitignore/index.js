@@ -39620,7 +39620,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "X cols")
       .addField("Prix de revente :", "32 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "Aucuns crafts pour le moment")
-      //.setImage("https://png.icons8.com/color/1600/jelly.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587173598658603/poudre_de_poison.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -39636,7 +39636,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "X cols")
       .addField("Prix de revente :", "36 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "=Plastron en chitine\n=Gantelets en chitine")
-      //.setImage("https://png.icons8.com/color/1600/jelly.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587150148173834/ailes_bourdon_falneur.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -39789,6 +39789,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "X cols")
       .addField("Prix de revente :", "48 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "=Anneau en chitine\n=Amulette en chitine\n=Plastron en chitine")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587150148173834/ailes_bourdon_falneur.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -39834,6 +39835,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "X cols")
       .addField("Prix de revente :", "32 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587150148173834/ailes_bourdon_falneur.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -40029,7 +40031,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "80 cols")
       .addField("Prix de revente :", "20 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de lièvre\n=Ragoût de taurus\n=Ragoût de desman\n=Potion améliorée")
-      .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -40045,7 +40047,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "96 cols")
       .addField("Prix de revente :", "24 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de lièvre\n=Ragoût de desman\n=Ragoût de taurus\n=Potion améliorée")
-      .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -40061,7 +40063,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "112 cols")
       .addField("Prix de revente :", "28 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "Aucuns pour le moment")
-      .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -40077,7 +40079,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "80 cols")
       .addField("Prix de revente :", "20 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
-      .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -40093,7 +40095,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "96 cols")
       .addField("Prix de revente :", "24 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
-      .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -40109,7 +40111,7 @@ bot.on('message', message => {
       .addField("Prix d'achat :", "112 cols")
       .addField("Prix de revente :", "28 cols")
       .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
-      .setImage("http://download.seaicons.com/icons/icons8/windows-8/512/Plants-Grass-icon.png")
+      .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
       .setTimestamp()
     message.channel.send({ embed })
   }
