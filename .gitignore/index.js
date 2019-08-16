@@ -40930,10 +40930,50 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Horde :", "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts 1`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Informations importantes 1`").setTimestamp()
+      .addField("Horde :" , "Vous voulez rejoindre la ville et essayer de survivre le plus longtemps possible, alors les commandes pour avoir les informations et commencer la survie sont juste en dessous !\n\n`=Horde contexte`\n`=Horde survivant`\n`=Nuit`\n`=Fouille`\n`=Horde états`\n`=Médicaments`\n`=Nourriture`\n`=Soif`\n`=Blessure`\n`=Atouts 1`\n`=Horde armes`\n`=Plans`\n`=Lieux`\n`=Défense de la ville`\n`=Fabrication`\n`=Vol`\n`=Exile`\n`=Sommeil`\n`=Horde combat`\n`=Zombie`\n`=Horde liste d'objets 1`\n`=Horde liste des constructions 1`\n`=Transformation`\n`=Habitations`\n`=Points d'actions`\n`=Cargaison`\n`=Déplacements`\n`=Revenant`\n`=Informations importantes 1`")    .setTimestamp()
     message.channel.send({ embed })
   }
 });
+
+bot.on('message', message => {
+  if (message.content === prefix + "Revenant") {
+    const embed = new Discord.RichEmbed()
+    .setColor(0xff0000)
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+.addField("Le revenant :" , "Si vous mourrez, vous pourrez choisir oui ou non de revenir à la vie mais sous forme de zombie\n\nVous n'êtes pas plus fort qu'un zombie normal, mais légèrement plus intelligent, c'est pour cela que vous pourrez contrôlé un minimum vos actions mais sans que ce soit des actions humaines\n\nLorsque vous êtes zombie, les humains peuvent facilement vous tué alors, restez en meute\n\nLes revenants ont droit à un tour d'attaque après le tour des zombies\n\nListe des coups possibles :\n\n`=Morsure`\n`=Griffure`\n`=Etranglement` [Pas encore dispo]\n`=Vomie` [Pas encore dispo]\n\nLa suite : `=Revenant 2`")
+.setTimestamp()
+    message.channel.send({embed})
+        }
+  }) ;
+
+  bot.on('message', message => {
+    if (message.content === prefix + "Revenant 2") {
+      const embed = new Discord.RichEmbed()
+      .setColor(0xff0000)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+          .addField("Le revenant :" , "Lorsque vous êtes un revenant, pour évitez tous problèmes de HRP de la part des survivants, si aucun survivant ne vous voit où vous êtes actuellement, vous devez dire vos déplacements dans le salon des déplacements de zombie que vous verrez apparaître tout en bas du discord\n\nLorsqu'un survivant passe là où vous êtes et que vous l'avez dis dans le salon des déplacements pour zombie, vous pourrez RP maintenant vos actions et déplacements dans le même salon que les survivants\n\nLa suite : `=Revenant 3`")
+  .setTimestamp()
+      message.channel.send({embed})
+          }
+    }) ;
+ 
+    bot.on('message', message => {
+      if (message.content === prefix + "Revenant 3") {
+        const embed = new Discord.RichEmbed()
+        .setColor(0xff0000)
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
+            .addField("Le revenant :" , "Vous irez naturellement vers un survivant lorsque vous en verrais un, vous êtes légèrement intelligent mais vous restez un zombie qui veut manger à la moindre odeur de viande..\n\nLorsque vous êtes sur une zone et qu'un survivant passe, le survivant devra faire un roll basé sur sa stat `Mental` pour vous voir arriver et agir avant vous, s'il échoue alors vous pourrez l'attaquer en premier\n\nS'il y a plusieurs survivants, ils pourront chacun faire un roll pour tenter de vous voir\n\nContactez un assistant si vous ne comprenez pas")
+    .setTimestamp()
+        message.channel.send({embed})
+            }
+      }) ;
+
 
 bot.on('message', message => {
   if (message.content === prefix + "Informations importantes 1") {
@@ -40955,7 +40995,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Informations importantes :", "Vous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP\n\nLorsque vous devez faire une action physique, social, et mental, il faudra faire ce qu'on appelle un `Roll` grâce à : `=Horde roll`\n\nL'action sera réussite si vous faite autant ou moins que votre stat selon la situation, si elle est plutôt physique, social, ou mental !\n\nVous pouvez écrire dans le salon #『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs de manière RP un message, c'est un tableau uniquement visible à l'auberge par les autres survivants")
+      .addField("Informations importantes :" , "Vous pouvez jouer le personnage d'un survivant qui n'est pas ou plus là, mais il faut son autorisation et pas de META RP\n\nLorsque vous devez faire une action physique, social, et mental, il faudra faire ce qu'on appelle un `Roll` grâce à : `=Horde roll`\n\nL'action sera réussite si vous faite autant ou moins que votre stat selon la situation, si elle est plutôt physique, social, ou mental !\n\nVous pouvez écrire dans le salon #『📜』ᴛᴀʙʟᴇᴀᴜ-ᴀɴɴᴏɴᴄᴇs de manière RP un message, c'est un tableau uniquement visible à l'auberge par les autres survivants\n\nLorsqu'un survivant fuit, les zombies ne peuvent pas le suivre et le retrouver directement")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -41146,7 +41186,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("La nuit :", "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé, à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pus visiter la veille, il faudra de nouveau les retrouver...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusque 1 H du matin [IRL] mais les zombies sortiront à l'extérieur et seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...").setTimestamp()
+      .addField("La nuit :" , "Lorsque vient 00 H 00, les zombies attaquent la ville et les survivants qu'ils rencontreront !\n\nPour déterminer combien de zombies attaqueront la ville par nuit, voici les différentes commandes à écrire :\n\n`=Jour 1`\n`=Jour 2`\n`=Jour 3`\n`=Jour 4`\n`=Jour 5`\n`=Jour 6`\n`=Jour 7`\n`=Jour 8`\n`=Jour 9`\n`=Jour 10`\n`=Jour 11`\n`=Jour 12`\n`=Jour 13`\n`=Jour 14`\n`=Jour 15`\n`=Jour 16`\n`=Jour 17`\n`=Jour 18`\n`=Jour 19`\n`=Jour 20`\n\nLe lendemain lorsque l'attaque des zombies sur la ville est terminé, à cause des tempêtes de sable assez violentes vous ne retrouverez plus les lieux que vous avez sûrement pus visiter la veille, il faudra de nouveau les retrouver...\n\nDurant l'attaque des zombies sur la ville, il faudra tuer tous les zombies ou alors survivre jusqu'à que les zombies sortent à l'extérieur, mais ils seront de nouveau présent la nuit prochaine en plus des nouveaux zombies...")    .setTimestamp()
     message.channel.send({ embed })
   }
 });
@@ -41547,12 +41587,249 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Cible :", "Le groupe de zombie attaquera le survivant [" + Joueurs + "]...")
-      .setImage("https://thumbs.gfycat.com/TerrificOrangeBunny-small.gif")
+      +    .addField("Cible :" , "Le groupe de zombie attaquera le survivant [" +Joueurs+ "]...\n\n[C'est à vous lors d'un combat de déterminer qui aura quel numéro]")
+ 
       .setTimestamp()
     message.channel.send({ embed })
   }
 });
+
++bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Déplacement nombre")) {
+    const X = (Math.floor((8)*Math.random()+3))
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Déplacement nombre :" , "Le groupe groupe de zombie se déplacera `" +X+ "` fois aléatoirement en ville...")
+
+    .setTimestamp()
+    message.channel.send({embed})}
+}) ;
+
+
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Déplacement zombie")) {
+    const X = (Math.floor((14)*Math.random()+1))
+    const N = (Math.floor((50)*Math.random()+1))
+    if(X === 1){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la banque...")
+
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(X === 2){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la place principale...")
+      
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X === 3){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers l'auberge...")
+      
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X === 4){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la rue [1]...")
+      
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X === 5){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers le puit...")
+         
+          .setTimestamp()
+          message.channel.send({embed})}
+          if(X === 6){
+            const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username , message.author.avatarURL)
+            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(0xff0000)
+            .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers le cabinet médical...")
+           
+            .setTimestamp()
+            message.channel.send({embed})}
+            if(X === 7){
+              const embed = new Discord.RichEmbed()
+              .setAuthor(message.author.username , message.author.avatarURL)
+              .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+              .setColor(0xff0000)
+              .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la tour...")
+              
+              .setTimestamp()
+              message.channel.send({embed})}
+              if(X === 8){
+                const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL)
+                .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(0xff0000)
+                .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la rue [2]...")
+               
+                .setTimestamp()
+                message.channel.send({embed})}
+                if(X === 9){
+                  const embed = new Discord.RichEmbed()
+                  .setAuthor(message.author.username , message.author.avatarURL)
+                  .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                  .setColor(0xff0000)
+                  .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la prison...")
+                  
+                  .setTimestamp()
+                  message.channel.send({embed})}
+                  if(X === 10){
+                    const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL)
+                    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(0xff0000)
+                    .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers l'atelier...'")
+                   
+                    .setTimestamp()
+                    message.channel.send({embed})}
+                    if(X === 11){
+                      const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username , message.author.avatarURL)
+                      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(0xff0000)
+                      .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la rue [3]...")
+                     
+                      .setTimestamp()
+                      message.channel.send({embed})}
+                      if(X === 12){
+                        const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username , message.author.avatarURL)
+                        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(0xff0000)
+                        .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers la cuisine...")
+                       
+                        .setTimestamp()
+                        message.channel.send({embed})}
+                        if(X === 13){
+                          const embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username , message.author.avatarURL)
+                          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                          .setColor(0xff0000)
+                          .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers le chantier...")
+                          
+                          .setTimestamp()
+                          message.channel.send({embed})}
+                          if(X === 14){
+                            const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username , message.author.avatarURL)
+                            .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(0xff0000)
+                            .addField("Déplacement zombie :" , "Le groupe de zombie se déplace vers les maisons [" +N+ "]...")
+                            
+                            .setTimestamp()
+                            message.channel.send({embed})}
+  }
+}) ;
+
++////////////////////////////////////////////////////////////////////////////////Zombie joueur, actions//////////////////////////////////////////////////////////////////////
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Griffure")) {
+    const X = (Math.floor((100)*Math.random()+1))
+    if(X < 50){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Griffure :" , "Vous ratez votre griffure de peu sur le survivant...")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(A > 51 & A < 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Griffure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(A > 86 & A < 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Griffure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(X > 96){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Griffure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure sévère`")
+          .setTimestamp()
+          message.channel.send({embed})}
+  }
+}) ;
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Morsure")) {
+    const X = (Math.floor((100)*Math.random()+1))
+    if(X < 75){
+    const embed = new Discord.RichEmbed()
+    .setAuthor(message.author.username , message.author.avatarURL)
+    .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+    .setColor(0xff0000)
+    .addField("Morsure :" , "Vous ratez votre morsure de peu sur le survivant...")
+    .setTimestamp()
+    message.channel.send({embed})}
+    if(A > 76 & A < 85){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Morsure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure légère`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(A > 86 & A < 95){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Morsure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
+        .setTimestamp()
+        message.channel.send({embed})}
+        if(A > 96 & A < 98){
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.username , message.author.avatarURL)
+          .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+          .setColor(0xff0000)
+          .addField("Morsure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure sévère`\n\n:nauseated_face: Infection potentielle : `=Infection sévère`")
+          .setTimestamp()
+          message.channel.send({embed})}
+    if(X > 99){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Morsure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure mortelle`\n\n:nauseated_face: Infection potentielle : `=Infection mortelle`")
+      .setTimestamp()
+      message.channel.send({embed})}
+  }
+}) ;
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 bot.on('message', message => {
@@ -41949,6 +42226,9 @@ bot.on('message', message => {
   }
 });
 
+////////////////////////////////////////////////////////Correction///////////////////////////////////////////////////////////////////////////////////
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -42013,7 +42293,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Les habitations, partie 1 :", "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 5 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Maison cachette`\n\nVotre maison peux s'améliorer, notamment elle possède ses propres points de défense lorsque des zombies attaqueront votre maison !\n\nSi vous possédez par exemple une 'Petite fosse' de 2 points de défense et que 5 zombies tentent d'entrer dans votre maison, seulement 3 resteront en vie et les 2 autres mourront ou seront bloqués !\n\nA savoir que les points de défense des habitations ne sont valables qu'une fois par nuit...\n\nLa suite : `=Habitations 2`").setTimestamp()
+      .addField("Les habitations, partie 1 :" , "Dans la ville, vous aurez une maison qui vous sera confié avec plusieurs fonctionnalités :\n\nVous pourrez stocké 10 objets maximal dans votre coffre\n\nVous pourrez dormir afin d'éviter l'état 'Fatigue'\n\nL'habitation sert aussi principalement à vous cacher lorsque des zombies sont infiltrés en ville !\n\nSi des zombies passent devant chez vous et que vous voulez essayer de rester cacher : `=Maison cachette : [Nombre de zombies]`\n\nVotre maison peux s'améliorer, notamment elle possède ses propres points de défense lorsque des zombies attaqueront votre maison !\n\nSi vous possédez par exemple une 'Petite fosse' de 2 points de défense et que 5 zombies tentent d'entrer dans votre maison, seulement 3 resteront en vie et les 2 autres mourront ou seront bloqués !\n\nA savoir que les points de défense des habitations ne sont valables qu'une fois par nuit...\n\nLa suite : `=Habitations 2`")    .setTimestamp()
     message.channel.send({ embed })
   }
 });
@@ -42037,8 +42317,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   const A = (Math.floor((100) * Math.random()))
-  if (message.content === prefix + "Maison cachette") {
-    if (A < 60) {
+  let cont = message.content.slice(prefix.length).split(" ");
+  const args = cont.slice(1);
+  if (message.content.startsWith(prefix + "Maison cachette")) {
+    let Z = args.slice(2).join(" : ");
+    const X = Z*3
+    if(A < 60-X){
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42048,7 +42332,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 61) {
+    if(A > 61-X){
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42061,31 +42345,6 @@ bot.on('message', message => {
   }
 });
 
-bot.on('message', message => {
-  const A = (Math.floor((100) * Math.random()))
-  if (message.content === prefix + "Cachette") {
-    if (A < 70) {
-      const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(0xff0000)
-        .addField("Cachette :", "Vous faites malheureusement un peu de bruit et les zombies arrivent à l'entendre et même à vous sentir, ils arrivent vers vous, vous avez une action et quelques secondes avant qu'ils ne soient là...")
-        .setImage("https://media1.giphy.com/media/ZwA7zR7PWMiUE/giphy.gif")
-        .setTimestamp()
-      message.channel.send({ embed })
-    }
-    if (A > 71) {
-      const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(0xff0000)
-        .addField("Cachette :", "Vous réussissez à garder votre calme et ne faire aucun bruit, les zombies s'en vont plus loin !")
-        .setImage("https://media1.giphy.com/media/nEuTuI4yvFXA1qSUaD/giphy.gif")
-        .setTimestamp()
-      message.channel.send({ embed })
-    }
-  }
-});
 
 
 
@@ -42625,7 +42884,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField("Aide :", "Vous tentez d'aider le survivant seul ou à plusieurs, mais vous vous faites aussi aggriper par les multiples zombies...\n\n:cold_sweat: Les survivants peuvent tenter de vous aider à votre tour aussi : `=Aide : [Nombre de survivants aidant]`\n\n:skull: En cas d'échec des survivants à vous aider... : `=Dernier espoir`")
+        .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, mais vous vous faites aussi aggriper par les multiples zombies...\n\nVous subissez les même blessures et infections potentielles que le survivant que vous avez essayer d'aidé...")
         .setTimestamp()
       message.channel.send({ embed })
     }
@@ -42638,17 +42897,33 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (X > 61 - A) {
+    if(X >= 61-A & X <= 75-A){
       const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+      .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, et c'est une réussite !\n\nLe survivant subira seulement l'infection potentielle initial mais aucune blessure !")
+      .setTimestamp()
+      message.channel.send({embed})}
+      if(X >= 76-A & X <= 90-A){
+        const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField("Aide :", "Vous tentez d'aider le survivant seul ou à plusieurs, et c'est une réussite !\n\nLe survivant ne prendra aucune blessure ou infection, vous l'avez aidé à temps !")
+        .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, et c'est une réussite !\n\nLe survivant subira seulement la blessure initial mais aucune infection !")
         .setTimestamp()
-      message.channel.send({ embed })
+        message.channel.send({embed})}
+    if(X > 91-A){
+      const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username , message.author.avatarURL)
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(0xff0000)
+   .addField("Aide :" , "Vous tentez d'aider le survivant seul ou à plusieurs, et c'est une réussite !\n\nLe survivant ne subira rien du tous !")
+        .setTimestamp()
+        message.channel.send({ embed })
+      }
     }
-  }
-});
+  });
 
 ////////////////////////////////////////////////////////////////Morsure et infection et hémmoragie////////////////////////////////////////////////////////////////////////////
 
