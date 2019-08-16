@@ -41582,15 +41582,14 @@ bot.on('message', message => {
   const args = cont.slice(1);
   if (message.content.startsWith(prefix + "Cible")) {
     let X = args.slice(1).join(" : ");
-    const Joueurs = (Math.floor((X) * Math.random() + 1))
+    const Joueurs = (Math.floor((X)*Math.random()+1))
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
-      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      +    .addField("Cible :" , "Le groupe de zombie attaquera le survivant [" +Joueurs+ "]...\n\n[C'est à vous lors d'un combat de déterminer qui aura quel numéro]")
- 
+      .addField("Cible :" , "Le groupe de zombie attaquera le survivant [" +Joueurs+ "]...\n\n[C'est à vous lors d'un combat de déterminer qui aura quel numéro]")
       .setTimestamp()
-    message.channel.send({ embed })
+    message.channel.send({embed})
   }
 });
 
