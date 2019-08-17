@@ -41010,7 +41010,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Liste des objets, partie 1 :", "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`").setTimestamp()
+      .addField("Liste des objets, partie 1 :", "`=Affaires de citoyen`\n`=Ailerons de poulet entamés`\n`=Appareil électronique en panne`\n`=Aqua-Splash`\n`=Aqua-splah (démonté)`\n`=Badge de shérif`\n`=Balle`\n`=Balise radius`\n`=Bandage rudimentaire`\n`=Barricades à clouer`\n`=Batteur électrique (démonté)`\n`=Batteur électrique`\n`=Betapropine 5MG périmée`\n`=Bidon d'huile vide`\n`=Biscuit fade`\n`=Bobine de fil de fer`\n`=Bombe pulvérine`\n`=Bombe macabre`\n`=Bombe à eau`\n`=Bombe à eau explosive`\n`=Bon plat fait-maison`\n`=Bonbonne d'eau`\n`=Boule de pâte visqueuse`\n`=Boules quiès`\n`=Boîte d'allumettes`\n`=Boîte de conserve`\n`=Boîte de conserve ouverte`\n`=Boîte de schrödinger`\n\nLa suite : `Horde liste d'objets 2`").setTimestamp()
     message.channel.send({ embed })
   }
 });
@@ -41195,20 +41195,8 @@ bot.on('message', message => {
 
 
 
-      bot.on('message', message => {
-        if (message.content.startsWith(prefix + "Transformation")) {
-        const embed = new Discord.RichEmbed()
-        .setColor(0xff0000)
-        .setAuthor(message.author.username , message.author.avatarURL)
-        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-        .addField("Les transformations :" , "Une fois que votre état d'infection est devenus une `Infection mortelle` si vous gardez cette état encore le lendemain, vous aurez une chance de mourir ou alors de devenir une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour ou alors elle mourra de faim...\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]\n\nPour savoir si vous allez mourir ou devenir une goule : `=Infection total`")    .setTimestamp()
-        message.channel.send({embed})
-        }
-        }) ;
-
         bot.on('message', message => {
-          if (message.content.startsWith(prefix + "Infection total")) {
+          if (message.content.startsWith(prefix + "Infection totale")) {
             const X = (Math.floor((100)*Math.random()))
             const Cible = (Math.floor((4)*Math.random()+1))
             if(X <= 90){
@@ -41216,7 +41204,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField("Infection total :" , "L'infection finis par vous ronger de l'intérieur, vous mourrez lentement...")
+              .addField("Infection totale :" , "L'infection finis par vous ronger de l'intérieur, vous mourrez lentement...")
               .setTimestamp()
               message.channel.send({embed})}
               if(X >= 91){
@@ -41224,7 +41212,7 @@ bot.on('message', message => {
               .setAuthor(message.author.username , message.author.avatarURL)
               .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
               .setColor(0xff0000)
-              .addField("Infection total :" , "L'infection ralentis votre coeur mais vous restez tous de même vivant malgrè les sensations étranges dans votre corps maintenant, vous avez... faim ?")
+              .addField("Infection totale :" , "L'infection ralentis votre coeur mais vous restez tous de même vivant malgrè les sensations étranges dans votre corps maintenant, vous avez... faim ?")
               .setTimestamp()
               message.channel.send({embed})}
                         }
@@ -42255,36 +42243,10 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Les transformations :", "Une fois que votre état d'infection est devenus une `Infection mortelle` si vous gardez cette état encore le lendemain, vous aurez une chance de mourir ou alors de devenir une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour ou alors elle mourra de faim...\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]\n\nPour savoir si vous allez mourir ou devenir une goule : `=Infection total`").setTimestamp()
+      .addField("Les transformations :", "Une fois que votre état d'infection est devenus une `Infection mortelle` si vous gardez cette état encore le lendemain, vous aurez une chance de mourir ou alors de devenir une 'Goule'\n\nUne goule dans ce monde est un humain d'apparence mais qui aura besoin de tuer d'autres humains et de les dévorer, vivant comme mort pour se nourrire...\n\nPour survivre, la goule devra dévorer au moins un humain par jour ou alors elle mourra de faim...\n\nIl est possible de ne pas tuer un survivant et de le dévorer entièrement, seulement une partie mais celui-ci deviendra à son tour aussi infecté et une goule...\n\nSi la ville ne contient plus que des goules, c'est perdus [Cas impossible / extrêmement rare]\n\nPour savoir si vous allez mourir ou devenir une goule : `=Infection totale`").setTimestamp()
     message.channel.send({ embed })
   }
 });
-
-bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Infection total")) {
-    const X = (Math.floor((100) * Math.random()))
-    const Cible = (Math.floor((4) * Math.random() + 1))
-    if (X <= 90) {
-      const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(0xff0000)
-        .addField("Infection total :", "L'infection finis par vous ronger de l'intérieur, vous mourrez lentement...")
-        .setTimestamp()
-      message.channel.send({ embed })
-    }
-    if (X >= 91) {
-      const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(0xff0000)
-        .addField("Infection total :", "L'infection ralentis votre coeur mais vous restez tous de même vivant malgrè les sensations étranges dans votre corps maintenant, vous avez... faim ?")
-        .setTimestamp()
-      message.channel.send({ embed })
-    }
-  }
-});
-
 
 
 bot.on('message', message => {
@@ -42481,7 +42443,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setImage("https://cdn.wccftech.com/wp-content/uploads/2018/03/WWZ1.jpg")
-      .addField("Les états, partie 5 :", "`Hémorragie légère` : Vous avez était blessé et vous saignez de cette blessure qui ne semble pas être à prendre à la légère\n\n`Hémorragie` > `Hémorragie avancée` > `Hémorragie mortelle` : Après l'état 'Hémorragie légère', le lendemain vous aurez l'état 'Hémorragie', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Hémorragie avancée', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Hémorragie mortelle' et si vous n'êtes toujours pas soigné le lendemain vous... mourrez...\n\n`Infection légère` : Vous avez manger de la viande périmé ou vous avez étais mordus par un zombie, il faudra vous soigner rapidement\n\n`Infection` > `Infection avancée` > `Infection mortelle` : Après l'état 'Infection légère', le lendemain vous aurez l'état 'Infection', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Infection avancée', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Infection mortelle' et si vous n'êtes toujours pas soigné le lendemain vous... mourrez...\n\nLa suite : `=Horde états 6`").setTimestamp()
+      .addField("Les états, partie 5 :", "`Infection` > `Infection avancée` > `Infection mortelle` : Après l'état 'Infection', le lendemain vous aurez l'état 'Infection avancée', si vous n'êtes pas soigné le lendemain vous aurez l'état 'Infection mortelle` et si vous n'êtes toujours pas soigné le lendemain, vous devrez faire : `=Infection totale`\n\nLa suite : `=Horde états 6`").setTimestamp()
     message.channel.send({ embed })
   }
 });
@@ -57300,7 +57262,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille abri anti-atomique :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" + Balle + " balle(s)`")
+        .addField(":flashlight: Fouille petite maison :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" + Balle + " balle(s)`")
         .setTimestamp()
       message.channel.send({ embed })
     }
@@ -58262,15 +58224,6 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (X >= 25 & X <= 30) {
-      const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-        .setColor(0xff0000)
-        .addField(":flashlight: Fouille tranchée aménagée :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `1 Revolver")
-        .setTimestamp()
-      message.channel.send({ embed })
-    }
     if (X >= 31 & X <= 32) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
@@ -58312,7 +58265,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(0xff0000)
-        .addField(":flashlight: Fouille abri anti-atomique :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" + Balle + " balle(s)`")
+        .addField(":flashlight: Fouille tranchée aménagée :", ":flashlight: Sur les lieux, après quelques recherches vous trouvez :\n\n:moneybag: `" + Balle + " balle(s)`")
         .setTimestamp()
       message.channel.send({ embed })
     }
@@ -61009,7 +60962,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Courroie :", "Une courroie... Ca doit sûrement servir à quelque chose\n\nPour assembler cet objet et obtenir `Tronçonneuse` vous devrez être à l'atelier et utiliser :\n\n`1 Tronçonneuse (démonté)`\n`1 Moteur`\n`1 Courroie`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n\nL'assemblage prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Devastator` vous devrez être à l'atelier et utiliser :\n\n`1 Devastator (démonté)`\n`1 Courroie`\n`1 Poignée de vis et écrous\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
+      .addField("Courroie :", "Une courroie... Ca doit sûrement servir à quelque chose\n\nPour assembler cet objet et obtenir `Tronçonneuse` vous devrez être à l'atelier et utiliser :\n\n`1 Tronçonneuse (démonté)`\n`1 Moteur`\n`1 Courroie`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n\nL'assemblage prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Devastator` vous devrez être à l'atelier et utiliser :\n\n`1 Devastator (démonté)`\n`1 Courroie`\n`1 Poignée de vis et écrous`\n\nL'assemblage prendra 15 minutes à sa réalisation ainsi que 1 point d'action")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -61585,7 +61538,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Gros chat mignon :", "C'est mignon, ça fait joli chez soi et ça sait à peu près se battre contre un zombie\n\nEt puis, si vous avez faim...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Steak appétissant'")
+      .addField("Gros chat mignon :", "C'est mignon, ça fait joli chez soi et ça sait à peu près se battre contre un zombie\n\nEt puis, si vous avez faim...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Steak appétissant`")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -63004,7 +62957,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Planche tordue :", "Une planche de bois complètement moisie mais encore à peu près solide...\n\nLe bois est utilisé pour la construction de bâtiments en ville (ramenez-le dans la Section Banque)\n\nPour transformer cet objet et obtenir `Poutre rafistolée` vous devrez être à l'atelier et cela prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Plaque de bois solide` vous devrez être à l'atelier et utiliser :\n\n`1 Morceau de caisse`\n`1 Planche tordue`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Kit de bricolage` vous devrez être à l'atelier et utiliser :\n\n`1 Outils en vrac`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 1 Planche tordue`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
+      .addField("Planche tordue :", "Une planche de bois complètement moisie mais encore à peu près solide...\n\nLe bois est utilisé pour la construction de bâtiments en ville (ramenez-le dans la Section Banque)\n\nPour transformer cet objet et obtenir `Poutre rafistolée` vous devrez être à l'atelier et cela prendra 30 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Plaque de bois solide` vous devrez être à l'atelier et utiliser :\n\n`1 Morceau de caisse`\n`1 Planche tordue`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action\n\nPour assembler cet objet et obtenir `Kit de bricolage` vous devrez être à l'atelier et utiliser :\n\n`1 Outils en vrac`\n`1 Poignée de vis et écrous`\n`1 Rustine`\n`1 Planche tordue`\n\nL'assemblage prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -63250,7 +63203,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Poule :", "Bon, il n'y a plus qu'à trouver un boucher\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Viande indéfinissable'")
+      .addField("Poule :", "Bon, il n'y a plus qu'à trouver un boucher\n\nAccessoirement, ça peut aussi se lancer sur un zombie...\n\nVous pouvez tuer cet animal à la boucherie afin d'obtenir `2 Viande indéfinissable`")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -63697,12 +63650,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === prefix + "Scie à métaux abimée") {
+  if (message.content === prefix + "Scie à métaux abîmée") {
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Scie à métaux abimée :", "Une scie qui pourrait être pratique, si elle était rafistolée\n\nCet objet n'est pas réparable à partir de l'objet `Brico'facile` mais à partir de :\n\n`1 Poignée de vis et écrous`\n`1 Rustine`\n\nLa réparation prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
+      .addField("Scie à métaux abîmée :", "Une scie qui pourrait être pratique, si elle était rafistolée\n\nCet objet n'est pas réparable à partir de l'objet `Brico'facile` mais à partir de :\n\n`1 Poignée de vis et écrous`\n`1 Rustine`\n\nLa réparation prendra 10 minutes à sa réalisation ainsi que 1 point d'action")
       .setTimestamp()
     message.channel.send({ embed })
   }
@@ -64534,7 +64487,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(0xff0000)
-      .addField("Porte à piston :", "Permet de fermer automatiquement la porte à 23h30\n\nGrâce à un puissant système de pistons, ce système ferme automatiquement la porte à 23:30 tous les soirs et bloque son ouverture jusqu'à l'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`3 Structures métalliques`\n`4 Poignée de vis et écrous`\n`1 Tube de cuivre`\n\n:shield: Points de défense : 10\n\n:timer: Le temps de construction est de 36 minutes\n\n:hammer: Défense possible à construire qu'une seul fois")
+      .addField("Porte à piston :", "Permet de fermer automatiquement la porte à 23h30\n\nGrâce à un puissant système de pistons, ce système ferme automatiquement la porte à 22:30 tous les soirs et bloque son ouverture jusqu'à l'attaque\n\n:hammer_pick: Matériaux nécessaires :\n\n`10 Planche tordue`\n`3 Structures métalliques`\n`4 Poignée de vis et écrous`\n`1 Tube de cuivre`\n\n:shield: Points de défense : 10\n\n:timer: Le temps de construction est de 36 minutes\n\n:hammer: Défense possible à construire qu'une seul fois")
       .setTimestamp()
     message.channel.send({ embed })
   }
