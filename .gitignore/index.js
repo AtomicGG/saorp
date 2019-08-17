@@ -42758,7 +42758,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 61 - Z & A < 70 - Z) {
+    if (A > 61 - Z & A < 80 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42767,7 +42767,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 71 - Z & A < 80 - Z) {
+    if (A > 81 - Z & A < 100 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42776,7 +42776,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 81 - Z & A < 90 - Z) {
+    if (A > 101 - Z & A < 110 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42785,7 +42785,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 91 - Z & A < 95 - Z) {
+    if (A > 111 - Z & A < 120 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42794,7 +42794,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 96 - Z & A < 100 - Z) {
+    if (A > 121 - Z & A < 130 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42803,7 +42803,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 101 - Z & A < 120 - Z) {
+    if (A > 131 - Z & A < 140 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42812,7 +42812,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 121 - Z & A < 140 - Z) {
+    if (A > 141 - Z & A < 145 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42821,7 +42821,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 141 - Z) {
+    if (A > 146 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
