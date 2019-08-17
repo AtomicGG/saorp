@@ -42740,7 +42740,7 @@ bot.on('message', message => {
     const A = (Math.floor((100) * Math.random() + Z))
     const X = (Math.floor((Z / 10) * Math.random() + 1))
     const Survivants = (Math.floor((ZZ / 6) * Math.random() + 1))
-    if (A < 30 - Z) {
+    if (A < 20 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42749,7 +42749,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 31 - Z & A < 60 - Z) {
+    if (A > 21 - Z & A < 40 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42758,7 +42758,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 61 - Z & A < 80 - Z) {
+    if (A > 41 - Z & A < 80 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
