@@ -41744,7 +41744,7 @@ bot.on('message', message => {
     .addField("Griffure :" , "Vous ratez votre griffure de peu sur le survivant...")
     .setTimestamp()
     message.channel.send({embed})}
-    if(A > 51 & A < 85){
+    if(X > 51 & X < 85){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -41752,7 +41752,7 @@ bot.on('message', message => {
       .addField("Griffure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure légère`")
       .setTimestamp()
       message.channel.send({embed})}
-      if(A > 86 & A < 95){
+      if(X > 86 & X < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -41782,7 +41782,7 @@ bot.on('message', message => {
     .addField("Morsure :" , "Vous ratez votre morsure de peu sur le survivant...")
     .setTimestamp()
     message.channel.send({embed})}
-    if(A > 76 & A < 85){
+    if(X > 76 & X < 85){
       const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username , message.author.avatarURL)
       .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -41790,7 +41790,7 @@ bot.on('message', message => {
       .addField("Morsure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure légère`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
       .setTimestamp()
       message.channel.send({embed})}
-      if(A > 86 & A < 95){
+      if(X > 86 & X < 95){
         const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username , message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -41798,7 +41798,7 @@ bot.on('message', message => {
         .addField("Morsure :" , "Le survivant sur lequel vous effectuez votre griffure obtient une `Blessure`\n\n:nauseated_face: Infection potentielle : `=Infection légère`")
         .setTimestamp()
         message.channel.send({embed})}
-        if(A > 96 & A < 98){
+        if(X > 96 & X < 98){
           const embed = new Discord.RichEmbed()
           .setAuthor(message.author.username , message.author.avatarURL)
           .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
