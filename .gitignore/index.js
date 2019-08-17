@@ -42637,7 +42637,7 @@ bot.on('message', message => {
 //////////////////////////////////////////////////////////////Vol Horde//////////////////////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Vol")) {
+  if (message.content === prefix + "Vol") {
     const embed = new Discord.RichEmbed()
       .setColor(0xff0000)
       .setAuthor(message.author.username, message.author.avatarURL)
@@ -42654,7 +42654,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100) * Math.random()))
   const X = (Math.floor((2) * Math.random() + 1))
-  if (message.content.startsWith(prefix + "Voler le survivant")) {
+  if (message.content === prefix + "Voler le survivant") {
     if (A < 40) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
@@ -42691,7 +42691,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   const A = (Math.floor((100) * Math.random()))
   const X = (Math.floor((3) * Math.random() + 1))
-  if (message.content.startsWith(prefix + "Voler le survivant [Voleur]")) {
+  if (message.content === prefix + "Voler le survivant [Voleur]") {
     if (A < 20) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
