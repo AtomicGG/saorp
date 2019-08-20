@@ -3448,9 +3448,9 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Les mariage :", "Le mariage est l'union sacré de deux personne, pour se marié il faut qu'un dirigeant fasse l'union aux temple.\n\n" +
+      .addField("Les mariages :", "Le mariage est l'union sacré de deux personnes. Pour se marier, il faut qu'un dirigeant fasse l'union au Temple.\n\n" +
         "Un couple marié se partage leur inventaire. Il vous faudra bien faire attention. \n\n" +
-        "Si un des conjoint meurt. L'inventaire reviens donc aux conjoint encore en vie.")
+        "Si un des conjoint meurt, l'inventaire revient donc au conjoint encore en vie.")
       .setImage("https://i0.wp.com/s-media-cache-ak0.pinimg.com/736x/f0/43/68/f0436863981bbbae5fc257e2490bd39f--sword-art-online-asuna-kirito-asuna.jpg")
       .setTimestamp()
     message.channel.send({ embed })
@@ -27628,7 +27628,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField("Ciel dégagé :", "Aujourd'hui, la météo est un ciel dégagé sans aucuns nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !\n\nAucun bonus/malus aujourd'hui !")
+        .addField("Ciel dégagé :", "Aujourd'hui, la météo est un ciel dégagé sans aucun nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !\n\nAucun bonus/malus aujourd'hui !")
         .setImage("https://www.infoclimat.fr/photolive/photos/2015-09/30572217920151847.jpg")
         .setTimestamp()
       message.channel.send({ embed })
@@ -28231,7 +28231,7 @@ bot.on('message', message => {
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
         .setColor(3447003)
-        .addField(":crossed_swords: Bousier colossal :", ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. Vous êtes paralysés même si vous ne prenez aucuns dégâts.")
+        .addField(":crossed_swords: Bousier colossal :", ":crossed_swords: Le Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. Vous êtes paralysés même si vous ne prenez aucun dégâts.")
         .setTimestamp()
       message.channel.send({ embed })
     }
@@ -39619,7 +39619,7 @@ bot.on('message', message => {
       .addField("Poudre :", "C'est une poudre que vous trouvez sur les néoridas dans la forêt du palier 2 !")
       .addField("Prix d'achat :", "X cols")
       .addField("Prix de revente :", "32 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :", "Aucuns crafts pour le moment")
+      .addField("Permet de réaliser le ou les crafts suivants :", "Aucun crafts pour le moment")
       .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587173598658603/poudre_de_poison.jpg")
       .setTimestamp()
     message.channel.send({ embed })
@@ -40062,7 +40062,7 @@ bot.on('message', message => {
       .addField("Lierre parfait :", "C'est une herbe basique que vous trouvez en cueillant dans les forêts  du palier 2 !")
       .addField("Prix d'achat :", "112 cols")
       .addField("Prix de revente :", "28 cols")
-      .addField("Permet de réaliser le ou les crafts suivants :", "Aucuns pour le moment")
+      .addField("Permet de réaliser le ou les crafts suivants :", "Aucun pour le moment")
       .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
       .setTimestamp()
     message.channel.send({ embed })
