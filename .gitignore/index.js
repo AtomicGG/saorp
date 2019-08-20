@@ -42776,7 +42776,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 101 - Z & A < 110 - Z) {
+    if (A > 103 - Z & A < 110 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
