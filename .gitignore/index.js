@@ -42758,7 +42758,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 41 - Z & A < 80 - Z) {
+    if (A > 41 - Z & A < 83 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42767,7 +42767,7 @@ bot.on('message', message => {
         .setTimestamp()
       message.channel.send({ embed })
     }
-    if (A > 81 - Z & A < 100 - Z) {
+    if (A > 84 - Z & A < 102 - Z) {
       const embed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.avatarURL)
         .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
