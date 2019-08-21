@@ -112,7 +112,7 @@ bot.on('message', message => {
         "Sword Art Online est le premier MMORPG à utiliser ce système.\n\n" +
         "Mais voilà que le jour du lancement, 10 000 personnes se retrouvent piégées dans ce monde par son créateur.\n\n" +
         "Le seul moyen d'en sortir est de finir le jeu.\n\n" +
-        "Mais sortir de ce monde virtuel ne sera pas aussi facile que prévu. En effet, si un joueur meure au cours de son aventure, il meurt également dans le monde réel.\n\n" +
+        "Mais sortir de ce monde virtuel ne sera pas aussi facile que prévu. En effet, si un joueur meurt au cours de son aventure, il meurt également dans le monde réel.\n\n" +
         "Vous êtes l'un de ces malchanceux joueurs qui ont attendu et acheté le jeu SAO, mais qui n'auraient jamais dû y rentrer...\n\n" +
         "Vous l'aurez compris, vous êtes donc bloqué dans l'Aincrad jusqu'à que vous réussissiez à vaincre la forteresse volante, mais y survivrez-vous seulement ?")
       .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
@@ -130,7 +130,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":bust_in_silhouette: Création de votre personnage :", ":bust_in_silhouette: Pour créer votre personnage, écrivez :\n\n" +
-        "`=Fiche de personnage`\n\nIl faudra remplir la fiche de votre personnage et une fois que vous avez fini, copiez la et collez la dans le salon 'Fiche à valider' " +
+        "`=Fiche de personnage`\n\nIl faudra remplir la fiche de votre personnage et une fois que vous aurez fini, copiez la et collez la dans le salon 'Fiche à valider' " +
         "en attendant qu'un membre du staff vous valide et vous aide !\n\n:bust_in_silhouette: Une fois votre personnage créé, un membre du staff vous créera un salon " +
         "classé par ordre alphabétique sur ce discord : https://discord.gg/ByaFWzc\n\n" +
         "Ce salon permettra de noter toutes les informations concernant votre personnage durant votre aventure !\n\n" +
@@ -215,9 +215,9 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Lorsque vous créez votre personnage, vous devez choisir une des classes suivantes :\n\n" +
-        "[Combattant] : Possède beaucoup de HP, pas mal de dégâts mais peu d'armure !\n" +
-        "[Assassin] : Possède beaucoup de dégâts, pas mal d'armure mais peu de HP !\n" +
-        "[Paladin] : Possède beaucoup d'armure, pas mal de dégâts mais peu de HP !\n" +
+        "[Combattant] : Possède beaucoup d'HP, pas mal de dégâts mais peu d'armure !\n" +
+        "[Assassin] : Possède beaucoup de dégâts, pas mal d'armure mais peu d'HP !\n" +
+        "[Paladin] : Possède beaucoup d'armure, pas mal de dégâts mais peu d'HP !\n" +
         "[Vindicateur] : Possède beaucoup d'HP, pas mal d'armure mais peu de dégâts !\n" +
         "[Chevalier] : Possède beaucoup d'armure, pas mal d'HP mais peu de dégâts !\n" +
         "[Berserker] : Possède beaucoup de dégâts, pas mal d'HP mais peu d'armure !\n\n" +
@@ -439,7 +439,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Les armes :", "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une main ou à deux mains. Chaque arme améliore un coup ou une action défensive !\n\n" +
+      .addField("Les armes :", "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une ou deux mains. Chaque arme améliore un ou des coups ou actions défensives !\n\n" +
         "Vous saurez quelle arme permet d'améliorer quel coup ou action défensive en affichant les infos sur celle-ci en écrivant : `=[Nom de l'arme]`\n\n" +
         "Lorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste suivante :\n\n" +
         "Les épées\nLes dagues\nLes glaives\nLes masses\nLes haches\nLes rapières\nLes cimeterres\nLes katanas\nLes boucliers\n\n" +
@@ -3448,9 +3448,9 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Les mariages :", "Le mariage est l'union sacré de deux personnes. Pour se marier, il faut qu'un dirigeant fasse l'union au Temple.\n\n" +
-        "Un couple marié se partage leur inventaire. Il vous faudra bien faire attention. \n\n" +
-        "Si un des conjoint meurt, l'inventaire revient donc au conjoint encore en vie.")
+      .addField("Les mariages :", "Le mariage est l'union sacrée de deux personnes. Pour se marier, il faut qu'un dirigeant fasse l'union au Temple.\n\n" +
+        "Un couple marié se partage leurs inventaires. Il vous faudra bien faire attention. \n\n" +
+        "Si un des conjoints meurt, l'inventaire revient donc au conjoint encore en vie.")
       .setImage("https://i0.wp.com/s-media-cache-ak0.pinimg.com/736x/f0/43/68/f0436863981bbbae5fc257e2490bd39f--sword-art-online-asuna-kirito-asuna.jpg")
       .setTimestamp()
     message.channel.send({ embed })
