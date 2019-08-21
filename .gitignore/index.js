@@ -42727,6 +42727,64 @@ bot.on('message', message => {
     }
   }
 });
+/////////////////////////////////////////////////////////////////////////////////////Tempête//////////////////////////////////////////////////////////////
+
+
+bot.on('message', message => {
+  const A = (Math.floor((100) * Math.random() + 1))
+  if (message.content.startsWith(prefix + "Tempête")) {
+    if (A < 25) {
+      const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username, message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Tempête :", "La tempête de cette nuit est assez calme, seulement du vent mais qui n'est pas dangereux, recouvrant peu à peu les lieux de sable")
+    
+        .setTimestamp()
+      message.channel.send({ embed })
+    }
+    if (A > 26 & A < 50) {
+      const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username, message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Tempête :", "La tempête de cette nuit est assez violente, quelques petits objets volent et pas mal de sable s'envole en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure`")
+      
+        .setTimestamp()
+      message.channel.send({ embed })
+    }
+     if (A > 51 & A < 75) {
+      const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username, message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Tempête :", "La tempête de cette nuit est violente, des panneaux de signalisation ainsi que des grosses pierres arrivent à s'envoler en l'air\n\nTous les survivants dehors à l'extérieur prennent une `Blessure sévère`")
+    
+        .setTimestamp()
+      message.channel.send({ embed })
+    }
+     if (A > 76 & A < 90) {
+      const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username, message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Tempête :", "La tempête de cette nuit est très violente, des meubles ainsi que des portes de maison et des débris de verre se font emporté par le vent\n\nTous les survivants dehors à l'extérieur prennent une `Blessure mortelle`")
+        
+        .setTimestamp()
+      message.channel.send({ embed })
+    }
+    if (A > 91) {
+      const embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username, message.author.avatarURL)
+        .setFooter("『Hordes [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+        .setColor(0xff0000)
+        .addField("Tempête :", "La tempête de cette nuit est complètement meurtrière, des voitures ainsi que des camions se font soulevés par ce vent qui vous pique limite les yeux\n\nTous les survivants dehors à l'extérieur meurent...")
+
+        .setTimestamp()
+      message.channel.send({ embed })
+    }
+  }
+});
 
 
 ///////////////////////////////////////////////////////////////Attaque d'un zombie////////////////////////////////////////////////////////////////////////////
