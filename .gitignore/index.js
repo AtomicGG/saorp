@@ -879,7 +879,7 @@ bot.on('message', message => {
     let pv = 40
     let courbeHaute = 0
     for(let i = 1; i <= niveauInt; i++) {
-      if (niveauInt < 20) {/*
+      if (niveauInt < 20) {
         if(niveauInt == 2) {
           courbeHaute = courbeHaute + 1
         }
@@ -891,7 +891,7 @@ bot.on('message', message => {
         }
         if(niveauInt > 9) {
           courbeHaute = courbeHaute + 5 
-        }*/
+        }
       } else {
         courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) * ((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
       }
@@ -901,7 +901,7 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Points de Vie :", pv)
+      .addField("Points de Vie :", courbeHaute)
       .addBlankField(true)
       .addField("Attaque : ", "Niveau 11 ")
       .addBlankField(true)
