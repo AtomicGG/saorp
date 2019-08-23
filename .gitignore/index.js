@@ -895,6 +895,7 @@ bot.on('message', message => {
 });
 
 function calculCourbeHaute(niveau) {
+  let courbeHaute = 0
   for(let i = 1; i <= niveauInt; i++) {
     if (i < 20) {
       if(i == 2) {
@@ -914,6 +915,7 @@ function calculCourbeHaute(niveau) {
       courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
     }
   }
+  return courbeHaute;
 }
 
 bot.on('message', message => {
