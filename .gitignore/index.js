@@ -230,7 +230,9 @@ bot.on('message', message => {
         "`=Vindicateur : [Votre armure]`\n" +
         "`=Berserker : [Vos dégâts]`\n\n" +
         "Une classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n" +
-        "`=Niveaux`")
+        "`=Niveaux`\n\n" +
+        "Un calculateur pour les statistiques est également disponible, avec la commande suivante :\n\n" +
+        "`=Calculateur des statistiques d'un [votre classe] : [votre niveau]`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
     message.channel.send({ embed })
@@ -873,7 +875,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Calcul des bonus d'un combattant")) {
+  if (message.content.startsWith(prefix + "Calculateur des bonus d'un combattant")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
@@ -889,9 +891,134 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Les statistiques de base d'un combattant de niveau " + niveauInt + " :", "\n**Points de vie :** " + pv + "\n" +
-                                                                                          "\n**Attaque :** " + atk + "\n" + 
-                                                                                          "\n**Défense :** " + def)
+      .addField("Les statistiques de base d'un combattant de niveau " + niveauInt + " :", "**Points de vie :** " + pv + "\n\n" +
+                                                                                          "**Attaque :** " + atk + "\n\n" + 
+                                                                                          "**Défense :** " + def)
+      .setTimestamp()
+    message.channel.send({ embed })
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Calculateur des bonus d'un assassin")) {
+    let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
+    let niveauInt = niveau - 0
+    let pv = 40
+    let atk = 6
+    let def = 0
+    let courbeHaute = calculCourbe(niveauInt).courbeHaute
+    let courbeMoyenne = calculCourbe(niveauInt).courbeMoyenne
+    let courbeBasse = calculCourbe(niveauInt).courbeBasse
+    pv = pv + (courbeBasse * 5)
+    atk = atk + (courbeHaute * 1)
+    def = def + (courbeMoyenne / 2)
+    const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Les statistiques de base d'un assassin de niveau " + niveauInt + " :", "**Points de vie :** " + pv + "\n\n" +
+                                                                                          "**Attaque :** " + atk + "\n\n" + 
+                                                                                          "**Défense :** " + def)
+      .setTimestamp()
+    message.channel.send({ embed })
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Calculateur des bonus d'un paladin")) {
+    let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
+    let niveauInt = niveau - 0
+    let pv = 40
+    let atk = 6
+    let def = 0
+    let courbeHaute = calculCourbe(niveauInt).courbeHaute
+    let courbeMoyenne = calculCourbe(niveauInt).courbeMoyenne
+    let courbeBasse = calculCourbe(niveauInt).courbeBasse
+    pv = pv + (courbeBasse * 5)
+    atk = atk + (courbeMoyenne * 1)
+    def = def + (courbeHaute / 2)
+    const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Les statistiques de base d'un paladin de niveau " + niveauInt + " :", "**Points de vie :** " + pv + "\n\n" +
+                                                                                          "**Attaque :** " + atk + "\n\n" + 
+                                                                                          "**Défense :** " + def)
+      .setTimestamp()
+    message.channel.send({ embed })
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Calculateur des bonus d'un vindicateur")) {
+    let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
+    let niveauInt = niveau - 0
+    let pv = 40
+    let atk = 6
+    let def = 0
+    let courbeHaute = calculCourbe(niveauInt).courbeHaute
+    let courbeMoyenne = calculCourbe(niveauInt).courbeMoyenne
+    let courbeBasse = calculCourbe(niveauInt).courbeBasse
+    pv = pv + (courbeHaute * 5)
+    atk = atk + (courbeBasse * 1)
+    def = def + (courbeMoyenne / 2)
+    const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Les statistiques de base d'un vindicateur de niveau " + niveauInt + " :", "**Points de vie :** " + pv + "\n\n" +
+                                                                                          "**Attaque :** " + atk + "\n\n" + 
+                                                                                          "**Défense :** " + def)
+      .setTimestamp()
+    message.channel.send({ embed })
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Calculateur des bonus d'un chevalier")) {
+    let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
+    let niveauInt = niveau - 0
+    let pv = 40
+    let atk = 6
+    let def = 0
+    let courbeHaute = calculCourbe(niveauInt).courbeHaute
+    let courbeMoyenne = calculCourbe(niveauInt).courbeMoyenne
+    let courbeBasse = calculCourbe(niveauInt).courbeBasse
+    pv = pv + (courbeMoyenne * 5)
+    atk = atk + (courbeBasse * 1)
+    def = def + (courbeHaute / 2)
+    const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Les statistiques de base d'un chevalier de niveau " + niveauInt + " :", "**Points de vie :** " + pv + "\n\n" +
+                                                                                          "**Attaque :** " + atk + "\n\n" + 
+                                                                                          "**Défense :** " + def)
+      .setTimestamp()
+    message.channel.send({ embed })
+  }
+});
+
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Calculateur des bonus d'un berserker")) {
+    let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
+    let niveauInt = niveau - 0
+    let pv = 40
+    let atk = 6
+    let def = 0
+    let courbeHaute = calculCourbe(niveauInt).courbeHaute
+    let courbeMoyenne = calculCourbe(niveauInt).courbeMoyenne
+    let courbeBasse = calculCourbe(niveauInt).courbeBasse
+    pv = pv + (courbeMoyenne * 5)
+    atk = atk + (courbeHaute * 1)
+    def = def + (courbeBasse / 2)
+    const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Les statistiques de base d'un berserker de niveau " + niveauInt + " :", "**Points de vie :** " + pv + "\n\n" +
+                                                                                          "**Attaque :** " + atk + "\n\n" + 
+                                                                                          "**Défense :** " + def)
       .setTimestamp()
     message.channel.send({ embed })
   }
