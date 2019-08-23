@@ -889,9 +889,9 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Les statistiques de base d'un combattant de niveau " + niveauInt + " :\n", "**Points de vie :** " + pv + "\n\n" +
-                                                                                          "**Attaque :** " + atk + "\n\n" + 
-                                                                                          "**Défense :** " + def)
+      .addField("Les statistiques de base d'un combattant de niveau " + niveauInt + " :", "\n**Points de vie :** " + pv + "\n" +
+                                                                                          "\n**Attaque :** " + atk + "\n" + 
+                                                                                          "\n**Défense :** " + def)
       .setTimestamp()
     message.channel.send({ embed })
   }
