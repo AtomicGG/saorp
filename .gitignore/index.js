@@ -878,7 +878,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Calculateur des bonus d'un combattant")) {
+  if (message.content.startsWith(prefix + "Calculateur des statistiques d'un combattant")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
@@ -903,7 +903,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Calculateur des bonus d'un assassin")) {
+  if (message.content.startsWith(prefix + "Calculateur des statistiques d'un assassin")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
@@ -928,7 +928,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Calculateur des bonus d'un paladin")) {
+  if (message.content.startsWith(prefix + "Calculateur des statistiques d'un paladin")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
@@ -953,7 +953,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Calculateur des bonus d'un vindicateur")) {
+  if (message.content.startsWith(prefix + "Calculateur des statistiques d'un vindicateur")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
@@ -978,7 +978,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Calculateur des bonus d'un chevalier")) {
+  if (message.content.startsWith(prefix + "Calculateur des statistiques d'un chevalier")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
@@ -1003,7 +1003,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content.startsWith(prefix + "Calculateur des bonus d'un berserker")) {
+  if (message.content.startsWith(prefix + "Calculateur des statistiques d'un berserker")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
