@@ -877,7 +877,7 @@ bot.on('message', message => {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
-    let courbeHaute = calculCourbeHaute(niveauInt)
+    let courbeHaute = calculCourbe(niveauInt).courbeHaute
     pv = 40 + (courbeHaute * 5)
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
@@ -894,9 +894,11 @@ bot.on('message', message => {
   }
 });
 
-function calculCourbeHaute(niveau) {
+function calculCourbe(niveau) {
   let courbeHaute = 0
-  for(let i = 1; i <= niveau; i++) {
+  let courbeMoyenne = 0
+  let courbeBasse = 0
+  for(let i = 1; i <= niveau; i++) {/*
     if (i < 20) {
       if(i == 2) {
         courbeHaute = courbeHaute + 1
@@ -910,12 +912,13 @@ function calculCourbeHaute(niveau) {
       if(i > 9) {
         courbeHaute = courbeHaute + 5 
       }
+      if(i >= 5 && i <=)
     } 
-    if(i >= 20) {
+    if(i >= 20) {*/
       courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
-    }
+    /*}*/
   }
-  return courbeHaute;
+  return {courbeHaute, courbeMoyenne, courbeBasse};
 }
 
 bot.on('message', message => {
