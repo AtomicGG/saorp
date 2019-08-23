@@ -907,9 +907,11 @@ function calculCourbe(niveau) {
       }
       if(i == 3 || i == 4) {
         courbeHaute = courbeHaute + 2
+        courbeMoyenne = courbeMoyenne + 1
       }
       if(i >= 5 && i <= 9) {
         courbeHaute = courbeHaute + 3
+        courbeMoyenne = courbeMoyenne + 2
       }
       if(i > 9) {
         courbeHaute = courbeHaute + 5 
@@ -919,12 +921,17 @@ function calculCourbe(niveau) {
       }
       if(i > 14) {
         courbeBasse = courbeBasse + 3
+        courbeMoyenne = courbeMoyenne + 4
+      }
+      if(i >= 10 && i <= 14){
+        courbeMoyenne = courbeMoyenne + 3
       }
     } 
     if(i >= 20) {
       courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
+      courbeBasse = courbeBasse + Math.floor((- 5 + Math.sqrt(25 + 40 * i)) / 10) * Math.floor((- 5 + Math.sqrt(25 + 40 * i)) / 10) / 2 + Math.floor((- 5 + Math.sqrt(25 + 40 * i)) / 10) / 2
+      courbeMoyenne = courbeMoyenne + Math.floor((Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3) + Math.floor((- 5 + Math.sqrt(25 + 40 * i)) / 10) * Math.floor((- 5 + Math.sqrt(25 + 40 * i)) / 10) / 2 + Math.floor((- 5 + Math.sqrt(25 + 40 * i)) / 10) / 2) / 2)
     }
-    courbeMoyenne = courbeMoyenne + ((courbeHaute + courbeBasse) / 2)
   }
   return {courbeHaute, courbeMoyenne, courbeBasse};
 }
