@@ -877,19 +877,23 @@ bot.on('message', message => {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
+    let atk = 6
+    let def = 0
     let courbeHaute = calculCourbe(niveauInt).courbeHaute
     let courbeMoyenne = calculCourbe(niveauInt).courbeMoyenne
     let courbeBasse = calculCourbe(niveauInt).courbeBasse
-    pv = 40 + (courbeHaute * 5)
+    pv = pv + (courbeHaute * 5)
+    atk = atk + (courbeMoyenne * 1)
+    def = def + (courbeBasse / 2)
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Points de Vie :", courbeHaute)
+      .addField("Points de Vie :", pv)
       .addBlankField(true)
-      .addField("Attaque : ", courbeMoyenne)
+      .addField("Attaque : ", atk)
       .addBlankField(true)
-      .addField("Défense : ", courbeBasse)
+      .addField("Défense : ", def)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
     message.channel.send({ embed })
