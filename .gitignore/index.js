@@ -221,6 +221,7 @@ bot.on('message', message => {
         "[Vindicateur] : Possède beaucoup d'HP, pas mal d'armure mais peu de dégâts !\n" +
         "[Chevalier] : Possède beaucoup d'armure, pas mal d'HP mais peu de dégâts !\n" +
         "[Berserker] : Possède beaucoup de dégâts, pas mal d'HP mais peu d'armure !")
+        .addBlankField(true)
       .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Ces classes vous permettent de déclencher, une fois par jour, une compétence unique et très puissante !\n\n" +
         "Pour déclencher la compétence selon votre classe :\n\n" +
         "`=Combattant : [Vos dégâts]`\n" +
@@ -229,8 +230,10 @@ bot.on('message', message => {
         "`=Paladin : [Votre armure]`\n" +
         "`=Vindicateur : [Votre armure]`\n" +
         "`=Berserker : [Vos dégâts]`")
+        .addBlankField(true)
       .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Une classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n" +
         "`=Niveaux`")
+        .addBlankField(true)
       .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Un calculateur pour les statistiques est également disponible, avec la commande suivante :\n\n" +
         "`=Calculateur des statistiques d'un [votre classe] : [votre niveau]`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
