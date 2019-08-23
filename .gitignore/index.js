@@ -878,6 +878,8 @@ bot.on('message', message => {
     let niveauInt = niveau - 0
     let pv = 40
     let courbeHaute = calculCourbe(niveauInt).courbeHaute
+    let courbeMoyenne = calculCourbe(niveauInt).courbeMoyenne
+    let courbeBasse = calculCourbe(niveauInt).courbeBasse
     pv = 40 + (courbeHaute * 5)
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
