@@ -896,7 +896,7 @@ bot.on('message', message => {
 
 function calculCourbeHaute(niveau) {
   let courbeHaute = 0
-  for(let i = 1; i <= niveauInt; i++) {
+  for(let i = 1; i <= niveau; i++) {
     if (i < 20) {
       if(i == 2) {
         courbeHaute = courbeHaute + 1
