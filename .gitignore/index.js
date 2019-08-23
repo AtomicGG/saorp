@@ -882,7 +882,7 @@ bot.on('message', message => {
         if(niveauInt == 2) {
           courbeHaute = courbeHaute + 1 * 5
         }
-        if(niveauInt == 3 && niveauInt == 4) {
+        if(niveauInt == 3 || niveauInt == 4) {
           courbeHaute = courbeHaute + 2 * 5
         }
         if(niveauInt >= 5 && niveauInt <= 9) {
@@ -892,7 +892,7 @@ bot.on('message', message => {
           courbeHaute = courbeHaute + 5 * 5
         }
       } else {
-        courbeHaute = courbeHautepv + Math.floor(Math.pow((Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) * ((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3) * 5
+        courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) * ((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3) * 5
       }
     }
     const embed = new Discord.RichEmbed()
