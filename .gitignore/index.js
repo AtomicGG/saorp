@@ -885,9 +885,9 @@ bot.on('message', message => {
       .setColor(3447003)
       .addField("Points de Vie :", courbeHaute)
       .addBlankField(true)
-      .addField("Attaque : ", "Niveau 11 ")
+      .addField("Attaque : ", courbeMoyenne)
       .addBlankField(true)
-      .addField("Défense : ", " Nivenvesnn")
+      .addField("Défense : ", courbeBasse)
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
     message.channel.send({ embed })
@@ -898,7 +898,7 @@ function calculCourbe(niveau) {
   let courbeHaute = 0
   let courbeMoyenne = 0
   let courbeBasse = 0
-  for(let i = 1; i <= niveau; i++) {/*
+  for(let i = 1; i <= niveau; i++) {
     if (i < 20) {
       if(i == 2) {
         courbeHaute = courbeHaute + 1
@@ -912,11 +912,17 @@ function calculCourbe(niveau) {
       if(i > 9) {
         courbeHaute = courbeHaute + 5 
       }
-      if(i >= 5 && i <=)
+      if(i >= 5 && i <= 14){
+        courbeBasse = courbeBasse + 1
+      }
+      if(i > 14) {
+        courbeBasse = courbeBasse + 3
+      }
     } 
-    if(i >= 20) {*/
+    if(i >= 20) {
       courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
-    /*}*/
+    }
+    courbeMoyenne = courbeMoyenne + ((courbeHaute + courbeBasse) / 2)
   }
   return {courbeHaute, courbeMoyenne, courbeBasse};
 }
