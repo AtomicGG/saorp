@@ -199,7 +199,7 @@ bot.on('message', message => {
       "Alchimiste niveau 1 : 0/50\n\n" +
       "Enchanteur niveau 1 : 0/50\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
       "Liste d'amis : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
-      "Marrié a : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
+      "Marié(e) à : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
       "Inventaire :\n\n100 Cols\n\n" +
       "1 Potion faible de soin [+40 HP]\n\n" +
       "1 Ragoût de lapin [+20 HP]\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝```");
