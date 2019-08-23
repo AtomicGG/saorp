@@ -873,6 +873,25 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+  if (message.content.startsWith(prefix + "Calcul des bonus d'un combattant")) {
+    let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
+    let pv = Math.floor(Math.pow((Math.floor(Math.sqrt(niveau - 1)) + Math.floor(2 - 2 / (niveau - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveau - 1) - 17) * ((niveau - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveau - 1)) + Math.floor(2 - 2 / (niveau - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveau - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
+    const embed = new Discord.RichEmbed()
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+      .setColor(3447003)
+      .addField("Points de Vie :", pv)
+      .addBlankField(true)
+      .addField("Attaque : ", "Niveau 11 ")
+      .addBlankField(true)
+      .addField("Défense : ", " Nivenvesnn")
+      .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+      .setTimestamp()
+    message.channel.send({ embed })
+  }
+});
+
+bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bonus combattant")) {
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
