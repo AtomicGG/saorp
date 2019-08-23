@@ -879,21 +879,21 @@ bot.on('message', message => {
     let pv = 40
     let courbeHaute = 0
     for(let i = 1; i <= niveauInt; i++) {
-      if (niveauInt < 20) {
-        if(niveauInt == 2) {
+      if (i < 20) {
+        if(i == 2) {
           courbeHaute = courbeHaute + 1
         }
-        if(niveauInt == 3 || niveauInt == 4) {
+        if(i == 3 || i == 4) {
           courbeHaute = courbeHaute + 2
         }
-        if(niveauInt >= 5 && niveauInt <= 9) {
+        if(i >= 5 && i <= 9) {
           courbeHaute = courbeHaute + 3
         }
-        if(niveauInt > 9) {
+        if(i > 9) {
           courbeHaute = courbeHaute + 5 
         }
       } 
-      if(niveauInt >= 20) {
+      if(i >= 20) {
         courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) * ((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
       }
     }
