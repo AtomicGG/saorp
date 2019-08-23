@@ -876,12 +876,30 @@ bot.on('message', message => {
   if (message.content.startsWith(prefix + "Calcul des bonus d'un combattant")) {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
-    let pv = Math.floor(Math.pow((Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) * ((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
+    let courbeHaute = 40
+    for(let i = 1; i <= niveauInt; i++) {
+      if (niveauInt < 20) {
+        if(niveauInt == 2) {
+          courbeHaute = courbeHaute + 1 * 5
+        }
+        if(niveauInt == 3 && niveauInt == 4) {
+          courbeHaute = courbeHaute + 2 * 5
+        }
+        if(niveauInt >= 5 && niveauInt <= 9) {
+          courbeHaute = courbeHaute + 3 * 5
+        }
+        if(niveauInt > 9) {
+          courbeHaute = courbeHaute + 5 * 5
+        }
+      } else {
+        courbeHaute = courbeHautepv + Math.floor(Math.pow((Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) * ((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3) * 5
+      }
+    }
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField("Points de Vie :", pv)
+      .addField("Points de Vie :", courbeHaute)
       .addBlankField(true)
       .addField("Attaque : ", "Niveau 11 ")
       .addBlankField(true)
