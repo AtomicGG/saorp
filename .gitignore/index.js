@@ -894,7 +894,7 @@ bot.on('message', message => {
         }
       } 
       if(i >= 20) {
-        courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) * ((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(niveauInt - 1)) + Math.floor(2 - 2 / (niveauInt - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((niveauInt - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
+        courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
       }
     }
     pv = 40 + (courbeHaute * 5)
