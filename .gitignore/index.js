@@ -877,26 +877,7 @@ bot.on('message', message => {
     let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
     let niveauInt = niveau - 0
     let pv = 40
-    let courbeHaute = 0
-    for(let i = 1; i <= niveauInt; i++) {
-      if (i < 20) {
-        if(i == 2) {
-          courbeHaute = courbeHaute + 1
-        }
-        if(i == 3 || i == 4) {
-          courbeHaute = courbeHaute + 2
-        }
-        if(i >= 5 && i <= 9) {
-          courbeHaute = courbeHaute + 3
-        }
-        if(i > 9) {
-          courbeHaute = courbeHaute + 5 
-        }
-      } 
-      if(i >= 20) {
-        courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
-      }
-    }
+    let courbeHaute = calculCourbeHaute(niveauInt)
     pv = 40 + (courbeHaute * 5)
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
@@ -912,6 +893,28 @@ bot.on('message', message => {
     message.channel.send({ embed })
   }
 });
+
+function calculCourbeHaute(niveau) {
+  for(let i = 1; i <= niveauInt; i++) {
+    if (i < 20) {
+      if(i == 2) {
+        courbeHaute = courbeHaute + 1
+      }
+      if(i == 3 || i == 4) {
+        courbeHaute = courbeHaute + 2
+      }
+      if(i >= 5 && i <= 9) {
+        courbeHaute = courbeHaute + 3
+      }
+      if(i > 9) {
+        courbeHaute = courbeHaute + 5 
+      }
+    } 
+    if(i >= 20) {
+      courbeHaute = courbeHaute + Math.floor(Math.pow((Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) * ((i - 1) - 17) / 2)) - 1 / 5) - 1),2) / 6 + (Math.floor(Math.sqrt(i - 1)) + Math.floor(2 - 2 / (i - 1)) - Math.floor(1 / Math.sqrt(2 * 3.14) * Math.exp(- (((i - 1) - 17) / 2)) - 1 / 5) - 1) / 2 + 1 / 3)
+    }
+  }
+}
 
 bot.on('message', message => {
   if (message.content.startsWith(prefix + "Bonus combattant")) {
