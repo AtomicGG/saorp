@@ -1074,7 +1074,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Les bonus des niveaux pour Combattant de 2 à 10 :", "Niveau 2 : Vous gagnez 5 HP !\n\n" +
-        "Niveau 3 : Vous gagnez 10 HP !\n\n" +
+        "Niveau 3 : Vous gagnez 10 HP et 1 point de dégât !\n\n" +
         "Niveau 4 : Vous gagnez 10 HP et 1 point de dégât !\n\n" +
         "Niveau 5 : Vous gagnez 15 HP et 2 points de dégât et 0.5 point d'armure!\n\n" +
         "Niveau 6 : Vous gagnez 15 HP et 2 points de dégâts et 0.5 point d'armure! \n\n" +
@@ -1117,7 +1117,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Les bonus des niveaux pour Assassin de 2 à 10 :", "Niveau 2 : Vous gagnez 1 point de dégâts !\n\n" +
-        "Niveau 3 : Vous gagnez 2 points de dégât !\n\n" +
+        "Niveau 3 : Vous gagnez 2 points de dégât et 0.5 point d'armure !\n\n" +
         "Niveau 4 : Vous gagnez 2 points de dégât et 0.5 point d'armure ! \n\n" +
         "Niveau 5 : Vous gagnez 3 points de dégât et 1 point d'armure et 5 HP! \n\n" +
         "Niveau 6 : Vous gagnez 3 points de dégât et 1 point d'armure et 5 HP! \n\n" +
@@ -1160,7 +1160,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Les bonus des niveaux pour Berserker de 2 à 10 :", "Niveau 2 : Vous gagnez 1 point de dégât !\n\n " +
-        "Niveau 3 : Vous gagnez 2 points de dégât!\n\n " +
+        "Niveau 3 : Vous gagnez 2 points de dégât et 5 HP !\n\n " +
         "Niveau 4 : Vous gagnez 2 points de dégât et 5 HP !\n\n " +
         "Niveau 5 : Vous gagnez 3 points de dégât et 10 HP et 0.5 point d'armure!\n\n " +
         "Niveau 6 : Vous gagnez 3 points de dégât et 10 HP et 0.5 point d'armure!\n\n " +
@@ -1203,7 +1203,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Les bonus des niveaux pour Paladin de 2 à 10 :", "Niveau 2 : Vous gagnez 0.5 point d’armure ! \n\n" +
-        "Niveau 3 : Vous gagnez 1 point d’armure! \n\n" +
+        "Niveau 3 : Vous gagnez 1 point d’armure et 1 point de dégâts ! \n\n" +
         "Niveau 4 : Vous gagnez 1 point d’armure et 1 point de dégâts ! \n\n" +
         "Niveau 5 : Vous gagnez 1.5 points d’armure et 2 points de dégâts et 5 HP! \n\n" +
         "Niveau 6 : Vous gagnez 1.5 points d’armure et 2 points de dégâts et 5 HP! \n\n" +
@@ -1246,14 +1246,14 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Les bonus des niveaux pour Vindicateur de 2 à 10 :", "Niveau 2 : Vous gagnez 5 HP ! \n\n" +
-        "Niveau 3 : Vous gagnez 10 HP ! \n\n" +
-        "Niveau 4 : Vous gagnez 10 HP et 0.5 point d’armure! \n\n" +
-        "Niveau 5 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\n" +
-        "Niveau 6 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\n" +
-        "Niveau 7 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\n" +
-        "Niveau 8 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\n" +
-        "Niveau 9 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts! \n\n" +
-        "Niveau 10 : Vous gagnez 25 HP et 1.5 points d’armure et 1 point de dégâts!")
+        "Niveau 3 : Vous gagnez 10 HP et 0.5 point d'armure ! \n\n" +
+        "Niveau 4 : Vous gagnez 10 HP et 0.5 point d’armure ! \n\n" +
+        "Niveau 5 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts ! \n\n" +
+        "Niveau 6 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts ! \n\n" +
+        "Niveau 7 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts ! \n\n" +
+        "Niveau 8 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts ! \n\n" +
+        "Niveau 9 : Vous gagnez 15 HP et 1 point d’armure et 1 point de dégâts ! \n\n" +
+        "Niveau 10 : Vous gagnez 25 HP et 1.5 points d’armure et 1 point de dégât !")
       .addBlankField(true)
       .addField("Les bonus des niveaux pour vindicateur de 11 à 20 :", "Niveau 11 : Vous gagnez 25 HP et 1.5 points d’armure et 1 point de dégâts! \n\n" +
         "Niveau 12 : Vous gagnez 25 HP et 1.5 points d’armure et 1 point de dégâts!\n\n " +
@@ -1289,7 +1289,7 @@ bot.on('message', message => {
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
       .addField("Les bonus des niveaux pour Chevalier de 2 à 10 :", "Niveau 2 : Vous gagnez 0.5 point d’armure ! \n\n" +
-        "Niveau 3 : Vous gagnez 1 point d’armure! \n\n" +
+        "Niveau 3 : Vous gagnez 1 point d’armure et 5 HP ! \n\n" +
         "Niveau 4 : Vous gagnez 1 point d’armure et 5 HP! \n\n" +
         "Niveau 5 : Vous gagnez 1.5 points d’armure et 10 HP et 1 point de dégâts!\n\n " +
         "Niveau 6 : Vous gagnez 1.5 points d’armure et 10 HP et 1 point de dégâts! \n\n" +
@@ -22784,10 +22784,10 @@ bot.on('message', message => {
       .setAuthor(message.author.username, message.author.avatarURL)
       .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
       .setColor(3447003)
-      .addField(":scales: Bouclier de kobolt supérieur à une main :", ":scales: C'est un bouclier très résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobolt supérieur à une main`")
-      .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion , 1 bois de frêne rare, 2 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
-      .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-      .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du bouclier de kobolt supérieur à une main : [Votre niveau en forgeron]`")
+      //.addField(":scales: Bouclier de kobolt supérieur à une main :", ":scales: C'est un bouclier très résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobolt supérieur à une main`")
+      //.addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion , 1 bois de frêne rare, 2 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
+      //.addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
+      //.addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du bouclier de kobolt supérieur à une main : [Votre niveau en forgeron]`")
       .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
       .setTimestamp()
     message.channel.send({ embed })
