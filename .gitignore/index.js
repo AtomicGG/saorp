@@ -15,7 +15,7 @@ bot.on('ready', function () {
     console.log("Je suis connecté !")
 });
 
-bot.on('guildMemberAdd', member => {
+bot.off('guildMemberAdd', member => {
     member.createDM().then(channel => {
         return channel.send("**__۝▬▬๑₪۩۞『SAO Community ©』۞۩₪๑▬▬۝ __**\n\n\n:hand_splayed:`Bienvenue à toi sur『SAO Community [RP]』© !`\n\n\n:white_check_mark:`Pour voir les salons de 『SAO Community [RP]』©, " +
             "il faudra lire le réglement dans le salon├──📃ʀᴇ̀ɢʟᴇᴍᴇɴᴛ-a-lire, puis appuyer sur la case verte où il est écrit [J'accepte le réglement !] situé tout en haut, pour avoir accès aux " +
