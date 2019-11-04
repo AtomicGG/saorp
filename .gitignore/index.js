@@ -81,9 +81,6 @@ function regEscape(s) {
     return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }
 
-
-
-const prefix = "="
 let random;
 
 const nomServeur = "Horde [RP]"
